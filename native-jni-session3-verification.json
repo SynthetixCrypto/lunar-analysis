@@ -1,0 +1,305 @@
+{
+  "java_native_declarations": 56,
+  "dll_exports": 58,
+  "java_only": [
+    {
+      "class": "com.moonsworth.webosr.wrappers.Session",
+      "declaration": "public native java.lang.String name();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Session_name"
+    }
+  ],
+  "dll_only": [
+    "Java_com_moonsworth_webosr_wrappers_Browser_swapBuffers",
+    "Java_com_moonsworth_webosr_wrappers_Session_getName",
+    "Java_com_moonsworth_webosr_wrappers_WebEngine_setTimers"
+  ],
+  "declarations": [
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void loadURL(java.lang.String);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_loadURL"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native java.lang.String getURL();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_getURL"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void next();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_next"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void previous();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_previous"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void reload();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_reload"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void stopLoad();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_stopLoad"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native boolean hasFocus();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_hasFocus"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void setFocus(boolean);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_setFocus"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native boolean hasInputFocus();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_hasInputFocus"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void triggerResize(int, int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_triggerResize"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "private native void triggerMouseEvent(int, int, int, int, int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_triggerMouseEvent"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "private native void triggerKeyEvent(java.lang.String, int, java.lang.String, int, int, int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_triggerKeyEvent"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void triggerScrollEvent(int, int, int, int, int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_triggerScrollEvent"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native int getTexture();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_getTexture"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void setDeviceScaleFactor(double);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_setDeviceScaleFactor"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native int getWidth();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_getWidth"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native int getHeight();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_getHeight"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native com.moonsworth.webosr.wrappers.NativeFuture eval(java.lang.String);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_eval"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void evalNoResult(java.lang.String);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_evalNoResult"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void bindFunction(java.lang.String, com.moonsworth.webosr.handler.FunctionJS);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_bindFunction"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void unbindFunction(java.lang.String);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_unbindFunction"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "public native void createInspector();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_createInspector"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Browser",
+      "declaration": "protected native void destroy();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_destroy"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.NativeFuture",
+      "declaration": "public native boolean isUndefined();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_NativeFuture_isUndefined"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.NativeFuture",
+      "declaration": "public native boolean isDone();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_NativeFuture_isDone"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.NativeFuture",
+      "declaration": "protected native void destroy();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_NativeFuture_destroy"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.NativeFuture",
+      "declaration": "private native java.lang.String get0(long);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_NativeFuture_get0"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.PlatformInterface",
+      "declaration": "public native void setScrollCallback(java.util.function.BiConsumer<java.lang.Double, java.lang.Double>);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_setScrollCallback"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.PlatformInterface",
+      "declaration": "protected native void destroy();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_destroy"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.PlatformInterface",
+      "declaration": "private native void setCursor0(int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_setCursor0"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.PromiseJS",
+      "declaration": "private native void resolve0(java.lang.String);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve0"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.PromiseJS",
+      "declaration": "private native void resolve1();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve1"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.PromiseJS",
+      "declaration": "private native void reject0(java.lang.String);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PromiseJS_reject0"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.PromiseJS",
+      "declaration": "private native void reject1();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PromiseJS_reject1"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Session",
+      "declaration": "public native boolean isPersistent();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Session_isPersistent"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Session",
+      "declaration": "public native java.lang.String name();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Session_name"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.Session",
+      "declaration": "protected native void destroy();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Session_destroy"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.WebEngine",
+      "declaration": "public native com.moonsworth.webosr.wrappers.image.TexturedImageSource createImageSourceTextured(java.lang.String);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_createImageSourceTextured"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.WebEngine",
+      "declaration": "public native com.moonsworth.webosr.wrappers.Session createSession(java.lang.String, boolean);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_createSession"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.WebEngine",
+      "declaration": "public native com.moonsworth.webosr.wrappers.Browser createBrowser(com.moonsworth.webosr.config.BrowserConfig);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_createBrowser"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.WebEngine",
+      "declaration": "public native com.moonsworth.webosr.wrappers.PlatformInterface getPlatformInterface();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_getPlatformInterface"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.WebEngine",
+      "declaration": "public native void setFPS(int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_setFPS"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.WebEngine",
+      "declaration": "protected native void destroy();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_destroy"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.WebEngine",
+      "declaration": "private native void invokeIteration0();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_invokeIteration0"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.WebOSR",
+      "declaration": "public static native com.moonsworth.webosr.wrappers.WebEngine createEngine(com.moonsworth.webosr.handler.Logger, com.moonsworth.webosr.config.UltralightConfig, com.moonsworth.webosr.config.ThreadConfig);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebOSR_createEngine"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.ChildImageSource",
+      "declaration": "public native void bind();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_bind"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.ChildImageSource",
+      "declaration": "public native void unbind();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_unbind"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.ChildImageSource",
+      "declaration": "public native void uv(int, int, int, int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_uv"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.ChildImageSource",
+      "declaration": "protected native void destroy();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_destroy"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.TexturedImageSource",
+      "declaration": "public native void update(java.nio.ByteBuffer);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_update"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.TexturedImageSource",
+      "declaration": "public native void size(int, int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_size"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.TexturedImageSource",
+      "declaration": "public native com.moonsworth.webosr.wrappers.image.ChildImageSource makeChild(java.lang.String);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_makeChild"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.TexturedImageSource",
+      "declaration": "public native void uv(int, int, int, int);",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_uv"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.TexturedImageSource",
+      "declaration": "public native void bind();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_bind"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.TexturedImageSource",
+      "declaration": "public native void unbind();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_unbind"
+    },
+    {
+      "class": "com.moonsworth.webosr.wrappers.image.TexturedImageSource",
+      "declaration": "protected native void destroy();",
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_destroy"
+    }
+  ],
+  "webp32": {
+    "path": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\webp-imageio32.dll",
+    "bytes": 753368,
+    "sha256": "04d9da8790fe6ef5d9fc006381b23574ceea85c3178eac1e364c7d40e76aa114",
+    "machine": "0x14c",
+    "machine_file_offset": 132
+  }
+}

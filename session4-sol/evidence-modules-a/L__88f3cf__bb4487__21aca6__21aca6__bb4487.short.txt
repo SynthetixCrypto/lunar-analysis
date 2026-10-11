@@ -1,0 +1,98 @@
+public final class L._88f3cf._bb4487._21aca6._21aca6._bb4487 extends java.lang.Enum<L._88f3cf._bb4487._21aca6._21aca6._bb4487> implements L._ec7e36._f6e62b {
+  public static final L._88f3cf._bb4487._21aca6._21aca6._bb4487 VALUE;
+
+  public static final L._88f3cf._bb4487._21aca6._21aca6._bb4487 PERCENT;
+
+  public static final L._88f3cf._bb4487._21aca6._21aca6._bb4487 NONE;
+
+  private final java.lang.String id;
+
+  private static final L._88f3cf._bb4487._21aca6._21aca6._bb4487[] $VALUES;
+
+  public static L._88f3cf._bb4487._21aca6._21aca6._bb4487[] values();
+    Code:
+       0: getstatic     #12                 // Field $VALUES:[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+       3: invokevirtual #17                 // Method "[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;".clone:()Ljava/lang/Object;
+       6: checkcast     #7                  // class "[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;"
+       9: areturn
+
+  public static L._88f3cf._bb4487._21aca6._21aca6._bb4487 valueOf(java.lang.String);
+    Code:
+       0: ldc           #9                  // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487
+       2: aload_0
+       3: invokestatic  #22                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #9                  // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487
+       9: areturn
+
+  public java.lang.String id();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field id:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #16                 // Field id:Ljava/lang/String;
+       5: iconst_0
+       6: anewarray     #11                 // class java/lang/Object
+       9: invokevirtual #20                 // Method _1253fc:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      12: areturn
+
+  private L._88f3cf._bb4487._21aca6._21aca6._bb4487(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #21                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: aload_0
+       7: aload_3
+       8: putfield      #16                 // Field id:Ljava/lang/String;
+      11: return
+
+  private static L._88f3cf._bb4487._21aca6._21aca6._bb4487[] $values();
+    Code:
+       0: iconst_3
+       1: anewarray     #9                  // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487
+       4: dup
+       5: iconst_0
+       6: getstatic     #15                 // Field VALUE:LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #14                 // Field PERCENT:LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #13                 // Field NONE:LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+      21: aastore
+      22: areturn
+
+  static {};
+    Code:
+       0: new           #9                  // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487
+       3: dup
+       4: ldc           #3                  // String VALUE
+       6: iconst_0
+       7: ldc           #6                  // String value
+       9: invokespecial #19                 // Method "<init>":(Ljava/lang/String;ILjava/lang/String;)V
+      12: putstatic     #15                 // Field VALUE:LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+      15: new           #9                  // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487
+      18: dup
+      19: ldc           #2                  // String PERCENT
+      21: iconst_1
+      22: ldc           #5                  // String percent
+      24: invokespecial #19                 // Method "<init>":(Ljava/lang/String;ILjava/lang/String;)V
+      27: putstatic     #14                 // Field PERCENT:LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+      30: new           #9                  // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487
+      33: dup
+      34: ldc           #1                  // String NONE
+      36: iconst_2
+      37: ldc           #4                  // String none
+      39: invokespecial #19                 // Method "<init>":(Ljava/lang/String;ILjava/lang/String;)V
+      42: putstatic     #13                 // Field NONE:LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+      45: invokestatic  #18                 // Method $values:()[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+      48: putstatic     #12                 // Field $VALUES:[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_bb4487;
+      51: return
+}

@@ -1,0 +1,181 @@
+public final class com.moonsworth.webosr.wrappers.PromiseJS<T> {
+  private volatile long handle;
+
+  private com.moonsworth.webosr.BridgeValueCodec bridgeCodec;
+
+  private java.lang.Class<?> bridgeValueType;
+
+  private com.moonsworth.webosr.wrappers.PromiseJS(long);
+    Code:
+       0: aload_0
+       1: invokespecial #23                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: lload_1
+       6: putfield      #14                 // Field handle:J
+       9: return
+
+  public void resolve(T);
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_1
+      20: ifnonnull     32
+      23: aload_0
+      24: aconst_null
+      25: checkcast     #8                  // class java/lang/String
+      28: invokevirtual #15                 // Method _resolve:(Ljava/lang/String;)V
+      31: return
+      32: aload_0
+      33: getfield      #12                 // Field bridgeCodec:Lcom/moonsworth/webosr/BridgeValueCodec;
+      36: ifnull        65
+      39: aload_0
+      40: getfield      #13                 // Field bridgeValueType:Ljava/lang/Class;
+      43: ifnull        65
+      46: aload_0
+      47: aload_0
+      48: getfield      #12                 // Field bridgeCodec:Lcom/moonsworth/webosr/BridgeValueCodec;
+      51: aload_1
+      52: aload_0
+      53: getfield      #13                 // Field bridgeValueType:Ljava/lang/Class;
+      56: invokeinterface #26,  3           // InterfaceMethod com/moonsworth/webosr/BridgeValueCodec.objectToString:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+      61: invokevirtual #15                 // Method _resolve:(Ljava/lang/String;)V
+      64: return
+      65: aload_1
+      66: instanceof    #8                  // class java/lang/String
+      69: ifeq          81
+      72: aload_0
+      73: aload_1
+      74: checkcast     #8                  // class java/lang/String
+      77: invokevirtual #15                 // Method _resolve:(Ljava/lang/String;)V
+      80: return
+      81: new           #6                  // class java/lang/IllegalStateException
+      84: dup
+      85: aload_1
+      86: invokevirtual #24                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      89: invokevirtual #21                 // Method java/lang/Class.getName:()Ljava/lang/String;
+      92: invokedynamic #27,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      97: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     100: athrow
+
+  public void _resolve(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: aload_1
+      21: invokevirtual #19                 // Method resolve0:(Ljava/lang/String;)V
+      24: aload_0
+      25: lconst_0
+      26: putfield      #14                 // Field handle:J
+      29: aload_0
+      30: invokevirtual #16                 // Method clearBridgeCodec:()V
+      33: return
+
+  public void resolve();
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: invokevirtual #20                 // Method resolve1:()V
+      23: aload_0
+      24: lconst_0
+      25: putfield      #14                 // Field handle:J
+      28: aload_0
+      29: invokevirtual #16                 // Method clearBridgeCodec:()V
+      32: return
+
+  public void reject(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: aload_1
+      21: invokevirtual #17                 // Method reject0:(Ljava/lang/String;)V
+      24: aload_0
+      25: lconst_0
+      26: putfield      #14                 // Field handle:J
+      29: aload_0
+      30: invokevirtual #16                 // Method clearBridgeCodec:()V
+      33: return
+
+  public void reject();
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: invokevirtual #18                 // Method reject1:()V
+      23: aload_0
+      24: lconst_0
+      25: putfield      #14                 // Field handle:J
+      28: aload_0
+      29: invokevirtual #16                 // Method clearBridgeCodec:()V
+      32: return
+
+  public void bindBridgeCodec(com.moonsworth.webosr.BridgeValueCodec, java.lang.Class<?>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #12                 // Field bridgeCodec:Lcom/moonsworth/webosr/BridgeValueCodec;
+       5: aload_0
+       6: aload_2
+       7: putfield      #13                 // Field bridgeValueType:Ljava/lang/Class;
+      10: return
+
+  private void clearBridgeCodec();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: putfield      #12                 // Field bridgeCodec:Lcom/moonsworth/webosr/BridgeValueCodec;
+       5: aload_0
+       6: aconst_null
+       7: putfield      #13                 // Field bridgeValueType:Ljava/lang/Class;
+      10: return
+
+  private native void resolve0(java.lang.String);
+
+  private native void resolve1();
+
+  private native void reject0(java.lang.String);
+
+  private native void reject1();
+}

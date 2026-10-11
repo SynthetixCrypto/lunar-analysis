@@ -1,0 +1,1144 @@
+public abstract class ML._d4ca6c._590f69._21aca6._1e73d7._13ea87._bb4487._133367<T extends net.minecraft.world.entity.LivingEntity, S extends net.minecraft.client.renderer.entity.state.LivingEntityRenderState, M extends net.minecraft.client.model.EntityModel_v1_21_9<S>> extends net.minecraft.client.renderer.entity.EntityRenderer_v1_21_2<T, S> implements net.minecraft.client.renderer.entity.RenderLayerParent_v1_21_9<S, M> {
+  public java.util.List<net.minecraft.client.renderer.entity.layers.RenderLayer_v1_21_9<S, M>> layers;
+
+  public M model;
+
+  public ML._d4ca6c._590f69._21aca6._1e73d7._13ea87._bb4487._133367();
+    Code:
+       0: aload_0
+       1: invokespecial #188                // Method net/minecraft/client/renderer/entity/EntityRenderer_v1_21_2."<init>":()V
+       4: return
+
+  public abstract net.minecraft.client.renderer.RenderType getRenderType$v1_21_9(S, boolean, boolean, boolean);
+
+  public abstract net.minecraft.client.renderer.rendertype.RenderType getRenderType$v1_21_11(S, boolean, boolean, boolean);
+
+  public abstract float getWhiteOverlayProgress(S);
+
+  public abstract int getModelTint(S);
+
+  public abstract net.minecraft.resources.Identifier getTextureLocation(S);
+
+  private void lunar$highlightHook(net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.model.Model_v1_21_9, java.lang.Object, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.RenderType, int, int, int, net.minecraft.client.renderer.texture.TextureAtlasSprite, int, net.minecraft.client.renderer.feature.ModelFeatureRenderer_v1_21_9$CrumblingOverlay, com.llamalad7.mixinextras.injector.wrapoperation.Operation<java.lang.Void>, S);
+    Code:
+       0: aload         12
+       2: bipush        11
+       4: anewarray     #55                 // class java/lang/Object
+       7: dup
+       8: iconst_0
+       9: aload_1
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: aload_2
+      14: aastore
+      15: dup
+      16: iconst_2
+      17: aload_3
+      18: aastore
+      19: dup
+      20: iconst_3
+      21: aload         4
+      23: aastore
+      24: dup
+      25: iconst_4
+      26: aload         5
+      28: aastore
+      29: dup
+      30: iconst_5
+      31: iload         6
+      33: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      36: aastore
+      37: dup
+      38: bipush        6
+      40: iload         7
+      42: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      45: aastore
+      46: dup
+      47: bipush        7
+      49: iload         8
+      51: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      54: aastore
+      55: dup
+      56: bipush        8
+      58: aload         9
+      60: aastore
+      61: dup
+      62: bipush        9
+      64: iload         10
+      66: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      69: aastore
+      70: dup
+      71: bipush        10
+      73: aload         11
+      75: aastore
+      76: invokeinterface #198,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      81: pop
+      82: aload         13
+      84: getfield      #117                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.hasRedOverlay:Z
+      87: ifeq          91
+      90: return
+      91: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      94: invokevirtual #148                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      97: invokevirtual #158                // Method L/_02d7ad/_1253fc/_1eb51c._9bf4ae:()LL/_88f3cf/_bb4487/_327414/_cfe983;
+     100: astore        14
+     102: aload         14
+     104: invokevirtual #166                // Method L/_88f3cf/_bb4487/_327414/_cfe983.isEnabled:()Z
+     107: ifeq          224
+     110: aload         13
+     112: instanceof    #78                 // class net/minecraft/client/renderer/entity/state/AvatarRenderState
+     115: ifeq          224
+     118: aload         13
+     120: checkcast     #78                 // class net/minecraft/client/renderer/entity/state/AvatarRenderState
+     123: astore        15
+     125: aload         14
+     127: aload         15
+     129: checkcast     #29                 // class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+     132: invokevirtual #165                // Method L/_88f3cf/_bb4487/_327414/_cfe983._590f69:(LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;)Z
+     135: ifeq          224
+     138: aload         12
+     140: bipush        11
+     142: anewarray     #55                 // class java/lang/Object
+     145: dup
+     146: iconst_0
+     147: aload_1
+     148: aastore
+     149: dup
+     150: iconst_1
+     151: aload_2
+     152: aastore
+     153: dup
+     154: iconst_2
+     155: aload_3
+     156: aastore
+     157: dup
+     158: iconst_3
+     159: aload         4
+     161: aastore
+     162: dup
+     163: iconst_4
+     164: aload         5
+     166: aastore
+     167: dup
+     168: iconst_5
+     169: iload         6
+     171: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     174: aastore
+     175: dup
+     176: bipush        6
+     178: iload         7
+     180: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     183: aastore
+     184: dup
+     185: bipush        7
+     187: aload         14
+     189: invokevirtual #164                // Method L/_88f3cf/_bb4487/_327414/_cfe983._78e403:()LL/_ec7e36/_e62626;
+     192: fconst_0
+     193: invokevirtual #161                // Method L/_ec7e36/_e62626._ec536f:(F)Ljava/lang/Integer;
+     196: aastore
+     197: dup
+     198: bipush        8
+     200: aload         9
+     202: aastore
+     203: dup
+     204: bipush        9
+     206: iload         10
+     208: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     211: aastore
+     212: dup
+     213: bipush        10
+     215: aload         11
+     217: aastore
+     218: invokeinterface #198,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+     223: pop
+     224: return
+
+  private void lunar$highlightHook(net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.model.Model_v1_21_9, java.lang.Object, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.rendertype.RenderType, int, int, int, net.minecraft.client.renderer.texture.TextureAtlasSprite, int, net.minecraft.client.renderer.feature.ModelFeatureRenderer_v1_21_9$CrumblingOverlay, com.llamalad7.mixinextras.injector.wrapoperation.Operation<java.lang.Void>, S);
+    Code:
+       0: aload         12
+       2: bipush        11
+       4: anewarray     #55                 // class java/lang/Object
+       7: dup
+       8: iconst_0
+       9: aload_1
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: aload_2
+      14: aastore
+      15: dup
+      16: iconst_2
+      17: aload_3
+      18: aastore
+      19: dup
+      20: iconst_3
+      21: aload         4
+      23: aastore
+      24: dup
+      25: iconst_4
+      26: aload         5
+      28: aastore
+      29: dup
+      30: iconst_5
+      31: iload         6
+      33: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      36: aastore
+      37: dup
+      38: bipush        6
+      40: iload         7
+      42: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      45: aastore
+      46: dup
+      47: bipush        7
+      49: iload         8
+      51: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      54: aastore
+      55: dup
+      56: bipush        8
+      58: aload         9
+      60: aastore
+      61: dup
+      62: bipush        9
+      64: iload         10
+      66: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      69: aastore
+      70: dup
+      71: bipush        10
+      73: aload         11
+      75: aastore
+      76: invokeinterface #198,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      81: pop
+      82: aload         13
+      84: getfield      #117                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.hasRedOverlay:Z
+      87: ifeq          91
+      90: return
+      91: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      94: invokevirtual #148                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      97: invokevirtual #158                // Method L/_02d7ad/_1253fc/_1eb51c._9bf4ae:()LL/_88f3cf/_bb4487/_327414/_cfe983;
+     100: astore        14
+     102: aload         14
+     104: invokevirtual #166                // Method L/_88f3cf/_bb4487/_327414/_cfe983.isEnabled:()Z
+     107: ifeq          224
+     110: aload         13
+     112: instanceof    #78                 // class net/minecraft/client/renderer/entity/state/AvatarRenderState
+     115: ifeq          224
+     118: aload         13
+     120: checkcast     #78                 // class net/minecraft/client/renderer/entity/state/AvatarRenderState
+     123: astore        15
+     125: aload         14
+     127: aload         15
+     129: checkcast     #29                 // class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+     132: invokevirtual #165                // Method L/_88f3cf/_bb4487/_327414/_cfe983._590f69:(LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;)Z
+     135: ifeq          224
+     138: aload         12
+     140: bipush        11
+     142: anewarray     #55                 // class java/lang/Object
+     145: dup
+     146: iconst_0
+     147: aload_1
+     148: aastore
+     149: dup
+     150: iconst_1
+     151: aload_2
+     152: aastore
+     153: dup
+     154: iconst_2
+     155: aload_3
+     156: aastore
+     157: dup
+     158: iconst_3
+     159: aload         4
+     161: aastore
+     162: dup
+     163: iconst_4
+     164: aload         5
+     166: aastore
+     167: dup
+     168: iconst_5
+     169: iload         6
+     171: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     174: aastore
+     175: dup
+     176: bipush        6
+     178: iload         7
+     180: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     183: aastore
+     184: dup
+     185: bipush        7
+     187: aload         14
+     189: invokevirtual #164                // Method L/_88f3cf/_bb4487/_327414/_cfe983._78e403:()LL/_ec7e36/_e62626;
+     192: fconst_0
+     193: invokevirtual #161                // Method L/_ec7e36/_e62626._ec536f:(F)Ljava/lang/Integer;
+     196: aastore
+     197: dup
+     198: bipush        8
+     200: aload         9
+     202: aastore
+     203: dup
+     204: bipush        9
+     206: iload         10
+     208: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     211: aastore
+     212: dup
+     213: bipush        10
+     215: aload         11
+     217: aastore
+     218: invokeinterface #198,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+     223: pop
+     224: return
+
+  private void lunar$highlightHook(net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.model.Model_v1_21_9, java.lang.Object, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.rendertype.RenderType, int, int, int, net.minecraft.client.renderer.texture.TextureAtlasSprite, int, net.minecraft.client.renderer.feature.ModelFeatureRenderer_v26_2$CrumblingOverlay, com.llamalad7.mixinextras.injector.wrapoperation.Operation<java.lang.Void>, S);
+    Code:
+       0: aload         12
+       2: bipush        11
+       4: anewarray     #55                 // class java/lang/Object
+       7: dup
+       8: iconst_0
+       9: aload_1
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: aload_2
+      14: aastore
+      15: dup
+      16: iconst_2
+      17: aload_3
+      18: aastore
+      19: dup
+      20: iconst_3
+      21: aload         4
+      23: aastore
+      24: dup
+      25: iconst_4
+      26: aload         5
+      28: aastore
+      29: dup
+      30: iconst_5
+      31: iload         6
+      33: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      36: aastore
+      37: dup
+      38: bipush        6
+      40: iload         7
+      42: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      45: aastore
+      46: dup
+      47: bipush        7
+      49: iload         8
+      51: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      54: aastore
+      55: dup
+      56: bipush        8
+      58: aload         9
+      60: aastore
+      61: dup
+      62: bipush        9
+      64: iload         10
+      66: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      69: aastore
+      70: dup
+      71: bipush        10
+      73: aload         11
+      75: aastore
+      76: invokeinterface #198,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      81: pop
+      82: aload         13
+      84: getfield      #117                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.hasRedOverlay:Z
+      87: ifeq          91
+      90: return
+      91: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      94: invokevirtual #148                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      97: invokevirtual #158                // Method L/_02d7ad/_1253fc/_1eb51c._9bf4ae:()LL/_88f3cf/_bb4487/_327414/_cfe983;
+     100: astore        14
+     102: aload         14
+     104: invokevirtual #166                // Method L/_88f3cf/_bb4487/_327414/_cfe983.isEnabled:()Z
+     107: ifeq          224
+     110: aload         13
+     112: instanceof    #78                 // class net/minecraft/client/renderer/entity/state/AvatarRenderState
+     115: ifeq          224
+     118: aload         13
+     120: checkcast     #78                 // class net/minecraft/client/renderer/entity/state/AvatarRenderState
+     123: astore        15
+     125: aload         14
+     127: aload         15
+     129: checkcast     #29                 // class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+     132: invokevirtual #165                // Method L/_88f3cf/_bb4487/_327414/_cfe983._590f69:(LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;)Z
+     135: ifeq          224
+     138: aload         12
+     140: bipush        11
+     142: anewarray     #55                 // class java/lang/Object
+     145: dup
+     146: iconst_0
+     147: aload_1
+     148: aastore
+     149: dup
+     150: iconst_1
+     151: aload_2
+     152: aastore
+     153: dup
+     154: iconst_2
+     155: aload_3
+     156: aastore
+     157: dup
+     158: iconst_3
+     159: aload         4
+     161: aastore
+     162: dup
+     163: iconst_4
+     164: aload         5
+     166: aastore
+     167: dup
+     168: iconst_5
+     169: iload         6
+     171: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     174: aastore
+     175: dup
+     176: bipush        6
+     178: iload         7
+     180: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     183: aastore
+     184: dup
+     185: bipush        7
+     187: aload         14
+     189: invokevirtual #164                // Method L/_88f3cf/_bb4487/_327414/_cfe983._78e403:()LL/_ec7e36/_e62626;
+     192: fconst_0
+     193: invokevirtual #161                // Method L/_ec7e36/_e62626._ec536f:(F)Ljava/lang/Integer;
+     196: aastore
+     197: dup
+     198: bipush        8
+     200: aload         9
+     202: aastore
+     203: dup
+     204: bipush        9
+     206: iload         10
+     208: invokestatic  #181                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     211: aastore
+     212: dup
+     213: bipush        10
+     215: aload         11
+     217: aastore
+     218: invokeinterface #198,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+     223: pop
+     224: return
+
+  private void lunar$shouldShowName(T, double, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #148                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+       6: invokevirtual #160                // Method L/_02d7ad/_1253fc/_1eb51c._d3cefd:()LL/_88f3cf/_bb4487/_41ba55/_cfe983;
+       9: aload_1
+      10: checkcast     #30                 // class ML/_590f69/_2ce426/_1e73d7
+      13: invokevirtual #162                // Method L/_88f3cf/_bb4487/_41ba55/_cfe983._133367:(LML/_590f69/_2ce426/_1e73d7;)Z
+      16: ifeq          28
+      19: aload         4
+      21: iconst_1
+      22: invokestatic  #176                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      25: invokevirtual #197                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      28: return
+
+  private void apollo$onShouldShowName(T, double, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       3: getfield      #113                // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+       6: ifnonnull     18
+       9: aload         4
+      11: iconst_0
+      12: invokestatic  #176                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      15: invokevirtual #197                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      18: return
+
+  private void apollo$hiddenNametagOverride(T, double, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: aload_1
+       1: ifnull        11
+       4: aload_1
+       5: invokestatic  #173                // Method L/util/_e93d3c._433a2f:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+       8: if_acmpne     12
+      11: return
+      12: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      15: invokevirtual #148                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      18: invokevirtual #160                // Method L/_02d7ad/_1253fc/_1eb51c._d3cefd:()LL/_88f3cf/_bb4487/_41ba55/_cfe983;
+      21: invokevirtual #163                // Method L/_88f3cf/_bb4487/_41ba55/_cfe983.isEnabled:()Z
+      24: ifne          28
+      27: return
+      28: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      31: invokevirtual #149                // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+      34: ldc           #16                 // class com/lunarclient/apollo/module/nametag/NametagModule
+      36: invokevirtual #155                // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+      39: aload_1
+      40: aload         4
+      42: invokedynamic #218,  0            // InvokeDynamic #0:accept:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)Ljava/util/function/Consumer;
+      47: invokevirtual #184                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      50: return
+
+  private net.minecraft.world.scores.Team$Visibility apollo$shownNametagOverride(net.minecraft.world.scores.Team, com.llamalad7.mixinextras.injector.wrapoperation.Operation<net.minecraft.world.scores.Team$Visibility>, net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #148                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+       6: invokevirtual #160                // Method L/_02d7ad/_1253fc/_1eb51c._d3cefd:()LL/_88f3cf/_bb4487/_41ba55/_cfe983;
+       9: invokevirtual #163                // Method L/_88f3cf/_bb4487/_41ba55/_cfe983.isEnabled:()Z
+      12: ifeq          71
+      15: aload_3
+      16: checkcast     #30                 // class ML/_590f69/_2ce426/_1e73d7
+      19: invokeinterface #207,  1          // InterfaceMethod ML/_590f69/_2ce426/_1e73d7.bridge$getUniqueID:()Ljava/util/UUID;
+      24: astore        4
+      26: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      29: invokevirtual #149                // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+      32: ldc           #16                 // class com/lunarclient/apollo/module/nametag/NametagModule
+      34: invokevirtual #155                // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+      37: aload         4
+      39: invokedynamic #219,  0            // InvokeDynamic #1:apply:(Ljava/util/UUID;)Ljava/util/function/Function;
+      44: invokevirtual #185                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      47: iconst_0
+      48: invokestatic  #176                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      51: invokevirtual #186                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      54: checkcast     #51                 // class java/lang/Boolean
+      57: invokevirtual #175                // Method java/lang/Boolean.booleanValue:()Z
+      60: istore        5
+      62: iload         5
+      64: ifeq          71
+      67: getstatic     #124                // Field net/minecraft/world/scores/Team$Visibility.ALWAYS:Lnet/minecraft/world/scores/Team$Visibility;
+      70: areturn
+      71: aload_2
+      72: iconst_1
+      73: anewarray     #55                 // class java/lang/Object
+      76: dup
+      77: iconst_0
+      78: aload_1
+      79: aastore
+      80: invokeinterface #198,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      85: checkcast     #95                 // class net/minecraft/world/scores/Team$Visibility
+      88: areturn
+
+  private double apollo$usePlayerLocationInstead(double, net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #149                // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+       6: ldc           #17                 // class com/lunarclient/apollo/module/serverrule/ServerRuleModule
+       8: invokevirtual #155                // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+      11: invokedynamic #220,  0            // InvokeDynamic #2:test:()Ljava/util/function/Predicate;
+      16: invokevirtual #183                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+      19: aload_0
+      20: aload_3
+      21: invokedynamic #221,  0            // InvokeDynamic #3:apply:(LML/_d4ca6c/_590f69/_21aca6/_1e73d7/_13ea87/_bb4487/_133367;Lnet/minecraft/world/entity/LivingEntity;)Ljava/util/function/Function;
+      26: invokevirtual #185                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      29: dload_1
+      30: invokestatic  #178                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      33: invokevirtual #186                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      36: checkcast     #52                 // class java/lang/Double
+      39: invokevirtual #177                // Method java/lang/Double.doubleValue:()D
+      42: dreturn
+
+  private float apollo$shouldShowName$sneaking(float);
+    Code:
+       0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #149                // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+       6: ldc           #17                 // class com/lunarclient/apollo/module/serverrule/ServerRuleModule
+       8: invokevirtual #155                // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+      11: invokedynamic #222,  0            // InvokeDynamic #4:test:()Ljava/util/function/Predicate;
+      16: invokevirtual #183                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+      19: invokedynamic #223,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+      24: invokevirtual #185                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      27: fload_1
+      28: invokestatic  #180                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      31: invokevirtual #186                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      34: checkcast     #53                 // class java/lang/Float
+      37: invokevirtual #179                // Method java/lang/Float.floatValue:()F
+      40: freturn
+
+  private void apollo$shouldFlipEntity(net.minecraft.world.entity.LivingEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #149                // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+       6: ldc           #15                 // class com/lunarclient/apollo/module/entity/EntityModule
+       8: invokevirtual #155                // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+      11: aload_1
+      12: aload_2
+      13: invokedynamic #224,  0            // InvokeDynamic #6:accept:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)Ljava/util/function/Consumer;
+      18: invokevirtual #184                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      21: return
+
+  private void lunar$captureValues$1(S, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef);
+    Code:
+       0: getstatic     #103                // Field ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_88f3cf._f78647:Z
+       3: ifeq          28
+       6: aload         6
+       8: aload_1
+       9: getfield      #122                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.yRot:F
+      12: invokeinterface #199,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.set:(F)V
+      17: aload         7
+      19: aload_1
+      20: getfield      #121                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.xRot:F
+      23: invokeinterface #199,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.set:(F)V
+      28: return
+
+  private boolean lunar$skipEntityModelRendering(net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.model.Model_v1_21_9, java.lang.Object, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.RenderType, int, int, int, net.minecraft.client.renderer.texture.TextureAtlasSprite, int, net.minecraft.client.renderer.feature.ModelFeatureRenderer_v1_21_9$CrumblingOverlay);
+    Code:
+       0: getstatic     #103                // Field ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_88f3cf._f78647:Z
+       3: ifne          10
+       6: iconst_1
+       7: goto          11
+      10: iconst_0
+      11: ireturn
+
+  private boolean lunar$skipEntityModelRendering(net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.model.Model_v1_21_9, java.lang.Object, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.rendertype.RenderType, int, int, int, net.minecraft.client.renderer.texture.TextureAtlasSprite, int, net.minecraft.client.renderer.feature.ModelFeatureRenderer_v1_21_9$CrumblingOverlay);
+    Code:
+       0: getstatic     #103                // Field ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_88f3cf._f78647:Z
+       3: ifne          10
+       6: iconst_1
+       7: goto          11
+      10: iconst_0
+      11: ireturn
+
+  private boolean lunar$skipEntityModelRendering(net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.model.Model_v1_21_9, java.lang.Object, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.rendertype.RenderType, int, int, int, net.minecraft.client.renderer.texture.TextureAtlasSprite, int, net.minecraft.client.renderer.feature.ModelFeatureRenderer_v26_2$CrumblingOverlay);
+    Code:
+       0: getstatic     #103                // Field ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_88f3cf._f78647:Z
+       3: ifne          10
+       6: iconst_1
+       7: goto          11
+      10: iconst_0
+      11: ireturn
+
+  private void lunar$onPreRenderPlayer$v1_21_9(S, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.renderer.state.CameraRenderState, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         5
+       6: invokevirtual #142                // Method lunar$onPreRenderPlayer:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+       9: return
+
+  private void lunar$onPreRenderPlayer$v26_1(S, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.renderer.state.level.CameraRenderState, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         5
+       6: invokevirtual #142                // Method lunar$onPreRenderPlayer:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+       9: return
+
+  private void lunar$onPreRenderPlayer(S, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_1
+       1: instanceof    #29                 // class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+       4: ifeq          16
+       7: aload_1
+       8: checkcast     #29                 // class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+      11: astore        5
+      13: goto          17
+      16: return
+      17: aload         5
+      19: invokeinterface #206,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$isSpectator:()Z
+      24: ifne          37
+      27: aload         5
+      29: invokeinterface #205,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$isInvisible:()Z
+      34: ifeq          38
+      37: return
+      38: aload         5
+      40: invokeinterface #204,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$getEmoteController:()Ljava/lang/Object;
+      45: checkcast     #63                 // class mchorse/emoticons/capabilities/cosmetic/ICosmetic
+      48: astore        6
+      50: aload         6
+      52: ifnull        402
+      55: aload         6
+      57: invokeinterface #213,  1          // InterfaceMethod mchorse/emoticons/capabilities/cosmetic/ICosmetic.getEmote:()Lmchorse/emoticons/common/emotes/Emote;
+      62: ifnull        402
+      65: getstatic     #108                // Field L/util/_e93d3c.MC_VERSION:I
+      68: bipush        39
+      70: if_icmplt     161
+      73: aload_3
+      74: iconst_0
+      75: invokeinterface #214,  2          // InterfaceMethod net/minecraft/client/renderer/SubmitNodeCollector.order:(I)Lnet/minecraft/client/renderer/OrderedSubmitNodeCollector;
+      80: astore        8
+      82: aload         8
+      84: instanceof    #72                 // class net/minecraft/client/renderer/SubmitNodeCollection
+      87: ifeq          158
+      90: aload         8
+      92: checkcast     #72                 // class net/minecraft/client/renderer/SubmitNodeCollection
+      95: astore        7
+      97: aload_2
+      98: invokevirtual #125                // Method com/mojang/blaze3d/vertex/PoseStack.last:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+     101: invokevirtual #126                // Method com/mojang/blaze3d/vertex/PoseStack$Pose.copy$v1_20_5:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+     104: astore        8
+     106: aload         7
+     108: getfield      #115                // Field net/minecraft/client/renderer/SubmitNodeCollection.translucentModels$v26_2:Lnet/minecraft/client/renderer/feature/phase/TranslucentFeatureRenderPhase;
+     111: new           #23                 // class ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1e73d7/_cfe983
+     114: dup
+     115: aload         8
+     117: aload         5
+     119: iconst_0
+     120: iconst_m1
+     121: invokespecial #130                // Method ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1e73d7/_cfe983."<init>":(Lcom/mojang/blaze3d/vertex/PoseStack$Pose;LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;ZI)V
+     124: invokevirtual #191                // Method net/minecraft/client/renderer/feature/phase/TranslucentFeatureRenderPhase.submit:(Lnet/minecraft/client/renderer/feature/submit/TranslucentSubmit;)V
+     127: aload_1
+     128: getfield      #119                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor$v1_21_9:I
+     131: ifeq          158
+     134: aload         7
+     136: getfield      #114                // Field net/minecraft/client/renderer/SubmitNodeCollection.outline$v26_2:Lnet/minecraft/client/renderer/feature/phase/SimpleFeatureRenderPhase;
+     139: new           #23                 // class ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1e73d7/_cfe983
+     142: dup
+     143: aload         8
+     145: aload         5
+     147: iconst_1
+     148: aload_1
+     149: getfield      #119                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor$v1_21_9:I
+     152: invokespecial #130                // Method ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1e73d7/_cfe983."<init>":(Lcom/mojang/blaze3d/vertex/PoseStack$Pose;LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;ZI)V
+     155: invokevirtual #190                // Method net/minecraft/client/renderer/feature/phase/SimpleFeatureRenderPhase.submit:(Lnet/minecraft/client/renderer/feature/submit/SubmitNode;)V
+     158: goto          214
+     161: aload_3
+     162: iconst_0
+     163: invokeinterface #214,  2          // InterfaceMethod net/minecraft/client/renderer/SubmitNodeCollector.order:(I)Lnet/minecraft/client/renderer/OrderedSubmitNodeCollector;
+     168: astore        8
+     170: aload         8
+     172: instanceof    #22                 // class ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1253fc
+     175: ifeq          214
+     178: aload         8
+     180: checkcast     #22                 // class ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1253fc
+     183: astore        7
+     185: aload         7
+     187: invokeinterface #201,  1          // InterfaceMethod ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1253fc.lunar$getEmoteSubmissions:()Ljava/util/List;
+     192: new           #23                 // class ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1e73d7/_cfe983
+     195: dup
+     196: aload_2
+     197: invokevirtual #125                // Method com/mojang/blaze3d/vertex/PoseStack.last:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+     200: invokevirtual #126                // Method com/mojang/blaze3d/vertex/PoseStack$Pose.copy$v1_20_5:()Lcom/mojang/blaze3d/vertex/PoseStack$Pose;
+     203: aload         5
+     205: invokespecial #129                // Method ML/_d4ca6c/_590f69/_590f69/_590f69/_21aca6/_1e73d7/_cfe983."<init>":(Lcom/mojang/blaze3d/vertex/PoseStack$Pose;LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;)V
+     208: invokeinterface #212,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     213: pop
+     214: aload         4
+     216: invokevirtual #196                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+     219: getstatic     #108                // Field L/util/_e93d3c.MC_VERSION:I
+     222: bipush        39
+     224: if_icmplt     402
+     227: invokestatic  #171                // Method L/_1eb51c/_21aca6/_cfe983/_cfe983/_590f69._18b29a:()Z
+     230: ifeq          402
+     233: aload         5
+     235: invokeinterface #204,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$getEmoteController:()Ljava/lang/Object;
+     240: checkcast     #62                 // class mchorse/emoticons/capabilities/cosmetic/EmoteController
+     243: astore        7
+     245: aload         7
+     247: ifnonnull     251
+     250: return
+     251: invokestatic  #144                // Method ML/_590f69/_bb4487/_13ea87/_c8175c._96f326:()LML/_590f69/_bb4487/_13ea87/_c8175c$_cfe983;
+     254: aload_2
+     255: checkcast     #31                 // class ML/_590f69/_590f69/_d4ca6c/_bb4487
+     258: invokevirtual #146                // Method ML/_590f69/_bb4487/_13ea87/_c8175c$_cfe983._21aca6:(LML/_590f69/_590f69/_d4ca6c/_bb4487;)LML/_590f69/_bb4487/_13ea87/_c8175c$_cfe983;
+     261: invokevirtual #145                // Method ML/_590f69/_bb4487/_13ea87/_c8175c$_cfe983._fbc1a2:()LML/_590f69/_bb4487/_13ea87/_c8175c;
+     264: astore        8
+     266: aload         7
+     268: getfield      #110                // Field mchorse/emoticons/capabilities/cosmetic/EmoteController.animator:Lmchorse/emoticons/api/animation/model/AnimatorEmoticonsController;
+     271: getfield      #109                // Field mchorse/emoticons/api/animation/model/AnimatorEmoticonsController.userConfig:Lmchorse/emoticons/skin_n_bones/api/animation/model/AnimatorConfig;
+     274: getfield      #111                // Field mchorse/emoticons/skin_n_bones/api/animation/model/AnimatorConfig.scale:F
+     277: aload_1
+     278: getfield      #120                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.scale:F
+     281: fmul
+     282: fstore        9
+     284: aload         5
+     286: invokeinterface #203,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$getBodyRot:()F
+     291: fstore        10
+     293: aload         8
+     295: invokevirtual #143                // Method ML/_590f69/_bb4487/_13ea87/_c8175c._b17a3e:()LML/_590f69/_590f69/_d4ca6c/_bb4487;
+     298: astore        11
+     300: aload         11
+     302: invokeinterface #209,  1          // InterfaceMethod ML/_590f69/_590f69/_d4ca6c/_bb4487.bridge$pushPose:()V
+     307: aload         11
+     309: fload         9
+     311: fload         9
+     313: fload         9
+     315: invokeinterface #211,  4          // InterfaceMethod ML/_590f69/_590f69/_d4ca6c/_bb4487.bridge$scale:(FFF)V
+     320: aload         11
+     322: fconst_0
+     323: ldc           #12                 // float 180.0f
+     325: fload         10
+     327: ldc           #12                 // float 180.0f
+     329: fsub
+     330: fsub
+     331: fconst_0
+     332: invokeinterface #210,  4          // InterfaceMethod ML/_590f69/_590f69/_d4ca6c/_bb4487.bridge$rotateDegrees:(FFF)V
+     337: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+     340: invokevirtual #147                // Method L/_cfe983._9259ff:()LL/_02d7ad/_1253fc/_3a14e3;
+     343: invokevirtual #157                // Method L/_02d7ad/_1253fc/_3a14e3._89d63f:()LL/_02d7ad/_1253fc/_1253fc/_590f69;
+     346: aload         5
+     348: invokevirtual #156                // Method L/_02d7ad/_1253fc/_1253fc/_590f69._2f4182:(LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;)Z
+     351: ifeq          381
+     354: getstatic     #106                // Field L/util/_2f4182/_590f69._c06f40:LL/util/_2f4182/_590f69;
+     357: aload         8
+     359: aload         5
+     361: aconst_null
+     362: fconst_0
+     363: aload_1
+     364: getfield      #119                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor$v1_21_9:I
+     367: ifeq          377
+     370: aload_1
+     371: getfield      #119                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor$v1_21_9:I
+     374: goto          378
+     377: iconst_m1
+     378: invokevirtual #172                // Method L/util/_2f4182/_590f69._cfe983:(LML/_590f69/_bb4487/_13ea87/_c8175c;LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;LML/_590f69/_bb4487/_590f69/_590f69;FI)V
+     381: getstatic     #107                // Field L/util/_2f4182/_590f69._0d2b3d:LL/util/_2f4182/_590f69;
+     384: aload         8
+     386: aload         5
+     388: aconst_null
+     389: fload         10
+     391: iconst_m1
+     392: invokevirtual #172                // Method L/util/_2f4182/_590f69._cfe983:(LML/_590f69/_bb4487/_13ea87/_c8175c;LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;LML/_590f69/_bb4487/_590f69/_590f69;FI)V
+     395: aload         11
+     397: invokeinterface #208,  1          // InterfaceMethod ML/_590f69/_590f69/_d4ca6c/_bb4487.bridge$popPose:()V
+     402: return
+
+  private void lunar$customEntityRenderStates(T, S, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_2
+       1: checkcast     #28                 // class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_1253fc
+       4: aload_1
+       5: checkcast     #30                 // class ML/_590f69/_2ce426/_1e73d7
+       8: invokeinterface #202,  2          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_1253fc.bridge$extractRenderStates:(LML/_590f69/_2ce426/_1e73d7;)V
+      13: return
+
+  private void lunar$invisiblePlayerSubmit(S, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.renderer.state.CameraRenderState, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.client.renderer.RenderType);
+    Code:
+       0: aload         6
+       2: ifnull        6
+       5: return
+       6: aload_0
+       7: getfield      #105                // Field model:Lnet/minecraft/client/model/EntityModel_v1_21_9;
+      10: astore        8
+      12: aload         8
+      14: instanceof    #69                 // class net/minecraft/client/model/player/PlayerModel
+      17: ifeq          30
+      20: aload         8
+      22: checkcast     #69                 // class net/minecraft/client/model/player/PlayerModel
+      25: astore        7
+      27: goto          31
+      30: return
+      31: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      34: aload         7
+      36: putfield      #101                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._ba541f:Lnet/minecraft/client/model/player/PlayerModel;
+      39: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      42: aload_0
+      43: aload_1
+      44: invokevirtual #132                // Method getTextureLocation:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)Lnet/minecraft/resources/Identifier;
+      47: invokevirtual #128                // Method ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983.renderType$v1_21_9:(Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/RenderType;
+      50: astore        6
+      52: aload_1
+      53: aload_0
+      54: aload_1
+      55: invokevirtual #133                // Method getWhiteOverlayProgress:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)F
+      58: invokestatic  #189                // Method net/minecraft/client/renderer/entity/LivingEntityRenderer_v1_21_9.getOverlayCoords:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;F)I
+      61: istore        8
+      63: iconst_m1
+      64: istore        9
+      66: iload         9
+      68: aload_0
+      69: aload_1
+      70: invokevirtual #131                // Method getModelTint:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)I
+      73: invokestatic  #192                // Method net/minecraft/util/ARGB.multiply:(II)I
+      76: istore        10
+      78: aload_3
+      79: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      82: aload_1
+      83: aload_2
+      84: aload         6
+      86: aload_1
+      87: getfield      #118                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.lightCoords$v1_21_9:I
+      90: iload         8
+      92: iload         10
+      94: aconst_null
+      95: aload_1
+      96: getfield      #119                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor$v1_21_9:I
+      99: aconst_null
+     100: invokeinterface #216,  11         // InterfaceMethod net/minecraft/client/renderer/SubmitNodeCollector.submitModel$v1_21_9:(Lnet/minecraft/client/model/Model_v1_21_9;Ljava/lang/Object;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/RenderType;IIILnet/minecraft/client/renderer/texture/TextureAtlasSprite;ILnet/minecraft/client/renderer/feature/ModelFeatureRenderer_v1_21_9$CrumblingOverlay;)V
+     105: return
+
+  private void lunar$invisiblePlayerSubmit$V1_21_11(S, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.renderer.state.CameraRenderState, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.client.renderer.rendertype.RenderType);
+    Code:
+       0: aload         6
+       2: ifnull        6
+       5: return
+       6: aload_0
+       7: getfield      #105                // Field model:Lnet/minecraft/client/model/EntityModel_v1_21_9;
+      10: astore        8
+      12: aload         8
+      14: instanceof    #69                 // class net/minecraft/client/model/player/PlayerModel
+      17: ifeq          30
+      20: aload         8
+      22: checkcast     #69                 // class net/minecraft/client/model/player/PlayerModel
+      25: astore        7
+      27: goto          31
+      30: return
+      31: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      34: aload         7
+      36: putfield      #101                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._ba541f:Lnet/minecraft/client/model/player/PlayerModel;
+      39: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      42: aload_0
+      43: aload_1
+      44: invokevirtual #132                // Method getTextureLocation:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)Lnet/minecraft/resources/Identifier;
+      47: invokevirtual #127                // Method ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983.renderType$v1_21_11:(Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+      50: astore        6
+      52: aload_1
+      53: aload_0
+      54: aload_1
+      55: invokevirtual #133                // Method getWhiteOverlayProgress:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)F
+      58: invokestatic  #189                // Method net/minecraft/client/renderer/entity/LivingEntityRenderer_v1_21_9.getOverlayCoords:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;F)I
+      61: istore        8
+      63: iconst_m1
+      64: istore        9
+      66: iload         9
+      68: aload_0
+      69: aload_1
+      70: invokevirtual #131                // Method getModelTint:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)I
+      73: invokestatic  #192                // Method net/minecraft/util/ARGB.multiply:(II)I
+      76: istore        10
+      78: aload_3
+      79: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      82: aload_1
+      83: aload_2
+      84: aload         6
+      86: aload_1
+      87: getfield      #118                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.lightCoords$v1_21_9:I
+      90: iload         8
+      92: iload         10
+      94: aconst_null
+      95: aload_1
+      96: getfield      #119                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor$v1_21_9:I
+      99: aconst_null
+     100: invokeinterface #215,  11         // InterfaceMethod net/minecraft/client/renderer/SubmitNodeCollector.submitModel$v1_21_11:(Lnet/minecraft/client/model/Model_v1_21_9;Ljava/lang/Object;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/rendertype/RenderType;IIILnet/minecraft/client/renderer/texture/TextureAtlasSprite;ILnet/minecraft/client/renderer/feature/ModelFeatureRenderer_v1_21_9$CrumblingOverlay;)V
+     105: return
+
+  private void lunar$invisiblePlayerSubmit(S, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.renderer.state.level.CameraRenderState, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.client.renderer.rendertype.RenderType);
+    Code:
+       0: aload         6
+       2: ifnull        6
+       5: return
+       6: aload_0
+       7: getfield      #105                // Field model:Lnet/minecraft/client/model/EntityModel_v1_21_9;
+      10: astore        8
+      12: aload         8
+      14: instanceof    #69                 // class net/minecraft/client/model/player/PlayerModel
+      17: ifeq          30
+      20: aload         8
+      22: checkcast     #69                 // class net/minecraft/client/model/player/PlayerModel
+      25: astore        7
+      27: goto          31
+      30: return
+      31: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      34: aload         7
+      36: putfield      #101                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._ba541f:Lnet/minecraft/client/model/player/PlayerModel;
+      39: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      42: aload_0
+      43: aload_1
+      44: invokevirtual #132                // Method getTextureLocation:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)Lnet/minecraft/resources/Identifier;
+      47: invokevirtual #127                // Method ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983.renderType$v1_21_11:(Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+      50: astore        6
+      52: aload_1
+      53: aload_0
+      54: aload_1
+      55: invokevirtual #133                // Method getWhiteOverlayProgress:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)F
+      58: invokestatic  #189                // Method net/minecraft/client/renderer/entity/LivingEntityRenderer_v1_21_9.getOverlayCoords:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;F)I
+      61: istore        8
+      63: iconst_m1
+      64: istore        9
+      66: iload         9
+      68: aload_0
+      69: aload_1
+      70: invokevirtual #131                // Method getModelTint:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)I
+      73: invokestatic  #192                // Method net/minecraft/util/ARGB.multiply:(II)I
+      76: istore        10
+      78: aload_3
+      79: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      82: aload_1
+      83: aload_2
+      84: aload         6
+      86: aload_1
+      87: getfield      #118                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.lightCoords$v1_21_9:I
+      90: iload         8
+      92: iload         10
+      94: aconst_null
+      95: aload_1
+      96: getfield      #119                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor$v1_21_9:I
+      99: aconst_null
+     100: invokeinterface #215,  11         // InterfaceMethod net/minecraft/client/renderer/SubmitNodeCollector.submitModel$v1_21_11:(Lnet/minecraft/client/model/Model_v1_21_9;Ljava/lang/Object;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/rendertype/RenderType;IIILnet/minecraft/client/renderer/texture/TextureAtlasSprite;ILnet/minecraft/client/renderer/feature/ModelFeatureRenderer_v1_21_9$CrumblingOverlay;)V
+     105: return
+
+  private void lunar$invisiblePlayerSubmit$v26_2(S, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.SubmitNodeCollector, net.minecraft.client.renderer.state.level.CameraRenderState, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.client.renderer.rendertype.RenderType);
+    Code:
+       0: aload         6
+       2: ifnull        6
+       5: return
+       6: aload_0
+       7: getfield      #105                // Field model:Lnet/minecraft/client/model/EntityModel_v1_21_9;
+      10: astore        8
+      12: aload         8
+      14: instanceof    #69                 // class net/minecraft/client/model/player/PlayerModel
+      17: ifeq          30
+      20: aload         8
+      22: checkcast     #69                 // class net/minecraft/client/model/player/PlayerModel
+      25: astore        7
+      27: goto          31
+      30: return
+      31: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      34: aload         7
+      36: putfield      #101                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._ba541f:Lnet/minecraft/client/model/player/PlayerModel;
+      39: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      42: aload_0
+      43: aload_1
+      44: invokevirtual #132                // Method getTextureLocation:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)Lnet/minecraft/resources/Identifier;
+      47: invokevirtual #127                // Method ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983.renderType$v1_21_11:(Lnet/minecraft/resources/Identifier;)Lnet/minecraft/client/renderer/rendertype/RenderType;
+      50: astore        6
+      52: aload_1
+      53: aload_0
+      54: aload_1
+      55: invokevirtual #133                // Method getWhiteOverlayProgress:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)F
+      58: invokestatic  #189                // Method net/minecraft/client/renderer/entity/LivingEntityRenderer_v1_21_9.getOverlayCoords:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;F)I
+      61: istore        8
+      63: iconst_m1
+      64: istore        9
+      66: iload         9
+      68: aload_0
+      69: aload_1
+      70: invokevirtual #131                // Method getModelTint:(Lnet/minecraft/client/renderer/entity/state/LivingEntityRenderState;)I
+      73: invokestatic  #192                // Method net/minecraft/util/ARGB.multiply:(II)I
+      76: istore        10
+      78: aload_3
+      79: getstatic     #102                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983._97e637:LML/_d4ca6c/_d4ca6c/_bb4487/_590f69/_cfe983;
+      82: aload_1
+      83: aload_2
+      84: aload         6
+      86: aload_1
+      87: getfield      #118                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.lightCoords$v1_21_9:I
+      90: iload         8
+      92: iload         10
+      94: aconst_null
+      95: aload_1
+      96: getfield      #119                // Field net/minecraft/client/renderer/entity/state/LivingEntityRenderState.outlineColor$v1_21_9:I
+      99: aconst_null
+     100: invokeinterface #217,  11         // InterfaceMethod net/minecraft/client/renderer/SubmitNodeCollector.submitModel$v26_2:(Lnet/minecraft/client/model/Model_v1_21_9;Ljava/lang/Object;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/rendertype/RenderType;IIILnet/minecraft/client/renderer/texture/TextureAtlasSprite;ILnet/minecraft/client/renderer/feature/ModelFeatureRenderer_v26_2$CrumblingOverlay;)V
+     105: return
+
+  private static boolean lunar$rewindForceNametagRenderingInFreecam$v26_2(net.minecraft.client.gui.Hud, com.llamalad7.mixinextras.injector.wrapoperation.Operation<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #148                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+       6: invokevirtual #159                // Method L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+       9: astore_2
+      10: aload_2
+      11: invokedynamic #225,  0            // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+      16: invokevirtual #170                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._d4ca6c:(Ljava/util/function/Function;)Z
+      19: ifeq          24
+      22: iconst_0
+      23: ireturn
+      24: aload_1
+      25: iconst_1
+      26: anewarray     #55                 // class java/lang/Object
+      29: dup
+      30: iconst_0
+      31: aload_0
+      32: aastore
+      33: invokeinterface #198,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      38: checkcast     #51                 // class java/lang/Boolean
+      41: invokevirtual #175                // Method java/lang/Boolean.booleanValue:()Z
+      44: ireturn
+
+  private static java.lang.Boolean lambda$lunar$rewindForceNametagRenderingInFreecam$v26_2$0(L._88f3cf._bb4487._00f454._d4ca6c._21aca6);
+    Code:
+       0: aload_0
+       1: invokevirtual #169                // Method L/_88f3cf/_bb4487/_00f454/_d4ca6c/_21aca6._ad4d76:()LL/_88f3cf/_bb4487/_00f454/_d4ca6c/_bb4487/_21aca6;
+       4: invokevirtual #168                // Method L/_88f3cf/_bb4487/_00f454/_d4ca6c/_bb4487/_21aca6._2210c7:()LL/_88f3cf/_bb4487/_00f454/_d4ca6c/_bb4487/_cfe983/_cfe983;
+       7: invokevirtual #167                // Method L/_88f3cf/_bb4487/_00f454/_d4ca6c/_bb4487/_cfe983/_cfe983.isFixedToPlayer:()Z
+      10: ifne          17
+      13: iconst_1
+      14: goto          18
+      17: iconst_0
+      18: invokestatic  #176                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      21: areturn
+
+  private static void lambda$apollo$shouldFlipEntity$0(net.minecraft.world.entity.LivingEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable, L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_2
+       1: checkcast     #35                 // class L/_cfe983/_cfe983/_cfe983/_2ce426
+       4: astore_3
+       5: aload_3
+       6: aload_0
+       7: getfield      #123                // Field net/minecraft/world/entity/LivingEntity.id:I
+      10: invokevirtual #153                // Method L/_cfe983/_cfe983/_cfe983/_2ce426._787dc3:(I)Z
+      13: ifeq          24
+      16: aload_1
+      17: iconst_1
+      18: invokestatic  #176                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      21: invokevirtual #197                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      24: return
+
+  private static java.lang.Float lambda$apollo$shouldShowName$sneaking$1(L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: checkcast     #36                 // class L/_cfe983/_cfe983/_cfe983/_3a14e3
+       4: invokevirtual #154                // Method L/_cfe983/_cfe983/_cfe983/_3a14e3._bffe90:()I
+       7: i2f
+       8: fconst_2
+       9: fdiv
+      10: invokestatic  #180                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      13: areturn
+
+  private static boolean lambda$apollo$shouldShowName$sneaking$0(L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: invokevirtual #150                // Method L/_cfe983/_cfe983/_cfe983.getOptions:()Lcom/lunarclient/apollo/option/Options;
+       4: getstatic     #100                // Field com/lunarclient/apollo/module/serverrule/ServerRuleModule.OVERRIDE_NAMETAG_RENDER_DISTANCE:Lcom/lunarclient/apollo/option/SimpleOption;
+       7: invokeinterface #200,  2          // InterfaceMethod com/lunarclient/apollo/option/Options.get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+      12: checkcast     #51                 // class java/lang/Boolean
+      15: invokevirtual #175                // Method java/lang/Boolean.booleanValue:()Z
+      18: ireturn
+
+  private java.lang.Double lambda$apollo$usePlayerLocationInstead$1(net.minecraft.world.entity.LivingEntity, L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: getfield      #104                // Field entityRenderDispatcher:Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;
+       4: getfield      #116                // Field net/minecraft/client/renderer/entity/EntityRenderDispatcher.camera:Lnet/minecraft/client/Camera;
+       7: getfield      #112                // Field net/minecraft/client/Camera.entity:Lnet/minecraft/world/entity/Entity;
+      10: invokevirtual #193                // Method net/minecraft/world/entity/Entity.position:()Lnet/minecraft/world/phys/Vec3;
+      13: aload_1
+      14: invokevirtual #194                // Method net/minecraft/world/entity/LivingEntity.position:()Lnet/minecraft/world/phys/Vec3;
+      17: invokevirtual #195                // Method net/minecraft/world/phys/Vec3.distanceToSqr:(Lnet/minecraft/world/phys/Vec3;)D
+      20: invokestatic  #178                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      23: areturn
+
+  private static boolean lambda$apollo$usePlayerLocationInstead$0(L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: invokevirtual #150                // Method L/_cfe983/_cfe983/_cfe983.getOptions:()Lcom/lunarclient/apollo/option/Options;
+       4: getstatic     #100                // Field com/lunarclient/apollo/module/serverrule/ServerRuleModule.OVERRIDE_NAMETAG_RENDER_DISTANCE:Lcom/lunarclient/apollo/option/SimpleOption;
+       7: invokeinterface #200,  2          // InterfaceMethod com/lunarclient/apollo/option/Options.get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+      12: checkcast     #51                 // class java/lang/Boolean
+      15: invokevirtual #175                // Method java/lang/Boolean.booleanValue:()Z
+      18: ireturn
+
+  private static java.lang.Boolean lambda$apollo$shownNametagOverride$0(java.util.UUID, L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_1
+       1: checkcast     #34                 // class L/_cfe983/_cfe983/_cfe983/_cb9292
+       4: aload_0
+       5: invokevirtual #151                // Method L/_cfe983/_cfe983/_cfe983/_cb9292._cb9292:(Ljava/util/UUID;)Z
+       8: invokestatic  #176                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      11: areturn
+
+  private static void lambda$apollo$hiddenNametagOverride$0(net.minecraft.world.entity.LivingEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable, L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_2
+       1: checkcast     #34                 // class L/_cfe983/_cfe983/_cfe983/_cb9292
+       4: astore_3
+       5: aload_0
+       6: checkcast     #30                 // class ML/_590f69/_2ce426/_1e73d7
+       9: invokeinterface #207,  1          // InterfaceMethod ML/_590f69/_2ce426/_1e73d7.bridge$getUniqueID:()Ljava/util/UUID;
+      14: astore        4
+      16: aload_3
+      17: aload         4
+      19: invokevirtual #152                // Method L/_cfe983/_cfe983/_cfe983/_cb9292._e62626:(Ljava/util/UUID;)Z
+      22: ifeq          33
+      25: aload_1
+      26: iconst_0
+      27: invokestatic  #176                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      30: invokevirtual #197                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      33: return
+}

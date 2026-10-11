@@ -1,0 +1,81 @@
+  public void send(java.nio.ByteBuffer);
+    Code:
+       0: aload_1
+       1: ifnonnull     14
+       4: new           #52                 // class java/lang/IllegalArgumentException
+       7: dup
+       8: ldc           #13                 // String Cannot send \'null\' data to a WebSocketImpl.
+      10: invokespecial #138                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      13: athrow
+      14: aload_0
+      15: aload_0
+      16: getfield      #107                // Field draft:Lorg/java_websocket/drafts/Draft;
+      19: aload_1
+      20: aload_0
+      21: getfield      #118                // Field role:Lorg/java_websocket/enums/Role;
+      24: getstatic     #130                // Field org/java_websocket/enums/Role.CLIENT:Lorg/java_websocket/enums/Role;
+      27: if_acmpne     34
+      30: iconst_1
+      31: goto          35
+      34: iconst_0
+      35: invokevirtual #205                // Method org/java_websocket/drafts/Draft.createFrames:(Ljava/nio/ByteBuffer;Z)Ljava/util/List;
+      38: invokespecial #195                // Method send:(Ljava/util/Collection;)V
+      41: return
+
+
+  public void send(byte[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #169                // Method java/nio/ByteBuffer.wrap:([B)Ljava/nio/ByteBuffer;
+       5: invokevirtual #194                // Method send:(Ljava/nio/ByteBuffer;)V
+       8: return
+
+
+  private void send(java.util.Collection<org.java_websocket.framing.Framedata>);
+    Code:
+       0: aload_0
+       1: invokevirtual #192                // Method isOpen:()Z
+       4: ifne          15
+       7: new           #86                 // class org/java_websocket/exceptions/WebsocketNotConnectedException
+      10: dup
+      11: invokespecial #222                // Method org/java_websocket/exceptions/WebsocketNotConnectedException."<init>":()V
+      14: athrow
+      15: aload_1
+      16: ifnonnull     27
+      19: new           #52                 // class java/lang/IllegalArgumentException
+      22: dup
+      23: invokespecial #137                // Method java/lang/IllegalArgumentException."<init>":()V
+      26: athrow
+      27: new           #65                 // class java/util/ArrayList
+      30: dup
+      31: invokespecial #171                // Method java/util/ArrayList."<init>":()V
+      34: astore_2
+      35: aload_1
+      36: invokeinterface #230,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      41: astore_3
+      42: aload_3
+      43: invokeinterface #231,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      48: ifeq          92
+      51: aload_3
+      52: invokeinterface #232,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      57: checkcast     #88                 // class org/java_websocket/framing/Framedata
+      60: astore        4
+      62: aload_0
+      63: getfield      #114                // Field log:Lorg/slf4j/Logger;
+      66: ldc           #42                 // String send frame: {}
+      68: aload         4
+      70: invokeinterface #255,  3          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;Ljava/lang/Object;)V
+      75: aload_2
+      76: aload_0
+      77: getfield      #107                // Field draft:Lorg/java_websocket/drafts/Draft;
+      80: aload         4
+      82: invokevirtual #203                // Method org/java_websocket/drafts/Draft.createBinaryFrame:(Lorg/java_websocket/framing/Framedata;)Ljava/nio/ByteBuffer;
+      85: invokevirtual #172                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      88: pop
+      89: goto          42
+      92: aload_0
+      93: aload_2
+      94: invokespecial #198                // Method write:(Ljava/util/List;)V
+      97: return
+

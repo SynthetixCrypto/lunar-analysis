@@ -1,0 +1,259 @@
+public final class com.moonsworth.webosr.input.Modifiers extends java.lang.Enum<com.moonsworth.webosr.input.Modifiers> {
+  public static final com.moonsworth.webosr.input.Modifiers CAPS_LOCK;
+
+  public static final com.moonsworth.webosr.input.Modifiers SHIFT;
+
+  public static final com.moonsworth.webosr.input.Modifiers CONTROL;
+
+  public static final com.moonsworth.webosr.input.Modifiers ALT;
+
+  public static final com.moonsworth.webosr.input.Modifiers SUPER;
+
+  public static final com.moonsworth.webosr.input.Modifiers LEFT_MOUSE_BUTTON;
+
+  public static final com.moonsworth.webosr.input.Modifiers RIGHT_MOUSE_BUTTON;
+
+  public static final com.moonsworth.webosr.input.Modifiers MIDDLE_MOUSE_BUTTON;
+
+  public static final com.moonsworth.webosr.input.Modifiers NUM_LOCK;
+
+  public static final com.moonsworth.webosr.input.Modifiers KEY_PAD;
+
+  public static final com.moonsworth.webosr.input.Modifiers LEFT;
+
+  public static final com.moonsworth.webosr.input.Modifiers RIGHT;
+
+  public static final com.moonsworth.webosr.input.Modifiers REPEAT;
+
+  public static final com.moonsworth.webosr.input.Modifiers SYSTEM_KEY;
+
+  private final int mask;
+
+  private static final com.moonsworth.webosr.input.Modifiers[] $VALUES;
+
+  public static com.moonsworth.webosr.input.Modifiers[] values();
+    Code:
+       0: getstatic     #18                 // Field $VALUES:[Lcom/moonsworth/webosr/input/Modifiers;
+       3: invokevirtual #34                 // Method "[Lcom/moonsworth/webosr/input/Modifiers;".clone:()Ljava/lang/Object;
+       6: checkcast     #15                 // class "[Lcom/moonsworth/webosr/input/Modifiers;"
+       9: areturn
+
+  public static com.moonsworth.webosr.input.Modifiers valueOf(java.lang.String);
+    Code:
+       0: ldc           #16                 // class com/moonsworth/webosr/input/Modifiers
+       2: aload_0
+       3: invokestatic  #39                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #16                 // class com/moonsworth/webosr/input/Modifiers
+       9: areturn
+
+  private com.moonsworth.webosr.input.Modifiers(int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #38                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: aload_0
+       7: iload_3
+       8: putfield      #33                 // Field mask:I
+      11: return
+
+  public static int toMask(com.moonsworth.webosr.input.Modifiers...);
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: aload_0
+       3: astore_2
+       4: aload_2
+       5: arraylength
+       6: istore_3
+       7: iconst_0
+       8: istore        4
+      10: iload         4
+      12: iload_3
+      13: if_icmpge     36
+      16: aload_2
+      17: iload         4
+      19: aaload
+      20: astore        5
+      22: iload_1
+      23: aload         5
+      25: invokevirtual #37                 // Method getMask:()I
+      28: ior
+      29: istore_1
+      30: iinc          4, 1
+      33: goto          10
+      36: iload_1
+      37: ireturn
+
+  public int getMask();
+    Code:
+       0: aload_0
+       1: getfield      #33                 // Field mask:I
+       4: ireturn
+
+  private static com.moonsworth.webosr.input.Modifiers[] $values();
+    Code:
+       0: bipush        14
+       2: anewarray     #16                 // class com/moonsworth/webosr/input/Modifiers
+       5: dup
+       6: iconst_0
+       7: getstatic     #20                 // Field CAPS_LOCK:Lcom/moonsworth/webosr/input/Modifiers;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #30                 // Field SHIFT:Lcom/moonsworth/webosr/input/Modifiers;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #21                 // Field CONTROL:Lcom/moonsworth/webosr/input/Modifiers;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #19                 // Field ALT:Lcom/moonsworth/webosr/input/Modifiers;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #31                 // Field SUPER:Lcom/moonsworth/webosr/input/Modifiers;
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: getstatic     #24                 // Field LEFT_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+      40: aastore
+      41: dup
+      42: bipush        6
+      44: getstatic     #29                 // Field RIGHT_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+      47: aastore
+      48: dup
+      49: bipush        7
+      51: getstatic     #25                 // Field MIDDLE_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+      54: aastore
+      55: dup
+      56: bipush        8
+      58: getstatic     #26                 // Field NUM_LOCK:Lcom/moonsworth/webosr/input/Modifiers;
+      61: aastore
+      62: dup
+      63: bipush        9
+      65: getstatic     #22                 // Field KEY_PAD:Lcom/moonsworth/webosr/input/Modifiers;
+      68: aastore
+      69: dup
+      70: bipush        10
+      72: getstatic     #23                 // Field LEFT:Lcom/moonsworth/webosr/input/Modifiers;
+      75: aastore
+      76: dup
+      77: bipush        11
+      79: getstatic     #28                 // Field RIGHT:Lcom/moonsworth/webosr/input/Modifiers;
+      82: aastore
+      83: dup
+      84: bipush        12
+      86: getstatic     #27                 // Field REPEAT:Lcom/moonsworth/webosr/input/Modifiers;
+      89: aastore
+      90: dup
+      91: bipush        13
+      93: getstatic     #32                 // Field SYSTEM_KEY:Lcom/moonsworth/webosr/input/Modifiers;
+      96: aastore
+      97: areturn
+
+  static {};
+    Code:
+       0: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+       3: dup
+       4: ldc           #2                  // String CAPS_LOCK
+       6: iconst_0
+       7: iconst_1
+       8: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      11: putstatic     #20                 // Field CAPS_LOCK:Lcom/moonsworth/webosr/input/Modifiers;
+      14: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      17: dup
+      18: ldc           #12                 // String SHIFT
+      20: iconst_1
+      21: iconst_2
+      22: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      25: putstatic     #30                 // Field SHIFT:Lcom/moonsworth/webosr/input/Modifiers;
+      28: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      31: dup
+      32: ldc           #3                  // String CONTROL
+      34: iconst_2
+      35: iconst_4
+      36: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      39: putstatic     #21                 // Field CONTROL:Lcom/moonsworth/webosr/input/Modifiers;
+      42: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      45: dup
+      46: ldc           #1                  // String ALT
+      48: iconst_3
+      49: bipush        8
+      51: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      54: putstatic     #19                 // Field ALT:Lcom/moonsworth/webosr/input/Modifiers;
+      57: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      60: dup
+      61: ldc           #13                 // String SUPER
+      63: iconst_4
+      64: bipush        16
+      66: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      69: putstatic     #31                 // Field SUPER:Lcom/moonsworth/webosr/input/Modifiers;
+      72: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      75: dup
+      76: ldc           #6                  // String LEFT_MOUSE_BUTTON
+      78: iconst_5
+      79: bipush        32
+      81: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      84: putstatic     #24                 // Field LEFT_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+      87: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      90: dup
+      91: ldc           #11                 // String RIGHT_MOUSE_BUTTON
+      93: bipush        6
+      95: bipush        64
+      97: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     100: putstatic     #29                 // Field RIGHT_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+     103: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     106: dup
+     107: ldc           #7                  // String MIDDLE_MOUSE_BUTTON
+     109: bipush        7
+     111: sipush        128
+     114: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     117: putstatic     #25                 // Field MIDDLE_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+     120: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     123: dup
+     124: ldc           #8                  // String NUM_LOCK
+     126: bipush        8
+     128: sipush        256
+     131: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     134: putstatic     #26                 // Field NUM_LOCK:Lcom/moonsworth/webosr/input/Modifiers;
+     137: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     140: dup
+     141: ldc           #4                  // String KEY_PAD
+     143: bipush        9
+     145: sipush        512
+     148: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     151: putstatic     #22                 // Field KEY_PAD:Lcom/moonsworth/webosr/input/Modifiers;
+     154: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     157: dup
+     158: ldc           #5                  // String LEFT
+     160: bipush        10
+     162: sipush        1024
+     165: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     168: putstatic     #23                 // Field LEFT:Lcom/moonsworth/webosr/input/Modifiers;
+     171: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     174: dup
+     175: ldc           #10                 // String RIGHT
+     177: bipush        11
+     179: sipush        2048
+     182: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     185: putstatic     #28                 // Field RIGHT:Lcom/moonsworth/webosr/input/Modifiers;
+     188: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     191: dup
+     192: ldc           #9                  // String REPEAT
+     194: bipush        12
+     196: sipush        4096
+     199: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     202: putstatic     #27                 // Field REPEAT:Lcom/moonsworth/webosr/input/Modifiers;
+     205: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     208: dup
+     209: ldc           #14                 // String SYSTEM_KEY
+     211: bipush        13
+     213: sipush        8192
+     216: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     219: putstatic     #32                 // Field SYSTEM_KEY:Lcom/moonsworth/webosr/input/Modifiers;
+     222: invokestatic  #35                 // Method $values:()[Lcom/moonsworth/webosr/input/Modifiers;
+     225: putstatic     #18                 // Field $VALUES:[Lcom/moonsworth/webosr/input/Modifiers;
+     228: return
+}

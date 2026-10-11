@@ -1,0 +1,22 @@
+public final class com.moonsworth.webosr.wrappers.PlatformInterface extends com.moonsworth.webosr.NativeHandle {
+  private com.moonsworth.webosr.wrappers.PlatformInterface(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #5                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void setScrollCallback(java.util.function.BiConsumer<java.lang.Double, java.lang.Double>);
+
+  public void setCursor(com.moonsworth.webosr.input.Mouse$Cursor);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #6                  // Method com/moonsworth/webosr/input/Mouse$Cursor.getValue:()I
+       5: invokevirtual #7                  // Method setCursor0:(I)V
+       8: return
+
+  protected native void destroy();
+
+  private native void setCursor0(int);
+}

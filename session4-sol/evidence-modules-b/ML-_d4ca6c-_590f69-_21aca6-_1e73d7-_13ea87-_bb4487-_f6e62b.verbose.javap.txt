@@ -1,0 +1,1880 @@
+Classfile /C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Downloads-New-folder-lunar-analysis/eeca5643-ee80-46b2-970c-8533c6845d76/scratchpad/modern/com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.class
+  Last modified Dec 31, 1969; size 25224 bytes
+  SHA-256 checksum e5013cfa8072a8271d673fb1f4a91848f0769ee4cfbb53f4268622225e269d94
+public abstract class com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RORCICOHRIOIIIOIOHIIIICRCIHRII.RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHRORRHCHCRICORRRCIRIOCCIRCRII.ORCOOOCHIICOIICCROCRCOOROORIHR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.COICRRHIRCCCHHROIOIRRICRIOCOCO<T extends net.minecraft.world.entity.LivingEntity, M extends net.minecraft.client.model.EntityModel_v1_16_1<T>> extends net.minecraft.client.renderer.entity.EntityRenderer_v1_16_1<T> implements net.minecraft.client.renderer.entity.RenderLayerParent_v1_16_1<T, M>
+  minor version: 0
+  major version: 61
+  flags: (0x0421) ACC_PUBLIC, ACC_SUPER, ACC_ABSTRACT
+  this_class: #23                         // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO
+  super_class: #58                        // net/minecraft/client/renderer/entity/EntityRenderer_v1_16_1
+  interfaces: 1, fields: 2, methods: 30, attributes: 5
+Constant pool:
+    #1 = Integer            1
+    #2 = Integer            8
+    #3 = Integer            9
+    #4 = Integer            10
+    #5 = Integer            25
+    #6 = Integer            2000
+    #7 = Integer            16777215
+    #8 = Float              0.1f
+    #9 = Float              32.0f
+   #10 = Float              64.0f
+   #11 = Float              180.0f
+   #12 = Class              #514          // com/llamalad7/mixinextras/injector/wrapoperation/Operation
+   #13 = Class              #515          // com/llamalad7/mixinextras/sugar/ref/LocalFloatRef
+   #14 = Class              #516          // com/lunarclient/apollo/module/entity/EntityModule
+   #15 = Class              #517          // com/lunarclient/apollo/module/nametag/NametagModule
+   #16 = Class              #518          // com/lunarclient/apollo/module/serverrule/ServerRuleModule
+   #17 = Class              #519          // com/lunarclient/apollo/option/Options
+   #18 = Class              #520          // com/mojang/blaze3d/vertex/PoseStack
+   #19 = Class              #521          // com/mojang/blaze3d/vertex/VertexConsumer
+   #20 = Class              #522          // com/mojang/math/Vector3f
+   #21 = Class              #523          // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHOORCOHRORRIHROOCROOIIHHOOHRI
+   #22 = Class              #524          // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR
+   #23 = Class              #525          // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO
+   #24 = Class              #526          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #25 = Class              #527          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/RORCICOHRIOIIIOIOHIIIICRCIHRII
+   #26 = Class              #528          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII
+   #27 = Class              #529          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+   #28 = Class              #530          // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #29 = Class              #531          // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #30 = Class              #532          // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+   #31 = Class              #533          // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+   #32 = Class              #534          // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+   #33 = Class              #535          // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+   #34 = Class              #536          // com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI
+   #35 = Class              #537          // com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC
+   #36 = Class              #538          // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+   #37 = Class              #539          // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH
+   #38 = Class              #540          // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+   #39 = Class              #541          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #40 = Class              #542          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #41 = Class              #543          // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR
+   #42 = Class              #544          // com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO
+   #43 = Class              #569          // java/lang/Boolean
+   #44 = Class              #570          // java/lang/Double
+   #45 = Class              #571          // java/lang/Float
+   #46 = Class              #572          // java/lang/Object
+   #47 = Class              #573          // java/lang/invoke/LambdaMetafactory
+   #48 = Class              #574          // java/lang/invoke/MethodHandles
+   #49 = Class              #575          // java/lang/invoke/MethodHandles$Lookup
+   #50 = Class              #576          // java/util/Iterator
+   #51 = Class              #577          // java/util/List
+   #52 = Class              #578          // java/util/Optional
+   #53 = Class              #607          // net/minecraft/client/Camera
+   #54 = Class              #608          // net/minecraft/client/Minecraft
+   #55 = Class              #609          // net/minecraft/client/model/EntityModel_v1_16_1
+   #56 = Class              #610          // net/minecraft/client/renderer/MultiBufferSource
+   #57 = Class              #611          // net/minecraft/client/renderer/entity/EntityRenderDispatcher
+   #58 = Class              #612          // net/minecraft/client/renderer/entity/EntityRenderer_v1_16_1
+   #59 = Class              #613          // net/minecraft/client/renderer/entity/RenderLayerParent_v1_16_1
+   #60 = Class              #614          // net/minecraft/client/renderer/entity/layers/RenderLayer_v1_16_1
+   #61 = Class              #615          // net/minecraft/client/renderer/texture/OverlayTexture
+   #62 = Class              #616          // net/minecraft/world/entity/Entity
+   #63 = Class              #617          // net/minecraft/world/entity/LivingEntity
+   #64 = Class              #618          // net/minecraft/world/entity/player/Player
+   #65 = Class              #619          // net/minecraft/world/phys/Vec3
+   #66 = Class              #620          // net/minecraft/world/scores/Team
+   #67 = Class              #621          // net/minecraft/world/scores/Team$Visibility
+   #68 = Class              #625          // org/spongepowered/asm/mixin/injection/At
+   #69 = Class              #626          // org/spongepowered/asm/mixin/injection/At$Shift
+   #70 = Class              #627          // org/spongepowered/asm/mixin/injection/callback/CallbackInfo
+   #71 = Class              #628          // org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable
+   #72 = Fieldref           #16.#218      // com/lunarclient/apollo/module/serverrule/ServerRuleModule.OVERRIDE_NAMETAG_RENDER_DISTANCE:Lcom/lunarclient/apollo/option/SimpleOption;
+   #73 = Fieldref           #20.#225      // com/mojang/math/Vector3f.ZP:Lcom/mojang/math/Vector3f;
+   #74 = Fieldref           #22.#203      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.CIORHHRHICOHRRHOCRHHICHIOIHIHI:Z
+   #75 = Fieldref           #23.#274      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.layers:Ljava/util/List;
+   #76 = Fieldref           #23.#277      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.model:Lnet/minecraft/client/model/EntityModel_v1_16_1;
+   #77 = Fieldref           #41.#211      // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+   #78 = Fieldref           #53.#240      // net/minecraft/client/Camera.entity:Lnet/minecraft/world/entity/Entity;
+   #79 = Fieldref           #54.#283      // net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+   #80 = Fieldref           #57.#234      // net/minecraft/client/renderer/entity/EntityRenderDispatcher.camera:Lnet/minecraft/client/Camera;
+   #81 = Fieldref           #63.#236      // net/minecraft/world/entity/LivingEntity.deathTime:I
+   #82 = Fieldref           #63.#256      // net/minecraft/world/entity/LivingEntity.hurtTime:I
+   #83 = Fieldref           #67.#198      // net/minecraft/world/scores/Team$Visibility.ALWAYS:Lnet/minecraft/world/scores/Team$Visibility;
+   #84 = Methodref          #18.#278      // com/mojang/blaze3d/vertex/PoseStack.mulPose$v1_16_1:(Lcom/mojang/math/Quaternion;)V
+   #85 = Methodref          #18.#284      // com/mojang/blaze3d/vertex/PoseStack.popPose:()V
+   #86 = Methodref          #18.#291      // com/mojang/blaze3d/vertex/PoseStack.scale:(FFF)V
+   #87 = Methodref          #18.#296      // com/mojang/blaze3d/vertex/PoseStack.translate:(DDD)V
+   #88 = Methodref          #20.#290      // com/mojang/math/Vector3f.rotationDegrees:(F)Lcom/mojang/math/Quaternion;
+   #89 = Methodref          #21.#209      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHOORCOHRORRIHROOCROOIIHHOOHRI.IIOHIOCOIOROIROICCHRROHRRICHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+   #90 = Methodref          #23.#251      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.getRenderType:(Lnet/minecraft/world/entity/LivingEntity;ZZZ)Lnet/minecraft/client/renderer/RenderType;
+   #91 = Methodref          #23.#254      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.getWhiteOverlayProgress:(Lnet/minecraft/world/entity/LivingEntity;F)F
+   #92 = Methodref          #23.#258      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.isBodyVisible:(Lnet/minecraft/world/entity/LivingEntity;)Z
+   #93 = Methodref          #23.#262      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$hiddenNametagOverride$0:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+   #94 = Methodref          #23.#263      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$setupRotations$0:(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+   #95 = Methodref          #23.#264      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldFlipEntity$0:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+   #96 = Methodref          #23.#265      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$sneaking$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+   #97 = Methodref          #23.#266      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$sneaking$1:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+   #98 = Methodref          #23.#267      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$standing$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+   #99 = Methodref          #23.#268      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$standing$1:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  #100 = Methodref          #23.#269      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shownNametagOverride$0:(Ljava/util/UUID;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+  #101 = Methodref          #23.#270      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #102 = Methodref          #23.#271      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$1:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+  #103 = Methodref          #23.#272      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$2:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/lang/Double;
+  #104 = Methodref          #23.#273      // com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$lunar$changeEntityScale$0:(Lnet/minecraft/world/entity/LivingEntity;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #105 = Methodref          #28.#217      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIRRCHIHRRIHHICCCOCIHCCROIOHH:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+  #106 = Methodref          #28.#222      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #107 = Methodref          #29.#250      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.getOptions:()Lcom/lunarclient/apollo/option/Options;
+  #108 = Methodref          #30.#205      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOIOIRCCICRCCIHCCRHRCIHROHCCI:(Ljava/util/UUID;)Z
+  #109 = Methodref          #30.#212      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOIOIRCCICRCCIHCCRHRCIHROHCCI.OCCCIRIHIRCOCOCORIHHHRCHRIOCCC:(Ljava/util/UUID;)Z
+  #110 = Methodref          #31.#221      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR:(Ljava/util/UUID;)Z
+  #111 = Methodref          #32.#210      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/RRCHCHCCORIROIOCHIIIHCCIOCHCOH.IRCIIHCCHOOCRCHCOCOCIROROOCRRI:()I
+  #112 = Methodref          #33.#214      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+  #113 = Methodref          #34.#206      // com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI.HOCCIHORRRRCCOHHOIOHHOIIOCRIIH:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #114 = Methodref          #34.#220      // com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI.RIHCIOORHCIRHORRCOCOCOOIHCOIOO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #115 = Methodref          #35.#201      // com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC.CHOOCRRRCRHRCOOOCIICORHHOIROOR:(F)I
+  #116 = Methodref          #37.#197      // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OIHRRCOOHRHIHICHRICIRIOCROHOCC;F)V
+  #117 = Methodref          #37.#252      // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH.getScale:()F
+  #118 = Methodref          #38.#204      // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Supplier;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #119 = Methodref          #38.#223      // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.ROCHIHIIIICIRRIOCCHRHOICORHOII:()Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #120 = Methodref          #39.#215      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH.OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Z
+  #121 = Methodref          #39.#259      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH.isEnabled:()Z
+  #122 = Methodref          #40.#208      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH.IHIOOHIICOCCRROIRIRHOIHOHIIIRO:()Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+  #123 = Methodref          #40.#224      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;)Z
+  #124 = Methodref          #40.#259      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH.isEnabled:()Z
+  #125 = Methodref          #41.#207      // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #126 = Methodref          #41.#216      // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #127 = Methodref          #42.#199      // com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO.CCRRICRIOOORRCHHIRICIRHOCOICIO:(I)F
+  #128 = Methodref          #42.#200      // com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO.CHHIIOHIRIHCHHIRCOCOOCHRIRIHIH:(I)F
+  #129 = Methodref          #42.#202      // com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO.CIOIHRRRHRCICOCOOROIHIROROIHHH:(I)F
+  #130 = Methodref          #42.#213      // com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO.OHIHHIHCOIRHORICICIHIHIHRRCOOO:(I)F
+  #131 = Methodref          #43.#231      // java/lang/Boolean.booleanValue:()Z
+  #132 = Methodref          #43.#301      // java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+  #133 = Methodref          #44.#239      // java/lang/Double.doubleValue:()D
+  #134 = Methodref          #44.#299      // java/lang/Double.valueOf:(D)Ljava/lang/Double;
+  #135 = Methodref          #45.#242      // java/lang/Float.floatValue:()F
+  #136 = Methodref          #45.#300      // java/lang/Float.valueOf:(F)Ljava/lang/Float;
+  #137 = Methodref          #47.#276      // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #138 = Methodref          #52.#241      // java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+  #139 = Methodref          #52.#257      // java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+  #140 = Methodref          #52.#275      // java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+  #141 = Methodref          #52.#280      // java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+  #142 = Methodref          #52.#281      // java/util/Optional.orElseGet:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+  #143 = Methodref          #54.#249      // net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+  #144 = Methodref          #54.#294      // net/minecraft/client/Minecraft.shouldEntityAppearGlowing:(Lnet/minecraft/world/entity/Entity;)Z
+  #145 = Methodref          #55.#288      // net/minecraft/client/model/EntityModel_v1_16_1.renderToBuffer$v1_16_1:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V
+  #146 = Methodref          #55.#289      // net/minecraft/client/model/EntityModel_v1_16_1.renderToBuffer$v1_21_0:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)V
+  #147 = Methodref          #57.#237      // net/minecraft/client/renderer/entity/EntityRenderDispatcher.distanceToSqr:(Lnet/minecraft/world/entity/Entity;)D
+  #148 = Methodref          #58.#196      // net/minecraft/client/renderer/entity/EntityRenderer_v1_16_1."<init>":()V
+  #149 = Methodref          #58.#287      // net/minecraft/client/renderer/entity/EntityRenderer_v1_16_1.render:(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+  #150 = Methodref          #60.#286      // net/minecraft/client/renderer/entity/layers/RenderLayer_v1_16_1.render:(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V
+  #151 = Methodref          #61.#282      // net/minecraft/client/renderer/texture/OverlayTexture.pack:(II)I
+  #152 = Methodref          #61.#297      // net/minecraft/client/renderer/texture/OverlayTexture.u:(F)I
+  #153 = Methodref          #61.#298      // net/minecraft/client/renderer/texture/OverlayTexture.v:(Z)I
+  #154 = Methodref          #62.#285      // net/minecraft/world/entity/Entity.position:()Lnet/minecraft/world/phys/Vec3;
+  #155 = Methodref          #63.#247      // net/minecraft/world/entity/LivingEntity.getBbHeight:()F
+  #156 = Methodref          #63.#253      // net/minecraft/world/entity/LivingEntity.getUUID:()Ljava/util/UUID;
+  #157 = Methodref          #63.#260      // net/minecraft/world/entity/LivingEntity.isInvisibleTo:(Lnet/minecraft/world/entity/player/Player;)Z
+  #158 = Methodref          #65.#238      // net/minecraft/world/phys/Vec3.distanceToSqr:(Lnet/minecraft/world/phys/Vec3;)D
+  #159 = Methodref          #70.#235      // org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+  #160 = Methodref          #71.#293      // org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+  #161 = InterfaceMethodref #12.#233      // com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+  #162 = InterfaceMethodref #13.#243      // com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.get:()F
+  #163 = InterfaceMethodref #13.#292      // com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.set:(F)V
+  #164 = InterfaceMethodref #17.#244      // com/lunarclient/apollo/option/Options.get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+  #165 = InterfaceMethodref #24.#219      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.RHOHCRHCORROIOCIHRRORIORIOOCIO:()Z
+  #166 = InterfaceMethodref #26.#232      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII.bridge$getUniqueID:()Ljava/util/UUID;
+  #167 = InterfaceMethodref #50.#255      // java/util/Iterator.hasNext:()Z
+  #168 = InterfaceMethodref #50.#279      // java/util/Iterator.next:()Ljava/lang/Object;
+  #169 = InterfaceMethodref #51.#261      // java/util/List.iterator:()Ljava/util/Iterator;
+  #170 = InterfaceMethodref #56.#248      // net/minecraft/client/renderer/MultiBufferSource.getBuffer$v1_16_1:(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+  #171 = InvokeDynamic      #0:#227       // #0:accept:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)Ljava/util/function/Consumer;
+  #172 = InvokeDynamic      #1:#229       // #1:apply:(Ljava/util/UUID;)Ljava/util/function/Function;
+  #173 = InvokeDynamic      #2:#295       // #2:test:()Ljava/util/function/Predicate;
+  #174 = InvokeDynamic      #3:#230       // #3:apply:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Function;
+  #175 = InvokeDynamic      #4:#245       // #4:get:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Supplier;
+  #176 = InvokeDynamic      #5:#295       // #5:test:()Ljava/util/function/Predicate;
+  #177 = InvokeDynamic      #6:#228       // #6:apply:()Ljava/util/function/Function;
+  #178 = InvokeDynamic      #7:#295       // #7:test:()Ljava/util/function/Predicate;
+  #179 = InvokeDynamic      #8:#228       // #8:apply:()Ljava/util/function/Function;
+  #180 = InvokeDynamic      #9:#227       // #9:accept:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)Ljava/util/function/Consumer;
+  #181 = InvokeDynamic      #10:#226      // #10:accept:(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;)Ljava/util/function/Consumer;
+  #182 = InvokeDynamic      #11:#246      // #11:get:(Lnet/minecraft/world/entity/LivingEntity;)Ljava/util/function/Supplier;
+  #183 = MethodHandle       6:#93         // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$hiddenNametagOverride$0:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #184 = MethodHandle       6:#94         // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$setupRotations$0:(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #185 = MethodHandle       6:#95         // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldFlipEntity$0:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #186 = MethodHandle       6:#96         // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$sneaking$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #187 = MethodHandle       6:#97         // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$sneaking$1:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  #188 = MethodHandle       6:#98         // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$standing$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #189 = MethodHandle       6:#99         // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$standing$1:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  #190 = MethodHandle       6:#100        // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shownNametagOverride$0:(Ljava/util/UUID;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+  #191 = MethodHandle       6:#101        // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #192 = MethodHandle       6:#102        // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$1:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+  #193 = MethodHandle       6:#103        // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$2:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/lang/Double;
+  #194 = MethodHandle       6:#104        // REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$lunar$changeEntityScale$0:(Lnet/minecraft/world/entity/LivingEntity;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #195 = MethodHandle       6:#137        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #196 = NameAndType        #416:#336     // "<init>":()V
+  #197 = NameAndType        #416:#355     // "<init>":(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OIHRRCOOHRHIHICHRICIRIOCROHOCC;F)V
+  #198 = NameAndType        #418:#459     // ALWAYS:Lnet/minecraft/world/scores/Team$Visibility;
+  #199 = NameAndType        #421:#346     // CCRRICRIOOORRCHHIRICIRHOCOICIO:(I)F
+  #200 = NameAndType        #422:#346     // CHHIIOHIRIHCHHIRCOCOOCHRIRIHIH:(I)F
+  #201 = NameAndType        #423:#341     // CHOOCRRRCRHRCOOOCIICORHHOIROOR:(F)I
+  #202 = NameAndType        #424:#346     // CIOIHRRRHRCICOCOOROIHIROROIHHH:(I)F
+  #203 = NameAndType        #425:#493     // CIORHHRHICOHRRHOCRHHICHIOIHIHI:Z
+  #204 = NameAndType        #426:#362     // COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Supplier;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #205 = NameAndType        #427:#368     // COOIOIRCCICRCCIHCCRHRCIHROHCCI:(Ljava/util/UUID;)Z
+  #206 = NameAndType        #430:#327     // HOCCIHORRRRCCOHHOIOHHOIIOCRIIH:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #207 = NameAndType        #432:#319     // ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #208 = NameAndType        #433:#323     // IHIOOHIICOCCRROIRIRHOIHOHIIIRO:()Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+  #209 = NameAndType        #434:#318     // IIOHIOCOIOROIROICCHRROHRRICHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #210 = NameAndType        #436:#316     // IRCIIHCCHOOCRCHCOCOCIROROOCRRI:()I
+  #211 = NameAndType        #470:#431     // MC_VERSION:I
+  #212 = NameAndType        #471:#368     // OCCCIRIHIRCOCOCORIHHHRCHRIOCCC:(Ljava/util/UUID;)Z
+  #213 = NameAndType        #472:#346     // OHIHHIHCOIRHORICICIHIHIHRRCOOO:(I)F
+  #214 = NameAndType        #473:#361     // OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+  #215 = NameAndType        #474:#354     // OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Z
+  #216 = NameAndType        #475:#321     // OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #217 = NameAndType        #476:#322     // OOIRRCHIHRRIHHICCCOCIHCCROIOHH:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+  #218 = NameAndType        #477:#442     // OVERRIDE_NAMETAG_RENDER_DISTANCE:Lcom/lunarclient/apollo/option/SimpleOption;
+  #219 = NameAndType        #478:#337     // RHOHCRHCORROIOCIHRRORIORIOOCIO:()Z
+  #220 = NameAndType        #479:#326     // RIHCIOORHCIRHORRCOCOCOOIHCOIOO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #221 = NameAndType        #480:#368     // RIHHCHHHROOHOOIOIIRIOOCRHHOOOR:(Ljava/util/UUID;)Z
+  #222 = NameAndType        #481:#320     // ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #223 = NameAndType        #482:#325     // ROCHIHIIIICIRRIOCCHRHOICORHOII:()Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #224 = NameAndType        #483:#353     // RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;)Z
+  #225 = NameAndType        #494:#443     // ZP:Lcom/mojang/math/Vector3f;
+  #226 = NameAndType        #495:#391     // accept:(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;)Ljava/util/function/Consumer;
+  #227 = NameAndType        #495:#394     // accept:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)Ljava/util/function/Consumer;
+  #228 = NameAndType        #504:#332     // apply:()Ljava/util/function/Function;
+  #229 = NameAndType        #504:#367     // apply:(Ljava/util/UUID;)Ljava/util/function/Function;
+  #230 = NameAndType        #504:#379     // apply:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Function;
+  #231 = NameAndType        #508:#337     // booleanValue:()Z
+  #232 = NameAndType        #509:#331     // bridge$getUniqueID:()Ljava/util/UUID;
+  #233 = NameAndType        #510:#414     // call:([Ljava/lang/Object;)Ljava/lang/Object;
+  #234 = NameAndType        #511:#449     // camera:Lnet/minecraft/client/Camera;
+  #235 = NameAndType        #512:#336     // cancel:()V
+  #236 = NameAndType        #546:#431     // deathTime:I
+  #237 = NameAndType        #547:#382     // distanceToSqr:(Lnet/minecraft/world/entity/Entity;)D
+  #238 = NameAndType        #547:#400     // distanceToSqr:(Lnet/minecraft/world/phys/Vec3;)D
+  #239 = NameAndType        #548:#314     // doubleValue:()D
+  #240 = NameAndType        #549:#457     // entity:Lnet/minecraft/world/entity/Entity;
+  #241 = NameAndType        #550:#372     // filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+  #242 = NameAndType        #551:#315     // floatValue:()F
+  #243 = NameAndType        #552:#315     // get:()F
+  #244 = NameAndType        #552:#348     // get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+  #245 = NameAndType        #552:#380     // get:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Supplier;
+  #246 = NameAndType        #552:#386     // get:(Lnet/minecraft/world/entity/LivingEntity;)Ljava/util/function/Supplier;
+  #247 = NameAndType        #553:#315     // getBbHeight:()F
+  #248 = NameAndType        #554:#376     // getBuffer$v1_16_1:(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+  #249 = NameAndType        #555:#334     // getInstance:()Lnet/minecraft/client/Minecraft;
+  #250 = NameAndType        #556:#317     // getOptions:()Lcom/lunarclient/apollo/option/Options;
+  #251 = NameAndType        #557:#398     // getRenderType:(Lnet/minecraft/world/entity/LivingEntity;ZZZ)Lnet/minecraft/client/renderer/RenderType;
+  #252 = NameAndType        #558:#315     // getScale:()F
+  #253 = NameAndType        #559:#331     // getUUID:()Ljava/util/UUID;
+  #254 = NameAndType        #560:#388     // getWhiteOverlayProgress:(Lnet/minecraft/world/entity/LivingEntity;F)F
+  #255 = NameAndType        #561:#337     // hasNext:()Z
+  #256 = NameAndType        #562:#431     // hurtTime:I
+  #257 = NameAndType        #563:#370     // ifPresent:(Ljava/util/function/Consumer;)V
+  #258 = NameAndType        #564:#387     // isBodyVisible:(Lnet/minecraft/world/entity/LivingEntity;)Z
+  #259 = NameAndType        #565:#337     // isEnabled:()Z
+  #260 = NameAndType        #567:#399     // isInvisibleTo:(Lnet/minecraft/world/entity/player/Player;)Z
+  #261 = NameAndType        #568:#330     // iterator:()Ljava/util/Iterator;
+  #262 = NameAndType        #579:#396     // lambda$apollo$hiddenNametagOverride$0:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #263 = NameAndType        #580:#393     // lambda$apollo$setupRotations$0:(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #264 = NameAndType        #581:#396     // lambda$apollo$shouldFlipEntity$0:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #265 = NameAndType        #582:#360     // lambda$apollo$shouldShowName$sneaking$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #266 = NameAndType        #583:#358     // lambda$apollo$shouldShowName$sneaking$1:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  #267 = NameAndType        #584:#360     // lambda$apollo$shouldShowName$standing$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #268 = NameAndType        #585:#358     // lambda$apollo$shouldShowName$standing$1:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  #269 = NameAndType        #586:#369     // lambda$apollo$shownNametagOverride$0:(Ljava/util/UUID;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+  #270 = NameAndType        #587:#360     // lambda$apollo$usePlayerLocationInstead$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #271 = NameAndType        #588:#381     // lambda$apollo$usePlayerLocationInstead$1:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+  #272 = NameAndType        #589:#378     // lambda$apollo$usePlayerLocationInstead$2:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/lang/Double;
+  #273 = NameAndType        #590:#385     // lambda$lunar$changeEntityScale$0:(Lnet/minecraft/world/entity/LivingEntity;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #274 = NameAndType        #591:#446     // layers:Ljava/util/List;
+  #275 = NameAndType        #600:#371     // map:(Ljava/util/function/Function;)Ljava/util/Optional;
+  #276 = NameAndType        #602:#366     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #277 = NameAndType        #605:#450     // model:Lnet/minecraft/client/model/EntityModel_v1_16_1;
+  #278 = NameAndType        #606:#352     // mulPose$v1_16_1:(Lcom/mojang/math/Quaternion;)V
+  #279 = NameAndType        #622:#329     // next:()Ljava/lang/Object;
+  #280 = NameAndType        #623:#363     // orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+  #281 = NameAndType        #624:#373     // orElseGet:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+  #282 = NameAndType        #629:#347     // pack:(II)I
+  #283 = NameAndType        #630:#453     // player:Lnet/minecraft/client/player/LocalPlayer;
+  #284 = NameAndType        #631:#336     // popPose:()V
+  #285 = NameAndType        #632:#335     // position:()Lnet/minecraft/world/phys/Vec3;
+  #286 = NameAndType        #634:#351     // render:(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V
+  #287 = NameAndType        #634:#384     // render:(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+  #288 = NameAndType        #636:#349     // renderToBuffer$v1_16_1:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V
+  #289 = NameAndType        #637:#350     // renderToBuffer$v1_21_0:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)V
+  #290 = NameAndType        #639:#342     // rotationDegrees:(F)Lcom/mojang/math/Quaternion;
+  #291 = NameAndType        #640:#345     // scale:(FFF)V
+  #292 = NameAndType        #641:#344     // set:(F)V
+  #293 = NameAndType        #642:#364     // setReturnValue:(Ljava/lang/Object;)V
+  #294 = NameAndType        #645:#383     // shouldEntityAppearGlowing:(Lnet/minecraft/world/entity/Entity;)Z
+  #295 = NameAndType        #648:#333     // test:()Ljava/util/function/Predicate;
+  #296 = NameAndType        #649:#339     // translate:(DDD)V
+  #297 = NameAndType        #650:#341     // u:(F)I
+  #298 = NameAndType        #651:#412     // v:(Z)I
+  #299 = NameAndType        #653:#338     // valueOf:(D)Ljava/lang/Double;
+  #300 = NameAndType        #653:#343     // valueOf:(F)Ljava/lang/Float;
+  #301 = NameAndType        #653:#413     // valueOf:(Z)Ljava/lang/Boolean;
+  #302 = MethodType         #324          //  ()Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #303 = MethodType         #328          //  ()Ljava/lang/Double;
+  #304 = MethodType         #329          //  ()Ljava/lang/Object;
+  #305 = MethodType         #356          //  (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+  #306 = MethodType         #357          //  (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+  #307 = MethodType         #358          //  (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  #308 = MethodType         #359          //  (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #309 = MethodType         #360          //  (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #310 = MethodType         #363          //  (Ljava/lang/Object;)Ljava/lang/Object;
+  #311 = MethodType         #364          //  (Ljava/lang/Object;)V
+  #312 = MethodType         #365          //  (Ljava/lang/Object;)Z
+  #313 = Utf8               $$11
+  #314 = Utf8               ()D
+  #315 = Utf8               ()F
+  #316 = Utf8               ()I
+  #317 = Utf8               ()Lcom/lunarclient/apollo/option/Options;
+  #318 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #319 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #320 = Utf8               ()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #321 = Utf8               ()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #322 = Utf8               ()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+  #323 = Utf8               ()Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+  #324 = Utf8               ()Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #325 = Utf8               ()Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #326 = Utf8               ()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #327 = Utf8               ()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #328 = Utf8               ()Ljava/lang/Double;
+  #329 = Utf8               ()Ljava/lang/Object;
+  #330 = Utf8               ()Ljava/util/Iterator;
+  #331 = Utf8               ()Ljava/util/UUID;
+  #332 = Utf8               ()Ljava/util/function/Function;
+  #333 = Utf8               ()Ljava/util/function/Predicate;
+  #334 = Utf8               ()Lnet/minecraft/client/Minecraft;
+  #335 = Utf8               ()Lnet/minecraft/world/phys/Vec3;
+  #336 = Utf8               ()V
+  #337 = Utf8               ()Z
+  #338 = Utf8               (D)Ljava/lang/Double;
+  #339 = Utf8               (DDD)V
+  #340 = Utf8               (F)F
+  #341 = Utf8               (F)I
+  #342 = Utf8               (F)Lcom/mojang/math/Quaternion;
+  #343 = Utf8               (F)Ljava/lang/Float;
+  #344 = Utf8               (F)V
+  #345 = Utf8               (FFF)V
+  #346 = Utf8               (I)F
+  #347 = Utf8               (II)I
+  #348 = Utf8               (Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+  #349 = Utf8               (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V
+  #350 = Utf8               (Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)V
+  #351 = Utf8               (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V
+  #352 = Utf8               (Lcom/mojang/math/Quaternion;)V
+  #353 = Utf8               (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;)Z
+  #354 = Utf8               (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Z
+  #355 = Utf8               (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OIHRRCOOHRHIHICHRICIRIOCROHOCC;F)V
+  #356 = Utf8               (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+  #357 = Utf8               (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+  #358 = Utf8               (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  #359 = Utf8               (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #360 = Utf8               (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  #361 = Utf8               (Ljava/lang/Class;)Ljava/util/Optional;
+  #362 = Utf8               (Ljava/lang/Class;Ljava/util/function/Supplier;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #363 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #364 = Utf8               (Ljava/lang/Object;)V
+  #365 = Utf8               (Ljava/lang/Object;)Z
+  #366 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #367 = Utf8               (Ljava/util/UUID;)Ljava/util/function/Function;
+  #368 = Utf8               (Ljava/util/UUID;)Z
+  #369 = Utf8               (Ljava/util/UUID;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+  #370 = Utf8               (Ljava/util/function/Consumer;)V
+  #371 = Utf8               (Ljava/util/function/Function;)Ljava/util/Optional;
+  #372 = Utf8               (Ljava/util/function/Predicate;)Ljava/util/Optional;
+  #373 = Utf8               (Ljava/util/function/Supplier;)Ljava/lang/Object;
+  #374 = Utf8               (Lnet/minecraft/client/model/EntityModel_v1_16_1;Lnet/minecraft/world/entity/Entity;FFFFFLcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)Z
+  #375 = Utf8               (Lnet/minecraft/client/model/EntityModel_v1_16_1;Lnet/minecraft/world/entity/Entity;FFFLcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)Z
+  #376 = Utf8               (Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+  #377 = Utf8               (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)D
+  #378 = Utf8               (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/lang/Double;
+  #379 = Utf8               (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Function;
+  #380 = Utf8               (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Supplier;
+  #381 = Utf8               (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+  #382 = Utf8               (Lnet/minecraft/world/entity/Entity;)D
+  #383 = Utf8               (Lnet/minecraft/world/entity/Entity;)Z
+  #384 = Utf8               (Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+  #385 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #386 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;)Ljava/util/function/Supplier;
+  #387 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;)Z
+  #388 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;F)F
+  #389 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+  #390 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)V
+  #391 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;)Ljava/util/function/Consumer;
+  #392 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;FFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+  #393 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #394 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)Ljava/util/function/Consumer;
+  #395 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+  #396 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  #397 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V
+  #398 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;ZZZ)Lnet/minecraft/client/renderer/RenderType;
+  #399 = Utf8               (Lnet/minecraft/world/entity/player/Player;)Z
+  #400 = Utf8               (Lnet/minecraft/world/phys/Vec3;)D
+  #401 = Utf8               (Lnet/minecraft/world/scores/Team;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/scores/Team$Visibility;
+  #402 = Utf8               (Lnet/minecraft/world/scores/Team;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Lnet/minecraft/world/scores/Team$Visibility;>;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/scores/Team$Visibility;
+  #403 = Utf8               (TM;Lnet/minecraft/world/entity/Entity;FFFFFLcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)Z
+  #404 = Utf8               (TM;Lnet/minecraft/world/entity/Entity;FFFLcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)Z
+  #405 = Utf8               (TT;)Z
+  #406 = Utf8               (TT;F)F
+  #407 = Utf8               (TT;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+  #408 = Utf8               (TT;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)V
+  #409 = Utf8               (TT;Lcom/mojang/blaze3d/vertex/PoseStack;FFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+  #410 = Utf8               (TT;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V
+  #411 = Utf8               (TT;ZZZ)Lnet/minecraft/client/renderer/RenderType;
+  #412 = Utf8               (Z)I
+  #413 = Utf8               (Z)Ljava/lang/Boolean;
+  #414 = Utf8               ([Ljava/lang/Object;)Ljava/lang/Object;
+  #415 = Utf8               <T:Lnet/minecraft/world/entity/LivingEntity;M:Lnet/minecraft/client/model/EntityModel_v1_16_1<TT;>;>Lnet/minecraft/client/renderer/entity/EntityRenderer_v1_16_1<TT;>;Lnet/minecraft/client/renderer/entity/RenderLayerParent_v1_16_1<TT;TM;>;
+  #416 = Utf8               <init>
+  #417 = Utf8               AFTER
+  #418 = Utf8               ALWAYS
+  #419 = Utf8               BEFORE
+  #420 = Utf8               BootstrapMethods
+  #421 = Utf8               CCRRICRIOOORRCHHIRICIRHOCOICIO
+  #422 = Utf8               CHHIIOHIRIHCHHIRCOCOOCHRIRIHIH
+  #423 = Utf8               CHOOCRRRCRHRCOOOCIICORHHOIROOR
+  #424 = Utf8               CIOIHRRRHRCICOCOOROIHIROROIHHH
+  #425 = Utf8               CIORHHRHICOHRRHOCRHHICHIOIHIHI
+  #426 = Utf8               COOCHIRORIICRCIIRIROHIIRIRICCH
+  #427 = Utf8               COOIOIRCCICRCCIHCCRHRCIHROHCCI
+  #428 = Utf8               Code
+  #429 = Utf8               HEAD
+  #430 = Utf8               HOCCIHORRRRCCOHHOIOHHOIIOCRIIH
+  #431 = Utf8               I
+  #432 = Utf8               ICRCIORIOCRCRRRHCOCRCHRCCCOHOC
+  #433 = Utf8               IHIOOHIICOCCRROIRIRHOIHOHIIIRO
+  #434 = Utf8               IIOHIOCOIOROIROICCHRROHRRICHOC
+  #435 = Utf8               INVOKE
+  #436 = Utf8               IRCIIHCCHOOCRCHCOCOCIROROOCRRI
+  #437 = Utf8               InnerClasses
+  #438 = Utf8               Lcom/llamalad7/mixinextras/injector/v2/WrapWithCondition;
+  #439 = Utf8               Lcom/llamalad7/mixinextras/injector/wrapoperation/WrapOperation;
+  #440 = Utf8               Lcom/llamalad7/mixinextras/sugar/Local;
+  #441 = Utf8               Lcom/llamalad7/mixinextras/sugar/Share;
+  #442 = Utf8               Lcom/lunarclient/apollo/option/SimpleOption;
+  #443 = Utf8               Lcom/mojang/math/Vector3f;
+  #444 = Utf8               Lcom/moonsworth/lunar/ichor/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #445 = Utf8               LineNumberTable
+  #446 = Utf8               Ljava/util/List;
+  #447 = Utf8               Ljava/util/List<Lnet/minecraft/client/renderer/entity/layers/RenderLayer_v1_16_1<TT;TM;>;>;
+  #448 = Utf8               Ljavax/annotation/Nullable;
+  #449 = Utf8               Lnet/minecraft/client/Camera;
+  #450 = Utf8               Lnet/minecraft/client/model/EntityModel_v1_16_1;
+  #451 = Utf8               Lnet/minecraft/client/model/EntityModel_v1_16_1;prepareMobModel(Lnet/minecraft/world/entity/Entity;FFF)V
+  #452 = Utf8               Lnet/minecraft/client/model/EntityModel_v1_16_1;setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V
+  #453 = Utf8               Lnet/minecraft/client/player/LocalPlayer;
+  #454 = Utf8               Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;distanceToSqr(Lnet/minecraft/world/entity/Entity;)D
+  #455 = Utf8               Lnet/minecraft/client/renderer/entity/LivingEntityRenderer_v1_16_1;
+  #456 = Utf8               Lnet/minecraft/client/renderer/entity/LivingEntityRenderer_v1_16_1;scale(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V
+  #457 = Utf8               Lnet/minecraft/world/entity/Entity;
+  #458 = Utf8               Lnet/minecraft/world/entity/LivingEntity;isSpectator()Z
+  #459 = Utf8               Lnet/minecraft/world/scores/Team$Visibility;
+  #460 = Utf8               Lnet/minecraft/world/scores/Team;getNameTagVisibility()Lnet/minecraft/world/scores/Team$Visibility;
+  #461 = Utf8               Lookup
+  #462 = Utf8               Lorg/spongepowered/asm/mixin/Mixin;
+  #463 = Utf8               Lorg/spongepowered/asm/mixin/Shadow;
+  #464 = Utf8               Lorg/spongepowered/asm/mixin/injection/At$Shift;
+  #465 = Utf8               Lorg/spongepowered/asm/mixin/injection/At;
+  #466 = Utf8               Lorg/spongepowered/asm/mixin/injection/Constant;
+  #467 = Utf8               Lorg/spongepowered/asm/mixin/injection/Inject;
+  #468 = Utf8               Lorg/spongepowered/asm/mixin/injection/ModifyConstant;
+  #469 = Utf8               Lorg/spongepowered/asm/mixin/injection/Redirect;
+  #470 = Utf8               MC_VERSION
+  #471 = Utf8               OCCCIRIHIRCOCOCORIHHHRCHRIOCCC
+  #472 = Utf8               OHIHHIHCOIRHORICICIHIHIHRRCOOO
+  #473 = Utf8               OHOORCOHRORRIHROOCROOIIHHOOHRI
+  #474 = Utf8               OIIORIRCORRCORCRCRHOHIRCCHOROO
+  #475 = Utf8               OOICRICIHCCCIORHHIOHCCRHRIRRHR
+  #476 = Utf8               OOIRRCHIHRRIHHICCCOCIHCCROIOHH
+  #477 = Utf8               OVERRIDE_NAMETAG_RENDER_DISTANCE
+  #478 = Utf8               RHOHCRHCORROIOCIHRRORIORIOOCIO
+  #479 = Utf8               RIHCIOORHCIRHORRCOCOCOOIHCOIOO
+  #480 = Utf8               RIHHCHHHROOHOOIOIIRIOOCRHHOOOR
+  #481 = Utf8               ROCCCHIIHRICHHHRCHCIROROCOICOC
+  #482 = Utf8               ROCHIHIIIICIRRIOCCHRHOICORHOII
+  #483 = Utf8               RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #484 = Utf8               RuntimeInvisibleAnnotations
+  #485 = Utf8               RuntimeInvisibleParameterAnnotations
+  #486 = Utf8               RuntimeVisibleAnnotations
+  #487 = Utf8               Shift
+  #488 = Utf8               Signature
+  #489 = Utf8               StackMapTable
+  #490 = Utf8               TAIL
+  #491 = Utf8               TM;
+  #492 = Utf8               Visibility
+  #493 = Utf8               Z
+  #494 = Utf8               ZP
+  #495 = Utf8               accept
+  #496 = Utf8               apollo$hiddenNametagOverride
+  #497 = Utf8               apollo$onShouldShowName
+  #498 = Utf8               apollo$setupRotations
+  #499 = Utf8               apollo$shouldFlipEntity
+  #500 = Utf8               apollo$shouldShowName$sneaking
+  #501 = Utf8               apollo$shouldShowName$standing
+  #502 = Utf8               apollo$shownNametagOverride
+  #503 = Utf8               apollo$usePlayerLocationInstead
+  #504 = Utf8               apply
+  #505 = Utf8               argsOnly
+  #506 = Utf8               at
+  #507 = Utf8               bobbing
+  #508 = Utf8               booleanValue
+  #509 = Utf8               bridge$getUniqueID
+  #510 = Utf8               call
+  #511 = Utf8               camera
+  #512 = Utf8               cancel
+  #513 = Utf8               cancellable
+  #514 = Utf8               com/llamalad7/mixinextras/injector/wrapoperation/Operation
+  #515 = Utf8               com/llamalad7/mixinextras/sugar/ref/LocalFloatRef
+  #516 = Utf8               com/lunarclient/apollo/module/entity/EntityModule
+  #517 = Utf8               com/lunarclient/apollo/module/nametag/NametagModule
+  #518 = Utf8               com/lunarclient/apollo/module/serverrule/ServerRuleModule
+  #519 = Utf8               com/lunarclient/apollo/option/Options
+  #520 = Utf8               com/mojang/blaze3d/vertex/PoseStack
+  #521 = Utf8               com/mojang/blaze3d/vertex/VertexConsumer
+  #522 = Utf8               com/mojang/math/Vector3f
+  #523 = Utf8               com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHOORCOHRORRIHROOCROOIIHHOOHRI
+  #524 = Utf8               com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR
+  #525 = Utf8               com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO
+  #526 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #527 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #528 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII
+  #529 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+  #530 = Utf8               com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #531 = Utf8               com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #532 = Utf8               com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+  #533 = Utf8               com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+  #534 = Utf8               com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+  #535 = Utf8               com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #536 = Utf8               com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI
+  #537 = Utf8               com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC
+  #538 = Utf8               com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+  #539 = Utf8               com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH
+  #540 = Utf8               com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #541 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #542 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #543 = Utf8               com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR
+  #544 = Utf8               com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO
+  #545 = Utf8               constant
+  #546 = Utf8               deathTime
+  #547 = Utf8               distanceToSqr
+  #548 = Utf8               doubleValue
+  #549 = Utf8               entity
+  #550 = Utf8               filter
+  #551 = Utf8               floatValue
+  #552 = Utf8               get
+  #553 = Utf8               getBbHeight
+  #554 = Utf8               getBuffer$v1_16_1
+  #555 = Utf8               getInstance
+  #556 = Utf8               getOptions
+  #557 = Utf8               getRenderType
+  #558 = Utf8               getScale
+  #559 = Utf8               getUUID
+  #560 = Utf8               getWhiteOverlayProgress
+  #561 = Utf8               hasNext
+  #562 = Utf8               hurtTime
+  #563 = Utf8               ifPresent
+  #564 = Utf8               isBodyVisible
+  #565 = Utf8               isEnabled
+  #566 = Utf8               isEntityUpsideDown$v1_18_1
+  #567 = Utf8               isInvisibleTo
+  #568 = Utf8               iterator
+  #569 = Utf8               java/lang/Boolean
+  #570 = Utf8               java/lang/Double
+  #571 = Utf8               java/lang/Float
+  #572 = Utf8               java/lang/Object
+  #573 = Utf8               java/lang/invoke/LambdaMetafactory
+  #574 = Utf8               java/lang/invoke/MethodHandles
+  #575 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #576 = Utf8               java/util/Iterator
+  #577 = Utf8               java/util/List
+  #578 = Utf8               java/util/Optional
+  #579 = Utf8               lambda$apollo$hiddenNametagOverride$0
+  #580 = Utf8               lambda$apollo$setupRotations$0
+  #581 = Utf8               lambda$apollo$shouldFlipEntity$0
+  #582 = Utf8               lambda$apollo$shouldShowName$sneaking$0
+  #583 = Utf8               lambda$apollo$shouldShowName$sneaking$1
+  #584 = Utf8               lambda$apollo$shouldShowName$standing$0
+  #585 = Utf8               lambda$apollo$shouldShowName$standing$1
+  #586 = Utf8               lambda$apollo$shownNametagOverride$0
+  #587 = Utf8               lambda$apollo$usePlayerLocationInstead$0
+  #588 = Utf8               lambda$apollo$usePlayerLocationInstead$1
+  #589 = Utf8               lambda$apollo$usePlayerLocationInstead$2
+  #590 = Utf8               lambda$lunar$changeEntityScale$0
+  #591 = Utf8               layers
+  #592 = Utf8               limbSwing
+  #593 = Utf8               limbSwingAmount
+  #594 = Utf8               lunar$captureValues$1
+  #595 = Utf8               lunar$captureValues$2
+  #596 = Utf8               lunar$changeEntityScale
+  #597 = Utf8               lunar$highlightHook
+  #598 = Utf8               lunar$shouldShowName
+  #599 = Utf8               lunar$skipEntityModelRendering
+  #600 = Utf8               map
+  #601 = Utf8               max
+  #602 = Utf8               metafactory
+  #603 = Utf8               method
+  #604 = Utf8               min
+  #605 = Utf8               model
+  #606 = Utf8               mulPose$v1_16_1
+  #607 = Utf8               net/minecraft/client/Camera
+  #608 = Utf8               net/minecraft/client/Minecraft
+  #609 = Utf8               net/minecraft/client/model/EntityModel_v1_16_1
+  #610 = Utf8               net/minecraft/client/renderer/MultiBufferSource
+  #611 = Utf8               net/minecraft/client/renderer/entity/EntityRenderDispatcher
+  #612 = Utf8               net/minecraft/client/renderer/entity/EntityRenderer_v1_16_1
+  #613 = Utf8               net/minecraft/client/renderer/entity/RenderLayerParent_v1_16_1
+  #614 = Utf8               net/minecraft/client/renderer/entity/layers/RenderLayer_v1_16_1
+  #615 = Utf8               net/minecraft/client/renderer/texture/OverlayTexture
+  #616 = Utf8               net/minecraft/world/entity/Entity
+  #617 = Utf8               net/minecraft/world/entity/LivingEntity
+  #618 = Utf8               net/minecraft/world/entity/player/Player
+  #619 = Utf8               net/minecraft/world/phys/Vec3
+  #620 = Utf8               net/minecraft/world/scores/Team
+  #621 = Utf8               net/minecraft/world/scores/Team$Visibility
+  #622 = Utf8               next
+  #623 = Utf8               orElse
+  #624 = Utf8               orElseGet
+  #625 = Utf8               org/spongepowered/asm/mixin/injection/At
+  #626 = Utf8               org/spongepowered/asm/mixin/injection/At$Shift
+  #627 = Utf8               org/spongepowered/asm/mixin/injection/callback/CallbackInfo
+  #628 = Utf8               org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable
+  #629 = Utf8               pack
+  #630 = Utf8               player
+  #631 = Utf8               popPose
+  #632 = Utf8               position
+  #633 = Utf8               priority
+  #634 = Utf8               render
+  #635 = Utf8               render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+  #636 = Utf8               renderToBuffer$v1_16_1
+  #637 = Utf8               renderToBuffer$v1_21_0
+  #638 = Utf8               rotation
+  #639 = Utf8               rotationDegrees
+  #640 = Utf8               scale
+  #641 = Utf8               set
+  #642 = Utf8               setReturnValue
+  #643 = Utf8               setupRotations$v1_16_1
+  #644 = Utf8               shift
+  #645 = Utf8               shouldEntityAppearGlowing
+  #646 = Utf8               shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z
+  #647 = Utf8               target
+  #648 = Utf8               test
+  #649 = Utf8               translate
+  #650 = Utf8               u
+  #651 = Utf8               v
+  #652 = Utf8               value
+  #653 = Utf8               valueOf
+{
+  public java.util.List<net.minecraft.client.renderer.entity.layers.RenderLayer_v1_16_1<T, M>> layers;
+    descriptor: Ljava/util/List;
+    flags: (0x0001) ACC_PUBLIC
+    Signature: #447                         // Ljava/util/List<Lnet/minecraft/client/renderer/entity/layers/RenderLayer_v1_16_1<TT;TM;>;>;
+    RuntimeVisibleAnnotations:
+      0: #463()
+        org.spongepowered.asm.mixin.Shadow
+
+  public M model;
+    descriptor: Lnet/minecraft/client/model/EntityModel_v1_16_1;
+    flags: (0x0001) ACC_PUBLIC
+    Signature: #491                         // TM;
+    RuntimeVisibleAnnotations:
+      0: #463()
+        org.spongepowered.asm.mixin.Shadow
+
+  public com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RORCICOHRIOIIIOIOHIIIICRCIHRII.RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHRORRHCHCRICORRRCIRIOCCIRCRII.ORCOOOCHIICOIICCROCRCOOROORIHR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.COICRRHIRCCCHHROIOIRRICRIOCOCO();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #148                // Method net/minecraft/client/renderer/entity/EntityRenderer_v1_16_1."<init>":()V
+         4: return
+      LineNumberTable:
+        line 55: 0
+
+  public abstract float getWhiteOverlayProgress(T, float);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;F)F
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #406                         // (TT;F)F
+    RuntimeVisibleAnnotations:
+      0: #463()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract boolean isBodyVisible(T);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;)Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #405                         // (TT;)Z
+    RuntimeVisibleAnnotations:
+      0: #463()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract net.minecraft.client.renderer.RenderType getRenderType(T, boolean, boolean, boolean);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;ZZZ)Lnet/minecraft/client/renderer/RenderType;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #411                         // (TT;ZZZ)Lnet/minecraft/client/renderer/RenderType;
+    RuntimeVisibleAnnotations:
+      0: #463()
+        org.spongepowered.asm.mixin.Shadow
+      1: #448()
+        javax.annotation.Nullable
+
+  private void lunar$highlightHook(T, float, float, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=9, locals=16, args_size=8
+         0: aload_1
+         1: getfield      #82                 // Field net/minecraft/world/entity/LivingEntity.hurtTime:I
+         4: ifgt          14
+         7: aload_1
+         8: getfield      #81                 // Field net/minecraft/world/entity/LivingEntity.deathTime:I
+        11: ifle          15
+        14: return
+        15: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        18: invokevirtual #105                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIRRCHIHRRIHHICCCOCIHCCROIOHH:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+        21: invokevirtual #113                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI.HOCCIHORRRRCCOHHOIOHHOIIOCRIIH:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        24: astore        8
+        26: aload         8
+        28: invokevirtual #124                // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH.isEnabled:()Z
+        31: ifeq          232
+        34: aload_1
+        35: instanceof    #64                 // class net/minecraft/world/entity/player/Player
+        38: ifeq          232
+        41: aload_1
+        42: checkcast     #64                 // class net/minecraft/world/entity/player/Player
+        45: astore        9
+        47: aload         8
+        49: aload         9
+        51: checkcast     #25                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/RORCICOHRIOIIIOIOHIIIICRCIHRII
+        54: invokevirtual #123                // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;)Z
+        57: ifeq          232
+        60: aload         8
+        62: invokevirtual #122                // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HCHOCHOCCORROHCCCORCROORHCCIRR/COOCHIRORIICRCIIRIROHIIRIRICCH.IHIOOHIICOCCRROIRIRHOIHOHIIIRO:()Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+        65: fconst_0
+        66: invokevirtual #115                // Method com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC.CHOOCRRRCRHRCOOOCIICORHHOIROOR:(F)I
+        69: istore        10
+        71: aload_0
+        72: aload_1
+        73: invokevirtual #92                 // Method isBodyVisible:(Lnet/minecraft/world/entity/LivingEntity;)Z
+        76: istore        11
+        78: iload         11
+        80: ifne          100
+        83: aload_1
+        84: invokestatic  #143                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        87: getfield      #79                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+        90: invokevirtual #157                // Method net/minecraft/world/entity/LivingEntity.isInvisibleTo:(Lnet/minecraft/world/entity/player/Player;)Z
+        93: ifne          100
+        96: iconst_1
+        97: goto          101
+       100: iconst_0
+       101: istore        12
+       103: aload_0
+       104: aload_1
+       105: iload         11
+       107: iload         12
+       109: invokestatic  #143                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       112: aload_1
+       113: invokevirtual #144                // Method net/minecraft/client/Minecraft.shouldEntityAppearGlowing:(Lnet/minecraft/world/entity/Entity;)Z
+       116: invokevirtual #90                 // Method getRenderType:(Lnet/minecraft/world/entity/LivingEntity;ZZZ)Lnet/minecraft/client/renderer/RenderType;
+       119: astore        13
+       121: aload         5
+       123: aload         13
+       125: invokeinterface #170,  2          // InterfaceMethod net/minecraft/client/renderer/MultiBufferSource.getBuffer$v1_16_1:(Lnet/minecraft/client/renderer/RenderType;)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+       130: astore        14
+       132: aload_0
+       133: aload_1
+       134: fload_3
+       135: invokevirtual #91                 // Method getWhiteOverlayProgress:(Lnet/minecraft/world/entity/LivingEntity;F)F
+       138: invokestatic  #152                // Method net/minecraft/client/renderer/texture/OverlayTexture.u:(F)I
+       141: iconst_0
+       142: invokestatic  #153                // Method net/minecraft/client/renderer/texture/OverlayTexture.v:(Z)I
+       145: invokestatic  #151                // Method net/minecraft/client/renderer/texture/OverlayTexture.pack:(II)I
+       148: istore        15
+       150: getstatic     #77                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       153: bipush        24
+       155: if_icmplt     188
+       158: aload_0
+       159: getfield      #76                 // Field model:Lnet/minecraft/client/model/EntityModel_v1_16_1;
+       162: aload         4
+       164: aload         14
+       166: iload         6
+       168: iload         15
+       170: iload         12
+       172: ifeq          180
+       175: ldc           #7                  // int 16777215
+       177: goto          182
+       180: iload         10
+       182: invokevirtual #146                // Method net/minecraft/client/model/EntityModel_v1_16_1.renderToBuffer$v1_21_0:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;III)V
+       185: goto          232
+       188: aload_0
+       189: getfield      #76                 // Field model:Lnet/minecraft/client/model/EntityModel_v1_16_1;
+       192: aload         4
+       194: aload         14
+       196: iload         6
+       198: iload         15
+       200: iload         10
+       202: invokestatic  #129                // Method com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO.CIOIHRRRHRCICOCOOROIHIROROIHHH:(I)F
+       205: iload         10
+       207: invokestatic  #128                // Method com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO.CHHIIOHIRIHCHHIRCOCOOCHRIRIHIH:(I)F
+       210: iload         10
+       212: invokestatic  #127                // Method com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO.CCRRICRIOOORRCHHIRICIRHOCOICIO:(I)F
+       215: iload         12
+       217: ifeq          224
+       220: fconst_0
+       221: goto          229
+       224: iload         10
+       226: invokestatic  #130                // Method com/moonsworth/lunar/client/util/RHCCHHHHIHHRIICRIHRRIHRORIIOHO.OHIHHIHCOIRHORICICIHIHIHRRCOOO:(I)F
+       229: invokevirtual #145                // Method net/minecraft/client/model/EntityModel_v1_16_1.renderToBuffer$v1_16_1:(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V
+       232: return
+      LineNumberTable:
+        line 85: 0
+        line 86: 14
+        line 88: 15
+        line 89: 26
+        line 90: 47
+        line 91: 60
+        line 92: 71
+        line 93: 78
+        line 94: 103
+        line 95: 109
+        line 94: 116
+        line 96: 121
+        line 98: 132
+        line 99: 135
+        line 98: 145
+        line 101: 150
+        line 102: 158
+        line 103: 170
+        line 102: 182
+        line 105: 188
+        line 106: 202
+        line 107: 212
+        line 105: 229
+        line 112: 232
+      StackMapTable: number_of_entries = 10
+        frame_type = 255 /* full_frame */
+          offset_delta = 14
+          locals = []
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO, class net/minecraft/world/entity/LivingEntity, top, float, class com/mojang/blaze3d/vertex/PoseStack, class net/minecraft/client/renderer/MultiBufferSource, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 84
+          locals = [ class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO, class net/minecraft/world/entity/LivingEntity, top, float, class com/mojang/blaze3d/vertex/PoseStack, class net/minecraft/client/renderer/MultiBufferSource, int, top, top, top, int, int ]
+          stack = []
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 78
+          locals = [ top, top, top, top, top, top, top, top, top, top, int ]
+          stack = [ class net/minecraft/client/model/EntityModel_v1_16_1, class com/mojang/blaze3d/vertex/PoseStack, class com/mojang/blaze3d/vertex/VertexConsumer, int, int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 1
+          locals = []
+          stack = [ class net/minecraft/client/model/EntityModel_v1_16_1, class com/mojang/blaze3d/vertex/PoseStack, class com/mojang/blaze3d/vertex/VertexConsumer, int, int, int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 5
+          locals = [ class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO, top, top, top, class com/mojang/blaze3d/vertex/PoseStack, top, int, top, top, top, int, top, int, top, class com/mojang/blaze3d/vertex/VertexConsumer, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 35
+          locals = [ top, top, top, top, top, top, top, top, top, top, int ]
+          stack = [ class net/minecraft/client/model/EntityModel_v1_16_1, class com/mojang/blaze3d/vertex/PoseStack, class com/mojang/blaze3d/vertex/VertexConsumer, int, int, float, float, float ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 4
+          locals = []
+          stack = [ class net/minecraft/client/model/EntityModel_v1_16_1, class com/mojang/blaze3d/vertex/PoseStack, class com/mojang/blaze3d/vertex/VertexConsumer, int, int, float, float, float, float ]
+        frame_type = 2 /* same */
+    Signature: #407                         // (TT;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    RuntimeVisibleAnnotations:
+      0: #467(#603=[s#635],#506=[@#465(#652=s#435,#647=s#458,#644=e#464.#419)])
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/world/entity/LivingEntity;isSpectator()Z"
+            shift=Lorg/spongepowered/asm/mixin/injection/At$Shift;.BEFORE
+          )]
+        )
+
+  private void lunar$shouldShowName(net.minecraft.world.entity.LivingEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=3, args_size=3
+         0: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         3: invokevirtual #105                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIRRCHIHRRIHHICCCOCIHCCROIOHH:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+         6: invokevirtual #114                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI.RIHCIOORHCIRHORRCOCOCOOIHCOIOO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         9: aload_1
+        10: checkcast     #26                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        13: invokevirtual #120                // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH.OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Z
+        16: ifeq          27
+        19: aload_2
+        20: iconst_1
+        21: invokestatic  #132                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        24: invokevirtual #160                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+        27: return
+      LineNumberTable:
+        line 120: 0
+        line 121: 19
+        line 123: 27
+      StackMapTable: number_of_entries = 1
+        frame_type = 248 /* chop */
+          offset_delta = 27
+    Signature: #397                         // (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V
+    RuntimeVisibleAnnotations:
+      0: #467(#603=[s#646],#506=[@#465(#652=s#429)],#513=Z#1)
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="HEAD"
+          )]
+          cancellable=true
+        )
+
+  private void apollo$onShouldShowName(T, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=3, args_size=3
+         0: invokestatic  #143                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+         3: getfield      #79                 // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+         6: ifnonnull     17
+         9: aload_2
+        10: iconst_0
+        11: invokestatic  #132                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        14: invokevirtual #160                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+        17: return
+      LineNumberTable:
+        line 131: 0
+        line 133: 9
+        line 135: 17
+      StackMapTable: number_of_entries = 1
+        frame_type = 248 /* chop */
+          offset_delta = 17
+    Signature: #410                         // (TT;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V
+    RuntimeVisibleAnnotations:
+      0: #467(#603=[s#646],#506=[@#465(#652=s#429)],#513=Z#1)
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="HEAD"
+          )]
+          cancellable=true
+        )
+
+  private void apollo$hiddenNametagOverride(T, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_1
+         1: ifnull        11
+         4: aload_1
+         5: invokestatic  #125                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+         8: if_acmpne     12
+        11: return
+        12: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        15: invokevirtual #105                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIRRCHIHRRIHHICCCOCIHCCROIOHH:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+        18: invokevirtual #114                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI.RIHCIOORHCIRHORRCOCOCOOIHCOIOO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        21: invokevirtual #121                // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH.isEnabled:()Z
+        24: ifne          28
+        27: return
+        28: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        31: invokevirtual #106                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+        34: ldc           #15                 // class com/lunarclient/apollo/module/nametag/NametagModule
+        36: invokevirtual #112                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+        39: aload_1
+        40: aload_2
+        41: invokedynamic #171,  0            // InvokeDynamic #0:accept:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)Ljava/util/function/Consumer;
+        46: invokevirtual #139                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+        49: return
+      LineNumberTable:
+        line 143: 0
+        line 144: 11
+        line 147: 12
+        line 148: 27
+        line 151: 28
+        line 159: 49
+      StackMapTable: number_of_entries = 3
+        frame_type = 248 /* chop */
+          offset_delta = 11
+        frame_type = 254 /* append */
+          offset_delta = 0
+          locals = [ top, class net/minecraft/world/entity/LivingEntity, class org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable ]
+        frame_type = 15 /* same */
+    Signature: #410                         // (TT;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V
+    RuntimeVisibleAnnotations:
+      0: #467(#603=[s#646],#506=[@#465(#652=s#429)],#513=Z#1)
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="HEAD"
+          )]
+          cancellable=true
+        )
+
+  private net.minecraft.world.scores.Team$Visibility apollo$shownNametagOverride(net.minecraft.world.scores.Team, com.llamalad7.mixinextras.injector.wrapoperation.Operation<net.minecraft.world.scores.Team$Visibility>, net.minecraft.world.entity.LivingEntity);
+    descriptor: (Lnet/minecraft/world/scores/Team;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/scores/Team$Visibility;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=5, locals=6, args_size=4
+         0: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         3: invokevirtual #105                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIRRCHIHRRIHHICCCOCIHCCROIOHH:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+         6: invokevirtual #114                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI.RIHCIOORHCIRHORRCOCOCOOIHCOIOO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         9: invokevirtual #121                // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/CHORHIHIRCOCCHIHIHCRIRCICICHIR/COOCHIRORIICRCIIRIROHIIRIRICCH.isEnabled:()Z
+        12: ifeq          71
+        15: aload_3
+        16: checkcast     #26                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        19: invokeinterface #166,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII.bridge$getUniqueID:()Ljava/util/UUID;
+        24: astore        4
+        26: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        29: invokevirtual #106                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+        32: ldc           #15                 // class com/lunarclient/apollo/module/nametag/NametagModule
+        34: invokevirtual #112                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+        37: aload         4
+        39: invokedynamic #172,  0            // InvokeDynamic #1:apply:(Ljava/util/UUID;)Ljava/util/function/Function;
+        44: invokevirtual #140                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+        47: iconst_0
+        48: invokestatic  #132                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        51: invokevirtual #141                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        54: checkcast     #43                 // class java/lang/Boolean
+        57: invokevirtual #131                // Method java/lang/Boolean.booleanValue:()Z
+        60: istore        5
+        62: iload         5
+        64: ifeq          71
+        67: getstatic     #83                 // Field net/minecraft/world/scores/Team$Visibility.ALWAYS:Lnet/minecraft/world/scores/Team$Visibility;
+        70: areturn
+        71: aload_2
+        72: iconst_1
+        73: anewarray     #46                 // class java/lang/Object
+        76: dup
+        77: iconst_0
+        78: aload_1
+        79: aastore
+        80: invokeinterface #161,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+        85: checkcast     #67                 // class net/minecraft/world/scores/Team$Visibility
+        88: areturn
+      LineNumberTable:
+        line 170: 0
+        line 171: 15
+        line 172: 26
+        line 173: 44
+        line 174: 48
+        line 176: 62
+        line 177: 67
+        line 181: 71
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 71
+          locals = [ top, class net/minecraft/world/scores/Team, class com/llamalad7/mixinextras/injector/wrapoperation/Operation ]
+          stack = []
+    Signature: #402                         // (Lnet/minecraft/world/scores/Team;Lcom/llamalad7/mixinextras/injector/wrapoperation/Operation<Lnet/minecraft/world/scores/Team$Visibility;>;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/scores/Team$Visibility;
+    RuntimeVisibleAnnotations:
+      0: #439(#603=[s#646],#506=[@#465(#652=s#435,#647=s#460)])
+        com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation(
+          method=["shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/world/scores/Team;getNameTagVisibility()Lnet/minecraft/world/scores/Team$Visibility;"
+          )]
+        )
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+      parameter 2:
+        0: #440(#505=Z#1)
+          com.llamalad7.mixinextras.sugar.Local(
+            argsOnly=true
+          )
+
+  private double apollo$usePlayerLocationInstead(net.minecraft.client.renderer.entity.EntityRenderDispatcher, net.minecraft.world.entity.Entity);
+    descriptor: (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)D
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=3
+         0: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         3: invokevirtual #106                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+         6: ldc           #16                 // class com/lunarclient/apollo/module/serverrule/ServerRuleModule
+         8: invokevirtual #112                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+        11: invokedynamic #173,  0            // InvokeDynamic #2:test:()Ljava/util/function/Predicate;
+        16: invokevirtual #138                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+        19: aload_1
+        20: aload_2
+        21: invokedynamic #174,  0            // InvokeDynamic #3:apply:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Function;
+        26: invokevirtual #140                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+        29: aload_1
+        30: aload_2
+        31: invokedynamic #175,  0            // InvokeDynamic #4:get:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Supplier;
+        36: invokevirtual #142                // Method java/util/Optional.orElseGet:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+        39: checkcast     #44                 // class java/lang/Double
+        42: invokevirtual #133                // Method java/lang/Double.doubleValue:()D
+        45: dreturn
+      LineNumberTable:
+        line 193: 0
+        line 194: 16
+        line 195: 26
+        line 196: 36
+        line 193: 45
+    RuntimeVisibleAnnotations:
+      0: #469(#603=[s#646],#506=@#465(#652=s#435,#647=s#454))
+        org.spongepowered.asm.mixin.injection.Redirect(
+          method=["shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z"]
+          at=@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;distanceToSqr(Lnet/minecraft/world/entity/Entity;)D"
+          )
+        )
+
+  private float apollo$shouldShowName$sneaking(float);
+    descriptor: (F)F
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=2, args_size=2
+         0: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         3: invokevirtual #106                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+         6: ldc           #16                 // class com/lunarclient/apollo/module/serverrule/ServerRuleModule
+         8: invokevirtual #112                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+        11: invokedynamic #176,  0            // InvokeDynamic #5:test:()Ljava/util/function/Predicate;
+        16: invokevirtual #138                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+        19: invokedynamic #177,  0            // InvokeDynamic #6:apply:()Ljava/util/function/Function;
+        24: invokevirtual #140                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+        27: fload_1
+        28: invokestatic  #136                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+        31: invokevirtual #141                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        34: checkcast     #45                 // class java/lang/Float
+        37: invokevirtual #135                // Method java/lang/Float.floatValue:()F
+        40: freturn
+      LineNumberTable:
+        line 201: 0
+        line 202: 16
+        line 203: 24
+        line 204: 28
+        line 201: 40
+    RuntimeVisibleAnnotations:
+      0: #468(#603=[s#646],#545=[@#466(#551=F#9)])
+        org.spongepowered.asm.mixin.injection.ModifyConstant(
+          method=["shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z"]
+          constant=[@org.spongepowered.asm.mixin.injection.Constant(
+            floatValue=32.0f
+          )]
+        )
+
+  private float apollo$shouldShowName$standing(float);
+    descriptor: (F)F
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=2, args_size=2
+         0: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         3: invokevirtual #106                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+         6: ldc           #16                 // class com/lunarclient/apollo/module/serverrule/ServerRuleModule
+         8: invokevirtual #112                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+        11: invokedynamic #178,  0            // InvokeDynamic #7:test:()Ljava/util/function/Predicate;
+        16: invokevirtual #138                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+        19: invokedynamic #179,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+        24: invokevirtual #140                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+        27: fload_1
+        28: invokestatic  #136                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+        31: invokevirtual #141                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        34: checkcast     #45                 // class java/lang/Float
+        37: invokevirtual #135                // Method java/lang/Float.floatValue:()F
+        40: freturn
+      LineNumberTable:
+        line 209: 0
+        line 210: 16
+        line 211: 24
+        line 212: 28
+        line 209: 40
+    RuntimeVisibleAnnotations:
+      0: #468(#603=[s#646],#545=[@#466(#551=F#10)])
+        org.spongepowered.asm.mixin.injection.ModifyConstant(
+          method=["shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z"]
+          constant=[@org.spongepowered.asm.mixin.injection.Constant(
+            floatValue=64.0f
+          )]
+        )
+
+  private static void apollo$shouldFlipEntity(net.minecraft.world.entity.LivingEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         3: invokevirtual #106                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+         6: ldc           #14                 // class com/lunarclient/apollo/module/entity/EntityModule
+         8: invokevirtual #112                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+        11: aload_0
+        12: aload_1
+        13: invokedynamic #180,  0            // InvokeDynamic #9:accept:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)Ljava/util/function/Consumer;
+        18: invokevirtual #139                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+        21: return
+      LineNumberTable:
+        line 218: 0
+        line 225: 21
+    Signature: #397                         // (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V
+    RuntimeVisibleAnnotations:
+      0: #444(#604=I#4)
+        com.moonsworth.lunar.ichor.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI(
+          min=10
+        )
+      1: #467(#603=[s#566],#506=[@#465(#652=s#429)],#513=Z#1)
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["isEntityUpsideDown$v1_18_1"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="HEAD"
+          )]
+          cancellable=true
+        )
+
+  public void apollo$setupRotations(T, com.mojang.blaze3d.vertex.PoseStack, float, float, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;FFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=7, args_size=7
+         0: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+         3: invokevirtual #106                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCCCHIIHRICHHHRCHCIROROCOICOC:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+         6: ldc           #14                 // class com/lunarclient/apollo/module/entity/EntityModule
+         8: invokevirtual #112                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHOORCOHRORRIHROOCROOIIHHOOHRI:(Ljava/lang/Class;)Ljava/util/Optional;
+        11: aload_1
+        12: aload_2
+        13: invokedynamic #181,  0            // InvokeDynamic #10:accept:(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;)Ljava/util/function/Consumer;
+        18: invokevirtual #139                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+        21: return
+      LineNumberTable:
+        line 230: 0
+        line 238: 21
+    Signature: #409                         // (TT;Lcom/mojang/blaze3d/vertex/PoseStack;FFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    RuntimeVisibleAnnotations:
+      0: #444(#601=I#3)
+        com.moonsworth.lunar.ichor.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI(
+          max=9
+        )
+      1: #467(#603=[s#643],#506=[@#465(#652=s#490)])
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["setupRotations$v1_16_1"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="TAIL"
+          )]
+        )
+
+  private boolean lunar$captureValues$1(M, net.minecraft.world.entity.Entity, float, float, float, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef);
+    descriptor: (Lnet/minecraft/client/model/EntityModel_v1_16_1;Lnet/minecraft/world/entity/Entity;FFFLcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)Z
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=8, args_size=8
+         0: getstatic     #74                 // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.CIORHHRHICOHRRHOCRHHICHIOIHIHI:Z
+         3: ifeq          25
+         6: aload         6
+         8: fload_3
+         9: invokeinterface #163,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.set:(F)V
+        14: aload         7
+        16: fload         4
+        18: invokeinterface #163,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.set:(F)V
+        23: iconst_0
+        24: ireturn
+        25: iconst_1
+        26: ireturn
+      LineNumberTable:
+        line 253: 0
+        line 254: 6
+        line 255: 14
+        line 256: 23
+        line 258: 25
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 25
+          locals = []
+          stack = []
+    Signature: #404                         // (TM;Lnet/minecraft/world/entity/Entity;FFFLcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)Z
+    RuntimeVisibleAnnotations:
+      0: #444(#604=I#2)
+        com.moonsworth.lunar.ichor.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI(
+          min=8
+        )
+      1: #438(#603=[s#635],#506=[@#465(#652=s#435,#647=s#451)])
+        com.llamalad7.mixinextras.injector.v2.WrapWithCondition(
+          method=["render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/client/model/EntityModel_v1_16_1;prepareMobModel(Lnet/minecraft/world/entity/Entity;FFF)V"
+          )]
+        )
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+      parameter 2:
+      parameter 3:
+      parameter 4:
+      parameter 5:
+        0: #441(#652=s#592)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="limbSwing"
+          )
+      parameter 6:
+        0: #441(#652=s#593)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="limbSwingAmount"
+          )
+
+  private boolean lunar$captureValues$2(M, net.minecraft.world.entity.Entity, float, float, float, float, float, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef);
+    descriptor: (Lnet/minecraft/client/model/EntityModel_v1_16_1;Lnet/minecraft/world/entity/Entity;FFFFFLcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)Z
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=11, args_size=11
+         0: getstatic     #74                 // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.CIORHHRHICOHRRHOCRHHICHIOIHIHI:Z
+         3: ifeq          35
+         6: aload         8
+         8: fload         5
+        10: invokeinterface #163,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.set:(F)V
+        15: aload         9
+        17: fload         6
+        19: invokeinterface #163,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.set:(F)V
+        24: aload         10
+        26: fload         7
+        28: invokeinterface #163,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.set:(F)V
+        33: iconst_0
+        34: ireturn
+        35: iconst_1
+        36: ireturn
+      LineNumberTable:
+        line 276: 0
+        line 277: 6
+        line 278: 15
+        line 279: 24
+        line 280: 33
+        line 282: 35
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 35
+          locals = []
+          stack = []
+    Signature: #403                         // (TM;Lnet/minecraft/world/entity/Entity;FFFFFLcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)Z
+    RuntimeVisibleAnnotations:
+      0: #444(#604=I#2)
+        com.moonsworth.lunar.ichor.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI(
+          min=8
+        )
+      1: #438(#603=[s#635],#506=[@#465(#652=s#435,#647=s#452)])
+        com.llamalad7.mixinextras.injector.v2.WrapWithCondition(
+          method=["render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/client/model/EntityModel_v1_16_1;setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V"
+          )]
+        )
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+      parameter 2:
+      parameter 3:
+      parameter 4:
+      parameter 5:
+      parameter 6:
+      parameter 7:
+        0: #441(#652=s#507)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="bobbing"
+          )
+      parameter 8:
+        0: #441(#652=s#638)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="rotation"
+          )
+      parameter 9:
+        0: #441(#652=s#313)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="$$11"
+          )
+
+  private void lunar$skipEntityModelRendering(T, float, float, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef, com.llamalad7.mixinextras.sugar.ref.LocalFloatRef);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=11, locals=16, args_size=13
+         0: getstatic     #74                 // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.CIORHHRHICOHRRHOCRHHICHIOIHIHI:Z
+         3: ifeq          145
+         6: iconst_0
+         7: putstatic     #74                 // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.CIORHHRHICOHRRHOCRHHICHIOIHIHI:Z
+        10: aload         7
+        12: invokevirtual #159                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+        15: aload_0
+        16: getfield      #75                 // Field layers:Ljava/util/List;
+        19: invokeinterface #169,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        24: astore        13
+        26: aload         13
+        28: invokeinterface #167,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        33: ifeq          127
+        36: aload         13
+        38: invokeinterface #168,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        43: checkcast     #60                 // class net/minecraft/client/renderer/entity/layers/RenderLayer_v1_16_1
+        46: astore        14
+        48: aload         14
+        50: instanceof    #21                 // class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHOORCOHRORRIHROOCROOIIHHOOHRI
+        53: ifeq          124
+        56: aload         14
+        58: checkcast     #21                 // class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHOORCOHRORRIHROOCROOIIHHOOHRI
+        61: astore        15
+        63: aload         15
+        65: invokevirtual #89                 // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHOORCOHRORRIHROOCROOIIHHOOHRI.IIOHIOCOIOROIROICCHRROHRRICHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        68: invokeinterface #165,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.RHOHCRHCORROIOCIHRRORIORIOOCIO:()Z
+        73: ifeq          124
+        76: aload         14
+        78: aload         4
+        80: aload         5
+        82: iload         6
+        84: aload_1
+        85: aload         8
+        87: invokeinterface #162,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.get:()F
+        92: aload         9
+        94: invokeinterface #162,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.get:()F
+        99: fload_3
+       100: aload         10
+       102: invokeinterface #162,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.get:()F
+       107: aload         11
+       109: invokeinterface #162,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.get:()F
+       114: aload         12
+       116: invokeinterface #162,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalFloatRef.get:()F
+       121: invokevirtual #150                // Method net/minecraft/client/renderer/entity/layers/RenderLayer_v1_16_1.render:(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/Entity;FFFFFF)V
+       124: goto          26
+       127: aload         4
+       129: invokevirtual #85                 // Method com/mojang/blaze3d/vertex/PoseStack.popPose:()V
+       132: aload_0
+       133: aload_1
+       134: fload_2
+       135: fload_3
+       136: aload         4
+       138: aload         5
+       140: iload         6
+       142: invokespecial #149                // Method net/minecraft/client/renderer/entity/EntityRenderer_v1_16_1.render:(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+       145: return
+      LineNumberTable:
+        line 304: 0
+        line 305: 6
+        line 306: 10
+        line 307: 15
+        line 308: 48
+        line 309: 76
+        line 310: 94
+        line 309: 121
+        line 312: 124
+        line 314: 127
+        line 315: 132
+        line 317: 145
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 26
+          locals = [ class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO, class net/minecraft/world/entity/LivingEntity, float, float, class com/mojang/blaze3d/vertex/PoseStack, class net/minecraft/client/renderer/MultiBufferSource, int, top, class com/llamalad7/mixinextras/sugar/ref/LocalFloatRef, class com/llamalad7/mixinextras/sugar/ref/LocalFloatRef, class com/llamalad7/mixinextras/sugar/ref/LocalFloatRef, class com/llamalad7/mixinextras/sugar/ref/LocalFloatRef, class com/llamalad7/mixinextras/sugar/ref/LocalFloatRef, class java/util/Iterator ]
+          stack = []
+        frame_type = 251 /* same_frame_extended */
+          offset_delta = 97
+        frame_type = 255 /* full_frame */
+          offset_delta = 2
+          locals = [ class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO, class net/minecraft/world/entity/LivingEntity, float, float, class com/mojang/blaze3d/vertex/PoseStack, class net/minecraft/client/renderer/MultiBufferSource, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 17
+          locals = []
+          stack = []
+    Signature: #408                         // (TT;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;Lcom/llamalad7/mixinextras/sugar/ref/LocalFloatRef;)V
+    RuntimeVisibleAnnotations:
+      0: #444(#604=I#2)
+        com.moonsworth.lunar.ichor.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI(
+          min=8
+        )
+      1: #467(#603=[s#635],#506=[@#465(#652=s#435,#647=s#452)],#513=Z#1)
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/client/model/EntityModel_v1_16_1;setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V"
+          )]
+          cancellable=true
+        )
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+      parameter 2:
+      parameter 3:
+      parameter 4:
+      parameter 5:
+      parameter 6:
+      parameter 7:
+        0: #441(#652=s#592)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="limbSwing"
+          )
+      parameter 8:
+        0: #441(#652=s#593)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="limbSwingAmount"
+          )
+      parameter 9:
+        0: #441(#652=s#507)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="bobbing"
+          )
+      parameter 10:
+        0: #441(#652=s#638)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="rotation"
+          )
+      parameter 11:
+        0: #441(#652=s#313)
+          com.llamalad7.mixinextras.sugar.Share(
+            value="$$11"
+          )
+
+  private void lunar$changeEntityScale(T, float, float, com.mojang.blaze3d.vertex.PoseStack, net.minecraft.client.renderer.MultiBufferSource, int, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=10, args_size=8
+         0: invokestatic  #119                // Method com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.ROCHIHIIIICIRRIOCCHRHOICORHOII:()Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+         3: ldc           #37                 // class com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH
+         5: aload_1
+         6: invokedynamic #182,  0            // InvokeDynamic #11:get:(Lnet/minecraft/world/entity/LivingEntity;)Ljava/util/function/Supplier;
+        11: invokevirtual #118                // Method com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Supplier;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+        14: checkcast     #37                 // class com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH
+        17: astore        8
+        19: aload         8
+        21: ifnull        42
+        24: aload         8
+        26: invokevirtual #117                // Method com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH.getScale:()F
+        29: fstore        9
+        31: aload         4
+        33: fload         9
+        35: fload         9
+        37: fload         9
+        39: invokevirtual #86                 // Method com/mojang/blaze3d/vertex/PoseStack.scale:(FFF)V
+        42: return
+      LineNumberTable:
+        line 331: 0
+        line 334: 19
+        line 335: 24
+        line 336: 31
+        line 338: 42
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 42
+          locals = []
+          stack = []
+    Signature: #407                         // (TT;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+    RuntimeVisibleAnnotations:
+      0: #467(#603=[s#635],#506=[@#465(#652=s#435,#647=s#456,#644=e#464.#417)])
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="INVOKE"
+            target="Lnet/minecraft/client/renderer/entity/LivingEntityRenderer_v1_16_1;scale(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;F)V"
+            shift=Lorg/spongepowered/asm/mixin/injection/At$Shift;.AFTER
+          )]
+        )
+
+  private static com.moonsworth.lunar.client.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.COOCHIRORIICRCIIRIROHIIRIRICCH.OIHRRCOOHRHIHICHRICIRIOCROHOCC.COOCHIRORIICRCIIRIROHIIRIRICCH.OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH lambda$lunar$changeEntityScale$0(net.minecraft.world.entity.LivingEntity);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: new           #37                 // class com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH
+         3: dup
+         4: aload_0
+         5: checkcast     #27                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+         8: fconst_1
+         9: invokespecial #116                // Method com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OIHRRCOOHRHIHICHRICIRIOCROHOCC;F)V
+        12: areturn
+      LineNumberTable:
+        line 333: 0
+
+  private static void lambda$apollo$setupRotations$0(net.minecraft.world.entity.LivingEntity, com.mojang.blaze3d.vertex.PoseStack, com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=7, locals=4, args_size=3
+         0: aload_2
+         1: checkcast     #31                 // class com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+         4: astore_3
+         5: aload_3
+         6: aload_0
+         7: invokevirtual #156                // Method net/minecraft/world/entity/LivingEntity.getUUID:()Ljava/util/UUID;
+        10: invokevirtual #110                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR:(Ljava/util/UUID;)Z
+        13: ifeq          42
+        16: aload_1
+        17: dconst_0
+        18: aload_0
+        19: invokevirtual #155                // Method net/minecraft/world/entity/LivingEntity.getBbHeight:()F
+        22: ldc           #8                  // float 0.1f
+        24: fadd
+        25: f2d
+        26: dconst_0
+        27: invokevirtual #87                 // Method com/mojang/blaze3d/vertex/PoseStack.translate:(DDD)V
+        30: aload_1
+        31: getstatic     #73                 // Field com/mojang/math/Vector3f.ZP:Lcom/mojang/math/Vector3f;
+        34: ldc           #11                 // float 180.0f
+        36: invokevirtual #88                 // Method com/mojang/math/Vector3f.rotationDegrees:(F)Lcom/mojang/math/Quaternion;
+        39: invokevirtual #84                 // Method com/mojang/blaze3d/vertex/PoseStack.mulPose$v1_16_1:(Lcom/mojang/math/Quaternion;)V
+        42: return
+      LineNumberTable:
+        line 231: 0
+        line 233: 5
+        line 234: 16
+        line 235: 30
+        line 237: 42
+      StackMapTable: number_of_entries = 1
+        frame_type = 248 /* chop */
+          offset_delta = 42
+
+  private static void lambda$apollo$shouldFlipEntity$0(net.minecraft.world.entity.LivingEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable, com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=4, args_size=3
+         0: aload_2
+         1: checkcast     #31                 // class com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+         4: astore_3
+         5: aload_3
+         6: aload_0
+         7: invokevirtual #156                // Method net/minecraft/world/entity/LivingEntity.getUUID:()Ljava/util/UUID;
+        10: invokevirtual #110                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR:(Ljava/util/UUID;)Z
+        13: ifeq          24
+        16: aload_1
+        17: iconst_1
+        18: invokestatic  #132                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        21: invokevirtual #160                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+        24: return
+      LineNumberTable:
+        line 219: 0
+        line 221: 5
+        line 222: 16
+        line 224: 24
+      StackMapTable: number_of_entries = 1
+        frame_type = 248 /* chop */
+          offset_delta = 24
+
+  private static java.lang.Float lambda$apollo$shouldShowName$standing$1(com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: checkcast     #32                 // class com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+         4: invokevirtual #111                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/RRCHCHCCORIROIOCHIIIHCCIOCHCOH.IRCIIHCCHOOCRCHCOCOCIROROOCRRI:()I
+         7: i2f
+         8: invokestatic  #136                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+        11: areturn
+      LineNumberTable:
+        line 211: 0
+
+  private static boolean lambda$apollo$shouldShowName$standing$0(com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #107                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.getOptions:()Lcom/lunarclient/apollo/option/Options;
+         4: getstatic     #72                 // Field com/lunarclient/apollo/module/serverrule/ServerRuleModule.OVERRIDE_NAMETAG_RENDER_DISTANCE:Lcom/lunarclient/apollo/option/SimpleOption;
+         7: invokeinterface #164,  2          // InterfaceMethod com/lunarclient/apollo/option/Options.get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+        12: checkcast     #43                 // class java/lang/Boolean
+        15: invokevirtual #131                // Method java/lang/Boolean.booleanValue:()Z
+        18: ireturn
+      LineNumberTable:
+        line 210: 0
+
+  private static java.lang.Float lambda$apollo$shouldShowName$sneaking$1(com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: checkcast     #32                 // class com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+         4: invokevirtual #111                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/RRCHCHCCORIROIOCHIIIHCCIOCHCOH.IRCIIHCCHOOCRCHCOCOCIROROOCRRI:()I
+         7: i2f
+         8: fconst_2
+         9: fdiv
+        10: invokestatic  #136                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+        13: areturn
+      LineNumberTable:
+        line 203: 0
+
+  private static boolean lambda$apollo$shouldShowName$sneaking$0(com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #107                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.getOptions:()Lcom/lunarclient/apollo/option/Options;
+         4: getstatic     #72                 // Field com/lunarclient/apollo/module/serverrule/ServerRuleModule.OVERRIDE_NAMETAG_RENDER_DISTANCE:Lcom/lunarclient/apollo/option/SimpleOption;
+         7: invokeinterface #164,  2          // InterfaceMethod com/lunarclient/apollo/option/Options.get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+        12: checkcast     #43                 // class java/lang/Boolean
+        15: invokevirtual #131                // Method java/lang/Boolean.booleanValue:()Z
+        18: ireturn
+      LineNumberTable:
+        line 202: 0
+
+  private static java.lang.Double lambda$apollo$usePlayerLocationInstead$2(net.minecraft.client.renderer.entity.EntityRenderDispatcher, net.minecraft.world.entity.Entity);
+    descriptor: (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/lang/Double;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #147                // Method net/minecraft/client/renderer/entity/EntityRenderDispatcher.distanceToSqr:(Lnet/minecraft/world/entity/Entity;)D
+         5: invokestatic  #134                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+         8: areturn
+      LineNumberTable:
+        line 196: 0
+
+  private static java.lang.Double lambda$apollo$usePlayerLocationInstead$1(net.minecraft.client.renderer.entity.EntityRenderDispatcher, net.minecraft.world.entity.Entity, com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_0
+         1: getfield      #80                 // Field net/minecraft/client/renderer/entity/EntityRenderDispatcher.camera:Lnet/minecraft/client/Camera;
+         4: getfield      #78                 // Field net/minecraft/client/Camera.entity:Lnet/minecraft/world/entity/Entity;
+         7: invokevirtual #154                // Method net/minecraft/world/entity/Entity.position:()Lnet/minecraft/world/phys/Vec3;
+        10: aload_1
+        11: invokevirtual #154                // Method net/minecraft/world/entity/Entity.position:()Lnet/minecraft/world/phys/Vec3;
+        14: invokevirtual #158                // Method net/minecraft/world/phys/Vec3.distanceToSqr:(Lnet/minecraft/world/phys/Vec3;)D
+        17: invokestatic  #134                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        20: areturn
+      LineNumberTable:
+        line 195: 0
+
+  private static boolean lambda$apollo$usePlayerLocationInstead$0(com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #107                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.getOptions:()Lcom/lunarclient/apollo/option/Options;
+         4: getstatic     #72                 // Field com/lunarclient/apollo/module/serverrule/ServerRuleModule.OVERRIDE_NAMETAG_RENDER_DISTANCE:Lcom/lunarclient/apollo/option/SimpleOption;
+         7: invokeinterface #164,  2          // InterfaceMethod com/lunarclient/apollo/option/Options.get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+        12: checkcast     #43                 // class java/lang/Boolean
+        15: invokevirtual #131                // Method java/lang/Boolean.booleanValue:()Z
+        18: ireturn
+      LineNumberTable:
+        line 194: 0
+
+  private static java.lang.Boolean lambda$apollo$shownNametagOverride$0(java.util.UUID, com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Ljava/util/UUID;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_1
+         1: checkcast     #30                 // class com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+         4: aload_0
+         5: invokevirtual #108                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOIOIRCCICRCCIHCCRHRCIHROHCCI:(Ljava/util/UUID;)Z
+         8: invokestatic  #132                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        11: areturn
+      LineNumberTable:
+        line 173: 0
+
+  private static void lambda$apollo$hiddenNametagOverride$0(net.minecraft.world.entity.LivingEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable, com.moonsworth.lunar.client.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    descriptor: (Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=5, args_size=3
+         0: aload_2
+         1: checkcast     #30                 // class com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+         4: astore_3
+         5: aload_0
+         6: checkcast     #26                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII
+         9: invokeinterface #166,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII.bridge$getUniqueID:()Ljava/util/UUID;
+        14: astore        4
+        16: aload_3
+        17: aload         4
+        19: invokevirtual #109                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOIOIRCCICRCCIHCCRHRCIHROHCCI.OCCCIRIHIRCOCOCORIHHHRCHRIOCCC:(Ljava/util/UUID;)Z
+        22: ifeq          33
+        25: aload_1
+        26: iconst_0
+        27: invokestatic  #132                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        30: invokevirtual #160                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+        33: return
+      LineNumberTable:
+        line 152: 0
+        line 154: 5
+        line 155: 16
+        line 156: 25
+        line 158: 33
+      StackMapTable: number_of_entries = 1
+        frame_type = 248 /* chop */
+          offset_delta = 33
+}
+Signature: #415                         // <T:Lnet/minecraft/world/entity/LivingEntity;M:Lnet/minecraft/client/model/EntityModel_v1_16_1<TT;>;>Lnet/minecraft/client/renderer/entity/EntityRenderer_v1_16_1<TT;>;Lnet/minecraft/client/renderer/entity/RenderLayerParent_v1_16_1<TT;TM;>;
+RuntimeVisibleAnnotations:
+  0: #444(#601=I#5)
+    com.moonsworth.lunar.ichor.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI(
+      max=25
+    )
+RuntimeInvisibleAnnotations:
+  0: #462(#652=[c#455],#633=I#6)
+    org.spongepowered.asm.mixin.Mixin(
+      value=[class Lnet/minecraft/client/renderer/entity/LivingEntityRenderer_v1_16_1;]
+      priority=2000
+    )
+BootstrapMethods:
+  0: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #311 (Ljava/lang/Object;)V
+      #183 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$hiddenNametagOverride$0:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+      #308 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  1: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #310 (Ljava/lang/Object;)Ljava/lang/Object;
+      #190 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shownNametagOverride$0:(Ljava/util/UUID;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+      #305 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Boolean;
+  2: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #312 (Ljava/lang/Object;)Z
+      #191 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+      #309 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  3: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #310 (Ljava/lang/Object;)Ljava/lang/Object;
+      #192 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$1:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+      #306 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Double;
+  4: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #304 ()Ljava/lang/Object;
+      #193 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$usePlayerLocationInstead$2:(Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;Lnet/minecraft/world/entity/Entity;)Ljava/lang/Double;
+      #303 ()Ljava/lang/Double;
+  5: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #312 (Ljava/lang/Object;)Z
+      #186 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$sneaking$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+      #309 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  6: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #310 (Ljava/lang/Object;)Ljava/lang/Object;
+      #187 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$sneaking$1:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+      #307 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  7: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #312 (Ljava/lang/Object;)Z
+      #188 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$standing$0:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+      #309 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Z
+  8: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #310 (Ljava/lang/Object;)Ljava/lang/Object;
+      #189 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldShowName$standing$1:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+      #307 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Float;
+  9: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #311 (Ljava/lang/Object;)V
+      #185 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$shouldFlipEntity$0:(Lnet/minecraft/world/entity/LivingEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+      #308 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  10: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #311 (Ljava/lang/Object;)V
+      #184 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$apollo$setupRotations$0:(Lnet/minecraft/world/entity/LivingEntity;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+      #308 (Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)V
+  11: #195 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #304 ()Ljava/lang/Object;
+      #194 REF_invokeStatic com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/ORCOOOCHIICOIICCROCRCOOROORIHR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COICRRHIRCCCHHROIOIRRICRIOCOCO.lambda$lunar$changeEntityScale$0:(Lnet/minecraft/world/entity/LivingEntity;)Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+      #302 ()Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH;
+InnerClasses:
+  public static final #492= #67 of #66;   // Visibility=class net/minecraft/world/scores/Team$Visibility of class net/minecraft/world/scores/Team
+  public static #426= #37 of #36;         // COOCHIRORIICRCIIRIROHIIRIRICCH=class com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC$COOCHIRORIICRCIIRIROHIIRIRICCH of class com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+  public static final #487= #69 of #68;   // Shift=class org/spongepowered/asm/mixin/injection/At$Shift of class org/spongepowered/asm/mixin/injection/At
+  public static final #461= #49 of #48;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

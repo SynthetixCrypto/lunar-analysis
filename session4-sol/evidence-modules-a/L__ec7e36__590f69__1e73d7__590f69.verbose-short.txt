@@ -1,0 +1,134 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/L/_ec7e36/_590f69/_1e73d7/_590f69.class
+  Last modified Dec 31, 1969; size 2210 bytes
+  SHA-256 checksum fd8b28f95e625e9addc2db72944136ba9c1dae6a699def2c5e88916f07d9cdf1
+public interface L._ec7e36._590f69._1e73d7._590f69<Self extends java.lang.Object> extends L.util._c8175c<Self>
+  minor version: 0
+  major version: 61
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #2                          // L/_ec7e36/_590f69/_1e73d7/_590f69
+  super_class: #4                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 6, attributes: 1
+Constant pool:
+   #1 = Class              #37            // L/_ec7e36/_cfe983/_1e73d7
+   #2 = Class              #38            // L/_ec7e36/_590f69/_1e73d7/_590f69
+   #3 = Class              #39            // L/util/_c8175c
+   #4 = Class              #40            // java/lang/Object
+   #5 = InterfaceMethodref #1.#8          // L/_ec7e36/_cfe983/_1e73d7._21aca6:([LL/_ec7e36/_cfe983/_1e73d7;)[LL/_ec7e36/_dd3308;
+   #6 = InterfaceMethodref #2.#7          // L/_ec7e36/_590f69/_1e73d7/_590f69._13ea87:([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+   #7 = NameAndType        #28:#14        // _13ea87:([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+   #8 = NameAndType        #30:#17        // _21aca6:([LL/_ec7e36/_cfe983/_1e73d7;)[LL/_ec7e36/_dd3308;
+   #9 = Utf8               (Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+  #10 = Utf8               (Ljava/util/function/BooleanSupplier;)TSelf;
+  #11 = Utf8               (Z)Ljava/lang/Object;
+  #12 = Utf8               (Z)TSelf;
+  #13 = Utf8               (Z)V
+  #14 = Utf8               ([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+  #15 = Utf8               ([LL/_ec7e36/_dd3308<*>;)TSelf;
+  #16 = Utf8               ([LL/_ec7e36/_cfe983/_1e73d7;)Ljava/lang/Object;
+  #17 = Utf8               ([LL/_ec7e36/_cfe983/_1e73d7;)[LL/_ec7e36/_dd3308;
+  #18 = Utf8               ([LL/_ec7e36/_cfe983/_1e73d7<**>;)TSelf;
+  #19 = Utf8               <Self:Ljava/lang/Object;>Ljava/lang/Object;LL/util/_c8175c<TSelf;>;
+  #20 = Utf8               _429bf0
+  #21 = Utf8               Code
+  #22 = Utf8               _2f4182
+  #23 = Utf8               _bb4487
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               Lorg/jetbrains/annotations/Contract;
+  #26 = Utf8               Lorg/jetbrains/annotations/NotNull;
+  #27 = Utf8               Lorg/jetbrains/annotations/TestOnly;
+  #28 = Utf8               _13ea87
+  #29 = Utf8               _0a2a8d
+  #30 = Utf8               _21aca6
+  #31 = Utf8               _9befe9
+  #32 = Utf8               RuntimeInvisibleAnnotations
+  #33 = Utf8               RuntimeInvisibleParameterAnnotations
+  #34 = Utf8               RuntimeInvisibleTypeAnnotations
+  #35 = Utf8               Signature
+  #36 = Utf8               _ -> this
+  #37 = Utf8               L/_ec7e36/_cfe983/_1e73d7
+  #38 = Utf8               L/_ec7e36/_590f69/_1e73d7/_590f69
+  #39 = Utf8               L/util/_c8175c
+  #40 = Utf8               java/lang/Object
+  #41 = Utf8               value
+{
+  public abstract Self _13ea87(L._ec7e36._dd3308<?>...);
+    descriptor: ([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+    flags: (0x0481) ACC_PUBLIC, ACC_VARARGS, ACC_ABSTRACT
+    Signature: #15                          // ([LL/_ec7e36/_dd3308<*>;)TSelf;
+    RuntimeInvisibleAnnotations:
+      0: #25(#41=s#36)
+        org.jetbrains.annotations.Contract(
+          value="_ -> this"
+        )
+
+  public default Self _bb4487(L._ec7e36._cfe983._1e73d7<?, ?>...);
+    descriptor: ([LL/_ec7e36/_cfe983/_1e73d7;)Ljava/lang/Object;
+    flags: (0x0081) ACC_PUBLIC, ACC_VARARGS
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokestatic  #5                  // InterfaceMethod L/_ec7e36/_cfe983/_1e73d7._21aca6:([LL/_ec7e36/_cfe983/_1e73d7;)[LL/_ec7e36/_dd3308;
+         5: invokeinterface #6,  2            // InterfaceMethod _13ea87:([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+        10: areturn
+      LineNumberTable:
+        line 40: 0
+    Signature: #18                          // ([LL/_ec7e36/_cfe983/_1e73d7<**>;)TSelf;
+    RuntimeInvisibleAnnotations:
+      0: #25(#41=s#36)
+        org.jetbrains.annotations.Contract(
+          value="_ -> this"
+        )
+
+  public abstract Self _2f4182(java.util.function.BooleanSupplier);
+    descriptor: (Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #10                          // (Ljava/util/function/BooleanSupplier;)TSelf;
+    RuntimeInvisibleAnnotations:
+      0: #25(#41=s#36)
+        org.jetbrains.annotations.Contract(
+          value="_ -> this"
+        )
+    RuntimeInvisibleTypeAnnotations:
+      0: #26(): METHOD_FORMAL_PARAMETER, param_index=0
+        org.jetbrains.annotations.NotNull
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+        0: #26()
+          org.jetbrains.annotations.NotNull
+
+  public abstract Self _429bf0(java.util.function.BooleanSupplier);
+    descriptor: (Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #10                          // (Ljava/util/function/BooleanSupplier;)TSelf;
+    RuntimeInvisibleAnnotations:
+      0: #25(#41=s#36)
+        org.jetbrains.annotations.Contract(
+          value="_ -> this"
+        )
+    RuntimeInvisibleTypeAnnotations:
+      0: #26(): METHOD_FORMAL_PARAMETER, param_index=0
+        org.jetbrains.annotations.NotNull
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+        0: #26()
+          org.jetbrains.annotations.NotNull
+
+  public abstract Self _9befe9(boolean);
+    descriptor: (Z)Ljava/lang/Object;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #12                          // (Z)TSelf;
+    RuntimeInvisibleAnnotations:
+      0: #25(#41=s#36)
+        org.jetbrains.annotations.Contract(
+          value="_ -> this"
+        )
+
+  public abstract void _0a2a8d(boolean);
+    descriptor: (Z)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeInvisibleAnnotations:
+      0: #27()
+        org.jetbrains.annotations.TestOnly
+}
+Signature: #19                          // <Self:Ljava/lang/Object;>Ljava/lang/Object;LL/util/_c8175c<TSelf;>;

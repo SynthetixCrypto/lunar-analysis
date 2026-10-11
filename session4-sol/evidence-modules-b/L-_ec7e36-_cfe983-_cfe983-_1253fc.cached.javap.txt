@@ -1,0 +1,139 @@
+public abstract class com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.OHOORCOHRORRIHROOCROOIIHHOOHRI<B extends com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.OHOORCOHRORRIHROOCROOIIHHOOHRI<B, O>, O extends com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COHHOIRRCCCICHRHCOHRRCRHOIRIHI<java.lang.Integer>> extends com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH<B, O, java.lang.Integer> implements com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII$RROHOCRCCHCIORHICIHCOHRIRCIHCI<B, java.lang.Integer> {
+  protected int IHORHOCCOCCOIIIHOHCHRCHRRHIHII;
+
+  protected int min;
+
+  protected int max;
+
+  protected boolean IRCIHCOCIRCIHRHOOHIHCRIOICCHHR;
+
+  protected boolean OOOHICOOHIICRHHIIHRHORHHIIRCOO;
+
+  protected com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH.OHOORCOHRORRIHROOCROOIIHHOOHRI(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #25                 // Method com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":(Ljava/lang/String;)V
+       5: aload_0
+       6: aload_0
+       7: invokevirtual #29                 // Method OCICRRCOCIHCOCIIHCCHHICHIHRHIR:()I
+      10: putfield      #19                 // Field IHORHOCCOCCOIIIHOHCHRCHRRHIHII:I
+      13: aload_0
+      14: ldc           #1                  // int -2147483648
+      16: putfield      #23                 // Field min:I
+      19: aload_0
+      20: ldc           #2                  // int 2147483647
+      22: putfield      #22                 // Field max:I
+      25: aload_0
+      26: iconst_1
+      27: putfield      #20                 // Field IRCIHCOCIRCIHRHOOHIHCRIOICCHHR:Z
+      30: aload_0
+      31: iconst_1
+      32: putfield      #21                 // Field OOOHICOOHIICRHHIIHRHORHHIIRCOO:Z
+      35: return
+
+  protected int OCICRRCOCIHCOCIIHCCHHICHIHRHIR();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  protected com.moonsworth.lunar.client.OHOORCCRHHHHROIICHOCRHOCRICROH.RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHRORRHCHCRICORRRCIRIOCCIRCRII HIOOCRRIORCOHCOHOHORICHHOICOCC();
+    Code:
+       0: getstatic     #18                 // Field com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.SLIDER:Lcom/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+       3: areturn
+
+  protected com.lunarclient.dfu.serialization.Codec<java.lang.Integer> HCCRHHRRIOOHOHHCIOHOHHHOOHRHIH();
+    Code:
+       0: getstatic     #17                 // Field com/lunarclient/dfu/serialization/Codec.INT:Lcom/lunarclient/dfu/serialization/codecs/PrimitiveCodec;
+       3: areturn
+
+  public B HRIHICIORIHCCRIRCHRIROIHCHOIIR(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #19                 // Field IHORHOCCOCCOIIIHOHCHRCHRRHIHII:I
+       5: aload_0
+       6: areturn
+
+  public B ORHHCIHIOOCOOHOOIROIHHOCOOCIRH(boolean, boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #20                 // Field IRCIHCOCIRCIHRHOOHIHCRIOICCHHR:Z
+       5: aload_0
+       6: iload_2
+       7: putfield      #21                 // Field OOOHICOOHIICRHHIIHRHORHHIIRCOO:Z
+      10: aload_0
+      11: areturn
+
+  public B COOCHIRORIICRCIIRIROHIIRIRICCH(java.lang.Integer, java.lang.Integer);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #33                 // Method java/lang/Integer.intValue:()I
+       5: aload_2
+       6: invokevirtual #33                 // Method java/lang/Integer.intValue:()I
+       9: invokevirtual #27                 // Method COCCHCCHRRIIHCOIHORCCOHCCRROOR:(II)Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+      12: areturn
+
+  public B COCCHCCHRRIIHCOIHORCCOHCCRROOR(int, int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #23                 // Field min:I
+       5: aload_0
+       6: iload_2
+       7: putfield      #22                 // Field max:I
+      10: aload_0
+      11: getfield      #23                 // Field min:I
+      14: aload_0
+      15: getfield      #22                 // Field max:I
+      18: if_icmple     31
+      21: new           #15                 // class java/lang/IllegalStateException
+      24: dup
+      25: ldc           #3                  // String Min cannot be more than Max!
+      27: invokespecial #32                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      30: athrow
+      31: aload_0
+      32: areturn
+
+  protected O COICRRHIRCCCHHROIOIRRICRIOCOCO(O);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #26                 // Method com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.COICRRHIRCCCHHROIOIRRICRIOCOCO:(Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI;)Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI;
+       5: pop
+       6: aload_1
+       7: getstatic     #24                 // Field com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OHRORRHCHCRICORRRCIRIOCCIRCRII/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.CROIHIICHCORIRCICIRCHCIHRIORHO:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+      10: aload_0
+      11: getfield      #23                 // Field min:I
+      14: aload_0
+      15: getfield      #22                 // Field max:I
+      18: aload_0
+      19: getfield      #20                 // Field IRCIHCOCIRCIHRHOOHIHCRIOICCHHR:Z
+      22: aload_0
+      23: getfield      #21                 // Field OOOHICOOHIICRHHIIHRHORHHIIRCOO:Z
+      26: invokestatic  #31                 // Method com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OHRORRHCHCRICORRRCIRIOCCIRCRII/COOCHIRORIICRCIIRIROHIIRIRICCH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.COOCHIRORIICRCIIRIROHIIRIRICCH:(IIZZ)Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OHRORRHCHCRICORRRCIRIOCCIRCRII/COOCHIRORIICRCIIRIROHIIRIRICCH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      29: invokeinterface #34,  3           // InterfaceMethod com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;Ljava/lang/Object;)Ljava/lang/Object;
+      34: pop
+      35: aload_1
+      36: areturn
+
+  public com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII$RROHOCRCCHCIORHICIHCOHRIRCIHCI COOCHIRORIICRCIIRIROHIIRIRICCH(java.lang.Number, java.lang.Number);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #16                 // class java/lang/Integer
+       5: aload_2
+       6: checkcast     #16                 // class java/lang/Integer
+       9: invokevirtual #28                 // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Integer;Ljava/lang/Integer;)Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+      12: areturn
+
+  public com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII$RROHOCRCCHCIORHICIHCOHRIRCIHCI RIHHCHHHROOHOOIOIIRIOOCRHHOOOR(boolean, boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: invokevirtual #30                 // Method ORHHCIHIOOCOOHOOIROIHHOCOOCIRH:(ZZ)Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+       6: areturn
+}

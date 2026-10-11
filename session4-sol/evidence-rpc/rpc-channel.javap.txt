@@ -1,0 +1,213 @@
+public final class com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI implements com.google.protobuf.RpcChannel, java.util.function.Consumer<com.lunarclient.gameipc.protocol.v1.IPCRpcResponse> {
+  private static final com.google.common.cache.RemovalListener<com.google.protobuf.ByteString, com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH> HIOOOOHOICICCOHIRRCHHRIIOIIOIR;
+
+  private final com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH HCRCHRIHOHORHCCOIRROIIRRHHHIHH;
+
+  private final com.google.common.cache.Cache<com.google.protobuf.ByteString, com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH> ICOCHORROCHROCROHIOIRIIIRHCRCC;
+
+  public com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    Code:
+       0: aload_0
+       1: invokespecial #93                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #55                 // Method com/google/common/cache/CacheBuilder.newBuilder:()Lcom/google/common/cache/CacheBuilder;
+       8: ldc2_w        #42                 // long 10l
+      11: getstatic     #52                 // Field java/util/concurrent/TimeUnit.MINUTES:Ljava/util/concurrent/TimeUnit;
+      14: invokevirtual #54                 // Method com/google/common/cache/CacheBuilder.expireAfterWrite:(JLjava/util/concurrent/TimeUnit;)Lcom/google/common/cache/CacheBuilder;
+      17: getstatic     #46                 // Field HIOOOOHOICICCOHIRRCHHRIIOIIOIR:Lcom/google/common/cache/RemovalListener;
+      20: invokevirtual #56                 // Method com/google/common/cache/CacheBuilder.removalListener:(Lcom/google/common/cache/RemovalListener;)Lcom/google/common/cache/CacheBuilder;
+      23: invokevirtual #53                 // Method com/google/common/cache/CacheBuilder.build:()Lcom/google/common/cache/Cache;
+      26: putfield      #47                 // Field ICOCHORROCHROCROHIOIRIIIRHCRCC:Lcom/google/common/cache/Cache;
+      29: aload_0
+      30: aload_1
+      31: putfield      #45                 // Field HCRCHRIHOHORHCCOIRROIIRRHHHIHH:Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      34: return
+
+  public void callMethod(com.google.protobuf.Descriptors$MethodDescriptor, com.google.protobuf.RpcController, com.google.protobuf.Message, com.google.protobuf.Message, com.google.protobuf.RpcCallback<com.google.protobuf.Message>);
+    Code:
+       0: aload_0
+       1: getfield      #45                 // Field HCRCHRIHOHORHCCOIRROIIRRHHHIHH:Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       4: invokevirtual #83                 // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH.isOpen:()Z
+       7: ifne          41
+      10: getstatic     #51                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.IPC:Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      13: invokestatic  #91                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Z
+      16: ifeq          40
+      19: ldc           #4                  // String IPC
+      21: aload_1
+      22: invokevirtual #65                 // Method com/google/protobuf/Descriptors$MethodDescriptor.getService:()Lcom/google/protobuf/Descriptors$ServiceDescriptor;
+      25: invokevirtual #66                 // Method com/google/protobuf/Descriptors$ServiceDescriptor.getFullName:()Ljava/lang/String;
+      28: invokedynamic #107,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      33: iconst_0
+      34: anewarray     #33                 // class java/lang/Object
+      37: invokestatic  #89                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      40: return
+      41: invokestatic  #97                 // Method java/util/UUID.randomUUID:()Ljava/util/UUID;
+      44: invokevirtual #98                 // Method java/util/UUID.toString:()Ljava/lang/String;
+      47: invokestatic  #59                 // Method com/google/protobuf/ByteString.copyFromUtf8:(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
+      50: astore        6
+      52: invokestatic  #73                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage.newBuilder:()Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder;
+      55: aload         6
+      57: invokevirtual #81                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder.setRequestId:(Lcom/google/protobuf/ByteString;)Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder;
+      60: aload_1
+      61: invokevirtual #65                 // Method com/google/protobuf/Descriptors$MethodDescriptor.getService:()Lcom/google/protobuf/Descriptors$ServiceDescriptor;
+      64: invokevirtual #66                 // Method com/google/protobuf/Descriptors$ServiceDescriptor.getFullName:()Ljava/lang/String;
+      67: invokevirtual #82                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder.setService:(Ljava/lang/String;)Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder;
+      70: aload_1
+      71: invokevirtual #64                 // Method com/google/protobuf/Descriptors$MethodDescriptor.getName:()Ljava/lang/String;
+      74: invokevirtual #80                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder.setMethod:(Ljava/lang/String;)Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder;
+      77: aload_1
+      78: invokevirtual #62                 // Method com/google/protobuf/Descriptors$MethodDescriptor.getFullName:()Ljava/lang/String;
+      81: invokevirtual #76                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder.setFullMethod:(Ljava/lang/String;)Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder;
+      84: aload_1
+      85: invokevirtual #63                 // Method com/google/protobuf/Descriptors$MethodDescriptor.getInputType:()Lcom/google/protobuf/Descriptors$Descriptor;
+      88: invokevirtual #61                 // Method com/google/protobuf/Descriptors$Descriptor.getName:()Ljava/lang/String;
+      91: invokevirtual #79                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder.setInputName:(Ljava/lang/String;)Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder;
+      94: aload_1
+      95: invokevirtual #63                 // Method com/google/protobuf/Descriptors$MethodDescriptor.getInputType:()Lcom/google/protobuf/Descriptors$Descriptor;
+      98: invokevirtual #60                 // Method com/google/protobuf/Descriptors$Descriptor.getFullName:()Ljava/lang/String;
+     101: invokevirtual #78                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder.setInputFullName:(Ljava/lang/String;)Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder;
+     104: aload_3
+     105: invokeinterface #104,  1          // InterfaceMethod com/google/protobuf/Message.toByteString:()Lcom/google/protobuf/ByteString;
+     110: invokevirtual #77                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder.setInput:(Lcom/google/protobuf/ByteString;)Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder;
+     113: invokevirtual #75                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage$Builder.build:()Lcom/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage;
+     116: astore        7
+     118: aload_0
+     119: getfield      #47                 // Field ICOCHORROCHROCROHIOIRIIIRHCRCC:Lcom/google/common/cache/Cache;
+     122: aload         6
+     124: new           #28                 // class com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH
+     127: dup
+     128: aload         7
+     130: invokevirtual #72                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage.getService:()Ljava/lang/String;
+     133: aload         7
+     135: invokevirtual #70                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage.getMethod:()Ljava/lang/String;
+     138: invokedynamic #108,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     143: aload         4
+     145: aload         5
+     147: invokespecial #87                 // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":(Ljava/lang/String;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V
+     150: invokeinterface #102,  3          // InterfaceMethod com/google/common/cache/Cache.put:(Ljava/lang/Object;Ljava/lang/Object;)V
+     155: aload_0
+     156: getfield      #45                 // Field HCRCHRIHOHORHCCOIRROIIRRHHHIHH:Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+     159: aload         7
+     161: invokevirtual #74                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage.toByteArray:()[B
+     164: invokevirtual #84                 // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH.send:([B)V
+     167: getstatic     #51                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.IPC:Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+     170: invokestatic  #91                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Z
+     173: ifeq          211
+     176: ldc           #4                  // String IPC
+     178: ldc           #5                  // String Request %s for %s.%s
+     180: iconst_3
+     181: anewarray     #33                 // class java/lang/Object
+     184: dup
+     185: iconst_0
+     186: aload         7
+     188: invokevirtual #71                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage.getRequestId:()Lcom/google/protobuf/ByteString;
+     191: aastore
+     192: dup
+     193: iconst_1
+     194: aload         7
+     196: invokevirtual #72                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage.getService:()Ljava/lang/String;
+     199: aastore
+     200: dup
+     201: iconst_2
+     202: aload         7
+     204: invokevirtual #70                 // Method com/lunarclient/gameipc/protocol/v1/LauncherboundIPCMessage.getMethod:()Ljava/lang/String;
+     207: aastore
+     208: invokestatic  #90                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+     211: return
+
+  public void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.gameipc.protocol.v1.IPCRpcResponse);
+    Code:
+       0: aload_0
+       1: getfield      #47                 // Field ICOCHORROCHROCROHIOIRIIIRHCRCC:Lcom/google/common/cache/Cache;
+       4: aload_1
+       5: invokevirtual #69                 // Method com/lunarclient/gameipc/protocol/v1/IPCRpcResponse.getRequestId:()Lcom/google/protobuf/ByteString;
+       8: invokeinterface #99,  2           // InterfaceMethod com/google/common/cache/Cache.getIfPresent:(Ljava/lang/Object;)Ljava/lang/Object;
+      13: checkcast     #28                 // class com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH
+      16: astore_2
+      17: aload_2
+      18: ifnonnull     40
+      21: ldc           #4                  // String IPC
+      23: ldc           #3                  // String Failed to find associated request with ID %s
+      25: iconst_1
+      26: anewarray     #33                 // class java/lang/Object
+      29: dup
+      30: iconst_0
+      31: aload_1
+      32: invokevirtual #69                 // Method com/lunarclient/gameipc/protocol/v1/IPCRpcResponse.getRequestId:()Lcom/google/protobuf/ByteString;
+      35: aastore
+      36: invokestatic  #88                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      39: return
+      40: aload_0
+      41: getfield      #47                 // Field ICOCHORROCHROCROHIOIRIIIRHCRCC:Lcom/google/common/cache/Cache;
+      44: aload_1
+      45: invokevirtual #69                 // Method com/lunarclient/gameipc/protocol/v1/IPCRpcResponse.getRequestId:()Lcom/google/protobuf/ByteString;
+      48: invokeinterface #100,  2          // InterfaceMethod com/google/common/cache/Cache.invalidate:(Ljava/lang/Object;)V
+      53: aload_2
+      54: getfield      #49                 // Field com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH.ORROOCIORCCRRRCCRHRORCCHHORHRO:Lcom/google/protobuf/Message;
+      57: invokeinterface #103,  1          // InterfaceMethod com/google/protobuf/Message.newBuilderForType:()Lcom/google/protobuf/Message$Builder;
+      62: aload_1
+      63: invokevirtual #68                 // Method com/lunarclient/gameipc/protocol/v1/IPCRpcResponse.getOutput:()Lcom/google/protobuf/ByteString;
+      66: invokeinterface #106,  2          // InterfaceMethod com/google/protobuf/Message$Builder.mergeFrom:(Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/Message$Builder;
+      71: invokeinterface #105,  1          // InterfaceMethod com/google/protobuf/Message$Builder.build:()Lcom/google/protobuf/Message;
+      76: astore_3
+      77: goto          99
+      80: astore        4
+      82: ldc           #4                  // String IPC
+      84: ldc           #2                  // String Failed to decode response
+      86: iconst_0
+      87: anewarray     #33                 // class java/lang/Object
+      90: invokestatic  #88                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      93: aload         4
+      95: invokevirtual #67                 // Method com/google/protobuf/InvalidProtocolBufferException.printStackTrace:()V
+      98: return
+      99: aload_3
+     100: aload_2
+     101: getfield      #48                 // Field com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH.CIHHHIIRHIROOOOCHHOICHORHCRCRO:Lcom/google/protobuf/RpcCallback;
+     104: invokestatic  #92                 // Method com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/google/protobuf/RpcCallback;)V
+     107: return
+    Exception table:
+       from    to  target type
+          53    77    80   Class com/google/protobuf/InvalidProtocolBufferException
+
+  public void ORIRHCHRRHRCCOCIHCOOCHHOHCCCIO();
+    Code:
+       0: aload_0
+       1: getfield      #47                 // Field ICOCHORROCHROCROHIOIRIIIRHCRCC:Lcom/google/common/cache/Cache;
+       4: invokeinterface #101,  1          // InterfaceMethod com/google/common/cache/Cache.invalidateAll:()V
+       9: return
+
+  public void accept(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #23                 // class com/lunarclient/gameipc/protocol/v1/IPCRpcResponse
+       5: invokevirtual #86                 // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/lunarclient/gameipc/protocol/v1/IPCRpcResponse;)V
+       8: return
+
+  private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.google.common.cache.RemovalNotification);
+    Code:
+       0: aload_0
+       1: invokevirtual #57                 // Method com/google/common/cache/RemovalNotification.getCause:()Lcom/google/common/cache/RemovalCause;
+       4: getstatic     #44                 // Field com/google/common/cache/RemovalCause.EXPLICIT:Lcom/google/common/cache/RemovalCause;
+       7: if_acmpne     11
+      10: return
+      11: ldc           #4                  // String IPC
+      13: aload_0
+      14: invokevirtual #58                 // Method com/google/common/cache/RemovalNotification.getValue:()Ljava/lang/Object;
+      17: checkcast     #28                 // class com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH
+      20: getfield      #50                 // Field com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI$COOCHIRORIICRCIIRIROHIIRIRICCH.RHIHRHOICHHHROHHHICROIOIHOICRH:Ljava/lang/String;
+      23: aload_0
+      24: invokevirtual #57                 // Method com/google/common/cache/RemovalNotification.getCause:()Lcom/google/common/cache/RemovalCause;
+      27: invokestatic  #94                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      30: invokedynamic #109,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      35: iconst_0
+      36: anewarray     #33                 // class java/lang/Object
+      39: invokestatic  #89                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      42: return
+
+  static {};
+    Code:
+       0: invokedynamic #110,  0            // InvokeDynamic #3:onRemoval:()Lcom/google/common/cache/RemovalListener;
+       5: putstatic     #46                 // Field HIOOOOHOICICCOHIRRCHHRIIOIIOIR:Lcom/google/common/cache/RemovalListener;
+       8: return
+}

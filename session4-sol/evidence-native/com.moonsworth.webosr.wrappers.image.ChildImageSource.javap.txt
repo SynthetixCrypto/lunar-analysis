@@ -1,0 +1,16 @@
+public final class com.moonsworth.webosr.wrappers.image.ChildImageSource extends com.moonsworth.webosr.NativeHandle implements com.moonsworth.webosr.wrappers.image.ImageSource {
+  private com.moonsworth.webosr.wrappers.image.ChildImageSource(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #4                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void bind();
+
+  public native void unbind();
+
+  public native void uv(int, int, int, int);
+
+  protected native void destroy();
+}

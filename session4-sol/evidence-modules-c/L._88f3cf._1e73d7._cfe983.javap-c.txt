@@ -1,0 +1,51 @@
+public class com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH extends com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.OHRORRHCHCRICORRRCIRIOCCIRCRII.OHRORRHCHCRICORRRCIRIOCCIRCRII {
+  private final java.util.function.Supplier<java.lang.String> HIRHIHOHOCHRHIIHHCOHCIIRHROHRR;
+
+  private final java.util.function.Supplier<java.lang.String> OHICCIHIOOIHHIHOCIIHHOHOHCCROH;
+
+  public com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH(java.lang.String, java.util.Set<com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RORCICOHRIOIIIOIOHIIIICRCIHRII>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, boolean, boolean, java.util.function.Supplier<java.lang.String>, java.util.function.Supplier<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: iload         5
+       8: iload         6
+      10: invokespecial #7                  // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":(Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;ZZ)V
+      13: aload_0
+      14: aload         7
+      16: putfield      #5                  // Field HIRHIHOHOCHRHIIHHCOHCIIRHROHRR:Ljava/util/function/Supplier;
+      19: aload_0
+      20: aload         8
+      22: putfield      #6                  // Field OHICCIHIOOIHHIHOCIIHHOHOHCCROH:Ljava/util/function/Supplier;
+      25: return
+
+  public java.lang.String getName();
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field HIRHIHOHOCHRHIIHHCOHCIIRHROHRR:Ljava/util/function/Supplier;
+       4: ifnull        22
+       7: aload_0
+       8: getfield      #5                  // Field HIRHIHOHOCHRHIIHHCOHCIIRHROHRR:Ljava/util/function/Supplier;
+      11: invokeinterface #10,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      16: checkcast     #3                  // class java/lang/String
+      19: goto          26
+      22: aload_0
+      23: invokespecial #9                  // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/OHRORRHCHCRICORRRCIRIOCCIRCRII.getName:()Ljava/lang/String;
+      26: areturn
+
+  public java.lang.String getDescription();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field OHICCIHIOOIHHIHOCIIHHOHOHCCROH:Ljava/util/function/Supplier;
+       4: ifnull        22
+       7: aload_0
+       8: getfield      #6                  // Field OHICCIHIOOIHHIHOCIIHHOHOHCCROH:Ljava/util/function/Supplier;
+      11: invokeinterface #10,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      16: checkcast     #3                  // class java/lang/String
+      19: goto          26
+      22: aload_0
+      23: invokespecial #8                  // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/OHRORRHCHCRICORRRCIRIOCCIRCRII.getDescription:()Ljava/lang/String;
+      26: areturn
+}

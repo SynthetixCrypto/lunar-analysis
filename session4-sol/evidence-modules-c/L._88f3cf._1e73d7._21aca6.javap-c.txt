@@ -1,0 +1,44 @@
+public class com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.OHRORRHCHCRICORRRCIRIOCCIRCRII.RROHOCRCCHCIORHICIHCOHRIRCIHCI implements com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.OHRORRHCHCRICORRRCIRIOCCIRCRII {
+  private final java.util.function.BooleanSupplier ORHORROICOOHHHORIRHHROROIIHOIC;
+
+  private final com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RROHOCRCCHCIORHICIHCOHRIRCIHCI IHOOIIIROIHROCHORCHRHICCIOOOCI;
+
+  public <T extends com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RROHOCRCCHCIORHICIHCOHRIRCIHCI> T IIHIOHORIHHCHOOOORCRIRHHRIOIIH();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field IHOOIIIROIHROCHORCHRHICCIOOOCI:Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+       4: areturn
+
+  public boolean CRICOOICRHORHRHHCROCHORRCIICCI();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field ORHORROICOOHHHORIRHHROROIIHOIC:Ljava/util/function/BooleanSupplier;
+       4: ifnull        19
+       7: aload_0
+       8: getfield      #9                  // Field ORHORROICOOHHHORIRHHROROIIHOIC:Ljava/util/function/BooleanSupplier;
+      11: invokeinterface #12,  1           // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+      16: ifeq          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  public com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.OHRORRHCHCRICORRRCIRIOCCIRCRII.RROHOCRCCHCIORHICIHCOHRIRCIHCI(java.util.function.BooleanSupplier, com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RROHOCRCCHCIORHICIHCOHRIRCIHCI);
+    Code:
+       0: aload_0
+       1: invokespecial #11                 // Method java/lang/Object."<init>":()V
+       4: aload_2
+       5: ifnonnull     18
+       8: new           #5                  // class java/lang/NullPointerException
+      11: dup
+      12: ldc           #1                  // String parentFeature is marked non-null but is null
+      14: invokespecial #10                 // Method java/lang/NullPointerException."<init>":(Ljava/lang/String;)V
+      17: athrow
+      18: aload_0
+      19: aload_1
+      20: putfield      #9                  // Field ORHORROICOOHHHORIRHHROROIIHOIC:Ljava/util/function/BooleanSupplier;
+      23: aload_0
+      24: aload_2
+      25: putfield      #8                  // Field IHOOIIIROIHROCHORCHRHICCIOOOCI:Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      28: return
+}

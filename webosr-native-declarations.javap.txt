@@ -1,0 +1,3334 @@
+public interface com.moonsworth.webosr.BridgeValueCodec {
+  public abstract java.lang.String objectToString(java.lang.Object, java.lang.Class<?>);
+}
+public abstract class com.moonsworth.webosr.NativeHandle implements java.lang.AutoCloseable {
+  private long handle;
+
+  protected com.moonsworth.webosr.NativeHandle(long);
+    Code:
+       0: aload_0
+       1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: lload_1
+       6: putfield      #4                  // Field handle:J
+       9: return
+
+  public void close();
+    Code:
+       0: aload_0
+       1: getfield      #4                  // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifeq          18
+       9: aload_0
+      10: invokevirtual #5                  // Method destroy:()V
+      13: aload_0
+      14: lconst_0
+      15: putfield      #4                  // Field handle:J
+      18: return
+
+  protected abstract void destroy();
+}
+public interface com.moonsworth.webosr.TextureHandler {
+  public abstract int createTexture(int, int, int);
+
+  public abstract void resizeTexture(int, int, int, int);
+
+  public abstract void uploadTexture(int, java.nio.ByteBuffer, int, int, int, int, int);
+
+  public abstract void readTexture(int, java.nio.ByteBuffer, int, int, int);
+
+  public abstract void deleteTexture(int);
+}
+public final class com.moonsworth.webosr.config.BrowserConfig {
+  public int width;
+
+  public int height;
+
+  public double initialScale;
+
+  public com.moonsworth.webosr.wrappers.Session session;
+
+  public com.moonsworth.webosr.wrappers.Browser$Listener eventHandler;
+
+  public boolean initialFocus;
+
+  public boolean accelerated;
+
+  public boolean transparent;
+
+  public boolean images;
+
+  public boolean javascript;
+
+  public boolean compositing;
+
+  public java.lang.String userAgent;
+
+  public java.lang.String fontFamilyStandard;
+
+  public java.lang.String fontFamilyFixed;
+
+  public java.lang.String fontFamilySerif;
+
+  public java.lang.String fontFamilySansSerif;
+
+  public com.moonsworth.webosr.config.BrowserConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #25                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: sipush        800
+       8: putfield      #24                 // Field width:I
+      11: aload_0
+      12: sipush        600
+      15: putfield      #16                 // Field height:I
+      18: aload_0
+      19: dconst_1
+      20: putfield      #19                 // Field initialScale:D
+      23: aload_0
+      24: aconst_null
+      25: putfield      #21                 // Field session:Lcom/moonsworth/webosr/wrappers/Session;
+      28: aload_0
+      29: aconst_null
+      30: putfield      #11                 // Field eventHandler:Lcom/moonsworth/webosr/wrappers/Browser$Listener;
+      33: aload_0
+      34: iconst_1
+      35: putfield      #18                 // Field initialFocus:Z
+      38: aload_0
+      39: iconst_0
+      40: putfield      #9                  // Field accelerated:Z
+      43: aload_0
+      44: iconst_0
+      45: putfield      #22                 // Field transparent:Z
+      48: aload_0
+      49: iconst_1
+      50: putfield      #17                 // Field images:Z
+      53: aload_0
+      54: iconst_1
+      55: putfield      #20                 // Field javascript:Z
+      58: aload_0
+      59: iconst_0
+      60: putfield      #10                 // Field compositing:Z
+      63: aload_0
+      64: ldc           #3                  // String Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/615.1.18.100.1 (KHTML, like Gecko) Version/16.4.1 Safari/615.1.18.100.1
+      66: putfield      #23                 // Field userAgent:Ljava/lang/String;
+      69: aload_0
+      70: ldc           #4                  // String Times New Roman
+      72: putfield      #15                 // Field fontFamilyStandard:Ljava/lang/String;
+      75: aload_0
+      76: ldc           #2                  // String Courier New
+      78: putfield      #12                 // Field fontFamilyFixed:Ljava/lang/String;
+      81: aload_0
+      82: ldc           #4                  // String Times New Roman
+      84: putfield      #14                 // Field fontFamilySerif:Ljava/lang/String;
+      87: aload_0
+      88: ldc           #1                  // String Arial
+      90: putfield      #13                 // Field fontFamilySansSerif:Ljava/lang/String;
+      93: return
+}
+public abstract class com.moonsworth.webosr.config.EngineConfig {
+  public com.moonsworth.webosr.handler.FileSystem fileSystem;
+
+  public java.lang.Integer remoteDebugPort;
+
+  public com.moonsworth.webosr.handler.Clipboard clipboard;
+
+  public com.moonsworth.webosr.TextureHandler textureHandler;
+
+  public com.moonsworth.webosr.config.SystemConfig system;
+
+  public com.moonsworth.webosr.config.EngineConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #3                  // Method java/lang/Object."<init>":()V
+       4: return
+}
+public final class com.moonsworth.webosr.config.SystemConfig {
+  public long display;
+
+  public long window;
+
+  public com.moonsworth.webosr.config.SystemConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #5                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: lconst_0
+       6: putfield      #3                  // Field display:J
+       9: aload_0
+      10: lconst_0
+      11: putfield      #4                  // Field window:J
+      14: return
+}
+public final class com.moonsworth.webosr.config.ThreadConfig {
+  public double idleTimer;
+
+  public double renderTimer;
+
+  public double updateTimer;
+
+  public com.moonsworth.webosr.config.ThreadConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: dconst_0
+       6: putfield      #3                  // Field idleTimer:D
+       9: aload_0
+      10: dconst_0
+      11: putfield      #4                  // Field renderTimer:D
+      14: aload_0
+      15: dconst_0
+      16: putfield      #5                  // Field updateTimer:D
+      19: return
+}
+public final class com.moonsworth.webosr.config.UltralightConfig extends com.moonsworth.webosr.config.EngineConfig {
+  public java.lang.String resourcePath;
+
+  public com.moonsworth.webosr.config.UltralightConfig$EffectQuality effectQuality;
+
+  public com.moonsworth.webosr.config.UltralightConfig$FontHinting fontHinting;
+
+  public double fontGamma;
+
+  public int sampleSizeGPU;
+
+  public int overrideMemorySize;
+
+  public int bitmapAlignment;
+
+  public double animationTimer;
+
+  public double scrollTimer;
+
+  public double recycleTimer;
+
+  public com.moonsworth.webosr.config.UltralightConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #24                 // Method com/moonsworth/webosr/config/EngineConfig."<init>":()V
+       4: aload_0
+       5: ldc           #1                  // String resources/
+       7: putfield      #19                 // Field resourcePath:Ljava/lang/String;
+      10: aload_0
+      11: getstatic     #22                 // Field com/moonsworth/webosr/config/UltralightConfig$EffectQuality.MEDIUM:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      14: putfield      #14                 // Field effectQuality:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      17: aload_0
+      18: getstatic     #23                 // Field com/moonsworth/webosr/config/UltralightConfig$FontHinting.NORMAL:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      21: putfield      #16                 // Field fontHinting:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      24: aload_0
+      25: ldc2_w        #8                  // double 1.8d
+      28: putfield      #15                 // Field fontGamma:D
+      31: aload_0
+      32: iconst_0
+      33: putfield      #20                 // Field sampleSizeGPU:I
+      36: aload_0
+      37: iconst_0
+      38: putfield      #17                 // Field overrideMemorySize:I
+      41: aload_0
+      42: bipush        16
+      44: putfield      #13                 // Field bitmapAlignment:I
+      47: aload_0
+      48: ldc2_w        #6                  // double 0.016666666666666666d
+      51: putfield      #12                 // Field animationTimer:D
+      54: aload_0
+      55: ldc2_w        #6                  // double 0.016666666666666666d
+      58: putfield      #21                 // Field scrollTimer:D
+      61: aload_0
+      62: ldc2_w        #10                 // double 4.0d
+      65: putfield      #18                 // Field recycleTimer:D
+      68: return
+}
+public final class com.moonsworth.webosr.config.UltralightConfig$EffectQuality extends java.lang.Enum<com.moonsworth.webosr.config.UltralightConfig$EffectQuality> {
+  public static final com.moonsworth.webosr.config.UltralightConfig$EffectQuality LOW;
+
+  public static final com.moonsworth.webosr.config.UltralightConfig$EffectQuality MEDIUM;
+
+  public static final com.moonsworth.webosr.config.UltralightConfig$EffectQuality HIGH;
+
+  private static final com.moonsworth.webosr.config.UltralightConfig$EffectQuality[] $VALUES;
+
+  public static com.moonsworth.webosr.config.UltralightConfig$EffectQuality[] values();
+    Code:
+       0: getstatic     #8                  // Field $VALUES:[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+       3: invokevirtual #12                 // Method "[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;".clone:()Ljava/lang/Object;
+       6: checkcast     #4                  // class "[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;"
+       9: areturn
+
+  public static com.moonsworth.webosr.config.UltralightConfig$EffectQuality valueOf(java.lang.String);
+    Code:
+       0: ldc           #6                  // class com/moonsworth/webosr/config/UltralightConfig$EffectQuality
+       2: aload_0
+       3: invokestatic  #18                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #6                  // class com/moonsworth/webosr/config/UltralightConfig$EffectQuality
+       9: areturn
+
+  private com.moonsworth.webosr.config.UltralightConfig$EffectQuality();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #17                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.config.UltralightConfig$EffectQuality fromValue(int);
+    Code:
+       0: invokestatic  #16                 // Method values:()[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int toValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #15                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.config.UltralightConfig$EffectQuality[] $values();
+    Code:
+       0: iconst_3
+       1: anewarray     #6                  // class com/moonsworth/webosr/config/UltralightConfig$EffectQuality
+       4: dup
+       5: iconst_0
+       6: getstatic     #10                 // Field LOW:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #11                 // Field MEDIUM:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #9                  // Field HIGH:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      21: aastore
+      22: areturn
+
+  static {};
+    Code:
+       0: new           #6                  // class com/moonsworth/webosr/config/UltralightConfig$EffectQuality
+       3: dup
+       4: ldc           #2                  // String LOW
+       6: iconst_0
+       7: invokespecial #14                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #10                 // Field LOW:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      13: new           #6                  // class com/moonsworth/webosr/config/UltralightConfig$EffectQuality
+      16: dup
+      17: ldc           #3                  // String MEDIUM
+      19: iconst_1
+      20: invokespecial #14                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #11                 // Field MEDIUM:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      26: new           #6                  // class com/moonsworth/webosr/config/UltralightConfig$EffectQuality
+      29: dup
+      30: ldc           #1                  // String HIGH
+      32: iconst_2
+      33: invokespecial #14                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #9                  // Field HIGH:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      39: invokestatic  #13                 // Method $values:()[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      42: putstatic     #8                  // Field $VALUES:[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      45: return
+}
+public final class com.moonsworth.webosr.config.UltralightConfig$FontHinting extends java.lang.Enum<com.moonsworth.webosr.config.UltralightConfig$FontHinting> {
+  public static final com.moonsworth.webosr.config.UltralightConfig$FontHinting SMOOTH;
+
+  public static final com.moonsworth.webosr.config.UltralightConfig$FontHinting NORMAL;
+
+  public static final com.moonsworth.webosr.config.UltralightConfig$FontHinting MONOCHROME;
+
+  public static final com.moonsworth.webosr.config.UltralightConfig$FontHinting NONE;
+
+  private static final com.moonsworth.webosr.config.UltralightConfig$FontHinting[] $VALUES;
+
+  public static com.moonsworth.webosr.config.UltralightConfig$FontHinting[] values();
+    Code:
+       0: getstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+       3: invokevirtual #14                 // Method "[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;".clone:()Ljava/lang/Object;
+       6: checkcast     #5                  // class "[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;"
+       9: areturn
+
+  public static com.moonsworth.webosr.config.UltralightConfig$FontHinting valueOf(java.lang.String);
+    Code:
+       0: ldc           #7                  // class com/moonsworth/webosr/config/UltralightConfig$FontHinting
+       2: aload_0
+       3: invokestatic  #20                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #7                  // class com/moonsworth/webosr/config/UltralightConfig$FontHinting
+       9: areturn
+
+  private com.moonsworth.webosr.config.UltralightConfig$FontHinting();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #19                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.config.UltralightConfig$FontHinting fromValue(int);
+    Code:
+       0: invokestatic  #18                 // Method values:()[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int toValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #17                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.config.UltralightConfig$FontHinting[] $values();
+    Code:
+       0: iconst_4
+       1: anewarray     #7                  // class com/moonsworth/webosr/config/UltralightConfig$FontHinting
+       4: dup
+       5: iconst_0
+       6: getstatic     #13                 // Field SMOOTH:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #12                 // Field NORMAL:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #10                 // Field MONOCHROME:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      21: aastore
+      22: dup
+      23: iconst_3
+      24: getstatic     #11                 // Field NONE:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      27: aastore
+      28: areturn
+
+  static {};
+    Code:
+       0: new           #7                  // class com/moonsworth/webosr/config/UltralightConfig$FontHinting
+       3: dup
+       4: ldc           #4                  // String SMOOTH
+       6: iconst_0
+       7: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #13                 // Field SMOOTH:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      13: new           #7                  // class com/moonsworth/webosr/config/UltralightConfig$FontHinting
+      16: dup
+      17: ldc           #3                  // String NORMAL
+      19: iconst_1
+      20: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #12                 // Field NORMAL:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      26: new           #7                  // class com/moonsworth/webosr/config/UltralightConfig$FontHinting
+      29: dup
+      30: ldc           #1                  // String MONOCHROME
+      32: iconst_2
+      33: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #10                 // Field MONOCHROME:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      39: new           #7                  // class com/moonsworth/webosr/config/UltralightConfig$FontHinting
+      42: dup
+      43: ldc           #2                  // String NONE
+      45: iconst_3
+      46: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #11                 // Field NONE:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      52: invokestatic  #15                 // Method $values:()[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      55: putstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      58: return
+}
+public interface com.moonsworth.webosr.handler.Clipboard {
+  public abstract java.lang.String read();
+
+  public abstract void write(java.lang.String);
+
+  public abstract void clear();
+}
+public interface com.moonsworth.webosr.handler.FileSystem {
+  public abstract com.moonsworth.webosr.handler.FileSystem$Payload onRequest(java.lang.String);
+
+  public abstract boolean doesResourceExist(java.lang.String);
+}
+public final class com.moonsworth.webosr.handler.FileSystem$Payload extends java.lang.Record {
+  private final java.nio.ByteBuffer buffer;
+
+  private final int length;
+
+  private final java.lang.String mimeType;
+
+  private final int statusCode;
+
+  public com.moonsworth.webosr.handler.FileSystem$Payload(java.nio.ByteBuffer, int, java.lang.String, int);
+    Code:
+       0: aload_0
+       1: invokespecial #12                 // Method java/lang/Record."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #8                  // Field buffer:Ljava/nio/ByteBuffer;
+       9: aload_0
+      10: iload_2
+      11: putfield      #9                  // Field length:I
+      14: aload_0
+      15: aload_3
+      16: putfield      #10                 // Field mimeType:Ljava/lang/String;
+      19: aload_0
+      20: iload         4
+      22: putfield      #11                 // Field statusCode:I
+      25: return
+
+  public final java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokedynamic #16,  0             // InvokeDynamic #0:toString:(Lcom/moonsworth/webosr/handler/FileSystem$Payload;)Ljava/lang/String;
+       6: areturn
+
+  public final int hashCode();
+    Code:
+       0: aload_0
+       1: invokedynamic #15,  0             // InvokeDynamic #0:hashCode:(Lcom/moonsworth/webosr/handler/FileSystem$Payload;)I
+       6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #14,  0             // InvokeDynamic #0:equals:(Lcom/moonsworth/webosr/handler/FileSystem$Payload;Ljava/lang/Object;)Z
+       7: ireturn
+
+  public java.nio.ByteBuffer buffer();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field buffer:Ljava/nio/ByteBuffer;
+       4: areturn
+
+  public int length();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field length:I
+       4: ireturn
+
+  public java.lang.String mimeType();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field mimeType:Ljava/lang/String;
+       4: areturn
+
+  public int statusCode();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field statusCode:I
+       4: ireturn
+}
+public interface com.moonsworth.webosr.handler.FunctionJS {
+  public abstract void invoke(com.moonsworth.webosr.wrappers.PromiseJS<?>, com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String[]);
+}
+public interface com.moonsworth.webosr.handler.Logger {
+  public abstract void onBrowserMessage(com.moonsworth.webosr.wrappers.Browser, com.moonsworth.webosr.handler.Logger$Level, java.lang.String, java.lang.String, int);
+
+  public abstract void onStandardOut(com.moonsworth.webosr.handler.Logger$Level, java.lang.String);
+
+  public abstract void onStandardErr(com.moonsworth.webosr.handler.Logger$Level, java.lang.String);
+}
+public final class com.moonsworth.webosr.handler.Logger$Level extends java.lang.Enum<com.moonsworth.webosr.handler.Logger$Level> {
+  public static final com.moonsworth.webosr.handler.Logger$Level DEBUG;
+
+  public static final com.moonsworth.webosr.handler.Logger$Level INFO;
+
+  public static final com.moonsworth.webosr.handler.Logger$Level WARNING;
+
+  public static final com.moonsworth.webosr.handler.Logger$Level ERROR;
+
+  private static final com.moonsworth.webosr.handler.Logger$Level[] $VALUES;
+
+  public static com.moonsworth.webosr.handler.Logger$Level[] values();
+    Code:
+       0: getstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/handler/Logger$Level;
+       3: invokevirtual #14                 // Method "[Lcom/moonsworth/webosr/handler/Logger$Level;".clone:()Ljava/lang/Object;
+       6: checkcast     #5                  // class "[Lcom/moonsworth/webosr/handler/Logger$Level;"
+       9: areturn
+
+  public static com.moonsworth.webosr.handler.Logger$Level valueOf(java.lang.String);
+    Code:
+       0: ldc           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+       2: aload_0
+       3: invokestatic  #20                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #7                  // class com/moonsworth/webosr/handler/Logger$Level
+       9: areturn
+
+  private com.moonsworth.webosr.handler.Logger$Level();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #19                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.handler.Logger$Level fromValue(int);
+    Code:
+       0: invokestatic  #18                 // Method values:()[Lcom/moonsworth/webosr/handler/Logger$Level;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int getValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #17                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.handler.Logger$Level[] $values();
+    Code:
+       0: iconst_4
+       1: anewarray     #7                  // class com/moonsworth/webosr/handler/Logger$Level
+       4: dup
+       5: iconst_0
+       6: getstatic     #10                 // Field DEBUG:Lcom/moonsworth/webosr/handler/Logger$Level;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #12                 // Field INFO:Lcom/moonsworth/webosr/handler/Logger$Level;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #13                 // Field WARNING:Lcom/moonsworth/webosr/handler/Logger$Level;
+      21: aastore
+      22: dup
+      23: iconst_3
+      24: getstatic     #11                 // Field ERROR:Lcom/moonsworth/webosr/handler/Logger$Level;
+      27: aastore
+      28: areturn
+
+  static {};
+    Code:
+       0: new           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+       3: dup
+       4: ldc           #1                  // String DEBUG
+       6: iconst_0
+       7: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #10                 // Field DEBUG:Lcom/moonsworth/webosr/handler/Logger$Level;
+      13: new           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+      16: dup
+      17: ldc           #3                  // String INFO
+      19: iconst_1
+      20: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #12                 // Field INFO:Lcom/moonsworth/webosr/handler/Logger$Level;
+      26: new           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+      29: dup
+      30: ldc           #4                  // String WARNING
+      32: iconst_2
+      33: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #13                 // Field WARNING:Lcom/moonsworth/webosr/handler/Logger$Level;
+      39: new           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+      42: dup
+      43: ldc           #2                  // String ERROR
+      45: iconst_3
+      46: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #11                 // Field ERROR:Lcom/moonsworth/webosr/handler/Logger$Level;
+      52: invokestatic  #15                 // Method $values:()[Lcom/moonsworth/webosr/handler/Logger$Level;
+      55: putstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/handler/Logger$Level;
+      58: return
+}
+public final class com.moonsworth.webosr.input.Keyboard {
+  public com.moonsworth.webosr.input.Keyboard();
+    Code:
+       0: aload_0
+       1: invokespecial #4                  // Method java/lang/Object."<init>":()V
+       4: return
+}
+public final class com.moonsworth.webosr.input.Keyboard$Action extends java.lang.Enum<com.moonsworth.webosr.input.Keyboard$Action> {
+  public static final com.moonsworth.webosr.input.Keyboard$Action DOWN;
+
+  public static final com.moonsworth.webosr.input.Keyboard$Action UP;
+
+  public static final com.moonsworth.webosr.input.Keyboard$Action CHAR;
+
+  public static final com.moonsworth.webosr.input.Keyboard$Action RAW_DOWN;
+
+  private static final com.moonsworth.webosr.input.Keyboard$Action[] $VALUES;
+
+  public static com.moonsworth.webosr.input.Keyboard$Action[] values();
+    Code:
+       0: getstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/input/Keyboard$Action;
+       3: invokevirtual #14                 // Method "[Lcom/moonsworth/webosr/input/Keyboard$Action;".clone:()Ljava/lang/Object;
+       6: checkcast     #5                  // class "[Lcom/moonsworth/webosr/input/Keyboard$Action;"
+       9: areturn
+
+  public static com.moonsworth.webosr.input.Keyboard$Action valueOf(java.lang.String);
+    Code:
+       0: ldc           #7                  // class com/moonsworth/webosr/input/Keyboard$Action
+       2: aload_0
+       3: invokestatic  #20                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #7                  // class com/moonsworth/webosr/input/Keyboard$Action
+       9: areturn
+
+  private com.moonsworth.webosr.input.Keyboard$Action();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #19                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public int getValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #17                 // Method ordinal:()I
+       4: ireturn
+
+  public com.moonsworth.webosr.input.Keyboard$Action fromValue(int);
+    Code:
+       0: invokestatic  #18                 // Method values:()[Lcom/moonsworth/webosr/input/Keyboard$Action;
+       3: iload_1
+       4: aaload
+       5: areturn
+
+  private static com.moonsworth.webosr.input.Keyboard$Action[] $values();
+    Code:
+       0: iconst_4
+       1: anewarray     #7                  // class com/moonsworth/webosr/input/Keyboard$Action
+       4: dup
+       5: iconst_0
+       6: getstatic     #11                 // Field DOWN:Lcom/moonsworth/webosr/input/Keyboard$Action;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #13                 // Field UP:Lcom/moonsworth/webosr/input/Keyboard$Action;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #10                 // Field CHAR:Lcom/moonsworth/webosr/input/Keyboard$Action;
+      21: aastore
+      22: dup
+      23: iconst_3
+      24: getstatic     #12                 // Field RAW_DOWN:Lcom/moonsworth/webosr/input/Keyboard$Action;
+      27: aastore
+      28: areturn
+
+  static {};
+    Code:
+       0: new           #7                  // class com/moonsworth/webosr/input/Keyboard$Action
+       3: dup
+       4: ldc           #2                  // String DOWN
+       6: iconst_0
+       7: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #11                 // Field DOWN:Lcom/moonsworth/webosr/input/Keyboard$Action;
+      13: new           #7                  // class com/moonsworth/webosr/input/Keyboard$Action
+      16: dup
+      17: ldc           #4                  // String UP
+      19: iconst_1
+      20: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #13                 // Field UP:Lcom/moonsworth/webosr/input/Keyboard$Action;
+      26: new           #7                  // class com/moonsworth/webosr/input/Keyboard$Action
+      29: dup
+      30: ldc           #1                  // String CHAR
+      32: iconst_2
+      33: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #10                 // Field CHAR:Lcom/moonsworth/webosr/input/Keyboard$Action;
+      39: new           #7                  // class com/moonsworth/webosr/input/Keyboard$Action
+      42: dup
+      43: ldc           #3                  // String RAW_DOWN
+      45: iconst_3
+      46: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #12                 // Field RAW_DOWN:Lcom/moonsworth/webosr/input/Keyboard$Action;
+      52: invokestatic  #15                 // Method $values:()[Lcom/moonsworth/webosr/input/Keyboard$Action;
+      55: putstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/input/Keyboard$Action;
+      58: return
+}
+public final class com.moonsworth.webosr.input.Modifiers extends java.lang.Enum<com.moonsworth.webosr.input.Modifiers> {
+  public static final com.moonsworth.webosr.input.Modifiers CAPS_LOCK;
+
+  public static final com.moonsworth.webosr.input.Modifiers SHIFT;
+
+  public static final com.moonsworth.webosr.input.Modifiers CONTROL;
+
+  public static final com.moonsworth.webosr.input.Modifiers ALT;
+
+  public static final com.moonsworth.webosr.input.Modifiers SUPER;
+
+  public static final com.moonsworth.webosr.input.Modifiers LEFT_MOUSE_BUTTON;
+
+  public static final com.moonsworth.webosr.input.Modifiers RIGHT_MOUSE_BUTTON;
+
+  public static final com.moonsworth.webosr.input.Modifiers MIDDLE_MOUSE_BUTTON;
+
+  public static final com.moonsworth.webosr.input.Modifiers NUM_LOCK;
+
+  public static final com.moonsworth.webosr.input.Modifiers KEY_PAD;
+
+  public static final com.moonsworth.webosr.input.Modifiers LEFT;
+
+  public static final com.moonsworth.webosr.input.Modifiers RIGHT;
+
+  public static final com.moonsworth.webosr.input.Modifiers REPEAT;
+
+  public static final com.moonsworth.webosr.input.Modifiers SYSTEM_KEY;
+
+  private final int mask;
+
+  private static final com.moonsworth.webosr.input.Modifiers[] $VALUES;
+
+  public static com.moonsworth.webosr.input.Modifiers[] values();
+    Code:
+       0: getstatic     #18                 // Field $VALUES:[Lcom/moonsworth/webosr/input/Modifiers;
+       3: invokevirtual #34                 // Method "[Lcom/moonsworth/webosr/input/Modifiers;".clone:()Ljava/lang/Object;
+       6: checkcast     #15                 // class "[Lcom/moonsworth/webosr/input/Modifiers;"
+       9: areturn
+
+  public static com.moonsworth.webosr.input.Modifiers valueOf(java.lang.String);
+    Code:
+       0: ldc           #16                 // class com/moonsworth/webosr/input/Modifiers
+       2: aload_0
+       3: invokestatic  #39                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #16                 // class com/moonsworth/webosr/input/Modifiers
+       9: areturn
+
+  private com.moonsworth.webosr.input.Modifiers(int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #38                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: aload_0
+       7: iload_3
+       8: putfield      #33                 // Field mask:I
+      11: return
+
+  public static int toMask(com.moonsworth.webosr.input.Modifiers...);
+    Code:
+       0: iconst_0
+       1: istore_1
+       2: aload_0
+       3: astore_2
+       4: aload_2
+       5: arraylength
+       6: istore_3
+       7: iconst_0
+       8: istore        4
+      10: iload         4
+      12: iload_3
+      13: if_icmpge     36
+      16: aload_2
+      17: iload         4
+      19: aaload
+      20: astore        5
+      22: iload_1
+      23: aload         5
+      25: invokevirtual #37                 // Method getMask:()I
+      28: ior
+      29: istore_1
+      30: iinc          4, 1
+      33: goto          10
+      36: iload_1
+      37: ireturn
+
+  public int getMask();
+    Code:
+       0: aload_0
+       1: getfield      #33                 // Field mask:I
+       4: ireturn
+
+  private static com.moonsworth.webosr.input.Modifiers[] $values();
+    Code:
+       0: bipush        14
+       2: anewarray     #16                 // class com/moonsworth/webosr/input/Modifiers
+       5: dup
+       6: iconst_0
+       7: getstatic     #20                 // Field CAPS_LOCK:Lcom/moonsworth/webosr/input/Modifiers;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #30                 // Field SHIFT:Lcom/moonsworth/webosr/input/Modifiers;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #21                 // Field CONTROL:Lcom/moonsworth/webosr/input/Modifiers;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #19                 // Field ALT:Lcom/moonsworth/webosr/input/Modifiers;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #31                 // Field SUPER:Lcom/moonsworth/webosr/input/Modifiers;
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: getstatic     #24                 // Field LEFT_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+      40: aastore
+      41: dup
+      42: bipush        6
+      44: getstatic     #29                 // Field RIGHT_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+      47: aastore
+      48: dup
+      49: bipush        7
+      51: getstatic     #25                 // Field MIDDLE_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+      54: aastore
+      55: dup
+      56: bipush        8
+      58: getstatic     #26                 // Field NUM_LOCK:Lcom/moonsworth/webosr/input/Modifiers;
+      61: aastore
+      62: dup
+      63: bipush        9
+      65: getstatic     #22                 // Field KEY_PAD:Lcom/moonsworth/webosr/input/Modifiers;
+      68: aastore
+      69: dup
+      70: bipush        10
+      72: getstatic     #23                 // Field LEFT:Lcom/moonsworth/webosr/input/Modifiers;
+      75: aastore
+      76: dup
+      77: bipush        11
+      79: getstatic     #28                 // Field RIGHT:Lcom/moonsworth/webosr/input/Modifiers;
+      82: aastore
+      83: dup
+      84: bipush        12
+      86: getstatic     #27                 // Field REPEAT:Lcom/moonsworth/webosr/input/Modifiers;
+      89: aastore
+      90: dup
+      91: bipush        13
+      93: getstatic     #32                 // Field SYSTEM_KEY:Lcom/moonsworth/webosr/input/Modifiers;
+      96: aastore
+      97: areturn
+
+  static {};
+    Code:
+       0: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+       3: dup
+       4: ldc           #2                  // String CAPS_LOCK
+       6: iconst_0
+       7: iconst_1
+       8: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      11: putstatic     #20                 // Field CAPS_LOCK:Lcom/moonsworth/webosr/input/Modifiers;
+      14: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      17: dup
+      18: ldc           #12                 // String SHIFT
+      20: iconst_1
+      21: iconst_2
+      22: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      25: putstatic     #30                 // Field SHIFT:Lcom/moonsworth/webosr/input/Modifiers;
+      28: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      31: dup
+      32: ldc           #3                  // String CONTROL
+      34: iconst_2
+      35: iconst_4
+      36: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      39: putstatic     #21                 // Field CONTROL:Lcom/moonsworth/webosr/input/Modifiers;
+      42: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      45: dup
+      46: ldc           #1                  // String ALT
+      48: iconst_3
+      49: bipush        8
+      51: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      54: putstatic     #19                 // Field ALT:Lcom/moonsworth/webosr/input/Modifiers;
+      57: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      60: dup
+      61: ldc           #13                 // String SUPER
+      63: iconst_4
+      64: bipush        16
+      66: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      69: putstatic     #31                 // Field SUPER:Lcom/moonsworth/webosr/input/Modifiers;
+      72: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      75: dup
+      76: ldc           #6                  // String LEFT_MOUSE_BUTTON
+      78: iconst_5
+      79: bipush        32
+      81: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+      84: putstatic     #24                 // Field LEFT_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+      87: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+      90: dup
+      91: ldc           #11                 // String RIGHT_MOUSE_BUTTON
+      93: bipush        6
+      95: bipush        64
+      97: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     100: putstatic     #29                 // Field RIGHT_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+     103: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     106: dup
+     107: ldc           #7                  // String MIDDLE_MOUSE_BUTTON
+     109: bipush        7
+     111: sipush        128
+     114: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     117: putstatic     #25                 // Field MIDDLE_MOUSE_BUTTON:Lcom/moonsworth/webosr/input/Modifiers;
+     120: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     123: dup
+     124: ldc           #8                  // String NUM_LOCK
+     126: bipush        8
+     128: sipush        256
+     131: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     134: putstatic     #26                 // Field NUM_LOCK:Lcom/moonsworth/webosr/input/Modifiers;
+     137: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     140: dup
+     141: ldc           #4                  // String KEY_PAD
+     143: bipush        9
+     145: sipush        512
+     148: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     151: putstatic     #22                 // Field KEY_PAD:Lcom/moonsworth/webosr/input/Modifiers;
+     154: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     157: dup
+     158: ldc           #5                  // String LEFT
+     160: bipush        10
+     162: sipush        1024
+     165: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     168: putstatic     #23                 // Field LEFT:Lcom/moonsworth/webosr/input/Modifiers;
+     171: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     174: dup
+     175: ldc           #10                 // String RIGHT
+     177: bipush        11
+     179: sipush        2048
+     182: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     185: putstatic     #28                 // Field RIGHT:Lcom/moonsworth/webosr/input/Modifiers;
+     188: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     191: dup
+     192: ldc           #9                  // String REPEAT
+     194: bipush        12
+     196: sipush        4096
+     199: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     202: putstatic     #27                 // Field REPEAT:Lcom/moonsworth/webosr/input/Modifiers;
+     205: new           #16                 // class com/moonsworth/webosr/input/Modifiers
+     208: dup
+     209: ldc           #14                 // String SYSTEM_KEY
+     211: bipush        13
+     213: sipush        8192
+     216: invokespecial #36                 // Method "<init>":(Ljava/lang/String;II)V
+     219: putstatic     #32                 // Field SYSTEM_KEY:Lcom/moonsworth/webosr/input/Modifiers;
+     222: invokestatic  #35                 // Method $values:()[Lcom/moonsworth/webosr/input/Modifiers;
+     225: putstatic     #18                 // Field $VALUES:[Lcom/moonsworth/webosr/input/Modifiers;
+     228: return
+}
+public final class com.moonsworth.webosr.input.Mouse {
+  public com.moonsworth.webosr.input.Mouse();
+    Code:
+       0: aload_0
+       1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+       4: return
+}
+public final class com.moonsworth.webosr.input.Mouse$Action extends java.lang.Enum<com.moonsworth.webosr.input.Mouse$Action> {
+  public static final com.moonsworth.webosr.input.Mouse$Action DOWN;
+
+  public static final com.moonsworth.webosr.input.Mouse$Action UP;
+
+  public static final com.moonsworth.webosr.input.Mouse$Action MOVED;
+
+  private static final com.moonsworth.webosr.input.Mouse$Action[] $VALUES;
+
+  public static com.moonsworth.webosr.input.Mouse$Action[] values();
+    Code:
+       0: getstatic     #8                  // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Action;
+       3: invokevirtual #12                 // Method "[Lcom/moonsworth/webosr/input/Mouse$Action;".clone:()Ljava/lang/Object;
+       6: checkcast     #4                  // class "[Lcom/moonsworth/webosr/input/Mouse$Action;"
+       9: areturn
+
+  public static com.moonsworth.webosr.input.Mouse$Action valueOf(java.lang.String);
+    Code:
+       0: ldc           #6                  // class com/moonsworth/webosr/input/Mouse$Action
+       2: aload_0
+       3: invokestatic  #18                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #6                  // class com/moonsworth/webosr/input/Mouse$Action
+       9: areturn
+
+  private com.moonsworth.webosr.input.Mouse$Action();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #17                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.input.Mouse$Action fromValue(int);
+    Code:
+       0: invokestatic  #16                 // Method values:()[Lcom/moonsworth/webosr/input/Mouse$Action;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int getValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #15                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.input.Mouse$Action[] $values();
+    Code:
+       0: iconst_3
+       1: anewarray     #6                  // class com/moonsworth/webosr/input/Mouse$Action
+       4: dup
+       5: iconst_0
+       6: getstatic     #9                  // Field DOWN:Lcom/moonsworth/webosr/input/Mouse$Action;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #11                 // Field UP:Lcom/moonsworth/webosr/input/Mouse$Action;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #10                 // Field MOVED:Lcom/moonsworth/webosr/input/Mouse$Action;
+      21: aastore
+      22: areturn
+
+  static {};
+    Code:
+       0: new           #6                  // class com/moonsworth/webosr/input/Mouse$Action
+       3: dup
+       4: ldc           #1                  // String DOWN
+       6: iconst_0
+       7: invokespecial #14                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #9                  // Field DOWN:Lcom/moonsworth/webosr/input/Mouse$Action;
+      13: new           #6                  // class com/moonsworth/webosr/input/Mouse$Action
+      16: dup
+      17: ldc           #3                  // String UP
+      19: iconst_1
+      20: invokespecial #14                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #11                 // Field UP:Lcom/moonsworth/webosr/input/Mouse$Action;
+      26: new           #6                  // class com/moonsworth/webosr/input/Mouse$Action
+      29: dup
+      30: ldc           #2                  // String MOVED
+      32: iconst_2
+      33: invokespecial #14                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #10                 // Field MOVED:Lcom/moonsworth/webosr/input/Mouse$Action;
+      39: invokestatic  #13                 // Method $values:()[Lcom/moonsworth/webosr/input/Mouse$Action;
+      42: putstatic     #8                  // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Action;
+      45: return
+}
+public final class com.moonsworth.webosr.input.Mouse$Button extends java.lang.Enum<com.moonsworth.webosr.input.Mouse$Button> {
+  public static final com.moonsworth.webosr.input.Mouse$Button LEFT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Button MIDDLE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Button RIGHT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Button NONE;
+
+  private static final com.moonsworth.webosr.input.Mouse$Button[] $VALUES;
+
+  public static com.moonsworth.webosr.input.Mouse$Button[] values();
+    Code:
+       0: getstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Button;
+       3: invokevirtual #14                 // Method "[Lcom/moonsworth/webosr/input/Mouse$Button;".clone:()Ljava/lang/Object;
+       6: checkcast     #5                  // class "[Lcom/moonsworth/webosr/input/Mouse$Button;"
+       9: areturn
+
+  public static com.moonsworth.webosr.input.Mouse$Button valueOf(java.lang.String);
+    Code:
+       0: ldc           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+       2: aload_0
+       3: invokestatic  #20                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #7                  // class com/moonsworth/webosr/input/Mouse$Button
+       9: areturn
+
+  private com.moonsworth.webosr.input.Mouse$Button();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #19                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.input.Mouse$Button fromValue(int);
+    Code:
+       0: invokestatic  #18                 // Method values:()[Lcom/moonsworth/webosr/input/Mouse$Button;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int getValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #17                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.input.Mouse$Button[] $values();
+    Code:
+       0: iconst_4
+       1: anewarray     #7                  // class com/moonsworth/webosr/input/Mouse$Button
+       4: dup
+       5: iconst_0
+       6: getstatic     #10                 // Field LEFT:Lcom/moonsworth/webosr/input/Mouse$Button;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #11                 // Field MIDDLE:Lcom/moonsworth/webosr/input/Mouse$Button;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #13                 // Field RIGHT:Lcom/moonsworth/webosr/input/Mouse$Button;
+      21: aastore
+      22: dup
+      23: iconst_3
+      24: getstatic     #12                 // Field NONE:Lcom/moonsworth/webosr/input/Mouse$Button;
+      27: aastore
+      28: areturn
+
+  static {};
+    Code:
+       0: new           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+       3: dup
+       4: ldc           #1                  // String LEFT
+       6: iconst_0
+       7: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #10                 // Field LEFT:Lcom/moonsworth/webosr/input/Mouse$Button;
+      13: new           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+      16: dup
+      17: ldc           #2                  // String MIDDLE
+      19: iconst_1
+      20: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #11                 // Field MIDDLE:Lcom/moonsworth/webosr/input/Mouse$Button;
+      26: new           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+      29: dup
+      30: ldc           #4                  // String RIGHT
+      32: iconst_2
+      33: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #13                 // Field RIGHT:Lcom/moonsworth/webosr/input/Mouse$Button;
+      39: new           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+      42: dup
+      43: ldc           #3                  // String NONE
+      45: iconst_3
+      46: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #12                 // Field NONE:Lcom/moonsworth/webosr/input/Mouse$Button;
+      52: invokestatic  #15                 // Method $values:()[Lcom/moonsworth/webosr/input/Mouse$Button;
+      55: putstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Button;
+      58: return
+}
+public final class com.moonsworth.webosr.input.Mouse$Cursor extends java.lang.Enum<com.moonsworth.webosr.input.Mouse$Cursor> {
+  public static final com.moonsworth.webosr.input.Mouse$Cursor POINTER;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor CROSS;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor HAND;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor I_BEAM;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor WAIT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor HELP;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor EAST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_EAST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_EAST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_SOUTH_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor EAST_WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_EAST_SOUTH_WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_WEST_SOUTH_EAST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor COLUMN_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor ROW_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor MIDDLE_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor EAST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_EAST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_WEST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_EAST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_WEST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor WEST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor MOVE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor VERTICAL_TEXT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor CELL;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor CONTEXT_MENU;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor ALIAS;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor PROGRESS;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NO_DROP;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor COPY;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NONE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NOT_ALLOWED;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor ZOOM_IN;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor ZOOM_OUT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor GRAB;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor GRABBING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor CUSTOM;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor PASS_THROUGH;
+
+  private static final com.moonsworth.webosr.input.Mouse$Cursor[] $VALUES;
+
+  public static com.moonsworth.webosr.input.Mouse$Cursor[] values();
+    Code:
+       0: getstatic     #50                 // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Cursor;
+       3: invokevirtual #96                 // Method "[Lcom/moonsworth/webosr/input/Mouse$Cursor;".clone:()Ljava/lang/Object;
+       6: checkcast     #46                 // class "[Lcom/moonsworth/webosr/input/Mouse$Cursor;"
+       9: areturn
+
+  public static com.moonsworth.webosr.input.Mouse$Cursor valueOf(java.lang.String);
+    Code:
+       0: ldc           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+       2: aload_0
+       3: invokestatic  #102                // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+       9: areturn
+
+  private com.moonsworth.webosr.input.Mouse$Cursor();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #101                // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.input.Mouse$Cursor fromValue(int);
+    Code:
+       0: invokestatic  #100                // Method values:()[Lcom/moonsworth/webosr/input/Mouse$Cursor;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int getValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #99                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.input.Mouse$Cursor[] $values();
+    Code:
+       0: bipush        45
+       2: anewarray     #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+       5: dup
+       6: iconst_0
+       7: getstatic     #81                 // Field POINTER:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #56                 // Field CROSS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #63                 // Field HAND:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #65                 // Field I_BEAM:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #91                 // Field WAIT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: getstatic     #64                 // Field HELP:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      40: aastore
+      41: dup
+      42: bipush        6
+      44: getstatic     #59                 // Field EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      47: aastore
+      48: dup
+      49: bipush        7
+      51: getstatic     #73                 // Field NORTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      54: aastore
+      55: dup
+      56: bipush        8
+      58: getstatic     #70                 // Field NORTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      61: aastore
+      62: dup
+      63: bipush        9
+      65: getstatic     #76                 // Field NORTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      68: aastore
+      69: dup
+      70: bipush        10
+      72: getstatic     #87                 // Field SOUTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      75: aastore
+      76: dup
+      77: bipush        11
+      79: getstatic     #85                 // Field SOUTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      82: aastore
+      83: dup
+      84: bipush        12
+      86: getstatic     #89                 // Field SOUTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      89: aastore
+      90: dup
+      91: bipush        13
+      93: getstatic     #93                 // Field WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      96: aastore
+      97: dup
+      98: bipush        14
+     100: getstatic     #74                 // Field NORTH_SOUTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     103: aastore
+     104: dup
+     105: bipush        15
+     107: getstatic     #60                 // Field EAST_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     110: aastore
+     111: dup
+     112: bipush        16
+     114: getstatic     #71                 // Field NORTH_EAST_SOUTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     117: aastore
+     118: dup
+     119: bipush        17
+     121: getstatic     #77                 // Field NORTH_WEST_SOUTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     124: aastore
+     125: dup
+     126: bipush        18
+     128: getstatic     #53                 // Field COLUMN_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     131: aastore
+     132: dup
+     133: bipush        19
+     135: getstatic     #83                 // Field ROW_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     138: aastore
+     139: dup
+     140: bipush        20
+     142: getstatic     #66                 // Field MIDDLE_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     145: aastore
+     146: dup
+     147: bipush        21
+     149: getstatic     #58                 // Field EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     152: aastore
+     153: dup
+     154: bipush        22
+     156: getstatic     #72                 // Field NORTH_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     159: aastore
+     160: dup
+     161: bipush        23
+     163: getstatic     #69                 // Field NORTH_EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     166: aastore
+     167: dup
+     168: bipush        24
+     170: getstatic     #75                 // Field NORTH_WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     173: aastore
+     174: dup
+     175: bipush        25
+     177: getstatic     #86                 // Field SOUTH_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     180: aastore
+     181: dup
+     182: bipush        26
+     184: getstatic     #84                 // Field SOUTH_EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     187: aastore
+     188: dup
+     189: bipush        27
+     191: getstatic     #88                 // Field SOUTH_WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     194: aastore
+     195: dup
+     196: bipush        28
+     198: getstatic     #92                 // Field WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     201: aastore
+     202: dup
+     203: bipush        29
+     205: getstatic     #67                 // Field MOVE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     208: aastore
+     209: dup
+     210: bipush        30
+     212: getstatic     #90                 // Field VERTICAL_TEXT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     215: aastore
+     216: dup
+     217: bipush        31
+     219: getstatic     #52                 // Field CELL:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     222: aastore
+     223: dup
+     224: bipush        32
+     226: getstatic     #54                 // Field CONTEXT_MENU:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     229: aastore
+     230: dup
+     231: bipush        33
+     233: getstatic     #51                 // Field ALIAS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     236: aastore
+     237: dup
+     238: bipush        34
+     240: getstatic     #82                 // Field PROGRESS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     243: aastore
+     244: dup
+     245: bipush        35
+     247: getstatic     #79                 // Field NO_DROP:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     250: aastore
+     251: dup
+     252: bipush        36
+     254: getstatic     #55                 // Field COPY:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     257: aastore
+     258: dup
+     259: bipush        37
+     261: getstatic     #68                 // Field NONE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     264: aastore
+     265: dup
+     266: bipush        38
+     268: getstatic     #78                 // Field NOT_ALLOWED:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     271: aastore
+     272: dup
+     273: bipush        39
+     275: getstatic     #94                 // Field ZOOM_IN:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     278: aastore
+     279: dup
+     280: bipush        40
+     282: getstatic     #95                 // Field ZOOM_OUT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     285: aastore
+     286: dup
+     287: bipush        41
+     289: getstatic     #61                 // Field GRAB:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     292: aastore
+     293: dup
+     294: bipush        42
+     296: getstatic     #62                 // Field GRABBING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     299: aastore
+     300: dup
+     301: bipush        43
+     303: getstatic     #57                 // Field CUSTOM:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     306: aastore
+     307: dup
+     308: bipush        44
+     310: getstatic     #80                 // Field PASS_THROUGH:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     313: aastore
+     314: areturn
+
+  static {};
+    Code:
+       0: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+       3: dup
+       4: ldc           #31                 // String POINTER
+       6: iconst_0
+       7: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #81                 // Field POINTER:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      13: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      16: dup
+      17: ldc           #6                  // String CROSS
+      19: iconst_1
+      20: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #56                 // Field CROSS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      26: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      29: dup
+      30: ldc           #13                 // String HAND
+      32: iconst_2
+      33: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #63                 // Field HAND:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      39: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      42: dup
+      43: ldc           #15                 // String I_BEAM
+      45: iconst_3
+      46: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #65                 // Field I_BEAM:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      52: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      55: dup
+      56: ldc           #41                 // String WAIT
+      58: iconst_4
+      59: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      62: putstatic     #91                 // Field WAIT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      65: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      68: dup
+      69: ldc           #14                 // String HELP
+      71: iconst_5
+      72: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      75: putstatic     #64                 // Field HELP:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      78: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      81: dup
+      82: ldc           #9                  // String EAST_RESIZE
+      84: bipush        6
+      86: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      89: putstatic     #59                 // Field EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      92: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      95: dup
+      96: ldc           #23                 // String NORTH_RESIZE
+      98: bipush        7
+     100: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     103: putstatic     #73                 // Field NORTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     106: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     109: dup
+     110: ldc           #20                 // String NORTH_EAST_RESIZE
+     112: bipush        8
+     114: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     117: putstatic     #70                 // Field NORTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     120: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     123: dup
+     124: ldc           #26                 // String NORTH_WEST_RESIZE
+     126: bipush        9
+     128: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     131: putstatic     #76                 // Field NORTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     134: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     137: dup
+     138: ldc           #37                 // String SOUTH_RESIZE
+     140: bipush        10
+     142: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     145: putstatic     #87                 // Field SOUTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     148: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     151: dup
+     152: ldc           #35                 // String SOUTH_EAST_RESIZE
+     154: bipush        11
+     156: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     159: putstatic     #85                 // Field SOUTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     162: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     165: dup
+     166: ldc           #39                 // String SOUTH_WEST_RESIZE
+     168: bipush        12
+     170: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     173: putstatic     #89                 // Field SOUTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     176: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     179: dup
+     180: ldc           #43                 // String WEST_RESIZE
+     182: bipush        13
+     184: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     187: putstatic     #93                 // Field WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     190: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     193: dup
+     194: ldc           #24                 // String NORTH_SOUTH_RESIZE
+     196: bipush        14
+     198: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     201: putstatic     #74                 // Field NORTH_SOUTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     204: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     207: dup
+     208: ldc           #10                 // String EAST_WEST_RESIZE
+     210: bipush        15
+     212: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     215: putstatic     #60                 // Field EAST_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     218: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     221: dup
+     222: ldc           #21                 // String NORTH_EAST_SOUTH_WEST_RESIZE
+     224: bipush        16
+     226: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     229: putstatic     #71                 // Field NORTH_EAST_SOUTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     232: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     235: dup
+     236: ldc           #27                 // String NORTH_WEST_SOUTH_EAST_RESIZE
+     238: bipush        17
+     240: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     243: putstatic     #77                 // Field NORTH_WEST_SOUTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     246: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     249: dup
+     250: ldc           #3                  // String COLUMN_RESIZE
+     252: bipush        18
+     254: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     257: putstatic     #53                 // Field COLUMN_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     260: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     263: dup
+     264: ldc           #33                 // String ROW_RESIZE
+     266: bipush        19
+     268: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     271: putstatic     #83                 // Field ROW_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     274: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     277: dup
+     278: ldc           #16                 // String MIDDLE_PANNING
+     280: bipush        20
+     282: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     285: putstatic     #66                 // Field MIDDLE_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     288: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     291: dup
+     292: ldc           #8                  // String EAST_PANNING
+     294: bipush        21
+     296: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     299: putstatic     #58                 // Field EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     302: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     305: dup
+     306: ldc           #22                 // String NORTH_PANNING
+     308: bipush        22
+     310: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     313: putstatic     #72                 // Field NORTH_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     316: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     319: dup
+     320: ldc           #19                 // String NORTH_EAST_PANNING
+     322: bipush        23
+     324: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     327: putstatic     #69                 // Field NORTH_EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     330: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     333: dup
+     334: ldc           #25                 // String NORTH_WEST_PANNING
+     336: bipush        24
+     338: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     341: putstatic     #75                 // Field NORTH_WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     344: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     347: dup
+     348: ldc           #36                 // String SOUTH_PANNING
+     350: bipush        25
+     352: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     355: putstatic     #86                 // Field SOUTH_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     358: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     361: dup
+     362: ldc           #34                 // String SOUTH_EAST_PANNING
+     364: bipush        26
+     366: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     369: putstatic     #84                 // Field SOUTH_EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     372: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     375: dup
+     376: ldc           #38                 // String SOUTH_WEST_PANNING
+     378: bipush        27
+     380: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     383: putstatic     #88                 // Field SOUTH_WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     386: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     389: dup
+     390: ldc           #42                 // String WEST_PANNING
+     392: bipush        28
+     394: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     397: putstatic     #92                 // Field WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     400: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     403: dup
+     404: ldc           #17                 // String MOVE
+     406: bipush        29
+     408: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     411: putstatic     #67                 // Field MOVE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     414: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     417: dup
+     418: ldc           #40                 // String VERTICAL_TEXT
+     420: bipush        30
+     422: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     425: putstatic     #90                 // Field VERTICAL_TEXT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     428: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     431: dup
+     432: ldc           #2                  // String CELL
+     434: bipush        31
+     436: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     439: putstatic     #52                 // Field CELL:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     442: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     445: dup
+     446: ldc           #4                  // String CONTEXT_MENU
+     448: bipush        32
+     450: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     453: putstatic     #54                 // Field CONTEXT_MENU:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     456: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     459: dup
+     460: ldc           #1                  // String ALIAS
+     462: bipush        33
+     464: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     467: putstatic     #51                 // Field ALIAS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     470: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     473: dup
+     474: ldc           #32                 // String PROGRESS
+     476: bipush        34
+     478: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     481: putstatic     #82                 // Field PROGRESS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     484: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     487: dup
+     488: ldc           #29                 // String NO_DROP
+     490: bipush        35
+     492: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     495: putstatic     #79                 // Field NO_DROP:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     498: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     501: dup
+     502: ldc           #5                  // String COPY
+     504: bipush        36
+     506: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     509: putstatic     #55                 // Field COPY:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     512: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     515: dup
+     516: ldc           #18                 // String NONE
+     518: bipush        37
+     520: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     523: putstatic     #68                 // Field NONE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     526: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     529: dup
+     530: ldc           #28                 // String NOT_ALLOWED
+     532: bipush        38
+     534: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     537: putstatic     #78                 // Field NOT_ALLOWED:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     540: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     543: dup
+     544: ldc           #44                 // String ZOOM_IN
+     546: bipush        39
+     548: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     551: putstatic     #94                 // Field ZOOM_IN:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     554: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     557: dup
+     558: ldc           #45                 // String ZOOM_OUT
+     560: bipush        40
+     562: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     565: putstatic     #95                 // Field ZOOM_OUT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     568: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     571: dup
+     572: ldc           #11                 // String GRAB
+     574: bipush        41
+     576: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     579: putstatic     #61                 // Field GRAB:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     582: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     585: dup
+     586: ldc           #12                 // String GRABBING
+     588: bipush        42
+     590: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     593: putstatic     #62                 // Field GRABBING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     596: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     599: dup
+     600: ldc           #7                  // String CUSTOM
+     602: bipush        43
+     604: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     607: putstatic     #57                 // Field CUSTOM:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     610: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     613: dup
+     614: ldc           #30                 // String PASS_THROUGH
+     616: bipush        44
+     618: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     621: putstatic     #80                 // Field PASS_THROUGH:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     624: invokestatic  #97                 // Method $values:()[Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     627: putstatic     #50                 // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     630: return
+}
+public interface com.moonsworth.webosr.javascript.CallbackJS extends java.lang.annotation.Annotation {
+  public abstract java.lang.String value();
+
+  public abstract boolean async();
+}
+public class com.moonsworth.webosr.javascript.FunctionBus implements com.moonsworth.webosr.handler.FunctionJS {
+  protected static final java.util.concurrent.ArrayBlockingQueue<java.lang.Runnable> MAIN_ACTOR_QUEUE;
+
+  protected final java.util.Map<java.lang.String, com.moonsworth.webosr.javascript.FunctionBus> children;
+
+  protected final java.util.Map<java.lang.String, com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair> routines;
+
+  protected final java.util.Map<java.lang.Object, java.util.Map<java.lang.String, com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair>> cache;
+
+  public com.moonsworth.webosr.javascript.FunctionBus();
+    Code:
+       0: aload_0
+       1: invokespecial #119                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #50                 // class java/util/concurrent/ConcurrentHashMap
+       8: dup
+       9: invokespecial #149                // Method java/util/concurrent/ConcurrentHashMap."<init>":()V
+      12: putfield      #53                 // Field children:Ljava/util/Map;
+      15: aload_0
+      16: new           #50                 // class java/util/concurrent/ConcurrentHashMap
+      19: dup
+      20: invokespecial #149                // Method java/util/concurrent/ConcurrentHashMap."<init>":()V
+      23: putfield      #54                 // Field routines:Ljava/util/Map;
+      26: aload_0
+      27: new           #50                 // class java/util/concurrent/ConcurrentHashMap
+      30: dup
+      31: invokespecial #149                // Method java/util/concurrent/ConcurrentHashMap."<init>":()V
+      34: putfield      #52                 // Field cache:Ljava/util/Map;
+      37: return
+
+  public static void consumeMainActorQueue();
+    Code:
+       0: getstatic     #51                 // Field MAIN_ACTOR_QUEUE:Ljava/util/concurrent/ArrayBlockingQueue;
+       3: invokevirtual #148                // Method java/util/concurrent/ArrayBlockingQueue.poll:()Ljava/lang/Object;
+       6: checkcast     #31                 // class java/lang/Runnable
+       9: dup
+      10: astore_0
+      11: ifnull        23
+      14: aload_0
+      15: invokeinterface #152,  1          // InterfaceMethod java/lang/Runnable.run:()V
+      20: goto          0
+      23: return
+
+  public void registerChild(java.lang.String, com.moonsworth.webosr.javascript.FunctionBus);
+    Code:
+       0: aload_0
+       1: getfield      #53                 // Field children:Ljava/util/Map;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: return
+
+  public void unregisterChild(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #53                 // Field children:Ljava/util/Map;
+       4: aload_1
+       5: invokeinterface #158,  2          // InterfaceMethod java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: pop
+      11: return
+
+  public void subscribe(java.lang.Object);
+    Code:
+       0: aload_1
+       1: instanceof    #21                 // class java/lang/Class
+       4: ifeq          17
+       7: aload_1
+       8: checkcast     #21                 // class java/lang/Class
+      11: astore_2
+      12: aconst_null
+      13: astore_1
+      14: goto          22
+      17: aload_1
+      18: invokevirtual #120                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      21: astore_2
+      22: aload_1
+      23: ifnull        54
+      26: aload_0
+      27: getfield      #52                 // Field cache:Ljava/util/Map;
+      30: aload_1
+      31: invokeinterface #154,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      36: checkcast     #47                 // class java/util/Map
+      39: astore_3
+      40: aload_3
+      41: ifnull        54
+      44: aload_0
+      45: getfield      #54                 // Field routines:Ljava/util/Map;
+      48: aload_3
+      49: invokeinterface #157,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+      54: aload_0
+      55: getfield      #52                 // Field cache:Ljava/util/Map;
+      58: aload_2
+      59: invokeinterface #154,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      64: checkcast     #47                 // class java/util/Map
+      67: astore_3
+      68: aload_3
+      69: ifnull        82
+      72: aload_0
+      73: getfield      #54                 // Field routines:Ljava/util/Map;
+      76: aload_3
+      77: invokeinterface #157,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+      82: invokestatic  #132                // Method java/lang/invoke/MethodHandles.lookup:()Ljava/lang/invoke/MethodHandles$Lookup;
+      85: astore        4
+      87: new           #46                 // class java/util/HashMap
+      90: dup
+      91: invokespecial #143                // Method java/util/HashMap."<init>":()V
+      94: astore        5
+      96: new           #46                 // class java/util/HashMap
+      99: dup
+     100: invokespecial #143                // Method java/util/HashMap."<init>":()V
+     103: astore        6
+     105: aload_2
+     106: invokevirtual #96                 // Method java/lang/Class.getMethods:()[Ljava/lang/reflect/Method;
+     109: astore        7
+     111: aload         7
+     113: arraylength
+     114: istore        8
+     116: iconst_0
+     117: istore        9
+     119: iload         9
+     121: iload         8
+     123: if_icmpge     430
+     126: aload         7
+     128: iload         9
+     130: aaload
+     131: astore        10
+     133: aload         10
+     135: ldc           #13                 // class com/moonsworth/webosr/javascript/CallbackJS
+     137: invokevirtual #135                // Method java/lang/reflect/Method.getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+     140: checkcast     #13                 // class com/moonsworth/webosr/javascript/CallbackJS
+     143: astore        11
+     145: aload         11
+     147: ifnonnull     153
+     150: goto          424
+     153: aload         10
+     155: invokevirtual #136                // Method java/lang/reflect/Method.getModifiers:()I
+     158: invokestatic  #139                // Method java/lang/reflect/Modifier.isStatic:(I)Z
+     161: ifne          168
+     164: iconst_1
+     165: goto          169
+     168: iconst_0
+     169: istore        12
+     171: iload         12
+     173: ifeq          183
+     176: aload_1
+     177: ifnonnull     183
+     180: goto          424
+     183: aload         4
+     185: aload         10
+     187: invokevirtual #133                // Method java/lang/invoke/MethodHandles$Lookup.unreflect:(Ljava/lang/reflect/Method;)Ljava/lang/invoke/MethodHandle;
+     190: astore        13
+     192: goto          207
+     195: astore        14
+     197: new           #32                 // class java/lang/RuntimeException
+     200: dup
+     201: aload         14
+     203: invokespecial #122                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+     206: athrow
+     207: aload         10
+     209: invokevirtual #137                // Method java/lang/reflect/Method.getParameters:()[Ljava/lang/reflect/Parameter;
+     212: astore        14
+     214: iconst_0
+     215: istore        15
+     217: iconst_0
+     218: istore        16
+     220: iconst_0
+     221: istore        17
+     223: aconst_null
+     224: astore        18
+     226: iconst_0
+     227: istore        19
+     229: aload         14
+     231: astore        20
+     233: aload         20
+     235: arraylength
+     236: istore        21
+     238: iconst_0
+     239: istore        22
+     241: iload         22
+     243: iload         21
+     245: if_icmpge     335
+     248: aload         20
+     250: iload         22
+     252: aaload
+     253: astore        23
+     255: aload         23
+     257: invokevirtual #141                // Method java/lang/reflect/Parameter.getType:()Ljava/lang/Class;
+     260: astore        24
+     262: aload         24
+     264: ldc           #16                 // class com/moonsworth/webosr/wrappers/Browser
+     266: if_acmpne     275
+     269: iconst_1
+     270: istore        15
+     272: goto          329
+     275: aload         24
+     277: ldc           #17                 // class com/moonsworth/webosr/wrappers/PromiseJS
+     279: if_acmpne     313
+     282: iload         16
+     284: ifeq          297
+     287: new           #26                 // class java/lang/IllegalArgumentException
+     290: dup
+     291: ldc           #4                  // String Multiple PromiseJS parameters are not allowed on the same method
+     293: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     296: athrow
+     297: iconst_1
+     298: istore        16
+     300: aload         23
+     302: invokevirtual #140                // Method java/lang/reflect/Parameter.getParameterizedType:()Ljava/lang/reflect/Type;
+     305: invokevirtual #120                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+     308: astore        18
+     310: goto          329
+     313: aload         24
+     315: ldc           #9                  // class "[Ljava/lang/String;"
+     317: if_acmpne     326
+     320: iconst_1
+     321: istore        17
+     323: goto          329
+     326: iinc          19, 1
+     329: iinc          22, 1
+     332: goto          241
+     335: new           #15                 // class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair
+     338: dup
+     339: iload         12
+     341: ifeq          348
+     344: aload_1
+     345: goto          349
+     348: aconst_null
+     349: aload         13
+     351: aload         11
+     353: invokeinterface #150,  1          // InterfaceMethod com/moonsworth/webosr/javascript/CallbackJS.async:()Z
+     358: iload         12
+     360: aload         14
+     362: aload         10
+     364: invokevirtual #138                // Method java/lang/reflect/Method.getReturnType:()Ljava/lang/Class;
+     367: iload         15
+     369: iload         16
+     371: aload         18
+     373: iload         17
+     375: iload         19
+     377: invokespecial #82                 // Method com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair."<init>":(Ljava/lang/Object;Ljava/lang/invoke/MethodHandle;ZZ[Ljava/lang/reflect/Parameter;Ljava/lang/Class;ZZLjava/lang/Class;ZI)V
+     380: astore        20
+     382: iload         12
+     384: ifeq          407
+     387: aload         5
+     389: aload         11
+     391: invokeinterface #151,  1          // InterfaceMethod com/moonsworth/webosr/javascript/CallbackJS.value:()Ljava/lang/String;
+     396: aload         20
+     398: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     403: pop
+     404: goto          424
+     407: aload         6
+     409: aload         11
+     411: invokeinterface #151,  1          // InterfaceMethod com/moonsworth/webosr/javascript/CallbackJS.value:()Ljava/lang/String;
+     416: aload         20
+     418: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     423: pop
+     424: iinc          9, 1
+     427: goto          119
+     430: aload         5
+     432: invokeinterface #155,  1          // InterfaceMethod java/util/Map.isEmpty:()Z
+     437: ifne          464
+     440: aload_0
+     441: getfield      #54                 // Field routines:Ljava/util/Map;
+     444: aload         5
+     446: invokeinterface #157,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+     451: aload_0
+     452: getfield      #52                 // Field cache:Ljava/util/Map;
+     455: aload_1
+     456: aload         5
+     458: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     463: pop
+     464: aload         6
+     466: invokeinterface #155,  1          // InterfaceMethod java/util/Map.isEmpty:()Z
+     471: ifne          498
+     474: aload_0
+     475: getfield      #54                 // Field routines:Ljava/util/Map;
+     478: aload         6
+     480: invokeinterface #157,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+     485: aload_0
+     486: getfield      #52                 // Field cache:Ljava/util/Map;
+     489: aload_2
+     490: aload         6
+     492: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     497: pop
+     498: return
+    Exception table:
+       from    to  target type
+         183   192   195   Class java/lang/IllegalAccessException
+
+  public void invoke(com.moonsworth.webosr.wrappers.PromiseJS<?>, com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String[]);
+    Code:
+       0: aload_3
+       1: astore        5
+       3: aload         4
+       5: astore        6
+       7: aload         4
+       9: arraylength
+      10: ifle          44
+      13: aload_0
+      14: aload         4
+      16: iconst_0
+      17: aaload
+      18: invokevirtual #78                 // Method isExplicitTarget:(Ljava/lang/String;)Z
+      21: ifeq          44
+      24: aload         4
+      26: iconst_0
+      27: aaload
+      28: astore        5
+      30: aload         4
+      32: iconst_1
+      33: aload         4
+      35: arraylength
+      36: invokestatic  #142                // Method java/util/Arrays.copyOfRange:([Ljava/lang/Object;II)[Ljava/lang/Object;
+      39: checkcast     #9                  // class "[Ljava/lang/String;"
+      42: astore        6
+      44: aload_0
+      45: getfield      #53                 // Field children:Ljava/util/Map;
+      48: aload         5
+      50: invokeinterface #154,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      55: checkcast     #14                 // class com/moonsworth/webosr/javascript/FunctionBus
+      58: astore        7
+      60: aload         7
+      62: ifnull        77
+      65: aload         7
+      67: aload_1
+      68: aload_2
+      69: aload         5
+      71: aload         6
+      73: invokevirtual #77                 // Method invoke:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V
+      76: return
+      77: aload_0
+      78: getfield      #54                 // Field routines:Ljava/util/Map;
+      81: aload         5
+      83: invokeinterface #154,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      88: checkcast     #15                 // class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair
+      91: astore        8
+      93: aload         8
+      95: ifnonnull     99
+      98: return
+      99: aload_0
+     100: aload         8
+     102: aload_1
+     103: aload_2
+     104: aload         6
+     106: aload         5
+     108: invokevirtual #75                 // Method buildInvocationParameters:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+     111: astore        9
+     113: goto          128
+     116: astore        10
+     118: new           #32                 // class java/lang/RuntimeException
+     121: dup
+     122: aload         10
+     124: invokespecial #122                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+     127: athrow
+     128: aload         8
+     130: getfield      #55                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.async:Z
+     133: ifeq          172
+     136: aload         8
+     138: getfield      #59                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.method:Ljava/lang/invoke/MethodHandle;
+     141: aload         9
+     143: invokevirtual #131                // Method java/lang/invoke/MethodHandle.invokeWithArguments:([Ljava/lang/Object;)Ljava/lang/Object;
+     146: astore        10
+     148: aload_0
+     149: aload_1
+     150: aload         8
+     152: aload         10
+     154: invokevirtual #76                 // Method completePromiseIfNeeded:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+     157: goto          190
+     160: astore        10
+     162: new           #32                 // class java/lang/RuntimeException
+     165: dup
+     166: aload         10
+     168: invokespecial #122                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+     171: athrow
+     172: getstatic     #51                 // Field MAIN_ACTOR_QUEUE:Ljava/util/concurrent/ArrayBlockingQueue;
+     175: aload_0
+     176: aload         8
+     178: aload         9
+     180: aload_1
+     181: invokedynamic #159,  0            // InvokeDynamic #0:run:(Lcom/moonsworth/webosr/javascript/FunctionBus;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)Ljava/lang/Runnable;
+     186: invokevirtual #147                // Method java/util/concurrent/ArrayBlockingQueue.add:(Ljava/lang/Object;)Z
+     189: pop
+     190: return
+    Exception table:
+       from    to  target type
+          99   113   116   Class java/lang/IllegalArgumentException
+         136   157   160   Class java/lang/Throwable
+
+  private java.lang.Object[] buildInvocationParameters(com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair, com.moonsworth.webosr.wrappers.PromiseJS<?>, com.moonsworth.webosr.wrappers.Browser, java.lang.String[], java.lang.String);
+    Code:
+       0: aload         4
+       2: arraylength
+       3: aload_1
+       4: getfield      #63                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+       7: if_icmpge     32
+      10: new           #26                 // class java/lang/IllegalArgumentException
+      13: dup
+      14: aload         5
+      16: aload_1
+      17: getfield      #63                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+      20: aload         4
+      22: arraylength
+      23: invokedynamic #160,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;II)Ljava/lang/String;
+      28: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      31: athrow
+      32: aload_1
+      33: getfield      #57                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.hasStringArray:Z
+      36: ifne          71
+      39: aload         4
+      41: arraylength
+      42: aload_1
+      43: getfield      #63                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+      46: if_icmple     71
+      49: new           #26                 // class java/lang/IllegalArgumentException
+      52: dup
+      53: aload         5
+      55: aload_1
+      56: getfield      #63                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+      59: aload         4
+      61: arraylength
+      62: invokedynamic #161,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;II)Ljava/lang/String;
+      67: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      70: athrow
+      71: aload_1
+      72: getfield      #61                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.passInstance:Z
+      75: ifeq          82
+      78: iconst_1
+      79: goto          83
+      82: iconst_0
+      83: aload_1
+      84: getfield      #60                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.params:[Ljava/lang/reflect/Parameter;
+      87: arraylength
+      88: iadd
+      89: istore        6
+      91: iload         6
+      93: anewarray     #30                 // class java/lang/Object
+      96: astore        7
+      98: iconst_0
+      99: istore        8
+     101: aload_1
+     102: getfield      #61                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.passInstance:Z
+     105: ifeq          120
+     108: aload         7
+     110: iload         8
+     112: iinc          8, 1
+     115: aload_1
+     116: getfield      #58                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.instance:Ljava/lang/Object;
+     119: aastore
+     120: iconst_0
+     121: istore        9
+     123: aload_1
+     124: getfield      #60                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.params:[Ljava/lang/reflect/Parameter;
+     127: astore        10
+     129: aload         10
+     131: arraylength
+     132: istore        11
+     134: iconst_0
+     135: istore        12
+     137: iload         12
+     139: iload         11
+     141: if_icmpge     257
+     144: aload         10
+     146: iload         12
+     148: aaload
+     149: astore        13
+     151: aload         13
+     153: invokevirtual #141                // Method java/lang/reflect/Parameter.getType:()Ljava/lang/Class;
+     156: astore        14
+     158: aload         14
+     160: ldc           #16                 // class com/moonsworth/webosr/wrappers/Browser
+     162: if_acmpne     177
+     165: aload         7
+     167: iload         8
+     169: iinc          8, 1
+     172: aload_3
+     173: aastore
+     174: goto          251
+     177: aload         14
+     179: ldc           #17                 // class com/moonsworth/webosr/wrappers/PromiseJS
+     181: if_acmpne     196
+     184: aload         7
+     186: iload         8
+     188: iinc          8, 1
+     191: aload_2
+     192: aastore
+     193: goto          251
+     196: aload         14
+     198: ldc           #9                  // class "[Ljava/lang/String;"
+     200: if_acmpne     229
+     203: aload         7
+     205: iload         8
+     207: iinc          8, 1
+     210: aload         4
+     212: iload         9
+     214: aload         4
+     216: arraylength
+     217: invokestatic  #142                // Method java/util/Arrays.copyOfRange:([Ljava/lang/Object;II)[Ljava/lang/Object;
+     220: aastore
+     221: aload         4
+     223: arraylength
+     224: istore        9
+     226: goto          251
+     229: aload         7
+     231: iload         8
+     233: iinc          8, 1
+     236: aload_0
+     237: aload         4
+     239: iload         9
+     241: iinc          9, 1
+     244: aaload
+     245: aload         14
+     247: invokevirtual #81                 // Method stringToObject:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+     250: aastore
+     251: iinc          12, 1
+     254: goto          137
+     257: aload_1
+     258: getfield      #62                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.promiseValueType:Ljava/lang/Class;
+     261: ifnull        276
+     264: aload_2
+     265: aload_0
+     266: invokevirtual #74                 // Method asBridgeCodec:()Lcom/moonsworth/webosr/BridgeValueCodec;
+     269: aload_1
+     270: getfield      #62                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.promiseValueType:Ljava/lang/Class;
+     273: invokevirtual #84                 // Method com/moonsworth/webosr/wrappers/PromiseJS.bindBridgeCodec:(Lcom/moonsworth/webosr/BridgeValueCodec;Ljava/lang/Class;)V
+     276: aload         7
+     278: areturn
+
+  public com.moonsworth.webosr.BridgeValueCodec asBridgeCodec();
+    Code:
+       0: aload_0
+       1: invokedynamic #162,  0            // InvokeDynamic #3:objectToString:(Lcom/moonsworth/webosr/javascript/FunctionBus;)Lcom/moonsworth/webosr/BridgeValueCodec;
+       6: areturn
+
+  private boolean isExplicitTarget(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #53                 // Field children:Ljava/util/Map;
+       4: aload_1
+       5: invokeinterface #153,  2          // InterfaceMethod java/util/Map.containsKey:(Ljava/lang/Object;)Z
+      10: ifne          26
+      13: aload_0
+      14: getfield      #54                 // Field routines:Ljava/util/Map;
+      17: aload_1
+      18: invokeinterface #153,  2          // InterfaceMethod java/util/Map.containsKey:(Ljava/lang/Object;)Z
+      23: ifeq          30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: ireturn
+
+  private void completePromiseIfNeeded(com.moonsworth.webosr.wrappers.PromiseJS<?>, com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair, java.lang.Object);
+    Code:
+       0: aload_2
+       1: getfield      #56                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.hasPromiseJS:Z
+       4: ifeq          8
+       7: return
+       8: aload_2
+       9: getfield      #64                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.returnType:Ljava/lang/Class;
+      12: getstatic     #73                 // Field java/lang/Void.TYPE:Ljava/lang/Class;
+      15: if_acmpeq     49
+      18: aload_3
+      19: ifnonnull     33
+      22: aload_1
+      23: aconst_null
+      24: checkcast     #34                 // class java/lang/String
+      27: invokevirtual #83                 // Method com/moonsworth/webosr/wrappers/PromiseJS._resolve:(Ljava/lang/String;)V
+      30: goto          53
+      33: aload_1
+      34: aload_0
+      35: aload_3
+      36: aload_2
+      37: getfield      #64                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.returnType:Ljava/lang/Class;
+      40: invokevirtual #80                 // Method objectToString:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+      43: invokevirtual #83                 // Method com/moonsworth/webosr/wrappers/PromiseJS._resolve:(Ljava/lang/String;)V
+      46: goto          53
+      49: aload_1
+      50: invokevirtual #85                 // Method com/moonsworth/webosr/wrappers/PromiseJS.resolve:()V
+      53: return
+
+  protected java.lang.Object stringToObject(java.lang.String, java.lang.Class<?>);
+    Code:
+       0: aload_2
+       1: ldc           #34                 // class java/lang/String
+       3: if_acmpne     8
+       6: aload_1
+       7: areturn
+       8: aload_2
+       9: ldc           #27                 // class java/lang/Integer
+      11: if_acmpeq     21
+      14: aload_2
+      15: getstatic     #70                 // Field java/lang/Integer.TYPE:Ljava/lang/Class;
+      18: if_acmpne     29
+      21: aload_1
+      22: invokestatic  #107                // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+      25: invokestatic  #109                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      28: areturn
+      29: aload_2
+      30: ldc           #22                 // class java/lang/Double
+      32: if_acmpeq     42
+      35: aload_2
+      36: getstatic     #68                 // Field java/lang/Double.TYPE:Ljava/lang/Class;
+      39: if_acmpne     50
+      42: aload_1
+      43: invokestatic  #99                 // Method java/lang/Double.parseDouble:(Ljava/lang/String;)D
+      46: invokestatic  #101                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      49: areturn
+      50: aload_2
+      51: ldc           #18                 // class java/lang/Boolean
+      53: if_acmpeq     63
+      56: aload_2
+      57: getstatic     #65                 // Field java/lang/Boolean.TYPE:Ljava/lang/Class;
+      60: if_acmpne     71
+      63: aload_1
+      64: invokestatic  #87                 // Method java/lang/Boolean.parseBoolean:(Ljava/lang/String;)Z
+      67: invokestatic  #89                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      70: areturn
+      71: aload_2
+      72: ldc           #24                 // class java/lang/Float
+      74: if_acmpeq     84
+      77: aload_2
+      78: getstatic     #69                 // Field java/lang/Float.TYPE:Ljava/lang/Class;
+      81: if_acmpne     92
+      84: aload_1
+      85: invokestatic  #103                // Method java/lang/Float.parseFloat:(Ljava/lang/String;)F
+      88: invokestatic  #105                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+      91: areturn
+      92: aload_2
+      93: ldc           #28                 // class java/lang/Long
+      95: if_acmpeq     105
+      98: aload_2
+      99: getstatic     #71                 // Field java/lang/Long.TYPE:Ljava/lang/Class;
+     102: if_acmpne     113
+     105: aload_1
+     106: invokestatic  #110                // Method java/lang/Long.parseLong:(Ljava/lang/String;)J
+     109: invokestatic  #112                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     112: areturn
+     113: aload_2
+     114: ldc           #33                 // class java/lang/Short
+     116: if_acmpeq     126
+     119: aload_2
+     120: getstatic     #72                 // Field java/lang/Short.TYPE:Ljava/lang/Class;
+     123: if_acmpne     134
+     126: aload_1
+     127: invokestatic  #123                // Method java/lang/Short.parseShort:(Ljava/lang/String;)S
+     130: invokestatic  #125                // Method java/lang/Short.valueOf:(S)Ljava/lang/Short;
+     133: areturn
+     134: aload_2
+     135: ldc           #19                 // class java/lang/Byte
+     137: if_acmpeq     147
+     140: aload_2
+     141: getstatic     #66                 // Field java/lang/Byte.TYPE:Ljava/lang/Class;
+     144: if_acmpne     155
+     147: aload_1
+     148: invokestatic  #90                 // Method java/lang/Byte.parseByte:(Ljava/lang/String;)B
+     151: invokestatic  #92                 // Method java/lang/Byte.valueOf:(B)Ljava/lang/Byte;
+     154: areturn
+     155: aload_2
+     156: ldc           #20                 // class java/lang/Character
+     158: if_acmpeq     168
+     161: aload_2
+     162: getstatic     #67                 // Field java/lang/Character.TYPE:Ljava/lang/Class;
+     165: if_acmpne     199
+     168: aload_1
+     169: invokevirtual #128                // Method java/lang/String.length:()I
+     172: iconst_1
+     173: if_icmpeq     190
+     176: new           #26                 // class java/lang/IllegalArgumentException
+     179: dup
+     180: aload_1
+     181: invokedynamic #163,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     186: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     189: athrow
+     190: aload_1
+     191: iconst_0
+     192: invokevirtual #126                // Method java/lang/String.charAt:(I)C
+     195: invokestatic  #94                 // Method java/lang/Character.valueOf:(C)Ljava/lang/Character;
+     198: areturn
+     199: aload_2
+     200: invokevirtual #98                 // Method java/lang/Class.isEnum:()Z
+     203: ifeq          266
+     206: aload_2
+     207: invokevirtual #95                 // Method java/lang/Class.getEnumConstants:()[Ljava/lang/Object;
+     210: astore_3
+     211: aload_3
+     212: arraylength
+     213: istore        4
+     215: iconst_0
+     216: istore        5
+     218: iload         5
+     220: iload         4
+     222: if_icmpge     252
+     225: aload_3
+     226: iload         5
+     228: aaload
+     229: astore        6
+     231: aload         6
+     233: invokevirtual #121                // Method java/lang/Object.toString:()Ljava/lang/String;
+     236: aload_1
+     237: invokevirtual #127                // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+     240: ifeq          246
+     243: aload         6
+     245: areturn
+     246: iinc          5, 1
+     249: goto          218
+     252: new           #26                 // class java/lang/IllegalArgumentException
+     255: dup
+     256: aload_1
+     257: invokedynamic #164,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     262: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     265: athrow
+     266: aload_2
+     267: ldc           #48                 // class java/util/UUID
+     269: if_acmpne     277
+     272: aload_1
+     273: invokestatic  #144                // Method java/util/UUID.fromString:(Ljava/lang/String;)Ljava/util/UUID;
+     276: areturn
+     277: new           #26                 // class java/lang/IllegalArgumentException
+     280: dup
+     281: aload_1
+     282: invokedynamic #165,  0            // InvokeDynamic #6:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     287: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     290: athrow
+
+  protected java.lang.String objectToString(java.lang.Object, java.lang.Class<?>);
+    Code:
+       0: aload_2
+       1: ldc           #34                 // class java/lang/String
+       3: if_acmpne     11
+       6: aload_1
+       7: checkcast     #34                 // class java/lang/String
+      10: areturn
+      11: aload_2
+      12: ldc           #27                 // class java/lang/Integer
+      14: if_acmpeq     24
+      17: aload_2
+      18: getstatic     #70                 // Field java/lang/Integer.TYPE:Ljava/lang/Class;
+      21: if_acmpne     35
+      24: aload_1
+      25: checkcast     #29                 // class java/lang/Number
+      28: invokevirtual #116                // Method java/lang/Number.intValue:()I
+      31: invokestatic  #108                // Method java/lang/Integer.toString:(I)Ljava/lang/String;
+      34: areturn
+      35: aload_2
+      36: ldc           #22                 // class java/lang/Double
+      38: if_acmpeq     48
+      41: aload_2
+      42: getstatic     #68                 // Field java/lang/Double.TYPE:Ljava/lang/Class;
+      45: if_acmpne     59
+      48: aload_1
+      49: checkcast     #29                 // class java/lang/Number
+      52: invokevirtual #114                // Method java/lang/Number.doubleValue:()D
+      55: invokestatic  #100                // Method java/lang/Double.toString:(D)Ljava/lang/String;
+      58: areturn
+      59: aload_2
+      60: ldc           #18                 // class java/lang/Boolean
+      62: if_acmpeq     72
+      65: aload_2
+      66: getstatic     #65                 // Field java/lang/Boolean.TYPE:Ljava/lang/Class;
+      69: if_acmpne     83
+      72: aload_1
+      73: checkcast     #18                 // class java/lang/Boolean
+      76: invokevirtual #86                 // Method java/lang/Boolean.booleanValue:()Z
+      79: invokestatic  #88                 // Method java/lang/Boolean.toString:(Z)Ljava/lang/String;
+      82: areturn
+      83: aload_2
+      84: ldc           #24                 // class java/lang/Float
+      86: if_acmpeq     96
+      89: aload_2
+      90: getstatic     #69                 // Field java/lang/Float.TYPE:Ljava/lang/Class;
+      93: if_acmpne     107
+      96: aload_1
+      97: checkcast     #29                 // class java/lang/Number
+     100: invokevirtual #115                // Method java/lang/Number.floatValue:()F
+     103: invokestatic  #104                // Method java/lang/Float.toString:(F)Ljava/lang/String;
+     106: areturn
+     107: aload_2
+     108: ldc           #28                 // class java/lang/Long
+     110: if_acmpeq     120
+     113: aload_2
+     114: getstatic     #71                 // Field java/lang/Long.TYPE:Ljava/lang/Class;
+     117: if_acmpne     131
+     120: aload_1
+     121: checkcast     #29                 // class java/lang/Number
+     124: invokevirtual #117                // Method java/lang/Number.longValue:()J
+     127: invokestatic  #111                // Method java/lang/Long.toString:(J)Ljava/lang/String;
+     130: areturn
+     131: aload_2
+     132: ldc           #33                 // class java/lang/Short
+     134: if_acmpeq     144
+     137: aload_2
+     138: getstatic     #72                 // Field java/lang/Short.TYPE:Ljava/lang/Class;
+     141: if_acmpne     155
+     144: aload_1
+     145: checkcast     #29                 // class java/lang/Number
+     148: invokevirtual #118                // Method java/lang/Number.shortValue:()S
+     151: invokestatic  #124                // Method java/lang/Short.toString:(S)Ljava/lang/String;
+     154: areturn
+     155: aload_2
+     156: ldc           #19                 // class java/lang/Byte
+     158: if_acmpeq     168
+     161: aload_2
+     162: getstatic     #66                 // Field java/lang/Byte.TYPE:Ljava/lang/Class;
+     165: if_acmpne     179
+     168: aload_1
+     169: checkcast     #29                 // class java/lang/Number
+     172: invokevirtual #113                // Method java/lang/Number.byteValue:()B
+     175: invokestatic  #91                 // Method java/lang/Byte.toString:(B)Ljava/lang/String;
+     178: areturn
+     179: aload_2
+     180: ldc           #20                 // class java/lang/Character
+     182: if_acmpeq     192
+     185: aload_2
+     186: getstatic     #67                 // Field java/lang/Character.TYPE:Ljava/lang/Class;
+     189: if_acmpne     203
+     192: aload_1
+     193: checkcast     #20                 // class java/lang/Character
+     196: invokevirtual #93                 // Method java/lang/Character.charValue:()C
+     199: invokestatic  #129                // Method java/lang/String.valueOf:(C)Ljava/lang/String;
+     202: areturn
+     203: aload_2
+     204: invokevirtual #98                 // Method java/lang/Class.isEnum:()Z
+     207: ifeq          218
+     210: aload_1
+     211: checkcast     #23                 // class java/lang/Enum
+     214: invokevirtual #102                // Method java/lang/Enum.toString:()Ljava/lang/String;
+     217: areturn
+     218: aload_2
+     219: ldc           #48                 // class java/util/UUID
+     221: if_acmpne     232
+     224: aload_1
+     225: checkcast     #48                 // class java/util/UUID
+     228: invokevirtual #145                // Method java/util/UUID.toString:()Ljava/lang/String;
+     231: areturn
+     232: new           #26                 // class java/lang/IllegalArgumentException
+     235: dup
+     236: aload_2
+     237: invokevirtual #97                 // Method java/lang/Class.getName:()Ljava/lang/String;
+     240: invokedynamic #166,  0            // InvokeDynamic #7:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     245: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     248: athrow
+
+  private void lambda$invoke$0(com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair, java.lang.Object[], com.moonsworth.webosr.wrappers.PromiseJS);
+    Code:
+       0: aload_1
+       1: getfield      #59                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.method:Ljava/lang/invoke/MethodHandle;
+       4: aload_2
+       5: invokevirtual #131                // Method java/lang/invoke/MethodHandle.invokeWithArguments:([Ljava/lang/Object;)Ljava/lang/Object;
+       8: astore        4
+      10: aload_0
+      11: aload_3
+      12: aload_1
+      13: aload         4
+      15: invokevirtual #76                 // Method completePromiseIfNeeded:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+      18: goto          33
+      21: astore        4
+      23: new           #32                 // class java/lang/RuntimeException
+      26: dup
+      27: aload         4
+      29: invokespecial #122                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+      32: athrow
+      33: return
+    Exception table:
+       from    to  target type
+           0    18    21   Class java/lang/Throwable
+
+  static {};
+    Code:
+       0: new           #49                 // class java/util/concurrent/ArrayBlockingQueue
+       3: dup
+       4: sipush        4096
+       7: invokespecial #146                // Method java/util/concurrent/ArrayBlockingQueue."<init>":(I)V
+      10: putstatic     #51                 // Field MAIN_ACTOR_QUEUE:Ljava/util/concurrent/ArrayBlockingQueue;
+      13: return
+}
+public final class com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair extends java.lang.Record {
+  private final java.lang.Object instance;
+
+  private final java.lang.invoke.MethodHandle method;
+
+  private final boolean async;
+
+  private final boolean passInstance;
+
+  private final java.lang.reflect.Parameter[] params;
+
+  private final java.lang.Class<?> returnType;
+
+  private final boolean hasBrowser;
+
+  private final boolean hasPromiseJS;
+
+  private final java.lang.Class<?> promiseValueType;
+
+  private final boolean hasStringArray;
+
+  private final int requiredJsArgCount;
+
+  protected com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair(java.lang.Object, java.lang.invoke.MethodHandle, boolean, boolean, java.lang.reflect.Parameter[], java.lang.Class<?>, boolean, boolean, java.lang.Class<?>, boolean, int);
+    Code:
+       0: aload_0
+       1: invokespecial #19                 // Method java/lang/Record."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #12                 // Field instance:Ljava/lang/Object;
+       9: aload_0
+      10: aload_2
+      11: putfield      #13                 // Field method:Ljava/lang/invoke/MethodHandle;
+      14: aload_0
+      15: iload_3
+      16: putfield      #8                  // Field async:Z
+      19: aload_0
+      20: iload         4
+      22: putfield      #15                 // Field passInstance:Z
+      25: aload_0
+      26: aload         5
+      28: putfield      #14                 // Field params:[Ljava/lang/reflect/Parameter;
+      31: aload_0
+      32: aload         6
+      34: putfield      #18                 // Field returnType:Ljava/lang/Class;
+      37: aload_0
+      38: iload         7
+      40: putfield      #9                  // Field hasBrowser:Z
+      43: aload_0
+      44: iload         8
+      46: putfield      #10                 // Field hasPromiseJS:Z
+      49: aload_0
+      50: aload         9
+      52: putfield      #16                 // Field promiseValueType:Ljava/lang/Class;
+      55: aload_0
+      56: iload         10
+      58: putfield      #11                 // Field hasStringArray:Z
+      61: aload_0
+      62: iload         11
+      64: putfield      #17                 // Field requiredJsArgCount:I
+      67: return
+
+  public final java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokedynamic #23,  0             // InvokeDynamic #0:toString:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;)Ljava/lang/String;
+       6: areturn
+
+  public final int hashCode();
+    Code:
+       0: aload_0
+       1: invokedynamic #22,  0             // InvokeDynamic #0:hashCode:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;)I
+       6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #21,  0             // InvokeDynamic #0:equals:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)Z
+       7: ireturn
+
+  public java.lang.Object instance();
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field instance:Ljava/lang/Object;
+       4: areturn
+
+  public java.lang.invoke.MethodHandle method();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field method:Ljava/lang/invoke/MethodHandle;
+       4: areturn
+
+  public boolean async();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field async:Z
+       4: ireturn
+
+  public boolean passInstance();
+    Code:
+       0: aload_0
+       1: getfield      #15                 // Field passInstance:Z
+       4: ireturn
+
+  public java.lang.reflect.Parameter[] params();
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field params:[Ljava/lang/reflect/Parameter;
+       4: areturn
+
+  public java.lang.Class<?> returnType();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field returnType:Ljava/lang/Class;
+       4: areturn
+
+  public boolean hasBrowser();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field hasBrowser:Z
+       4: ireturn
+
+  public boolean hasPromiseJS();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field hasPromiseJS:Z
+       4: ireturn
+
+  public java.lang.Class<?> promiseValueType();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field promiseValueType:Ljava/lang/Class;
+       4: areturn
+
+  public boolean hasStringArray();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field hasStringArray:Z
+       4: ireturn
+
+  public int requiredJsArgCount();
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field requiredJsArgCount:I
+       4: ireturn
+}
+public final class com.moonsworth.webosr.wrappers.Browser extends com.moonsworth.webosr.NativeHandle {
+  private com.moonsworth.webosr.wrappers.Browser(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #9                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void loadURL(java.lang.String);
+
+  public native java.lang.String getURL();
+
+  public native void next();
+
+  public native void previous();
+
+  public native void reload();
+
+  public native void stopLoad();
+
+  public native boolean hasFocus();
+
+  public native void setFocus(boolean);
+
+  public native boolean hasInputFocus();
+
+  public native void triggerResize(int, int);
+
+  public void triggerKeyEvent(java.lang.String, int, java.lang.String, int, com.moonsworth.webosr.input.Keyboard$Action, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: aload_3
+       4: iload         4
+       6: aload         5
+       8: invokevirtual #10                 // Method com/moonsworth/webosr/input/Keyboard$Action.getValue:()I
+      11: iload         6
+      13: invokevirtual #13                 // Method triggerKeyEvent:(Ljava/lang/String;ILjava/lang/String;III)V
+      16: return
+
+  public void triggerMouseEvent(com.moonsworth.webosr.input.Mouse$Button, com.moonsworth.webosr.input.Mouse$Action, int, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #12                 // Method com/moonsworth/webosr/input/Mouse$Button.getValue:()I
+       5: aload_2
+       6: invokevirtual #11                 // Method com/moonsworth/webosr/input/Mouse$Action.getValue:()I
+       9: iload_3
+      10: iload         4
+      12: iload         5
+      14: invokevirtual #14                 // Method triggerMouseEvent:(IIIII)V
+      17: return
+
+  private native void triggerMouseEvent(int, int, int, int, int);
+
+  private native void triggerKeyEvent(java.lang.String, int, java.lang.String, int, int, int);
+
+  public native void triggerScrollEvent(int, int, int, int, int);
+
+  public native int getTexture();
+
+  public native void setDeviceScaleFactor(double);
+
+  public native int getWidth();
+
+  public native int getHeight();
+
+  public native com.moonsworth.webosr.wrappers.NativeFuture eval(java.lang.String);
+
+  public native void evalNoResult(java.lang.String);
+
+  public native void bindFunction(java.lang.String, com.moonsworth.webosr.handler.FunctionJS);
+
+  public native void unbindFunction(java.lang.String);
+
+  public native void createInspector();
+
+  protected native void destroy();
+}
+public interface com.moonsworth.webosr.wrappers.Browser$Listener {
+  public default void onBeginLoad(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String);
+    Code:
+       0: return
+
+  public default void onFinishLoad(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String);
+    Code:
+       0: return
+
+  public default void onFailLoading(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String, java.lang.String, java.lang.String, int);
+    Code:
+       0: return
+
+  public default void onWindowObjectReady(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String);
+    Code:
+       0: return
+
+  public default void onDocumentReady(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String);
+    Code:
+       0: return
+
+  public default void onUpdateHistory(com.moonsworth.webosr.wrappers.Browser);
+    Code:
+       0: return
+
+  public default boolean onNetworkRequest(com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public default java.lang.String onEnforcePublicKey(com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public default void onChangeTitle(com.moonsworth.webosr.wrappers.Browser, java.lang.String);
+    Code:
+       0: return
+
+  public default void onChangeURL(com.moonsworth.webosr.wrappers.Browser, java.lang.String);
+    Code:
+       0: return
+
+  public default void onChangeTooltip(com.moonsworth.webosr.wrappers.Browser, java.lang.String);
+    Code:
+       0: return
+
+  public default void onRequestClose(com.moonsworth.webosr.wrappers.Browser);
+    Code:
+       0: return
+
+  public default void onCursorChange(com.moonsworth.webosr.wrappers.Browser, com.moonsworth.webosr.input.Mouse$Cursor);
+    Code:
+       0: return
+
+  public default void onCursorChange(com.moonsworth.webosr.wrappers.Browser, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokestatic  #6                  // Method com/moonsworth/webosr/input/Mouse$Cursor.fromValue:(I)Lcom/moonsworth/webosr/input/Mouse$Cursor;
+       6: invokeinterface #7,  3            // InterfaceMethod onCursorChange:(Lcom/moonsworth/webosr/wrappers/Browser;Lcom/moonsworth/webosr/input/Mouse$Cursor;)V
+      11: return
+
+  public default com.moonsworth.webosr.wrappers.Browser onCreateChild(com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String, boolean, int, int, int, int);
+    Code:
+       0: aload_1
+       1: areturn
+}
+public final class com.moonsworth.webosr.wrappers.NativeFuture extends com.moonsworth.webosr.NativeHandle implements java.util.concurrent.Future<java.lang.String> {
+  private com.moonsworth.webosr.wrappers.NativeFuture(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #6                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native boolean isUndefined();
+
+  public java.lang.String get(long, java.util.concurrent.TimeUnit);
+    Code:
+       0: aload_0
+       1: aload_3
+       2: lload_1
+       3: invokevirtual #11                 // Method java/util/concurrent/TimeUnit.toNanos:(J)J
+       6: invokevirtual #9                  // Method get0:(J)Ljava/lang/String;
+       9: areturn
+
+  public java.lang.String get();
+    Code:
+       0: aload_0
+       1: lconst_0
+       2: invokevirtual #9                  // Method get0:(J)Ljava/lang/String;
+       5: areturn
+
+  public native boolean isDone();
+
+  public boolean isCancelled();
+    Code:
+       0: new           #3                  // class java/lang/UnsupportedOperationException
+       3: dup
+       4: invokespecial #10                 // Method java/lang/UnsupportedOperationException."<init>":()V
+       7: athrow
+
+  public boolean cancel(boolean);
+    Code:
+       0: new           #3                  // class java/lang/UnsupportedOperationException
+       3: dup
+       4: invokespecial #10                 // Method java/lang/UnsupportedOperationException."<init>":()V
+       7: athrow
+
+  protected native void destroy();
+
+  private native java.lang.String get0(long);
+
+  public java.lang.Object get(long, java.util.concurrent.TimeUnit);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: aload_3
+       3: invokevirtual #8                  // Method get:(JLjava/util/concurrent/TimeUnit;)Ljava/lang/String;
+       6: areturn
+
+  public java.lang.Object get();
+    Code:
+       0: aload_0
+       1: invokevirtual #7                  // Method get:()Ljava/lang/String;
+       4: areturn
+}
+public final class com.moonsworth.webosr.wrappers.PlatformInterface extends com.moonsworth.webosr.NativeHandle {
+  private com.moonsworth.webosr.wrappers.PlatformInterface(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #5                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void setScrollCallback(java.util.function.BiConsumer<java.lang.Double, java.lang.Double>);
+
+  public void setCursor(com.moonsworth.webosr.input.Mouse$Cursor);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #6                  // Method com/moonsworth/webosr/input/Mouse$Cursor.getValue:()I
+       5: invokevirtual #7                  // Method setCursor0:(I)V
+       8: return
+
+  protected native void destroy();
+
+  private native void setCursor0(int);
+}
+public final class com.moonsworth.webosr.wrappers.PromiseJS<T> {
+  private volatile long handle;
+
+  private com.moonsworth.webosr.BridgeValueCodec bridgeCodec;
+
+  private java.lang.Class<?> bridgeValueType;
+
+  private com.moonsworth.webosr.wrappers.PromiseJS(long);
+    Code:
+       0: aload_0
+       1: invokespecial #23                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: lload_1
+       6: putfield      #14                 // Field handle:J
+       9: return
+
+  public void resolve(T);
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_1
+      20: ifnonnull     32
+      23: aload_0
+      24: aconst_null
+      25: checkcast     #8                  // class java/lang/String
+      28: invokevirtual #15                 // Method _resolve:(Ljava/lang/String;)V
+      31: return
+      32: aload_0
+      33: getfield      #12                 // Field bridgeCodec:Lcom/moonsworth/webosr/BridgeValueCodec;
+      36: ifnull        65
+      39: aload_0
+      40: getfield      #13                 // Field bridgeValueType:Ljava/lang/Class;
+      43: ifnull        65
+      46: aload_0
+      47: aload_0
+      48: getfield      #12                 // Field bridgeCodec:Lcom/moonsworth/webosr/BridgeValueCodec;
+      51: aload_1
+      52: aload_0
+      53: getfield      #13                 // Field bridgeValueType:Ljava/lang/Class;
+      56: invokeinterface #26,  3           // InterfaceMethod com/moonsworth/webosr/BridgeValueCodec.objectToString:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+      61: invokevirtual #15                 // Method _resolve:(Ljava/lang/String;)V
+      64: return
+      65: aload_1
+      66: instanceof    #8                  // class java/lang/String
+      69: ifeq          81
+      72: aload_0
+      73: aload_1
+      74: checkcast     #8                  // class java/lang/String
+      77: invokevirtual #15                 // Method _resolve:(Ljava/lang/String;)V
+      80: return
+      81: new           #6                  // class java/lang/IllegalStateException
+      84: dup
+      85: aload_1
+      86: invokevirtual #24                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      89: invokevirtual #21                 // Method java/lang/Class.getName:()Ljava/lang/String;
+      92: invokedynamic #27,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      97: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     100: athrow
+
+  public void _resolve(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: aload_1
+      21: invokevirtual #19                 // Method resolve0:(Ljava/lang/String;)V
+      24: aload_0
+      25: lconst_0
+      26: putfield      #14                 // Field handle:J
+      29: aload_0
+      30: invokevirtual #16                 // Method clearBridgeCodec:()V
+      33: return
+
+  public void resolve();
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: invokevirtual #20                 // Method resolve1:()V
+      23: aload_0
+      24: lconst_0
+      25: putfield      #14                 // Field handle:J
+      28: aload_0
+      29: invokevirtual #16                 // Method clearBridgeCodec:()V
+      32: return
+
+  public void reject(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: aload_1
+      21: invokevirtual #17                 // Method reject0:(Ljava/lang/String;)V
+      24: aload_0
+      25: lconst_0
+      26: putfield      #14                 // Field handle:J
+      29: aload_0
+      30: invokevirtual #16                 // Method clearBridgeCodec:()V
+      33: return
+
+  public void reject();
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifne          19
+       9: new           #6                  // class java/lang/IllegalStateException
+      12: dup
+      13: ldc           #1                  // String Future already completed
+      15: invokespecial #22                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      18: athrow
+      19: aload_0
+      20: invokevirtual #18                 // Method reject1:()V
+      23: aload_0
+      24: lconst_0
+      25: putfield      #14                 // Field handle:J
+      28: aload_0
+      29: invokevirtual #16                 // Method clearBridgeCodec:()V
+      32: return
+
+  public void bindBridgeCodec(com.moonsworth.webosr.BridgeValueCodec, java.lang.Class<?>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #12                 // Field bridgeCodec:Lcom/moonsworth/webosr/BridgeValueCodec;
+       5: aload_0
+       6: aload_2
+       7: putfield      #13                 // Field bridgeValueType:Ljava/lang/Class;
+      10: return
+
+  private void clearBridgeCodec();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: putfield      #12                 // Field bridgeCodec:Lcom/moonsworth/webosr/BridgeValueCodec;
+       5: aload_0
+       6: aconst_null
+       7: putfield      #13                 // Field bridgeValueType:Ljava/lang/Class;
+      10: return
+
+  private native void resolve0(java.lang.String);
+
+  private native void resolve1();
+
+  private native void reject0(java.lang.String);
+
+  private native void reject1();
+}
+public final class com.moonsworth.webosr.wrappers.Session extends com.moonsworth.webosr.NativeHandle {
+  private com.moonsworth.webosr.wrappers.Session(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #3                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native boolean isPersistent();
+
+  public native java.lang.String name();
+
+  protected native void destroy();
+}
+public final class com.moonsworth.webosr.wrappers.WebEngine extends com.moonsworth.webosr.NativeHandle {
+  private final java.lang.Thread owner;
+
+  private com.moonsworth.webosr.wrappers.WebEngine(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #7                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: aload_0
+       6: invokestatic  #11                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+       9: putfield      #6                  // Field owner:Ljava/lang/Thread;
+      12: return
+
+  public void invokeIteration();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field owner:Ljava/lang/Thread;
+       4: invokestatic  #11                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+       7: invokevirtual #10                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      10: ifeq          16
+      13: invokestatic  #8                  // Method com/moonsworth/webosr/javascript/FunctionBus.consumeMainActorQueue:()V
+      16: aload_0
+      17: invokevirtual #9                  // Method invokeIteration0:()V
+      20: return
+
+  public native com.moonsworth.webosr.wrappers.image.TexturedImageSource createImageSourceTextured(java.lang.String);
+
+  public native com.moonsworth.webosr.wrappers.Session createSession(java.lang.String, boolean);
+
+  public native com.moonsworth.webosr.wrappers.Browser createBrowser(com.moonsworth.webosr.config.BrowserConfig);
+
+  public native com.moonsworth.webosr.wrappers.PlatformInterface getPlatformInterface();
+
+  public native void setFPS(int);
+
+  protected native void destroy();
+
+  private native void invokeIteration0();
+}
+public final class com.moonsworth.webosr.wrappers.WebOSR {
+  public com.moonsworth.webosr.wrappers.WebOSR();
+    Code:
+       0: aload_0
+       1: invokespecial #10                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void loadLibraries();
+    Code:
+       0: ldc           #2                  // String UltralightCore
+       2: invokestatic  #11                 // Method java/lang/System.loadLibrary:(Ljava/lang/String;)V
+       5: ldc           #3                  // String WebCore
+       7: invokestatic  #11                 // Method java/lang/System.loadLibrary:(Ljava/lang/String;)V
+      10: ldc           #1                  // String Ultralight
+      12: invokestatic  #11                 // Method java/lang/System.loadLibrary:(Ljava/lang/String;)V
+      15: ldc           #4                  // String WebOSR-Binding
+      17: invokestatic  #11                 // Method java/lang/System.loadLibrary:(Ljava/lang/String;)V
+      20: return
+
+  public static native com.moonsworth.webosr.wrappers.WebEngine createEngine(com.moonsworth.webosr.handler.Logger, com.moonsworth.webosr.config.UltralightConfig, com.moonsworth.webosr.config.ThreadConfig);
+
+  public static java.nio.ByteBuffer allocateByteBuffer(int);
+    Code:
+       0: iload_0
+       1: invokestatic  #12                 // Method java/nio/ByteBuffer.allocateDirect:(I)Ljava/nio/ByteBuffer;
+       4: invokestatic  #14                 // Method java/nio/ByteOrder.nativeOrder:()Ljava/nio/ByteOrder;
+       7: invokevirtual #13                 // Method java/nio/ByteBuffer.order:(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+      10: areturn
+}
+public final class com.moonsworth.webosr.wrappers.image.ChildImageSource extends com.moonsworth.webosr.NativeHandle implements com.moonsworth.webosr.wrappers.image.ImageSource {
+  private com.moonsworth.webosr.wrappers.image.ChildImageSource(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #4                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void bind();
+
+  public native void unbind();
+
+  public native void uv(int, int, int, int);
+
+  protected native void destroy();
+}
+public interface com.moonsworth.webosr.wrappers.image.ImageSource {
+  public abstract void bind();
+
+  public abstract void unbind();
+
+  public abstract void uv(int, int, int, int);
+}
+public final class com.moonsworth.webosr.wrappers.image.TexturedImageSource extends com.moonsworth.webosr.NativeHandle implements com.moonsworth.webosr.wrappers.image.ImageSource {
+  private com.moonsworth.webosr.wrappers.image.TexturedImageSource(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #4                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void update(java.nio.ByteBuffer);
+
+  public native void size(int, int);
+
+  public native com.moonsworth.webosr.wrappers.image.ChildImageSource makeChild(java.lang.String);
+
+  public native void uv(int, int, int, int);
+
+  public native void bind();
+
+  public native void unbind();
+
+  protected native void destroy();
+}

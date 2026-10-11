@@ -1,0 +1,57 @@
+  public void IHHHRCROHRCIRICROICCHOOHCRCOIO();
+    Code:
+       0: new           #276                // class java/lang/Thread
+       3: dup
+       4: aload_0
+       5: invokedynamic #882,  0            // InvokeDynamic #20:run:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Runnable;
+      10: invokespecial #779                // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+      13: invokevirtual #782                // Method java/lang/Thread.start:()V
+      16: return
+
+
+  private void HHICRRORCCHCRRHHIIIRCHHIHCROII();
+    Code:
+       0: aload_0
+       1: getfield      #357                // Field OOROROIHCICHIICRRHRRICOIIIHIOO:Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       4: ifnull        24
+       7: aload_0
+       8: getfield      #357                // Field OOROROIHCICHIICRRHRRICOIIIHIOO:Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      11: invokevirtual #566                // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH.isOpen:()Z
+      14: ifeq          24
+      17: aload_0
+      18: getfield      #357                // Field OOROROIHCICHIICRRHRRICOIIIHIOO:Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      21: invokevirtual #564                // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH.closeBlocking:()V
+      24: aload_0
+      25: invokevirtual #543                // Method HOIOIRICHIIRIHHROHOOHOIROICHOR:()Lcom/lunarclient/gameipc/handshake/v1/Handshake;
+      28: astore_1
+      29: aload_1
+      30: ifnonnull     45
+      33: ldc           #27                 // String IPC
+      35: ldc           #45                 // String Unable to construct IPC handshake.
+      37: iconst_0
+      38: anewarray     #270                // class java/lang/Object
+      41: invokestatic  #570                // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      44: return
+      45: aload_0
+      46: new           #117                // class com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH
+      49: dup
+      50: aload_1
+      51: invokespecial #561                // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":(Lcom/lunarclient/gameipc/handshake/v1/Handshake;)V
+      54: putfield      #357                // Field OOROROIHCICHIICRRHRRICOIIIHIOO:Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      57: aload_0
+      58: getfield      #357                // Field OOROROIHCICHIICRRHRRICOIIIHIOO:Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      61: invokevirtual #565                // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH.connect:()V
+      64: invokestatic  #724                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      67: aload_0
+      68: invokedynamic #891,  0            // InvokeDynamic #29:run:(Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/lang/Runnable;
+      73: invokeinterface #827,  2          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$submit:(Ljava/lang/Runnable;)V
+      78: goto          86
+      81: astore_1
+      82: aload_1
+      83: invokevirtual #767                // Method java/lang/InterruptedException.printStackTrace:()V
+      86: return
+    Exception table:
+       from    to  target type
+           0    44    81   Class java/lang/InterruptedException
+          45    78    81   Class java/lang/InterruptedException
+

@@ -1,0 +1,591 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/L/_88f3cf/_1e73d7/_bb4487.class
+  Last modified Dec 31, 1969; size 5897 bytes
+  SHA-256 checksum fa3874b38a5deafa9d41302ef462a0671acdd1ec1859417aa0a2fae73450df5c
+public class L._88f3cf._1e73d7._bb4487 implements L._ec7e36._a1dd3a,L._88f3cf._d4ca6c
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #12                         // L/_88f3cf/_1e73d7/_bb4487
+  super_class: #18                        // java/lang/Object
+  interfaces: 2, fields: 6, methods: 14, attributes: 1
+Constant pool:
+    #1 = String             #145          // favorite
+    #2 = String             #157          // lastModified
+    #3 = String             #159          // seen
+    #4 = String             #160          // thumbnailSupplier is marked non-null but is null
+    #5 = Class              #135          // com/google/gson/JsonElement
+    #6 = Class              #136          // com/google/gson/JsonObject
+    #7 = Class              #137          // ML/_590f69/_bb4487/_21aca6/_bb4487
+    #8 = Class              #138          // ML/_590f69/_5b3f84/_dcf582
+    #9 = Class              #139          // L/_81676d/_1e73d7
+   #10 = Class              #140          // L/_81676d/_1e73d7$_cfe983
+   #11 = Class              #141          // L/_ec7e36/_a1dd3a
+   #12 = Class              #142          // L/_88f3cf/_1e73d7/_bb4487
+   #13 = Class              #143          // L/_88f3cf/_d4ca6c
+   #14 = Class              #144          // L/util/_e93d3c
+   #15 = Class              #151          // java/lang/Boolean
+   #16 = Class              #152          // java/lang/Long
+   #17 = Class              #153          // java/lang/NullPointerException
+   #18 = Class              #154          // java/lang/Object
+   #19 = Class              #155          // java/lang/String
+   #20 = Class              #156          // java/util/function/Supplier
+   #21 = Fieldref           #12.#53       // L/_88f3cf/_1e73d7/_bb4487._904e8d:Z
+   #22 = Fieldref           #12.#54       // L/_88f3cf/_1e73d7/_bb4487._bfffde:LML/_590f69/_5b3f84/_dcf582;
+   #23 = Fieldref           #12.#57       // L/_88f3cf/_1e73d7/_bb4487._ee45da:Z
+   #24 = Fieldref           #12.#59       // L/_88f3cf/_1e73d7/_bb4487._843294:Ljava/util/function/Supplier;
+   #25 = Fieldref           #12.#61       // L/_88f3cf/_1e73d7/_bb4487._f546f4:LML/_590f69/_5b3f84/_dcf582;
+   #26 = Fieldref           #12.#72       // L/_88f3cf/_1e73d7/_bb4487.lastModified:J
+   #27 = Methodref          #5.#68        // com/google/gson/JsonElement.getAsBoolean:()Z
+   #28 = Methodref          #5.#69        // com/google/gson/JsonElement.getAsLong:()J
+   #29 = Methodref          #6.#62        // com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+   #30 = Methodref          #6.#63        // com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+   #31 = Methodref          #6.#67        // com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+   #32 = Methodref          #6.#71        // com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+   #33 = Methodref          #12.#50       // L/_88f3cf/_1e73d7/_bb4487._691aaf:(Z)V
+   #34 = Methodref          #12.#51       // L/_88f3cf/_1e73d7/_bb4487._66ad8b:()Z
+   #35 = Methodref          #12.#52       // L/_88f3cf/_1e73d7/_bb4487._cfe983:(LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFFF)V
+   #36 = Methodref          #12.#56       // L/_88f3cf/_1e73d7/_bb4487._93a51a:()Z
+   #37 = Methodref          #12.#58       // L/_88f3cf/_1e73d7/_bb4487._88f3cf:(J)V
+   #38 = Methodref          #12.#60       // L/_88f3cf/_1e73d7/_bb4487._3bf032:(Z)V
+   #39 = Methodref          #12.#70       // L/_88f3cf/_1e73d7/_bb4487.getLastModified:()J
+   #40 = Methodref          #14.#55       // L/util/_e93d3c._620020:()LML/_590f69/_bb4487/_21aca6/_bb4487;
+   #41 = Methodref          #15.#74       // java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+   #42 = Methodref          #16.#73       // java/lang/Long.valueOf:(J)Ljava/lang/Long;
+   #43 = Methodref          #17.#49       // java/lang/NullPointerException."<init>":(Ljava/lang/String;)V
+   #44 = Methodref          #18.#48       // java/lang/Object."<init>":()V
+   #45 = InterfaceMethodref #7.#64        // ML/_590f69/_bb4487/_21aca6/_bb4487.bridge$drawString:(LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFIZ)F
+   #46 = InterfaceMethodref #7.#65        // ML/_590f69/_bb4487/_21aca6/_bb4487.bridge$getStringWidth:(Ljava/lang/String;)F
+   #47 = InterfaceMethodref #20.#66       // java/util/function/Supplier.get:()Ljava/lang/Object;
+   #48 = NameAndType        #99:#81       // "<init>":()V
+   #49 = NameAndType        #99:#93       // "<init>":(Ljava/lang/String;)V
+   #50 = NameAndType        #100:#98      // _691aaf:(Z)V
+   #51 = NameAndType        #101:#82      // _66ad8b:()Z
+   #52 = NameAndType        #102:#87      // _cfe983:(LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFFF)V
+   #53 = NameAndType        #103:#131     // _904e8d:Z
+   #54 = NameAndType        #105:#111     // _bfffde:LML/_590f69/_5b3f84/_dcf582;
+   #55 = NameAndType        #107:#76      // _620020:()LML/_590f69/_bb4487/_21aca6/_bb4487;
+   #56 = NameAndType        #108:#82      // _93a51a:()Z
+   #57 = NameAndType        #120:#131     // _ee45da:Z
+   #58 = NameAndType        #121:#84      // _88f3cf:(J)V
+   #59 = NameAndType        #122:#113     // _843294:Ljava/util/function/Supplier;
+   #60 = NameAndType        #123:#98      // _3bf032:(Z)V
+   #61 = NameAndType        #124:#111     // _f546f4:LML/_590f69/_5b3f84/_dcf582;
+   #62 = NameAndType        #132:#95      // addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+   #63 = NameAndType        #132:#96      // addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+   #64 = NameAndType        #133:#88      // bridge$drawString:(LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFIZ)F
+   #65 = NameAndType        #134:#91      // bridge$getStringWidth:(Ljava/lang/String;)F
+   #66 = NameAndType        #146:#78      // get:()Ljava/lang/Object;
+   #67 = NameAndType        #146:#92      // get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+   #68 = NameAndType        #147:#82      // getAsBoolean:()Z
+   #69 = NameAndType        #148:#75      // getAsLong:()J
+   #70 = NameAndType        #149:#75      // getLastModified:()J
+   #71 = NameAndType        #150:#94      // has:(Ljava/lang/String;)Z
+   #72 = NameAndType        #157:#110     // lastModified:J
+   #73 = NameAndType        #161:#83      // valueOf:(J)Ljava/lang/Long;
+   #74 = NameAndType        #161:#97      // valueOf:(Z)Ljava/lang/Boolean;
+   #75 = Utf8               ()J
+   #76 = Utf8               ()LML/_590f69/_bb4487/_21aca6/_bb4487;
+   #77 = Utf8               ()LML/_590f69/_5b3f84/_dcf582;
+   #78 = Utf8               ()Ljava/lang/Object;
+   #79 = Utf8               ()Ljava/util/function/Supplier;
+   #80 = Utf8               ()Ljava/util/function/Supplier<Ljava/lang/String;>;
+   #81 = Utf8               ()V
+   #82 = Utf8               ()Z
+   #83 = Utf8               (J)Ljava/lang/Long;
+   #84 = Utf8               (J)V
+   #85 = Utf8               (Lcom/google/gson/JsonObject;)V
+   #86 = Utf8               (LML/_590f69/_bb4487/_13ea87/_a140a8;FFFFLL/_81676d/_1e73d7$_cfe983;Z)V
+   #87 = Utf8               (LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFFF)V
+   #88 = Utf8               (LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFIZ)F
+   #89 = Utf8               (LML/_590f69/_5b3f84/_dcf582;LML/_590f69/_5b3f84/_dcf582;Ljava/util/function/Supplier;ZJZ)V
+   #90 = Utf8               (LML/_590f69/_5b3f84/_dcf582;LML/_590f69/_5b3f84/_dcf582;Ljava/util/function/Supplier<Ljava/lang/String;>;ZJZ)V
+   #91 = Utf8               (Ljava/lang/String;)F
+   #92 = Utf8               (Ljava/lang/String;)Lcom/google/gson/JsonElement;
+   #93 = Utf8               (Ljava/lang/String;)V
+   #94 = Utf8               (Ljava/lang/String;)Z
+   #95 = Utf8               (Ljava/lang/String;Ljava/lang/Boolean;)V
+   #96 = Utf8               (Ljava/lang/String;Ljava/lang/Number;)V
+   #97 = Utf8               (Z)Ljava/lang/Boolean;
+   #98 = Utf8               (Z)V
+   #99 = Utf8               <init>
+  #100 = Utf8               _691aaf
+  #101 = Utf8               _66ad8b
+  #102 = Utf8               _cfe983
+  #103 = Utf8               _904e8d
+  #104 = Utf8               Code
+  #105 = Utf8               _bfffde
+  #106 = Utf8               _a76d17
+  #107 = Utf8               _620020
+  #108 = Utf8               _93a51a
+  #109 = Utf8               InnerClasses
+  #110 = Utf8               J
+  #111 = Utf8               LML/_590f69/_5b3f84/_dcf582;
+  #112 = Utf8               LineNumberTable
+  #113 = Utf8               Ljava/util/function/Supplier;
+  #114 = Utf8               Ljava/util/function/Supplier<Ljava/lang/String;>;
+  #115 = Utf8               Llombok/Generated;
+  #116 = Utf8               Lorg/jetbrains/annotations/NotNull;
+  #117 = Utf8               Lorg/jetbrains/annotations/Nullable;
+  #118 = Utf8               _ddb966
+  #119 = Utf8               _10f9d6
+  #120 = Utf8               _ee45da
+  #121 = Utf8               _88f3cf
+  #122 = Utf8               _843294
+  #123 = Utf8               _3bf032
+  #124 = Utf8               _f546f4
+  #125 = Utf8               _590f69
+  #126 = Utf8               RuntimeInvisibleAnnotations
+  #127 = Utf8               RuntimeInvisibleParameterAnnotations
+  #128 = Utf8               RuntimeInvisibleTypeAnnotations
+  #129 = Utf8               Signature
+  #130 = Utf8               StackMapTable
+  #131 = Utf8               Z
+  #132 = Utf8               addProperty
+  #133 = Utf8               bridge$drawString
+  #134 = Utf8               bridge$getStringWidth
+  #135 = Utf8               com/google/gson/JsonElement
+  #136 = Utf8               com/google/gson/JsonObject
+  #137 = Utf8               ML/_590f69/_bb4487/_21aca6/_bb4487
+  #138 = Utf8               ML/_590f69/_5b3f84/_dcf582
+  #139 = Utf8               L/_81676d/_1e73d7
+  #140 = Utf8               L/_81676d/_1e73d7$_cfe983
+  #141 = Utf8               L/_ec7e36/_a1dd3a
+  #142 = Utf8               L/_88f3cf/_1e73d7/_bb4487
+  #143 = Utf8               L/_88f3cf/_d4ca6c
+  #144 = Utf8               L/util/_e93d3c
+  #145 = Utf8               favorite
+  #146 = Utf8               get
+  #147 = Utf8               getAsBoolean
+  #148 = Utf8               getAsLong
+  #149 = Utf8               getLastModified
+  #150 = Utf8               has
+  #151 = Utf8               java/lang/Boolean
+  #152 = Utf8               java/lang/Long
+  #153 = Utf8               java/lang/NullPointerException
+  #154 = Utf8               java/lang/Object
+  #155 = Utf8               java/lang/String
+  #156 = Utf8               java/util/function/Supplier
+  #157 = Utf8               lastModified
+  #158 = Utf8               load
+  #159 = Utf8               seen
+  #160 = Utf8               thumbnailSupplier is marked non-null but is null
+  #161 = Utf8               valueOf
+{
+  private final ML._590f69._5b3f84._dcf582 _f546f4;
+    descriptor: LML/_590f69/_5b3f84/_dcf582;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    RuntimeInvisibleAnnotations:
+      0: #117()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #117(): FIELD
+        org.jetbrains.annotations.Nullable
+
+  private final ML._590f69._5b3f84._dcf582 _bfffde;
+    descriptor: LML/_590f69/_5b3f84/_dcf582;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    RuntimeInvisibleAnnotations:
+      0: #117()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #117(): FIELD
+        org.jetbrains.annotations.Nullable
+
+  private final java.util.function.Supplier<java.lang.String> _843294;
+    descriptor: Ljava/util/function/Supplier;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #114                         // Ljava/util/function/Supplier<Ljava/lang/String;>;
+    RuntimeInvisibleAnnotations:
+      0: #116()
+        org.jetbrains.annotations.NotNull
+    RuntimeInvisibleTypeAnnotations:
+      0: #116(): FIELD, location=[TYPE_ARGUMENT(0)]
+        org.jetbrains.annotations.NotNull
+      1: #116(): FIELD
+        org.jetbrains.annotations.NotNull
+
+  private boolean _904e8d;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  private long lastModified;
+    descriptor: J
+    flags: (0x0002) ACC_PRIVATE
+
+  private boolean _ee45da;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  public void _cfe983(ML._590f69._bb4487._13ea87._a140a8, float, float, float, float, L._81676d._1e73d7$_cfe983, boolean);
+    descriptor: (LML/_590f69/_bb4487/_13ea87/_a140a8;FFFFLL/_81676d/_1e73d7$_cfe983;Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=7, locals=8, args_size=8
+         0: aload_0
+         1: aload_1
+         2: aload_0
+         3: getfield      #24                 // Field _843294:Ljava/util/function/Supplier;
+         6: invokeinterface #47,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+        11: checkcast     #19                 // class java/lang/String
+        14: fload_2
+        15: fload_3
+        16: fload         4
+        18: fload         5
+        20: invokevirtual #35                 // Method _cfe983:(LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFFF)V
+        23: return
+      LineNumberTable:
+        line 56: 0
+        line 57: 23
+
+  protected void _cfe983(ML._590f69._bb4487._13ea87._a140a8, java.lang.String, float, float, float, float);
+    descriptor: (LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFFF)V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=7, locals=9, args_size=7
+         0: invokestatic  #40                 // Method L/util/_e93d3c._620020:()LML/_590f69/_bb4487/_21aca6/_bb4487;
+         3: aload_2
+         4: invokeinterface #46,  2           // InterfaceMethod ML/_590f69/_bb4487/_21aca6/_bb4487.bridge$getStringWidth:(Ljava/lang/String;)F
+         9: fstore        7
+        11: fload_3
+        12: fload         5
+        14: fconst_2
+        15: fdiv
+        16: fadd
+        17: fload         7
+        19: fconst_2
+        20: fdiv
+        21: fsub
+        22: fstore        8
+        24: invokestatic  #40                 // Method L/util/_e93d3c._620020:()LML/_590f69/_bb4487/_21aca6/_bb4487;
+        27: aload_1
+        28: aload_2
+        29: fload         8
+        31: fload         4
+        33: fload         6
+        35: fconst_2
+        36: fdiv
+        37: fadd
+        38: iconst_m1
+        39: iconst_1
+        40: invokeinterface #45,  7           // InterfaceMethod ML/_590f69/_bb4487/_21aca6/_bb4487.bridge$drawString:(LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFIZ)F
+        45: pop
+        46: return
+      LineNumberTable:
+        line 61: 0
+        line 62: 11
+        line 63: 24
+        line 64: 46
+
+  public void load(com.google.gson.JsonObject);
+    descriptor: (Lcom/google/gson/JsonObject;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_1
+         1: ldc           #3                  // String seen
+         3: invokevirtual #32                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+         6: ifeq          22
+         9: aload_0
+        10: aload_1
+        11: ldc           #3                  // String seen
+        13: invokevirtual #31                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+        16: invokevirtual #27                 // Method com/google/gson/JsonElement.getAsBoolean:()Z
+        19: invokevirtual #33                 // Method _691aaf:(Z)V
+        22: aload_1
+        23: ldc           #2                  // String lastModified
+        25: invokevirtual #32                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+        28: ifeq          44
+        31: aload_0
+        32: aload_1
+        33: ldc           #2                  // String lastModified
+        35: invokevirtual #31                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+        38: invokevirtual #28                 // Method com/google/gson/JsonElement.getAsLong:()J
+        41: invokevirtual #37                 // Method _88f3cf:(J)V
+        44: aload_1
+        45: ldc           #1                  // String favorite
+        47: invokevirtual #32                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+        50: ifeq          66
+        53: aload_0
+        54: aload_1
+        55: ldc           #1                  // String favorite
+        57: invokevirtual #31                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+        60: invokevirtual #27                 // Method com/google/gson/JsonElement.getAsBoolean:()Z
+        63: invokevirtual #38                 // Method _3bf032:(Z)V
+        66: return
+      LineNumberTable:
+        line 68: 0
+        line 69: 9
+        line 71: 22
+        line 72: 31
+        line 74: 44
+        line 75: 53
+        line 77: 66
+      StackMapTable: number_of_entries = 3
+        frame_type = 22 /* same */
+        frame_type = 21 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 21
+
+  public void _590f69(com.google.gson.JsonObject);
+    descriptor: (Lcom/google/gson/JsonObject;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: aload_0
+         1: invokevirtual #36                 // Method _93a51a:()Z
+         4: ifeq          17
+         7: aload_1
+         8: ldc           #3                  // String seen
+        10: iconst_1
+        11: invokestatic  #41                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        14: invokevirtual #29                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+        17: aload_0
+        18: invokevirtual #39                 // Method getLastModified:()J
+        21: lconst_0
+        22: lcmp
+        23: ifeq          39
+        26: aload_1
+        27: ldc           #2                  // String lastModified
+        29: aload_0
+        30: invokevirtual #39                 // Method getLastModified:()J
+        33: invokestatic  #42                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+        36: invokevirtual #30                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+        39: aload_0
+        40: invokevirtual #34                 // Method _66ad8b:()Z
+        43: ifeq          56
+        46: aload_1
+        47: ldc           #1                  // String favorite
+        49: iconst_1
+        50: invokestatic  #41                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        53: invokevirtual #29                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+        56: return
+      LineNumberTable:
+        line 81: 0
+        line 82: 7
+        line 84: 17
+        line 85: 26
+        line 87: 39
+        line 88: 46
+        line 90: 56
+      StackMapTable: number_of_entries = 3
+        frame_type = 17 /* same */
+        frame_type = 21 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 16
+
+  public ML._590f69._5b3f84._dcf582 _ddb966();
+    descriptor: ()LML/_590f69/_5b3f84/_dcf582;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #25                 // Field _f546f4:LML/_590f69/_5b3f84/_dcf582;
+         4: areturn
+      LineNumberTable:
+        line 28: 0
+    RuntimeInvisibleAnnotations:
+      0: #117()
+        org.jetbrains.annotations.Nullable
+      1: #115()
+        lombok.Generated
+    RuntimeInvisibleTypeAnnotations:
+      0: #117(): METHOD_RETURN
+        org.jetbrains.annotations.Nullable
+
+  public ML._590f69._5b3f84._dcf582 _a76d17();
+    descriptor: ()LML/_590f69/_5b3f84/_dcf582;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #22                 // Field _bfffde:LML/_590f69/_5b3f84/_dcf582;
+         4: areturn
+      LineNumberTable:
+        line 29: 0
+    RuntimeInvisibleAnnotations:
+      0: #117()
+        org.jetbrains.annotations.Nullable
+      1: #115()
+        lombok.Generated
+    RuntimeInvisibleTypeAnnotations:
+      0: #117(): METHOD_RETURN
+        org.jetbrains.annotations.Nullable
+
+  public java.util.function.Supplier<java.lang.String> _10f9d6();
+    descriptor: ()Ljava/util/function/Supplier;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #24                 // Field _843294:Ljava/util/function/Supplier;
+         4: areturn
+      LineNumberTable:
+        line 31: 0
+    Signature: #80                          // ()Ljava/util/function/Supplier<Ljava/lang/String;>;
+    RuntimeInvisibleAnnotations:
+      0: #116()
+        org.jetbrains.annotations.NotNull
+      1: #115()
+        lombok.Generated
+    RuntimeInvisibleTypeAnnotations:
+      0: #116(): METHOD_RETURN, location=[TYPE_ARGUMENT(0)]
+        org.jetbrains.annotations.NotNull
+      1: #116(): METHOD_RETURN
+        org.jetbrains.annotations.NotNull
+
+  public boolean _93a51a();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #21                 // Field _904e8d:Z
+         4: ireturn
+      LineNumberTable:
+        line 37: 0
+    RuntimeInvisibleAnnotations:
+      0: #115()
+        lombok.Generated
+
+  public long getLastModified();
+    descriptor: ()J
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #26                 // Field lastModified:J
+         4: lreturn
+      LineNumberTable:
+        line 43: 0
+    RuntimeInvisibleAnnotations:
+      0: #115()
+        lombok.Generated
+
+  public boolean _66ad8b();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #23                 // Field _ee45da:Z
+         4: ireturn
+      LineNumberTable:
+        line 51: 0
+    RuntimeInvisibleAnnotations:
+      0: #115()
+        lombok.Generated
+
+  public L._88f3cf._1e73d7._bb4487(ML._590f69._5b3f84._dcf582, ML._590f69._5b3f84._dcf582, java.util.function.Supplier<java.lang.String>, boolean, long, boolean);
+    descriptor: (LML/_590f69/_5b3f84/_dcf582;LML/_590f69/_5b3f84/_dcf582;Ljava/util/function/Supplier;ZJZ)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=8, args_size=7
+         0: aload_0
+         1: invokespecial #44                 // Method java/lang/Object."<init>":()V
+         4: aload_3
+         5: ifnonnull     18
+         8: new           #17                 // class java/lang/NullPointerException
+        11: dup
+        12: ldc           #4                  // String thumbnailSupplier is marked non-null but is null
+        14: invokespecial #43                 // Method java/lang/NullPointerException."<init>":(Ljava/lang/String;)V
+        17: athrow
+        18: aload_0
+        19: aload_1
+        20: putfield      #25                 // Field _f546f4:LML/_590f69/_5b3f84/_dcf582;
+        23: aload_0
+        24: aload_2
+        25: putfield      #22                 // Field _bfffde:LML/_590f69/_5b3f84/_dcf582;
+        28: aload_0
+        29: aload_3
+        30: putfield      #24                 // Field _843294:Ljava/util/function/Supplier;
+        33: aload_0
+        34: iload         4
+        36: putfield      #21                 // Field _904e8d:Z
+        39: aload_0
+        40: lload         5
+        42: putfield      #26                 // Field lastModified:J
+        45: aload_0
+        46: iload         7
+        48: putfield      #23                 // Field _ee45da:Z
+        51: return
+      LineNumberTable:
+        line 25: 0
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 18
+          locals = [ class L/_88f3cf/_1e73d7/_bb4487, class ML/_590f69/_5b3f84/_dcf582, class ML/_590f69/_5b3f84/_dcf582, class java/util/function/Supplier, int, long, int ]
+          stack = []
+    Signature: #90                          // (LML/_590f69/_5b3f84/_dcf582;LML/_590f69/_5b3f84/_dcf582;Ljava/util/function/Supplier<Ljava/lang/String;>;ZJZ)V
+    RuntimeInvisibleAnnotations:
+      0: #115()
+        lombok.Generated
+    RuntimeInvisibleTypeAnnotations:
+      0: #117(): METHOD_FORMAL_PARAMETER, param_index=0
+        org.jetbrains.annotations.Nullable
+      1: #117(): METHOD_FORMAL_PARAMETER, param_index=1
+        org.jetbrains.annotations.Nullable
+      2: #116(): METHOD_FORMAL_PARAMETER, param_index=2
+        org.jetbrains.annotations.NotNull
+      3: #116(): METHOD_FORMAL_PARAMETER, param_index=2, location=[TYPE_ARGUMENT(0)]
+        org.jetbrains.annotations.NotNull
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+        0: #117()
+          org.jetbrains.annotations.Nullable
+      parameter 1:
+        0: #117()
+          org.jetbrains.annotations.Nullable
+      parameter 2:
+        0: #116()
+          org.jetbrains.annotations.NotNull
+      parameter 3:
+      parameter 4:
+      parameter 5:
+
+  public void _691aaf(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #21                 // Field _904e8d:Z
+         5: return
+      LineNumberTable:
+        line 36: 0
+    RuntimeInvisibleAnnotations:
+      0: #115()
+        lombok.Generated
+
+  public void _88f3cf(long);
+    descriptor: (J)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: lload_1
+         2: putfield      #26                 // Field lastModified:J
+         5: return
+      LineNumberTable:
+        line 42: 0
+    RuntimeInvisibleAnnotations:
+      0: #115()
+        lombok.Generated
+
+  public void _3bf032(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #23                 // Field _ee45da:Z
+         5: return
+      LineNumberTable:
+        line 50: 0
+    RuntimeInvisibleAnnotations:
+      0: #115()
+        lombok.Generated
+}
+InnerClasses:
+  public static #102= #10 of #9;          // _cfe983=class L/_81676d/_1e73d7$_cfe983 of class L/_81676d/_1e73d7

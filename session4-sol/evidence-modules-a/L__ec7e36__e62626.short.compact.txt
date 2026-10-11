@@ -1,0 +1,735 @@
+public class L._ec7e36._e62626 extends L._ec7e36._79e7e6 implements L.util._bb4487._cfe983,L.util._bb4487._590f69 {
+public static final com.lunarclient.dfu.serialization.Codec<java.lang.Integer> _87d96d;
+private final L._ec7e36._429bf0 _c46319;
+private final L._ec7e36._79e7e6 _980e1c;
+private final L._ec7e36._1eb51c<L.util._bb4487._21aca6> _70f1de;
+private final boolean _3364de;
+private final boolean _f4f462;
+protected L._ec7e36._e62626(java.lang.String, com.lunarclient.dfu.serialization.Codec<java.lang.Integer>, int, boolean, boolean, L._ec7e36._429bf0$_cfe983, L._ec7e36._79e7e6$_cfe983, L._ec7e36._1eb51c$_cfe983<L.util._bb4487._21aca6>);
+Code:
+0: aload_0
+1: aload_1
+2: aload_2
+3: iload_3
+4: invokespecial // Method L/_ec7e36/_79e7e6."<init>"
+7: aload_0
+8: aload 6
+10: invokevirtual // Method L/_ec7e36/_429bf0$_cfe983._da2d70
+13: checkcast // class L/_ec7e36/_429bf0
+16: putfield // Field _c46319
+19: aload_0
+20: aload 7
+22: invokevirtual // Method L/_ec7e36/_79e7e6$_cfe983._da2d70
+25: checkcast // class L/_ec7e36/_79e7e6
+28: putfield // Field _980e1c
+31: aload_0
+32: aload 8
+34: invokevirtual // Method L/_ec7e36/_1eb51c$_cfe983._da2d70
+37: checkcast // class L/_ec7e36/_1eb51c
+40: putfield // Field _70f1de
+43: aload_0
+44: iload 4
+46: putfield // Field _3364de:Z
+49: aload_0
+50: iload 5
+52: putfield // Field _f4f462:Z
+55: return
+protected void _cfe983(L.util._21aca6._cfe983._cfe983<L._ec7e36._dd3308<?>>);
+Code:
+0: aload_0
+1: aload_1
+2: invokespecial // Method L/_ec7e36/_79e7e6._cfe983
+5: aload_1
+6: iconst_3
+7: anewarray // class L/_ec7e36/_dd3308
+10: dup
+11: iconst_0
+12: aload_0
+13: getfield // Field _c46319
+16: aastore
+17: dup
+18: iconst_1
+19: aload_0
+20: getfield // Field _980e1c
+23: aastore
+24: dup
+25: iconst_2
+26: aload_0
+27: getfield // Field _70f1de
+30: aastore
+31: invokeinterface #137, 2 // InterfaceMethod L/util/_21aca6/_cfe983/_cfe983._2f4182
+36: pop
+37: return
+public boolean _13ea87(L._ec7e36._e62626);
+Code:
+0: aload_0
+1: getfield // Field _c46319
+4: invokevirtual // Method L/_ec7e36/_429bf0.get
+7: checkcast // class java/lang/Boolean
+10: invokevirtual // Method java/lang/Boolean.booleanValue
+13: ifeq 58
+16: aload_1
+17: getfield // Field _980e1c
+20: invokevirtual // Method L/_ec7e36/_79e7e6.get
+23: checkcast // class java/lang/Integer
+26: aload_0
+27: getfield // Field _980e1c
+30: invokevirtual // Method L/_ec7e36/_79e7e6.get
+33: invokevirtual // Method java/lang/Integer.equals
+36: ifeq 56
+39: aload_1
+40: getfield // Field _70f1de
+43: invokevirtual // Method L/_ec7e36/_1eb51c.get
+46: aload_0
+47: getfield // Field _70f1de
+50: invokevirtual // Method L/_ec7e36/_1eb51c.get
+53: if_acmpeq 58
+56: iconst_0
+57: ireturn
+58: aload_0
+59: invokevirtual // Method _37ef84
+62: astore_2
+63: aload_1
+64: invokevirtual // Method _37ef84
+67: astore_3
+68: aload_3
+69: iconst_0
+70: faload
+71: aload_2
+72: iconst_0
+73: faload
+74: fsub
+75: invokestatic // Method java/lang/Math.abs
+78: fstore 4
+80: fload 4
+82: ldc // float 0.015f
+84: fcmpl
+85: ifle 90
+88: iconst_0
+89: ireturn
+90: aload_3
+91: iconst_1
+92: faload
+93: aload_2
+94: iconst_1
+95: faload
+96: fsub
+97: invokestatic // Method java/lang/Math.abs
+100: fstore 5
+102: fload 5
+104: ldc // float 0.015f
+106: fcmpl
+107: ifle 112
+110: iconst_0
+111: ireturn
+112: aload_3
+113: iconst_2
+114: faload
+115: aload_2
+116: iconst_2
+117: faload
+118: fsub
+119: invokestatic // Method java/lang/Math.abs
+122: fstore 6
+124: fload 6
+126: ldc // float 0.015f
+128: fcmpl
+129: ifle 134
+132: iconst_0
+133: ireturn
+134: aload_1
+135: invokevirtual // Method getAlpha
+138: aload_0
+139: invokevirtual // Method getAlpha
+142: isub
+143: invokestatic // Method java/lang/Math.abs
+146: i2f
+147: fstore 7
+149: fload 7
+151: ldc // float 4.0f
+153: fcmpg
+154: ifgt 161
+157: iconst_1
+158: goto 162
+161: iconst_0
+162: ireturn
+public boolean _cfa621();
+Code:
+0: aload_0
+1: getfield // Field _3364de:Z
+4: ireturn
+public boolean _437bd0();
+Code:
+0: aload_0
+1: getfield // Field _c46319
+4: invokevirtual // Method L/_ec7e36/_429bf0.get
+7: checkcast // class java/lang/Boolean
+10: invokevirtual // Method java/lang/Boolean.booleanValue
+13: ireturn
+public int _15f67b();
+Code:
+0: aload_0
+1: invokevirtual // Method _f491df
+4: invokevirtual // Method L/_ec7e36/_79e7e6.get
+7: checkcast // class java/lang/Integer
+10: invokevirtual // Method java/lang/Integer.intValue
+13: ireturn
+public boolean _c71646();
+Code:
+0: aload_0
+1: getfield // Field _f4f462:Z
+4: ireturn
+public void _87c409(java.lang.Integer);
+Code:
+0: aload_0
+1: getfield // Field _f4f462:Z
+4: ifne 21
+7: aload_1
+8: invokevirtual // Method java/lang/Integer.intValue
+11: ldc // int 16777215
+13: iand
+14: ldc // int -16777216
+16: ior
+17: invokestatic // Method java/lang/Integer.valueOf
+20: astore_1
+21: aload_0
+22: aload_1
+23: invokespecial // Method L/_ec7e36/_79e7e6._87c409
+26: return
+public void _d2c28f(java.lang.String);
+Code:
+0: aload_1
+1: invokestatic // Method _2e444c
+4: invokevirtual // Method com/google/gson/JsonElement.isJsonObject
+7: ifeq 16
+10: aload_0
+11: aload_1
+12: invokevirtual // Method _0fc845
+15: return
+16: aload_0
+17: aload_1
+18: invokespecial // Method L/_ec7e36/_79e7e6._d2c28f
+21: return
+public void _0fc845(java.lang.String);
+Code:
+0: aload_1
+1: invokestatic // Method _4ee8e3
+4: istore_2
+5: aload_0
+6: iload_2
+7: invokestatic // Method java/lang/Integer.valueOf
+10: invokevirtual // Method _87c409
+13: goto 529
+16: astore_2
+17: aload_1
+18: invokestatic // Method com/google/gson/JsonParser.parseString
+21: astore_3
+22: aload_3
+23: invokevirtual // Method com/google/gson/JsonElement.isJsonObject
+26: ifeq 521
+29: aload_3
+30: invokevirtual // Method com/google/gson/JsonElement.getAsJsonObject
+33: astore 4
+35: aload 4
+37: ldc // String chroma
+39: invokevirtual // Method com/google/gson/JsonObject.has
+42: ifeq 155
+45: aload 4
+47: ldc // String chroma
+49: invokevirtual // Method com/google/gson/JsonObject.getAsJsonObject
+52: astore 5
+54: aload 5
+56: ldc // String chroma
+58: invokevirtual // Method com/google/gson/JsonObject.has
+61: ifeq 84
+64: aload_0
+65: getfield // Field _c46319
+68: aload 5
+70: ldc // String chroma
+72: invokevirtual // Method com/google/gson/JsonObject.get
+75: invokevirtual // Method com/google/gson/JsonElement.getAsBoolean
+78: invokestatic // Method java/lang/Boolean.valueOf
+81: invokevirtual // Method L/_ec7e36/_429bf0._b03e9c
+84: aload 5
+86: ldc // String chromaType
+88: invokevirtual // Method com/google/gson/JsonObject.has
+91: ifeq 125
+94: aload_0
+95: getfield // Field _70f1de
+98: aload 5
+100: ldc // String chromaType
+102: invokevirtual // Method com/google/gson/JsonObject.get
+105: invokevirtual // Method L/_ec7e36/_1eb51c._6c713e
+108: aload_0
+109: getfield // Field _70f1de
+112: dup
+113: invokestatic // Method java/util/Objects.requireNonNull
+116: pop
+117: invokedynamic #139, 0 // InvokeDynamic #0:accept
+122: invokevirtual // Method java/util/Optional.ifPresent
+125: aload 5
+127: ldc // String chromaSpeed
+129: invokevirtual // Method com/google/gson/JsonObject.has
+132: ifeq 155
+135: aload_0
+136: getfield // Field _980e1c
+139: aload 5
+141: ldc // String chromaSpeed
+143: invokevirtual // Method com/google/gson/JsonObject.get
+146: invokevirtual // Method com/google/gson/JsonElement.getAsInt
+149: invokestatic // Method java/lang/Integer.valueOf
+152: invokevirtual // Method L/_ec7e36/_79e7e6._87c409
+155: aload 4
+157: ldc // String hex
+159: invokevirtual // Method com/google/gson/JsonObject.has
+162: ifeq 188
+165: aload_0
+166: aload 4
+168: ldc // String hex
+170: invokevirtual // Method com/google/gson/JsonObject.get
+173: invokevirtual // Method com/google/gson/JsonElement.getAsString
+176: invokestatic // Method _4ee8e3
+179: invokestatic // Method java/lang/Integer.valueOf
+182: invokevirtual // Method _87c409
+185: goto 521
+188: iconst_3
+189: newarray float
+191: dup
+192: iconst_0
+193: ldc // float -1.0f
+195: fastore
+196: dup
+197: iconst_1
+198: ldc // float -1.0f
+200: fastore
+201: dup
+202: iconst_2
+203: ldc // float -1.0f
+205: fastore
+206: astore 5
+208: aload 4
+210: ldc // String hue
+212: invokevirtual // Method com/google/gson/JsonObject.has
+215: ifeq 232
+218: aload 5
+220: iconst_0
+221: aload 4
+223: ldc // String hue
+225: invokevirtual // Method com/google/gson/JsonObject.get
+228: invokevirtual // Method com/google/gson/JsonElement.getAsFloat
+231: fastore
+232: aload 4
+234: ldc // String saturation
+236: invokevirtual // Method com/google/gson/JsonObject.has
+239: ifeq 256
+242: aload 5
+244: iconst_1
+245: aload 4
+247: ldc // String saturation
+249: invokevirtual // Method com/google/gson/JsonObject.get
+252: invokevirtual // Method com/google/gson/JsonElement.getAsFloat
+255: fastore
+256: aload 4
+258: ldc // String brightness
+260: invokevirtual // Method com/google/gson/JsonObject.has
+263: ifeq 280
+266: aload 5
+268: iconst_2
+269: aload 4
+271: ldc // String brightness
+273: invokevirtual // Method com/google/gson/JsonObject.get
+276: invokevirtual // Method com/google/gson/JsonElement.getAsFloat
+279: fastore
+280: ldc // float -1.0f
+282: fstore 6
+284: aload 4
+286: ldc // String opacity
+288: invokevirtual // Method com/google/gson/JsonObject.has
+291: ifeq 313
+294: aload_0
+295: getfield // Field _f4f462:Z
+298: ifeq 313
+301: aload 4
+303: ldc // String opacity
+305: invokevirtual // Method com/google/gson/JsonObject.get
+308: invokevirtual // Method com/google/gson/JsonElement.getAsFloat
+311: fstore 6
+313: aload 5
+315: iconst_0
+316: faload
+317: ldc // float -1.0f
+319: fcmpl
+320: ifne 343
+323: aload 5
+325: iconst_1
+326: faload
+327: ldc // float -1.0f
+329: fcmpl
+330: ifne 343
+333: aload 5
+335: iconst_2
+336: faload
+337: ldc // float -1.0f
+339: fcmpl
+340: ifeq 347
+343: iconst_1
+344: goto 348
+347: iconst_0
+348: istore 7
+350: iload 7
+352: ifne 363
+355: fload 6
+357: ldc // float -1.0f
+359: fcmpl
+360: ifeq 521
+363: iconst_0
+364: istore 8
+366: iload 7
+368: ifeq 495
+371: aload 5
+373: iconst_0
+374: faload
+375: ldc // float -1.0f
+377: fcmpl
+378: ifeq 421
+381: aload 5
+383: iconst_1
+384: faload
+385: ldc // float -1.0f
+387: fcmpl
+388: ifeq 421
+391: aload 5
+393: iconst_2
+394: faload
+395: ldc // float -1.0f
+397: fcmpl
+398: ifeq 421
+401: aload 5
+403: iconst_0
+404: faload
+405: aload 5
+407: iconst_1
+408: faload
+409: aload 5
+411: iconst_2
+412: faload
+413: invokestatic // Method L/util/_a140a8._133367
+416: istore 8
+418: goto 495
+421: aload_0
+422: invokevirtual // Method _37ef84
+425: astore 9
+427: aload 5
+429: iconst_0
+430: faload
+431: ldc // float -1.0f
+433: fcmpl
+434: ifeq 444
+437: aload 5
+439: iconst_0
+440: faload
+441: goto 448
+444: aload 9
+446: iconst_0
+447: faload
+448: aload 5
+450: iconst_1
+451: faload
+452: ldc // float -1.0f
+454: fcmpl
+455: ifeq 465
+458: aload 5
+460: iconst_1
+461: faload
+462: goto 469
+465: aload 9
+467: iconst_1
+468: faload
+469: aload 5
+471: iconst_2
+472: faload
+473: ldc // float -1.0f
+475: fcmpl
+476: ifeq 486
+479: aload 5
+481: iconst_2
+482: faload
+483: goto 490
+486: aload 9
+488: iconst_2
+489: faload
+490: invokestatic // Method L/util/_a140a8._133367
+493: istore 8
+495: fload 6
+497: ldc // float -1.0f
+499: fcmpl
+500: ifeq 512
+503: iload 8
+505: fload 6
+507: invokestatic // Method L/util/_a140a8._2ce426
+510: istore 8
+512: aload_0
+513: iload 8
+515: invokestatic // Method java/lang/Integer.valueOf
+518: invokevirtual // Method _87c409
+521: goto 529
+524: astore_3
+525: aload_3
+526: invokevirtual // Method com/google/gson/JsonSyntaxException.printStackTrace
+529: return
+Exception table:
+from to target type
+0 13 16 Class java/lang/NumberFormatException
+17 521 524 Class com/google/gson/JsonSyntaxException
+public static int _4ee8e3(java.lang.String);
+Code:
+0: aload_0
+1: ldc // String #
+3: invokevirtual // Method java/lang/String.startsWith
+6: ifeq 15
+9: aload_0
+10: iconst_1
+11: invokevirtual // Method java/lang/String.substring
+14: astore_0
+15: aload_0
+16: bipush 16
+18: invokestatic // Method java/lang/Long.parseLong
+21: l2i
+22: ireturn
+public void _2ce426(L._ec7e36._e62626);
+Code:
+0: aload_0
+1: invokevirtual // Method _21b986
+4: aload_1
+5: invokevirtual // Method _21b986
+8: invokevirtual // Method L/_ec7e36/_429bf0.get
+11: checkcast // class java/lang/Boolean
+14: invokevirtual // Method L/_ec7e36/_429bf0._b03e9c
+17: aload_0
+18: invokevirtual // Method _f491df
+21: aload_1
+22: invokevirtual // Method _f491df
+25: invokevirtual // Method L/_ec7e36/_79e7e6.get
+28: checkcast // class java/lang/Integer
+31: invokevirtual // Method L/_ec7e36/_79e7e6._87c409
+34: aload_0
+35: invokevirtual // Method _b91df1
+38: aload_1
+39: invokevirtual // Method _b91df1
+42: invokevirtual // Method L/_ec7e36/_1eb51c.get
+45: checkcast // class L/util/_bb4487/_21aca6
+48: invokevirtual // Method L/_ec7e36/_1eb51c._b03e9c
+51: aload_0
+52: aload_1
+53: invokevirtual // Method _e15c65
+56: invokevirtual // Method _87c409
+59: return
+public void _00f454(java.lang.Object);
+Code:
+0: aload_1
+1: instanceof // class L/_ec7e36/_e62626
+4: ifeq 86
+7: aload_1
+8: checkcast // class L/_ec7e36/_e62626
+11: astore_2
+12: aload_0
+13: invokevirtual // Method _21b986
+16: aload_2
+17: invokevirtual // Method _21b986
+20: invokevirtual // Method L/_ec7e36/_429bf0.get
+23: invokevirtual // Method L/_ec7e36/_429bf0._00f454
+26: aload_0
+27: invokevirtual // Method _f491df
+30: aload_2
+31: invokevirtual // Method _f491df
+34: invokevirtual // Method L/_ec7e36/_79e7e6.get
+37: invokevirtual // Method L/_ec7e36/_79e7e6._00f454
+40: aload_0
+41: invokevirtual // Method _b91df1
+44: aload_2
+45: invokevirtual // Method _b91df1
+48: invokevirtual // Method L/_ec7e36/_1eb51c.get
+51: invokevirtual // Method L/_ec7e36/_1eb51c._00f454
+54: aload_0
+55: getfield // Field _f4f462:Z
+58: ifne 81
+61: aload_2
+62: invokevirtual // Method _e15c65
+65: invokevirtual // Method java/lang/Integer.intValue
+68: ldc // int 16777215
+70: iand
+71: ldc // int -16777216
+73: ior
+74: invokestatic // Method java/lang/Integer.valueOf
+77: astore_1
+78: goto 86
+81: aload_2
+82: invokevirtual // Method _e15c65
+85: astore_1
+86: aload_1
+87: instanceof // class java/lang/Integer
+90: ifeq 103
+93: aload_1
+94: checkcast // class java/lang/Integer
+97: astore_2
+98: aload_0
+99: aload_2
+100: invokespecial // Method L/_ec7e36/_79e7e6._00f454
+103: return
+public java.lang.Integer _e15c65();
+Code:
+0: aload_0
+1: invokespecial // Method L/_ec7e36/_79e7e6.get
+4: checkcast // class java/lang/Integer
+7: invokevirtual // Method java/lang/Integer.intValue
+10: istore_1
+11: aload_0
+12: getfield // Field _f4f462:Z
+15: ifne 26
+18: iload_1
+19: ldc // int 16777215
+21: iand
+22: ldc // int -16777216
+24: ior
+25: istore_1
+26: iload_1
+27: invokestatic // Method java/lang/Integer.valueOf
+30: areturn
+public java.lang.Integer _ec536f(float);
+Code:
+0: aload_0
+1: getfield // Field _c46319
+4: invokevirtual // Method L/_ec7e36/_429bf0.get
+7: checkcast // class java/lang/Boolean
+10: invokevirtual // Method java/lang/Boolean.booleanValue
+13: ifeq 60
+16: invokestatic // Method L/_2f4182/_1253fc/_bb4487._4f179e
+19: invokevirtual // Method L/util/_d0d09a.getScaledWidth
+22: invokestatic // Method L/_2f4182/_1253fc/_bb4487._4f179e
+25: invokevirtual // Method L/util/_d0d09a.getScaledHeight
+28: iadd
+29: i2f
+30: fload_1
+31: fsub
+32: fstore_1
+33: aload_0
+34: getfield // Field _70f1de
+37: invokevirtual // Method L/_ec7e36/_1eb51c.get
+40: checkcast // class L/util/_bb4487/_21aca6
+43: invokevirtual // Method L/util/_bb4487/_21aca6.color
+46: fload_1
+47: invokestatic // Method java/lang/Float.valueOf
+50: aload_0
+51: invokeinterface #138, 3 // InterfaceMethod java/util/function/BiFunction.apply
+56: checkcast // class java/lang/Integer
+59: areturn
+60: aload_0
+61: invokevirtual // Method _e15c65
+64: areturn
+public int getColor();
+Code:
+0: aload_0
+1: invokevirtual // Method _e15c65
+4: invokevirtual // Method java/lang/Integer.intValue
+7: ireturn
+public int _136819(float);
+Code:
+0: aload_0
+1: fload_1
+2: invokevirtual // Method _ec536f
+5: invokevirtual // Method java/lang/Integer.intValue
+8: ireturn
+public void _292c6b(int);
+Code:
+0: aload_0
+1: iload_1
+2: invokestatic // Method java/lang/Integer.valueOf
+5: invokevirtual // Method _87c409
+8: return
+public void _aeda83();
+Code:
+0: aload_0
+1: getstatic // Field L/util/_cb9292._6f4f1a
+4: invokevirtual // Method java/util/Random.nextInt
+7: ldc // int 16777215
+9: iand
+10: invokevirtual // Method _735dfe
+13: return
+protected L._2f4182._1253fc._21aca6._6fc5d5<?> _a140a8(L._2f4182._1253fc._cfe983);
+Code:
+0: new // class L/_2f4182/_1253fc/_21aca6/_13ea87
+3: dup
+4: aload_0
+5: aload_1
+6: invokespecial // Method L/_2f4182/_1253fc/_21aca6/_13ea87."<init>"
+9: areturn
+public void reset();
+Code:
+0: aload_0
+1: getfield // Field _c46319
+4: invokevirtual // Method L/_ec7e36/_429bf0.reset
+7: aload_0
+8: getfield // Field _980e1c
+11: invokevirtual // Method L/_ec7e36/_79e7e6.reset
+14: aload_0
+15: getfield // Field _70f1de
+18: invokevirtual // Method L/_ec7e36/_1eb51c.reset
+21: aload_0
+22: invokespecial // Method L/_ec7e36/_79e7e6.reset
+25: return
+public boolean isDefault();
+Code:
+0: aload_0
+1: invokespecial // Method L/_ec7e36/_79e7e6.isDefault
+4: ifeq 41
+7: aload_0
+8: getfield // Field _c46319
+11: invokevirtual // Method L/_ec7e36/_429bf0.isDefault
+14: ifeq 41
+17: aload_0
+18: getfield // Field _980e1c
+21: invokevirtual // Method L/_ec7e36/_79e7e6.isDefault
+24: ifeq 41
+27: aload_0
+28: getfield // Field _70f1de
+31: invokevirtual // Method L/_ec7e36/_1eb51c.isDefault
+34: ifeq 41
+37: iconst_1
+38: goto 42
+41: iconst_0
+42: ireturn
+public L._ec7e36._429bf0 _21b986();
+Code:
+0: aload_0
+1: getfield // Field _c46319
+4: areturn
+public L._ec7e36._79e7e6 _f491df();
+Code:
+0: aload_0
+1: getfield // Field _980e1c
+4: areturn
+public L._ec7e36._1eb51c<L.util._bb4487._21aca6> _b91df1();
+Code:
+0: aload_0
+1: getfield // Field _70f1de
+4: areturn
+public java.lang.Object get();
+Code:
+0: aload_0
+1: invokevirtual // Method _e15c65
+4: areturn
+public void _b03e9c(java.lang.Object);
+Code:
+0: aload_0
+1: aload_1
+2: checkcast // class java/lang/Integer
+5: invokevirtual // Method _87c409
+8: return
+static {};
+Code:
+0: getstatic // Field com/lunarclient/dfu/serialization/Codec.INT:Lcom/lunarclient/dfu/serialization/codecs/PrimitiveCodec;
+3: getstatic // Field L/util/_1e73d7/_cfe983._2c1da0:Lcom/lunarclient/dfu/serialization/Codec;
+6: invokestatic // InterfaceMethod com/lunarclient/dfu/serialization/Codec.withAlternative
+9: putstatic // Field _87d96d:Lcom/lunarclient/dfu/serialization/Codec;
+12: return
+}

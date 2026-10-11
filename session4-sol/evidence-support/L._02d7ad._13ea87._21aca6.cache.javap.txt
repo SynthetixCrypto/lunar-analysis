@@ -1,0 +1,306 @@
+public class com.moonsworth.lunar.client.HIOHRIRIOIHOICCCCOHCOOIICIICOH.ORCOOOCHIICOIICCROCRCOOROORIHR.RROHOCRCCHCIORHICIHCOHRIRCIHCI implements com.moonsworth.lunar.client.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR {
+  public com.moonsworth.lunar.client.HIOHRIRIOIHOICCCCOHCOOIICIICOH.ORCOOOCHIICOIICCROCRCOOROORIHR.RROHOCRCCHCIORHICIHCOHRIRCIHCI();
+    Code:
+       0: aload_0
+       1: invokespecial #71                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokevirtual #64                 // Method ROCCIRRRRIHRIICIIHCIOOHCCHRCOI:()Z
+       8: pop
+       9: return
+
+  public java.io.File OOOIHORICOOHHHRRCOORIHIIOCRRRI();
+    Code:
+       0: invokestatic  #68                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       3: invokeinterface #78,  1           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getMcDataDir:()Ljava/io/File;
+       8: invokestatic  #72                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      11: getstatic     #47                 // Field java/io/File.separator:Ljava/lang/String;
+      14: getstatic     #47                 // Field java/io/File.separator:Ljava/lang/String;
+      17: invokedynamic #94,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      22: astore_1
+      23: new           #28                 // class java/io/File
+      26: dup
+      27: aload_1
+      28: aload_0
+      29: invokevirtual #63                 // Method ICIRRCCCOICIROORRHHRIIOIHCHROC:()Ljava/lang/String;
+      32: invokespecial #69                 // Method java/io/File."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      35: areturn
+
+  public java.lang.String ICIRRCCCOICIROORRHHRIIOIHCHROC();
+    Code:
+       0: ldc           #6                  // String lunar_option_overrides.json
+       2: areturn
+
+  public void load(com.google.gson.JsonObject);
+    Code:
+       0: ldc           #2                  // String Applying Config option overrides
+       2: iconst_0
+       3: anewarray     #31                 // class java/lang/Object
+       6: invokestatic  #57                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/Object;[Ljava/lang/Object;)V
+       9: aload_1
+      10: ldc           #7                  // String mods
+      12: invokevirtual #53                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      15: astore_2
+      16: aload_2
+      17: ifnull        235
+      20: aload_2
+      21: invokevirtual #50                 // Method com/google/gson/JsonElement.isJsonObject:()Z
+      24: ifeq          235
+      27: aload_2
+      28: invokevirtual #49                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+      31: astore_3
+      32: invokestatic  #67                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      35: invokevirtual #55                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIRRCHIHRRIHHICCCOCIHCCROIOHH:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+      38: astore        4
+      40: aload_3
+      41: invokevirtual #52                 // Method com/google/gson/JsonObject.entrySet:()Ljava/util/Set;
+      44: invokeinterface #93,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      49: astore        5
+      51: aload         5
+      53: invokeinterface #88,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      58: ifeq          235
+      61: aload         5
+      63: invokeinterface #89,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      68: checkcast     #39                 // class java/util/Map$Entry
+      71: astore        6
+      73: aload         4
+      75: aload         6
+      77: invokeinterface #91,  1           // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      82: checkcast     #32                 // class java/lang/String
+      85: invokevirtual #59                 // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI.HCIROCRROOCCHOICHCRCIORHOOIHRI:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      88: astore        7
+      90: aload         7
+      92: ifnonnull     98
+      95: goto          51
+      98: aload         6
+     100: invokeinterface #92,  1           // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     105: checkcast     #9                  // class com/google/gson/JsonElement
+     108: astore        8
+     110: aload         8
+     112: invokevirtual #50                 // Method com/google/gson/JsonElement.isJsonObject:()Z
+     115: ifne          121
+     118: goto          51
+     121: aload         8
+     123: invokevirtual #49                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+     126: astore        9
+     128: aload_0
+     129: aload         7
+     131: aload         9
+     133: invokevirtual #65                 // Method RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Lcom/google/gson/JsonObject;)V
+     136: aload         7
+     138: getstatic     #45                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH.CHIOORROCCRIRRHHHOICIROCOCHOCI:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+     141: invokeinterface #86,  2           // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+     146: checkcast     #25                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IROCROOIOIORORHHCCOOCCHRRRIOIC
+     149: astore        10
+     151: aload         10
+     153: ifnull        203
+     156: aload         10
+     158: invokeinterface #85,  1           // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IROCROOIOIORORHHCCOOCCHRRRIOIC.HHIHOHOHRHOOHIROCRRCIRRHIRIRHI:()Ljava/util/Set;
+     163: invokeinterface #93,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     168: astore        11
+     170: aload         11
+     172: invokeinterface #88,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     177: ifeq          203
+     180: aload         11
+     182: invokeinterface #89,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     187: checkcast     #21                 // class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI
+     190: astore        12
+     192: aload_0
+     193: aload         12
+     195: aload         9
+     197: invokevirtual #61                 // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI;Lcom/google/gson/JsonObject;)V
+     200: goto          170
+     203: goto          232
+     206: astore        7
+     208: ldc           #3                  // String Couldn\'t apply config mod override for [%s]: %s
+     210: iconst_2
+     211: anewarray     #31                 // class java/lang/Object
+     214: dup
+     215: iconst_0
+     216: aload         6
+     218: invokeinterface #91,  1           // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     223: aastore
+     224: dup
+     225: iconst_1
+     226: aload         7
+     228: aastore
+     229: invokestatic  #56                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     232: goto          51
+     235: aload_1
+     236: ldc           #8                  // String settings
+     238: invokevirtual #53                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     241: astore_3
+     242: aload_3
+     243: ifnull        406
+     246: aload_3
+     247: invokevirtual #50                 // Method com/google/gson/JsonElement.isJsonObject:()Z
+     250: ifeq          406
+     253: aload_3
+     254: invokevirtual #49                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+     257: astore        4
+     259: invokestatic  #67                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+     262: invokevirtual #54                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.CRIHHOCRRROIOHOHHORCRIRIORIOHI:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;
+     265: invokevirtual #58                 // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RRCHCHCCORIROIOCHIIIHCCIOCHCOH.IIOOHRCOOCIHRIHCCRRHCOROIOOHCR:()Ljava/util/Map;
+     268: astore        5
+     270: aload         5
+     272: invokeinterface #90,  1           // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+     277: invokeinterface #93,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     282: astore        6
+     284: aload         6
+     286: invokeinterface #88,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     291: ifeq          406
+     294: aload         6
+     296: invokeinterface #89,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     301: checkcast     #39                 // class java/util/Map$Entry
+     304: astore        7
+     306: aload         7
+     308: invokeinterface #91,  1           // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     313: checkcast     #23                 // class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH
+     316: invokevirtual #66                 // Method com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH.name:()Ljava/lang/String;
+     319: astore        8
+     321: aload         4
+     323: aload         8
+     325: invokevirtual #53                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     328: astore        9
+     330: aload         9
+     332: ifnull        403
+     335: aload         9
+     337: invokevirtual #50                 // Method com/google/gson/JsonElement.isJsonObject:()Z
+     340: ifeq          403
+     343: aload         9
+     345: invokevirtual #49                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+     348: astore        10
+     350: aload         7
+     352: invokeinterface #92,  1           // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     357: checkcast     #16                 // class com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHRORRHCHCRICORRRCIRIOCCIRCRII
+     360: invokevirtual #60                 // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHRORRHCHCRICORRRCIRIOCCIRCRII.OHCHOCIROCIRRIIHHHOOIRCCIIRORO:()Ljava/util/Set;
+     363: invokeinterface #93,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     368: astore        11
+     370: aload         11
+     372: invokeinterface #88,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     377: ifeq          403
+     380: aload         11
+     382: invokeinterface #89,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     387: checkcast     #21                 // class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI
+     390: astore        12
+     392: aload_0
+     393: aload         12
+     395: aload         10
+     397: invokevirtual #61                 // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI;Lcom/google/gson/JsonObject;)V
+     400: goto          370
+     403: goto          284
+     406: return
+    Exception table:
+       from    to  target type
+          73    95   206   Class java/lang/Exception
+          98   118   206   Class java/lang/Exception
+         121   203   206   Class java/lang/Exception
+
+  private void RROHOCRCCHCIORHICIHCOHRIRCIHCI(com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RROHOCRCCHCIORHICIHCOHRIRCIHCI, com.google.gson.JsonObject);
+    Code:
+       0: aload_2
+       1: ldc           #5                  // String enabled
+       3: invokevirtual #53                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+       6: astore_3
+       7: aload_3
+       8: ifnull        18
+      11: aload_3
+      12: invokevirtual #51                 // Method com/google/gson/JsonElement.isJsonPrimitive:()Z
+      15: ifne          19
+      18: return
+      19: aload_1
+      20: getstatic     #46                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH.HOOCORIOCHIOCRROROICCHHRICRIOC:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+      23: invokeinterface #87,  2           // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI.RRICHHOHORCIOHROIHICOIRORHHHIO:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/util/Optional;
+      28: aload_1
+      29: aload_3
+      30: invokedynamic #95,  0             // InvokeDynamic #1:accept:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Lcom/google/gson/JsonElement;)Ljava/util/function/Consumer;
+      35: invokevirtual #76                 // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      38: return
+
+  private void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.COHHOIRRCCCICHRHCOHRRCRHOIRIHI, com.google.gson.JsonObject);
+    Code:
+       0: aload_2
+       1: aload_1
+       2: invokeinterface #84,  1           // InterfaceMethod com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI.getId:()Ljava/lang/String;
+       7: invokevirtual #53                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      10: astore_3
+      11: aload_3
+      12: ifnonnull     16
+      15: return
+      16: aload_1
+      17: getstatic     #43                 // Field com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OHRORRHCHCRICORRRCIRIOCCIRCRII/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.CORHIIOOICHHICIOIOROOIORCCCHRO:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+      20: invokeinterface #83,  2           // InterfaceMethod com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI.RCHHCHIRRCOORRHHOIROOICHRHICHO:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Z
+      25: ifeq          29
+      28: return
+      29: aload_1
+      30: getstatic     #44                 // Field com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OHRORRHCHCRICORRRCIRIOCCIRCRII/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IICCICORCOCCHIHRRIOOIHHRHRIHOC:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+      33: invokeinterface #81,  2           // InterfaceMethod com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI.OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+      38: checkcast     #19                 // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII
+      41: astore        4
+      43: aload         4
+      45: ifnonnull     49
+      48: return
+      49: aload_1
+      50: aload_3
+      51: invokeinterface #82,  2           // InterfaceMethod com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI.ORHHCIHIOOCOOHOOIROIHHOCOOCIRH:(Lcom/google/gson/JsonElement;)Ljava/util/Optional;
+      56: astore        5
+      58: aload         5
+      60: invokevirtual #77                 // Method java/util/Optional.isEmpty:()Z
+      63: ifeq          67
+      66: return
+      67: aload         5
+      69: invokevirtual #75                 // Method java/util/Optional.get:()Ljava/lang/Object;
+      72: astore        6
+      74: aload         4
+      76: aload_1
+      77: getstatic     #42                 // Field com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CLIENT_OVERRIDE:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      80: aload         6
+      82: invokeinterface #79,  4           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Ljava/lang/Object;)Z
+      87: pop
+      88: aload         4
+      90: aconst_null
+      91: aconst_null
+      92: invokeinterface #80,  3           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Predicate;Ljava/lang/Object;)V
+      97: goto          123
+     100: astore_3
+     101: ldc           #4                  // String Couldn\'t apply config option override for [%s]: %s
+     103: iconst_2
+     104: anewarray     #31                 // class java/lang/Object
+     107: dup
+     108: iconst_0
+     109: aload_1
+     110: invokeinterface #84,  1           // InterfaceMethod com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COHHOIRRCCCICHRHCOHRRCRHOIRIHI.getId:()Ljava/lang/String;
+     115: aastore
+     116: dup
+     117: iconst_1
+     118: aload_3
+     119: aastore
+     120: invokestatic  #56                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     123: return
+    Exception table:
+       from    to  target type
+           0    15   100   Class java/lang/Exception
+          16    28   100   Class java/lang/Exception
+          29    48   100   Class java/lang/Exception
+          49    66   100   Class java/lang/Exception
+          67    97   100   Class java/lang/Exception
+
+  public void RORCICOHRIOIIIOIOHIIIICRCIHRII(com.google.gson.JsonObject);
+    Code:
+       0: return
+
+  public void HCRHOOHOOOOCRHOOIOIROCOHRRRIHH();
+    Code:
+       0: return
+
+  private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RROHOCRCCHCIORHICIHCOHRIRCIHCI, com.google.gson.JsonElement, com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII);
+    Code:
+       0: aload_2
+       1: aload_0
+       2: getstatic     #42                 // Field com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CLIENT_OVERRIDE:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+       5: aload_1
+       6: invokevirtual #48                 // Method com/google/gson/JsonElement.getAsBoolean:()Z
+       9: invokestatic  #70                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      12: invokeinterface #79,  4           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Ljava/lang/Object;)Z
+      17: pop
+      18: return
+}

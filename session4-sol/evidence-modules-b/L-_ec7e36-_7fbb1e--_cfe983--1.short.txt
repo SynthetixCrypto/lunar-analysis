@@ -1,0 +1,47 @@
+class L._ec7e36._7fbb1e$_cfe983$1 extends L._ec7e36._32565b$_21aca6 {
+  final L._ec7e36._7fbb1e$_cfe983 _c12f9b;
+
+  L._ec7e36._7fbb1e$_cfe983$1(L._ec7e36._7fbb1e$_cfe983, L._ec7e36._dd3308);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #14                 // Field _c12f9b:LL/_ec7e36/_7fbb1e$_cfe983;
+       5: aload_0
+       6: aload_2
+       7: invokespecial #22                 // Method L/_ec7e36/_32565b$_21aca6."<init>":(LL/_ec7e36/_dd3308;)V
+      10: return
+
+  public com.google.gson.JsonElement provide();
+    Code:
+       0: aload_0
+       1: invokespecial #23                 // Method L/_ec7e36/_32565b$_21aca6.provide:()Lcom/google/gson/JsonElement;
+       4: invokevirtual #16                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+       7: astore_1
+       8: aload_0
+       9: getfield      #15                 // Field option:LL/_ec7e36/_dd3308;
+      12: checkcast     #7                  // class L/_ec7e36/_7fbb1e
+      15: astore_2
+      16: aload_1
+      17: ldc           #3                  // String value
+      19: aload_2
+      20: invokevirtual #20                 // Method L/_ec7e36/_7fbb1e.get:()Ljava/lang/Object;
+      23: checkcast     #6                  // class ML/_590f69/_a140a8/_21aca6
+      26: invokevirtual #19                 // Method ML/_590f69/_a140a8/_21aca6.getName:()Ljava/lang/String;
+      29: invokevirtual #18                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+      32: aload_1
+      33: ldc           #1                  // String default
+      35: aload_2
+      36: invokevirtual #21                 // Method L/_ec7e36/_7fbb1e.getDefaultValue:()Ljava/lang/Object;
+      39: checkcast     #6                  // class ML/_590f69/_a140a8/_21aca6
+      42: invokevirtual #19                 // Method ML/_590f69/_a140a8/_21aca6.getName:()Ljava/lang/String;
+      45: invokevirtual #18                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+      48: aload_1
+      49: ldc           #2                  // String ignoreClashing
+      51: aload_0
+      52: getfield      #14                 // Field _c12f9b:LL/_ec7e36/_7fbb1e$_cfe983;
+      55: getfield      #13                 // Field L/_ec7e36/_7fbb1e$_cfe983._11cae1:Z
+      58: invokestatic  #24                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      61: invokevirtual #17                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+      64: aload_1
+      65: areturn
+}

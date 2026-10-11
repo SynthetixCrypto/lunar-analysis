@@ -1,0 +1,479 @@
+Classfile /C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Downloads-New-folder-lunar-analysis/eeca5643-ee80-46b2-970c-8533c6845d76/scratchpad/modern/com/moonsworth/lunar/modern/optifine/wrapper/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.class
+  Last modified Dec 31, 1969; size 3928 bytes
+  SHA-256 checksum b86690d5f9c9a53b85155749240ae52cd5b83d2f7f9d90fd001012595ee7c190
+public class com.moonsworth.lunar.modern.optifine.wrapper.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR implements com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CRHOOIHHORCRRICOCOHIHOOIOHIORH.OIHRRCOOHRHIHICHRICIRIOCROHOCC
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #7                          // com/moonsworth/lunar/modern/optifine/wrapper/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR
+  super_class: #8                         // java/lang/Object
+  interfaces: 1, fields: 2, methods: 20, attributes: 0
+Constant pool:
+    #1 = String             #90           // (internal)
+    #2 = String             #106          // OFF
+    #3 = Class              #118          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+    #4 = Class              #119          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR
+    #5 = Class              #120          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+    #6 = Class              #121          // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR
+    #7 = Class              #122          // com/moonsworth/lunar/modern/optifine/wrapper/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR
+    #8 = Class              #138          // java/lang/Object
+    #9 = Class              #139          // java/lang/String
+   #10 = Class              #140          // java/util/Objects
+   #11 = Class              #141          // net/minecraft/world/entity/Entity
+   #12 = Class              #142          // net/optifine/render/RenderUtils
+   #13 = Class              #143          // net/optifine/shaders/Program
+   #14 = Class              #144          // net/optifine/shaders/RenderStage
+   #15 = Class              #145          // net/optifine/shaders/Shaders
+   #16 = Class              #146          // net/optifine/shaders/ShadersFramebuffer
+   #17 = Class              #148          // org/lwjgl/opengl/GL11
+   #18 = Fieldref           #6.#50        // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+   #19 = Fieldref           #7.#48        // com/moonsworth/lunar/modern/optifine/wrapper/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+   #20 = Fieldref           #7.#49        // com/moonsworth/lunar/modern/optifine/wrapper/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+   #21 = Fieldref           #14.#51       // net/optifine/shaders/RenderStage.NONE:Lnet/optifine/shaders/RenderStage;
+   #22 = Fieldref           #14.#52       // net/optifine/shaders/RenderStage.OUTLINE:Lnet/optifine/shaders/RenderStage;
+   #23 = Fieldref           #15.#53       // net/optifine/shaders/Shaders.ProgramBasic:Lnet/optifine/shaders/Program;
+   #24 = Fieldref           #15.#54       // net/optifine/shaders/Shaders.ProgramLine:Lnet/optifine/shaders/Program;
+   #25 = Fieldref           #15.#55       // net/optifine/shaders/Shaders.activeProgramID:I
+   #26 = Fieldref           #15.#57       // net/optifine/shaders/Shaders.currentShaderName:Ljava/lang/String;
+   #27 = Fieldref           #15.#58       // net/optifine/shaders/Shaders.dfb:Lnet/optifine/shaders/ShadersFramebuffer;
+   #28 = Fieldref           #15.#63       // net/optifine/shaders/Shaders.isRenderingDfb:Z
+   #29 = Fieldref           #15.#64       // net/optifine/shaders/Shaders.isRenderingWorld:Z
+   #30 = Fieldref           #15.#65       // net/optifine/shaders/Shaders.isShadowPass:Z
+   #31 = Fieldref           #15.#69       // net/optifine/shaders/Shaders.renderHeight:I
+   #32 = Fieldref           #15.#70       // net/optifine/shaders/Shaders.renderWidth:I
+   #33 = Methodref          #5.#47        // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":()V
+   #34 = Methodref          #8.#47        // java/lang/Object."<init>":()V
+   #35 = Methodref          #10.#59       // java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+   #36 = Methodref          #12.#62       // net/optifine/render/RenderUtils.isFlushRenderBuffers:()Z
+   #37 = Methodref          #12.#71       // net/optifine/render/RenderUtils.setFlushRenderBuffers:(Z)Z
+   #38 = Methodref          #15.#60       // net/optifine/shaders/Shaders.getShaderPackName:()Ljava/lang/String;
+   #39 = Methodref          #15.#66       // net/optifine/shaders/Shaders.nextEntity:(Lnet/minecraft/world/entity/Entity;)V
+   #40 = Methodref          #15.#67       // net/optifine/shaders/Shaders.popProgram:()V
+   #41 = Methodref          #15.#68       // net/optifine/shaders/Shaders.pushProgram:()V
+   #42 = Methodref          #15.#72       // net/optifine/shaders/Shaders.setRenderStage:(Lnet/optifine/shaders/RenderStage;)V
+   #43 = Methodref          #15.#73       // net/optifine/shaders/Shaders.setShaderPack:(Ljava/lang/String;)V
+   #44 = Methodref          #15.#74       // net/optifine/shaders/Shaders.useProgram:(Lnet/optifine/shaders/Program;)V
+   #45 = Methodref          #16.#56       // net/optifine/shaders/ShadersFramebuffer.bindFramebuffer:()V
+   #46 = Methodref          #17.#61       // org/lwjgl/opengl/GL11.glViewport:(IIII)V
+   #47 = NameAndType        #91:#77       // "<init>":()V
+   #48 = NameAndType        #94:#113      // HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+   #49 = NameAndType        #96:#97       // HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+   #50 = NameAndType        #104:#97      // MC_VERSION:I
+   #51 = NameAndType        #105:#102     // NONE:Lnet/optifine/shaders/RenderStage;
+   #52 = NameAndType        #107:#102     // OUTLINE:Lnet/optifine/shaders/RenderStage;
+   #53 = NameAndType        #108:#101     // ProgramBasic:Lnet/optifine/shaders/Program;
+   #54 = NameAndType        #109:#101     // ProgramLine:Lnet/optifine/shaders/Program;
+   #55 = NameAndType        #114:#97      // activeProgramID:I
+   #56 = NameAndType        #116:#77      // bindFramebuffer:()V
+   #57 = NameAndType        #123:#100     // currentShaderName:Ljava/lang/String;
+   #58 = NameAndType        #124:#103     // dfb:Lnet/optifine/shaders/ShadersFramebuffer;
+   #59 = NameAndType        #126:#82      // equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+   #60 = NameAndType        #131:#76      // getShaderPackName:()Ljava/lang/String;
+   #61 = NameAndType        #132:#79      // glViewport:(IIII)V
+   #62 = NameAndType        #134:#78      // isFlushRenderBuffers:()Z
+   #63 = NameAndType        #135:#113     // isRenderingDfb:Z
+   #64 = NameAndType        #136:#113     // isRenderingWorld:Z
+   #65 = NameAndType        #137:#113     // isShadowPass:Z
+   #66 = NameAndType        #147:#85      // nextEntity:(Lnet/minecraft/world/entity/Entity;)V
+   #67 = NameAndType        #149:#77      // popProgram:()V
+   #68 = NameAndType        #150:#77      // pushProgram:()V
+   #69 = NameAndType        #152:#97      // renderHeight:I
+   #70 = NameAndType        #153:#97      // renderWidth:I
+   #71 = NameAndType        #155:#89      // setFlushRenderBuffers:(Z)Z
+   #72 = NameAndType        #156:#87      // setRenderStage:(Lnet/optifine/shaders/RenderStage;)V
+   #73 = NameAndType        #157:#83      // setShaderPack:(Ljava/lang/String;)V
+   #74 = NameAndType        #158:#86      // useProgram:(Lnet/optifine/shaders/Program;)V
+   #75 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR;
+   #76 = Utf8               ()Ljava/lang/String;
+   #77 = Utf8               ()V
+   #78 = Utf8               ()Z
+   #79 = Utf8               (IIII)V
+   #80 = Utf8               (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR;)V
+   #81 = Utf8               (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)V
+   #82 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Z
+   #83 = Utf8               (Ljava/lang/String;)V
+   #84 = Utf8               (Ljava/lang/String;)Z
+   #85 = Utf8               (Lnet/minecraft/world/entity/Entity;)V
+   #86 = Utf8               (Lnet/optifine/shaders/Program;)V
+   #87 = Utf8               (Lnet/optifine/shaders/RenderStage;)V
+   #88 = Utf8               (Z)V
+   #89 = Utf8               (Z)Z
+   #90 = Utf8               (internal)
+   #91 = Utf8               <init>
+   #92 = Utf8               CCHHRIIROCIIHRHIOOHHHHCCORRRIR
+   #93 = Utf8               Code
+   #94 = Utf8               HCCRRHCRORIOOIOCICRORIHCRIOCRC
+   #95 = Utf8               HCOCIOIHOOHRRCCCRCRROOIICHCICH
+   #96 = Utf8               HHCOIOHORIOHOOCHIIHHROOHICIHCR
+   #97 = Utf8               I
+   #98 = Utf8               IRCORHIHHRICROOOHCHORCIOOCRRRH
+   #99 = Utf8               LineNumberTable
+  #100 = Utf8               Ljava/lang/String;
+  #101 = Utf8               Lnet/optifine/shaders/Program;
+  #102 = Utf8               Lnet/optifine/shaders/RenderStage;
+  #103 = Utf8               Lnet/optifine/shaders/ShadersFramebuffer;
+  #104 = Utf8               MC_VERSION
+  #105 = Utf8               NONE
+  #106 = Utf8               OFF
+  #107 = Utf8               OUTLINE
+  #108 = Utf8               ProgramBasic
+  #109 = Utf8               ProgramLine
+  #110 = Utf8               RCOHIIIHCCOCOIIOICHHOCCCICCCOI
+  #111 = Utf8               ROCCOIRRORHHHCRCOOORIORIIOOCHR
+  #112 = Utf8               StackMapTable
+  #113 = Utf8               Z
+  #114 = Utf8               activeProgramID
+  #115 = Utf8               beginEntitiesGlowing
+  #116 = Utf8               bindFramebuffer
+  #117 = Utf8               bindTargetDfb
+  #118 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+  #119 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR
+  #120 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+  #121 = Utf8               com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR
+  #122 = Utf8               com/moonsworth/lunar/modern/optifine/wrapper/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR
+  #123 = Utf8               currentShaderName
+  #124 = Utf8               dfb
+  #125 = Utf8               endEntitiesGlowing
+  #126 = Utf8               equals
+  #127 = Utf8               getPackDefault
+  #128 = Utf8               getPackNone
+  #129 = Utf8               getProgramBasic
+  #130 = Utf8               getShaderPack
+  #131 = Utf8               getShaderPackName
+  #132 = Utf8               glViewport
+  #133 = Utf8               hasShadowPass
+  #134 = Utf8               isFlushRenderBuffers
+  #135 = Utf8               isRenderingDfb
+  #136 = Utf8               isRenderingWorld
+  #137 = Utf8               isShadowPass
+  #138 = Utf8               java/lang/Object
+  #139 = Utf8               java/lang/String
+  #140 = Utf8               java/util/Objects
+  #141 = Utf8               net/minecraft/world/entity/Entity
+  #142 = Utf8               net/optifine/render/RenderUtils
+  #143 = Utf8               net/optifine/shaders/Program
+  #144 = Utf8               net/optifine/shaders/RenderStage
+  #145 = Utf8               net/optifine/shaders/Shaders
+  #146 = Utf8               net/optifine/shaders/ShadersFramebuffer
+  #147 = Utf8               nextEntity
+  #148 = Utf8               org/lwjgl/opengl/GL11
+  #149 = Utf8               popProgram
+  #150 = Utf8               pushProgram
+  #151 = Utf8               pushUseProgram
+  #152 = Utf8               renderHeight
+  #153 = Utf8               renderWidth
+  #154 = Utf8               restoreViewport
+  #155 = Utf8               setFlushRenderBuffers
+  #156 = Utf8               setRenderStage
+  #157 = Utf8               setShaderPack
+  #158 = Utf8               useProgram
+{
+  private int HHCOIOHORIOHOOCHIIHHROOHICIHCR;
+    descriptor: I
+    flags: (0x0002) ACC_PRIVATE
+
+  private boolean HCCRRHCRORIOOIOCICRORIHCRIOCRC;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  public com.moonsworth.lunar.modern.optifine.wrapper.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #34                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_0
+         6: putfield      #20                 // Field HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+         9: aload_0
+        10: iconst_0
+        11: putfield      #19                 // Field HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+        14: return
+      LineNumberTable:
+        line 25: 0
+        line 27: 4
+        line 28: 9
+
+  public boolean hasShadowPass();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #30                 // Field net/optifine/shaders/Shaders.isShadowPass:Z
+         3: ireturn
+      LineNumberTable:
+        line 32: 0
+
+  public java.lang.String getShaderPack();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: invokestatic  #38                 // Method net/optifine/shaders/Shaders.getShaderPackName:()Ljava/lang/String;
+         3: areturn
+      LineNumberTable:
+        line 37: 0
+
+  public boolean setShaderPack(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: getstatic     #26                 // Field net/optifine/shaders/Shaders.currentShaderName:Ljava/lang/String;
+         3: aload_1
+         4: invokestatic  #35                 // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+         7: ifne          16
+        10: aload_1
+        11: invokestatic  #43                 // Method net/optifine/shaders/Shaders.setShaderPack:(Ljava/lang/String;)V
+        14: iconst_1
+        15: ireturn
+        16: iconst_0
+        17: ireturn
+      LineNumberTable:
+        line 42: 0
+        line 43: 10
+        line 44: 14
+        line 46: 16
+      StackMapTable: number_of_entries = 1
+        frame_type = 249 /* chop */
+          offset_delta = 16
+
+  public java.lang.String getPackNone();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #2                  // String OFF
+         2: areturn
+      LineNumberTable:
+        line 51: 0
+
+  public java.lang.String getPackDefault();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #1                  // String (internal)
+         2: areturn
+      LineNumberTable:
+        line 56: 0
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CRHOOIHHORCRRICOCOHIHOOIOHIORH.ORCOOOCHIICOIICCROCRCOOROORIHR getProgramBasic();
+    descriptor: ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #23                 // Field net/optifine/shaders/Shaders.ProgramBasic:Lnet/optifine/shaders/Program;
+         3: checkcast     #4                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR
+         6: areturn
+      LineNumberTable:
+        line 61: 0
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CRHOOIHHORCRRICOCOHIHOOIOHIORH.ORCOOOCHIICOIICCROCRCOOROORIHR IRCORHIHHRICROOOHCHORCIOOCRRRH();
+    descriptor: ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #24                 // Field net/optifine/shaders/Shaders.ProgramLine:Lnet/optifine/shaders/Program;
+         3: checkcast     #4                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR
+         6: areturn
+      LineNumberTable:
+        line 66: 0
+
+  public void pushUseProgram(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CRHOOIHHORCRRICOCOHIHOOIOHIORH.ORCOOOCHIICOIICCROCRCOOROORIHR);
+    descriptor: (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: getstatic     #18                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+         3: bipush        9
+         5: if_icmplt     21
+         8: aload_1
+         9: getstatic     #24                 // Field net/optifine/shaders/Shaders.ProgramLine:Lnet/optifine/shaders/Program;
+        12: if_acmpne     21
+        15: getstatic     #22                 // Field net/optifine/shaders/RenderStage.OUTLINE:Lnet/optifine/shaders/RenderStage;
+        18: invokestatic  #42                 // Method net/optifine/shaders/Shaders.setRenderStage:(Lnet/optifine/shaders/RenderStage;)V
+        21: invokestatic  #41                 // Method net/optifine/shaders/Shaders.pushProgram:()V
+        24: aload_1
+        25: checkcast     #13                 // class net/optifine/shaders/Program
+        28: invokestatic  #44                 // Method net/optifine/shaders/Shaders.useProgram:(Lnet/optifine/shaders/Program;)V
+        31: return
+      LineNumberTable:
+        line 71: 0
+        line 73: 15
+        line 76: 21
+        line 77: 24
+        line 78: 31
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 21
+          locals = [ top, class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR ]
+          stack = []
+
+  public void popProgram();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #18                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+         3: bipush        9
+         5: if_icmplt     14
+         8: getstatic     #21                 // Field net/optifine/shaders/RenderStage.NONE:Lnet/optifine/shaders/RenderStage;
+        11: invokestatic  #42                 // Method net/optifine/shaders/Shaders.setRenderStage:(Lnet/optifine/shaders/RenderStage;)V
+        14: invokestatic  #40                 // Method net/optifine/shaders/Shaders.popProgram:()V
+        17: return
+      LineNumberTable:
+        line 82: 0
+        line 83: 8
+        line 86: 14
+        line 87: 17
+      StackMapTable: number_of_entries = 1
+        frame_type = 250 /* chop */
+          offset_delta = 14
+
+  public void bindTargetDfb();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #27                 // Field net/optifine/shaders/Shaders.dfb:Lnet/optifine/shaders/ShadersFramebuffer;
+         3: invokevirtual #45                 // Method net/optifine/shaders/ShadersFramebuffer.bindFramebuffer:()V
+         6: return
+      LineNumberTable:
+        line 91: 0
+        line 92: 6
+
+  public boolean isRenderingDfb();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #28                 // Field net/optifine/shaders/Shaders.isRenderingDfb:Z
+         3: ireturn
+      LineNumberTable:
+        line 96: 0
+
+  public void restoreViewport();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: iconst_0
+         1: iconst_0
+         2: getstatic     #32                 // Field net/optifine/shaders/Shaders.renderWidth:I
+         5: getstatic     #31                 // Field net/optifine/shaders/Shaders.renderHeight:I
+         8: invokestatic  #46                 // Method org/lwjgl/opengl/GL11.glViewport:(IIII)V
+        11: return
+      LineNumberTable:
+        line 101: 0
+        line 102: 11
+
+  public void RCOHIIIHCCOCOIIOICHHOCCCICCCOI();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getstatic     #25                 // Field net/optifine/shaders/Shaders.activeProgramID:I
+         4: putfield      #20                 // Field HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+         7: iconst_0
+         8: putstatic     #25                 // Field net/optifine/shaders/Shaders.activeProgramID:I
+        11: aload_0
+        12: getstatic     #29                 // Field net/optifine/shaders/Shaders.isRenderingWorld:Z
+        15: putfield      #19                 // Field HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+        18: iconst_0
+        19: putstatic     #29                 // Field net/optifine/shaders/Shaders.isRenderingWorld:Z
+        22: return
+      LineNumberTable:
+        line 107: 0
+        line 108: 7
+        line 111: 11
+        line 112: 18
+        line 113: 22
+
+  public void HCOCIOIHOOHRRCCCRCRROOIICHCICH();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #20                 // Field HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+         4: putstatic     #25                 // Field net/optifine/shaders/Shaders.activeProgramID:I
+         7: aload_0
+         8: getfield      #19                 // Field HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+        11: putstatic     #29                 // Field net/optifine/shaders/Shaders.isRenderingWorld:Z
+        14: aload_0
+        15: iconst_0
+        16: putfield      #19                 // Field HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+        19: aload_0
+        20: iconst_0
+        21: putfield      #20                 // Field HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+        24: return
+      LineNumberTable:
+        line 117: 0
+        line 118: 7
+        line 119: 14
+        line 120: 19
+        line 121: 24
+
+  public void beginEntitiesGlowing();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: new           #5                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+         3: dup
+         4: invokespecial #33                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":()V
+         7: athrow
+      LineNumberTable:
+        line 126: 0
+
+  public void endEntitiesGlowing();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: new           #5                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+         3: dup
+         4: invokespecial #33                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":()V
+         7: athrow
+      LineNumberTable:
+        line 132: 0
+
+  public void nextEntity(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII);
+    descriptor: (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_1
+         1: checkcast     #11                 // class net/minecraft/world/entity/Entity
+         4: invokestatic  #39                 // Method net/optifine/shaders/Shaders.nextEntity:(Lnet/minecraft/world/entity/Entity;)V
+         7: return
+      LineNumberTable:
+        line 137: 0
+        line 138: 7
+
+  public void CCHHRIIROCIIHRHIOOHHHHCCORRRIR(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: iload_1
+         1: invokestatic  #37                 // Method net/optifine/render/RenderUtils.setFlushRenderBuffers:(Z)Z
+         4: pop
+         5: return
+      LineNumberTable:
+        line 141: 0
+        line 142: 5
+
+  public boolean ROCCOIRRORHHHCRCOOORIORIIOOCHR();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: invokestatic  #36                 // Method net/optifine/render/RenderUtils.isFlushRenderBuffers:()Z
+         3: ireturn
+      LineNumberTable:
+        line 146: 0
+}

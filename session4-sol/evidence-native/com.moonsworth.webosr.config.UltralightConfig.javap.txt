@@ -1,0 +1,57 @@
+public final class com.moonsworth.webosr.config.UltralightConfig extends com.moonsworth.webosr.config.EngineConfig {
+  public java.lang.String resourcePath;
+
+  public com.moonsworth.webosr.config.UltralightConfig$EffectQuality effectQuality;
+
+  public com.moonsworth.webosr.config.UltralightConfig$FontHinting fontHinting;
+
+  public double fontGamma;
+
+  public int sampleSizeGPU;
+
+  public int overrideMemorySize;
+
+  public int bitmapAlignment;
+
+  public double animationTimer;
+
+  public double scrollTimer;
+
+  public double recycleTimer;
+
+  public com.moonsworth.webosr.config.UltralightConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #24                 // Method com/moonsworth/webosr/config/EngineConfig."<init>":()V
+       4: aload_0
+       5: ldc           #1                  // String resources/
+       7: putfield      #19                 // Field resourcePath:Ljava/lang/String;
+      10: aload_0
+      11: getstatic     #22                 // Field com/moonsworth/webosr/config/UltralightConfig$EffectQuality.MEDIUM:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      14: putfield      #14                 // Field effectQuality:Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;
+      17: aload_0
+      18: getstatic     #23                 // Field com/moonsworth/webosr/config/UltralightConfig$FontHinting.NORMAL:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      21: putfield      #16                 // Field fontHinting:Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;
+      24: aload_0
+      25: ldc2_w        #8                  // double 1.8d
+      28: putfield      #15                 // Field fontGamma:D
+      31: aload_0
+      32: iconst_0
+      33: putfield      #20                 // Field sampleSizeGPU:I
+      36: aload_0
+      37: iconst_0
+      38: putfield      #17                 // Field overrideMemorySize:I
+      41: aload_0
+      42: bipush        16
+      44: putfield      #13                 // Field bitmapAlignment:I
+      47: aload_0
+      48: ldc2_w        #6                  // double 0.016666666666666666d
+      51: putfield      #12                 // Field animationTimer:D
+      54: aload_0
+      55: ldc2_w        #6                  // double 0.016666666666666666d
+      58: putfield      #21                 // Field scrollTimer:D
+      61: aload_0
+      62: ldc2_w        #10                 // double 4.0d
+      65: putfield      #18                 // Field recycleTimer:D
+      68: return
+}

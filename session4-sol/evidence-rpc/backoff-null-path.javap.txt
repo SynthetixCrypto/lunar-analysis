@@ -1,0 +1,45 @@
+  public com.moonsworth.lunar.client.RROHOCRCCHCIORHICIHCOHRIRCIHCI.IRCROOHIIOOHIRCRRHOHIORHCOHIOR(com.lunarclient.websocket.protocol.v1.WebSocketRichClosePush, long);
+    Code excerpt (null input only; entry branch 4..5 goes to 101):
+     101: aload_0
+     102: ldc2_w        #19                 // long 15000l
+     105: putfield      #26                 // Field ROHOHCOOHROHRHCORHICHCCRHCCCIR:J
+     108: aload_0
+     109: aconst_null
+     110: putfield      #24                 // Field CHROOICOCCROCRCRRIHOOCHROCCIHC:Ljava/lang/String;
+     113: aload_0
+     114: invokestatic  #40                 // Method java/lang/System.currentTimeMillis:()J
+     117: putfield      #25                 // Field CRCRRHCCOOHOORCRHOOIICCIIOROII:J
+     120: aload_0
+     121: lload_2
+     122: putfield      #23                 // Field CCOOCIHIRCHIOHIRCROIOIOIOHCRHO:J
+     125: return
+
+  public boolean CIHHCOHOIHIRRRHICHICRHHRICRRHR();
+    Code:
+       0: invokestatic  #40                 // Method java/lang/System.currentTimeMillis:()J
+       3: aload_0
+       4: getfield      #25                 // Field CRCRRHCCOOHOORCRHOOIICCIIOROII:J
+       7: lsub
+       8: lstore_1
+       9: lload_1
+      10: aload_0
+      11: getfield      #26                 // Field ROHOHCOOHROHRHCORHICHCCRHCCCIR:J
+      14: lcmp
+      15: ifge          20
+      18: iconst_0
+      19: ireturn
+      20: aload_0
+      21: aload_0
+      22: getfield      #26                 // Field ROHOHCOOHROHRHCORHICHCCRHCCCIR:J
+      25: ldc2_w        #15                 // long 2l
+      28: lmul
+      29: aload_0
+      30: getfield      #23                 // Field CCOOCIHIRCHIOHIRCROIOIOIOHCRHO:J
+      33: invokestatic  #37                 // Method java/lang/Math.min:(JJ)J
+      36: putfield      #26                 // Field ROHOHCOOHROHRHCORHICHCCRHCCCIR:J
+      39: aload_0
+      40: invokestatic  #40                 // Method java/lang/System.currentTimeMillis:()J
+      43: putfield      #25                 // Field CRCRRHCCOOHOORCRHOOIICCIIOROII:J
+      46: iconst_1
+      47: ireturn
+

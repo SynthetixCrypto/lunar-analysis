@@ -1,0 +1,131 @@
+Classfile /C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Downloads-New-folder-lunar-analysis/eeca5643-ee80-46b2-970c-8533c6845d76/scratchpad/lunar/com/moonsworth/webosr/wrappers/WebEngine.class
+  Last modified Dec 31, 1969; size 1090 bytes
+  SHA-256 checksum cec0f8b921b7be9239784407ecab65cbbb58b5735d325cb19056eed0fd76248c
+public final class com.moonsworth.webosr.wrappers.WebEngine extends com.moonsworth.webosr.NativeHandle
+  minor version: 0
+  major version: 60
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #3                          // com/moonsworth/webosr/wrappers/WebEngine
+  super_class: #1                         // com/moonsworth/webosr/NativeHandle
+  interfaces: 0, fields: 1, methods: 9, attributes: 0
+Constant pool:
+   #1 = Class              #32            // com/moonsworth/webosr/NativeHandle
+   #2 = Class              #33            // com/moonsworth/webosr/javascript/FunctionBus
+   #3 = Class              #34            // com/moonsworth/webosr/wrappers/WebEngine
+   #4 = Class              #45            // java/lang/Object
+   #5 = Class              #46            // java/lang/Thread
+   #6 = Fieldref           #3.#17         // com/moonsworth/webosr/wrappers/WebEngine.owner:Ljava/lang/Thread;
+   #7 = Methodref          #1.#12         // com/moonsworth/webosr/NativeHandle."<init>":(J)V
+   #8 = Methodref          #2.#13         // com/moonsworth/webosr/javascript/FunctionBus.consumeMainActorQueue:()V
+   #9 = Methodref          #3.#16         // com/moonsworth/webosr/wrappers/WebEngine.invokeIteration0:()V
+  #10 = Methodref          #4.#15         // java/lang/Object.equals:(Ljava/lang/Object;)Z
+  #11 = Methodref          #5.#14         // java/lang/Thread.currentThread:()Ljava/lang/Thread;
+  #12 = NameAndType        #27:#22        // "<init>":(J)V
+  #13 = NameAndType        #35:#20        // consumeMainActorQueue:()V
+  #14 = NameAndType        #39:#19        // currentThread:()Ljava/lang/Thread;
+  #15 = NameAndType        #41:#24        // equals:(Ljava/lang/Object;)Z
+  #16 = NameAndType        #44:#20        // invokeIteration0:()V
+  #17 = NameAndType        #47:#30        // owner:Ljava/lang/Thread;
+  #18 = Utf8               ()Lcom/moonsworth/webosr/wrappers/PlatformInterface;
+  #19 = Utf8               ()Ljava/lang/Thread;
+  #20 = Utf8               ()V
+  #21 = Utf8               (I)V
+  #22 = Utf8               (J)V
+  #23 = Utf8               (Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;
+  #24 = Utf8               (Ljava/lang/Object;)Z
+  #25 = Utf8               (Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/image/TexturedImageSource;
+  #26 = Utf8               (Ljava/lang/String;Z)Lcom/moonsworth/webosr/wrappers/Session;
+  #27 = Utf8               <init>
+  #28 = Utf8               Code
+  #29 = Utf8               LineNumberTable
+  #30 = Utf8               Ljava/lang/Thread;
+  #31 = Utf8               StackMapTable
+  #32 = Utf8               com/moonsworth/webosr/NativeHandle
+  #33 = Utf8               com/moonsworth/webosr/javascript/FunctionBus
+  #34 = Utf8               com/moonsworth/webosr/wrappers/WebEngine
+  #35 = Utf8               consumeMainActorQueue
+  #36 = Utf8               createBrowser
+  #37 = Utf8               createImageSourceTextured
+  #38 = Utf8               createSession
+  #39 = Utf8               currentThread
+  #40 = Utf8               destroy
+  #41 = Utf8               equals
+  #42 = Utf8               getPlatformInterface
+  #43 = Utf8               invokeIteration
+  #44 = Utf8               invokeIteration0
+  #45 = Utf8               java/lang/Object
+  #46 = Utf8               java/lang/Thread
+  #47 = Utf8               owner
+  #48 = Utf8               setFPS
+{
+  private final java.lang.Thread owner;
+    descriptor: Ljava/lang/Thread;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private com.moonsworth.webosr.wrappers.WebEngine(long);
+    descriptor: (J)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: lload_1
+         2: invokespecial #7                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+         5: aload_0
+         6: invokestatic  #11                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+         9: putfield      #6                  // Field owner:Ljava/lang/Thread;
+        12: return
+      LineNumberTable:
+        line 19: 0
+        line 20: 5
+        line 21: 12
+
+  public void invokeIteration();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #6                  // Field owner:Ljava/lang/Thread;
+         4: invokestatic  #11                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+         7: invokevirtual #10                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+        10: ifeq          16
+        13: invokestatic  #8                  // Method com/moonsworth/webosr/javascript/FunctionBus.consumeMainActorQueue:()V
+        16: aload_0
+        17: invokevirtual #9                  // Method invokeIteration0:()V
+        20: return
+      LineNumberTable:
+        line 27: 0
+        line 28: 13
+        line 31: 16
+        line 32: 20
+      StackMapTable: number_of_entries = 1
+        frame_type = 16 /* same */
+
+  public native com.moonsworth.webosr.wrappers.image.TexturedImageSource createImageSourceTextured(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/image/TexturedImageSource;
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  public native com.moonsworth.webosr.wrappers.Session createSession(java.lang.String, boolean);
+    descriptor: (Ljava/lang/String;Z)Lcom/moonsworth/webosr/wrappers/Session;
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  public native com.moonsworth.webosr.wrappers.Browser createBrowser(com.moonsworth.webosr.config.BrowserConfig);
+    descriptor: (Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  public native com.moonsworth.webosr.wrappers.PlatformInterface getPlatformInterface();
+    descriptor: ()Lcom/moonsworth/webosr/wrappers/PlatformInterface;
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  public native void setFPS(int);
+    descriptor: (I)V
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  protected native void destroy();
+    descriptor: ()V
+    flags: (0x0104) ACC_PROTECTED, ACC_NATIVE
+
+  private native void invokeIteration0();
+    descriptor: ()V
+    flags: (0x0102) ACC_PRIVATE, ACC_NATIVE
+}

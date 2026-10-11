@@ -1,0 +1,2103 @@
+public abstract class ML._d4ca6c._1e73d7._02d7ad._590f69._2ce426 implements ML._590f69._2ce426._1e73d7,net.minecraft.world.Nameable {
+  private int lunar$glowingColor;
+
+  private net.minecraft.server.level.ServerPlayer lunar$dummyServerPlayer;
+
+  public net.minecraft.world.level.Level level;
+
+  public net.minecraft.world.phys.Vec3 position;
+
+  public double xo;
+
+  public double yo;
+
+  public double zo;
+
+  public net.minecraft.world.phys.Vec3 deltaMovement;
+
+  public float xRot;
+
+  public float yRot;
+
+  public float xRotO;
+
+  public float yRotO;
+
+  public java.util.UUID uuid;
+
+  public boolean onGround;
+
+  public net.minecraft.world.entity.EntityDimensions dimensions;
+
+  public boolean horizontalCollision;
+
+  public boolean removed$v1_16_1;
+
+  public net.minecraft.world.entity.Entity vehicle;
+
+  public net.minecraft.world.entity.EntityType<?> type;
+
+  public int id;
+
+  public boolean noPhysics;
+
+  public net.minecraft.core.BlockPos blockPosition;
+
+  private boolean lunar$baked;
+
+  public boolean noCulling$v1_16_1;
+
+  public double xOld;
+
+  public double yOld;
+
+  public double zOld;
+
+  public int xChunk$v1_16_1;
+
+  public int yChunk$v1_16_1;
+
+  public int zChunk$v1_16_1;
+
+  public float maxUpStep$v1_16_1;
+
+  public java.util.List<net.minecraft.world.entity.Entity> passengers$v1_16_1;
+
+  public com.google.common.collect.ImmutableList<net.minecraft.world.entity.Entity> passengers$v1_17_0;
+
+  public ML._d4ca6c._1e73d7._02d7ad._590f69._2ce426();
+    Code:
+       0: aload_0
+       1: invokespecial #311                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_m1
+       6: putfield      #140                // Field lunar$glowingColor:I
+       9: return
+
+  public abstract void turn(double, double);
+
+  public abstract boolean isInvisibleTo(net.minecraft.world.entity.player.Player);
+
+  public abstract int getId();
+
+  public abstract net.minecraft.world.phys.AABB getBoundingBox();
+
+  public abstract float getEyeHeight(net.minecraft.world.entity.Pose);
+
+  public abstract net.minecraft.world.entity.Pose getPose();
+
+  public abstract void setPos(double, double, double);
+
+  public abstract net.minecraft.network.syncher.SynchedEntityData getEntityData();
+
+  public abstract boolean isInvisible();
+
+  public abstract net.minecraft.world.entity.Entity changeDimension$v1_16_1(net.minecraft.server.level.ServerLevel);
+
+  public abstract boolean isOnFire();
+
+  public abstract boolean isRemoved$v1_17_0();
+
+  public abstract boolean isAlive();
+
+  public abstract net.minecraft.world.item.ItemStack getPickResult$v1_17_0();
+
+  public abstract net.minecraft.world.entity.EntityType<?> getType();
+
+  public abstract boolean hasCustomName();
+
+  public abstract net.minecraft.network.chat.Component getCustomName();
+
+  public abstract void setCustomNameVisible(boolean);
+
+  public abstract void setCustomName(net.minecraft.network.chat.Component);
+
+  public abstract net.minecraft.world.phys.Vec3 getEyePosition(float);
+
+  public abstract net.minecraft.network.chat.Component getTypeName();
+
+  public abstract net.minecraft.core.BlockPos blockPosition();
+
+  public abstract int getBlockX$v1_17_0();
+
+  public abstract int getBlockY$v1_17_0();
+
+  public abstract int getBlockZ$v1_17_0();
+
+  public abstract net.minecraft.world.phys.AABB getBoundingBoxForCulling$v1_16_1();
+
+  public abstract boolean shouldShowName();
+
+  public abstract boolean shouldRenderAtSqrDistance(double);
+
+  public abstract boolean shouldRender(double, double, double);
+
+  public abstract boolean isGlowing$v1_16_1();
+
+  public abstract void setGlowing$v1_16_1(boolean);
+
+  public abstract void setGlowingTag$v1_17_0(boolean);
+
+  public abstract void setOnGround(boolean);
+
+  public abstract void setRot(float, float);
+
+  public abstract void move(net.minecraft.world.entity.MoverType, net.minecraft.world.phys.Vec3);
+
+  public abstract net.minecraft.world.phys.Vec3 getLookAngle();
+
+  public abstract net.minecraft.world.entity.Entity changeDimension$v1_21_0(net.minecraft.world.level.portal.TeleportTransition);
+
+  public abstract boolean isCurrentlyGlowing$v1_17_0();
+
+  public abstract boolean isInWaterOrBubble$v1_16_1();
+
+  public abstract void setSharedFlag(int, boolean);
+
+  public abstract net.minecraft.world.entity.Entity teleport$v1_21_2(net.minecraft.world.level.portal.TeleportTransition);
+
+  public abstract net.minecraft.world.phys.Vec3 getPassengerAttachmentPoint$v1_20_5(net.minecraft.world.entity.Entity, net.minecraft.world.entity.EntityDimensions, float);
+
+  public abstract org.joml.Vector3f getPassengerAttachmentPoint$v1_20_2(net.minecraft.world.entity.Entity, net.minecraft.world.entity.EntityDimensions, float);
+
+  public abstract double getPassengersRidingOffset$v1_16_1();
+
+  public abstract float getNameTagOffsetY$v1_20_0();
+
+  public abstract net.minecraft.world.entity.EntityAttachments getAttachments$v1_20_5();
+
+  public abstract float getViewYRot(float);
+
+  public abstract float getBbHeight();
+
+  public abstract boolean isInWaterOrRain();
+
+  public abstract boolean isDiscrete();
+
+  public abstract net.minecraft.world.level.ChunkPos chunkPosition$v1_17_0();
+
+  public abstract boolean isInWater();
+
+  public abstract float maxUpStep$v1_19_4();
+
+  public abstract int getMaxFallDistance();
+
+  public abstract net.minecraft.world.scores.Team getTeam$v1_16_1();
+
+  public abstract net.minecraft.world.scores.PlayerTeam getTeam$v1_20_3();
+
+  public abstract net.minecraft.world.phys.Vec3 getViewVector(float);
+
+  public abstract boolean isPickable();
+
+  public abstract net.minecraft.world.phys.HitResult pick(double, float, boolean);
+
+  public abstract net.minecraft.world.entity.Entity getVehicle();
+
+  public abstract boolean isCrouching();
+
+  public void impl$stopAnimatingWhenSneaking(boolean, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: instanceof    #103                // class net/minecraft/world/entity/player/Player
+       4: ifeq          25
+       7: iload_1
+       8: ifeq          25
+      11: invokestatic  #306                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      14: invokevirtual #293                // Method L/_cfe983._9429bc:()LL/_02d7ad/_1253fc/_429bf0;
+      17: aload_0
+      18: checkcast     #21                 // class ML/_590f69/_2ce426/_1253fc/_590f69
+      21: iconst_0
+      22: invokevirtual #294                // Method L/_02d7ad/_1253fc/_429bf0._cfe983:(LML/_590f69/_2ce426/_1253fc/_590f69;Z)V
+      25: return
+
+  public void bridge$lerpTo(double, double, double, float, float);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: dload_3
+       3: dload         5
+       5: invokevirtual #279                // Method setPos:(DDD)V
+       8: aload_0
+       9: fload         7
+      11: fload         8
+      13: invokevirtual #280                // Method setRot:(FF)V
+      16: return
+
+  public void bridge$setOnGround(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokevirtual #278                // Method setOnGround:(Z)V
+       5: return
+
+  public void bridge$setPosX(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: aload_0
+       3: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+       6: getfield      #218                // Field net/minecraft/world/phys/Vec3.y:D
+       9: aload_0
+      10: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+      13: getfield      #219                // Field net/minecraft/world/phys/Vec3.z:D
+      16: invokevirtual #279                // Method setPos:(DDD)V
+      19: return
+
+  public void bridge$setPosY(double);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+       5: getfield      #217                // Field net/minecraft/world/phys/Vec3.x:D
+       8: dload_1
+       9: aload_0
+      10: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+      13: getfield      #219                // Field net/minecraft/world/phys/Vec3.z:D
+      16: invokevirtual #279                // Method setPos:(DDD)V
+      19: return
+
+  public void bridge$setPosZ(double);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+       5: getfield      #217                // Field net/minecraft/world/phys/Vec3.x:D
+       8: aload_0
+       9: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+      12: getfield      #218                // Field net/minecraft/world/phys/Vec3.y:D
+      15: dload_1
+      16: invokevirtual #279                // Method setPos:(DDD)V
+      19: return
+
+  public void bridge$setPreviousPosX(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: putfield      #156                // Field xo:D
+       5: return
+
+  public void bridge$setPreviousPosY(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: putfield      #161                // Field yo:D
+       5: return
+
+  public void bridge$setPreviousPosZ(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: putfield      #164                // Field zo:D
+       5: return
+
+  public void bridge$setChunkX(int);
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        7
+       5: if_icmpgt     16
+       8: aload_0
+       9: iload_1
+      10: putfield      #152                // Field xChunk$v1_16_1:I
+      13: goto          29
+      16: aload_0
+      17: invokevirtual #229                // Method chunkPosition$v1_17_0:()Lnet/minecraft/world/level/ChunkPos;
+      20: checkcast     #9                  // class ML/_d4ca6c/_1e73d7/_02d7ad/_d4ca6c/_cfe983
+      23: iload_1
+      24: invokeinterface #379,  2          // InterfaceMethod ML/_d4ca6c/_1e73d7/_02d7ad/_d4ca6c/_cfe983.bridge$setX:(I)V
+      29: return
+
+  public void bridge$setChunkY(int);
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        7
+       5: if_icmpgt     13
+       8: aload_0
+       9: iload_1
+      10: putfield      #157                // Field yChunk$v1_16_1:I
+      13: return
+
+  public void bridge$setChunkZ(int);
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        7
+       5: if_icmpgt     16
+       8: aload_0
+       9: iload_1
+      10: putfield      #162                // Field zChunk$v1_16_1:I
+      13: goto          29
+      16: aload_0
+      17: invokevirtual #229                // Method chunkPosition$v1_17_0:()Lnet/minecraft/world/level/ChunkPos;
+      20: checkcast     #9                  // class ML/_d4ca6c/_1e73d7/_02d7ad/_d4ca6c/_cfe983
+      23: iload_1
+      24: invokeinterface #380,  2          // InterfaceMethod ML/_d4ca6c/_1e73d7/_02d7ad/_d4ca6c/_cfe983.bridge$setZ:(I)V
+      29: return
+
+  public void bridge$setOldPos(double, double, double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: putfield      #153                // Field xOld:D
+       5: aload_0
+       6: dload_3
+       7: putfield      #158                // Field yOld:D
+      10: aload_0
+      11: dload         5
+      13: putfield      #163                // Field zOld:D
+      16: return
+
+  public ML._590f69._5b3f84._590f69 bridge$getBlockPos();
+    Code:
+       0: aload_0
+       1: invokevirtual #222                // Method blockPosition:()Lnet/minecraft/core/BlockPos;
+       4: checkcast     #29                 // class ML/_590f69/_5b3f84/_590f69
+       7: areturn
+
+  public int bridge$getBlockX();
+    Code:
+       0: aload_0
+       1: getfield      #132                // Field blockPosition:Lnet/minecraft/core/BlockPos;
+       4: getfield      #170                // Field net/minecraft/core/BlockPos.x:I
+       7: ireturn
+
+  public int bridge$getBlockY();
+    Code:
+       0: aload_0
+       1: getfield      #132                // Field blockPosition:Lnet/minecraft/core/BlockPos;
+       4: getfield      #171                // Field net/minecraft/core/BlockPos.y:I
+       7: ireturn
+
+  public int bridge$getBlockZ();
+    Code:
+       0: aload_0
+       1: getfield      #132                // Field blockPosition:Lnet/minecraft/core/BlockPos;
+       4: getfield      #172                // Field net/minecraft/core/BlockPos.z:I
+       7: ireturn
+
+  public double bridge$getMotionX();
+    Code:
+       0: aload_0
+       1: getfield      #133                // Field deltaMovement:Lnet/minecraft/world/phys/Vec3;
+       4: getfield      #217                // Field net/minecraft/world/phys/Vec3.x:D
+       7: dreturn
+
+  public double bridge$getMotionY();
+    Code:
+       0: aload_0
+       1: getfield      #133                // Field deltaMovement:Lnet/minecraft/world/phys/Vec3;
+       4: getfield      #218                // Field net/minecraft/world/phys/Vec3.y:D
+       7: dreturn
+
+  public void bridge$setMotionY(double);
+    Code:
+       0: aload_0
+       1: new           #126                // class net/minecraft/world/phys/Vec3
+       4: dup
+       5: aload_0
+       6: getfield      #133                // Field deltaMovement:Lnet/minecraft/world/phys/Vec3;
+       9: getfield      #217                // Field net/minecraft/world/phys/Vec3.x:D
+      12: dload_1
+      13: aload_0
+      14: getfield      #133                // Field deltaMovement:Lnet/minecraft/world/phys/Vec3;
+      17: getfield      #219                // Field net/minecraft/world/phys/Vec3.z:D
+      20: invokespecial #371                // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+      23: putfield      #133                // Field deltaMovement:Lnet/minecraft/world/phys/Vec3;
+      26: return
+
+  public double bridge$getMotionZ();
+    Code:
+       0: aload_0
+       1: getfield      #133                // Field deltaMovement:Lnet/minecraft/world/phys/Vec3;
+       4: getfield      #219                // Field net/minecraft/world/phys/Vec3.z:D
+       7: dreturn
+
+  public double bridge$getRotationYaw();
+    Code:
+       0: aload_0
+       1: getfield      #159                // Field yRot:F
+       4: f2d
+       5: dreturn
+
+  public double bridge$getRotationPitch();
+    Code:
+       0: aload_0
+       1: getfield      #154                // Field xRot:F
+       4: f2d
+       5: dreturn
+
+  public double bridge$getPreviousRotationYaw();
+    Code:
+       0: aload_0
+       1: getfield      #160                // Field yRotO:F
+       4: f2d
+       5: dreturn
+
+  public double bridge$getPreviousRotationPitch();
+    Code:
+       0: aload_0
+       1: getfield      #155                // Field xRotO:F
+       4: f2d
+       5: dreturn
+
+  public void bridge$setPreviousRotationPitch(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: d2f
+       3: putfield      #155                // Field xRotO:F
+       6: return
+
+  public void bridge$setPreviousRotationYaw(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: d2f
+       3: putfield      #160                // Field yRotO:F
+       6: return
+
+  public java.util.UUID bridge$getUniqueID();
+    Code:
+       0: aload_0
+       1: getfield      #150                // Field uuid:Ljava/util/UUID;
+       4: areturn
+
+  public void bridge$setUniqueID(java.util.UUID);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #150                // Field uuid:Ljava/util/UUID;
+       5: return
+
+  public ML._590f69._5b3f84._cfe983 bridge$getBoundingBox();
+    Code:
+       0: aload_0
+       1: invokevirtual #235                // Method getBoundingBox:()Lnet/minecraft/world/phys/AABB;
+       4: checkcast     #25                 // class ML/_590f69/_5b3f84/_cfe983
+       7: areturn
+
+  public ML._590f69._5b3f84._cfe983 bridge$getBoundingBox(float);
+    Code:
+       0: aload_0
+       1: getfield      #156                // Field xo:D
+       4: aload_0
+       5: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+       8: getfield      #217                // Field net/minecraft/world/phys/Vec3.x:D
+      11: aload_0
+      12: getfield      #156                // Field xo:D
+      15: dsub
+      16: fload_1
+      17: f2d
+      18: dmul
+      19: dadd
+      20: dstore_2
+      21: aload_0
+      22: getfield      #161                // Field yo:D
+      25: aload_0
+      26: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+      29: getfield      #218                // Field net/minecraft/world/phys/Vec3.y:D
+      32: aload_0
+      33: getfield      #161                // Field yo:D
+      36: dsub
+      37: fload_1
+      38: f2d
+      39: dmul
+      40: dadd
+      41: dstore        4
+      43: aload_0
+      44: getfield      #164                // Field zo:D
+      47: aload_0
+      48: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+      51: getfield      #219                // Field net/minecraft/world/phys/Vec3.z:D
+      54: aload_0
+      55: getfield      #164                // Field zo:D
+      58: dsub
+      59: fload_1
+      60: f2d
+      61: dmul
+      62: dadd
+      63: dstore        6
+      65: new           #122                // class net/minecraft/world/phys/AABB
+      68: dup
+      69: aload_0
+      70: invokevirtual #235                // Method getBoundingBox:()Lnet/minecraft/world/phys/AABB;
+      73: getfield      #211                // Field net/minecraft/world/phys/AABB.minX:D
+      76: aload_0
+      77: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+      80: getfield      #217                // Field net/minecraft/world/phys/Vec3.x:D
+      83: dsub
+      84: dload_2
+      85: dadd
+      86: aload_0
+      87: invokevirtual #235                // Method getBoundingBox:()Lnet/minecraft/world/phys/AABB;
+      90: getfield      #212                // Field net/minecraft/world/phys/AABB.minY:D
+      93: aload_0
+      94: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+      97: getfield      #218                // Field net/minecraft/world/phys/Vec3.y:D
+     100: dsub
+     101: dload         4
+     103: dadd
+     104: aload_0
+     105: invokevirtual #235                // Method getBoundingBox:()Lnet/minecraft/world/phys/AABB;
+     108: getfield      #213                // Field net/minecraft/world/phys/AABB.minZ:D
+     111: aload_0
+     112: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+     115: getfield      #219                // Field net/minecraft/world/phys/Vec3.z:D
+     118: dsub
+     119: dload         6
+     121: dadd
+     122: aload_0
+     123: invokevirtual #235                // Method getBoundingBox:()Lnet/minecraft/world/phys/AABB;
+     126: getfield      #208                // Field net/minecraft/world/phys/AABB.maxX:D
+     129: aload_0
+     130: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+     133: getfield      #217                // Field net/minecraft/world/phys/Vec3.x:D
+     136: dsub
+     137: dload_2
+     138: dadd
+     139: aload_0
+     140: invokevirtual #235                // Method getBoundingBox:()Lnet/minecraft/world/phys/AABB;
+     143: getfield      #209                // Field net/minecraft/world/phys/AABB.maxY:D
+     146: aload_0
+     147: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+     150: getfield      #218                // Field net/minecraft/world/phys/Vec3.y:D
+     153: dsub
+     154: dload         4
+     156: dadd
+     157: aload_0
+     158: invokevirtual #235                // Method getBoundingBox:()Lnet/minecraft/world/phys/AABB;
+     161: getfield      #210                // Field net/minecraft/world/phys/AABB.maxZ:D
+     164: aload_0
+     165: getfield      #147                // Field position:Lnet/minecraft/world/phys/Vec3;
+     168: getfield      #219                // Field net/minecraft/world/phys/Vec3.z:D
+     171: dsub
+     172: dload         6
+     174: dadd
+     175: invokespecial #369                // Method net/minecraft/world/phys/AABB."<init>":(DDDDDD)V
+     178: checkcast     #25                 // class ML/_590f69/_5b3f84/_cfe983
+     181: areturn
+
+  public ML._590f69._5b3f84._cfe983 bridge$getBoundingBoxForCulling();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        26
+       5: if_icmplt     13
+       8: aload_0
+       9: invokevirtual #224                // Method bridge$getBoundingBox:()LML/_590f69/_5b3f84/_cfe983;
+      12: areturn
+      13: aload_0
+      14: invokevirtual #236                // Method getBoundingBoxForCulling$v1_16_1:()Lnet/minecraft/world/phys/AABB;
+      17: checkcast     #25                 // class ML/_590f69/_5b3f84/_cfe983
+      20: areturn
+
+  public boolean bridge$isOnGround();
+    Code:
+       0: aload_0
+       1: getfield      #144                // Field onGround:Z
+       4: ireturn
+
+  public boolean bridge$isInvisibleTo(ML._590f69._2ce426._1253fc._590f69);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #103                // class net/minecraft/world/entity/player/Player
+       5: invokevirtual #265                // Method isInvisibleTo:(Lnet/minecraft/world/entity/player/Player;)Z
+       8: ireturn
+
+  public int bridge$getEntityId();
+    Code:
+       0: aload_0
+       1: invokevirtual #241                // Method getId:()I
+       4: ireturn
+
+  public ML._590f69._5b3f84._df21a7 bridge$getViewVector(float);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: invokevirtual #254                // Method getViewVector:(F)Lnet/minecraft/world/phys/Vec3;
+       5: checkcast     #26                 // class ML/_590f69/_5b3f84/_df21a7
+       8: areturn
+
+  public ML._590f69._5b3f84._df21a7 bridge$getEyePosition(float);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: invokevirtual #240                // Method getEyePosition:(F)Lnet/minecraft/world/phys/Vec3;
+       5: checkcast     #26                 // class ML/_590f69/_5b3f84/_df21a7
+       8: areturn
+
+  public float bridge$getEyeHeight();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokevirtual #249                // Method getPose:()Lnet/minecraft/world/entity/Pose;
+       5: invokevirtual #239                // Method getEyeHeight:(Lnet/minecraft/world/entity/Pose;)F
+       8: freturn
+
+  public ML._590f69._2ce426._1e73d7 bridge$getRidingEntity();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field vehicle:Lnet/minecraft/world/entity/Entity;
+       4: checkcast     #22                 // class ML/_590f69/_2ce426/_1e73d7
+       7: areturn
+
+  public double bridge$lastTickX();
+    Code:
+       0: aload_0
+       1: getfield      #156                // Field xo:D
+       4: dreturn
+
+  public void bridge$setLastTickX(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: putfield      #156                // Field xo:D
+       5: return
+
+  public double bridge$lastTickY();
+    Code:
+       0: aload_0
+       1: getfield      #161                // Field yo:D
+       4: dreturn
+
+  public void bridge$setLastTickY(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: putfield      #161                // Field yo:D
+       5: return
+
+  public double bridge$lastTickZ();
+    Code:
+       0: aload_0
+       1: getfield      #164                // Field zo:D
+       4: dreturn
+
+  public void bridge$setLastTickZ(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: putfield      #164                // Field zo:D
+       5: return
+
+  public ML._590f69._2ce426._21aca6 bridge$getDataWatcher();
+    Code:
+       0: aload_0
+       1: invokevirtual #238                // Method getEntityData:()Lnet/minecraft/network/syncher/SynchedEntityData;
+       4: checkcast     #24                 // class ML/_590f69/_2ce426/_21aca6
+       7: areturn
+
+  public boolean bridge$isOnFire();
+    Code:
+       0: aload_0
+       1: invokevirtual #266                // Method isOnFire:()Z
+       4: ireturn
+
+  public void bridge$setRotationYaw(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: d2f
+       3: putfield      #159                // Field yRot:F
+       6: return
+
+  public void bridge$setRotationPitch(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: d2f
+       3: putfield      #154                // Field xRot:F
+       6: return
+
+  public boolean bridge$isInvisible();
+    Code:
+       0: aload_0
+       1: invokevirtual #264                // Method isInvisible:()Z
+       4: ireturn
+
+  public float bridge$getWidth();
+    Code:
+       0: aload_0
+       1: getfield      #134                // Field dimensions:Lnet/minecraft/world/entity/EntityDimensions;
+       4: getfield      #181                // Field net/minecraft/world/entity/EntityDimensions.width:F
+       7: freturn
+
+  public float bridge$getHeight();
+    Code:
+       0: aload_0
+       1: getfield      #134                // Field dimensions:Lnet/minecraft/world/entity/EntityDimensions;
+       4: getfield      #180                // Field net/minecraft/world/entity/EntityDimensions.height:F
+       7: freturn
+
+  public ML._590f69._5b3f84._df21a7 bridge$getPassengerOffset(ML._590f69._2ce426._1e73d7);
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     55
+       8: aload_0
+       9: aload_1
+      10: checkcast     #90                 // class net/minecraft/world/entity/Entity
+      13: aload_0
+      14: getfield      #134                // Field dimensions:Lnet/minecraft/world/entity/EntityDimensions;
+      17: fconst_1
+      18: invokevirtual #246                // Method getPassengerAttachmentPoint$v1_20_5:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/EntityDimensions;F)Lnet/minecraft/world/phys/Vec3;
+      21: invokevirtual #372                // Method net/minecraft/world/phys/Vec3.toVector3f$v1_19_3:()Lorg/joml/Vector3f;
+      24: aload_0
+      25: getfield      #159                // Field yRot:F
+      28: fneg
+      29: ldc           #3                  // float 0.017453292f
+      31: fmul
+      32: invokevirtual #374                // Method org/joml/Vector3f.rotateY:(F)Lorg/joml/Vector3f;
+      35: astore_2
+      36: aload_2
+      37: invokevirtual #375                // Method org/joml/Vector3f.x:()F
+      40: f2d
+      41: aload_2
+      42: invokevirtual #376                // Method org/joml/Vector3f.y:()F
+      45: f2d
+      46: aload_2
+      47: invokevirtual #377                // Method org/joml/Vector3f.z:()F
+      50: f2d
+      51: invokestatic  #393                // InterfaceMethod ML/_590f69/_5b3f84/_df21a7._c8175c:(DDD)LML/_590f69/_5b3f84/_df21a7;
+      54: areturn
+      55: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      58: bipush        19
+      60: if_icmplt     107
+      63: aload_0
+      64: aload_1
+      65: checkcast     #90                 // class net/minecraft/world/entity/Entity
+      68: aload_0
+      69: getfield      #134                // Field dimensions:Lnet/minecraft/world/entity/EntityDimensions;
+      72: fconst_1
+      73: invokevirtual #245                // Method getPassengerAttachmentPoint$v1_20_2:(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/EntityDimensions;F)Lorg/joml/Vector3f;
+      76: aload_0
+      77: getfield      #159                // Field yRot:F
+      80: fneg
+      81: ldc           #3                  // float 0.017453292f
+      83: fmul
+      84: invokevirtual #374                // Method org/joml/Vector3f.rotateY:(F)Lorg/joml/Vector3f;
+      87: astore_2
+      88: aload_2
+      89: invokevirtual #375                // Method org/joml/Vector3f.x:()F
+      92: f2d
+      93: aload_2
+      94: invokevirtual #376                // Method org/joml/Vector3f.y:()F
+      97: f2d
+      98: aload_2
+      99: invokevirtual #377                // Method org/joml/Vector3f.z:()F
+     102: f2d
+     103: invokestatic  #393                // InterfaceMethod ML/_590f69/_5b3f84/_df21a7._c8175c:(DDD)LML/_590f69/_5b3f84/_df21a7;
+     106: areturn
+     107: dconst_0
+     108: aload_0
+     109: invokevirtual #247                // Method getPassengersRidingOffset$v1_16_1:()D
+     112: dconst_0
+     113: invokestatic  #393                // InterfaceMethod ML/_590f69/_5b3f84/_df21a7._c8175c:(DDD)LML/_590f69/_5b3f84/_df21a7;
+     116: areturn
+
+  public boolean bridge$isCollidedHorizontally();
+    Code:
+       0: aload_0
+       1: getfield      #135                // Field horizontalCollision:Z
+       4: ireturn
+
+  public boolean bridge$isRemoved();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        8
+       5: if_icmplt     21
+       8: aload_0
+       9: invokevirtual #256                // Method isAlive:()Z
+      12: ifne          19
+      15: iconst_1
+      16: goto          20
+      19: iconst_0
+      20: ireturn
+      21: aload_0
+      22: getfield      #148                // Field removed$v1_16_1:Z
+      25: ireturn
+
+  public boolean bridge$isVisiblyCrouching();
+    Code:
+       0: aload_0
+       1: invokevirtual #257                // Method isCrouching:()Z
+       4: ireturn
+
+  public boolean bridge$isDiscrete();
+    Code:
+       0: aload_0
+       1: invokevirtual #259                // Method isDiscrete:()Z
+       4: ireturn
+
+  public int bridge$getDimension();
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+       4: invokevirtual #364                // Method net/minecraft/world/level/Level.dimension:()Lnet/minecraft/resources/ResourceKey;
+       7: getstatic     #201                // Field net/minecraft/world/level/Level.OVERWORLD:Lnet/minecraft/resources/ResourceKey;
+      10: invokevirtual #312                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      13: ifeq          18
+      16: iconst_0
+      17: ireturn
+      18: aload_0
+      19: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+      22: invokevirtual #364                // Method net/minecraft/world/level/Level.dimension:()Lnet/minecraft/resources/ResourceKey;
+      25: getstatic     #200                // Field net/minecraft/world/level/Level.NETHER:Lnet/minecraft/resources/ResourceKey;
+      28: invokevirtual #312                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      31: ifeq          36
+      34: iconst_1
+      35: ireturn
+      36: aload_0
+      37: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+      40: invokevirtual #364                // Method net/minecraft/world/level/Level.dimension:()Lnet/minecraft/resources/ResourceKey;
+      43: getstatic     #199                // Field net/minecraft/world/level/Level.END:Lnet/minecraft/resources/ResourceKey;
+      46: invokevirtual #312                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      49: ifeq          54
+      52: iconst_2
+      53: ireturn
+      54: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      57: bipush        35
+      59: if_icmplt     79
+      62: aload_0
+      63: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+      66: invokevirtual #364                // Method net/minecraft/world/level/Level.dimension:()Lnet/minecraft/resources/ResourceKey;
+      69: invokevirtual #333                // Method net/minecraft/resources/ResourceKey.identifier$v1_21_11:()Lnet/minecraft/resources/Identifier;
+      72: invokevirtual #331                // Method net/minecraft/resources/Identifier.getPath:()Ljava/lang/String;
+      75: invokevirtual #314                // Method java/lang/String.hashCode:()I
+      78: ireturn
+      79: aload_0
+      80: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+      83: invokevirtual #364                // Method net/minecraft/world/level/Level.dimension:()Lnet/minecraft/resources/ResourceKey;
+      86: invokevirtual #334                // Method net/minecraft/resources/ResourceKey.location$v1_16_1:()Lnet/minecraft/resources/Identifier;
+      89: invokevirtual #331                // Method net/minecraft/resources/Identifier.getPath:()Ljava/lang/String;
+      92: invokevirtual #314                // Method java/lang/String.hashCode:()I
+      95: ireturn
+
+  public java.lang.String bridge$getDimensionName();
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+       4: getfield      #203                // Field net/minecraft/world/level/Level.levelData:Lnet/minecraft/world/level/storage/WritableLevelData;
+       7: instanceof    #120                // class net/minecraft/world/level/storage/PrimaryLevelData
+      10: ifeq          30
+      13: aload_0
+      14: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+      17: getfield      #203                // Field net/minecraft/world/level/Level.levelData:Lnet/minecraft/world/level/storage/WritableLevelData;
+      20: checkcast     #120                // class net/minecraft/world/level/storage/PrimaryLevelData
+      23: getfield      #206                // Field net/minecraft/world/level/storage/PrimaryLevelData.settings:Lnet/minecraft/world/level/LevelSettings;
+      26: getfield      #204                // Field net/minecraft/world/level/LevelSettings.levelName:Ljava/lang/String;
+      29: areturn
+      30: ldc           #8                  // String unknown
+      32: areturn
+
+  public void bridge$setDimension(int);
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+       4: astore_3
+       5: aload_3
+       6: instanceof    #81                 // class net/minecraft/server/level/ServerLevel
+       9: ifeq          141
+      12: aload_3
+      13: checkcast     #81                 // class net/minecraft/server/level/ServerLevel
+      16: astore_2
+      17: iload_1
+      18: ifne          27
+      21: getstatic     #201                // Field net/minecraft/world/level/Level.OVERWORLD:Lnet/minecraft/resources/ResourceKey;
+      24: goto          41
+      27: iload_1
+      28: iconst_1
+      29: if_icmpne     38
+      32: getstatic     #200                // Field net/minecraft/world/level/Level.NETHER:Lnet/minecraft/resources/ResourceKey;
+      35: goto          41
+      38: getstatic     #199                // Field net/minecraft/world/level/Level.END:Lnet/minecraft/resources/ResourceKey;
+      41: astore_3
+      42: aload_2
+      43: invokevirtual #344                // Method net/minecraft/server/level/ServerLevel.getServer:()Lnet/minecraft/server/MinecraftServer;
+      46: aload_3
+      47: invokevirtual #335                // Method net/minecraft/server/MinecraftServer.getLevel:(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/server/level/ServerLevel;
+      50: astore        4
+      52: aload         4
+      54: ifnonnull     71
+      57: new           #43                 // class java/lang/IllegalStateException
+      60: dup
+      61: iload_1
+      62: invokedynamic #403,  0            // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+      67: invokespecial #309                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      70: athrow
+      71: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      74: bipush        26
+      76: if_icmplt     106
+      79: aload_0
+      80: aload         4
+      82: getstatic     #216                // Field net/minecraft/world/phys/Vec3.ZERO:Lnet/minecraft/world/phys/Vec3;
+      85: getstatic     #216                // Field net/minecraft/world/phys/Vec3.ZERO:Lnet/minecraft/world/phys/Vec3;
+      88: fconst_0
+      89: fconst_0
+      90: invokestatic  #398                // InterfaceMethod java/util/Set.of:()Ljava/util/Set;
+      93: getstatic     #205                // Field net/minecraft/world/level/portal/TeleportTransition.DO_NOTHING$v1_21_0:Lnet/minecraft/world/level/portal/TeleportTransition$PostTeleportTransition;
+      96: invokestatic  #367                // Method net/minecraft/world/level/portal/TeleportTransition.newInstance$v1_21_2:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;FFLjava/util/Set;Lnet/minecraft/world/level/portal/TeleportTransition$PostTeleportTransition;)Lnet/minecraft/world/level/portal/TeleportTransition;
+      99: invokevirtual #285                // Method teleport$v1_21_2:(Lnet/minecraft/world/level/portal/TeleportTransition;)Lnet/minecraft/world/entity/Entity;
+     102: pop
+     103: goto          141
+     106: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+     109: bipush        24
+     111: if_icmplt     134
+     114: aload_0
+     115: aload         4
+     117: aload_0
+     118: checkcast     #90                 // class net/minecraft/world/entity/Entity
+     121: getstatic     #205                // Field net/minecraft/world/level/portal/TeleportTransition.DO_NOTHING$v1_21_0:Lnet/minecraft/world/level/portal/TeleportTransition$PostTeleportTransition;
+     124: invokestatic  #366                // Method net/minecraft/world/level/portal/TeleportTransition.newInstance$v1_21_0:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/level/portal/TeleportTransition$PostTeleportTransition;)Lnet/minecraft/world/level/portal/TeleportTransition;
+     127: invokevirtual #228                // Method changeDimension$v1_21_0:(Lnet/minecraft/world/level/portal/TeleportTransition;)Lnet/minecraft/world/entity/Entity;
+     130: pop
+     131: goto          141
+     134: aload_0
+     135: aload         4
+     137: invokevirtual #227                // Method changeDimension$v1_16_1:(Lnet/minecraft/server/level/ServerLevel;)Lnet/minecraft/world/entity/Entity;
+     140: pop
+     141: return
+
+  public net.kyori.adventure.text.Component bridge$getTypeName();
+    Code:
+       0: aload_0
+       1: invokevirtual #252                // Method getTypeName:()Lnet/minecraft/network/chat/Component;
+       4: checkcast     #13                 // class ML/_590f69/_ba7d98/_cfe983/_cfe983
+       7: invokestatic  #288                // Method ML/_590f69/_cfe983/_bb4487.asAdventure:(LML/_590f69/_ba7d98/_cfe983/_cfe983;)Lnet/kyori/adventure/text/Component;
+      10: areturn
+
+  public java.lang.String bridge$getEntityString();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        14
+       5: if_icmpgt     22
+       8: getstatic     #173                // Field net/minecraft/core/Registry_v1_16_1.ENTITY_TYPE:Lnet/minecraft/core/DefaultedMappedRegistry;
+      11: aload_0
+      12: getfield      #149                // Field type:Lnet/minecraft/world/entity/EntityType;
+      15: invokevirtual #327                // Method net/minecraft/core/DefaultedMappedRegistry.getKey:(Ljava/lang/Object;)Lnet/minecraft/resources/Identifier;
+      18: invokevirtual #332                // Method net/minecraft/resources/Identifier.toString:()Ljava/lang/String;
+      21: areturn
+      22: getstatic     #174                // Field net/minecraft/core/registries/BuiltInRegistries.ENTITY_TYPE:Lnet/minecraft/core/DefaultedRegistry;
+      25: aload_0
+      26: getfield      #149                // Field type:Lnet/minecraft/world/entity/EntityType;
+      29: invokeinterface #400,  2          // InterfaceMethod net/minecraft/core/DefaultedRegistry.getKey:(Ljava/lang/Object;)Lnet/minecraft/resources/Identifier;
+      34: invokevirtual #332                // Method net/minecraft/resources/Identifier.toString:()Ljava/lang/String;
+      37: areturn
+
+  public ML._590f69._c8175c._cb9292 bridge$getPickResult();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: astore_1
+       5: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       8: bipush        8
+      10: if_icmplt     135
+      13: aload_1
+      14: instanceof    #98                 // class net/minecraft/world/entity/decoration/GlowItemFrame
+      17: ifeq          34
+      20: new           #113                // class net/minecraft/world/item/ItemStack
+      23: dup
+      24: getstatic     #188                // Field net/minecraft/world/item/Items.GLOW_ITEM_FRAME$v1_17_0:Lnet/minecraft/world/item/Item;
+      27: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      30: astore_2
+      31: goto          60
+      34: aload_1
+      35: instanceof    #99                 // class net/minecraft/world/entity/decoration/ItemFrame
+      38: ifeq          55
+      41: new           #113                // class net/minecraft/world/item/ItemStack
+      44: dup
+      45: getstatic     #190                // Field net/minecraft/world/item/Items.ITEM_FRAME:Lnet/minecraft/world/item/Item;
+      48: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      51: astore_2
+      52: goto          60
+      55: aload_0
+      56: invokevirtual #248                // Method getPickResult$v1_17_0:()Lnet/minecraft/world/item/ItemStack;
+      59: astore_2
+      60: aload_2
+      61: ifnonnull     130
+      64: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      67: bipush        36
+      69: if_icmplt     107
+      72: aload_1
+      73: getfield      #178                // Field net/minecraft/world/entity/Entity.type:Lnet/minecraft/world/entity/EntityType;
+      76: invokestatic  #363                // Method net/minecraft/world/item/SpawnEggItem.byId$v26_1:(Lnet/minecraft/world/entity/EntityType;)Ljava/util/Optional;
+      79: astore_3
+      80: aload_3
+      81: invokevirtual #322                // Method java/util/Optional.isEmpty:()Z
+      84: ifeq          89
+      87: aconst_null
+      88: areturn
+      89: new           #113                // class net/minecraft/world/item/ItemStack
+      92: dup
+      93: aload_3
+      94: invokevirtual #321                // Method java/util/Optional.get:()Ljava/lang/Object;
+      97: checkcast     #67                 // class net/minecraft/core/Holder
+     100: invokespecial #360                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/core/Holder;)V
+     103: astore_2
+     104: goto          130
+     107: aload_1
+     108: getfield      #178                // Field net/minecraft/world/entity/Entity.type:Lnet/minecraft/world/entity/EntityType;
+     111: invokestatic  #362                // Method net/minecraft/world/item/SpawnEggItem.byId$v1_16_1:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/item/SpawnEggItem;
+     114: astore_3
+     115: aload_3
+     116: ifnonnull     121
+     119: aconst_null
+     120: areturn
+     121: new           #113                // class net/minecraft/world/item/ItemStack
+     124: dup
+     125: aload_3
+     126: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     129: astore_2
+     130: aload_2
+     131: checkcast     #20                 // class ML/_590f69/_c8175c/_cb9292
+     134: areturn
+     135: aload_1
+     136: instanceof    #101                // class net/minecraft/world/entity/decoration/painting/Painting
+     139: ifeq          156
+     142: new           #113                // class net/minecraft/world/item/ItemStack
+     145: dup
+     146: getstatic     #193                // Field net/minecraft/world/item/Items.PAINTING:Lnet/minecraft/world/item/Item;
+     149: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     152: astore_2
+     153: goto          393
+     156: aload_1
+     157: instanceof    #100                // class net/minecraft/world/entity/decoration/LeashFenceKnotEntity
+     160: ifeq          177
+     163: new           #113                // class net/minecraft/world/item/ItemStack
+     166: dup
+     167: getstatic     #191                // Field net/minecraft/world/item/Items.LEAD:Lnet/minecraft/world/item/Item;
+     170: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     173: astore_2
+     174: goto          393
+     177: aload_1
+     178: instanceof    #99                 // class net/minecraft/world/entity/decoration/ItemFrame
+     181: ifeq          198
+     184: new           #113                // class net/minecraft/world/item/ItemStack
+     187: dup
+     188: getstatic     #190                // Field net/minecraft/world/item/Items.ITEM_FRAME:Lnet/minecraft/world/item/Item;
+     191: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     194: astore_2
+     195: goto          393
+     198: aload_1
+     199: instanceof    #110                // class net/minecraft/world/entity/vehicle/minecart/AbstractMinecart
+     202: ifeq          300
+     205: aload_1
+     206: checkcast     #110                // class net/minecraft/world/entity/vehicle/minecart/AbstractMinecart
+     209: astore_3
+     210: new           #113                // class net/minecraft/world/item/ItemStack
+     213: dup
+     214: getstatic     #165                // Field ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_2ce426$1._809610:[I
+     217: aload_3
+     218: invokevirtual #358                // Method net/minecraft/world/entity/vehicle/minecart/AbstractMinecart.getMinecartType$v1_16_1:()Lnet/minecraft/world/entity/vehicle/minecart/AbstractMinecart$Type;
+     221: invokevirtual #359                // Method net/minecraft/world/entity/vehicle/minecart/AbstractMinecart$Type.ordinal:()I
+     224: iaload
+     225: tableswitch   { // 1 to 5
+                     1: 260
+                     2: 266
+                     3: 272
+                     4: 278
+                     5: 284
+               default: 290
+          }
+     260: getstatic     #187                // Field net/minecraft/world/item/Items.FURNACE_MINECART:Lnet/minecraft/world/item/Item;
+     263: goto          293
+     266: getstatic     #184                // Field net/minecraft/world/item/Items.CHEST_MINECART:Lnet/minecraft/world/item/Item;
+     269: goto          293
+     272: getstatic     #194                // Field net/minecraft/world/item/Items.TNT_MINECART:Lnet/minecraft/world/item/Item;
+     275: goto          293
+     278: getstatic     #189                // Field net/minecraft/world/item/Items.HOPPER_MINECART:Lnet/minecraft/world/item/Item;
+     281: goto          293
+     284: getstatic     #185                // Field net/minecraft/world/item/Items.COMMAND_BLOCK_MINECART:Lnet/minecraft/world/item/Item;
+     287: goto          293
+     290: getstatic     #192                // Field net/minecraft/world/item/Items.MINECART:Lnet/minecraft/world/item/Item;
+     293: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     296: astore_2
+     297: goto          393
+     300: aload_1
+     301: instanceof    #108                // class net/minecraft/world/entity/vehicle/boat/Boat
+     304: ifeq          325
+     307: new           #113                // class net/minecraft/world/item/ItemStack
+     310: dup
+     311: aload_1
+     312: checkcast     #108                // class net/minecraft/world/entity/vehicle/boat/Boat
+     315: invokevirtual #356                // Method net/minecraft/world/entity/vehicle/boat/Boat.getDropItem$v1_16_1:()Lnet/minecraft/world/item/Item;
+     318: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     321: astore_2
+     322: goto          393
+     325: aload_1
+     326: instanceof    #97                 // class net/minecraft/world/entity/decoration/ArmorStand
+     329: ifeq          346
+     332: new           #113                // class net/minecraft/world/item/ItemStack
+     335: dup
+     336: getstatic     #183                // Field net/minecraft/world/item/Items.ARMOR_STAND:Lnet/minecraft/world/item/Item;
+     339: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     342: astore_2
+     343: goto          393
+     346: aload_1
+     347: instanceof    #96                 // class net/minecraft/world/entity/boss/enderdragon/EndCrystal
+     350: ifeq          367
+     353: new           #113                // class net/minecraft/world/item/ItemStack
+     356: dup
+     357: getstatic     #186                // Field net/minecraft/world/item/Items.END_CRYSTAL:Lnet/minecraft/world/item/Item;
+     360: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     363: astore_2
+     364: goto          393
+     367: aload_1
+     368: invokevirtual #347                // Method net/minecraft/world/entity/Entity.getType:()Lnet/minecraft/world/entity/EntityType;
+     371: invokestatic  #362                // Method net/minecraft/world/item/SpawnEggItem.byId$v1_16_1:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/item/SpawnEggItem;
+     374: astore        4
+     376: aload         4
+     378: ifnonnull     383
+     381: aconst_null
+     382: areturn
+     383: new           #113                // class net/minecraft/world/item/ItemStack
+     386: dup
+     387: aload         4
+     389: invokespecial #361                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+     392: astore_2
+     393: aload_2
+     394: checkcast     #20                 // class ML/_590f69/_c8175c/_cb9292
+     397: areturn
+
+  public int bridge$getSpawnEggColor(int);
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        36
+       5: if_icmplt     10
+       8: iconst_m1
+       9: ireturn
+      10: aload_0
+      11: checkcast     #90                 // class net/minecraft/world/entity/Entity
+      14: getfield      #178                // Field net/minecraft/world/entity/Entity.type:Lnet/minecraft/world/entity/EntityType;
+      17: invokestatic  #362                // Method net/minecraft/world/item/SpawnEggItem.byId$v1_16_1:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/world/item/SpawnEggItem;
+      20: astore_2
+      21: aload_2
+      22: ifnonnull     27
+      25: iconst_m1
+      26: ireturn
+      27: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      30: bipush        7
+      32: if_icmpgt     51
+      35: iload_1
+      36: ifne          46
+      39: aload_2
+      40: getfield      #196                // Field net/minecraft/world/item/SpawnEggItem.color1$v1_16_1:I
+      43: goto          50
+      46: aload_2
+      47: getfield      #197                // Field net/minecraft/world/item/SpawnEggItem.color2$v1_16_1:I
+      50: ireturn
+      51: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      54: bipush        28
+      56: if_icmplt     61
+      59: iconst_m1
+      60: ireturn
+      61: iload_1
+      62: ifne          72
+      65: aload_2
+      66: getfield      #195                // Field net/minecraft/world/item/SpawnEggItem.backgroundColor$v1_17_0:I
+      69: goto          76
+      72: aload_2
+      73: getfield      #198                // Field net/minecraft/world/item/SpawnEggItem.highlightColor$v1_17_0:I
+      76: ireturn
+
+  public java.lang.String bridge$getType();
+    Code:
+       0: aload_0
+       1: getfield      #149                // Field type:Lnet/minecraft/world/entity/EntityType;
+       4: invokestatic  #287                // Method ML/_d4ca6c/_d4ca6c/_1253fc/_cfe983._cfe983:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/resources/Identifier;
+       7: invokestatic  #319                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      10: checkcast     #75                 // class net/minecraft/resources/Identifier
+      13: getfield      #175                // Field net/minecraft/resources/Identifier.path:Ljava/lang/String;
+      16: areturn
+
+  public boolean bridge$isRidingBoat();
+    Code:
+       0: aload_0
+       1: getfield      #151                // Field vehicle:Lnet/minecraft/world/entity/Entity;
+       4: instanceof    #108                // class net/minecraft/world/entity/vehicle/boat/Boat
+       7: ireturn
+
+  public net.kyori.adventure.text.Component bridge$getCustomName();
+    Code:
+       0: aload_0
+       1: invokevirtual #255                // Method hasCustomName:()Z
+       4: ifeq          20
+       7: aload_0
+       8: invokevirtual #237                // Method getCustomName:()Lnet/minecraft/network/chat/Component;
+      11: checkcast     #13                 // class ML/_590f69/_ba7d98/_cfe983/_cfe983
+      14: invokestatic  #288                // Method ML/_590f69/_cfe983/_bb4487.asAdventure:(LML/_590f69/_ba7d98/_cfe983/_cfe983;)Lnet/kyori/adventure/text/Component;
+      17: goto          21
+      20: aconst_null
+      21: areturn
+
+  public ML._590f69._5b3f84._df21a7 bridge$getNameTagAttachment();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     27
+       8: aload_0
+       9: invokevirtual #230                // Method getAttachments$v1_20_5:()Lnet/minecraft/world/entity/EntityAttachments;
+      12: getstatic     #179                // Field net/minecraft/world/entity/EntityAttachment.NAME_TAG:Lnet/minecraft/world/entity/EntityAttachment;
+      15: iconst_0
+      16: aload_0
+      17: getfield      #159                // Field yRot:F
+      20: invokevirtual #352                // Method net/minecraft/world/entity/EntityAttachments.getNullable:(Lnet/minecraft/world/entity/EntityAttachment;IF)Lnet/minecraft/world/phys/Vec3;
+      23: checkcast     #26                 // class ML/_590f69/_5b3f84/_df21a7
+      26: areturn
+      27: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      30: bipush        17
+      32: if_icmplt     49
+      35: dconst_0
+      36: aload_0
+      37: invokevirtual #244                // Method getNameTagOffsetY$v1_20_0:()F
+      40: ldc           #4                  // float 0.5f
+      42: fsub
+      43: f2d
+      44: dconst_0
+      45: invokestatic  #393                // InterfaceMethod ML/_590f69/_5b3f84/_df21a7._c8175c:(DDD)LML/_590f69/_5b3f84/_df21a7;
+      48: areturn
+      49: dconst_0
+      50: aload_0
+      51: invokevirtual #231                // Method getBbHeight:()F
+      54: f2d
+      55: dconst_0
+      56: invokestatic  #393                // InterfaceMethod ML/_590f69/_5b3f84/_df21a7._c8175c:(DDD)LML/_590f69/_5b3f84/_df21a7;
+      59: areturn
+
+  public void bridge$setCustomName(net.kyori.adventure.text.Component);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #289                // Method ML/_590f69/_cfe983/_bb4487.asBridge:(Lnet/kyori/adventure/text/Component;)LML/_590f69/_ba7d98/_cfe983/_cfe983;
+       5: checkcast     #74                 // class net/minecraft/network/chat/Component
+       8: invokevirtual #274                // Method setCustomName:(Lnet/minecraft/network/chat/Component;)V
+      11: return
+
+  public void bridge$setCustomNameVisible(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokevirtual #275                // Method setCustomNameVisible:(Z)V
+       5: return
+
+  public boolean bridge$shouldShowName();
+    Code:
+       0: aload_0
+       1: invokevirtual #284                // Method shouldShowName:()Z
+       4: ireturn
+
+  private void lunar$onEntityUnload$v1_16_1(org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+       4: getfield      #202                // Field net/minecraft/world/level/Level.isClientSide:Z
+       7: ifne          11
+      10: return
+      11: aload_0
+      12: getfield      #137                // Field level:Lnet/minecraft/world/level/Level;
+      15: aload_0
+      16: getfield      #136                // Field id:I
+      19: invokevirtual #365                // Method net/minecraft/world/level/Level.getEntity:(I)Lnet/minecraft/world/entity/Entity;
+      22: astore_2
+      23: aload_2
+      24: ifnonnull     28
+      27: return
+      28: aload_2
+      29: instanceof    #21                 // class ML/_590f69/_2ce426/_1253fc/_590f69
+      32: ifeq          53
+      35: invokestatic  #304                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      38: ldc           #36                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_cfe983/_6c713e
+      40: aload_2
+      41: invokedynamic #404,  0            // InvokeDynamic #1:get:(Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Supplier;
+      46: invokevirtual #303                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      49: pop
+      50: goto          98
+      53: aload_2
+      54: instanceof    #23                 // class ML/_590f69/_2ce426/_d4ca6c/_1e73d7
+      57: ifeq          83
+      60: aload_2
+      61: checkcast     #23                 // class ML/_590f69/_2ce426/_d4ca6c/_1e73d7
+      64: astore_3
+      65: invokestatic  #304                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      68: ldc           #39                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_1eb51c$_590f69
+      70: aload_3
+      71: invokedynamic #405,  0            // InvokeDynamic #2:get:(LML/_590f69/_2ce426/_d4ca6c/_1e73d7;)Ljava/util/function/Supplier;
+      76: invokevirtual #303                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      79: pop
+      80: goto          98
+      83: invokestatic  #304                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      86: ldc           #37                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_cb9292
+      88: aload_2
+      89: invokedynamic #406,  0            // InvokeDynamic #3:get:(Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Supplier;
+      94: invokevirtual #303                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      97: pop
+      98: return
+
+  public boolean bridge$isGlowing();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        7
+       5: if_icmpgt     13
+       8: aload_0
+       9: invokevirtual #260                // Method isGlowing$v1_16_1:()Z
+      12: ireturn
+      13: aload_0
+      14: invokevirtual #258                // Method isCurrentlyGlowing$v1_17_0:()Z
+      17: ireturn
+
+  public void bridge$setGlowing(boolean);
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        7
+       5: if_icmpgt     16
+       8: aload_0
+       9: iload_1
+      10: invokevirtual #276                // Method setGlowing$v1_16_1:(Z)V
+      13: goto          28
+      16: aload_0
+      17: bipush        6
+      19: iload_1
+      20: invokevirtual #281                // Method setSharedFlag:(IZ)V
+      23: aload_0
+      24: iload_1
+      25: invokevirtual #277                // Method setGlowingTag$v1_17_0:(Z)V
+      28: return
+
+  public void bridge$turn(float, float);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: f2d
+       3: fload_2
+       4: f2d
+       5: invokevirtual #286                // Method turn:(DD)V
+       8: return
+
+  public void bridge$setGlowingColor(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #140                // Field lunar$glowingColor:I
+       5: return
+
+  public int bridge$getGlowingColor();
+    Code:
+       0: aload_0
+       1: getfield      #140                // Field lunar$glowingColor:I
+       4: ireturn
+
+  public void bridge$setId(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #136                // Field id:I
+       5: return
+
+  public void bridge$setNoPhysics(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #143                // Field noPhysics:Z
+       5: return
+
+  public boolean bridge$shouldRenderAtSqrDistance(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: invokevirtual #283                // Method shouldRenderAtSqrDistance:(D)Z
+       5: ireturn
+
+  public void bridge$sendPairingData(java.util.function.Consumer<ML._590f69._ba7d98._1e73d7>);
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        18
+       5: if_icmpgt     45
+       8: aload_0
+       9: astore_3
+      10: aload_3
+      11: instanceof    #63                 // class net/minecraft/client/player/RemotePlayer
+      14: ifeq          45
+      17: aload_3
+      18: checkcast     #63                 // class net/minecraft/client/player/RemotePlayer
+      21: astore_2
+      22: aload_1
+      23: invokestatic  #291                // Method ML/_590f69/_21aca6._371a34:()LML/_590f69/_ba7d98/_1e73d7/_cfe983;
+      26: invokeinterface #381,  1          // InterfaceMethod ML/_590f69/_ba7d98/_1e73d7/_cfe983._94f64e:()LML/_590f69/_ba7d98/_1e73d7/_cfe983/_21aca6;
+      31: aload_2
+      32: checkcast     #21                 // class ML/_590f69/_2ce426/_1253fc/_590f69
+      35: invokeinterface #382,  2          // InterfaceMethod ML/_590f69/_ba7d98/_1e73d7/_cfe983/_21aca6._cfe983:(LML/_590f69/_2ce426/_1253fc/_590f69;)LML/_590f69/_ba7d98/_1e73d7;
+      40: invokeinterface #399,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      45: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      48: bipush        28
+      50: if_icmpgt     75
+      53: new           #79                 // class net/minecraft/server/level/ServerEntity
+      56: dup
+      57: aconst_null
+      58: aload_0
+      59: checkcast     #90                 // class net/minecraft/world/entity/Entity
+      62: iconst_0
+      63: iconst_0
+      64: aconst_null
+      65: checkcast     #58                 // class java/util/function/Consumer
+      68: invokespecial #338                // Method net/minecraft/server/level/ServerEntity."<init>":(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;IZLjava/util/function/Consumer;)V
+      71: astore_2
+      72: goto          115
+      75: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      78: bipush        32
+      80: if_icmpgt     103
+      83: new           #79                 // class net/minecraft/server/level/ServerEntity
+      86: dup
+      87: aconst_null
+      88: aload_0
+      89: checkcast     #90                 // class net/minecraft/world/entity/Entity
+      92: iconst_0
+      93: iconst_0
+      94: aconst_null
+      95: aconst_null
+      96: invokespecial #339                // Method net/minecraft/server/level/ServerEntity."<init>":(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;IZLjava/util/function/Consumer;Ljava/util/function/BiConsumer;)V
+      99: astore_2
+     100: goto          115
+     103: aconst_null
+     104: aload_0
+     105: checkcast     #90                 // class net/minecraft/world/entity/Entity
+     108: iconst_0
+     109: iconst_0
+     110: aconst_null
+     111: invokestatic  #340                // Method net/minecraft/server/level/ServerEntity.newInstance$v1_21_9:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/Entity;IZLnet/minecraft/server/level/ServerEntity$Synchronizer;)Lnet/minecraft/server/level/ServerEntity;
+     114: astore_2
+     115: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+     118: bipush        15
+     120: if_icmpgt     131
+     123: aload_2
+     124: aload_1
+     125: invokevirtual #341                // Method net/minecraft/server/level/ServerEntity.sendPairingData$v1_16_1:(Ljava/util/function/Consumer;)V
+     128: goto          156
+     131: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+     134: bipush        16
+     136: if_icmpne     147
+     139: aload_2
+     140: aload_1
+     141: invokevirtual #342                // Method net/minecraft/server/level/ServerEntity.sendPairingData$v1_19_4:(Ljava/util/function/Consumer;)V
+     144: goto          156
+     147: aload_2
+     148: aload_0
+     149: invokevirtual #270                // Method lunar$dummyServerPlayer:()Lnet/minecraft/server/level/ServerPlayer;
+     152: aload_1
+     153: invokevirtual #343                // Method net/minecraft/server/level/ServerEntity.sendPairingData$v1_20_0:(Lnet/minecraft/server/level/ServerPlayer;Ljava/util/function/Consumer;)V
+     156: return
+
+  private net.minecraft.server.level.ServerPlayer lunar$dummyServerPlayer();
+    Code:
+       0: aload_0
+       1: getfield      #139                // Field lunar$dummyServerPlayer:Lnet/minecraft/server/level/ServerPlayer;
+       4: ifnull        12
+       7: aload_0
+       8: getfield      #139                // Field lunar$dummyServerPlayer:Lnet/minecraft/server/level/ServerPlayer;
+      11: areturn
+      12: ldc           #131                // class sun/misc/Unsafe
+      14: ldc           #7                  // String theUnsafe
+      16: invokevirtual #308                // Method java/lang/Class.getDeclaredField:(Ljava/lang/String;)Ljava/lang/reflect/Field;
+      19: astore_1
+      20: aload_1
+      21: iconst_1
+      22: invokevirtual #318                // Method java/lang/reflect/Field.setAccessible:(Z)V
+      25: aload_1
+      26: aconst_null
+      27: invokevirtual #317                // Method java/lang/reflect/Field.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      30: checkcast     #131                // class sun/misc/Unsafe
+      33: astore_2
+      34: aload_2
+      35: ldc           #82                 // class net/minecraft/server/level/ServerPlayer
+      37: invokevirtual #378                // Method sun/misc/Unsafe.allocateInstance:(Ljava/lang/Class;)Ljava/lang/Object;
+      40: checkcast     #82                 // class net/minecraft/server/level/ServerPlayer
+      43: astore_3
+      44: aload_3
+      45: aload_2
+      46: ldc           #83                 // class net/minecraft/server/network/ServerGamePacketListenerImpl
+      48: invokevirtual #378                // Method sun/misc/Unsafe.allocateInstance:(Ljava/lang/Class;)Ljava/lang/Object;
+      51: checkcast     #83                 // class net/minecraft/server/network/ServerGamePacketListenerImpl
+      54: putfield      #176                // Field net/minecraft/server/level/ServerPlayer.connection:Lnet/minecraft/server/network/ServerGamePacketListenerImpl;
+      57: aload_0
+      58: aload_3
+      59: putfield      #139                // Field lunar$dummyServerPlayer:Lnet/minecraft/server/level/ServerPlayer;
+      62: aload_3
+      63: areturn
+      64: astore_1
+      65: new           #46                 // class java/lang/RuntimeException
+      68: dup
+      69: ldc           #6                  // String Failed to allocate dummy ServerPlayer
+      71: aload_1
+      72: invokespecial #313                // Method java/lang/RuntimeException."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+      75: athrow
+    Exception table:
+       from    to  target type
+          12    63    64   Class java/lang/Throwable
+
+  public boolean bridge$isTurbo();
+    Code:
+       0: aload_0
+       1: getfield      #138                // Field lunar$baked:Z
+       4: ireturn
+
+  public void bridge$setTurbo(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #138                // Field lunar$baked:Z
+       5: return
+
+  public void bridge$stopTurbo();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: invokevirtual #226                // Method bridge$stopTurbo:(LML/_590f69/_5b3f84/_df21a7;)V
+       5: return
+
+  public void bridge$stopTurbo(ML._590f69._5b3f84._df21a7);
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        8
+       5: if_icmpge     16
+       8: new           #17                 // class ML/_590f69/_2f4182/_bb4487/_1e73d7
+      11: dup
+      12: invokespecial #290                // Method ML/_590f69/_2f4182/_bb4487/_1e73d7."<init>":()V
+      15: athrow
+      16: aload_0
+      17: invokevirtual #271                // Method lunar$supportsTurbo:()Z
+      20: ifne          24
+      23: return
+      24: invokestatic  #306                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      27: invokevirtual #292                // Method L/_cfe983._658a12:()LL/_02d7ad/_1253fc/_cfe983/_cfe983;
+      30: astore_2
+      31: aload_2
+      32: invokevirtual #296                // Method L/_02d7ad/_1253fc/_cfe983/_cfe983._5f5e10:()Z
+      35: ifeq          153
+      38: aload_2
+      39: invokevirtual #295                // Method L/_02d7ad/_1253fc/_cfe983/_cfe983._6c75aa:()LL/_02d7ad/_1253fc/_cfe983/_bb4487/_21aca6/_21aca6;
+      42: astore_3
+      43: aload_3
+      44: invokevirtual #299                // Method L/_02d7ad/_1253fc/_cfe983/_bb4487/_21aca6/_21aca6._1be179:()LL/_02d7ad/_1253fc/_cfe983/_bb4487/_21aca6/_cfe983;
+      47: astore        4
+      49: aload         4
+      51: aload_0
+      52: iconst_0
+      53: invokevirtual #298                // Method L/_02d7ad/_1253fc/_cfe983/_bb4487/_21aca6/_cfe983._21aca6:(LML/_590f69/_2ce426/_1e73d7;I)V
+      56: aload_0
+      57: invokevirtual #225                // Method bridge$isTurbo:()Z
+      60: ifeq          153
+      63: aload_1
+      64: ifnonnull     96
+      67: aload_0
+      68: invokevirtual #232                // Method getBlockX$v1_17_0:()I
+      71: invokestatic  #328                // Method net/minecraft/core/SectionPos.blockToSectionCoord:(I)I
+      74: aload_0
+      75: invokevirtual #233                // Method getBlockY$v1_17_0:()I
+      78: invokestatic  #328                // Method net/minecraft/core/SectionPos.blockToSectionCoord:(I)I
+      81: aload_0
+      82: invokevirtual #234                // Method getBlockZ$v1_17_0:()I
+      85: invokestatic  #328                // Method net/minecraft/core/SectionPos.blockToSectionCoord:(I)I
+      88: invokestatic  #329                // Method net/minecraft/core/SectionPos.of:(III)Lnet/minecraft/core/SectionPos;
+      91: astore        5
+      93: goto          140
+      96: aload_1
+      97: invokeinterface #395,  1          // InterfaceMethod ML/_590f69/_5b3f84/_df21a7.bridge$xCoord:()D
+     102: invokestatic  #310                // Method java/lang/Math.floor:(D)D
+     105: d2i
+     106: invokestatic  #328                // Method net/minecraft/core/SectionPos.blockToSectionCoord:(I)I
+     109: aload_1
+     110: invokeinterface #396,  1          // InterfaceMethod ML/_590f69/_5b3f84/_df21a7.bridge$yCoord:()D
+     115: invokestatic  #310                // Method java/lang/Math.floor:(D)D
+     118: d2i
+     119: invokestatic  #328                // Method net/minecraft/core/SectionPos.blockToSectionCoord:(I)I
+     122: aload_1
+     123: invokeinterface #397,  1          // InterfaceMethod ML/_590f69/_5b3f84/_df21a7.bridge$zCoord:()D
+     128: invokestatic  #310                // Method java/lang/Math.floor:(D)D
+     131: d2i
+     132: invokestatic  #328                // Method net/minecraft/core/SectionPos.blockToSectionCoord:(I)I
+     135: invokestatic  #329                // Method net/minecraft/core/SectionPos.of:(III)Lnet/minecraft/core/SectionPos;
+     138: astore        5
+     140: aload         4
+     142: aload_3
+     143: aload         5
+     145: checkcast     #27                 // class ML/_590f69/_5b3f84/_8c806f
+     148: aload_0
+     149: iconst_0
+     150: invokevirtual #297                // Method L/_02d7ad/_1253fc/_cfe983/_bb4487/_21aca6/_cfe983._cfe983:(LL/_02d7ad/_1253fc/_cfe983/_bb4487/_21aca6/_21aca6;LML/_590f69/_5b3f84/_8c806f;LML/_590f69/_2ce426/_1e73d7;Z)V
+     153: return
+
+  public boolean bridge$isAlive();
+    Code:
+       0: aload_0
+       1: invokevirtual #256                // Method isAlive:()Z
+       4: ireturn
+
+  public ML._590f69._ba7d98._cfe983._cfe983 bridge$getNbtAsComponent();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: astore_1
+       5: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       8: bipush        30
+      10: if_icmplt     115
+      13: aconst_null
+      14: astore_2
+      15: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      18: bipush        39
+      20: if_icmplt     30
+      23: getstatic     #169                // Field net/minecraft/advancements/predicates/NbtPredicate.LOGGER:Lorg/slf4j/Logger;
+      26: astore_3
+      27: goto          49
+      30: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      33: bipush        35
+      35: if_icmplt     45
+      38: getstatic     #168                // Field net/minecraft/advancements/criterion/NbtPredicate.LOGGER:Lorg/slf4j/Logger;
+      41: astore_3
+      42: goto          49
+      45: getstatic     #167                // Field net/minecraft/advancements/critereon/NbtPredicate.LOGGER$v1_21_6:Lorg/slf4j/Logger;
+      48: astore_3
+      49: new           #86                 // class net/minecraft/util/ProblemReporter$ScopedCollector
+      52: dup
+      53: aload_1
+      54: invokevirtual #348                // Method net/minecraft/world/entity/Entity.problemPath$v1_21_6:()Lnet/minecraft/util/ProblemReporter$PathElement;
+      57: aload_3
+      58: invokespecial #345                // Method net/minecraft/util/ProblemReporter$ScopedCollector."<init>":(Lnet/minecraft/util/ProblemReporter$PathElement;Lorg/slf4j/Logger;)V
+      61: astore_2
+      62: aload_2
+      63: aload_1
+      64: invokevirtual #349                // Method net/minecraft/world/entity/Entity.registryAccess$v1_20_5:()Lnet/minecraft/core/RegistryAccess_v1_18_2;
+      67: checkcast     #69                 // class net/minecraft/core/HolderLookup$Provider
+      70: invokestatic  #368                // Method net/minecraft/world/level/storage/TagValueOutput.createWithContext:(Lnet/minecraft/util/ProblemReporter;Lnet/minecraft/core/HolderLookup$Provider;)Lnet/minecraft/world/level/storage/TagValueOutput;
+      73: astore        4
+      75: aload_1
+      76: aload         4
+      78: invokevirtual #351                // Method net/minecraft/world/entity/Entity.saveWithoutId$v1_21_6:(Lnet/minecraft/world/level/storage/ValueOutput;)V
+      81: aload         4
+      83: getfield      #207                // Field net/minecraft/world/level/storage/TagValueOutput.output:Lnet/minecraft/nbt/CompoundTag;
+      86: checkcast     #13                 // class ML/_590f69/_ba7d98/_cfe983/_cfe983
+      89: astore        5
+      91: aload_2
+      92: ifnull        99
+      95: aload_2
+      96: invokevirtual #346                // Method net/minecraft/util/ProblemReporter$ScopedCollector.close:()V
+      99: aload         5
+     101: areturn
+     102: astore        6
+     104: aload_2
+     105: ifnull        112
+     108: aload_2
+     109: invokevirtual #346                // Method net/minecraft/util/ProblemReporter$ScopedCollector.close:()V
+     112: aload         6
+     114: athrow
+     115: aload_1
+     116: invokestatic  #337                // Method net/minecraft/server/commands/data/EntityDataAccessor.newInstance:(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/server/commands/data/EntityDataAccessor;
+     119: aload_1
+     120: new           #73                 // class net/minecraft/nbt/CompoundTag
+     123: dup
+     124: invokespecial #330                // Method net/minecraft/nbt/CompoundTag."<init>":()V
+     127: invokevirtual #350                // Method net/minecraft/world/entity/Entity.saveWithoutId$v1_16_1:(Lnet/minecraft/nbt/CompoundTag;)Lnet/minecraft/nbt/CompoundTag;
+     130: invokevirtual #336                // Method net/minecraft/server/commands/data/EntityDataAccessor.getPrintSuccess:(Lnet/minecraft/nbt/Tag;)Lnet/minecraft/network/chat/Component;
+     133: checkcast     #13                 // class ML/_590f69/_ba7d98/_cfe983/_cfe983
+     136: areturn
+    Exception table:
+       from    to  target type
+          15    91   102   any
+         102   104   102   any
+
+  public boolean bridge$getNoCulling();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        26
+       5: if_icmplt     29
+       8: aload_0
+       9: astore_2
+      10: aload_2
+      11: instanceof    #88                 // class net/minecraft/world/entity/Display
+      14: ifeq          27
+      17: aload_2
+      18: checkcast     #88                 // class net/minecraft/world/entity/Display
+      21: astore_1
+      22: aload_1
+      23: getfield      #177                // Field net/minecraft/world/entity/Display.noCulling$v1_21_2:Z
+      26: ireturn
+      27: iconst_0
+      28: ireturn
+      29: aload_0
+      30: getfield      #142                // Field noCulling$v1_16_1:Z
+      33: ireturn
+
+  public boolean bridge$isInWaterOrBubble();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        29
+       5: if_icmplt     13
+       8: aload_0
+       9: invokevirtual #263                // Method isInWaterOrRain:()Z
+      12: ireturn
+      13: aload_0
+      14: invokevirtual #262                // Method isInWaterOrBubble$v1_16_1:()Z
+      17: ireturn
+
+  public boolean bridge$canBeCollidedWith();
+    Code:
+       0: aload_0
+       1: invokevirtual #224                // Method bridge$getBoundingBox:()LML/_590f69/_5b3f84/_cfe983;
+       4: astore_1
+       5: aload_1
+       6: invokeinterface #387,  1          // InterfaceMethod ML/_590f69/_5b3f84/_cfe983.bridge$getMaxX:()D
+      11: aload_1
+      12: invokeinterface #390,  1          // InterfaceMethod ML/_590f69/_5b3f84/_cfe983.bridge$getMinX:()D
+      17: dsub
+      18: dconst_0
+      19: dcmpl
+      20: ifne          59
+      23: aload_1
+      24: invokeinterface #388,  1          // InterfaceMethod ML/_590f69/_5b3f84/_cfe983.bridge$getMaxY:()D
+      29: aload_1
+      30: invokeinterface #391,  1          // InterfaceMethod ML/_590f69/_5b3f84/_cfe983.bridge$getMinY:()D
+      35: dsub
+      36: dconst_0
+      37: dcmpl
+      38: ifne          59
+      41: aload_1
+      42: invokeinterface #389,  1          // InterfaceMethod ML/_590f69/_5b3f84/_cfe983.bridge$getMaxZ:()D
+      47: aload_1
+      48: invokeinterface #392,  1          // InterfaceMethod ML/_590f69/_5b3f84/_cfe983.bridge$getMinZ:()D
+      53: dsub
+      54: dconst_0
+      55: dcmpl
+      56: ifeq          63
+      59: iconst_1
+      60: goto          64
+      63: iconst_0
+      64: ireturn
+
+  public double bridge$distanceToCameraSq();
+    Code:
+       0: invokestatic  #307                // Method L/util/_e93d3c._be7257:()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_cfe983;
+       3: invokeinterface #386,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_cfe983.bridge$getCamera:()Ljava/util/Optional;
+       8: aconst_null
+       9: invokevirtual #326                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      12: checkcast     #18                 // class ML/_590f69/_bb4487/_cfe983
+      15: astore_1
+      16: aload_1
+      17: ifnonnull     28
+      20: aload_0
+      21: invokestatic  #305                // Method L/util/_e93d3c._433a2f:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+      24: invokevirtual #220                // Method _cfe983:(LML/_590f69/_2ce426/_1e73d7;)D
+      27: dreturn
+      28: aload_0
+      29: aload_1
+      30: invokeinterface #383,  1          // InterfaceMethod ML/_590f69/_bb4487/_cfe983.bridge$getPosX:()D
+      35: aload_1
+      36: invokeinterface #384,  1          // InterfaceMethod ML/_590f69/_bb4487/_cfe983.bridge$getPosY:()D
+      41: aload_1
+      42: invokeinterface #385,  1          // InterfaceMethod ML/_590f69/_bb4487/_cfe983.bridge$getPosZ:()D
+      47: invokevirtual #221                // Method _13ea87:(DDD)D
+      50: dreturn
+
+  public boolean bridge$isItemFrame();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: instanceof    #99                 // class net/minecraft/world/entity/decoration/ItemFrame
+       7: ireturn
+
+  public boolean bridge$isFirework();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: instanceof    #104                // class net/minecraft/world/entity/projectile/FireworkRocketEntity
+       7: ireturn
+
+  public boolean bridge$isWitherSkull();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: instanceof    #106                // class net/minecraft/world/entity/projectile/hurtingprojectile/WitherSkull
+       7: ireturn
+
+  public boolean bridge$isSnowball();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: instanceof    #107                // class net/minecraft/world/entity/projectile/throwableitemprojectile/Snowball
+       7: ireturn
+
+  public boolean bridge$isFireball();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: instanceof    #105                // class net/minecraft/world/entity/projectile/hurtingprojectile/Fireball
+       7: ireturn
+
+  public boolean bridge$isMonster();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: instanceof    #102                // class net/minecraft/world/entity/monster/Enemy
+       7: ireturn
+
+  public boolean bridge$isMob();
+    Code:
+       0: aload_0
+       1: checkcast     #90                 // class net/minecraft/world/entity/Entity
+       4: instanceof    #95                 // class net/minecraft/world/entity/Mob
+       7: ireturn
+
+  public boolean bridge$isLeashed();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        24
+       5: if_icmplt     32
+       8: aload_0
+       9: astore_2
+      10: aload_2
+      11: instanceof    #94                 // class net/minecraft/world/entity/Leashable
+      14: ifeq          29
+      17: aload_2
+      18: checkcast     #94                 // class net/minecraft/world/entity/Leashable
+      21: astore_1
+      22: aload_1
+      23: invokeinterface #402,  1          // InterfaceMethod net/minecraft/world/entity/Leashable.isLeashed:()Z
+      28: ireturn
+      29: goto          51
+      32: aload_0
+      33: astore_2
+      34: aload_2
+      35: instanceof    #95                 // class net/minecraft/world/entity/Mob
+      38: ifeq          51
+      41: aload_2
+      42: checkcast     #95                 // class net/minecraft/world/entity/Mob
+      45: astore_1
+      46: aload_1
+      47: invokevirtual #354                // Method net/minecraft/world/entity/Mob.isLeashed$v1_16_1:()Z
+      50: ireturn
+      51: iconst_0
+      52: ireturn
+
+  public ML._590f69._2ce426._1e73d7 bridge$getLeashedToEntity();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        24
+       5: if_icmplt     35
+       8: aload_0
+       9: astore_2
+      10: aload_2
+      11: instanceof    #94                 // class net/minecraft/world/entity/Leashable
+      14: ifeq          32
+      17: aload_2
+      18: checkcast     #94                 // class net/minecraft/world/entity/Leashable
+      21: astore_1
+      22: aload_1
+      23: invokeinterface #401,  1          // InterfaceMethod net/minecraft/world/entity/Leashable.getLeashHolder:()Lnet/minecraft/world/entity/Entity;
+      28: checkcast     #22                 // class ML/_590f69/_2ce426/_1e73d7
+      31: areturn
+      32: goto          57
+      35: aload_0
+      36: astore_2
+      37: aload_2
+      38: instanceof    #95                 // class net/minecraft/world/entity/Mob
+      41: ifeq          57
+      44: aload_2
+      45: checkcast     #95                 // class net/minecraft/world/entity/Mob
+      48: astore_1
+      49: aload_1
+      50: invokevirtual #353                // Method net/minecraft/world/entity/Mob.getLeashHolder$v1_16_1:()Lnet/minecraft/world/entity/Entity;
+      53: checkcast     #22                 // class ML/_590f69/_2ce426/_1e73d7
+      56: areturn
+      57: aconst_null
+      58: areturn
+
+  public boolean bridge$isInWater();
+    Code:
+       0: aload_0
+       1: invokevirtual #261                // Method isInWater:()Z
+       4: ireturn
+
+  public float bridge$maxUpStep();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        21
+       5: if_icmpgt     13
+       8: aload_0
+       9: getfield      #141                // Field maxUpStep$v1_16_1:F
+      12: freturn
+      13: aload_0
+      14: invokevirtual #272                // Method maxUpStep$v1_19_4:()F
+      17: freturn
+
+  public int bridge$getMaxFallDistance();
+    Code:
+       0: aload_0
+       1: invokevirtual #243                // Method getMaxFallDistance:()I
+       4: ireturn
+
+  public ML._590f69._2ce426._1e73d7 bridge$getVehicle();
+    Code:
+       0: aload_0
+       1: invokevirtual #253                // Method getVehicle:()Lnet/minecraft/world/entity/Entity;
+       4: checkcast     #22                 // class ML/_590f69/_2ce426/_1e73d7
+       7: areturn
+
+  public java.util.Optional<java.lang.String> bridge$getTeamName();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        20
+       5: if_icmplt     15
+       8: aload_0
+       9: invokevirtual #251                // Method getTeam$v1_20_3:()Lnet/minecraft/world/scores/PlayerTeam;
+      12: goto          19
+      15: aload_0
+      16: invokevirtual #250                // Method getTeam$v1_16_1:()Lnet/minecraft/world/scores/Team;
+      19: astore_1
+      20: aload_1
+      21: invokestatic  #325                // Method java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;
+      24: invokedynamic #407,  0            // InvokeDynamic #4:apply:()Ljava/util/function/Function;
+      29: invokevirtual #323                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      32: areturn
+
+  public java.util.Optional<java.lang.String> bridge$getBoatType();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: iconst_5
+       4: if_icmpeq     11
+       7: invokestatic  #320                // Method java/util/Optional.empty:()Ljava/util/Optional;
+      10: areturn
+      11: aload_0
+      12: astore_2
+      13: aload_2
+      14: instanceof    #108                // class net/minecraft/world/entity/vehicle/boat/Boat
+      17: ifeq          55
+      20: aload_2
+      21: checkcast     #108                // class net/minecraft/world/entity/vehicle/boat/Boat
+      24: astore_1
+      25: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+      28: bipush        14
+      30: if_icmpgt     44
+      33: aload_1
+      34: invokevirtual #355                // Method net/minecraft/world/entity/vehicle/boat/Boat.getBoatType$v1_16_1:()Lnet/minecraft/world/entity/vehicle/boat/Boat$Type;
+      37: getfield      #182                // Field net/minecraft/world/entity/vehicle/boat/Boat$Type.name:Ljava/lang/String;
+      40: invokestatic  #324                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+      43: areturn
+      44: aload_1
+      45: invokevirtual #357                // Method net/minecraft/world/entity/vehicle/boat/Boat.getVariant$v1_19_3:()Lnet/minecraft/world/entity/vehicle/boat/Boat$Type;
+      48: getfield      #182                // Field net/minecraft/world/entity/vehicle/boat/Boat$Type.name:Ljava/lang/String;
+      51: invokestatic  #324                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+      54: areturn
+      55: invokestatic  #320                // Method java/util/Optional.empty:()Ljava/util/Optional;
+      58: areturn
+
+  public boolean bridge$isBoat();
+    Code:
+       0: aload_0
+       1: instanceof    #108                // class net/minecraft/world/entity/vehicle/boat/Boat
+       4: ireturn
+
+  public boolean bridge$isMinecart();
+    Code:
+       0: aload_0
+       1: instanceof    #110                // class net/minecraft/world/entity/vehicle/minecart/AbstractMinecart
+       4: ireturn
+
+  public boolean bridge$isTextDisplay();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        16
+       5: if_icmplt     13
+       8: aload_0
+       9: instanceof    #89                 // class net/minecraft/world/entity/Display$TextDisplay
+      12: ireturn
+      13: iconst_0
+      14: ireturn
+
+  public ML._590f69._5b3f84._55938e bridge$pick$v1_16(float, float, boolean);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: f2d
+       3: fload_2
+       4: iload_3
+       5: invokevirtual #273                // Method pick:(DFZ)Lnet/minecraft/world/phys/HitResult;
+       8: astore        4
+      10: aload         4
+      12: invokevirtual #370                // Method net/minecraft/world/phys/HitResult.getType:()Lnet/minecraft/world/phys/HitResult$Type;
+      15: getstatic     #215                // Field net/minecraft/world/phys/HitResult$Type.MISS:Lnet/minecraft/world/phys/HitResult$Type;
+      18: if_acmpne     23
+      21: aconst_null
+      22: areturn
+      23: aload         4
+      25: instanceof    #123                // class net/minecraft/world/phys/BlockHitResult
+      28: ifeq          41
+      31: aload         4
+      33: checkcast     #123                // class net/minecraft/world/phys/BlockHitResult
+      36: astore        5
+      38: goto          43
+      41: aconst_null
+      42: areturn
+      43: aload         5
+      45: getfield      #214                // Field net/minecraft/world/phys/BlockHitResult.blockPos:Lnet/minecraft/core/BlockPos;
+      48: checkcast     #28                 // class ML/_590f69/_5b3f84/_55938e
+      51: areturn
+
+  public org.joml.Vector3d bridge$getLookAngle();
+    Code:
+       0: aload_0
+       1: invokevirtual #242                // Method getLookAngle:()Lnet/minecraft/world/phys/Vec3;
+       4: checkcast     #26                 // class ML/_590f69/_5b3f84/_df21a7
+       7: invokeinterface #394,  1          // InterfaceMethod ML/_590f69/_5b3f84/_df21a7._af33a6:()Lorg/joml/Vector3d;
+      12: areturn
+
+  public boolean bridge$shouldRender(double, double, double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: dload_3
+       3: dload         5
+       5: invokevirtual #282                // Method shouldRender:(DDD)Z
+       8: ireturn
+
+  public java.util.List<ML._590f69._2ce426._1e73d7> bridge$getPassengers();
+    Code:
+       0: getstatic     #166                // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        8
+       5: if_icmplt     16
+       8: aload_0
+       9: getfield      #146                // Field passengers$v1_17_0:Lcom/google/common/collect/ImmutableList;
+      12: checkcast     #54                 // class java/util/List
+      15: areturn
+      16: aload_0
+      17: getfield      #145                // Field passengers$v1_16_1:Ljava/util/List;
+      20: checkcast     #54                 // class java/util/List
+      23: areturn
+
+  public ML._590f69._5b3f84._55938e bridge$getBlockPos();
+    Code:
+       0: aload_0
+       1: invokevirtual #223                // Method bridge$getBlockPos:()LML/_590f69/_5b3f84/_590f69;
+       4: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._cfe983._cb9292 lambda$lunar$onEntityUnload$v1_16_1$2(net.minecraft.world.entity.Entity);
+    Code:
+       0: new           #37                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_cb9292
+       3: dup
+       4: aload_0
+       5: checkcast     #22                 // class ML/_590f69/_2ce426/_1e73d7
+       8: invokespecial #301                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_cb9292."<init>":(LML/_590f69/_2ce426/_1e73d7;)V
+      11: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._cfe983._1eb51c$_590f69 lambda$lunar$onEntityUnload$v1_16_1$1(ML._590f69._2ce426._d4ca6c._1e73d7);
+    Code:
+       0: new           #39                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_1eb51c$_590f69
+       3: dup
+       4: aload_0
+       5: invokespecial #302                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_1eb51c$_590f69."<init>":(LML/_590f69/_2ce426/_d4ca6c/_1e73d7;)V
+       8: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._cfe983._cfe983._6c713e lambda$lunar$onEntityUnload$v1_16_1$0(net.minecraft.world.entity.Entity);
+    Code:
+       0: new           #36                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_cfe983/_6c713e
+       3: dup
+       4: aload_0
+       5: checkcast     #21                 // class ML/_590f69/_2ce426/_1253fc/_590f69
+       8: invokespecial #300                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_cfe983/_6c713e."<init>":(LML/_590f69/_2ce426/_1253fc/_590f69;)V
+      11: areturn
+}

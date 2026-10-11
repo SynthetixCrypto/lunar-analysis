@@ -1,0 +1,114 @@
+public final class com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI extends java.lang.Enum<com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI> {
+  public static final com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI SERVER;
+
+  public static final com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI CLIENT_INTERNAL;
+
+  public static final com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI CLIENT_REMOTE;
+
+  public static final com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI CLIENT_CRITERIA;
+
+  public static final com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI CLIENT_OVERRIDE;
+
+  private final boolean client;
+
+  private static final com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI[] $VALUES;
+
+  public static com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI[] values();
+    Code:
+       0: getstatic     #9                  // Field $VALUES:[Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+       3: invokevirtual #16                 // Method "[Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;".clone:()Ljava/lang/Object;
+       6: checkcast     #6                  // class "[Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;"
+       9: areturn
+
+  public static com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI valueOf(java.lang.String);
+    Code:
+       0: ldc           #7                  // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+       2: aload_0
+       3: invokestatic  #20                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #7                  // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+       9: areturn
+
+  private com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI(boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #19                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: aload_0
+       7: iload_3
+       8: putfield      #15                 // Field client:Z
+      11: return
+
+  public boolean isClient();
+    Code:
+       0: aload_0
+       1: getfield      #15                 // Field client:Z
+       4: ireturn
+
+  private static com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI[] $values();
+    Code:
+       0: iconst_5
+       1: anewarray     #7                  // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+       4: dup
+       5: iconst_0
+       6: getstatic     #14                 // Field SERVER:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #11                 // Field CLIENT_INTERNAL:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #13                 // Field CLIENT_REMOTE:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      21: aastore
+      22: dup
+      23: iconst_3
+      24: getstatic     #10                 // Field CLIENT_CRITERIA:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      27: aastore
+      28: dup
+      29: iconst_4
+      30: getstatic     #12                 // Field CLIENT_OVERRIDE:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      33: aastore
+      34: areturn
+
+  static {};
+    Code:
+       0: new           #7                  // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+       3: dup
+       4: ldc           #5                  // String SERVER
+       6: iconst_0
+       7: iconst_0
+       8: invokespecial #18                 // Method "<init>":(Ljava/lang/String;IZ)V
+      11: putstatic     #14                 // Field SERVER:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      14: new           #7                  // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      17: dup
+      18: ldc           #2                  // String CLIENT_INTERNAL
+      20: iconst_1
+      21: iconst_1
+      22: invokespecial #18                 // Method "<init>":(Ljava/lang/String;IZ)V
+      25: putstatic     #11                 // Field CLIENT_INTERNAL:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      28: new           #7                  // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      31: dup
+      32: ldc           #4                  // String CLIENT_REMOTE
+      34: iconst_2
+      35: iconst_1
+      36: invokespecial #18                 // Method "<init>":(Ljava/lang/String;IZ)V
+      39: putstatic     #13                 // Field CLIENT_REMOTE:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      42: new           #7                  // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      45: dup
+      46: ldc           #1                  // String CLIENT_CRITERIA
+      48: iconst_3
+      49: iconst_1
+      50: invokespecial #18                 // Method "<init>":(Ljava/lang/String;IZ)V
+      53: putstatic     #10                 // Field CLIENT_CRITERIA:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      56: new           #7                  // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      59: dup
+      60: ldc           #3                  // String CLIENT_OVERRIDE
+      62: iconst_4
+      63: iconst_1
+      64: invokespecial #18                 // Method "<init>":(Ljava/lang/String;IZ)V
+      67: putstatic     #12                 // Field CLIENT_OVERRIDE:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      70: invokestatic  #17                 // Method $values:()[Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      73: putstatic     #9                  // Field $VALUES:[Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      76: return
+}

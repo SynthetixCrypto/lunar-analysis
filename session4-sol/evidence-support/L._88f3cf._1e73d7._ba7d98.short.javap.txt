@@ -1,0 +1,68 @@
+public class L._88f3cf._1e73d7._ba7d98 implements L._88f3cf._ba7d98 {
+  private final boolean _2cc01e;
+
+  private final L._dd3308._cfe983 _d70064;
+
+  private boolean _045710;
+
+  public boolean _951ef4();
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field _2cc01e:Z
+       4: ireturn
+
+  public boolean _7aa5f3();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field _d70064:LL/_dd3308/_cfe983;
+       4: ifnull        11
+       7: iconst_1
+       8: goto          12
+      11: iconst_0
+      12: ireturn
+
+  public boolean _cfe983(L._dd3308._cfe983);
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field _d70064:LL/_dd3308/_cfe983;
+       4: aload_1
+       5: if_acmpne     12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: ireturn
+
+  public static L._88f3cf._1e73d7._ba7d98 _cfe983(boolean, L._dd3308._cfe983);
+    Code:
+       0: new           #3                  // class L/_88f3cf/_1e73d7/_ba7d98
+       3: dup
+       4: iload_0
+       5: aload_1
+       6: invokespecial #8                  // Method "<init>":(ZLL/_dd3308/_cfe983;)V
+       9: areturn
+
+  public L._88f3cf._1e73d7._ba7d98(boolean, L._dd3308._cfe983);
+    Code:
+       0: aload_0
+       1: invokespecial #9                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iload_1
+       6: putfield      #5                  // Field _2cc01e:Z
+       9: aload_0
+      10: aload_2
+      11: putfield      #6                  // Field _d70064:LL/_dd3308/_cfe983;
+      14: return
+
+  public boolean _83eb1a();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field _045710:Z
+       4: ireturn
+
+  public void setFlipped(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #7                  // Field _045710:Z
+       5: return
+}

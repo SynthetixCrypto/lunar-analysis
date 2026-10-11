@@ -1,0 +1,40 @@
+  public void send(byte[]);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: aload_1
+       5: invokevirtual #152                // Method org/java_websocket/WebSocketImpl.send:([B)V
+       8: return
+
+
+  public final void onWebsocketClose(org.java_websocket.WebSocket, int, java.lang.String, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #186                // Method stopConnectionLostTimer:()V
+       4: aload_0
+       5: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+       8: ifnull        18
+      11: aload_0
+      12: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+      15: invokevirtual #95                 // Method java/lang/Thread.interrupt:()V
+      18: aload_0
+      19: iload_2
+      20: aload_3
+      21: iload         4
+      23: invokevirtual #172                // Method onClose:(ILjava/lang/String;Z)V
+      26: aload_0
+      27: getfield      #62                 // Field connectLatch:Ljava/util/concurrent/CountDownLatch;
+      30: invokevirtual #123                // Method java/util/concurrent/CountDownLatch.countDown:()V
+      33: aload_0
+      34: getfield      #61                 // Field closeLatch:Ljava/util/concurrent/CountDownLatch;
+      37: invokevirtual #123                // Method java/util/concurrent/CountDownLatch.countDown:()V
+      40: return
+
+
+  public final void onWebsocketError(org.java_websocket.WebSocket, java.lang.Exception);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: invokevirtual #175                // Method onError:(Ljava/lang/Exception;)V
+       5: return
+

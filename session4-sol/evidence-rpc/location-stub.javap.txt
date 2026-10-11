@@ -1,0 +1,63 @@
+public final class com.lunarclient.gameipc.location.v1.LocationService$Stub extends com.lunarclient.gameipc.location.v1.LocationService implements com.lunarclient.gameipc.location.v1.LocationService$Interface {
+  private final com.google.protobuf.RpcChannel channel;
+
+  private com.lunarclient.gameipc.location.v1.LocationService$Stub(com.google.protobuf.RpcChannel);
+    Code:
+       0: aload_0
+       1: invokespecial #16                 // Method com/lunarclient/gameipc/location/v1/LocationService."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #13                 // Field channel:Lcom/google/protobuf/RpcChannel;
+       9: return
+
+  public com.google.protobuf.RpcChannel getChannel();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field channel:Lcom/google/protobuf/RpcChannel;
+       4: areturn
+
+  public void updateFocus(com.google.protobuf.RpcController, com.lunarclient.gameipc.location.v1.UpdateFocusRequest, com.google.protobuf.RpcCallback<com.lunarclient.gameipc.location.v1.UpdateFocusResponse>);
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field channel:Lcom/google/protobuf/RpcChannel;
+       4: invokestatic  #18                 // Method getDescriptor:()Lcom/google/protobuf/Descriptors$ServiceDescriptor;
+       7: invokevirtual #14                 // Method com/google/protobuf/Descriptors$ServiceDescriptor.getMethods:()Ljava/util/List;
+      10: iconst_0
+      11: invokeinterface #22,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      16: checkcast     #2                  // class com/google/protobuf/Descriptors$MethodDescriptor
+      19: aload_1
+      20: aload_2
+      21: invokestatic  #19                 // Method com/lunarclient/gameipc/location/v1/UpdateFocusResponse.getDefaultInstance:()Lcom/lunarclient/gameipc/location/v1/UpdateFocusResponse;
+      24: aload_3
+      25: ldc           #10                 // class com/lunarclient/gameipc/location/v1/UpdateFocusResponse
+      27: invokestatic  #19                 // Method com/lunarclient/gameipc/location/v1/UpdateFocusResponse.getDefaultInstance:()Lcom/lunarclient/gameipc/location/v1/UpdateFocusResponse;
+      30: invokestatic  #15                 // Method com/google/protobuf/RpcUtil.generalizeCallback:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Class;Lcom/google/protobuf/Message;)Lcom/google/protobuf/RpcCallback;
+      33: invokeinterface #21,  6           // InterfaceMethod com/google/protobuf/RpcChannel.callMethod:(Lcom/google/protobuf/Descriptors$MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V
+      38: return
+
+  public void updateLocation(com.google.protobuf.RpcController, com.lunarclient.gameipc.location.v1.UpdateLocationRequest, com.google.protobuf.RpcCallback<com.lunarclient.gameipc.location.v1.UpdateLocationResponse>);
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field channel:Lcom/google/protobuf/RpcChannel;
+       4: invokestatic  #18                 // Method getDescriptor:()Lcom/google/protobuf/Descriptors$ServiceDescriptor;
+       7: invokevirtual #14                 // Method com/google/protobuf/Descriptors$ServiceDescriptor.getMethods:()Ljava/util/List;
+      10: iconst_1
+      11: invokeinterface #22,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      16: checkcast     #2                  // class com/google/protobuf/Descriptors$MethodDescriptor
+      19: aload_1
+      20: aload_2
+      21: invokestatic  #20                 // Method com/lunarclient/gameipc/location/v1/UpdateLocationResponse.getDefaultInstance:()Lcom/lunarclient/gameipc/location/v1/UpdateLocationResponse;
+      24: aload_3
+      25: ldc           #11                 // class com/lunarclient/gameipc/location/v1/UpdateLocationResponse
+      27: invokestatic  #20                 // Method com/lunarclient/gameipc/location/v1/UpdateLocationResponse.getDefaultInstance:()Lcom/lunarclient/gameipc/location/v1/UpdateLocationResponse;
+      30: invokestatic  #15                 // Method com/google/protobuf/RpcUtil.generalizeCallback:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Class;Lcom/google/protobuf/Message;)Lcom/google/protobuf/RpcCallback;
+      33: invokeinterface #21,  6           // InterfaceMethod com/google/protobuf/RpcChannel.callMethod:(Lcom/google/protobuf/Descriptors$MethodDescriptor;Lcom/google/protobuf/RpcController;Lcom/google/protobuf/Message;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V
+      38: return
+
+  com.lunarclient.gameipc.location.v1.LocationService$Stub(com.google.protobuf.RpcChannel, com.lunarclient.gameipc.location.v1.LocationService$1);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #17                 // Method "<init>":(Lcom/google/protobuf/RpcChannel;)V
+       5: return
+}

@@ -1,0 +1,905 @@
+public abstract class com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.OHRORRHCHCRICORRRCIRIOCCIRCRII.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RORCICOHRIOIIIOIOHIIIICRCIHRII.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR extends net.minecraft.world.entity.LivingEntity implements com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHOORCOHRORRIHROOCROOIIHHOOHRI.RORCICOHRIOIIIOIOHIIIICRCIHRII {
+  public com.mojang.authlib.GameProfile gameProfile;
+
+  public net.minecraft.world.entity.player.Abilities abilities;
+
+  public net.minecraft.world.entity.player.Inventory inventory;
+
+  private boolean lunar$nametagWorkaround;
+
+  private boolean lunar$badgeWorkaround;
+
+  public abstract boolean isSpectator();
+
+  public abstract net.minecraft.network.chat.Component getName();
+
+  public abstract net.minecraft.world.food.FoodData getFoodData();
+
+  public abstract boolean canEat(boolean);
+
+  public abstract double entityInteractionRange$v1_20_5();
+
+  public abstract double blockInteractionRange$v1_20_5();
+
+  public abstract net.minecraft.world.entity.HumanoidArm getMainArm$v1_16_1();
+
+  public abstract void setClientLoaded$v1_21_4(boolean);
+
+  protected com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.OHRORRHCHCRICORRRCIRIOCCIRCRII.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RORCICOHRIOIIIOIOHIIIICRCIHRII.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR(net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #205                // Method net/minecraft/world/entity/LivingEntity."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+       6: aload_0
+       7: iconst_0
+       8: putfield      #94                 // Field lunar$nametagWorkaround:Z
+      11: aload_0
+      12: iconst_0
+      13: putfield      #93                 // Field lunar$badgeWorkaround:Z
+      16: return
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHOORCOHRORRIHROOCROOIIHHOOHRI.OHRORRHCHCRICORRRCIRIOCCIRCRII bridge$getPlayerCapabilities();
+    Code:
+       0: aload_0
+       1: getfield      #88                 // Field abilities:Lnet/minecraft/world/entity/player/Abilities;
+       4: checkcast     #25                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+       7: areturn
+
+  public boolean bridge$isSpectator();
+    Code:
+       0: aload_0
+       1: invokevirtual #150                // Method isSpectator:()Z
+       4: ireturn
+
+  public boolean bridge$isBlocking();
+    Code:
+       0: aload_0
+       1: invokevirtual #149                // Method isBlocking:()Z
+       4: ireturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHOORCOHRORRIHROOCROOIIHHOOHRI.RROHOCRCCHCIORHICIHCOHRIRCIHCI bridge$getInventory();
+    Code:
+       0: aload_0
+       1: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+       4: checkcast     #27                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+       7: areturn
+
+  public void bridge$openInventory();
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        16
+       5: if_icmpgt     28
+       8: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+      11: new           #55                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_16_1
+      14: dup
+      15: aload_0
+      16: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+      19: invokespecial #194                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_16_1."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+      22: invokevirtual #188                // Method net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+      25: goto          132
+      28: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      31: bipush        23
+      33: if_icmpgt     56
+      36: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+      39: new           #56                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_20_0
+      42: dup
+      43: aload_0
+      44: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+      47: invokespecial #195                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_20_0."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+      50: invokevirtual #188                // Method net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+      53: goto          132
+      56: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      59: bipush        25
+      61: if_icmpgt     84
+      64: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+      67: new           #57                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_0
+      70: dup
+      71: aload_0
+      72: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+      75: invokespecial #196                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_0."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+      78: invokevirtual #188                // Method net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+      81: goto          132
+      84: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      87: bipush        38
+      89: if_icmpgt     112
+      92: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+      95: new           #58                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2
+      98: dup
+      99: aload_0
+     100: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+     103: invokespecial #197                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+     106: invokevirtual #188                // Method net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+     109: goto          132
+     112: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+     115: getfield      #106                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+     118: new           #58                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2
+     121: dup
+     122: aload_0
+     123: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+     126: invokespecial #197                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+     129: invokevirtual #190                // Method net/minecraft/client/gui/Gui.setScreen$v26_2:(Lnet/minecraft/client/gui/screens/Screen;)V
+     132: return
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOIOIRCCICRCCIHCCRHRCIHROHCCI bridge$getCurrentEquippedItem();
+    Code:
+       0: aload_0
+       1: invokevirtual #143                // Method getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+       4: invokestatic  #158                // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/ORCOOOCHIICOIICCROCRCOOROORIHR/RORCICOHRIOIIIOIOHIIIICRCIHRII.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lnet/minecraft/world/item/ItemStack;)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI;
+       7: areturn
+
+  public int bridge$getCurrentEquippedItemIndex();
+    Code:
+       0: aload_0
+       1: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+       4: getfield      #124                // Field net/minecraft/world/entity/player/Inventory.selected:I
+       7: ireturn
+
+  public void bridge$setCurrentEquippedItemIndex(int);
+    Code:
+       0: aload_0
+       1: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+       4: iload_1
+       5: putfield      #124                // Field net/minecraft/world/entity/player/Inventory.selected:I
+       8: return
+
+  public boolean bridge$isSprinting();
+    Code:
+       0: aload_0
+       1: invokevirtual #151                // Method isSprinting:()Z
+       4: ireturn
+
+  public void bridge$preparePlayerToSpawn();
+    Code:
+       0: aload_0
+       1: getstatic     #117                // Field net/minecraft/world/entity/Pose.STANDING:Lnet/minecraft/world/entity/Pose;
+       4: invokevirtual #157                // Method setPose:(Lnet/minecraft/world/entity/Pose;)V
+       7: aload_0
+       8: aload_0
+       9: invokevirtual #144                // Method getMaxHealth:()F
+      12: invokevirtual #156                // Method setHealth:(F)V
+      15: aload_0
+      16: iconst_0
+      17: putfield      #89                 // Field deathTime:I
+      20: return
+
+  public float bridge$getItemProgress();
+    Code:
+       0: aload_0
+       1: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+      11: invokevirtual #213                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+      14: ifeq          19
+      17: fconst_0
+      18: freturn
+      19: aload_0
+      20: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+      23: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+      26: getstatic     #128                // Field net/minecraft/world/item/Items.BOW:Lnet/minecraft/world/item/Item;
+      29: if_acmpne     38
+      32: ldc           #6                  // float 20.0f
+      34: fstore_1
+      35: goto          159
+      38: aload_0
+      39: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+      42: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+      45: getstatic     #129                // Field net/minecraft/world/item/Items.CROSSBOW:Lnet/minecraft/world/item/Item;
+      48: if_acmpne     88
+      51: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      54: bipush        23
+      56: if_icmpgt     70
+      59: aload_0
+      60: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+      63: invokestatic  #208                // Method net/minecraft/world/item/CrossbowItem.getChargeDuration$v1_16_1:(Lnet/minecraft/world/item/ItemStack;)I
+      66: i2f
+      67: goto          79
+      70: aload_0
+      71: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+      74: aload_0
+      75: invokestatic  #209                // Method net/minecraft/world/item/CrossbowItem.getChargeDuration$v1_21_0:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)I
+      78: i2f
+      79: fstore_1
+      80: fload_1
+      81: ldc           #4                  // float 3.0f
+      83: fadd
+      84: fstore_1
+      85: goto          159
+      88: aload_0
+      89: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+      92: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+      95: checkcast     #23                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR
+      98: invokeinterface #222,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.bridge$isTrident:()Z
+     103: ifne          124
+     106: aload_0
+     107: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+     110: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+     113: checkcast     #23                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR
+     116: invokeinterface #221,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.bridge$isSpear:()Z
+     121: ifeq          130
+     124: ldc           #5                  // float 10.0f
+     126: fstore_1
+     127: goto          159
+     130: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+     133: bipush        23
+     135: if_icmpgt     149
+     138: aload_0
+     139: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+     142: invokevirtual #211                // Method net/minecraft/world/item/ItemStack.getUseDuration$v1_16_1:()I
+     145: i2f
+     146: goto          158
+     149: aload_0
+     150: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+     153: aload_0
+     154: invokevirtual #212                // Method net/minecraft/world/item/ItemStack.getUseDuration$v1_21_0:(Lnet/minecraft/world/entity/LivingEntity;)I
+     157: i2f
+     158: fstore_1
+     159: fload_1
+     160: fconst_0
+     161: fcmpl
+     162: ifne          167
+     165: fconst_0
+     166: freturn
+     167: fconst_1
+     168: aload_0
+     169: invokevirtual #146                // Method getTicksUsingItem:()I
+     172: i2f
+     173: fload_1
+     174: fdiv
+     175: invokestatic  #178                // Method java/lang/Math.min:(FF)F
+     178: freturn
+
+  public int bridge$getItemInUseCount();
+    Code:
+       0: aload_0
+       1: getfield      #96                 // Field useItemRemaining:I
+       4: ireturn
+
+  public int bridge$getTicksUsingItem();
+    Code:
+       0: aload_0
+       1: invokevirtual #146                // Method getTicksUsingItem:()I
+       4: ireturn
+
+  public float bridge$getBedOrientationInDegrees();
+    Code:
+       0: aload_0
+       1: invokevirtual #140                // Method getBedOrientation:()Lnet/minecraft/core/Direction;
+       4: astore_1
+       5: aload_1
+       6: ifnull        81
+       9: getstatic     #98                 // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/OHRORRHCHCRICORRRCIRIOCCIRCRII/HIOHRIRIOIHOICCCCOHCOOIICIICOH/RORCICOHRIOIIIOIOHIIIICRCIHRII/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR$1.CIHHOCOOOCHRRHCIROOIHCCHHCRCOR:[I
+      12: aload_1
+      13: invokevirtual #203                // Method net/minecraft/core/Direction.ordinal:()I
+      16: iaload
+      17: tableswitch   { // 1 to 6
+
+                     1: 64
+
+                     2: 69
+
+                     3: 74
+
+                     4: 79
+
+                     5: 79
+
+                     6: 79
+               default: 56
+          }
+      56: new           #42                 // class java/lang/IncompatibleClassChangeError
+      59: dup
+      60: invokespecial #177                // Method java/lang/IncompatibleClassChangeError."<init>":()V
+      63: athrow
+      64: ldc           #9                  // float 270.0f
+      66: goto          80
+      69: ldc           #7                  // float 90.0f
+      71: goto          80
+      74: ldc           #8                  // float 180.0f
+      76: goto          80
+      79: fconst_0
+      80: freturn
+      81: fconst_0
+      82: freturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH bridge$getFoodStats();
+    Code:
+       0: aload_0
+       1: invokevirtual #141                // Method getFoodData:()Lnet/minecraft/world/food/FoodData;
+       4: checkcast     #24                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH
+       7: areturn
+
+  public boolean bridge$isUsingItem();
+    Code:
+       0: aload_0
+       1: invokevirtual #152                // Method isUsingItem:()Z
+       4: ireturn
+
+  public void bridge$setFlyToggleTimer(int);
+    Code:
+       0: return
+
+  public double bridge$getMovementSpeedAttribute();
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     16
+       8: aload_0
+       9: getstatic     #121                // Field net/minecraft/world/entity/ai/attributes/Attributes.MOVEMENT_SPEED$v1_20_5:Lnet/minecraft/core/Holder;
+      12: invokevirtual #139                // Method getAttributeValue$v1_19_3:(Lnet/minecraft/core/Holder;)D
+      15: dreturn
+      16: aload_0
+      17: getstatic     #120                // Field net/minecraft/world/entity/ai/attributes/Attributes.MOVEMENT_SPEED$v1_16_1:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+      20: invokevirtual #138                // Method getAttributeValue$v1_16_1:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)D
+      23: dreturn
+
+  public double bridge$getAttackDamageAttribute();
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     16
+       8: aload_0
+       9: getstatic     #119                // Field net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_DAMAGE$v1_20_5:Lnet/minecraft/core/Holder;
+      12: invokevirtual #139                // Method getAttributeValue$v1_19_3:(Lnet/minecraft/core/Holder;)D
+      15: dreturn
+      16: aload_0
+      17: getstatic     #118                // Field net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_DAMAGE$v1_16_1:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+      20: invokevirtual #138                // Method getAttributeValue$v1_16_1:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)D
+      23: dreturn
+
+  public java.util.Optional<com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOIOIRCCICRCCIHCCRHRCIHROHCCI> bridge$getItemInUse();
+    Code:
+       0: aload_0
+       1: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+       4: getstatic     #126                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       7: if_acmpne     16
+      10: invokestatic  #182                // Method java/util/Optional.empty:()Ljava/util/Optional;
+      13: goto          26
+      16: aload_0
+      17: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+      20: checkcast     #22                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+      23: invokestatic  #183                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+      26: areturn
+
+  public int bridge$getItemInUseDuration();
+    Code:
+       0: aload_0
+       1: invokevirtual #148                // Method getUseItemRemainingTicks:()I
+       4: ireturn
+
+  public boolean bridge$canEat(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokevirtual #135                // Method canEat:(Z)Z
+       5: ireturn
+
+  public boolean bridge$isFlying();
+    Code:
+       0: aload_0
+       1: getfield      #88                 // Field abilities:Lnet/minecraft/world/entity/player/Abilities;
+       4: getfield      #122                // Field net/minecraft/world/entity/player/Abilities.flying:Z
+       7: ireturn
+
+  public boolean bridge$isJumping();
+    Code:
+       0: aload_0
+       1: getfield      #92                 // Field jumping:Z
+       4: ireturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOIOIRCCICRCCIHCCRHRCIHROHCCI bridge$getPickResult();
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public com.mojang.authlib.GameProfile bridge$getGameProfile();
+    Code:
+       0: aload_0
+       1: getfield      #90                 // Field gameProfile:Lcom/mojang/authlib/GameProfile;
+       4: areturn
+
+  public java.lang.String bridge$getName();
+    Code:
+       0: aload_0
+       1: getfield      #90                 // Field gameProfile:Lcom/mojang/authlib/GameProfile;
+       4: invokestatic  #159                // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/OHOORCOHRORRIHROOCROOIIHHOOHRI.COCCCORHOHRORRICOOHOCHOOCHHICR:(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+       7: areturn
+
+  public void bridge$addChatMessage(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CCHRHCCCHRIHCICICIRCORHRORIOCI.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    Code:
+       0: invokestatic  #174                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       3: invokevirtual #165                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIRRCHIHRRIHHICCCOCIHCCROIOHH:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI;
+       6: invokevirtual #169                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/RROCOHOCHIHOIOIOROCORHRHRCIRHI.RIIOOCHIIROCHCIRCIICHCICRCHORH:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+       9: astore_2
+      10: aload_2
+      11: invokevirtual #172                // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.isEnabled:()Z
+      14: ifeq          34
+      17: aload_2
+      18: invokevirtual #171                // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.COHCOORHIROOCRRIIHOHIHCHCICIHR:()Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COCCCORHOHRORRICOOHOCHOOCHHICR;
+      21: invokevirtual #170                // Method com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/COCCCORHOHRORRICOOHOCHOOCHHICR.get:()Ljava/lang/Object;
+      24: checkcast     #41                 // class java/lang/Boolean
+      27: invokevirtual #176                // Method java/lang/Boolean.booleanValue:()Z
+      30: ifeq          34
+      33: return
+      34: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      37: bipush        11
+      39: if_icmpgt     57
+      42: aload_0
+      43: aload_1
+      44: checkcast     #67                 // class net/minecraft/network/chat/Component
+      47: aload_0
+      48: invokevirtual #147                // Method getUUID:()Ljava/util/UUID;
+      51: invokevirtual #153                // Method sendMessage$v1_16_1:(Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+      54: goto          149
+      57: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      60: bipush        25
+      62: if_icmpgt     76
+      65: aload_0
+      66: aload_1
+      67: checkcast     #67                 // class net/minecraft/network/chat/Component
+      70: invokevirtual #154                // Method sendSystemMessage$v1_19_pre:(Lnet/minecraft/network/chat/Component;)V
+      73: goto          149
+      76: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      79: bipush        35
+      81: if_icmpgt     103
+      84: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+      87: getfield      #106                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+      90: invokevirtual #189                // Method net/minecraft/client/gui/Gui.getChat$v1_16_1:()Lnet/minecraft/client/gui/components/ChatComponent;
+      93: aload_1
+      94: checkcast     #67                 // class net/minecraft/network/chat/Component
+      97: invokevirtual #193                // Method net/minecraft/client/gui/components/ChatComponent.addMessage$v1_16_1:(Lnet/minecraft/network/chat/Component;)V
+     100: goto          149
+     103: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+     106: bipush        38
+     108: if_icmpgt     130
+     111: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+     114: getfield      #106                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+     117: invokevirtual #189                // Method net/minecraft/client/gui/Gui.getChat$v1_16_1:()Lnet/minecraft/client/gui/components/ChatComponent;
+     120: aload_1
+     121: checkcast     #67                 // class net/minecraft/network/chat/Component
+     124: invokevirtual #192                // Method net/minecraft/client/gui/components/ChatComponent.addClientSystemMessage$v26_1:(Lnet/minecraft/network/chat/Component;)V
+     127: goto          149
+     130: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+     133: getfield      #106                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+     136: getfield      #107                // Field net/minecraft/client/gui/Gui.hud$v26_2:Lnet/minecraft/client/gui/Hud;
+     139: invokevirtual #191                // Method net/minecraft/client/gui/Hud.getChat:()Lnet/minecraft/client/gui/components/ChatComponent;
+     142: aload_1
+     143: checkcast     #67                 // class net/minecraft/network/chat/Component
+     146: invokevirtual #192                // Method net/minecraft/client/gui/components/ChatComponent.addClientSystemMessage$v26_1:(Lnet/minecraft/network/chat/Component;)V
+     149: return
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.ORCOOOCHIICOIICCROCRCOOROORIHR.COCCCORHOHRORRICOOHOCHOOCHHICR.RROHOCRCCHCIORHICIHCOHRIRCIHCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI bridge$getArmor(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.IROCROOIOIORORHHCCOOCCHRRRIOIC);
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        29
+       5: if_icmplt     119
+       8: getstatic     #99                 // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/OHRORRHCHCRICORRRCIRIOCCIRCRII/HIOHRIRIOIHOICCCCOHCOOIICIICOH/RORCICOHRIOIIIOIOHIIIICRCIHRII/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR$1.HOCOICRHRCHOOCCIROOORCRCCRCICR:[I
+      11: aload_1
+      12: invokevirtual #162                // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IROCROOIOIORORHHCCOOCCHRRRIOIC.ordinal:()I
+      15: iaload
+      16: tableswitch   { // 1 to 6
+
+                     1: 64
+
+                     2: 70
+
+                     3: 76
+
+                     4: 82
+
+                     5: 88
+
+                     6: 94
+               default: 56
+          }
+      56: new           #42                 // class java/lang/IncompatibleClassChangeError
+      59: dup
+      60: invokespecial #177                // Method java/lang/IncompatibleClassChangeError."<init>":()V
+      63: athrow
+      64: getstatic     #114                // Field net/minecraft/world/entity/EquipmentSlot.MAINHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+      67: goto          97
+      70: getstatic     #115                // Field net/minecraft/world/entity/EquipmentSlot.OFFHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+      73: goto          97
+      76: getstatic     #111                // Field net/minecraft/world/entity/EquipmentSlot.FEET:Lnet/minecraft/world/entity/EquipmentSlot;
+      79: goto          97
+      82: getstatic     #113                // Field net/minecraft/world/entity/EquipmentSlot.LEGS:Lnet/minecraft/world/entity/EquipmentSlot;
+      85: goto          97
+      88: getstatic     #110                // Field net/minecraft/world/entity/EquipmentSlot.CHEST:Lnet/minecraft/world/entity/EquipmentSlot;
+      91: goto          97
+      94: getstatic     #112                // Field net/minecraft/world/entity/EquipmentSlot.HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+      97: astore_3
+      98: aload_0
+      99: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+     102: getfield      #123                // Field net/minecraft/world/entity/player/Inventory.equipment$v1_21_5:Lnet/minecraft/world/entity/EntityEquipment;
+     105: getfield      #109                // Field net/minecraft/world/entity/EntityEquipment.items:Ljava/util/EnumMap;
+     108: aload_3
+     109: invokevirtual #181                // Method java/util/EnumMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     112: checkcast     #80                 // class net/minecraft/world/item/ItemStack
+     115: astore_2
+     116: goto          205
+     119: getstatic     #99                 // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/OHRORRHCHCRICORRRCIRIOCCIRCRII/HIOHRIRIOIHOICCCCOHCOOIICIICOH/RORCICOHRIOIIIOIOHIIIICRCIHRII/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR$1.HOCOICRHRCHOOCCIROOORCRCCRCICR:[I
+     122: aload_1
+     123: invokevirtual #162                // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IROCROOIOIORORHHCCOOCCHRRRIOIC.ordinal:()I
+     126: iaload
+     127: tableswitch   { // 1 to 6
+
+                     1: 172
+
+                     2: 172
+
+                     3: 182
+
+                     4: 186
+
+                     5: 190
+
+                     6: 194
+               default: 164
+          }
+     164: new           #42                 // class java/lang/IncompatibleClassChangeError
+     167: dup
+     168: invokespecial #177                // Method java/lang/IncompatibleClassChangeError."<init>":()V
+     171: athrow
+     172: new           #45                 // class java/lang/UnsupportedOperationException
+     175: dup
+     176: ldc           #10                 // String Mainhand/Offhand is invalid slot for method getArmor!
+     178: invokespecial #180                // Method java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+     181: athrow
+     182: iconst_0
+     183: goto          195
+     186: iconst_1
+     187: goto          195
+     190: iconst_2
+     191: goto          195
+     194: iconst_3
+     195: istore_3
+     196: aload_0
+     197: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+     200: iload_3
+     201: invokevirtual #206                // Method net/minecraft/world/entity/player/Inventory.getArmor$v1_16_1:(I)Lnet/minecraft/world/item/ItemStack;
+     204: astore_2
+     205: aload_2
+     206: ifnull        229
+     209: aload_2
+     210: getstatic     #126                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+     213: invokevirtual #179                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     216: ifne          229
+     219: aload_2
+     220: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+     223: getstatic     #127                // Field net/minecraft/world/item/Items.AIR:Lnet/minecraft/world/item/Item;
+     226: if_acmpne     231
+     229: aconst_null
+     230: areturn
+     231: aload_2
+     232: checkcast     #22                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+     235: areturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.HORCRCHHIRHRRHROOIOCRCICCICOCH bridge$getServerSkinTexture();
+    Code:
+       0: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       3: invokevirtual #186                // Method net/minecraft/client/Minecraft.getConnection:()Lnet/minecraft/client/multiplayer/ClientPacketListener;
+       6: astore_1
+       7: aload_1
+       8: ifnonnull     13
+      11: aconst_null
+      12: areturn
+      13: aload_1
+      14: aload_0
+      15: getfield      #97                 // Field uuid:Ljava/util/UUID;
+      18: invokevirtual #198                // Method net/minecraft/client/multiplayer/ClientPacketListener.getPlayerInfo:(Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;
+      21: astore_2
+      22: aload_2
+      23: ifnonnull     28
+      26: aconst_null
+      27: areturn
+      28: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      31: bipush        18
+      33: if_icmple     71
+      36: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      39: bipush        33
+      41: if_icmplt     60
+      44: aload_2
+      45: invokevirtual #201                // Method net/minecraft/client/multiplayer/PlayerInfo.getSkin$v1_20_2:()Lnet/minecraft/world/entity/player/PlayerSkin;
+      48: invokevirtual #207                // Method net/minecraft/world/entity/player/PlayerSkin.body$v1_21_9:()Lnet/minecraft/core/ClientAsset_v1_21_9$Texture;
+      51: invokeinterface #226,  1          // InterfaceMethod net/minecraft/core/ClientAsset_v1_21_9$Texture.texturePath:()Lnet/minecraft/resources/Identifier;
+      56: checkcast     #28                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HORCRCHHIRHRRHROOIOCRCICCICOCH
+      59: areturn
+      60: aload_2
+      61: invokevirtual #201                // Method net/minecraft/client/multiplayer/PlayerInfo.getSkin$v1_20_2:()Lnet/minecraft/world/entity/player/PlayerSkin;
+      64: getfield      #125                // Field net/minecraft/world/entity/player/PlayerSkin.texture$v1_20_2:Lnet/minecraft/resources/Identifier;
+      67: checkcast     #28                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HORCRCHHIRHRRHROOIOCRCICCICOCH
+      70: areturn
+      71: aload_2
+      72: invokevirtual #202                // Method net/minecraft/client/multiplayer/PlayerInfo.getSkinLocation$v1_16_1:()Lnet/minecraft/resources/Identifier;
+      75: checkcast     #28                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HORCRCHHIRHRRHROOIOCRCICCICOCH
+      78: areturn
+
+  public void bridge$setLunarLogoNameTagWorkaround(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #94                 // Field lunar$nametagWorkaround:Z
+       5: return
+
+  public void bridge$setLunarBadgeNameTagWorkaround(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #93                 // Field lunar$badgeWorkaround:Z
+       5: return
+
+  private void lunar$getDisplayName(org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<net.minecraft.network.chat.Component>);
+    Code:
+       0: aload_0
+       1: getfield      #94                 // Field lunar$nametagWorkaround:Z
+       4: ifeq          28
+       7: aload_1
+       8: invokevirtual #216                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.getReturnValue:()Ljava/lang/Object;
+      11: checkcast     #67                 // class net/minecraft/network/chat/Component
+      14: invokeinterface #228,  1          // InterfaceMethod net/minecraft/network/chat/Component.getSiblings:()Ljava/util/List;
+      19: getstatic     #100                // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.IOHIRCIOCRIIHCHOICCCCRIIOOICOI:Lnet/minecraft/network/chat/Component;
+      22: invokeinterface #225,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      27: pop
+      28: aload_0
+      29: getfield      #93                 // Field lunar$badgeWorkaround:Z
+      32: ifeq          56
+      35: aload_1
+      36: invokevirtual #216                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.getReturnValue:()Ljava/lang/Object;
+      39: checkcast     #67                 // class net/minecraft/network/chat/Component
+      42: invokeinterface #228,  1          // InterfaceMethod net/minecraft/network/chat/Component.getSiblings:()Ljava/util/List;
+      47: getstatic     #100                // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.IOHIRCIOCRIIHCHOICCCCRIIOOICOI:Lnet/minecraft/network/chat/Component;
+      50: invokeinterface #225,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      55: pop
+      56: return
+
+  public double bridge$blockInteractionRange();
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     13
+       8: aload_0
+       9: invokevirtual #130                // Method blockInteractionRange$v1_20_5:()D
+      12: dreturn
+      13: invokestatic  #175                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      16: checkcast     #51                 // class net/minecraft/client/Minecraft
+      19: getfield      #105                // Field net/minecraft/client/Minecraft.gameMode:Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;
+      22: astore_1
+      23: aload_1
+      24: invokevirtual #200                // Method net/minecraft/client/multiplayer/MultiPlayerGameMode.hasFarPickRange$v1_16_1:()Z
+      27: ifeq          34
+      30: ldc2_w        #86                 // double 6.0d
+      33: dreturn
+      34: aload_1
+      35: invokevirtual #199                // Method net/minecraft/client/multiplayer/MultiPlayerGameMode.getPickRange$v1_16_1:()F
+      38: f2d
+      39: dreturn
+
+  public double bridge$entityInteractionRange();
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     13
+       8: aload_0
+       9: invokevirtual #136                // Method entityInteractionRange$v1_20_5:()D
+      12: dreturn
+      13: invokestatic  #175                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      16: checkcast     #51                 // class net/minecraft/client/Minecraft
+      19: getfield      #105                // Field net/minecraft/client/Minecraft.gameMode:Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;
+      22: astore_1
+      23: aload_1
+      24: invokevirtual #200                // Method net/minecraft/client/multiplayer/MultiPlayerGameMode.hasFarPickRange$v1_16_1:()Z
+      27: ifeq          34
+      30: ldc2_w        #86                 // double 6.0d
+      33: dreturn
+      34: ldc2_w        #84                 // double 3.0d
+      37: dreturn
+
+  public double bridge$entityAttackRange();
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        35
+       5: if_icmplt     45
+       8: aload_0
+       9: invokevirtual #137                // Method getActiveItem$v1_21_11:()Lnet/minecraft/world/item/ItemStack;
+      12: astore_1
+      13: aload_1
+      14: checkcast     #65                 // class net/minecraft/core/component/DataComponentHolder
+      17: getstatic     #108                // Field net/minecraft/core/component/DataComponents.ATTACK_RANGE$v1_21_11:Lnet/minecraft/core/component/DataComponentType;
+      20: invokeinterface #227,  2          // InterfaceMethod net/minecraft/core/component/DataComponentHolder.get:(Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;
+      25: checkcast     #82                 // class net/minecraft/world/item/component/AttackRange
+      28: astore_2
+      29: aload_2
+      30: ifnonnull     38
+      33: aload_0
+      34: invokestatic  #214                // Method net/minecraft/world/item/component/AttackRange.defaultFor:(Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/component/AttackRange;
+      37: astore_2
+      38: aload_2
+      39: aload_0
+      40: invokevirtual #215                // Method net/minecraft/world/item/component/AttackRange.effectiveMaxRange:(Lnet/minecraft/world/entity/Entity;)F
+      43: f2d
+      44: dreturn
+      45: aload_0
+      46: invokevirtual #131                // Method bridge$entityInteractionRange:()D
+      49: dreturn
+
+  public boolean bridge$isEmoting();
+    Code:
+       0: invokestatic  #174                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       3: invokevirtual #164                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIOOCOHCROIIHCCIRRCROCRROHHHR:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/COCCCORHOHRORRICOOHOCHOOCHHICR;
+       6: aload_0
+       7: invokevirtual #167                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/COCCCORHOHRORRICOOHOCHOOCHHICR.COICRRHIRCCCHHROIOIRRICRIOCOCO:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Z
+      10: ireturn
+
+  public <C> C bridge$getEmoteController();
+    Code:
+       0: aload_0
+       1: invokestatic  #185                // Method mchorse/emoticons/capabilities/cosmetic/EmoteController.get:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lmchorse/emoticons/capabilities/cosmetic/ICosmetic;
+       4: areturn
+
+  public <C> java.util.List<C> bridge$getWornCosmetics();
+    Code:
+       0: invokestatic  #174                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       3: invokevirtual #166                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORRCHICOOROCIRIHIHRIHROCHHCRCO:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/OIHRRCOOHRHIHICHRICIRIOCROHOCC;
+       6: aload_0
+       7: invokevirtual #134                // Method bridge$getUniqueID:()Ljava/util/UUID;
+      10: invokevirtual #168                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/OIHRRCOOHRHIHICHRICIRIOCROHOCC.HOHCCCRICCOIICRRRRRHRCRHOCIORH:(Ljava/util/UUID;)Ljava/util/List;
+      13: areturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RORCICOHRIOIIIOIOHIIIICRCIHRII.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH bridge$getClothCloakState();
+    Code:
+       0: new           #18                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+       3: dup
+       4: ldc           #11                 // String bridge$getClothCloakState() should only be called from the render state!
+       6: invokespecial #161                // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":(Ljava/lang/String;)V
+       9: athrow
+
+  public boolean bridge$isSkinTextureUploaded();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public boolean bridge$isDummySelf();
+    Code:
+       0: aload_0
+       1: astore_2
+       2: aload_2
+       3: instanceof    #39                 // class com/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI
+       6: ifeq          30
+       9: aload_2
+      10: checkcast     #39                 // class com/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI
+      13: astore_1
+      14: aload_1
+      15: invokeinterface #224,  1          // InterfaceMethod com/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI.getDummyPlayerType:()Lcom/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+      20: getstatic     #104                // Field com/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI$COOCHIRORIICRCIIRIROHIIRIRICCH.SELF:Lcom/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+      23: if_acmpne     30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: ireturn
+
+  public boolean bridge$isDummyMannequin();
+    Code:
+       0: aload_0
+       1: astore_2
+       2: aload_2
+       3: instanceof    #39                 // class com/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI
+       6: ifeq          30
+       9: aload_2
+      10: checkcast     #39                 // class com/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI
+      13: astore_1
+      14: aload_1
+      15: invokeinterface #224,  1          // InterfaceMethod com/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI.getDummyPlayerType:()Lcom/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+      20: getstatic     #103                // Field com/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI$COOCHIRORIICRCIIRIROHIIRIRICCH.MANNEQUIN:Lcom/moonsworth/lunar/client/util/RROCOHOCHIHOIOIOROCORHRHRCIRHI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+      23: if_acmpne     30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: ireturn
+
+  public boolean bridge$isSelf();
+    Code:
+       0: aload_0
+       1: invokevirtual #133                // Method bridge$getGameProfile:()Lcom/mojang/authlib/GameProfile;
+       4: invokestatic  #160                // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/OHOORCOHRORRIHROOCROOIIHHOOHRI.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR:(Lcom/mojang/authlib/GameProfile;)Ljava/util/UUID;
+       7: invokestatic  #175                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      10: invokeinterface #218,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getSession:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HRHCRHIROOIHIRCIHORHIHOIIIHIHC;
+      15: invokeinterface #223,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HRHCRHIROOIHIRCIHORHIHOIIIHIHC.bridge$getProfile:()Lcom/mojang/authlib/GameProfile;
+      20: invokestatic  #160                // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/OHOORCOHRORRIHROOCROOIIHHOOHRI.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR:(Lcom/mojang/authlib/GameProfile;)Ljava/util/UUID;
+      23: invokevirtual #184                // Method java/util/UUID.equals:(Ljava/lang/Object;)Z
+      26: ireturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.OIHRRCOOHRHIHICHRICIRIOCROHOCC.RROHOCRCCHCIORHICIHCOHRIRCIHCI.COOCHIRORIICRCIIRIROHIIRIRICCH bridge$getBakedHelmetModel();
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        28
+       5: if_icmplt     10
+       8: aconst_null
+       9: areturn
+      10: aload_0
+      11: getstatic     #101                // Field com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IROCROOIOIORORHHCCOOCCHRRRIOIC.HEAD:Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IROCROOIOIORORHHCCOOCCHRRRIOIC;
+      14: invokevirtual #132                // Method bridge$getArmor:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IROCROOIOIORORHHCCOOCCHRRRIOIC;)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      17: checkcast     #22                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+      20: astore_1
+      21: aload_1
+      22: ifnull        34
+      25: aload_1
+      26: invokeinterface #220,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI.bridge$isEmpty:()Z
+      31: ifeq          36
+      34: aconst_null
+      35: areturn
+      36: invokestatic  #163                // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHRCICCHRCCOOHICCHIRIRCHCCHOOH:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      39: invokeinterface #217,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getRenderItem:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+      44: astore_2
+      45: invokestatic  #173                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      48: astore_3
+      49: aload_3
+      50: ifnonnull     55
+      53: aconst_null
+      54: areturn
+      55: aload_2
+      56: aload_1
+      57: aload_3
+      58: aload_0
+      59: invokeinterface #219,  4          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/OHOORCOHRORRIHROOCROOIIHHOOHRI.bridge$getModel:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI;Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI;Ljava/lang/Object;)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      64: areturn
+
+  public boolean bridge$isMainHandSwapped();
+    Code:
+       0: getstatic     #102                // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        33
+       5: if_icmplt     27
+       8: aload_0
+       9: checkcast     #68                 // class net/minecraft/world/entity/Avatar
+      12: invokevirtual #204                // Method net/minecraft/world/entity/Avatar.getMainArm:()Lnet/minecraft/world/entity/HumanoidArm;
+      15: getstatic     #116                // Field net/minecraft/world/entity/HumanoidArm.LEFT:Lnet/minecraft/world/entity/HumanoidArm;
+      18: if_acmpne     25
+      21: iconst_1
+      22: goto          26
+      25: iconst_0
+      26: ireturn
+      27: aload_0
+      28: invokevirtual #142                // Method getMainArm$v1_16_1:()Lnet/minecraft/world/entity/HumanoidArm;
+      31: getstatic     #116                // Field net/minecraft/world/entity/HumanoidArm.LEFT:Lnet/minecraft/world/entity/HumanoidArm;
+      34: if_acmpne     41
+      37: iconst_1
+      38: goto          42
+      41: iconst_0
+      42: ireturn
+
+  public void bridge$setUseItem(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOIOIRCCICRCCIHCCRHRCIHROHCCI);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #80                 // class net/minecraft/world/item/ItemStack
+       5: putfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+       8: return
+
+  public void bridge$setUseItemRemaining(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #96                 // Field useItemRemaining:I
+       5: return
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.ORCOOOCHIICOIICCROCRCOOROORIHR.COCCCORHOHRORRICOOHOCHOOCHHICR.RROHOCRCCHCIORHICIHCOHRIRCIHCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI bridge$getOffHandItemRenderState();
+    Code:
+       0: aload_0
+       1: invokevirtual #145                // Method getOffhandItem:()Lnet/minecraft/world/item/ItemStack;
+       4: checkcast     #22                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+       7: areturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.ORCOOOCHIICOIICCROCRCOOROORIHR.COCCCORHOHRORRICOOHOCHOOCHHICR.RROHOCRCCHCIORHICIHCOHRIRCIHCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI bridge$getMainHandItemRenderState();
+    Code:
+       0: aload_0
+       1: invokevirtual #143                // Method getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+       4: checkcast     #22                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+       7: areturn
+
+  public void bridge$setClientLoaded(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokevirtual #155                // Method setClientLoaded$v1_21_4:(Z)V
+       5: return
+}

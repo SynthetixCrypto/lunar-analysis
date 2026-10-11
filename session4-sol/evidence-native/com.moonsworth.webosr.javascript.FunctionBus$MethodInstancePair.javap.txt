@@ -1,0 +1,147 @@
+public final class com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair extends java.lang.Record {
+  private final java.lang.Object instance;
+
+  private final java.lang.invoke.MethodHandle method;
+
+  private final boolean async;
+
+  private final boolean passInstance;
+
+  private final java.lang.reflect.Parameter[] params;
+
+  private final java.lang.Class<?> returnType;
+
+  private final boolean hasBrowser;
+
+  private final boolean hasPromiseJS;
+
+  private final java.lang.Class<?> promiseValueType;
+
+  private final boolean hasStringArray;
+
+  private final int requiredJsArgCount;
+
+  protected com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair(java.lang.Object, java.lang.invoke.MethodHandle, boolean, boolean, java.lang.reflect.Parameter[], java.lang.Class<?>, boolean, boolean, java.lang.Class<?>, boolean, int);
+    Code:
+       0: aload_0
+       1: invokespecial #19                 // Method java/lang/Record."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #12                 // Field instance:Ljava/lang/Object;
+       9: aload_0
+      10: aload_2
+      11: putfield      #13                 // Field method:Ljava/lang/invoke/MethodHandle;
+      14: aload_0
+      15: iload_3
+      16: putfield      #8                  // Field async:Z
+      19: aload_0
+      20: iload         4
+      22: putfield      #15                 // Field passInstance:Z
+      25: aload_0
+      26: aload         5
+      28: putfield      #14                 // Field params:[Ljava/lang/reflect/Parameter;
+      31: aload_0
+      32: aload         6
+      34: putfield      #18                 // Field returnType:Ljava/lang/Class;
+      37: aload_0
+      38: iload         7
+      40: putfield      #9                  // Field hasBrowser:Z
+      43: aload_0
+      44: iload         8
+      46: putfield      #10                 // Field hasPromiseJS:Z
+      49: aload_0
+      50: aload         9
+      52: putfield      #16                 // Field promiseValueType:Ljava/lang/Class;
+      55: aload_0
+      56: iload         10
+      58: putfield      #11                 // Field hasStringArray:Z
+      61: aload_0
+      62: iload         11
+      64: putfield      #17                 // Field requiredJsArgCount:I
+      67: return
+
+  public final java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokedynamic #23,  0             // InvokeDynamic #0:toString:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;)Ljava/lang/String;
+       6: areturn
+
+  public final int hashCode();
+    Code:
+       0: aload_0
+       1: invokedynamic #22,  0             // InvokeDynamic #0:hashCode:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;)I
+       6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #21,  0             // InvokeDynamic #0:equals:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)Z
+       7: ireturn
+
+  public java.lang.Object instance();
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field instance:Ljava/lang/Object;
+       4: areturn
+
+  public java.lang.invoke.MethodHandle method();
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field method:Ljava/lang/invoke/MethodHandle;
+       4: areturn
+
+  public boolean async();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field async:Z
+       4: ireturn
+
+  public boolean passInstance();
+    Code:
+       0: aload_0
+       1: getfield      #15                 // Field passInstance:Z
+       4: ireturn
+
+  public java.lang.reflect.Parameter[] params();
+    Code:
+       0: aload_0
+       1: getfield      #14                 // Field params:[Ljava/lang/reflect/Parameter;
+       4: areturn
+
+  public java.lang.Class<?> returnType();
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field returnType:Ljava/lang/Class;
+       4: areturn
+
+  public boolean hasBrowser();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field hasBrowser:Z
+       4: ireturn
+
+  public boolean hasPromiseJS();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field hasPromiseJS:Z
+       4: ireturn
+
+  public java.lang.Class<?> promiseValueType();
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field promiseValueType:Ljava/lang/Class;
+       4: areturn
+
+  public boolean hasStringArray();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field hasStringArray:Z
+       4: ireturn
+
+  public int requiredJsArgCount();
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field requiredJsArgCount:I
+       4: ireturn
+}

@@ -1,0 +1,155 @@
+Classfile /C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Downloads-New-folder-lunar-analysis/eeca5643-ee80-46b2-970c-8533c6845d76/scratchpad/lunar/L/_ec7e36/_d4ca6c.class
+  Last modified Dec 31, 1969; size 1786 bytes
+  SHA-256 checksum ba2f46dc0f37db31f734fa34374709ec75f2f1304cb4ae49ebfea40193311223
+public abstract class L._ec7e36._d4ca6c<T extends java.lang.Object> extends L._ec7e36._13ea87<T>
+  minor version: 0
+  major version: 61
+  flags: (0x0421) ACC_PUBLIC, ACC_SUPER, ACC_ABSTRACT
+  this_class: #2                          // L/_ec7e36/_d4ca6c
+  super_class: #1                         // L/_ec7e36/_13ea87
+  interfaces: 0, fields: 2, methods: 5, attributes: 2
+Constant pool:
+   #1 = Class              #37            // L/_ec7e36/_13ea87
+   #2 = Class              #38            // L/_ec7e36/_d4ca6c
+   #3 = Class              #39            // L/util/_07303d
+   #4 = Class              #40            // L/util/_07303d$_cfe983
+   #5 = Fieldref           #2.#9          // L/_ec7e36/_d4ca6c.defaultValue:Ljava/lang/Object;
+   #6 = Fieldref           #2.#10         // L/_ec7e36/_d4ca6c.value:Ljava/lang/Object;
+   #7 = Methodref          #1.#8          // L/_ec7e36/_13ea87."<init>":(Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;)V
+   #8 = NameAndType        #19:#14        // "<init>":(Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;)V
+   #9 = NameAndType        #41:#28        // defaultValue:Ljava/lang/Object;
+  #10 = NameAndType        #43:#28        // value:Ljava/lang/Object;
+  #11 = Utf8               ()Ljava/lang/Object;
+  #12 = Utf8               ()TT;
+  #13 = Utf8               (Ljava/lang/Object;)V
+  #14 = Utf8               (Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;)V
+  #15 = Utf8               (Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;Ljava/lang/Object;)V
+  #16 = Utf8               (Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec<TT;>;TT;)V
+  #17 = Utf8               (TT;)V
+  #18 = Utf8               <T:Ljava/lang/Object;>LL/_ec7e36/_13ea87<TT;>;
+  #19 = Utf8               <init>
+  #20 = Utf8               _1f5b06
+  #21 = Utf8               _cfe983
+  #22 = Utf8               Code
+  #23 = Utf8               _327414
+  #24 = Utf8               InnerClasses
+  #25 = Utf8               LL/util/_07303d$_cfe983;
+  #26 = Utf8               LL/util/_07303d;
+  #27 = Utf8               LineNumberTable
+  #28 = Utf8               Ljava/lang/Object;
+  #29 = Utf8               Lorg/jspecify/annotations/Nullable;
+  #30 = Utf8               _81676d
+  #31 = Utf8               _660fba
+  #32 = Utf8               RuntimeInvisibleParameterAnnotations
+  #33 = Utf8               RuntimeVisibleTypeAnnotations
+  #34 = Utf8               SETTING
+  #35 = Utf8               Signature
+  #36 = Utf8               TT;
+  #37 = Utf8               L/_ec7e36/_13ea87
+  #38 = Utf8               L/_ec7e36/_d4ca6c
+  #39 = Utf8               L/util/_07303d
+  #40 = Utf8               L/util/_07303d$_cfe983
+  #41 = Utf8               defaultValue
+  #42 = Utf8               getDefaultValue
+  #43 = Utf8               value
+{
+  private T value;
+    descriptor: Ljava/lang/Object;
+    flags: (0x0002) ACC_PRIVATE
+    Signature: #36                          // TT;
+
+  private T defaultValue;
+    descriptor: Ljava/lang/Object;
+    flags: (0x0002) ACC_PRIVATE
+    Signature: #36                          // TT;
+
+  protected L._ec7e36._d4ca6c(java.lang.String, com.lunarclient.dfu.serialization.Codec<T>, T);
+    descriptor: (Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;Ljava/lang/Object;)V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=4, locals=4, args_size=4
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokespecial #7                  // Method L/_ec7e36/_13ea87."<init>":(Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;)V
+         6: aload_0
+         7: aload_0
+         8: aload_3
+         9: dup_x1
+        10: putfield      #5                  // Field defaultValue:Ljava/lang/Object;
+        13: putfield      #6                  // Field value:Ljava/lang/Object;
+        16: return
+      LineNumberTable:
+        line 22: 0
+        line 23: 6
+        line 24: 16
+    Signature: #16                          // (Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec<TT;>;TT;)V
+    RuntimeVisibleTypeAnnotations:
+      0: #29(): METHOD_FORMAL_PARAMETER, param_index=1
+        org.jspecify.annotations.Nullable
+      1: #29(): METHOD_FORMAL_PARAMETER, param_index=2
+        org.jspecify.annotations.Nullable
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+        0: #26(#31=e#25.#34)
+          L.util._07303d(
+            _660fba=LL/util/_07303d$_cfe983;.SETTING
+          )
+      parameter 1:
+      parameter 2:
+
+  public T getDefaultValue();
+    descriptor: ()Ljava/lang/Object;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #5                  // Field defaultValue:Ljava/lang/Object;
+         4: areturn
+      LineNumberTable:
+        line 28: 0
+    Signature: #12                          // ()TT;
+
+  public final void _81676d(T);
+    descriptor: (Ljava/lang/Object;)V
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #5                  // Field defaultValue:Ljava/lang/Object;
+         5: return
+      LineNumberTable:
+        line 33: 0
+        line 34: 5
+    Signature: #17                          // (TT;)V
+
+  public final T _1f5b06();
+    descriptor: ()Ljava/lang/Object;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #6                  // Field value:Ljava/lang/Object;
+         4: areturn
+      LineNumberTable:
+        line 38: 0
+    Signature: #12                          // ()TT;
+
+  protected final void _327414(T);
+    descriptor: (Ljava/lang/Object;)V
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #6                  // Field value:Ljava/lang/Object;
+         5: return
+      LineNumberTable:
+        line 43: 0
+        line 44: 5
+    Signature: #17                          // (TT;)V
+}
+Signature: #18                          // <T:Ljava/lang/Object;>LL/_ec7e36/_13ea87<TT;>;
+InnerClasses:
+  public static final #21= #4 of #3;      // _cfe983=class L/util/_07303d$_cfe983 of class L/util/_07303d

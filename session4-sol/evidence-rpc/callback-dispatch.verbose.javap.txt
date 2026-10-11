@@ -1,0 +1,207 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR.class
+  Last modified Dec 31, 1969; size 2349 bytes
+  SHA-256 checksum bcf3863bef3c20f3f2d2e6a3cb37bc406530bda0258210548524faa01fe99000
+public class com.moonsworth.lunar.client.util.RIIRIIRHIOCRIHHRRCIHRHCROOIORR
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #6                          // com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 5, attributes: 2
+Constant pool:
+   #1 = String             #60            // PacketUtil
+   #2 = Class              #67            // com/google/protobuf/RpcCallback
+   #3 = Class              #68            // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+   #4 = Class              #69            // com/moonsworth/lunar/client/IRROHOHHHHHHOOICRCRIOIOOROICOR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+   #5 = Class              #70            // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR
+   #6 = Class              #71            // com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR
+   #7 = Class              #72            // java/lang/Exception
+   #8 = Class              #73            // java/lang/Object
+   #9 = Class              #74            // java/lang/invoke/LambdaMetafactory
+  #10 = Class              #75            // java/lang/invoke/MethodHandles
+  #11 = Class              #76            // java/lang/invoke/MethodHandles$Lookup
+  #12 = Class              #77            // java/util/function/Consumer
+  #13 = Methodref          #4.#29         // com/moonsworth/lunar/client/IRROHOHHHHHHOOICRCRIOIOOROICOR/RORCICOHRIOIIIOIOHIIIICRCIHRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Throwable;Ljava/lang/String;)V
+  #14 = Methodref          #5.#31         // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #15 = Methodref          #6.#28         // com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)V
+  #16 = Methodref          #6.#30         // com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Consumer;Ljava/lang/Object;)V
+  #17 = Methodref          #8.#27         // java/lang/Object."<init>":()V
+  #18 = Methodref          #9.#34         // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #19 = InterfaceMethodref #2.#36         // com/google/protobuf/RpcCallback.run:(Ljava/lang/Object;)V
+  #20 = InterfaceMethodref #3.#33         // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$submit:(Ljava/lang/Runnable;)V
+  #21 = InterfaceMethodref #12.#32        // java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+  #22 = InvokeDynamic      #0:#37         // #0:run:(Ljava/util/function/Consumer;Ljava/lang/Object;)Ljava/lang/Runnable;
+  #23 = InvokeDynamic      #1:#35         // #1:run:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)Ljava/lang/Runnable;
+  #24 = MethodHandle       6:#15          // REF_invokeStatic com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)V
+  #25 = MethodHandle       6:#16          // REF_invokeStatic com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Consumer;Ljava/lang/Object;)V
+  #26 = MethodHandle       6:#18          // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #27 = NameAndType        #53:#40        // "<init>":()V
+  #28 = NameAndType        #55:#42        // COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)V
+  #29 = NameAndType        #55:#47        // COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Throwable;Ljava/lang/String;)V
+  #30 = NameAndType        #55:#50        // COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Consumer;Ljava/lang/Object;)V
+  #31 = NameAndType        #61:#39        // ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #32 = NameAndType        #65:#43        // accept:(Ljava/lang/Object;)V
+  #33 = NameAndType        #66:#46        // bridge$submit:(Ljava/lang/Runnable;)V
+  #34 = NameAndType        #78:#48        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #35 = NameAndType        #79:#41        // run:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)Ljava/lang/Runnable;
+  #36 = NameAndType        #79:#43        // run:(Ljava/lang/Object;)V
+  #37 = NameAndType        #79:#49        // run:(Ljava/util/function/Consumer;Ljava/lang/Object;)Ljava/lang/Runnable;
+  #38 = MethodType         #40            //  ()V
+  #39 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #40 = Utf8               ()V
+  #41 = Utf8               (Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)Ljava/lang/Runnable;
+  #42 = Utf8               (Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)V
+  #43 = Utf8               (Ljava/lang/Object;)V
+  #44 = Utf8               (Ljava/lang/Object;Lcom/google/protobuf/RpcCallback;)V
+  #45 = Utf8               (Ljava/lang/Object;Ljava/util/function/Consumer;)V
+  #46 = Utf8               (Ljava/lang/Runnable;)V
+  #47 = Utf8               (Ljava/lang/Throwable;Ljava/lang/String;)V
+  #48 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #49 = Utf8               (Ljava/util/function/Consumer;Ljava/lang/Object;)Ljava/lang/Runnable;
+  #50 = Utf8               (Ljava/util/function/Consumer;Ljava/lang/Object;)V
+  #51 = Utf8               <T:Ljava/lang/Object;>(TT;Lcom/google/protobuf/RpcCallback<TT;>;)V
+  #52 = Utf8               <T:Ljava/lang/Object;>(TT;Ljava/util/function/Consumer<TT;>;)V
+  #53 = Utf8               <init>
+  #54 = Utf8               BootstrapMethods
+  #55 = Utf8               COOCHIRORIICRCIIRIROHIIRIRICCH
+  #56 = Utf8               Code
+  #57 = Utf8               InnerClasses
+  #58 = Utf8               LineNumberTable
+  #59 = Utf8               Lookup
+  #60 = Utf8               PacketUtil
+  #61 = Utf8               ROCORRRCHHHRIOCRCIHHHIHICCOIOI
+  #62 = Utf8               RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #63 = Utf8               Signature
+  #64 = Utf8               StackMapTable
+  #65 = Utf8               accept
+  #66 = Utf8               bridge$submit
+  #67 = Utf8               com/google/protobuf/RpcCallback
+  #68 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+  #69 = Utf8               com/moonsworth/lunar/client/IRROHOHHHHHHOOICRCRIOIOOROICOR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #70 = Utf8               com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR
+  #71 = Utf8               com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR
+  #72 = Utf8               java/lang/Exception
+  #73 = Utf8               java/lang/Object
+  #74 = Utf8               java/lang/invoke/LambdaMetafactory
+  #75 = Utf8               java/lang/invoke/MethodHandles
+  #76 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #77 = Utf8               java/util/function/Consumer
+  #78 = Utf8               metafactory
+  #79 = Utf8               run
+{
+  public com.moonsworth.lunar.client.util.RIIRIIRHIOCRIHHRRCIHRHCROOIORR();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #17                 // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 11: 0
+
+  public static <T extends java.lang.Object> void RORCICOHRIOIIIOIOHIIIICRCIHRII(T, java.util.function.Consumer<T>);
+    descriptor: (Ljava/lang/Object;Ljava/util/function/Consumer;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: invokestatic  #14                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+         3: aload_1
+         4: aload_0
+         5: invokedynamic #22,  0             // InvokeDynamic #0:run:(Ljava/util/function/Consumer;Ljava/lang/Object;)Ljava/lang/Runnable;
+        10: invokeinterface #20,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$submit:(Ljava/lang/Runnable;)V
+        15: return
+      LineNumberTable:
+        line 15: 0
+        line 22: 15
+    Signature: #52                          // <T:Ljava/lang/Object;>(TT;Ljava/util/function/Consumer<TT;>;)V
+
+  public static <T extends java.lang.Object> void COOCHIRORIICRCIIRIROHIIRIRICCH(T, com.google.protobuf.RpcCallback<T>);
+    descriptor: (Ljava/lang/Object;Lcom/google/protobuf/RpcCallback;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: invokestatic  #14                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+         3: aload_1
+         4: aload_0
+         5: invokedynamic #23,  0             // InvokeDynamic #1:run:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)Ljava/lang/Runnable;
+        10: invokeinterface #20,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$submit:(Ljava/lang/Runnable;)V
+        15: return
+      LineNumberTable:
+        line 25: 0
+        line 32: 15
+    Signature: #51                          // <T:Ljava/lang/Object;>(TT;Lcom/google/protobuf/RpcCallback<TT;>;)V
+
+  private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.google.protobuf.RpcCallback, java.lang.Object);
+    descriptor: (Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #19,  2           // InterfaceMethod com/google/protobuf/RpcCallback.run:(Ljava/lang/Object;)V
+         7: goto          17
+        10: astore_2
+        11: aload_2
+        12: ldc           #1                  // String PacketUtil
+        14: invokestatic  #13                 // Method com/moonsworth/lunar/client/IRROHOHHHHHHOOICRCRIOIOOROICOR/RORCICOHRIOIIIOIOHIIIICRCIHRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Throwable;Ljava/lang/String;)V
+        17: return
+      Exception table:
+         from    to  target type
+             0     7    10   Class java/lang/Exception
+      LineNumberTable:
+        line 27: 0
+        line 30: 7
+        line 28: 10
+        line 29: 11
+        line 31: 17
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 10
+          locals = []
+          stack = [ class java/lang/Exception ]
+        frame_type = 6 /* same */
+
+  private static void COOCHIRORIICRCIIRIROHIIRIRICCH(java.util.function.Consumer, java.lang.Object);
+    descriptor: (Ljava/util/function/Consumer;Ljava/lang/Object;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #21,  2           // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+         7: goto          17
+        10: astore_2
+        11: aload_2
+        12: ldc           #1                  // String PacketUtil
+        14: invokestatic  #13                 // Method com/moonsworth/lunar/client/IRROHOHHHHHHOOICRCRIOIOOROICOR/RORCICOHRIOIIIOIOHIIIICRCIHRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Throwable;Ljava/lang/String;)V
+        17: return
+      Exception table:
+         from    to  target type
+             0     7    10   Class java/lang/Exception
+      LineNumberTable:
+        line 17: 0
+        line 20: 7
+        line 18: 10
+        line 19: 11
+        line 21: 17
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 10
+          locals = []
+          stack = [ class java/lang/Exception ]
+        frame_type = 6 /* same */
+}
+BootstrapMethods:
+  0: #26 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #38 ()V
+      #25 REF_invokeStatic com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Consumer;Ljava/lang/Object;)V
+      #38 ()V
+  1: #26 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #38 ()V
+      #24 REF_invokeStatic com/moonsworth/lunar/client/util/RIIRIIRHIOCRIHHRRCIHRHCROOIORR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/google/protobuf/RpcCallback;Ljava/lang/Object;)V
+      #38 ()V
+InnerClasses:
+  public static final #59= #11 of #10;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

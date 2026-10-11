@@ -1,0 +1,161 @@
+Classfile /C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Downloads-New-folder-lunar-analysis/eeca5643-ee80-46b2-970c-8533c6845d76/scratchpad/lunar/com/moonsworth/webosr/wrappers/NativeFuture.class
+  Last modified Dec 31, 1969; size 1074 bytes
+  SHA-256 checksum 06875a921036527921b9ca7689928fd2879aca7f2159669d3c92c6f0effb1f6b
+public final class com.moonsworth.webosr.wrappers.NativeFuture extends com.moonsworth.webosr.NativeHandle implements java.util.concurrent.Future<java.lang.String>
+  minor version: 0
+  major version: 60
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // com/moonsworth/webosr/wrappers/NativeFuture
+  super_class: #1                         // com/moonsworth/webosr/NativeHandle
+  interfaces: 1, fields: 0, methods: 11, attributes: 1
+Constant pool:
+   #1 = Class              #34            // com/moonsworth/webosr/NativeHandle
+   #2 = Class              #35            // com/moonsworth/webosr/wrappers/NativeFuture
+   #3 = Class              #42            // java/lang/UnsupportedOperationException
+   #4 = Class              #43            // java/util/concurrent/Future
+   #5 = Class              #44            // java/util/concurrent/TimeUnit
+   #6 = Methodref          #1.#13         // com/moonsworth/webosr/NativeHandle."<init>":(J)V
+   #7 = Methodref          #2.#14         // com/moonsworth/webosr/wrappers/NativeFuture.get:()Ljava/lang/String;
+   #8 = Methodref          #2.#15         // com/moonsworth/webosr/wrappers/NativeFuture.get:(JLjava/util/concurrent/TimeUnit;)Ljava/lang/String;
+   #9 = Methodref          #2.#16         // com/moonsworth/webosr/wrappers/NativeFuture.get0:(J)Ljava/lang/String;
+  #10 = Methodref          #3.#12         // java/lang/UnsupportedOperationException."<init>":()V
+  #11 = Methodref          #5.#17         // java/util/concurrent/TimeUnit.toNanos:(J)J
+  #12 = NameAndType        #28:#20        // "<init>":()V
+  #13 = NameAndType        #28:#24        // "<init>":(J)V
+  #14 = NameAndType        #37:#19        // get:()Ljava/lang/String;
+  #15 = NameAndType        #37:#26        // get:(JLjava/util/concurrent/TimeUnit;)Ljava/lang/String;
+  #16 = NameAndType        #38:#23        // get0:(J)Ljava/lang/String;
+  #17 = NameAndType        #45:#22        // toNanos:(J)J
+  #18 = Utf8               ()Ljava/lang/Object;
+  #19 = Utf8               ()Ljava/lang/String;
+  #20 = Utf8               ()V
+  #21 = Utf8               ()Z
+  #22 = Utf8               (J)J
+  #23 = Utf8               (J)Ljava/lang/String;
+  #24 = Utf8               (J)V
+  #25 = Utf8               (JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+  #26 = Utf8               (JLjava/util/concurrent/TimeUnit;)Ljava/lang/String;
+  #27 = Utf8               (Z)Z
+  #28 = Utf8               <init>
+  #29 = Utf8               Code
+  #30 = Utf8               Lcom/moonsworth/webosr/NativeHandle;Ljava/util/concurrent/Future<Ljava/lang/String;>;
+  #31 = Utf8               LineNumberTable
+  #32 = Utf8               Signature
+  #33 = Utf8               cancel
+  #34 = Utf8               com/moonsworth/webosr/NativeHandle
+  #35 = Utf8               com/moonsworth/webosr/wrappers/NativeFuture
+  #36 = Utf8               destroy
+  #37 = Utf8               get
+  #38 = Utf8               get0
+  #39 = Utf8               isCancelled
+  #40 = Utf8               isDone
+  #41 = Utf8               isUndefined
+  #42 = Utf8               java/lang/UnsupportedOperationException
+  #43 = Utf8               java/util/concurrent/Future
+  #44 = Utf8               java/util/concurrent/TimeUnit
+  #45 = Utf8               toNanos
+{
+  private com.moonsworth.webosr.wrappers.NativeFuture(long);
+    descriptor: (J)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: lload_1
+         2: invokespecial #6                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+         5: return
+      LineNumberTable:
+        line 16: 0
+        line 17: 5
+
+  public native boolean isUndefined();
+    descriptor: ()Z
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  public java.lang.String get(long, java.util.concurrent.TimeUnit);
+    descriptor: (JLjava/util/concurrent/TimeUnit;)Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=4, args_size=3
+         0: aload_0
+         1: aload_3
+         2: lload_1
+         3: invokevirtual #11                 // Method java/util/concurrent/TimeUnit.toNanos:(J)J
+         6: invokevirtual #9                  // Method get0:(J)Ljava/lang/String;
+         9: areturn
+      LineNumberTable:
+        line 31: 0
+
+  public java.lang.String get();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: lconst_0
+         2: invokevirtual #9                  // Method get0:(J)Ljava/lang/String;
+         5: areturn
+      LineNumberTable:
+        line 39: 0
+
+  public native boolean isDone();
+    descriptor: ()Z
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  public boolean isCancelled();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: new           #3                  // class java/lang/UnsupportedOperationException
+         3: dup
+         4: invokespecial #10                 // Method java/lang/UnsupportedOperationException."<init>":()V
+         7: athrow
+      LineNumberTable:
+        line 53: 0
+
+  public boolean cancel(boolean);
+    descriptor: (Z)Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: new           #3                  // class java/lang/UnsupportedOperationException
+         3: dup
+         4: invokespecial #10                 // Method java/lang/UnsupportedOperationException."<init>":()V
+         7: athrow
+      LineNumberTable:
+        line 61: 0
+
+  protected native void destroy();
+    descriptor: ()V
+    flags: (0x0104) ACC_PROTECTED, ACC_NATIVE
+
+  private native java.lang.String get0(long);
+    descriptor: (J)Ljava/lang/String;
+    flags: (0x0102) ACC_PRIVATE, ACC_NATIVE
+
+  public java.lang.Object get(long, java.util.concurrent.TimeUnit);
+    descriptor: (JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    flags: (0x1041) ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=4, locals=4, args_size=3
+         0: aload_0
+         1: lload_1
+         2: aload_3
+         3: invokevirtual #8                  // Method get:(JLjava/util/concurrent/TimeUnit;)Ljava/lang/String;
+         6: areturn
+      LineNumberTable:
+        line 13: 0
+
+  public java.lang.Object get();
+    descriptor: ()Ljava/lang/Object;
+    flags: (0x1041) ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #7                  // Method get:()Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 13: 0
+}
+Signature: #30                          // Lcom/moonsworth/webosr/NativeHandle;Ljava/util/concurrent/Future<Ljava/lang/String;>;

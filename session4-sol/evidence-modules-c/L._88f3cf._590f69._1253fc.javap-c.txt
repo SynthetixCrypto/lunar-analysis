@@ -1,0 +1,180 @@
+public interface com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RORCICOHRIOIIIOIOHIIIICRCIHRII.OHOORCOHRORRIHROOCROOIIHHOOHRI extends com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.OCCHHCHCOICROCHHIOCRRIIORHIOOH,com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.RORCICOHRIOIIIOIOHIIIICRCIHRII.COOCHIRORIICRCIIRIROHIIRIRICCH,com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.COOCHIRORIICRCIIRIROHIIRIRICCH {
+  public abstract com.moonsworth.lunar.client.OHOORCCRHHHHROIICHOCRHOCRICROH.RROHOCRCCHCIORHICIHCOHRIRCIHCI.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RORCICOHRIOIIIOIOHIIIICRCIHRII RROIHIHIIIHIHHCOROCCRIRCHCHROI();
+
+  public abstract com.google.gson.JsonElement RRRCHCIOORHORIHHIORCOOCRIIHCOR();
+
+  public abstract float getWidth();
+
+  public abstract float getHeight();
+
+  public abstract void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH, float, float, boolean);
+
+  public abstract boolean ORICIIRIIOICIOHHORCHCHHCICIIIR(boolean);
+
+  public default boolean RROHOCRCCHCIORHICIHCOHRIRCIHCI(boolean, com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RROHOCRCCHCIORHICIHCOHRIRCIHCI);
+    Code:
+       0: iload_1
+       1: ifne          32
+       4: aload_2
+       5: getstatic     #15                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH.HHOCOIRRORHIIOHHOCHCCIROHROORR:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+       8: invokeinterface #31,  2           // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+      13: checkcast     #10                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/ORCOOOCHIICOIICCROCRCOOROORIHR
+      16: astore_3
+      17: aload_3
+      18: ifnull        32
+      21: aload_3
+      22: invokeinterface #20,  1           // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/ORCOOOCHIICOIICCROCRCOOROORIHR.IRCHIHCRCIROOIIHOCHICROCHOORHO:()Z
+      27: ifne          32
+      30: iconst_0
+      31: ireturn
+      32: aload_0
+      33: iload_1
+      34: invokeinterface #25,  2           // InterfaceMethod ORICIIRIIOICIOHHORCHCHHCICIIIR:(Z)Z
+      39: ireturn
+
+  public abstract float getX();
+
+  public abstract float getY();
+
+  public default boolean CCICRHHICOCHIHHOIIRCCCOIHRCOIO();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public abstract void setScale(float);
+
+  public default float CHHIHORRCRCOORROHHORRICOHIICCR();
+    Code:
+       0: ldc           #1                  // float 0.25f
+       2: freturn
+
+  public default float CCIIOHRIRIRCHOOHRIROCCRIIIRHRH();
+    Code:
+       0: ldc           #2                  // float 5.0f
+       2: freturn
+
+  public abstract com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.HCOCRHCHRIHCHORRRRRHIOHHICHIII OHRIHIRIHICICOOCRRIICHHOHRORIC();
+
+  public default float HHOICOCHHOIIRCCRCROROHRIIHOCHI();
+    Code:
+       0: aload_0
+       1: invokeinterface #30,  1           // InterfaceMethod getWidth:()F
+       6: aload_0
+       7: invokeinterface #29,  1           // InterfaceMethod getScale:()F
+      12: fmul
+      13: freturn
+
+  public default float IRHHCCHIRRIOHHHCHOCIIRHHRIOHOR();
+    Code:
+       0: aload_0
+       1: invokeinterface #28,  1           // InterfaceMethod getHeight:()F
+       6: aload_0
+       7: invokeinterface #29,  1           // InterfaceMethod getScale:()F
+      12: fmul
+      13: freturn
+
+  public default float HCCIIRHRHOOIOHIRIICCROCIICHIOI();
+    Code:
+       0: aload_0
+       1: invokeinterface #23,  1           // InterfaceMethod HRHHCOHIHHRIHOHRHRIIOCHIRCIIIC:()Z
+       6: ifeq          15
+       9: invokestatic  #17                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.getScale:()F
+      12: goto          16
+      15: fconst_1
+      16: freturn
+
+  public abstract double OIORRHIOIRIIRRIROOROCIHIORHCCC();
+
+  public abstract double HRIHOIHCOHOCIOHCIICHIHCHRROOIH();
+
+  public abstract void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.OHOORCCRHHHHROIICHOCRHOCRICROH.OHRORRHCHCRICORRRCIRIOCCIRCRII$COOCHIRORIICRCIIRIROHIIRIRICCH);
+
+  public abstract void RIHHCHHHROOHOOIOIIRIOOCRHHOOOR(float, float);
+
+  public abstract void COCCCORHOHRORRICOOHOCHOOCHHICR(float, float);
+
+  public abstract void COICIROHOHHHRCORIOICICRHOCHIRO();
+
+  public default double HCOCRHCHRIHCHORRRRRHIOHHICHIII(double);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokeinterface #24,  1           // InterfaceMethod IOORIOCCIHRROIRHCIOCCHORRCRHOO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       7: dload_1
+       8: invokeinterface #21,  4           // InterfaceMethod COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;D)D
+      13: dreturn
+
+  public abstract double COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR, double);
+
+  public default double RRCHCHCCORIROIOCHIIIHCCIOCHCOH(double);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokeinterface #24,  1           // InterfaceMethod IOORIOCCIHRROIRHCIOCCHORRCRHOO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       7: dload_1
+       8: invokeinterface #27,  4           // InterfaceMethod RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;D)D
+      13: dreturn
+
+  public abstract double RROHOCRCCHCIORHICIHCOHRIRCIHCI(com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR, double);
+
+  public abstract com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR CCIORHIHROCROHIIICHIHOHICHCOHR();
+
+  public abstract com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR IOORIOCCIHRROIRHCIOCCHORRCRHOO();
+
+  public abstract void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR);
+
+  public default float[] IOCOCHIIRIRRHCHHCHRCRIIRCOCRIO();
+    Code:
+       0: invokestatic  #16                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HCIIIHIHHRCORCIIRCCOCHORIHHRRH:()Lcom/moonsworth/lunar/client/util/OCCIIHHICIOICORCROCHOCRCCICCOR;
+       3: astore_1
+       4: aload_0
+       5: aload_1
+       6: invokevirtual #19                 // Method com/moonsworth/lunar/client/util/OCCIIHHICIOICORCROCHOCRCCICCOR.getScaledWidth:()I
+       9: i2d
+      10: invokeinterface #22,  3           // InterfaceMethod HCOCRHCHRIHCHORRRRRHIOHHICHIII:(D)D
+      15: d2f
+      16: fstore_2
+      17: aload_0
+      18: aload_1
+      19: invokevirtual #18                 // Method com/moonsworth/lunar/client/util/OCCIIHHICIOICORCROCHOCRCCICCOR.getScaledHeight:()I
+      22: i2d
+      23: invokeinterface #26,  3           // InterfaceMethod RRCHCHCCORIROIOCHIIIHCCIOCHCOH:(D)D
+      28: d2f
+      29: fstore_3
+      30: iconst_2
+      31: newarray       float
+      33: dup
+      34: iconst_0
+      35: fload_2
+      36: fastore
+      37: dup
+      38: iconst_1
+      39: fload_3
+      40: fastore
+      41: areturn
+
+  public default boolean CHIICHCHCCIIHOHHRCHOIHRHHIHCOH();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public default boolean OOCHRCOHCCORIRCOIRROOICCCHOCRR();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public default boolean HRHRICRIHCRCHRIIICHCIHIOCCOOIR();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public default boolean HRCHICOCIOOOIHRRORHHCRIRRICHII();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public default boolean HRHHCOHIHHRIHOHRHRIIOCHIRCIIIC();
+    Code:
+       0: iconst_0
+       1: ireturn
+}

@@ -1,0 +1,368 @@
+{
+  "method": "Analyst projection of existing inert JVM classfile metadata; no native execution/disassembly. Exact signatures are confirmed declarations; names do not establish runtime invocation.",
+  "source": "minecraft-webosr-metadata.json",
+  "classes": [
+    {
+      "file": "lunar.jar",
+      "class": "com/moonsworth/webosr/TextureHandler",
+      "superName": "java/lang/Object",
+      "interfaces": [],
+      "fields": [],
+      "methods": [
+        {
+          "name": "createTexture",
+          "descriptor": "(III)I",
+          "native": false,
+          "attributes": []
+        },
+        {
+          "name": "resizeTexture",
+          "descriptor": "(IIII)V",
+          "native": false,
+          "attributes": []
+        },
+        {
+          "name": "uploadTexture",
+          "descriptor": "(ILjava/nio/ByteBuffer;IIIII)V",
+          "native": false,
+          "attributes": []
+        },
+        {
+          "name": "readTexture",
+          "descriptor": "(ILjava/nio/ByteBuffer;III)V",
+          "native": false,
+          "attributes": []
+        },
+        {
+          "name": "deleteTexture",
+          "descriptor": "(I)V",
+          "native": false,
+          "attributes": []
+        }
+      ]
+    },
+    {
+      "file": "lunar.jar",
+      "class": "com/moonsworth/webosr/config/EngineConfig",
+      "superName": "java/lang/Object",
+      "interfaces": [],
+      "fields": [
+        {
+          "name": "fileSystem",
+          "descriptor": "Lcom/moonsworth/webosr/handler/FileSystem;"
+        },
+        {
+          "name": "remoteDebugPort",
+          "descriptor": "Ljava/lang/Integer;"
+        },
+        {
+          "name": "clipboard",
+          "descriptor": "Lcom/moonsworth/webosr/handler/Clipboard;"
+        },
+        {
+          "name": "textureHandler",
+          "descriptor": "Lcom/moonsworth/webosr/TextureHandler;"
+        },
+        {
+          "name": "system",
+          "descriptor": "Lcom/moonsworth/webosr/config/SystemConfig;"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 5,
+              "codeOffset": 470,
+              "maxStack": 1,
+              "maxLocals": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "lunar.jar",
+      "class": "com/moonsworth/webosr/config/ThreadConfig",
+      "superName": "java/lang/Object",
+      "interfaces": [],
+      "fields": [
+        {
+          "name": "idleTimer",
+          "descriptor": "D"
+        },
+        {
+          "name": "renderTimer",
+          "descriptor": "D"
+        },
+        {
+          "name": "updateTimer",
+          "descriptor": "D"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "()V",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 20,
+              "codeOffset": 261,
+              "maxStack": 3,
+              "maxLocals": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "lunar.jar",
+      "class": "com/moonsworth/webosr/handler/FileSystem$Payload",
+      "superName": "java/lang/Record",
+      "interfaces": [],
+      "fields": [
+        {
+          "name": "buffer",
+          "descriptor": "Ljava/nio/ByteBuffer;"
+        },
+        {
+          "name": "length",
+          "descriptor": "I"
+        },
+        {
+          "name": "mimeType",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "statusCode",
+          "descriptor": "I"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(Ljava/nio/ByteBuffer;ILjava/lang/String;I)V",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 26,
+              "codeOffset": 1210,
+              "maxStack": 2,
+              "maxLocals": 5
+            }
+          ]
+        },
+        {
+          "name": "toString",
+          "descriptor": "()Ljava/lang/String;",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 7,
+              "codeOffset": 1274,
+              "maxStack": 1,
+              "maxLocals": 1
+            }
+          ]
+        },
+        {
+          "name": "hashCode",
+          "descriptor": "()I",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 7,
+              "codeOffset": 1319,
+              "maxStack": 1,
+              "maxLocals": 1
+            }
+          ]
+        },
+        {
+          "name": "equals",
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 8,
+              "codeOffset": 1364,
+              "maxStack": 2,
+              "maxLocals": 2
+            }
+          ]
+        },
+        {
+          "name": "buffer",
+          "descriptor": "()Ljava/nio/ByteBuffer;",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 5,
+              "codeOffset": 1410,
+              "maxStack": 1,
+              "maxLocals": 1
+            }
+          ]
+        },
+        {
+          "name": "length",
+          "descriptor": "()I",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 5,
+              "codeOffset": 1453,
+              "maxStack": 1,
+              "maxLocals": 1
+            }
+          ]
+        },
+        {
+          "name": "mimeType",
+          "descriptor": "()Ljava/lang/String;",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 5,
+              "codeOffset": 1496,
+              "maxStack": 1,
+              "maxLocals": 1
+            }
+          ]
+        },
+        {
+          "name": "statusCode",
+          "descriptor": "()I",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 5,
+              "codeOffset": 1539,
+              "maxStack": 1,
+              "maxLocals": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "lunar.jar",
+      "class": "com/moonsworth/webosr/handler/FileSystem",
+      "superName": "java/lang/Object",
+      "interfaces": [],
+      "fields": [],
+      "methods": [
+        {
+          "name": "onRequest",
+          "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/handler/FileSystem$Payload;",
+          "native": false,
+          "attributes": []
+        },
+        {
+          "name": "doesResourceExist",
+          "descriptor": "(Ljava/lang/String;)Z",
+          "native": false,
+          "attributes": []
+        }
+      ]
+    },
+    {
+      "file": "lunar.jar",
+      "class": "com/moonsworth/webosr/wrappers/WebEngine",
+      "superName": "com/moonsworth/webosr/NativeHandle",
+      "interfaces": [],
+      "fields": [
+        {
+          "name": "owner",
+          "descriptor": "Ljava/lang/Thread;"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "descriptor": "(J)V",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 13,
+              "codeOffset": 915,
+              "maxStack": 3,
+              "maxLocals": 3
+            }
+          ]
+        },
+        {
+          "name": "invokeIteration",
+          "descriptor": "()V",
+          "native": false,
+          "attributes": [
+            {
+              "name": "Code",
+              "bytes": 21,
+              "codeOffset": 974,
+              "maxStack": 2,
+              "maxLocals": 1
+            }
+          ]
+        },
+        {
+          "name": "createImageSourceTextured",
+          "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/image/TexturedImageSource;",
+          "native": true,
+          "attributes": []
+        },
+        {
+          "name": "createSession",
+          "descriptor": "(Ljava/lang/String;Z)Lcom/moonsworth/webosr/wrappers/Session;",
+          "native": true,
+          "attributes": []
+        },
+        {
+          "name": "createBrowser",
+          "descriptor": "(Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;",
+          "native": true,
+          "attributes": []
+        },
+        {
+          "name": "getPlatformInterface",
+          "descriptor": "()Lcom/moonsworth/webosr/wrappers/PlatformInterface;",
+          "native": true,
+          "attributes": []
+        },
+        {
+          "name": "setFPS",
+          "descriptor": "(I)V",
+          "native": true,
+          "attributes": []
+        },
+        {
+          "name": "destroy",
+          "descriptor": "()V",
+          "native": true,
+          "attributes": []
+        },
+        {
+          "name": "invokeIteration0",
+          "descriptor": "()V",
+          "native": true,
+          "attributes": []
+        }
+      ]
+    }
+  ]
+}

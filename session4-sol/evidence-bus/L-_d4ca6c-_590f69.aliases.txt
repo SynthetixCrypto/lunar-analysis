@@ -1,0 +1,1250 @@
+public class L._d4ca6c._590f69 {
+  private static final boolean _63fe11;
+
+  private static final boolean _529826;
+
+  private static final boolean _09429d;
+
+  private static final L._d4ca6c._590f69 _3a7319;
+
+  private final java.util.concurrent.locks.ReentrantLock _1c2403;
+
+  protected final java.util.List<L._d4ca6c._590f69$_cfe983<?>> _0edbe0;
+
+  protected final java.util.concurrent.atomic.AtomicInteger _29325c;
+
+  protected final java.util.HashMap<java.lang.Class<? extends L._d4ca6c._21aca6>, L._d4ca6c._bb4487<? extends L._d4ca6c._21aca6>[]> _6b96a0;
+
+  public static final int _552e93;
+
+  public <T extends L._d4ca6c._21aca6> void _cfe983(java.lang.Class<T>, java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokedynamic #173,  0            // InvokeDynamic #0:accept:(Ljava/lang/Runnable;)Ljava/util/function/Consumer;
+       8: invokevirtual #118                // Method _21aca6:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      11: return
+
+  public <T extends L._d4ca6c._21aca6> void _21aca6(java.lang.Class<T>, java.util.function.Consumer<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: bipush        100
+       5: invokevirtual #119                // Method _21aca6:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+       8: return
+
+  public <T extends L._d4ca6c._21aca6> void _cfe983(java.lang.Class<T>, java.lang.Runnable, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokedynamic #174,  0            // InvokeDynamic #1:accept:(Ljava/lang/Runnable;)Ljava/util/function/Consumer;
+       8: iload_3
+       9: invokevirtual #119                // Method _21aca6:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+      12: return
+
+  public <T extends L._d4ca6c._21aca6> void _21aca6(java.lang.Class<T>, java.util.function.Consumer<T>, int);
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+       4: invokevirtual #152                // Method java/util/concurrent/locks/ReentrantLock.isHeldByCurrentThread:()Z
+       7: ifeq          18
+      10: aload_0
+      11: aload_1
+      12: aload_2
+      13: iload_3
+      14: invokevirtual #116                // Method _590f69:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+      17: return
+      18: aload_0
+      19: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      22: invokevirtual #153                // Method java/util/concurrent/locks/ReentrantLock.lock:()V
+      25: aload_0
+      26: aload_1
+      27: aload_2
+      28: iload_3
+      29: invokevirtual #116                // Method _590f69:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+      32: aload_0
+      33: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      36: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      39: goto          54
+      42: astore        4
+      44: aload_0
+      45: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      48: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      51: aload         4
+      53: athrow
+      54: return
+    Exception table:
+       from    to  target type
+          25    32    42   any
+          42    44    42   any
+
+  private <T extends L._d4ca6c._21aca6> void _590f69(java.lang.Class<T>, java.util.function.Consumer<T>, int);
+    Code:
+       0: aload_0
+       1: getfield      #70                 // Field _29325c:Ljava/util/concurrent/atomic/AtomicInteger;
+       4: invokevirtual #149                // Method java/util/concurrent/atomic/AtomicInteger.get:()I
+       7: ifeq          26
+      10: aload_0
+      11: new           #27                 // class L/_d4ca6c/_590f69$_cfe983
+      14: dup
+      15: iconst_1
+      16: aload_1
+      17: aload_2
+      18: iload_3
+      19: invokespecial #123                // Method L/_d4ca6c/_590f69$_cfe983."<init>":(ZLjava/lang/Class;Ljava/util/function/Consumer;I)V
+      22: invokevirtual #100                // Method _cfe983:(LL/_d4ca6c/_590f69$_cfe983;)V
+      25: return
+      26: aload_0
+      27: getfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+      30: aload_1
+      31: invokevirtual #143                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      34: checkcast     #12                 // class "[Ljava/lang/Object;"
+      37: astore        4
+      39: aload         4
+      41: ifnull        50
+      44: aload         4
+      46: arraylength
+      47: ifne          55
+      50: aload_0
+      51: aload_1
+      52: invokevirtual #114                // Method _88f3cf:(Ljava/lang/Class;)V
+      55: aload_0
+      56: getfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+      59: aload_1
+      60: iload_3
+      61: aload_2
+      62: invokedynamic #175,  0            // InvokeDynamic #2:apply:(ILjava/util/function/Consumer;)Ljava/util/function/BiFunction;
+      67: invokevirtual #141                // Method java/util/HashMap.compute:(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+      70: pop
+      71: return
+
+  public <T extends L._d4ca6c._21aca6> void _590f69(java.lang.Class<T>, java.util.function.Consumer<T>);
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+       4: invokevirtual #152                // Method java/util/concurrent/locks/ReentrantLock.isHeldByCurrentThread:()Z
+       7: ifeq          17
+      10: aload_0
+      11: aload_1
+      12: aload_2
+      13: invokevirtual #111                // Method _1e73d7:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      16: return
+      17: aload_0
+      18: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      21: invokevirtual #153                // Method java/util/concurrent/locks/ReentrantLock.lock:()V
+      24: aload_0
+      25: aload_1
+      26: aload_2
+      27: invokevirtual #111                // Method _1e73d7:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      30: aload_0
+      31: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      34: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      37: goto          50
+      40: astore_3
+      41: aload_0
+      42: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      45: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      48: aload_3
+      49: athrow
+      50: return
+    Exception table:
+       from    to  target type
+          24    30    40   any
+
+  private <T extends L._d4ca6c._21aca6> void _1e73d7(java.lang.Class<T>, java.util.function.Consumer<T>);
+    Code:
+       0: aload_0
+       1: getfield      #70                 // Field _29325c:Ljava/util/concurrent/atomic/AtomicInteger;
+       4: invokevirtual #149                // Method java/util/concurrent/atomic/AtomicInteger.get:()I
+       7: ifeq          26
+      10: aload_0
+      11: new           #27                 // class L/_d4ca6c/_590f69$_cfe983
+      14: dup
+      15: iconst_0
+      16: aload_1
+      17: aload_2
+      18: iconst_0
+      19: invokespecial #123                // Method L/_d4ca6c/_590f69$_cfe983."<init>":(ZLjava/lang/Class;Ljava/util/function/Consumer;I)V
+      22: invokevirtual #100                // Method _cfe983:(LL/_d4ca6c/_590f69$_cfe983;)V
+      25: return
+      26: aload_0
+      27: getfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+      30: aload_1
+      31: aload_2
+      32: invokedynamic #176,  0            // InvokeDynamic #3:apply:(Ljava/util/function/Consumer;)Ljava/util/function/BiFunction;
+      37: invokevirtual #142                // Method java/util/HashMap.computeIfPresent:(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+      40: astore_3
+      41: aload_3
+      42: ifnonnull     50
+      45: aload_0
+      46: aload_1
+      47: invokevirtual #97                 // Method _429bf0:(Ljava/lang/Class;)V
+      50: return
+
+  protected <T extends L._d4ca6c._21aca6> void _cfe983(java.lang.Class<T>, T, java.util.function.Supplier<T>);
+    Code:
+       0: aload_2
+       1: ifnonnull     8
+       4: aload_3
+       5: ifnull        20
+       8: aload_0
+       9: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+      12: invokeinterface #166,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      17: ifeq          21
+      20: return
+      21: iconst_0
+      22: istore        4
+      24: iconst_0
+      25: istore        6
+      27: aload_0
+      28: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+      31: invokeinterface #168,  1          // InterfaceMethod java/util/List.size:()I
+      36: istore        5
+      38: iload         6
+      40: istore        7
+      42: iload         7
+      44: iload         5
+      46: if_icmpge     138
+      49: aload_0
+      50: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+      53: iload         7
+      55: invokeinterface #165,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      60: checkcast     #27                 // class L/_d4ca6c/_590f69$_cfe983
+      63: astore        8
+      65: aload         8
+      67: getfield      #75                 // Field L/_d4ca6c/_590f69$_cfe983._536dd9:Z
+      70: ifeq          132
+      73: aload         8
+      75: getfield      #74                 // Field L/_d4ca6c/_590f69$_cfe983._82779b:Ljava/lang/Class;
+      78: aload_1
+      79: if_acmpne     132
+      82: aload_2
+      83: ifnonnull     109
+      86: aload_3
+      87: invokeinterface #172,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      92: checkcast     #29                 // class L/_d4ca6c/_21aca6
+      95: astore_2
+      96: aload_2
+      97: ifnonnull     101
+     100: return
+     101: aload_0
+     102: aload_1
+     103: invokevirtual #112                // Method _13ea87:(Ljava/lang/Class;)V
+     106: iconst_1
+     107: istore        4
+     109: aload         8
+     111: getfield      #73                 // Field L/_d4ca6c/_590f69$_cfe983._f180f1:Ljava/util/function/Consumer;
+     114: aload_2
+     115: invokeinterface #170,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+     120: goto          132
+     123: astore        9
+     125: aload_0
+     126: aload         9
+     128: aload_1
+     129: invokevirtual #105                // Method _cfe983:(Ljava/lang/Throwable;Ljava/lang/Class;)V
+     132: iinc          7, 1
+     135: goto          42
+     138: aload_0
+     139: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+     142: invokeinterface #168,  1          // InterfaceMethod java/util/List.size:()I
+     147: istore        6
+     149: iload         5
+     151: iload         6
+     153: if_icmpne     27
+     156: iload         4
+     158: ifeq          165
+     161: aload_0
+     162: invokevirtual #110                // Method _57e17e:()V
+     165: return
+    Exception table:
+       from    to  target type
+          82   100   123   Class java/lang/Exception
+          82   100   123   Class java/lang/Error
+         101   120   123   Class java/lang/Exception
+         101   120   123   Class java/lang/Error
+
+  private void _88f3cf(java.lang.Class<? extends L._d4ca6c._21aca6>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #108                // Method _2f4182:(Ljava/lang/Class;)Ljava/util/Optional;
+       5: invokedynamic #177,  0            // InvokeDynamic #4:accept:()Ljava/util/function/Consumer;
+      10: invokevirtual #145                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      13: return
+
+  private void _429bf0(java.lang.Class<? extends L._d4ca6c._21aca6>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #108                // Method _2f4182:(Ljava/lang/Class;)Ljava/util/Optional;
+       5: invokedynamic #178,  0            // InvokeDynamic #5:accept:()Ljava/util/function/Consumer;
+      10: invokevirtual #145                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      13: return
+
+  private java.util.Optional<L._ba7d98._1e73d7> _2f4182(java.lang.Class<? extends L._d4ca6c._21aca6>);
+    Code:
+       0: aload_1
+       1: ldc           #15                 // class L/_ba7d98/_cfe983/_1e73d7
+       3: invokevirtual #124                // Method java/lang/Class.getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+       6: checkcast     #15                 // class L/_ba7d98/_cfe983/_1e73d7
+       9: astore_2
+      10: ldc           #17                 // class L/_ba7d98/_1e73d7/_cfe983
+      12: aload_1
+      13: invokevirtual #127                // Method java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z
+      16: ifne          44
+      19: aload_2
+      20: ifnull        40
+      23: new           #40                 // class java/lang/RuntimeException
+      26: dup
+      27: aload_1
+      28: invokevirtual #125                // Method java/lang/Class.getName:()Ljava/lang/String;
+      31: invokedynamic #179,  0            // InvokeDynamic #6:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      36: invokespecial #130                // Method java/lang/RuntimeException."<init>":(Ljava/lang/String;)V
+      39: athrow
+      40: invokestatic  #144                // Method java/util/Optional.empty:()Ljava/util/Optional;
+      43: areturn
+      44: aload_2
+      45: ifnonnull     65
+      48: new           #40                 // class java/lang/RuntimeException
+      51: dup
+      52: aload_1
+      53: invokevirtual #125                // Method java/lang/Class.getName:()Ljava/lang/String;
+      56: invokedynamic #180,  0            // InvokeDynamic #7:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      61: invokespecial #130                // Method java/lang/RuntimeException."<init>":(Ljava/lang/String;)V
+      64: athrow
+      65: aload_2
+      66: invokeinterface #156,  1          // InterfaceMethod L/_ba7d98/_cfe983/_1e73d7.value:()Ljava/lang/Class;
+      71: invokestatic  #86                 // Method L/_ba7d98/_1e73d7._1eb51c:(Ljava/lang/Class;)LL/_ba7d98/_1e73d7;
+      74: invokestatic  #146                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+      77: areturn
+
+  public <T extends L._d4ca6c._21aca6> T _cfe983(java.lang.Class<T>, java.util.function.Supplier<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #113                // Method _a140a8:(Ljava/lang/Class;)V
+       5: aload_0
+       6: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+       9: invokevirtual #152                // Method java/util/concurrent/locks/ReentrantLock.isHeldByCurrentThread:()Z
+      12: ifeq          22
+      15: aload_0
+      16: aload_1
+      17: aload_2
+      18: invokevirtual #120                // Method _21aca6:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      21: areturn
+      22: aload_0
+      23: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      26: invokevirtual #153                // Method java/util/concurrent/locks/ReentrantLock.lock:()V
+      29: aload_0
+      30: aload_1
+      31: aload_2
+      32: invokevirtual #120                // Method _21aca6:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      35: astore_3
+      36: aload_0
+      37: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      40: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      43: aload_3
+      44: areturn
+      45: astore        4
+      47: aload_0
+      48: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      51: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      54: aload         4
+      56: athrow
+    Exception table:
+       from    to  target type
+          29    36    45   any
+          45    47    45   any
+
+  private <T extends L._d4ca6c._21aca6> T _21aca6(java.lang.Class<T>, java.util.function.Supplier<T>);
+    Code:
+       0: aload_0
+       1: getfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+       4: aload_1
+       5: invokevirtual #143                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       8: checkcast     #11                 // class "[LL/_d4ca6c/_bb4487;"
+      11: astore_3
+      12: aconst_null
+      13: astore        4
+      15: aload_3
+      16: ifnull        116
+      19: aload_2
+      20: invokeinterface #172,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      25: checkcast     #29                 // class L/_d4ca6c/_21aca6
+      28: astore        4
+      30: aload         4
+      32: ifnull        114
+      35: aload_0
+      36: aload_1
+      37: invokevirtual #112                // Method _13ea87:(Ljava/lang/Class;)V
+      40: aload_3
+      41: astore        5
+      43: aload         5
+      45: arraylength
+      46: istore        6
+      48: iconst_0
+      49: istore        7
+      51: iload         7
+      53: iload         6
+      55: if_icmpge     99
+      58: aload         5
+      60: iload         7
+      62: aaload
+      63: astore        8
+      65: aload         8
+      67: invokevirtual #93                 // Method L/_d4ca6c/_bb4487._be2a7f:()Ljava/util/function/Consumer;
+      70: astore        9
+      72: aload         9
+      74: aload         4
+      76: invokeinterface #170,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      81: goto          93
+      84: astore        9
+      86: aload_0
+      87: aload_1
+      88: aload         9
+      90: invokevirtual #103                // Method _cfe983:(Ljava/lang/Class;Ljava/lang/Throwable;)V
+      93: iinc          7, 1
+      96: goto          51
+      99: goto          116
+     102: astore        5
+     104: aload_0
+     105: aload         5
+     107: aload_1
+     108: invokevirtual #105                // Method _cfe983:(Ljava/lang/Throwable;Ljava/lang/Class;)V
+     111: goto          116
+     114: aconst_null
+     115: areturn
+     116: aload_0
+     117: aload_1
+     118: aload         4
+     120: aload_2
+     121: invokevirtual #102                // Method _cfe983:(Ljava/lang/Class;LL/_d4ca6c/_21aca6;Ljava/util/function/Supplier;)V
+     124: aload_3
+     125: ifnull        132
+     128: aload_0
+     129: invokevirtual #110                // Method _57e17e:()V
+     132: aload         4
+     134: areturn
+    Exception table:
+       from    to  target type
+          65    81    84   Class java/lang/Throwable
+          40    99   102   Class java/lang/Exception
+          40    99   102   Class java/lang/Error
+
+  public <T extends L._d4ca6c._21aca6> void _bb4487(java.lang.Class<T>, java.util.function.Consumer<java.util.function.Consumer<T>>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #113                // Method _a140a8:(Ljava/lang/Class;)V
+       5: aload_0
+       6: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+       9: invokevirtual #152                // Method java/util/concurrent/locks/ReentrantLock.isHeldByCurrentThread:()Z
+      12: ifeq          24
+      15: aload_0
+      16: aload_1
+      17: aload_2
+      18: invokevirtual #109                // Method _1253fc:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      21: goto          57
+      24: aload_0
+      25: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      28: invokevirtual #153                // Method java/util/concurrent/locks/ReentrantLock.lock:()V
+      31: aload_0
+      32: aload_1
+      33: aload_2
+      34: invokevirtual #109                // Method _1253fc:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      37: aload_0
+      38: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      41: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      44: goto          57
+      47: astore_3
+      48: aload_0
+      49: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      52: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      55: aload_3
+      56: athrow
+      57: return
+    Exception table:
+       from    to  target type
+          31    37    47   any
+
+  private <T extends L._d4ca6c._21aca6> void _1253fc(java.lang.Class<T>, java.util.function.Consumer<java.util.function.Consumer<T>>);
+    Code:
+       0: aload_0
+       1: getfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+       4: aload_1
+       5: invokevirtual #143                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       8: checkcast     #11                 // class "[LL/_d4ca6c/_bb4487;"
+      11: astore_3
+      12: aload_3
+      13: ifnull        47
+      16: aload_0
+      17: aload_1
+      18: invokevirtual #112                // Method _13ea87:(Ljava/lang/Class;)V
+      21: aload_2
+      22: aload_0
+      23: aload_3
+      24: aload_1
+      25: invokedynamic #181,  0            // InvokeDynamic #8:accept:(LL/_d4ca6c/_590f69;[LL/_d4ca6c/_bb4487;Ljava/lang/Class;)Ljava/util/function/Consumer;
+      30: invokeinterface #170,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      35: goto          47
+      38: astore        4
+      40: aload_0
+      41: aload         4
+      43: aload_1
+      44: invokevirtual #105                // Method _cfe983:(Ljava/lang/Throwable;Ljava/lang/Class;)V
+      47: aload_0
+      48: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+      51: invokeinterface #166,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      56: ifne          72
+      59: aload_2
+      60: aload_0
+      61: aload_1
+      62: invokedynamic #182,  0            // InvokeDynamic #9:accept:(LL/_d4ca6c/_590f69;Ljava/lang/Class;)Ljava/util/function/Consumer;
+      67: invokeinterface #170,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      72: aload_3
+      73: ifnull        80
+      76: aload_0
+      77: invokevirtual #110                // Method _57e17e:()V
+      80: return
+    Exception table:
+       from    to  target type
+          21    35    38   Class java/lang/Exception
+          21    35    38   Class java/lang/Error
+
+  public <PRE extends L._d4ca6c._21aca6, POST extends L._d4ca6c._21aca6> void _cfe983(java.lang.Class<PRE>, java.lang.Class<POST>, java.util.function.Function<L._d4ca6c._590f69$_21aca6, it.unimi.dsi.fastutil.Pair<PRE, POST>>, java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #113                // Method _a140a8:(Ljava/lang/Class;)V
+       5: aload_0
+       6: aload_2
+       7: invokevirtual #113                // Method _a140a8:(Ljava/lang/Class;)V
+      10: aload_0
+      11: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      14: invokevirtual #152                // Method java/util/concurrent/locks/ReentrantLock.isHeldByCurrentThread:()Z
+      17: ifeq          32
+      20: aload_0
+      21: aload_1
+      22: aload_2
+      23: aload_3
+      24: aload         4
+      26: invokevirtual #117                // Method _21aca6:(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/function/Function;Ljava/lang/Runnable;)V
+      29: goto          70
+      32: aload_0
+      33: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      36: invokevirtual #153                // Method java/util/concurrent/locks/ReentrantLock.lock:()V
+      39: aload_0
+      40: aload_1
+      41: aload_2
+      42: aload_3
+      43: aload         4
+      45: invokevirtual #117                // Method _21aca6:(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/function/Function;Ljava/lang/Runnable;)V
+      48: aload_0
+      49: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      52: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      55: goto          70
+      58: astore        5
+      60: aload_0
+      61: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      64: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      67: aload         5
+      69: athrow
+      70: return
+    Exception table:
+       from    to  target type
+          39    48    58   any
+          58    60    58   any
+
+  private <PRE extends L._d4ca6c._21aca6, POST extends L._d4ca6c._21aca6> void _21aca6(java.lang.Class<PRE>, java.lang.Class<POST>, java.util.function.Function<L._d4ca6c._590f69$_21aca6, it.unimi.dsi.fastutil.Pair<PRE, POST>>, java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: getfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+       4: aload_1
+       5: invokevirtual #143                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       8: checkcast     #11                 // class "[LL/_d4ca6c/_bb4487;"
+      11: astore        5
+      13: aload_0
+      14: getfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+      17: aload_2
+      18: invokevirtual #143                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      21: checkcast     #11                 // class "[LL/_d4ca6c/_bb4487;"
+      24: astore        6
+      26: aload         5
+      28: ifnonnull     36
+      31: aload         6
+      33: ifnull        443
+      36: aload_3
+      37: aload_0
+      38: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+      41: invokeinterface #166,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      46: ifne          55
+      49: getstatic     #77                 // Field L/_d4ca6c/_590f69$_21aca6.BOTH:LL/_d4ca6c/_590f69$_21aca6;
+      52: goto          80
+      55: aload         5
+      57: ifnonnull     66
+      60: getstatic     #78                 // Field L/_d4ca6c/_590f69$_21aca6.POST:LL/_d4ca6c/_590f69$_21aca6;
+      63: goto          80
+      66: aload         6
+      68: ifnonnull     77
+      71: getstatic     #79                 // Field L/_d4ca6c/_590f69$_21aca6.PRE:LL/_d4ca6c/_590f69$_21aca6;
+      74: goto          80
+      77: getstatic     #77                 // Field L/_d4ca6c/_590f69$_21aca6.BOTH:LL/_d4ca6c/_590f69$_21aca6;
+      80: invokeinterface #171,  2          // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      85: checkcast     #32                 // class it/unimi/dsi/fastutil/Pair
+      88: astore        7
+      90: aload         5
+      92: ifnull        216
+      95: aload         7
+      97: invokeinterface #157,  1          // InterfaceMethod it/unimi/dsi/fastutil/Pair.first:()Ljava/lang/Object;
+     102: checkcast     #29                 // class L/_d4ca6c/_21aca6
+     105: astore        8
+     107: aload         8
+     109: ifnull        213
+     112: aload_0
+     113: aload_1
+     114: invokevirtual #112                // Method _13ea87:(Ljava/lang/Class;)V
+     117: aload         5
+     119: astore        9
+     121: aload         9
+     123: arraylength
+     124: istore        10
+     126: iconst_0
+     127: istore        11
+     129: iload         11
+     131: iload         10
+     133: if_icmpge     177
+     136: aload         9
+     138: iload         11
+     140: aaload
+     141: astore        12
+     143: aload         12
+     145: invokevirtual #93                 // Method L/_d4ca6c/_bb4487._be2a7f:()Ljava/util/function/Consumer;
+     148: astore        13
+     150: aload         13
+     152: aload         8
+     154: invokeinterface #170,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+     159: goto          171
+     162: astore        13
+     164: aload_0
+     165: aload_1
+     166: aload         13
+     168: invokevirtual #103                // Method _cfe983:(Ljava/lang/Class;Ljava/lang/Throwable;)V
+     171: iinc          11, 1
+     174: goto          129
+     177: aload_0
+     178: aload_1
+     179: aload         8
+     181: aconst_null
+     182: invokevirtual #102                // Method _cfe983:(Ljava/lang/Class;LL/_d4ca6c/_21aca6;Ljava/util/function/Supplier;)V
+     185: aload_0
+     186: invokevirtual #110                // Method _57e17e:()V
+     189: aload         8
+     191: instanceof    #25                 // class L/_d4ca6c/_1e73d7
+     194: ifeq          213
+     197: aload         8
+     199: checkcast     #25                 // class L/_d4ca6c/_1e73d7
+     202: astore        9
+     204: aload         9
+     206: invokevirtual #95                 // Method L/_d4ca6c/_1e73d7.isCancelled:()Z
+     209: ifeq          213
+     212: return
+     213: goto          232
+     216: aload_0
+     217: aload_1
+     218: aload         7
+     220: invokeinterface #157,  1          // InterfaceMethod it/unimi/dsi/fastutil/Pair.first:()Ljava/lang/Object;
+     225: checkcast     #29                 // class L/_d4ca6c/_21aca6
+     228: aconst_null
+     229: invokevirtual #102                // Method _cfe983:(Ljava/lang/Class;LL/_d4ca6c/_21aca6;Ljava/util/function/Supplier;)V
+     232: aload         4
+     234: invokeinterface #159,  1          // InterfaceMethod java/lang/Runnable.run:()V
+     239: aload         6
+     241: ifnull        333
+     244: aload         7
+     246: invokeinterface #158,  1          // InterfaceMethod it/unimi/dsi/fastutil/Pair.second:()Ljava/lang/Object;
+     251: checkcast     #29                 // class L/_d4ca6c/_21aca6
+     254: astore        8
+     256: aload         8
+     258: ifnull        330
+     261: aload_0
+     262: aload_2
+     263: invokevirtual #112                // Method _13ea87:(Ljava/lang/Class;)V
+     266: aload         6
+     268: astore        9
+     270: aload         9
+     272: arraylength
+     273: istore        10
+     275: iconst_0
+     276: istore        11
+     278: iload         11
+     280: iload         10
+     282: if_icmpge     326
+     285: aload         9
+     287: iload         11
+     289: aaload
+     290: astore        12
+     292: aload         12
+     294: invokevirtual #93                 // Method L/_d4ca6c/_bb4487._be2a7f:()Ljava/util/function/Consumer;
+     297: astore        13
+     299: aload         13
+     301: aload         8
+     303: invokeinterface #170,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+     308: goto          320
+     311: astore        13
+     313: aload_0
+     314: aload_2
+     315: aload         13
+     317: invokevirtual #103                // Method _cfe983:(Ljava/lang/Class;Ljava/lang/Throwable;)V
+     320: iinc          11, 1
+     323: goto          278
+     326: aload_0
+     327: invokevirtual #110                // Method _57e17e:()V
+     330: goto          349
+     333: aload_0
+     334: aload_2
+     335: aload         7
+     337: invokeinterface #158,  1          // InterfaceMethod it/unimi/dsi/fastutil/Pair.second:()Ljava/lang/Object;
+     342: checkcast     #29                 // class L/_d4ca6c/_21aca6
+     345: aconst_null
+     346: invokevirtual #102                // Method _cfe983:(Ljava/lang/Class;LL/_d4ca6c/_21aca6;Ljava/util/function/Supplier;)V
+     349: goto          518
+     352: astore        7
+     354: getstatic     #64                 // Field L/_1e73d7/_cfe983._c1461e:Z
+     357: ifne          383
+     360: aload_1
+     361: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+     364: aload_2
+     365: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+     368: invokedynamic #183,  0            // InvokeDynamic #10:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     373: iconst_0
+     374: anewarray     #38                 // class java/lang/Object
+     377: invokestatic  #87                 // Method L/_00e05b/_cfe983._1e73d7:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     380: aload         7
+     382: athrow
+     383: aload         7
+     385: instanceof    #33                 // class java/lang/AbstractMethodError
+     388: ifne          399
+     391: aload         7
+     393: instanceof    #37                 // class java/lang/IllegalAccessError
+     396: ifeq          402
+     399: aload         7
+     401: athrow
+     402: aload_1
+     403: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+     406: aload_2
+     407: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+     410: aload         7
+     412: invokevirtual #129                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+     415: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+     418: aload         7
+     420: invokevirtual #134                // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+     423: invokedynamic #184,  0            // InvokeDynamic #11:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     428: iconst_0
+     429: anewarray     #38                 // class java/lang/Object
+     432: invokestatic  #87                 // Method L/_00e05b/_cfe983._1e73d7:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     435: aload         7
+     437: invokevirtual #135                // Method java/lang/Throwable.printStackTrace:()V
+     440: goto          518
+     443: aload_0
+     444: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+     447: invokeinterface #166,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     452: ifne          511
+     455: aload_3
+     456: getstatic     #77                 // Field L/_d4ca6c/_590f69$_21aca6.BOTH:LL/_d4ca6c/_590f69$_21aca6;
+     459: invokeinterface #171,  2          // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+     464: checkcast     #32                 // class it/unimi/dsi/fastutil/Pair
+     467: astore        7
+     469: aload_0
+     470: aload_1
+     471: aload         7
+     473: invokeinterface #157,  1          // InterfaceMethod it/unimi/dsi/fastutil/Pair.first:()Ljava/lang/Object;
+     478: checkcast     #29                 // class L/_d4ca6c/_21aca6
+     481: aconst_null
+     482: invokevirtual #102                // Method _cfe983:(Ljava/lang/Class;LL/_d4ca6c/_21aca6;Ljava/util/function/Supplier;)V
+     485: aload         4
+     487: invokeinterface #159,  1          // InterfaceMethod java/lang/Runnable.run:()V
+     492: aload_0
+     493: aload_2
+     494: aload         7
+     496: invokeinterface #158,  1          // InterfaceMethod it/unimi/dsi/fastutil/Pair.second:()Ljava/lang/Object;
+     501: checkcast     #29                 // class L/_d4ca6c/_21aca6
+     504: aconst_null
+     505: invokevirtual #102                // Method _cfe983:(Ljava/lang/Class;LL/_d4ca6c/_21aca6;Ljava/util/function/Supplier;)V
+     508: goto          518
+     511: aload         4
+     513: invokeinterface #159,  1          // InterfaceMethod java/lang/Runnable.run:()V
+     518: return
+    Exception table:
+       from    to  target type
+         143   159   162   Class java/lang/Throwable
+         292   308   311   Class java/lang/Throwable
+          36   212   352   Class java/lang/Exception
+          36   212   352   Class java/lang/Error
+         213   349   352   Class java/lang/Exception
+         213   349   352   Class java/lang/Error
+
+  protected void _13ea87(java.lang.Class<? extends L._d4ca6c._21aca6>);
+    Code:
+       0: aload_0
+       1: getfield      #70                 // Field _29325c:Ljava/util/concurrent/atomic/AtomicInteger;
+       4: invokevirtual #150                // Method java/util/concurrent/atomic/AtomicInteger.incrementAndGet:()I
+       7: pop
+       8: return
+
+  protected void _57e17e();
+    Code:
+       0: aload_0
+       1: getfield      #70                 // Field _29325c:Ljava/util/concurrent/atomic/AtomicInteger;
+       4: invokevirtual #148                // Method java/util/concurrent/atomic/AtomicInteger.decrementAndGet:()I
+       7: ifne          14
+      10: aload_0
+      11: invokevirtual #122                // Method _455ac7:()V
+      14: return
+
+  protected void _455ac7();
+    Code:
+       0: aload_0
+       1: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+       4: invokeinterface #166,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+       9: ifeq          13
+      12: return
+      13: aload_0
+      14: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+      17: invokeinterface #167,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      22: astore_1
+      23: aload_1
+      24: invokeinterface #161,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      29: ifeq          83
+      32: aload_1
+      33: invokeinterface #162,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      38: checkcast     #27                 // class L/_d4ca6c/_590f69$_cfe983
+      41: astore_2
+      42: aload_2
+      43: getfield      #75                 // Field L/_d4ca6c/_590f69$_cfe983._536dd9:Z
+      46: ifeq          68
+      49: aload_0
+      50: aload_2
+      51: getfield      #74                 // Field L/_d4ca6c/_590f69$_cfe983._82779b:Ljava/lang/Class;
+      54: aload_2
+      55: getfield      #73                 // Field L/_d4ca6c/_590f69$_cfe983._f180f1:Ljava/util/function/Consumer;
+      58: aload_2
+      59: getfield      #76                 // Field L/_d4ca6c/_590f69$_cfe983._4fb7e6:I
+      62: invokevirtual #119                // Method _21aca6:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+      65: goto          80
+      68: aload_0
+      69: aload_2
+      70: getfield      #74                 // Field L/_d4ca6c/_590f69$_cfe983._82779b:Ljava/lang/Class;
+      73: aload_2
+      74: getfield      #73                 // Field L/_d4ca6c/_590f69$_cfe983._f180f1:Ljava/util/function/Consumer;
+      77: invokevirtual #115                // Method _590f69:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      80: goto          23
+      83: aload_0
+      84: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+      87: invokeinterface #164,  1          // InterfaceMethod java/util/List.clear:()V
+      92: return
+
+  protected void _cfe983(L._d4ca6c._590f69$_cfe983<?>);
+    Code:
+       0: aload_0
+       1: getfield      #66                 // Field _0edbe0:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #163,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      10: pop
+      11: return
+
+  private void _cfe983(java.lang.Class<? extends L._d4ca6c._21aca6>, java.lang.Throwable);
+    Code:
+       0: aload_1
+       1: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       4: aload_2
+       5: invokevirtual #134                // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+       8: invokedynamic #185,  0            // InvokeDynamic #12:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      13: iconst_0
+      14: anewarray     #38                 // class java/lang/Object
+      17: invokestatic  #87                 // Method L/_00e05b/_cfe983._1e73d7:(Ljava/lang/Object;[Ljava/lang/Object;)V
+      20: aload_2
+      21: ldc           #5                  // String EventBus
+      23: getstatic     #64                 // Field L/_1e73d7/_cfe983._c1461e:Z
+      26: ifne          33
+      29: iconst_1
+      30: goto          34
+      33: iconst_0
+      34: aconst_null
+      35: invokestatic  #90                 // Method L/_767dc1/_590f69._cfe983:(Ljava/lang/Throwable;Ljava/lang/String;ZLio/sentry/Hint;)V
+      38: return
+
+  private void _cfe983(java.lang.Throwable, java.lang.Class<? extends L._d4ca6c._21aca6>);
+    Code:
+       0: getstatic     #64                 // Field L/_1e73d7/_cfe983._c1461e:Z
+       3: ifne          24
+       6: aload_2
+       7: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      10: invokedynamic #186,  0            // InvokeDynamic #13:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      15: iconst_0
+      16: anewarray     #38                 // class java/lang/Object
+      19: invokestatic  #87                 // Method L/_00e05b/_cfe983._1e73d7:(Ljava/lang/Object;[Ljava/lang/Object;)V
+      22: aload_1
+      23: athrow
+      24: aload_1
+      25: instanceof    #33                 // class java/lang/AbstractMethodError
+      28: ifne          38
+      31: aload_1
+      32: instanceof    #37                 // class java/lang/IllegalAccessError
+      35: ifeq          40
+      38: aload_1
+      39: athrow
+      40: aload_2
+      41: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      44: aload_1
+      45: invokevirtual #129                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      48: invokestatic  #131                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      51: aload_1
+      52: invokevirtual #134                // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+      55: invokedynamic #187,  0            // InvokeDynamic #14:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      60: iconst_0
+      61: anewarray     #38                 // class java/lang/Object
+      64: invokestatic  #87                 // Method L/_00e05b/_cfe983._1e73d7:(Ljava/lang/Object;[Ljava/lang/Object;)V
+      67: aload_1
+      68: invokevirtual #135                // Method java/lang/Throwable.printStackTrace:()V
+      71: goto          77
+      74: astore_3
+      75: aload_3
+      76: athrow
+      77: return
+    Exception table:
+       from    to  target type
+           0    71    74   Class java/lang/Throwable
+
+  public void _1e73d7(java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+       4: invokevirtual #152                // Method java/util/concurrent/locks/ReentrantLock.isHeldByCurrentThread:()Z
+       7: ifeq          17
+      10: aload_1
+      11: invokeinterface #159,  1          // InterfaceMethod java/lang/Runnable.run:()V
+      16: return
+      17: aload_0
+      18: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      21: invokevirtual #153                // Method java/util/concurrent/locks/ReentrantLock.lock:()V
+      24: aload_1
+      25: invokeinterface #159,  1          // InterfaceMethod java/lang/Runnable.run:()V
+      30: aload_0
+      31: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      34: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      37: goto          50
+      40: astore_2
+      41: aload_0
+      42: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      45: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      48: aload_2
+      49: athrow
+      50: return
+    Exception table:
+       from    to  target type
+          24    30    40   any
+
+  public <T> T _590f69(java.util.function.Supplier<T>);
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+       4: invokevirtual #152                // Method java/util/concurrent/locks/ReentrantLock.isHeldByCurrentThread:()Z
+       7: ifeq          17
+      10: aload_1
+      11: invokeinterface #172,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      16: areturn
+      17: aload_0
+      18: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      21: invokevirtual #153                // Method java/util/concurrent/locks/ReentrantLock.lock:()V
+      24: aload_1
+      25: invokeinterface #172,  1          // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      30: astore_2
+      31: aload_0
+      32: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      35: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      38: aload_2
+      39: areturn
+      40: astore_3
+      41: aload_0
+      42: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      45: invokevirtual #154                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+      48: aload_3
+      49: athrow
+    Exception table:
+       from    to  target type
+          24    31    40   any
+
+  public boolean _0a8e8a();
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+       4: invokevirtual #152                // Method java/util/concurrent/locks/ReentrantLock.isHeldByCurrentThread:()Z
+       7: ireturn
+
+  private void _a140a8(java.lang.Class<? extends L._d4ca6c._21aca6>);
+    Code:
+       0: getstatic     #68                 // Field _529826:Z
+       3: ifne          7
+       6: return
+       7: ldc           #18                 // class L/_ba7d98/_1e73d7/_590f69
+       9: aload_1
+      10: invokevirtual #127                // Method java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z
+      13: ifeq          17
+      16: return
+      17: invokestatic  #83                 // Method ML/_590f69/_21aca6._e3e382:()LML/_590f69/_bb4487/_13ea87/_a1dd3a;
+      20: invokeinterface #155,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_a1dd3a._3d8570:()Z
+      25: ifne          47
+      28: aload_1
+      29: invokevirtual #126                // Method java/lang/Class.getSimpleName:()Ljava/lang/String;
+      32: invokedynamic #188,  0            // InvokeDynamic #15:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      37: iconst_0
+      38: anewarray     #38                 // class java/lang/Object
+      41: invokestatic  #88                 // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/Object;[Ljava/lang/Object;)V
+      44: invokestatic  #133                // Method java/lang/Thread.dumpStack:()V
+      47: return
+
+  public java.util.HashMap<java.lang.Class<? extends L._d4ca6c._21aca6>, L._d4ca6c._bb4487<? extends L._d4ca6c._21aca6>[]> _ef97c4();
+    Code:
+       0: aload_0
+       1: getfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+       4: areturn
+
+  public L._d4ca6c._590f69();
+    Code:
+       0: aload_0
+       1: invokespecial #128                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #57                 // class java/util/concurrent/locks/ReentrantLock
+       8: dup
+       9: invokespecial #151                // Method java/util/concurrent/locks/ReentrantLock."<init>":()V
+      12: putfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+      15: aload_0
+      16: new           #49                 // class java/util/ArrayList
+      19: dup
+      20: invokespecial #138                // Method java/util/ArrayList."<init>":()V
+      23: putfield      #66                 // Field _0edbe0:Ljava/util/List;
+      26: aload_0
+      27: new           #56                 // class java/util/concurrent/atomic/AtomicInteger
+      30: dup
+      31: invokespecial #147                // Method java/util/concurrent/atomic/AtomicInteger."<init>":()V
+      34: putfield      #70                 // Field _29325c:Ljava/util/concurrent/atomic/AtomicInteger;
+      37: aload_0
+      38: new           #52                 // class java/util/HashMap
+      41: dup
+      42: invokespecial #140                // Method java/util/HashMap."<init>":()V
+      45: putfield      #65                 // Field _6b96a0:Ljava/util/HashMap;
+      48: return
+
+  public static L._d4ca6c._590f69 _20bc5b();
+    Code:
+       0: getstatic     #67                 // Field _3a7319:LL/_d4ca6c/_590f69;
+       3: areturn
+
+  public java.util.concurrent.locks.ReentrantLock _9e2624();
+    Code:
+       0: aload_0
+       1: getfield      #72                 // Field _1c2403:Ljava/util/concurrent/locks/ReentrantLock;
+       4: areturn
+
+  private void _cfe983(java.lang.Class, L._d4ca6c._21aca6);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aconst_null
+       4: invokevirtual #102                // Method _cfe983:(Ljava/lang/Class;LL/_d4ca6c/_21aca6;Ljava/util/function/Supplier;)V
+       7: return
+
+  private void _cfe983(L._d4ca6c._bb4487[], java.lang.Class, L._d4ca6c._21aca6);
+    Code:
+       0: aload_3
+       1: ifnull        62
+       4: aload_1
+       5: astore        4
+       7: aload         4
+       9: arraylength
+      10: istore        5
+      12: iconst_0
+      13: istore        6
+      15: iload         6
+      17: iload         5
+      19: if_icmpge     62
+      22: aload         4
+      24: iload         6
+      26: aaload
+      27: astore        7
+      29: aload         7
+      31: invokevirtual #93                 // Method L/_d4ca6c/_bb4487._be2a7f:()Ljava/util/function/Consumer;
+      34: astore        8
+      36: aload         8
+      38: aload_3
+      39: invokeinterface #170,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      44: goto          56
+      47: astore        8
+      49: aload_0
+      50: aload_2
+      51: aload         8
+      53: invokevirtual #103                // Method _cfe983:(Ljava/lang/Class;Ljava/lang/Throwable;)V
+      56: iinc          6, 1
+      59: goto          15
+      62: return
+    Exception table:
+       from    to  target type
+          29    44    47   Class java/lang/Throwable
+
+  private static L._d4ca6c._bb4487[] _cfe983(java.util.function.Consumer, java.lang.Class, L._d4ca6c._bb4487[]);
+    Code:
+       0: new           #49                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #138                // Method java/util/ArrayList."<init>":()V
+       7: astore_3
+       8: aload_2
+       9: astore        4
+      11: aload         4
+      13: arraylength
+      14: istore        5
+      16: iconst_0
+      17: istore        6
+      19: iload         6
+      21: iload         5
+      23: if_icmpge     57
+      26: aload         4
+      28: iload         6
+      30: aaload
+      31: astore        7
+      33: aload         7
+      35: invokevirtual #93                 // Method L/_d4ca6c/_bb4487._be2a7f:()Ljava/util/function/Consumer;
+      38: aload_0
+      39: if_acmpeq     51
+      42: aload_3
+      43: aload         7
+      45: invokeinterface #163,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      50: pop
+      51: iinc          6, 1
+      54: goto          19
+      57: aload_3
+      58: invokeinterface #166,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      63: ifeq          68
+      66: aconst_null
+      67: areturn
+      68: aload_3
+      69: iconst_0
+      70: anewarray     #24                 // class L/_d4ca6c/_bb4487
+      73: invokeinterface #169,  2          // InterfaceMethod java/util/List.toArray:([Ljava/lang/Object;)[Ljava/lang/Object;
+      78: checkcast     #11                 // class "[LL/_d4ca6c/_bb4487;"
+      81: areturn
+
+  private static L._d4ca6c._bb4487[] _cfe983(int, java.util.function.Consumer, java.lang.Class, L._d4ca6c._bb4487[]);
+    Code:
+       0: aload_3
+       1: ifnonnull     8
+       4: iconst_0
+       5: goto          10
+       8: aload_3
+       9: arraylength
+      10: iconst_1
+      11: iadd
+      12: anewarray     #24                 // class L/_d4ca6c/_bb4487
+      15: astore        4
+      17: aload         4
+      19: aload_3
+      20: ifnonnull     27
+      23: iconst_0
+      24: goto          29
+      27: aload_3
+      28: arraylength
+      29: new           #24                 // class L/_d4ca6c/_bb4487
+      32: dup
+      33: iload_0
+      34: aload_1
+      35: invokespecial #92                 // Method L/_d4ca6c/_bb4487."<init>":(ILjava/util/function/Consumer;)V
+      38: aastore
+      39: aload         4
+      41: arraylength
+      42: iconst_1
+      43: if_icmple     69
+      46: aload_3
+      47: iconst_0
+      48: aload         4
+      50: iconst_0
+      51: aload_3
+      52: arraylength
+      53: invokestatic  #132                // Method java/lang/System.arraycopy:(Ljava/lang/Object;ILjava/lang/Object;II)V
+      56: aload         4
+      58: invokedynamic #189,  0            // InvokeDynamic #16:applyAsInt:()Ljava/util/function/ToIntFunction;
+      63: invokestatic  #160                // InterfaceMethod java/util/Comparator.comparingInt:(Ljava/util/function/ToIntFunction;)Ljava/util/Comparator;
+      66: invokestatic  #139                // Method java/util/Arrays.sort:([Ljava/lang/Object;Ljava/util/Comparator;)V
+      69: aload         4
+      71: areturn
+
+  private static int _cfe983(L._d4ca6c._bb4487);
+    Code:
+       0: aload_0
+       1: invokevirtual #94                 // Method L/_d4ca6c/_bb4487.priority:()I
+       4: ineg
+       5: ireturn
+
+  private static void _cfe983(java.lang.Runnable, L._d4ca6c._21aca6);
+    Code:
+       0: aload_0
+       1: invokeinterface #159,  1          // InterfaceMethod java/lang/Runnable.run:()V
+       6: return
+
+  private static void _21aca6(java.lang.Runnable, L._d4ca6c._21aca6);
+    Code:
+       0: aload_0
+       1: invokeinterface #159,  1          // InterfaceMethod java/lang/Runnable.run:()V
+       6: return
+
+  static {};
+    Code:
+       0: getstatic     #64                 // Field L/_1e73d7/_cfe983._c1461e:Z
+       3: ifne          10
+       6: iconst_1
+       7: goto          11
+      10: iconst_0
+      11: putstatic     #69                 // Field _63fe11:Z
+      14: getstatic     #82                 // Field L/util/_e93d3c._2683bc:Z
+      17: ifne          60
+      20: getstatic     #64                 // Field L/_1e73d7/_cfe983._c1461e:Z
+      23: ifeq          56
+      26: getstatic     #81                 // Field L/util/_cb9292._198f02:Z
+      29: ifeq          41
+      32: getstatic     #62                 // Field L/_02d7ad/_bb4487/_cfe983.THROW_ON_WRONG_THREAD_BETA:LL/_02d7ad/_bb4487/_cfe983;
+      35: invokevirtual #89                 // Method L/_02d7ad/_bb4487/_cfe983.isEnabled:()Z
+      38: ifne          56
+      41: getstatic     #80                 // Field L/util/_cb9292._7772b4:Z
+      44: ifeq          60
+      47: getstatic     #63                 // Field L/_02d7ad/_bb4487/_cfe983.THROW_ON_WRONG_THREAD_DEV:LL/_02d7ad/_bb4487/_cfe983;
+      50: invokevirtual #89                 // Method L/_02d7ad/_bb4487/_cfe983.isEnabled:()Z
+      53: ifeq          60
+      56: iconst_1
+      57: goto          61
+      60: iconst_0
+      61: putstatic     #68                 // Field _529826:Z
+      64: getstatic     #64                 // Field L/_1e73d7/_cfe983._c1461e:Z
+      67: ifeq          89
+      70: getstatic     #81                 // Field L/util/_cb9292._198f02:Z
+      73: ifeq          85
+      76: getstatic     #61                 // Field L/_02d7ad/_bb4487/_cfe983.IGNORE_EXTERNAL_THREAD_BETA:LL/_02d7ad/_bb4487/_cfe983;
+      79: invokevirtual #89                 // Method L/_02d7ad/_bb4487/_cfe983.isEnabled:()Z
+      82: ifeq          89
+      85: iconst_1
+      86: goto          90
+      89: iconst_0
+      90: putstatic     #71                 // Field _09429d:Z
+      93: getstatic     #69                 // Field _63fe11:Z
+      96: ifeq          109
+      99: new           #23                 // class L/_d4ca6c/_cfe983
+     102: dup
+     103: invokespecial #91                 // Method L/_d4ca6c/_cfe983."<init>":()V
+     106: goto          116
+     109: new           #26                 // class L/_d4ca6c/_590f69
+     112: dup
+     113: invokespecial #96                 // Method "<init>":()V
+     116: putstatic     #67                 // Field _3a7319:LL/_d4ca6c/_590f69;
+     119: return
+}

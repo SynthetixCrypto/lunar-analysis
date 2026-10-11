@@ -1,0 +1,28 @@
+public abstract class com.moonsworth.webosr.NativeHandle implements java.lang.AutoCloseable {
+  private long handle;
+
+  protected com.moonsworth.webosr.NativeHandle(long);
+    Code:
+       0: aload_0
+       1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: lload_1
+       6: putfield      #4                  // Field handle:J
+       9: return
+
+  public void close();
+    Code:
+       0: aload_0
+       1: getfield      #4                  // Field handle:J
+       4: lconst_0
+       5: lcmp
+       6: ifeq          18
+       9: aload_0
+      10: invokevirtual #5                  // Method destroy:()V
+      13: aload_0
+      14: lconst_0
+      15: putfield      #4                  // Field handle:J
+      18: return
+
+  protected abstract void destroy();
+}

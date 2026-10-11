@@ -1,0 +1,150 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/L/_02d7ad/_d4ca6c/_21aca6.class
+  Last modified Dec 31, 1969; size 1358 bytes
+  SHA-256 checksum 1ac571e4e659a4b28f675a62719fe177878a6965c4964ece79c85b9b49c8de3d
+public abstract class L._02d7ad._d4ca6c._21aca6 extends java.lang.Object implements L._2f4182._2ce426._cfe983, java.util.function.Consumer<com.google.gson.JsonElement>
+  minor version: 0
+  major version: 61
+  flags: (0x0421) ACC_PUBLIC, ACC_SUPER, ACC_ABSTRACT
+  this_class: #3                          // L/_02d7ad/_d4ca6c/_21aca6
+  super_class: #4                         // java/lang/Object
+  interfaces: 2, fields: 2, methods: 7, attributes: 1
+Constant pool:
+   #1 = Class              #36            // com/google/gson/JsonElement
+   #2 = Class              #37            // L/_2f4182/_2ce426/_cfe983
+   #3 = Class              #38            // L/_02d7ad/_d4ca6c/_21aca6
+   #4 = Class              #39            // java/lang/Object
+   #5 = Class              #40            // java/util/function/Consumer
+   #6 = Fieldref           #3.#14         // L/_02d7ad/_d4ca6c/_21aca6.loaded:Z
+   #7 = Fieldref           #3.#15         // L/_02d7ad/_d4ca6c/_21aca6.name:Ljava/lang/String;
+   #8 = Methodref          #3.#12         // L/_02d7ad/_d4ca6c/_21aca6._2f4182:(Lcom/google/gson/JsonElement;)V
+   #9 = Methodref          #3.#13         // L/_02d7ad/_d4ca6c/_21aca6._a140a8:(Lcom/google/gson/JsonElement;)V
+  #10 = Methodref          #4.#11         // java/lang/Object."<init>":()V
+  #11 = NameAndType        #22:#17        // "<init>":()V
+  #12 = NameAndType        #24:#19        // _2f4182:(Lcom/google/gson/JsonElement;)V
+  #13 = NameAndType        #30:#19        // _a140a8:(Lcom/google/gson/JsonElement;)V
+  #14 = NameAndType        #41:#34        // loaded:Z
+  #15 = NameAndType        #42:#28        // name:Ljava/lang/String;
+  #16 = Utf8               ()Ljava/lang/String;
+  #17 = Utf8               ()V
+  #18 = Utf8               ()Z
+  #19 = Utf8               (Lcom/google/gson/JsonElement;)V
+  #20 = Utf8               (Ljava/lang/Object;)V
+  #21 = Utf8               (Ljava/lang/String;)V
+  #22 = Utf8               <init>
+  #23 = Utf8               Code
+  #24 = Utf8               _2f4182
+  #25 = Utf8               _a5cceb
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               Ljava/lang/Object;LL/_2f4182/_2ce426/_cfe983;Ljava/util/function/Consumer<Lcom/google/gson/JsonElement;>;
+  #28 = Utf8               Ljava/lang/String;
+  #29 = Utf8               Llombok/Generated;
+  #30 = Utf8               _a140a8
+  #31 = Utf8               _3027cb
+  #32 = Utf8               RuntimeInvisibleAnnotations
+  #33 = Utf8               Signature
+  #34 = Utf8               Z
+  #35 = Utf8               accept
+  #36 = Utf8               com/google/gson/JsonElement
+  #37 = Utf8               L/_2f4182/_2ce426/_cfe983
+  #38 = Utf8               L/_02d7ad/_d4ca6c/_21aca6
+  #39 = Utf8               java/lang/Object
+  #40 = Utf8               java/util/function/Consumer
+  #41 = Utf8               loaded
+  #42 = Utf8               name
+  #43 = Utf8               setName
+{
+  private boolean loaded;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.lang.String name;
+    descriptor: Ljava/lang/String;
+    flags: (0x0002) ACC_PRIVATE
+
+  public L._02d7ad._d4ca6c._21aca6();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #10                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_0
+         6: putfield      #6                  // Field loaded:Z
+         9: return
+      LineNumberTable:
+        line 9: 0
+        line 10: 4
+
+  public boolean _a5cceb();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #6                  // Field loaded:Z
+         4: ireturn
+      LineNumberTable:
+        line 14: 0
+
+  public java.lang.String _3027cb();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #7                  // Field name:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 19: 0
+
+  public void _2f4182(com.google.gson.JsonElement);
+    descriptor: (Lcom/google/gson/JsonElement;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #9                  // Method _a140a8:(Lcom/google/gson/JsonElement;)V
+         5: aload_0
+         6: iconst_1
+         7: putfield      #6                  // Field loaded:Z
+        10: return
+      LineNumberTable:
+        line 24: 0
+        line 25: 5
+        line 26: 10
+
+  public abstract void _a140a8(com.google.gson.JsonElement);
+    descriptor: (Lcom/google/gson/JsonElement;)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public void setName(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #7                  // Field name:Ljava/lang/String;
+         5: return
+      LineNumberTable:
+        line 11: 0
+    RuntimeInvisibleAnnotations:
+      0: #29()
+        lombok.Generated
+
+  public void accept(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    flags: (0x1001) ACC_PUBLIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: checkcast     #1                  // class com/google/gson/JsonElement
+         5: invokevirtual #8                  // Method _2f4182:(Lcom/google/gson/JsonElement;)V
+         8: return
+      LineNumberTable:
+        line 9: 0
+}
+Signature: #27                          // Ljava/lang/Object;LL/_2f4182/_2ce426/_cfe983;Ljava/util/function/Consumer<Lcom/google/gson/JsonElement;>;

@@ -1,0 +1,45 @@
+public abstract class com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR<T> extends com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.ORCOOOCHIICOIICCROCRCOOROORIHR<T> {
+  private T value;
+
+  private T defaultValue;
+
+  protected com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR(java.lang.String, com.lunarclient.dfu.serialization.Codec<T>, T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #7                  // Method com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/ORCOOOCHIICOIICCROCRCOOROORIHR."<init>":(Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;)V
+       6: aload_0
+       7: aload_0
+       8: aload_3
+       9: dup_x1
+      10: putfield      #5                  // Field defaultValue:Ljava/lang/Object;
+      13: putfield      #6                  // Field value:Ljava/lang/Object;
+      16: return
+
+  public T getDefaultValue();
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field defaultValue:Ljava/lang/Object;
+       4: areturn
+
+  public final void OHOORCCRHHHHROIICHOCRHOCRICROH(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #5                  // Field defaultValue:Ljava/lang/Object;
+       5: return
+
+  public final T CCIIIRIOROORRIHRCOCOCRCOIHICIC();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field value:Ljava/lang/Object;
+       4: areturn
+
+  protected final void HCHOCHOCCORROHCCCORCROORHCCIRR(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #6                  // Field value:Ljava/lang/Object;
+       5: return
+}

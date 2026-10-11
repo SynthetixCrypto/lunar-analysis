@@ -1,0 +1,1406 @@
+public abstract class L._88f3cf._cfe983 implements L._d4ca6c._d4ca6c,L._88f3cf._21aca6 {
+  public static final boolean _246eb0;
+
+  private static final boolean _959cb1;
+
+  private final com.google.common.cache.Cache<java.lang.String, L._e62626._cfe983._cfe983> _7e011d;
+
+  protected final ML._590f69._bb4487._bb4487 mc;
+
+  protected final L._cfe983 _dffc2b;
+
+  protected final L._55938e._590f69 _233ef1;
+
+  private final L._88f3cf._bb4487._590f69 _97dc83;
+
+  private java.lang.String _56b0ad;
+
+  private boolean enabled;
+
+  protected L._88f3cf._cfe983(boolean);
+    Code:
+       0: aload_0
+       1: invokespecial #250                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #146                // Method com/google/common/cache/CacheBuilder.newBuilder:()Lcom/google/common/cache/CacheBuilder;
+       8: iconst_4
+       9: invokevirtual #145                // Method com/google/common/cache/CacheBuilder.initialCapacity:(I)Lcom/google/common/cache/CacheBuilder;
+      12: iconst_2
+      13: invokevirtual #144                // Method com/google/common/cache/CacheBuilder.concurrencyLevel:(I)Lcom/google/common/cache/CacheBuilder;
+      16: invokevirtual #143                // Method com/google/common/cache/CacheBuilder.build:()Lcom/google/common/cache/Cache;
+      19: putfield      #118                // Field _7e011d:Lcom/google/common/cache/Cache;
+      22: aload_0
+      23: aload_0
+      24: invokevirtual #220                // Method _f50b51:()Z
+      27: ifeq          41
+      30: new           #68                 // class L/_88f3cf/_bb4487/_590f69
+      33: dup
+      34: aload_0
+      35: invokespecial #239                // Method L/_88f3cf/_bb4487/_590f69."<init>":(LL/_88f3cf/_21aca6;)V
+      38: goto          42
+      41: aconst_null
+      42: putfield      #115                // Field _97dc83:LL/_88f3cf/_bb4487/_590f69;
+      45: aload_0
+      46: invokestatic  #245                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+      49: putfield      #120                // Field mc:LML/_590f69/_bb4487/_bb4487;
+      52: aload_0
+      53: invokestatic  #164                // Method L/_cfe983._ecae14:()LL/_cfe983;
+      56: putfield      #114                // Field _dffc2b:LL/_cfe983;
+      59: aload_0
+      60: new           #54                 // class L/_55938e/_1e73d7
+      63: dup
+      64: getstatic     #132                // Field L/_88f3cf/_02d7ad._eb5b17:LL/_55938e/_a140a8;
+      67: invokespecial #176                // Method L/_55938e/_1e73d7."<init>":(LL/_55938e/_a140a8;)V
+      70: putfield      #116                // Field _233ef1:LL/_55938e/_590f69;
+      73: aload_0
+      74: getfield      #116                // Field _233ef1:LL/_55938e/_590f69;
+      77: getstatic     #135                // Field L/_88f3cf/_02d7ad._516e19:LL/_55938e/_e62626;
+      80: getstatic     #139                // Field L/_88f3cf/_6c713e.CONSTRUCTOR:LL/_88f3cf/_6c713e;
+      83: invokeinterface #289,  3          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      88: pop
+      89: aload_0
+      90: iload_1
+      91: invokevirtual #200                // Method _543b36:(Z)V
+      94: aload_0
+      95: getstatic     #136                // Field L/_88f3cf/_02d7ad._3aac95:LL/_55938e/_e62626;
+      98: invokevirtual #225                // Method _5b3f84:(LL/_55938e/_e62626;)Ljava/util/Optional;
+     101: invokedynamic #351,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+     106: invokevirtual #259                // Method java/util/Optional.flatMap:(Ljava/util/function/Function;)Ljava/util/Optional;
+     109: aload_0
+     110: invokedynamic #352,  0            // InvokeDynamic #1:accept:(LL/_88f3cf/_cfe983;)Ljava/util/function/Consumer;
+     115: invokevirtual #261                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+     118: return
+
+  protected void _543b36(boolean);
+    Code:
+       0: aload_0
+       1: getstatic     #136                // Field L/_88f3cf/_02d7ad._3aac95:LL/_55938e/_e62626;
+       4: iload_1
+       5: invokestatic  #319                // InterfaceMethod L/_88f3cf/_2ce426._4cf8c3:(Z)LL/_88f3cf/_2ce426;
+       8: invokevirtual #191                // Method _cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      11: pop
+      12: aload_0
+      13: getstatic     #129                // Field L/_88f3cf/_02d7ad._9a425c:LL/_55938e/_e62626;
+      16: new           #75                 // class L/_88f3cf/_1e73d7/_a140a8
+      19: dup
+      20: invokespecial #242                // Method L/_88f3cf/_1e73d7/_a140a8."<init>":()V
+      23: invokevirtual #191                // Method _cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      26: pop
+      27: aload_0
+      28: getstatic     #127                // Field L/_88f3cf/_02d7ad._f1450a:LL/_55938e/_e62626;
+      31: invokestatic  #299                // InterfaceMethod L/_88f3cf/_2f4182._99f690:()LL/_88f3cf/_2f4182;
+      34: invokevirtual #191                // Method _cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      37: pop
+      38: aload_0
+      39: getstatic     #130                // Field L/_88f3cf/_02d7ad._fd7d1f:LL/_55938e/_e62626;
+      42: invokestatic  #309                // InterfaceMethod L/_88f3cf/_e62626._13784d:()LL/_88f3cf/_e62626;
+      45: invokevirtual #191                // Method _cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      48: pop
+      49: aload_0
+      50: getstatic     #137                // Field L/_88f3cf/_02d7ad._9731e0:LL/_55938e/_e62626;
+      53: aload_0
+      54: invokevirtual #204                // Method _adad30:()LL/_88f3cf/_d4ca6c;
+      57: invokevirtual #191                // Method _cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      60: pop
+      61: return
+
+  public L._88f3cf._d4ca6c _adad30();
+    Code:
+       0: aload_0
+       1: ldc           #2                  // String 20x20
+       3: invokevirtual #181                // Method _371a34:(Ljava/lang/String;)LML/_590f69/_5b3f84/_dcf582;
+       6: aload_0
+       7: ldc           #3                  // String 52x52
+       9: invokevirtual #181                // Method _371a34:(Ljava/lang/String;)LML/_590f69/_5b3f84/_dcf582;
+      12: aload_0
+      13: invokedynamic #353,  0            // InvokeDynamic #2:get:(LL/_88f3cf/_cfe983;)Ljava/util/function/Supplier;
+      18: iconst_0
+      19: lconst_0
+      20: iconst_0
+      21: invokestatic  #322                // InterfaceMethod L/_88f3cf/_d4ca6c._cfe983:(LML/_590f69/_5b3f84/_dcf582;LML/_590f69/_5b3f84/_dcf582;Ljava/util/function/Supplier;ZJZ)LL/_88f3cf/_d4ca6c;
+      24: areturn
+
+  protected java.util.List<L._88f3cf._21aca6> _0e0872();
+    Code:
+       0: invokestatic  #147                // Method com/google/common/collect/ImmutableList.of:()Lcom/google/common/collect/ImmutableList;
+       3: areturn
+
+  public boolean isEnabled();
+    Code:
+       0: aload_0
+       1: getfield      #119                // Field enabled:Z
+       4: ireturn
+
+  public final void updateEnabled();
+    Code:
+       0: aload_0
+       1: getstatic     #133                // Field L/_88f3cf/_02d7ad._194b16:LL/_55938e/_e62626;
+       4: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       7: checkcast     #74                 // class L/_88f3cf/_1e73d7
+      10: astore_1
+      11: aload_1
+      12: ifnull        39
+      15: aload_1
+      16: invokeinterface #318,  1          // InterfaceMethod L/_88f3cf/_1e73d7._990b34:()LL/_88f3cf/_21aca6;
+      21: invokeinterface #331,  1          // InterfaceMethod L/_88f3cf/_21aca6.isEnabled:()Z
+      26: ifne          39
+      29: aload_0
+      30: iconst_0
+      31: putfield      #119                // Field enabled:Z
+      34: aload_0
+      35: invokevirtual #213                // Method _688792:()V
+      38: return
+      39: aload_0
+      40: getstatic     #128                // Field L/_88f3cf/_02d7ad._290b8b:LL/_55938e/_cfe983;
+      43: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      46: checkcast     #56                 // class L/_88f3cf/_ba7d98
+      49: astore_2
+      50: aload_2
+      51: ifnull        91
+      54: aload_2
+      55: invokeinterface #298,  1          // InterfaceMethod L/_88f3cf/_ba7d98._7aa5f3:()Z
+      60: ifeq          91
+      63: invokestatic  #163                // Method L/_dd3308/_1e73d7._657fd1:()LL/_dd3308/_cfe983;
+      66: astore_3
+      67: aload_3
+      68: ifnull        81
+      71: aload_2
+      72: aload_3
+      73: invokeinterface #297,  2          // InterfaceMethod L/_88f3cf/_ba7d98._cfe983:(LL/_dd3308/_cfe983;)Z
+      78: ifne          91
+      81: aload_0
+      82: iconst_0
+      83: putfield      #119                // Field enabled:Z
+      86: aload_0
+      87: invokevirtual #213                // Method _688792:()V
+      90: return
+      91: aload_0
+      92: getstatic     #123                // Field L/_88f3cf/_02d7ad._ced4d4:LL/_55938e/_e62626;
+      95: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      98: checkcast     #71                 // class L/_88f3cf/_a1dd3a
+     101: astore_3
+     102: aload_3
+     103: ifnull        125
+     106: aload_3
+     107: invokeinterface #310,  1          // InterfaceMethod L/_88f3cf/_a1dd3a._98d4d1:()Z
+     112: ifne          125
+     115: aload_0
+     116: iconst_0
+     117: putfield      #119                // Field enabled:Z
+     120: aload_0
+     121: invokevirtual #213                // Method _688792:()V
+     124: return
+     125: aload_0
+     126: getstatic     #129                // Field L/_88f3cf/_02d7ad._9a425c:LL/_55938e/_e62626;
+     129: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+     132: checkcast     #44                 // class L/_c8175c/_cfe983/_1e73d7
+     135: astore        4
+     137: aload         4
+     139: ifnull        179
+     142: aload         4
+     144: invokeinterface #276,  1          // InterfaceMethod L/_c8175c/_cfe983/_1e73d7._f34034:()Ljava/util/Optional;
+     149: astore        5
+     151: aload         5
+     153: invokevirtual #263                // Method java/util/Optional.isPresent:()Z
+     156: ifeq          179
+     159: aload_0
+     160: aload         5
+     162: invokevirtual #260                // Method java/util/Optional.get:()Ljava/lang/Object;
+     165: checkcast     #87                 // class java/lang/Boolean
+     168: invokevirtual #247                // Method java/lang/Boolean.booleanValue:()Z
+     171: putfield      #119                // Field enabled:Z
+     174: aload_0
+     175: invokevirtual #213                // Method _688792:()V
+     178: return
+     179: aload_0
+     180: aload_0
+     181: invokespecial #331                // InterfaceMethod L/_88f3cf/_21aca6.isEnabled:()Z
+     184: putfield      #119                // Field enabled:Z
+     187: aload_0
+     188: invokevirtual #213                // Method _688792:()V
+     191: return
+
+  private void _688792();
+    Code:
+       0: aload_0
+       1: getstatic     #121                // Field L/_88f3cf/_02d7ad._6e61c2:LL/_55938e/_e62626;
+       4: invokevirtual #217                // Method _6fc5d5:(LL/_55938e/_e62626;)Z
+       7: ifne          25
+      10: aload_0
+      11: getstatic     #126                // Field L/_88f3cf/_02d7ad._67ae74:LL/_55938e/_e62626;
+      14: invokevirtual #225                // Method _5b3f84:(LL/_55938e/_e62626;)Ljava/util/Optional;
+      17: invokedynamic #354,  0            // InvokeDynamic #3:accept:()Ljava/util/function/Consumer;
+      22: invokevirtual #261                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      25: return
+
+  public void _282408();
+    Code:
+       0: aload_0
+       1: getstatic     #131                // Field L/_88f3cf/_02d7ad._c5f585:LL/_55938e/_e62626;
+       4: aload_0
+       5: invokedynamic #355,  0            // InvokeDynamic #4:apply:(LL/_88f3cf/_cfe983;)Ljava/util/function/Function;
+      10: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      13: checkcast     #72                 // class L/_88f3cf/_1253fc
+      16: astore_1
+      17: aload_0
+      18: getstatic     #135                // Field L/_88f3cf/_02d7ad._516e19:LL/_55938e/_e62626;
+      21: invokedynamic #356,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+      26: invokevirtual #192                // Method _cfe983:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      29: pop
+      30: aload_0
+      31: getstatic     #133                // Field L/_88f3cf/_02d7ad._194b16:LL/_55938e/_e62626;
+      34: invokevirtual #217                // Method _6fc5d5:(LL/_55938e/_e62626;)Z
+      37: ifne          88
+      40: aload_1
+      41: ifnull        88
+      44: aload_1
+      45: invokeinterface #311,  1          // InterfaceMethod L/_88f3cf/_1253fc._c87eb7:()Z
+      50: ifeq          88
+      53: aload_0
+      54: getstatic     #136                // Field L/_88f3cf/_02d7ad._3aac95:LL/_55938e/_e62626;
+      57: invokevirtual #225                // Method _5b3f84:(LL/_55938e/_e62626;)Ljava/util/Optional;
+      60: invokedynamic #351,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      65: invokevirtual #259                // Method java/util/Optional.flatMap:(Ljava/util/function/Function;)Ljava/util/Optional;
+      68: invokevirtual #263                // Method java/util/Optional.isPresent:()Z
+      71: ifeq          88
+      74: aload_0
+      75: getstatic     #125                // Field L/_88f3cf/_02d7ad._614937:LL/_55938e/_e62626;
+      78: aload_0
+      79: invokedynamic #357,  0            // InvokeDynamic #6:apply:(LL/_88f3cf/_cfe983;)Ljava/util/function/Function;
+      84: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      87: pop
+      88: aload_0
+      89: getstatic     #122                // Field L/_88f3cf/_02d7ad._b7f423:LL/_55938e/_e62626;
+      92: aload_0
+      93: invokedynamic #358,  0            // InvokeDynamic #7:apply:(LL/_88f3cf/_cfe983;)Ljava/util/function/Function;
+      98: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+     101: checkcast     #69                 // class L/_88f3cf/_c8175c
+     104: astore_2
+     105: aload_2
+     106: aload_0
+     107: invokeinterface #308,  2          // InterfaceMethod L/_88f3cf/_c8175c._88f3cf:(LL/_88f3cf/_21aca6;)V
+     112: aload_2
+     113: invokeinterface #307,  1          // InterfaceMethod L/_88f3cf/_c8175c._121b93:()Ljava/util/Set;
+     118: invokeinterface #345,  1          // InterfaceMethod java/util/Set.isEmpty:()Z
+     123: ifeq          134
+     126: aload_0
+     127: getstatic     #122                // Field L/_88f3cf/_02d7ad._b7f423:LL/_55938e/_e62626;
+     130: invokevirtual #190                // Method _cfe983:(LL/_55938e/_e62626;)Ljava/lang/Object;
+     133: pop
+     134: aload_0
+     135: getstatic     #135                // Field L/_88f3cf/_02d7ad._516e19:LL/_55938e/_e62626;
+     138: invokedynamic #359,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+     143: invokevirtual #192                // Method _cfe983:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+     146: pop
+     147: aload_0
+     148: getstatic     #127                // Field L/_88f3cf/_02d7ad._f1450a:LL/_55938e/_e62626;
+     151: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+     154: checkcast     #60                 // class L/_88f3cf/_2f4182
+     157: astore_3
+     158: aload_3
+     159: ifnull        169
+     162: aload_3
+     163: aload_0
+     164: invokeinterface #300,  2          // InterfaceMethod L/_88f3cf/_2f4182._13ea87:(LL/_88f3cf/_21aca6;)V
+     169: aload_0
+     170: invokevirtual #197                // Method _0e0872:()Ljava/util/List;
+     173: astore        4
+     175: aload         4
+     177: invokeinterface #340,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     182: ifne          225
+     185: aload_0
+     186: getstatic     #134                // Field L/_88f3cf/_02d7ad._2dca71:LL/_55938e/_e62626;
+     189: aload_0
+     190: invokedynamic #360,  0            // InvokeDynamic #9:apply:(LL/_88f3cf/_cfe983;)Ljava/util/function/Function;
+     195: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+     198: checkcast     #62                 // class L/_88f3cf/_bb4487
+     201: aload_0
+     202: aload         4
+     204: invokeinterface #301,  3          // InterfaceMethod L/_88f3cf/_bb4487._cfe983:(Ljava/lang/Object;Ljava/util/List;)V
+     209: aload_0
+     210: getstatic     #135                // Field L/_88f3cf/_02d7ad._516e19:LL/_55938e/_e62626;
+     213: invokedynamic #361,  0            // InvokeDynamic #10:apply:()Ljava/util/function/Function;
+     218: invokevirtual #192                // Method _cfe983:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+     221: pop
+     222: goto          233
+     225: aload_0
+     226: getstatic     #134                // Field L/_88f3cf/_02d7ad._2dca71:LL/_55938e/_e62626;
+     229: invokevirtual #190                // Method _cfe983:(LL/_55938e/_e62626;)Ljava/lang/Object;
+     232: pop
+     233: aload_2
+     234: invokeinterface #306,  1          // InterfaceMethod L/_88f3cf/_c8175c._ae27bf:()Ljava/util/Set;
+     239: invokeinterface #346,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     244: astore        5
+     246: aload         5
+     248: invokeinterface #335,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     253: ifeq          328
+     256: aload         5
+     258: invokeinterface #336,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     263: checkcast     #48                 // class L/_ec7e36/_dd3308
+     266: astore        6
+     268: aload         6
+     270: aload_0
+     271: invokedynamic #362,  0            // InvokeDynamic #11:accept:(LL/_88f3cf/_cfe983;)Ljava/util/function/Consumer;
+     276: invokeinterface #279,  2          // InterfaceMethod L/_ec7e36/_dd3308._691aaf:(Ljava/util/function/Consumer;)LL/_ec7e36/_dd3308;
+     281: pop
+     282: aload         6
+     284: instanceof    #50                 // class L/_ec7e36/_32565b
+     287: ifeq          325
+     290: aload         6
+     292: checkcast     #50                 // class L/_ec7e36/_32565b
+     295: astore        7
+     297: aload         7
+     299: aload_0
+     300: aload         7
+     302: invokedynamic #363,  0            // InvokeDynamic #12:run:(LL/_88f3cf/_cfe983;LL/_ec7e36/_32565b;)Ljava/lang/Runnable;
+     307: invokevirtual #174                // Method L/_ec7e36/_32565b._dcf582:(Ljava/lang/Runnable;)LL/_ec7e36/_32565b;
+     310: pop
+     311: aload         7
+     313: aload_0
+     314: aload         7
+     316: invokedynamic #364,  0            // InvokeDynamic #13:accept:(LL/_88f3cf/_cfe983;LL/_ec7e36/_32565b;)Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;
+     321: invokevirtual #173                // Method L/_ec7e36/_32565b._cfe983:(Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;)LL/_ec7e36/_32565b;
+     324: pop
+     325: goto          246
+     328: return
+
+  protected <T> T _590f69(java.lang.String, T);
+    Code:
+       0: aload_0
+       1: getfield      #115                // Field _97dc83:LL/_88f3cf/_bb4487/_590f69;
+       4: aload_1
+       5: aload_2
+       6: invokevirtual #240                // Method L/_88f3cf/_bb4487/_590f69._bb4487:(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+       9: areturn
+
+  private void _cb9292(java.lang.Object);
+    Code:
+       0: aload_0
+       1: invokevirtual #220                // Method _f50b51:()Z
+       4: ifne          8
+       7: return
+       8: invokestatic  #244                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      11: ifnonnull     15
+      14: return
+      15: invokestatic  #244                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      18: invokevirtual #165                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      21: invokevirtual #171                // Method L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+      24: astore_2
+      25: aload_2
+      26: invokevirtual #238                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983.isRecording:()Z
+      29: ifeq          75
+      32: new           #25                 // class com/google/gson/JsonObject
+      35: dup
+      36: invokespecial #153                // Method com/google/gson/JsonObject."<init>":()V
+      39: astore_3
+      40: aload_0
+      41: aload_3
+      42: invokevirtual #222                // Method _590f69:(Lcom/google/gson/JsonObject;)V
+      45: aload_3
+      46: ldc           #16                 // String version
+      48: getstatic     #112                // Field L/_2b0ee0/_cfe983/_bb4487._631465:I
+      51: invokestatic  #249                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      54: invokevirtual #156                // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+      57: aload_2
+      58: invokevirtual #237                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._e3d1bc:()LL/_88f3cf/_bb4487/_00f454/_bb4487/_21aca6;
+      61: invokevirtual #235                // Method L/_88f3cf/_bb4487/_00f454/_bb4487/_21aca6._5d9939:()Ljava/util/Map;
+      64: aload_0
+      65: invokevirtual #229                // Method getId:()Ljava/lang/String;
+      68: aload_3
+      69: invokeinterface #343,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      74: pop
+      75: return
+
+  private void _cfe983(L._ec7e36._32565b<?>, boolean, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #220                // Method _f50b51:()Z
+       4: ifne          8
+       7: return
+       8: invokestatic  #244                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      11: invokevirtual #165                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      14: invokevirtual #171                // Method L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+      17: astore        4
+      19: aload         4
+      21: invokevirtual #238                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983.isRecording:()Z
+      24: ifeq          108
+      27: new           #25                 // class com/google/gson/JsonObject
+      30: dup
+      31: invokespecial #153                // Method com/google/gson/JsonObject."<init>":()V
+      34: astore        5
+      36: aload_0
+      37: aload         5
+      39: invokevirtual #222                // Method _590f69:(Lcom/google/gson/JsonObject;)V
+      42: aload         5
+      44: ldc           #16                 // String version
+      46: getstatic     #112                // Field L/_2b0ee0/_cfe983/_bb4487._631465:I
+      49: invokestatic  #249                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      52: invokevirtual #156                // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+      55: aload         4
+      57: invokevirtual #237                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._e3d1bc:()LL/_88f3cf/_bb4487/_00f454/_bb4487/_21aca6;
+      60: invokevirtual #233                // Method L/_88f3cf/_bb4487/_00f454/_bb4487/_21aca6._932775:()LL/_88f3cf/_bb4487/_00f454/_21aca6/_590f69/_cfe983;
+      63: new           #65                 // class L/_88f3cf/_bb4487/_00f454/_1e73d7/_cfe983/_590f69/_d4ca6c
+      66: dup
+      67: aload_0
+      68: invokevirtual #229                // Method getId:()Ljava/lang/String;
+      71: aload_1
+      72: invokevirtual #175                // Method L/_ec7e36/_32565b.getId:()Ljava/lang/String;
+      75: iload_2
+      76: iload_3
+      77: invokespecial #236                // Method L/_88f3cf/_bb4487/_00f454/_1e73d7/_cfe983/_590f69/_d4ca6c."<init>":(Ljava/lang/String;Ljava/lang/String;ZZ)V
+      80: aload         4
+      82: invokevirtual #237                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._e3d1bc:()LL/_88f3cf/_bb4487/_00f454/_bb4487/_21aca6;
+      85: invokevirtual #234                // Method L/_88f3cf/_bb4487/_00f454/_bb4487/_21aca6._f112a7:()I
+      88: invokeinterface #304,  3          // InterfaceMethod L/_88f3cf/_bb4487/_00f454/_21aca6/_590f69/_cfe983._cfe983:(LL/_88f3cf/_bb4487/_00f454/_1e73d7/_cfe983;I)V
+      93: goto          108
+      96: astore        6
+      98: new           #92                 // class java/lang/RuntimeException
+     101: dup
+     102: aload         6
+     104: invokespecial #252                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+     107: athrow
+     108: return
+    Exception table:
+       from    to  target type
+          55    93    96   Class java/lang/Exception
+
+  public java.lang.String _c5b175();
+    Code:
+       0: aload_0
+       1: getfield      #117                // Field _56b0ad:Ljava/lang/String;
+       4: ifnonnull     24
+       7: aload_0
+       8: getstatic     #111                // Field com/google/common/base/CaseFormat.UPPER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
+      11: getstatic     #110                // Field com/google/common/base/CaseFormat.LOWER_HYPHEN:Lcom/google/common/base/CaseFormat;
+      14: aload_0
+      15: invokevirtual #229                // Method getId:()Ljava/lang/String;
+      18: invokevirtual #142                // Method com/google/common/base/CaseFormat.to:(Lcom/google/common/base/CaseFormat;Ljava/lang/String;)Ljava/lang/String;
+      21: putfield      #117                // Field _56b0ad:Ljava/lang/String;
+      24: aload_0
+      25: getfield      #117                // Field _56b0ad:Ljava/lang/String;
+      28: areturn
+
+  public void _41ba55(boolean);
+    Code:
+       0: return
+
+  public <T extends L._d4ca6c._21aca6> void handle(java.lang.Class<T>, java.util.function.Consumer<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: bipush        100
+       5: invokevirtual #194                // Method _cfe983:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+       8: return
+
+  public <T extends L._d4ca6c._21aca6> void _21aca6(java.lang.Class<T>, java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: bipush        100
+       5: invokevirtual #228                // Method _21aca6:(Ljava/lang/Class;Ljava/lang/Runnable;I)V
+       8: return
+
+  public <T extends L._d4ca6c._21aca6> void _cfe983(java.lang.Class<T>, java.util.function.Consumer<T>, int);
+    Code:
+       0: aload_0
+       1: getstatic     #121                // Field L/_88f3cf/_02d7ad._6e61c2:LL/_55938e/_e62626;
+       4: invokedynamic #365,  0            // InvokeDynamic #14:apply:()Ljava/util/function/Function;
+       9: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      12: checkcast     #80                 // class L/_88f3cf/_88f3cf
+      15: aload_1
+      16: aload_2
+      17: iload_3
+      18: invokeinterface #324,  4          // InterfaceMethod L/_88f3cf/_88f3cf._cfe983:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+      23: return
+
+  public <T extends L._d4ca6c._21aca6> void _21aca6(java.lang.Class<T>, java.lang.Runnable, int);
+    Code:
+       0: aload_0
+       1: getstatic     #121                // Field L/_88f3cf/_02d7ad._6e61c2:LL/_55938e/_e62626;
+       4: invokedynamic #366,  0            // InvokeDynamic #15:apply:()Ljava/util/function/Function;
+       9: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      12: checkcast     #80                 // class L/_88f3cf/_88f3cf
+      15: aload_1
+      16: aload_2
+      17: invokedynamic #367,  0            // InvokeDynamic #16:accept:(Ljava/lang/Runnable;)Ljava/util/function/Consumer;
+      22: iload_3
+      23: invokeinterface #324,  4          // InterfaceMethod L/_88f3cf/_88f3cf._cfe983:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+      28: return
+
+  public void _21aca6(L._88f3cf._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: getstatic     #121                // Field L/_88f3cf/_02d7ad._6e61c2:LL/_55938e/_e62626;
+       4: invokedynamic #368,  0            // InvokeDynamic #17:apply:()Ljava/util/function/Function;
+       9: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      12: checkcast     #80                 // class L/_88f3cf/_88f3cf
+      15: aload_1
+      16: invokeinterface #329,  2          // InterfaceMethod L/_88f3cf/_88f3cf._21aca6:(LL/_88f3cf/_cfe983/_cfe983;)V
+      21: return
+
+  public void _bb4487(java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: getstatic     #121                // Field L/_88f3cf/_02d7ad._6e61c2:LL/_55938e/_e62626;
+       4: invokedynamic #369,  0            // InvokeDynamic #18:apply:()Ljava/util/function/Function;
+       9: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      12: checkcast     #80                 // class L/_88f3cf/_88f3cf
+      15: aload_1
+      16: invokeinterface #325,  2          // InterfaceMethod L/_88f3cf/_88f3cf._bb4487:(Ljava/lang/Runnable;)V
+      21: return
+
+  public void _1253fc(java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: getstatic     #121                // Field L/_88f3cf/_02d7ad._6e61c2:LL/_55938e/_e62626;
+       4: invokedynamic #370,  0            // InvokeDynamic #19:apply:()Ljava/util/function/Function;
+       9: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      12: checkcast     #80                 // class L/_88f3cf/_88f3cf
+      15: aload_1
+      16: invokeinterface #326,  2          // InterfaceMethod L/_88f3cf/_88f3cf._1253fc:(Ljava/lang/Runnable;)V
+      21: return
+
+  public void _d4ca6c(java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: getstatic     #121                // Field L/_88f3cf/_02d7ad._6e61c2:LL/_55938e/_e62626;
+       4: invokedynamic #371,  0            // InvokeDynamic #20:apply:()Ljava/util/function/Function;
+       9: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      12: checkcast     #80                 // class L/_88f3cf/_88f3cf
+      15: aload_1
+      16: invokeinterface #327,  2          // InterfaceMethod L/_88f3cf/_88f3cf._d4ca6c:(Ljava/lang/Runnable;)V
+      21: return
+
+  protected java.lang.String _22c8cb();
+    Code:
+       0: aload_0
+       1: getstatic     #131                // Field L/_88f3cf/_02d7ad._c5f585:LL/_55938e/_e62626;
+       4: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       7: checkcast     #72                 // class L/_88f3cf/_1253fc
+      10: astore_1
+      11: aload_1
+      12: ifnonnull     22
+      15: aload_0
+      16: invokevirtual #229                // Method getId:()Ljava/lang/String;
+      19: goto          28
+      22: aload_1
+      23: invokeinterface #317,  1          // InterfaceMethod L/_88f3cf/_1253fc.getName:()Ljava/lang/String;
+      28: areturn
+
+  protected <T extends L._ba7d98._1e73d7> T _c8175c(java.lang.Class<T>);
+    Code:
+       0: aload_1
+       1: invokestatic  #162                // Method L/_ba7d98/_1e73d7._1eb51c:(Ljava/lang/Class;)LL/_ba7d98/_1e73d7;
+       4: astore_2
+       5: aload_0
+       6: getstatic     #121                // Field L/_88f3cf/_02d7ad._6e61c2:LL/_55938e/_e62626;
+       9: invokedynamic #372,  0            // InvokeDynamic #21:apply:()Ljava/util/function/Function;
+      14: invokevirtual #227                // Method _21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      17: checkcast     #80                 // class L/_88f3cf/_88f3cf
+      20: aload_2
+      21: invokeinterface #323,  2          // InterfaceMethod L/_88f3cf/_88f3cf._cfe983:(LL/_ba7d98/_21aca6;)V
+      26: aload_0
+      27: aload_2
+      28: invokestatic  #232                // Method L/_88f3cf/_bb4487/_a1dd3a/_1253fc._cfe983:(Ljava/lang/Object;LL/_ba7d98/_21aca6;)V
+      31: aload_2
+      32: areturn
+
+  protected L._88f3cf._1253fc _14f3dc();
+    Code:
+       0: invokestatic  #314                // InterfaceMethod L/_88f3cf/_1253fc._1cac47:()LL/_88f3cf/_1253fc$_cfe983;
+       3: aload_0
+       4: invokevirtual #241                // Method L/_88f3cf/_1253fc$_cfe983._bb4487:(LL/_88f3cf/_21aca6;)LL/_88f3cf/_1253fc;
+       7: areturn
+
+  public void _07ac1a();
+    Code:
+       0: aload_0
+       1: getfield      #118                // Field _7e011d:Lcom/google/common/cache/Cache;
+       4: invokeinterface #265,  1          // InterfaceMethod com/google/common/cache/Cache.invalidateAll:()V
+       9: return
+
+  public java.lang.String _21aca6(java.lang.String, java.lang.Object...);
+    Code:
+       0: aload_0
+       1: getstatic     #131                // Field L/_88f3cf/_02d7ad._c5f585:LL/_55938e/_e62626;
+       4: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       7: checkcast     #72                 // class L/_88f3cf/_1253fc
+      10: astore_3
+      11: aload_3
+      12: ifnonnull     17
+      15: aload_1
+      16: areturn
+      17: aload_0
+      18: getfield      #118                // Field _7e011d:Lcom/google/common/cache/Cache;
+      21: aload_1
+      22: aload_2
+      23: aload_3
+      24: aload_1
+      25: invokedynamic #373,  0            // InvokeDynamic #22:call:([Ljava/lang/Object;LL/_88f3cf/_1253fc;Ljava/lang/String;)Ljava/util/concurrent/Callable;
+      30: invokeinterface #264,  3          // InterfaceMethod com/google/common/cache/Cache.get:(Ljava/lang/Object;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+      35: checkcast     #47                 // class L/_e62626/_cfe983/_cfe983
+      38: aload_2
+      39: invokeinterface #278,  2          // InterfaceMethod L/_e62626/_cfe983/_cfe983._bb4487:([Ljava/lang/Object;)Ljava/lang/String;
+      44: areturn
+      45: astore        4
+      47: new           #92                 // class java/lang/RuntimeException
+      50: dup
+      51: aload         4
+      53: invokespecial #252                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+      56: athrow
+    Exception table:
+       from    to  target type
+          17    44    45   Class java/util/concurrent/ExecutionException
+
+  protected boolean _3931f6(java.lang.String);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  protected boolean _4b6d13(java.lang.String);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public void _590f69(com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: invokevirtual #180                // Method _79e7e6:(Ljava/util/List;)Ljava/util/List;
+       5: invokeinterface #341,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      10: astore_2
+      11: aload_2
+      12: invokeinterface #335,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      17: ifeq          50
+      20: aload_2
+      21: invokeinterface #336,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      26: checkcast     #49                 // class L/_ec7e36/_a1dd3a
+      29: astore_3
+      30: aload_3
+      31: aload_1
+      32: invokeinterface #281,  2          // InterfaceMethod L/_ec7e36/_a1dd3a._590f69:(Lcom/google/gson/JsonObject;)V
+      37: goto          47
+      40: astore        4
+      42: aload         4
+      44: invokevirtual #246                // Method java/io/IOException.printStackTrace:()V
+      47: goto          11
+      50: return
+    Exception table:
+       from    to  target type
+          30    37    40   Class java/io/IOException
+
+  public void load(com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #172                // Method L/_2b0ee0/_cfe983/_bb4487._cfe983:(Ljava/lang/Object;Lcom/google/gson/JsonObject;)Z
+       5: pop
+       6: aload_0
+       7: aload_1
+       8: aconst_null
+       9: invokevirtual #184                // Method _cfe983:(Lcom/google/gson/JsonObject;Ljava/util/List;)V
+      12: return
+
+  private void _cfe983(com.google.gson.JsonObject, java.util.List<L._ec7e36._a1dd3a>);
+    Code:
+       0: aload_0
+       1: getfield      #116                // Field _233ef1:LL/_55938e/_590f69;
+       4: invokeinterface #295,  1          // InterfaceMethod L/_55938e/_590f69.size:()I
+       9: istore_3
+      10: aload_0
+      11: aload_2
+      12: invokevirtual #180                // Method _79e7e6:(Ljava/util/List;)Ljava/util/List;
+      15: astore        4
+      17: aload         4
+      19: invokeinterface #341,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      24: astore        5
+      26: aload         5
+      28: invokeinterface #335,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      33: ifeq          69
+      36: aload         5
+      38: invokeinterface #336,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      43: checkcast     #49                 // class L/_ec7e36/_a1dd3a
+      46: astore        6
+      48: aload         6
+      50: aload_1
+      51: invokeinterface #282,  2          // InterfaceMethod L/_ec7e36/_a1dd3a.load:(Lcom/google/gson/JsonObject;)V
+      56: goto          66
+      59: astore        7
+      61: aload         7
+      63: invokevirtual #246                // Method java/io/IOException.printStackTrace:()V
+      66: goto          26
+      69: iload_3
+      70: aload_0
+      71: getfield      #116                // Field _233ef1:LL/_55938e/_590f69;
+      74: invokeinterface #295,  1          // InterfaceMethod L/_55938e/_590f69.size:()I
+      79: if_icmpeq     102
+      82: aload_2
+      83: ifnull        95
+      86: aload         4
+      88: aload_2
+      89: invokeinterface #338,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+      94: pop
+      95: aload_0
+      96: aload_1
+      97: aload         4
+      99: invokevirtual #184                // Method _cfe983:(Lcom/google/gson/JsonObject;Ljava/util/List;)V
+     102: return
+    Exception table:
+       from    to  target type
+          48    56    59   Class java/io/IOException
+
+  private java.util.List<L._ec7e36._a1dd3a> _79e7e6(java.util.List<L._ec7e36._a1dd3a>);
+    Code:
+       0: new           #99                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #257                // Method java/util/ArrayList."<init>":()V
+       7: astore_2
+       8: aload_0
+       9: getfield      #116                // Field _233ef1:LL/_55938e/_590f69;
+      12: invokeinterface #296,  1          // InterfaceMethod L/_55938e/_590f69.values:()Ljava/util/Collection;
+      17: invokeinterface #333,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      22: astore_3
+      23: aload_3
+      24: invokeinterface #335,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      29: ifeq          82
+      32: aload_3
+      33: invokeinterface #336,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      38: astore        4
+      40: aload         4
+      42: instanceof    #49                 // class L/_ec7e36/_a1dd3a
+      45: ifeq          79
+      48: aload         4
+      50: checkcast     #49                 // class L/_ec7e36/_a1dd3a
+      53: astore        5
+      55: aload_1
+      56: ifnull        70
+      59: aload_1
+      60: aload         5
+      62: invokeinterface #339,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      67: ifne          79
+      70: aload_2
+      71: aload         5
+      73: invokeinterface #337,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      78: pop
+      79: goto          23
+      82: aload_2
+      83: invokedynamic #374,  0            // InvokeDynamic #23:applyAsInt:()Ljava/util/function/ToIntFunction;
+      88: invokestatic  #334                // InterfaceMethod java/util/Comparator.comparingInt:(Ljava/util/function/ToIntFunction;)Ljava/util/Comparator;
+      91: invokeinterface #342,  2          // InterfaceMethod java/util/List.sort:(Ljava/util/Comparator;)V
+      96: aload_2
+      97: areturn
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getstatic     #131                // Field L/_88f3cf/_02d7ad._c5f585:LL/_55938e/_e62626;
+       4: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       7: checkcast     #72                 // class L/_88f3cf/_1253fc
+      10: astore_1
+      11: aload_1
+      12: ifnonnull     22
+      15: aload_0
+      16: invokevirtual #229                // Method getId:()Ljava/lang/String;
+      19: goto          26
+      22: aload_1
+      23: invokevirtual #251                // Method java/lang/Object.toString:()Ljava/lang/String;
+      26: areturn
+
+  protected ML._590f69._5b3f84._dcf582 _371a34(java.lang.String);
+    Code:
+       0: ldc           #13                 // String lunar
+       2: aload_0
+       3: invokevirtual #229                // Method getId:()Ljava/lang/String;
+       6: invokevirtual #254                // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+       9: aload_1
+      10: invokedynamic #375,  0            // InvokeDynamic #24:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      15: invokestatic  #275                // InterfaceMethod ML/_590f69/_5b3f84/_dcf582.create:(Ljava/lang/String;Ljava/lang/String;)LML/_590f69/_5b3f84/_dcf582;
+      18: astore_2
+      19: aload_0
+      20: getfield      #120                // Field mc:LML/_590f69/_bb4487/_bb4487;
+      23: invokeinterface #267,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getResourceManager:()LML/_590f69/_bb4487/_2ce426/_1253fc;
+      28: aload_2
+      29: invokeinterface #268,  2          // InterfaceMethod ML/_590f69/_bb4487/_2ce426/_1253fc.bridge$getResource:(LML/_590f69/_5b3f84/_dcf582;)LML/_590f69/_bb4487/_2ce426/_bb4487;
+      34: ifnull        39
+      37: aload_2
+      38: areturn
+      39: aconst_null
+      40: areturn
+
+  protected L._88f3cf._429bf0 _cfe983(java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: aload_1
+       1: ifnull        205
+       4: aload_0
+       5: getfield      #116                // Field _233ef1:LL/_55938e/_590f69;
+       8: ifnonnull     15
+      11: aconst_null
+      12: goto          25
+      15: aload_0
+      16: getstatic     #124                // Field L/_88f3cf/_02d7ad._92a7a7:LL/_55938e/_e62626;
+      19: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      22: checkcast     #57                 // class L/_88f3cf/_429bf0
+      25: astore        6
+      27: aload         6
+      29: ifnonnull     53
+      32: new           #25                 // class com/google/gson/JsonObject
+      35: dup
+      36: invokespecial #153                // Method com/google/gson/JsonObject."<init>":()V
+      39: astore        4
+      41: new           #99                 // class java/util/ArrayList
+      44: dup
+      45: invokespecial #257                // Method java/util/ArrayList."<init>":()V
+      48: astore        5
+      50: goto          67
+      53: aload         6
+      55: invokevirtual #179                // Method L/_88f3cf/_429bf0._272ec0:()Lcom/google/gson/JsonObject;
+      58: astore        4
+      60: aload         6
+      62: invokevirtual #178                // Method L/_88f3cf/_429bf0._5cc018:()Ljava/util/List;
+      65: astore        5
+      67: aload_0
+      68: getfield      #120                // Field mc:LML/_590f69/_bb4487/_bb4487;
+      71: invokeinterface #266,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getGameSettings:()LML/_590f69/_bb4487/_88f3cf/_cfe983;
+      76: invokeinterface #269,  1          // InterfaceMethod ML/_590f69/_bb4487/_88f3cf/_cfe983.bridge$getKeyBindings:()[LML/_590f69/_bb4487/_88f3cf/_21aca6;
+      81: astore        7
+      83: aload         7
+      85: arraylength
+      86: istore        8
+      88: iconst_0
+      89: istore        9
+      91: iload         9
+      93: iload         8
+      95: if_icmpge     202
+      98: aload         7
+     100: iload         9
+     102: aaload
+     103: astore        10
+     105: aload         10
+     107: invokeinterface #270,  1          // InterfaceMethod ML/_590f69/_bb4487/_88f3cf/_21aca6.bridge$getCategory:()Ljava/lang/String;
+     112: aload_1
+     113: invokevirtual #253                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     116: ifne          122
+     119: goto          196
+     122: aload         5
+     124: aload         10
+     126: invokeinterface #337,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     131: pop
+     132: aload         10
+     134: invokeinterface #272,  1          // InterfaceMethod ML/_590f69/_bb4487/_88f3cf/_21aca6.bridge$getUntranslatedKeyDescription:()Ljava/lang/String;
+     139: astore        11
+     141: aload         4
+     143: aload         11
+     145: invokevirtual #159                // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+     148: ifeq          179
+     151: aload         10
+     153: invokestatic  #161                // Method ML/_590f69/_21aca6._d043db:()LML/_590f69/_a140a8/_590f69;
+     156: aload         4
+     158: aload         11
+     160: invokevirtual #158                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     163: invokevirtual #152                // Method com/google/gson/JsonElement.getAsString:()Ljava/lang/String;
+     166: invokeinterface #274,  2          // InterfaceMethod ML/_590f69/_a140a8/_590f69._22353b:(Ljava/lang/String;)LML/_590f69/_a140a8/_21aca6;
+     171: invokeinterface #273,  2          // InterfaceMethod ML/_590f69/_bb4487/_88f3cf/_21aca6.bridge$setKey:(LML/_590f69/_a140a8/_21aca6;)V
+     176: goto          196
+     179: aload         4
+     181: aload         11
+     183: aload         10
+     185: invokeinterface #271,  1          // InterfaceMethod ML/_590f69/_bb4487/_88f3cf/_21aca6.bridge$getKey:()LML/_590f69/_a140a8/_21aca6;
+     190: invokevirtual #160                // Method ML/_590f69/_a140a8/_21aca6.name:()Ljava/lang/String;
+     193: invokevirtual #157                // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+     196: iinc          9, 1
+     199: goto          91
+     202: goto          223
+     205: new           #25                 // class com/google/gson/JsonObject
+     208: dup
+     209: invokespecial #153                // Method com/google/gson/JsonObject."<init>":()V
+     212: astore        4
+     214: new           #99                 // class java/util/ArrayList
+     217: dup
+     218: invokespecial #257                // Method java/util/ArrayList."<init>":()V
+     221: astore        5
+     223: new           #57                 // class L/_88f3cf/_429bf0
+     226: dup
+     227: aload_2
+     228: aload_1
+     229: aload_3
+     230: aload         5
+     232: aload         4
+     234: invokespecial #177                // Method L/_88f3cf/_429bf0."<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/google/gson/JsonObject;)V
+     237: areturn
+
+  public com.google.gson.JsonElement _2def44();
+    Code:
+       0: new           #25                 // class com/google/gson/JsonObject
+       3: dup
+       4: invokespecial #153                // Method com/google/gson/JsonObject."<init>":()V
+       7: astore_1
+       8: aload_1
+       9: ldc           #12                 // String id
+      11: aload_0
+      12: invokevirtual #229                // Method getId:()Ljava/lang/String;
+      15: invokevirtual #157                // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+      18: aload_1
+      19: ldc           #10                 // String enabled
+      21: aload_0
+      22: invokevirtual #230                // Method isEnabled:()Z
+      25: invokestatic  #248                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      28: invokevirtual #155                // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+      31: aload_0
+      32: getstatic     #129                // Field L/_88f3cf/_02d7ad._9a425c:LL/_55938e/_e62626;
+      35: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      38: checkcast     #44                 // class L/_c8175c/_cfe983/_1e73d7
+      41: astore_2
+      42: aload_1
+      43: ldc           #7                  // String allowed
+      45: aload_2
+      46: ifnull        79
+      49: aload_2
+      50: invokeinterface #276,  1          // InterfaceMethod L/_c8175c/_cfe983/_1e73d7._f34034:()Ljava/util/Optional;
+      55: invokevirtual #262                // Method java/util/Optional.isEmpty:()Z
+      58: ifne          79
+      61: aload_2
+      62: invokeinterface #276,  1          // InterfaceMethod L/_c8175c/_cfe983/_1e73d7._f34034:()Ljava/util/Optional;
+      67: invokevirtual #260                // Method java/util/Optional.get:()Ljava/lang/Object;
+      70: checkcast     #87                 // class java/lang/Boolean
+      73: invokevirtual #247                // Method java/lang/Boolean.booleanValue:()Z
+      76: ifeq          83
+      79: iconst_1
+      80: goto          84
+      83: iconst_0
+      84: invokestatic  #248                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      87: invokevirtual #155                // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+      90: aload_1
+      91: ldc           #15                 // String rewind
+      93: aload_0
+      94: invokevirtual #220                // Method _f50b51:()Z
+      97: invokestatic  #248                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     100: invokevirtual #155                // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+     103: aload_0
+     104: getstatic     #131                // Field L/_88f3cf/_02d7ad._c5f585:LL/_55938e/_e62626;
+     107: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+     110: checkcast     #72                 // class L/_88f3cf/_1253fc
+     113: astore_3
+     114: aload_3
+     115: ifnull        243
+     118: aload_1
+     119: ldc           #14                 // String name
+     121: aload_3
+     122: invokeinterface #317,  1          // InterfaceMethod L/_88f3cf/_1253fc.getName:()Ljava/lang/String;
+     127: invokevirtual #157                // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+     130: aload_3
+     131: invokeinterface #315,  1          // InterfaceMethod L/_88f3cf/_1253fc._a47556:()Ljava/util/Set;
+     136: ifnull        194
+     139: new           #23                 // class com/google/gson/JsonArray
+     142: dup
+     143: invokespecial #148                // Method com/google/gson/JsonArray."<init>":()V
+     146: astore        4
+     148: aload_3
+     149: invokeinterface #315,  1          // InterfaceMethod L/_88f3cf/_1253fc._a47556:()Ljava/util/Set;
+     154: invokeinterface #348,  1          // InterfaceMethod java/util/Set.stream:()Ljava/util/stream/Stream;
+     159: invokedynamic #376,  0            // InvokeDynamic #25:apply:()Ljava/util/function/Function;
+     164: invokeinterface #350,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+     169: aload         4
+     171: dup
+     172: invokestatic  #258                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+     175: pop
+     176: invokedynamic #377,  0            // InvokeDynamic #26:accept:(Lcom/google/gson/JsonArray;)Ljava/util/function/Consumer;
+     181: invokeinterface #349,  2          // InterfaceMethod java/util/stream/Stream.forEach:(Ljava/util/function/Consumer;)V
+     186: aload_1
+     187: ldc           #8                  // String categories
+     189: aload         4
+     191: invokevirtual #154                // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     194: aload_3
+     195: invokeinterface #313,  1          // InterfaceMethod L/_88f3cf/_1253fc._f955d5:()Ljava/util/Set;
+     200: ifnull        243
+     203: new           #23                 // class com/google/gson/JsonArray
+     206: dup
+     207: invokespecial #148                // Method com/google/gson/JsonArray."<init>":()V
+     210: astore        4
+     212: aload_3
+     213: invokeinterface #313,  1          // InterfaceMethod L/_88f3cf/_1253fc._f955d5:()Ljava/util/Set;
+     218: aload         4
+     220: dup
+     221: invokestatic  #258                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+     224: pop
+     225: invokedynamic #377,  0            // InvokeDynamic #26:accept:(Lcom/google/gson/JsonArray;)Ljava/util/function/Consumer;
+     230: invokeinterface #344,  2          // InterfaceMethod java/util/Set.forEach:(Ljava/util/function/Consumer;)V
+     235: aload_1
+     236: ldc           #6                  // String aliases
+     238: aload         4
+     240: invokevirtual #154                // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     243: aload_0
+     244: getstatic     #134                // Field L/_88f3cf/_02d7ad._2dca71:LL/_55938e/_e62626;
+     247: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+     250: checkcast     #62                 // class L/_88f3cf/_bb4487
+     253: astore        4
+     255: aload         4
+     257: ifnull        286
+     260: aload_1
+     261: ldc           #9                  // String children
+     263: aload         4
+     265: invokedynamic #378,  0            // InvokeDynamic #27:get:()Ljava/util/function/Supplier;
+     270: invokedynamic #379,  0            // InvokeDynamic #28:accept:()LL/_c8175c/_21aca6$_cfe983;
+     275: invokeinterface #303,  3          // InterfaceMethod L/_88f3cf/_bb4487._cfe983:(Ljava/util/function/Supplier;LL/_c8175c/_21aca6$_cfe983;)Ljava/lang/Object;
+     280: checkcast     #24                 // class com/google/gson/JsonElement
+     283: invokevirtual #154                // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     286: aload_1
+     287: areturn
+
+  public com.google.gson.JsonElement _dc5919();
+    Code:
+       0: aload_0
+       1: getstatic     #122                // Field L/_88f3cf/_02d7ad._b7f423:LL/_55938e/_e62626;
+       4: invokevirtual #212                // Method _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       7: checkcast     #69                 // class L/_88f3cf/_c8175c
+      10: astore_1
+      11: aload_1
+      12: ifnull        102
+      15: aload_1
+      16: invokeinterface #306,  1          // InterfaceMethod L/_88f3cf/_c8175c._ae27bf:()Ljava/util/Set;
+      21: astore_2
+      22: new           #23                 // class com/google/gson/JsonArray
+      25: dup
+      26: aload_2
+      27: invokeinterface #347,  1          // InterfaceMethod java/util/Set.size:()I
+      32: invokespecial #149                // Method com/google/gson/JsonArray."<init>":(I)V
+      35: astore_3
+      36: aload_2
+      37: invokeinterface #346,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      42: astore        4
+      44: aload         4
+      46: invokeinterface #335,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      51: ifeq          100
+      54: aload         4
+      56: invokeinterface #336,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      61: checkcast     #48                 // class L/_ec7e36/_dd3308
+      64: astore        5
+      66: aload         5
+      68: getstatic     #113                // Field L/_ec7e36/_1e73d7/_88f3cf._d6effc:LL/_55938e/_e62626;
+      71: invokeinterface #280,  2          // InterfaceMethod L/_ec7e36/_dd3308._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      76: checkcast     #52                 // class L/_ec7e36/_1e73d7/_590f69
+      79: astore        6
+      81: aload         6
+      83: ifnull        97
+      86: aload_3
+      87: aload         6
+      89: invokeinterface #284,  1          // InterfaceMethod L/_ec7e36/_1e73d7/_590f69._db48d1:()Lcom/google/gson/JsonElement;
+      94: invokevirtual #150                // Method com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+      97: goto          44
+     100: aload_3
+     101: areturn
+     102: new           #23                 // class com/google/gson/JsonArray
+     105: dup
+     106: invokespecial #148                // Method com/google/gson/JsonArray."<init>":()V
+     109: areturn
+
+  public L._55938e._590f69 _2e6184();
+    Code:
+       0: aload_0
+       1: getfield      #116                // Field _233ef1:LL/_55938e/_590f69;
+       4: areturn
+
+  public L._88f3cf._bb4487._590f69 _be2139();
+    Code:
+       0: aload_0
+       1: getfield      #115                // Field _97dc83:LL/_88f3cf/_bb4487/_590f69;
+       4: areturn
+
+  public <TRAIT> TRAIT _cfe983(L._55938e._e62626<TRAIT>, TRAIT);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #289,  3          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      11: areturn
+
+  public <TRAIT> TRAIT _cfe983(L._55938e._e62626<TRAIT>, L.util._b60e23<TRAIT>);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #288,  3          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_e62626;LL/util/_b60e23;)Ljava/lang/Object;
+      11: areturn
+
+  public <TRAIT, B extends L.util._b60e23<TRAIT>> TRAIT _cfe983(L._55938e._cfe983<TRAIT, B>, java.util.function.Consumer<B>);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #285,  3          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_cfe983;Ljava/util/function/Consumer;)Ljava/lang/Object;
+      11: areturn
+
+  public <TRAIT> TRAIT _cfe983(L._55938e._e62626<TRAIT>, java.util.function.Function<L._55938e._e62626<TRAIT>, ? extends TRAIT>);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #291,  3          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      11: areturn
+
+  public <TRAIT> TRAIT _21aca6(L._55938e._e62626<TRAIT>, java.util.function.Function<L._55938e._e62626<TRAIT>, ? extends TRAIT>);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #294,  3          // InterfaceMethod L/_55938e/_590f69._21aca6:(LL/_55938e/_e62626;Ljava/util/function/Function;)Ljava/lang/Object;
+      11: areturn
+
+  public <TRAIT> TRAIT _cfe983(L._55938e._e62626<TRAIT>, java.util.function.BiFunction<L._55938e._e62626<TRAIT>, ? super TRAIT, ? extends TRAIT>);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #290,  3          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_e62626;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+      11: areturn
+
+  public <TRAIT> TRAIT _cfe983(L._55938e._e62626<? extends TRAIT>);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: invokeinterface #287,  2          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      10: areturn
+
+  public void _cfe983(L._55938e._cb9292);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: invokeinterface #286,  2          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_cb9292;)V
+      10: return
+
+  public void _cfe983(L._55938e._d4ca6c);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: invokeinterface #292,  2          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_d4ca6c;)V
+      10: return
+
+  public void _cfe983(L._55938e._88f3cf);
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: aload_1
+       5: invokeinterface #293,  2          // InterfaceMethod L/_55938e/_590f69._cfe983:(LL/_55938e/_88f3cf;)V
+      10: return
+
+  public L._55938e._d4ca6c _a1bbb7();
+    Code:
+       0: aload_0
+       1: invokevirtual #203                // Method _2e6184:()LL/_55938e/_590f69;
+       4: areturn
+
+  private static void _cfe983(com.google.gson.JsonArray, L._88f3cf._21aca6, com.google.gson.JsonArray);
+    Code:
+       0: aload_1
+       1: invokeinterface #330,  1          // InterfaceMethod L/_88f3cf/_21aca6._2def44:()Lcom/google/gson/JsonElement;
+       6: astore_3
+       7: aload_3
+       8: instanceof    #25                 // class com/google/gson/JsonObject
+      11: ifeq          28
+      14: aload_3
+      15: checkcast     #25                 // class com/google/gson/JsonObject
+      18: astore        4
+      20: aload         4
+      22: ldc           #9                  // String children
+      24: aload_2
+      25: invokevirtual #154                // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      28: aload_0
+      29: aload_3
+      30: invokevirtual #150                // Method com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+      33: return
+
+  private static L._e62626._cfe983._cfe983 _cfe983(java.lang.Object[], L._88f3cf._1253fc, java.lang.String);
+    Code:
+       0: aload_0
+       1: ifnull        17
+       4: aload_0
+       5: arraylength
+       6: ifle          17
+       9: aload_1
+      10: aload_2
+      11: invokeinterface #312,  2          // InterfaceMethod L/_88f3cf/_1253fc._8278d4:(Ljava/lang/String;)LL/_e62626/_cfe983/_cfe983;
+      16: areturn
+      17: aload_1
+      18: aload_2
+      19: iconst_0
+      20: anewarray     #90                 // class java/lang/Object
+      23: invokeinterface #316,  3          // InterfaceMethod L/_88f3cf/_1253fc._21aca6:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      28: invokestatic  #277                // InterfaceMethod L/_e62626/_cfe983/_cfe983._82ba80:(Ljava/lang/String;)LL/_e62626/_cfe983/_cfe983;
+      31: areturn
+
+  private static L._88f3cf._88f3cf _21aca6(L._55938e._e62626);
+    Code:
+       0: invokestatic  #328                // InterfaceMethod L/_88f3cf/_88f3cf._1ca062:()LL/_88f3cf/_88f3cf;
+       3: areturn
+
+  private static L._88f3cf._88f3cf _590f69(L._55938e._e62626);
+    Code:
+       0: invokestatic  #328                // InterfaceMethod L/_88f3cf/_88f3cf._1ca062:()LL/_88f3cf/_88f3cf;
+       3: areturn
+
+  private static L._88f3cf._88f3cf _1e73d7(L._55938e._e62626);
+    Code:
+       0: invokestatic  #328                // InterfaceMethod L/_88f3cf/_88f3cf._1ca062:()LL/_88f3cf/_88f3cf;
+       3: areturn
+
+  private static L._88f3cf._88f3cf _bb4487(L._55938e._e62626);
+    Code:
+       0: invokestatic  #328                // InterfaceMethod L/_88f3cf/_88f3cf._1ca062:()LL/_88f3cf/_88f3cf;
+       3: areturn
+
+  private static L._88f3cf._88f3cf _1253fc(L._55938e._e62626);
+    Code:
+       0: invokestatic  #328                // InterfaceMethod L/_88f3cf/_88f3cf._1ca062:()LL/_88f3cf/_88f3cf;
+       3: areturn
+
+  private static void _bb4487(java.lang.Runnable, L._d4ca6c._21aca6);
+    Code:
+       0: aload_0
+       1: invokeinterface #332,  1          // InterfaceMethod java/lang/Runnable.run:()V
+       6: return
+
+  private static L._88f3cf._88f3cf _d4ca6c(L._55938e._e62626);
+    Code:
+       0: invokestatic  #328                // InterfaceMethod L/_88f3cf/_88f3cf._1ca062:()LL/_88f3cf/_88f3cf;
+       3: areturn
+
+  private static L._88f3cf._88f3cf _13ea87(L._55938e._e62626);
+    Code:
+       0: invokestatic  #328                // InterfaceMethod L/_88f3cf/_88f3cf._1ca062:()LL/_88f3cf/_88f3cf;
+       3: areturn
+
+  private void _cfe983(L._ec7e36._32565b, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_0
+       3: iload_2
+       4: invokevirtual #189                // Method _cfe983:(LL/_ec7e36/_32565b;ZZ)V
+       7: return
+
+  private void _cfe983(L._ec7e36._32565b);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_1
+       3: iconst_0
+       4: invokevirtual #189                // Method _cfe983:(LL/_ec7e36/_32565b;ZZ)V
+       7: return
+
+  private static L._88f3cf._6c713e _2ce426(L._55938e._e62626);
+    Code:
+       0: getstatic     #138                // Field L/_88f3cf/_6c713e.CHILDREN_INITIALIZED:LL/_88f3cf/_6c713e;
+       3: areturn
+
+  private L._88f3cf._bb4487 _88f3cf(L._55938e._e62626);
+    Code:
+       0: aload_0
+       1: invokedynamic #380,  0            // InvokeDynamic #29:test:(LL/_88f3cf/_cfe983;)Ljava/util/function/Predicate;
+       6: invokestatic  #302                // InterfaceMethod L/_88f3cf/_bb4487._cfe983:(Ljava/util/function/Predicate;)LL/_88f3cf/_bb4487;
+       9: areturn
+
+  private static L._88f3cf._6c713e _429bf0(L._55938e._e62626);
+    Code:
+       0: getstatic     #141                // Field L/_88f3cf/_6c713e.OPTIONS_INITIALIZED:LL/_88f3cf/_6c713e;
+       3: areturn
+
+  private L._88f3cf._c8175c _2f4182(L._55938e._e62626);
+    Code:
+       0: aload_0
+       1: invokedynamic #381,  0            // InvokeDynamic #30:test:(LL/_88f3cf/_cfe983;)Ljava/util/function/Predicate;
+       6: aload_0
+       7: invokevirtual #216                // Method _4ec2de:()Z
+      10: invokestatic  #305                // InterfaceMethod L/_88f3cf/_c8175c._cfe983:(Ljava/util/function/Predicate;Z)LL/_88f3cf/_c8175c;
+      13: areturn
+
+  private L._88f3cf._00e05b _a140a8(L._55938e._e62626);
+    Code:
+       0: new           #59                 // class L/_88f3cf/_00e05b
+       3: dup
+       4: aload_0
+       5: invokespecial #231                // Method L/_88f3cf/_00e05b."<init>":(LL/_88f3cf/_21aca6;)V
+       8: areturn
+
+  private static L._88f3cf._6c713e _6c713e(L._55938e._e62626);
+    Code:
+       0: getstatic     #140                // Field L/_88f3cf/_6c713e.INITIALIZED:LL/_88f3cf/_6c713e;
+       3: areturn
+
+  private L._88f3cf._1253fc _c8175c(L._55938e._e62626);
+    Code:
+       0: aload_0
+       1: invokevirtual #201                // Method _14f3dc:()LL/_88f3cf/_1253fc;
+       4: areturn
+
+  private static void _cfe983(L._88f3cf._13ea87);
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: invokeinterface #321,  2          // InterfaceMethod L/_88f3cf/_13ea87._f8005d:(Z)V
+       7: return
+
+  private void _590f69(L._ec7e36._dd3308);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: aload_1
+       3: invokedynamic #382,  0            // InvokeDynamic #31:accept:(LL/_88f3cf/_cfe983;LL/_ec7e36/_dd3308;)Ljava/util/function/Consumer;
+       8: invokeinterface #279,  2          // InterfaceMethod L/_ec7e36/_dd3308._691aaf:(Ljava/util/function/Consumer;)LL/_ec7e36/_dd3308;
+      13: pop
+      14: return
+
+  private void _cfe983(L._ec7e36._dd3308, java.lang.Boolean);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: invokevirtual #196                // Method _cb9292:(Ljava/lang/Object;)V
+       5: invokestatic  #164                // Method L/_cfe983._ecae14:()LL/_cfe983;
+       8: ifnonnull     12
+      11: return
+      12: invokestatic  #164                // Method L/_cfe983._ecae14:()LL/_cfe983;
+      15: invokevirtual #166                // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+      18: ldc           #26                 // class com/lunarclient/apollo/module/modsetting/ModSettingModule
+      20: invokevirtual #169                // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+      23: aload_0
+      24: aload_1
+      25: aload_2
+      26: invokedynamic #383,  0            // InvokeDynamic #32:accept:(LL/_88f3cf/_cfe983;LL/_ec7e36/_dd3308;Ljava/lang/Boolean;)Ljava/util/function/Consumer;
+      31: invokevirtual #261                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      34: goto          53
+      37: astore_3
+      38: ldc           #4                  // String Apollo
+      40: ldc           #5                  // String Apollo broadcast failed
+      42: iconst_1
+      43: anewarray     #90                 // class java/lang/Object
+      46: dup
+      47: iconst_0
+      48: aload_3
+      49: aastore
+      50: invokestatic  #170                // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      53: return
+    Exception table:
+       from    to  target type
+          12    34    37   Class java/lang/Throwable
+
+  private void _cfe983(L._ec7e36._dd3308, java.lang.Boolean, L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_3
+       1: checkcast     #38                 // class L/_cfe983/_cfe983/_cfe983/_590f69/_cfe983
+       4: invokevirtual #167                // Method L/_cfe983/_cfe983/_cfe983/_590f69/_cfe983._114fbf:()LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;
+       7: aload_1
+       8: aload_0
+       9: invokevirtual #229                // Method getId:()Ljava/lang/String;
+      12: aload_2
+      13: invokevirtual #168                // Method L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/String;Ljava/lang/Object;)V
+      16: return
+}

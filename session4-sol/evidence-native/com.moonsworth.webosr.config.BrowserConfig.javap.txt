@@ -1,0 +1,87 @@
+public final class com.moonsworth.webosr.config.BrowserConfig {
+  public int width;
+
+  public int height;
+
+  public double initialScale;
+
+  public com.moonsworth.webosr.wrappers.Session session;
+
+  public com.moonsworth.webosr.wrappers.Browser$Listener eventHandler;
+
+  public boolean initialFocus;
+
+  public boolean accelerated;
+
+  public boolean transparent;
+
+  public boolean images;
+
+  public boolean javascript;
+
+  public boolean compositing;
+
+  public java.lang.String userAgent;
+
+  public java.lang.String fontFamilyStandard;
+
+  public java.lang.String fontFamilyFixed;
+
+  public java.lang.String fontFamilySerif;
+
+  public java.lang.String fontFamilySansSerif;
+
+  public com.moonsworth.webosr.config.BrowserConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #25                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: sipush        800
+       8: putfield      #24                 // Field width:I
+      11: aload_0
+      12: sipush        600
+      15: putfield      #16                 // Field height:I
+      18: aload_0
+      19: dconst_1
+      20: putfield      #19                 // Field initialScale:D
+      23: aload_0
+      24: aconst_null
+      25: putfield      #21                 // Field session:Lcom/moonsworth/webosr/wrappers/Session;
+      28: aload_0
+      29: aconst_null
+      30: putfield      #11                 // Field eventHandler:Lcom/moonsworth/webosr/wrappers/Browser$Listener;
+      33: aload_0
+      34: iconst_1
+      35: putfield      #18                 // Field initialFocus:Z
+      38: aload_0
+      39: iconst_0
+      40: putfield      #9                  // Field accelerated:Z
+      43: aload_0
+      44: iconst_0
+      45: putfield      #22                 // Field transparent:Z
+      48: aload_0
+      49: iconst_1
+      50: putfield      #17                 // Field images:Z
+      53: aload_0
+      54: iconst_1
+      55: putfield      #20                 // Field javascript:Z
+      58: aload_0
+      59: iconst_0
+      60: putfield      #10                 // Field compositing:Z
+      63: aload_0
+      64: ldc           #3                  // String Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/615.1.18.100.1 (KHTML, like Gecko) Version/16.4.1 Safari/615.1.18.100.1
+      66: putfield      #23                 // Field userAgent:Ljava/lang/String;
+      69: aload_0
+      70: ldc           #4                  // String Times New Roman
+      72: putfield      #15                 // Field fontFamilyStandard:Ljava/lang/String;
+      75: aload_0
+      76: ldc           #2                  // String Courier New
+      78: putfield      #12                 // Field fontFamilyFixed:Ljava/lang/String;
+      81: aload_0
+      82: ldc           #4                  // String Times New Roman
+      84: putfield      #14                 // Field fontFamilySerif:Ljava/lang/String;
+      87: aload_0
+      88: ldc           #1                  // String Arial
+      90: putfield      #13                 // Field fontFamilySansSerif:Ljava/lang/String;
+      93: return
+}

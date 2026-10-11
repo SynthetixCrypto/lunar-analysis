@@ -1,0 +1,919 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6.class
+  Last modified Dec 31, 1969; size 11846 bytes
+  SHA-256 checksum 56ed261d03939bbca2b86f3ea33cea5198c2f79912d7e8132a0283f0880797ef
+public class L._cfe983._cfe983._cfe983._590f69._21aca6
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #15                         // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6
+  super_class: #32                        // java/lang/Object
+  interfaces: 0, fields: 1, methods: 12, attributes: 2
+Constant pool:
+    #1 = String             #190          // \u0001.\u0001
+    #2 = String             #254          // Apollo
+    #3 = String             #263          // Failed to wrap option \'%s\'. The provided value \'%s\' (Type: %s) could not be converted.
+    #4 = String             #353          // mod_setting
+    #5 = Class              #297          // com/google/common/base/CaseFormat
+    #6 = Class              #298          // com/google/protobuf/Value
+    #7 = Class              #299          // com/google/protobuf/Value$Builder
+    #8 = Class              #300          // com/lunarclient/apollo/configurable/v1/ConfigurableSettings
+    #9 = Class              #301          // com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder
+   #10 = Class              #302          // com/lunarclient/apollo/mods/ApolloModsManager
+   #11 = Class              #303          // com/lunarclient/apollo/mods/ApolloModsManager$Container
+   #12 = Class              #304          // com/lunarclient/apollo/network/NetworkOptions
+   #13 = Class              #305          // com/lunarclient/apollo/option/Option
+   #14 = Class              #306          // L/_cfe983
+   #15 = Class              #307          // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6
+   #16 = Class              #308          // L/_cfe983/_21aca6
+   #17 = Class              #309          // L/_00e05b/_cfe983
+   #18 = Class              #310          // L/_02d7ad/_1253fc/_1eb51c
+   #19 = Class              #311          // L/_02d7ad/_13ea87/_bb4487
+   #20 = Class              #312          // L/_ec7e36/_dd3308
+   #21 = Class              #313          // L/_ec7e36/_1e73d7/_88f3cf
+   #22 = Class              #314          // L/_88f3cf/_cfe983
+   #23 = Class              #315          // L/_88f3cf/_02d7ad
+   #24 = Class              #316          // L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983
+   #25 = Class              #317          // L/_88f3cf/_c8175c
+   #26 = Class              #318          // L/_88f3cf/_2ce426
+   #27 = Class              #319          // L/_88f3cf/_21aca6
+   #28 = Class              #320          // L/util/_e93d3c
+   #29 = Class              #332          // io/leangen/geantyref/TypeToken
+   #30 = Class              #335          // java/lang/Class
+   #31 = Class              #336          // java/lang/ClassCastException
+   #32 = Class              #337          // java/lang/Object
+   #33 = Class              #338          // java/lang/String
+   #34 = Class              #339          // java/lang/invoke/LambdaMetafactory
+   #35 = Class              #340          // java/lang/invoke/MethodHandles
+   #36 = Class              #341          // java/lang/invoke/MethodHandles$Lookup
+   #37 = Class              #342          // java/lang/invoke/StringConcatFactory
+   #38 = Class              #343          // java/util/HashMap
+   #39 = Class              #344          // java/util/Iterator
+   #40 = Class              #345          // java/util/Map
+   #41 = Class              #346          // java/util/Optional
+   #42 = Class              #347          // java/util/Set
+   #43 = Class              #348          // java/util/concurrent/ExecutorService
+   #44 = Fieldref           #5.#130       // com/google/common/base/CaseFormat.LOWER_HYPHEN:Lcom/google/common/base/CaseFormat;
+   #45 = Fieldref           #5.#147       // com/google/common/base/CaseFormat.UPPER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
+   #46 = Fieldref           #14.#136      // L/_cfe983._720b87:Ljava/util/concurrent/ExecutorService;
+   #47 = Fieldref           #15.#132      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._0d9e0a:Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+   #48 = Fieldref           #21.#131      // L/_ec7e36/_1e73d7/_88f3cf._d6eb98:LL/_55938e/_e62626;
+   #49 = Fieldref           #23.#120      // L/_88f3cf/_02d7ad._b7f423:LL/_55938e/_e62626;
+   #50 = Fieldref           #23.#139      // L/_88f3cf/_02d7ad._3aac95:LL/_55938e/_e62626;
+   #51 = Methodref          #5.#181       // com/google/common/base/CaseFormat.to:(Lcom/google/common/base/CaseFormat;Ljava/lang/String;)Ljava/lang/String;
+   #52 = Methodref          #6.#170       // com/google/protobuf/Value.newBuilder:()Lcom/google/protobuf/Value$Builder;
+   #53 = Methodref          #8.#171       // com/lunarclient/apollo/configurable/v1/ConfigurableSettings.newBuilder:()Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+   #54 = Methodref          #9.#150       // com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder.build:()Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings;
+   #55 = Methodref          #9.#174       // com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder.putProperties:(Ljava/lang/String;Lcom/google/protobuf/Value;)Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+   #56 = Methodref          #9.#177       // com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder.setApolloModule:(Ljava/lang/String;)Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+   #57 = Methodref          #10.#166      // com/lunarclient/apollo/mods/ApolloModsManager.loadModOptions:()Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+   #58 = Methodref          #11.#157      // com/lunarclient/apollo/mods/ApolloModsManager$Container.getModStatusOptions:()Ljava/util/Map;
+   #59 = Methodref          #12.#182      // com/lunarclient/apollo/network/NetworkOptions.wrapValue:(Lcom/google/protobuf/Value$Builder;Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/protobuf/Value;
+   #60 = Methodref          #13.#160      // com/lunarclient/apollo/option/Option.getTypeToken:()Lio/leangen/geantyref/TypeToken;
+   #61 = Methodref          #14.#138      // L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+   #62 = Methodref          #14.#141      // L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+   #63 = Methodref          #15.#123      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(LL/_ec7e36/_dd3308;)Z
+   #64 = Methodref          #15.#124      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/String;Ljava/lang/Object;)V
+   #65 = Methodref          #15.#125      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(LL/_88f3cf/_cfe983;Ljava/util/Map;)V
+   #66 = Methodref          #15.#126      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(Ljava/lang/String;LL/_ec7e36/_dd3308;Ljava/util/Map;Ljava/lang/Object;)V
+   #67 = Methodref          #15.#127      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)Z
+   #68 = Methodref          #15.#144      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._21aca6:(LL/_ec7e36/_dd3308;)Z
+   #69 = Methodref          #15.#145      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._21aca6:(Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)V
+   #70 = Methodref          #15.#165      // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6.lambda$static$0:()V
+   #71 = Methodref          #16.#121      // L/_cfe983/_21aca6._259930:()Z
+   #72 = Methodref          #16.#176      // L/_cfe983/_21aca6.sendPacket:(Lcom/google/protobuf/Message;)V
+   #73 = Methodref          #17.#142      // L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+   #74 = Methodref          #18.#128      // L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+   #75 = Methodref          #18.#133      // L/_02d7ad/_1253fc/_1eb51c._0c3f03:()Ljava/util/Set;
+   #76 = Methodref          #19.#123      // L/_02d7ad/_13ea87/_bb4487._cfe983:(LL/_ec7e36/_dd3308;)Z
+   #77 = Methodref          #22.#134      // L/_88f3cf/_cfe983._c5b175:()Ljava/lang/String;
+   #78 = Methodref          #22.#135      // L/_88f3cf/_cfe983._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+   #79 = Methodref          #22.#143      // L/_88f3cf/_cfe983._5b3f84:(LL/_55938e/_e62626;)Ljava/util/Optional;
+   #80 = Methodref          #24.#122      // L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._241457:()Z
+   #81 = Methodref          #28.#137      // L/util/_e93d3c._6b9e93:()LL/_cfe983;
+   #82 = Methodref          #28.#140      // L/util/_e93d3c._ce97fc:()LML/_590f69/_bb4487/_bb4487/_cfe983;
+   #83 = Methodref          #29.#159      // io/leangen/geantyref/TypeToken.getType:()Ljava/lang/reflect/Type;
+   #84 = Methodref          #30.#158      // java/lang/Class.getSimpleName:()Ljava/lang/String;
+   #85 = Methodref          #32.#119      // java/lang/Object."<init>":()V
+   #86 = Methodref          #32.#156      // java/lang/Object.getClass:()Ljava/lang/Class;
+   #87 = Methodref          #33.#153      // java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+   #88 = Methodref          #34.#169      // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #89 = Methodref          #37.#168      // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #90 = Methodref          #38.#119      // java/util/HashMap."<init>":()V
+   #91 = Methodref          #41.#151      // java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+   #92 = Methodref          #41.#152      // java/util/Optional.flatMap:(Ljava/util/function/Function;)Ljava/util/Optional;
+   #93 = Methodref          #41.#162      // java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+   #94 = InterfaceMethodref #20.#134      // L/_ec7e36/_dd3308._c5b175:()Ljava/lang/String;
+   #95 = InterfaceMethodref #20.#135      // L/_ec7e36/_dd3308._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+   #96 = InterfaceMethodref #20.#154      // L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+   #97 = InterfaceMethodref #20.#163      // L/_ec7e36/_dd3308.isDefault:()Z
+   #98 = InterfaceMethodref #25.#146      // L/_88f3cf/_c8175c._21aca6:(Ljava/util/function/Predicate;)V
+   #99 = InterfaceMethodref #26.#129      // L/_88f3cf/_2ce426._aef806:()Ljava/util/Optional;
+  #100 = InterfaceMethodref #39.#161      // java/util/Iterator.hasNext:()Z
+  #101 = InterfaceMethodref #39.#172      // java/util/Iterator.next:()Ljava/lang/Object;
+  #102 = InterfaceMethodref #40.#155      // java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #103 = InterfaceMethodref #40.#173      // java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #104 = InterfaceMethodref #42.#164      // java/util/Set.iterator:()Ljava/util/Iterator;
+  #105 = InterfaceMethodref #43.#178      // java/util/concurrent/ExecutorService.submit:(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+  #106 = InvokeDynamic      #0:#167       // #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #107 = InvokeDynamic      #1:#149       // #1:apply:()Ljava/util/function/Function;
+  #108 = InvokeDynamic      #2:#179       // #2:test:()Ljava/util/function/Predicate;
+  #109 = InvokeDynamic      #3:#148       // #3:accept:(LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;Ljava/lang/String;Ljava/util/Map;)Ljava/util/function/Consumer;
+  #110 = InvokeDynamic      #4:#180       // #4:test:(LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;Ljava/lang/String;Ljava/util/Map;)Ljava/util/function/Predicate;
+  #111 = InvokeDynamic      #5:#175       // #5:run:()Ljava/lang/Runnable;
+  #112 = MethodHandle       5:#67         // REF_invokeVirtual L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)Z
+  #113 = MethodHandle       5:#69         // REF_invokeVirtual L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._21aca6:(Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)V
+  #114 = MethodHandle       6:#68         // REF_invokeStatic L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._21aca6:(LL/_ec7e36/_dd3308;)Z
+  #115 = MethodHandle       6:#70         // REF_invokeStatic L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6.lambda$static$0:()V
+  #116 = MethodHandle       6:#88         // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #117 = MethodHandle       6:#89         // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #118 = MethodHandle       9:#99         // REF_invokeInterface L/_88f3cf/_2ce426._aef806:()Ljava/util/Optional;
+  #119 = NameAndType        #253:#213     // "<init>":()V
+  #120 = NameAndType        #257:#270     // _b7f423:LL/_55938e/_e62626;
+  #121 = NameAndType        #258:#214     // _259930:()Z
+  #122 = NameAndType        #259:#214     // _241457:()Z
+  #123 = NameAndType        #260:#221     // _cfe983:(LL/_ec7e36/_dd3308;)Z
+  #124 = NameAndType        #260:#223     // _cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/String;Ljava/lang/Object;)V
+  #125 = NameAndType        #260:#229     // _cfe983:(LL/_88f3cf/_cfe983;Ljava/util/Map;)V
+  #126 = NameAndType        #260:#239     // _cfe983:(Ljava/lang/String;LL/_ec7e36/_dd3308;Ljava/util/Map;Ljava/lang/Object;)V
+  #127 = NameAndType        #260:#244     // _cfe983:(Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)Z
+  #128 = NameAndType        #264:#199     // _8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+  #129 = NameAndType        #265:#209     // _aef806:()Ljava/util/Optional;
+  #130 = NameAndType        #267:#268     // LOWER_HYPHEN:Lcom/google/common/base/CaseFormat;
+  #131 = NameAndType        #275:#270     // _d6eb98:LL/_55938e/_e62626;
+  #132 = NameAndType        #276:#269     // _0d9e0a:Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+  #133 = NameAndType        #277:#210     // _0c3f03:()Ljava/util/Set;
+  #134 = NameAndType        #278:#204     // _c5b175:()Ljava/lang/String;
+  #135 = NameAndType        #279:#227     // _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+  #136 = NameAndType        #280:#272     // _720b87:Ljava/util/concurrent/ExecutorService;
+  #137 = NameAndType        #281:#197     // _6b9e93:()LL/_cfe983;
+  #138 = NameAndType        #282:#198     // _5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+  #139 = NameAndType        #283:#270     // _3aac95:LL/_55938e/_e62626;
+  #140 = NameAndType        #284:#195     // _ce97fc:()LML/_590f69/_bb4487/_bb4487/_cfe983;
+  #141 = NameAndType        #286:#196     // _fe646f:()LL/_cfe983/_21aca6;
+  #142 = NameAndType        #287:#241     // _590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+  #143 = NameAndType        #288:#228     // _5b3f84:(LL/_55938e/_e62626;)Ljava/util/Optional;
+  #144 = NameAndType        #289:#221     // _21aca6:(LL/_ec7e36/_dd3308;)Z
+  #145 = NameAndType        #289:#243     // _21aca6:(Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)V
+  #146 = NameAndType        #289:#251     // _21aca6:(Ljava/util/function/Predicate;)V
+  #147 = NameAndType        #293:#268     // UPPER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
+  #148 = NameAndType        #294:#218     // accept:(LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;Ljava/lang/String;Ljava/util/Map;)Ljava/util/function/Consumer;
+  #149 = NameAndType        #295:#211     // apply:()Ljava/util/function/Function;
+  #150 = NameAndType        #296:#193     // build:()Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings;
+  #151 = NameAndType        #321:#250     // filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+  #152 = NameAndType        #322:#249     // flatMap:(Ljava/util/function/Function;)Ljava/util/Optional;
+  #153 = NameAndType        #323:#245     // format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #154 = NameAndType        #324:#202     // get:()Ljava/lang/Object;
+  #155 = NameAndType        #324:#232     // get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #156 = NameAndType        #325:#201     // getClass:()Ljava/lang/Class;
+  #157 = NameAndType        #326:#207     // getModStatusOptions:()Ljava/util/Map;
+  #158 = NameAndType        #327:#204     // getSimpleName:()Ljava/lang/String;
+  #159 = NameAndType        #328:#205     // getType:()Ljava/lang/reflect/Type;
+  #160 = NameAndType        #329:#200     // getTypeToken:()Lio/leangen/geantyref/TypeToken;
+  #161 = NameAndType        #330:#214     // hasNext:()Z
+  #162 = NameAndType        #331:#248     // ifPresent:(Ljava/util/function/Consumer;)V
+  #163 = NameAndType        #333:#214     // isDefault:()Z
+  #164 = NameAndType        #334:#206     // iterator:()Ljava/util/Iterator;
+  #165 = NameAndType        #349:#213     // lambda$static$0:()V
+  #166 = NameAndType        #350:#194     // loadModOptions:()Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+  #167 = NameAndType        #351:#242     // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #168 = NameAndType        #351:#246     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #169 = NameAndType        #352:#247     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #170 = NameAndType        #354:#191     // newBuilder:()Lcom/google/protobuf/Value$Builder;
+  #171 = NameAndType        #354:#192     // newBuilder:()Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+  #172 = NameAndType        #355:#202     // next:()Ljava/lang/Object;
+  #173 = NameAndType        #356:#235     // put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #174 = NameAndType        #357:#238     // putProperties:(Ljava/lang/String;Lcom/google/protobuf/Value;)Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+  #175 = NameAndType        #358:#203     // run:()Ljava/lang/Runnable;
+  #176 = NameAndType        #359:#216     // sendPacket:(Lcom/google/protobuf/Message;)V
+  #177 = NameAndType        #360:#237     // setApolloModule:(Ljava/lang/String;)Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+  #178 = NameAndType        #361:#236     // submit:(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+  #179 = NameAndType        #362:#212     // test:()Ljava/util/function/Predicate;
+  #180 = NameAndType        #362:#219     // test:(LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;Ljava/lang/String;Ljava/util/Map;)Ljava/util/function/Predicate;
+  #181 = NameAndType        #363:#215     // to:(Lcom/google/common/base/CaseFormat;Ljava/lang/String;)Ljava/lang/String;
+  #182 = NameAndType        #364:#217     // wrapValue:(Lcom/google/protobuf/Value$Builder;Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/protobuf/Value;
+  #183 = MethodType         #213          //  ()V
+  #184 = MethodType         #220          //  (LL/_ec7e36/_dd3308;)V
+  #185 = MethodType         #221          //  (LL/_ec7e36/_dd3308;)Z
+  #186 = MethodType         #231          //  (LL/_88f3cf/_2ce426;)Ljava/util/Optional;
+  #187 = MethodType         #232          //  (Ljava/lang/Object;)Ljava/lang/Object;
+  #188 = MethodType         #233          //  (Ljava/lang/Object;)V
+  #189 = MethodType         #234          //  (Ljava/lang/Object;)Z
+  #190 = Utf8               \u0001.\u0001
+  #191 = Utf8               ()Lcom/google/protobuf/Value$Builder;
+  #192 = Utf8               ()Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+  #193 = Utf8               ()Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings;
+  #194 = Utf8               ()Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+  #195 = Utf8               ()LML/_590f69/_bb4487/_bb4487/_cfe983;
+  #196 = Utf8               ()LL/_cfe983/_21aca6;
+  #197 = Utf8               ()LL/_cfe983;
+  #198 = Utf8               ()LL/_02d7ad/_1253fc/_1eb51c;
+  #199 = Utf8               ()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+  #200 = Utf8               ()Lio/leangen/geantyref/TypeToken;
+  #201 = Utf8               ()Ljava/lang/Class;
+  #202 = Utf8               ()Ljava/lang/Object;
+  #203 = Utf8               ()Ljava/lang/Runnable;
+  #204 = Utf8               ()Ljava/lang/String;
+  #205 = Utf8               ()Ljava/lang/reflect/Type;
+  #206 = Utf8               ()Ljava/util/Iterator;
+  #207 = Utf8               ()Ljava/util/Map;
+  #208 = Utf8               ()Ljava/util/Map<Ljava/lang/String;Lcom/google/protobuf/Value;>;
+  #209 = Utf8               ()Ljava/util/Optional;
+  #210 = Utf8               ()Ljava/util/Set;
+  #211 = Utf8               ()Ljava/util/function/Function;
+  #212 = Utf8               ()Ljava/util/function/Predicate;
+  #213 = Utf8               ()V
+  #214 = Utf8               ()Z
+  #215 = Utf8               (Lcom/google/common/base/CaseFormat;Ljava/lang/String;)Ljava/lang/String;
+  #216 = Utf8               (Lcom/google/protobuf/Message;)V
+  #217 = Utf8               (Lcom/google/protobuf/Value$Builder;Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/protobuf/Value;
+  #218 = Utf8               (LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;Ljava/lang/String;Ljava/util/Map;)Ljava/util/function/Consumer;
+  #219 = Utf8               (LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;Ljava/lang/String;Ljava/util/Map;)Ljava/util/function/Predicate;
+  #220 = Utf8               (LL/_ec7e36/_dd3308;)V
+  #221 = Utf8               (LL/_ec7e36/_dd3308;)Z
+  #222 = Utf8               (LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+  #223 = Utf8               (LL/_ec7e36/_dd3308;Ljava/lang/String;Ljava/lang/Object;)V
+  #224 = Utf8               (LL/_ec7e36/_dd3308<*>;)Z
+  #225 = Utf8               (LL/_ec7e36/_dd3308<*>;Ljava/lang/Object;)V
+  #226 = Utf8               (LL/_ec7e36/_dd3308<*>;Ljava/lang/String;Ljava/lang/Object;)V
+  #227 = Utf8               (LL/_55938e/_e62626;)Ljava/lang/Object;
+  #228 = Utf8               (LL/_55938e/_e62626;)Ljava/util/Optional;
+  #229 = Utf8               (LL/_88f3cf/_cfe983;Ljava/util/Map;)V
+  #230 = Utf8               (LL/_88f3cf/_cfe983;Ljava/util/Map<Ljava/lang/String;Lcom/google/protobuf/Value;>;)V
+  #231 = Utf8               (LL/_88f3cf/_2ce426;)Ljava/util/Optional;
+  #232 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #233 = Utf8               (Ljava/lang/Object;)V
+  #234 = Utf8               (Ljava/lang/Object;)Z
+  #235 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #236 = Utf8               (Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+  #237 = Utf8               (Ljava/lang/String;)Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+  #238 = Utf8               (Ljava/lang/String;Lcom/google/protobuf/Value;)Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+  #239 = Utf8               (Ljava/lang/String;LL/_ec7e36/_dd3308;Ljava/util/Map;Ljava/lang/Object;)V
+  #240 = Utf8               (Ljava/lang/String;LL/_ec7e36/_dd3308<*>;Ljava/util/Map<Ljava/lang/String;Lcom/google/protobuf/Value;>;Ljava/lang/Object;)V
+  #241 = Utf8               (Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+  #242 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #243 = Utf8               (Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)V
+  #244 = Utf8               (Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)Z
+  #245 = Utf8               (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #246 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #247 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #248 = Utf8               (Ljava/util/function/Consumer;)V
+  #249 = Utf8               (Ljava/util/function/Function;)Ljava/util/Optional;
+  #250 = Utf8               (Ljava/util/function/Predicate;)Ljava/util/Optional;
+  #251 = Utf8               (Ljava/util/function/Predicate;)V
+  #252 = Utf8               <clinit>
+  #253 = Utf8               <init>
+  #254 = Utf8               Apollo
+  #255 = Utf8               BootstrapMethods
+  #256 = Utf8               Builder
+  #257 = Utf8               _b7f423
+  #258 = Utf8               _259930
+  #259 = Utf8               _241457
+  #260 = Utf8               _cfe983
+  #261 = Utf8               Code
+  #262 = Utf8               Container
+  #263 = Utf8               Failed to wrap option \'%s\'. The provided value \'%s\' (Type: %s) could not be converted.
+  #264 = Utf8               _8fd138
+  #265 = Utf8               _aef806
+  #266 = Utf8               InnerClasses
+  #267 = Utf8               LOWER_HYPHEN
+  #268 = Utf8               Lcom/google/common/base/CaseFormat;
+  #269 = Utf8               Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+  #270 = Utf8               LL/_55938e/_e62626;
+  #271 = Utf8               LineNumberTable
+  #272 = Utf8               Ljava/util/concurrent/ExecutorService;
+  #273 = Utf8               Lookup
+  #274 = Utf8               Lorg/jspecify/annotations/Nullable;
+  #275 = Utf8               _d6eb98
+  #276 = Utf8               _0d9e0a
+  #277 = Utf8               _0c3f03
+  #278 = Utf8               _c5b175
+  #279 = Utf8               _133367
+  #280 = Utf8               _720b87
+  #281 = Utf8               _6b9e93
+  #282 = Utf8               _5879ed
+  #283 = Utf8               _3aac95
+  #284 = Utf8               _ce97fc
+  #285 = Utf8               _60ef48
+  #286 = Utf8               _fe646f
+  #287 = Utf8               _590f69
+  #288 = Utf8               _5b3f84
+  #289 = Utf8               _21aca6
+  #290 = Utf8               RuntimeVisibleTypeAnnotations
+  #291 = Utf8               Signature
+  #292 = Utf8               StackMapTable
+  #293 = Utf8               UPPER_UNDERSCORE
+  #294 = Utf8               accept
+  #295 = Utf8               apply
+  #296 = Utf8               build
+  #297 = Utf8               com/google/common/base/CaseFormat
+  #298 = Utf8               com/google/protobuf/Value
+  #299 = Utf8               com/google/protobuf/Value$Builder
+  #300 = Utf8               com/lunarclient/apollo/configurable/v1/ConfigurableSettings
+  #301 = Utf8               com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder
+  #302 = Utf8               com/lunarclient/apollo/mods/ApolloModsManager
+  #303 = Utf8               com/lunarclient/apollo/mods/ApolloModsManager$Container
+  #304 = Utf8               com/lunarclient/apollo/network/NetworkOptions
+  #305 = Utf8               com/lunarclient/apollo/option/Option
+  #306 = Utf8               L/_cfe983
+  #307 = Utf8               L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6
+  #308 = Utf8               L/_cfe983/_21aca6
+  #309 = Utf8               L/_00e05b/_cfe983
+  #310 = Utf8               L/_02d7ad/_1253fc/_1eb51c
+  #311 = Utf8               L/_02d7ad/_13ea87/_bb4487
+  #312 = Utf8               L/_ec7e36/_dd3308
+  #313 = Utf8               L/_ec7e36/_1e73d7/_88f3cf
+  #314 = Utf8               L/_88f3cf/_cfe983
+  #315 = Utf8               L/_88f3cf/_02d7ad
+  #316 = Utf8               L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983
+  #317 = Utf8               L/_88f3cf/_c8175c
+  #318 = Utf8               L/_88f3cf/_2ce426
+  #319 = Utf8               L/_88f3cf/_21aca6
+  #320 = Utf8               L/util/_e93d3c
+  #321 = Utf8               filter
+  #322 = Utf8               flatMap
+  #323 = Utf8               format
+  #324 = Utf8               get
+  #325 = Utf8               getClass
+  #326 = Utf8               getModStatusOptions
+  #327 = Utf8               getSimpleName
+  #328 = Utf8               getType
+  #329 = Utf8               getTypeToken
+  #330 = Utf8               hasNext
+  #331 = Utf8               ifPresent
+  #332 = Utf8               io/leangen/geantyref/TypeToken
+  #333 = Utf8               isDefault
+  #334 = Utf8               iterator
+  #335 = Utf8               java/lang/Class
+  #336 = Utf8               java/lang/ClassCastException
+  #337 = Utf8               java/lang/Object
+  #338 = Utf8               java/lang/String
+  #339 = Utf8               java/lang/invoke/LambdaMetafactory
+  #340 = Utf8               java/lang/invoke/MethodHandles
+  #341 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #342 = Utf8               java/lang/invoke/StringConcatFactory
+  #343 = Utf8               java/util/HashMap
+  #344 = Utf8               java/util/Iterator
+  #345 = Utf8               java/util/Map
+  #346 = Utf8               java/util/Optional
+  #347 = Utf8               java/util/Set
+  #348 = Utf8               java/util/concurrent/ExecutorService
+  #349 = Utf8               lambda$static$0
+  #350 = Utf8               loadModOptions
+  #351 = Utf8               makeConcatWithConstants
+  #352 = Utf8               metafactory
+  #353 = Utf8               mod_setting
+  #354 = Utf8               newBuilder
+  #355 = Utf8               next
+  #356 = Utf8               put
+  #357 = Utf8               putProperties
+  #358 = Utf8               run
+  #359 = Utf8               sendPacket
+  #360 = Utf8               setApolloModule
+  #361 = Utf8               submit
+  #362 = Utf8               test
+  #363 = Utf8               to
+  #364 = Utf8               wrapValue
+{
+  public static com.lunarclient.apollo.mods.ApolloModsManager$Container _0d9e0a;
+    descriptor: Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public L._cfe983._cfe983._cfe983._590f69._21aca6();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #85                 // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 22: 0
+
+  public java.util.Map<java.lang.String, com.google.protobuf.Value> _60ef48();
+    descriptor: ()Ljava/util/Map;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=5, args_size=1
+         0: new           #38                 // class java/util/HashMap
+         3: dup
+         4: invokespecial #90                 // Method java/util/HashMap."<init>":()V
+         7: astore_1
+         8: invokestatic  #81                 // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+        11: invokevirtual #61                 // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+        14: invokevirtual #75                 // Method L/_02d7ad/_1253fc/_1eb51c._0c3f03:()Ljava/util/Set;
+        17: invokeinterface #104,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        22: astore_2
+        23: aload_2
+        24: invokeinterface #100,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        29: ifeq          65
+        32: aload_2
+        33: invokeinterface #101,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        38: checkcast     #27                 // class L/_88f3cf/_21aca6
+        41: astore_3
+        42: aload_3
+        43: instanceof    #22                 // class L/_88f3cf/_cfe983
+        46: ifeq          23
+        49: aload_3
+        50: checkcast     #22                 // class L/_88f3cf/_cfe983
+        53: astore        4
+        55: aload_0
+        56: aload         4
+        58: aload_1
+        59: invokevirtual #65                 // Method _cfe983:(LL/_88f3cf/_cfe983;Ljava/util/Map;)V
+        62: goto          23
+        65: aload_1
+        66: areturn
+      LineNumberTable:
+        line 33: 0
+        line 35: 8
+        line 36: 42
+        line 40: 55
+        line 41: 62
+        line 43: 65
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 23
+          locals = [ class java/util/HashMap, class java/util/Iterator ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 41
+          locals = [ top, class java/util/HashMap ]
+          stack = []
+    Signature: #208                         // ()Ljava/util/Map<Ljava/lang/String;Lcom/google/protobuf/Value;>;
+
+  public void _cfe983(L._ec7e36._dd3308<?>, java.lang.Object);
+    descriptor: (LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: aload_1
+         3: getstatic     #48                 // Field L/_ec7e36/_1e73d7/_88f3cf._d6eb98:LL/_55938e/_e62626;
+         6: invokeinterface #95,  2           // InterfaceMethod L/_ec7e36/_dd3308._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+        11: checkcast     #33                 // class java/lang/String
+        14: aload_2
+        15: invokevirtual #64                 // Method _cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/String;Ljava/lang/Object;)V
+        18: return
+      LineNumberTable:
+        line 47: 0
+        line 48: 18
+    Signature: #225                         // (LL/_ec7e36/_dd3308<*>;Ljava/lang/Object;)V
+
+  public void _cfe983(L._ec7e36._dd3308<?>, java.lang.String, java.lang.Object);
+    descriptor: (LL/_ec7e36/_dd3308;Ljava/lang/String;Ljava/lang/Object;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=5, locals=12, args_size=4
+         0: aload_2
+         1: ifnonnull     5
+         4: return
+         5: invokestatic  #82                 // Method L/util/_e93d3c._ce97fc:()LML/_590f69/_bb4487/_bb4487/_cfe983;
+         8: ifnonnull     12
+        11: return
+        12: invokestatic  #81                 // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+        15: ifnonnull     19
+        18: return
+        19: getstatic     #47                 // Field _0d9e0a:Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+        22: ifnonnull     26
+        25: return
+        26: invokestatic  #81                 // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+        29: invokevirtual #62                 // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+        32: astore        4
+        34: aload         4
+        36: invokevirtual #71                 // Method L/_cfe983/_21aca6._259930:()Z
+        39: ifne          43
+        42: return
+        43: invokestatic  #81                 // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+        46: invokevirtual #61                 // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+        49: invokevirtual #74                 // Method L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+        52: invokevirtual #80                 // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._241457:()Z
+        55: ifeq          59
+        58: return
+        59: getstatic     #45                 // Field com/google/common/base/CaseFormat.UPPER_UNDERSCORE:Lcom/google/common/base/CaseFormat;
+        62: getstatic     #44                 // Field com/google/common/base/CaseFormat.LOWER_HYPHEN:Lcom/google/common/base/CaseFormat;
+        65: aload_2
+        66: invokevirtual #51                 // Method com/google/common/base/CaseFormat.to:(Lcom/google/common/base/CaseFormat;Ljava/lang/String;)Ljava/lang/String;
+        69: astore        5
+        71: aload_1
+        72: invokeinterface #94,  1           // InterfaceMethod L/_ec7e36/_dd3308._c5b175:()Ljava/lang/String;
+        77: astore        6
+        79: aload         5
+        81: aload         6
+        83: invokedynamic #106,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        88: astore        7
+        90: getstatic     #47                 // Field _0d9e0a:Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+        93: invokevirtual #58                 // Method com/lunarclient/apollo/mods/ApolloModsManager$Container.getModStatusOptions:()Ljava/util/Map;
+        96: aload         7
+        98: invokeinterface #102,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       103: checkcast     #13                 // class com/lunarclient/apollo/option/Option
+       106: astore        8
+       108: aload         8
+       110: ifnonnull     114
+       113: return
+       114: invokestatic  #52                 // Method com/google/protobuf/Value.newBuilder:()Lcom/google/protobuf/Value$Builder;
+       117: aload         8
+       119: invokevirtual #60                 // Method com/lunarclient/apollo/option/Option.getTypeToken:()Lio/leangen/geantyref/TypeToken;
+       122: invokevirtual #83                 // Method io/leangen/geantyref/TypeToken.getType:()Ljava/lang/reflect/Type;
+       125: aload_3
+       126: invokestatic  #59                 // Method com/lunarclient/apollo/network/NetworkOptions.wrapValue:(Lcom/google/protobuf/Value$Builder;Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/protobuf/Value;
+       129: astore        9
+       131: goto          178
+       134: astore        10
+       136: ldc           #3                  // String Failed to wrap option \'%s\'. The provided value \'%s\' (Type: %s) could not be converted.
+       138: iconst_3
+       139: anewarray     #32                 // class java/lang/Object
+       142: dup
+       143: iconst_0
+       144: aload         7
+       146: aastore
+       147: dup
+       148: iconst_1
+       149: aload_3
+       150: aastore
+       151: dup
+       152: iconst_2
+       153: aload_3
+       154: invokevirtual #86                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       157: invokevirtual #84                 // Method java/lang/Class.getSimpleName:()Ljava/lang/String;
+       160: aastore
+       161: invokestatic  #87                 // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+       164: astore        11
+       166: ldc           #2                  // String Apollo
+       168: aload         11
+       170: iconst_0
+       171: anewarray     #32                 // class java/lang/Object
+       174: invokestatic  #73                 // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+       177: return
+       178: invokestatic  #53                 // Method com/lunarclient/apollo/configurable/v1/ConfigurableSettings.newBuilder:()Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+       181: ldc           #4                  // String mod_setting
+       183: invokevirtual #56                 // Method com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder.setApolloModule:(Ljava/lang/String;)Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+       186: aload         7
+       188: aload         9
+       190: invokevirtual #55                 // Method com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder.putProperties:(Ljava/lang/String;Lcom/google/protobuf/Value;)Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder;
+       193: invokevirtual #54                 // Method com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder.build:()Lcom/lunarclient/apollo/configurable/v1/ConfigurableSettings;
+       196: astore        10
+       198: aload         4
+       200: aload         10
+       202: invokevirtual #72                 // Method L/_cfe983/_21aca6.sendPacket:(Lcom/google/protobuf/Message;)V
+       205: return
+      Exception table:
+         from    to  target type
+           114   131   134   Class java/lang/ClassCastException
+      LineNumberTable:
+        line 52: 0
+        line 53: 4
+        line 55: 5
+        line 56: 11
+        line 58: 12
+        line 59: 18
+        line 61: 19
+        line 62: 25
+        line 64: 26
+        line 65: 34
+        line 66: 42
+        line 69: 43
+        line 70: 58
+        line 73: 59
+        line 74: 71
+        line 75: 79
+        line 77: 90
+        line 79: 108
+        line 81: 113
+        line 86: 114
+        line 92: 131
+        line 87: 134
+        line 88: 136
+        line 89: 154
+        line 88: 161
+        line 90: 166
+        line 91: 177
+        line 94: 178
+        line 95: 183
+        line 96: 190
+        line 97: 193
+        line 99: 198
+        line 100: 205
+      StackMapTable: number_of_entries = 9
+        frame_type = 255 /* full_frame */
+          offset_delta = 5
+          locals = [ top, class L/_ec7e36/_dd3308, class java/lang/String, class java/lang/Object ]
+          stack = []
+        frame_type = 6 /* same */
+        frame_type = 6 /* same */
+        frame_type = 6 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 16
+          locals = [ class L/_cfe983/_21aca6 ]
+        frame_type = 15 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 54
+          locals = [ top, top, top, class java/lang/Object, class L/_cfe983/_21aca6, top, top, class java/lang/String, class com/lunarclient/apollo/option/Option ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 19
+          locals = [ top, top, top, class java/lang/Object, top, top, top, class java/lang/String ]
+          stack = [ class java/lang/ClassCastException ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 43
+          locals = [ top, top, top, top, class L/_cfe983/_21aca6, top, top, class java/lang/String, top, class com/google/protobuf/Value ]
+          stack = []
+    Signature: #226                         // (LL/_ec7e36/_dd3308<*>;Ljava/lang/String;Ljava/lang/Object;)V
+    RuntimeVisibleTypeAnnotations:
+      0: #274(): METHOD_FORMAL_PARAMETER, param_index=1
+        org.jspecify.annotations.Nullable
+
+  private boolean _cfe983(L._ec7e36._dd3308<?>);
+    descriptor: (LL/_ec7e36/_dd3308;)Z
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_1
+         1: invokeinterface #97,  1           // InterfaceMethod L/_ec7e36/_dd3308.isDefault:()Z
+         6: ifne          20
+         9: aload_1
+        10: invokestatic  #76                 // Method L/_02d7ad/_13ea87/_bb4487._cfe983:(LL/_ec7e36/_dd3308;)Z
+        13: ifeq          20
+        16: iconst_1
+        17: goto          21
+        20: iconst_0
+        21: ireturn
+      LineNumberTable:
+        line 103: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 249 /* chop */
+          offset_delta = 20
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+    Signature: #224                         // (LL/_ec7e36/_dd3308<*>;)Z
+
+  private void _cfe983(L._88f3cf._cfe983, java.util.Map<java.lang.String, com.google.protobuf.Value>);
+    descriptor: (LL/_88f3cf/_cfe983;Ljava/util/Map;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=5, args_size=3
+         0: aload_1
+         1: invokevirtual #77                 // Method L/_88f3cf/_cfe983._c5b175:()Ljava/lang/String;
+         4: astore_3
+         5: aload_1
+         6: getstatic     #50                 // Field L/_88f3cf/_02d7ad._3aac95:LL/_55938e/_e62626;
+         9: invokevirtual #79                 // Method L/_88f3cf/_cfe983._5b3f84:(LL/_55938e/_e62626;)Ljava/util/Optional;
+        12: invokedynamic #107,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+        17: invokevirtual #92                 // Method java/util/Optional.flatMap:(Ljava/util/function/Function;)Ljava/util/Optional;
+        20: invokedynamic #108,  0            // InvokeDynamic #2:test:()Ljava/util/function/Predicate;
+        25: invokevirtual #91                 // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+        28: aload_0
+        29: aload_3
+        30: aload_2
+        31: invokedynamic #109,  0            // InvokeDynamic #3:accept:(LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;Ljava/lang/String;Ljava/util/Map;)Ljava/util/function/Consumer;
+        36: invokevirtual #93                 // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+        39: aload_1
+        40: getstatic     #49                 // Field L/_88f3cf/_02d7ad._b7f423:LL/_55938e/_e62626;
+        43: invokevirtual #78                 // Method L/_88f3cf/_cfe983._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+        46: checkcast     #25                 // class L/_88f3cf/_c8175c
+        49: astore        4
+        51: aload         4
+        53: ifnonnull     57
+        56: return
+        57: aload         4
+        59: aload_0
+        60: aload_3
+        61: aload_2
+        62: invokedynamic #110,  0            // InvokeDynamic #4:test:(LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;Ljava/lang/String;Ljava/util/Map;)Ljava/util/function/Predicate;
+        67: invokeinterface #98,  2           // InterfaceMethod L/_88f3cf/_c8175c._21aca6:(Ljava/util/function/Predicate;)V
+        72: return
+      LineNumberTable:
+        line 112: 0
+        line 113: 5
+        line 114: 17
+        line 115: 25
+        line 116: 36
+        line 120: 39
+        line 121: 51
+        line 122: 56
+        line 125: 57
+        line 129: 72
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 57
+          locals = [ class L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6, top, class java/util/Map, class java/lang/String, class L/_88f3cf/_c8175c ]
+          stack = []
+    Signature: #230                         // (LL/_88f3cf/_cfe983;Ljava/util/Map<Ljava/lang/String;Lcom/google/protobuf/Value;>;)V
+
+  private void _cfe983(java.lang.String, L._ec7e36._dd3308<?>, java.util.Map<java.lang.String, com.google.protobuf.Value>, java.lang.Object);
+    descriptor: (Ljava/lang/String;LL/_ec7e36/_dd3308;Ljava/util/Map;Ljava/lang/Object;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=5, locals=10, args_size=5
+         0: aload_0
+         1: aload_2
+         2: invokevirtual #63                 // Method _cfe983:(LL/_ec7e36/_dd3308;)Z
+         5: ifne          9
+         8: return
+         9: aload_1
+        10: aload_2
+        11: invokeinterface #94,  1           // InterfaceMethod L/_ec7e36/_dd3308._c5b175:()Ljava/lang/String;
+        16: invokedynamic #106,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        21: astore        5
+        23: getstatic     #47                 // Field _0d9e0a:Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+        26: invokevirtual #58                 // Method com/lunarclient/apollo/mods/ApolloModsManager$Container.getModStatusOptions:()Ljava/util/Map;
+        29: aload         5
+        31: invokeinterface #102,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        36: checkcast     #13                 // class com/lunarclient/apollo/option/Option
+        39: astore        6
+        41: aload         6
+        43: ifnull        124
+        46: invokestatic  #52                 // Method com/google/protobuf/Value.newBuilder:()Lcom/google/protobuf/Value$Builder;
+        49: aload         6
+        51: invokevirtual #60                 // Method com/lunarclient/apollo/option/Option.getTypeToken:()Lio/leangen/geantyref/TypeToken;
+        54: invokevirtual #83                 // Method io/leangen/geantyref/TypeToken.getType:()Ljava/lang/reflect/Type;
+        57: aload         4
+        59: invokestatic  #59                 // Method com/lunarclient/apollo/network/NetworkOptions.wrapValue:(Lcom/google/protobuf/Value$Builder;Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/protobuf/Value;
+        62: astore        7
+        64: goto          113
+        67: astore        8
+        69: ldc           #3                  // String Failed to wrap option \'%s\'. The provided value \'%s\' (Type: %s) could not be converted.
+        71: iconst_3
+        72: anewarray     #32                 // class java/lang/Object
+        75: dup
+        76: iconst_0
+        77: aload         5
+        79: aastore
+        80: dup
+        81: iconst_1
+        82: aload         4
+        84: aastore
+        85: dup
+        86: iconst_2
+        87: aload         4
+        89: invokevirtual #86                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        92: invokevirtual #84                 // Method java/lang/Class.getSimpleName:()Ljava/lang/String;
+        95: aastore
+        96: invokestatic  #87                 // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+        99: astore        9
+       101: ldc           #2                  // String Apollo
+       103: aload         9
+       105: iconst_0
+       106: anewarray     #32                 // class java/lang/Object
+       109: invokestatic  #73                 // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+       112: return
+       113: aload_3
+       114: aload         5
+       116: aload         7
+       118: invokeinterface #103,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       123: pop
+       124: return
+      Exception table:
+         from    to  target type
+            46    64    67   Class java/lang/ClassCastException
+      LineNumberTable:
+        line 133: 0
+        line 134: 8
+        line 137: 9
+        line 138: 23
+        line 140: 41
+        line 144: 46
+        line 145: 51
+        line 143: 59
+        line 153: 64
+        line 148: 67
+        line 149: 69
+        line 150: 89
+        line 149: 96
+        line 151: 101
+        line 152: 112
+        line 155: 113
+        line 157: 124
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 9
+          locals = [ top, class java/lang/String, class L/_ec7e36/_dd3308, class java/util/Map, class java/lang/Object ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 57
+          locals = [ top, top, top, top, class java/lang/Object, class java/lang/String ]
+          stack = [ class java/lang/ClassCastException ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 45
+          locals = [ top, top, top, class java/util/Map, top, class java/lang/String, top, class com/google/protobuf/Value ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 10
+          locals = []
+          stack = []
+    Signature: #240                         // (Ljava/lang/String;LL/_ec7e36/_dd3308<*>;Ljava/util/Map<Ljava/lang/String;Lcom/google/protobuf/Value;>;Ljava/lang/Object;)V
+
+  private boolean _cfe983(java.lang.String, java.util.Map, L._ec7e36._dd3308);
+    descriptor: (Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=5, locals=4, args_size=4
+         0: aload_0
+         1: aload_1
+         2: aload_3
+         3: aload_2
+         4: aload_3
+         5: invokeinterface #96,  1           // InterfaceMethod L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+        10: invokevirtual #66                 // Method _cfe983:(Ljava/lang/String;LL/_ec7e36/_dd3308;Ljava/util/Map;Ljava/lang/Object;)V
+        13: iconst_0
+        14: ireturn
+      LineNumberTable:
+        line 126: 0
+        line 127: 13
+
+  private void _21aca6(java.lang.String, java.util.Map, L._ec7e36._dd3308);
+    descriptor: (Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=5, locals=4, args_size=4
+         0: aload_0
+         1: aload_1
+         2: aload_3
+         3: aload_2
+         4: aload_3
+         5: invokeinterface #96,  1           // InterfaceMethod L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+        10: invokevirtual #66                 // Method _cfe983:(Ljava/lang/String;LL/_ec7e36/_dd3308;Ljava/util/Map;Ljava/lang/Object;)V
+        13: return
+      LineNumberTable:
+        line 117: 0
+        line 118: 13
+
+  private static boolean _21aca6(L._ec7e36._dd3308);
+    descriptor: (LL/_ec7e36/_dd3308;)Z
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokeinterface #97,  1           // InterfaceMethod L/_ec7e36/_dd3308.isDefault:()Z
+         6: ifne          13
+         9: iconst_1
+        10: goto          14
+        13: iconst_0
+        14: ireturn
+      LineNumberTable:
+        line 115: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 13
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private static void lambda$static$0();
+    descriptor: ()V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #57                 // Method com/lunarclient/apollo/mods/ApolloModsManager.loadModOptions:()Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+         3: putstatic     #47                 // Field _0d9e0a:Lcom/lunarclient/apollo/mods/ApolloModsManager$Container;
+         6: return
+      LineNumberTable:
+        line 28: 0
+        line 29: 6
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #46                 // Field L/_cfe983._720b87:Ljava/util/concurrent/ExecutorService;
+         3: invokedynamic #111,  0            // InvokeDynamic #5:run:()Ljava/lang/Runnable;
+         8: invokeinterface #105,  2          // InterfaceMethod java/util/concurrent/ExecutorService.submit:(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+        13: pop
+        14: return
+      LineNumberTable:
+        line 27: 0
+        line 30: 14
+}
+BootstrapMethods:
+  0: #117 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #1 \u0001.\u0001
+  1: #116 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #187 (Ljava/lang/Object;)Ljava/lang/Object;
+      #118 REF_invokeInterface L/_88f3cf/_2ce426._aef806:()Ljava/util/Optional;
+      #186 (LL/_88f3cf/_2ce426;)Ljava/util/Optional;
+  2: #116 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #189 (Ljava/lang/Object;)Z
+      #114 REF_invokeStatic L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._21aca6:(LL/_ec7e36/_dd3308;)Z
+      #185 (LL/_ec7e36/_dd3308;)Z
+  3: #116 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #188 (Ljava/lang/Object;)V
+      #113 REF_invokeVirtual L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._21aca6:(Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)V
+      #184 (LL/_ec7e36/_dd3308;)V
+  4: #116 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #189 (Ljava/lang/Object;)Z
+      #112 REF_invokeVirtual L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(Ljava/lang/String;Ljava/util/Map;LL/_ec7e36/_dd3308;)Z
+      #185 (LL/_ec7e36/_dd3308;)Z
+  5: #116 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #183 ()V
+      #115 REF_invokeStatic L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6.lambda$static$0:()V
+      #183 ()V
+InnerClasses:
+  public static #262= #11 of #10;         // Container=class com/lunarclient/apollo/mods/ApolloModsManager$Container of class com/lunarclient/apollo/mods/ApolloModsManager
+  public static final #256= #7 of #6;     // Builder=class com/google/protobuf/Value$Builder of class com/google/protobuf/Value
+  public static final #256= #9 of #8;     // Builder=class com/lunarclient/apollo/configurable/v1/ConfigurableSettings$Builder of class com/lunarclient/apollo/configurable/v1/ConfigurableSettings
+  public static final #273= #36 of #35;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

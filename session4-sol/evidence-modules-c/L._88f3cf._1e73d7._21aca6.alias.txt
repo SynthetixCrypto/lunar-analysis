@@ -1,0 +1,44 @@
+public class L._88f3cf._1e73d7._21aca6 implements L._88f3cf._1e73d7 {
+  private final java.util.function.BooleanSupplier _3b6c94;
+
+  private final L._88f3cf._21aca6 _79fca6;
+
+  public <T extends L._88f3cf._21aca6> T _990b34();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field _79fca6:LL/_88f3cf/_21aca6;
+       4: areturn
+
+  public boolean _1d019e();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field _3b6c94:Ljava/util/function/BooleanSupplier;
+       4: ifnull        19
+       7: aload_0
+       8: getfield      #9                  // Field _3b6c94:Ljava/util/function/BooleanSupplier;
+      11: invokeinterface #12,  1           // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+      16: ifeq          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  public L._88f3cf._1e73d7._21aca6(java.util.function.BooleanSupplier, L._88f3cf._21aca6);
+    Code:
+       0: aload_0
+       1: invokespecial #11                 // Method java/lang/Object."<init>":()V
+       4: aload_2
+       5: ifnonnull     18
+       8: new           #5                  // class java/lang/NullPointerException
+      11: dup
+      12: ldc           #1                  // String parentFeature is marked non-null but is null
+      14: invokespecial #10                 // Method java/lang/NullPointerException."<init>":(Ljava/lang/String;)V
+      17: athrow
+      18: aload_0
+      19: aload_1
+      20: putfield      #9                  // Field _3b6c94:Ljava/util/function/BooleanSupplier;
+      23: aload_0
+      24: aload_2
+      25: putfield      #8                  // Field _79fca6:LL/_88f3cf/_21aca6;
+      28: return
+}

@@ -1,0 +1,39 @@
+public final class com.moonsworth.webosr.wrappers.WebEngine extends com.moonsworth.webosr.NativeHandle {
+  private final java.lang.Thread owner;
+
+  private com.moonsworth.webosr.wrappers.WebEngine(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #7                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: aload_0
+       6: invokestatic  #11                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+       9: putfield      #6                  // Field owner:Ljava/lang/Thread;
+      12: return
+
+  public void invokeIteration();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field owner:Ljava/lang/Thread;
+       4: invokestatic  #11                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+       7: invokevirtual #10                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      10: ifeq          16
+      13: invokestatic  #8                  // Method com/moonsworth/webosr/javascript/FunctionBus.consumeMainActorQueue:()V
+      16: aload_0
+      17: invokevirtual #9                  // Method invokeIteration0:()V
+      20: return
+
+  public native com.moonsworth.webosr.wrappers.image.TexturedImageSource createImageSourceTextured(java.lang.String);
+
+  public native com.moonsworth.webosr.wrappers.Session createSession(java.lang.String, boolean);
+
+  public native com.moonsworth.webosr.wrappers.Browser createBrowser(com.moonsworth.webosr.config.BrowserConfig);
+
+  public native com.moonsworth.webosr.wrappers.PlatformInterface getPlatformInterface();
+
+  public native void setFPS(int);
+
+  protected native void destroy();
+
+  private native void invokeIteration0();
+}

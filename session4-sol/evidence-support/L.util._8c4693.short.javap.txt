@@ -1,0 +1,183 @@
+public final class L.util._8c4693 {
+  private static final java.util.regex.Pattern _a27299;
+
+  private static java.lang.String server;
+
+  public static void _b71286();
+    Code:
+       0: invokestatic  #38                 // Method L/util/_e93d3c._433a2f:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+       3: ifnull        17
+       6: invokestatic  #39                 // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+       9: invokeinterface #54,  1           // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getCurrentServerData:()LML/_590f69/_bb4487/_1e73d7/_590f69;
+      14: ifnonnull     22
+      17: aconst_null
+      18: putstatic     #30                 // Field server:Ljava/lang/String;
+      21: return
+      22: getstatic     #28                 // Field L/_dd3308/_cfe983.HYPIXEL:LL/_dd3308/_cfe983;
+      25: invokestatic  #37                 // Method L/_dd3308/_1e73d7._590f69:(LL/_dd3308/_cfe983;)Z
+      28: ifne          36
+      31: aconst_null
+      32: putstatic     #30                 // Field server:Ljava/lang/String;
+      35: return
+      36: invokestatic  #41                 // Method _f761d1:()Ljava/lang/String;
+      39: astore_0
+      40: aload_0
+      41: ifnonnull     49
+      44: aconst_null
+      45: putstatic     #30                 // Field server:Ljava/lang/String;
+      48: return
+      49: aload_0
+      50: invokestatic  #40                 // Method _eb6c3c:(Ljava/lang/String;)Ljava/lang/String;
+      53: invokevirtual #45                 // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+      56: aconst_null
+      57: invokestatic  #53                 // Method org/apache/commons/lang3/text/WordUtils.capitalize:(Ljava/lang/String;[C)Ljava/lang/String;
+      60: putstatic     #30                 // Field server:Ljava/lang/String;
+      63: return
+
+  public static java.lang.String _eb6c3c(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokestatic  #34                 // Method ML/_590f69/_cfe983/_bb4487.stripColor:(Ljava/lang/String;)Ljava/lang/String;
+       4: astore_0
+       5: aload_0
+       6: ldc           #4                  // String skyblock co-op
+       8: invokevirtual #43                 // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+      11: ifeq          17
+      14: ldc           #2                  // String SKYBLOCK
+      16: areturn
+      17: aload_0
+      18: areturn
+
+  private static java.lang.String _f761d1();
+    Code:
+       0: invokestatic  #39                 // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+       3: invokeinterface #56,  1           // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getWorld:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+       8: invokeinterface #57,  1           // InterfaceMethod ML/_590f69/_bb4487/_1e73d7/_bb4487.bridge$getScoreboard:()LML/_590f69/_ec7e36/_1e73d7;
+      13: astore_0
+      14: aconst_null
+      15: astore_1
+      16: aload_0
+      17: invokestatic  #39                 // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+      20: invokeinterface #55,  1           // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getPlayer:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+      25: invokeinterface #59,  1           // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getName:()Ljava/lang/String;
+      30: invokeinterface #61,  2           // InterfaceMethod ML/_590f69/_ec7e36/_1e73d7.bridge$getPlayersTeam:(Ljava/lang/String;)LML/_590f69/_ec7e36/_590f69;
+      35: astore_2
+      36: aload_2
+      37: ifnull        89
+      40: aload_2
+      41: invokeinterface #62,  1           // InterfaceMethod ML/_590f69/_ec7e36/_590f69.bridge$getChatFormat:()LML/_590f69/_5b3f84/_bb4487;
+      46: invokevirtual #35                 // Method ML/_590f69/_5b3f84/_bb4487.getColorIndex:()I
+      49: istore_3
+      50: invokestatic  #36                 // Method ML/_590f69/_21aca6.getMinecraftVersion:()LML/_cb9292/_21aca6;
+      53: getstatic     #27                 // Field ML/_cb9292/_21aca6._6626d0:LML/_cb9292/_21aca6;
+      56: if_acmpne     70
+      59: aload_0
+      60: iconst_1
+      61: invokeinterface #60,  2           // InterfaceMethod ML/_590f69/_ec7e36/_1e73d7.bridge$getObjectiveInDisplaySlot:(I)LML/_590f69/_ec7e36/_21aca6;
+      66: astore_1
+      67: goto          89
+      70: iload_3
+      71: iflt          89
+      74: aload_0
+      75: iconst_3
+      76: iload_3
+      77: iadd
+      78: invokeinterface #60,  2           // InterfaceMethod ML/_590f69/_ec7e36/_1e73d7.bridge$getObjectiveInDisplaySlot:(I)LML/_590f69/_ec7e36/_21aca6;
+      83: astore_1
+      84: goto          89
+      87: astore        4
+      89: aload_1
+      90: ifnull        97
+      93: aload_1
+      94: goto          104
+      97: aload_0
+      98: iconst_1
+      99: invokeinterface #60,  2           // InterfaceMethod ML/_590f69/_ec7e36/_1e73d7.bridge$getObjectiveInDisplaySlot:(I)LML/_590f69/_ec7e36/_21aca6;
+     104: astore_3
+     105: aload_3
+     106: ifnonnull     111
+     109: aconst_null
+     110: areturn
+     111: aload_3
+     112: invokeinterface #63,  1           // InterfaceMethod ML/_590f69/_ec7e36/_21aca6.bridge$getDisplayName:()LML/_590f69/_ba7d98/_cfe983/_cfe983;
+     117: invokestatic  #32                 // Method ML/_590f69/_cfe983/_bb4487.asAdventure:(LML/_590f69/_ba7d98/_cfe983/_cfe983;)Lnet/kyori/adventure/text/Component;
+     120: invokestatic  #33                 // Method ML/_590f69/_cfe983/_bb4487.getTextContent:(Lnet/kyori/adventure/text/Component;)Ljava/lang/String;
+     123: areturn
+    Exception table:
+       from    to  target type
+          74    84    87   Class java/lang/ArrayIndexOutOfBoundsException
+
+  public static boolean _82855d(java.lang.String);
+    Code:
+       0: getstatic     #30                 // Field server:Ljava/lang/String;
+       3: ifnull        20
+       6: getstatic     #30                 // Field server:Ljava/lang/String;
+       9: aload_0
+      10: invokevirtual #43                 // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+      13: ifeq          20
+      16: iconst_1
+      17: goto          21
+      20: iconst_0
+      21: ireturn
+
+  public static boolean _5a9a8e(java.lang.String);
+    Code:
+       0: invokestatic  #39                 // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+       3: invokeinterface #55,  1           // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getPlayer:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+       8: ifnull        90
+      11: invokestatic  #39                 // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+      14: invokeinterface #55,  1           // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getPlayer:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+      19: invokeinterface #58,  1           // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getClientBrand:()Ljava/util/Optional;
+      24: invokevirtual #48                 // Method java/util/Optional.isPresent:()Z
+      27: ifeq          90
+      30: invokestatic  #39                 // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+      33: invokeinterface #55,  1           // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getPlayer:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+      38: invokeinterface #58,  1           // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getClientBrand:()Ljava/util/Optional;
+      43: invokevirtual #47                 // Method java/util/Optional.get:()Ljava/lang/Object;
+      46: checkcast     #21                 // class java/lang/String
+      49: astore_1
+      50: invokestatic  #36                 // Method ML/_590f69/_21aca6.getMinecraftVersion:()LML/_cb9292/_21aca6;
+      53: invokevirtual #31                 // Method ML/_cb9292/_21aca6._534abb:()Z
+      56: ifeq          65
+      59: aload_1
+      60: aload_0
+      61: invokevirtual #44                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      64: ireturn
+      65: getstatic     #29                 // Field _a27299:Ljava/util/regex/Pattern;
+      68: aload_1
+      69: invokevirtual #52                 // Method java/util/regex/Pattern.matcher:(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      72: astore_2
+      73: aload_2
+      74: invokevirtual #49                 // Method java/util/regex/Matcher.find:()Z
+      77: ifeq          90
+      80: aload_2
+      81: iconst_1
+      82: invokevirtual #50                 // Method java/util/regex/Matcher.group:(I)Ljava/lang/String;
+      85: aload_0
+      86: invokevirtual #44                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      89: ireturn
+      90: iconst_0
+      91: ireturn
+
+  private L.util._8c4693();
+    Code:
+       0: aload_0
+       1: invokespecial #42                 // Method java/lang/Object."<init>":()V
+       4: new           #22                 // class java/lang/UnsupportedOperationException
+       7: dup
+       8: ldc           #3                  // String This is a utility class and cannot be instantiated
+      10: invokespecial #46                 // Method java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+      13: athrow
+
+  public static java.lang.String getServer();
+    Code:
+       0: getstatic     #30                 // Field server:Ljava/lang/String;
+       3: areturn
+
+  static {};
+    Code:
+       0: ldc           #1                  // String (.+) (?:<- .+)?
+       2: invokestatic  #51                 // Method java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;
+       5: putstatic     #29                 // Field _a27299:Ljava/util/regex/Pattern;
+       8: return
+}

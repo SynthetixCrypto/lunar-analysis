@@ -1,0 +1,383 @@
+public class L._88f3cf._1e73d7._590f69 implements L._ec7e36._a1dd3a,L._88f3cf._bb4487 {
+  private final java.util.function.Predicate<java.lang.String> _d24922;
+
+  private final java.util.List<L._88f3cf._21aca6> _6188f2;
+
+  private com.google.gson.JsonObject _042625;
+
+  public java.util.Map<L._ec7e36._bb4487._cfe983, java.util.List<L._88f3cf._21aca6>> _2213d5();
+    Code:
+       0: new           #21                 // class java/util/HashMap
+       3: dup
+       4: invokespecial #58                 // Method java/util/HashMap."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: getfield      #32                 // Field _6188f2:Ljava/util/List;
+      12: invokeinterface #74,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      17: astore_2
+      18: aload_2
+      19: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      24: ifeq          159
+      27: aload_2
+      28: invokeinterface #70,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      33: checkcast     #12                 // class L/_88f3cf/_21aca6
+      36: astore_3
+      37: aload_3
+      38: getstatic     #31                 // Field L/_88f3cf/_02d7ad._361013:LL/_55938e/_e62626;
+      41: invokeinterface #65,  2           // InterfaceMethod L/_88f3cf/_21aca6._6fc5d5:(LL/_55938e/_e62626;)Z
+      46: ifne          52
+      49: goto          18
+      52: aload_3
+      53: getstatic     #31                 // Field L/_88f3cf/_02d7ad._361013:LL/_55938e/_e62626;
+      56: invokeinterface #64,  2           // InterfaceMethod L/_88f3cf/_21aca6._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      61: checkcast     #11                 // class L/_88f3cf/_a140a8
+      64: invokestatic  #60                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      67: checkcast     #11                 // class L/_88f3cf/_a140a8
+      70: invokeinterface #62,  1           // InterfaceMethod L/_88f3cf/_a140a8._a47556:()Ljava/util/Set;
+      75: astore        4
+      77: aload         4
+      79: invokeinterface #84,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      84: astore        5
+      86: aload         5
+      88: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      93: ifeq          156
+      96: aload         5
+      98: invokeinterface #70,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     103: checkcast     #5                  // class L/_ec7e36/_bb4487/_cfe983
+     106: astore        6
+     108: aload_1
+     109: aload         6
+     111: invokeinterface #76,  2           // InterfaceMethod java/util/Map.containsKey:(Ljava/lang/Object;)Z
+     116: ifne          135
+     119: aload_1
+     120: aload         6
+     122: new           #20                 // class java/util/ArrayList
+     125: dup
+     126: invokespecial #57                 // Method java/util/ArrayList."<init>":()V
+     129: invokeinterface #78,  3           // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     134: pop
+     135: aload_1
+     136: aload         6
+     138: invokeinterface #77,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     143: checkcast     #24                 // class java/util/List
+     146: aload_3
+     147: invokeinterface #71,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     152: pop
+     153: goto          86
+     156: goto          18
+     159: aload_1
+     160: areturn
+
+  public void _cfe983(L._88f3cf._21aca6, java.util.List<L._88f3cf._21aca6>);
+    Code:
+       0: aload_1
+       1: getstatic     #30                 // Field L/_88f3cf/_02d7ad._290b8b:LL/_55938e/_cfe983;
+       4: invokeinterface #64,  2           // InterfaceMethod L/_88f3cf/_21aca6._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       9: checkcast     #7                  // class L/_88f3cf/_ba7d98
+      12: astore_3
+      13: aload_3
+      14: ifnull        26
+      17: aload_3
+      18: invokeinterface #61,  1           // InterfaceMethod L/_88f3cf/_ba7d98._951ef4:()Z
+      23: ifeq          47
+      26: aload_0
+      27: getfield      #32                 // Field _6188f2:Ljava/util/List;
+      30: invokeinterface #72,  1           // InterfaceMethod java/util/List.clear:()V
+      35: aload_2
+      36: aload_0
+      37: invokedynamic #86,  0             // InvokeDynamic #0:accept:(LL/_88f3cf/_1e73d7/_590f69;)Ljava/util/function/Consumer;
+      42: invokeinterface #73,  2           // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+      47: return
+
+  public boolean _429bf0(L._88f3cf._21aca6);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_1
+       3: invokevirtual #51                 // Method _590f69:(LL/_88f3cf/_21aca6;Z)Z
+       6: ireturn
+
+  private boolean _590f69(L._88f3cf._21aca6, boolean);
+    Code:
+       0: aload_1
+       1: getstatic     #30                 // Field L/_88f3cf/_02d7ad._290b8b:LL/_55938e/_cfe983;
+       4: invokeinterface #64,  2           // InterfaceMethod L/_88f3cf/_21aca6._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       9: checkcast     #7                  // class L/_88f3cf/_ba7d98
+      12: astore_3
+      13: aload_3
+      14: ifnull        26
+      17: aload_3
+      18: invokeinterface #61,  1           // InterfaceMethod L/_88f3cf/_ba7d98._951ef4:()Z
+      23: ifeq          53
+      26: aload_0
+      27: getfield      #32                 // Field _6188f2:Ljava/util/List;
+      30: aload_1
+      31: invokeinterface #71,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      36: pop
+      37: aload_1
+      38: invokeinterface #63,  1           // InterfaceMethod L/_88f3cf/_21aca6._282408:()V
+      43: iload_2
+      44: ifeq          51
+      47: aload_1
+      48: invokestatic  #46                 // Method L/_02d7ad/_cfe983._55938e:(LL/_88f3cf/_21aca6;)V
+      51: iconst_1
+      52: ireturn
+      53: iconst_0
+      54: ireturn
+
+  public void _2f4182(L._88f3cf._21aca6);
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field _6188f2:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #75,  2           // InterfaceMethod java/util/List.remove:(Ljava/lang/Object;)Z
+      10: pop
+      11: return
+
+  public void load(com.google.gson.JsonObject);
+    Code:
+       0: aload_1
+       1: ldc           #1                  // String version
+       3: invokevirtual #43                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+       6: ifeq          21
+       9: aload_1
+      10: ldc           #1                  // String version
+      12: invokevirtual #41                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      15: invokevirtual #35                 // Method com/google/gson/JsonElement.getAsInt:()I
+      18: goto          22
+      21: iconst_0
+      22: istore_2
+      23: aload_0
+      24: getfield      #33                 // Field _d24922:Ljava/util/function/Predicate;
+      27: ifnonnull     34
+      30: aconst_null
+      31: goto          41
+      34: new           #22                 // class java/util/HashSet
+      37: dup
+      38: invokespecial #59                 // Method java/util/HashSet."<init>":()V
+      41: astore_3
+      42: aload_0
+      43: aconst_null
+      44: putfield      #34                 // Field _042625:Lcom/google/gson/JsonObject;
+      47: aload_0
+      48: invokevirtual #52                 // Method getChildren:()Ljava/util/List;
+      51: invokeinterface #74,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      56: astore        4
+      58: aload         4
+      60: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      65: ifeq          174
+      68: aload         4
+      70: invokeinterface #70,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      75: checkcast     #12                 // class L/_88f3cf/_21aca6
+      78: astore        5
+      80: aload         5
+      82: invokeinterface #67,  1           // InterfaceMethod L/_88f3cf/_21aca6.getId:()Ljava/lang/String;
+      87: astore        6
+      89: aload_3
+      90: ifnull        102
+      93: aload_3
+      94: aload         6
+      96: invokeinterface #81,  2           // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+     101: pop
+     102: aload_1
+     103: aload         6
+     105: invokevirtual #43                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+     108: ifeq          132
+     111: aload_1
+     112: aload         6
+     114: invokevirtual #41                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     117: invokevirtual #36                 // Method com/google/gson/JsonElement.isJsonNull:()Z
+     120: ifne          132
+     123: aload_1
+     124: aload         6
+     126: invokevirtual #42                 // Method com/google/gson/JsonObject.getAsJsonObject:(Ljava/lang/String;)Lcom/google/gson/JsonObject;
+     129: goto          139
+     132: new           #3                  // class com/google/gson/JsonObject
+     135: dup
+     136: invokespecial #37                 // Method com/google/gson/JsonObject."<init>":()V
+     139: astore        7
+     141: aload         7
+     143: ldc           #1                  // String version
+     145: iload_2
+     146: invokestatic  #54                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     149: invokevirtual #39                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+     152: aload         5
+     154: aload         7
+     156: invokeinterface #68,  2           // InterfaceMethod L/_88f3cf/_21aca6.load:(Lcom/google/gson/JsonObject;)V
+     161: goto          171
+     164: astore        6
+     166: aload         6
+     168: invokevirtual #53                 // Method java/lang/Exception.printStackTrace:()V
+     171: goto          58
+     174: aload_0
+     175: getfield      #33                 // Field _d24922:Ljava/util/function/Predicate;
+     178: ifnull        282
+     181: aload_3
+     182: ifnull        282
+     185: new           #3                  // class com/google/gson/JsonObject
+     188: dup
+     189: invokespecial #37                 // Method com/google/gson/JsonObject."<init>":()V
+     192: astore        4
+     194: aload_1
+     195: invokevirtual #45                 // Method com/google/gson/JsonObject.keySet:()Ljava/util/Set;
+     198: invokeinterface #84,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     203: astore        5
+     205: aload         5
+     207: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     212: ifeq          268
+     215: aload         5
+     217: invokeinterface #70,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     222: checkcast     #16                 // class java/lang/String
+     225: astore        6
+     227: aload_0
+     228: getfield      #33                 // Field _d24922:Ljava/util/function/Predicate;
+     231: aload         6
+     233: invokeinterface #85,  2           // InterfaceMethod java/util/function/Predicate.test:(Ljava/lang/Object;)Z
+     238: ifeq          265
+     241: aload_3
+     242: aload         6
+     244: invokeinterface #82,  2           // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+     249: ifne          265
+     252: aload         4
+     254: aload         6
+     256: aload_1
+     257: aload         6
+     259: invokevirtual #41                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+     262: invokevirtual #38                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     265: goto          205
+     268: aload         4
+     270: invokevirtual #44                 // Method com/google/gson/JsonObject.isEmpty:()Z
+     273: ifne          282
+     276: aload_0
+     277: aload         4
+     279: putfield      #34                 // Field _042625:Lcom/google/gson/JsonObject;
+     282: return
+    Exception table:
+       from    to  target type
+          80   161   164   Class java/lang/Exception
+
+  public void _590f69(com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: invokevirtual #52                 // Method getChildren:()Ljava/util/List;
+       4: invokeinterface #74,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       9: astore_2
+      10: aload_2
+      11: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      16: ifeq          84
+      19: aload_2
+      20: invokeinterface #70,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      25: checkcast     #12                 // class L/_88f3cf/_21aca6
+      28: astore_3
+      29: new           #3                  // class com/google/gson/JsonObject
+      32: dup
+      33: invokespecial #37                 // Method com/google/gson/JsonObject."<init>":()V
+      36: astore        4
+      38: aload_3
+      39: aload         4
+      41: invokeinterface #66,  2           // InterfaceMethod L/_88f3cf/_21aca6._590f69:(Lcom/google/gson/JsonObject;)V
+      46: aload         4
+      48: invokevirtual #40                 // Method com/google/gson/JsonObject.entrySet:()Ljava/util/Set;
+      51: invokeinterface #83,  1           // InterfaceMethod java/util/Set.isEmpty:()Z
+      56: ifne          71
+      59: aload_1
+      60: aload_3
+      61: invokeinterface #67,  1           // InterfaceMethod L/_88f3cf/_21aca6.getId:()Ljava/lang/String;
+      66: aload         4
+      68: invokevirtual #38                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+      71: goto          81
+      74: astore        4
+      76: aload         4
+      78: invokevirtual #53                 // Method java/lang/Exception.printStackTrace:()V
+      81: goto          10
+      84: aload_0
+      85: getfield      #34                 // Field _042625:Lcom/google/gson/JsonObject;
+      88: ifnull        148
+      91: aload_0
+      92: getfield      #34                 // Field _042625:Lcom/google/gson/JsonObject;
+      95: invokevirtual #40                 // Method com/google/gson/JsonObject.entrySet:()Ljava/util/Set;
+      98: invokeinterface #84,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     103: astore_2
+     104: aload_2
+     105: invokeinterface #69,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     110: ifeq          148
+     113: aload_2
+     114: invokeinterface #70,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     119: checkcast     #26                 // class java/util/Map$Entry
+     122: astore_3
+     123: aload_1
+     124: aload_3
+     125: invokeinterface #79,  1           // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     130: checkcast     #16                 // class java/lang/String
+     133: aload_3
+     134: invokeinterface #80,  1           // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     139: checkcast     #2                  // class com/google/gson/JsonElement
+     142: invokevirtual #38                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     145: goto          104
+     148: return
+    Exception table:
+       from    to  target type
+          29    71    74   Class java/lang/Exception
+
+  public int priority();
+    Code:
+       0: sipush        1500
+       3: ireturn
+
+  public L._88f3cf._1e73d7._590f69(java.util.function.Predicate<java.lang.String>);
+    Code:
+       0: aload_0
+       1: invokespecial #55                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #20                 // class java/util/ArrayList
+       8: dup
+       9: invokespecial #57                 // Method java/util/ArrayList."<init>":()V
+      12: putfield      #32                 // Field _6188f2:Ljava/util/List;
+      15: aload_0
+      16: aconst_null
+      17: putfield      #34                 // Field _042625:Lcom/google/gson/JsonObject;
+      20: aload_0
+      21: aload_1
+      22: putfield      #33                 // Field _d24922:Ljava/util/function/Predicate;
+      25: return
+
+  public java.util.List<L._88f3cf._21aca6> getChildren();
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field _6188f2:Ljava/util/List;
+       4: areturn
+
+  public void _00e05b(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #12                 // class L/_88f3cf/_21aca6
+       5: invokevirtual #49                 // Method _2f4182:(LL/_88f3cf/_21aca6;)V
+       8: return
+
+  public boolean _02d7ad(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #12                 // class L/_88f3cf/_21aca6
+       5: invokevirtual #47                 // Method _429bf0:(LL/_88f3cf/_21aca6;)Z
+       8: ireturn
+
+  public void _cfe983(java.lang.Object, java.util.List);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #12                 // class L/_88f3cf/_21aca6
+       5: aload_2
+       6: invokevirtual #48                 // Method _cfe983:(LL/_88f3cf/_21aca6;Ljava/util/List;)V
+       9: return
+
+  private void _a140a8(L._88f3cf._21aca6);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_0
+       3: invokevirtual #51                 // Method _590f69:(LL/_88f3cf/_21aca6;Z)Z
+       6: pop
+       7: return
+}

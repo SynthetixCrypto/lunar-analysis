@@ -1,0 +1,517 @@
+public interface com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII extends com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RORCICOHRIOIIIOIOHIIIICRCIHRII.RROHOCRCCHCIORHICIHCOHRIRCIHCI,com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OCCCIRIHIRCOCOCORIHHHRCHRIOCCC.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH {
+  public abstract boolean bridge$isSneaking();
+
+  public abstract boolean bridge$isRiding();
+
+  public abstract int HCIOIIORIHRCIRHCHORRIIHRRIHRRI();
+
+  public abstract void COICRRHIRCCCHHROIOIRRICRIOCOCO(int);
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.HORCRCHHIRHRRHROOIOCRCICCICOCH.OHOORCOHRORRIHROOCROOIIHHOOHRI bridge$getWorld();
+
+  public abstract void bridge$lerpTo(double, double, double, float, float);
+
+  public abstract void bridge$setOnGround(boolean);
+
+  public abstract double bridge$getPosX();
+
+  public abstract void bridge$setPosX(double);
+
+  public abstract void bridge$setChunkX(int);
+
+  public abstract double bridge$getPosY();
+
+  public abstract void bridge$setPosY(double);
+
+  public abstract void bridge$setChunkY(int);
+
+  public abstract double bridge$getPosZ();
+
+  public abstract void bridge$setPosZ(double);
+
+  public abstract void bridge$setChunkZ(int);
+
+  public abstract double ORRHOOHOHCIHHOIHIICRIHRIRCCCRO();
+
+  public abstract void bridge$setPreviousPosX(double);
+
+  public abstract double IRIRCHRICIIOHRHIIIOCRRCORRHHCH();
+
+  public abstract void bridge$setPreviousPosY(double);
+
+  public abstract double CHCCRHOOIOIIIOHCRICIHOOCORHHIR();
+
+  public abstract void bridge$setPreviousPosZ(double);
+
+  public default void bridge$setOldPos(double, double, double);
+    Code:
+       0: return
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.RORCICOHRIOIIIOIOHIIIICRCIHRII bridge$getBlockPos();
+
+  public abstract double bridge$getMotionX();
+
+  public abstract void COOCHIRORIICRCIIRIROHIIRIRICCH(double);
+
+  public abstract double bridge$getMotionY();
+
+  public abstract void bridge$setMotionY(double);
+
+  public abstract double bridge$getMotionZ();
+
+  public abstract void RROHOCRCCHCIORHICIHCOHRIRCIHCI(double);
+
+  public abstract double bridge$getRotationYaw();
+
+  public abstract double bridge$getRotationPitch();
+
+  public abstract void bridge$setRotationYaw(double);
+
+  public abstract void bridge$setRotationPitch(double);
+
+  public abstract double bridge$getPreviousRotationYaw();
+
+  public abstract void bridge$setPreviousRotationYaw(double);
+
+  public abstract double bridge$getPreviousRotationPitch();
+
+  public abstract void bridge$setPreviousRotationPitch(double);
+
+  public abstract java.util.UUID bridge$getUniqueID();
+
+  public abstract void bridge$setUniqueID(java.util.UUID);
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.COOCHIRORIICRCIIRIROHIIRIRICCH bridge$getBoundingBox();
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.COOCHIRORIICRCIIRIROHIIRIRICCH bridge$getBoundingBox(float);
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.COOCHIRORIICRCIIRIROHIIRIRICCH bridge$getBoundingBoxForCulling();
+
+  public default double HHOCCCCIIIORCHRIHIRCHIRICCHIRC(float);
+    Code:
+       0: aload_0
+       1: invokeinterface #27,  1           // InterfaceMethod ORRHOOHOHCIHHOIHIICRIHRIRCCCRO:()D
+       6: aload_0
+       7: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+      12: aload_0
+      13: invokeinterface #27,  1           // InterfaceMethod ORRHOOHOHCIHHOIHIICRIHRIRCCCRO:()D
+      18: dsub
+      19: fload_1
+      20: f2d
+      21: dmul
+      22: dadd
+      23: dreturn
+
+  public default double RHCCHHHHIHHRIICRIHRRIHRORIIOHO(float);
+    Code:
+       0: aload_0
+       1: invokeinterface #24,  1           // InterfaceMethod IRIRCHRICIIOHRHIIIOCRRCORRHHCH:()D
+       6: aload_0
+       7: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+      12: aload_0
+      13: invokeinterface #24,  1           // InterfaceMethod IRIRCHRICIIOHRHIIIOCRRCORRHHCH:()D
+      18: dsub
+      19: fload_1
+      20: f2d
+      21: dmul
+      22: dadd
+      23: dreturn
+
+  public default double ORHHCIHIOOCOOHOOIROIHHOCOOCIRH(float);
+    Code:
+       0: aload_0
+       1: invokeinterface #20,  1           // InterfaceMethod CHCCRHOOIOIIIOHCRICIHOOCORHHIR:()D
+       6: aload_0
+       7: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+      12: aload_0
+      13: invokeinterface #20,  1           // InterfaceMethod CHCCRHOOIOIIIOHCRICIHOOCORHHIR:()D
+      18: dsub
+      19: fload_1
+      20: f2d
+      21: dmul
+      22: dadd
+      23: dreturn
+
+  public default com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.COOCHIRORIICRCIIRIROHIIRIRICCH IROCROOIOIORORHHCCOOCCHRRRIOIC(float);
+    Code:
+       0: aload_0
+       1: invokeinterface #30,  1           // InterfaceMethod bridge$getBoundingBox:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       6: aload_0
+       7: fload_1
+       8: invokeinterface #23,  2           // InterfaceMethod HHOCCCCIIIORCHRIHIRCHIRICCHIRC:(F)D
+      13: aload_0
+      14: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+      19: dsub
+      20: aload_0
+      21: fload_1
+      22: invokeinterface #28,  2           // InterfaceMethod RHCCHHHHIHHRIICRIHRRIHRORIIOHO:(F)D
+      27: aload_0
+      28: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+      33: dsub
+      34: aload_0
+      35: fload_1
+      36: invokeinterface #26,  2           // InterfaceMethod ORHHCIHIOOCOOHOOIROIHHOCOOCIRH:(F)D
+      41: aload_0
+      42: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+      47: dsub
+      48: invokeinterface #38,  7           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/COOCHIRORIICRCIIRIROHIIRIRICCH.bridge$offset:(DDD)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      53: areturn
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.COOCHIRORIICRCIIRIROHIIRIRICCH ICOOHHRCCCCHIHIORCIIICROIICORO();
+
+  public abstract boolean bridge$isOnGround();
+
+  public abstract boolean bridge$isInvisibleTo(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHOORCOHRORRIHROOCROOIIHHOOHRI.RORCICOHRIOIIIOIOHIIIICRCIHRII);
+
+  public default double COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII);
+    Code:
+       0: aload_0
+       1: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+       6: aload_1
+       7: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+      12: dsub
+      13: dstore_2
+      14: aload_0
+      15: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+      20: aload_1
+      21: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+      26: dsub
+      27: dstore        4
+      29: aload_0
+      30: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+      35: aload_1
+      36: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+      41: dsub
+      42: dstore        6
+      44: dload_2
+      45: dload_2
+      46: dmul
+      47: dload         4
+      49: dload         4
+      51: dmul
+      52: dadd
+      53: dload         6
+      55: dload         6
+      57: dmul
+      58: dadd
+      59: dreturn
+
+  public default double RROHOCRCCHCIORHICIHCOHRIRCIHCI(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #21,  2           // InterfaceMethod COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)D
+       7: invokestatic  #18                 // Method org/joml/Math.sqrt:(D)D
+      10: dreturn
+
+  public default double ORCOOOCHIICOIICCROCRCOOROORIHR(double, double, double);
+    Code:
+       0: aload_0
+       1: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+       6: dload_1
+       7: dsub
+       8: dstore        7
+      10: aload_0
+      11: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+      16: dload_3
+      17: dsub
+      18: dstore        9
+      20: aload_0
+      21: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+      26: dload         5
+      28: dsub
+      29: dstore        11
+      31: dload         7
+      33: dload         7
+      35: dmul
+      36: dload         9
+      38: dload         9
+      40: dmul
+      41: dadd
+      42: dload         11
+      44: dload         11
+      46: dmul
+      47: dadd
+      48: dreturn
+
+  public default double COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.RHCHOCRHIOROIOCRHIHRCROOOHICCC);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #39,  1           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/RHCHOCRHIOROIOCRHIHRCROOOHICCC.bridge$getX:()I
+       7: i2d
+       8: aload_1
+       9: invokeinterface #40,  1           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/RHCHOCRHIOROIOCRHIHRCROOOHICCC.bridge$getY:()I
+      14: i2d
+      15: aload_1
+      16: invokeinterface #41,  1           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/RHCHOCRHIOROIOCRHIHRCROOOHICCC.bridge$getZ:()I
+      21: i2d
+      22: invokeinterface #25,  7           // InterfaceMethod ORCOOOCHIICOIICCROCRCOOROORIHR:(DDD)D
+      27: dreturn
+
+  public default double RROHOCRCCHCIORHICIHCOHRIRCIHCI(org.joml.Vector3ic);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokeinterface #42,  1           // InterfaceMethod org/joml/Vector3ic.x:()I
+       7: i2d
+       8: aload_1
+       9: invokeinterface #43,  1           // InterfaceMethod org/joml/Vector3ic.y:()I
+      14: i2d
+      15: aload_1
+      16: invokeinterface #44,  1           // InterfaceMethod org/joml/Vector3ic.z:()I
+      21: i2d
+      22: invokeinterface #25,  7           // InterfaceMethod ORCOOOCHIICOIICCROCRCOOROORIHR:(DDD)D
+      27: dreturn
+
+  public default double OIHRRCOOHRHIHICHRICIRIOCROHOCC(double, double, double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: dload_3
+       3: dload         5
+       5: invokeinterface #25,  7           // InterfaceMethod ORCOOOCHIICOIICCROCRCOOROORIHR:(DDD)D
+      10: invokestatic  #18                 // Method org/joml/Math.sqrt:(D)D
+      13: dreturn
+
+  public default com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.HOOHCHOCHIRORHOIHCOCICOOOCHIIC HOCHCHCCCCOCCOIRIRIIHRRCHHIOIO();
+    Code:
+       0: aload_0
+       1: fconst_1
+       2: invokeinterface #35,  2           // InterfaceMethod bridge$getViewVector:(F)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC;
+       7: areturn
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.HOOHCHOCHIRORHOIHCOCICOOOCHIIC bridge$getViewVector(float);
+
+  public abstract int bridge$getDimension();
+
+  public abstract void bridge$setDimension(int);
+
+  public default java.lang.String bridge$getDimensionName();
+    Code:
+       0: ldc           #6                  // String
+       2: areturn
+
+  public default com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.HOOHCHOCHIRORHOIHCOCICOOOCHIIC bridge$getEyePosition();
+    Code:
+       0: aload_0
+       1: fconst_0
+       2: invokeinterface #31,  2           // InterfaceMethod bridge$getEyePosition:(F)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC;
+       7: areturn
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.HOOHCHOCHIRORHOIHCOCICOOOCHIIC bridge$getEyePosition(float);
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII bridge$getRidingEntity();
+
+  public abstract double bridge$getFallDistance();
+
+  public abstract void bridge$resetFallDistance();
+
+  public abstract boolean bridge$hitByEntity(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII);
+
+  public abstract double bridge$lastTickX();
+
+  public abstract void bridge$setLastTickX(double);
+
+  public abstract double bridge$lastTickY();
+
+  public abstract void bridge$setLastTickY(double);
+
+  public abstract double bridge$lastTickZ();
+
+  public abstract void bridge$setLastTickZ(double);
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.RROHOCRCCHCIORHICIHCOHRIRCIHCI bridge$getDataWatcher();
+
+  public abstract boolean bridge$isRidingBoat();
+
+  public abstract boolean bridge$isCollidedHorizontally();
+
+  public abstract boolean bridge$isRemoved();
+
+  public default double IIRCOIRRCRIOHCCCCIRHOHCCHCOROO();
+    Code:
+       0: aload_0
+       1: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+       6: aload_0
+       7: invokeinterface #27,  1           // InterfaceMethod ORRHOOHOHCIHHOIHIICRIHRIRCCCRO:()D
+      12: dsub
+      13: dstore_1
+      14: aload_0
+      15: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+      20: aload_0
+      21: invokeinterface #24,  1           // InterfaceMethod IRIRCHRICIIOHRHIIIOCRRCORRHHCH:()D
+      26: dsub
+      27: dstore_3
+      28: aload_0
+      29: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+      34: aload_0
+      35: invokeinterface #20,  1           // InterfaceMethod CHCCRHOOIOIIIOHCRICIHOOCORHHIR:()D
+      40: dsub
+      41: dstore        5
+      43: dload_1
+      44: dload_1
+      45: dmul
+      46: dload_3
+      47: dload_3
+      48: dmul
+      49: dadd
+      50: dload         5
+      52: dload         5
+      54: dmul
+      55: dadd
+      56: dreturn
+
+  public abstract net.kyori.adventure.text.Component bridge$getTypeName();
+
+  public abstract java.lang.String bridge$getEntityString();
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOIOIRCCICRCCIHCCRHRCIHROHCCI bridge$getPickResult();
+
+  public abstract void bridge$setCustomName(net.kyori.adventure.text.Component);
+
+  public abstract void bridge$setCustomNameVisible(boolean);
+
+  public abstract boolean bridge$shouldShowName();
+
+  public abstract int bridge$getSpawnEggColor(int);
+
+  public abstract java.lang.String bridge$getType();
+
+  public abstract boolean bridge$isGlowing();
+
+  public abstract void bridge$setGlowing(boolean);
+
+  public abstract void bridge$turn(float, float);
+
+  public abstract void bridge$setGlowingColor(int);
+
+  public abstract int bridge$getGlowingColor();
+
+  public default void bridge$decreaseEntityIdCounter();
+    Code:
+       0: return
+
+  public abstract void bridge$setId(int);
+
+  public default void bridge$setNoPhysics(boolean);
+    Code:
+       0: return
+
+  public abstract boolean bridge$shouldRenderAtSqrDistance(double);
+
+  public abstract void bridge$sendPairingData(java.util.function.Consumer<com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII>);
+
+  public abstract boolean bridge$isInWater();
+
+  public abstract float bridge$maxUpStep();
+
+  public abstract int bridge$getMaxFallDistance();
+
+  public default int bridge$canTurbo();
+    Code:
+       0: aload_0
+       1: invokeinterface #36,  1           // InterfaceMethod bridge$isGlowing:()Z
+       6: ifeq          13
+       9: sipush        1180
+      12: ireturn
+      13: aload_0
+      14: invokeinterface #37,  1           // InterfaceMethod bridge$isOnFire:()Z
+      19: ifeq          25
+      22: bipush        100
+      24: ireturn
+      25: iconst_m1
+      26: ireturn
+
+  public default void bridge$stopTurbo(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.HOOHCHOCHIRORHOIHCOCICOOOCHIIC);
+    Code:
+       0: new           #7                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+       3: dup
+       4: invokespecial #17                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":()V
+       7: athrow
+
+  public abstract boolean bridge$isAlive();
+
+  public default com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CCHRHCCCHRIHCICICIRCORHRORIOCI.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH bridge$getNbtAsComponent();
+    Code:
+       0: new           #7                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+       3: dup
+       4: invokespecial #17                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":()V
+       7: athrow
+
+  public abstract boolean bridge$getNoCulling();
+
+  public abstract boolean bridge$isInWaterOrBubble();
+
+  public abstract boolean bridge$canBeCollidedWith();
+
+  public default float bridge$ageInTicks();
+    Code:
+       0: aload_0
+       1: invokeinterface #22,  1           // InterfaceMethod HCIOIIORIHRCIRHCHORRIIHRRIHRRI:()I
+       6: i2f
+       7: freturn
+
+  public abstract boolean bridge$isItemFrame();
+
+  public abstract boolean bridge$isFirework();
+
+  public abstract boolean bridge$isWitherSkull();
+
+  public abstract boolean bridge$isSnowball();
+
+  public abstract boolean bridge$isFireball();
+
+  public abstract boolean bridge$isMonster();
+
+  public abstract boolean bridge$isMob();
+
+  public abstract boolean bridge$isLeashed();
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII bridge$getLeashedToEntity();
+
+  public abstract com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII bridge$getVehicle();
+
+  public abstract java.util.Optional<java.lang.String> bridge$getTeamName();
+
+  public abstract java.util.Optional<java.lang.String> bridge$getBoatType();
+
+  public abstract boolean bridge$isBoat();
+
+  public abstract boolean bridge$isMinecart();
+
+  public default boolean bridge$isTextDisplay();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public default org.joml.Vector3d bridge$getPosition();
+    Code:
+       0: new           #15                 // class org/joml/Vector3d
+       3: dup
+       4: aload_0
+       5: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+      10: aload_0
+      11: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+      16: aload_0
+      17: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+      22: invokespecial #19                 // Method org/joml/Vector3d."<init>":(DDD)V
+      25: areturn
+
+  public default com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.RHCHOCRHIOROIOCRHIHRCROOOHICCC bridge$pick$v1_16(float, float, boolean);
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public abstract org.joml.Vector3d bridge$getLookAngle();
+
+  public abstract boolean bridge$shouldRender(double, double, double);
+
+  public abstract java.util.List<com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII> bridge$getPassengers();
+
+  public default com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.RHCHOCRHIOROIOCRHIHRCROOOHICCC bridge$getBlockPos();
+    Code:
+       0: aload_0
+       1: invokeinterface #29,  1           // InterfaceMethod bridge$getBlockPos:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+       6: areturn
+}

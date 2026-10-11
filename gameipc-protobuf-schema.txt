@@ -1,0 +1,110 @@
+### com/lunarclient/gameipc/auth/v1/ServiceProto.class  file=lunarclient/gameipc/auth/v1/service.proto package=lunarclient.gameipc.auth.v1
+message OpenMicrosoftPopupRequest {  }
+message OpenMicrosoftPopupResponse { status=1:enum .lunarclient.gameipc.auth.v1.OpenMicrosoftPopupResponse.Status; url=2:string }
+  enum Status {STATUS_UNSPECIFIED=0,STATUS_MATCHED_TARGET_URL=1,STATUS_CLOSED_WITH_NO_URL=2}
+message RefreshAccountRequest { uuid=1:message .lunarclient.common.v1.Uuid }
+message RefreshAccountResponse { success=1:bool; error=2:enum .lunarclient.gameipc.auth.v1.RefreshAccountResponse.AccountError }
+  enum AccountError {ACCOUNT_ERROR_UNSPECIFIED=0,ACCOUNT_ERROR_ACCOUNTS_FILE_EMPTY=1,ACCOUNT_ERROR_NOT_PURCHASED_MINECRAFT=2,ACCOUNT_ERROR_MISSING_REFRESH_TOKEN=3,ACCOUNT_ERROR_ALREADY_REFRESHING=4}
+message AddAccountRequest {  }
+message AddAccountResponse { success=1:bool; error=2:enum .lunarclient.gameipc.auth.v1.AddAccountResponse.AccountError }
+  enum AccountError {ACCOUNT_ERROR_UNSPECIFIED=0,ACCOUNT_ERROR_NOT_PURCHASED_MINECRAFT=1}
+message NotifySwitchAccountRequest { uuid=1:message .lunarclient.common.v1.Uuid }
+message NotifySwitchAccountResponse {  }
+service AuthService { RefreshAccount(.lunarclient.gameipc.auth.v1.RefreshAccountRequest)->.lunarclient.gameipc.auth.v1.RefreshAccountResponse; AddAccount(.lunarclient.gameipc.auth.v1.AddAccountRequest)->.lunarclient.gameipc.auth.v1.AddAccountResponse }
+### com/lunarclient/gameipc/browser/v1/ServiceProto.class  file=lunarclient/gameipc/browser/v1/service.proto package=lunarclient.gameipc.browser.v1
+message OpenUrlRequest { url=1:string; initiator=2:enum .lunarclient.gameipc.browser.v1.OpenUrlRequest.Initiator; open_type=3:enum .lunarclient.gameipc.browser.v1.OpenUrlRequest.OpenType }
+  enum Initiator {INITIATOR_UNSPECIFIED=0,INITIATOR_COSMETICS=1,INITIATOR_ALERT=2,INITIATOR_AUTH=3,INITIATOR_BLOG=4,INITIATOR_SOCIAL_LINK=5,INITIATOR_HOME_BUTTON=6,INITIATOR_LINK_CONFIRM=7,INITIATOR_SCREENSHOT_UPLOAD=8,INITIATOR_HOME_CTA=9,INITIATOR_STORE_PREVIEW=10}
+  enum OpenType {OPEN_TYPE_UNSPECIFIED=0,OPEN_TYPE_FORCE_EMBEDDED=1,OPEN_TYPE_FORCE_EXTERNAL=2}
+message OpenUrlResponse {  }
+service BrowserService { OpenUrl(.lunarclient.gameipc.browser.v1.OpenUrlRequest)->.lunarclient.gameipc.browser.v1.OpenUrlResponse }
+### com/lunarclient/gameipc/chat/v1/PushProto.class  file=lunarclient/gameipc/chat/v1/push.proto package=lunarclient.gameipc.chat.v1
+message SendChatPush { message=1:string }
+### com/lunarclient/gameipc/chat/v1/ServiceProto.class  file=lunarclient/gameipc/chat/v1/service.proto package=lunarclient.gameipc.chat.v1
+message ReceiveMessageRequest { sender=1:message .lunarclient.common.v1.UuidAndUsername; content=2:string }
+message ReceiveMessageResponse {  }
+service ChatService { ReceiveMessage(.lunarclient.gameipc.chat.v1.ReceiveMessageRequest)->.lunarclient.gameipc.chat.v1.ReceiveMessageResponse }
+### com/lunarclient/gameipc/handshake/v1/CommonProto.class  file=lunarclient/gameipc/handshake/v1/common.proto package=lunarclient.gameipc.handshake.v1
+message Handshake { launch_id=1:string; process_id=2:string; installation_id=3:string }
+### com/lunarclient/gameipc/launch/v1/PushProto.class  file=lunarclient/gameipc/launch/v1/push.proto package=lunarclient.gameipc.launch.v1
+message PlayServerPush { auto_join_server_ip=1:string }
+message ExitGamePush {  }
+### com/lunarclient/gameipc/launch/v1/ServiceProto.class  file=lunarclient/gameipc/launch/v1/service.proto package=lunarclient.gameipc.launch.v1
+message LaunchGameRequest { version=1:string; module=2:string; auto_join_server_ip=3:string; launch_source=4:enum .lunarclient.gameipc.launch.v1.LaunchGameRequest.LaunchSource; modpack=5:message .lunarclient.common.v1.PlayerModpack }
+  enum LaunchSource {LAUNCH_SOURCE_UNSPECIFIED=0,LAUNCH_SOURCE_MAIN_MENU_SWITCHER=1,LAUNCH_SOURCE_SERVER_KICK_PROMPT=2,LAUNCH_SOURCE_SERVER_MODPACK_RECOMMENDATION=3}
+message LaunchGameResponse {  }
+service LaunchService { LaunchGame(.lunarclient.gameipc.launch.v1.LaunchGameRequest)->.lunarclient.gameipc.launch.v1.LaunchGameResponse }
+### com/lunarclient/gameipc/location/v1/PushProto.class  file=lunarclient/gameipc/location/v1/push.proto package=lunarclient.gameipc.location.v1
+message FocusGamePush {  }
+### com/lunarclient/gameipc/location/v1/ServiceProto.class  file=lunarclient/gameipc/location/v1/service.proto package=lunarclient.gameipc.location.v1
+message UpdateLocationRequest { location=1:message .lunarclient.common.v1.Location; inbound_location=2:message .lunarclient.common.v1.InboundLocation }
+message UpdateLocationResponse {  }
+message UpdateFocusRequest { focused=1:bool }
+message UpdateFocusResponse {  }
+service LocationService { UpdateFocus(.lunarclient.gameipc.location.v1.UpdateFocusRequest)->.lunarclient.gameipc.location.v1.UpdateFocusResponse; UpdateLocation(.lunarclient.gameipc.location.v1.UpdateLocationRequest)->.lunarclient.gameipc.location.v1.UpdateLocationResponse }
+### com/lunarclient/gameipc/paynow/v1/PushProto.class  file=lunarclient/gameipc/paynow/v1/push.proto package=lunarclient.gameipc.paynow.v1
+message PayNowJsCheckoutClosed {  }
+### com/lunarclient/gameipc/paynow/v1/ServiceProto.class  file=lunarclient/gameipc/paynow/v1/service.proto package=lunarclient.gameipc.paynow.v1
+message CheckPayNowCapabilitiesRequest {  }
+message CheckPayNowCapabilitiesResponse { embedded_checkout=1:enum .lunarclient.gameipc.paynow.v1.CheckPayNowCapabilitiesResponse.EmbeddedCheckout }
+  enum EmbeddedCheckout {EMBEDDED_CHECKOUT_UNSPECIFIED=0,EMBEDDED_CHECKOUT_OVERWOLF_OVERLAY=1,EMBEDDED_CHECKOUT_ELECTRON_WINDOW=2}
+message OpenPayNowJsCheckoutRequest { checkout_token=1:string }
+message OpenPayNowJsCheckoutResponse { status=1:enum .lunarclient.gameipc.paynow.v1.OpenPayNowJsCheckoutResponse.Status; open_minecraft_screen=2:bool }
+  enum Status {STATUS_UNSPECIFIED=0,STATUS_OK=1,STATUS_INTERNAL_ERROR=2,STATUS_SERVER_NOT_ALLOWED=3}
+service PayNowService { OpenPayNowJsCheckout(.lunarclient.gameipc.paynow.v1.OpenPayNowJsCheckoutRequest)->.lunarclient.gameipc.paynow.v1.OpenPayNowJsCheckoutResponse; CheckPayNowCapabilities(.lunarclient.gameipc.paynow.v1.CheckPayNowCapabilitiesRequest)->.lunarclient.gameipc.paynow.v1.CheckPayNowCapabilitiesResponse }
+### com/lunarclient/gameipc/promotion/v1/CommonProto.class  file=lunarclient/gameipc/promotion/v1/common.proto package=lunarclient.gameipc.promotion.v1
+enum PromotionType {PROMOTION_TYPE_UNSPECIFIED=0,PROMOTION_TYPE_VIDEO=1,PROMOTION_TYPE_OUTPLAYED=2,PROMOTION_TYPE_MEDAL=3}
+### com/lunarclient/gameipc/promotion/v1/PushProto.class  file=lunarclient/gameipc/promotion/v1/push.proto package=lunarclient.gameipc.promotion.v1
+message PendingPromotionUpdatePush { has_pending_promotion=1:bool; pending_promotions=2:enum .lunarclient.gameipc.promotion.v1.PromotionType repeated }
+### com/lunarclient/gameipc/promotion/v1/ServiceProto.class  file=lunarclient/gameipc/promotion/v1/service.proto package=lunarclient.gameipc.promotion.v1
+message CheckPendingPromotionRequest {  }
+message CheckPendingPromotionResponse { has_pending_promotion=1:bool; pending_promotions=2:enum .lunarclient.gameipc.promotion.v1.PromotionType repeated }
+message PlayPromotionRequest { type=1:enum .lunarclient.gameipc.promotion.v1.PromotionType }
+message PlayPromotionResponse {  }
+service PromotionService { CheckPendingPromotion(.lunarclient.gameipc.promotion.v1.CheckPendingPromotionRequest)->.lunarclient.gameipc.promotion.v1.CheckPendingPromotionResponse; PlayPromotion(.lunarclient.gameipc.promotion.v1.PlayPromotionRequest)->.lunarclient.gameipc.promotion.v1.PlayPromotionResponse }
+### com/lunarclient/gameipc/protocol/v1/CommonProto.class  file=lunarclient/gameipc/protocol/v1/common.proto package=lunarclient.gameipc.protocol.v1
+message LauncherboundIPCMessage { request_id=1:bytes; service=2:string; method=3:string; input=4:bytes; full_method=6:string; input_name=7:string; input_full_name=8:string }
+message GameboundIPCMessage { rpc_response=1:message .lunarclient.gameipc.protocol.v1.IPCRpcResponse; push_notification=2:message .google.protobuf.Any }
+message IPCRpcResponse { request_id=1:bytes; output=2:bytes }
+### com/lunarclient/gameipc/store/v1/PushProto.class  file=lunarclient/gameipc/store/v1/push.proto package=lunarclient.gameipc.store.v1
+message StartStorePreviewSessionPush { basket_ident=1:string; package_id=2:int32 }
+### com/lunarclient/gameipc/styngr/v1/CommonProto.class  file=lunarclient/gameipc/styngr/v1/common.proto package=lunarclient.gameipc.styngr.v1
+message StyngrTrackState { image_url=1:string; title=2:string; artist_names=3:string repeated; liked=4:bool; remaining_skips=5:int32; playlist_id=6:string; playlist_name=7:string }
+message StyngrControlsState { playing=1:bool; muted=2:bool; volume=3:float }
+message StyngrProgressState { duration=1:float; position=2:float }
+enum PlaylistLicense {PLAYLIST_LICENSE_UNSPECIFIED=0,PLAYLIST_LICENSE_LICENSED=1,PLAYLIST_LICENSE_ROYALTY_FREE=2}
+enum PlaylistMonetization {PLAYLIST_MONETIZATION_UNSPECIFIED=0,PLAYLIST_MONETIZATION_INTERNAL_AD_FUNDED=1,PLAYLIST_MONETIZATION_EXTERNAL_AD_FUNDED=2,PLAYLIST_MONETIZATION_PREMIUM=3}
+### com/lunarclient/gameipc/styngr/v1/PushProto.class  file=lunarclient/gameipc/styngr/v1/push.proto package=lunarclient.gameipc.styngr.v1
+message StyngrTrackControlsUpdate { playing=1:bool; muted=2:bool; volume=3:float }
+message StyngrTrackProgressUpdate { duration=1:float; position=2:float }
+message StyngrTrackUpdate { track=1:message .lunarclient.gameipc.styngr.v1.StyngrTrackState }
+### com/lunarclient/gameipc/styngr/v1/ServiceProto.class  file=lunarclient/gameipc/styngr/v1/service.proto package=lunarclient.gameipc.styngr.v1
+message FetchStateRequest {  }
+message FetchStateResponse { track=1:message .lunarclient.gameipc.styngr.v1.StyngrTrackState; controls=2:message .lunarclient.gameipc.styngr.v1.StyngrControlsState; progress=3:message .lunarclient.gameipc.styngr.v1.StyngrProgressState }
+message FetchPlaylistsRequest {  }
+message FetchPlaylistsResponse { playlists=1:message .lunarclient.gameipc.styngr.v1.FetchPlaylistsResponse.Playlist repeated; premium=2:bool }
+  nested Playlist { id=1; name=2; description=3; track_count=4; duration=5; license=6; monetization=7 }
+message StartPlaylistRequest { playlist_type=1:enum .lunarclient.gameipc.styngr.v1.PlaylistLicense; playlist_id=2:string }
+message StartPlaylistResponse {  }
+message NextTrackRequest {  }
+message NextTrackResponse {  }
+message SetPlayingRequest { playing=1:bool }
+message SetPlayingResponse {  }
+message SetMutedRequest { muted=1:bool }
+message SetMutedResponse {  }
+message SetVolumeRequest { volume=1:float }
+message SetVolumeResponse {  }
+message ToggleLikedRequest {  }
+message ToggleLikedResponse {  }
+message OpenSelectorRequest {  }
+message OpenSelectorResponse {  }
+service StyngrRadioService { FetchState(.lunarclient.gameipc.styngr.v1.FetchStateRequest)->.lunarclient.gameipc.styngr.v1.FetchStateResponse; FetchPlaylists(.lunarclient.gameipc.styngr.v1.FetchPlaylistsRequest)->.lunarclient.gameipc.styngr.v1.FetchPlaylistsResponse; StartPlaylist(.lunarclient.gameipc.styngr.v1.StartPlaylistRequest)->.lunarclient.gameipc.styngr.v1.StartPlaylistResponse; NextTrack(.lunarclient.gameipc.styngr.v1.NextTrackRequest)->.lunarclient.gameipc.styngr.v1.NextTrackResponse; SetPlaying(.lunarclient.gameipc.styngr.v1.SetPlayingRequest)->.lunarclient.gameipc.styngr.v1.SetPlayingResponse; SetMuted(.lunarclient.gameipc.styngr.v1.SetMutedRequest)->.lunarclient.gameipc.styngr.v1.SetMutedResponse; SetVolume(.lunarclient.gameipc.styngr.v1.SetVolumeRequest)->.lunarclient.gameipc.styngr.v1.SetVolumeResponse; ToggleLiked(.lunarclient.gameipc.styngr.v1.ToggleLikedRequest)->.lunarclient.gameipc.styngr.v1.ToggleLikedResponse; OpenSelector(.lunarclient.gameipc.styngr.v1.OpenSelectorRequest)->.lunarclient.gameipc.styngr.v1.OpenSelectorResponse }
+### com/lunarclient/gameipc/tebex/v1/PushProto.class  file=lunarclient/gameipc/tebex/v1/push.proto package=lunarclient.gameipc.tebex.v1
+message TebexJsCheckoutClosed {  }
+### com/lunarclient/gameipc/tebex/v1/ServiceProto.class  file=lunarclient/gameipc/tebex/v1/service.proto package=lunarclient.gameipc.tebex.v1
+message CheckTebexCapabilitiesRequest {  }
+message CheckTebexCapabilitiesResponse { embedded_checkout=1:enum .lunarclient.gameipc.tebex.v1.CheckTebexCapabilitiesResponse.EmbeddedCheckout }
+  enum EmbeddedCheckout {EMBEDDED_CHECKOUT_UNSPECIFIED=0,EMBEDDED_CHECKOUT_OVERWOLF_OVERLAY=1,EMBEDDED_CHECKOUT_ELECTRON_WINDOW=2}
+message OpenTebexJsCheckoutRequest { basket_ident=1:string; locale=2:string }
+message OpenTebexJsCheckoutResponse { status=1:enum .lunarclient.gameipc.tebex.v1.OpenTebexJsCheckoutResponse.Status; open_minecraft_screen=2:bool }
+  enum Status {STATUS_UNSPECIFIED=0,STATUS_OK=1,STATUS_INTERNAL_ERROR=2,STATUS_SERVER_NOT_ALLOWED=3}
+service TebexService { OpenTebexJsCheckout(.lunarclient.gameipc.tebex.v1.OpenTebexJsCheckoutRequest)->.lunarclient.gameipc.tebex.v1.OpenTebexJsCheckoutResponse; CheckTebexCapabilities(.lunarclient.gameipc.tebex.v1.CheckTebexCapabilitiesRequest)->.lunarclient.gameipc.tebex.v1.CheckTebexCapabilitiesResponse }

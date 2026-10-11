@@ -1,0 +1,4347 @@
+{
+  "scope": "Reconstruction feasibility supplement, static read-only. No implementation, target execution, UI rendering, network retrieval, asset copying or personal data inspection.",
+  "method": "Inert UTF-8 text searches and bounded source-span inspection; parser imports unavailable. Locally assigned RG-* IDs are supplemental, not REA Evidence IDs. Existing REA/artifact reports reused.",
+  "artifact": {
+    "path": "C:/Users/Admin/.lunarclient/ui/2545e7fc28d10de3b6f9e5b8b66a4fc8931aece9/static/index.js",
+    "sizeBytes": 8681743,
+    "sha256": "e4a51091585d654dfc80f49bf9557c89712eafffb93abd5fe3894593e6b5688d"
+  },
+  "offsetConvention": "Zero-based decoded UTF-16 char offsets and original UTF-8 byte offsets; ranges are contextual spans, not AST node ranges.",
+  "reaAvailability": [
+    {
+      "name": "analyze_javascript_application",
+      "available": true,
+      "reason": "available",
+      "effects": {
+        "mutatesTarget": false,
+        "mutatesSession": true,
+        "writesFilesystem": false,
+        "launchesProcess": false,
+        "accessesNetwork": false,
+        "changesUiState": false,
+        "mayDiscardData": false,
+        "idempotent": true
+      }
+    },
+    {
+      "name": "inspect_analysis_view",
+      "available": true,
+      "reason": "available",
+      "effects": {
+        "mutatesTarget": false,
+        "mutatesSession": true,
+        "writesFilesystem": false,
+        "launchesProcess": false,
+        "accessesNetwork": false,
+        "changesUiState": false,
+        "mayDiscardData": false,
+        "idempotent": true
+      }
+    },
+    {
+      "name": "trace_javascript_semantics",
+      "available": true,
+      "reason": "available",
+      "effects": {
+        "mutatesTarget": false,
+        "mutatesSession": true,
+        "writesFilesystem": false,
+        "launchesProcess": false,
+        "accessesNetwork": false,
+        "changesUiState": false,
+        "mayDiscardData": false,
+        "idempotent": true
+      }
+    }
+  ],
+  "reaUsageLimit": "Static JS analyzer available. No new whole 8.68MB UI graph requested because operation has no focused-file/subtree semantics seed without producing a parent graph; inspected exact static text instead. Existing launcher REA graph is not game UI evidence.",
+  "supportingSources": [
+    {
+      "path": "C:/Users/Admin/Downloads/New folder/lunar-analysis/game-ui-evidence.json",
+      "sha256": "a478b1ae7ac32a73d3aa93f1c0c73e9466f31fa0f981e61d2105fdbecf31adfb"
+    },
+    {
+      "path": "C:/Users/Admin/Downloads/New folder/lunar-analysis/minecraft-ui-bridge-metadata.json",
+      "sha256": "3d36c5b6d43951675ebbd78218135028fd7cd353040856ca2dd790191c4a357c"
+    },
+    {
+      "path": "C:/Users/Admin/Downloads/New folder/lunar-analysis/minecraft-webosr-metadata.json",
+      "sha256": "16108c8c6555febd90d5c49b2a3bef482d90928cb2509515844428434a1b4e93"
+    },
+    {
+      "path": "C:/Users/Admin/Downloads/New folder/lunar-analysis/minecraft-artifacts.json",
+      "sha256": "d36ab465deb9e2c02b45f88941da3fa9270a94f567787a9ed869d575cc9dfd8a"
+    }
+  ],
+  "corroboratingJar": {
+    "path": "C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar",
+    "sha256": "bf36e10e21154263ac16363f8c83bb08cff3a077cb788120954d3625b94a02e9",
+    "bridgeMetadataFile": "minecraft-ui-bridge-metadata.json",
+    "observations": [
+      "Browser.bindFunction binds literal lunarInternalInvoke, bytecode offsets 58/64 in recorded provider class method",
+      "onDocumentReady injection literal at bytecode offset13 creates eventBus, lunarInternalAccept, lunarReady and Proxy lunar APIs",
+      "CallbackJS annotations and provider namespace table corroborate JS wrappers"
+    ],
+    "textureMetadataFile": "minecraft-webosr-metadata.json",
+    "nativeInterfaceObservations": [
+      "TextureHandler create/resize/upload/read/delete signatures",
+      "FileSystem.onRequest returns Payload(buffer,length,mimeType,statusCode); doesResourceExist",
+      "WebEngine.createImageSourceTextured(String) returns TexturedImageSource"
+    ],
+    "limits": [
+      "Declarations and bytecode references do not prove runtime ownership/scheduling",
+      "Actual id.imgsrc resolver implementation not traced"
+    ]
+  },
+  "anchors": [
+    {
+      "id": "RG-01",
+      "title": "Top-level routes",
+      "symbol": "Qx0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8648325,
+      "endCharOffset": 8650800,
+      "byteOffset": 8675231,
+      "endByteOffset": 8677706,
+      "observation": "21 route declarations including blank root; flat route table under common window/overlay/model wrappers."
+    },
+    {
+      "id": "RG-02",
+      "title": "Overlay layer",
+      "symbol": "Jd0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8127742,
+      "endCharOffset": 8129330,
+      "byteOffset": 8154644,
+      "endByteOffset": 8156232,
+      "observation": "overlay event drives nine named overlay components; overlays are independent of pathname."
+    },
+    {
+      "id": "RG-03",
+      "title": "Settings schema and renderer",
+      "symbol": "S0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 5664194,
+      "endCharOffset": 5667090,
+      "byteOffset": 5664203,
+      "endByteOffset": 5667099,
+      "observation": "20 type enum values; base renderer handles seven controls plus recursive category; game map adds keybind/color."
+    },
+    {
+      "id": "RG-04",
+      "title": "Checkbox and toggle serialization",
+      "symbol": "xz2=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 5646490,
+      "endCharOffset": 5646684,
+      "byteOffset": 5646499,
+      "endByteOffset": 5646693,
+      "observation": "Update booleans as true/false strings; checked display uses option.value."
+    },
+    {
+      "id": "RG-05",
+      "title": "Dropdown/text/multiple numbers",
+      "symbol": "kz2=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 5653710,
+      "endCharOffset": 5654550,
+      "byteOffset": 5653719,
+      "endByteOffset": 5654559,
+      "observation": "choices have name/id; text forwards string; multi_number parses JSON array, float conversion and NaN to zero."
+    },
+    {
+      "id": "RG-06",
+      "title": "Radio defaults",
+      "symbol": "Pz2=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 5656814,
+      "endCharOffset": 5657135,
+      "byteOffset": 5656823,
+      "endByteOffset": 5657144,
+      "observation": "choices contain id/name/description; passes default and hideRecommended."
+    },
+    {
+      "id": "RG-07",
+      "title": "Slider rounding and bounds",
+      "symbol": "Pb=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 5659133,
+      "endCharOffset": 5662400,
+      "byteOffset": 5659142,
+      "endByteOffset": 5662409,
+      "observation": "Pointer clamps range and rounds by step; manual input parses numeric text, rounds and honors forceMin/forceMax; wrapper defaults both flags true and passes roundTo as step."
+    },
+    {
+      "id": "RG-08",
+      "title": "Dynamic settings state",
+      "symbol": "xo0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7764855,
+      "endCharOffset": 7766998,
+      "byteOffset": 7791675,
+      "endByteOffset": 7793818,
+      "observation": "Initial general/performance/controls/rewind arrays and features map empty; host payload supplies trees; option:update recursively replaces by id; invalid id/scope raises error."
+    },
+    {
+      "id": "RG-09",
+      "title": "Settings scope/navigation/search",
+      "symbol": "Ea=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7911202,
+      "endCharOffset": 7916200,
+      "byteOffset": 7938022,
+      "endByteOffset": 7943028,
+      "observation": "Scopes GENERAL/PERFORMANCE/CONTROLS/REWIND/FEATURE; recursive options; category selection, whitelist, text/id/description/badge search and ADVANCED filter."
+    },
+    {
+      "id": "RG-10",
+      "title": "Keybind editor",
+      "symbol": "kN2=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 5698495,
+      "endCharOffset": 5701000,
+      "byteOffset": 5698504,
+      "endByteOffset": 5701009,
+      "observation": "Displays modifier/key value and conflicts; onEdit switches host keybind capture; clash policy supplied as ignoreClashing/clashesWith."
+    },
+    {
+      "id": "RG-11",
+      "title": "Color editor",
+      "symbol": "xk=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7905108,
+      "endCharOffset": 7908860,
+      "byteOffset": 7931928,
+      "endByteOffset": 7935680,
+      "observation": "HSB/alpha/chroma updates JSON, favorites provider, pickedColor host event, capture mode, copy/paste base64(JSON), randomization."
+    },
+    {
+      "id": "RG-12",
+      "title": "Settings host API",
+      "symbol": "class Rl0",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7820365,
+      "endCharOffset": 7821030,
+      "byteOffset": 7847185,
+      "endByteOffset": 7847850,
+      "observation": "setAdvancedMode,update,reset,invokeAction,setEditingKeybind,stopEditingKeybind delegate to settings namespace."
+    },
+    {
+      "id": "RG-13",
+      "title": "Mod payload and HUD route",
+      "symbol": "rc0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7902066,
+      "endCharOffset": 7902530,
+      "byteOffset": 7928886,
+      "endByteOffset": 7929350,
+      "observation": "fi0 filters enabled && allowed mods; rc0 maps only fps to tc0 in examined route."
+    },
+    {
+      "id": "RG-14",
+      "title": "FPS HUD metadata",
+      "symbol": "tc0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7901550,
+      "endCharOffset": 7902066,
+      "byteOffset": 7928370,
+      "endByteOffset": 7928886,
+      "observation": "Requests hudModProperty and hudModMetadata for fps; styles with x/y/position and displays fps plus debug-style position/scale labels."
+    },
+    {
+      "id": "RG-15",
+      "title": "Texture-ready protocol",
+      "symbol": "oa0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7833306,
+      "endCharOffset": 7834720,
+      "byteOffset": 7860126,
+      "endByteOffset": 7861540,
+      "observation": "gameTexture event id/ready controls rendering of id.imgsrc in img element, default Y flip."
+    },
+    {
+      "id": "RG-16",
+      "title": "Model lifetime and batching",
+      "symbol": "ca0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7835944,
+      "endCharOffset": 7837455,
+      "byteOffset": 7862764,
+      "endByteOffset": 7864275,
+      "observation": "add/update/remove queued and JSON serialized after 16ms; keyed by model id with duplicate suppression."
+    },
+    {
+      "id": "RG-17",
+      "title": "Model layout and hover",
+      "symbol": "z31=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7837528,
+      "endCharOffset": 7839320,
+      "byteOffset": 7864348,
+      "endByteOffset": 7866140,
+      "observation": "Sends props plus DOM width/height and default zoom 1; ResizeObserver; hover x/y serialization; cleanup removes model."
+    },
+    {
+      "id": "RG-18",
+      "title": "Waypoint host namespaces",
+      "symbol": "class Nl0",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7823776,
+      "endCharOffset": 7826649,
+      "byteOffset": 7850596,
+      "endByteOffset": 7853469,
+      "observation": "Waypoint group, import/export, map, mod-import, sort, utility and main waypoints API wrappers."
+    },
+    {
+      "id": "RG-19",
+      "title": "Waypoint navigator",
+      "symbol": "Xx0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8642689,
+      "endCharOffset": 8648283,
+      "byteOffset": 8669595,
+      "endByteOffset": 8675189,
+      "observation": "Server/group/dimension/death filters, count aggregation, add/edit/delete/group/import flows; confirmDelete value consulted, host decides map availability."
+    },
+    {
+      "id": "RG-20",
+      "title": "Waypoint editor fields and validation",
+      "symbol": "I91=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8605829,
+      "endCharOffset": 8610146,
+      "byteOffset": 8632731,
+      "endByteOffset": 8637048,
+      "observation": "Name, group, location/world/dimension, display options and color; current location; numeric coercion; requires nonempty name and color before save."
+    },
+    {
+      "id": "RG-21",
+      "title": "Waypoint group editor",
+      "symbol": "O91=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8589482,
+      "endCharOffset": 8593319,
+      "byteOffset": 8616384,
+      "endByteOffset": 8620221,
+      "observation": "Nonblank trimmed name guard; group display override, text/beam/highlight/distance/color/icon; host create/update calls."
+    },
+    {
+      "id": "RG-22",
+      "title": "Rewind controller namespaces",
+      "symbol": "class ml0",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7811313,
+      "endCharOffset": 7817961,
+      "byteOffset": 7838133,
+      "endByteOffset": 7844781,
+      "observation": "Create/validate/rename, media, property/keyframe, timeline, export/queue and playback/layout wrappers."
+    },
+    {
+      "id": "RG-23",
+      "title": "Rewind editor",
+      "symbol": "Lf0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8268391,
+      "endCharOffset": 8277000,
+      "byteOffset": 8295293,
+      "endByteOffset": 8303902,
+      "observation": "Host playhead/quickView/rendering/progress payload; timeline selection; preview/editor layout, zoom, render region and input focus."
+    },
+    {
+      "id": "RG-24",
+      "title": "Rewind effects",
+      "symbol": "bv0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8530518,
+      "endCharOffset": 8532200,
+      "byteOffset": 8557420,
+      "endByteOffset": 8559102,
+      "observation": "Text/image effects selected by id; DOM bounding boxes sent to host; property update batch around selected timeline layer."
+    },
+    {
+      "id": "RG-25",
+      "title": "Rewind library",
+      "symbol": "Av0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8542769,
+      "endCharOffset": 8549440,
+      "byteOffset": 8569671,
+      "endByteOffset": 8576342,
+      "observation": "Library filters compatible/all/project/rewind, search name/location, missing-mod confirmation, quick view/open/rename/delete/file location."
+    },
+    {
+      "id": "RG-26",
+      "title": "Locker tabs",
+      "symbol": "Ad0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8086647,
+      "endCharOffset": 8089340,
+      "byteOffset": 8113549,
+      "endByteOffset": 8116242,
+      "observation": "Cosmetics,emotes,outfits,sprays,lunarPlus,badges,skinChanger,jams; connection guard and model highlighting cleanup."
+    },
+    {
+      "id": "RG-27",
+      "title": "Server discovery",
+      "symbol": "zv0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8554012,
+      "endCharOffset": 8556200,
+      "byteOffset": 8580914,
+      "endByteOffset": 8583102,
+      "observation": "Server discovery/search/autocomplete/details/join/save/not-interested and ping result callbacks."
+    },
+    {
+      "id": "RG-28",
+      "title": "Shader cloak editor",
+      "symbol": "Nv0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8556298,
+      "endCharOffset": 8559160,
+      "byteOffset": 8583200,
+      "endByteOffset": 8586062,
+      "observation": "Resolution, uniforms, shader type/source, samplers, FPS/hot reload, warning/error payloads, preview and export actions."
+    },
+    {
+      "id": "RG-29",
+      "title": "Screenshot upload",
+      "symbol": "lu0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8142919,
+      "endCharOffset": 8143350,
+      "byteOffset": 8169821,
+      "endByteOffset": 8170252,
+      "observation": "Title + public/unlisted/private privacy, default unlisted; route payload JSON passed to host upload; uploading state."
+    },
+    {
+      "id": "RG-30",
+      "title": "Profile import",
+      "symbol": "du0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8143693,
+      "endCharOffset": 8145900,
+      "byteOffset": 8170595,
+      "endByteOffset": 8172802,
+      "observation": "Badlion/Feather lists and detection; maxImports guards selection; imports selected profile ids through host."
+    },
+    {
+      "id": "RG-31",
+      "title": "Profile viewer",
+      "symbol": "$v0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8562874,
+      "endCharOffset": 8563650,
+      "byteOffset": 8589776,
+      "endByteOffset": 8590552,
+      "observation": "Username search drives SkyCrypt embedded iframe; external service necessary for current embedded content."
+    },
+    {
+      "id": "RG-32",
+      "title": "Spirit Leap",
+      "symbol": "hx0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8582631,
+      "endCharOffset": 8584350,
+      "byteOffset": 8609533,
+      "endByteOffset": 8611252,
+      "observation": "Player/class/dead-state list and host map texture/region; player/map action, default view, settings and close delegates."
+    },
+    {
+      "id": "RG-33",
+      "title": "Window state and overlay context",
+      "symbol": "eu0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8129330,
+      "endCharOffset": 8131840,
+      "byteOffset": 8156232,
+      "endByteOffset": 8158742,
+      "observation": "Window state width/height/x/y/fullscreen/shown, sort state and local stacking; host persistence callbacks available."
+    },
+    {
+      "id": "RG-34",
+      "title": "Specialized Rewind property controls",
+      "symbol": "function zh0",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8227187,
+      "endCharOffset": 8231450,
+      "byteOffset": 8254089,
+      "endByteOffset": 8258352,
+      "observation": "Property renderer adds players,packs,date,button controls; keyframe navigation/reset/visibility; multi-number vectors and pose fields; special renderIn/renderOut text commit."
+    },
+    {
+      "id": "RG-35",
+      "title": "Emote wheel",
+      "symbol": "ua0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7840668,
+      "endCharOffset": 7840950,
+      "byteOffset": 7867488,
+      "endByteOffset": 7867770,
+      "observation": "Owned/equipped emotes and jams subscribed; radial selection provider."
+    },
+    {
+      "id": "RG-36",
+      "title": "Spray wheel",
+      "symbol": "gc0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7941559,
+      "endCharOffset": 7941760,
+      "byteOffset": 7968393,
+      "endByteOffset": 7968594,
+      "observation": "Owned/equipped sprays feed wheel; tutorial describes drag/double-click equip and in-game wheel selection."
+    },
+    {
+      "id": "RG-37",
+      "title": "Marker wheel",
+      "symbol": "tu0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8131492,
+      "endCharOffset": 8132670,
+      "byteOffset": 8158394,
+      "endByteOffset": 8159572,
+      "observation": "Host flags list populates radial markers; click marks and closes screen, cleanup clears current marker."
+    },
+    {
+      "id": "RG-38",
+      "title": "Home menu",
+      "symbol": "vH=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7898437,
+      "endCharOffset": 7900500,
+      "byteOffset": 7925257,
+      "endByteOffset": 7927320,
+      "observation": "Host buttons/themes/additions/social/promotions feed menu; click delegates to host; wrapped flag changes presentation."
+    },
+    {
+      "id": "RG-39",
+      "title": "Server host calls",
+      "symbol": "class jl0",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7818494,
+      "endCharOffset": 7820365,
+      "byteOffset": 7845314,
+      "endByteOffset": 7847185,
+      "observation": "joinServer forwards recommendationId/serverMappingsId/name/primaryAddress; saveServer name/address; ping result event and timeout 8000ms."
+    },
+    {
+      "id": "RG-40",
+      "title": "Language selector",
+      "symbol": "sc0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7909481,
+      "endCharOffset": 7911194,
+      "byteOffset": 7936301,
+      "endByteOffset": 7938014,
+      "observation": "Host available/default/active languages; search, reset, forceUnicode toggle; selected language committed on unmount."
+    },
+    {
+      "id": "RG-41",
+      "title": "Screenshot title/privacy form",
+      "symbol": "iu0=",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 8135031,
+      "endCharOffset": 8136300,
+      "byteOffset": 8161933,
+      "endByteOffset": 8163202,
+      "observation": "Title maxCharacters32; privacy enum public/unlisted/private; upload payload received from route state."
+    },
+    {
+      "id": "RG-42",
+      "title": "Social namespace contracts",
+      "symbol": "class Vs0",
+      "evidenceType": "confirmed-static-text",
+      "charOffset": 7798533,
+      "endCharOffset": 7805560,
+      "byteOffset": 7825353,
+      "endByteOffset": 7832380,
+      "observation": "Friends privacy/request/pin/join, hosted-world invite/kick/promote/demote, conversations commands declared; no live service observation."
+    }
+  ],
+  "routeHierarchy": {
+    "topLevel": [
+      {
+        "path": "/",
+        "charOffset": 8649628
+      },
+      {
+        "path": "/home",
+        "charOffset": 8649678
+      },
+      {
+        "path": "/home_wrapped",
+        "charOffset": 8649734
+      },
+      {
+        "path": "/server_discovery",
+        "charOffset": 8649798
+      },
+      {
+        "path": "/multiplayer_wrapped",
+        "charOffset": 8649857
+      },
+      {
+        "path": "/hud",
+        "charOffset": 8649919
+      },
+      {
+        "path": "/language",
+        "charOffset": 8649965
+      },
+      {
+        "path": "/locker",
+        "charOffset": 8650016
+      },
+      {
+        "path": "/emote_wheel",
+        "charOffset": 8650065
+      },
+      {
+        "path": "/rewind",
+        "charOffset": 8650119
+      },
+      {
+        "path": "/rewind_effects",
+        "charOffset": 8650168
+      },
+      {
+        "path": "/rewinds_list",
+        "charOffset": 8650225
+      },
+      {
+        "path": "/spirit_leap",
+        "charOffset": 8650280
+      },
+      {
+        "path": "/marker_wheel",
+        "charOffset": 8650334
+      },
+      {
+        "path": "/shader_cloak_editor",
+        "charOffset": 8650389
+      },
+      {
+        "path": "/screenshot_upload",
+        "charOffset": 8650451
+      },
+      {
+        "path": "/spray_wheel",
+        "charOffset": 8650511
+      },
+      {
+        "path": "/navigator",
+        "charOffset": 8650565
+      },
+      {
+        "path": "/configure_waypoint",
+        "charOffset": 8650617
+      },
+      {
+        "path": "/profile_viewer",
+        "charOffset": 8650678
+      },
+      {
+        "path": "/profile_import",
+        "charOffset": 8650735
+      }
+    ],
+    "commonWrappers": [
+      "eu0 window/overlay context",
+      "oa0 texture readiness",
+      "ca0 model batch context"
+    ],
+    "overlays": [
+      "browser",
+      "friends",
+      "lockerSettings",
+      "hostedWorldsConfirmation",
+      "sbStorageOverlaySettings",
+      "accountSettings",
+      "accountSwitcher",
+      "themeSelector",
+      "socialLink"
+    ],
+    "routeStateFallback": {
+      "isMainMenu": true,
+      "streaming": false,
+      "creative": false
+    },
+    "limits": "No nested URL route tree or runtime routing trace recovered. Feature panels and overlays are often local state/host events."
+  },
+  "settings": {
+    "declaredTypes": [
+      "button",
+      "range",
+      "slider",
+      "checkbox",
+      "toggle",
+      "date",
+      "password",
+      "radio",
+      "text",
+      "textarea",
+      "color_picker",
+      "dropdown",
+      "keybind",
+      "players",
+      "multi_number",
+      "packs",
+      "modifiable_list",
+      "inventory_slots",
+      "unknown",
+      "category"
+    ],
+    "genericRendered": [
+      "checkbox",
+      "toggle",
+      "slider",
+      "dropdown",
+      "text",
+      "radio",
+      "multi_number",
+      "keybind",
+      "color_picker",
+      "category"
+    ],
+    "specializedRewindAdditional": [
+      "players",
+      "packs",
+      "date",
+      "button"
+    ],
+    "commonFields": [
+      "id",
+      "name",
+      "type",
+      "value",
+      "default",
+      "children",
+      "description",
+      "isHidden",
+      "badges",
+      "icon",
+      "actionButton"
+    ],
+    "typeSpecificFields": [
+      "choices: id/name/description",
+      "min/max/roundTo/forceMin/forceMax",
+      "clashesWith/ignoreClashing",
+      "hue/saturation/brightness/alpha/chroma",
+      "Rewind showInTimeline,values,canReset,hasKeyframe,previousKeyframe,nextKeyframe,names,integer,players,player"
+    ],
+    "scopes": [
+      "GENERAL",
+      "PERFORMANCE",
+      "CONTROLS",
+      "FEATURE",
+      "REWIND"
+    ],
+    "defaultSource": "Host payload option.default; frontend arrays initially empty; UI ?? fallbacks do not establish product defaults.",
+    "references": {
+      "generalControls": [
+        {
+          "kind": "GENERAL",
+          "id": "streamerMode",
+          "charOffset": 7768386
+        },
+        {
+          "kind": "GENERAL",
+          "id": "streamerModeBehaviour",
+          "charOffset": 7768420
+        },
+        {
+          "kind": "GENERAL",
+          "id": "playJams",
+          "charOffset": 7839330
+        },
+        {
+          "kind": "GENERAL",
+          "id": "advancedMode",
+          "charOffset": 7911240
+        },
+        {
+          "kind": "CONTROLS",
+          "id": "emoteWheelKeybind",
+          "charOffset": 7937022
+        },
+        {
+          "kind": "CONTROLS",
+          "id": "sprayWheelKeybind",
+          "charOffset": 7941758
+        },
+        {
+          "kind": "GENERAL",
+          "id": "ingameUiTransparency",
+          "charOffset": 8086719
+        },
+        {
+          "kind": "GENERAL",
+          "id": "showNewBubbles",
+          "charOffset": 8086757
+        },
+        {
+          "kind": "GENERAL",
+          "id": "ingameUiTransparency",
+          "charOffset": 8642801
+        }
+      ],
+      "featureSpecific": [
+        {
+          "feature": "WAYPOINTS",
+          "id": "waypointBeams",
+          "charOffset": 8589563
+        },
+        {
+          "feature": "WAYPOINTS",
+          "id": "waypointShowDistance",
+          "charOffset": 8589601
+        },
+        {
+          "feature": "WAYPOINTS",
+          "id": "highlightWaypointBlock",
+          "charOffset": 8589646
+        },
+        {
+          "feature": "WAYPOINTS",
+          "id": "waypointBeams",
+          "charOffset": 8606060
+        },
+        {
+          "feature": "WAYPOINTS",
+          "id": "waypointShowDistance",
+          "charOffset": 8606098
+        },
+        {
+          "feature": "WAYPOINTS",
+          "id": "highlightWaypointBlock",
+          "charOffset": 8606143
+        },
+        {
+          "feature": "WAYPOINTS",
+          "id": "confirmDelete",
+          "charOffset": 8627165
+        },
+        {
+          "feature": "WAYPOINTS",
+          "id": "confirmDelete",
+          "charOffset": 8642841
+        }
+      ]
+    }
+  },
+  "providerWrappers": [
+    {
+      "symbol": "zs0",
+      "base": "a4",
+      "namespace": "accounts",
+      "charOffset": 7797925,
+      "byteOffset": 7824745,
+      "endCharOffset": 7798405,
+      "methodSignatures": [
+        {
+          "method": "addAccount",
+          "parameters": "",
+          "charOffset": 7798178
+        },
+        {
+          "method": "removeAccount",
+          "parameters": "r",
+          "charOffset": 7798229
+        },
+        {
+          "method": "selectAccount",
+          "parameters": "r",
+          "charOffset": 7798324
+        }
+      ],
+      "commands": [
+        {
+          "command": "addAccount",
+          "charOffset": 7798203
+        },
+        {
+          "command": "removeAccount",
+          "charOffset": 7798258
+        },
+        {
+          "command": "selectAccount",
+          "charOffset": 7798361
+        }
+      ],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "Ns0",
+      "base": "c0",
+      "namespace": "analytics",
+      "charOffset": 7798405,
+      "byteOffset": 7825225,
+      "endCharOffset": 7798533,
+      "methodSignatures": [
+        {
+          "method": "submit",
+          "parameters": "t,r",
+          "charOffset": 7798459
+        }
+      ],
+      "commands": [
+        {
+          "command": "submit",
+          "charOffset": 7798483
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Vs0",
+      "base": "a4",
+      "namespace": "friends",
+      "charOffset": 7798533,
+      "byteOffset": 7825353,
+      "endCharOffset": 7799383,
+      "methodSignatures": [
+        {
+          "method": "addFriend",
+          "parameters": "r",
+          "charOffset": 7798634
+        },
+        {
+          "method": "removeFriend",
+          "parameters": "r",
+          "charOffset": 7798686
+        },
+        {
+          "method": "setFriendRequests",
+          "parameters": "r",
+          "charOffset": 7798744
+        },
+        {
+          "method": "acceptFriendRequest",
+          "parameters": "r",
+          "charOffset": 7798812
+        },
+        {
+          "method": "denyFriendRequest",
+          "parameters": "r",
+          "charOffset": 7798884
+        },
+        {
+          "method": "setVisibilityStatus",
+          "parameters": "r",
+          "charOffset": 7798952
+        },
+        {
+          "method": "setLastSeenVisibility",
+          "parameters": "r",
+          "charOffset": 7799024
+        },
+        {
+          "method": "setIncomingGiftPrivacy",
+          "parameters": "r",
+          "charOffset": 7799100
+        },
+        {
+          "method": "setPinnedFriend",
+          "parameters": "r,o",
+          "charOffset": 7799178
+        },
+        {
+          "method": "setCosmeticOwnershipVisibility",
+          "parameters": "r",
+          "charOffset": 7799246
+        },
+        {
+          "method": "join",
+          "parameters": "r",
+          "charOffset": 7799340
+        }
+      ],
+      "commands": [
+        {
+          "command": "addFriend",
+          "charOffset": 7798659
+        },
+        {
+          "command": "removeFriend",
+          "charOffset": 7798714
+        },
+        {
+          "command": "setFriendRequests",
+          "charOffset": 7798777
+        },
+        {
+          "command": "acceptFriendRequest",
+          "charOffset": 7798847
+        },
+        {
+          "command": "denyFriendRequest",
+          "charOffset": 7798917
+        },
+        {
+          "command": "setVisibilityStatus",
+          "charOffset": 7798987
+        },
+        {
+          "command": "setLastSeenVisibility",
+          "charOffset": 7799061
+        },
+        {
+          "command": "setIncomingGiftPrivacy",
+          "charOffset": 7799138
+        },
+        {
+          "command": "setPinnedFriend",
+          "charOffset": 7799211
+        },
+        {
+          "command": "setCosmeticOwnershipVisibility",
+          "charOffset": 7799292
+        },
+        {
+          "command": "join",
+          "charOffset": 7799360
+        }
+      ],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "Ws0",
+      "base": "a4",
+      "namespace": "hostedWorlds",
+      "charOffset": 7799383,
+      "byteOffset": 7826203,
+      "endCharOffset": 7799752,
+      "methodSignatures": [
+        {
+          "method": "inviteFriend",
+          "parameters": "r",
+          "charOffset": 7799489
+        },
+        {
+          "method": "kick",
+          "parameters": "r",
+          "charOffset": 7799547
+        },
+        {
+          "method": "promote",
+          "parameters": "r",
+          "charOffset": 7799589
+        },
+        {
+          "method": "demote",
+          "parameters": "r",
+          "charOffset": 7799637
+        },
+        {
+          "method": "onModalCallback",
+          "parameters": "r,o",
+          "charOffset": 7799683
+        }
+      ],
+      "commands": [
+        {
+          "command": "inviteFriend",
+          "charOffset": 7799517
+        },
+        {
+          "command": "kick",
+          "charOffset": 7799567
+        },
+        {
+          "command": "promote",
+          "charOffset": 7799612
+        },
+        {
+          "command": "demote",
+          "charOffset": 7799659
+        },
+        {
+          "command": "onModalCallback",
+          "charOffset": 7799716
+        }
+      ],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "Zs0",
+      "base": "a4",
+      "namespace": "assetsClient",
+      "charOffset": 7799752,
+      "byteOffset": 7826572,
+      "endCharOffset": 7799963,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": [
+        "friends",
+        "hostedWorld",
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "Us0",
+      "base": "c0",
+      "namespace": "badges",
+      "charOffset": 7799963,
+      "byteOffset": 7826783,
+      "endCharOffset": 7800059,
+      "methodSignatures": [
+        {
+          "method": "equip",
+          "parameters": "t",
+          "charOffset": 7800014
+        }
+      ],
+      "commands": [
+        {
+          "command": "equip",
+          "charOffset": 7800035
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Ks0",
+      "base": "a4",
+      "namespace": "colors",
+      "charOffset": 7800059,
+      "byteOffset": 7826879,
+      "endCharOffset": 7800246,
+      "methodSignatures": [
+        {
+          "method": "add",
+          "parameters": "r",
+          "charOffset": 7800159
+        },
+        {
+          "method": "remove",
+          "parameters": "r",
+          "charOffset": 7800199
+        }
+      ],
+      "commands": [
+        {
+          "command": "add",
+          "charOffset": 7800178
+        },
+        {
+          "command": "remove",
+          "charOffset": 7800221
+        }
+      ],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "Gs0",
+      "base": "a4",
+      "namespace": "conversations",
+      "charOffset": 7800246,
+      "byteOffset": 7827066,
+      "endCharOffset": 7805560,
+      "methodSignatures": [],
+      "commands": [
+        {
+          "command": "refreshConversations",
+          "charOffset": 7800351
+        },
+        {
+          "command": "getConversations",
+          "charOffset": 7800432
+        },
+        {
+          "command": "unfocusConversations",
+          "charOffset": 7800516
+        },
+        {
+          "command": "sendConversationMessage",
+          "charOffset": 7800604
+        },
+        {
+          "command": "preSendAction",
+          "charOffset": 7800730
+        },
+        {
+          "command": "loadConversationAnchor",
+          "charOffset": 7800897
+        },
+        {
+          "command": "loadConversationBefore",
+          "charOffset": 7800973
+        },
+        {
+          "command": "loadConversationAfter",
+          "charOffset": 7801048
+        },
+        {
+          "command": "loadConversation",
+          "charOffset": 7801104
+        },
+        {
+          "command": "loadConversation",
+          "charOffset": 7801138
+        },
+        {
+          "command": "createConversation",
+          "charOffset": 7801214
+        },
+        {
+          "command": "deleteConversation",
+          "charOffset": 7801307
+        },
+        {
+          "command": "deleteConversationMessageHistory",
+          "charOffset": 7801396
+        },
+        {
+          "command": "deleteConversationMessage",
+          "charOffset": 7801495
+        },
+        {
+          "command": "updateConversationOwner",
+          "charOffset": 7801587
+        },
+        {
+          "command": "addConversationParticipants",
+          "charOffset": 7801681
+        },
+        {
+          "command": "removeConversationParticipant",
+          "charOffset": 7801802
+        },
+        {
+          "command": "updateConversationName",
+          "charOffset": 7801899
+        },
+        {
+          "command": "updateConversationIcon",
+          "charOffset": 7801987
+        },
+        {
+          "command": "pickGroupIconForPreview",
+          "charOffset": 7802080
+        },
+        {
+          "command": "uploadPendingGroupIcon",
+          "charOffset": 7802172
+        },
+        {
+          "command": "pickChatImagesForPreview",
+          "charOffset": 7802265
+        },
+        {
+          "command": "uploadPendingChatImages",
+          "charOffset": 7802359
+        },
+        {
+          "command": "loadPinnedMessages",
+          "charOffset": 7802440
+        },
+        {
+          "command": "addPinnedMessage",
+          "charOffset": 7802516
+        },
+        {
+          "command": "removePinnedMessage",
+          "charOffset": 7802595
+        },
+        {
+          "command": "setInvitePolicy",
+          "charOffset": 7802673
+        },
+        {
+          "command": "setNamePolicy",
+          "charOffset": 7802745
+        },
+        {
+          "command": "setIconPolicy",
+          "charOffset": 7802815
+        },
+        {
+          "command": "setMessagePinningPolicy",
+          "charOffset": 7802895
+        },
+        {
+          "command": "getUploadUrls",
+          "charOffset": 7802977
+        },
+        {
+          "command": "searchGifs",
+          "charOffset": 7803062
+        }
+      ],
+      "constructorPropertyNames": [
+        "refreshConversations",
+        "getConversations",
+        "unfocusConversations",
+        "sendConversationMessage",
+        "preSendAction",
+        "loadConversation",
+        "createConversation",
+        "deleteConversation",
+        "deleteConversationMessageHistory",
+        "deleteConversationMessage",
+        "updateConversationOwner",
+        "addConversationParticipants",
+        "removeConversationParticipant",
+        "updateConversationName",
+        "updateConversationIcon",
+        "pickGroupIconForPreview",
+        "uploadPendingGroupIcon",
+        "pickChatImagesForPreview",
+        "uploadPendingChatImages",
+        "loadPinnedMessages",
+        "addPinnedMessage",
+        "removePinnedMessage",
+        "setInvitePolicy",
+        "setNamePolicy",
+        "setIconPolicy",
+        "setMessagePinningPolicy",
+        "getUploadUrls",
+        "searchGifs",
+        "handleAction",
+        "applyAction",
+        "dispatchPolicyUpdate"
+      ]
+    },
+    {
+      "symbol": "$s0",
+      "base": "c0",
+      "namespace": "cosmetics",
+      "charOffset": 7805560,
+      "byteOffset": 7832380,
+      "endCharOffset": 7806402,
+      "methodSignatures": [
+        {
+          "method": "updateCosmeticOption",
+          "parameters": "t,r,o",
+          "charOffset": 7805614
+        },
+        {
+          "method": "requestData",
+          "parameters": "t",
+          "charOffset": 7805697
+        },
+        {
+          "method": "getCosmeticData",
+          "parameters": "t",
+          "charOffset": 7805754
+        },
+        {
+          "method": "sync",
+          "parameters": "",
+          "charOffset": 7805835
+        },
+        {
+          "method": "updateContext",
+          "parameters": "",
+          "charOffset": 7805874
+        },
+        {
+          "method": "markAllAsSeen",
+          "parameters": "",
+          "charOffset": 7805932
+        },
+        {
+          "method": "markAsSeen",
+          "parameters": "t",
+          "charOffset": 7805990
+        },
+        {
+          "method": "unequipAll",
+          "parameters": "",
+          "charOffset": 7806068
+        },
+        {
+          "method": "toggleCosmetic",
+          "parameters": "t",
+          "charOffset": 7806120
+        },
+        {
+          "method": "showCosmeticLocker",
+          "parameters": "",
+          "charOffset": 7806183
+        },
+        {
+          "method": "previewCosmetics",
+          "parameters": "t,r=!1",
+          "charOffset": 7806251
+        },
+        {
+          "method": "setCosmeticFavorite",
+          "parameters": "t,r",
+          "charOffset": 7806325
+        }
+      ],
+      "commands": [
+        {
+          "command": "updateCosmeticOption",
+          "charOffset": 7805655
+        },
+        {
+          "command": "requestData",
+          "charOffset": 7805725
+        },
+        {
+          "command": "getCosmeticData",
+          "charOffset": 7805786
+        },
+        {
+          "command": "sync",
+          "charOffset": 7805854
+        },
+        {
+          "command": "updateContext",
+          "charOffset": 7805903
+        },
+        {
+          "command": "markAllAsSeen",
+          "charOffset": 7805961
+        },
+        {
+          "command": "markAsSeen",
+          "charOffset": 7806017
+        },
+        {
+          "command": "unequipAll",
+          "charOffset": 7806094
+        },
+        {
+          "command": "toggleCosmetic",
+          "charOffset": 7806151
+        },
+        {
+          "command": "showCosmeticLocker",
+          "charOffset": 7806217
+        },
+        {
+          "command": "previewCosmetics",
+          "charOffset": 7806289
+        },
+        {
+          "command": "setCosmeticFavorite",
+          "charOffset": 7806362
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Ys0",
+      "base": "c0",
+      "namespace": "emotes",
+      "charOffset": 7806402,
+      "byteOffset": 7833222,
+      "endCharOffset": 7806764,
+      "methodSignatures": [
+        {
+          "method": "emote",
+          "parameters": "t",
+          "charOffset": 7806453
+        },
+        {
+          "method": "selectEmote",
+          "parameters": "t",
+          "charOffset": 7806498
+        },
+        {
+          "method": "showEmoteLocker",
+          "parameters": "",
+          "charOffset": 7806555
+        },
+        {
+          "method": "unequipAll",
+          "parameters": "",
+          "charOffset": 7806617
+        },
+        {
+          "method": "remove",
+          "parameters": "t",
+          "charOffset": 7806669
+        },
+        {
+          "method": "add",
+          "parameters": "t,r,o",
+          "charOffset": 7806715
+        }
+      ],
+      "commands": [
+        {
+          "command": "emote",
+          "charOffset": 7806475
+        },
+        {
+          "command": "selectEmote",
+          "charOffset": 7806526
+        },
+        {
+          "command": "showEmoteLocker",
+          "charOffset": 7806586
+        },
+        {
+          "command": "unequipAll",
+          "charOffset": 7806643
+        },
+        {
+          "command": "remove",
+          "charOffset": 7806691
+        },
+        {
+          "command": "add",
+          "charOffset": 7806738
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "qs0",
+      "base": "c0",
+      "namespace": "alerts",
+      "charOffset": 7806764,
+      "byteOffset": 7833584,
+      "endCharOffset": 7806864,
+      "methodSignatures": [
+        {
+          "method": "dismiss",
+          "parameters": "t",
+          "charOffset": 7806815
+        }
+      ],
+      "commands": [
+        {
+          "command": "dismiss",
+          "charOffset": 7806838
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Xs0",
+      "base": "c0",
+      "namespace": "blogPosts",
+      "charOffset": 7806864,
+      "byteOffset": 7833684,
+      "endCharOffset": 7806965,
+      "methodSignatures": [
+        {
+          "method": "open",
+          "parameters": "t,r",
+          "charOffset": 7806918
+        }
+      ],
+      "commands": [
+        {
+          "command": "open",
+          "charOffset": 7806940
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Qs0",
+      "base": "c0",
+      "namespace": "homeNavigation",
+      "charOffset": 7806965,
+      "byteOffset": 7833785,
+      "endCharOffset": 7807025,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Js0",
+      "base": "c0",
+      "namespace": "homeRadio",
+      "charOffset": 7807025,
+      "byteOffset": 7833845,
+      "endCharOffset": 7807212,
+      "methodSignatures": [
+        {
+          "method": "mute",
+          "parameters": "",
+          "charOffset": 7807079
+        },
+        {
+          "method": "setVolume",
+          "parameters": "t",
+          "charOffset": 7807118
+        },
+        {
+          "method": "close",
+          "parameters": "",
+          "charOffset": 7807170
+        }
+      ],
+      "commands": [
+        {
+          "command": "mute",
+          "charOffset": 7807098
+        },
+        {
+          "command": "setVolume",
+          "charOffset": 7807143
+        },
+        {
+          "command": "close",
+          "charOffset": 7807190
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "el0",
+      "base": "c0",
+      "namespace": "homeTheme",
+      "charOffset": 7807212,
+      "byteOffset": 7834032,
+      "endCharOffset": 7807797,
+      "methodSignatures": [
+        {
+          "method": "selectTheme",
+          "parameters": "t",
+          "charOffset": 7807266
+        },
+        {
+          "method": "selectDefaultTheme",
+          "parameters": "",
+          "charOffset": 7807322
+        },
+        {
+          "method": "playSound",
+          "parameters": "",
+          "charOffset": 7807389
+        },
+        {
+          "method": "openWrapped",
+          "parameters": "",
+          "charOffset": 7807438
+        },
+        {
+          "method": "openAdvent",
+          "parameters": "",
+          "charOffset": 7807491
+        },
+        {
+          "method": "playSuccessSound",
+          "parameters": "",
+          "charOffset": 7807542
+        },
+        {
+          "method": "playFailSound",
+          "parameters": "",
+          "charOffset": 7807606
+        },
+        {
+          "method": "setBalloonHighscore",
+          "parameters": "t",
+          "charOffset": 7807664
+        },
+        {
+          "method": "openStoreCoins",
+          "parameters": "",
+          "charOffset": 7807737
+        }
+      ],
+      "commands": [
+        {
+          "command": "selectTheme",
+          "charOffset": 7807293
+        },
+        {
+          "command": "selectDefaultTheme",
+          "charOffset": 7807355
+        },
+        {
+          "command": "playSound",
+          "charOffset": 7807413
+        },
+        {
+          "command": "openWrapped",
+          "charOffset": 7807464
+        },
+        {
+          "command": "openAdvent",
+          "charOffset": 7807516
+        },
+        {
+          "command": "playSuccessSound",
+          "charOffset": 7807574
+        },
+        {
+          "command": "playFailSound",
+          "charOffset": 7807635
+        },
+        {
+          "command": "setBalloonHighscore",
+          "charOffset": 7807700
+        },
+        {
+          "command": "openStoreCoins",
+          "charOffset": 7807766
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "tl0",
+      "base": "c0",
+      "namespace": "socialMedia",
+      "charOffset": 7807797,
+      "byteOffset": 7834617,
+      "endCharOffset": 7807976,
+      "methodSignatures": [
+        {
+          "method": "openSocialMedia",
+          "parameters": "t",
+          "charOffset": 7807853
+        },
+        {
+          "method": "unlinkSocial",
+          "parameters": "t",
+          "charOffset": 7807917
+        }
+      ],
+      "commands": [
+        {
+          "command": "openSocialMedia",
+          "charOffset": 7807884
+        },
+        {
+          "command": "unlinkSocial",
+          "charOffset": 7807945
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "rl0",
+      "base": "c0",
+      "namespace": "homeButtons",
+      "charOffset": 7807976,
+      "byteOffset": 7834796,
+      "endCharOffset": 7808194,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": [
+        "alerts",
+        "blogPosts",
+        "navigation",
+        "social",
+        "theme",
+        "radio"
+      ]
+    },
+    {
+      "symbol": "nl0",
+      "base": "a4",
+      "namespace": "language",
+      "charOffset": 7808194,
+      "byteOffset": 7835014,
+      "endCharOffset": 7808502,
+      "methodSignatures": [
+        {
+          "method": "selectLanguage",
+          "parameters": "r",
+          "charOffset": 7808296
+        },
+        {
+          "method": "setForceUnicode",
+          "parameters": "r",
+          "charOffset": 7808358
+        },
+        {
+          "method": "resetToDefault",
+          "parameters": "",
+          "charOffset": 7808442
+        }
+      ],
+      "commands": [
+        {
+          "command": "selectLanguage",
+          "charOffset": 7808326
+        },
+        {
+          "command": "setForceUnicode",
+          "charOffset": 7808389
+        },
+        {
+          "command": "resetToDefault",
+          "charOffset": 7808471
+        }
+      ],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "ol0",
+      "base": "c0",
+      "namespace": "lunarPlus",
+      "charOffset": 7808502,
+      "byteOffset": 7835322,
+      "endCharOffset": 7808608,
+      "methodSignatures": [
+        {
+          "method": "setColor",
+          "parameters": "t",
+          "charOffset": 7808556
+        }
+      ],
+      "commands": [
+        {
+          "command": "setColor",
+          "charOffset": 7808581
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "il0",
+      "base": "c0",
+      "namespace": "markers",
+      "charOffset": 7808608,
+      "byteOffset": 7835428,
+      "endCharOffset": 7808707,
+      "methodSignatures": [
+        {
+          "method": "mark",
+          "parameters": "t,r",
+          "charOffset": 7808660
+        }
+      ],
+      "commands": [
+        {
+          "command": "mark",
+          "charOffset": 7808682
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "sl0",
+      "base": "a4",
+      "namespace": "metadata",
+      "charOffset": 7808707,
+      "byteOffset": 7835527,
+      "endCharOffset": 7808810,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "ll0",
+      "base": "c0",
+      "namespace": "hudModMetadata",
+      "charOffset": 7808810,
+      "byteOffset": 7835630,
+      "endCharOffset": 7808873,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "al0",
+      "base": "c0",
+      "namespace": "hudModProperty",
+      "charOffset": 7808873,
+      "byteOffset": 7835693,
+      "endCharOffset": 7808936,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "cl0",
+      "base": "a4",
+      "namespace": "mods",
+      "charOffset": 7808936,
+      "byteOffset": 7835756,
+      "endCharOffset": 7809105,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": [
+        "properties",
+        "metadata",
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "dl0",
+      "base": null,
+      "namespace": "(direct host model calls)",
+      "charOffset": 7809105,
+      "byteOffset": 7835925,
+      "endCharOffset": 7810310,
+      "methodSignatures": [
+        {
+          "method": "addModel",
+          "parameters": "t",
+          "charOffset": 7809588
+        },
+        {
+          "method": "updateModel",
+          "parameters": "t",
+          "charOffset": 7809639
+        },
+        {
+          "method": "removeModel",
+          "parameters": "t",
+          "charOffset": 7809696
+        },
+        {
+          "method": "setHighlightingEnabled",
+          "parameters": "t",
+          "charOffset": 7809753
+        },
+        {
+          "method": "forceHighlightCosmetic",
+          "parameters": "t",
+          "charOffset": 7809832
+        },
+        {
+          "method": "selectCosmetic",
+          "parameters": "t",
+          "charOffset": 7809911
+        },
+        {
+          "method": "setToggleButtonHoveredState",
+          "parameters": "t",
+          "charOffset": 7809974
+        },
+        {
+          "method": "setHoveredModel",
+          "parameters": "t,r",
+          "charOffset": 7810063
+        },
+        {
+          "method": "playEmote",
+          "parameters": "t",
+          "charOffset": 7810140
+        },
+        {
+          "method": "stopEmote",
+          "parameters": "t",
+          "charOffset": 7810193
+        },
+        {
+          "method": "invoke",
+          "parameters": "t,...r",
+          "charOffset": 7810246
+        }
+      ],
+      "commands": [
+        {
+          "command": "playEmote",
+          "charOffset": 7809313
+        },
+        {
+          "command": "stopEmote",
+          "charOffset": 7809460
+        },
+        {
+          "command": "addModel",
+          "charOffset": 7809613
+        },
+        {
+          "command": "updateModel",
+          "charOffset": 7809667
+        },
+        {
+          "command": "removeModel",
+          "charOffset": 7809724
+        },
+        {
+          "command": "setHighlightingEnabled",
+          "charOffset": 7809792
+        },
+        {
+          "command": "forceHighlightCosmetic",
+          "charOffset": 7809871
+        },
+        {
+          "command": "selectCosmetic",
+          "charOffset": 7809942
+        },
+        {
+          "command": "setToggleButtonHoveredState",
+          "charOffset": 7810018
+        },
+        {
+          "command": "setHoveredModel",
+          "charOffset": 7810097
+        }
+      ],
+      "constructorPropertyNames": [
+        "emoteDebounceMap",
+        "activeEmotes"
+      ]
+    },
+    {
+      "symbol": "ul0",
+      "base": "c0",
+      "namespace": "notification",
+      "charOffset": 7810310,
+      "byteOffset": 7837130,
+      "endCharOffset": 7810368,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Cl0",
+      "base": "c0",
+      "namespace": "outfits",
+      "charOffset": 7810368,
+      "byteOffset": 7837188,
+      "endCharOffset": 7810672,
+      "methodSignatures": [
+        {
+          "method": "add",
+          "parameters": "t",
+          "charOffset": 7810420
+        },
+        {
+          "method": "delete",
+          "parameters": "t",
+          "charOffset": 7810461
+        },
+        {
+          "method": "setDefault",
+          "parameters": "t",
+          "charOffset": 7810508
+        },
+        {
+          "method": "setFavorite",
+          "parameters": "t",
+          "charOffset": 7810563
+        },
+        {
+          "method": "rename",
+          "parameters": "t,r",
+          "charOffset": 7810620
+        }
+      ],
+      "commands": [
+        {
+          "command": "add",
+          "charOffset": 7810440
+        },
+        {
+          "command": "delete",
+          "charOffset": 7810484
+        },
+        {
+          "command": "setDefault",
+          "charOffset": 7810535
+        },
+        {
+          "command": "setFavorite",
+          "charOffset": 7810591
+        },
+        {
+          "command": "rename",
+          "charOffset": 7810645
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "hl0",
+      "base": "c0",
+      "namespace": "player",
+      "charOffset": 7810672,
+      "byteOffset": 7837492,
+      "endCharOffset": 7810724,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "fl0",
+      "base": "a4",
+      "namespace": "profiles",
+      "charOffset": 7810724,
+      "byteOffset": 7837544,
+      "endCharOffset": 7810827,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "gl0",
+      "base": "c0",
+      "namespace": "profileImport",
+      "charOffset": 7810827,
+      "byteOffset": 7837647,
+      "endCharOffset": 7811010,
+      "methodSignatures": [
+        {
+          "method": "importProfiles",
+          "parameters": "t,r",
+          "charOffset": 7810885
+        },
+        {
+          "method": "close",
+          "parameters": "",
+          "charOffset": 7810968
+        }
+      ],
+      "commands": [
+        {
+          "command": "importProfiles",
+          "charOffset": 7810918
+        },
+        {
+          "command": "close",
+          "charOffset": 7810988
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "pl0",
+      "base": "c0",
+      "namespace": "promotion",
+      "charOffset": 7811010,
+      "byteOffset": 7837830,
+      "endCharOffset": 7811313,
+      "methodSignatures": [
+        {
+          "method": "playPromotion",
+          "parameters": "t",
+          "charOffset": 7811064
+        },
+        {
+          "method": "claimReward",
+          "parameters": "t,r",
+          "charOffset": 7811124
+        },
+        {
+          "method": "refresh",
+          "parameters": "",
+          "charOffset": 7811200
+        },
+        {
+          "method": "openMedalPromotion",
+          "parameters": "",
+          "charOffset": 7811245
+        }
+      ],
+      "commands": [
+        {
+          "command": "playPromotion",
+          "charOffset": 7811093
+        },
+        {
+          "command": "claimReward",
+          "charOffset": 7811153
+        },
+        {
+          "command": "refresh",
+          "charOffset": 7811222
+        },
+        {
+          "command": "openMedalPromotion",
+          "charOffset": 7811278
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "ml0",
+      "base": "c0",
+      "namespace": "rewindCreateProject",
+      "charOffset": 7811313,
+      "byteOffset": 7838133,
+      "endCharOffset": 7811586,
+      "methodSignatures": [
+        {
+          "method": "init",
+          "parameters": "t",
+          "charOffset": 7811377
+        },
+        {
+          "method": "updateValue",
+          "parameters": "t,r",
+          "charOffset": 7811419
+        },
+        {
+          "method": "validate",
+          "parameters": "t,r",
+          "charOffset": 7811479
+        },
+        {
+          "method": "rename",
+          "parameters": "t,r",
+          "charOffset": 7811534
+        }
+      ],
+      "commands": [
+        {
+          "command": "init",
+          "charOffset": 7811397
+        },
+        {
+          "command": "updateValue",
+          "charOffset": 7811448
+        },
+        {
+          "command": "validate",
+          "charOffset": 7811506
+        },
+        {
+          "command": "rename",
+          "charOffset": 7811559
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "vl0",
+      "base": "c0",
+      "namespace": "rewindDev",
+      "charOffset": 7811586,
+      "byteOffset": 7838406,
+      "endCharOffset": 7811691,
+      "methodSignatures": [
+        {
+          "method": "goToTick",
+          "parameters": "t",
+          "charOffset": 7811640
+        }
+      ],
+      "commands": [
+        {
+          "command": "goToTick",
+          "charOffset": 7811664
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "xl0",
+      "base": "c0",
+      "namespace": "rewindEffects",
+      "charOffset": 7811691,
+      "byteOffset": 7838511,
+      "endCharOffset": 7811838,
+      "methodSignatures": [
+        {
+          "method": "updateBoundingBoxes",
+          "parameters": "t",
+          "charOffset": 7811749
+        }
+      ],
+      "commands": [
+        {
+          "command": "updateBoundingBoxes",
+          "charOffset": 7811784
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Fl0",
+      "base": "c0",
+      "namespace": "rewindExport",
+      "charOffset": 7811838,
+      "byteOffset": 7838658,
+      "endCharOffset": 7812651,
+      "methodSignatures": [
+        {
+          "method": "updatePropertyValue",
+          "parameters": "t,r,o,n",
+          "charOffset": 7811895
+        },
+        {
+          "method": "resetPropertyValue",
+          "parameters": "t,r",
+          "charOffset": 7811979
+        },
+        {
+          "method": "export",
+          "parameters": "",
+          "charOffset": 7812053
+        },
+        {
+          "method": "setRenderRegion",
+          "parameters": "t,r",
+          "charOffset": 7812096
+        },
+        {
+          "method": "addToRenderQueue",
+          "parameters": "",
+          "charOffset": 7812164
+        },
+        {
+          "method": "startRenderQueue",
+          "parameters": "",
+          "charOffset": 7812227
+        },
+        {
+          "method": "renderTimeline",
+          "parameters": "t",
+          "charOffset": 7812290
+        },
+        {
+          "method": "removeTimeline",
+          "parameters": "t",
+          "charOffset": 7812352
+        },
+        {
+          "method": "exportProject",
+          "parameters": "",
+          "charOffset": 7812414
+        },
+        {
+          "method": "exportScreenshot",
+          "parameters": "",
+          "charOffset": 7812471
+        },
+        {
+          "method": "downloadFfmpeg",
+          "parameters": "",
+          "charOffset": 7812534
+        },
+        {
+          "method": "stopRendering",
+          "parameters": "",
+          "charOffset": 7812593
+        }
+      ],
+      "commands": [
+        {
+          "command": "updatePropertyValue",
+          "charOffset": 7811936
+        },
+        {
+          "command": "resetPropertyValue",
+          "charOffset": 7812015
+        },
+        {
+          "command": "export",
+          "charOffset": 7812074
+        },
+        {
+          "command": "setRenderRegion",
+          "charOffset": 7812129
+        },
+        {
+          "command": "addToRenderQueue",
+          "charOffset": 7812195
+        },
+        {
+          "command": "startRenderQueue",
+          "charOffset": 7812258
+        },
+        {
+          "command": "renderTimeline",
+          "charOffset": 7812320
+        },
+        {
+          "command": "removeTimeline",
+          "charOffset": 7812382
+        },
+        {
+          "command": "exportProject",
+          "charOffset": 7812442
+        },
+        {
+          "command": "exportScreenshot",
+          "charOffset": 7812502
+        },
+        {
+          "command": "downloadFfmpeg",
+          "charOffset": 7812563
+        },
+        {
+          "command": "stopRendering",
+          "charOffset": 7812621
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "wl0",
+      "base": "c0",
+      "namespace": "rewindInteraction",
+      "charOffset": 7812651,
+      "byteOffset": 7839471,
+      "endCharOffset": 7812902,
+      "methodSignatures": [
+        {
+          "method": "setAsCameraTarget",
+          "parameters": "",
+          "charOffset": 7812713
+        },
+        {
+          "method": "hide",
+          "parameters": "",
+          "charOffset": 7812778
+        },
+        {
+          "method": "nametag",
+          "parameters": "",
+          "charOffset": 7812817
+        },
+        {
+          "method": "skin",
+          "parameters": "",
+          "charOffset": 7812862
+        }
+      ],
+      "commands": [
+        {
+          "command": "setAsCameraTarget",
+          "charOffset": 7812745
+        },
+        {
+          "command": "hide",
+          "charOffset": 7812797
+        },
+        {
+          "command": "nametag",
+          "charOffset": 7812839
+        },
+        {
+          "command": "skin",
+          "charOffset": 7812881
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "yl0",
+      "base": "c0",
+      "namespace": "rewindMedia",
+      "charOffset": 7812902,
+      "byteOffset": 7839722,
+      "endCharOffset": 7813301,
+      "methodSignatures": [
+        {
+          "method": "onClick",
+          "parameters": "t",
+          "charOffset": 7812958
+        },
+        {
+          "method": "importMedia",
+          "parameters": "t",
+          "charOffset": 7813006
+        },
+        {
+          "method": "removeMedia",
+          "parameters": "t",
+          "charOffset": 7813070
+        },
+        {
+          "method": "newFolder",
+          "parameters": "t",
+          "charOffset": 7813126
+        },
+        {
+          "method": "rename",
+          "parameters": "t,r",
+          "charOffset": 7813186
+        },
+        {
+          "method": "moveMedia",
+          "parameters": "t,r",
+          "charOffset": 7813236
+        }
+      ],
+      "commands": [
+        {
+          "command": "onClick",
+          "charOffset": 7812981
+        },
+        {
+          "command": "importMedia",
+          "charOffset": 7813033
+        },
+        {
+          "command": "removeMedia",
+          "charOffset": 7813097
+        },
+        {
+          "command": "newFolder",
+          "charOffset": 7813151
+        },
+        {
+          "command": "rename",
+          "charOffset": 7813210
+        },
+        {
+          "command": "moveMedia",
+          "charOffset": 7813263
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Ll0",
+      "base": "c0",
+      "namespace": "rewindPacks",
+      "charOffset": 7813301,
+      "byteOffset": 7840121,
+      "endCharOffset": 7813358,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "_l0",
+      "base": "c0",
+      "namespace": "rewindProperties",
+      "charOffset": 7813358,
+      "byteOffset": 7840178,
+      "endCharOffset": 7814422,
+      "methodSignatures": [
+        {
+          "method": "addProperty",
+          "parameters": "t,r",
+          "charOffset": 7813419
+        },
+        {
+          "method": "removeProperty",
+          "parameters": "t",
+          "charOffset": 7813483
+        },
+        {
+          "method": "setPropertyExtended",
+          "parameters": "t,r",
+          "charOffset": 7813545
+        },
+        {
+          "method": "setPropertyEnabled",
+          "parameters": "t,r",
+          "charOffset": 7813621
+        },
+        {
+          "method": "startPropertyUpdate",
+          "parameters": "",
+          "charOffset": 7813695
+        },
+        {
+          "method": "updatePropertyValue",
+          "parameters": "t,r,o,n",
+          "charOffset": 7813764
+        },
+        {
+          "method": "endPropertyUpdate",
+          "parameters": "",
+          "charOffset": 7813848
+        },
+        {
+          "method": "handlePropertyButton",
+          "parameters": "t,r",
+          "charOffset": 7813913
+        },
+        {
+          "method": "resetPropertyValue",
+          "parameters": "t,r",
+          "charOffset": 7813991
+        },
+        {
+          "method": "deletePropertyValue",
+          "parameters": "t,r",
+          "charOffset": 7814065
+        },
+        {
+          "method": "previousKeyframe",
+          "parameters": "t,r",
+          "charOffset": 7814141
+        },
+        {
+          "method": "keyframe",
+          "parameters": "t,r",
+          "charOffset": 7814211
+        },
+        {
+          "method": "nextKeyframe",
+          "parameters": "t,r",
+          "charOffset": 7814265
+        },
+        {
+          "method": "setShowKeyframesInTimeline",
+          "parameters": "t,r,o",
+          "charOffset": 7814327
+        }
+      ],
+      "commands": [
+        {
+          "command": "addProperty",
+          "charOffset": 7813448
+        },
+        {
+          "command": "removeProperty",
+          "charOffset": 7813513
+        },
+        {
+          "command": "setPropertyExtended",
+          "charOffset": 7813582
+        },
+        {
+          "command": "setPropertyEnabled",
+          "charOffset": 7813657
+        },
+        {
+          "command": "startPropertyUpdate",
+          "charOffset": 7813729
+        },
+        {
+          "command": "updatePropertyValue",
+          "charOffset": 7813805
+        },
+        {
+          "command": "endPropertyUpdate",
+          "charOffset": 7813880
+        },
+        {
+          "command": "handlePropertyButton",
+          "charOffset": 7813951
+        },
+        {
+          "command": "resetPropertyValue",
+          "charOffset": 7814027
+        },
+        {
+          "command": "deletePropertyValue",
+          "charOffset": 7814102
+        },
+        {
+          "command": "previousKeyframe",
+          "charOffset": 7814175
+        },
+        {
+          "command": "keyframe",
+          "charOffset": 7814237
+        },
+        {
+          "command": "nextKeyframe",
+          "charOffset": 7814295
+        },
+        {
+          "command": "setShowKeyframesInTimeline",
+          "charOffset": 7814373
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "bl0",
+      "base": "c0",
+      "namespace": "rewindTimeline",
+      "charOffset": 7814422,
+      "byteOffset": 7841242,
+      "endCharOffset": 7815750,
+      "methodSignatures": [
+        {
+          "method": "cut",
+          "parameters": "t",
+          "charOffset": 7814481
+        },
+        {
+          "method": "addTrack",
+          "parameters": "t",
+          "charOffset": 7814521
+        },
+        {
+          "method": "addLayer",
+          "parameters": "t,r",
+          "charOffset": 7814571
+        },
+        {
+          "method": "startLayersSelection",
+          "parameters": "",
+          "charOffset": 7814625
+        },
+        {
+          "method": "stopLayersSelection",
+          "parameters": "",
+          "charOffset": 7814696
+        },
+        {
+          "method": "selectLayer",
+          "parameters": "t",
+          "charOffset": 7814765
+        },
+        {
+          "method": "selectLayers",
+          "parameters": "t,r",
+          "charOffset": 7814821
+        },
+        {
+          "method": "unselectLayer",
+          "parameters": "",
+          "charOffset": 7814899
+        },
+        {
+          "method": "moveLayer",
+          "parameters": "t,r,o",
+          "charOffset": 7814956
+        },
+        {
+          "method": "moveLayers",
+          "parameters": "t",
+          "charOffset": 7815016
+        },
+        {
+          "method": "trimLayer",
+          "parameters": "t,r,o",
+          "charOffset": 7815086
+        },
+        {
+          "method": "setShowKeyframes",
+          "parameters": "t,r",
+          "charOffset": 7815146
+        },
+        {
+          "method": "setTrackEnabled",
+          "parameters": "t,r",
+          "charOffset": 7815216
+        },
+        {
+          "method": "deleteTrack",
+          "parameters": "t",
+          "charOffset": 7815284
+        },
+        {
+          "method": "selectKeyframe",
+          "parameters": "t,r,o,n,s",
+          "charOffset": 7815340
+        },
+        {
+          "method": "selectKeyframes",
+          "parameters": "t",
+          "charOffset": 7815418
+        },
+        {
+          "method": "unselectKeyframe",
+          "parameters": "",
+          "charOffset": 7815498
+        },
+        {
+          "method": "moveKeyframe",
+          "parameters": "t",
+          "charOffset": 7815561
+        },
+        {
+          "method": "moveKeyframes",
+          "parameters": "t",
+          "charOffset": 7815619
+        },
+        {
+          "method": "linkLayers",
+          "parameters": "t",
+          "charOffset": 7815695
+        }
+      ],
+      "commands": [
+        {
+          "command": "cut",
+          "charOffset": 7814500
+        },
+        {
+          "command": "addTrack",
+          "charOffset": 7814545
+        },
+        {
+          "command": "addLayer",
+          "charOffset": 7814597
+        },
+        {
+          "command": "startLayersSelection",
+          "charOffset": 7814660
+        },
+        {
+          "command": "stopLayersSelection",
+          "charOffset": 7814730
+        },
+        {
+          "command": "selectLayer",
+          "charOffset": 7814792
+        },
+        {
+          "command": "selectLayers",
+          "charOffset": 7814851
+        },
+        {
+          "command": "unselectLayer",
+          "charOffset": 7814927
+        },
+        {
+          "command": "moveLayer",
+          "charOffset": 7814985
+        },
+        {
+          "command": "moveLayers",
+          "charOffset": 7815042
+        },
+        {
+          "command": "trimLayer",
+          "charOffset": 7815115
+        },
+        {
+          "command": "setShowKeyframes",
+          "charOffset": 7815180
+        },
+        {
+          "command": "setTrackEnabled",
+          "charOffset": 7815249
+        },
+        {
+          "command": "deleteTrack",
+          "charOffset": 7815311
+        },
+        {
+          "command": "selectKeyframe",
+          "charOffset": 7815378
+        },
+        {
+          "command": "selectKeyframes",
+          "charOffset": 7815449
+        },
+        {
+          "command": "unselectKeyframe",
+          "charOffset": 7815529
+        },
+        {
+          "command": "moveKeyframe",
+          "charOffset": 7815589
+        },
+        {
+          "command": "moveKeyframes",
+          "charOffset": 7815648
+        },
+        {
+          "command": "linkLayers",
+          "charOffset": 7815721
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "kl0",
+      "base": "c0",
+      "namespace": "rewindTimelinesList",
+      "charOffset": 7815750,
+      "byteOffset": 7842570,
+      "endCharOffset": 7816130,
+      "methodSignatures": [
+        {
+          "method": "selectTimeline",
+          "parameters": "t",
+          "charOffset": 7815814
+        },
+        {
+          "method": "editTimelineName",
+          "parameters": "t,r",
+          "charOffset": 7815876
+        },
+        {
+          "method": "duplicateTimeline",
+          "parameters": "t",
+          "charOffset": 7815946
+        },
+        {
+          "method": "deleteTimeline",
+          "parameters": "t",
+          "charOffset": 7816014
+        },
+        {
+          "method": "newTimeline",
+          "parameters": "",
+          "charOffset": 7816076
+        }
+      ],
+      "commands": [
+        {
+          "command": "selectTimeline",
+          "charOffset": 7815844
+        },
+        {
+          "command": "editTimelineName",
+          "charOffset": 7815910
+        },
+        {
+          "command": "duplicateTimeline",
+          "charOffset": 7815979
+        },
+        {
+          "command": "deleteTimeline",
+          "charOffset": 7816044
+        },
+        {
+          "command": "newTimeline",
+          "charOffset": 7816102
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Sl0",
+      "base": "c0",
+      "namespace": "rewindsList",
+      "charOffset": 7816130,
+      "byteOffset": 7842950,
+      "endCharOffset": 7816503,
+      "methodSignatures": [
+        {
+          "method": "create",
+          "parameters": "t",
+          "charOffset": 7816186
+        },
+        {
+          "method": "open",
+          "parameters": "t,r",
+          "charOffset": 7816232
+        },
+        {
+          "method": "openLocation",
+          "parameters": "t",
+          "charOffset": 7816278
+        },
+        {
+          "method": "delete",
+          "parameters": "t",
+          "charOffset": 7816336
+        },
+        {
+          "method": "getMissingMods",
+          "parameters": "t",
+          "charOffset": 7816382
+        }
+      ],
+      "commands": [
+        {
+          "command": "create",
+          "charOffset": 7816208
+        },
+        {
+          "command": "open",
+          "charOffset": 7816254
+        },
+        {
+          "command": "openLocation",
+          "charOffset": 7816306
+        },
+        {
+          "command": "delete",
+          "charOffset": 7816358
+        },
+        {
+          "command": "getMissingMods",
+          "charOffset": 7816420
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Ml0",
+      "base": "c0",
+      "namespace": "rewind",
+      "charOffset": 7816503,
+      "byteOffset": 7843323,
+      "endCharOffset": 7817961,
+      "methodSignatures": [
+        {
+          "method": "updatePreviewWindow",
+          "parameters": "r,o",
+          "charOffset": 7816859
+        },
+        {
+          "method": "updateEditorLayout",
+          "parameters": "r,o",
+          "charOffset": 7816935
+        },
+        {
+          "method": "exit",
+          "parameters": "",
+          "charOffset": 7817009
+        },
+        {
+          "method": "pause",
+          "parameters": "r",
+          "charOffset": 7817048
+        },
+        {
+          "method": "save",
+          "parameters": "",
+          "charOffset": 7817092
+        },
+        {
+          "method": "undo",
+          "parameters": "",
+          "charOffset": 7817131
+        },
+        {
+          "method": "redo",
+          "parameters": "",
+          "charOffset": 7817170
+        },
+        {
+          "method": "goStart",
+          "parameters": "",
+          "charOffset": 7817209
+        },
+        {
+          "method": "goEnd",
+          "parameters": "",
+          "charOffset": 7817254
+        },
+        {
+          "method": "reload",
+          "parameters": "",
+          "charOffset": 7817295
+        },
+        {
+          "method": "setPreviewMode",
+          "parameters": "r",
+          "charOffset": 7817338
+        },
+        {
+          "method": "setPlayhead",
+          "parameters": "r",
+          "charOffset": 7817400
+        },
+        {
+          "method": "startPlayheadDrag",
+          "parameters": "",
+          "charOffset": 7817456
+        },
+        {
+          "method": "stopPlayheadDrag",
+          "parameters": "",
+          "charOffset": 7817521
+        },
+        {
+          "method": "clickPreview",
+          "parameters": "r",
+          "charOffset": 7817584
+        },
+        {
+          "method": "setZoom",
+          "parameters": "r",
+          "charOffset": 7817642
+        },
+        {
+          "method": "setRuleOfThirdsOverlay",
+          "parameters": "r",
+          "charOffset": 7817690
+        },
+        {
+          "method": "setQuartersOverlay",
+          "parameters": "r",
+          "charOffset": 7817768
+        },
+        {
+          "method": "showSettings",
+          "parameters": "r",
+          "charOffset": 7817838
+        },
+        {
+          "method": "setInputFocused",
+          "parameters": "r",
+          "charOffset": 7817896
+        }
+      ],
+      "commands": [
+        {
+          "command": "updatePreviewWindow",
+          "charOffset": 7816896
+        },
+        {
+          "command": "updateEditorLayout",
+          "charOffset": 7816971
+        },
+        {
+          "command": "exit",
+          "charOffset": 7817028
+        },
+        {
+          "command": "pause",
+          "charOffset": 7817069
+        },
+        {
+          "command": "save",
+          "charOffset": 7817111
+        },
+        {
+          "command": "undo",
+          "charOffset": 7817150
+        },
+        {
+          "command": "redo",
+          "charOffset": 7817189
+        },
+        {
+          "command": "goStart",
+          "charOffset": 7817231
+        },
+        {
+          "command": "goEnd",
+          "charOffset": 7817274
+        },
+        {
+          "command": "reload",
+          "charOffset": 7817316
+        },
+        {
+          "command": "setPreviewMode",
+          "charOffset": 7817368
+        },
+        {
+          "command": "setPlayhead",
+          "charOffset": 7817427
+        },
+        {
+          "command": "startPlayheadDrag",
+          "charOffset": 7817488
+        },
+        {
+          "command": "stopPlayheadDrag",
+          "charOffset": 7817552
+        },
+        {
+          "command": "clickPreview",
+          "charOffset": 7817612
+        },
+        {
+          "command": "setZoom",
+          "charOffset": 7817665
+        },
+        {
+          "command": "setRuleOfThirdsOverlay",
+          "charOffset": 7817728
+        },
+        {
+          "command": "setQuartersOverlay",
+          "charOffset": 7817802
+        },
+        {
+          "command": "showSettings",
+          "charOffset": 7817866
+        },
+        {
+          "command": "setInputFocused",
+          "charOffset": 7817927
+        }
+      ],
+      "constructorPropertyNames": [
+        "timeline",
+        "properties",
+        "media",
+        "timelinesList",
+        "export",
+        "effects",
+        "list",
+        "createProject",
+        "packs",
+        "interaction",
+        "dev"
+      ]
+    },
+    {
+      "symbol": "El0",
+      "base": "c0",
+      "namespace": "savedSkins",
+      "charOffset": 7817961,
+      "byteOffset": 7844781,
+      "endCharOffset": 7818369,
+      "methodSignatures": [
+        {
+          "method": "updateSkinType",
+          "parameters": "t,r",
+          "charOffset": 7818016
+        },
+        {
+          "method": "setFavorite",
+          "parameters": "t,r",
+          "charOffset": 7818083
+        },
+        {
+          "method": "apply",
+          "parameters": "t",
+          "charOffset": 7818144
+        },
+        {
+          "method": "delete",
+          "parameters": "t",
+          "charOffset": 7818189
+        },
+        {
+          "method": "add",
+          "parameters": "t",
+          "charOffset": 7818236
+        },
+        {
+          "method": "rename",
+          "parameters": "t,r",
+          "charOffset": 7818277
+        },
+        {
+          "method": "save",
+          "parameters": "",
+          "charOffset": 7818328
+        }
+      ],
+      "commands": [
+        {
+          "command": "updateSkinType",
+          "charOffset": 7818049
+        },
+        {
+          "command": "setFavorite",
+          "charOffset": 7818113
+        },
+        {
+          "command": "apply",
+          "charOffset": 7818166
+        },
+        {
+          "command": "delete",
+          "charOffset": 7818212
+        },
+        {
+          "command": "add",
+          "charOffset": 7818256
+        },
+        {
+          "command": "rename",
+          "charOffset": 7818302
+        },
+        {
+          "command": "save",
+          "charOffset": 7818348
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Dl0",
+      "base": "c0",
+      "namespace": "screenshotUpload",
+      "charOffset": 7818369,
+      "byteOffset": 7845189,
+      "endCharOffset": 7818494,
+      "methodSignatures": [
+        {
+          "method": "upload",
+          "parameters": "t",
+          "charOffset": 7818430
+        }
+      ],
+      "commands": [
+        {
+          "command": "upload",
+          "charOffset": 7818453
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "jl0",
+      "base": "c0",
+      "namespace": "serverDiscovery",
+      "charOffset": 7818494,
+      "byteOffset": 7845314,
+      "endCharOffset": 7819425,
+      "methodSignatures": [],
+      "commands": [
+        {
+          "command": "discoverServers",
+          "charOffset": 7818626
+        },
+        {
+          "command": "searchServers",
+          "charOffset": 7818681
+        },
+        {
+          "command": "loadAutocompleteSuggestions",
+          "charOffset": 7818749
+        },
+        {
+          "command": "loadServerModal",
+          "charOffset": 7818818
+        },
+        {
+          "command": "joinServer",
+          "charOffset": 7818874
+        },
+        {
+          "command": "saveServer",
+          "charOffset": 7818985
+        },
+        {
+          "command": "openDiscovery",
+          "charOffset": 7819102
+        },
+        {
+          "command": "trackSectionNotInterested",
+          "charOffset": 7819315
+        }
+      ],
+      "constructorPropertyNames": [
+        "pendingAnnouncementServerMappingsId"
+      ]
+    },
+    {
+      "symbol": "Ol0",
+      "base": "c0",
+      "namespace": "serverPing",
+      "charOffset": 7819425,
+      "byteOffset": 7846245,
+      "endCharOffset": 7820365,
+      "methodSignatures": [],
+      "commands": [
+        {
+          "command": "ping",
+          "charOffset": 7820068
+        }
+      ],
+      "constructorPropertyNames": [
+        "pending",
+        "listening",
+        "handleResult"
+      ]
+    },
+    {
+      "symbol": "Rl0",
+      "base": "a4",
+      "namespace": "settings",
+      "charOffset": 7820365,
+      "byteOffset": 7847185,
+      "endCharOffset": 7821030,
+      "methodSignatures": [
+        {
+          "method": "setAdvancedMode",
+          "parameters": "r",
+          "charOffset": 7820634
+        },
+        {
+          "method": "update",
+          "parameters": "r,o,n,s=\"\"",
+          "charOffset": 7820698
+        },
+        {
+          "method": "reset",
+          "parameters": "r,o,n=\"\"",
+          "charOffset": 7820759
+        },
+        {
+          "method": "invokeAction",
+          "parameters": "r,o,n=\"\"",
+          "charOffset": 7820814
+        },
+        {
+          "method": "setEditingKeybind",
+          "parameters": "r,o,n=\"\"",
+          "charOffset": 7820883
+        },
+        {
+          "method": "stopEditingKeybind",
+          "parameters": "",
+          "charOffset": 7820962
+        }
+      ],
+      "commands": [
+        {
+          "command": "setAdvancedMode",
+          "charOffset": 7820665
+        },
+        {
+          "command": "update",
+          "charOffset": 7820729
+        },
+        {
+          "command": "reset",
+          "charOffset": 7820787
+        },
+        {
+          "command": "invokeAction",
+          "charOffset": 7820849
+        },
+        {
+          "command": "setEditingKeybind",
+          "charOffset": 7820923
+        },
+        {
+          "command": "stopEditingKeybind",
+          "charOffset": 7820995
+        }
+      ],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "Pl0",
+      "base": "c0",
+      "namespace": "shaderEditor",
+      "charOffset": 7821030,
+      "byteOffset": 7847850,
+      "endCharOffset": 7822035,
+      "methodSignatures": [],
+      "commands": [
+        {
+          "command": "toggleUniform",
+          "charOffset": 7821119
+        },
+        {
+          "command": "toggleHiddenUniform",
+          "charOffset": 7821192
+        },
+        {
+          "command": "updateResolution",
+          "charOffset": 7821268
+        },
+        {
+          "command": "updateShaderType",
+          "charOffset": 7821341
+        },
+        {
+          "command": "updateStaticShader",
+          "charOffset": 7821416
+        },
+        {
+          "command": "requestCustomShader",
+          "charOffset": 7821490
+        },
+        {
+          "command": "updateMiscToggle",
+          "charOffset": 7821564
+        },
+        {
+          "command": "requestFeedAction",
+          "charOffset": 7821644
+        },
+        {
+          "command": "requestHotReload",
+          "charOffset": 7821713
+        },
+        {
+          "command": "createSampler",
+          "charOffset": 7821776
+        },
+        {
+          "command": "requestSamplerRename",
+          "charOffset": 7821846
+        },
+        {
+          "command": "requestSamplerFile",
+          "charOffset": 7821921
+        },
+        {
+          "command": "requestDeleteSampler",
+          "charOffset": 7821994
+        }
+      ],
+      "constructorPropertyNames": [
+        "toggleUniform",
+        "toggleHiddenUniform",
+        "updateResolution",
+        "updateShaderType",
+        "updateStaticShader",
+        "requestCustomShader",
+        "updateMiscToggle",
+        "requestFeedAction",
+        "requestHotReload",
+        "createSampler",
+        "requestSamplerRename",
+        "requestSamplerFile",
+        "requestDeleteSampler"
+      ]
+    },
+    {
+      "symbol": "Il0",
+      "base": "a4",
+      "namespace": "skyblock",
+      "charOffset": 7822035,
+      "byteOffset": 7848855,
+      "endCharOffset": 7822138,
+      "methodSignatures": [],
+      "commands": [],
+      "constructorPropertyNames": [
+        "handleAction"
+      ]
+    },
+    {
+      "symbol": "Tl0",
+      "base": "c0",
+      "namespace": "spiritLeap",
+      "charOffset": 7822138,
+      "byteOffset": 7848958,
+      "endCharOffset": 7822565,
+      "methodSignatures": [
+        {
+          "method": "setMap",
+          "parameters": "t",
+          "charOffset": 7822193
+        },
+        {
+          "method": "sendButtonPress",
+          "parameters": "t",
+          "charOffset": 7822255
+        },
+        {
+          "method": "sendMapPress",
+          "parameters": "",
+          "charOffset": 7822319
+        },
+        {
+          "method": "showMap",
+          "parameters": "t",
+          "charOffset": 7822374
+        },
+        {
+          "method": "settings",
+          "parameters": "",
+          "charOffset": 7822422
+        },
+        {
+          "method": "close",
+          "parameters": "",
+          "charOffset": 7822469
+        },
+        {
+          "method": "setDefault",
+          "parameters": "t",
+          "charOffset": 7822510
+        }
+      ],
+      "commands": [
+        {
+          "command": "setMap",
+          "charOffset": 7822215
+        },
+        {
+          "command": "sendButtonPress",
+          "charOffset": 7822286
+        },
+        {
+          "command": "sendMapPress",
+          "charOffset": 7822346
+        },
+        {
+          "command": "showMap",
+          "charOffset": 7822397
+        },
+        {
+          "command": "settings",
+          "charOffset": 7822445
+        },
+        {
+          "command": "close",
+          "charOffset": 7822489
+        },
+        {
+          "command": "setDefault",
+          "charOffset": 7822536
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Hl0",
+      "base": "c0",
+      "namespace": "sprays",
+      "charOffset": 7822565,
+      "byteOffset": 7849385,
+      "endCharOffset": 7822927,
+      "methodSignatures": [
+        {
+          "method": "spray",
+          "parameters": "t",
+          "charOffset": 7822616
+        },
+        {
+          "method": "selectSpray",
+          "parameters": "t",
+          "charOffset": 7822661
+        },
+        {
+          "method": "showSprayLocker",
+          "parameters": "",
+          "charOffset": 7822718
+        },
+        {
+          "method": "unequipAll",
+          "parameters": "",
+          "charOffset": 7822780
+        },
+        {
+          "method": "remove",
+          "parameters": "t",
+          "charOffset": 7822832
+        },
+        {
+          "method": "add",
+          "parameters": "t,r,o",
+          "charOffset": 7822878
+        }
+      ],
+      "commands": [
+        {
+          "command": "spray",
+          "charOffset": 7822638
+        },
+        {
+          "command": "selectSpray",
+          "charOffset": 7822689
+        },
+        {
+          "command": "showSprayLocker",
+          "charOffset": 7822749
+        },
+        {
+          "command": "unequipAll",
+          "charOffset": 7822806
+        },
+        {
+          "command": "remove",
+          "charOffset": 7822854
+        },
+        {
+          "command": "add",
+          "charOffset": 7822901
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Bl0",
+      "base": "c0",
+      "namespace": "styngr",
+      "charOffset": 7822927,
+      "byteOffset": 7849747,
+      "endCharOffset": 7823192,
+      "methodSignatures": [
+        {
+          "method": "addJam",
+          "parameters": "t,r",
+          "charOffset": 7822978
+        },
+        {
+          "method": "removeJam",
+          "parameters": "t",
+          "charOffset": 7823029
+        },
+        {
+          "method": "previewJam",
+          "parameters": "t",
+          "charOffset": 7823082
+        },
+        {
+          "method": "stopPreview",
+          "parameters": "",
+          "charOffset": 7823137
+        }
+      ],
+      "commands": [
+        {
+          "command": "addJam",
+          "charOffset": 7823003
+        },
+        {
+          "command": "removeJam",
+          "charOffset": 7823055
+        },
+        {
+          "command": "previewJam",
+          "charOffset": 7823109
+        },
+        {
+          "command": "stopPreview",
+          "charOffset": 7823164
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "zl0",
+      "base": "a4",
+      "namespace": "uiState",
+      "charOffset": 7823192,
+      "byteOffset": 7850012,
+      "endCharOffset": 7823776,
+      "methodSignatures": [],
+      "commands": [
+        {
+          "command": "setSortState",
+          "charOffset": 7823427
+        },
+        {
+          "command": "setQuickNavigationState",
+          "charOffset": 7823511
+        },
+        {
+          "command": "setWindowState",
+          "charOffset": 7823624
+        },
+        {
+          "command": "setWindowState",
+          "charOffset": 7823714
+        }
+      ],
+      "constructorPropertyNames": [
+        "handleAction",
+        "setSortState",
+        "setQuickNavigationState",
+        "setWindowState",
+        "setWindowShown"
+      ]
+    },
+    {
+      "symbol": "Nl0",
+      "base": "c0",
+      "namespace": "waypointGroup",
+      "charOffset": 7823776,
+      "byteOffset": 7850596,
+      "endCharOffset": 7824208,
+      "methodSignatures": [
+        {
+          "method": "createWaypointGroup",
+          "parameters": "t,r,o,n,s,l,a,c",
+          "charOffset": 7823834
+        },
+        {
+          "method": "deleteWaypointGroup",
+          "parameters": "t,r",
+          "charOffset": 7823934
+        },
+        {
+          "method": "updateWaypointGroup",
+          "parameters": "t,r,o,n,s,l,a,c,d",
+          "charOffset": 7824021
+        },
+        {
+          "method": "setWaypointGroup",
+          "parameters": "t,r,o,n",
+          "charOffset": 7824125
+        }
+      ],
+      "commands": [
+        {
+          "command": "createWaypointGroup",
+          "charOffset": 7823883
+        },
+        {
+          "command": "deleteWaypointGroup",
+          "charOffset": 7823971
+        },
+        {
+          "command": "updateWaypointGroup",
+          "charOffset": 7824072
+        },
+        {
+          "command": "setWaypointGroup",
+          "charOffset": 7824163
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Vl0",
+      "base": "c0",
+      "namespace": "waypointImportExport",
+      "charOffset": 7824208,
+      "byteOffset": 7851028,
+      "endCharOffset": 7824805,
+      "methodSignatures": [
+        {
+          "method": "copyWaypoints",
+          "parameters": "t",
+          "charOffset": 7824273
+        },
+        {
+          "method": "exportWaypoints",
+          "parameters": "t",
+          "charOffset": 7824349
+        },
+        {
+          "method": "pasteWaypoint",
+          "parameters": "",
+          "charOffset": 7824429
+        },
+        {
+          "method": "importWaypointsFromClipboard",
+          "parameters": "",
+          "charOffset": 7824486
+        },
+        {
+          "method": "importWaypointsFromFile",
+          "parameters": "",
+          "charOffset": 7824612
+        },
+        {
+          "method": "saveImportedWaypoints",
+          "parameters": "t",
+          "charOffset": 7824728
+        }
+      ],
+      "commands": [
+        {
+          "command": "copyWaypoints",
+          "charOffset": 7824302
+        },
+        {
+          "command": "exportWaypoints",
+          "charOffset": 7824380
+        },
+        {
+          "command": "pasteWaypoint",
+          "charOffset": 7824457
+        },
+        {
+          "command": "importWaypointsFromClipboard",
+          "charOffset": 7824537
+        },
+        {
+          "command": "importWaypointsFromFile",
+          "charOffset": 7824658
+        },
+        {
+          "command": "saveImportedWaypoints",
+          "charOffset": 7824765
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Wl0",
+      "base": "c0",
+      "namespace": "waypointMap",
+      "charOffset": 7824805,
+      "byteOffset": 7851625,
+      "endCharOffset": 7825267,
+      "methodSignatures": [
+        {
+          "method": "setMapDimensions",
+          "parameters": "t,r",
+          "charOffset": 7824861
+        },
+        {
+          "method": "mapDrag",
+          "parameters": "t,r",
+          "charOffset": 7824955
+        },
+        {
+          "method": "mapZoomBy",
+          "parameters": "t",
+          "charOffset": 7825031
+        },
+        {
+          "method": "resetMapInteraction",
+          "parameters": "t",
+          "charOffset": 7825095
+        },
+        {
+          "method": "showMap",
+          "parameters": "",
+          "charOffset": 7825220
+        }
+      ],
+      "commands": [
+        {
+          "command": "setMapDimensions",
+          "charOffset": 7824895
+        },
+        {
+          "command": "mapDrag",
+          "charOffset": 7824980
+        },
+        {
+          "command": "mapZoomBy",
+          "charOffset": 7825056
+        },
+        {
+          "command": "resetMapInteraction",
+          "charOffset": 7825138
+        },
+        {
+          "command": "resetMapInteractionZoom",
+          "charOffset": 7825179
+        },
+        {
+          "command": "showMap",
+          "charOffset": 7825243
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Zl0",
+      "base": "c0",
+      "namespace": "waypointModImport",
+      "charOffset": 7825267,
+      "byteOffset": 7852087,
+      "endCharOffset": 7825500,
+      "methodSignatures": [
+        {
+          "method": "searchForWaypoints",
+          "parameters": "",
+          "charOffset": 7825329
+        },
+        {
+          "method": "importWaypoints",
+          "parameters": "t",
+          "charOffset": 7825396
+        }
+      ],
+      "commands": [
+        {
+          "command": "searchForWaypoints",
+          "charOffset": 7825362
+        },
+        {
+          "command": "importWaypoints",
+          "charOffset": 7825435
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Ul0",
+      "base": "c0",
+      "namespace": "waypointSort",
+      "charOffset": 7825500,
+      "byteOffset": 7852320,
+      "endCharOffset": 7825728,
+      "methodSignatures": [
+        {
+          "method": "updateWaypointSortIndexes",
+          "parameters": "t",
+          "charOffset": 7825557
+        },
+        {
+          "method": "setActiveSortIndex",
+          "parameters": "t",
+          "charOffset": 7825657
+        }
+      ],
+      "commands": [
+        {
+          "command": "updateWaypointSortIndexes",
+          "charOffset": 7825598
+        },
+        {
+          "command": "setActiveSortIndex",
+          "charOffset": 7825691
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Kl0",
+      "base": "c0",
+      "namespace": "waypointUtility",
+      "charOffset": 7825728,
+      "byteOffset": 7852548,
+      "endCharOffset": 7825906,
+      "methodSignatures": [
+        {
+          "method": "requestColor",
+          "parameters": "",
+          "charOffset": 7825788
+        },
+        {
+          "method": "showAddWaypoint",
+          "parameters": "",
+          "charOffset": 7825844
+        }
+      ],
+      "commands": [
+        {
+          "command": "requestColor",
+          "charOffset": 7825816
+        },
+        {
+          "command": "showAddWaypoint",
+          "charOffset": 7825874
+        }
+      ],
+      "constructorPropertyNames": []
+    },
+    {
+      "symbol": "Gl0",
+      "base": "a4",
+      "namespace": "waypoints",
+      "charOffset": 7825906,
+      "byteOffset": 7852726,
+      "endCharOffset": 7826649,
+      "methodSignatures": [
+        {
+          "method": "setEnabled",
+          "parameters": "",
+          "charOffset": 7826169
+        },
+        {
+          "method": "editWaypoint",
+          "parameters": "r,o,n",
+          "charOffset": 7826220
+        },
+        {
+          "method": "toggleVisibility",
+          "parameters": "r,o,n",
+          "charOffset": 7826286
+        },
+        {
+          "method": "deleteWaypoint",
+          "parameters": "r,o,n",
+          "charOffset": 7826360
+        },
+        {
+          "method": "teleportToWaypoint",
+          "parameters": "r,o,n",
+          "charOffset": 7826430
+        },
+        {
+          "method": "addWaypoint",
+          "parameters": "r,o,n,s,l,a,c,d,u,C,h,p,m",
+          "charOffset": 7826508
+        }
+      ],
+      "commands": [
+        {
+          "command": "setEnabled",
+          "charOffset": 7826194
+        },
+        {
+          "command": "editWaypoint",
+          "charOffset": 7826252
+        },
+        {
+          "command": "toggleVisibility",
+          "charOffset": 7826322
+        },
+        {
+          "command": "deleteWaypoint",
+          "charOffset": 7826394
+        },
+        {
+          "command": "teleportToWaypoint",
+          "charOffset": 7826468
+        },
+        {
+          "command": "addWaypoint",
+          "charOffset": 7826559
+        }
+      ],
+      "constructorPropertyNames": [
+        "modImport",
+        "map",
+        "importExport",
+        "group",
+        "sort",
+        "utility",
+        "handleAction"
+      ]
+    }
+  ],
+  "providerWrapperCoverage": "Bounded class-span lexical extraction, not AST/decompilation. Async signatures and literal this.invoke commands retained; dynamic dispatch and conditional argument transformations not fully inferred. Constructor property names are not all methods.",
+  "featureFeasibility": [
+    {
+      "id": "RUI-01",
+      "area": "Host shell, routes and overlays",
+      "affordance": "21 flat pathname declarations under common window/model/overlay context; nine overlay names",
+      "enough": "Independent navigation shell, readiness/error states, window state and overlay presentation",
+      "missing": "Live route/state payloads, enabled-version matrix, runtime transition order and original visual verification",
+      "evidence": [
+        "RG-01",
+        "RG-02",
+        "RG-33"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-02",
+      "area": "General/performance/control/feature settings",
+      "affordance": "Hierarchical category/search UI with host-supplied options, reset, advanced mode and action buttons",
+      "enough": "Generic data-driven settings interface and an independent settings store",
+      "missing": "Complete feature catalog, per-version schemas, authoritative defaults/ranges/validation, setting effects and migrations",
+      "evidence": [
+        "RG-03",
+        "RG-08",
+        "RG-09",
+        "RG-12"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-03",
+      "area": "Checkbox/toggle/dropdown/radio/text/numeric controls",
+      "affordance": "Mapped generic controls and reset comparison",
+      "enough": "Local controls and observed serialization conventions",
+      "missing": "Host-side validation and error payload contract; complete choice/default population",
+      "evidence": [
+        "RG-04",
+        "RG-05",
+        "RG-06",
+        "RG-07"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-04",
+      "area": "Keybind and color tools",
+      "affordance": "Capture-mode/conflict UI; HSB/alpha/chroma, saved colors and picker/copy/paste",
+      "enough": "Independent keybind editor and color editor with chosen local storage",
+      "missing": "Actual game key codes/capture authority/conflict policy, sampled-color source, complete chroma behavior",
+      "evidence": [
+        "RG-10",
+        "RG-11",
+        "RG-12"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-05",
+      "area": "HUD and mod metadata",
+      "affordance": "Enabled/allowed mod filtering; /hud contains an fps renderer using property and metadata providers",
+      "enough": "Basic independent FPS display and metadata adapter",
+      "missing": "Full mod list/behavior, generic HUD editor, actual layout/scale semantics and game frame metrics",
+      "evidence": [
+        "RG-13",
+        "RG-14"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-06",
+      "area": "Game textures and 3D previews",
+      "affordance": "id/ready event gate, id.imgsrc image source, batched model lifecycle and geometry/hover updates",
+      "enough": "Independent renderer adapter interface and placeholder/own-model preview",
+      "missing": "Concrete image-source resolver, texture ownership/lifetime/pixel formats, animation assets, mesh/model semantics and host rendering",
+      "evidence": [
+        "RG-15",
+        "RG-16",
+        "RG-17"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-07",
+      "area": "Waypoint navigator and groups",
+      "affordance": "Server/group/dimension/death filters, counts, sorting, visibility, add/edit/delete, group overrides",
+      "enough": "Independent waypoint CRUD/list/group/filter UI",
+      "missing": "Persistence format/versioning, authoritative identities/uniqueness, world/server matching and actual in-world rendering",
+      "evidence": [
+        "RG-18",
+        "RG-19",
+        "RG-20",
+        "RG-21"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-08",
+      "area": "Waypoint maps/import/export/teleport",
+      "affordance": "Host map availability, size/drag/zoom/reset; file/clipboard/mod imports and teleport call",
+      "enough": "Independent map/input adapter and import dialog using a newly specified format",
+      "missing": "Map tiles/projection and renderer, supported import formats/conversion, game permission/capability enforcement and command behavior",
+      "evidence": [
+        "RG-18",
+        "RG-19"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-09",
+      "area": "Rewind library and project creation",
+      "affordance": "Compatible/all/project/rewind filters, name/location search, missing-mod warning, validate/rename/open/delete/location",
+      "enough": "Independent media/project catalog UI with custom validation",
+      "missing": "Recording/project file formats, compatibility rules, required-mod semantics, file discovery and migration",
+      "evidence": [
+        "RG-22",
+        "RG-25"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-10",
+      "area": "Rewind editor, timeline and keyframes",
+      "affordance": "Tracks/layers/cut/trim/move/link/select, playhead/zoom/playback, undo/redo/save, property keyframes",
+      "enough": "Independent timeline editor front end and own document model",
+      "missing": "Replay recording/decoding, simulation/camera state, interpolation, edit transaction history and clock semantics",
+      "evidence": [
+        "RG-22",
+        "RG-23",
+        "RG-34"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-11",
+      "area": "Rewind effects, media and export",
+      "affordance": "Text/image effect bounds, media folders/import/rename/move; render region/queue/export/FFmpeg download commands",
+      "enough": "Independent effect/media controls and export UX specification",
+      "missing": "Composition/render backend, codec/container defaults, FFmpeg acquisition/invocation, queue recovery and output file schemas",
+      "evidence": [
+        "RG-22",
+        "RG-24",
+        "RG-34"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-12",
+      "area": "Locker cosmetics, outfits, skins and badges",
+      "affordance": "Eight tabs; favorite/seen/equip/unequip, outfits and skin actions; host model previews",
+      "enough": "Independent local catalog/equipment UI using original assets",
+      "missing": "Entitlement services, ownership/availability, cosmetic formats, skins upload constraints, backend synchronization and original visual assets",
+      "evidence": [
+        "RG-26",
+        "RG-17"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-13",
+      "area": "Emote/spray/marker wheels and jams",
+      "affordance": "Host-owned/equipped lists, radial selection and use/select/wheel callbacks; marker flags; jams controls",
+      "enough": "Independent radial menus and own animation/audio selection",
+      "missing": "Animation/spray/marker implementation, slot limits and key handling in game, audio licensing/service behavior",
+      "evidence": [
+        "RG-35",
+        "RG-36",
+        "RG-37"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-14",
+      "area": "Home/themes/radio/promotions",
+      "affordance": "Host buttons, theme/addition lists, news, social prompts, wrapped UI and radio controls",
+      "enough": "Independent customizable menu/feed surface",
+      "missing": "Service payload schemas/content, theme availability, promotion reward rules and audio delivery",
+      "evidence": [
+        "RG-38"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-15",
+      "area": "Server discovery and multiplayer wrapper",
+      "affordance": "Search/autocomplete/details/ping/join/save/announcement and not-interested callbacks",
+      "enough": "Independent server browser UI with its own directory provider",
+      "missing": "Recommendation/ranking service, data freshness, server protocol ping implementation, persistence and join/error behavior",
+      "evidence": [
+        "RG-27",
+        "RG-39"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-16",
+      "area": "Language selector",
+      "affordance": "Host available/default/active languages, search, reset, forceUnicode and deferred selection call",
+      "enough": "Independent localization selector and own translations",
+      "missing": "Translation catalog, supported language metadata and game font/resource reload behavior",
+      "evidence": [
+        "RG-40"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-17",
+      "area": "Shader cloak editor",
+      "affordance": "Resolution/uniforms/shader source/types/samplers/hot reload/FPS cap/errors/preview/export",
+      "enough": "Independent shader-editor shell and own renderer integration",
+      "missing": "Shader dialect/compile pipeline, binding convention, sampler formats, host feed actions and CDN export schema",
+      "evidence": [
+        "RG-28",
+        "RG-15"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-18",
+      "area": "Screenshot upload",
+      "affordance": "Title field max32 and public/unlisted/private selection; default unlisted; host upload call",
+      "enough": "Independent upload form and privacy selector",
+      "missing": "Image acquisition/upload endpoint/schema, privacy enforcement, completion/error states and hosting policy",
+      "evidence": [
+        "RG-29",
+        "RG-41"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-19",
+      "area": "Profile import",
+      "affordance": "Badlion/Feather discovery flags/lists, selection limit maxImports and host import",
+      "enough": "Independent profile-import wizard and bounded selection behavior",
+      "missing": "Third-party formats, file discovery, conversion, source/destination compatibility and rollback/errors",
+      "evidence": [
+        "RG-30"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-20",
+      "area": "SkyBlock profile viewer and Spirit Leap",
+      "affordance": "External stats iframe; dungeon/player list and host map actions/geometry/default view",
+      "enough": "Independent stats embedding shell or own stats UI; dungeon team/menu shell",
+      "missing": "Stats service permissions/data model, dungeon map/state detection, leap implementation and game interaction constraints",
+      "evidence": [
+        "RG-31",
+        "RG-32"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-21",
+      "area": "Friends, chat and hosted worlds",
+      "affordance": "Named overlays, friends/hostedWorlds/conversations providers and command inventory",
+      "enough": "Independent contact/chat/session UI with a separately designed service",
+      "missing": "Service protocols/authorization/state machine/moderation/delivery semantics, invitation permissions and backend session management",
+      "evidence": [
+        "RG-02",
+        "RG-42"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    },
+    {
+      "id": "RUI-22",
+      "area": "Account/settings/social overlays",
+      "affordance": "Overlay names and high-level controls declared; no account material read",
+      "enough": "Independent account-switch/settings presentation with external legitimate auth integration",
+      "missing": "Authorized account/session backend, token lifecycle and provider policies; credential handling intentionally outside evidence collection",
+      "evidence": [
+        "RG-02"
+      ],
+      "evidenceStatus": "UI affordance confirmed static; sufficiency/missing analysis is analyst inference",
+      "runtimeObserved": false
+    }
+  ],
+  "runtimeObserved": false
+}

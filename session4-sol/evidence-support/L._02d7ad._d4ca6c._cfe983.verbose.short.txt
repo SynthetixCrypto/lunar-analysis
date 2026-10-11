@@ -1,0 +1,1243 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/L/_02d7ad/_d4ca6c/_cfe983.class
+  Last modified Dec 31, 1969; size 14974 bytes
+  SHA-256 checksum aa918883a811f257db0815a5c28eab2d83769441023dab034c5debd25ea02cf1
+public class L._02d7ad._d4ca6c._cfe983 extends L._02d7ad._590f69<java.lang.String, L._02d7ad._d4ca6c._21aca6> implements L._2f4182._2ce426._21aca6, L._02d7ad._d4ca6c
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #32                         // L/_02d7ad/_d4ca6c/_cfe983
+  super_class: #46                        // L/_02d7ad/_590f69
+  interfaces: 2, fields: 1, methods: 13, attributes: 3
+Constant pool:
+    #1 = String             #248          // \u0001/game/metadata?os=\u0001&version=\u0001&arch=\u0001&gitCommit=\u0001&branch=\u0001&language=\u0001
+    #2 = String             #315          // GameMeta Processor
+    #3 = String             #316          // GameMeta Processor - Download
+    #4 = String             #317          // GameMeta Processor - Outbound Request
+    #5 = String             #339          // Metadata
+    #6 = String             #357          // X-Installation-Id
+    #7 = String             #358          // X-Overwolf-Muid
+    #8 = String             #359          // _
+    #9 = String             #363          // alert
+   #10 = String             #364          // blogPosts
+   #11 = String             #367          // clientSettings
+   #12 = String             #402          // featureFlag
+   #13 = String             #444          // langOverride
+   #14 = String             #445          // links
+   #15 = String             #448          // metaData
+   #16 = String             #449          // metadata_fallback.json
+   #17 = String             #451          // modSettings
+   #18 = String             #457          // pinnedServers
+   #19 = String             #461          // sentry-trace
+   #20 = String             #462          // sentryFilteredExceptions
+   #21 = String             #463          // serverIntegration
+   #22 = String             #466          // starServers
+   #23 = String             #467          // storeBadge
+   #24 = String             #472          // webCopy
+   #25 = Class              #368          // com/google/gson/JsonElement
+   #26 = Class              #369          // com/google/gson/JsonObject
+   #27 = Class              #370          // com/google/gson/JsonParser
+   #28 = Class              #371          // L/_cfe983
+   #29 = Class              #372          // L/_2f4182/_2ce426/_21aca6
+   #30 = Class              #373          // L/_02d7ad/_1253fc/_a1dd3a
+   #31 = Class              #374          // L/_02d7ad/_d4ca6c
+   #32 = Class              #375          // L/_02d7ad/_d4ca6c/_cfe983
+   #33 = Class              #376          // L/_02d7ad/_d4ca6c/_cfe983/_429bf0
+   #34 = Class              #377          // L/_02d7ad/_d4ca6c/_cfe983/_cfe983
+   #35 = Class              #378          // L/_02d7ad/_d4ca6c/_cfe983/_2f4182
+   #36 = Class              #379          // L/_02d7ad/_d4ca6c/_cfe983/_bb4487
+   #37 = Class              #380          // L/_02d7ad/_d4ca6c/_cfe983/_1253fc
+   #38 = Class              #381          // L/_02d7ad/_d4ca6c/_cfe983/_1e73d7
+   #39 = Class              #382          // L/_02d7ad/_d4ca6c/_cfe983/_2ce426
+   #40 = Class              #383          // L/_02d7ad/_d4ca6c/_cfe983/_13ea87
+   #41 = Class              #384          // L/_02d7ad/_d4ca6c/_cfe983/_d4ca6c
+   #42 = Class              #385          // L/_02d7ad/_d4ca6c/_cfe983/_88f3cf
+   #43 = Class              #386          // L/_02d7ad/_d4ca6c/_cfe983/_590f69
+   #44 = Class              #387          // L/_02d7ad/_d4ca6c/_cfe983/_21aca6
+   #45 = Class              #388          // L/_02d7ad/_d4ca6c/_21aca6
+   #46 = Class              #389          // L/_02d7ad/_590f69
+   #47 = Class              #390          // L/_c8175c/_cfe983/_1e73d7
+   #48 = Class              #391          // L/_c8175c/_cfe983/_21aca6
+   #49 = Class              #392          // L/_767dc1/_590f69
+   #50 = Class              #393          // L/_e62626/_21aca6
+   #51 = Class              #394          // L/_ec7e36/_dd3308
+   #52 = Class              #395          // L/_1e73d7/_cfe983
+   #53 = Class              #396          // L/util/_cb9292
+   #54 = Class              #397          // L/util/_038392
+   #55 = Class              #398          // L/util/_02d7ad
+   #56 = Class              #415          // java/io/IOException
+   #57 = Class              #416          // java/lang/Boolean
+   #58 = Class              #417          // java/lang/Exception
+   #59 = Class              #418          // java/lang/Object
+   #60 = Class              #419          // java/lang/String
+   #61 = Class              #420          // java/lang/invoke/LambdaMetafactory
+   #62 = Class              #421          // java/lang/invoke/MethodHandles
+   #63 = Class              #422          // java/lang/invoke/MethodHandles$Lookup
+   #64 = Class              #423          // java/lang/invoke/StringConcatFactory
+   #65 = Class              #424          // java/net/URI
+   #66 = Class              #425          // java/net/URLEncoder
+   #67 = Class              #426          // java/net/http/HttpClient
+   #68 = Class              #427          // java/net/http/HttpRequest
+   #69 = Class              #428          // java/net/http/HttpRequest$Builder
+   #70 = Class              #429          // java/net/http/HttpResponse
+   #71 = Class              #430          // java/net/http/HttpResponse$BodyHandler
+   #72 = Class              #431          // java/net/http/HttpResponse$BodyHandlers
+   #73 = Class              #432          // java/nio/charset/StandardCharsets
+   #74 = Class              #433          // java/util/HashMap
+   #75 = Class              #434          // java/util/HashSet
+   #76 = Class              #435          // java/util/Iterator
+   #77 = Class              #436          // java/util/Map
+   #78 = Class              #437          // java/util/Map$Entry
+   #79 = Class              #438          // java/util/Optional
+   #80 = Class              #439          // java/util/Set
+   #81 = Class              #440          // java/util/concurrent/CompletableFuture
+   #82 = Class              #441          // java/util/function/Consumer
+   #83 = Class              #442          // java/util/function/Predicate
+   #84 = Fieldref           #32.#179      // L/_02d7ad/_d4ca6c/_cfe983._da4b93:Lcom/google/gson/JsonObject;
+   #85 = Fieldref           #48.#178      // L/_c8175c/_cfe983/_21aca6.CLIENT_REMOTE:LL/_c8175c/_cfe983/_21aca6;
+   #86 = Fieldref           #52.#190      // L/_1e73d7/_cfe983._f5d1fd:Ljava/lang/String;
+   #87 = Fieldref           #52.#193      // L/_1e73d7/_cfe983._939ef8:Ljava/lang/String;
+   #88 = Fieldref           #53.#189      // L/util/_cb9292._05cf96:Ljava/lang/String;
+   #89 = Fieldref           #53.#203      // L/util/_cb9292._c4ddf5:Ljava/lang/String;
+   #90 = Fieldref           #54.#191      // L/util/_038392._37ebd5:Ljava/lang/String;
+   #91 = Fieldref           #54.#196      // L/util/_038392._dad003:Ljava/lang/String;
+   #92 = Fieldref           #54.#198      // L/util/_038392._ceb41d:Ljava/lang/String;
+   #93 = Fieldref           #54.#199      // L/util/_038392._f8a23d:Ljava/lang/String;
+   #94 = Fieldref           #73.#204      // java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+   #95 = Methodref          #25.#217      // com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+   #96 = Methodref          #25.#225      // com/google/gson/JsonElement.isJsonObject:()Z
+   #97 = Methodref          #26.#174      // com/google/gson/JsonObject."<init>":()V
+   #98 = Methodref          #26.#207      // com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+   #99 = Methodref          #26.#208      // com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+  #100 = Methodref          #26.#216      // com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+  #101 = Methodref          #26.#221      // com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+  #102 = Methodref          #27.#174      // com/google/gson/JsonParser."<init>":()V
+  #103 = Methodref          #27.#236      // com/google/gson/JsonParser.parse:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+  #104 = Methodref          #28.#176      // L/_cfe983._defb5e:()LL/_02d7ad/_1253fc/_a1dd3a;
+  #105 = Methodref          #28.#188      // L/_cfe983._59aab3:()Ljava/lang/String;
+  #106 = Methodref          #28.#192      // L/_cfe983._ecae14:()LL/_cfe983;
+  #107 = Methodref          #30.#177      // L/_02d7ad/_1253fc/_a1dd3a._1cbb17:()LL/_e62626/_21aca6;
+  #108 = Methodref          #32.#181      // L/_02d7ad/_d4ca6c/_cfe983._cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+  #109 = Methodref          #32.#183      // L/_02d7ad/_d4ca6c/_cfe983._cfe983:(Ljava/util/Map;Ljava/net/http/HttpResponse;)V
+  #110 = Methodref          #32.#186      // L/_02d7ad/_d4ca6c/_cfe983._8e99ad:()V
+  #111 = Methodref          #32.#187      // L/_02d7ad/_d4ca6c/_cfe983._02d7ad:(Ljava/util/Map;)V
+  #112 = Methodref          #32.#194      // L/_02d7ad/_d4ca6c/_cfe983._7d065a:()Ljava/util/Map;
+  #113 = Methodref          #32.#195      // L/_02d7ad/_d4ca6c/_cfe983._811f4c:(Ljava/lang/String;)LL/_02d7ad/_d4ca6c/_21aca6;
+  #114 = Methodref          #32.#202      // L/_02d7ad/_d4ca6c/_cfe983._5d96a0:()Z
+  #115 = Methodref          #32.#228      // L/_02d7ad/_d4ca6c/_cfe983.load:(Lcom/google/gson/JsonObject;)V
+  #116 = Methodref          #33.#174      // L/_02d7ad/_d4ca6c/_cfe983/_429bf0."<init>":()V
+  #117 = Methodref          #34.#174      // L/_02d7ad/_d4ca6c/_cfe983/_cfe983."<init>":()V
+  #118 = Methodref          #35.#174      // L/_02d7ad/_d4ca6c/_cfe983/_2f4182."<init>":()V
+  #119 = Methodref          #35.#200      // L/_02d7ad/_d4ca6c/_cfe983/_2f4182._e3357a:()Ljava/lang/String;
+  #120 = Methodref          #36.#174      // L/_02d7ad/_d4ca6c/_cfe983/_bb4487."<init>":()V
+  #121 = Methodref          #37.#174      // L/_02d7ad/_d4ca6c/_cfe983/_1253fc."<init>":()V
+  #122 = Methodref          #38.#174      // L/_02d7ad/_d4ca6c/_cfe983/_1e73d7."<init>":()V
+  #123 = Methodref          #39.#174      // L/_02d7ad/_d4ca6c/_cfe983/_2ce426."<init>":()V
+  #124 = Methodref          #40.#174      // L/_02d7ad/_d4ca6c/_cfe983/_13ea87."<init>":()V
+  #125 = Methodref          #41.#174      // L/_02d7ad/_d4ca6c/_cfe983/_d4ca6c."<init>":()V
+  #126 = Methodref          #42.#174      // L/_02d7ad/_d4ca6c/_cfe983/_88f3cf."<init>":()V
+  #127 = Methodref          #43.#174      // L/_02d7ad/_d4ca6c/_cfe983/_590f69."<init>":()V
+  #128 = Methodref          #44.#174      // L/_02d7ad/_d4ca6c/_cfe983/_21aca6."<init>":()V
+  #129 = Methodref          #45.#240      // L/_02d7ad/_d4ca6c/_21aca6.setName:(Ljava/lang/String;)V
+  #130 = Methodref          #46.#174      // L/_02d7ad/_590f69."<init>":()V
+  #131 = Methodref          #49.#182      // L/_767dc1/_590f69._cfe983:(Ljava/lang/Throwable;Ljava/lang/String;)V
+  #132 = Methodref          #50.#218      // L/_e62626/_21aca6.getBase:()Ljava/lang/String;
+  #133 = Methodref          #55.#201      // L/util/_02d7ad._77754f:()Ljava/lang/String;
+  #134 = Methodref          #57.#244      // java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+  #135 = Methodref          #58.#237      // java/lang/Exception.printStackTrace:()V
+  #136 = Methodref          #60.#241      // java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+  #137 = Methodref          #61.#231      // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #138 = Methodref          #64.#230      // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #139 = Methodref          #65.#211      // java/net/URI.create:(Ljava/lang/String;)Ljava/net/URI;
+  #140 = Methodref          #66.#212      // java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+  #141 = Methodref          #67.#233      // java/net/http/HttpClient.newHttpClient:()Ljava/net/http/HttpClient;
+  #142 = Methodref          #67.#239      // java/net/http/HttpClient.sendAsync:(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;
+  #143 = Methodref          #68.#232      // java/net/http/HttpRequest.newBuilder:()Ljava/net/http/HttpRequest$Builder;
+  #144 = Methodref          #72.#235      // java/net/http/HttpResponse$BodyHandlers.ofString:()Ljava/net/http/HttpResponse$BodyHandler;
+  #145 = Methodref          #74.#174      // java/util/HashMap."<init>":()V
+  #146 = Methodref          #74.#238      // java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #147 = Methodref          #75.#175      // java/util/HashSet."<init>":(Ljava/util/Collection;)V
+  #148 = Methodref          #79.#214      // java/util/Optional.get:()Ljava/lang/Object;
+  #149 = Methodref          #79.#224      // java/util/Optional.isEmpty:()Z
+  #150 = Methodref          #81.#242      // java/util/concurrent/CompletableFuture.thenAccept:(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+  #151 = InterfaceMethodref #47.#180      // L/_c8175c/_cfe983/_1e73d7._cfe983:(Ljava/lang/Object;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+  #152 = InterfaceMethodref #47.#184      // L/_c8175c/_cfe983/_1e73d7._cfe983:(Ljava/util/function/Predicate;Ljava/lang/Object;)V
+  #153 = InterfaceMethodref #51.#197      // L/_ec7e36/_dd3308._6c713e:(Lcom/google/gson/JsonElement;)Ljava/util/Optional;
+  #154 = InterfaceMethodref #69.#185      // java/net/http/HttpRequest$Builder.GET:()Ljava/net/http/HttpRequest$Builder;
+  #155 = InterfaceMethodref #69.#210      // java/net/http/HttpRequest$Builder.build:()Ljava/net/http/HttpRequest;
+  #156 = InterfaceMethodref #69.#223      // java/net/http/HttpRequest$Builder.header:(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;
+  #157 = InterfaceMethodref #69.#243      // java/net/http/HttpRequest$Builder.uri:(Ljava/net/URI;)Ljava/net/http/HttpRequest$Builder;
+  #158 = InterfaceMethodref #70.#209      // java/net/http/HttpResponse.body:()Ljava/lang/Object;
+  #159 = InterfaceMethodref #76.#222      // java/util/Iterator.hasNext:()Z
+  #160 = InterfaceMethodref #76.#234      // java/util/Iterator.next:()Ljava/lang/Object;
+  #161 = InterfaceMethodref #77.#213      // java/util/Map.entrySet:()Ljava/util/Set;
+  #162 = InterfaceMethodref #77.#215      // java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #163 = InterfaceMethodref #77.#227      // java/util/Map.keySet:()Ljava/util/Set;
+  #164 = InterfaceMethodref #77.#245      // java/util/Map.values:()Ljava/util/Collection;
+  #165 = InterfaceMethodref #78.#219      // java/util/Map$Entry.getKey:()Ljava/lang/Object;
+  #166 = InterfaceMethodref #78.#220      // java/util/Map$Entry.getValue:()Ljava/lang/Object;
+  #167 = InterfaceMethodref #80.#226      // java/util/Set.iterator:()Ljava/util/Iterator;
+  #168 = InterfaceMethodref #82.#206      // java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+  #169 = InvokeDynamic      #0:#229       // #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #170 = InvokeDynamic      #1:#205       // #1:accept:(LL/_02d7ad/_d4ca6c/_cfe983;Ljava/util/Map;)Ljava/util/function/Consumer;
+  #171 = MethodHandle       5:#109        // REF_invokeVirtual L/_02d7ad/_d4ca6c/_cfe983._cfe983:(Ljava/util/Map;Ljava/net/http/HttpResponse;)V
+  #172 = MethodHandle       6:#137        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #173 = MethodHandle       6:#138        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #174 = NameAndType        #302:#265     // "<init>":()V
+  #175 = NameAndType        #302:#295     // "<init>":(Ljava/util/Collection;)V
+  #176 = NameAndType        #307:#251     // _defb5e:()LL/_02d7ad/_1253fc/_a1dd3a;
+  #177 = NameAndType        #308:#252     // _1cbb17:()LL/_e62626/_21aca6;
+  #178 = NameAndType        #309:#332     // CLIENT_REMOTE:LL/_c8175c/_cfe983/_21aca6;
+  #179 = NameAndType        #310:#330     // _da4b93:Lcom/google/gson/JsonObject;
+  #180 = NameAndType        #311:#274     // _cfe983:(Ljava/lang/Object;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+  #181 = NameAndType        #311:#283     // _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+  #182 = NameAndType        #311:#289     // _cfe983:(Ljava/lang/Throwable;Ljava/lang/String;)V
+  #183 = NameAndType        #311:#297     // _cfe983:(Ljava/util/Map;Ljava/net/http/HttpResponse;)V
+  #184 = NameAndType        #311:#300     // _cfe983:(Ljava/util/function/Predicate;Ljava/lang/Object;)V
+  #185 = NameAndType        #314:#256     // GET:()Ljava/net/http/HttpRequest$Builder;
+  #186 = NameAndType        #318:#265     // _8e99ad:()V
+  #187 = NameAndType        #319:#296     // _02d7ad:(Ljava/util/Map;)V
+  #188 = NameAndType        #320:#254     // _59aab3:()Ljava/lang/String;
+  #189 = NameAndType        #321:#334     // _05cf96:Ljava/lang/String;
+  #190 = NameAndType        #322:#334     // _f5d1fd:Ljava/lang/String;
+  #191 = NameAndType        #323:#334     // _37ebd5:Ljava/lang/String;
+  #192 = NameAndType        #324:#250     // _ecae14:()LL/_cfe983;
+  #193 = NameAndType        #326:#334     // _939ef8:Ljava/lang/String;
+  #194 = NameAndType        #327:#261     // _7d065a:()Ljava/util/Map;
+  #195 = NameAndType        #328:#277     // _811f4c:(Ljava/lang/String;)LL/_02d7ad/_d4ca6c/_21aca6;
+  #196 = NameAndType        #340:#334     // _dad003:Ljava/lang/String;
+  #197 = NameAndType        #341:#267     // _6c713e:(Lcom/google/gson/JsonElement;)Ljava/util/Optional;
+  #198 = NameAndType        #342:#334     // _ceb41d:Ljava/lang/String;
+  #199 = NameAndType        #343:#334     // _f8a23d:Ljava/lang/String;
+  #200 = NameAndType        #344:#254     // _e3357a:()Ljava/lang/String;
+  #201 = NameAndType        #347:#254     // _77754f:()Ljava/lang/String;
+  #202 = NameAndType        #348:#266     // _5d96a0:()Z
+  #203 = NameAndType        #350:#334     // _c4ddf5:Ljava/lang/String;
+  #204 = NameAndType        #356:#335     // UTF_8:Ljava/nio/charset/Charset;
+  #205 = NameAndType        #360:#271     // accept:(LL/_02d7ad/_d4ca6c/_cfe983;Ljava/util/Map;)Ljava/util/function/Consumer;
+  #206 = NameAndType        #360:#273     // accept:(Ljava/lang/Object;)V
+  #207 = NameAndType        #361:#282     // add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+  #208 = NameAndType        #362:#285     // addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+  #209 = NameAndType        #365:#253     // body:()Ljava/lang/Object;
+  #210 = NameAndType        #366:#257     // build:()Ljava/net/http/HttpRequest;
+  #211 = NameAndType        #399:#278     // create:(Ljava/lang/String;)Ljava/net/URI;
+  #212 = NameAndType        #400:#288     // encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+  #213 = NameAndType        #401:#263     // entrySet:()Ljava/util/Set;
+  #214 = NameAndType        #403:#253     // get:()Ljava/lang/Object;
+  #215 = NameAndType        #403:#272     // get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #216 = NameAndType        #403:#276     // get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+  #217 = NameAndType        #404:#249     // getAsJsonObject:()Lcom/google/gson/JsonObject;
+  #218 = NameAndType        #405:#254     // getBase:()Ljava/lang/String;
+  #219 = NameAndType        #407:#253     // getKey:()Ljava/lang/Object;
+  #220 = NameAndType        #408:#253     // getValue:()Ljava/lang/Object;
+  #221 = NameAndType        #409:#280     // has:(Ljava/lang/String;)Z
+  #222 = NameAndType        #410:#266     // hasNext:()Z
+  #223 = NameAndType        #411:#286     // header:(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;
+  #224 = NameAndType        #412:#266     // isEmpty:()Z
+  #225 = NameAndType        #413:#266     // isJsonObject:()Z
+  #226 = NameAndType        #414:#260     // iterator:()Ljava/util/Iterator;
+  #227 = NameAndType        #443:#263     // keySet:()Ljava/util/Set;
+  #228 = NameAndType        #446:#268     // load:(Lcom/google/gson/JsonObject;)V
+  #229 = NameAndType        #447:#287     // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #230 = NameAndType        #447:#290     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #231 = NameAndType        #450:#291     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #232 = NameAndType        #452:#256     // newBuilder:()Ljava/net/http/HttpRequest$Builder;
+  #233 = NameAndType        #453:#255     // newHttpClient:()Ljava/net/http/HttpClient;
+  #234 = NameAndType        #454:#253     // next:()Ljava/lang/Object;
+  #235 = NameAndType        #455:#258     // ofString:()Ljava/net/http/HttpResponse$BodyHandler;
+  #236 = NameAndType        #456:#276     // parse:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+  #237 = NameAndType        #458:#265     // printStackTrace:()V
+  #238 = NameAndType        #459:#275     // put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #239 = NameAndType        #460:#293     // sendAsync:(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;
+  #240 = NameAndType        #464:#279     // setName:(Ljava/lang/String;)V
+  #241 = NameAndType        #465:#281     // split:(Ljava/lang/String;)[Ljava/lang/String;
+  #242 = NameAndType        #468:#299     // thenAccept:(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+  #243 = NameAndType        #469:#292     // uri:(Ljava/net/URI;)Ljava/net/http/HttpRequest$Builder;
+  #244 = NameAndType        #470:#301     // valueOf:(Z)Ljava/lang/Boolean;
+  #245 = NameAndType        #471:#259     // values:()Ljava/util/Collection;
+  #246 = MethodType         #273          //  (Ljava/lang/Object;)V
+  #247 = MethodType         #294          //  (Ljava/net/http/HttpResponse;)V
+  #248 = Utf8               \u0001/game/metadata?os=\u0001&version=\u0001&arch=\u0001&gitCommit=\u0001&branch=\u0001&language=\u0001
+  #249 = Utf8               ()Lcom/google/gson/JsonObject;
+  #250 = Utf8               ()LL/_cfe983;
+  #251 = Utf8               ()LL/_02d7ad/_1253fc/_a1dd3a;
+  #252 = Utf8               ()LL/_e62626/_21aca6;
+  #253 = Utf8               ()Ljava/lang/Object;
+  #254 = Utf8               ()Ljava/lang/String;
+  #255 = Utf8               ()Ljava/net/http/HttpClient;
+  #256 = Utf8               ()Ljava/net/http/HttpRequest$Builder;
+  #257 = Utf8               ()Ljava/net/http/HttpRequest;
+  #258 = Utf8               ()Ljava/net/http/HttpResponse$BodyHandler;
+  #259 = Utf8               ()Ljava/util/Collection;
+  #260 = Utf8               ()Ljava/util/Iterator;
+  #261 = Utf8               ()Ljava/util/Map;
+  #262 = Utf8               ()Ljava/util/Map<Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;>;
+  #263 = Utf8               ()Ljava/util/Set;
+  #264 = Utf8               ()Ljava/util/Set<+LL/_2f4182/_2ce426/_cfe983;>;
+  #265 = Utf8               ()V
+  #266 = Utf8               ()Z
+  #267 = Utf8               (Lcom/google/gson/JsonElement;)Ljava/util/Optional;
+  #268 = Utf8               (Lcom/google/gson/JsonObject;)V
+  #269 = Utf8               (Lcom/google/gson/JsonObject;Ljava/lang/String;Ljava/lang/Object;LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_1e73d7;Ljava/util/function/Predicate;)V
+  #270 = Utf8               (Lcom/google/gson/JsonObject;Ljava/lang/String;Ljava/lang/Object;LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_1e73d7;Ljava/util/function/Predicate<Ljava/lang/String;>;)V
+  #271 = Utf8               (LL/_02d7ad/_d4ca6c/_cfe983;Ljava/util/Map;)Ljava/util/function/Consumer;
+  #272 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #273 = Utf8               (Ljava/lang/Object;)V
+  #274 = Utf8               (Ljava/lang/Object;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+  #275 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #276 = Utf8               (Ljava/lang/String;)Lcom/google/gson/JsonElement;
+  #277 = Utf8               (Ljava/lang/String;)LL/_02d7ad/_d4ca6c/_21aca6;
+  #278 = Utf8               (Ljava/lang/String;)Ljava/net/URI;
+  #279 = Utf8               (Ljava/lang/String;)V
+  #280 = Utf8               (Ljava/lang/String;)Z
+  #281 = Utf8               (Ljava/lang/String;)[Ljava/lang/String;
+  #282 = Utf8               (Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+  #283 = Utf8               (Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+  #284 = Utf8               (Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap<Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;>;)LL/_02d7ad/_d4ca6c/_21aca6;
+  #285 = Utf8               (Ljava/lang/String;Ljava/lang/Boolean;)V
+  #286 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;
+  #287 = Utf8               (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #288 = Utf8               (Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+  #289 = Utf8               (Ljava/lang/Throwable;Ljava/lang/String;)V
+  #290 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #291 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #292 = Utf8               (Ljava/net/URI;)Ljava/net/http/HttpRequest$Builder;
+  #293 = Utf8               (Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;
+  #294 = Utf8               (Ljava/net/http/HttpResponse;)V
+  #295 = Utf8               (Ljava/util/Collection;)V
+  #296 = Utf8               (Ljava/util/Map;)V
+  #297 = Utf8               (Ljava/util/Map;Ljava/net/http/HttpResponse;)V
+  #298 = Utf8               (Ljava/util/Map<Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;>;)V
+  #299 = Utf8               (Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+  #300 = Utf8               (Ljava/util/function/Predicate;Ljava/lang/Object;)V
+  #301 = Utf8               (Z)Ljava/lang/Boolean;
+  #302 = Utf8               <init>
+  #303 = Utf8               BodyHandler
+  #304 = Utf8               BodyHandlers
+  #305 = Utf8               BootstrapMethods
+  #306 = Utf8               Builder
+  #307 = Utf8               _defb5e
+  #308 = Utf8               _1cbb17
+  #309 = Utf8               CLIENT_REMOTE
+  #310 = Utf8               _da4b93
+  #311 = Utf8               _cfe983
+  #312 = Utf8               Code
+  #313 = Utf8               Entry
+  #314 = Utf8               GET
+  #315 = Utf8               GameMeta Processor
+  #316 = Utf8               GameMeta Processor - Download
+  #317 = Utf8               GameMeta Processor - Outbound Request
+  #318 = Utf8               _8e99ad
+  #319 = Utf8               _02d7ad
+  #320 = Utf8               _59aab3
+  #321 = Utf8               _05cf96
+  #322 = Utf8               _f5d1fd
+  #323 = Utf8               _37ebd5
+  #324 = Utf8               _ecae14
+  #325 = Utf8               _a55711
+  #326 = Utf8               _939ef8
+  #327 = Utf8               _7d065a
+  #328 = Utf8               _811f4c
+  #329 = Utf8               InnerClasses
+  #330 = Utf8               Lcom/google/gson/JsonObject;
+  #331 = Utf8               LL/_02d7ad/_590f69<Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;>;LL/_2f4182/_2ce426/_21aca6;LL/_02d7ad/_d4ca6c;
+  #332 = Utf8               LL/_c8175c/_cfe983/_21aca6;
+  #333 = Utf8               LineNumberTable
+  #334 = Utf8               Ljava/lang/String;
+  #335 = Utf8               Ljava/nio/charset/Charset;
+  #336 = Utf8               Lookup
+  #337 = Utf8               Lorg/jetbrains/annotations/NotNull;
+  #338 = Utf8               Lorg/jetbrains/annotations/Nullable;
+  #339 = Utf8               Metadata
+  #340 = Utf8               _dad003
+  #341 = Utf8               _6c713e
+  #342 = Utf8               _ceb41d
+  #343 = Utf8               _f8a23d
+  #344 = Utf8               _e3357a
+  #345 = Utf8               _585987
+  #346 = Utf8               _d35aae
+  #347 = Utf8               _77754f
+  #348 = Utf8               _5d96a0
+  #349 = Utf8               _590f69
+  #350 = Utf8               _c4ddf5
+  #351 = Utf8               RuntimeInvisibleAnnotations
+  #352 = Utf8               RuntimeInvisibleParameterAnnotations
+  #353 = Utf8               RuntimeInvisibleTypeAnnotations
+  #354 = Utf8               Signature
+  #355 = Utf8               StackMapTable
+  #356 = Utf8               UTF_8
+  #357 = Utf8               X-Installation-Id
+  #358 = Utf8               X-Overwolf-Muid
+  #359 = Utf8               _
+  #360 = Utf8               accept
+  #361 = Utf8               add
+  #362 = Utf8               addProperty
+  #363 = Utf8               alert
+  #364 = Utf8               blogPosts
+  #365 = Utf8               body
+  #366 = Utf8               build
+  #367 = Utf8               clientSettings
+  #368 = Utf8               com/google/gson/JsonElement
+  #369 = Utf8               com/google/gson/JsonObject
+  #370 = Utf8               com/google/gson/JsonParser
+  #371 = Utf8               L/_cfe983
+  #372 = Utf8               L/_2f4182/_2ce426/_21aca6
+  #373 = Utf8               L/_02d7ad/_1253fc/_a1dd3a
+  #374 = Utf8               L/_02d7ad/_d4ca6c
+  #375 = Utf8               L/_02d7ad/_d4ca6c/_cfe983
+  #376 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_429bf0
+  #377 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_cfe983
+  #378 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_2f4182
+  #379 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_bb4487
+  #380 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_1253fc
+  #381 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_1e73d7
+  #382 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_2ce426
+  #383 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_13ea87
+  #384 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_d4ca6c
+  #385 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_88f3cf
+  #386 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_590f69
+  #387 = Utf8               L/_02d7ad/_d4ca6c/_cfe983/_21aca6
+  #388 = Utf8               L/_02d7ad/_d4ca6c/_21aca6
+  #389 = Utf8               L/_02d7ad/_590f69
+  #390 = Utf8               L/_c8175c/_cfe983/_1e73d7
+  #391 = Utf8               L/_c8175c/_cfe983/_21aca6
+  #392 = Utf8               L/_767dc1/_590f69
+  #393 = Utf8               L/_e62626/_21aca6
+  #394 = Utf8               L/_ec7e36/_dd3308
+  #395 = Utf8               L/_1e73d7/_cfe983
+  #396 = Utf8               L/util/_cb9292
+  #397 = Utf8               L/util/_038392
+  #398 = Utf8               L/util/_02d7ad
+  #399 = Utf8               create
+  #400 = Utf8               encode
+  #401 = Utf8               entrySet
+  #402 = Utf8               featureFlag
+  #403 = Utf8               get
+  #404 = Utf8               getAsJsonObject
+  #405 = Utf8               getBase
+  #406 = Utf8               getCategory
+  #407 = Utf8               getKey
+  #408 = Utf8               getValue
+  #409 = Utf8               has
+  #410 = Utf8               hasNext
+  #411 = Utf8               header
+  #412 = Utf8               isEmpty
+  #413 = Utf8               isJsonObject
+  #414 = Utf8               iterator
+  #415 = Utf8               java/io/IOException
+  #416 = Utf8               java/lang/Boolean
+  #417 = Utf8               java/lang/Exception
+  #418 = Utf8               java/lang/Object
+  #419 = Utf8               java/lang/String
+  #420 = Utf8               java/lang/invoke/LambdaMetafactory
+  #421 = Utf8               java/lang/invoke/MethodHandles
+  #422 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #423 = Utf8               java/lang/invoke/StringConcatFactory
+  #424 = Utf8               java/net/URI
+  #425 = Utf8               java/net/URLEncoder
+  #426 = Utf8               java/net/http/HttpClient
+  #427 = Utf8               java/net/http/HttpRequest
+  #428 = Utf8               java/net/http/HttpRequest$Builder
+  #429 = Utf8               java/net/http/HttpResponse
+  #430 = Utf8               java/net/http/HttpResponse$BodyHandler
+  #431 = Utf8               java/net/http/HttpResponse$BodyHandlers
+  #432 = Utf8               java/nio/charset/StandardCharsets
+  #433 = Utf8               java/util/HashMap
+  #434 = Utf8               java/util/HashSet
+  #435 = Utf8               java/util/Iterator
+  #436 = Utf8               java/util/Map
+  #437 = Utf8               java/util/Map$Entry
+  #438 = Utf8               java/util/Optional
+  #439 = Utf8               java/util/Set
+  #440 = Utf8               java/util/concurrent/CompletableFuture
+  #441 = Utf8               java/util/function/Consumer
+  #442 = Utf8               java/util/function/Predicate
+  #443 = Utf8               keySet
+  #444 = Utf8               langOverride
+  #445 = Utf8               links
+  #446 = Utf8               load
+  #447 = Utf8               makeConcatWithConstants
+  #448 = Utf8               metaData
+  #449 = Utf8               metadata_fallback.json
+  #450 = Utf8               metafactory
+  #451 = Utf8               modSettings
+  #452 = Utf8               newBuilder
+  #453 = Utf8               newHttpClient
+  #454 = Utf8               next
+  #455 = Utf8               ofString
+  #456 = Utf8               parse
+  #457 = Utf8               pinnedServers
+  #458 = Utf8               printStackTrace
+  #459 = Utf8               put
+  #460 = Utf8               sendAsync
+  #461 = Utf8               sentry-trace
+  #462 = Utf8               sentryFilteredExceptions
+  #463 = Utf8               serverIntegration
+  #464 = Utf8               setName
+  #465 = Utf8               split
+  #466 = Utf8               starServers
+  #467 = Utf8               storeBadge
+  #468 = Utf8               thenAccept
+  #469 = Utf8               uri
+  #470 = Utf8               valueOf
+  #471 = Utf8               values
+  #472 = Utf8               webCopy
+{
+  private com.google.gson.JsonObject _da4b93;
+    descriptor: Lcom/google/gson/JsonObject;
+    flags: (0x0002) ACC_PRIVATE
+
+  public L._02d7ad._d4ca6c._cfe983();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #130                // Method L/_02d7ad/_590f69."<init>":()V
+         4: aload_0
+         5: new           #26                 // class com/google/gson/JsonObject
+         8: dup
+         9: invokespecial #97                 // Method com/google/gson/JsonObject."<init>":()V
+        12: putfield      #84                 // Field _da4b93:Lcom/google/gson/JsonObject;
+        15: return
+      LineNumberTable:
+        line 32: 0
+        line 34: 4
+
+  protected java.util.Map<java.lang.String, L._02d7ad._d4ca6c._21aca6> _d35aae();
+    descriptor: ()Ljava/util/Map;
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=4, locals=2, args_size=1
+         0: new           #74                 // class java/util/HashMap
+         3: dup
+         4: invokespecial #145                // Method java/util/HashMap."<init>":()V
+         7: astore_1
+         8: aload_0
+         9: ldc           #10                 // String blogPosts
+        11: new           #44                 // class L/_02d7ad/_d4ca6c/_cfe983/_21aca6
+        14: dup
+        15: invokespecial #128                // Method L/_02d7ad/_d4ca6c/_cfe983/_21aca6."<init>":()V
+        18: aload_1
+        19: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+        22: pop
+        23: aload_0
+        24: ldc           #9                  // String alert
+        26: new           #34                 // class L/_02d7ad/_d4ca6c/_cfe983/_cfe983
+        29: dup
+        30: invokespecial #117                // Method L/_02d7ad/_d4ca6c/_cfe983/_cfe983."<init>":()V
+        33: aload_1
+        34: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+        37: pop
+        38: aload_0
+        39: ldc           #17                 // String modSettings
+        41: new           #40                 // class L/_02d7ad/_d4ca6c/_cfe983/_13ea87
+        44: dup
+        45: invokespecial #124                // Method L/_02d7ad/_d4ca6c/_cfe983/_13ea87."<init>":()V
+        48: aload_1
+        49: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+        52: pop
+        53: aload_0
+        54: ldc           #11                 // String clientSettings
+        56: new           #43                 // class L/_02d7ad/_d4ca6c/_cfe983/_590f69
+        59: dup
+        60: invokespecial #127                // Method L/_02d7ad/_d4ca6c/_cfe983/_590f69."<init>":()V
+        63: aload_1
+        64: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+        67: pop
+        68: aload_0
+        69: ldc           #18                 // String pinnedServers
+        71: new           #39                 // class L/_02d7ad/_d4ca6c/_cfe983/_2ce426
+        74: dup
+        75: invokespecial #123                // Method L/_02d7ad/_d4ca6c/_cfe983/_2ce426."<init>":()V
+        78: aload_1
+        79: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+        82: pop
+        83: aload_0
+        84: ldc           #21                 // String serverIntegration
+        86: new           #42                 // class L/_02d7ad/_d4ca6c/_cfe983/_88f3cf
+        89: dup
+        90: invokespecial #126                // Method L/_02d7ad/_d4ca6c/_cfe983/_88f3cf."<init>":()V
+        93: aload_1
+        94: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+        97: pop
+        98: aload_0
+        99: ldc           #22                 // String starServers
+       101: new           #33                 // class L/_02d7ad/_d4ca6c/_cfe983/_429bf0
+       104: dup
+       105: invokespecial #116                // Method L/_02d7ad/_d4ca6c/_cfe983/_429bf0."<init>":()V
+       108: aload_1
+       109: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+       112: pop
+       113: aload_0
+       114: ldc           #12                 // String featureFlag
+       116: new           #38                 // class L/_02d7ad/_d4ca6c/_cfe983/_1e73d7
+       119: dup
+       120: invokespecial #122                // Method L/_02d7ad/_d4ca6c/_cfe983/_1e73d7."<init>":()V
+       123: aload_1
+       124: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+       127: pop
+       128: aload_0
+       129: ldc           #20                 // String sentryFilteredExceptions
+       131: new           #36                 // class L/_02d7ad/_d4ca6c/_cfe983/_bb4487
+       134: dup
+       135: invokespecial #120                // Method L/_02d7ad/_d4ca6c/_cfe983/_bb4487."<init>":()V
+       138: aload_1
+       139: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+       142: pop
+       143: aload_0
+       144: ldc           #14                 // String links
+       146: new           #41                 // class L/_02d7ad/_d4ca6c/_cfe983/_d4ca6c
+       149: dup
+       150: invokespecial #125                // Method L/_02d7ad/_d4ca6c/_cfe983/_d4ca6c."<init>":()V
+       153: aload_1
+       154: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+       157: pop
+       158: aload_0
+       159: ldc           #13                 // String langOverride
+       161: new           #37                 // class L/_02d7ad/_d4ca6c/_cfe983/_1253fc
+       164: dup
+       165: invokespecial #121                // Method L/_02d7ad/_d4ca6c/_cfe983/_1253fc."<init>":()V
+       168: aload_1
+       169: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+       172: pop
+       173: aload_0
+       174: ldc           #23                 // String storeBadge
+       176: new           #35                 // class L/_02d7ad/_d4ca6c/_cfe983/_2f4182
+       179: dup
+       180: invokespecial #118                // Method L/_02d7ad/_d4ca6c/_cfe983/_2f4182."<init>":()V
+       183: aload_1
+       184: invokevirtual #108                // Method _cfe983:(Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+       187: pop
+       188: aload_0
+       189: aload_1
+       190: invokevirtual #111                // Method _02d7ad:(Ljava/util/Map;)V
+       193: aload_1
+       194: areturn
+      LineNumberTable:
+        line 38: 0
+        line 39: 8
+        line 40: 23
+        line 41: 38
+        line 42: 53
+        line 43: 68
+        line 44: 83
+        line 45: 98
+        line 46: 113
+        line 47: 128
+        line 48: 143
+        line 49: 158
+        line 50: 173
+        line 52: 188
+        line 53: 193
+    Signature: #262                         // ()Ljava/util/Map<Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;>;
+
+  public java.lang.String _a55711();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #16                 // String metadata_fallback.json
+         2: areturn
+      LineNumberTable:
+        line 59: 0
+
+  public void load(com.google.gson.JsonObject);
+    descriptor: (Lcom/google/gson/JsonObject;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=8, args_size=2
+         0: aload_1
+         1: ldc           #15                 // String metaData
+         3: invokevirtual #100                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         6: invokevirtual #95                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+         9: astore_1
+        10: iconst_0
+        11: istore_2
+        12: aload_0
+        13: invokevirtual #112                // Method _7d065a:()Ljava/util/Map;
+        16: invokeinterface #161,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+        21: invokeinterface #167,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        26: astore_3
+        27: aload_3
+        28: invokeinterface #159,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        33: ifeq          143
+        36: aload_3
+        37: invokeinterface #160,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        42: checkcast     #78                 // class java/util/Map$Entry
+        45: astore        4
+        47: aload         4
+        49: invokeinterface #165,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+        54: checkcast     #60                 // class java/lang/String
+        57: astore        5
+        59: aload         4
+        61: invokeinterface #166,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+        66: checkcast     #82                 // class java/util/function/Consumer
+        69: astore        6
+        71: aload_1
+        72: aload         5
+        74: invokevirtual #101                // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+        77: ifne          83
+        80: goto          27
+        83: aload_0
+        84: getfield      #84                 // Field _da4b93:Lcom/google/gson/JsonObject;
+        87: aload         5
+        89: invokevirtual #101                // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+        92: ifeq          98
+        95: goto          27
+        98: aload_1
+        99: aload         5
+       101: invokevirtual #100                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+       104: astore        7
+       106: aload         6
+       108: aload         7
+       110: invokeinterface #168,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+       115: aload_0
+       116: getfield      #84                 // Field _da4b93:Lcom/google/gson/JsonObject;
+       119: aload         5
+       121: aload         7
+       123: invokevirtual #98                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+       126: goto          140
+       129: astore        7
+       131: iconst_1
+       132: istore_2
+       133: aload         7
+       135: ldc           #2                  // String GameMeta Processor
+       137: invokestatic  #131                // Method L/_767dc1/_590f69._cfe983:(Ljava/lang/Throwable;Ljava/lang/String;)V
+       140: goto          27
+       143: iload_2
+       144: ifeq          162
+       147: aload_1
+       148: ldc           #24                 // String webCopy
+       150: invokevirtual #101                // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+       153: ifeq          162
+       156: aload_0
+       157: invokevirtual #114                // Method _5d96a0:()Z
+       160: pop
+       161: return
+       162: aload_0
+       163: invokevirtual #110                // Method _8e99ad:()V
+       166: return
+      Exception table:
+         from    to  target type
+            98   126   129   Class java/lang/Exception
+      LineNumberTable:
+        line 64: 0
+        line 66: 10
+        line 68: 12
+        line 69: 47
+        line 70: 59
+        line 72: 71
+        line 73: 80
+        line 77: 83
+        line 78: 95
+        line 85: 98
+        line 86: 106
+        line 87: 115
+        line 91: 126
+        line 88: 129
+        line 89: 131
+        line 90: 133
+        line 92: 140
+        line 93: 143
+        line 94: 156
+        line 95: 161
+        line 99: 162
+        line 100: 166
+      StackMapTable: number_of_entries = 7
+        frame_type = 253 /* append */
+          offset_delta = 27
+          locals = [ int, class java/util/Iterator ]
+        frame_type = 254 /* append */
+          offset_delta = 55
+          locals = [ top, class java/lang/String, class java/util/function/Consumer ]
+        frame_type = 14 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 30
+          locals = [ class L/_02d7ad/_d4ca6c/_cfe983, class com/google/gson/JsonObject, top, class java/util/Iterator ]
+          stack = [ class java/lang/Exception ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 10
+          locals = [ class L/_02d7ad/_d4ca6c/_cfe983, class com/google/gson/JsonObject, int, class java/util/Iterator ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 2
+        frame_type = 249 /* chop */
+          offset_delta = 18
+
+  public void _590f69(com.google.gson.JsonObject);
+    descriptor: (Lcom/google/gson/JsonObject;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_1
+         1: ldc           #15                 // String metaData
+         3: aload_0
+         4: getfield      #84                 // Field _da4b93:Lcom/google/gson/JsonObject;
+         7: invokevirtual #98                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+        10: return
+      LineNumberTable:
+        line 104: 0
+        line 105: 10
+
+  public L._02d7ad._d4ca6c._21aca6 _811f4c(java.lang.String);
+    descriptor: (Ljava/lang/String;)LL/_02d7ad/_d4ca6c/_21aca6;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokevirtual #112                // Method _7d065a:()Ljava/util/Map;
+         4: aload_1
+         5: invokeinterface #162,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        10: checkcast     #45                 // class L/_02d7ad/_d4ca6c/_21aca6
+        13: areturn
+      LineNumberTable:
+        line 108: 0
+
+  public java.lang.String _e3357a();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: aload_0
+         1: ldc           #23                 // String storeBadge
+         3: invokevirtual #113                // Method _811f4c:(Ljava/lang/String;)LL/_02d7ad/_d4ca6c/_21aca6;
+         6: astore_1
+         7: aload_1
+         8: instanceof    #35                 // class L/_02d7ad/_d4ca6c/_cfe983/_2f4182
+        11: ifeq          26
+        14: aload_1
+        15: checkcast     #35                 // class L/_02d7ad/_d4ca6c/_cfe983/_2f4182
+        18: astore_2
+        19: aload_2
+        20: invokevirtual #119                // Method L/_02d7ad/_d4ca6c/_cfe983/_2f4182._e3357a:()Ljava/lang/String;
+        23: goto          27
+        26: aconst_null
+        27: areturn
+      LineNumberTable:
+        line 113: 0
+        line 114: 7
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 26
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ class java/lang/String ]
+    RuntimeInvisibleAnnotations:
+      0: #338()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #338(): METHOD_RETURN
+        org.jetbrains.annotations.Nullable
+
+  private L._02d7ad._d4ca6c._21aca6 _cfe983(java.lang.String, L._02d7ad._d4ca6c._21aca6, java.util.HashMap<java.lang.String, L._02d7ad._d4ca6c._21aca6>);
+    descriptor: (Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap;)LL/_02d7ad/_d4ca6c/_21aca6;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=4, args_size=4
+         0: aload_2
+         1: aload_1
+         2: invokevirtual #129                // Method L/_02d7ad/_d4ca6c/_21aca6.setName:(Ljava/lang/String;)V
+         5: aload_3
+         6: aload_1
+         7: aload_2
+         8: invokevirtual #146                // Method java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        11: pop
+        12: aload_2
+        13: areturn
+      LineNumberTable:
+        line 118: 0
+        line 119: 5
+        line 120: 12
+    Signature: #284                         // (Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;Ljava/util/HashMap<Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;>;)LL/_02d7ad/_d4ca6c/_21aca6;
+
+  public void _02d7ad(java.util.Map<java.lang.String, L._02d7ad._d4ca6c._21aca6>);
+    descriptor: (Ljava/util/Map;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=8, locals=10, args_size=2
+         0: aload_1
+         1: ifnonnull     9
+         4: aload_0
+         5: invokevirtual #112                // Method _7d065a:()Ljava/util/Map;
+         8: astore_1
+         9: aload_0
+        10: new           #26                 // class com/google/gson/JsonObject
+        13: dup
+        14: invokespecial #97                 // Method com/google/gson/JsonObject."<init>":()V
+        17: putfield      #84                 // Field _da4b93:Lcom/google/gson/JsonObject;
+        20: getstatic     #89                 // Field L/util/_cb9292._c4ddf5:Ljava/lang/String;
+        23: getstatic     #94                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+        26: invokestatic  #140                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+        29: astore_2
+        30: getstatic     #88                 // Field L/util/_cb9292._05cf96:Ljava/lang/String;
+        33: getstatic     #94                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+        36: invokestatic  #140                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+        39: astore_3
+        40: getstatic     #87                 // Field L/_1e73d7/_cfe983._939ef8:Ljava/lang/String;
+        43: getstatic     #94                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+        46: invokestatic  #140                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+        49: astore        4
+        51: getstatic     #86                 // Field L/_1e73d7/_cfe983._f5d1fd:Ljava/lang/String;
+        54: getstatic     #94                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+        57: invokestatic  #140                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+        60: astore        5
+        62: invokestatic  #106                // Method L/_cfe983._ecae14:()LL/_cfe983;
+        65: ifnull        77
+        68: invokestatic  #106                // Method L/_cfe983._ecae14:()LL/_cfe983;
+        71: invokevirtual #104                // Method L/_cfe983._defb5e:()LL/_02d7ad/_1253fc/_a1dd3a;
+        74: ifnonnull     92
+        77: getstatic     #91                 // Field L/util/_038392._dad003:Ljava/lang/String;
+        80: ldc           #8                  // String _
+        82: invokevirtual #136                // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+        85: iconst_0
+        86: aaload
+        87: astore        6
+        89: goto          106
+        92: invokestatic  #106                // Method L/_cfe983._ecae14:()LL/_cfe983;
+        95: invokevirtual #104                // Method L/_cfe983._defb5e:()LL/_02d7ad/_1253fc/_a1dd3a;
+        98: invokevirtual #107                // Method L/_02d7ad/_1253fc/_a1dd3a._1cbb17:()LL/_e62626/_21aca6;
+       101: invokevirtual #132                // Method L/_e62626/_21aca6.getBase:()Ljava/lang/String;
+       104: astore        6
+       106: aload         6
+       108: getstatic     #94                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+       111: invokestatic  #140                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+       114: astore        7
+       116: invokestatic  #143                // Method java/net/http/HttpRequest.newBuilder:()Ljava/net/http/HttpRequest$Builder;
+       119: invokestatic  #133                // Method L/util/_02d7ad._77754f:()Ljava/lang/String;
+       122: aload_2
+       123: invokestatic  #105                // Method L/_cfe983._59aab3:()Ljava/lang/String;
+       126: aload_3
+       127: aload         4
+       129: aload         5
+       131: aload         7
+       133: invokedynamic #169,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       138: invokestatic  #139                // Method java/net/URI.create:(Ljava/lang/String;)Ljava/net/URI;
+       141: invokeinterface #157,  2          // InterfaceMethod java/net/http/HttpRequest$Builder.uri:(Ljava/net/URI;)Ljava/net/http/HttpRequest$Builder;
+       146: ldc           #6                  // String X-Installation-Id
+       148: getstatic     #90                 // Field L/util/_038392._37ebd5:Ljava/lang/String;
+       151: invokeinterface #156,  3          // InterfaceMethod java/net/http/HttpRequest$Builder.header:(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;
+       156: ldc           #7                  // String X-Overwolf-Muid
+       158: getstatic     #93                 // Field L/util/_038392._f8a23d:Ljava/lang/String;
+       161: invokeinterface #156,  3          // InterfaceMethod java/net/http/HttpRequest$Builder.header:(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;
+       166: ldc           #19                 // String sentry-trace
+       168: getstatic     #92                 // Field L/util/_038392._ceb41d:Ljava/lang/String;
+       171: invokeinterface #156,  3          // InterfaceMethod java/net/http/HttpRequest$Builder.header:(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;
+       176: invokeinterface #154,  1          // InterfaceMethod java/net/http/HttpRequest$Builder.GET:()Ljava/net/http/HttpRequest$Builder;
+       181: invokeinterface #155,  1          // InterfaceMethod java/net/http/HttpRequest$Builder.build:()Ljava/net/http/HttpRequest;
+       186: astore        8
+       188: aload_1
+       189: astore        9
+       191: invokestatic  #141                // Method java/net/http/HttpClient.newHttpClient:()Ljava/net/http/HttpClient;
+       194: aload         8
+       196: invokestatic  #144                // Method java/net/http/HttpResponse$BodyHandlers.ofString:()Ljava/net/http/HttpResponse$BodyHandler;
+       199: invokevirtual #142                // Method java/net/http/HttpClient.sendAsync:(Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;
+       202: aload_0
+       203: aload         9
+       205: invokedynamic #170,  0            // InvokeDynamic #1:accept:(LL/_02d7ad/_d4ca6c/_cfe983;Ljava/util/Map;)Ljava/util/function/Consumer;
+       210: invokevirtual #150                // Method java/util/concurrent/CompletableFuture.thenAccept:(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletableFuture;
+       213: pop
+       214: goto          229
+       217: astore_2
+       218: aload_2
+       219: ldc           #4                  // String GameMeta Processor - Outbound Request
+       221: invokestatic  #131                // Method L/_767dc1/_590f69._cfe983:(Ljava/lang/Throwable;Ljava/lang/String;)V
+       224: aload_0
+       225: invokevirtual #114                // Method _5d96a0:()Z
+       228: pop
+       229: return
+      Exception table:
+         from    to  target type
+            20   214   217   Class java/lang/Exception
+      LineNumberTable:
+        line 124: 0
+        line 125: 4
+        line 127: 9
+        line 129: 20
+        line 130: 30
+        line 131: 40
+        line 132: 51
+        line 134: 62
+        line 135: 77
+        line 137: 92
+        line 139: 106
+        line 141: 116
+        line 143: 119
+        line 145: 123
+        line 142: 138
+        line 151: 151
+        line 152: 161
+        line 153: 171
+        line 154: 176
+        line 155: 181
+        line 156: 188
+        line 157: 191
+        line 158: 196
+        line 159: 210
+        line 197: 214
+        line 194: 217
+        line 195: 218
+        line 196: 224
+        line 198: 229
+      StackMapTable: number_of_entries = 6
+        frame_type = 9 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 67
+          locals = [ class L/_02d7ad/_d4ca6c/_cfe983, class java/util/Map, class java/lang/String, class java/lang/String, class java/lang/String, class java/lang/String ]
+          stack = []
+        frame_type = 14 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 13
+          locals = [ class java/lang/String ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 110
+          locals = [ class L/_02d7ad/_d4ca6c/_cfe983 ]
+          stack = [ class java/lang/Exception ]
+        frame_type = 250 /* chop */
+          offset_delta = 11
+    Signature: #298                         // (Ljava/util/Map<Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;>;)V
+
+  public void _cfe983(com.google.gson.JsonObject, java.lang.String, java.lang.Object, L._ec7e36._dd3308, L._c8175c._cfe983._1e73d7, java.util.function.Predicate<java.lang.String>);
+    descriptor: (Lcom/google/gson/JsonObject;Ljava/lang/String;Ljava/lang/Object;LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_1e73d7;Ljava/util/function/Predicate;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=8, args_size=7
+         0: aload         4
+         2: aload_1
+         3: aload_2
+         4: invokevirtual #100                // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+         7: invokeinterface #153,  2          // InterfaceMethod L/_ec7e36/_dd3308._6c713e:(Lcom/google/gson/JsonElement;)Ljava/util/Optional;
+        12: astore        7
+        14: aload         7
+        16: invokevirtual #149                // Method java/util/Optional.isEmpty:()Z
+        19: ifeq          23
+        22: return
+        23: aload         6
+        25: ifnonnull     46
+        28: aload         5
+        30: aload_3
+        31: getstatic     #85                 // Field L/_c8175c/_cfe983/_21aca6.CLIENT_REMOTE:LL/_c8175c/_cfe983/_21aca6;
+        34: aload         7
+        36: invokevirtual #148                // Method java/util/Optional.get:()Ljava/lang/Object;
+        39: invokeinterface #151,  4          // InterfaceMethod L/_c8175c/_cfe983/_1e73d7._cfe983:(Ljava/lang/Object;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+        44: pop
+        45: return
+        46: aload         5
+        48: aload         6
+        50: aload         7
+        52: invokevirtual #148                // Method java/util/Optional.get:()Ljava/lang/Object;
+        55: invokeinterface #152,  3          // InterfaceMethod L/_c8175c/_cfe983/_1e73d7._cfe983:(Ljava/util/function/Predicate;Ljava/lang/Object;)V
+        60: return
+      LineNumberTable:
+        line 203: 0
+        line 204: 14
+        line 205: 22
+        line 207: 23
+        line 208: 28
+        line 209: 45
+        line 211: 46
+        line 212: 60
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 23
+          locals = [ top, top, top, class java/lang/Object, top, class L/_c8175c/_cfe983/_1e73d7, class java/util/function/Predicate, class java/util/Optional ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 22
+          locals = [ top, top, top, top, top, class L/_c8175c/_cfe983/_1e73d7, class java/util/function/Predicate, class java/util/Optional ]
+          stack = []
+    Signature: #270                         // (Lcom/google/gson/JsonObject;Ljava/lang/String;Ljava/lang/Object;LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_1e73d7;Ljava/util/function/Predicate<Ljava/lang/String;>;)V
+    RuntimeInvisibleTypeAnnotations:
+      0: #337(): METHOD_FORMAL_PARAMETER, param_index=3
+        org.jetbrains.annotations.NotNull
+      1: #338(): METHOD_FORMAL_PARAMETER, param_index=5, location=[TYPE_ARGUMENT(0)]
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+      parameter 2:
+      parameter 3:
+        0: #337()
+          org.jetbrains.annotations.NotNull
+      parameter 4:
+      parameter 5:
+
+  public java.lang.String getCategory();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #5                  // String Metadata
+         2: areturn
+      LineNumberTable:
+        line 216: 0
+
+  public java.util.Set<? extends L._2f4182._2ce426._cfe983> _585987();
+    descriptor: ()Ljava/util/Set;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: new           #75                 // class java/util/HashSet
+         3: dup
+         4: aload_0
+         5: invokevirtual #112                // Method _7d065a:()Ljava/util/Map;
+         8: invokeinterface #164,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+        13: invokespecial #147                // Method java/util/HashSet."<init>":(Ljava/util/Collection;)V
+        16: areturn
+      LineNumberTable:
+        line 221: 0
+    Signature: #264                         // ()Ljava/util/Set<+LL/_2f4182/_2ce426/_cfe983;>;
+
+  private void _cfe983(java.util.Map, java.net.http.HttpResponse);
+    descriptor: (Ljava/util/Map;Ljava/net/http/HttpResponse;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=7, args_size=3
+         0: new           #27                 // class com/google/gson/JsonParser
+         3: dup
+         4: invokespecial #102                // Method com/google/gson/JsonParser."<init>":()V
+         7: aload_2
+         8: invokeinterface #158,  1          // InterfaceMethod java/net/http/HttpResponse.body:()Ljava/lang/Object;
+        13: checkcast     #60                 // class java/lang/String
+        16: invokevirtual #103                // Method com/google/gson/JsonParser.parse:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+        19: astore_3
+        20: goto          36
+        23: astore        4
+        25: aload         4
+        27: invokevirtual #135                // Method java/lang/Exception.printStackTrace:()V
+        30: aload_0
+        31: invokevirtual #114                // Method _5d96a0:()Z
+        34: pop
+        35: return
+        36: aload_3
+        37: invokevirtual #96                 // Method com/google/gson/JsonElement.isJsonObject:()Z
+        40: ifne          49
+        43: aload_0
+        44: invokevirtual #114                // Method _5d96a0:()Z
+        47: pop
+        48: return
+        49: iconst_0
+        50: istore        4
+        52: aload_1
+        53: invokeinterface #163,  1          // InterfaceMethod java/util/Map.keySet:()Ljava/util/Set;
+        58: invokeinterface #167,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        63: astore        5
+        65: aload         5
+        67: invokeinterface #159,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        72: ifeq          108
+        75: aload         5
+        77: invokeinterface #160,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        82: checkcast     #60                 // class java/lang/String
+        85: astore        6
+        87: aload_3
+        88: invokevirtual #95                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+        91: aload         6
+        93: invokevirtual #101                // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+        96: ifeq          105
+        99: iconst_1
+       100: istore        4
+       102: goto          108
+       105: goto          65
+       108: iload         4
+       110: ifne          119
+       113: aload_0
+       114: invokevirtual #114                // Method _5d96a0:()Z
+       117: pop
+       118: return
+       119: new           #26                 // class com/google/gson/JsonObject
+       122: dup
+       123: invokespecial #97                 // Method com/google/gson/JsonObject."<init>":()V
+       126: astore        5
+       128: aload         5
+       130: ldc           #24                 // String webCopy
+       132: iconst_1
+       133: invokestatic  #134                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       136: invokevirtual #99                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+       139: aload         5
+       141: ldc           #15                 // String metaData
+       143: aload_3
+       144: invokevirtual #95                 // Method com/google/gson/JsonElement.getAsJsonObject:()Lcom/google/gson/JsonObject;
+       147: invokevirtual #98                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+       150: aload_0
+       151: aload         5
+       153: invokevirtual #115                // Method load:(Lcom/google/gson/JsonObject;)V
+       156: goto          173
+       159: astore        6
+       161: aload         6
+       163: ldc           #3                  // String GameMeta Processor - Download
+       165: invokestatic  #131                // Method L/_767dc1/_590f69._cfe983:(Ljava/lang/Throwable;Ljava/lang/String;)V
+       168: aload_0
+       169: invokevirtual #114                // Method _5d96a0:()Z
+       172: pop
+       173: return
+      Exception table:
+         from    to  target type
+             0    20    23   Class java/lang/Exception
+           128   156   159   Class java/io/IOException
+      LineNumberTable:
+        line 162: 0
+        line 167: 20
+        line 163: 23
+        line 164: 25
+        line 165: 30
+        line 166: 35
+        line 168: 36
+        line 169: 43
+        line 170: 48
+        line 172: 49
+        line 173: 52
+        line 174: 87
+        line 175: 99
+        line 176: 102
+        line 178: 105
+        line 179: 108
+        line 180: 113
+        line 181: 118
+        line 183: 119
+        line 186: 128
+        line 187: 139
+        line 188: 150
+        line 192: 156
+        line 189: 159
+        line 190: 161
+        line 191: 168
+        line 193: 173
+      StackMapTable: number_of_entries = 9
+        frame_type = 255 /* full_frame */
+          offset_delta = 23
+          locals = [ class L/_02d7ad/_d4ca6c/_cfe983 ]
+          stack = [ class java/lang/Exception ]
+        frame_type = 254 /* append */
+          offset_delta = 12
+          locals = [ class java/util/Map, top, class com/google/gson/JsonElement ]
+        frame_type = 12 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 15
+          locals = [ class L/_02d7ad/_d4ca6c/_cfe983, top, top, class com/google/gson/JsonElement, int, class java/util/Iterator ]
+          stack = []
+        frame_type = 39 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 2
+        frame_type = 250 /* chop */
+          offset_delta = 10
+        frame_type = 255 /* full_frame */
+          offset_delta = 39
+          locals = [ class L/_02d7ad/_d4ca6c/_cfe983 ]
+          stack = [ class java/io/IOException ]
+        frame_type = 250 /* chop */
+          offset_delta = 13
+}
+Signature: #331                         // LL/_02d7ad/_590f69<Ljava/lang/String;LL/_02d7ad/_d4ca6c/_21aca6;>;LL/_2f4182/_2ce426/_21aca6;LL/_02d7ad/_d4ca6c;
+BootstrapMethods:
+  0: #173 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #1 \u0001/game/metadata?os=\u0001&version=\u0001&arch=\u0001&gitCommit=\u0001&branch=\u0001&language=\u0001
+  1: #172 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #246 (Ljava/lang/Object;)V
+      #171 REF_invokeVirtual L/_02d7ad/_d4ca6c/_cfe983._cfe983:(Ljava/util/Map;Ljava/net/http/HttpResponse;)V
+      #247 (Ljava/net/http/HttpResponse;)V
+InnerClasses:
+  public static #313= #78 of #77;         // Entry=class java/util/Map$Entry of class java/util/Map
+  public static #306= #69 of #68;         // Builder=class java/net/http/HttpRequest$Builder of class java/net/http/HttpRequest
+  public static #304= #72 of #70;         // BodyHandlers=class java/net/http/HttpResponse$BodyHandlers of class java/net/http/HttpResponse
+  public static #303= #71 of #70;         // BodyHandler=class java/net/http/HttpResponse$BodyHandler of class java/net/http/HttpResponse
+  public static final #336= #63 of #62;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

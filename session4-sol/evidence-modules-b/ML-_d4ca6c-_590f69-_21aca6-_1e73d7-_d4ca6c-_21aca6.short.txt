@@ -1,0 +1,867 @@
+public abstract class ML._d4ca6c._590f69._21aca6._1e73d7._d4ca6c._21aca6 extends net.minecraft.client.player.AbstractClientPlayer {
+  public net.minecraft.client.multiplayer.ClientPacketListener connection;
+
+  public ML._d4ca6c._590f69._21aca6._1e73d7._d4ca6c._21aca6();
+    Code:
+       0: aload_0
+       1: invokespecial #184                // Method net/minecraft/client/player/AbstractClientPlayer."<init>":()V
+       4: return
+
+  public abstract net.minecraft.stats.StatsCounter getStats();
+
+  private void lunar$entityLivingHurtEvent(net.minecraft.world.damagesource.DamageSource, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #35                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_429bf0
+       5: aload_0
+       6: aload_1
+       7: fload_2
+       8: invokedynamic #205,  0            // InvokeDynamic #0:get:(LML/_d4ca6c/_590f69/_21aca6/_1e73d7/_d4ca6c/_21aca6;Lnet/minecraft/world/damagesource/DamageSource;F)Ljava/util/function/Supplier;
+      13: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      16: checkcast     #35                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_429bf0
+      19: astore        4
+      21: aload         4
+      23: ifnull        42
+      26: aload         4
+      28: invokevirtual #153                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_429bf0.isCancelled:()Z
+      31: ifeq          42
+      34: aload_3
+      35: iconst_0
+      36: invokestatic  #175                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      39: invokevirtual #195                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      42: fload_2
+      43: fconst_0
+      44: fcmpl
+      45: ifne          62
+      48: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      51: invokevirtual #143                // Method L/_cfe983._9429bc:()LL/_02d7ad/_1253fc/_429bf0;
+      54: aload_0
+      55: checkcast     #25                 // class ML/_590f69/_bb4487/_d4ca6c/_590f69
+      58: iconst_0
+      59: invokevirtual #148                // Method L/_02d7ad/_1253fc/_429bf0._cfe983:(LML/_590f69/_2ce426/_1253fc/_590f69;Z)V
+      62: return
+
+  private void lunar$stopAnimatingOnDamage(net.minecraft.world.damagesource.DamageSource, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: fload_2
+       1: fconst_0
+       2: fcmpl
+       3: ifle          20
+       6: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       9: invokevirtual #143                // Method L/_cfe983._9429bc:()LL/_02d7ad/_1253fc/_429bf0;
+      12: aload_0
+      13: checkcast     #25                 // class ML/_590f69/_bb4487/_d4ca6c/_590f69
+      16: iconst_0
+      17: invokevirtual #148                // Method L/_02d7ad/_1253fc/_429bf0._cfe983:(LML/_590f69/_2ce426/_1253fc/_590f69;Z)V
+      20: return
+
+  private void lunar$criticalStrikeEvent(net.minecraft.world.entity.Entity, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #37                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_590f69
+       5: aload_1
+       6: invokedynamic #206,  0            // InvokeDynamic #1:get:(Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Supplier;
+      11: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      14: checkcast     #37                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_590f69
+      17: astore_3
+      18: aload_3
+      19: ifnull        33
+      22: aload_3
+      23: invokevirtual #156                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_590f69.isCancelled:()Z
+      26: ifeq          33
+      29: aload_2
+      30: invokevirtual #193                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+      33: return
+
+  private void lunar$enchantCriticalStrikeEvent(net.minecraft.world.entity.Entity, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #38                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_21aca6
+       5: aload_1
+       6: invokedynamic #207,  0            // InvokeDynamic #2:get:(Lnet/minecraft/world/entity/Entity;)Ljava/util/function/Supplier;
+      11: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      14: checkcast     #38                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_21aca6
+      17: astore_3
+      18: aload_3
+      19: ifnull        33
+      22: aload_3
+      23: invokevirtual #158                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_21aca6.isCancelled:()Z
+      26: ifeq          33
+      29: aload_2
+      30: invokevirtual #193                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+      33: return
+
+  private void lunar$onSprinting(net.minecraft.client.player.LocalPlayer, boolean);
+    Code:
+       0: iload_2
+       1: ifeq          44
+       4: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       7: invokevirtual #144                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      10: invokevirtual #150                // Method L/_02d7ad/_1253fc/_1eb51c._7dd45a:()LL/_88f3cf/_bb4487/_91398c/_590f69;
+      13: invokevirtual #166                // Method L/_88f3cf/_bb4487/_91398c/_590f69.isEnabled:()Z
+      16: ifeq          44
+      19: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      22: invokevirtual #144                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      25: invokevirtual #150                // Method L/_02d7ad/_1253fc/_1eb51c._7dd45a:()LL/_88f3cf/_bb4487/_91398c/_590f69;
+      28: invokevirtual #165                // Method L/_88f3cf/_bb4487/_91398c/_590f69._031f7d:()LL/_ec7e36/_429bf0;
+      31: invokevirtual #151                // Method L/_ec7e36/_429bf0.get:()Ljava/lang/Object;
+      34: checkcast     #49                 // class java/lang/Boolean
+      37: invokevirtual #174                // Method java/lang/Boolean.booleanValue:()Z
+      40: ifne          44
+      43: return
+      44: aload_1
+      45: iload_2
+      46: invokevirtual #186                // Method net/minecraft/client/player/LocalPlayer.setSprinting:(Z)V
+      49: return
+
+  private void lunar$cosmeticPostUpdateEvent(org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #40                 // class L/_d4ca6c/_cfe983/_d4ca6c/_cb9292
+       5: aload_0
+       6: invokedynamic #208,  0            // InvokeDynamic #3:get:(LML/_d4ca6c/_590f69/_21aca6/_1e73d7/_d4ca6c/_21aca6;)Ljava/util/function/Supplier;
+      11: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      14: pop
+      15: return
+
+  private void lunar$livingUpdateEvent(org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #36                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_00e05b
+       5: invokedynamic #209,  0            // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+      10: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      13: pop
+      14: return
+
+  private void lunar$chatMessageEvents(java.lang.String, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_1
+       1: ldc           #15                 // String /
+       3: invokevirtual #179                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       6: ifeq          42
+       9: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      12: ldc           #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+      14: aload_1
+      15: invokedynamic #210,  0            // InvokeDynamic #5:get:(Ljava/lang/String;)Ljava/util/function/Supplier;
+      20: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      23: checkcast     #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+      26: astore_3
+      27: aload_3
+      28: ifnull        42
+      31: aload_3
+      32: invokevirtual #162                // Method L/_d4ca6c/_cfe983/_21aca6/_1e73d7.isCancelled:()Z
+      35: ifeq          42
+      38: aload_2
+      39: invokevirtual #193                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+      42: return
+
+  private void lunar$clientCommandEvent$v1_19_0(java.lang.String, net.minecraft.network.chat.Component, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+       5: aload_1
+       6: invokedynamic #211,  0            // InvokeDynamic #6:get:(Ljava/lang/String;)Ljava/util/function/Supplier;
+      11: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      14: checkcast     #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+      17: astore        4
+      19: aload         4
+      21: ifnull        36
+      24: aload         4
+      26: invokevirtual #162                // Method L/_d4ca6c/_cfe983/_21aca6/_1e73d7.isCancelled:()Z
+      29: ifeq          36
+      32: aload_3
+      33: invokevirtual #193                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+      36: return
+
+  private void lunar$sendChatEvent(net.minecraft.client.multiplayer.ClientPacketListener, net.minecraft.network.protocol.Packet, com.llamalad7.mixinextras.injector.wrapoperation.Operation<java.lang.Void>);
+    Code:
+       0: aload_2
+       1: checkcast     #62                 // class net/minecraft/network/protocol/game/ServerboundChatPacket
+       4: astore        4
+       6: aload         4
+       8: getfield      #93                 // Field net/minecraft/network/protocol/game/ServerboundChatPacket.message:Ljava/lang/String;
+      11: invokestatic  #171                // Method L/_88f3cf/_bb4487/_d4ca6c/_590f69._d9a9f9:(Ljava/lang/String;)V
+      14: aload_3
+      15: iconst_2
+      16: anewarray     #51                 // class java/lang/Object
+      19: dup
+      20: iconst_0
+      21: aload_1
+      22: aastore
+      23: dup
+      24: iconst_1
+      25: aload_2
+      26: aastore
+      27: invokeinterface #196,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      32: pop
+      33: return
+
+  private void lunar$clientCommandEvent$v1_19_2(java.lang.String, net.minecraft.network.chat.Component, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+       5: aload_1
+       6: invokedynamic #212,  0            // InvokeDynamic #7:get:(Ljava/lang/String;)Ljava/util/function/Supplier;
+      11: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      14: checkcast     #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+      17: astore        4
+      19: aload         4
+      21: ifnull        36
+      24: aload         4
+      26: invokevirtual #162                // Method L/_d4ca6c/_cfe983/_21aca6/_1e73d7.isCancelled:()Z
+      29: ifeq          36
+      32: aload_3
+      33: invokevirtual #193                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+      36: return
+
+  private void lunar$sendUnsignedCommandEvent$v1_19_2(java.lang.String, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+       5: aload_1
+       6: invokedynamic #213,  0            // InvokeDynamic #8:get:(Ljava/lang/String;)Ljava/util/function/Supplier;
+      11: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      14: checkcast     #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+      17: astore_3
+      18: aload_3
+      19: ifnull        37
+      22: aload_3
+      23: invokevirtual #162                // Method L/_d4ca6c/_cfe983/_21aca6/_1e73d7.isCancelled:()Z
+      26: ifeq          37
+      29: aload_2
+      30: iconst_0
+      31: invokestatic  #175                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      34: invokevirtual #195                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      37: return
+
+  private boolean apollo$handleAntiPortalTraps(net.minecraft.client.Minecraft, net.minecraft.client.gui.screens.Screen);
+    Code:
+       0: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #145                // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+       6: ldc           #21                 // class com/lunarclient/apollo/module/serverrule/ServerRuleModule
+       8: invokevirtual #147                // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+      11: invokedynamic #214,  0            // InvokeDynamic #9:test:()Ljava/util/function/Predicate;
+      16: invokevirtual #182                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+      19: invokedynamic #215,  0            // InvokeDynamic #10:test:()Ljava/util/function/Predicate;
+      24: invokevirtual #182                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+      27: invokevirtual #183                // Method java/util/Optional.isEmpty:()Z
+      30: ireturn
+
+  private boolean apollo$handleAntiPortalTraps$v26_2(net.minecraft.client.gui.Gui, net.minecraft.client.gui.screens.Screen);
+    Code:
+       0: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #145                // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+       6: ldc           #21                 // class com/lunarclient/apollo/module/serverrule/ServerRuleModule
+       8: invokevirtual #147                // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+      11: invokedynamic #216,  0            // InvokeDynamic #11:test:()Ljava/util/function/Predicate;
+      16: invokevirtual #182                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+      19: invokedynamic #217,  0            // InvokeDynamic #12:test:()Ljava/util/function/Predicate;
+      24: invokevirtual #182                // Method java/util/Optional.filter:(Ljava/util/function/Predicate;)Ljava/util/Optional;
+      27: invokevirtual #183                // Method java/util/Optional.isEmpty:()Z
+      30: ireturn
+
+  public void awardStat(net.minecraft.stats.Stat<?>, int);
+    Code:
+       0: aload_0
+       1: invokevirtual #115                // Method getStats:()Lnet/minecraft/stats/StatsCounter;
+       4: aload_0
+       5: aload_1
+       6: iload_2
+       7: invokevirtual #188                // Method net/minecraft/stats/StatsCounter.increment:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/stats/Stat;I)V
+      10: return
+
+  private void lunar$dropStackStat$HEAD(boolean, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>, com.llamalad7.mixinextras.sugar.ref.LocalRef<net.minecraft.world.item.Item>, com.llamalad7.mixinextras.sugar.ref.LocalIntRef);
+    Code:
+       0: getstatic     #92                 // Field L/util/_e93d3c.MC_VERSION:I
+       3: bipush        29
+       5: if_icmplt     20
+       8: aload_0
+       9: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+      12: invokevirtual #190                // Method net/minecraft/world/entity/player/Inventory.getSelectedItem$v1_21_5:()Lnet/minecraft/world/item/ItemStack;
+      15: astore        5
+      17: goto          29
+      20: aload_0
+      21: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+      24: invokevirtual #189                // Method net/minecraft/world/entity/player/Inventory.getSelected$v1_16_1:()Lnet/minecraft/world/item/ItemStack;
+      27: astore        5
+      29: aload_3
+      30: aload         5
+      32: invokevirtual #192                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+      35: invokeinterface #202,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalRef.set:(Ljava/lang/Object;)V
+      40: aload         4
+      42: aload         5
+      44: invokevirtual #191                // Method net/minecraft/world/item/ItemStack.getCount:()I
+      47: invokeinterface #200,  2          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalIntRef.set:(I)V
+      52: return
+
+  private void lunar$dropStackStat$RETURN(boolean, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>, com.llamalad7.mixinextras.sugar.ref.LocalRef<net.minecraft.world.item.Item>, com.llamalad7.mixinextras.sugar.ref.LocalIntRef);
+    Code:
+       0: aload_2
+       1: invokevirtual #194                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.getReturnValue:()Ljava/lang/Object;
+       4: checkcast     #49                 // class java/lang/Boolean
+       7: invokevirtual #174                // Method java/lang/Boolean.booleanValue:()Z
+      10: ifeq          59
+      13: aload_3
+      14: invokeinterface #201,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalRef.get:()Ljava/lang/Object;
+      19: checkcast     #78                 // class net/minecraft/world/item/Item
+      22: astore        5
+      24: aload         5
+      26: getstatic     #111                // Field net/minecraft/world/item/Items.AIR:Lnet/minecraft/world/item/Item;
+      29: if_acmpeq     59
+      32: aload_0
+      33: getstatic     #101                // Field net/minecraft/stats/Stats.ITEM_DROPPED:Lnet/minecraft/stats/StatType;
+      36: aload         5
+      38: invokevirtual #187                // Method net/minecraft/stats/StatType.get:(Ljava/lang/Object;)Lnet/minecraft/stats/Stat;
+      41: iload_1
+      42: ifeq          55
+      45: aload         4
+      47: invokeinterface #199,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalIntRef.get:()I
+      52: goto          56
+      55: iconst_1
+      56: invokevirtual #114                // Method awardStat:(Lnet/minecraft/stats/Stat;I)V
+      59: aload_0
+      60: getstatic     #98                 // Field net/minecraft/stats/Stats.DROP:Lnet/minecraft/resources/Identifier;
+      63: invokevirtual #112                // Method awardStat:(Lnet/minecraft/resources/Identifier;)V
+      66: return
+
+  public void travel(net.minecraft.world.phys.Vec3);
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method getX:()D
+       4: dstore_2
+       5: aload_0
+       6: invokevirtual #118                // Method getY:()D
+       9: dstore        4
+      11: aload_0
+      12: invokevirtual #119                // Method getZ:()D
+      15: dstore        6
+      17: aload_0
+      18: aload_1
+      19: invokespecial #185                // Method net/minecraft/client/player/AbstractClientPlayer.travel:(Lnet/minecraft/world/phys/Vec3;)V
+      22: aload_0
+      23: invokevirtual #117                // Method getX:()D
+      26: dload_2
+      27: dsub
+      28: dstore_2
+      29: aload_0
+      30: invokevirtual #118                // Method getY:()D
+      33: dload         4
+      35: dsub
+      36: dstore        4
+      38: aload_0
+      39: invokevirtual #119                // Method getZ:()D
+      42: dload         6
+      44: dsub
+      45: dstore        6
+      47: dload_2
+      48: dconst_0
+      49: dcmpl
+      50: ifne          68
+      53: dload         4
+      55: dconst_0
+      56: dcmpl
+      57: ifne          68
+      60: dload         6
+      62: dconst_0
+      63: dcmpl
+      64: ifne          68
+      67: return
+      68: aload_0
+      69: invokevirtual #124                // Method isPassenger:()Z
+      72: ifne          397
+      75: dload_2
+      76: dload_2
+      77: dmul
+      78: dload         4
+      80: dload         4
+      82: dmul
+      83: dadd
+      84: dload         6
+      86: dload         6
+      88: dmul
+      89: dadd
+      90: invokestatic  #178                // Method java/lang/Math.sqrt:(D)D
+      93: dstore        8
+      95: aload_0
+      96: invokevirtual #126                // Method isSwimming:()Z
+      99: ifeq          130
+     102: dload         8
+     104: d2f
+     105: ldc           #14                 // float 100.0f
+     107: fmul
+     108: invokestatic  #177                // Method java/lang/Math.round:(F)I
+     111: istore        10
+     113: iload         10
+     115: ifle          127
+     118: aload_0
+     119: getstatic     #106                // Field net/minecraft/stats/Stats.SWIM_ONE_CM:Lnet/minecraft/resources/Identifier;
+     122: iload         10
+     124: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     127: goto          397
+     130: aload_0
+     131: getstatic     #110                // Field net/minecraft/tags/FluidTags.WATER$v1_18_2:Lnet/minecraft/tags/TagKey;
+     134: invokevirtual #121                // Method isEyeInFluid$v1_18_2:(Lnet/minecraft/tags/TagKey;)Z
+     137: ifeq          168
+     140: dload         8
+     142: d2f
+     143: ldc           #14                 // float 100.0f
+     145: fmul
+     146: invokestatic  #177                // Method java/lang/Math.round:(F)I
+     149: istore        10
+     151: iload         10
+     153: ifle          165
+     156: aload_0
+     157: getstatic     #109                // Field net/minecraft/stats/Stats.WALK_UNDER_WATER_ONE_CM:Lnet/minecraft/resources/Identifier;
+     160: iload         10
+     162: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     165: goto          397
+     168: aload_0
+     169: invokevirtual #123                // Method isInWater:()Z
+     172: ifeq          213
+     175: dload_2
+     176: dload_2
+     177: dmul
+     178: dload         6
+     180: dload         6
+     182: dmul
+     183: dadd
+     184: invokestatic  #178                // Method java/lang/Math.sqrt:(D)D
+     187: d2f
+     188: ldc           #14                 // float 100.0f
+     190: fmul
+     191: invokestatic  #177                // Method java/lang/Math.round:(F)I
+     194: istore        10
+     196: iload         10
+     198: ifle          210
+     201: aload_0
+     202: getstatic     #108                // Field net/minecraft/stats/Stats.WALK_ON_WATER_ONE_CM:Lnet/minecraft/resources/Identifier;
+     205: iload         10
+     207: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     210: goto          397
+     213: aload_0
+     214: invokevirtual #141                // Method onClimbable:()Z
+     217: ifeq          247
+     220: dload         4
+     222: dconst_0
+     223: dcmpl
+     224: ifle          397
+     227: aload_0
+     228: getstatic     #96                 // Field net/minecraft/stats/Stats.CLIMB_ONE_CM:Lnet/minecraft/resources/Identifier;
+     231: dload         4
+     233: ldc2_w        #88                 // double 100.0d
+     236: dmul
+     237: invokestatic  #176                // Method java/lang/Math.round:(D)J
+     240: l2i
+     241: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     244: goto          397
+     247: aload_0
+     248: invokevirtual #142                // Method onGround$v1_20_0:()Z
+     251: ifeq          330
+     254: dload_2
+     255: dload_2
+     256: dmul
+     257: dload         6
+     259: dload         6
+     261: dmul
+     262: dadd
+     263: invokestatic  #178                // Method java/lang/Math.sqrt:(D)D
+     266: d2f
+     267: ldc           #14                 // float 100.0f
+     269: fmul
+     270: invokestatic  #177                // Method java/lang/Math.round:(F)I
+     273: istore        10
+     275: iload         10
+     277: ifle          327
+     280: aload_0
+     281: invokevirtual #125                // Method isSprinting:()Z
+     284: ifeq          299
+     287: aload_0
+     288: getstatic     #104                // Field net/minecraft/stats/Stats.SPRINT_ONE_CM:Lnet/minecraft/resources/Identifier;
+     291: iload         10
+     293: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     296: goto          327
+     299: aload_0
+     300: invokevirtual #120                // Method isCrouching:()Z
+     303: ifeq          318
+     306: aload_0
+     307: getstatic     #97                 // Field net/minecraft/stats/Stats.CROUCH_ONE_CM:Lnet/minecraft/resources/Identifier;
+     310: iload         10
+     312: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     315: goto          327
+     318: aload_0
+     319: getstatic     #107                // Field net/minecraft/stats/Stats.WALK_ONE_CM:Lnet/minecraft/resources/Identifier;
+     322: iload         10
+     324: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     327: goto          397
+     330: aload_0
+     331: invokevirtual #122                // Method isFallFlying:()Z
+     334: ifeq          360
+     337: dload         8
+     339: d2f
+     340: ldc           #14                 // float 100.0f
+     342: fmul
+     343: invokestatic  #177                // Method java/lang/Math.round:(F)I
+     346: istore        10
+     348: aload_0
+     349: getstatic     #94                 // Field net/minecraft/stats/Stats.AVIATE_ONE_CM:Lnet/minecraft/resources/Identifier;
+     352: iload         10
+     354: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     357: goto          397
+     360: dload_2
+     361: dload_2
+     362: dmul
+     363: dload         6
+     365: dload         6
+     367: dmul
+     368: dadd
+     369: invokestatic  #178                // Method java/lang/Math.sqrt:(D)D
+     372: d2f
+     373: ldc           #14                 // float 100.0f
+     375: fmul
+     376: invokestatic  #177                // Method java/lang/Math.round:(F)I
+     379: istore        10
+     381: iload         10
+     383: bipush        25
+     385: if_icmple     397
+     388: aload_0
+     389: getstatic     #99                 // Field net/minecraft/stats/Stats.FLY_ONE_CM:Lnet/minecraft/resources/Identifier;
+     392: iload         10
+     394: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     397: return
+
+  private void lunar$rideTick$HEAD(org.spongepowered.asm.mixin.injection.callback.CallbackInfo, com.llamalad7.mixinextras.sugar.ref.LocalDoubleRef, com.llamalad7.mixinextras.sugar.ref.LocalDoubleRef, com.llamalad7.mixinextras.sugar.ref.LocalDoubleRef);
+    Code:
+       0: aload_2
+       1: aload_0
+       2: invokevirtual #117                // Method getX:()D
+       5: invokeinterface #198,  3          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalDoubleRef.set:(D)V
+      10: aload_3
+      11: aload_0
+      12: invokevirtual #118                // Method getY:()D
+      15: invokeinterface #198,  3          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalDoubleRef.set:(D)V
+      20: aload         4
+      22: aload_0
+      23: invokevirtual #119                // Method getZ:()D
+      26: invokeinterface #198,  3          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalDoubleRef.set:(D)V
+      31: return
+
+  public void lunar$rideTick$RETURN(org.spongepowered.asm.mixin.injection.callback.CallbackInfo, com.llamalad7.mixinextras.sugar.ref.LocalDoubleRef, com.llamalad7.mixinextras.sugar.ref.LocalDoubleRef, com.llamalad7.mixinextras.sugar.ref.LocalDoubleRef);
+    Code:
+       0: aload_0
+       1: invokevirtual #117                // Method getX:()D
+       4: aload_2
+       5: invokeinterface #197,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalDoubleRef.get:()D
+      10: dsub
+      11: dstore        5
+      13: aload_0
+      14: invokevirtual #118                // Method getY:()D
+      17: aload_3
+      18: invokeinterface #197,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalDoubleRef.get:()D
+      23: dsub
+      24: dstore        7
+      26: aload_0
+      27: invokevirtual #119                // Method getZ:()D
+      30: aload         4
+      32: invokeinterface #197,  1          // InterfaceMethod com/llamalad7/mixinextras/sugar/ref/LocalDoubleRef.get:()D
+      37: dsub
+      38: dstore        9
+      40: dload         5
+      42: dconst_0
+      43: dcmpl
+      44: ifne          62
+      47: dload         7
+      49: dconst_0
+      50: dcmpl
+      51: ifne          62
+      54: dload         9
+      56: dconst_0
+      57: dcmpl
+      58: ifne          62
+      61: return
+      62: aload_0
+      63: invokevirtual #124                // Method isPassenger:()Z
+      66: ifeq          237
+      69: dload         5
+      71: dload         5
+      73: dmul
+      74: dload         7
+      76: dload         7
+      78: dmul
+      79: dadd
+      80: dload         9
+      82: dload         9
+      84: dmul
+      85: dadd
+      86: invokestatic  #178                // Method java/lang/Math.sqrt:(D)D
+      89: d2f
+      90: ldc           #14                 // float 100.0f
+      92: fmul
+      93: invokestatic  #177                // Method java/lang/Math.round:(F)I
+      96: istore        11
+      98: aload_0
+      99: invokevirtual #116                // Method getVehicle:()Lnet/minecraft/world/entity/Entity;
+     102: astore        12
+     104: aload         12
+     106: instanceof    #77                 // class net/minecraft/world/entity/vehicle/minecart/AbstractMinecart
+     109: ifeq          124
+     112: aload_0
+     113: getstatic     #102                // Field net/minecraft/stats/Stats.MINECART_ONE_CM:Lnet/minecraft/resources/Identifier;
+     116: iload         11
+     118: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     121: goto          237
+     124: aload         12
+     126: instanceof    #76                 // class net/minecraft/world/entity/vehicle/boat/Boat
+     129: ifeq          144
+     132: aload_0
+     133: getstatic     #95                 // Field net/minecraft/stats/Stats.BOAT_ONE_CM:Lnet/minecraft/resources/Identifier;
+     136: iload         11
+     138: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     141: goto          237
+     144: getstatic     #92                 // Field L/util/_e93d3c.MC_VERSION:I
+     147: bipush        35
+     149: if_icmpge     172
+     152: aload         12
+     154: instanceof    #70                 // class net/minecraft/world/entity/animal/Pig
+     157: ifeq          172
+     160: aload_0
+     161: getstatic     #103                // Field net/minecraft/stats/Stats.PIG_ONE_CM:Lnet/minecraft/resources/Identifier;
+     164: iload         11
+     166: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     169: goto          237
+     172: getstatic     #92                 // Field L/util/_e93d3c.MC_VERSION:I
+     175: bipush        35
+     177: if_icmplt     200
+     180: aload         12
+     182: instanceof    #72                 // class net/minecraft/world/entity/animal/pig/Pig
+     185: ifeq          200
+     188: aload_0
+     189: getstatic     #103                // Field net/minecraft/stats/Stats.PIG_ONE_CM:Lnet/minecraft/resources/Identifier;
+     192: iload         11
+     194: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     197: goto          237
+     200: aload         12
+     202: instanceof    #71                 // class net/minecraft/world/entity/animal/equine/AbstractHorse
+     205: ifeq          220
+     208: aload_0
+     209: getstatic     #100                // Field net/minecraft/stats/Stats.HORSE_ONE_CM:Lnet/minecraft/resources/Identifier;
+     212: iload         11
+     214: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     217: goto          237
+     220: aload         12
+     222: instanceof    #73                 // class net/minecraft/world/entity/monster/Strider
+     225: ifeq          237
+     228: aload_0
+     229: getstatic     #105                // Field net/minecraft/stats/Stats.STRIDER_ONE_CM:Lnet/minecraft/resources/Identifier;
+     232: iload         11
+     234: invokevirtual #113                // Method awardStat:(Lnet/minecraft/resources/Identifier;I)V
+     237: return
+
+  private void lunar$rewindFixPlayerAnimations(org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #144                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+       6: invokevirtual #149                // Method L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+       9: invokevirtual #169                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._241457:()Z
+      12: ifeq          23
+      15: aload_1
+      16: iconst_1
+      17: invokestatic  #175                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      20: invokevirtual #195                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      23: return
+
+  private boolean lunar$rewindIgnoreSprintKey$v1_16_1(net.minecraft.client.KeyMapping, com.llamalad7.mixinextras.injector.wrapoperation.Operation<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #144                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+       6: invokevirtual #149                // Method L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+       9: invokevirtual #169                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._241457:()Z
+      12: ifeq          17
+      15: iconst_0
+      16: ireturn
+      17: aload_2
+      18: iconst_1
+      19: anewarray     #51                 // class java/lang/Object
+      22: dup
+      23: iconst_0
+      24: aload_1
+      25: aastore
+      26: invokeinterface #196,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      31: checkcast     #49                 // class java/lang/Boolean
+      34: invokevirtual #174                // Method java/lang/Boolean.booleanValue:()Z
+      37: ireturn
+
+  private boolean lunar$rewindIgnoreSprintKey$v1_21_5(net.minecraft.world.entity.player.Input, com.llamalad7.mixinextras.injector.wrapoperation.Operation<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #144                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+       6: invokevirtual #149                // Method L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+       9: invokevirtual #169                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._241457:()Z
+      12: ifeq          17
+      15: iconst_0
+      16: ireturn
+      17: aload_2
+      18: iconst_1
+      19: anewarray     #51                 // class java/lang/Object
+      22: dup
+      23: iconst_0
+      24: aload_1
+      25: aastore
+      26: invokeinterface #196,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      31: checkcast     #49                 // class java/lang/Boolean
+      34: invokevirtual #174                // Method java/lang/Boolean.booleanValue:()Z
+      37: ireturn
+
+  private void lunar$dropItemEvent(boolean, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: invokestatic  #164                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #39                 // class L/_d4ca6c/_cfe983/_2ce426/_88f3cf
+       5: iload_1
+       6: invokedynamic #218,  0            // InvokeDynamic #13:get:(Z)Ljava/util/function/Supplier;
+      11: invokevirtual #163                // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      14: pop
+      15: return
+
+  private void lunar$rewindSkipCompute(double, double, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #172                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #144                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+       6: invokevirtual #149                // Method L/_02d7ad/_1253fc/_1eb51c._8fd138:()LL/_88f3cf/_bb4487/_00f454/_590f69/_cfe983;
+       9: invokedynamic #219,  0            // InvokeDynamic #14:apply:()Ljava/util/function/Function;
+      14: invokevirtual #170                // Method L/_88f3cf/_bb4487/_00f454/_590f69/_cfe983._d4ca6c:(Ljava/util/function/Function;)Z
+      17: ifeq          25
+      20: aload         5
+      22: invokevirtual #193                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfo.cancel:()V
+      25: return
+
+  private static java.lang.Boolean lambda$lunar$rewindSkipCompute$0(L._88f3cf._bb4487._00f454._d4ca6c._21aca6);
+    Code:
+       0: aload_0
+       1: invokevirtual #168                // Method L/_88f3cf/_bb4487/_00f454/_d4ca6c/_21aca6._b24438:()LL/_88f3cf/_bb4487/_00f454/_d4ca6c/_cfe983;
+       4: invokevirtual #167                // Method L/_88f3cf/_bb4487/_00f454/_d4ca6c/_cfe983._b93120:()J
+       7: ldc2_w        #86                 // long 50l
+      10: ldiv
+      11: ldc2_w        #84                 // long 20l
+      14: lcmp
+      15: ifle          22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: invokestatic  #175                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      26: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._88f3cf lambda$lunar$dropItemEvent$0(boolean);
+    Code:
+       0: new           #39                 // class L/_d4ca6c/_cfe983/_2ce426/_88f3cf
+       3: dup
+       4: iload_0
+       5: invokespecial #159                // Method L/_d4ca6c/_cfe983/_2ce426/_88f3cf."<init>":(Z)V
+       8: areturn
+
+  private static boolean lambda$apollo$handleAntiPortalTraps$v26_2$1(L._cfe983._cfe983._cfe983);
+    Code:
+       0: invokestatic  #173                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+       3: invokeinterface #204,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getCurrentScreen:()LML/_590f69/_bb4487/_21aca6/_79e7e6;
+       8: instanceof    #26                 // class ML/_590f69/_bb4487/_21aca6/_429bf0
+      11: ireturn
+
+  private static boolean lambda$apollo$handleAntiPortalTraps$v26_2$0(L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: invokevirtual #146                // Method L/_cfe983/_cfe983/_cfe983.getOptions:()Lcom/lunarclient/apollo/option/Options;
+       4: getstatic     #90                 // Field com/lunarclient/apollo/module/serverrule/ServerRuleModule.ANTI_PORTAL_TRAPS:Lcom/lunarclient/apollo/option/SimpleOption;
+       7: invokeinterface #203,  2          // InterfaceMethod com/lunarclient/apollo/option/Options.get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+      12: checkcast     #49                 // class java/lang/Boolean
+      15: invokevirtual #174                // Method java/lang/Boolean.booleanValue:()Z
+      18: ireturn
+
+  private static boolean lambda$apollo$handleAntiPortalTraps$1(L._cfe983._cfe983._cfe983);
+    Code:
+       0: invokestatic  #173                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+       3: invokeinterface #204,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getCurrentScreen:()LML/_590f69/_bb4487/_21aca6/_79e7e6;
+       8: instanceof    #26                 // class ML/_590f69/_bb4487/_21aca6/_429bf0
+      11: ireturn
+
+  private static boolean lambda$apollo$handleAntiPortalTraps$0(L._cfe983._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: invokevirtual #146                // Method L/_cfe983/_cfe983/_cfe983.getOptions:()Lcom/lunarclient/apollo/option/Options;
+       4: getstatic     #90                 // Field com/lunarclient/apollo/module/serverrule/ServerRuleModule.ANTI_PORTAL_TRAPS:Lcom/lunarclient/apollo/option/SimpleOption;
+       7: invokeinterface #203,  2          // InterfaceMethod com/lunarclient/apollo/option/Options.get:(Lcom/lunarclient/apollo/option/Option;)Ljava/lang/Object;
+      12: checkcast     #49                 // class java/lang/Boolean
+      15: invokevirtual #174                // Method java/lang/Boolean.booleanValue:()Z
+      18: ireturn
+
+  private static L._d4ca6c._cfe983._21aca6._1e73d7 lambda$lunar$sendUnsignedCommandEvent$v1_19_2$0(java.lang.String);
+    Code:
+       0: new           #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+       3: dup
+       4: aload_0
+       5: invokedynamic #220,  0            // InvokeDynamic #15:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      10: invokespecial #161                // Method L/_d4ca6c/_cfe983/_21aca6/_1e73d7."<init>":(Ljava/lang/String;)V
+      13: areturn
+
+  private static L._d4ca6c._cfe983._21aca6._1e73d7 lambda$lunar$clientCommandEvent$v1_19_2$0(java.lang.String);
+    Code:
+       0: new           #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+       3: dup
+       4: aload_0
+       5: invokedynamic #220,  0            // InvokeDynamic #15:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      10: invokespecial #161                // Method L/_d4ca6c/_cfe983/_21aca6/_1e73d7."<init>":(Ljava/lang/String;)V
+      13: areturn
+
+  private static L._d4ca6c._cfe983._21aca6._1e73d7 lambda$lunar$clientCommandEvent$v1_19_0$0(java.lang.String);
+    Code:
+       0: new           #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+       3: dup
+       4: aload_0
+       5: invokedynamic #220,  0            // InvokeDynamic #15:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      10: invokespecial #161                // Method L/_d4ca6c/_cfe983/_21aca6/_1e73d7."<init>":(Ljava/lang/String;)V
+      13: areturn
+
+  private static L._d4ca6c._cfe983._21aca6._1e73d7 lambda$lunar$chatMessageEvents$0(java.lang.String);
+    Code:
+       0: new           #41                 // class L/_d4ca6c/_cfe983/_21aca6/_1e73d7
+       3: dup
+       4: aload_0
+       5: invokespecial #161                // Method L/_d4ca6c/_cfe983/_21aca6/_1e73d7."<init>":(Ljava/lang/String;)V
+       8: areturn
+
+  private L._d4ca6c._cfe983._d4ca6c._cb9292 lambda$lunar$cosmeticPostUpdateEvent$0();
+    Code:
+       0: new           #40                 // class L/_d4ca6c/_cfe983/_d4ca6c/_cb9292
+       3: dup
+       4: aload_0
+       5: checkcast     #25                 // class ML/_590f69/_bb4487/_d4ca6c/_590f69
+       8: invokespecial #160                // Method L/_d4ca6c/_cfe983/_d4ca6c/_cb9292."<init>":(LML/_590f69/_2ce426/_1253fc/_590f69;)V
+      11: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._cfe983._21aca6 lambda$lunar$enchantCriticalStrikeEvent$0(net.minecraft.world.entity.Entity);
+    Code:
+       0: new           #38                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_21aca6
+       3: dup
+       4: aload_0
+       5: checkcast     #27                 // class ML/_590f69/_2ce426/_1e73d7
+       8: invokespecial #157                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_21aca6."<init>":(LML/_590f69/_2ce426/_1e73d7;)V
+      11: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._cfe983._590f69 lambda$lunar$criticalStrikeEvent$0(net.minecraft.world.entity.Entity);
+    Code:
+       0: new           #37                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_590f69
+       3: dup
+       4: aload_0
+       5: checkcast     #27                 // class ML/_590f69/_2ce426/_1e73d7
+       8: invokespecial #155                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_590f69."<init>":(LML/_590f69/_2ce426/_1e73d7;)V
+      11: areturn
+
+  private L._d4ca6c._cfe983._2ce426._cfe983._429bf0 lambda$lunar$entityLivingHurtEvent$0(net.minecraft.world.damagesource.DamageSource, float);
+    Code:
+       0: new           #35                 // class L/_d4ca6c/_cfe983/_2ce426/_cfe983/_429bf0
+       3: dup
+       4: aload_0
+       5: checkcast     #25                 // class ML/_590f69/_bb4487/_d4ca6c/_590f69
+       8: aload_1
+       9: checkcast     #28                 // class ML/_590f69/_5b3f84/_429bf0
+      12: fload_2
+      13: invokespecial #152                // Method L/_d4ca6c/_cfe983/_2ce426/_cfe983/_429bf0."<init>":(LML/_590f69/_2ce426/_2ce426;LML/_590f69/_5b3f84/_429bf0;F)V
+      16: areturn
+}

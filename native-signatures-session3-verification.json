@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-10-11",
+  "method": "PowerShell Get-AuthenticodeSignature; static file inspection, no target execution",
+  "base_path": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives",
+  "results": [
+    {"dll": "WebOSR-Binding.dll", "status": "Valid", "signer_cn": "Moonsworth, LLC"},
+    {"dll": "Ultralight.dll", "status": "Valid", "signer_cn": "Moonsworth, LLC"},
+    {"dll": "UltralightCore.dll", "status": "Valid", "signer_cn": "Moonsworth, LLC"},
+    {"dll": "WebCore.dll", "status": "Valid", "signer_cn": "Moonsworth, LLC"},
+    {"dll": "MumbleLink.dll", "status": "NotSigned", "signer_cn": null},
+    {"dll": "webp-imageio32.dll", "status": "NotSigned", "signer_cn": null},
+    {"dll": "webp-imageio64.dll", "status": "NotSigned", "signer_cn": null}
+  ],
+  "static_strings": [
+    {"dll": "Ultralight.dll", "file_offset_hex": "0x711e5", "text": "1.4.0"},
+    {"dll": "Ultralight.dll", "file_offset_hex": "0x711ab", "text": "AppleWebKit/615.1.18.100.1 (KHTML, like Gecko) Ultralight/1.4.0 Version/16.4.1 Safari/615.1.18.100.1"}
+  ],
+  "limitations": [
+    "Signature status records the Windows verifier result at inspection time, not a statement about application behavior or safety.",
+    "Embedded version and user-agent strings do not establish every engine component's independently versioned build.",
+    "No Lunar anti-cheat or application-integrity mechanism was analyzed."
+  ]
+}

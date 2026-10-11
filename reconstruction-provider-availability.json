@@ -1,0 +1,130 @@
+{
+  "method": "Analyst projection of REA binary_session availability; not full session Evidence",
+  "checkedDate": "2026-10-11",
+  "openAtCheck": false,
+  "providers": [
+    {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": null
+      },
+      "availability": {
+        "status": "unavailable",
+        "code": "not_configured",
+        "reason": "Set GHIDRA_INSTALL_DIR to an extracted Ghidra 12.1.x release directory."
+      }
+    },
+    {
+      "provider": {
+        "id": "hopper",
+        "name": "Hopper Disassembler",
+        "version": null
+      },
+      "availability": {
+        "status": "unavailable",
+        "code": "unsupported_host",
+        "reason": "Hopper integration is not supported on win32."
+      }
+    },
+    {
+      "provider": {
+        "id": "ida",
+        "name": "IDA Pro MCP adapter",
+        "version": "1"
+      },
+      "availability": {
+        "status": "unavailable",
+        "code": "not_configured",
+        "reason": "Set REA_IDA_MCP_CONFIG to an upstream IDA MCP JSON registration; see docs/ida-provider.md."
+      }
+    }
+  ],
+  "operations": [
+    {
+      "name": "analyze_javascript_application",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "compare_managed_members",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "decompile_jeb_item",
+      "available": false,
+      "reason": "provider_missing"
+    },
+    {
+      "name": "import_managed_reconstruction",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "inspect_analysis_view",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "inspect_artifact",
+      "available": false,
+      "reason": "target_required"
+    },
+    {
+      "name": "inspect_jeb_client",
+      "available": false,
+      "reason": "provider_missing"
+    },
+    {
+      "name": "inspect_managed_artifact",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "inspect_managed_members",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "inspect_managed_native_boundaries",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "inspect_pe_resources",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "list_jeb_units",
+      "available": false,
+      "reason": "provider_missing"
+    },
+    {
+      "name": "open_jeb_project",
+      "available": false,
+      "reason": "provider_missing"
+    },
+    {
+      "name": "project_managed_application_graph",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "recover_javascript_sources",
+      "available": false,
+      "reason": "provider_missing"
+    },
+    {
+      "name": "trace_application_feature",
+      "available": true,
+      "reason": "available"
+    },
+    {
+      "name": "verify_managed_native_boundaries",
+      "available": true,
+      "reason": "available"
+    }
+  ]
+}

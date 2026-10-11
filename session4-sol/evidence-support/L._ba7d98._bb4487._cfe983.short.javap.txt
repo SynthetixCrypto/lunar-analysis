@@ -1,0 +1,85 @@
+public class L._ba7d98._bb4487._cfe983 {
+  public final java.lang.String _e4305e;
+
+  public final java.lang.String _d11b90;
+
+  public final java.lang.String _7e0c97;
+
+  public final java.lang.String _7e9dfc;
+
+  public final java.lang.String _008973;
+
+  public final L._88f3cf._bb4487._23f752._d4ca6c._1e73d7 _a24a13;
+
+  public L._ba7d98._bb4487._cfe983(L._ba7d98._bb4487._21aca6, L._88f3cf._bb4487._23f752._d4ca6c._1e73d7);
+    Code:
+       0: aload_0
+       1: invokespecial #20                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: getfield      #19                 // Field L/_ba7d98/_bb4487/_21aca6.server:Ljava/lang/String;
+       9: putfield      #11                 // Field _e4305e:Ljava/lang/String;
+      12: aload_0
+      13: aload_1
+      14: getfield      #17                 // Field L/_ba7d98/_bb4487/_21aca6._d11b90:Ljava/lang/String;
+      17: putfield      #13                 // Field _d11b90:Ljava/lang/String;
+      20: aload_0
+      21: aload_1
+      22: getfield      #18                 // Field L/_ba7d98/_bb4487/_21aca6.mode:Ljava/lang/String;
+      25: putfield      #10                 // Field _7e0c97:Ljava/lang/String;
+      28: aload_0
+      29: aload_1
+      30: getfield      #15                 // Field L/_ba7d98/_bb4487/_21aca6._465386:Ljava/lang/String;
+      33: putfield      #14                 // Field _7e9dfc:Ljava/lang/String;
+      36: aload_0
+      37: aload_1
+      38: getfield      #16                 // Field L/_ba7d98/_bb4487/_21aca6._008973:Ljava/lang/String;
+      41: putfield      #12                 // Field _008973:Ljava/lang/String;
+      44: aload_0
+      45: aload_2
+      46: putfield      #9                  // Field _a24a13:LL/_88f3cf/_bb4487/_23f752/_d4ca6c/_1e73d7;
+      49: return
+
+  public boolean _7aeeba();
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field _008973:Ljava/lang/String;
+       4: ifnull        11
+       7: iconst_1
+       8: goto          12
+      11: iconst_0
+      12: ireturn
+
+  public boolean _a0d857();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field _e4305e:Ljava/lang/String;
+       4: invokevirtual #21                 // Method java/lang/String.isEmpty:()Z
+       7: ifeq          24
+      10: aload_0
+      11: getfield      #13                 // Field _d11b90:Ljava/lang/String;
+      14: invokevirtual #21                 // Method java/lang/String.isEmpty:()Z
+      17: ifeq          24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field _e4305e:Ljava/lang/String;
+       4: aload_0
+       5: getfield      #13                 // Field _d11b90:Ljava/lang/String;
+       8: aload_0
+       9: getfield      #10                 // Field _7e0c97:Ljava/lang/String;
+      12: aload_0
+      13: getfield      #14                 // Field _7e9dfc:Ljava/lang/String;
+      16: aload_0
+      17: getfield      #12                 // Field _008973:Ljava/lang/String;
+      20: aload_0
+      21: getfield      #9                  // Field _a24a13:LL/_88f3cf/_bb4487/_23f752/_d4ca6c/_1e73d7;
+      24: invokestatic  #22                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      27: invokedynamic #24,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      32: areturn
+}

@@ -1,0 +1,44 @@
+public class L._ec7e36._429bf0 extends L._ec7e36._cfe983 {
+private boolean _8aa658;
+protected L._ec7e36._429bf0(java.lang.String, com.lunarclient.dfu.serialization.Codec<java.lang.Boolean>, java.lang.Boolean);
+Code:
+0: aload_0
+1: aload_1
+2: aload_2
+3: aload_3
+4: invokevirtual // Method java/lang/Boolean.booleanValue
+7: invokespecial // Method L/_ec7e36/_cfe983."<init>"
+10: aload_0
+11: iconst_0
+12: putfield // Field _8aa658:Z
+15: return
+protected L._2f4182._1253fc._21aca6._6fc5d5<?> _a140a8(L._2f4182._1253fc._cfe983);
+Code:
+0: aload_0
+1: invokevirtual // Method getChildren
+4: invokeinterface #18, 1 // InterfaceMethod java/util/List.isEmpty
+9: ifne 22
+12: new // class L/_2f4182/_1253fc/_21aca6/_133367
+15: dup
+16: aload_0
+17: aload_1
+18: invokespecial // Method L/_2f4182/_1253fc/_21aca6/_133367."<init>"
+21: areturn
+22: new // class L/_2f4182/_1253fc/_21aca6/_f6e62b
+25: dup
+26: aload_0
+27: aload_1
+28: invokespecial // Method L/_2f4182/_1253fc/_21aca6/_f6e62b."<init>"
+31: areturn
+public boolean _104060();
+Code:
+0: aload_0
+1: getfield // Field _8aa658:Z
+4: ireturn
+public void _d93f43(boolean);
+Code:
+0: aload_0
+1: iload_1
+2: putfield // Field _8aa658:Z
+5: return
+}

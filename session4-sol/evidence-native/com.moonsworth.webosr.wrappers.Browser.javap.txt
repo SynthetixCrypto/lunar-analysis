@@ -1,0 +1,80 @@
+public final class com.moonsworth.webosr.wrappers.Browser extends com.moonsworth.webosr.NativeHandle {
+  private com.moonsworth.webosr.wrappers.Browser(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #9                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void loadURL(java.lang.String);
+
+  public native java.lang.String getURL();
+
+  public native void next();
+
+  public native void previous();
+
+  public native void reload();
+
+  public native void stopLoad();
+
+  public native boolean hasFocus();
+
+  public native void setFocus(boolean);
+
+  public native boolean hasInputFocus();
+
+  public native void triggerResize(int, int);
+
+  public void triggerKeyEvent(java.lang.String, int, java.lang.String, int, com.moonsworth.webosr.input.Keyboard$Action, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: aload_3
+       4: iload         4
+       6: aload         5
+       8: invokevirtual #10                 // Method com/moonsworth/webosr/input/Keyboard$Action.getValue:()I
+      11: iload         6
+      13: invokevirtual #13                 // Method triggerKeyEvent:(Ljava/lang/String;ILjava/lang/String;III)V
+      16: return
+
+  public void triggerMouseEvent(com.moonsworth.webosr.input.Mouse$Button, com.moonsworth.webosr.input.Mouse$Action, int, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #12                 // Method com/moonsworth/webosr/input/Mouse$Button.getValue:()I
+       5: aload_2
+       6: invokevirtual #11                 // Method com/moonsworth/webosr/input/Mouse$Action.getValue:()I
+       9: iload_3
+      10: iload         4
+      12: iload         5
+      14: invokevirtual #14                 // Method triggerMouseEvent:(IIIII)V
+      17: return
+
+  private native void triggerMouseEvent(int, int, int, int, int);
+
+  private native void triggerKeyEvent(java.lang.String, int, java.lang.String, int, int, int);
+
+  public native void triggerScrollEvent(int, int, int, int, int);
+
+  public native int getTexture();
+
+  public native void setDeviceScaleFactor(double);
+
+  public native int getWidth();
+
+  public native int getHeight();
+
+  public native com.moonsworth.webosr.wrappers.NativeFuture eval(java.lang.String);
+
+  public native void evalNoResult(java.lang.String);
+
+  public native void bindFunction(java.lang.String, com.moonsworth.webosr.handler.FunctionJS);
+
+  public native void unbindFunction(java.lang.String);
+
+  public native void createInspector();
+
+  protected native void destroy();
+}

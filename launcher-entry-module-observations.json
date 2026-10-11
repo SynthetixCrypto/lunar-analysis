@@ -1,0 +1,733 @@
+[
+  {
+    "evidence_id": "ev_bf4e2ab96bf668eb30fda3079fd83d849246a29c125f2bc96b012a4e65ff93ca",
+    "parent": "ev_c5630573420a09f17aaa0bc744bdc75cf679447e3edc2dd6448ee48e2910ec5d",
+    "item": {
+      "node_id": "jag_node_01fb6090f627742a29e8a3a88c538b69ce02b8607c9195d11923de929ad62141",
+      "kind": "javascript-module",
+      "path": "resources/app.asar/dist-electron/electron/index.js",
+      "identity": {
+        "strategy": "artifact-local-key",
+        "stability": "artifact-version",
+        "artifact_sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+        "namespace": "module-export",
+        "key": "[\"506574f17a6b7aeb5a13fe5f53fc83329fa705141505dde30ec88e00aa03a9f4\",\"resources/app.asar/dist-electron/electron/index.js\",\"default\"]"
+      },
+      "hashes": [],
+      "exports": [],
+      "source_ranges": [
+        {
+          "kind": "source-range",
+          "source": "resources/app.asar/dist-electron/electron/index.js",
+          "start": {
+            "line": 1,
+            "column": 1355
+          },
+          "end": {
+            "line": 1,
+            "column": 2038
+          }
+        },
+        {
+          "kind": "source-range",
+          "source": "resources/app.asar/dist-electron/electron/index.js",
+          "start": {
+            "line": 1,
+            "column": 2066
+          },
+          "end": {
+            "line": 1,
+            "column": 2082
+          }
+        }
+      ],
+      "observations": [
+        {
+          "observation_id": "jag_observation_61642fa858b150bcba63df14f47c0e333422b43333d4953429c0e72c93933d95",
+          "label": "resources/app.asar/dist-electron/electron/index.js:default:return-shapes",
+          "properties": {
+            "semantic_role": "export-return-shapes",
+            "module_path": "resources/app.asar/dist-electron/electron/index.js",
+            "exported_name": "default",
+            "callable_id": "callable:function:1355:2038",
+            "callable_kind": "function",
+            "static_return_shapes": [
+              {
+                "source_range": {
+                  "start": {
+                    "line": 1,
+                    "column": 1815
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 2001
+                  }
+                },
+                "value_status": "unknown",
+                "fields": [
+                  {
+                    "path": "",
+                    "presence": "present",
+                    "state": "unknown",
+                    "value": null,
+                    "reason": "Unsupported SequenceExpression value."
+                  }
+                ],
+                "property_coverage": []
+              }
+            ],
+            "return_shape_coverage": {
+              "status": "complete",
+              "retained_return_sites": 1,
+              "omitted_return_sites": 0,
+              "omitted_fields": 0,
+              "omitted_property_coverage": 0,
+              "projection_complete": true
+            }
+          },
+          "evidence": {
+            "authority": "static-relationship-inference",
+            "state": "inferred",
+            "confidence": "high",
+            "artifact": {
+              "available": true,
+              "artifact_id": "art_7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+              "sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337"
+            },
+            "location": {
+              "available": true,
+              "value": {
+                "kind": "source-range",
+                "source": "resources/app.asar/dist-electron/electron/index.js",
+                "start": {
+                  "line": 1,
+                  "column": 1355
+                },
+                "end": {
+                  "line": 1,
+                  "column": 2038
+                }
+              }
+            },
+            "extractor": {
+              "name": "rea-javascript-artifact-reconstruction",
+              "version": "1",
+              "operation": "recover-export-return-shapes",
+              "executable_sha256": null
+            },
+            "coverage": {
+              "status": "complete",
+              "truncated": false,
+              "omitted_count": 0,
+              "limits": []
+            },
+            "limitations": [
+              "Cross-function mutation and dynamic property resolution remain unknown.",
+              "Local call, argument, return, and closure relations are static candidates and do not prove runtime invocation.",
+              "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+              "Return shapes are inferred from inert syntax and do not prove runtime behavior.",
+              "Return sites include only direct callable returns; nested callable returns remain separate.",
+              "Static syntax does not prove that this relationship executes at runtime.",
+              "Values and aliases were recovered from inert syntax only; no JavaScript was executed."
+            ],
+            "evidence_ids": []
+          }
+        },
+        {
+          "observation_id": "jag_observation_77bba3957d0b15a3d3237f886609d814955a4e383cd7319036cda0a7ea6317b9",
+          "label": "resources/app.asar/dist-electron/electron/index.js:default",
+          "properties": {
+            "semantic_role": "export-binding",
+            "module_path": "resources/app.asar/dist-electron/electron/index.js",
+            "relationship_kind": "commonjs-export",
+            "exported_name": "default",
+            "local_name": "i",
+            "imported_name": null,
+            "declared_specifier": null
+          },
+          "evidence": {
+            "authority": "ast-static-analysis",
+            "state": "observed",
+            "confidence": "exact",
+            "artifact": {
+              "available": true,
+              "artifact_id": "art_7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+              "sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337"
+            },
+            "location": {
+              "available": true,
+              "value": {
+                "kind": "source-range",
+                "source": "resources/app.asar/dist-electron/electron/index.js",
+                "start": {
+                  "line": 1,
+                  "column": 2066
+                },
+                "end": {
+                  "line": 1,
+                  "column": 2082
+                }
+              }
+            },
+            "extractor": {
+              "name": "rea-javascript-artifact-reconstruction",
+              "version": "1",
+              "operation": "recover-module-export",
+              "executable_sha256": null
+            },
+            "coverage": {
+              "status": "complete",
+              "truncated": false,
+              "omitted_count": 0,
+              "limits": []
+            },
+            "limitations": [
+              "Cross-function mutation and dynamic property resolution remain unknown.",
+              "Local call, argument, return, and closure relations are static candidates and do not prove runtime invocation.",
+              "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+              "Return sites include only direct callable returns; nested callable returns remain separate.",
+              "Values and aliases were recovered from inert syntax only; no JavaScript was executed."
+            ],
+            "evidence_ids": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "evidence_id": "ev_0006086c6836c4aa4b6781109c2e342d27b93f1d7c151443599fc9cc84896138",
+    "parent": "ev_c5630573420a09f17aaa0bc744bdc75cf679447e3edc2dd6448ee48e2910ec5d",
+    "item": {
+      "node_id": "jag_node_231c1c0f171305fffd4f5b367db9e571a605e7cf63a2b235c30d6b562e5c83ca",
+      "kind": "javascript-module",
+      "path": "resources/app.asar/dist-electron/electron/index.js",
+      "identity": {
+        "strategy": "artifact-local-key",
+        "stability": "artifact-version",
+        "artifact_sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+        "namespace": "unresolved-reference",
+        "key": "require:node:path"
+      },
+      "hashes": [],
+      "exports": [],
+      "source_ranges": [
+        {
+          "kind": "source-range",
+          "source": "resources/app.asar/dist-electron/electron/index.js",
+          "start": {
+            "line": 1,
+            "column": 477
+          },
+          "end": {
+            "line": 1,
+            "column": 497
+          }
+        }
+      ],
+      "observations": [
+        {
+          "observation_id": "jag_observation_bc5595a7ec7b0a93390c71c0a8e5718884d5b7a8d88761faa141ac771e132a2e",
+          "label": "node:path",
+          "properties": {
+            "reference_kind": "require",
+            "specifier": "node:path",
+            "expression": null,
+            "resolution": "unresolved"
+          },
+          "evidence": {
+            "authority": "static-relationship-inference",
+            "state": "inferred",
+            "confidence": "low",
+            "artifact": {
+              "available": true,
+              "artifact_id": "art_7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+              "sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337"
+            },
+            "location": {
+              "available": true,
+              "value": {
+                "kind": "source-range",
+                "source": "resources/app.asar/dist-electron/electron/index.js",
+                "start": {
+                  "line": 1,
+                  "column": 477
+                },
+                "end": {
+                  "line": 1,
+                  "column": 497
+                }
+              }
+            },
+            "extractor": {
+              "name": "rea-javascript-artifact-reconstruction",
+              "version": "1",
+              "operation": "resolve-static-reference",
+              "executable_sha256": null
+            },
+            "coverage": {
+              "status": "complete",
+              "truncated": false,
+              "omitted_count": 0,
+              "limits": []
+            },
+            "limitations": [
+              "Static syntax does not prove that this relationship executes at runtime.",
+              "The static reference could not be resolved within the inventoried artifact."
+            ],
+            "evidence_ids": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "evidence_id": "ev_a20d5944b545e1d73eeb6c121faff88a5237dea7ab15bf73ac8823f9584c0fbe",
+    "parent": "ev_c5630573420a09f17aaa0bc744bdc75cf679447e3edc2dd6448ee48e2910ec5d",
+    "item": {
+      "node_id": "jag_node_39e301db2877d27c3e20666d6af0ab1b984559471361dc756d873ba82ee2b721",
+      "kind": "javascript-module",
+      "path": "resources/app.asar/dist-electron/electron/index.js",
+      "identity": {
+        "strategy": "artifact-local-key",
+        "stability": "artifact-version",
+        "artifact_sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+        "namespace": "unresolved-semantic-module",
+        "key": "external:node:path"
+      },
+      "hashes": [],
+      "exports": [],
+      "source_ranges": [
+        {
+          "kind": "source-range",
+          "source": "resources/app.asar/dist-electron/electron/index.js",
+          "start": {
+            "line": 1,
+            "column": 475
+          },
+          "end": {
+            "line": 1,
+            "column": 497
+          }
+        }
+      ],
+      "observations": [
+        {
+          "observation_id": "jag_observation_b5cb672d9d65b4ad8a7738a0bb1b5fdb9471f8a9a87bd17c1e172816a6219a58",
+          "label": "node:path",
+          "properties": {
+            "semantic_role": "module-reference",
+            "declared_specifier": "node:path",
+            "resolution_status": "external"
+          },
+          "evidence": {
+            "authority": "static-relationship-inference",
+            "state": "inferred",
+            "confidence": "low",
+            "artifact": {
+              "available": true,
+              "artifact_id": "art_7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+              "sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337"
+            },
+            "location": {
+              "available": true,
+              "value": {
+                "kind": "source-range",
+                "source": "resources/app.asar/dist-electron/electron/index.js",
+                "start": {
+                  "line": 1,
+                  "column": 475
+                },
+                "end": {
+                  "line": 1,
+                  "column": 497
+                }
+              }
+            },
+            "extractor": {
+              "name": "rea-javascript-artifact-reconstruction",
+              "version": "1",
+              "operation": "retain-unresolved-semantic-module",
+              "executable_sha256": null
+            },
+            "coverage": {
+              "status": "complete",
+              "truncated": false,
+              "omitted_count": 0,
+              "limits": []
+            },
+            "limitations": [
+              "Cross-function mutation and dynamic property resolution remain unknown.",
+              "Local call, argument, return, and closure relations are static candidates and do not prove runtime invocation.",
+              "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+              "Return sites include only direct callable returns; nested callable returns remain separate.",
+              "Static syntax does not prove that this relationship executes at runtime.",
+              "Values and aliases were recovered from inert syntax only; no JavaScript was executed."
+            ],
+            "evidence_ids": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "evidence_id": "ev_456247cb551a5b961a263647fb4da2dd2e2f63b215a28324572936fda68713e0",
+    "parent": "ev_c5630573420a09f17aaa0bc744bdc75cf679447e3edc2dd6448ee48e2910ec5d",
+    "item": {
+      "node_id": "jag_node_435551921f3d644ef6491db8ea01f6843a5a7d44d934d76a31fc74e75886fb13",
+      "kind": "javascript-module",
+      "path": "resources/app.asar/dist-electron/electron/index.js",
+      "identity": {
+        "strategy": "artifact-local-key",
+        "stability": "artifact-version",
+        "artifact_sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+        "namespace": "unresolved-reference",
+        "key": "require:require(r)"
+      },
+      "hashes": [],
+      "exports": [],
+      "source_ranges": [
+        {
+          "kind": "source-range",
+          "source": "resources/app.asar/dist-electron/electron/index.js",
+          "start": {
+            "line": 1,
+            "column": 1652
+          },
+          "end": {
+            "line": 1,
+            "column": 1662
+          }
+        }
+      ],
+      "observations": [
+        {
+          "observation_id": "jag_observation_a7254a8032896f90712ddd28d55000dcf26ff1148bc6add6f9a971fc5fff8cb0",
+          "label": null,
+          "properties": {
+            "reference_kind": "require",
+            "specifier": null,
+            "expression": "require(r)",
+            "resolution": "unresolved"
+          },
+          "evidence": {
+            "authority": "static-relationship-inference",
+            "state": "inferred",
+            "confidence": "low",
+            "artifact": {
+              "available": true,
+              "artifact_id": "art_7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+              "sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337"
+            },
+            "location": {
+              "available": true,
+              "value": {
+                "kind": "source-range",
+                "source": "resources/app.asar/dist-electron/electron/index.js",
+                "start": {
+                  "line": 1,
+                  "column": 1652
+                },
+                "end": {
+                  "line": 1,
+                  "column": 1662
+                }
+              }
+            },
+            "extractor": {
+              "name": "rea-javascript-artifact-reconstruction",
+              "version": "1",
+              "operation": "resolve-static-reference",
+              "executable_sha256": null
+            },
+            "coverage": {
+              "status": "complete",
+              "truncated": false,
+              "omitted_count": 0,
+              "limits": []
+            },
+            "limitations": [
+              "Static syntax does not prove that this relationship executes at runtime.",
+              "The static reference could not be resolved within the inventoried artifact."
+            ],
+            "evidence_ids": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "evidence_id": "ev_a12cb79662f3318d38c67434a0575d447916c37d176ab22aebda58ec1bdadf34",
+    "parent": "ev_c5630573420a09f17aaa0bc744bdc75cf679447e3edc2dd6448ee48e2910ec5d",
+    "item": {
+      "node_id": "jag_node_aa9e083c6402b30ec8dde588712cab4038faf6967f2e636f8fdef056fe330cba",
+      "kind": "javascript-module",
+      "path": "resources/app.asar/dist-electron/electron/index.js",
+      "identity": {
+        "strategy": "artifact-local-key",
+        "stability": "artifact-version",
+        "artifact_sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+        "namespace": "source-module",
+        "key": "506574f17a6b7aeb5a13fe5f53fc83329fa705141505dde30ec88e00aa03a9f4:resources/app.asar/dist-electron/electron/index.js"
+      },
+      "hashes": [
+        "506574f17a6b7aeb5a13fe5f53fc83329fa705141505dde30ec88e00aa03a9f4"
+      ],
+      "exports": [
+        "default"
+      ],
+      "source_ranges": [
+        {
+          "kind": "source-range",
+          "source": "resources/app.asar/dist-electron/electron/index.js",
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 33
+          }
+        }
+      ],
+      "observations": [
+        {
+          "observation_id": "jag_observation_e0f0d92ed9c9b986b19d6e1136465b908042ba254585e77706de8ef2956ef909",
+          "label": "resources/app.asar/dist-electron/electron/index.js",
+          "properties": {
+            "semantic_role": "source-module",
+            "path": "resources/app.asar/dist-electron/electron/index.js",
+            "container_sha256": "506574f17a6b7aeb5a13fe5f53fc83329fa705141505dde30ec88e00aa03a9f4",
+            "logical_module_key": "resources/app.asar/dist-electron/electron/index.js",
+            "module_format": "commonjs",
+            "import_relationships": 3,
+            "export_relationships": 1,
+            "export_names": [
+              "default"
+            ],
+            "omitted_export_names": 0
+          },
+          "evidence": {
+            "authority": "ast-static-analysis",
+            "state": "observed",
+            "confidence": "exact",
+            "artifact": {
+              "available": true,
+              "artifact_id": "art_7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+              "sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337"
+            },
+            "location": {
+              "available": true,
+              "value": {
+                "kind": "source-range",
+                "source": "resources/app.asar/dist-electron/electron/index.js",
+                "start": {
+                  "line": 1,
+                  "column": 0
+                },
+                "end": {
+                  "line": 2,
+                  "column": 33
+                }
+              }
+            },
+            "extractor": {
+              "name": "rea-javascript-artifact-reconstruction",
+              "version": "1",
+              "operation": "recover-source-module",
+              "executable_sha256": null
+            },
+            "coverage": {
+              "status": "complete",
+              "truncated": false,
+              "omitted_count": 0,
+              "limits": []
+            },
+            "limitations": [
+              "Cross-function mutation and dynamic property resolution remain unknown.",
+              "Local call, argument, return, and closure relations are static candidates and do not prove runtime invocation.",
+              "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+              "Return sites include only direct callable returns; nested callable returns remain separate.",
+              "Values and aliases were recovered from inert syntax only; no JavaScript was executed."
+            ],
+            "evidence_ids": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "evidence_id": "ev_f980a098936a1b85e11f95323ebefc31c2aafda884a2eb2eef553501a9c24991",
+    "parent": "ev_c5630573420a09f17aaa0bc744bdc75cf679447e3edc2dd6448ee48e2910ec5d",
+    "item": {
+      "node_id": "jag_node_ef7226f90bfb939f947a5f2c89f3a16f1228fd0286ed4193671d441c9345c9b1",
+      "kind": "javascript-module",
+      "path": "resources/app.asar/dist-electron/electron/index.js",
+      "identity": {
+        "strategy": "artifact-local-key",
+        "stability": "artifact-version",
+        "artifact_sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+        "namespace": "unresolved-semantic-module",
+        "key": "external:process"
+      },
+      "hashes": [],
+      "exports": [],
+      "source_ranges": [
+        {
+          "kind": "source-range",
+          "source": "resources/app.asar/dist-electron/electron/index.js",
+          "start": {
+            "line": 1,
+            "column": 441
+          },
+          "end": {
+            "line": 1,
+            "column": 461
+          }
+        }
+      ],
+      "observations": [
+        {
+          "observation_id": "jag_observation_c3b74f172ff946dc3a0bac14ed98e0b9ef1e3607bf47218cf62745f997153e50",
+          "label": "process",
+          "properties": {
+            "semantic_role": "module-reference",
+            "declared_specifier": "process",
+            "resolution_status": "external"
+          },
+          "evidence": {
+            "authority": "static-relationship-inference",
+            "state": "inferred",
+            "confidence": "low",
+            "artifact": {
+              "available": true,
+              "artifact_id": "art_7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+              "sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337"
+            },
+            "location": {
+              "available": true,
+              "value": {
+                "kind": "source-range",
+                "source": "resources/app.asar/dist-electron/electron/index.js",
+                "start": {
+                  "line": 1,
+                  "column": 441
+                },
+                "end": {
+                  "line": 1,
+                  "column": 461
+                }
+              }
+            },
+            "extractor": {
+              "name": "rea-javascript-artifact-reconstruction",
+              "version": "1",
+              "operation": "retain-unresolved-semantic-module",
+              "executable_sha256": null
+            },
+            "coverage": {
+              "status": "complete",
+              "truncated": false,
+              "omitted_count": 0,
+              "limits": []
+            },
+            "limitations": [
+              "Cross-function mutation and dynamic property resolution remain unknown.",
+              "Local call, argument, return, and closure relations are static candidates and do not prove runtime invocation.",
+              "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+              "Return sites include only direct callable returns; nested callable returns remain separate.",
+              "Static syntax does not prove that this relationship executes at runtime.",
+              "Values and aliases were recovered from inert syntax only; no JavaScript was executed."
+            ],
+            "evidence_ids": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "evidence_id": "ev_3da9aea0ca1afef9703853e5ca7f74fb1da808c532296ed87ee9e2952ed0971d",
+    "parent": "ev_c5630573420a09f17aaa0bc744bdc75cf679447e3edc2dd6448ee48e2910ec5d",
+    "item": {
+      "node_id": "jag_node_f6064eb26a48417af86962d893f8bfac2f159c41d0ca220aa1ccbdcf60543357",
+      "kind": "javascript-module",
+      "path": "resources/app.asar/dist-electron/electron/index.js",
+      "identity": {
+        "strategy": "artifact-local-key",
+        "stability": "artifact-version",
+        "artifact_sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+        "namespace": "unresolved-reference",
+        "key": "require:process"
+      },
+      "hashes": [],
+      "exports": [],
+      "source_ranges": [
+        {
+          "kind": "source-range",
+          "source": "resources/app.asar/dist-electron/electron/index.js",
+          "start": {
+            "line": 1,
+            "column": 443
+          },
+          "end": {
+            "line": 1,
+            "column": 461
+          }
+        }
+      ],
+      "observations": [
+        {
+          "observation_id": "jag_observation_f3df05f90f788088e2d6c9fea30a179ae71e74199386ed30d8cb5d4d6e39b87a",
+          "label": "process",
+          "properties": {
+            "reference_kind": "require",
+            "specifier": "process",
+            "expression": null,
+            "resolution": "unresolved"
+          },
+          "evidence": {
+            "authority": "static-relationship-inference",
+            "state": "inferred",
+            "confidence": "low",
+            "artifact": {
+              "available": true,
+              "artifact_id": "art_7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337",
+              "sha256": "7c35ba7ec114d14f2bc7fd78b1f8252a7d3c875dddcdcb844f3dcf2b8e083337"
+            },
+            "location": {
+              "available": true,
+              "value": {
+                "kind": "source-range",
+                "source": "resources/app.asar/dist-electron/electron/index.js",
+                "start": {
+                  "line": 1,
+                  "column": 443
+                },
+                "end": {
+                  "line": 1,
+                  "column": 461
+                }
+              }
+            },
+            "extractor": {
+              "name": "rea-javascript-artifact-reconstruction",
+              "version": "1",
+              "operation": "resolve-static-reference",
+              "executable_sha256": null
+            },
+            "coverage": {
+              "status": "complete",
+              "truncated": false,
+              "omitted_count": 0,
+              "limits": []
+            },
+            "limitations": [
+              "Static syntax does not prove that this relationship executes at runtime.",
+              "The static reference could not be resolved within the inventoried artifact."
+            ],
+            "evidence_ids": []
+          }
+        }
+      ]
+    }
+  }
+]

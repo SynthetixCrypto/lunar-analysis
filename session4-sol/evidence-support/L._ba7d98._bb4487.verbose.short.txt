@@ -1,0 +1,336 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/L/_ba7d98/_bb4487.class
+  Last modified Dec 31, 1969; size 3207 bytes
+  SHA-256 checksum 79a6b18dd1ff1365260db75e705ec30c8189582f7072eed7fdef9cd439d03a3e
+public class L._ba7d98._bb4487
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #3                          // L/_ba7d98/_bb4487
+  super_class: #5                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 6, attributes: 2
+Constant pool:
+    #1 = Class              #98           // com/google/common/collect/Sets
+    #2 = Class              #99           // L/_ba7d98/_cfe983
+    #3 = Class              #100          // L/_ba7d98/_bb4487
+    #4 = Class              #101          // L/_d4ca6c/_590f69
+    #5 = Class              #106          // java/lang/Object
+    #6 = Class              #107          // java/lang/invoke/LambdaMetafactory
+    #7 = Class              #108          // java/lang/invoke/MethodHandles
+    #8 = Class              #109          // java/lang/invoke/MethodHandles$Lookup
+    #9 = Class              #110          // java/util/IdentityHashMap
+   #10 = Class              #111          // java/util/Iterator
+   #11 = Class              #112          // java/util/Set
+   #12 = Class              #113          // java/util/function/Supplier
+   #13 = Fieldref           #3.#40        // L/_ba7d98/_bb4487._09fa7a:Ljava/lang/Runnable;
+   #14 = Fieldref           #3.#43        // L/_ba7d98/_bb4487._099cf8:Ljava/util/Set;
+   #15 = Fieldref           #3.#44        // L/_ba7d98/_bb4487._d85646:Ljava/util/Set;
+   #16 = Methodref          #1.#55        // com/google/common/collect/Sets.newSetFromMap:(Ljava/util/Map;)Ljava/util/Set;
+   #17 = Methodref          #3.#38        // L/_ba7d98/_bb4487."<init>":(Ljava/lang/Runnable;)V
+   #18 = Methodref          #3.#39        // L/_ba7d98/_bb4487._4cf8c3:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+   #19 = Methodref          #4.#41        // L/_d4ca6c/_590f69._0a8e8a:()Z
+   #20 = Methodref          #4.#46        // L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+   #21 = Methodref          #4.#47        // L/_d4ca6c/_590f69._590f69:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+   #22 = Methodref          #5.#37        // java/lang/Object."<init>":()V
+   #23 = Methodref          #6.#54        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #24 = Methodref          #9.#37        // java/util/IdentityHashMap."<init>":()V
+   #25 = InterfaceMethodref #2.#42        // L/_ba7d98/_cfe983._7fbb1e:(Ljava/lang/Runnable;)V
+   #26 = InterfaceMethodref #2.#45        // L/_ba7d98/_cfe983._32565b:(Ljava/lang/Runnable;)V
+   #27 = InterfaceMethodref #10.#52       // java/util/Iterator.hasNext:()Z
+   #28 = InterfaceMethodref #10.#56       // java/util/Iterator.next:()Ljava/lang/Object;
+   #29 = InterfaceMethodref #10.#57       // java/util/Iterator.remove:()V
+   #30 = InterfaceMethodref #11.#48       // java/util/Set.add:(Ljava/lang/Object;)Z
+   #31 = InterfaceMethodref #11.#49       // java/util/Set.contains:(Ljava/lang/Object;)Z
+   #32 = InterfaceMethodref #11.#53       // java/util/Set.iterator:()Ljava/util/Iterator;
+   #33 = InterfaceMethodref #12.#50       // java/util/function/Supplier.get:()Ljava/lang/Object;
+   #34 = InvokeDynamic      #0:#51        // #0:get:(LL/_ba7d98/_bb4487;Ljava/util/function/Supplier;)Ljava/util/function/Supplier;
+   #35 = MethodHandle       5:#18         // REF_invokeVirtual L/_ba7d98/_bb4487._4cf8c3:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+   #36 = MethodHandle       6:#23         // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #37 = NameAndType        #74:#62       // "<init>":()V
+   #38 = NameAndType        #74:#68       // "<init>":(Ljava/lang/Runnable;)V
+   #39 = NameAndType        #76:#71       // _4cf8c3:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+   #40 = NameAndType        #77:#87       // _09fa7a:Ljava/lang/Runnable;
+   #41 = NameAndType        #80:#63       // _0a8e8a:()Z
+   #42 = NameAndType        #81:#68       // _7fbb1e:(Ljava/lang/Runnable;)V
+   #43 = NameAndType        #83:#88       // _099cf8:Ljava/util/Set;
+   #44 = NameAndType        #91:#88       // _d85646:Ljava/util/Set;
+   #45 = NameAndType        #92:#68       // _32565b:(Ljava/lang/Runnable;)V
+   #46 = NameAndType        #93:#59       // _20bc5b:()LL/_d4ca6c/_590f69;
+   #47 = NameAndType        #94:#71       // _590f69:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+   #48 = NameAndType        #97:#66       // add:(Ljava/lang/Object;)Z
+   #49 = NameAndType        #102:#66      // contains:(Ljava/lang/Object;)Z
+   #50 = NameAndType        #103:#60      // get:()Ljava/lang/Object;
+   #51 = NameAndType        #103:#65      // get:(LL/_ba7d98/_bb4487;Ljava/util/function/Supplier;)Ljava/util/function/Supplier;
+   #52 = NameAndType        #104:#63      // hasNext:()Z
+   #53 = NameAndType        #105:#61      // iterator:()Ljava/util/Iterator;
+   #54 = NameAndType        #114:#69      // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #55 = NameAndType        #115:#70      // newSetFromMap:(Ljava/util/Map;)Ljava/util/Set;
+   #56 = NameAndType        #116:#60      // next:()Ljava/lang/Object;
+   #57 = NameAndType        #117:#62      // remove:()V
+   #58 = MethodType         #60           //  ()Ljava/lang/Object;
+   #59 = Utf8               ()LL/_d4ca6c/_590f69;
+   #60 = Utf8               ()Ljava/lang/Object;
+   #61 = Utf8               ()Ljava/util/Iterator;
+   #62 = Utf8               ()V
+   #63 = Utf8               ()Z
+   #64 = Utf8               (LL/_ba7d98/_cfe983;)V
+   #65 = Utf8               (LL/_ba7d98/_bb4487;Ljava/util/function/Supplier;)Ljava/util/function/Supplier;
+   #66 = Utf8               (Ljava/lang/Object;)Z
+   #67 = Utf8               (Ljava/lang/Runnable;)LL/_ba7d98/_bb4487;
+   #68 = Utf8               (Ljava/lang/Runnable;)V
+   #69 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #70 = Utf8               (Ljava/util/Map;)Ljava/util/Set;
+   #71 = Utf8               (Ljava/util/function/Supplier;)Ljava/lang/Object;
+   #72 = Utf8               <T:Ljava/lang/Object;>(Ljava/util/function/Supplier<TT;>;)TT;
+   #73 = Utf8               <clinit>
+   #74 = Utf8               <init>
+   #75 = Utf8               BootstrapMethods
+   #76 = Utf8               _4cf8c3
+   #77 = Utf8               _09fa7a
+   #78 = Utf8               _cfe983
+   #79 = Utf8               Code
+   #80 = Utf8               _0a8e8a
+   #81 = Utf8               _7fbb1e
+   #82 = Utf8               _c5ce95
+   #83 = Utf8               _099cf8
+   #84 = Utf8               _767dc1
+   #85 = Utf8               InnerClasses
+   #86 = Utf8               LineNumberTable
+   #87 = Utf8               Ljava/lang/Runnable;
+   #88 = Utf8               Ljava/util/Set;
+   #89 = Utf8               Ljava/util/Set<LL/_ba7d98/_cfe983;>;
+   #90 = Utf8               Lookup
+   #91 = Utf8               _d85646
+   #92 = Utf8               _32565b
+   #93 = Utf8               _20bc5b
+   #94 = Utf8               _590f69
+   #95 = Utf8               Signature
+   #96 = Utf8               StackMapTable
+   #97 = Utf8               add
+   #98 = Utf8               com/google/common/collect/Sets
+   #99 = Utf8               L/_ba7d98/_cfe983
+  #100 = Utf8               L/_ba7d98/_bb4487
+  #101 = Utf8               L/_d4ca6c/_590f69
+  #102 = Utf8               contains
+  #103 = Utf8               get
+  #104 = Utf8               hasNext
+  #105 = Utf8               iterator
+  #106 = Utf8               java/lang/Object
+  #107 = Utf8               java/lang/invoke/LambdaMetafactory
+  #108 = Utf8               java/lang/invoke/MethodHandles
+  #109 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #110 = Utf8               java/util/IdentityHashMap
+  #111 = Utf8               java/util/Iterator
+  #112 = Utf8               java/util/Set
+  #113 = Utf8               java/util/function/Supplier
+  #114 = Utf8               metafactory
+  #115 = Utf8               newSetFromMap
+  #116 = Utf8               next
+  #117 = Utf8               remove
+{
+  private static java.util.Set<L._ba7d98._cfe983> _d85646;
+    descriptor: Ljava/util/Set;
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    Signature: #89                          // Ljava/util/Set<LL/_ba7d98/_cfe983;>;
+
+  private final java.util.Set<L._ba7d98._cfe983> _099cf8;
+    descriptor: Ljava/util/Set;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #89                          // Ljava/util/Set<LL/_ba7d98/_cfe983;>;
+
+  private final java.lang.Runnable _09fa7a;
+    descriptor: Ljava/lang/Runnable;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private L._ba7d98._bb4487(java.lang.Runnable);
+    descriptor: (Ljava/lang/Runnable;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #22                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #9                  // class java/util/IdentityHashMap
+         8: dup
+         9: invokespecial #24                 // Method java/util/IdentityHashMap."<init>":()V
+        12: invokestatic  #16                 // Method com/google/common/collect/Sets.newSetFromMap:(Ljava/util/Map;)Ljava/util/Set;
+        15: putfield      #14                 // Field _099cf8:Ljava/util/Set;
+        18: aload_0
+        19: aload_1
+        20: putfield      #13                 // Field _09fa7a:Ljava/lang/Runnable;
+        23: return
+      LineNumberTable:
+        line 18: 0
+        line 15: 4
+        line 19: 18
+        line 20: 23
+
+  public static void _cfe983(L._ba7d98._cfe983);
+    descriptor: (LL/_ba7d98/_cfe983;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #15                 // Field _d85646:Ljava/util/Set;
+         3: ifnonnull     7
+         6: return
+         7: invokestatic  #20                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+        10: invokevirtual #19                 // Method L/_d4ca6c/_590f69._0a8e8a:()Z
+        13: ifne          17
+        16: return
+        17: getstatic     #15                 // Field _d85646:Ljava/util/Set;
+        20: aload_0
+        21: invokeinterface #30,  2           // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+        26: pop
+        27: return
+      LineNumberTable:
+        line 23: 0
+        line 24: 6
+        line 26: 7
+        line 27: 16
+        line 29: 17
+        line 30: 27
+      StackMapTable: number_of_entries = 2
+        frame_type = 7 /* same */
+        frame_type = 9 /* same */
+
+  public static L._ba7d98._bb4487 _767dc1(java.lang.Runnable);
+    descriptor: (Ljava/lang/Runnable;)LL/_ba7d98/_bb4487;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: new           #3                  // class L/_ba7d98/_bb4487
+         3: dup
+         4: aload_0
+         5: invokespecial #17                 // Method "<init>":(Ljava/lang/Runnable;)V
+         8: areturn
+      LineNumberTable:
+        line 33: 0
+
+  public <T extends java.lang.Object> T _c5ce95(java.util.function.Supplier<T>);
+    descriptor: (Ljava/util/function/Supplier;)Ljava/lang/Object;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: invokestatic  #20                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+         3: aload_0
+         4: aload_1
+         5: invokedynamic #34,  0             // InvokeDynamic #0:get:(LL/_ba7d98/_bb4487;Ljava/util/function/Supplier;)Ljava/util/function/Supplier;
+        10: invokevirtual #21                 // Method L/_d4ca6c/_590f69._590f69:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+        13: areturn
+      LineNumberTable:
+        line 37: 0
+    Signature: #72                          // <T:Ljava/lang/Object;>(Ljava/util/function/Supplier<TT;>;)TT;
+
+  private java.lang.Object _4cf8c3(java.util.function.Supplier);
+    descriptor: (Ljava/util/function/Supplier;)Ljava/lang/Object;
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=6, args_size=2
+         0: new           #9                  // class java/util/IdentityHashMap
+         3: dup
+         4: invokespecial #24                 // Method java/util/IdentityHashMap."<init>":()V
+         7: invokestatic  #16                 // Method com/google/common/collect/Sets.newSetFromMap:(Ljava/util/Map;)Ljava/util/Set;
+        10: astore_2
+        11: aload_2
+        12: putstatic     #15                 // Field _d85646:Ljava/util/Set;
+        15: aload_1
+        16: invokeinterface #33,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+        21: astore_3
+        22: aconst_null
+        23: putstatic     #15                 // Field _d85646:Ljava/util/Set;
+        26: aload_0
+        27: getfield      #14                 // Field _099cf8:Ljava/util/Set;
+        30: invokeinterface #32,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        35: astore        4
+        37: aload         4
+        39: invokeinterface #27,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        44: ifeq          91
+        47: aload         4
+        49: invokeinterface #28,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        54: checkcast     #2                  // class L/_ba7d98/_cfe983
+        57: astore        5
+        59: aload_2
+        60: aload         5
+        62: invokeinterface #31,  2           // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+        67: ifne          88
+        70: aload         5
+        72: aload_0
+        73: getfield      #13                 // Field _09fa7a:Ljava/lang/Runnable;
+        76: invokeinterface #26,  2           // InterfaceMethod L/_ba7d98/_cfe983._32565b:(Ljava/lang/Runnable;)V
+        81: aload         4
+        83: invokeinterface #29,  1           // InterfaceMethod java/util/Iterator.remove:()V
+        88: goto          37
+        91: aload_2
+        92: invokeinterface #32,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+        97: astore        4
+        99: aload         4
+       101: invokeinterface #27,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       106: ifeq          149
+       109: aload         4
+       111: invokeinterface #28,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       116: checkcast     #2                  // class L/_ba7d98/_cfe983
+       119: astore        5
+       121: aload_0
+       122: getfield      #14                 // Field _099cf8:Ljava/util/Set;
+       125: aload         5
+       127: invokeinterface #30,  2           // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+       132: ifeq          146
+       135: aload         5
+       137: aload_0
+       138: getfield      #13                 // Field _09fa7a:Ljava/lang/Runnable;
+       141: invokeinterface #25,  2           // InterfaceMethod L/_ba7d98/_cfe983._7fbb1e:(Ljava/lang/Runnable;)V
+       146: goto          99
+       149: aload_3
+       150: areturn
+      LineNumberTable:
+        line 38: 0
+        line 39: 11
+        line 40: 15
+        line 41: 22
+        line 43: 26
+        line 44: 47
+        line 45: 59
+        line 46: 70
+        line 47: 81
+        line 49: 88
+        line 50: 91
+        line 51: 121
+        line 52: 135
+        line 54: 146
+        line 56: 149
+      StackMapTable: number_of_entries = 6
+        frame_type = 255 /* full_frame */
+          offset_delta = 37
+          locals = [ class L/_ba7d98/_bb4487, top, class java/util/Set, class java/lang/Object, class java/util/Iterator ]
+          stack = []
+        frame_type = 50 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 7
+          locals = [ class L/_ba7d98/_bb4487, top, top, class java/lang/Object, class java/util/Iterator ]
+          stack = []
+        frame_type = 46 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 2
+          locals = [ top, top, top, class java/lang/Object ]
+          stack = []
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: aconst_null
+         1: putstatic     #15                 // Field _d85646:Ljava/util/Set;
+         4: return
+      LineNumberTable:
+        line 14: 0
+}
+BootstrapMethods:
+  0: #36 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #58 ()Ljava/lang/Object;
+      #35 REF_invokeVirtual L/_ba7d98/_bb4487._4cf8c3:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+      #58 ()Ljava/lang/Object;
+InnerClasses:
+  public static final #90= #8 of #7;      // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

@@ -1,0 +1,140 @@
+public class L._ec7e36._787dc3$_cfe983 extends L._ec7e36._cfe983._590f69<L._ec7e36._787dc3$_cfe983, L._ec7e36._787dc3, java.lang.String> {
+  private int _9da6b6;
+
+  private final java.util.List<java.util.function.Consumer<java.lang.String>> _e0aead;
+
+  private final java.util.List<java.util.function.Consumer<java.lang.String>> _df256a;
+
+  private java.util.function.Function<java.lang.String, java.lang.String> _b89f08;
+
+  private it.unimi.dsi.fastutil.chars.Char2ObjectFunction<java.lang.Character> _fcc8a5;
+
+  protected L._81676d._21aca6._1e73d7 _3b1127();
+    Code:
+       0: getstatic     #17                 // Field L/_81676d/_21aca6/_1e73d7.TEXT:LL/_81676d/_21aca6/_1e73d7;
+       3: areturn
+
+  protected com.lunarclient.dfu.serialization.Codec<java.lang.String> _6c7062();
+    Code:
+       0: getstatic     #16                 // Field com/lunarclient/dfu/serialization/Codec.STRING:Lcom/lunarclient/dfu/serialization/codecs/PrimitiveCodec;
+       3: areturn
+
+  protected L._ec7e36._787dc3$_cfe983(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #26                 // Method L/_ec7e36/_cfe983/_590f69."<init>":(Ljava/lang/String;)V
+       5: aload_0
+       6: sipush        256
+       9: putfield      #22                 // Field _9da6b6:I
+      12: aload_0
+      13: new           #14                 // class java/util/ArrayList
+      16: dup
+      17: iconst_0
+      18: invokespecial #33                 // Method java/util/ArrayList."<init>":(I)V
+      21: putfield      #20                 // Field _e0aead:Ljava/util/List;
+      24: aload_0
+      25: new           #14                 // class java/util/ArrayList
+      28: dup
+      29: iconst_0
+      30: invokespecial #33                 // Method java/util/ArrayList."<init>":(I)V
+      33: putfield      #18                 // Field _df256a:Ljava/util/List;
+      36: aload_0
+      37: invokedynamic #35,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      42: putfield      #21                 // Field _b89f08:Ljava/util/function/Function;
+      45: aload_0
+      46: invokedynamic #36,  0             // InvokeDynamic #1:get:()Lit/unimi/dsi/fastutil/chars/Char2ObjectFunction;
+      51: putfield      #23                 // Field _fcc8a5:Lit/unimi/dsi/fastutil/chars/Char2ObjectFunction;
+      54: return
+
+  public L._ec7e36._787dc3$_cfe983 _ab56c9(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #22                 // Field _9da6b6:I
+       5: aload_0
+       6: areturn
+
+  public L._ec7e36._787dc3$_cfe983 _3bf032(java.util.function.Consumer<java.lang.String>);
+    Code:
+       0: aload_0
+       1: getfield      #20                 // Field _e0aead:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #34,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      10: pop
+      11: aload_0
+      12: areturn
+
+  public L._ec7e36._787dc3$_cfe983 _f8005d(java.util.function.Consumer<java.lang.String>);
+    Code:
+       0: aload_0
+       1: getfield      #18                 // Field _df256a:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #34,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      10: pop
+      11: aload_0
+      12: areturn
+
+  public L._ec7e36._787dc3$_cfe983 _6c713e(java.util.function.Function<java.lang.String, java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #21                 // Field _b89f08:Ljava/util/function/Function;
+       5: aload_0
+       6: areturn
+
+  public L._ec7e36._787dc3$_cfe983 _cfe983(it.unimi.dsi.fastutil.chars.Char2ObjectFunction<java.lang.Character>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #23                 // Field _fcc8a5:Lit/unimi/dsi/fastutil/chars/Char2ObjectFunction;
+       5: aload_0
+       6: areturn
+
+  protected L._ec7e36._787dc3 _a659f4();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field defaultValue:Ljava/lang/Object;
+       4: ifnonnull     13
+       7: aload_0
+       8: ldc           #1                  // String
+      10: putfield      #25                 // Field defaultValue:Ljava/lang/Object;
+      13: new           #5                  // class L/_ec7e36/_787dc3
+      16: dup
+      17: aload_0
+      18: getfield      #19                 // Field _923909:Ljava/lang/String;
+      21: aload_0
+      22: getfield      #24                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+      25: aload_0
+      26: getfield      #25                 // Field defaultValue:Ljava/lang/Object;
+      29: checkcast     #10                 // class java/lang/String
+      32: aload_0
+      33: getfield      #22                 // Field _9da6b6:I
+      36: aload_0
+      37: getfield      #20                 // Field _e0aead:Ljava/util/List;
+      40: aload_0
+      41: getfield      #18                 // Field _df256a:Ljava/util/List;
+      44: aload_0
+      45: getfield      #21                 // Field _b89f08:Ljava/util/function/Function;
+      48: aload_0
+      49: getfield      #23                 // Field _fcc8a5:Lit/unimi/dsi/fastutil/chars/Char2ObjectFunction;
+      52: invokespecial #27                 // Method L/_ec7e36/_787dc3."<init>":(Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;Ljava/lang/String;ILjava/util/List;Ljava/util/List;Ljava/util/function/Function;Lit/unimi/dsi/fastutil/chars/Char2ObjectFunction;)V
+      55: areturn
+
+  protected L._ec7e36._dd3308 _aa113c();
+    Code:
+       0: aload_0
+       1: invokevirtual #29                 // Method _a659f4:()LL/_ec7e36/_787dc3;
+       4: areturn
+
+  private static java.lang.Character _d4ca6c(char);
+    Code:
+       0: iload_0
+       1: invokestatic  #31                 // Method java/lang/Character.valueOf:(C)Ljava/lang/Character;
+       4: areturn
+
+  private static java.lang.String _56ad7a(java.lang.String);
+    Code:
+       0: aload_0
+       1: areturn
+}

@@ -1,0 +1,114 @@
+public class L._ec7e36._7fbb1e$_cfe983 extends L._ec7e36._32565b$_cfe983<L._ec7e36._7fbb1e$_cfe983, L._ec7e36._7fbb1e, ML._590f69._a140a8._21aca6> {
+  private boolean _ee0323;
+
+  private boolean _11cae1;
+
+  protected L._ec7e36._7fbb1e$_cfe983(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #29                 // Method L/_ec7e36/_32565b$_cfe983."<init>":(Ljava/lang/String;)V
+       5: aload_0
+       6: iconst_0
+       7: putfield      #19                 // Field _ee0323:Z
+      10: aload_0
+      11: iconst_0
+      12: putfield      #17                 // Field _11cae1:Z
+      15: return
+
+  protected java.util.function.Function<L._ec7e36._7fbb1e, L._ec7e36._1e73d7._590f69> _b1332f();
+    Code:
+       0: aload_0
+       1: invokedynamic #34,  0             // InvokeDynamic #0:apply:(LL/_ec7e36/_7fbb1e$_cfe983;)Ljava/util/function/Function;
+       6: areturn
+
+  public L._ec7e36._7fbb1e$_cfe983 _8ec7c0(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #17                 // Field _11cae1:Z
+       5: aload_0
+       6: areturn
+
+  public L._ec7e36._7fbb1e$_cfe983 _63f6ac();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: putfield      #17                 // Field _11cae1:Z
+       5: aload_0
+       6: areturn
+
+  public L._ec7e36._7fbb1e$_cfe983 _491c23(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #19                 // Field _ee0323:Z
+       5: aload_0
+       6: areturn
+
+  public L._ec7e36._7fbb1e$_cfe983 _228f95();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: putfield      #19                 // Field _ee0323:Z
+       5: aload_0
+       6: areturn
+
+  protected L._ec7e36._7fbb1e _9ead80();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field defaultValue:Ljava/lang/Object;
+       4: ifnonnull     14
+       7: aload_0
+       8: getstatic     #15                 // Field ML/_590f69/_a140a8/_21aca6.KEY_NONE:LML/_590f69/_a140a8/_21aca6;
+      11: putfield      #22                 // Field defaultValue:Ljava/lang/Object;
+      14: aload_0
+      15: getfield      #21                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+      18: ifnonnull     38
+      21: aload_0
+      22: invokedynamic #35,  0             // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+      27: invokedynamic #36,  0             // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+      32: invokestatic  #33                 // InterfaceMethod com/lunarclient/dfu/serialization/Codec.stringResolver:(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/lunarclient/dfu/serialization/Codec;
+      35: putfield      #21                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+      38: new           #3                  // class L/_ec7e36/_7fbb1e
+      41: dup
+      42: aload_0
+      43: getfield      #16                 // Field _923909:Ljava/lang/String;
+      46: aload_0
+      47: getfield      #21                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+      50: aload_0
+      51: getfield      #22                 // Field defaultValue:Ljava/lang/Object;
+      54: checkcast     #2                  // class ML/_590f69/_a140a8/_21aca6
+      57: aload_0
+      58: getfield      #18                 // Field _b71927:Z
+      61: aload_0
+      62: getfield      #20                 // Field _15c913:Z
+      65: aload_0
+      66: getfield      #19                 // Field _ee0323:Z
+      69: aload_0
+      70: getfield      #17                 // Field _11cae1:Z
+      73: invokespecial #24                 // Method L/_ec7e36/_7fbb1e."<init>":(Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;LML/_590f69/_a140a8/_21aca6;ZZZZ)V
+      76: areturn
+
+  protected L._ec7e36._dd3308 _aa113c();
+    Code:
+       0: aload_0
+       1: invokevirtual #25                 // Method _9ead80:()LL/_ec7e36/_7fbb1e;
+       4: areturn
+
+  private static ML._590f69._a140a8._21aca6 _77cdf5(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokevirtual #31                 // Method java/lang/String.toUpperCase:()Ljava/lang/String;
+       4: invokestatic  #23                 // Method ML/_590f69/_a140a8/_21aca6.valueOf:(Ljava/lang/String;)LML/_590f69/_a140a8/_21aca6;
+       7: areturn
+
+  private L._ec7e36._1e73d7._590f69 _590f69(L._ec7e36._7fbb1e);
+    Code:
+       0: new           #5                  // class L/_ec7e36/_7fbb1e$_cfe983$1
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokespecial #28                 // Method L/_ec7e36/_7fbb1e$_cfe983$1."<init>":(LL/_ec7e36/_7fbb1e$_cfe983;LL/_ec7e36/_dd3308;)V
+       9: areturn
+}

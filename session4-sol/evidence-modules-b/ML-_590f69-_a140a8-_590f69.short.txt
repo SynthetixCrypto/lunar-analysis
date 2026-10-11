@@ -1,0 +1,37 @@
+public interface ML._590f69._a140a8._590f69 {
+  public abstract boolean _cfe983(ML._590f69._a140a8._21aca6);
+
+  public abstract java.lang.String _21aca6(ML._590f69._a140a8._21aca6);
+
+  public abstract void _145809(boolean);
+
+  public abstract int _590f69(ML._590f69._a140a8._21aca6);
+
+  public default boolean _998969(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #1                  // String KEY_
+       3: invokevirtual #11                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       6: ifne          16
+       9: aload_1
+      10: invokedynamic #14,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      15: astore_1
+      16: aload_0
+      17: aload_1
+      18: invokestatic  #10                 // Method ML/_590f69/_a140a8/_21aca6.valueOf:(Ljava/lang/String;)LML/_590f69/_a140a8/_21aca6;
+      21: invokeinterface #13,  2           // InterfaceMethod _cfe983:(LML/_590f69/_a140a8/_21aca6;)Z
+      26: ireturn
+
+  public default ML._590f69._a140a8._21aca6 _22353b(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #1                  // String KEY_
+       3: invokevirtual #11                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       6: ifne          16
+       9: aload_1
+      10: invokedynamic #14,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      15: astore_1
+      16: aload_1
+      17: invokestatic  #10                 // Method ML/_590f69/_a140a8/_21aca6.valueOf:(Ljava/lang/String;)LML/_590f69/_a140a8/_21aca6;
+      20: areturn
+}

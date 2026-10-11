@@ -1,0 +1,680 @@
+public abstract class com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.OHRORRHCHCRICORRRCIRIOCCIRCRII.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RORCICOHRIOIIIOIOHIIIICRCIHRII.RHCCHHHHIHHRIICRIHRRIHRORIIOHO extends net.minecraft.world.entity.Entity implements com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OIHRRCOOHRHIHICHRICIRIOCROHOCC {
+  public int hurtTime;
+
+  public int deathTime;
+
+  public net.minecraft.world.entity.LivingEntity lastHurtMob;
+
+  public int lastHurtMobTimestamp;
+
+  public float yHeadRot;
+
+  public float yHeadRotO;
+
+  public float yBodyRotO;
+
+  public float zza;
+
+  public float yBodyRot;
+
+  private float lunar$health;
+
+  public int hurtDuration;
+
+  private float lunar$scale;
+
+  private boolean bridge$checkingIfCanAttack;
+
+  public abstract java.util.Collection<net.minecraft.world.effect.MobEffectInstance> getActiveEffects();
+
+  public abstract float getHealth();
+
+  public abstract float getMaxHealth();
+
+  public abstract boolean isSleeping();
+
+  public abstract net.minecraft.world.item.ItemStack getItemBySlot(net.minecraft.world.entity.EquipmentSlot);
+
+  public abstract int getArmorValue();
+
+  public abstract net.minecraft.world.item.ItemStack getMainHandItem();
+
+  public abstract boolean isVisuallySwimming();
+
+  public abstract boolean isFallFlying();
+
+  public abstract int getCurrentSwingDuration();
+
+  public abstract boolean hasEffect$v1_16_1(net.minecraft.world.effect.MobEffect);
+
+  public abstract boolean hasEffect$v1_20_5(net.minecraft.core.Holder<net.minecraft.world.effect.MobEffect>);
+
+  public abstract net.minecraft.world.effect.MobEffectInstance getEffect$v1_16_1(net.minecraft.world.effect.MobEffect);
+
+  public abstract net.minecraft.world.effect.MobEffectInstance getEffect$v1_20_5(net.minecraft.core.Holder<net.minecraft.world.effect.MobEffect>);
+
+  public abstract float getScale();
+
+  public abstract void calculateEntityAnimation$v1_16_1(net.minecraft.world.entity.LivingEntity, boolean);
+
+  public abstract void calculateEntityAnimation$v1_19_4(boolean);
+
+  public com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.OHRORRHCHCRICORRRCIRIOCCIRCRII.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RORCICOHRIOIIIOIOHIIIICRCIHRII.RHCCHHHHIHHRIICRIHRRIHRORIIOHO(net.minecraft.world.entity.EntityType<?>, net.minecraft.world.level.Level);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #131                // Method net/minecraft/world/entity/Entity."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+       6: aload_0
+       7: fconst_1
+       8: putfield      #52                 // Field lunar$scale:F
+      11: return
+
+  public abstract boolean isBaby();
+
+  public abstract boolean isAutoSpinAttack();
+
+  public abstract net.minecraft.core.Direction getBedOrientation();
+
+  public abstract boolean canAttackType$v1_16_1(net.minecraft.world.entity.EntityType<?>);
+
+  public abstract boolean canAttack(net.minecraft.world.entity.LivingEntity);
+
+  public abstract boolean isBlocking();
+
+  public int bridge$getLastAttackerTime();
+    Code:
+       0: aload_0
+       1: getfield      #50                 // Field lastHurtMobTimestamp:I
+       4: ireturn
+
+  public int bridge$getHurtTime();
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field hurtTime:I
+       4: ireturn
+
+  public int bridge$getCurrentHurtTime();
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field hurtTime:I
+       4: ireturn
+
+  public int bridge$getMaxHurtTime();
+    Code:
+       0: aload_0
+       1: getfield      #47                 // Field hurtDuration:I
+       4: ireturn
+
+  public boolean bridge$wasJustHurt();
+    Code:
+       0: aload_0
+       1: invokevirtual #75                 // Method bridge$getCurrentHurtTime:()I
+       4: istore_1
+       5: iload_1
+       6: ifle          21
+       9: iload_1
+      10: aload_0
+      11: invokevirtual #76                 // Method bridge$getMaxHurtTime:()I
+      14: if_icmpne     21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  public float bridge$getDeathTime();
+    Code:
+       0: aload_0
+       1: getfield      #46                 // Field deathTime:I
+       4: i2f
+       5: freturn
+
+  public java.util.Optional<com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OIHRRCOOHRHIHICHRICIRIOCROHOCC> bridge$getLastAttacker();
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field lastHurtMob:Lnet/minecraft/world/entity/LivingEntity;
+       4: checkcast     #15                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+       7: invokestatic  #129                // Method java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;
+      10: areturn
+
+  public void impl$swingItem(org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: instanceof    #40                 // class net/minecraft/world/entity/player/Player
+       4: ifeq          21
+       7: invokestatic  #126                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      10: invokevirtual #116                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.OOIOOCOHCROIIHCCIRRCROCRROHHHR:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/COCCCORHOHRORRICOOHOCHOOCHHICR;
+      13: aload_0
+      14: checkcast     #14                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/RORCICOHRIOIIIOIOHIIIICRCIHRII
+      17: iconst_0
+      18: invokevirtual #117                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/COCCCORHOHRORRICOOHOCHOOCHHICR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHOORCOHRORRIHROOCROOIIHHOOHRI/RORCICOHRIOIIIOIOHIIIICRCIHRII;Z)V
+      21: return
+
+  public boolean bridge$isPotionActive(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.HIOHRIRIOIHOICCCCOHCOOIICIICOH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    Code:
+       0: getstatic     #62                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     41
+       8: aload_1
+       9: instanceof    #7                  // class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      12: ifeq          29
+      15: aload_1
+      16: checkcast     #7                  // class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      19: astore_2
+      20: aload_0
+      21: aload_2
+      22: invokevirtual #112                // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.RHHRCHIOCORRRHIOCCRHOIROHCCROR:()Lnet/minecraft/core/Holder;
+      25: invokevirtual #99                 // Method hasEffect$v1_20_5:(Lnet/minecraft/core/Holder;)Z
+      28: ireturn
+      29: aload_0
+      30: aload_1
+      31: checkcast     #33                 // class net/minecraft/world/effect/MobEffect
+      34: invokestatic  #140                // InterfaceMethod net/minecraft/core/Holder.direct:(Ljava/lang/Object;)Lnet/minecraft/core/Holder;
+      37: invokevirtual #99                 // Method hasEffect$v1_20_5:(Lnet/minecraft/core/Holder;)Z
+      40: ireturn
+      41: aload_0
+      42: aload_1
+      43: checkcast     #33                 // class net/minecraft/world/effect/MobEffect
+      46: invokevirtual #98                 // Method hasEffect$v1_16_1:(Lnet/minecraft/world/effect/MobEffect;)Z
+      49: ireturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RROHOCRCCHCIORHICIHCOHRIRCIHCI bridge$getActivePotionEffect(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.HIOHRIRIOIHOICCCCOHCOOIICIICOH.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    Code:
+       0: getstatic     #62                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     47
+       8: aload_1
+       9: instanceof    #7                  // class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      12: ifeq          32
+      15: aload_1
+      16: checkcast     #7                  // class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      19: astore_2
+      20: aload_0
+      21: aload_2
+      22: invokevirtual #112                // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.RHHRCHIOCORRRHIOCCRHOIROHCCROR:()Lnet/minecraft/core/Holder;
+      25: invokevirtual #88                 // Method getEffect$v1_20_5:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/effect/MobEffectInstance;
+      28: checkcast     #11                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HIOHRIRIOIHOICCCCOHCOOIICIICOH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      31: areturn
+      32: aload_0
+      33: aload_1
+      34: checkcast     #33                 // class net/minecraft/world/effect/MobEffect
+      37: invokestatic  #140                // InterfaceMethod net/minecraft/core/Holder.direct:(Ljava/lang/Object;)Lnet/minecraft/core/Holder;
+      40: invokevirtual #88                 // Method getEffect$v1_20_5:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/effect/MobEffectInstance;
+      43: checkcast     #11                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HIOHRIRIOIHOICCCCOHCOOIICIICOH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      46: areturn
+      47: aload_0
+      48: aload_1
+      49: checkcast     #33                 // class net/minecraft/world/effect/MobEffect
+      52: invokevirtual #87                 // Method getEffect$v1_16_1:(Lnet/minecraft/world/effect/MobEffect;)Lnet/minecraft/world/effect/MobEffectInstance;
+      55: checkcast     #11                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HIOHRIRIOIHOICCCCOHCOOIICIICOH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+      58: areturn
+
+  public java.util.Collection<com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RROHOCRCCHCIORHICIHCOHRIRCIHCI> bridge$getActivePotionEffects();
+    Code:
+       0: aload_0
+       1: invokevirtual #82                 // Method getActiveEffects:()Ljava/util/Collection;
+       4: checkcast     #26                 // class java/util/Collection
+       7: areturn
+
+  public float bridge$getHealth();
+    Code:
+       0: aload_0
+       1: invokevirtual #89                 // Method getHealth:()F
+       4: freturn
+
+  public float bridge$getUnboundedHealth();
+    Code:
+       0: aload_0
+       1: getfield      #51                 // Field lunar$health:F
+       4: freturn
+
+  public void bridge$setUnboundedHealth(float);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: putfield      #51                 // Field lunar$health:F
+       5: return
+
+  public float bridge$getMaxHealth();
+    Code:
+       0: aload_0
+       1: invokevirtual #92                 // Method getMaxHealth:()F
+       4: freturn
+
+  public boolean bridge$isSleeping();
+    Code:
+       0: aload_0
+       1: invokevirtual #106                // Method isSleeping:()Z
+       4: ireturn
+
+  public float bridge$getBodyRot();
+    Code:
+       0: aload_0
+       1: getfield      #54                 // Field yBodyRot:F
+       4: freturn
+
+  public boolean bridge$isInLava();
+    Code:
+       0: aload_0
+       1: invokevirtual #104                // Method isInLava:()Z
+       4: ireturn
+
+  public int bridge$getArmSwingAnimationEnd();
+    Code:
+       0: aload_0
+       1: invokevirtual #85                 // Method getCurrentSwingDuration:()I
+       4: ireturn
+
+  public float bridge$getPreviousRotationYawOffset();
+    Code:
+       0: aload_0
+       1: getfield      #59                 // Field yRotO:F
+       4: freturn
+
+  public void bridge$setBodyYRot(float);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: putfield      #54                 // Field yBodyRot:F
+       5: return
+
+  public float bridge$getRotationYawHead();
+    Code:
+       0: aload_0
+       1: getfield      #56                 // Field yHeadRot:F
+       4: freturn
+
+  public void bridge$setRotationYawHead(float);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: putfield      #56                 // Field yHeadRot:F
+       5: return
+
+  public float bridge$getPrevRotationYawHead();
+    Code:
+       0: aload_0
+       1: getfield      #57                 // Field yHeadRotO:F
+       4: freturn
+
+  public void bridge$setPrevRotationYawHead(float);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: putfield      #57                 // Field yHeadRotO:F
+       5: return
+
+  public float bridge$getPrevRenderYawOffset();
+    Code:
+       0: aload_0
+       1: getfield      #55                 // Field yBodyRotO:F
+       4: freturn
+
+  public float bridge$getMoveForward();
+    Code:
+       0: aload_0
+       1: getfield      #60                 // Field zza:F
+       4: freturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOIOIRCCICRCCIHCCRHRCIHROHCCI bridge$getEquipmentInSlot(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.IROCROOIOIORORHHCCOOCCHRRRIOIC);
+    Code:
+       0: getstatic     #61                 // Field com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/OHRORRHCHCRICORRRCIRIOCCIRCRII/HIOHRIRIOIHOICCCCOHCOOIICIICOH/RORCICOHRIOIIIOIOHIIIICRCIHRII/RHCCHHHHIHHRIICRIHRRIHRORIIOHO$1.CROCIHOCIIOHOCORCRCRROIHORHHIR:[I
+       3: aload_1
+       4: invokevirtual #115                // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IROCROOIOIORORHHCCOOCCHRRRIOIC.ordinal:()I
+       7: iaload
+       8: tableswitch   { // 1 to 6
+                     1: 56
+                     2: 62
+                     3: 68
+                     4: 74
+                     5: 80
+                     6: 86
+               default: 48
+          }
+      48: new           #24                 // class java/lang/IncompatibleClassChangeError
+      51: dup
+      52: invokespecial #128                // Method java/lang/IncompatibleClassChangeError."<init>":()V
+      55: athrow
+      56: getstatic     #70                 // Field net/minecraft/world/entity/EquipmentSlot.MAINHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+      59: goto          89
+      62: getstatic     #71                 // Field net/minecraft/world/entity/EquipmentSlot.OFFHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+      65: goto          89
+      68: getstatic     #67                 // Field net/minecraft/world/entity/EquipmentSlot.FEET:Lnet/minecraft/world/entity/EquipmentSlot;
+      71: goto          89
+      74: getstatic     #69                 // Field net/minecraft/world/entity/EquipmentSlot.LEGS:Lnet/minecraft/world/entity/EquipmentSlot;
+      77: goto          89
+      80: getstatic     #66                 // Field net/minecraft/world/entity/EquipmentSlot.CHEST:Lnet/minecraft/world/entity/EquipmentSlot;
+      83: goto          89
+      86: getstatic     #68                 // Field net/minecraft/world/entity/EquipmentSlot.HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+      89: astore_2
+      90: aload_0
+      91: aload_2
+      92: invokevirtual #90                 // Method getItemBySlot:(Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/world/item/ItemStack;
+      95: checkcast     #13                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+      98: areturn
+
+  public int bridge$getTotalArmorValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #83                 // Method getArmorValue:()I
+       4: ireturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOIOIRCCICRCCIHCCRHRCIHROHCCI bridge$getHeldItem();
+    Code:
+       0: aload_0
+       1: invokevirtual #91                 // Method getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+       4: checkcast     #13                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+       7: areturn
+
+  public void bridge$setRotationYaw(double);
+    Code:
+       0: aload_0
+       1: dload_1
+       2: d2f
+       3: putfield      #58                 // Field yRot:F
+       6: return
+
+  public boolean bridge$isSwimming();
+    Code:
+       0: aload_0
+       1: invokevirtual #108                // Method isVisuallySwimming:()Z
+       4: ifne          14
+       7: aload_0
+       8: invokevirtual #107                // Method isVisuallyCrawling:()Z
+      11: ifeq          18
+      14: iconst_1
+      15: goto          19
+      18: iconst_0
+      19: ireturn
+
+  public boolean bridge$isElytraFlying();
+    Code:
+       0: aload_0
+       1: invokevirtual #103                // Method isFallFlying:()Z
+       4: ireturn
+
+  public java.lang.String bridge$getDisplayName();
+    Code:
+       0: aload_0
+       1: invokevirtual #86                 // Method getDisplayName:()Lnet/minecraft/network/chat/Component;
+       4: invokeinterface #141,  1          // InterfaceMethod net/minecraft/network/chat/Component.getString:()Ljava/lang/String;
+       9: areturn
+
+  public net.kyori.adventure.text.Component bridge$getDisplayNameComponent();
+    Code:
+       0: getstatic     #62                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        20
+       5: if_icmplt     16
+       8: aload_0
+       9: invokevirtual #96                 // Method getTeam$v1_20_3:()Lnet/minecraft/world/scores/PlayerTeam;
+      12: astore_1
+      13: goto          24
+      16: aload_0
+      17: invokevirtual #95                 // Method getTeam$v1_16_1:()Lnet/minecraft/world/scores/Team;
+      20: checkcast     #42                 // class net/minecraft/world/scores/PlayerTeam
+      23: astore_1
+      24: getstatic     #62                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      27: bipush        12
+      29: if_icmplt     44
+      32: aload_1
+      33: aload_0
+      34: invokevirtual #93                 // Method getName:()Lnet/minecraft/network/chat/Component;
+      37: invokestatic  #137                // Method net/minecraft/world/scores/PlayerTeam.formatNameForTeam$v1_19_pre:(Lnet/minecraft/world/scores/Team;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent_v1_19_pre;
+      40: astore_2
+      41: goto          53
+      44: aload_1
+      45: aload_0
+      46: invokevirtual #93                 // Method getName:()Lnet/minecraft/network/chat/Component;
+      49: invokestatic  #136                // Method net/minecraft/world/scores/PlayerTeam.formatNameForTeam$v1_16_1:(Lnet/minecraft/world/scores/Team;Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/MutableComponent_v1_16_1;
+      52: astore_2
+      53: aload_2
+      54: checkcast     #8                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+      57: invokestatic  #113                // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.asAdventure:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Lnet/kyori/adventure/text/Component;
+      60: areturn
+
+  public net.kyori.adventure.text.Component bridge$getDisplayNameComponentWithHover();
+    Code:
+       0: aload_0
+       1: invokevirtual #86                 // Method getDisplayName:()Lnet/minecraft/network/chat/Component;
+       4: checkcast     #8                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+       7: invokestatic  #113                // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.asAdventure:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;)Lnet/kyori/adventure/text/Component;
+      10: areturn
+
+  public long bridge$getLastAttackedMillis();
+    Code:
+       0: aload_0
+       1: invokestatic  #118                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH.HOHCCCRICCOIICRRRRRHRCRHOCIORH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH;
+       4: invokevirtual #122                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH.ICIRCICRHIIOOCCHIHIIIRRRHHHHCI:()J
+       7: lreturn
+
+  public long bridge$getLastHurtMillis();
+    Code:
+       0: aload_0
+       1: invokestatic  #118                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH.HOHCCCRICCOIICRRRRRHRCRHOCIORH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH;
+       4: invokevirtual #120                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH.HIIIORIHCCOORHROCIHICCIIRRRHIR:()J
+       7: lreturn
+
+  public long bridge$getLastDamagedMillis();
+    Code:
+       0: aload_0
+       1: invokestatic  #118                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH.HOHCCCRICCOIICRRRRRHRCRHOCIORH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH;
+       4: invokevirtual #123                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH.IROCICOHRHIORCCRHIHCOCCIHHHOOO:()J
+       7: lreturn
+
+  private void lunar$setLastAttackerTime(net.minecraft.world.entity.Entity, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: invokestatic  #118                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH.HOHCCCRICCOIICRRRRRHRCRHOCIORH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH;
+       4: invokestatic  #125                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.IRROOIHHIHRRIRRHRORCOCIRHICRRO:()J
+       7: invokevirtual #121                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH.HOHCCCRICCOIICRRRRRHRCRHOCIORH:(J)V
+      10: return
+
+  private void lunar$setLastHurtTime$v1_16_1(net.minecraft.world.damagesource.DamageSource, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #109                // Method lunar$setLastHurtTime:(Lnet/minecraft/world/damagesource/DamageSource;)V
+       5: return
+
+  private void lunar$setLastHurtTime$v1_21_2(net.minecraft.server.level.ServerLevel, net.minecraft.world.damagesource.DamageSource, float, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: invokevirtual #109                // Method lunar$setLastHurtTime:(Lnet/minecraft/world/damagesource/DamageSource;)V
+       5: return
+
+  private void lunar$setLastHurtTime(net.minecraft.world.damagesource.DamageSource);
+    Code:
+       0: aload_0
+       1: invokevirtual #77                 // Method bridge$getWorld:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+       4: invokeinterface #139,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI.bridge$isRemote:()Z
+       9: ifne          13
+      12: return
+      13: getstatic     #62                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      16: bipush        16
+      18: if_icmplt     37
+      21: aload_1
+      22: getfield      #63                 // Field net/minecraft/world/damagesource/DamageSource.causingEntity$v1_19_4:Lnet/minecraft/world/entity/Entity;
+      25: ifnull        32
+      28: iconst_1
+      29: goto          33
+      32: iconst_0
+      33: istore_2
+      34: goto          42
+      37: aload_1
+      38: instanceof    #32                 // class net/minecraft/world/damagesource/EntityDamageSource
+      41: istore_2
+      42: iload_2
+      43: ifeq          56
+      46: aload_0
+      47: invokestatic  #118                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH.HOHCCCRICCOIICRRRRRHRCRHOCIORH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/OIHRRCOOHRHIHICHRICIRIOCROHOCC/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH;
+      50: invokestatic  #125                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.IRROOIHHIHRRIRRHRORCOCIRHICRRO:()J
+      53: invokevirtual #119                // Method com/moonsworth/lunar/client/RCHHCHIRRCOORRHHOIROOICHRHICHO/COOCHIRORIICRCIIRIROHIIRIRICCH$COOCHIRORIICRCIIRIROHIIRIRICCH.CHHIOOCHIOOCCIOHIOCHHOOIROCRCH:(J)V
+      56: return
+
+  public void bridge$calculateEntityAnimation();
+    Code:
+       0: getstatic     #62                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        15
+       5: if_icmpgt     23
+       8: aload_0
+       9: aload_0
+      10: checkcast     #37                 // class net/minecraft/world/entity/LivingEntity
+      13: aload_0
+      14: instanceof    #39                 // class net/minecraft/world/entity/animal/FlyingAnimal
+      17: invokevirtual #78                 // Method calculateEntityAnimation$v1_16_1:(Lnet/minecraft/world/entity/LivingEntity;Z)V
+      20: goto          50
+      23: getstatic     #62                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      26: bipush        38
+      28: if_icmpgt     42
+      31: aload_0
+      32: aload_0
+      33: instanceof    #39                 // class net/minecraft/world/entity/animal/FlyingAnimal
+      36: invokevirtual #79                 // Method calculateEntityAnimation$v1_19_4:(Z)V
+      39: goto          50
+      42: aload_0
+      43: aload_0
+      44: invokevirtual #110                // Method omnidirectionalAirMover$v26_2:()Z
+      47: invokevirtual #79                 // Method calculateEntityAnimation$v1_19_4:(Z)V
+      50: return
+
+  public float bridge$getScale();
+    Code:
+       0: aload_0
+       1: invokevirtual #94                 // Method getScale:()F
+       4: freturn
+
+  public void bridge$setLunarScale(float);
+    Code:
+       0: aload_0
+       1: fload_1
+       2: putfield      #52                 // Field lunar$scale:F
+       5: return
+
+  public float bridge$getLunarScale();
+    Code:
+       0: aload_0
+       1: getfield      #52                 // Field lunar$scale:F
+       4: freturn
+
+  public boolean bridge$isInvisibleToPlayer();
+    Code:
+       0: invokestatic  #124                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+       3: ifnull        23
+       6: aload_0
+       7: invokestatic  #124                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+      10: checkcast     #40                 // class net/minecraft/world/entity/player/Player
+      13: invokevirtual #105                // Method isInvisibleTo:(Lnet/minecraft/world/entity/player/Player;)Z
+      16: ifeq          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  public boolean bridge$isBaby();
+    Code:
+       0: aload_0
+       1: invokevirtual #101                // Method isBaby:()Z
+       4: ireturn
+
+  public boolean bridge$isAutoSpinAttack();
+    Code:
+       0: aload_0
+       1: invokevirtual #100                // Method isAutoSpinAttack:()Z
+       4: ireturn
+
+  public boolean bridge$canShieldBeAttacked(double, double, double);
+    Code:
+       0: aload_0
+       1: invokevirtual #102                // Method isBlocking:()Z
+       4: ifne          9
+       7: iconst_0
+       8: ireturn
+       9: aload_0
+      10: fconst_1
+      11: invokevirtual #97                 // Method getViewVector:(F)Lnet/minecraft/world/phys/Vec3;
+      14: astore        7
+      16: aload_0
+      17: invokevirtual #111                // Method position:()Lnet/minecraft/world/phys/Vec3;
+      20: new           #41                 // class net/minecraft/world/phys/Vec3
+      23: dup
+      24: dload_1
+      25: dload_3
+      26: dload         5
+      28: invokespecial #132                // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+      31: invokevirtual #135                // Method net/minecraft/world/phys/Vec3.subtract:(Lnet/minecraft/world/phys/Vec3;)Lnet/minecraft/world/phys/Vec3;
+      34: invokevirtual #134                // Method net/minecraft/world/phys/Vec3.normalize:()Lnet/minecraft/world/phys/Vec3;
+      37: astore        8
+      39: new           #41                 // class net/minecraft/world/phys/Vec3
+      42: dup
+      43: aload         8
+      45: getfield      #73                 // Field net/minecraft/world/phys/Vec3.x:D
+      48: dconst_0
+      49: aload         8
+      51: getfield      #74                 // Field net/minecraft/world/phys/Vec3.z:D
+      54: invokespecial #132                // Method net/minecraft/world/phys/Vec3."<init>":(DDD)V
+      57: aload         7
+      59: invokevirtual #133                // Method net/minecraft/world/phys/Vec3.dot:(Lnet/minecraft/world/phys/Vec3;)D
+      62: dconst_0
+      63: dcmpg
+      64: ifge          71
+      67: iconst_1
+      68: goto          72
+      71: iconst_0
+      72: ireturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI bridge$getBedOrientation();
+    Code:
+       0: aload_0
+       1: invokevirtual #84                 // Method getBedOrientation:()Lnet/minecraft/core/Direction;
+       4: invokevirtual #130                // Method net/minecraft/core/Direction.ordinal:()I
+       7: invokestatic  #114                // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.byId:(I)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      10: areturn
+
+  public boolean bridge$isHostile();
+    Code:
+       0: aload_0
+       1: getfield      #53                 // Field type:Lnet/minecraft/world/entity/EntityType;
+       4: getfield      #65                 // Field net/minecraft/world/entity/EntityType.category:Lnet/minecraft/world/entity/MobCategory;
+       7: getfield      #72                 // Field net/minecraft/world/entity/MobCategory.isFriendly:Z
+      10: ifeq          15
+      13: iconst_0
+      14: ireturn
+      15: getstatic     #62                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      18: bipush        36
+      20: if_icmplt     54
+      23: invokestatic  #124                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+      26: astore_1
+      27: aload_1
+      28: ifnull        52
+      31: aload_0
+      32: iconst_1
+      33: putfield      #45                 // Field bridge$checkingIfCanAttack:Z
+      36: aload_0
+      37: aload_1
+      38: checkcast     #37                 // class net/minecraft/world/entity/LivingEntity
+      41: invokevirtual #80                 // Method canAttack:(Lnet/minecraft/world/entity/LivingEntity;)Z
+      44: istore_2
+      45: aload_0
+      46: iconst_0
+      47: putfield      #45                 // Field bridge$checkingIfCanAttack:Z
+      50: iload_2
+      51: ireturn
+      52: iconst_0
+      53: ireturn
+      54: aload_0
+      55: getstatic     #64                 // Field net/minecraft/world/entity/EntityType.PLAYER$v1_16_1:Lnet/minecraft/world/entity/EntityType;
+      58: invokevirtual #81                 // Method canAttackType$v1_16_1:(Lnet/minecraft/world/entity/EntityType;)Z
+      61: ireturn
+
+  private void bridge$canAttackCheck(net.minecraft.world.entity.LivingEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: aload_0
+       1: getfield      #45                 // Field bridge$checkingIfCanAttack:Z
+       4: ifeq          15
+       7: aload_2
+       8: iconst_1
+       9: invokestatic  #127                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      12: invokevirtual #138                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      15: return
+}

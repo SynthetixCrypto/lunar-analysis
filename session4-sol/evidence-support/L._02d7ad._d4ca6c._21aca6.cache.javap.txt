@@ -1,0 +1,53 @@
+public abstract class com.moonsworth.lunar.client.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RROHOCRCCHCIORHICIHCOHRIRCIHCI implements com.moonsworth.lunar.client.HHOCCCCIIIORCHRIHIRCHIRICCHIRC.OIHRRCOOHRHIHICHRICIRIOCROHOCC.COOCHIRORIICRCIIRIROHIIRIRICCH, java.util.function.Consumer<com.google.gson.JsonElement> {
+  private boolean loaded;
+
+  private java.lang.String name;
+
+  public com.moonsworth.lunar.client.HIOHRIRIOIHOICCCCOHCOOIICIICOH.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RROHOCRCCHCIORHICIHCOHRIRCIHCI();
+    Code:
+       0: aload_0
+       1: invokespecial #10                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #6                  // Field loaded:Z
+       9: return
+
+  public boolean IHCICOHCHROIIOCOOCOHCCHIHRIIIC();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field loaded:Z
+       4: ireturn
+
+  public java.lang.String RRIIIICHCCHOCHHHCORORIHIHHIHIR();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field name:Ljava/lang/String;
+       4: areturn
+
+  public void HHOCCCCIIIORCHRIHIRCHIRICCHIRC(com.google.gson.JsonElement);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #9                  // Method RHCCHHHHIHHRIICRIHRRIHRORIIOHO:(Lcom/google/gson/JsonElement;)V
+       5: aload_0
+       6: iconst_1
+       7: putfield      #6                  // Field loaded:Z
+      10: return
+
+  public abstract void RHCCHHHHIHHRIICRIHRRIHRORIIOHO(com.google.gson.JsonElement);
+
+  public void setName(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #7                  // Field name:Ljava/lang/String;
+       5: return
+
+  public void accept(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #1                  // class com/google/gson/JsonElement
+       5: invokevirtual #8                  // Method HHOCCCCIIIORCHRIHIRCHIRICCHIRC:(Lcom/google/gson/JsonElement;)V
+       8: return
+}

@@ -1,0 +1,272 @@
+Classfile /C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Downloads-New-folder-lunar-analysis/eeca5643-ee80-46b2-970c-8533c6845d76/scratchpad/lunar/L/util/_f08228.class
+  Last modified Dec 31, 1969; size 2381 bytes
+  SHA-256 checksum bc7e266d73b25f884b6cc88c128b7e821decabf1ecd362076a2fae1b527ba4aa
+public final class L.util._f08228
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #10                         // L/util/_f08228
+  super_class: #11                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 4, attributes: 0
+Constant pool:
+   #1 = String             #43            //
+   #2 = String             #44            //
+   #3 = String             #59            // CIT-
+   #4 = String             #67            // This is a utility class and cannot be instantiated
+   #5 = String             #83            // npc
+   #6 = String             #87            // �
+   #7 = Class              #72            // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+   #8 = Class              #73            // ML/_590f69/_bb4487/_d4ca6c/_cfe983
+   #9 = Class              #74            // ML/_590f69/_2ce426/_1253fc/_590f69
+  #10 = Class              #75            // L/util/_f08228
+  #11 = Class              #78            // java/lang/Object
+  #12 = Class              #79            // java/lang/String
+  #13 = Class              #80            // java/lang/UnsupportedOperationException
+  #14 = Class              #81            // java/util/Optional
+  #15 = Class              #82            // java/util/UUID
+  #16 = Methodref          #10.#33        // L/util/_f08228._cfe983:(Ljava/lang/String;Ljava/util/UUID;Z)Z
+  #17 = Methodref          #11.#31        // java/lang/Object."<init>":()V
+  #18 = Methodref          #12.#38        // java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+  #19 = Methodref          #12.#39        // java/lang/String.isBlank:()Z
+  #20 = Methodref          #12.#41        // java/lang/String.startsWith:(Ljava/lang/String;)Z
+  #21 = Methodref          #13.#32        // java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+  #22 = Methodref          #14.#40        // java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+  #23 = Methodref          #15.#42        // java/util/UUID.version:()I
+  #24 = InterfaceMethodref #7.#34         // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$getName:()Ljava/lang/String;
+  #25 = InterfaceMethodref #7.#36         // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$getUniqueID:()Ljava/util/UUID;
+  #26 = InterfaceMethodref #7.#37         // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$isSelf:()Z
+  #27 = InterfaceMethodref #8.#35         // ML/_590f69/_bb4487/_d4ca6c/_cfe983.bridge$getTeamName:()Ljava/util/Optional;
+  #28 = InterfaceMethodref #9.#34         // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$getName:()Ljava/lang/String;
+  #29 = InterfaceMethodref #9.#36         // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$getUniqueID:()Ljava/util/UUID;
+  #30 = InterfaceMethodref #9.#37         // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$isSelf:()Z
+  #31 = NameAndType        #58:#49        // "<init>":()V
+  #32 = NameAndType        #58:#55        // "<init>":(Ljava/lang/String;)V
+  #33 = NameAndType        #60:#57        // _cfe983:(Ljava/lang/String;Ljava/util/UUID;Z)Z
+  #34 = NameAndType        #68:#46        // bridge$getName:()Ljava/lang/String;
+  #35 = NameAndType        #69:#47        // bridge$getTeamName:()Ljava/util/Optional;
+  #36 = NameAndType        #70:#48        // bridge$getUniqueID:()Ljava/util/UUID;
+  #37 = NameAndType        #71:#50        // bridge$isSelf:()Z
+  #38 = NameAndType        #76:#53        // contains:(Ljava/lang/CharSequence;)Z
+  #39 = NameAndType        #77:#50        // isBlank:()Z
+  #40 = NameAndType        #84:#54        // orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+  #41 = NameAndType        #85:#56        // startsWith:(Ljava/lang/String;)Z
+  #42 = NameAndType        #86:#45        // version:()I
+  #43 = Utf8
+  #44 = Utf8
+  #45 = Utf8               ()I
+  #46 = Utf8               ()Ljava/lang/String;
+  #47 = Utf8               ()Ljava/util/Optional;
+  #48 = Utf8               ()Ljava/util/UUID;
+  #49 = Utf8               ()V
+  #50 = Utf8               ()Z
+  #51 = Utf8               (LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;Z)Z
+  #52 = Utf8               (LML/_590f69/_2ce426/_1253fc/_590f69;Z)Z
+  #53 = Utf8               (Ljava/lang/CharSequence;)Z
+  #54 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #55 = Utf8               (Ljava/lang/String;)V
+  #56 = Utf8               (Ljava/lang/String;)Z
+  #57 = Utf8               (Ljava/lang/String;Ljava/util/UUID;Z)Z
+  #58 = Utf8               <init>
+  #59 = Utf8               CIT-
+  #60 = Utf8               _cfe983
+  #61 = Utf8               Code
+  #62 = Utf8               LineNumberTable
+  #63 = Utf8               Llombok/Generated;
+  #64 = Utf8               _21aca6
+  #65 = Utf8               RuntimeInvisibleAnnotations
+  #66 = Utf8               StackMapTable
+  #67 = Utf8               This is a utility class and cannot be instantiated
+  #68 = Utf8               bridge$getName
+  #69 = Utf8               bridge$getTeamName
+  #70 = Utf8               bridge$getUniqueID
+  #71 = Utf8               bridge$isSelf
+  #72 = Utf8               ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+  #73 = Utf8               ML/_590f69/_bb4487/_d4ca6c/_cfe983
+  #74 = Utf8               ML/_590f69/_2ce426/_1253fc/_590f69
+  #75 = Utf8               L/util/_f08228
+  #76 = Utf8               contains
+  #77 = Utf8               isBlank
+  #78 = Utf8               java/lang/Object
+  #79 = Utf8               java/lang/String
+  #80 = Utf8               java/lang/UnsupportedOperationException
+  #81 = Utf8               java/util/Optional
+  #82 = Utf8               java/util/UUID
+  #83 = Utf8               npc
+  #84 = Utf8               orElse
+  #85 = Utf8               startsWith
+  #86 = Utf8               version
+  #87 = Utf8               �
+{
+  public static boolean _cfe983(java.lang.String, java.util.UUID, boolean);
+    descriptor: (Ljava/lang/String;Ljava/util/UUID;Z)Z
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_1
+         1: invokevirtual #23                 // Method java/util/UUID.version:()I
+         4: iconst_4
+         5: if_icmpeq     22
+         8: iload_2
+         9: ifeq          20
+        12: aload_1
+        13: invokevirtual #23                 // Method java/util/UUID.version:()I
+        16: iconst_1
+        17: if_icmpeq     22
+        20: iconst_1
+        21: ireturn
+        22: aload_0
+        23: ldc           #2                  // String
+        25: invokevirtual #18                 // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+        28: ifeq          33
+        31: iconst_1
+        32: ireturn
+        33: aload_0
+        34: invokevirtual #19                 // Method java/lang/String.isBlank:()Z
+        37: ifeq          42
+        40: iconst_1
+        41: ireturn
+        42: aload_0
+        43: ldc           #6                  // String �
+        45: invokevirtual #18                 // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+        48: ireturn
+      LineNumberTable:
+        line 27: 0
+        line 28: 20
+        line 32: 22
+        line 33: 31
+        line 36: 33
+        line 37: 40
+        line 44: 42
+      StackMapTable: number_of_entries = 4
+        frame_type = 248 /* chop */
+          offset_delta = 20
+        frame_type = 252 /* append */
+          offset_delta = 1
+          locals = [ class java/lang/String ]
+        frame_type = 10 /* same */
+        frame_type = 8 /* same */
+
+  public static boolean _21aca6(ML._590f69._2ce426._1253fc._590f69, boolean);
+    descriptor: (LML/_590f69/_2ce426/_1253fc/_590f69;Z)Z
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: invokeinterface #30,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_590f69.bridge$isSelf:()Z
+         6: ifeq          11
+         9: iconst_0
+        10: ireturn
+        11: aload_0
+        12: instanceof    #8                  // class ML/_590f69/_bb4487/_d4ca6c/_cfe983
+        15: ifeq          56
+        18: aload_0
+        19: checkcast     #8                  // class ML/_590f69/_bb4487/_d4ca6c/_cfe983
+        22: invokeinterface #27,  1           // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_cfe983.bridge$getTeamName:()Ljava/util/Optional;
+        27: ldc           #1                  // String
+        29: invokevirtual #22                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        32: checkcast     #12                 // class java/lang/String
+        35: astore_2
+        36: aload_2
+        37: ldc           #5                  // String npc
+        39: invokevirtual #18                 // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+        42: ifne          54
+        45: aload_2
+        46: ldc           #3                  // String CIT-
+        48: invokevirtual #20                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+        51: ifeq          56
+        54: iconst_1
+        55: ireturn
+        56: aload_0
+        57: invokeinterface #28,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_590f69.bridge$getName:()Ljava/lang/String;
+        62: aload_0
+        63: invokeinterface #29,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_590f69.bridge$getUniqueID:()Ljava/util/UUID;
+        68: iload_1
+        69: invokestatic  #16                 // Method _cfe983:(Ljava/lang/String;Ljava/util/UUID;Z)Z
+        72: ireturn
+      LineNumberTable:
+        line 48: 0
+        line 49: 9
+        line 52: 11
+        line 53: 18
+        line 55: 36
+        line 56: 54
+        line 60: 56
+      StackMapTable: number_of_entries = 3
+        frame_type = 11 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 42
+        frame_type = 253 /* append */
+          offset_delta = 1
+          locals = [ class ML/_590f69/_2ce426/_1253fc/_590f69, int ]
+
+  public static boolean _21aca6(ML._590f69._bb4487._13ea87._d4ca6c._590f69._d4ca6c, boolean);
+    descriptor: (LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c;Z)Z
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: invokeinterface #26,  1           // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$isSelf:()Z
+         6: ifeq          11
+         9: iconst_0
+        10: ireturn
+        11: aload_0
+        12: instanceof    #8                  // class ML/_590f69/_bb4487/_d4ca6c/_cfe983
+        15: ifeq          56
+        18: aload_0
+        19: checkcast     #8                  // class ML/_590f69/_bb4487/_d4ca6c/_cfe983
+        22: invokeinterface #27,  1           // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_cfe983.bridge$getTeamName:()Ljava/util/Optional;
+        27: ldc           #1                  // String
+        29: invokevirtual #22                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+        32: checkcast     #12                 // class java/lang/String
+        35: astore_2
+        36: aload_2
+        37: ldc           #5                  // String npc
+        39: invokevirtual #18                 // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+        42: ifne          54
+        45: aload_2
+        46: ldc           #3                  // String CIT-
+        48: invokevirtual #20                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+        51: ifeq          56
+        54: iconst_1
+        55: ireturn
+        56: aload_0
+        57: invokeinterface #24,  1           // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$getName:()Ljava/lang/String;
+        62: aload_0
+        63: invokeinterface #25,  1           // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c.bridge$getUniqueID:()Ljava/util/UUID;
+        68: iload_1
+        69: invokestatic  #16                 // Method _cfe983:(Ljava/lang/String;Ljava/util/UUID;Z)Z
+        72: ireturn
+      LineNumberTable:
+        line 64: 0
+        line 65: 9
+        line 72: 11
+        line 73: 18
+        line 75: 36
+        line 76: 54
+        line 80: 56
+      StackMapTable: number_of_entries = 3
+        frame_type = 11 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 42
+        frame_type = 253 /* append */
+          offset_delta = 1
+          locals = [ class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c, int ]
+
+  private L.util._f08228();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #17                 // Method java/lang/Object."<init>":()V
+         4: new           #13                 // class java/lang/UnsupportedOperationException
+         7: dup
+         8: ldc           #4                  // String This is a utility class and cannot be instantiated
+        10: invokespecial #21                 // Method java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+        13: athrow
+      LineNumberTable:
+        line 11: 0
+    RuntimeInvisibleAnnotations:
+      0: #63()
+        lombok.Generated
+}

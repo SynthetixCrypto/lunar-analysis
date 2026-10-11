@@ -1,0 +1,67 @@
+public class L._d4ca6c._cfe983._2ce426._cfe983._02d7ad extends L._d4ca6c._21aca6 {
+  private ML._590f69._2ce426._1253fc._590f69 _b667ba;
+
+  private final ML._590f69._2ce426._1e73d7 _adc7e5;
+
+  private final double _c817d8;
+
+  private final ML._590f69._5b3f84._df21a7 _0d462f;
+
+  public L._d4ca6c._cfe983._2ce426._cfe983._02d7ad(ML._590f69._2ce426._1e73d7, double, ML._590f69._5b3f84._df21a7);
+    Code:
+       0: aload_0
+       1: invokespecial #17                 // Method L/_d4ca6c/_21aca6."<init>":()V
+       4: aload_0
+       5: invokestatic  #18                 // Method L/util/_e93d3c._433a2f:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+       8: putfield      #9                  // Field _b667ba:LML/_590f69/_2ce426/_1253fc/_590f69;
+      11: aload_0
+      12: aload_1
+      13: putfield      #11                 // Field _adc7e5:LML/_590f69/_2ce426/_1e73d7;
+      16: aload_0
+      17: dload_2
+      18: putfield      #12                 // Field _c817d8:D
+      21: aload_0
+      22: aload         4
+      24: putfield      #10                 // Field _0d462f:LML/_590f69/_5b3f84/_df21a7;
+      27: return
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokevirtual #14                 // Method _73f14f:()LML/_590f69/_2ce426/_1253fc/_590f69;
+       4: invokestatic  #19                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       7: aload_0
+       8: invokevirtual #15                 // Method _baf191:()LML/_590f69/_2ce426/_1e73d7;
+      11: invokestatic  #19                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      14: aload_0
+      15: invokevirtual #16                 // Method getDistance:()D
+      18: aload_0
+      19: invokevirtual #13                 // Method _a39342:()LML/_590f69/_5b3f84/_df21a7;
+      22: invokestatic  #19                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      25: invokedynamic #21,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;DLjava/lang/String;)Ljava/lang/String;
+      30: areturn
+
+  public ML._590f69._2ce426._1253fc._590f69 _73f14f();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field _b667ba:LML/_590f69/_2ce426/_1253fc/_590f69;
+       4: areturn
+
+  public ML._590f69._2ce426._1e73d7 _baf191();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field _adc7e5:LML/_590f69/_2ce426/_1e73d7;
+       4: areturn
+
+  public double getDistance();
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field _c817d8:D
+       4: dreturn
+
+  public ML._590f69._5b3f84._df21a7 _a39342();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field _0d462f:LML/_590f69/_5b3f84/_df21a7;
+       4: areturn
+}

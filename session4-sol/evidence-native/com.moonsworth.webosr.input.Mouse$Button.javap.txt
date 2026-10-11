@@ -1,0 +1,99 @@
+public final class com.moonsworth.webosr.input.Mouse$Button extends java.lang.Enum<com.moonsworth.webosr.input.Mouse$Button> {
+  public static final com.moonsworth.webosr.input.Mouse$Button LEFT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Button MIDDLE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Button RIGHT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Button NONE;
+
+  private static final com.moonsworth.webosr.input.Mouse$Button[] $VALUES;
+
+  public static com.moonsworth.webosr.input.Mouse$Button[] values();
+    Code:
+       0: getstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Button;
+       3: invokevirtual #14                 // Method "[Lcom/moonsworth/webosr/input/Mouse$Button;".clone:()Ljava/lang/Object;
+       6: checkcast     #5                  // class "[Lcom/moonsworth/webosr/input/Mouse$Button;"
+       9: areturn
+
+  public static com.moonsworth.webosr.input.Mouse$Button valueOf(java.lang.String);
+    Code:
+       0: ldc           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+       2: aload_0
+       3: invokestatic  #20                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #7                  // class com/moonsworth/webosr/input/Mouse$Button
+       9: areturn
+
+  private com.moonsworth.webosr.input.Mouse$Button();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #19                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.input.Mouse$Button fromValue(int);
+    Code:
+       0: invokestatic  #18                 // Method values:()[Lcom/moonsworth/webosr/input/Mouse$Button;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int getValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #17                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.input.Mouse$Button[] $values();
+    Code:
+       0: iconst_4
+       1: anewarray     #7                  // class com/moonsworth/webosr/input/Mouse$Button
+       4: dup
+       5: iconst_0
+       6: getstatic     #10                 // Field LEFT:Lcom/moonsworth/webosr/input/Mouse$Button;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #11                 // Field MIDDLE:Lcom/moonsworth/webosr/input/Mouse$Button;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #13                 // Field RIGHT:Lcom/moonsworth/webosr/input/Mouse$Button;
+      21: aastore
+      22: dup
+      23: iconst_3
+      24: getstatic     #12                 // Field NONE:Lcom/moonsworth/webosr/input/Mouse$Button;
+      27: aastore
+      28: areturn
+
+  static {};
+    Code:
+       0: new           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+       3: dup
+       4: ldc           #1                  // String LEFT
+       6: iconst_0
+       7: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #10                 // Field LEFT:Lcom/moonsworth/webosr/input/Mouse$Button;
+      13: new           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+      16: dup
+      17: ldc           #2                  // String MIDDLE
+      19: iconst_1
+      20: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #11                 // Field MIDDLE:Lcom/moonsworth/webosr/input/Mouse$Button;
+      26: new           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+      29: dup
+      30: ldc           #4                  // String RIGHT
+      32: iconst_2
+      33: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #13                 // Field RIGHT:Lcom/moonsworth/webosr/input/Mouse$Button;
+      39: new           #7                  // class com/moonsworth/webosr/input/Mouse$Button
+      42: dup
+      43: ldc           #3                  // String NONE
+      45: iconst_3
+      46: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #12                 // Field NONE:Lcom/moonsworth/webosr/input/Mouse$Button;
+      52: invokestatic  #15                 // Method $values:()[Lcom/moonsworth/webosr/input/Mouse$Button;
+      55: putstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Button;
+      58: return
+}

@@ -1,0 +1,51 @@
+public class L._88f3cf._1e73d7._cfe983 extends L._88f3cf._1e73d7._1e73d7 {
+  private final java.util.function.Supplier<java.lang.String> _5eaedd;
+
+  private final java.util.function.Supplier<java.lang.String> _330511;
+
+  public L._88f3cf._1e73d7._cfe983(java.lang.String, java.util.Set<L._88f3cf._590f69>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>, boolean, boolean, java.util.function.Supplier<java.lang.String>, java.util.function.Supplier<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: iload         5
+       8: iload         6
+      10: invokespecial #7                  // Method L/_88f3cf/_1e73d7/_1e73d7."<init>":(Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;ZZ)V
+      13: aload_0
+      14: aload         7
+      16: putfield      #5                  // Field _5eaedd:Ljava/util/function/Supplier;
+      19: aload_0
+      20: aload         8
+      22: putfield      #6                  // Field _330511:Ljava/util/function/Supplier;
+      25: return
+
+  public java.lang.String getName();
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field _5eaedd:Ljava/util/function/Supplier;
+       4: ifnull        22
+       7: aload_0
+       8: getfield      #5                  // Field _5eaedd:Ljava/util/function/Supplier;
+      11: invokeinterface #10,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      16: checkcast     #3                  // class java/lang/String
+      19: goto          26
+      22: aload_0
+      23: invokespecial #9                  // Method L/_88f3cf/_1e73d7/_1e73d7.getName:()Ljava/lang/String;
+      26: areturn
+
+  public java.lang.String getDescription();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field _330511:Ljava/util/function/Supplier;
+       4: ifnull        22
+       7: aload_0
+       8: getfield      #6                  // Field _330511:Ljava/util/function/Supplier;
+      11: invokeinterface #10,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      16: checkcast     #3                  // class java/lang/String
+      19: goto          26
+      22: aload_0
+      23: invokespecial #8                  // Method L/_88f3cf/_1e73d7/_1e73d7.getDescription:()Ljava/lang/String;
+      26: areturn
+}

@@ -1,0 +1,4226 @@
+[
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/BridgeValueCodec",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1537,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1025,
+        "name": "objectToString",
+        "descriptor": "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "(Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/String;"
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "RuntimeVisibleAnnotations",
+        "annotations": [
+          {
+            "type": "Ljava/lang/FunctionalInterface;",
+            "values": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/NativeHandle",
+    "superName": "java/lang/Object",
+    "interfaces": [
+      "java/lang/AutoCloseable"
+    ],
+    "flags": 1057,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 2,
+        "name": "handle",
+        "descriptor": "J",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 4,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 269,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "close",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 19,
+            "codeOffset": 325,
+            "maxStack": 4,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1028,
+        "name": "destroy",
+        "descriptor": "()V",
+        "attributes": []
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/TextureHandler",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1537,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1025,
+        "name": "createTexture",
+        "descriptor": "(III)I",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "resizeTexture",
+        "descriptor": "(IIII)V",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "uploadTexture",
+        "descriptor": "(ILjava/nio/ByteBuffer;IIIII)V",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "readTexture",
+        "descriptor": "(ILjava/nio/ByteBuffer;III)V",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "deleteTexture",
+        "descriptor": "(I)V",
+        "attributes": []
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/config/BrowserConfig",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 1,
+        "name": "width",
+        "descriptor": "I",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "height",
+        "descriptor": "I",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "initialScale",
+        "descriptor": "D",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "session",
+        "descriptor": "Lcom/moonsworth/webosr/wrappers/Session;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "eventHandler",
+        "descriptor": "Lcom/moonsworth/webosr/wrappers/Browser$Listener;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "initialFocus",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "accelerated",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "transparent",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "images",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "javascript",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "compositing",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "userAgent",
+        "descriptor": "Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "fontFamilyStandard",
+        "descriptor": "Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "fontFamilyFixed",
+        "descriptor": "Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "fontFamilySerif",
+        "descriptor": "Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "fontFamilySansSerif",
+        "descriptor": "Ljava/lang/String;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 94,
+            "codeOffset": 1110,
+            "maxStack": 3,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/config/EngineConfig",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1057,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 1,
+        "name": "fileSystem",
+        "descriptor": "Lcom/moonsworth/webosr/handler/FileSystem;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "remoteDebugPort",
+        "descriptor": "Ljava/lang/Integer;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "clipboard",
+        "descriptor": "Lcom/moonsworth/webosr/handler/Clipboard;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "textureHandler",
+        "descriptor": "Lcom/moonsworth/webosr/TextureHandler;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "system",
+        "descriptor": "Lcom/moonsworth/webosr/config/SystemConfig;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 470,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/config/SystemConfig",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 1,
+        "name": "display",
+        "descriptor": "J",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "window",
+        "descriptor": "J",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 15,
+            "codeOffset": 222,
+            "maxStack": 3,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/config/ThreadConfig",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 1,
+        "name": "idleTimer",
+        "descriptor": "D",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "renderTimer",
+        "descriptor": "D",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "updateTimer",
+        "descriptor": "D",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 20,
+            "codeOffset": 261,
+            "maxStack": 3,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/config/UltralightConfig$EffectQuality",
+    "superName": "java/lang/Enum",
+    "interfaces": [],
+    "flags": 16433,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 16409,
+        "name": "LOW",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "MEDIUM",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "HIGH",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": []
+      },
+      {
+        "flags": 4122,
+        "name": "$VALUES",
+        "descriptor": "[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 9,
+        "name": "values",
+        "descriptor": "()[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1074,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "valueOf",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1122,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 1170,
+            "maxStack": 3,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "()V"
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "fromValue",
+        "descriptor": "(I)Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 1223,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "toValue",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1267,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 4106,
+        "name": "$values",
+        "descriptor": "()[Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 23,
+            "codeOffset": 1310,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 46,
+            "codeOffset": 1371,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Ljava/lang/Enum<Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;>;"
+      },
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/config/UltralightConfig$FontHinting",
+    "superName": "java/lang/Enum",
+    "interfaces": [],
+    "flags": 16433,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 16409,
+        "name": "SMOOTH",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORMAL",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "MONOCHROME",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NONE",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": []
+      },
+      {
+        "flags": 4122,
+        "name": "$VALUES",
+        "descriptor": "[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 9,
+        "name": "values",
+        "descriptor": "()[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1095,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "valueOf",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1143,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 1191,
+            "maxStack": 3,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "()V"
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "fromValue",
+        "descriptor": "(I)Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 1244,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "toValue",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1288,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 4106,
+        "name": "$values",
+        "descriptor": "()[Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 29,
+            "codeOffset": 1331,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 59,
+            "codeOffset": 1398,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Ljava/lang/Enum<Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;>;"
+      },
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/config/UltralightConfig",
+    "superName": "com/moonsworth/webosr/config/EngineConfig",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 1,
+        "name": "resourcePath",
+        "descriptor": "Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "effectQuality",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$EffectQuality;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "fontHinting",
+        "descriptor": "Lcom/moonsworth/webosr/config/UltralightConfig$FontHinting;",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "fontGamma",
+        "descriptor": "D",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "sampleSizeGPU",
+        "descriptor": "I",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "overrideMemorySize",
+        "descriptor": "I",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "bitmapAlignment",
+        "descriptor": "I",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "animationTimer",
+        "descriptor": "D",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "scrollTimer",
+        "descriptor": "D",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "recycleTimer",
+        "descriptor": "D",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 69,
+            "codeOffset": 953,
+            "maxStack": 3,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestMembers"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/handler/Clipboard",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1537,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1025,
+        "name": "read",
+        "descriptor": "()Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "write",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "clear",
+        "descriptor": "()V",
+        "attributes": []
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/handler/FileSystem$Payload",
+    "superName": "java/lang/Record",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 18,
+        "name": "buffer",
+        "descriptor": "Ljava/nio/ByteBuffer;",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "length",
+        "descriptor": "I",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "mimeType",
+        "descriptor": "Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "statusCode",
+        "descriptor": "I",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "(Ljava/nio/ByteBuffer;ILjava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 26,
+            "codeOffset": 1210,
+            "maxStack": 2,
+            "maxLocals": 5
+          }
+        ]
+      },
+      {
+        "flags": 17,
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 1274,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 17,
+        "name": "hashCode",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 1319,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 17,
+        "name": "equals",
+        "descriptor": "(Ljava/lang/Object;)Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 8,
+            "codeOffset": 1364,
+            "maxStack": 2,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "buffer",
+        "descriptor": "()Ljava/nio/ByteBuffer;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1410,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "length",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1453,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "mimeType",
+        "descriptor": "()Ljava/lang/String;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1496,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "statusCode",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1539,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "BootstrapMethods"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/handler/FileSystem",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1537,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1025,
+        "name": "onRequest",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/handler/FileSystem$Payload;",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "doesResourceExist",
+        "descriptor": "(Ljava/lang/String;)Z",
+        "attributes": []
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestMembers"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/handler/FunctionJS",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1537,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1025,
+        "name": "invoke",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "(Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V"
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "RuntimeVisibleAnnotations",
+        "annotations": [
+          {
+            "type": "Ljava/lang/FunctionalInterface;",
+            "values": {}
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/handler/Logger$Level",
+    "superName": "java/lang/Enum",
+    "interfaces": [],
+    "flags": 16433,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 16409,
+        "name": "DEBUG",
+        "descriptor": "Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "INFO",
+        "descriptor": "Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "WARNING",
+        "descriptor": "Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "ERROR",
+        "descriptor": "Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": []
+      },
+      {
+        "flags": 4122,
+        "name": "$VALUES",
+        "descriptor": "[Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 9,
+        "name": "values",
+        "descriptor": "()[Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 971,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "valueOf",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1019,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 1067,
+            "maxStack": 3,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "()V"
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "fromValue",
+        "descriptor": "(I)Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 1120,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "getValue",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1164,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 4106,
+        "name": "$values",
+        "descriptor": "()[Lcom/moonsworth/webosr/handler/Logger$Level;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 29,
+            "codeOffset": 1207,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 59,
+            "codeOffset": 1274,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Ljava/lang/Enum<Lcom/moonsworth/webosr/handler/Logger$Level;>;"
+      },
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/handler/Logger",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1537,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1025,
+        "name": "onBrowserMessage",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;Lcom/moonsworth/webosr/handler/Logger$Level;Ljava/lang/String;Ljava/lang/String;I)V",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "onStandardOut",
+        "descriptor": "(Lcom/moonsworth/webosr/handler/Logger$Level;Ljava/lang/String;)V",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "onStandardErr",
+        "descriptor": "(Lcom/moonsworth/webosr/handler/Logger$Level;Ljava/lang/String;)V",
+        "attributes": []
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestMembers"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/input/Keyboard$Action",
+    "superName": "java/lang/Enum",
+    "interfaces": [],
+    "flags": 16433,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 16409,
+        "name": "DOWN",
+        "descriptor": "Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "UP",
+        "descriptor": "Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "CHAR",
+        "descriptor": "Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "RAW_DOWN",
+        "descriptor": "Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": []
+      },
+      {
+        "flags": 4122,
+        "name": "$VALUES",
+        "descriptor": "[Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 9,
+        "name": "values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 976,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "valueOf",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1024,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 1072,
+            "maxStack": 3,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "()V"
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "getValue",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1125,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "fromValue",
+        "descriptor": "(I)Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 1168,
+            "maxStack": 2,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 4106,
+        "name": "$values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Keyboard$Action;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 29,
+            "codeOffset": 1212,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 59,
+            "codeOffset": 1279,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Ljava/lang/Enum<Lcom/moonsworth/webosr/input/Keyboard$Action;>;"
+      },
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/input/Keyboard",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 245,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestMembers"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/input/Modifiers",
+    "superName": "java/lang/Enum",
+    "interfaces": [],
+    "flags": 16433,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 16409,
+        "name": "CAPS_LOCK",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SHIFT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "CONTROL",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "ALT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SUPER",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "LEFT_MOUSE_BUTTON",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "RIGHT_MOUSE_BUTTON",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "MIDDLE_MOUSE_BUTTON",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NUM_LOCK",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "KEY_PAD",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "LEFT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "RIGHT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "REPEAT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SYSTEM_KEY",
+        "descriptor": "Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "mask",
+        "descriptor": "I",
+        "attributes": []
+      },
+      {
+        "flags": 4122,
+        "name": "$VALUES",
+        "descriptor": "[Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 9,
+        "name": "values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1262,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "valueOf",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1310,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;II)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 12,
+            "codeOffset": 1358,
+            "maxStack": 3,
+            "maxLocals": 4
+          },
+          {
+            "name": "Signature",
+            "signature": "(I)V"
+          }
+        ]
+      },
+      {
+        "flags": 137,
+        "name": "toMask",
+        "descriptor": "([Lcom/moonsworth/webosr/input/Modifiers;)I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 38,
+            "codeOffset": 1424,
+            "maxStack": 2,
+            "maxLocals": 6
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "getMask",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1541,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 4106,
+        "name": "$values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Modifiers;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 98,
+            "codeOffset": 1584,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 229,
+            "codeOffset": 1720,
+            "maxStack": 5,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Ljava/lang/Enum<Lcom/moonsworth/webosr/input/Modifiers;>;"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/input/Mouse$Action",
+    "superName": "java/lang/Enum",
+    "interfaces": [],
+    "flags": 16433,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 16409,
+        "name": "DOWN",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Action;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "UP",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Action;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "MOVED",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Action;",
+        "attributes": []
+      },
+      {
+        "flags": 4122,
+        "name": "$VALUES",
+        "descriptor": "[Lcom/moonsworth/webosr/input/Mouse$Action;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 9,
+        "name": "values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Mouse$Action;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 921,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "valueOf",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/input/Mouse$Action;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 969,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 1017,
+            "maxStack": 3,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "()V"
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "fromValue",
+        "descriptor": "(I)Lcom/moonsworth/webosr/input/Mouse$Action;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 1070,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "getValue",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1114,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 4106,
+        "name": "$values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Mouse$Action;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 23,
+            "codeOffset": 1157,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 46,
+            "codeOffset": 1218,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Ljava/lang/Enum<Lcom/moonsworth/webosr/input/Mouse$Action;>;"
+      },
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/input/Mouse$Button",
+    "superName": "java/lang/Enum",
+    "interfaces": [],
+    "flags": 16433,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 16409,
+        "name": "LEFT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "MIDDLE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "RIGHT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NONE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": []
+      },
+      {
+        "flags": 4122,
+        "name": "$VALUES",
+        "descriptor": "[Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 9,
+        "name": "values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 953,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "valueOf",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1001,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 1049,
+            "maxStack": 3,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "()V"
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "fromValue",
+        "descriptor": "(I)Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 1102,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "getValue",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1146,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 4106,
+        "name": "$values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Mouse$Button;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 29,
+            "codeOffset": 1189,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 59,
+            "codeOffset": 1256,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Ljava/lang/Enum<Lcom/moonsworth/webosr/input/Mouse$Button;>;"
+      },
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/input/Mouse$Cursor",
+    "superName": "java/lang/Enum",
+    "interfaces": [],
+    "flags": 16433,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 16409,
+        "name": "POINTER",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "CROSS",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "HAND",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "I_BEAM",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "WAIT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "HELP",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "EAST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_EAST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_WEST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SOUTH_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SOUTH_EAST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SOUTH_WEST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "WEST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_SOUTH_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "EAST_WEST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_EAST_SOUTH_WEST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_WEST_SOUTH_EAST_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "COLUMN_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "ROW_RESIZE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "MIDDLE_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "EAST_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_EAST_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NORTH_WEST_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SOUTH_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SOUTH_EAST_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "SOUTH_WEST_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "WEST_PANNING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "MOVE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "VERTICAL_TEXT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "CELL",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "CONTEXT_MENU",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "ALIAS",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "PROGRESS",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NO_DROP",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "COPY",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NONE",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "NOT_ALLOWED",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "ZOOM_IN",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "ZOOM_OUT",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "GRAB",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "GRABBING",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "CUSTOM",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 16409,
+        "name": "PASS_THROUGH",
+        "descriptor": "Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      },
+      {
+        "flags": 4122,
+        "name": "$VALUES",
+        "descriptor": "[Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 9,
+        "name": "values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 2428,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "valueOf",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 2476,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 2524,
+            "maxStack": 3,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "()V"
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "fromValue",
+        "descriptor": "(I)Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 2577,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "getValue",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2621,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 4106,
+        "name": "$values",
+        "descriptor": "()[Lcom/moonsworth/webosr/input/Mouse$Cursor;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 315,
+            "codeOffset": 2664,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 631,
+            "codeOffset": 3017,
+            "maxStack": 4,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Ljava/lang/Enum<Lcom/moonsworth/webosr/input/Mouse$Cursor;>;"
+      },
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/input/Mouse",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 349,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestMembers"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/javascript/CallbackJS",
+    "superName": "java/lang/Object",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ],
+    "flags": 9729,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1025,
+        "name": "value",
+        "descriptor": "()Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "async",
+        "descriptor": "()Z",
+        "attributes": [
+          {
+            "name": "AnnotationDefault"
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "RuntimeVisibleAnnotations",
+        "annotations": [
+          {
+            "type": "Ljava/lang/annotation/Retention;",
+            "values": {
+              "value": {
+                "enumType": "Ljava/lang/annotation/RetentionPolicy;",
+                "enumValue": "RUNTIME"
+              }
+            }
+          },
+          {
+            "type": "Ljava/lang/annotation/Target;",
+            "values": {
+              "value": [
+                {
+                  "enumType": "Ljava/lang/annotation/ElementType;",
+                  "enumValue": "METHOD"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair",
+    "superName": "java/lang/Record",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 18,
+        "name": "instance",
+        "descriptor": "Ljava/lang/Object;",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "method",
+        "descriptor": "Ljava/lang/invoke/MethodHandle;",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "async",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "passInstance",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "params",
+        "descriptor": "[Ljava/lang/reflect/Parameter;",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "returnType",
+        "descriptor": "Ljava/lang/Class;",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "Ljava/lang/Class<*>;"
+          }
+        ]
+      },
+      {
+        "flags": 18,
+        "name": "hasBrowser",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "hasPromiseJS",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "promiseValueType",
+        "descriptor": "Ljava/lang/Class;",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "Ljava/lang/Class<*>;"
+          }
+        ]
+      },
+      {
+        "flags": 18,
+        "name": "hasStringArray",
+        "descriptor": "Z",
+        "attributes": []
+      },
+      {
+        "flags": 18,
+        "name": "requiredJsArgCount",
+        "descriptor": "I",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 4,
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/Object;Ljava/lang/invoke/MethodHandle;ZZ[Ljava/lang/reflect/Parameter;Ljava/lang/Class;ZZLjava/lang/Class;ZI)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 68,
+            "codeOffset": 2089,
+            "maxStack": 2,
+            "maxLocals": 12
+          },
+          {
+            "name": "Signature",
+            "signature": "(Ljava/lang/Object;Ljava/lang/invoke/MethodHandle;ZZ[Ljava/lang/reflect/Parameter;Ljava/lang/Class<*>;ZZLjava/lang/Class<*>;ZI)V"
+          }
+        ]
+      },
+      {
+        "flags": 17,
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 2203,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 17,
+        "name": "hashCode",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 2248,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 17,
+        "name": "equals",
+        "descriptor": "(Ljava/lang/Object;)Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 8,
+            "codeOffset": 2293,
+            "maxStack": 2,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "instance",
+        "descriptor": "()Ljava/lang/Object;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2339,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "method",
+        "descriptor": "()Ljava/lang/invoke/MethodHandle;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2382,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "async",
+        "descriptor": "()Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2425,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "passInstance",
+        "descriptor": "()Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2468,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "params",
+        "descriptor": "()[Ljava/lang/reflect/Parameter;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2511,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "returnType",
+        "descriptor": "()Ljava/lang/Class;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2554,
+            "maxStack": 1,
+            "maxLocals": 1
+          },
+          {
+            "name": "Signature",
+            "signature": "()Ljava/lang/Class<*>;"
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "hasBrowser",
+        "descriptor": "()Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2605,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "hasPromiseJS",
+        "descriptor": "()Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2648,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "promiseValueType",
+        "descriptor": "()Ljava/lang/Class;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2691,
+            "maxStack": 1,
+            "maxLocals": 1
+          },
+          {
+            "name": "Signature",
+            "signature": "()Ljava/lang/Class<*>;"
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "hasStringArray",
+        "descriptor": "()Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2742,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "requiredJsArgCount",
+        "descriptor": "()I",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 2785,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "BootstrapMethods"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/javascript/FunctionBus",
+    "superName": "java/lang/Object",
+    "interfaces": [
+      "com/moonsworth/webosr/handler/FunctionJS"
+    ],
+    "flags": 33,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 28,
+        "name": "MAIN_ACTOR_QUEUE",
+        "descriptor": "Ljava/util/concurrent/ArrayBlockingQueue;",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "Ljava/util/concurrent/ArrayBlockingQueue<Ljava/lang/Runnable;>;"
+          }
+        ]
+      },
+      {
+        "flags": 20,
+        "name": "children",
+        "descriptor": "Ljava/util/Map;",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus;>;"
+          }
+        ]
+      },
+      {
+        "flags": 20,
+        "name": "routines",
+        "descriptor": "Ljava/util/Map;",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;>;"
+          }
+        ]
+      },
+      {
+        "flags": 20,
+        "name": "cache",
+        "descriptor": "Ljava/util/Map;",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "Ljava/util/Map<Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;>;>;"
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 38,
+            "codeOffset": 8430,
+            "maxStack": 3,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "consumeMainActorQueue",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 24,
+            "codeOffset": 8518,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "registerChild",
+        "descriptor": "(Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 13,
+            "codeOffset": 8598,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "unregisterChild",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 12,
+            "codeOffset": 8653,
+            "maxStack": 2,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "subscribe",
+        "descriptor": "(Ljava/lang/Object;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 499,
+            "codeOffset": 8707,
+            "maxStack": 13,
+            "maxLocals": 25
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "invoke",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 191,
+            "codeOffset": 10021,
+            "maxStack": 6,
+            "maxLocals": 11
+          },
+          {
+            "name": "Signature",
+            "signature": "(Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V"
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "buildInvocationParameters",
+        "descriptor": "(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 279,
+            "codeOffset": 10479,
+            "maxStack": 5,
+            "maxLocals": 15
+          },
+          {
+            "name": "Signature",
+            "signature": "(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;"
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "asBridgeCodec",
+        "descriptor": "()Lcom/moonsworth/webosr/BridgeValueCodec;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 11025,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "isExplicitTarget",
+        "descriptor": "(Ljava/lang/String;)Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 32,
+            "codeOffset": 11070,
+            "maxStack": 2,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "completePromiseIfNeeded",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 54,
+            "codeOffset": 11154,
+            "maxStack": 4,
+            "maxLocals": 4
+          },
+          {
+            "name": "Signature",
+            "signature": "(Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V"
+          }
+        ]
+      },
+      {
+        "flags": 4,
+        "name": "stringToObject",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 291,
+            "codeOffset": 11302,
+            "maxStack": 3,
+            "maxLocals": 7
+          },
+          {
+            "name": "Signature",
+            "signature": "(Ljava/lang/String;Ljava/lang/Class<*>;)Ljava/lang/Object;"
+          }
+        ]
+      },
+      {
+        "flags": 4,
+        "name": "objectToString",
+        "descriptor": "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 249,
+            "codeOffset": 11884,
+            "maxStack": 3,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "(Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/String;"
+          }
+        ]
+      },
+      {
+        "flags": 4098,
+        "name": "lambda$invoke$0",
+        "descriptor": "(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 34,
+            "codeOffset": 12374,
+            "maxStack": 4,
+            "maxLocals": 5
+          }
+        ]
+      },
+      {
+        "flags": 8,
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 14,
+            "codeOffset": 12493,
+            "maxStack": 3,
+            "maxLocals": 0
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestMembers"
+      },
+      {
+        "name": "BootstrapMethods"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/Browser$Listener",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1537,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "onBeginLoad",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;JZLjava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1505,
+            "maxStack": 0,
+            "maxLocals": 6
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onFinishLoad",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;JZLjava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1544,
+            "maxStack": 0,
+            "maxLocals": 6
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onFailLoading",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;JZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1583,
+            "maxStack": 0,
+            "maxLocals": 9
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onWindowObjectReady",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;JZLjava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1622,
+            "maxStack": 0,
+            "maxLocals": 6
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onDocumentReady",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;JZLjava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1661,
+            "maxStack": 0,
+            "maxLocals": 6
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onUpdateHistory",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1700,
+            "maxStack": 0,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onNetworkRequest",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 2,
+            "codeOffset": 1739,
+            "maxStack": 1,
+            "maxLocals": 8
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onEnforcePublicKey",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 2,
+            "codeOffset": 1779,
+            "maxStack": 1,
+            "maxLocals": 8
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onChangeTitle",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1819,
+            "maxStack": 0,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onChangeURL",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1858,
+            "maxStack": 0,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onChangeTooltip",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1897,
+            "maxStack": 0,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onRequestClose",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1936,
+            "maxStack": 0,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onCursorChange",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;Lcom/moonsworth/webosr/input/Mouse$Cursor;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 1,
+            "codeOffset": 1975,
+            "maxStack": 0,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onCursorChange",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 12,
+            "codeOffset": 2014,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "onCreateChild",
+        "descriptor": "(Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;Ljava/lang/String;ZIIII)Lcom/moonsworth/webosr/wrappers/Browser;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 2,
+            "codeOffset": 2068,
+            "maxStack": 1,
+            "maxLocals": 9
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestHost"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/Browser",
+    "superName": "com/moonsworth/webosr/NativeHandle",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 1335,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 257,
+        "name": "loadURL",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "getURL",
+        "descriptor": "()Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "next",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "previous",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "reload",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "stopLoad",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "hasFocus",
+        "descriptor": "()Z",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "setFocus",
+        "descriptor": "(Z)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "hasInputFocus",
+        "descriptor": "()Z",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "triggerResize",
+        "descriptor": "(II)V",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "triggerKeyEvent",
+        "descriptor": "(Ljava/lang/String;ILjava/lang/String;ILcom/moonsworth/webosr/input/Keyboard$Action;I)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 17,
+            "codeOffset": 1463,
+            "maxStack": 7,
+            "maxLocals": 7
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "triggerMouseEvent",
+        "descriptor": "(Lcom/moonsworth/webosr/input/Mouse$Button;Lcom/moonsworth/webosr/input/Mouse$Action;III)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 18,
+            "codeOffset": 1522,
+            "maxStack": 6,
+            "maxLocals": 6
+          }
+        ]
+      },
+      {
+        "flags": 258,
+        "name": "triggerMouseEvent",
+        "descriptor": "(IIIII)V",
+        "attributes": []
+      },
+      {
+        "flags": 258,
+        "name": "triggerKeyEvent",
+        "descriptor": "(Ljava/lang/String;ILjava/lang/String;III)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "triggerScrollEvent",
+        "descriptor": "(IIIII)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "getTexture",
+        "descriptor": "()I",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "setDeviceScaleFactor",
+        "descriptor": "(D)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "getWidth",
+        "descriptor": "()I",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "getHeight",
+        "descriptor": "()I",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "eval",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/NativeFuture;",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "evalNoResult",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "bindFunction",
+        "descriptor": "(Ljava/lang/String;Lcom/moonsworth/webosr/handler/FunctionJS;)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "unbindFunction",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "createInspector",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 260,
+        "name": "destroy",
+        "descriptor": "()V",
+        "attributes": []
+      }
+    ],
+    "attributes": [
+      {
+        "name": "NestMembers"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/NativeFuture",
+    "superName": "com/moonsworth/webosr/NativeHandle",
+    "interfaces": [
+      "java/util/concurrent/Future"
+    ],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 734,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 257,
+        "name": "isUndefined",
+        "descriptor": "()Z",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "get",
+        "descriptor": "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/String;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 790,
+            "maxStack": 4,
+            "maxLocals": 4
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "get",
+        "descriptor": "()Ljava/lang/String;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 838,
+            "maxStack": 3,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 257,
+        "name": "isDone",
+        "descriptor": "()Z",
+        "attributes": []
+      },
+      {
+        "flags": 1,
+        "name": "isCancelled",
+        "descriptor": "()Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 8,
+            "codeOffset": 890,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "cancel",
+        "descriptor": "(Z)Z",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 8,
+            "codeOffset": 936,
+            "maxStack": 2,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 260,
+        "name": "destroy",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 258,
+        "name": "get0",
+        "descriptor": "(J)Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 4161,
+        "name": "get",
+        "descriptor": "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 7,
+            "codeOffset": 998,
+            "maxStack": 4,
+            "maxLocals": 4
+          }
+        ]
+      },
+      {
+        "flags": 4161,
+        "name": "get",
+        "descriptor": "()Ljava/lang/Object;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 1043,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "Lcom/moonsworth/webosr/NativeHandle;Ljava/util/concurrent/Future<Ljava/lang/String;>;"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/PlatformInterface",
+    "superName": "com/moonsworth/webosr/NativeHandle",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 575,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 257,
+        "name": "setScrollCallback",
+        "descriptor": "(Ljava/util/function/BiConsumer;)V",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "(Ljava/util/function/BiConsumer<Ljava/lang/Double;Ljava/lang/Double;>;)V"
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "setCursor",
+        "descriptor": "(Lcom/moonsworth/webosr/input/Mouse$Cursor;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 9,
+            "codeOffset": 639,
+            "maxStack": 2,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 260,
+        "name": "destroy",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 258,
+        "name": "setCursor0",
+        "descriptor": "(I)V",
+        "attributes": []
+      }
+    ],
+    "attributes": [
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/PromiseJS",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 66,
+        "name": "handle",
+        "descriptor": "J",
+        "attributes": []
+      },
+      {
+        "flags": 2,
+        "name": "bridgeCodec",
+        "descriptor": "Lcom/moonsworth/webosr/BridgeValueCodec;",
+        "attributes": []
+      },
+      {
+        "flags": 2,
+        "name": "bridgeValueType",
+        "descriptor": "Ljava/lang/Class;",
+        "attributes": [
+          {
+            "name": "Signature",
+            "signature": "Ljava/lang/Class<*>;"
+          }
+        ]
+      }
+    ],
+    "methods": [
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 10,
+            "codeOffset": 1563,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "resolve",
+        "descriptor": "(Ljava/lang/Object;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 101,
+            "codeOffset": 1619,
+            "maxStack": 4,
+            "maxLocals": 2
+          },
+          {
+            "name": "Signature",
+            "signature": "(TT;)V"
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "_resolve",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 34,
+            "codeOffset": 1832,
+            "maxStack": 4,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "resolve",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 33,
+            "codeOffset": 1933,
+            "maxStack": 4,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "reject",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 34,
+            "codeOffset": 2033,
+            "maxStack": 4,
+            "maxLocals": 2
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "reject",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 33,
+            "codeOffset": 2134,
+            "maxStack": 4,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "bindBridgeCodec",
+        "descriptor": "(Lcom/moonsworth/webosr/BridgeValueCodec;Ljava/lang/Class;)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 11,
+            "codeOffset": 2234,
+            "maxStack": 2,
+            "maxLocals": 3
+          },
+          {
+            "name": "Signature",
+            "signature": "(Lcom/moonsworth/webosr/BridgeValueCodec;Ljava/lang/Class<*>;)V"
+          }
+        ]
+      },
+      {
+        "flags": 2,
+        "name": "clearBridgeCodec",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 11,
+            "codeOffset": 2299,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 258,
+        "name": "resolve0",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": []
+      },
+      {
+        "flags": 258,
+        "name": "resolve1",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 258,
+        "name": "reject0",
+        "descriptor": "(Ljava/lang/String;)V",
+        "attributes": []
+      },
+      {
+        "flags": 258,
+        "name": "reject1",
+        "descriptor": "()V",
+        "attributes": []
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Signature",
+        "signature": "<T:Ljava/lang/Object;>Ljava/lang/Object;"
+      },
+      {
+        "name": "BootstrapMethods"
+      },
+      {
+        "name": "InnerClasses"
+      }
+    ]
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/Session",
+    "superName": "com/moonsworth/webosr/NativeHandle",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 246,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 257,
+        "name": "isPersistent",
+        "descriptor": "()Z",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "name",
+        "descriptor": "()Ljava/lang/String;",
+        "attributes": []
+      },
+      {
+        "flags": 260,
+        "name": "destroy",
+        "descriptor": "()V",
+        "attributes": []
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/WebEngine",
+    "superName": "com/moonsworth/webosr/NativeHandle",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [
+      {
+        "flags": 18,
+        "name": "owner",
+        "descriptor": "Ljava/lang/Thread;",
+        "attributes": []
+      }
+    ],
+    "methods": [
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 13,
+            "codeOffset": 915,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 1,
+        "name": "invokeIteration",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 21,
+            "codeOffset": 974,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 257,
+        "name": "createImageSourceTextured",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/image/TexturedImageSource;",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "createSession",
+        "descriptor": "(Ljava/lang/String;Z)Lcom/moonsworth/webosr/wrappers/Session;",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "createBrowser",
+        "descriptor": "(Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "getPlatformInterface",
+        "descriptor": "()Lcom/moonsworth/webosr/wrappers/PlatformInterface;",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "setFPS",
+        "descriptor": "(I)V",
+        "attributes": []
+      },
+      {
+        "flags": 260,
+        "name": "destroy",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 258,
+        "name": "invokeIteration0",
+        "descriptor": "()V",
+        "attributes": []
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/WebOSR",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1,
+        "name": "<init>",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 5,
+            "codeOffset": 741,
+            "maxStack": 1,
+            "maxLocals": 1
+          }
+        ]
+      },
+      {
+        "flags": 9,
+        "name": "loadLibraries",
+        "descriptor": "()V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 21,
+            "codeOffset": 784,
+            "maxStack": 1,
+            "maxLocals": 0
+          }
+        ]
+      },
+      {
+        "flags": 265,
+        "name": "createEngine",
+        "descriptor": "(Lcom/moonsworth/webosr/handler/Logger;Lcom/moonsworth/webosr/config/UltralightConfig;Lcom/moonsworth/webosr/config/ThreadConfig;)Lcom/moonsworth/webosr/wrappers/WebEngine;",
+        "attributes": []
+      },
+      {
+        "flags": 9,
+        "name": "allocateByteBuffer",
+        "descriptor": "(I)Ljava/nio/ByteBuffer;",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 11,
+            "codeOffset": 867,
+            "maxStack": 2,
+            "maxLocals": 1
+          }
+        ]
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/image/ChildImageSource",
+    "superName": "com/moonsworth/webosr/NativeHandle",
+    "interfaces": [
+      "com/moonsworth/webosr/wrappers/image/ImageSource"
+    ],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 297,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 257,
+        "name": "bind",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "unbind",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "uv",
+        "descriptor": "(IIII)V",
+        "attributes": []
+      },
+      {
+        "flags": 260,
+        "name": "destroy",
+        "descriptor": "()V",
+        "attributes": []
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/image/ImageSource",
+    "superName": "java/lang/Object",
+    "interfaces": [],
+    "flags": 1537,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 1025,
+        "name": "bind",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "unbind",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 1025,
+        "name": "uv",
+        "descriptor": "(IIII)V",
+        "attributes": []
+      }
+    ],
+    "attributes": []
+  },
+  {
+    "file": "lunar.jar",
+    "name": "com/moonsworth/webosr/wrappers/image/TexturedImageSource",
+    "superName": "com/moonsworth/webosr/NativeHandle",
+    "interfaces": [
+      "com/moonsworth/webosr/wrappers/image/ImageSource"
+    ],
+    "flags": 49,
+    "major": 60,
+    "fields": [],
+    "methods": [
+      {
+        "flags": 2,
+        "name": "<init>",
+        "descriptor": "(J)V",
+        "attributes": [
+          {
+            "name": "Code",
+            "bytes": 6,
+            "codeOffset": 441,
+            "maxStack": 3,
+            "maxLocals": 3
+          }
+        ]
+      },
+      {
+        "flags": 257,
+        "name": "update",
+        "descriptor": "(Ljava/nio/ByteBuffer;)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "size",
+        "descriptor": "(II)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "makeChild",
+        "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/image/ChildImageSource;",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "uv",
+        "descriptor": "(IIII)V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "bind",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 257,
+        "name": "unbind",
+        "descriptor": "()V",
+        "attributes": []
+      },
+      {
+        "flags": 260,
+        "name": "destroy",
+        "descriptor": "()V",
+        "attributes": []
+      }
+    ],
+    "attributes": []
+  }
+]

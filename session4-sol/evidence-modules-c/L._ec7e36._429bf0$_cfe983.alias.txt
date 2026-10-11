@@ -1,0 +1,99 @@
+public class L._ec7e36._429bf0$_cfe983 extends L._ec7e36._cfe983._cfe983._cfe983<L._ec7e36._429bf0$_cfe983, L._ec7e36._429bf0> {
+  private java.util.function.BooleanSupplier _d846f3;
+
+  protected L._ec7e36._429bf0$_cfe983(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #23                 // Method L/_ec7e36/_cfe983/_cfe983/_cfe983."<init>":(Ljava/lang/String;)V
+       5: return
+
+  protected boolean _141a9e();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public L._ec7e36._429bf0$_cfe983 _d4ca6c(java.util.function.BooleanSupplier);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #13                 // Field _d846f3:Ljava/util/function/BooleanSupplier;
+       5: aload_0
+       6: areturn
+
+  protected L._ec7e36._429bf0 _590f69(L._ec7e36._429bf0);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #24                 // Method L/_ec7e36/_cfe983/_cfe983/_cfe983._f6e62b:(LL/_ec7e36/_dd3308;)LL/_ec7e36/_dd3308;
+       5: pop
+       6: aload_0
+       7: getfield      #13                 // Field _d846f3:Ljava/util/function/BooleanSupplier;
+      10: ifnull        48
+      13: aload_1
+      14: getstatic     #15                 // Field L/_ec7e36/_1e73d7/_88f3cf._2b6a6c:LL/_55938e/_e62626;
+      17: invokevirtual #19                 // Method L/_ec7e36/_429bf0._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      20: checkcast     #2                  // class L/_c8175c/_cfe983/_1e73d7
+      23: astore_2
+      24: aload_1
+      25: getstatic     #15                 // Field L/_ec7e36/_1e73d7/_88f3cf._2b6a6c:LL/_55938e/_e62626;
+      28: new           #1                  // class L/_c8175c/_cfe983/_cfe983
+      31: dup
+      32: aload_2
+      33: aload_0
+      34: getfield      #13                 // Field _d846f3:Ljava/util/function/BooleanSupplier;
+      37: iconst_1
+      38: invokestatic  #25                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      41: invokespecial #16                 // Method L/_c8175c/_cfe983/_cfe983."<init>":(LL/_c8175c/_cfe983/_1e73d7;Ljava/util/function/BooleanSupplier;Ljava/lang/Object;)V
+      44: invokevirtual #18                 // Method L/_ec7e36/_429bf0._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      47: pop
+      48: aload_1
+      49: areturn
+
+  protected L._ec7e36._429bf0 _56f75a();
+    Code:
+       0: new           #3                  // class L/_ec7e36/_429bf0
+       3: dup
+       4: aload_0
+       5: getfield      #12                 // Field _923909:Ljava/lang/String;
+       8: aload_0
+       9: getfield      #14                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+      12: aload_0
+      13: getfield      #11                 // Field _050a61:Z
+      16: invokestatic  #25                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      19: invokespecial #17                 // Method L/_ec7e36/_429bf0."<init>":(Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;Ljava/lang/Boolean;)V
+      22: areturn
+
+  public L._ec7e36._429bf0 _6fc5d5(java.lang.String, boolean);
+    Code:
+       0: aload_0
+       1: new           #5                  // class L/_ec7e36/_429bf0$_cfe983$1
+       4: dup
+       5: aload_0
+       6: aload_0
+       7: getfield      #12                 // Field _923909:Ljava/lang/String;
+      10: aload_0
+      11: getfield      #14                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+      14: aload_0
+      15: getfield      #11                 // Field _050a61:Z
+      18: invokestatic  #25                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      21: aload_1
+      22: iload_2
+      23: invokespecial #22                 // Method L/_ec7e36/_429bf0$_cfe983$1."<init>":(LL/_ec7e36/_429bf0$_cfe983;Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;Ljava/lang/Boolean;Ljava/lang/String;Z)V
+      26: invokevirtual #21                 // Method _590f69:(LL/_ec7e36/_429bf0;)LL/_ec7e36/_429bf0;
+      29: areturn
+
+  protected L._ec7e36._dd3308 _aa113c();
+    Code:
+       0: aload_0
+       1: invokevirtual #20                 // Method _56f75a:()LL/_ec7e36/_429bf0;
+       4: areturn
+
+  protected L._ec7e36._dd3308 _f6e62b(L._ec7e36._dd3308);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #3                  // class L/_ec7e36/_429bf0
+       5: invokevirtual #21                 // Method _590f69:(LL/_ec7e36/_429bf0;)LL/_ec7e36/_429bf0;
+       8: areturn
+}

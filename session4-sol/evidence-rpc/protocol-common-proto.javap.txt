@@ -1,0 +1,145 @@
+public final class com.lunarclient.gameipc.protocol.v1.CommonProto {
+  static final com.google.protobuf.Descriptors$Descriptor internal_static_lunarclient_gameipc_protocol_v1_LauncherboundIPCMessage_descriptor;
+
+  static final com.google.protobuf.GeneratedMessageV3$FieldAccessorTable internal_static_lunarclient_gameipc_protocol_v1_LauncherboundIPCMessage_fieldAccessorTable;
+
+  static final com.google.protobuf.Descriptors$Descriptor internal_static_lunarclient_gameipc_protocol_v1_GameboundIPCMessage_descriptor;
+
+  static final com.google.protobuf.GeneratedMessageV3$FieldAccessorTable internal_static_lunarclient_gameipc_protocol_v1_GameboundIPCMessage_fieldAccessorTable;
+
+  static final com.google.protobuf.Descriptors$Descriptor internal_static_lunarclient_gameipc_protocol_v1_IPCRpcResponse_descriptor;
+
+  static final com.google.protobuf.GeneratedMessageV3$FieldAccessorTable internal_static_lunarclient_gameipc_protocol_v1_IPCRpcResponse_fieldAccessorTable;
+
+  private static com.google.protobuf.Descriptors$FileDescriptor descriptor;
+
+  private com.lunarclient.gameipc.protocol.v1.CommonProto();
+    Code:
+       0: aload_0
+       1: invokespecial #36                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void registerAllExtensions(com.google.protobuf.ExtensionRegistryLite);
+    Code:
+       0: return
+
+  public static void registerAllExtensions(com.google.protobuf.ExtensionRegistry);
+    Code:
+       0: aload_0
+       1: invokestatic  #35                 // Method registerAllExtensions:(Lcom/google/protobuf/ExtensionRegistryLite;)V
+       4: return
+
+  public static com.google.protobuf.Descriptors$FileDescriptor getDescriptor();
+    Code:
+       0: getstatic     #23                 // Field descriptor:Lcom/google/protobuf/Descriptors$FileDescriptor;
+       3: areturn
+
+  static {};
+    Code:
+       0: iconst_1
+       1: anewarray     #21                 // class java/lang/String
+       4: dup
+       5: iconst_0
+       6: ldc           #1                  // String \n,lunarclient/gameipc/protocol/v1/common.proto\u0012\u001flunarclient.gameipc.protocol.v1\u001a\u0019google/protobuf/any.proto\"è\u0001\n\u0017LauncherboundIPCMessage\u0012\u001d\n\nrequest_id\u0018\u0001 \u0001(\fR\trequestId\u0012\u0018\n\u0007service\u0018\u0002 \u0001(\tR\u0007service\u0012\u0016\n\u0006method\u0018\u0003 \u0001(\tR\u0006method\u0012\u0014\n\u0005input\u0018\u0004 \u0001(\fR\u0005input\u0012\u001f\n\u000bfull_method\u0018\u0006 \u0001(\tR\nfullMethod\u0012\u001d\n\ninput_name\u0018\u0007 \u0001(\tR\tinputName\u0012&\n\u000finput_full_name\u0018\b \u0001(\tR\rinputFullName\"¼\u0001\n\u0013GameboundIPCMessage\u0012T\n\frpc_response\u0018\u0001 \u0001(\u000b2/.lunarclient.gameipc.protocol.v1.IPCRpcResponseH\u0000R\u000brpcResponse\u0012C\n\u0011push_notification\u0018\u0002 \u0001(\u000b2\u0014.google.protobuf.AnyH\u0000R\u0010pushNotificationB\n\n\bcontents\"G\n\u000eIPCRpcResponse\u0012\u001d\n\nrequest_id\u0018\u0001 \u0001(\fR\trequestId\u0012\u0016\n\u0006output\u0018\u0002 \u0001(\fR\u0006outputBÑ\u0001\n#com.lunarclient.gameipc.protocol.v1B\u000bCommonProtoP\u0001¢\u0002\u0003LGPª\u0002\u001fLunarclient.Gameipc.Protocol.V1Ê\u0002\u001fLunarclient\\Gameipc\\Protocol\\V1â\u0002+Lunarclient\\Gameipc\\Protocol\\V1\\GPBMetadataê\u0002\"Lunarclient::Gameipc::Protocol::V1b\u0006proto3
+       8: aastore
+       9: astore_0
+      10: aload_0
+      11: iconst_1
+      12: anewarray     #16                 // class com/google/protobuf/Descriptors$FileDescriptor
+      15: dup
+      16: iconst_0
+      17: invokestatic  #30                 // Method com/google/protobuf/AnyProto.getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+      20: aastore
+      21: invokestatic  #32                 // Method com/google/protobuf/Descriptors$FileDescriptor.internalBuildGeneratedFileFrom:([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
+      24: putstatic     #23                 // Field descriptor:Lcom/google/protobuf/Descriptors$FileDescriptor;
+      27: invokestatic  #34                 // Method getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+      30: invokevirtual #31                 // Method com/google/protobuf/Descriptors$FileDescriptor.getMessageTypes:()Ljava/util/List;
+      33: iconst_0
+      34: invokeinterface #37,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      39: checkcast     #15                 // class com/google/protobuf/Descriptors$Descriptor
+      42: putstatic     #28                 // Field internal_static_lunarclient_gameipc_protocol_v1_LauncherboundIPCMessage_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+      45: new           #18                 // class com/google/protobuf/GeneratedMessageV3$FieldAccessorTable
+      48: dup
+      49: getstatic     #28                 // Field internal_static_lunarclient_gameipc_protocol_v1_LauncherboundIPCMessage_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+      52: bipush        7
+      54: anewarray     #21                 // class java/lang/String
+      57: dup
+      58: iconst_0
+      59: ldc           #10                 // String RequestId
+      61: aastore
+      62: dup
+      63: iconst_1
+      64: ldc           #12                 // String Service
+      66: aastore
+      67: dup
+      68: iconst_2
+      69: ldc           #7                  // String Method
+      71: aastore
+      72: dup
+      73: iconst_3
+      74: ldc           #4                  // String Input
+      76: aastore
+      77: dup
+      78: iconst_4
+      79: ldc           #3                  // String FullMethod
+      81: aastore
+      82: dup
+      83: iconst_5
+      84: ldc           #6                  // String InputName
+      86: aastore
+      87: dup
+      88: bipush        6
+      90: ldc           #5                  // String InputFullName
+      92: aastore
+      93: invokespecial #33                 // Method com/google/protobuf/GeneratedMessageV3$FieldAccessorTable."<init>":(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
+      96: putstatic     #29                 // Field internal_static_lunarclient_gameipc_protocol_v1_LauncherboundIPCMessage_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+      99: invokestatic  #34                 // Method getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+     102: invokevirtual #31                 // Method com/google/protobuf/Descriptors$FileDescriptor.getMessageTypes:()Ljava/util/List;
+     105: iconst_1
+     106: invokeinterface #37,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     111: checkcast     #15                 // class com/google/protobuf/Descriptors$Descriptor
+     114: putstatic     #24                 // Field internal_static_lunarclient_gameipc_protocol_v1_GameboundIPCMessage_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+     117: new           #18                 // class com/google/protobuf/GeneratedMessageV3$FieldAccessorTable
+     120: dup
+     121: getstatic     #24                 // Field internal_static_lunarclient_gameipc_protocol_v1_GameboundIPCMessage_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+     124: iconst_3
+     125: anewarray     #21                 // class java/lang/String
+     128: dup
+     129: iconst_0
+     130: ldc           #11                 // String RpcResponse
+     132: aastore
+     133: dup
+     134: iconst_1
+     135: ldc           #9                  // String PushNotification
+     137: aastore
+     138: dup
+     139: iconst_2
+     140: ldc           #2                  // String Contents
+     142: aastore
+     143: invokespecial #33                 // Method com/google/protobuf/GeneratedMessageV3$FieldAccessorTable."<init>":(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
+     146: putstatic     #25                 // Field internal_static_lunarclient_gameipc_protocol_v1_GameboundIPCMessage_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+     149: invokestatic  #34                 // Method getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+     152: invokevirtual #31                 // Method com/google/protobuf/Descriptors$FileDescriptor.getMessageTypes:()Ljava/util/List;
+     155: iconst_2
+     156: invokeinterface #37,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     161: checkcast     #15                 // class com/google/protobuf/Descriptors$Descriptor
+     164: putstatic     #26                 // Field internal_static_lunarclient_gameipc_protocol_v1_IPCRpcResponse_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+     167: new           #18                 // class com/google/protobuf/GeneratedMessageV3$FieldAccessorTable
+     170: dup
+     171: getstatic     #26                 // Field internal_static_lunarclient_gameipc_protocol_v1_IPCRpcResponse_descriptor:Lcom/google/protobuf/Descriptors$Descriptor;
+     174: iconst_2
+     175: anewarray     #21                 // class java/lang/String
+     178: dup
+     179: iconst_0
+     180: ldc           #10                 // String RequestId
+     182: aastore
+     183: dup
+     184: iconst_1
+     185: ldc           #8                  // String Output
+     187: aastore
+     188: invokespecial #33                 // Method com/google/protobuf/GeneratedMessageV3$FieldAccessorTable."<init>":(Lcom/google/protobuf/Descriptors$Descriptor;[Ljava/lang/String;)V
+     191: putstatic     #27                 // Field internal_static_lunarclient_gameipc_protocol_v1_IPCRpcResponse_fieldAccessorTable:Lcom/google/protobuf/GeneratedMessageV3$FieldAccessorTable;
+     194: invokestatic  #30                 // Method com/google/protobuf/AnyProto.getDescriptor:()Lcom/google/protobuf/Descriptors$FileDescriptor;
+     197: pop
+     198: return
+}

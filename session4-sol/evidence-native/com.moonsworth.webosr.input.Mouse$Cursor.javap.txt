@@ -1,0 +1,591 @@
+public final class com.moonsworth.webosr.input.Mouse$Cursor extends java.lang.Enum<com.moonsworth.webosr.input.Mouse$Cursor> {
+  public static final com.moonsworth.webosr.input.Mouse$Cursor POINTER;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor CROSS;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor HAND;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor I_BEAM;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor WAIT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor HELP;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor EAST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_EAST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_EAST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_SOUTH_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor EAST_WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_EAST_SOUTH_WEST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_WEST_SOUTH_EAST_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor COLUMN_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor ROW_RESIZE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor MIDDLE_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor EAST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_EAST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NORTH_WEST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_EAST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor SOUTH_WEST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor WEST_PANNING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor MOVE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor VERTICAL_TEXT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor CELL;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor CONTEXT_MENU;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor ALIAS;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor PROGRESS;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NO_DROP;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor COPY;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NONE;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor NOT_ALLOWED;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor ZOOM_IN;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor ZOOM_OUT;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor GRAB;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor GRABBING;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor CUSTOM;
+
+  public static final com.moonsworth.webosr.input.Mouse$Cursor PASS_THROUGH;
+
+  private static final com.moonsworth.webosr.input.Mouse$Cursor[] $VALUES;
+
+  public static com.moonsworth.webosr.input.Mouse$Cursor[] values();
+    Code:
+       0: getstatic     #50                 // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Cursor;
+       3: invokevirtual #96                 // Method "[Lcom/moonsworth/webosr/input/Mouse$Cursor;".clone:()Ljava/lang/Object;
+       6: checkcast     #46                 // class "[Lcom/moonsworth/webosr/input/Mouse$Cursor;"
+       9: areturn
+
+  public static com.moonsworth.webosr.input.Mouse$Cursor valueOf(java.lang.String);
+    Code:
+       0: ldc           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+       2: aload_0
+       3: invokestatic  #102                // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+       9: areturn
+
+  private com.moonsworth.webosr.input.Mouse$Cursor();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #101                // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.input.Mouse$Cursor fromValue(int);
+    Code:
+       0: invokestatic  #100                // Method values:()[Lcom/moonsworth/webosr/input/Mouse$Cursor;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int getValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #99                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.input.Mouse$Cursor[] $values();
+    Code:
+       0: bipush        45
+       2: anewarray     #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+       5: dup
+       6: iconst_0
+       7: getstatic     #81                 // Field POINTER:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #56                 // Field CROSS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #63                 // Field HAND:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #65                 // Field I_BEAM:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #91                 // Field WAIT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: getstatic     #64                 // Field HELP:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      40: aastore
+      41: dup
+      42: bipush        6
+      44: getstatic     #59                 // Field EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      47: aastore
+      48: dup
+      49: bipush        7
+      51: getstatic     #73                 // Field NORTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      54: aastore
+      55: dup
+      56: bipush        8
+      58: getstatic     #70                 // Field NORTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      61: aastore
+      62: dup
+      63: bipush        9
+      65: getstatic     #76                 // Field NORTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      68: aastore
+      69: dup
+      70: bipush        10
+      72: getstatic     #87                 // Field SOUTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      75: aastore
+      76: dup
+      77: bipush        11
+      79: getstatic     #85                 // Field SOUTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      82: aastore
+      83: dup
+      84: bipush        12
+      86: getstatic     #89                 // Field SOUTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      89: aastore
+      90: dup
+      91: bipush        13
+      93: getstatic     #93                 // Field WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      96: aastore
+      97: dup
+      98: bipush        14
+     100: getstatic     #74                 // Field NORTH_SOUTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     103: aastore
+     104: dup
+     105: bipush        15
+     107: getstatic     #60                 // Field EAST_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     110: aastore
+     111: dup
+     112: bipush        16
+     114: getstatic     #71                 // Field NORTH_EAST_SOUTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     117: aastore
+     118: dup
+     119: bipush        17
+     121: getstatic     #77                 // Field NORTH_WEST_SOUTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     124: aastore
+     125: dup
+     126: bipush        18
+     128: getstatic     #53                 // Field COLUMN_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     131: aastore
+     132: dup
+     133: bipush        19
+     135: getstatic     #83                 // Field ROW_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     138: aastore
+     139: dup
+     140: bipush        20
+     142: getstatic     #66                 // Field MIDDLE_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     145: aastore
+     146: dup
+     147: bipush        21
+     149: getstatic     #58                 // Field EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     152: aastore
+     153: dup
+     154: bipush        22
+     156: getstatic     #72                 // Field NORTH_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     159: aastore
+     160: dup
+     161: bipush        23
+     163: getstatic     #69                 // Field NORTH_EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     166: aastore
+     167: dup
+     168: bipush        24
+     170: getstatic     #75                 // Field NORTH_WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     173: aastore
+     174: dup
+     175: bipush        25
+     177: getstatic     #86                 // Field SOUTH_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     180: aastore
+     181: dup
+     182: bipush        26
+     184: getstatic     #84                 // Field SOUTH_EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     187: aastore
+     188: dup
+     189: bipush        27
+     191: getstatic     #88                 // Field SOUTH_WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     194: aastore
+     195: dup
+     196: bipush        28
+     198: getstatic     #92                 // Field WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     201: aastore
+     202: dup
+     203: bipush        29
+     205: getstatic     #67                 // Field MOVE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     208: aastore
+     209: dup
+     210: bipush        30
+     212: getstatic     #90                 // Field VERTICAL_TEXT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     215: aastore
+     216: dup
+     217: bipush        31
+     219: getstatic     #52                 // Field CELL:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     222: aastore
+     223: dup
+     224: bipush        32
+     226: getstatic     #54                 // Field CONTEXT_MENU:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     229: aastore
+     230: dup
+     231: bipush        33
+     233: getstatic     #51                 // Field ALIAS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     236: aastore
+     237: dup
+     238: bipush        34
+     240: getstatic     #82                 // Field PROGRESS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     243: aastore
+     244: dup
+     245: bipush        35
+     247: getstatic     #79                 // Field NO_DROP:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     250: aastore
+     251: dup
+     252: bipush        36
+     254: getstatic     #55                 // Field COPY:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     257: aastore
+     258: dup
+     259: bipush        37
+     261: getstatic     #68                 // Field NONE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     264: aastore
+     265: dup
+     266: bipush        38
+     268: getstatic     #78                 // Field NOT_ALLOWED:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     271: aastore
+     272: dup
+     273: bipush        39
+     275: getstatic     #94                 // Field ZOOM_IN:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     278: aastore
+     279: dup
+     280: bipush        40
+     282: getstatic     #95                 // Field ZOOM_OUT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     285: aastore
+     286: dup
+     287: bipush        41
+     289: getstatic     #61                 // Field GRAB:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     292: aastore
+     293: dup
+     294: bipush        42
+     296: getstatic     #62                 // Field GRABBING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     299: aastore
+     300: dup
+     301: bipush        43
+     303: getstatic     #57                 // Field CUSTOM:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     306: aastore
+     307: dup
+     308: bipush        44
+     310: getstatic     #80                 // Field PASS_THROUGH:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     313: aastore
+     314: areturn
+
+  static {};
+    Code:
+       0: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+       3: dup
+       4: ldc           #31                 // String POINTER
+       6: iconst_0
+       7: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #81                 // Field POINTER:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      13: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      16: dup
+      17: ldc           #6                  // String CROSS
+      19: iconst_1
+      20: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #56                 // Field CROSS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      26: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      29: dup
+      30: ldc           #13                 // String HAND
+      32: iconst_2
+      33: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #63                 // Field HAND:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      39: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      42: dup
+      43: ldc           #15                 // String I_BEAM
+      45: iconst_3
+      46: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #65                 // Field I_BEAM:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      52: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      55: dup
+      56: ldc           #41                 // String WAIT
+      58: iconst_4
+      59: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      62: putstatic     #91                 // Field WAIT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      65: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      68: dup
+      69: ldc           #14                 // String HELP
+      71: iconst_5
+      72: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      75: putstatic     #64                 // Field HELP:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      78: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      81: dup
+      82: ldc           #9                  // String EAST_RESIZE
+      84: bipush        6
+      86: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+      89: putstatic     #59                 // Field EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+      92: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+      95: dup
+      96: ldc           #23                 // String NORTH_RESIZE
+      98: bipush        7
+     100: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     103: putstatic     #73                 // Field NORTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     106: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     109: dup
+     110: ldc           #20                 // String NORTH_EAST_RESIZE
+     112: bipush        8
+     114: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     117: putstatic     #70                 // Field NORTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     120: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     123: dup
+     124: ldc           #26                 // String NORTH_WEST_RESIZE
+     126: bipush        9
+     128: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     131: putstatic     #76                 // Field NORTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     134: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     137: dup
+     138: ldc           #37                 // String SOUTH_RESIZE
+     140: bipush        10
+     142: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     145: putstatic     #87                 // Field SOUTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     148: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     151: dup
+     152: ldc           #35                 // String SOUTH_EAST_RESIZE
+     154: bipush        11
+     156: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     159: putstatic     #85                 // Field SOUTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     162: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     165: dup
+     166: ldc           #39                 // String SOUTH_WEST_RESIZE
+     168: bipush        12
+     170: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     173: putstatic     #89                 // Field SOUTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     176: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     179: dup
+     180: ldc           #43                 // String WEST_RESIZE
+     182: bipush        13
+     184: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     187: putstatic     #93                 // Field WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     190: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     193: dup
+     194: ldc           #24                 // String NORTH_SOUTH_RESIZE
+     196: bipush        14
+     198: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     201: putstatic     #74                 // Field NORTH_SOUTH_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     204: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     207: dup
+     208: ldc           #10                 // String EAST_WEST_RESIZE
+     210: bipush        15
+     212: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     215: putstatic     #60                 // Field EAST_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     218: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     221: dup
+     222: ldc           #21                 // String NORTH_EAST_SOUTH_WEST_RESIZE
+     224: bipush        16
+     226: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     229: putstatic     #71                 // Field NORTH_EAST_SOUTH_WEST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     232: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     235: dup
+     236: ldc           #27                 // String NORTH_WEST_SOUTH_EAST_RESIZE
+     238: bipush        17
+     240: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     243: putstatic     #77                 // Field NORTH_WEST_SOUTH_EAST_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     246: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     249: dup
+     250: ldc           #3                  // String COLUMN_RESIZE
+     252: bipush        18
+     254: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     257: putstatic     #53                 // Field COLUMN_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     260: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     263: dup
+     264: ldc           #33                 // String ROW_RESIZE
+     266: bipush        19
+     268: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     271: putstatic     #83                 // Field ROW_RESIZE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     274: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     277: dup
+     278: ldc           #16                 // String MIDDLE_PANNING
+     280: bipush        20
+     282: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     285: putstatic     #66                 // Field MIDDLE_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     288: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     291: dup
+     292: ldc           #8                  // String EAST_PANNING
+     294: bipush        21
+     296: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     299: putstatic     #58                 // Field EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     302: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     305: dup
+     306: ldc           #22                 // String NORTH_PANNING
+     308: bipush        22
+     310: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     313: putstatic     #72                 // Field NORTH_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     316: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     319: dup
+     320: ldc           #19                 // String NORTH_EAST_PANNING
+     322: bipush        23
+     324: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     327: putstatic     #69                 // Field NORTH_EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     330: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     333: dup
+     334: ldc           #25                 // String NORTH_WEST_PANNING
+     336: bipush        24
+     338: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     341: putstatic     #75                 // Field NORTH_WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     344: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     347: dup
+     348: ldc           #36                 // String SOUTH_PANNING
+     350: bipush        25
+     352: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     355: putstatic     #86                 // Field SOUTH_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     358: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     361: dup
+     362: ldc           #34                 // String SOUTH_EAST_PANNING
+     364: bipush        26
+     366: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     369: putstatic     #84                 // Field SOUTH_EAST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     372: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     375: dup
+     376: ldc           #38                 // String SOUTH_WEST_PANNING
+     378: bipush        27
+     380: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     383: putstatic     #88                 // Field SOUTH_WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     386: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     389: dup
+     390: ldc           #42                 // String WEST_PANNING
+     392: bipush        28
+     394: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     397: putstatic     #92                 // Field WEST_PANNING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     400: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     403: dup
+     404: ldc           #17                 // String MOVE
+     406: bipush        29
+     408: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     411: putstatic     #67                 // Field MOVE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     414: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     417: dup
+     418: ldc           #40                 // String VERTICAL_TEXT
+     420: bipush        30
+     422: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     425: putstatic     #90                 // Field VERTICAL_TEXT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     428: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     431: dup
+     432: ldc           #2                  // String CELL
+     434: bipush        31
+     436: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     439: putstatic     #52                 // Field CELL:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     442: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     445: dup
+     446: ldc           #4                  // String CONTEXT_MENU
+     448: bipush        32
+     450: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     453: putstatic     #54                 // Field CONTEXT_MENU:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     456: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     459: dup
+     460: ldc           #1                  // String ALIAS
+     462: bipush        33
+     464: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     467: putstatic     #51                 // Field ALIAS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     470: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     473: dup
+     474: ldc           #32                 // String PROGRESS
+     476: bipush        34
+     478: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     481: putstatic     #82                 // Field PROGRESS:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     484: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     487: dup
+     488: ldc           #29                 // String NO_DROP
+     490: bipush        35
+     492: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     495: putstatic     #79                 // Field NO_DROP:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     498: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     501: dup
+     502: ldc           #5                  // String COPY
+     504: bipush        36
+     506: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     509: putstatic     #55                 // Field COPY:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     512: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     515: dup
+     516: ldc           #18                 // String NONE
+     518: bipush        37
+     520: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     523: putstatic     #68                 // Field NONE:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     526: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     529: dup
+     530: ldc           #28                 // String NOT_ALLOWED
+     532: bipush        38
+     534: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     537: putstatic     #78                 // Field NOT_ALLOWED:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     540: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     543: dup
+     544: ldc           #44                 // String ZOOM_IN
+     546: bipush        39
+     548: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     551: putstatic     #94                 // Field ZOOM_IN:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     554: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     557: dup
+     558: ldc           #45                 // String ZOOM_OUT
+     560: bipush        40
+     562: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     565: putstatic     #95                 // Field ZOOM_OUT:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     568: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     571: dup
+     572: ldc           #11                 // String GRAB
+     574: bipush        41
+     576: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     579: putstatic     #61                 // Field GRAB:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     582: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     585: dup
+     586: ldc           #12                 // String GRABBING
+     588: bipush        42
+     590: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     593: putstatic     #62                 // Field GRABBING:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     596: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     599: dup
+     600: ldc           #7                  // String CUSTOM
+     602: bipush        43
+     604: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     607: putstatic     #57                 // Field CUSTOM:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     610: new           #48                 // class com/moonsworth/webosr/input/Mouse$Cursor
+     613: dup
+     614: ldc           #30                 // String PASS_THROUGH
+     616: bipush        44
+     618: invokespecial #98                 // Method "<init>":(Ljava/lang/String;I)V
+     621: putstatic     #80                 // Field PASS_THROUGH:Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     624: invokestatic  #97                 // Method $values:()[Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     627: putstatic     #50                 // Field $VALUES:[Lcom/moonsworth/webosr/input/Mouse$Cursor;
+     630: return
+}

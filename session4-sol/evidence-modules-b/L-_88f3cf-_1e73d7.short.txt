@@ -1,0 +1,41 @@
+public interface L._88f3cf._1e73d7 {
+  public abstract <T extends L._88f3cf._21aca6> T _990b34();
+
+  public abstract boolean _1d019e();
+
+  public static L._88f3cf._1e73d7 _1e73d7(L._88f3cf._21aca6);
+    Code:
+       0: new           #2                  // class L/_88f3cf/_1e73d7/_21aca6
+       3: dup
+       4: aconst_null
+       5: aload_0
+       6: invokespecial #9                  // Method L/_88f3cf/_1e73d7/_21aca6."<init>":(Ljava/util/function/BooleanSupplier;LL/_88f3cf/_21aca6;)V
+       9: areturn
+
+  public static L._88f3cf._1e73d7 _cfe983(boolean, L._88f3cf._21aca6);
+    Code:
+       0: new           #2                  // class L/_88f3cf/_1e73d7/_21aca6
+       3: dup
+       4: iload_0
+       5: ifeq          12
+       8: aconst_null
+       9: goto          17
+      12: invokedynamic #12,  0             // InvokeDynamic #0:getAsBoolean:()Ljava/util/function/BooleanSupplier;
+      17: aload_1
+      18: invokespecial #9                  // Method L/_88f3cf/_1e73d7/_21aca6."<init>":(Ljava/util/function/BooleanSupplier;LL/_88f3cf/_21aca6;)V
+      21: areturn
+
+  public static L._88f3cf._1e73d7 _cfe983(java.util.function.BooleanSupplier, L._88f3cf._21aca6);
+    Code:
+       0: new           #2                  // class L/_88f3cf/_1e73d7/_21aca6
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokespecial #9                  // Method L/_88f3cf/_1e73d7/_21aca6."<init>":(Ljava/util/function/BooleanSupplier;LL/_88f3cf/_21aca6;)V
+       9: areturn
+
+  private static boolean _663e92();
+    Code:
+       0: iconst_0
+       1: ireturn
+}

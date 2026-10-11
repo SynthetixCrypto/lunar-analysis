@@ -1,0 +1,255 @@
+public interface L._ec7e36._dd3308<T> extends L._e62626._1e73d7, L._ec7e36._cfe983._1e73d7<L._ec7e36._dd3308<T>, T>, L._ec7e36._a1dd3a, L._ec7e36._81676d, L._55938e._c8175c, L._55938e._88f3cf, java.lang.Cloneable {
+public abstract java.lang.String getId();
+public default java.lang.String _cc9ff9();
+Code:
+0: aload_0
+1: invokeinterface #74, 1 // InterfaceMethod getId
+6: areturn
+public default java.lang.String _c5b175();
+Code:
+0: getstatic // Field com/google/common/base/CaseFormat.LOWER_CAMEL:Lcom/google/common/base/CaseFormat;
+3: getstatic // Field com/google/common/base/CaseFormat.LOWER_HYPHEN:Lcom/google/common/base/CaseFormat;
+6: aload_0
+7: invokeinterface #74, 1 // InterfaceMethod getId
+12: invokevirtual // Method com/google/common/base/CaseFormat.to
+15: areturn
+public default java.lang.String getName();
+Code:
+0: aload_0
+1: getstatic // Field L/_ec7e36/_1e73d7/_88f3cf._d9d6fe
+4: invokeinterface #69, 2 // InterfaceMethod _133367
+9: checkcast // class L/_ec7e36/_1e73d7/_bb4487
+12: astore_1
+13: aload_1
+14: ifnull 30
+17: aload_1
+18: invokeinterface #78, 1 // InterfaceMethod L/_ec7e36/_1e73d7/_bb4487._912e90
+23: astore_2
+24: aload_2
+25: ifnull 30
+28: aload_2
+29: areturn
+30: aload_0
+31: aload_0
+32: invokeinterface #66, 1 // InterfaceMethod _cc9ff9
+37: iconst_0
+38: anewarray // class java/lang/Object
+41: invokeinterface #67, 3 // InterfaceMethod _1253fc
+46: areturn
+public abstract T getDefaultValue();
+public abstract void _81676d(T);
+public abstract T _1f5b06();
+public default java.lang.Class<? extends L._ec7e36._dd3308> _384bd8();
+Code:
+0: aload_0
+1: invokevirtual // Method java/lang/Object.getClass
+4: areturn
+public default L._ec7e36._1e73d7._429bf0<T> _fd4557();
+Code:
+0: aload_0
+1: getstatic // Field L/_ec7e36/_1e73d7/_88f3cf._09bf1e
+4: invokedynamic #81, 0 // InvokeDynamic #0:apply
+9: invokeinterface #71, 3 // InterfaceMethod _21aca6
+14: checkcast // class L/_ec7e36/_1e73d7/_429bf0
+17: areturn
+public default <S extends L._ec7e36._dd3308<T>> S _728fa6(java.util.function.Consumer<T>);
+Code:
+0: aload_0
+1: invokeinterface #72, 1 // InterfaceMethod _fd4557
+6: aload_1
+7: invokeinterface #76, 2 // InterfaceMethod L/_ec7e36/_1e73d7/_429bf0._4cf8c3
+12: aload_1
+13: aload_0
+14: invokeinterface #63, 1 // InterfaceMethod _1f5b06
+19: invokeinterface #80, 2 // InterfaceMethod java/util/function/Consumer.accept
+24: goto 32
+27: astore_2
+28: aload_2
+29: invokevirtual // Method java/lang/Exception.printStackTrace
+32: aload_0
+33: areturn
+Exception table:
+from to target type
+12 24 27 Class java/lang/Exception
+public default <S extends L._ec7e36._dd3308<T>> S _691aaf(java.util.function.Consumer<T>);
+Code:
+0: aload_0
+1: invokeinterface #72, 1 // InterfaceMethod _fd4557
+6: aload_1
+7: invokeinterface #76, 2 // InterfaceMethod L/_ec7e36/_1e73d7/_429bf0._4cf8c3
+12: aload_0
+13: areturn
+public default <S extends L._ec7e36._dd3308<T>> S _601d9f(java.lang.Runnable);
+Code:
+0: aload_0
+1: invokeinterface #72, 1 // InterfaceMethod _fd4557
+6: aload_1
+7: invokedynamic #82, 0 // InvokeDynamic #1:accept
+12: invokeinterface #76, 2 // InterfaceMethod L/_ec7e36/_1e73d7/_429bf0._4cf8c3
+17: aload_0
+18: areturn
+public default void _b03e9c(T);
+Code:
+0: aload_0
+1: aload_1
+2: iconst_0
+3: invokeinterface #68, 3 // InterfaceMethod _1e73d7
+8: return
+public abstract void _1e73d7(T, boolean);
+public abstract void _59b0c6(T);
+public abstract void _00f454(java.lang.Object);
+public abstract T get();
+public abstract java.lang.String getValueAsString();
+public abstract boolean isHidden();
+public abstract java.util.Optional<T> _6c713e(com.google.gson.JsonElement);
+public default void _d2c28f(java.lang.String);
+Code:
+0: new // class java/lang/RuntimeException
+3: dup
+4: ldc // String This option doesn\'t support parseUpdate()
+6: invokespecial // Method java/lang/RuntimeException."<init>"
+9: athrow
+public default void _21aca6(com.google.gson.JsonObject, boolean);
+Code:
+0: aload_0
+1: aload_1
+2: invokeinterface #75, 2 // InterfaceMethod load
+7: return
+public abstract void load(com.google.gson.JsonObject);
+public abstract void _590f69(com.google.gson.JsonObject);
+public default void reset();
+Code:
+0: aload_0
+1: aload_0
+2: invokeinterface #73, 1 // InterfaceMethod getDefaultValue
+7: invokeinterface #64, 2 // InterfaceMethod _b03e9c
+12: return
+public default boolean isDefault();
+Code:
+0: aload_0
+1: invokeinterface #63, 1 // InterfaceMethod _1f5b06
+6: aload_0
+7: invokeinterface #73, 1 // InterfaceMethod getDefaultValue
+12: invokestatic // Method java/util/Objects.equals
+15: ireturn
+public abstract L._2f4182._1253fc._21aca6._6fc5d5<?> _2f4182(L._2f4182._1253fc._cfe983);
+public abstract java.lang.String getLanguagePath();
+public abstract void _ec7e36(L._ec7e36._dd3308<?>);
+public abstract L._ec7e36._dd3308<T> _8f94a2();
+public abstract void _cfe983(L._ec7e36._590f69._590f69._cfe983<?>);
+public abstract java.util.List<L._ec7e36._dd3308<?>> getChildren();
+public default java.util.Collection<L._ec7e36._dd3308<?>> _c4d1ce();
+Code:
+0: aconst_null
+1: areturn
+public default L._ec7e36._dd3308<T> _da2d70();
+Code:
+0: aload_0
+1: areturn
+public default T _a9c329(java.lang.Object);
+Code:
+0: aload_1
+1: invokevirtual // Method java/lang/Object.getClass
+4: astore_2
+5: aload_0
+6: invokeinterface #73, 1 // InterfaceMethod getDefaultValue
+11: invokevirtual // Method java/lang/Object.getClass
+14: astore_3
+15: aload_2
+16: aload_3
+17: if_acmpne 22
+20: aload_1
+21: areturn
+22: aload_0
+23: invokeinterface #73, 1 // InterfaceMethod getDefaultValue
+28: astore 6
+30: aload 6
+32: instanceof // class java/lang/Number
+35: ifeq 160
+38: aload 6
+40: checkcast // class java/lang/Number
+43: astore 4
+45: aload_1
+46: instanceof // class java/lang/Number
+49: ifeq 160
+52: aload_1
+53: checkcast // class java/lang/Number
+56: astore 5
+58: aload 4
+60: instanceof // class java/lang/Double
+63: ifeq 75
+66: aload 5
+68: invokevirtual // Method java/lang/Number.doubleValue
+71: invokestatic // Method java/lang/Double.valueOf
+74: areturn
+75: aload 4
+77: instanceof // class java/lang/Float
+80: ifeq 92
+83: aload 5
+85: invokevirtual // Method java/lang/Number.floatValue
+88: invokestatic // Method java/lang/Float.valueOf
+91: areturn
+92: aload 4
+94: instanceof // class java/lang/Integer
+97: ifeq 109
+100: aload 5
+102: invokevirtual // Method java/lang/Number.intValue
+105: invokestatic // Method java/lang/Integer.valueOf
+108: areturn
+109: aload 4
+111: instanceof // class java/lang/Long
+114: ifeq 126
+117: aload 5
+119: invokevirtual // Method java/lang/Number.longValue
+122: invokestatic // Method java/lang/Long.valueOf
+125: areturn
+126: aload 4
+128: instanceof // class java/lang/Short
+131: ifeq 143
+134: aload 5
+136: invokevirtual // Method java/lang/Number.shortValue
+139: invokestatic // Method java/lang/Short.valueOf
+142: areturn
+143: aload 4
+145: instanceof // class java/lang/Byte
+148: ifeq 160
+151: aload 5
+153: invokevirtual // Method java/lang/Number.byteValue
+156: invokestatic // Method java/lang/Byte.valueOf
+159: areturn
+160: aload_1
+161: instanceof // class java/lang/String
+164: ifeq 193
+167: aload_1
+168: checkcast // class java/lang/String
+171: astore 4
+173: aload_0
+174: new // class com/google/gson/JsonPrimitive
+177: dup
+178: aload 4
+180: invokespecial // Method com/google/gson/JsonPrimitive."<init>"
+183: invokeinterface #70, 2 // InterfaceMethod _6c713e
+188: aconst_null
+189: invokevirtual // Method java/util/Optional.orElse
+192: areturn
+193: new // class java/lang/RuntimeException
+196: dup
+197: aload_0
+198: invokeinterface #74, 1 // InterfaceMethod getId
+203: aload_3
+204: invokevirtual // Method java/lang/Class.getSimpleName
+207: aload_2
+208: invokevirtual // Method java/lang/Class.getSimpleName
+211: invokedynamic #83, 0 // InvokeDynamic #2:makeConcatWithConstants
+216: invokespecial // Method java/lang/RuntimeException."<init>"
+219: athrow
+private static void _cfe983(java.lang.Runnable, java.lang.Object);
+Code:
+0: aload_0
+1: invokeinterface #79, 1 // InterfaceMethod java/lang/Runnable.run
+6: return
+private static L._ec7e36._1e73d7._429bf0 _79e7e6(L._55938e._e62626);
+Code:
+0: invokestatic // InterfaceMethod L/_ec7e36/_1e73d7/_429bf0._779551
+3: areturn
+}

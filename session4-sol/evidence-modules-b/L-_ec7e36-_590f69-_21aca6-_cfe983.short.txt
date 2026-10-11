@@ -1,0 +1,1299 @@
+public class L._ec7e36._590f69._21aca6._cfe983<Setting extends L._ec7e36._590f69._1e73d7._590f69<Setting>, Parent extends L._ec7e36._590f69._21aca6._bb4487<Setting, Parent>> implements L._ec7e36._590f69._21aca6._1e73d7<Setting, L._ec7e36._590f69._590f69._590f69, Parent> {
+  private final L._ec7e36._590f69._21aca6._cfe983$_21aca6<Setting> _1de15f;
+
+  private final L._ec7e36._590f69._21aca6._cfe983$_cfe983<Setting, Parent> _859a8c;
+
+  private final java.util.LinkedList<Setting> _3512de;
+
+  public Setting _429bf0(java.lang.String, java.util.function.Consumer<Parent>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aconst_null
+       4: invokevirtual #80                 // Method _cfe983:(Ljava/lang/String;Ljava/util/function/Consumer;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       7: astore_3
+       8: aload_3
+       9: ifnull        14
+      12: aload_3
+      13: areturn
+      14: aload_1
+      15: invokestatic  #118                // InterfaceMethod L/_ec7e36/_81676d._79e780:(Ljava/lang/String;)LL/_ec7e36/_767dc1$_cfe983;
+      18: invokevirtual #56                 // Method L/_ec7e36/_767dc1$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+      21: astore        4
+      23: aload_0
+      24: aload         4
+      26: aload_2
+      27: invokevirtual #75                 // Method _cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      30: areturn
+
+  public Setting _cfe983(java.lang.String, L._81676d._cfe983, java.util.function.Consumer<Parent>);
+    Code:
+       0: aload_2
+       1: invokevirtual #51                 // Method L/_81676d/_cfe983.getType:()LL/_81676d/_cfe983$_cfe983;
+       4: getstatic     #45                 // Field L/_81676d/_cfe983$_cfe983.SOLID:LL/_81676d/_cfe983$_cfe983;
+       7: if_acmpeq     20
+      10: new           #27                 // class java/lang/IllegalArgumentException
+      13: dup
+      14: ldc           #3                  // String Category icons must be of type \'solid\'
+      16: invokespecial #97                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      19: athrow
+      20: aload_0
+      21: aload_1
+      22: aload_3
+      23: aload_2
+      24: invokedynamic #148,  0            // InvokeDynamic #0:accept:(LL/_81676d/_cfe983;)Ljava/util/function/Consumer;
+      29: invokevirtual #80                 // Method _cfe983:(Ljava/lang/String;Ljava/util/function/Consumer;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      32: astore        4
+      34: aload         4
+      36: ifnull        42
+      39: aload         4
+      41: areturn
+      42: aload_1
+      43: invokestatic  #118                // InterfaceMethod L/_ec7e36/_81676d._79e780:(Ljava/lang/String;)LL/_ec7e36/_767dc1$_cfe983;
+      46: aload_2
+      47: invokevirtual #60                 // Method L/_ec7e36/_767dc1$_cfe983._21aca6:(LL/_81676d/_cfe983;)LL/_ec7e36/_cfe983/_cfe983;
+      50: checkcast     #11                 // class L/_ec7e36/_767dc1$_cfe983
+      53: invokevirtual #56                 // Method L/_ec7e36/_767dc1$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+      56: astore        5
+      58: aload_0
+      59: aload         5
+      61: aload_3
+      62: invokevirtual #75                 // Method _cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      65: areturn
+
+  public Setting _cfe983(java.util.function.Supplier<java.lang.String>, java.util.function.Consumer<Parent>);
+    Code:
+       0: ldc           #4                  // String dynamicCategory
+       2: invokestatic  #118                // InterfaceMethod L/_ec7e36/_81676d._79e780:(Ljava/lang/String;)LL/_ec7e36/_767dc1$_cfe983;
+       5: aload_1
+       6: invokevirtual #59                 // Method L/_ec7e36/_767dc1$_cfe983._7e956b:(Ljava/util/function/Supplier;)LL/_ec7e36/_cfe983/_cfe983;
+       9: checkcast     #11                 // class L/_ec7e36/_767dc1$_cfe983
+      12: invokevirtual #56                 // Method L/_ec7e36/_767dc1$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+      15: astore_3
+      16: aload_0
+      17: aload_3
+      18: aload_2
+      19: invokevirtual #75                 // Method _cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      22: areturn
+
+  public void _1e73d7(java.util.function.Consumer<L._ec7e36._590f69._21aca6._1253fc<Setting, Parent>>, java.util.function.Consumer<Setting>);
+    Code:
+       0: new           #18                 // class L/_ec7e36/_590f69/_21aca6/_cfe983
+       3: dup
+       4: aload_0
+       5: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       8: aload_0
+       9: getfield      #48                 // Field _859a8c:LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;
+      12: invokespecial #71                 // Method "<init>":(LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;)V
+      15: astore_3
+      16: aload_1
+      17: aload_3
+      18: invokeinterface #147,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      23: aload_0
+      24: aload_3
+      25: aload_2
+      26: invokevirtual #79                 // Method _cfe983:(LL/_ec7e36/_590f69/_21aca6/_1253fc;Ljava/util/function/Consumer;)V
+      29: return
+
+  public Setting _cfe983(L._ec7e36._dd3308<?>, java.util.function.Consumer<Parent>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_1
+       4: invokedynamic #149,  0            // InvokeDynamic #1:accept:(LL/_ec7e36/_dd3308;)Ljava/util/function/Consumer;
+       9: invokevirtual #76                 // Method _cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      12: areturn
+
+  public Setting _cfe983(L._ec7e36._dd3308<?>, java.util.function.Consumer<Parent>, java.util.function.Consumer<Setting>);
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       4: iconst_1
+       5: anewarray     #8                  // class L/_ec7e36/_dd3308
+       8: dup
+       9: iconst_0
+      10: aload_1
+      11: aastore
+      12: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      17: astore        4
+      19: aload_0
+      20: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      23: aload         4
+      25: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+      28: pop
+      29: aload_0
+      30: getfield      #48                 // Field _859a8c:LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;
+      33: new           #18                 // class L/_ec7e36/_590f69/_21aca6/_cfe983
+      36: dup
+      37: aload_0
+      38: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+      41: aload_0
+      42: getfield      #48                 // Field _859a8c:LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;
+      45: invokespecial #71                 // Method "<init>":(LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;)V
+      48: aload         4
+      50: invokeinterface #128,  3          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983.apply:(LL/_ec7e36/_590f69/_21aca6/_1253fc;LL/_ec7e36/_590f69/_1e73d7/_590f69;)LL/_ec7e36/_590f69/_21aca6/_bb4487;
+      55: astore        5
+      57: aload_2
+      58: aload         5
+      60: invokeinterface #147,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      65: aload_0
+      66: aload         5
+      68: aload_3
+      69: invokevirtual #79                 // Method _cfe983:(LL/_ec7e36/_590f69/_21aca6/_1253fc;Ljava/util/function/Consumer;)V
+      72: aload         4
+      74: areturn
+
+  private void _cfe983(L._ec7e36._590f69._21aca6._1253fc<Setting, ?>, java.util.function.Consumer<Setting>);
+    Code:
+       0: aload_1
+       1: invokeinterface #130,  1          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_1253fc._69d578:()Ljava/util/List;
+       6: astore_3
+       7: aload_3
+       8: invokeinterface #139,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      13: astore        4
+      15: aload         4
+      17: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      22: ifeq          88
+      25: aload         4
+      27: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      32: checkcast     #15                 // class L/_ec7e36/_590f69/_1e73d7/_590f69
+      35: astore        5
+      37: aload         5
+      39: instanceof    #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      42: ifeq          75
+      45: aload         5
+      47: checkcast     #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      50: astore        6
+      52: aload         6
+      54: invokeinterface #123,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._d189e7:()Ljava/util/List;
+      59: invokeinterface #138,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      64: ifeq          75
+      67: aload_2
+      68: aload         5
+      70: invokeinterface #147,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      75: aload_0
+      76: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      79: aload         5
+      81: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+      84: pop
+      85: goto          15
+      88: return
+
+  public Setting _590f69(L._ec7e36._dd3308<?>...);
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       4: aload_1
+       5: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      10: astore_2
+      11: aload_0
+      12: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      15: iconst_0
+      16: aload_2
+      17: invokevirtual #108                // Method java/util/LinkedList.add:(ILjava/lang/Object;)V
+      20: aload_2
+      21: areturn
+
+  public Setting _cfe983(L._ec7e36._dd3308<?>, L._ec7e36._dd3308<?>...);
+    Code:
+       0: iconst_0
+       1: istore_3
+       2: iload_3
+       3: aload_0
+       4: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+       7: invokevirtual #112                // Method java/util/LinkedList.size:()I
+      10: if_icmpge     179
+      13: aload_0
+      14: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      17: iload_3
+      18: invokevirtual #110                // Method java/util/LinkedList.get:(I)Ljava/lang/Object;
+      21: checkcast     #15                 // class L/_ec7e36/_590f69/_1e73d7/_590f69
+      24: astore        4
+      26: aload         4
+      28: instanceof    #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      31: ifeq          173
+      34: aload         4
+      36: checkcast     #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      39: astore        5
+      41: aload         5
+      43: invokeinterface #124,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._41cc96:()Ljava/util/List;
+      48: astore        6
+      50: iconst_0
+      51: istore        7
+      53: iload         7
+      55: aload         6
+      57: invokeinterface #141,  1          // InterfaceMethod java/util/List.size:()I
+      62: if_icmpge     173
+      65: aload         6
+      67: iload         7
+      69: invokeinterface #137,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      74: checkcast     #8                  // class L/_ec7e36/_dd3308
+      77: aload_1
+      78: invokevirtual #100                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      81: ifeq          167
+      84: iload         7
+      86: ifne          114
+      89: aload_0
+      90: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+      93: aload_2
+      94: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      99: astore        8
+     101: aload_0
+     102: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+     105: iload_3
+     106: aload         8
+     108: invokevirtual #108                // Method java/util/LinkedList.add:(ILjava/lang/Object;)V
+     111: aload         8
+     113: areturn
+     114: aload         5
+     116: iload         7
+     118: invokeinterface #125,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._2e8240:(I)Ljava/lang/Object;
+     123: checkcast     #15                 // class L/_ec7e36/_590f69/_1e73d7/_590f69
+     126: astore        8
+     128: aload_0
+     129: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+     132: iload_3
+     133: iconst_1
+     134: iadd
+     135: aload         8
+     137: invokevirtual #108                // Method java/util/LinkedList.add:(ILjava/lang/Object;)V
+     140: aload_0
+     141: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+     144: aload_2
+     145: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+     150: astore        9
+     152: aload_0
+     153: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+     156: iload_3
+     157: iconst_1
+     158: iadd
+     159: aload         9
+     161: invokevirtual #108                // Method java/util/LinkedList.add:(ILjava/lang/Object;)V
+     164: aload         9
+     166: areturn
+     167: iinc          7, 1
+     170: goto          53
+     173: iinc          3, 1
+     176: goto          2
+     179: aconst_null
+     180: areturn
+
+  public Setting _21aca6(L._ec7e36._dd3308<?>, L._ec7e36._dd3308<?>...);
+    Code:
+       0: iconst_0
+       1: istore_3
+       2: iload_3
+       3: aload_0
+       4: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+       7: invokevirtual #112                // Method java/util/LinkedList.size:()I
+      10: if_icmpge     192
+      13: aload_0
+      14: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      17: iload_3
+      18: invokevirtual #110                // Method java/util/LinkedList.get:(I)Ljava/lang/Object;
+      21: checkcast     #15                 // class L/_ec7e36/_590f69/_1e73d7/_590f69
+      24: astore        4
+      26: aload         4
+      28: instanceof    #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      31: ifeq          186
+      34: aload         4
+      36: checkcast     #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      39: astore        5
+      41: aload         5
+      43: invokeinterface #124,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._41cc96:()Ljava/util/List;
+      48: astore        6
+      50: iconst_0
+      51: istore        7
+      53: iload         7
+      55: aload         6
+      57: invokeinterface #141,  1          // InterfaceMethod java/util/List.size:()I
+      62: if_icmpge     186
+      65: aload         6
+      67: iload         7
+      69: invokeinterface #137,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      74: checkcast     #8                  // class L/_ec7e36/_dd3308
+      77: aload_1
+      78: invokevirtual #100                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      81: ifeq          180
+      84: iload         7
+      86: aload         6
+      88: invokeinterface #141,  1          // InterfaceMethod java/util/List.size:()I
+      93: iconst_1
+      94: isub
+      95: if_icmpne     125
+      98: aload_0
+      99: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+     102: aload_2
+     103: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+     108: astore        8
+     110: aload_0
+     111: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+     114: iload_3
+     115: iconst_1
+     116: iadd
+     117: aload         8
+     119: invokevirtual #108                // Method java/util/LinkedList.add:(ILjava/lang/Object;)V
+     122: aload         8
+     124: areturn
+     125: aload         5
+     127: iload         7
+     129: iconst_1
+     130: iadd
+     131: invokeinterface #125,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._2e8240:(I)Ljava/lang/Object;
+     136: checkcast     #15                 // class L/_ec7e36/_590f69/_1e73d7/_590f69
+     139: astore        8
+     141: aload_0
+     142: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+     145: iload_3
+     146: iconst_1
+     147: iadd
+     148: aload         8
+     150: invokevirtual #108                // Method java/util/LinkedList.add:(ILjava/lang/Object;)V
+     153: aload_0
+     154: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+     157: aload_2
+     158: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+     163: astore        9
+     165: aload_0
+     166: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+     169: iload_3
+     170: iconst_1
+     171: iadd
+     172: aload         9
+     174: invokevirtual #108                // Method java/util/LinkedList.add:(ILjava/lang/Object;)V
+     177: aload         9
+     179: areturn
+     180: iinc          7, 1
+     183: goto          53
+     186: iinc          3, 1
+     189: goto          2
+     192: aconst_null
+     193: areturn
+
+  public Setting _1e73d7(L._ec7e36._dd3308<?>...);
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       4: aload_1
+       5: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      10: astore_2
+      11: aload_0
+      12: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      15: aload_2
+      16: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+      19: pop
+      20: aload_2
+      21: areturn
+
+  public Setting _0dff9b(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       4: iconst_1
+       5: anewarray     #8                  // class L/_ec7e36/_dd3308
+       8: dup
+       9: iconst_0
+      10: aload_1
+      11: invokestatic  #118                // InterfaceMethod L/_ec7e36/_81676d._79e780:(Ljava/lang/String;)LL/_ec7e36/_767dc1$_cfe983;
+      14: invokevirtual #57                 // Method L/_ec7e36/_767dc1$_cfe983._2bc4d2:()LL/_ec7e36/_767dc1$_cfe983;
+      17: invokevirtual #56                 // Method L/_ec7e36/_767dc1$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+      20: aastore
+      21: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      26: astore_2
+      27: aload_0
+      28: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      31: aload_2
+      32: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+      35: pop
+      36: aload_2
+      37: areturn
+
+  public Setting _5335d8();
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       4: iconst_1
+       5: anewarray     #8                  // class L/_ec7e36/_dd3308
+       8: dup
+       9: iconst_0
+      10: ldc           #1                  // String
+      12: invokestatic  #118                // InterfaceMethod L/_ec7e36/_81676d._79e780:(Ljava/lang/String;)LL/_ec7e36/_767dc1$_cfe983;
+      15: invokevirtual #56                 // Method L/_ec7e36/_767dc1$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+      18: aastore
+      19: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      24: astore_1
+      25: aload_0
+      26: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      29: aload_1
+      30: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+      33: pop
+      34: aload_1
+      35: areturn
+
+  public Setting _46b02e();
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       4: iconst_1
+       5: anewarray     #8                  // class L/_ec7e36/_dd3308
+       8: dup
+       9: iconst_0
+      10: ldc           #1                  // String
+      12: invokestatic  #118                // InterfaceMethod L/_ec7e36/_81676d._79e780:(Ljava/lang/String;)LL/_ec7e36/_767dc1$_cfe983;
+      15: invokevirtual #58                 // Method L/_ec7e36/_767dc1$_cfe983._520e62:()LL/_ec7e36/_767dc1$_cfe983;
+      18: invokevirtual #56                 // Method L/_ec7e36/_767dc1$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+      21: aastore
+      22: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      27: astore_1
+      28: aload_0
+      29: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      32: aload_1
+      33: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+      36: pop
+      37: aload_1
+      38: areturn
+
+  public java.util.List<Setting> _69d578();
+    Code:
+       0: aload_0
+       1: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+       4: areturn
+
+  public Setting _21aca6(L._ec7e36._bb4487._cfe983);
+    Code:
+       0: aload_1
+       1: invokevirtual #52                 // Method L/_ec7e36/_bb4487/_cfe983.getIcon:()LL/_81676d/_cfe983;
+       4: astore_2
+       5: aload_2
+       6: invokevirtual #51                 // Method L/_81676d/_cfe983.getType:()LL/_81676d/_cfe983$_cfe983;
+       9: getstatic     #45                 // Field L/_81676d/_cfe983$_cfe983.SOLID:LL/_81676d/_cfe983$_cfe983;
+      12: if_acmpeq     25
+      15: new           #27                 // class java/lang/IllegalArgumentException
+      18: dup
+      19: ldc           #3                  // String Category icons must be of type \'solid\'
+      21: invokespecial #97                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      24: athrow
+      25: aload_0
+      26: aload_1
+      27: invokevirtual #53                 // Method L/_ec7e36/_bb4487/_cfe983.getName:()Ljava/lang/String;
+      30: aconst_null
+      31: aload_2
+      32: invokedynamic #150,  0            // InvokeDynamic #2:accept:(LL/_81676d/_cfe983;)Ljava/util/function/Consumer;
+      37: invokevirtual #80                 // Method _cfe983:(Ljava/lang/String;Ljava/util/function/Consumer;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      40: astore_3
+      41: aload_3
+      42: ifnull        55
+      45: aload_3
+      46: iconst_1
+      47: invokeinterface #121,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._9befe9:(Z)Ljava/lang/Object;
+      52: pop
+      53: aload_3
+      54: areturn
+      55: aload_1
+      56: invokevirtual #53                 // Method L/_ec7e36/_bb4487/_cfe983.getName:()Ljava/lang/String;
+      59: invokestatic  #118                // InterfaceMethod L/_ec7e36/_81676d._79e780:(Ljava/lang/String;)LL/_ec7e36/_767dc1$_cfe983;
+      62: aload_2
+      63: invokevirtual #60                 // Method L/_ec7e36/_767dc1$_cfe983._21aca6:(LL/_81676d/_cfe983;)LL/_ec7e36/_cfe983/_cfe983;
+      66: checkcast     #11                 // class L/_ec7e36/_767dc1$_cfe983
+      69: invokevirtual #56                 // Method L/_ec7e36/_767dc1$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+      72: astore        4
+      74: aload_0
+      75: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+      78: iconst_1
+      79: anewarray     #8                  // class L/_ec7e36/_dd3308
+      82: dup
+      83: iconst_0
+      84: aload         4
+      86: aastore
+      87: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      92: astore        5
+      94: aload_0
+      95: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      98: aload         5
+     100: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+     103: pop
+     104: aload         5
+     106: iconst_1
+     107: invokeinterface #121,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._9befe9:(Z)Ljava/lang/Object;
+     112: pop
+     113: aload         5
+     115: areturn
+
+  public void _79e7e6(L._ec7e36._dd3308<?>);
+    Code:
+       0: aload_0
+       1: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+       4: invokevirtual #111                // Method java/util/LinkedList.iterator:()Ljava/util/Iterator;
+       7: astore_2
+       8: aload_2
+       9: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      14: ifeq          71
+      17: aload_2
+      18: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      23: checkcast     #15                 // class L/_ec7e36/_590f69/_1e73d7/_590f69
+      26: astore_3
+      27: aload_3
+      28: instanceof    #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      31: ifeq          68
+      34: aload_3
+      35: checkcast     #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      38: astore        4
+      40: aload         4
+      42: invokeinterface #124,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._41cc96:()Ljava/util/List;
+      47: aload_1
+      48: invokeinterface #140,  2          // InterfaceMethod java/util/List.remove:(Ljava/lang/Object;)Z
+      53: pop
+      54: aload         4
+      56: invokeinterface #123,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._d189e7:()Ljava/util/List;
+      61: aload_1
+      62: invokeinterface #140,  2          // InterfaceMethod java/util/List.remove:(Ljava/lang/Object;)Z
+      67: pop
+      68: goto          8
+      71: return
+
+  public void _590f69(L._ec7e36._dd3308<?>, L._ec7e36._dd3308<?>...);
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       4: aload_2
+       5: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      10: astore_3
+      11: aload_3
+      12: iconst_1
+      13: anewarray     #8                  // class L/_ec7e36/_dd3308
+      16: dup
+      17: iconst_0
+      18: aload_1
+      19: aastore
+      20: invokeinterface #120,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._13ea87:([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+      25: pop
+      26: aload_0
+      27: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      30: aload_3
+      31: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+      34: pop
+      35: return
+
+  public void _1e73d7(L._ec7e36._dd3308<?>, L._ec7e36._dd3308<?>...);
+    Code:
+       0: aload_0
+       1: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+       4: iconst_1
+       5: anewarray     #8                  // class L/_ec7e36/_dd3308
+       8: dup
+       9: iconst_0
+      10: aload_1
+      11: aastore
+      12: invokeinterface #129,  2          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6.apply:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+      17: astore_3
+      18: aload_3
+      19: aload_2
+      20: invokeinterface #120,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._13ea87:([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+      25: pop
+      26: aload_0
+      27: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      30: aload_3
+      31: invokevirtual #109                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+      34: pop
+      35: return
+
+  private Setting _cfe983(java.lang.String, java.util.function.Consumer<Parent>, java.util.function.Consumer<L._ec7e36._767dc1>);
+    Code:
+       0: aload_0
+       1: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+       4: invokevirtual #111                // Method java/util/LinkedList.iterator:()Ljava/util/Iterator;
+       7: astore        4
+       9: aload         4
+      11: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      16: ifeq          198
+      19: aload         4
+      21: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      26: checkcast     #15                 // class L/_ec7e36/_590f69/_1e73d7/_590f69
+      29: astore        5
+      31: aload         5
+      33: instanceof    #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      36: ifeq          195
+      39: aload         5
+      41: checkcast     #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      44: astore        6
+      46: aload         6
+      48: invokeinterface #123,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._d189e7:()Ljava/util/List;
+      53: invokeinterface #138,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      58: ifeq          195
+      61: aload         6
+      63: invokeinterface #124,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._41cc96:()Ljava/util/List;
+      68: invokeinterface #139,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      73: astore        7
+      75: aload         7
+      77: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      82: ifeq          195
+      85: aload         7
+      87: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      92: checkcast     #8                  // class L/_ec7e36/_dd3308
+      95: astore        8
+      97: aload         8
+      99: instanceof    #10                 // class L/_ec7e36/_767dc1
+     102: ifeq          192
+     105: aload         8
+     107: checkcast     #10                 // class L/_ec7e36/_767dc1
+     110: astore        9
+     112: aload         9
+     114: invokevirtual #55                 // Method L/_ec7e36/_767dc1.getId:()Ljava/lang/String;
+     117: aload_1
+     118: invokevirtual #101                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     121: ifeq          192
+     124: aload_2
+     125: ifnull        177
+     128: aload_0
+     129: getfield      #48                 // Field _859a8c:LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;
+     132: new           #18                 // class L/_ec7e36/_590f69/_21aca6/_cfe983
+     135: dup
+     136: aload_0
+     137: getfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+     140: aload_0
+     141: getfield      #48                 // Field _859a8c:LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;
+     144: invokespecial #71                 // Method "<init>":(LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;)V
+     147: aload         5
+     149: invokeinterface #128,  3          // InterfaceMethod L/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983.apply:(LL/_ec7e36/_590f69/_21aca6/_1253fc;LL/_ec7e36/_590f69/_1e73d7/_590f69;)LL/_ec7e36/_590f69/_21aca6/_bb4487;
+     154: astore        10
+     156: aload_2
+     157: aload         10
+     159: invokeinterface #147,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+     164: aload_0
+     165: aload         10
+     167: aload         8
+     169: invokedynamic #151,  0            // InvokeDynamic #3:accept:(LL/_ec7e36/_dd3308;)Ljava/util/function/Consumer;
+     174: invokevirtual #79                 // Method _cfe983:(LL/_ec7e36/_590f69/_21aca6/_1253fc;Ljava/util/function/Consumer;)V
+     177: aload_3
+     178: ifnull        189
+     181: aload_3
+     182: aload         9
+     184: invokeinterface #147,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+     189: aload         5
+     191: areturn
+     192: goto          75
+     195: goto          9
+     198: aconst_null
+     199: areturn
+
+  public java.util.Map<L._ec7e36._dd3308<?>, L._ec7e36._590f69._590f69._590f69> _824c06();
+    Code:
+       0: new           #38                 // class java/util/LinkedHashMap
+       3: dup
+       4: invokespecial #106                // Method java/util/LinkedHashMap."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: getfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      12: invokevirtual #111                // Method java/util/LinkedList.iterator:()Ljava/util/Iterator;
+      15: astore_2
+      16: aload_2
+      17: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      22: ifeq          426
+      25: aload_2
+      26: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      31: checkcast     #15                 // class L/_ec7e36/_590f69/_1e73d7/_590f69
+      34: astore_3
+      35: aload_3
+      36: instanceof    #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      39: ifeq          423
+      42: aload_3
+      43: checkcast     #16                 // class L/_ec7e36/_590f69/_1e73d7/_21aca6
+      46: astore        4
+      48: new           #35                 // class java/util/ArrayList
+      51: dup
+      52: invokespecial #104                // Method java/util/ArrayList."<init>":()V
+      55: astore        5
+      57: aload_0
+      58: aload_1
+      59: aload         4
+      61: invokeinterface #124,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._41cc96:()Ljava/util/List;
+      66: invokevirtual #82                 // Method _cfe983:(Ljava/util/Map;Ljava/util/List;)Ljava/util/List;
+      69: astore        6
+      71: aload         4
+      73: invokeinterface #123,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._d189e7:()Ljava/util/List;
+      78: invokeinterface #139,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      83: astore        7
+      85: aload         7
+      87: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      92: ifeq          205
+      95: aload         7
+      97: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     102: checkcast     #8                  // class L/_ec7e36/_dd3308
+     105: astore        8
+     107: aload_1
+     108: aload         8
+     110: invokeinterface #143,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     115: checkcast     #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+     118: astore        9
+     120: aload         9
+     122: ifnonnull     179
+     125: new           #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+     128: dup
+     129: new           #35                 // class java/util/ArrayList
+     132: dup
+     133: invokespecial #104                // Method java/util/ArrayList."<init>":()V
+     136: aload         8
+     138: new           #35                 // class java/util/ArrayList
+     141: dup
+     142: aload         6
+     144: invokespecial #105                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     147: aconst_null
+     148: iconst_0
+     149: iconst_0
+     150: invokespecial #61                 // Method L/_ec7e36/_590f69/_590f69/_590f69."<init>":(Ljava/util/List;LL/_ec7e36/_dd3308;Ljava/util/List;Ljava/util/function/BooleanSupplier;ZZ)V
+     153: astore        9
+     155: aload_1
+     156: aload         8
+     158: aload         9
+     160: invokeinterface #144,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     165: pop
+     166: aload         5
+     168: aload         9
+     170: invokeinterface #135,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     175: pop
+     176: goto          202
+     179: aload         9
+     181: invokevirtual #70                 // Method L/_ec7e36/_590f69/_590f69/_590f69.getChildren:()Ljava/util/List;
+     184: aload         6
+     186: invokeinterface #136,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     191: pop
+     192: aload         5
+     194: aload         9
+     196: invokeinterface #135,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     201: pop
+     202: goto          85
+     205: aload         4
+     207: invokeinterface #124,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._41cc96:()Ljava/util/List;
+     212: invokeinterface #139,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     217: astore        7
+     219: aload         7
+     221: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     226: ifeq          423
+     229: aload         7
+     231: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     236: checkcast     #8                  // class L/_ec7e36/_dd3308
+     239: astore        8
+     241: aload_1
+     242: aload         8
+     244: invokeinterface #143,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     249: checkcast     #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+     252: astore        9
+     254: aload         9
+     256: ifnonnull     317
+     259: aload_1
+     260: aload         8
+     262: new           #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+     265: dup
+     266: new           #35                 // class java/util/ArrayList
+     269: dup
+     270: aload         5
+     272: invokespecial #105                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     275: aload         8
+     277: new           #35                 // class java/util/ArrayList
+     280: dup
+     281: invokespecial #104                // Method java/util/ArrayList."<init>":()V
+     284: aload         4
+     286: invokeinterface #127,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._033fed:()Ljava/util/function/BooleanSupplier;
+     291: aload         4
+     293: invokeinterface #126,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._5e704b:()Z
+     298: aload         4
+     300: invokeinterface #122,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._996786:()Z
+     305: invokespecial #61                 // Method L/_ec7e36/_590f69/_590f69/_590f69."<init>":(Ljava/util/List;LL/_ec7e36/_dd3308;Ljava/util/List;Ljava/util/function/BooleanSupplier;ZZ)V
+     308: invokeinterface #144,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     313: pop
+     314: goto          420
+     317: aload         9
+     319: invokevirtual #63                 // Method L/_ec7e36/_590f69/_590f69/_590f69._d189e7:()Ljava/util/List;
+     322: aload         5
+     324: invokeinterface #136,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     329: pop
+     330: aload         4
+     332: invokeinterface #127,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._033fed:()Ljava/util/function/BooleanSupplier;
+     337: astore        10
+     339: aload         10
+     341: ifnull        380
+     344: aload         9
+     346: invokevirtual #69                 // Method L/_ec7e36/_590f69/_590f69/_590f69._033fed:()Ljava/util/function/BooleanSupplier;
+     349: astore        11
+     351: aload         11
+     353: ifnull        373
+     356: aload         9
+     358: aload         10
+     360: aload         11
+     362: invokedynamic #152,  0            // InvokeDynamic #4:getAsBoolean:(Ljava/util/function/BooleanSupplier;Ljava/util/function/BooleanSupplier;)Ljava/util/function/BooleanSupplier;
+     367: invokevirtual #68                 // Method L/_ec7e36/_590f69/_590f69/_590f69._a140a8:(Ljava/util/function/BooleanSupplier;)V
+     370: goto          380
+     373: aload         9
+     375: aload         10
+     377: invokevirtual #68                 // Method L/_ec7e36/_590f69/_590f69/_590f69._a140a8:(Ljava/util/function/BooleanSupplier;)V
+     380: aload         9
+     382: aload         9
+     384: invokevirtual #64                 // Method L/_ec7e36/_590f69/_590f69/_590f69._5e704b:()Z
+     387: ifne          400
+     390: aload         4
+     392: invokeinterface #126,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._5e704b:()Z
+     397: ifeq          404
+     400: iconst_1
+     401: goto          405
+     404: iconst_0
+     405: invokevirtual #67                 // Method L/_ec7e36/_590f69/_590f69/_590f69._0a2a8d:(Z)V
+     408: aload         9
+     410: aload         4
+     412: invokeinterface #122,  1          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_21aca6._996786:()Z
+     417: invokevirtual #65                 // Method L/_ec7e36/_590f69/_590f69/_590f69._92643c:(Z)V
+     420: goto          219
+     423: goto          16
+     426: aload_1
+     427: invokeinterface #145,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+     432: invokeinterface #131,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+     437: astore_2
+     438: aload_2
+     439: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     444: ifeq          464
+     447: aload_0
+     448: aload_2
+     449: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     454: checkcast     #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+     457: aload_2
+     458: invokevirtual #78                 // Method _cfe983:(LL/_ec7e36/_590f69/_590f69/_590f69;Ljava/util/Iterator;)V
+     461: goto          438
+     464: aload_1
+     465: areturn
+
+  protected void _cfe983(L._ec7e36._590f69._590f69._590f69, java.util.Iterator<L._ec7e36._590f69._590f69._590f69>);
+    Code:
+       0: aload_1
+       1: invokevirtual #62                 // Method L/_ec7e36/_590f69/_590f69/_590f69._7160a7:()LL/_ec7e36/_dd3308;
+       4: astore        4
+       6: aload         4
+       8: instanceof    #10                 // class L/_ec7e36/_767dc1
+      11: ifeq          369
+      14: aload         4
+      16: checkcast     #10                 // class L/_ec7e36/_767dc1
+      19: astore_3
+      20: aload_3
+      21: invokevirtual #55                 // Method L/_ec7e36/_767dc1.getId:()Ljava/lang/String;
+      24: ldc           #1                  // String
+      26: invokestatic  #113                // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      29: ifne          369
+      32: aload_1
+      33: invokevirtual #70                 // Method L/_ec7e36/_590f69/_590f69/_590f69.getChildren:()Ljava/util/List;
+      36: astore        4
+      38: aload_1
+      39: invokevirtual #66                 // Method L/_ec7e36/_590f69/_590f69/_590f69._4a86b6:()Z
+      42: ifne          62
+      45: aload         4
+      47: invokeinterface #138,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      52: ifeq          62
+      55: aload_2
+      56: invokeinterface #134,  1          // InterfaceMethod java/util/Iterator.remove:()V
+      61: return
+      62: aload_1
+      63: invokevirtual #69                 // Method L/_ec7e36/_590f69/_590f69/_590f69._033fed:()Ljava/util/function/BooleanSupplier;
+      66: astore        5
+      68: iconst_1
+      69: istore        6
+      71: iconst_0
+      72: istore        7
+      74: iload         7
+      76: aload         4
+      78: invokeinterface #141,  1          // InterfaceMethod java/util/List.size:()I
+      83: if_icmpge     150
+      86: aload         4
+      88: iload         7
+      90: invokeinterface #137,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      95: checkcast     #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+      98: astore        8
+     100: iload         7
+     102: ifne          120
+     105: aload         5
+     107: ifnonnull     120
+     110: aload         8
+     112: invokevirtual #69                 // Method L/_ec7e36/_590f69/_590f69/_590f69._033fed:()Ljava/util/function/BooleanSupplier;
+     115: astore        5
+     117: goto          144
+     120: aload         5
+     122: ifnull        144
+     125: aload         5
+     127: aload         8
+     129: invokevirtual #69                 // Method L/_ec7e36/_590f69/_590f69/_590f69._033fed:()Ljava/util/function/BooleanSupplier;
+     132: invokevirtual #100                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     135: ifne          144
+     138: iconst_0
+     139: istore        6
+     141: goto          150
+     144: iinc          7, 1
+     147: goto          74
+     150: iload         6
+     152: ifeq          161
+     155: aload_1
+     156: aload         5
+     158: invokevirtual #68                 // Method L/_ec7e36/_590f69/_590f69/_590f69._a140a8:(Ljava/util/function/BooleanSupplier;)V
+     161: aload_1
+     162: invokevirtual #63                 // Method L/_ec7e36/_590f69/_590f69/_590f69._d189e7:()Ljava/util/List;
+     165: invokeinterface #138,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     170: ifne          369
+     173: aconst_null
+     174: astore        7
+     176: aload_1
+     177: invokevirtual #63                 // Method L/_ec7e36/_590f69/_590f69/_590f69._d189e7:()Ljava/util/List;
+     180: invokeinterface #139,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     185: astore        8
+     187: aload         8
+     189: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     194: ifeq          327
+     197: aload         8
+     199: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     204: checkcast     #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+     207: astore        9
+     209: aload         9
+     211: invokevirtual #62                 // Method L/_ec7e36/_590f69/_590f69/_590f69._7160a7:()LL/_ec7e36/_dd3308;
+     214: astore        10
+     216: aload         10
+     218: invokeinterface #116,  1          // InterfaceMethod L/_ec7e36/_dd3308.getDefaultValue:()Ljava/lang/Object;
+     223: instanceof    #26                 // class java/lang/Boolean
+     226: ifeq          268
+     229: aload         10
+     231: astore        11
+     233: aload         7
+     235: ifnonnull     250
+     238: aload         11
+     240: invokedynamic #153,  0            // InvokeDynamic #5:getAsBoolean:(LL/_ec7e36/_dd3308;)Ljava/util/function/BooleanSupplier;
+     245: astore        7
+     247: goto          265
+     250: aload         7
+     252: astore        12
+     254: aload         11
+     256: aload         12
+     258: invokedynamic #154,  0            // InvokeDynamic #6:getAsBoolean:(LL/_ec7e36/_dd3308;Ljava/util/function/BooleanSupplier;)Ljava/util/function/BooleanSupplier;
+     263: astore        7
+     265: goto          305
+     268: aload         7
+     270: ifnonnull     290
+     273: aload         10
+     275: dup
+     276: invokestatic  #114                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+     279: pop
+     280: invokedynamic #155,  0            // InvokeDynamic #7:getAsBoolean:(LL/_ec7e36/_dd3308;)Ljava/util/function/BooleanSupplier;
+     285: astore        7
+     287: goto          305
+     290: aload         7
+     292: astore        11
+     294: aload         10
+     296: aload         11
+     298: invokedynamic #156,  0            // InvokeDynamic #8:getAsBoolean:(LL/_ec7e36/_dd3308;Ljava/util/function/BooleanSupplier;)Ljava/util/function/BooleanSupplier;
+     303: astore        7
+     305: aload         9
+     307: invokevirtual #70                 // Method L/_ec7e36/_590f69/_590f69/_590f69.getChildren:()Ljava/util/List;
+     310: aload_1
+     311: invokeinterface #140,  2          // InterfaceMethod java/util/List.remove:(Ljava/lang/Object;)Z
+     316: pop
+     317: aload         8
+     319: invokeinterface #134,  1          // InterfaceMethod java/util/Iterator.remove:()V
+     324: goto          187
+     327: aload_1
+     328: invokevirtual #69                 // Method L/_ec7e36/_590f69/_590f69/_590f69._033fed:()Ljava/util/function/BooleanSupplier;
+     331: astore        9
+     333: aload         9
+     335: ifnonnull     347
+     338: aload_1
+     339: aload         7
+     341: invokevirtual #68                 // Method L/_ec7e36/_590f69/_590f69/_590f69._a140a8:(Ljava/util/function/BooleanSupplier;)V
+     344: goto          369
+     347: aload         7
+     349: ifnull        369
+     352: aload         7
+     354: astore        10
+     356: aload_1
+     357: aload         10
+     359: aload         9
+     361: invokedynamic #157,  0            // InvokeDynamic #9:getAsBoolean:(Ljava/util/function/BooleanSupplier;Ljava/util/function/BooleanSupplier;)Ljava/util/function/BooleanSupplier;
+     366: invokevirtual #68                 // Method L/_ec7e36/_590f69/_590f69/_590f69._a140a8:(Ljava/util/function/BooleanSupplier;)V
+     369: return
+
+  private java.util.List<L._ec7e36._590f69._590f69._590f69> _cfe983(java.util.Map<L._ec7e36._dd3308<?>, L._ec7e36._590f69._590f69._590f69>, java.util.List<L._ec7e36._dd3308<?>>);
+    Code:
+       0: new           #35                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #104                // Method java/util/ArrayList."<init>":()V
+       7: astore_3
+       8: aload_2
+       9: invokeinterface #139,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      14: astore        4
+      16: aload         4
+      18: invokeinterface #132,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      23: ifeq          55
+      26: aload         4
+      28: invokeinterface #133,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      33: checkcast     #8                  // class L/_ec7e36/_dd3308
+      36: astore        5
+      38: aload_3
+      39: aload_0
+      40: aload_1
+      41: aload         5
+      43: invokevirtual #81                 // Method _cfe983:(Ljava/util/Map;LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_590f69/_590f69;
+      46: invokeinterface #135,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      51: pop
+      52: goto          16
+      55: aload_3
+      56: areturn
+
+  private L._ec7e36._590f69._590f69._590f69 _cfe983(java.util.Map<L._ec7e36._dd3308<?>, L._ec7e36._590f69._590f69._590f69>, L._ec7e36._dd3308<?>);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: invokedynamic #158,  0            // InvokeDynamic #10:apply:()Ljava/util/function/Function;
+       7: invokeinterface #142,  3          // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+      12: checkcast     #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+      15: areturn
+
+  public L._ec7e36._590f69._21aca6._cfe983(L._ec7e36._590f69._21aca6._cfe983$_21aca6<Setting>, L._ec7e36._590f69._21aca6._cfe983$_cfe983<Setting, Parent>);
+    Code:
+       0: aload_0
+       1: invokespecial #99                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #39                 // class java/util/LinkedList
+       8: dup
+       9: invokespecial #107                // Method java/util/LinkedList."<init>":()V
+      12: putfield      #47                 // Field _3512de:Ljava/util/LinkedList;
+      15: aload_0
+      16: aload_1
+      17: putfield      #49                 // Field _1de15f:LL/_ec7e36/_590f69/_21aca6/_cfe983$_21aca6;
+      20: aload_0
+      21: aload_2
+      22: putfield      #48                 // Field _859a8c:LL/_ec7e36/_590f69/_21aca6/_cfe983$_cfe983;
+      25: return
+
+  public java.lang.Object _e7ba43();
+    Code:
+       0: aload_0
+       1: invokevirtual #83                 // Method _46b02e:()LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       4: areturn
+
+  public java.lang.Object _3e7fb3();
+    Code:
+       0: aload_0
+       1: invokevirtual #85                 // Method _5335d8:()LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       4: areturn
+
+  public java.lang.Object _efcf49(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #84                 // Method _0dff9b:(Ljava/lang/String;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       5: areturn
+
+  public java.lang.Object _bb4487(L._ec7e36._dd3308[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #86                 // Method _1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       5: areturn
+
+  public java.lang.Object _bb4487(L._ec7e36._dd3308, L._ec7e36._dd3308[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #94                 // Method _21aca6:(LL/_ec7e36/_dd3308;[LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       6: areturn
+
+  public java.lang.Object _1253fc(L._ec7e36._dd3308, L._ec7e36._dd3308[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #77                 // Method _cfe983:(LL/_ec7e36/_dd3308;[LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       6: areturn
+
+  public java.lang.Object _1253fc(L._ec7e36._dd3308[]);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #90                 // Method _590f69:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       5: areturn
+
+  public java.lang.Object _21aca6(L._ec7e36._dd3308, java.util.function.Consumer, java.util.function.Consumer);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokevirtual #76                 // Method _cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       7: areturn
+
+  public java.lang.Object _21aca6(L._ec7e36._dd3308, java.util.function.Consumer);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #75                 // Method _cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       6: areturn
+
+  private static L._ec7e36._590f69._590f69._590f69 _133367(L._ec7e36._dd3308);
+    Code:
+       0: new           #17                 // class L/_ec7e36/_590f69/_590f69/_590f69
+       3: dup
+       4: new           #35                 // class java/util/ArrayList
+       7: dup
+       8: invokespecial #104                // Method java/util/ArrayList."<init>":()V
+      11: aload_0
+      12: new           #35                 // class java/util/ArrayList
+      15: dup
+      16: invokespecial #104                // Method java/util/ArrayList."<init>":()V
+      19: aconst_null
+      20: iconst_0
+      21: iconst_0
+      22: invokespecial #61                 // Method L/_ec7e36/_590f69/_590f69/_590f69."<init>":(Ljava/util/List;LL/_ec7e36/_dd3308;Ljava/util/List;Ljava/util/function/BooleanSupplier;ZZ)V
+      25: areturn
+
+  private static boolean _21aca6(java.util.function.BooleanSupplier, java.util.function.BooleanSupplier);
+    Code:
+       0: aload_0
+       1: invokeinterface #146,  1          // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+       6: ifne          18
+       9: aload_1
+      10: invokeinterface #146,  1          // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+      15: ifeq          22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: ireturn
+
+  private static boolean _cfe983(L._ec7e36._dd3308, java.util.function.BooleanSupplier);
+    Code:
+       0: aload_0
+       1: invokeinterface #117,  1          // InterfaceMethod L/_ec7e36/_dd3308.isHidden:()Z
+       6: ifeq          22
+       9: aload_1
+      10: invokeinterface #146,  1          // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+      15: ifeq          22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: ireturn
+
+  private static boolean _21aca6(L._ec7e36._dd3308, java.util.function.BooleanSupplier);
+    Code:
+       0: aload_0
+       1: invokeinterface #115,  1          // InterfaceMethod L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+       6: checkcast     #26                 // class java/lang/Boolean
+       9: invokevirtual #96                 // Method java/lang/Boolean.booleanValue:()Z
+      12: ifeq          24
+      15: aload_0
+      16: invokeinterface #117,  1          // InterfaceMethod L/_ec7e36/_dd3308.isHidden:()Z
+      21: ifeq          37
+      24: aload_1
+      25: invokeinterface #146,  1          // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+      30: ifeq          37
+      33: iconst_1
+      34: goto          38
+      37: iconst_0
+      38: ireturn
+
+  private static boolean _6fc5d5(L._ec7e36._dd3308);
+    Code:
+       0: aload_0
+       1: invokeinterface #115,  1          // InterfaceMethod L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+       6: checkcast     #26                 // class java/lang/Boolean
+       9: invokevirtual #96                 // Method java/lang/Boolean.booleanValue:()Z
+      12: ifeq          24
+      15: aload_0
+      16: invokeinterface #117,  1          // InterfaceMethod L/_ec7e36/_dd3308.isHidden:()Z
+      21: ifeq          28
+      24: iconst_1
+      25: goto          29
+      28: iconst_0
+      29: ireturn
+
+  private static boolean _590f69(java.util.function.BooleanSupplier, java.util.function.BooleanSupplier);
+    Code:
+       0: aload_0
+       1: invokeinterface #146,  1          // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+       6: ifne          18
+       9: aload_1
+      10: invokeinterface #146,  1          // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+      15: ifeq          22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: ireturn
+
+  private static void _cfe983(L._ec7e36._dd3308, L._ec7e36._590f69._1e73d7._590f69);
+    Code:
+       0: aload_1
+       1: iconst_1
+       2: anewarray     #8                  // class L/_ec7e36/_dd3308
+       5: dup
+       6: iconst_0
+       7: aload_0
+       8: aastore
+       9: invokeinterface #120,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._13ea87:([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+      14: pop
+      15: return
+
+  private static void _cfe983(L._81676d._cfe983, L._ec7e36._767dc1);
+    Code:
+       0: getstatic     #50                 // Field L/_1e73d7/_cfe983._c1461e:Z
+       3: ifeq          7
+       6: return
+       7: aload_1
+       8: getstatic     #46                 // Field L/_ec7e36/_1e73d7/_88f3cf._d9d6fe:LL/_55938e/_e62626;
+      11: invokevirtual #54                 // Method L/_ec7e36/_767dc1._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      14: checkcast     #13                 // class L/_ec7e36/_1e73d7/_bb4487
+      17: astore_2
+      18: aload_2
+      19: ifnull        32
+      22: aload_2
+      23: invokeinterface #119,  1          // InterfaceMethod L/_ec7e36/_1e73d7/_bb4487.icon:()LL/_81676d/_cfe983;
+      28: aload_0
+      29: if_acmpeq     49
+      32: new           #28                 // class java/lang/IllegalStateException
+      35: dup
+      36: aload_1
+      37: invokevirtual #55                 // Method L/_ec7e36/_767dc1.getId:()Ljava/lang/String;
+      40: invokedynamic #159,  0            // InvokeDynamic #11:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      45: invokespecial #98                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      48: athrow
+      49: return
+
+  private static void _21aca6(L._ec7e36._dd3308, L._ec7e36._590f69._1e73d7._590f69);
+    Code:
+       0: aload_1
+       1: iconst_1
+       2: anewarray     #8                  // class L/_ec7e36/_dd3308
+       5: dup
+       6: iconst_0
+       7: aload_0
+       8: aastore
+       9: invokeinterface #120,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._13ea87:([LL/_ec7e36/_dd3308;)Ljava/lang/Object;
+      14: pop
+      15: return
+
+  private static void _21aca6(L._81676d._cfe983, L._ec7e36._767dc1);
+    Code:
+       0: getstatic     #50                 // Field L/_1e73d7/_cfe983._c1461e:Z
+       3: ifeq          7
+       6: return
+       7: aload_1
+       8: getstatic     #46                 // Field L/_ec7e36/_1e73d7/_88f3cf._d9d6fe:LL/_55938e/_e62626;
+      11: invokevirtual #54                 // Method L/_ec7e36/_767dc1._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      14: checkcast     #13                 // class L/_ec7e36/_1e73d7/_bb4487
+      17: astore_2
+      18: aload_2
+      19: ifnull        32
+      22: aload_2
+      23: invokeinterface #119,  1          // InterfaceMethod L/_ec7e36/_1e73d7/_bb4487.icon:()LL/_81676d/_cfe983;
+      28: aload_0
+      29: if_acmpeq     49
+      32: new           #28                 // class java/lang/IllegalStateException
+      35: dup
+      36: aload_1
+      37: invokevirtual #55                 // Method L/_ec7e36/_767dc1.getId:()Ljava/lang/String;
+      40: invokedynamic #159,  0            // InvokeDynamic #11:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      45: invokespecial #98                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      48: athrow
+      49: return
+}

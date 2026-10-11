@@ -1,0 +1,92 @@
+public interface com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RROHOCRCCHCIORHICIHCOHRIRCIHCI extends com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.OCCHHCHCOICROCHHIOCRRIIORHIOOH,com.moonsworth.lunar.client.RHCHOCRHIOROIOCRHIHRCROOOHICCC.IROCROOIOIORORHHCCOOCCHRRRIOIC,com.moonsworth.lunar.client.RHCHOCRHIOROIOCRHIHRCROOOHICCC.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR {
+  public abstract java.lang.String getId();
+
+  public default boolean isEnabled();
+    Code:
+       0: aload_0
+       1: getstatic     #14                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH.RHCHROHCIRRCOCHHIHCICHHORIOCOO:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+       4: invokeinterface #18,  2           // InterfaceMethod OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+       9: checkcast     #7                  // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OIHRRCOOHRHIHICHRICIRIOCROHOCC
+      12: astore_1
+      13: aload_1
+      14: ifnull        26
+      17: aload_1
+      18: invokeinterface #16,  1           // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OIHRRCOOHRHIHICHRICIRIOCROHOCC.isEnabled:()Z
+      23: ifeq          30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: ireturn
+
+  public default boolean OHROCIOIIHRHHIHRRRIOOOHICHCORO();
+    Code:
+       0: aload_0
+       1: getstatic     #12                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH.HHOCOIRRORHIIOHHOCHCCIROHROORR:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+       4: invokeinterface #18,  2           // InterfaceMethod OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+       9: checkcast     #8                  // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/ORCOOOCHIICOIICCROCRCOOROORIHR
+      12: astore_1
+      13: aload_1
+      14: ifnonnull     24
+      17: aload_0
+      18: invokeinterface #19,  1           // InterfaceMethod isEnabled:()Z
+      23: ireturn
+      24: aload_0
+      25: invokeinterface #19,  1           // InterfaceMethod isEnabled:()Z
+      30: ifeq          46
+      33: aload_1
+      34: invokeinterface #17,  1           // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/ORCOOOCHIICOIICCROCRCOOROORIHR.IRCHIHCRCIROOIIHOCHICROCHOORHO:()Z
+      39: ifeq          46
+      42: iconst_1
+      43: goto          47
+      46: iconst_0
+      47: ireturn
+
+  public default void updateEnabled();
+    Code:
+       0: return
+
+  public default void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.RORCICOHRIOIIIOIOHIIIICRCIHRII.RROHOCRCCHCIORHICIHCOHRIRCIHCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI);
+    Code:
+       0: return
+
+  public abstract void CHORHIHIRCOCCHIHIHCRIRCICICHIR(boolean);
+
+  public default void RROHIHHCROCIOHCOROIHOOHCHOIIHH();
+    Code:
+       0: return
+
+  public abstract void IROOOCIRIRRCCCOOIRHORCOCIHOHRH();
+
+  public default void RHICHIRCRHHOHHIRRCCIOORIIHOOII();
+    Code:
+       0: return
+
+  public default boolean RHORHIIRORRIRCCCCIIIOHCORCOOCH();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public default boolean OROIOCCCCIIRRRRCHIRHIHROIRIHRO();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public default java.lang.String RROHOCRCCHCIORHICIHCOHRIRCIHCI(java.lang.String, java.lang.Object...);
+    Code:
+       0: aload_0
+       1: getstatic     #13                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH.IROOIHCHRHHHCICICCRIIIOOOOCOCH:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+       4: invokeinterface #18,  2           // InterfaceMethod OIIORIRCORRCORCRCRHOHIRCCHOROO:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+       9: checkcast     #6                  // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI
+      12: astore_3
+      13: aload_3
+      14: ifnonnull     19
+      17: aload_1
+      18: areturn
+      19: aload_3
+      20: aload_1
+      21: aload_2
+      22: invokeinterface #15,  3           // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      27: areturn
+
+  public abstract com.google.gson.JsonElement RHOCICCIOROICRHOIIOHROCIHRIIRI();
+}

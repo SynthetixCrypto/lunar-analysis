@@ -1,0 +1,34 @@
+public interface L._88f3cf._a1dd3a {
+  public static L._88f3cf._1e73d7._a1dd3a _21aca6(L._88f3cf._21aca6, L._88f3cf._1e73d7._cfe983._cfe983);
+    Code:
+       0: new           #3                  // class L/_88f3cf/_1e73d7/_a1dd3a
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokespecial #10                 // Method L/_88f3cf/_1e73d7/_a1dd3a."<init>":(LL/_88f3cf/_21aca6;LL/_88f3cf/_1e73d7/_cfe983/_cfe983;)V
+       9: areturn
+
+  public static L._88f3cf._1e73d7._a1dd3a _590f69(L._88f3cf._21aca6, L._88f3cf._1e73d7._cfe983._cfe983);
+    Code:
+       0: new           #3                  // class L/_88f3cf/_1e73d7/_a1dd3a
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokedynamic #14,  0             // InvokeDynamic #0:isEnabled:(LL/_88f3cf/_1e73d7/_cfe983/_cfe983;)LL/_88f3cf/_1e73d7/_cfe983/_cfe983;
+      11: invokespecial #10                 // Method L/_88f3cf/_1e73d7/_a1dd3a."<init>":(LL/_88f3cf/_21aca6;LL/_88f3cf/_1e73d7/_cfe983/_cfe983;)V
+      14: areturn
+
+  public abstract boolean _98d4d1();
+
+  public abstract void _f3c153();
+
+  private static boolean _cfe983(L._88f3cf._1e73d7._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: invokeinterface #13,  1           // InterfaceMethod L/_88f3cf/_1e73d7/_cfe983/_cfe983.isEnabled:()Z
+       6: ifne          13
+       9: iconst_1
+      10: goto          14
+      13: iconst_0
+      14: ireturn
+}

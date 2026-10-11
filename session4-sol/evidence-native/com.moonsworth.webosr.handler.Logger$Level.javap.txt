@@ -1,0 +1,99 @@
+public final class com.moonsworth.webosr.handler.Logger$Level extends java.lang.Enum<com.moonsworth.webosr.handler.Logger$Level> {
+  public static final com.moonsworth.webosr.handler.Logger$Level DEBUG;
+
+  public static final com.moonsworth.webosr.handler.Logger$Level INFO;
+
+  public static final com.moonsworth.webosr.handler.Logger$Level WARNING;
+
+  public static final com.moonsworth.webosr.handler.Logger$Level ERROR;
+
+  private static final com.moonsworth.webosr.handler.Logger$Level[] $VALUES;
+
+  public static com.moonsworth.webosr.handler.Logger$Level[] values();
+    Code:
+       0: getstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/handler/Logger$Level;
+       3: invokevirtual #14                 // Method "[Lcom/moonsworth/webosr/handler/Logger$Level;".clone:()Ljava/lang/Object;
+       6: checkcast     #5                  // class "[Lcom/moonsworth/webosr/handler/Logger$Level;"
+       9: areturn
+
+  public static com.moonsworth.webosr.handler.Logger$Level valueOf(java.lang.String);
+    Code:
+       0: ldc           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+       2: aload_0
+       3: invokestatic  #20                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #7                  // class com/moonsworth/webosr/handler/Logger$Level
+       9: areturn
+
+  private com.moonsworth.webosr.handler.Logger$Level();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #19                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  public static com.moonsworth.webosr.handler.Logger$Level fromValue(int);
+    Code:
+       0: invokestatic  #18                 // Method values:()[Lcom/moonsworth/webosr/handler/Logger$Level;
+       3: iload_0
+       4: aaload
+       5: areturn
+
+  public int getValue();
+    Code:
+       0: aload_0
+       1: invokevirtual #17                 // Method ordinal:()I
+       4: ireturn
+
+  private static com.moonsworth.webosr.handler.Logger$Level[] $values();
+    Code:
+       0: iconst_4
+       1: anewarray     #7                  // class com/moonsworth/webosr/handler/Logger$Level
+       4: dup
+       5: iconst_0
+       6: getstatic     #10                 // Field DEBUG:Lcom/moonsworth/webosr/handler/Logger$Level;
+       9: aastore
+      10: dup
+      11: iconst_1
+      12: getstatic     #12                 // Field INFO:Lcom/moonsworth/webosr/handler/Logger$Level;
+      15: aastore
+      16: dup
+      17: iconst_2
+      18: getstatic     #13                 // Field WARNING:Lcom/moonsworth/webosr/handler/Logger$Level;
+      21: aastore
+      22: dup
+      23: iconst_3
+      24: getstatic     #11                 // Field ERROR:Lcom/moonsworth/webosr/handler/Logger$Level;
+      27: aastore
+      28: areturn
+
+  static {};
+    Code:
+       0: new           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+       3: dup
+       4: ldc           #1                  // String DEBUG
+       6: iconst_0
+       7: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #10                 // Field DEBUG:Lcom/moonsworth/webosr/handler/Logger$Level;
+      13: new           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+      16: dup
+      17: ldc           #3                  // String INFO
+      19: iconst_1
+      20: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #12                 // Field INFO:Lcom/moonsworth/webosr/handler/Logger$Level;
+      26: new           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+      29: dup
+      30: ldc           #4                  // String WARNING
+      32: iconst_2
+      33: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #13                 // Field WARNING:Lcom/moonsworth/webosr/handler/Logger$Level;
+      39: new           #7                  // class com/moonsworth/webosr/handler/Logger$Level
+      42: dup
+      43: ldc           #2                  // String ERROR
+      45: iconst_3
+      46: invokespecial #16                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #11                 // Field ERROR:Lcom/moonsworth/webosr/handler/Logger$Level;
+      52: invokestatic  #15                 // Method $values:()[Lcom/moonsworth/webosr/handler/Logger$Level;
+      55: putstatic     #9                  // Field $VALUES:[Lcom/moonsworth/webosr/handler/Logger$Level;
+      58: return
+}

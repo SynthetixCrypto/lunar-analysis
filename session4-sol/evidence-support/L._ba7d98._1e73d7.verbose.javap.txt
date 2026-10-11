@@ -1,0 +1,1441 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.class
+  Last modified Dec 31, 1969; size 15183 bytes
+  SHA-256 checksum d7e668ff1e8a3bc9adba042dd677cb6fd881568af8b910aca5f528513d2c9529
+public abstract class com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII implements com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  minor version: 0
+  major version: 61
+  flags: (0x0421) ACC_PUBLIC, ACC_SUPER, ACC_ABSTRACT
+  this_class: #13                         // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+  super_class: #29                        // java/lang/Object
+  interfaces: 1, fields: 7, methods: 27, attributes: 2
+Constant pool:
+    #1 = String             #244          //   - \u0001
+    #2 = String             #245          //  (
+    #3 = String             #246          //  deps)
+    #4 = String             #311          // :
+    #5 = String             #325          // DISABLED
+    #6 = String             #327          // DynamicListener#addDependency() must be called before the listener is initialized! (Do it in the constructor or field initialization)
+    #7 = String             #328          // ENABLED
+    #8 = String             #329          // GLOBAL DEP
+    #9 = Class              #378          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+   #10 = Class              #379          // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII
+   #11 = Class              #380          // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII$COOCHIRORIICRCIIRIROHIIRIRICCH
+   #12 = Class              #381          // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+   #13 = Class              #382          // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+   #14 = Class              #383          // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+   #15 = Class              #384          // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+   #16 = Class              #385          // com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC
+   #17 = Class              #386          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI
+   #18 = Class              #387          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+   #19 = Class              #388          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR
+   #20 = Class              #389          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII
+   #21 = Class              #408          // java/lang/AssertionError
+   #22 = Class              #409          // java/lang/Boolean
+   #23 = Class              #410          // java/lang/Class
+   #24 = Class              #411          // java/lang/ClassNotFoundException
+   #25 = Class              #412          // java/lang/IllegalAccessException
+   #26 = Class              #413          // java/lang/IllegalStateException
+   #27 = Class              #414          // java/lang/InstantiationException
+   #28 = Class              #415          // java/lang/NoSuchMethodException
+   #29 = Class              #416          // java/lang/Object
+   #30 = Class              #417          // java/lang/ReflectiveOperationException
+   #31 = Class              #418          // java/lang/Runnable
+   #32 = Class              #419          // java/lang/RuntimeException
+   #33 = Class              #420          // java/lang/String
+   #34 = Class              #421          // java/lang/StringBuilder
+   #35 = Class              #422          // java/lang/invoke/LambdaMetafactory
+   #36 = Class              #423          // java/lang/invoke/MethodHandles
+   #37 = Class              #424          // java/lang/invoke/MethodHandles$Lookup
+   #38 = Class              #425          // java/lang/invoke/StringConcatFactory
+   #39 = Class              #426          // java/lang/reflect/Constructor
+   #40 = Class              #427          // java/lang/reflect/InvocationTargetException
+   #41 = Class              #428          // java/lang/reflect/Modifier
+   #42 = Class              #429          // java/util/ArrayList
+   #43 = Class              #430          // java/util/Collection
+   #44 = Class              #431          // java/util/Comparator
+   #45 = Class              #432          // java/util/HashMap
+   #46 = Class              #433          // java/util/HashSet
+   #47 = Class              #434          // java/util/Iterator
+   #48 = Class              #435          // java/util/List
+   #49 = Class              #436          // java/util/Map
+   #50 = Class              #437          // java/util/Optional
+   #51 = Class              #438          // java/util/Set
+   #52 = Class              #439          // java/util/stream/Stream
+   #53 = Fieldref           #9.#169       // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.GRAY:Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+   #54 = Fieldref           #13.#160      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.CCROCIHRORIHCCOORCICCCCCIRHORC:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+   #55 = Fieldref           #13.#171      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.HHHCRRORIRROIROOOIHIRIIRHOORHR:Ljava/util/Set;
+   #56 = Fieldref           #13.#172      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+   #57 = Fieldref           #13.#180      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+   #58 = Fieldref           #13.#186      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.RIRIHCCRCOIHRIIRCIRHIRCRRCOIRC:Z
+   #59 = Fieldref           #13.#189      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+   #60 = Fieldref           #13.#201      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.enabled:Z
+   #61 = Methodref          #12.#174      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.IHHRHIHHROCRIIHHOCIRRIRICORCII:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+   #62 = Methodref          #12.#177      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.IRROHOHHHHHHOOICRCRIOIOOROICOR:(Ljava/lang/Runnable;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+   #63 = Methodref          #13.#161      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)V
+   #64 = Methodref          #13.#164      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+   #65 = Methodref          #13.#167      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.CRHIIRCHCIIRCRCRCIIHROCICHROOR:()V
+   #66 = Methodref          #13.#168      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.CRRHIRIOCHHOOOOHOICCHRRCORICOR:()Ljava/lang/Boolean;
+   #67 = Methodref          #13.#170      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.HCOCRHCHRIHCHORRRRRHIOHHICHIII:(Ljava/lang/Class;)V
+   #68 = Methodref          #13.#173      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.HRIHORIOHIIOIHIROIIRHOCRRRHOCR:()V
+   #69 = Methodref          #13.#175      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.IHIRICROIOOCHHHICHOHCOHCIIIRRO:()V
+   #70 = Methodref          #13.#178      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.IRRRORCHOOROIRHHOHIOOHOCCHROCI:()Z
+   #71 = Methodref          #13.#181      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.OHRHIRHIHIORRCHRHCCCOOOCORCRIR:(Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+   #72 = Methodref          #13.#183      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+   #73 = Methodref          #13.#184      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.OIOCCOCOIROHIICCHRRICROROHORHR:()V
+   #74 = Methodref          #13.#187      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+   #75 = Methodref          #13.#190      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.RROCOHOCHIHOIOIOROCORHRHRCIRHI:(Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+   #76 = Methodref          #13.#213      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.init:()V
+   #77 = Methodref          #13.#214      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.isEnabled:()Z
+   #78 = Methodref          #13.#223      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.onDisable:()V
+   #79 = Methodref          #13.#224      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.onEnable:()V
+   #80 = Methodref          #14.#155      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI."<init>":()V
+   #81 = Methodref          #14.#166      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Consumer;ILjava/lang/Class;)V
+   #82 = Methodref          #14.#176      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.IOOOOHCORIOHHHIIOHIRIORCICHICC:()V
+   #83 = Methodref          #14.#182      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHRIHOIHRROOCHIRIRRHRIOIOOCHOC:()V
+   #84 = Methodref          #17.#162      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/util/List;
+   #85 = Methodref          #17.#163      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;Z)Ljava/util/List;
+   #86 = Methodref          #17.#165      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+   #87 = Methodref          #18.#155      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR."<init>":()V
+   #88 = Methodref          #18.#188      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+   #89 = Methodref          #19.#158      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR."<init>":(Ljava/lang/String;)V
+   #90 = Methodref          #19.#191      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR;
+   #91 = Methodref          #19.#192      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/client/util/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR;
+   #92 = Methodref          #20.#156      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII."<init>":(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)V
+   #93 = Methodref          #20.#179      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII.OHHCOICCCRROCCHIHROOHCOOOIHRIH:(Ljava/util/List;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+   #94 = Methodref          #21.#157      // java/lang/AssertionError."<init>":(Ljava/lang/Object;)V
+   #95 = Methodref          #22.#198      // java/lang/Boolean.booleanValue:()Z
+   #96 = Methodref          #22.#235      // java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+   #97 = Methodref          #23.#203      // java/lang/Class.forName:(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+   #98 = Methodref          #23.#207      // java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+   #99 = Methodref          #23.#208      // java/lang/Class.getDeclaredConstructor:([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  #100 = Methodref          #23.#210      // java/lang/Class.getName:()Ljava/lang/String;
+  #101 = Methodref          #23.#211      // java/lang/Class.getSimpleName:()Ljava/lang/String;
+  #102 = Methodref          #26.#158      // java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+  #103 = Methodref          #29.#155      // java/lang/Object."<init>":()V
+  #104 = Methodref          #29.#206      // java/lang/Object.getClass:()Ljava/lang/Class;
+  #105 = Methodref          #32.#159      // java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+  #106 = Methodref          #33.#234      // java/lang/String.valueOf:(I)Ljava/lang/String;
+  #107 = Methodref          #34.#155      // java/lang/StringBuilder."<init>":()V
+  #108 = Methodref          #34.#195      // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+  #109 = Methodref          #34.#196      // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #110 = Methodref          #34.#233      // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #111 = Methodref          #35.#219      // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #112 = Methodref          #38.#218      // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #113 = Methodref          #39.#209      // java/lang/reflect/Constructor.getModifiers:()I
+  #114 = Methodref          #39.#220      // java/lang/reflect/Constructor.newInstance:([Ljava/lang/Object;)Ljava/lang/Object;
+  #115 = Methodref          #39.#229      // java/lang/reflect/Constructor.setAccessible:(Z)V
+  #116 = Methodref          #41.#215      // java/lang/reflect/Modifier.isPublic:(I)Z
+  #117 = Methodref          #42.#155      // java/util/ArrayList."<init>":()V
+  #118 = Methodref          #45.#155      // java/util/HashMap."<init>":()V
+  #119 = Methodref          #46.#155      // java/util/HashSet."<init>":()V
+  #120 = Methodref          #50.#200      // java/util/Optional.empty:()Ljava/util/Optional;
+  #121 = Methodref          #50.#222      // java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+  #122 = InterfaceMethodref #15.#175      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.IHIRICROIOOCHHHICHOHCOHCIIIRRO:()V
+  #123 = InterfaceMethodref #15.#185      // com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.ORRCRIIIICHORCCRCRCIRICOCCHHOR:()V
+  #124 = InterfaceMethodref #31.#226      // java/lang/Runnable.run:()V
+  #125 = InterfaceMethodref #43.#231      // java/util/Collection.stream:()Ljava/util/stream/Stream;
+  #126 = InterfaceMethodref #44.#199      // java/util/Comparator.comparing:(Ljava/util/function/Function;)Ljava/util/Comparator;
+  #127 = InterfaceMethodref #47.#212      // java/util/Iterator.hasNext:()Z
+  #128 = InterfaceMethodref #47.#221      // java/util/Iterator.next:()Ljava/lang/Object;
+  #129 = InterfaceMethodref #48.#194      // java/util/List.add:(Ljava/lang/Object;)Z
+  #130 = InterfaceMethodref #48.#216      // java/util/List.iterator:()Ljava/util/Iterator;
+  #131 = InterfaceMethodref #49.#205      // java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #132 = InterfaceMethodref #49.#225      // java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #133 = InterfaceMethodref #49.#236      // java/util/Map.values:()Ljava/util/Collection;
+  #134 = InterfaceMethodref #51.#194      // java/util/Set.add:(Ljava/lang/Object;)Z
+  #135 = InterfaceMethodref #51.#202      // java/util/Set.forEach:(Ljava/util/function/Consumer;)V
+  #136 = InterfaceMethodref #52.#230      // java/util/stream/Stream.sorted:(Ljava/util/Comparator;)Ljava/util/stream/Stream;
+  #137 = InterfaceMethodref #52.#232      // java/util/stream/Stream.toList:()Ljava/util/List;
+  #138 = InvokeDynamic      #0:#193       // #0:accept:()Ljava/util/function/Consumer;
+  #139 = InvokeDynamic      #1:#193       // #1:accept:()Ljava/util/function/Consumer;
+  #140 = InvokeDynamic      #2:#227       // #2:run:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/Runnable;
+  #141 = InvokeDynamic      #3:#228       // #3:run:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Ljava/lang/Runnable;
+  #142 = InvokeDynamic      #4:#197       // #4:apply:()Ljava/util/function/Function;
+  #143 = InvokeDynamic      #5:#217       // #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #144 = InvokeDynamic      #6:#197       // #6:apply:()Ljava/util/function/Function;
+  #145 = InvokeDynamic      #7:#204       // #7:get:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/util/function/Supplier;
+  #146 = MethodHandle       5:#63         // REF_invokeVirtual com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)V
+  #147 = MethodHandle       5:#66         // REF_invokeVirtual com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.CRRHIRIOCHHOOOOHOICCHRRCORICOR:()Ljava/lang/Boolean;
+  #148 = MethodHandle       5:#73         // REF_invokeVirtual com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.OIOCCOCOIROHIICCHRRICROROHORHR:()V
+  #149 = MethodHandle       6:#72         // REF_invokeStatic com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+  #150 = MethodHandle       6:#74         // REF_invokeStatic com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+  #151 = MethodHandle       6:#111        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #152 = MethodHandle       6:#112        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #153 = MethodHandle       9:#122        // REF_invokeInterface com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.IHIRICROIOOCHHHICHOHCOHCIIIRRO:()V
+  #154 = MethodHandle       9:#123        // REF_invokeInterface com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.ORRCRIIIICHORCCRCRCIRICOCCHHOR:()V
+  #155 = NameAndType        #317:#261     // "<init>":()V
+  #156 = NameAndType        #317:#278     // "<init>":(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)V
+  #157 = NameAndType        #317:#289     // "<init>":(Ljava/lang/Object;)V
+  #158 = NameAndType        #317:#296     // "<init>":(Ljava/lang/String;)V
+  #159 = NameAndType        #317:#298     // "<init>":(Ljava/lang/Throwable;)V
+  #160 = NameAndType        #319:#347     // CCROCIHRORIHCCOORCICCCCCIRHORC:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #161 = NameAndType        #321:#267     // COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)V
+  #162 = NameAndType        #321:#270     // COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/util/List;
+  #163 = NameAndType        #321:#273     // COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;Z)Ljava/util/List;
+  #164 = NameAndType        #321:#284     // COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+  #165 = NameAndType        #321:#291     // COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+  #166 = NameAndType        #321:#304     // COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Consumer;ILjava/lang/Class;)V
+  #167 = NameAndType        #322:#261     // CRHIIRCHCIIRCRCRCIIHROCICHROOR:()V
+  #168 = NameAndType        #323:#248     // CRRHIRIOCHHOOOOHOICCHRRCORICOR:()Ljava/lang/Boolean;
+  #169 = NameAndType        #330:#344     // GRAY:Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #170 = NameAndType        #331:#282     // HCOCRHCHRIHCHORRRRRHIOHHICHIII:(Ljava/lang/Class;)V
+  #171 = NameAndType        #332:#352     // HHHCRRORIRROIROOOIHIRIIRHOORHR:Ljava/util/Set;
+  #172 = NameAndType        #333:#336     // HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+  #173 = NameAndType        #335:#261     // HRIHORIOHIIOIHIROIIRHOCRRRHOCR:()V
+  #174 = NameAndType        #337:#306     // IHHRHIHHROCRIIHHOCIRRIRICORCII:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+  #175 = NameAndType        #338:#261     // IHIRICROIOOCHHHICHOHCOHCIIIRRO:()V
+  #176 = NameAndType        #339:#261     // IOOOOHCORIOHHHIIOHIRIORCICHICC:()V
+  #177 = NameAndType        #341:#293     // IRROHOHHHHHHOOICRCRIOIOOROICOR:(Ljava/lang/Runnable;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #178 = NameAndType        #342:#262     // IRRRORCHOOROIRHHOHIOOHOCCHROCI:()Z
+  #179 = NameAndType        #355:#302     // OHHCOICCCRROCCHIHROOHCOOOIHRIH:(Ljava/util/List;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #180 = NameAndType        #356:#350     // OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+  #181 = NameAndType        #357:#280     // OHRHIRHIHIORRCHRHCCCOOOCORCRIR:(Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+  #182 = NameAndType        #358:#261     // OHRIHOIHRROOCHIRIRRHRIOIOOCHOC:()V
+  #183 = NameAndType        #359:#269     // OHRORRHCHCRICORRRCIRIOCCIRCRII:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+  #184 = NameAndType        #360:#261     // OIOCCOCOIROHIICCHRRICROROHORHR:()V
+  #185 = NameAndType        #362:#261     // ORRCRIIIICHORCCRCRCIRICOCCHHOR:()V
+  #186 = NameAndType        #363:#372     // RIRIHCCRCOIHRIIRCIRHIRCRRCOIRC:Z
+  #187 = NameAndType        #364:#269     // RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+  #188 = NameAndType        #364:#277     // RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #189 = NameAndType        #366:#349     // RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+  #190 = NameAndType        #367:#280     // RROCOHOCHIHOIOIOROCORHRHRCIRHI:(Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+  #191 = NameAndType        #368:#266     // RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR;
+  #192 = NameAndType        #368:#279     // RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/client/util/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR;
+  #193 = NameAndType        #373:#258     // accept:()Ljava/util/function/Consumer;
+  #194 = NameAndType        #374:#290     // add:(Ljava/lang/Object;)Z
+  #195 = NameAndType        #375:#264     // append:(I)Ljava/lang/StringBuilder;
+  #196 = NameAndType        #375:#295     // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #197 = NameAndType        #376:#259     // apply:()Ljava/util/function/Function;
+  #198 = NameAndType        #377:#262     // booleanValue:()Z
+  #199 = NameAndType        #390:#305     // comparing:(Ljava/util/function/Function;)Ljava/util/Comparator;
+  #200 = NameAndType        #391:#257     // empty:()Ljava/util/Optional;
+  #201 = NameAndType        #392:#372     // enabled:Z
+  #202 = NameAndType        #393:#303     // forEach:(Ljava/util/function/Consumer;)V
+  #203 = NameAndType        #394:#297     // forName:(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+  #204 = NameAndType        #395:#271     // get:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/util/function/Supplier;
+  #205 = NameAndType        #395:#287     // get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #206 = NameAndType        #396:#249     // getClass:()Ljava/lang/Class;
+  #207 = NameAndType        #397:#250     // getClassLoader:()Ljava/lang/ClassLoader;
+  #208 = NameAndType        #398:#309     // getDeclaredConstructor:([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  #209 = NameAndType        #399:#247     // getModifiers:()I
+  #210 = NameAndType        #400:#252     // getName:()Ljava/lang/String;
+  #211 = NameAndType        #401:#252     // getSimpleName:()Ljava/lang/String;
+  #212 = NameAndType        #403:#262     // hasNext:()Z
+  #213 = NameAndType        #404:#261     // init:()V
+  #214 = NameAndType        #405:#262     // isEnabled:()Z
+  #215 = NameAndType        #406:#265     // isPublic:(I)Z
+  #216 = NameAndType        #407:#254     // iterator:()Ljava/util/Iterator;
+  #217 = NameAndType        #440:#294     // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #218 = NameAndType        #440:#299     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #219 = NameAndType        #441:#300     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #220 = NameAndType        #442:#310     // newInstance:([Ljava/lang/Object;)Ljava/lang/Object;
+  #221 = NameAndType        #443:#251     // next:()Ljava/lang/Object;
+  #222 = NameAndType        #444:#288     // of:(Ljava/lang/Object;)Ljava/util/Optional;
+  #223 = NameAndType        #445:#261     // onDisable:()V
+  #224 = NameAndType        #446:#261     // onEnable:()V
+  #225 = NameAndType        #447:#292     // put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #226 = NameAndType        #448:#261     // run:()V
+  #227 = NameAndType        #448:#268     // run:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/Runnable;
+  #228 = NameAndType        #448:#272     // run:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Ljava/lang/Runnable;
+  #229 = NameAndType        #449:#308     // setAccessible:(Z)V
+  #230 = NameAndType        #450:#301     // sorted:(Ljava/util/Comparator;)Ljava/util/stream/Stream;
+  #231 = NameAndType        #451:#260     // stream:()Ljava/util/stream/Stream;
+  #232 = NameAndType        #452:#255     // toList:()Ljava/util/List;
+  #233 = NameAndType        #453:#252     // toString:()Ljava/lang/String;
+  #234 = NameAndType        #454:#263     // valueOf:(I)Ljava/lang/String;
+  #235 = NameAndType        #454:#307     // valueOf:(Z)Ljava/lang/Boolean;
+  #236 = NameAndType        #455:#253     // values:()Ljava/util/Collection;
+  #237 = MethodType         #248          //  ()Ljava/lang/Boolean;
+  #238 = MethodType         #251          //  ()Ljava/lang/Object;
+  #239 = MethodType         #261          //  ()V
+  #240 = MethodType         #269          //  (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+  #241 = MethodType         #274          //  (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+  #242 = MethodType         #287          //  (Ljava/lang/Object;)Ljava/lang/Object;
+  #243 = MethodType         #289          //  (Ljava/lang/Object;)V
+  #244 = Utf8                 - \u0001
+  #245 = Utf8                (
+  #246 = Utf8                deps)
+  #247 = Utf8               ()I
+  #248 = Utf8               ()Ljava/lang/Boolean;
+  #249 = Utf8               ()Ljava/lang/Class;
+  #250 = Utf8               ()Ljava/lang/ClassLoader;
+  #251 = Utf8               ()Ljava/lang/Object;
+  #252 = Utf8               ()Ljava/lang/String;
+  #253 = Utf8               ()Ljava/util/Collection;
+  #254 = Utf8               ()Ljava/util/Iterator;
+  #255 = Utf8               ()Ljava/util/List;
+  #256 = Utf8               ()Ljava/util/List<Ljava/lang/String;>;
+  #257 = Utf8               ()Ljava/util/Optional;
+  #258 = Utf8               ()Ljava/util/function/Consumer;
+  #259 = Utf8               ()Ljava/util/function/Function;
+  #260 = Utf8               ()Ljava/util/stream/Stream;
+  #261 = Utf8               ()V
+  #262 = Utf8               ()Z
+  #263 = Utf8               (I)Ljava/lang/String;
+  #264 = Utf8               (I)Ljava/lang/StringBuilder;
+  #265 = Utf8               (I)Z
+  #266 = Utf8               (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR;
+  #267 = Utf8               (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)V
+  #268 = Utf8               (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/Runnable;
+  #269 = Utf8               (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+  #270 = Utf8               (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/util/List;
+  #271 = Utf8               (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/util/function/Supplier;
+  #272 = Utf8               (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Ljava/lang/Runnable;
+  #273 = Utf8               (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;Z)Ljava/util/List;
+  #274 = Utf8               (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+  #275 = Utf8               (Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/util/List;
+  #276 = Utf8               (Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/util/List<Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;>;
+  #277 = Utf8               (Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #278 = Utf8               (Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)V
+  #279 = Utf8               (Lcom/moonsworth/lunar/client/util/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR;
+  #280 = Utf8               (Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+  #281 = Utf8               (Ljava/lang/Class;)Ljava/util/Optional;
+  #282 = Utf8               (Ljava/lang/Class;)V
+  #283 = Utf8               (Ljava/lang/Class;Ljava/util/function/Consumer;)V
+  #284 = Utf8               (Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+  #285 = Utf8               (Ljava/lang/Class<*>;)V
+  #286 = Utf8               (Ljava/lang/Class<+Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+  #287 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #288 = Utf8               (Ljava/lang/Object;)Ljava/util/Optional;
+  #289 = Utf8               (Ljava/lang/Object;)V
+  #290 = Utf8               (Ljava/lang/Object;)Z
+  #291 = Utf8               (Ljava/lang/Object;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+  #292 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #293 = Utf8               (Ljava/lang/Runnable;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #294 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #295 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #296 = Utf8               (Ljava/lang/String;)V
+  #297 = Utf8               (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+  #298 = Utf8               (Ljava/lang/Throwable;)V
+  #299 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #300 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #301 = Utf8               (Ljava/util/Comparator;)Ljava/util/stream/Stream;
+  #302 = Utf8               (Ljava/util/List;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #303 = Utf8               (Ljava/util/function/Consumer;)V
+  #304 = Utf8               (Ljava/util/function/Consumer;ILjava/lang/Class;)V
+  #305 = Utf8               (Ljava/util/function/Function;)Ljava/util/Comparator;
+  #306 = Utf8               (Ljava/util/function/Supplier;)Ljava/lang/Object;
+  #307 = Utf8               (Z)Ljava/lang/Boolean;
+  #308 = Utf8               (Z)V
+  #309 = Utf8               ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  #310 = Utf8               ([Ljava/lang/Object;)Ljava/lang/Object;
+  #311 = Utf8               :
+  #312 = Utf8               <T:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>(Ljava/lang/Class<TT;>;)Ljava/util/Optional<TT;>;
+  #313 = Utf8               <T:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>(Ljava/lang/Class<TT;>;)TT;
+  #314 = Utf8               <T:Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<TT;>;)V
+  #315 = Utf8               <T:Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<TT;>;I)V
+  #316 = Utf8               <clinit>
+  #317 = Utf8               <init>
+  #318 = Utf8               BootstrapMethods
+  #319 = Utf8               CCROCIHRORIHCCOORCICCCCCIRHORC
+  #320 = Utf8               CIROOCRROCIIIOHOHOIIOOHRIOHCHH
+  #321 = Utf8               COOCHIRORIICRCIIRIROHIIRIRICCH
+  #322 = Utf8               CRHIIRCHCIIRCRCRCIIHROCICHROOR
+  #323 = Utf8               CRRHIRIOCHHOOOOHOICCHRRCORICOR
+  #324 = Utf8               Code
+  #325 = Utf8               DISABLED
+  #326 = Utf8               DYNAMICLISTENER_ISENABLED
+  #327 = Utf8               DynamicListener#addDependency() must be called before the listener is initialized! (Do it in the constructor or field initialization)
+  #328 = Utf8               ENABLED
+  #329 = Utf8               GLOBAL DEP
+  #330 = Utf8               GRAY
+  #331 = Utf8               HCOCRHCHRIHCHORRRRRHIOHHICHIII
+  #332 = Utf8               HHHCRRORIRROIROOOIHIRIIRHOORHR
+  #333 = Utf8               HHIIORHOOIOCCHHOCROIHOOOHOHRRI
+  #334 = Utf8               HIOHRIRIOIHOICCCCOHCOOIICIICOH
+  #335 = Utf8               HRIHORIOHIIOIHIROIIRHOCRRRHOCR
+  #336 = Utf8               I
+  #337 = Utf8               IHHRHIHHROCRIIHHOCIRRIRICORCII
+  #338 = Utf8               IHIRICROIOOCHHHICHOHCOHCIIIRRO
+  #339 = Utf8               IOOOOHCORIOHHHIIOHIRIORCICHICC
+  #340 = Utf8               IROCROOIOIORORHHCCOOCCHRRRIOIC
+  #341 = Utf8               IRROHOHHHHHHOOICRCRIOIOOROICOR
+  #342 = Utf8               IRRRORCHOOROIRHHOHIOOHOCCHROCI
+  #343 = Utf8               InnerClasses
+  #344 = Utf8               Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #345 = Utf8               Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #346 = Utf8               Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #347 = Utf8               Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #348 = Utf8               LineNumberTable
+  #349 = Utf8               Ljava/lang/Runnable;
+  #350 = Utf8               Ljava/util/Map;
+  #351 = Utf8               Ljava/util/Map<Ljava/lang/Class<*>;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>;
+  #352 = Utf8               Ljava/util/Set;
+  #353 = Utf8               Ljava/util/Set<Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;>;
+  #354 = Utf8               Lookup
+  #355 = Utf8               OHHCOICCCRROCCHIHROOHCOOOIHRIH
+  #356 = Utf8               OHOCOHHHHORCOROCRHHCRORIOCRHCO
+  #357 = Utf8               OHRHIRHIHIORRCHRHCCCOOOCORCRIR
+  #358 = Utf8               OHRIHOIHRROOCHIRIRRHRIOIOOCHOC
+  #359 = Utf8               OHRORRHCHCRICORRRCIRIOCCIRCRII
+  #360 = Utf8               OIOCCOCOIROHIICCHRRICROROHORHR
+  #361 = Utf8               ORHHCCIHIRCCOOHICHIROCRRRCCHRI
+  #362 = Utf8               ORRCRIIIICHORCCRCRCIRICOCCHHOR
+  #363 = Utf8               RIRIHCCRCOIHRIIRCIRHIRCRRCOIRC
+  #364 = Utf8               RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #365 = Utf8               RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+  #366 = Utf8               RRHORCRCOHHRHIHCIIRICRRRRIIRHO
+  #367 = Utf8               RROCOHOCHIHOIOIOROCORHRHRCIRHI
+  #368 = Utf8               RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #369 = Utf8               RuntimeInvisibleAnnotations
+  #370 = Utf8               Signature
+  #371 = Utf8               StackMapTable
+  #372 = Utf8               Z
+  #373 = Utf8               accept
+  #374 = Utf8               add
+  #375 = Utf8               append
+  #376 = Utf8               apply
+  #377 = Utf8               booleanValue
+  #378 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+  #379 = Utf8               com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #380 = Utf8               com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII$COOCHIRORIICRCIIRIROHIIRIRICCH
+  #381 = Utf8               com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+  #382 = Utf8               com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+  #383 = Utf8               com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #384 = Utf8               com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #385 = Utf8               com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC
+  #386 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI
+  #387 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+  #388 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR
+  #389 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #390 = Utf8               comparing
+  #391 = Utf8               empty
+  #392 = Utf8               enabled
+  #393 = Utf8               forEach
+  #394 = Utf8               forName
+  #395 = Utf8               get
+  #396 = Utf8               getClass
+  #397 = Utf8               getClassLoader
+  #398 = Utf8               getDeclaredConstructor
+  #399 = Utf8               getModifiers
+  #400 = Utf8               getName
+  #401 = Utf8               getSimpleName
+  #402 = Utf8               handle
+  #403 = Utf8               hasNext
+  #404 = Utf8               init
+  #405 = Utf8               isEnabled
+  #406 = Utf8               isPublic
+  #407 = Utf8               iterator
+  #408 = Utf8               java/lang/AssertionError
+  #409 = Utf8               java/lang/Boolean
+  #410 = Utf8               java/lang/Class
+  #411 = Utf8               java/lang/ClassNotFoundException
+  #412 = Utf8               java/lang/IllegalAccessException
+  #413 = Utf8               java/lang/IllegalStateException
+  #414 = Utf8               java/lang/InstantiationException
+  #415 = Utf8               java/lang/NoSuchMethodException
+  #416 = Utf8               java/lang/Object
+  #417 = Utf8               java/lang/ReflectiveOperationException
+  #418 = Utf8               java/lang/Runnable
+  #419 = Utf8               java/lang/RuntimeException
+  #420 = Utf8               java/lang/String
+  #421 = Utf8               java/lang/StringBuilder
+  #422 = Utf8               java/lang/invoke/LambdaMetafactory
+  #423 = Utf8               java/lang/invoke/MethodHandles
+  #424 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #425 = Utf8               java/lang/invoke/StringConcatFactory
+  #426 = Utf8               java/lang/reflect/Constructor
+  #427 = Utf8               java/lang/reflect/InvocationTargetException
+  #428 = Utf8               java/lang/reflect/Modifier
+  #429 = Utf8               java/util/ArrayList
+  #430 = Utf8               java/util/Collection
+  #431 = Utf8               java/util/Comparator
+  #432 = Utf8               java/util/HashMap
+  #433 = Utf8               java/util/HashSet
+  #434 = Utf8               java/util/Iterator
+  #435 = Utf8               java/util/List
+  #436 = Utf8               java/util/Map
+  #437 = Utf8               java/util/Optional
+  #438 = Utf8               java/util/Set
+  #439 = Utf8               java/util/stream/Stream
+  #440 = Utf8               makeConcatWithConstants
+  #441 = Utf8               metafactory
+  #442 = Utf8               newInstance
+  #443 = Utf8               next
+  #444 = Utf8               of
+  #445 = Utf8               onDisable
+  #446 = Utf8               onEnable
+  #447 = Utf8               put
+  #448 = Utf8               run
+  #449 = Utf8               setAccessible
+  #450 = Utf8               sorted
+  #451 = Utf8               stream
+  #452 = Utf8               toList
+  #453 = Utf8               toString
+  #454 = Utf8               valueOf
+  #455 = Utf8               values
+{
+  private static final java.util.Map<java.lang.Class<?>, com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII> OHOCOHHHHORCOROCRHHCRORIOCRHCO;
+    descriptor: Ljava/util/Map;
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    Signature: #351                         // Ljava/util/Map<Ljava/lang/Class<*>;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>;
+
+  private final com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII.RROHOCRCCHCIORHICIHCOHRIRCIHCI CCROCIHRORIHCCOORCICCCCCIRHORC;
+    descriptor: Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final java.util.Set<com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI> HHHCRRORIRROIROOOIHIRIIRHOORHR;
+    descriptor: Ljava/util/Set;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #353                         // Ljava/util/Set<Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;>;
+
+  private int HHIIORHOOIOCCHHOCROIHOOOHOHRRI;
+    descriptor: I
+    flags: (0x0002) ACC_PRIVATE
+
+  private boolean enabled;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  private java.lang.Runnable RRHORCRCOHHRHIHCIIRICRRRRIIRHO;
+    descriptor: Ljava/lang/Runnable;
+    flags: (0x0002) ACC_PRIVATE
+
+  private boolean RIRIHCCRCOIHRIIRCIRHIRCRRCOIRC;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  public com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #103                // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #14                 // class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+         8: dup
+         9: invokespecial #80                 // Method com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI."<init>":()V
+        12: putfield      #54                 // Field CCROCIHRORIHCCOORCICCCCCIRHORC:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+        15: aload_0
+        16: new           #46                 // class java/util/HashSet
+        19: dup
+        20: invokespecial #119                // Method java/util/HashSet."<init>":()V
+        23: putfield      #55                 // Field HHHCRRORIRROIROOOIHIRIIRHOORHR:Ljava/util/Set;
+        26: aload_0
+        27: iconst_0
+        28: putfield      #56                 // Field HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+        31: aload_0
+        32: iconst_0
+        33: putfield      #60                 // Field enabled:Z
+        36: return
+      LineNumberTable:
+        line 20: 0
+        line 23: 4
+        line 24: 15
+        line 25: 26
+        line 26: 31
+
+  private void CRHIIRCHCIIRCRCRCIIHROCICHROOR();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #54                 // Field CCROCIHRORIHCCOORCICCCCCIRHORC:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+         4: invokevirtual #82                 // Method com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.IOOOOHCORIOHHHIIOHIRIORCICHICC:()V
+         7: aload_0
+         8: getfield      #55                 // Field HHHCRRORIRROIROOOIHIRIIRHOORHR:Ljava/util/Set;
+        11: invokedynamic #138,  0            // InvokeDynamic #0:accept:()Ljava/util/function/Consumer;
+        16: invokeinterface #135,  2          // InterfaceMethod java/util/Set.forEach:(Ljava/util/function/Consumer;)V
+        21: aload_0
+        22: iconst_1
+        23: putfield      #60                 // Field enabled:Z
+        26: aload_0
+        27: invokevirtual #79                 // Method onEnable:()V
+        30: return
+      LineNumberTable:
+        line 31: 0
+        line 32: 7
+        line 33: 21
+        line 34: 26
+        line 35: 30
+
+  private void HRIHORIOHIIOIHIROIIRHOCRRRHOCR();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #78                 // Method onDisable:()V
+         4: aload_0
+         5: iconst_0
+         6: putfield      #60                 // Field enabled:Z
+         9: aload_0
+        10: getfield      #55                 // Field HHHCRRORIRROIROOOIHIRIIRHOORHR:Ljava/util/Set;
+        13: invokedynamic #139,  0            // InvokeDynamic #1:accept:()Ljava/util/function/Consumer;
+        18: invokeinterface #135,  2          // InterfaceMethod java/util/Set.forEach:(Ljava/util/function/Consumer;)V
+        23: aload_0
+        24: getfield      #54                 // Field CCROCIHRORIHCCOORCICCCCCIRHORC:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+        27: invokevirtual #83                 // Method com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.OHRIHOIHRROOCHIRIRRHRIOIOOCHOC:()V
+        30: return
+      LineNumberTable:
+        line 38: 0
+        line 39: 4
+        line 40: 9
+        line 41: 23
+        line 42: 30
+
+  private void init();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=1
+         0: aload_0
+         1: iconst_1
+         2: putfield      #58                 // Field RIRIHCCRCOIHRIIRCIRHIRCRRCOIRC:Z
+         5: aload_0
+         6: invokedynamic #140,  0            // InvokeDynamic #2:run:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/Runnable;
+        11: astore_1
+        12: aload_1
+        13: invokestatic  #62                 // Method com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.IRROHOHHHHHHOOICRCRIOIOOROICOR:(Ljava/lang/Runnable;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        16: astore_2
+        17: aload_0
+        18: aload_0
+        19: aload_2
+        20: invokedynamic #141,  0            // InvokeDynamic #3:run:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Ljava/lang/Runnable;
+        25: putfield      #59                 // Field RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+        28: aload_0
+        29: getfield      #59                 // Field RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+        32: invokeinterface #124,  1          // InterfaceMethod java/lang/Runnable.run:()V
+        37: return
+      LineNumberTable:
+        line 45: 0
+        line 47: 5
+        line 48: 12
+        line 50: 17
+        line 62: 28
+        line 63: 37
+
+  protected <T extends com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII> T IROCROOIOIORORHHCCOOCCHRRRIOIC(java.lang.Class<T>);
+    descriptor: (Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: getfield      #58                 // Field RIRIHCCRCOIHRIIRCIRHIRCRRCOIRC:Z
+         4: ifeq          17
+         7: new           #26                 // class java/lang/IllegalStateException
+        10: dup
+        11: ldc           #6                  // String DynamicListener#addDependency() must be called before the listener is initialized! (Do it in the constructor or field initialization)
+        13: invokespecial #102                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+        16: athrow
+        17: aload_1
+        18: invokestatic  #75                 // Method RROCOHOCHIHOIOIOROCORHRHRCIRHI:(Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+        21: astore_2
+        22: aload_0
+        23: getfield      #55                 // Field HHHCRRORIRROIROOOIHIRIIRHOORHR:Ljava/util/Set;
+        26: aload_2
+        27: invokeinterface #134,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+        32: pop
+        33: aload_0
+        34: aload_2
+        35: invokestatic  #86                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+        38: aload_2
+        39: areturn
+      LineNumberTable:
+        line 66: 0
+        line 67: 7
+        line 70: 17
+        line 71: 22
+        line 72: 33
+        line 73: 38
+      StackMapTable: number_of_entries = 1
+        frame_type = 17 /* same */
+    Signature: #313                         // <T:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>(Ljava/lang/Class<TT;>;)TT;
+
+  protected static <T extends com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII> T HIOHRIRIOIHOICCCCOHCOOIICIICOH(java.lang.Class<T>);
+    descriptor: (Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+    flags: (0x000c) ACC_PROTECTED, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: aload_0
+         1: invokestatic  #75                 // Method RROCOHOCHIHOIOIOROCORHRHRCIRHI:(Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+         4: astore_1
+         5: aload_1
+         6: invokevirtual #69                 // Method IHIRICROIOOCHHHICHOHCOHCIIIRRO:()V
+         9: ldc           #8                  // String GLOBAL DEP
+        11: aload_1
+        12: invokestatic  #86                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+        15: aload_1
+        16: areturn
+      LineNumberTable:
+        line 77: 0
+        line 78: 5
+        line 79: 9
+        line 80: 15
+    Signature: #313                         // <T:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>(Ljava/lang/Class<TT;>;)TT;
+
+  public void IHIRICROIOOCHHHICHOHCOHCIIIRRO();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: aload_0
+         1: dup
+         2: getfield      #56                 // Field HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+         5: iconst_1
+         6: iadd
+         7: dup_x1
+         8: putfield      #56                 // Field HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+        11: istore_1
+        12: iload_1
+        13: iconst_1
+        14: if_icmpne     33
+        17: aload_0
+        18: getfield      #59                 // Field RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+        21: ifnull        33
+        24: aload_0
+        25: getfield      #59                 // Field RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+        28: invokeinterface #124,  1          // InterfaceMethod java/lang/Runnable.run:()V
+        33: return
+      LineNumberTable:
+        line 84: 0
+        line 85: 12
+        line 86: 24
+        line 88: 33
+      StackMapTable: number_of_entries = 1
+        frame_type = 250 /* chop */
+          offset_delta = 33
+
+  public void ORRCRIIIICHORCCRCRCIRICOCCHHOR();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: aload_0
+         1: dup
+         2: getfield      #56                 // Field HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+         5: iconst_1
+         6: isub
+         7: dup_x1
+         8: putfield      #56                 // Field HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+        11: istore_1
+        12: iload_1
+        13: ifne          32
+        16: aload_0
+        17: getfield      #59                 // Field RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+        20: ifnull        32
+        23: aload_0
+        24: getfield      #59                 // Field RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+        27: invokeinterface #124,  1          // InterfaceMethod java/lang/Runnable.run:()V
+        32: return
+      LineNumberTable:
+        line 91: 0
+        line 92: 12
+        line 93: 23
+        line 95: 32
+      StackMapTable: number_of_entries = 1
+        frame_type = 250 /* chop */
+          offset_delta = 32
+
+  public static <T extends com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII> T RROCOHOCHIHOIOIOROCORHRHRCIRHI(java.lang.Class<T>);
+    descriptor: (Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=4, args_size=1
+         0: getstatic     #57                 // Field OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+         3: aload_0
+         4: invokeinterface #131,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+         9: checkcast     #13                 // class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        12: astore_1
+        13: aload_1
+        14: ifnonnull     81
+        17: aload_0
+        18: invokestatic  #67                 // Method HCOCRHCHRIHCHORRRRRHIOHHICHIII:(Ljava/lang/Class;)V
+        21: getstatic     #57                 // Field OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+        24: aload_0
+        25: invokeinterface #131,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        30: checkcast     #13                 // class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        33: astore_2
+        34: aload_2
+        35: ifnull        43
+        38: aload_2
+        39: astore_1
+        40: goto          81
+        43: aload_0
+        44: invokestatic  #71                 // Method OHRHIRHIHIORRCHRHCCCOOOCORCRIR:(Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+        47: astore_1
+        48: getstatic     #57                 // Field OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+        51: aload_0
+        52: invokeinterface #131,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        57: checkcast     #13                 // class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        60: astore_3
+        61: aload_3
+        62: ifnull        70
+        65: aload_3
+        66: astore_1
+        67: goto          81
+        70: getstatic     #57                 // Field OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+        73: aload_0
+        74: aload_1
+        75: invokeinterface #132,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        80: pop
+        81: aload_1
+        82: areturn
+      LineNumberTable:
+        line 99: 0
+        line 100: 13
+        line 103: 17
+        line 105: 21
+        line 106: 34
+        line 108: 38
+        line 110: 43
+        line 113: 48
+        line 114: 61
+        line 115: 65
+        line 117: 70
+        line 123: 81
+      StackMapTable: number_of_entries = 3
+        frame_type = 43 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 26
+          locals = [ class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 10
+          locals = [ top, class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII ]
+          stack = []
+    Signature: #313                         // <T:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>(Ljava/lang/Class<TT;>;)TT;
+
+  private static void HCOCRHCHRIHCHORRRRRHIOHHICHIII(java.lang.Class<?>);
+    descriptor: (Ljava/lang/Class;)V
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: aload_0
+         1: invokevirtual #100                // Method java/lang/Class.getName:()Ljava/lang/String;
+         4: iconst_1
+         5: aload_0
+         6: invokevirtual #98                 // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+         9: invokestatic  #97                 // Method java/lang/Class.forName:(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+        12: pop
+        13: goto          26
+        16: astore_1
+        17: new           #21                 // class java/lang/AssertionError
+        20: dup
+        21: aload_1
+        22: invokespecial #94                 // Method java/lang/AssertionError."<init>":(Ljava/lang/Object;)V
+        25: athrow
+        26: return
+      Exception table:
+         from    to  target type
+             0    13    16   Class java/lang/ClassNotFoundException
+      LineNumberTable:
+        line 138: 0
+        line 141: 13
+        line 139: 16
+        line 140: 17
+        line 142: 26
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 16
+          locals = []
+          stack = [ class java/lang/ClassNotFoundException ]
+        frame_type = 9 /* same */
+    Signature: #285                         // (Ljava/lang/Class<*>;)V
+
+  public static <T extends com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII> java.util.Optional<T> RRCHCHCCORIROIOCHIIIHCCIOCHCOH(java.lang.Class<T>);
+    descriptor: (Ljava/lang/Class;)Ljava/util/Optional;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: getstatic     #57                 // Field OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+         3: aload_0
+         4: invokeinterface #131,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+         9: checkcast     #13                 // class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        12: astore_1
+        13: aload_1
+        14: ifnull        29
+        17: aload_1
+        18: invokevirtual #70                 // Method IRRRORCHOOROIRHHOHIOOHOCCHROCI:()Z
+        21: ifeq          29
+        24: aload_1
+        25: invokestatic  #121                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+        28: areturn
+        29: invokestatic  #120                // Method java/util/Optional.empty:()Ljava/util/Optional;
+        32: areturn
+      LineNumberTable:
+        line 147: 0
+        line 148: 13
+        line 149: 24
+        line 152: 29
+      StackMapTable: number_of_entries = 1
+        frame_type = 250 /* chop */
+          offset_delta = 29
+    Signature: #312                         // <T:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>(Ljava/lang/Class<TT;>;)Ljava/util/Optional<TT;>;
+
+  private static synchronized com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII OHRHIRHIHIORRCHRHCCCOOOCORCRIR(java.lang.Class<? extends com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII>);
+    descriptor: (Ljava/lang/Class;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+    flags: (0x002a) ACC_PRIVATE, ACC_STATIC, ACC_SYNCHRONIZED
+    Code:
+      stack=3, locals=4, args_size=1
+         0: aload_0
+         1: iconst_0
+         2: anewarray     #23                 // class java/lang/Class
+         5: invokevirtual #99                 // Method java/lang/Class.getDeclaredConstructor:([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+         8: astore_1
+         9: aload_1
+        10: invokevirtual #113                // Method java/lang/reflect/Constructor.getModifiers:()I
+        13: invokestatic  #116                // Method java/lang/reflect/Modifier.isPublic:(I)Z
+        16: istore_2
+        17: iload_2
+        18: ifne          26
+        21: aload_1
+        22: iconst_1
+        23: invokevirtual #115                // Method java/lang/reflect/Constructor.setAccessible:(Z)V
+        26: aload_1
+        27: iconst_0
+        28: anewarray     #29                 // class java/lang/Object
+        31: invokevirtual #114                // Method java/lang/reflect/Constructor.newInstance:([Ljava/lang/Object;)Ljava/lang/Object;
+        34: checkcast     #13                 // class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        37: astore_3
+        38: iload_2
+        39: ifne          47
+        42: aload_1
+        43: iconst_0
+        44: invokevirtual #115                // Method java/lang/reflect/Constructor.setAccessible:(Z)V
+        47: aload_3
+        48: invokevirtual #76                 // Method init:()V
+        51: aload_3
+        52: areturn
+        53: astore_1
+        54: new           #32                 // class java/lang/RuntimeException
+        57: dup
+        58: aload_1
+        59: invokespecial #105                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+        62: athrow
+      Exception table:
+         from    to  target type
+             0    52    53   Class java/lang/InstantiationException
+             0    52    53   Class java/lang/IllegalAccessException
+             0    52    53   Class java/lang/NoSuchMethodException
+             0    52    53   Class java/lang/reflect/InvocationTargetException
+      LineNumberTable:
+        line 160: 0
+        line 161: 9
+        line 162: 17
+        line 163: 21
+        line 165: 26
+        line 166: 38
+        line 167: 42
+        line 169: 47
+        line 170: 51
+        line 171: 53
+        line 173: 54
+      StackMapTable: number_of_entries = 3
+        frame_type = 255 /* full_frame */
+          offset_delta = 26
+          locals = [ top, class java/lang/reflect/Constructor, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 20
+          locals = [ top, top, top, class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 5
+          locals = []
+          stack = [ class java/lang/ReflectiveOperationException ]
+    Signature: #286                         // (Ljava/lang/Class<+Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;>;)Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+
+  protected boolean isEnabled();
+    descriptor: ()Z
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_1
+         1: ireturn
+      LineNumberTable:
+        line 180: 0
+    RuntimeInvisibleAnnotations:
+      0: #346(#361=e#345.#326)
+        com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII(
+          ORHHCCIHIRCCOOHICHIROCRRRCCHRI=Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII$COOCHIRORIICRCIIRIROHIIRIRICCH;.DYNAMICLISTENER_ISENABLED
+        )
+
+  protected void onEnable();
+    descriptor: ()V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 184: 0
+
+  protected void onDisable();
+    descriptor: ()V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 187: 0
+
+  protected <T extends com.moonsworth.lunar.client.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RROHOCRCCHCIORHICIHCOHRIRCIHCI> void handle(java.lang.Class<T>, java.util.function.Consumer<T>);
+    descriptor: (Ljava/lang/Class;Ljava/util/function/Consumer;)V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=4, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: bipush        100
+         5: invokevirtual #64                 // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+         8: return
+      LineNumberTable:
+        line 190: 0
+        line 191: 8
+    Signature: #314                         // <T:Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<TT;>;)V
+
+  protected <T extends com.moonsworth.lunar.client.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RROHOCRCCHCIORHICIHCOHRIRCIHCI> void COOCHIRORIICRCIIRIROHIIRIRICCH(java.lang.Class<T>, java.util.function.Consumer<T>, int);
+    descriptor: (Ljava/lang/Class;Ljava/util/function/Consumer;I)V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=4, locals=4, args_size=4
+         0: aload_0
+         1: getfield      #54                 // Field CCROCIHRORIHCCOORCICCCCCIRHORC:Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+         4: aload_2
+         5: iload_3
+         6: aload_1
+         7: invokevirtual #81                 // Method com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Consumer;ILjava/lang/Class;)V
+        10: return
+      LineNumberTable:
+        line 194: 0
+        line 195: 10
+    Signature: #315                         // <T:Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;>(Ljava/lang/Class<TT;>;Ljava/util/function/Consumer<TT;>;I)V
+
+  public void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI);
+    descriptor: (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #55                 // Field HHHCRRORIRROIROOOIHIRIIRHOORHR:Ljava/util/Set;
+         4: aload_1
+         5: invokeinterface #134,  2          // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+        10: pop
+        11: return
+      LineNumberTable:
+        line 198: 0
+        line 199: 11
+
+  public boolean IRRRORCHOOROIRHHOHIOOHOCCHROCI();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #60                 // Field enabled:Z
+         4: ireturn
+      LineNumberTable:
+        line 203: 0
+
+  public static java.util.List<java.lang.String> CIROOCRROCIIIOHOHOIIOOHRIOHCHH();
+    descriptor: ()Ljava/util/List;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=7, args_size=0
+         0: new           #42                 // class java/util/ArrayList
+         3: dup
+         4: invokespecial #117                // Method java/util/ArrayList."<init>":()V
+         7: astore_0
+         8: getstatic     #57                 // Field OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+        11: invokeinterface #133,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+        16: invokeinterface #125,  1          // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+        21: invokedynamic #142,  0            // InvokeDynamic #4:apply:()Ljava/util/function/Function;
+        26: invokestatic  #126                // InterfaceMethod java/util/Comparator.comparing:(Ljava/util/function/Function;)Ljava/util/Comparator;
+        29: invokeinterface #136,  2          // InterfaceMethod java/util/stream/Stream.sorted:(Ljava/util/Comparator;)Ljava/util/stream/Stream;
+        34: invokeinterface #137,  1          // InterfaceMethod java/util/stream/Stream.toList:()Ljava/util/List;
+        39: invokeinterface #130,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        44: astore_1
+        45: aload_1
+        46: invokeinterface #127,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        51: ifeq          193
+        54: aload_1
+        55: invokeinterface #128,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        60: checkcast     #13                 // class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        63: astore_2
+        64: aload_2
+        65: invokevirtual #70                 // Method IRRRORCHOOROIRHHOHIOOHOCCHROCI:()Z
+        68: istore_3
+        69: new           #34                 // class java/lang/StringBuilder
+        72: dup
+        73: invokespecial #107                // Method java/lang/StringBuilder."<init>":()V
+        76: astore        4
+        78: aload         4
+        80: aload_2
+        81: invokevirtual #104                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        84: invokevirtual #100                // Method java/lang/Class.getName:()Ljava/lang/String;
+        87: invokevirtual #109                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        90: ldc           #4                  // String :
+        92: invokevirtual #109                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        95: iload_3
+        96: ifeq          104
+        99: ldc           #7                  // String ENABLED
+       101: goto          106
+       104: ldc           #5                  // String DISABLED
+       106: invokevirtual #109                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       109: ldc           #2                  // String  (
+       111: invokevirtual #109                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       114: aload_2
+       115: getfield      #56                 // Field HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+       118: invokevirtual #108                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       121: ldc           #3                  // String  deps)
+       123: invokevirtual #109                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       126: pop
+       127: aload_0
+       128: aload         4
+       130: invokevirtual #110                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       133: invokeinterface #129,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       138: pop
+       139: aload_2
+       140: iconst_1
+       141: invokestatic  #85                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;Z)Ljava/util/List;
+       144: invokeinterface #130,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       149: astore        5
+       151: aload         5
+       153: invokeinterface #127,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+       158: ifeq          190
+       161: aload         5
+       163: invokeinterface #128,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       168: checkcast     #33                 // class java/lang/String
+       171: astore        6
+       173: aload_0
+       174: aload         6
+       176: invokedynamic #143,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       181: invokeinterface #129,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       186: pop
+       187: goto          151
+       190: goto          45
+       193: aload_0
+       194: areturn
+      LineNumberTable:
+        line 207: 0
+        line 208: 8
+        line 209: 16
+        line 210: 26
+        line 211: 34
+        line 208: 39
+        line 212: 64
+        line 213: 69
+        line 214: 78
+        line 215: 92
+        line 216: 95
+        line 217: 111
+        line 218: 118
+        line 219: 123
+        line 220: 127
+        line 221: 139
+        line 222: 173
+        line 223: 187
+        line 224: 190
+        line 225: 193
+      StackMapTable: number_of_entries = 6
+        frame_type = 253 /* append */
+          offset_delta = 45
+          locals = [ class java/util/ArrayList, class java/util/Iterator ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 58
+          locals = [ class java/util/ArrayList, class java/util/Iterator, class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII, top, class java/lang/StringBuilder ]
+          stack = [ class java/lang/StringBuilder ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 1
+          locals = [ class java/util/ArrayList, class java/util/Iterator, class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII, top, class java/lang/StringBuilder ]
+          stack = [ class java/lang/StringBuilder, class java/lang/String ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 44
+          locals = [ class java/util/ArrayList, class java/util/Iterator, top, top, top, class java/util/Iterator ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 38
+          locals = [ class java/util/ArrayList, class java/util/Iterator ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 2
+    Signature: #256                         // ()Ljava/util/List<Ljava/lang/String;>;
+
+  public static java.util.List<com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.RORCICOHRIOIIIOIOHIIIICRCIHRII.COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII> RROHOCRCCHCIORHICIHCOHRIRCIHCI(com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, com.moonsworth.lunar.client.OHRHIRHIHIORRCHRHCCCOOOCORCRIR.OCCCIRIHIRCOCOCORIHHHRCHRIOCCC);
+    descriptor: (Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/util/List;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=7, locals=6, args_size=2
+         0: new           #42                 // class java/util/ArrayList
+         3: dup
+         4: invokespecial #117                // Method java/util/ArrayList."<init>":()V
+         7: astore_2
+         8: getstatic     #57                 // Field OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+        11: invokeinterface #133,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+        16: invokeinterface #125,  1          // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+        21: invokedynamic #144,  0            // InvokeDynamic #6:apply:()Ljava/util/function/Function;
+        26: invokestatic  #126                // InterfaceMethod java/util/Comparator.comparing:(Ljava/util/function/Function;)Ljava/util/Comparator;
+        29: invokeinterface #136,  2          // InterfaceMethod java/util/stream/Stream.sorted:(Ljava/util/Comparator;)Ljava/util/stream/Stream;
+        34: invokeinterface #137,  1          // InterfaceMethod java/util/stream/Stream.toList:()Ljava/util/List;
+        39: invokeinterface #130,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        44: astore_3
+        45: aload_3
+        46: invokeinterface #127,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+        51: ifeq          217
+        54: aload_3
+        55: invokeinterface #128,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        60: checkcast     #13                 // class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        63: astore        4
+        65: aload         4
+        67: invokevirtual #70                 // Method IRRRORCHOOROIRHHOHIOOHOCCHROCI:()Z
+        70: istore        5
+        72: aload_2
+        73: new           #20                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII
+        76: dup
+        77: new           #18                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+        80: dup
+        81: invokespecial #87                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR."<init>":()V
+        84: new           #19                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR
+        87: dup
+        88: aload         4
+        90: invokevirtual #104                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        93: invokevirtual #101                // Method java/lang/Class.getSimpleName:()Ljava/lang/String;
+        96: invokespecial #89                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR."<init>":(Ljava/lang/String;)V
+        99: invokevirtual #88                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       102: new           #19                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR
+       105: dup
+       106: ldc           #4                  // String :
+       108: invokespecial #89                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR."<init>":(Ljava/lang/String;)V
+       111: getstatic     #53                 // Field com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.GRAY:Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       114: invokevirtual #90                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR;
+       117: invokevirtual #88                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       120: new           #19                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR
+       123: dup
+       124: iload         5
+       126: ifeq          134
+       129: ldc           #7                  // String ENABLED
+       131: goto          136
+       134: ldc           #5                  // String DISABLED
+       136: invokespecial #89                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR."<init>":(Ljava/lang/String;)V
+       139: iload         5
+       141: ifeq          148
+       144: aload_0
+       145: goto          149
+       148: aload_1
+       149: invokevirtual #91                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/client/util/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR;
+       152: invokevirtual #88                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       155: new           #19                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR
+       158: dup
+       159: ldc           #2                  // String  (
+       161: invokespecial #89                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR."<init>":(Ljava/lang/String;)V
+       164: invokevirtual #88                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       167: new           #19                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR
+       170: dup
+       171: aload         4
+       173: getfield      #56                 // Field HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+       176: invokestatic  #106                // Method java/lang/String.valueOf:(I)Ljava/lang/String;
+       179: invokespecial #89                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR."<init>":(Ljava/lang/String;)V
+       182: invokevirtual #88                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       185: new           #19                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR
+       188: dup
+       189: ldc           #3                  // String  deps)
+       191: invokespecial #89                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR."<init>":(Ljava/lang/String;)V
+       194: invokevirtual #88                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       197: invokespecial #92                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII."<init>":(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;)V
+       200: aload         4
+       202: invokestatic  #84                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OCCHHCHCOICROCHHIOCRRIIORHIOOH/OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/util/List;
+       205: invokevirtual #93                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII.OHHCOICCCRROCCHIHROOHCOOOIHRIH:(Ljava/util/List;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+       208: invokeinterface #129,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       213: pop
+       214: goto          45
+       217: aload_2
+       218: areturn
+      LineNumberTable:
+        line 229: 0
+        line 230: 8
+        line 231: 16
+        line 232: 26
+        line 233: 34
+        line 230: 39
+        line 234: 65
+        line 235: 72
+        line 236: 90
+        line 237: 114
+        line 238: 124
+        line 239: 164
+        line 240: 176
+        line 241: 194
+        line 242: 202
+        line 235: 208
+        line 243: 214
+        line 244: 217
+      StackMapTable: number_of_entries = 6
+        frame_type = 253 /* append */
+          offset_delta = 45
+          locals = [ class java/util/ArrayList, class java/util/Iterator ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 88
+          locals = [ class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, class java/util/ArrayList, class java/util/Iterator, class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII, int ]
+          stack = [ class java/util/ArrayList, uninitialized 73, uninitialized 73, class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR, uninitialized 120, uninitialized 120 ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 1
+          locals = [ class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, class java/util/ArrayList, class java/util/Iterator, class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII, int ]
+          stack = [ class java/util/ArrayList, uninitialized 73, uninitialized 73, class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR, uninitialized 120, uninitialized 120, class java/lang/String ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = [ class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, class java/util/ArrayList, class java/util/Iterator, class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII ]
+          stack = [ class java/util/ArrayList, uninitialized 73, uninitialized 73, class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR, class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC, class java/util/ArrayList, class java/util/Iterator, class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII ]
+          stack = [ class java/util/ArrayList, uninitialized 73, uninitialized 73, class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR, class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/ORCOOOCHIICOIICCROCRCOOROORIHR, class com/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 67
+          locals = [ top, top, class java/util/ArrayList ]
+          stack = []
+    Signature: #276                         // (Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;Lcom/moonsworth/lunar/client/OHRHIRHIHIORRCHRHCCCOOOCORCRIR/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/util/List<Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII;>;
+
+  private static java.lang.String RORCICOHRIOIIIOIOHIIIICRCIHRII(com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII);
+    descriptor: (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #104                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+         4: invokevirtual #101                // Method java/lang/Class.getSimpleName:()Ljava/lang/String;
+         7: areturn
+      LineNumberTable:
+        line 232: 0
+
+  private static java.lang.String OHRORRHCHCRICORRRCIRIOCCIRCRII(com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.OHRORRHCHCRICORRRCIRIOCCIRCRII);
+    descriptor: (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #104                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+         4: invokevirtual #100                // Method java/lang/Class.getName:()Ljava/lang/String;
+         7: areturn
+      LineNumberTable:
+        line 210: 0
+
+  private void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.CCHRHCCCHRIHCICICIRCORHRORIOCI.IRCROOHIIOOHIRCRRHOHIORHCOHIOR);
+    descriptor: (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: aload_1
+         1: aload_0
+         2: invokedynamic #145,  0            // InvokeDynamic #7:get:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/util/function/Supplier;
+         7: invokevirtual #61                 // Method com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.IHHRHIHHROCRIIHHOCIRRIRICORCII:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+        10: checkcast     #22                 // class java/lang/Boolean
+        13: invokevirtual #95                 // Method java/lang/Boolean.booleanValue:()Z
+        16: istore_2
+        17: iload_2
+        18: aload_0
+        19: getfield      #60                 // Field enabled:Z
+        22: if_icmpeq     40
+        25: iload_2
+        26: ifeq          36
+        29: aload_0
+        30: invokevirtual #65                 // Method CRHIIRCHCIIRCRCRCIIHROCICHROOR:()V
+        33: goto          40
+        36: aload_0
+        37: invokevirtual #68                 // Method HRIHORIOHIIOIHIROIIRHOCRRRHOCR:()V
+        40: return
+      LineNumberTable:
+        line 51: 0
+        line 53: 17
+        line 54: 25
+        line 55: 29
+        line 57: 36
+        line 60: 40
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 36
+        frame_type = 250 /* chop */
+          offset_delta = 3
+
+  private java.lang.Boolean CRRHIRIOCHHOOOOHOICCHRRCORICOR();
+    descriptor: ()Ljava/lang/Boolean;
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #56                 // Field HHIIORHOOIOCCHHOCROIHOOOHOHRRI:I
+         4: ifeq          18
+         7: aload_0
+         8: invokevirtual #77                 // Method isEnabled:()Z
+        11: ifeq          18
+        14: iconst_1
+        15: goto          19
+        18: iconst_0
+        19: invokestatic  #96                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        22: areturn
+      LineNumberTable:
+        line 51: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 18
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private void OIOCCOCOIROHIICCHRRICROROHORHR();
+    descriptor: ()V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #59                 // Field RRHORCRCOHHRHIHCIIRICRRRRIIRHO:Ljava/lang/Runnable;
+         4: invokeinterface #124,  1          // InterfaceMethod java/lang/Runnable.run:()V
+         9: return
+      LineNumberTable:
+        line 47: 0
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #45                 // class java/util/HashMap
+         3: dup
+         4: invokespecial #118                // Method java/util/HashMap."<init>":()V
+         7: putstatic     #57                 // Field OHOCOHHHHORCOROCRHHCRORIOCRHCO:Ljava/util/Map;
+        10: return
+      LineNumberTable:
+        line 21: 0
+}
+BootstrapMethods:
+  0: #151 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #243 (Ljava/lang/Object;)V
+      #153 REF_invokeInterface com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.IHIRICROIOOCHHHICHOHCOHCIIIRRO:()V
+      #241 (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+  1: #151 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #243 (Ljava/lang/Object;)V
+      #154 REF_invokeInterface com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.ORRCRIIIICHORCCRCRCIRICOCCHHOR:()V
+      #241 (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)V
+  2: #151 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #239 ()V
+      #148 REF_invokeVirtual com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.OIOCCOCOIROHIICCHRRICROROHORHR:()V
+      #239 ()V
+  3: #151 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #239 ()V
+      #146 REF_invokeVirtual com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;)V
+      #239 ()V
+  4: #151 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #242 (Ljava/lang/Object;)Ljava/lang/Object;
+      #149 REF_invokeStatic com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+      #240 (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+  5: #152 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #1   - \u0001
+  6: #151 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #242 (Ljava/lang/Object;)Ljava/lang/Object;
+      #150 REF_invokeStatic com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+      #240 (Lcom/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Ljava/lang/String;
+  7: #151 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #238 ()Ljava/lang/Object;
+      #147 REF_invokeVirtual com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/OHRORRHCHCRICORRRCIRIOCCIRCRII.CRRHIRIOCHHOOOOHOICCHRRCORICOR:()Ljava/lang/Boolean;
+      #237 ()Ljava/lang/Boolean;
+InnerClasses:
+  public static final #321= #11 of #10;   // COOCHIRORIICRCIIRIROHIIRIRICCH=class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII$COOCHIRORIICRCIIRIROHIIRIRICCH of class com/moonsworth/lunar/client/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/RORCICOHRIOIIIOIOHIIIICRCIHRII
+  public static final #354= #37 of #36;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

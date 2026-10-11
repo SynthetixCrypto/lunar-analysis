@@ -1,0 +1,106 @@
+public class com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH<O, T> implements com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII<O, T> {
+  private final com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII<O, T> RCOORCHOCIOOHIOCOOOIRIRIHHHROO;
+
+  private final java.util.function.BooleanSupplier OHOOIIIRHRRORCRRICRHOCCRIRIHRH;
+
+  private final java.util.Optional<T> OIHHHHRCICCCOIRCOOCRHHOOHHIHCR;
+
+  public com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII<O, T>, java.util.function.BooleanSupplier, T);
+    Code:
+       0: aload_0
+       1: invokespecial #12                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+       9: aload_0
+      10: aload_2
+      11: putfield      #9                  // Field OHOOIIIRHRRORCRRICRHOCCRIRIHRH:Ljava/util/function/BooleanSupplier;
+      14: aload_0
+      15: aload_3
+      16: invokestatic  #14                 // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+      19: putfield      #10                 // Field OIHHHHRCICCCOIRCOOCRHHOOHHIHCR:Ljava/util/Optional;
+      22: return
+
+  public boolean COOCHIRORIICRCIIRIROHIIRIRICCH(O, com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI, T);
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+       4: ifnull        26
+       7: aload_0
+       8: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+      11: aload_1
+      12: aload_2
+      13: aload_3
+      14: invokeinterface #15,  4           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Ljava/lang/Object;)Z
+      19: ifeq          26
+      22: iconst_1
+      23: goto          27
+      26: iconst_0
+      27: ireturn
+
+  public com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI RHHRRRCCCOORIIRHCIROHOIIRIIROO();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+       4: ifnonnull     11
+       7: aconst_null
+       8: goto          20
+      11: aload_0
+      12: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+      15: invokeinterface #18,  1           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.RHHRRRCCCOORIIRHCIROHOIIRIIROO:()Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      20: areturn
+
+  public java.util.Optional<T> RHIHHICIIRCHCCOOCICICIHRIIORHC();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field OHOOIIIRHRRORCRRICRHOCCRIRIHRH:Ljava/util/function/BooleanSupplier;
+       4: invokeinterface #21,  1           // InterfaceMethod java/util/function/BooleanSupplier.getAsBoolean:()Z
+       9: ifeq          17
+      12: aload_0
+      13: getfield      #10                 // Field OIHHHHRCICCCOIRCOOCRHHOOHHIHCR:Ljava/util/Optional;
+      16: areturn
+      17: aload_0
+      18: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+      21: ifnonnull     30
+      24: invokestatic  #13                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+      27: goto          39
+      30: aload_0
+      31: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+      34: invokeinterface #19,  1           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.RHIHHICIIRCHCCOOCICICIHRIIORHC:()Ljava/util/Optional;
+      39: areturn
+
+  public void OHRORRHCHCRICORRRCIRIOCCIRCRII(O, java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+       4: ifnull        18
+       7: aload_0
+       8: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+      11: aload_1
+      12: aload_2
+      13: invokeinterface #17,  3           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Ljava/lang/Object;Ljava/lang/String;)V
+      18: return
+
+  public void RROCOHOCHIHOIOIOROCORHRHRCIRHI(O);
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+      11: aload_1
+      12: invokeinterface #20,  2           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.RROCOHOCHIHOIOIOROCORHRHRCIRHI:(Ljava/lang/Object;)V
+      17: return
+
+  public void COOCHIRORIICRCIIRIROHIIRIRICCH(java.util.function.Predicate<java.lang.String>, T);
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+       4: ifnull        18
+       7: aload_0
+       8: getfield      #11                 // Field RCOORCHOCIOOHIOCOOOIRIRIHHHROO:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII;
+      11: aload_1
+      12: aload_2
+      13: invokeinterface #16,  3           // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/util/function/Predicate;Ljava/lang/Object;)V
+      18: return
+}

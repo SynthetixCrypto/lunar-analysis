@@ -1,0 +1,24 @@
+public interface ML._590f69._bb4487._2ce426._13ea87 {
+  public abstract java.io.InputStream bridge$getInputStream(ML._590f69._5b3f84._dcf582);
+
+  public default boolean bridge$hasPath(java.lang.String);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public abstract java.lang.String bridge$getPackName();
+
+  public default ML._590f69._ba7d98._cfe983._cfe983 bridge$getDescription();
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public default java.util.Optional<java.awt.image.BufferedImage> bridge$getPackImage();
+    Code:
+       0: invokestatic  #4                  // Method java/util/Optional.empty:()Ljava/util/Optional;
+       3: areturn
+
+  public default void bridge$close();
+    Code:
+       0: return
+}

@@ -1,0 +1,70 @@
+public final class com.moonsworth.webosr.handler.FileSystem$Payload extends java.lang.Record {
+  private final java.nio.ByteBuffer buffer;
+
+  private final int length;
+
+  private final java.lang.String mimeType;
+
+  private final int statusCode;
+
+  public com.moonsworth.webosr.handler.FileSystem$Payload(java.nio.ByteBuffer, int, java.lang.String, int);
+    Code:
+       0: aload_0
+       1: invokespecial #12                 // Method java/lang/Record."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #8                  // Field buffer:Ljava/nio/ByteBuffer;
+       9: aload_0
+      10: iload_2
+      11: putfield      #9                  // Field length:I
+      14: aload_0
+      15: aload_3
+      16: putfield      #10                 // Field mimeType:Ljava/lang/String;
+      19: aload_0
+      20: iload         4
+      22: putfield      #11                 // Field statusCode:I
+      25: return
+
+  public final java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokedynamic #16,  0             // InvokeDynamic #0:toString:(Lcom/moonsworth/webosr/handler/FileSystem$Payload;)Ljava/lang/String;
+       6: areturn
+
+  public final int hashCode();
+    Code:
+       0: aload_0
+       1: invokedynamic #15,  0             // InvokeDynamic #0:hashCode:(Lcom/moonsworth/webosr/handler/FileSystem$Payload;)I
+       6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #14,  0             // InvokeDynamic #0:equals:(Lcom/moonsworth/webosr/handler/FileSystem$Payload;Ljava/lang/Object;)Z
+       7: ireturn
+
+  public java.nio.ByteBuffer buffer();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field buffer:Ljava/nio/ByteBuffer;
+       4: areturn
+
+  public int length();
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field length:I
+       4: ireturn
+
+  public java.lang.String mimeType();
+    Code:
+       0: aload_0
+       1: getfield      #10                 // Field mimeType:Ljava/lang/String;
+       4: areturn
+
+  public int statusCode();
+    Code:
+       0: aload_0
+       1: getfield      #11                 // Field statusCode:I
+       4: ireturn
+}

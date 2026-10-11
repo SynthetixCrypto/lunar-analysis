@@ -1,0 +1,692 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/L/_ec7e36/_1e73d7/_2ce426.class
+  Last modified Dec 31, 1969; size 9239 bytes
+  SHA-256 checksum 9df8aa54f6345feb2e2c3861f9080164902da815ecba8a0eae7048465145ac02
+public class L._ec7e36._1e73d7._2ce426<V extends java.lang.Object> extends java.lang.Object implements L._c8175c._cfe983._1e73d7<L._ec7e36._dd3308<V>, V>
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #14                         // L/_ec7e36/_1e73d7/_2ce426
+  super_class: #16                        // java/lang/Object
+  interfaces: 1, fields: 1, methods: 14, attributes: 3
+Constant pool:
+    #1 = String             #141          // Apollo
+    #2 = String             #142          // Apollo intercept broadcast failed
+    #3 = Class              #178          // com/lunarclient/apollo/module/modsetting/ModSettingModule
+    #4 = Class              #179          // L/_cfe983
+    #5 = Class              #180          // L/_cfe983/_cfe983/_cfe983/_590f69/_cfe983
+    #6 = Class              #181          // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6
+    #7 = Class              #182          // L/_cfe983/_21aca6
+    #8 = Class              #183          // L/_00e05b/_cfe983
+    #9 = Class              #184          // L/_c8175c/_cfe983/_1e73d7
+   #10 = Class              #185          // L/_c8175c/_cfe983/_590f69
+   #11 = Class              #186          // L/_c8175c/_cfe983/_21aca6
+   #12 = Class              #187          // L/_ec7e36/_dd3308
+   #13 = Class              #188          // L/_ec7e36/_1e73d7/_429bf0
+   #14 = Class              #189          // L/_ec7e36/_1e73d7/_2ce426
+   #15 = Class              #190          // L/_ec7e36/_1e73d7/_88f3cf
+   #16 = Class              #196          // java/lang/Object
+   #17 = Class              #197          // java/lang/String
+   #18 = Class              #198          // java/lang/Throwable
+   #19 = Class              #199          // java/lang/invoke/LambdaMetafactory
+   #20 = Class              #200          // java/lang/invoke/MethodHandles
+   #21 = Class              #201          // java/lang/invoke/MethodHandles$Lookup
+   #22 = Class              #202          // java/util/Objects
+   #23 = Class              #203          // java/util/Optional
+   #24 = Class              #204          // java/util/function/Consumer
+   #25 = Class              #205          // java/util/function/Predicate
+   #26 = Fieldref           #11.#66       // L/_c8175c/_cfe983/_21aca6.CLIENT_CRITERIA:LL/_c8175c/_cfe983/_21aca6;
+   #27 = Fieldref           #14.#85       // L/_ec7e36/_1e73d7/_2ce426._a781fa:LL/_c8175c/_cfe983/_590f69;
+   #28 = Fieldref           #15.#65       // L/_ec7e36/_1e73d7/_88f3cf._09bf1e:LL/_55938e/_e62626;
+   #29 = Methodref          #4.#77        // L/_cfe983._ecae14:()LL/_cfe983;
+   #30 = Methodref          #4.#84        // L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+   #31 = Methodref          #5.#73        // L/_cfe983/_cfe983/_cfe983/_590f69/_cfe983._114fbf:()LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;
+   #32 = Methodref          #6.#69        // L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+   #33 = Methodref          #7.#79        // L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+   #34 = Methodref          #8.#87        // L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+   #35 = Methodref          #10.#64       // L/_c8175c/_cfe983/_590f69."<init>":()V
+   #36 = Methodref          #10.#67       // L/_c8175c/_cfe983/_590f69._cfe983:(LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)V
+   #37 = Methodref          #10.#72       // L/_c8175c/_cfe983/_590f69._cfe983:(Ljava/util/function/Predicate;Ljava/lang/Object;)V
+   #38 = Methodref          #10.#75       // L/_c8175c/_cfe983/_590f69._85ed47:()Ljava/lang/Object;
+   #39 = Methodref          #10.#81       // L/_c8175c/_cfe983/_590f69._592c18:()LL/_c8175c/_cfe983/_21aca6;
+   #40 = Methodref          #10.#82       // L/_c8175c/_cfe983/_590f69._f34034:()Ljava/util/Optional;
+   #41 = Methodref          #10.#83       // L/_c8175c/_cfe983/_590f69._0ee36d:()Z
+   #42 = Methodref          #10.#97       // L/_c8175c/_cfe983/_590f69.test:(Ljava/lang/String;)Z
+   #43 = Methodref          #14.#68       // L/_ec7e36/_1e73d7/_2ce426._cfe983:(LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+   #44 = Methodref          #14.#70       // L/_ec7e36/_1e73d7/_2ce426._cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/Object;LL/_cfe983/_cfe983/_cfe983;)V
+   #45 = Methodref          #14.#71       // L/_ec7e36/_1e73d7/_2ce426._cfe983:(Ljava/lang/Object;Ljava/util/function/Consumer;)V
+   #46 = Methodref          #14.#76       // L/_ec7e36/_1e73d7/_2ce426._000018:(LL/_ec7e36/_dd3308;)V
+   #47 = Methodref          #14.#78       // L/_ec7e36/_1e73d7/_2ce426._1253fc:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+   #48 = Methodref          #14.#86       // L/_ec7e36/_1e73d7/_2ce426._590f69:(LL/_ec7e36/_dd3308;Ljava/lang/String;)V
+   #49 = Methodref          #16.#64       // java/lang/Object."<init>":()V
+   #50 = Methodref          #19.#96       // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #51 = Methodref          #22.#92       // java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+   #52 = Methodref          #23.#91       // java/util/Optional.empty:()Ljava/util/Optional;
+   #53 = Methodref          #23.#95       // java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+   #54 = InterfaceMethodref #12.#74       // L/_ec7e36/_dd3308._a9c329:(Ljava/lang/Object;)Ljava/lang/Object;
+   #55 = InterfaceMethodref #12.#80       // L/_ec7e36/_dd3308._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+   #56 = InterfaceMethodref #12.#94       // L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+   #57 = InterfaceMethodref #13.#93       // L/_ec7e36/_1e73d7/_429bf0.forEach:(Ljava/util/function/Consumer;)V
+   #58 = InterfaceMethodref #24.#90       // java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+   #59 = InvokeDynamic      #0:#89        // #0:accept:(Ljava/lang/Object;)Ljava/util/function/Consumer;
+   #60 = InvokeDynamic      #1:#88        // #1:accept:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)Ljava/util/function/Consumer;
+   #61 = MethodHandle       6:#44         // REF_invokeStatic L/_ec7e36/_1e73d7/_2ce426._cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/Object;LL/_cfe983/_cfe983/_cfe983;)V
+   #62 = MethodHandle       6:#45         // REF_invokeStatic L/_ec7e36/_1e73d7/_2ce426._cfe983:(Ljava/lang/Object;Ljava/util/function/Consumer;)V
+   #63 = MethodHandle       6:#50         // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #64 = NameAndType        #140:#110     // "<init>":()V
+   #65 = NameAndType        #144:#158     // _09bf1e:LL/_55938e/_e62626;
+   #66 = NameAndType        #145:#157     // CLIENT_CRITERIA:LL/_c8175c/_cfe983/_21aca6;
+   #67 = NameAndType        #146:#113     // _cfe983:(LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)V
+   #68 = NameAndType        #146:#115     // _cfe983:(LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+   #69 = NameAndType        #146:#117     // _cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+   #70 = NameAndType        #146:#118     // _cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/Object;LL/_cfe983/_cfe983/_cfe983;)V
+   #71 = NameAndType        #146:#132     // _cfe983:(Ljava/lang/Object;Ljava/util/function/Consumer;)V
+   #72 = NameAndType        #146:#137     // _cfe983:(Ljava/util/function/Predicate;Ljava/lang/Object;)V
+   #73 = NameAndType        #147:#101     // _114fbf:()LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;
+   #74 = NameAndType        #150:#126     // _a9c329:(Ljava/lang/Object;)Ljava/lang/Object;
+   #75 = NameAndType        #151:#107     // _85ed47:()Ljava/lang/Object;
+   #76 = NameAndType        #152:#114     // _000018:(LL/_ec7e36/_dd3308;)V
+   #77 = NameAndType        #153:#103     // _ecae14:()LL/_cfe983;
+   #78 = NameAndType        #162:#117     // _1253fc:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+   #79 = NameAndType        #162:#125     // _1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+   #80 = NameAndType        #164:#124     // _133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+   #81 = NameAndType        #165:#106     // _592c18:()LL/_c8175c/_cfe983/_21aca6;
+   #82 = NameAndType        #166:#108     // _f34034:()Ljava/util/Optional;
+   #83 = NameAndType        #167:#111     // _0ee36d:()Z
+   #84 = NameAndType        #168:#102     // _fe646f:()LL/_cfe983/_21aca6;
+   #85 = NameAndType        #169:#155     // _a781fa:LL/_c8175c/_cfe983/_590f69;
+   #86 = NameAndType        #170:#119     // _590f69:(LL/_ec7e36/_dd3308;Ljava/lang/String;)V
+   #87 = NameAndType        #170:#134     // _590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+   #88 = NameAndType        #177:#116     // accept:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)Ljava/util/function/Consumer;
+   #89 = NameAndType        #177:#127     // accept:(Ljava/lang/Object;)Ljava/util/function/Consumer;
+   #90 = NameAndType        #177:#128     // accept:(Ljava/lang/Object;)V
+   #91 = NameAndType        #191:#108     // empty:()Ljava/util/Optional;
+   #92 = NameAndType        #192:#130     // equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+   #93 = NameAndType        #193:#136     // forEach:(Ljava/util/function/Consumer;)V
+   #94 = NameAndType        #194:#107     // get:()Ljava/lang/Object;
+   #95 = NameAndType        #195:#136     // ifPresent:(Ljava/util/function/Consumer;)V
+   #96 = NameAndType        #206:#135     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+   #97 = NameAndType        #207:#133     // test:(Ljava/lang/String;)Z
+   #98 = MethodType         #112          //  (LL/_cfe983/_cfe983/_cfe983;)V
+   #99 = MethodType         #128          //  (Ljava/lang/Object;)V
+  #100 = MethodType         #136          //  (Ljava/util/function/Consumer;)V
+  #101 = Utf8               ()LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;
+  #102 = Utf8               ()LL/_cfe983/_21aca6;
+  #103 = Utf8               ()LL/_cfe983;
+  #104 = Utf8               ()LL/_c8175c/_cfe983/_1e73d7;
+  #105 = Utf8               ()LL/_c8175c/_cfe983/_1e73d7<LL/_ec7e36/_dd3308<*>;*>;
+  #106 = Utf8               ()LL/_c8175c/_cfe983/_21aca6;
+  #107 = Utf8               ()Ljava/lang/Object;
+  #108 = Utf8               ()Ljava/util/Optional;
+  #109 = Utf8               ()Ljava/util/Optional<TV;>;
+  #110 = Utf8               ()V
+  #111 = Utf8               ()Z
+  #112 = Utf8               (LL/_cfe983/_cfe983/_cfe983;)V
+  #113 = Utf8               (LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)V
+  #114 = Utf8               (LL/_ec7e36/_dd3308;)V
+  #115 = Utf8               (LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+  #116 = Utf8               (LL/_ec7e36/_dd3308;Ljava/lang/Object;)Ljava/util/function/Consumer;
+  #117 = Utf8               (LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+  #118 = Utf8               (LL/_ec7e36/_dd3308;Ljava/lang/Object;LL/_cfe983/_cfe983/_cfe983;)V
+  #119 = Utf8               (LL/_ec7e36/_dd3308;Ljava/lang/String;)V
+  #120 = Utf8               (LL/_ec7e36/_dd3308<TV;>;)V
+  #121 = Utf8               (LL/_ec7e36/_dd3308<TV;>;LL/_c8175c/_cfe983/_21aca6;TV;)Z
+  #122 = Utf8               (LL/_ec7e36/_dd3308<TV;>;Ljava/lang/String;)V
+  #123 = Utf8               (LL/_ec7e36/_dd3308<TV;>;TV;)V
+  #124 = Utf8               (LL/_55938e/_e62626;)Ljava/lang/Object;
+  #125 = Utf8               (Ljava/lang/Class;)Ljava/util/Optional;
+  #126 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #127 = Utf8               (Ljava/lang/Object;)Ljava/util/function/Consumer;
+  #128 = Utf8               (Ljava/lang/Object;)V
+  #129 = Utf8               (Ljava/lang/Object;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+  #130 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Z
+  #131 = Utf8               (Ljava/lang/Object;Ljava/lang/String;)V
+  #132 = Utf8               (Ljava/lang/Object;Ljava/util/function/Consumer;)V
+  #133 = Utf8               (Ljava/lang/String;)Z
+  #134 = Utf8               (Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+  #135 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #136 = Utf8               (Ljava/util/function/Consumer;)V
+  #137 = Utf8               (Ljava/util/function/Predicate;Ljava/lang/Object;)V
+  #138 = Utf8               (Ljava/util/function/Predicate<Ljava/lang/String;>;TV;)V
+  #139 = Utf8               <V:Ljava/lang/Object;>Ljava/lang/Object;LL/_c8175c/_cfe983/_1e73d7<LL/_ec7e36/_dd3308<TV;>;TV;>;
+  #140 = Utf8               <init>
+  #141 = Utf8               Apollo
+  #142 = Utf8               Apollo intercept broadcast failed
+  #143 = Utf8               BootstrapMethods
+  #144 = Utf8               _09bf1e
+  #145 = Utf8               CLIENT_CRITERIA
+  #146 = Utf8               _cfe983
+  #147 = Utf8               _114fbf
+  #148 = Utf8               _780ceb
+  #149 = Utf8               Code
+  #150 = Utf8               _a9c329
+  #151 = Utf8               _85ed47
+  #152 = Utf8               _000018
+  #153 = Utf8               _ecae14
+  #154 = Utf8               InnerClasses
+  #155 = Utf8               LL/_c8175c/_cfe983/_590f69;
+  #156 = Utf8               LL/_c8175c/_cfe983/_590f69<TV;>;
+  #157 = Utf8               LL/_c8175c/_cfe983/_21aca6;
+  #158 = Utf8               LL/_55938e/_e62626;
+  #159 = Utf8               LineNumberTable
+  #160 = Utf8               Lookup
+  #161 = Utf8               Lorg/jetbrains/annotations/Nullable;
+  #162 = Utf8               _1253fc
+  #163 = Utf8               _1e73d7
+  #164 = Utf8               _133367
+  #165 = Utf8               _592c18
+  #166 = Utf8               _f34034
+  #167 = Utf8               _0ee36d
+  #168 = Utf8               _fe646f
+  #169 = Utf8               _a781fa
+  #170 = Utf8               _590f69
+  #171 = Utf8               _1eb51c
+  #172 = Utf8               RuntimeInvisibleAnnotations
+  #173 = Utf8               RuntimeInvisibleParameterAnnotations
+  #174 = Utf8               RuntimeInvisibleTypeAnnotations
+  #175 = Utf8               Signature
+  #176 = Utf8               StackMapTable
+  #177 = Utf8               accept
+  #178 = Utf8               com/lunarclient/apollo/module/modsetting/ModSettingModule
+  #179 = Utf8               L/_cfe983
+  #180 = Utf8               L/_cfe983/_cfe983/_cfe983/_590f69/_cfe983
+  #181 = Utf8               L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6
+  #182 = Utf8               L/_cfe983/_21aca6
+  #183 = Utf8               L/_00e05b/_cfe983
+  #184 = Utf8               L/_c8175c/_cfe983/_1e73d7
+  #185 = Utf8               L/_c8175c/_cfe983/_590f69
+  #186 = Utf8               L/_c8175c/_cfe983/_21aca6
+  #187 = Utf8               L/_ec7e36/_dd3308
+  #188 = Utf8               L/_ec7e36/_1e73d7/_429bf0
+  #189 = Utf8               L/_ec7e36/_1e73d7/_2ce426
+  #190 = Utf8               L/_ec7e36/_1e73d7/_88f3cf
+  #191 = Utf8               empty
+  #192 = Utf8               equals
+  #193 = Utf8               forEach
+  #194 = Utf8               get
+  #195 = Utf8               ifPresent
+  #196 = Utf8               java/lang/Object
+  #197 = Utf8               java/lang/String
+  #198 = Utf8               java/lang/Throwable
+  #199 = Utf8               java/lang/invoke/LambdaMetafactory
+  #200 = Utf8               java/lang/invoke/MethodHandles
+  #201 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #202 = Utf8               java/util/Objects
+  #203 = Utf8               java/util/Optional
+  #204 = Utf8               java/util/function/Consumer
+  #205 = Utf8               java/util/function/Predicate
+  #206 = Utf8               metafactory
+  #207 = Utf8               test
+{
+  private L._c8175c._cfe983._590f69<V> _a781fa;
+    descriptor: LL/_c8175c/_cfe983/_590f69;
+    flags: (0x0002) ACC_PRIVATE
+    Signature: #156                         // LL/_c8175c/_cfe983/_590f69<TV;>;
+    RuntimeInvisibleAnnotations:
+      0: #161()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #161(): FIELD
+        org.jetbrains.annotations.Nullable
+
+  public L._ec7e36._1e73d7._2ce426();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #49                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aconst_null
+         6: putfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+         9: return
+      LineNumberTable:
+        line 32: 0
+        line 34: 4
+
+  public boolean _cfe983(L._ec7e36._dd3308<V>, L._c8175c._cfe983._21aca6, V);
+    descriptor: (LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=8, args_size=4
+         0: aconst_null
+         1: astore        4
+         3: aload_3
+         4: ifnull        23
+         7: aload_1
+         8: aload_3
+         9: invokeinterface #54,  2           // InterfaceMethod L/_ec7e36/_dd3308._a9c329:(Ljava/lang/Object;)Ljava/lang/Object;
+        14: astore        4
+        16: aload         4
+        18: ifnonnull     23
+        21: iconst_0
+        22: ireturn
+        23: aload_0
+        24: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        27: ifnonnull     48
+        30: aload         4
+        32: ifnonnull     37
+        35: iconst_0
+        36: ireturn
+        37: aload_0
+        38: new           #10                 // class L/_c8175c/_cfe983/_590f69
+        41: dup
+        42: invokespecial #35                 // Method L/_c8175c/_cfe983/_590f69."<init>":()V
+        45: putfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        48: aload_1
+        49: invokeinterface #56,  1           // InterfaceMethod L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+        54: astore        5
+        56: aload         4
+        58: ifnonnull     79
+        61: aload_0
+        62: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        65: invokevirtual #41                 // Method L/_c8175c/_cfe983/_590f69._0ee36d:()Z
+        68: ifeq          89
+        71: aload_0
+        72: aconst_null
+        73: putfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        76: goto          89
+        79: aload_0
+        80: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        83: aload_2
+        84: aload         4
+        86: invokevirtual #36                 // Method L/_c8175c/_cfe983/_590f69._cfe983:(LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)V
+        89: aload_1
+        90: invokeinterface #56,  1           // InterfaceMethod L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+        95: astore        6
+        97: aload_0
+        98: aload_1
+        99: aload         6
+       101: invokevirtual #47                 // Method _1253fc:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+       104: aload         5
+       106: aload         6
+       108: invokestatic  #51                 // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+       111: ifne          149
+       114: aload_1
+       115: getstatic     #28                 // Field L/_ec7e36/_1e73d7/_88f3cf._09bf1e:LL/_55938e/_e62626;
+       118: invokeinterface #55,  2           // InterfaceMethod L/_ec7e36/_dd3308._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       123: checkcast     #13                 // class L/_ec7e36/_1e73d7/_429bf0
+       126: astore        7
+       128: aload         7
+       130: ifnull        147
+       133: aload         7
+       135: aload         6
+       137: invokedynamic #59,  0             // InvokeDynamic #0:accept:(Ljava/lang/Object;)Ljava/util/function/Consumer;
+       142: invokeinterface #57,  2           // InterfaceMethod L/_ec7e36/_1e73d7/_429bf0.forEach:(Ljava/util/function/Consumer;)V
+       147: iconst_1
+       148: ireturn
+       149: iconst_0
+       150: ireturn
+      LineNumberTable:
+        line 38: 0
+        line 39: 3
+        line 40: 7
+        line 41: 16
+        line 42: 21
+        line 45: 23
+        line 46: 30
+        line 47: 35
+        line 49: 37
+        line 51: 48
+        line 52: 56
+        line 53: 61
+        line 54: 71
+        line 57: 79
+        line 59: 89
+        line 60: 97
+        line 61: 104
+        line 63: 114
+        line 64: 128
+        line 65: 133
+        line 67: 147
+        line 69: 149
+      StackMapTable: number_of_entries = 7
+        frame_type = 255 /* full_frame */
+          offset_delta = 23
+          locals = [ class L/_ec7e36/_1e73d7/_2ce426, class L/_ec7e36/_dd3308, class L/_c8175c/_cfe983/_21aca6, top, class java/lang/Object ]
+          stack = []
+        frame_type = 13 /* same */
+        frame_type = 10 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 30
+          locals = [ class java/lang/Object ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 9
+          locals = [ class L/_ec7e36/_1e73d7/_2ce426, class L/_ec7e36/_dd3308, top, top, top, class java/lang/Object ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 57
+          locals = []
+          stack = []
+        frame_type = 1 /* same */
+    Signature: #121                         // (LL/_ec7e36/_dd3308<TV;>;LL/_c8175c/_cfe983/_21aca6;TV;)Z
+    RuntimeInvisibleTypeAnnotations:
+      0: #161(): METHOD_FORMAL_PARAMETER, param_index=2
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+      parameter 2:
+        0: #161()
+          org.jetbrains.annotations.Nullable
+
+  private void _1253fc(L._ec7e36._dd3308<V>, V);
+    descriptor: (LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=6, locals=4, args_size=3
+         0: invokestatic  #29                 // Method L/_cfe983._ecae14:()LL/_cfe983;
+         3: ifnonnull     7
+         6: return
+         7: invokestatic  #29                 // Method L/_cfe983._ecae14:()LL/_cfe983;
+        10: invokevirtual #30                 // Method L/_cfe983._fe646f:()LL/_cfe983/_21aca6;
+        13: astore_3
+        14: aload_3
+        15: ifnull        34
+        18: aload_3
+        19: ldc           #3                  // class com/lunarclient/apollo/module/modsetting/ModSettingModule
+        21: invokevirtual #33                 // Method L/_cfe983/_21aca6._1253fc:(Ljava/lang/Class;)Ljava/util/Optional;
+        24: aload_1
+        25: aload_2
+        26: invokedynamic #60,  0             // InvokeDynamic #1:accept:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)Ljava/util/function/Consumer;
+        31: invokevirtual #53                 // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+        34: goto          53
+        37: astore_3
+        38: ldc           #1                  // String Apollo
+        40: ldc           #2                  // String Apollo intercept broadcast failed
+        42: iconst_1
+        43: anewarray     #16                 // class java/lang/Object
+        46: dup
+        47: iconst_0
+        48: aload_3
+        49: aastore
+        50: invokestatic  #34                 // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+        53: return
+      Exception table:
+         from    to  target type
+             7    34    37   Class java/lang/Throwable
+      LineNumberTable:
+        line 73: 0
+        line 75: 6
+        line 79: 7
+        line 80: 14
+        line 81: 18
+        line 86: 34
+        line 84: 37
+        line 85: 38
+        line 87: 53
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 7
+          locals = [ top, class L/_ec7e36/_dd3308, class java/lang/Object ]
+          stack = []
+        frame_type = 248 /* chop */
+          offset_delta = 26
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 15 /* same */
+    Signature: #123                         // (LL/_ec7e36/_dd3308<TV;>;TV;)V
+
+  public L._c8175c._cfe983._21aca6 _592c18();
+    descriptor: ()LL/_c8175c/_cfe983/_21aca6;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+         4: ifnonnull     11
+         7: aconst_null
+         8: goto          18
+        11: aload_0
+        12: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        15: invokevirtual #39                 // Method L/_c8175c/_cfe983/_590f69._592c18:()LL/_c8175c/_cfe983/_21aca6;
+        18: areturn
+      LineNumberTable:
+        line 91: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 11 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 6
+          locals = []
+          stack = [ class L/_c8175c/_cfe983/_21aca6 ]
+    RuntimeInvisibleAnnotations:
+      0: #161()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #161(): METHOD_RETURN
+        org.jetbrains.annotations.Nullable
+
+  public java.util.Optional<V> _f34034();
+    descriptor: ()Ljava/util/Optional;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+         4: ifnonnull     13
+         7: invokestatic  #52                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+        10: goto          20
+        13: aload_0
+        14: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        17: invokevirtual #40                 // Method L/_c8175c/_cfe983/_590f69._f34034:()Ljava/util/Optional;
+        20: areturn
+      LineNumberTable:
+        line 96: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 13 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 6
+          locals = []
+          stack = [ class java/util/Optional ]
+    Signature: #109                         // ()Ljava/util/Optional<TV;>;
+
+  public void _590f69(L._ec7e36._dd3308<V>, java.lang.String);
+    descriptor: (LL/_ec7e36/_dd3308;Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=3, args_size=3
+         0: aload_0
+         1: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+         4: ifnull        34
+         7: aload_0
+         8: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        11: aload_2
+        12: invokevirtual #42                 // Method L/_c8175c/_cfe983/_590f69.test:(Ljava/lang/String;)Z
+        15: ifeq          34
+        18: aload_0
+        19: aload_1
+        20: getstatic     #26                 // Field L/_c8175c/_cfe983/_21aca6.CLIENT_CRITERIA:LL/_c8175c/_cfe983/_21aca6;
+        23: aload_0
+        24: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        27: invokevirtual #38                 // Method L/_c8175c/_cfe983/_590f69._85ed47:()Ljava/lang/Object;
+        30: invokevirtual #43                 // Method _cfe983:(LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+        33: pop
+        34: return
+      LineNumberTable:
+        line 101: 0
+        line 102: 18
+        line 104: 34
+      StackMapTable: number_of_entries = 1
+        frame_type = 248 /* chop */
+          offset_delta = 34
+    Signature: #122                         // (LL/_ec7e36/_dd3308<TV;>;Ljava/lang/String;)V
+    RuntimeInvisibleTypeAnnotations:
+      0: #161(): METHOD_FORMAL_PARAMETER, param_index=1
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+        0: #161()
+          org.jetbrains.annotations.Nullable
+
+  public void _000018(L._ec7e36._dd3308<V>);
+    descriptor: (LL/_ec7e36/_dd3308;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+         4: ifnull        30
+         7: aload_0
+         8: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        11: invokevirtual #39                 // Method L/_c8175c/_cfe983/_590f69._592c18:()LL/_c8175c/_cfe983/_21aca6;
+        14: getstatic     #26                 // Field L/_c8175c/_cfe983/_21aca6.CLIENT_CRITERIA:LL/_c8175c/_cfe983/_21aca6;
+        17: if_acmpne     30
+        20: aload_0
+        21: aload_1
+        22: getstatic     #26                 // Field L/_c8175c/_cfe983/_21aca6.CLIENT_CRITERIA:LL/_c8175c/_cfe983/_21aca6;
+        25: aconst_null
+        26: invokevirtual #43                 // Method _cfe983:(LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+        29: pop
+        30: return
+      LineNumberTable:
+        line 108: 0
+        line 109: 20
+        line 111: 30
+      StackMapTable: number_of_entries = 1
+        frame_type = 249 /* chop */
+          offset_delta = 30
+    Signature: #120                         // (LL/_ec7e36/_dd3308<TV;>;)V
+
+  public void _cfe983(java.util.function.Predicate<java.lang.String>, V);
+    descriptor: (Ljava/util/function/Predicate;Ljava/lang/Object;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+         4: ifnonnull     18
+         7: aload_0
+         8: new           #10                 // class L/_c8175c/_cfe983/_590f69
+        11: dup
+        12: invokespecial #35                 // Method L/_c8175c/_cfe983/_590f69."<init>":()V
+        15: putfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        18: aload_0
+        19: getfield      #27                 // Field _a781fa:LL/_c8175c/_cfe983/_590f69;
+        22: aload_1
+        23: aload_2
+        24: invokevirtual #37                 // Method L/_c8175c/_cfe983/_590f69._cfe983:(Ljava/util/function/Predicate;Ljava/lang/Object;)V
+        27: return
+      LineNumberTable:
+        line 115: 0
+        line 116: 7
+        line 118: 18
+        line 119: 27
+      StackMapTable: number_of_entries = 1
+        frame_type = 18 /* same */
+    Signature: #138                         // (Ljava/util/function/Predicate<Ljava/lang/String;>;TV;)V
+    RuntimeInvisibleTypeAnnotations:
+      0: #161(): METHOD_FORMAL_PARAMETER, param_index=0, location=[TYPE_ARGUMENT(0)]
+        org.jetbrains.annotations.Nullable
+
+  public L._c8175c._cfe983._1e73d7<L._ec7e36._dd3308<?>, ?> _780ceb();
+    descriptor: ()LL/_c8175c/_cfe983/_1e73d7;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: checkcast     #9                  // class L/_c8175c/_cfe983/_1e73d7
+         4: areturn
+      LineNumberTable:
+        line 123: 0
+    Signature: #105                         // ()LL/_c8175c/_cfe983/_1e73d7<LL/_ec7e36/_dd3308<*>;*>;
+
+  public void _1eb51c(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    flags: (0x1001) ACC_PUBLIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: checkcast     #12                 // class L/_ec7e36/_dd3308
+         5: invokevirtual #46                 // Method _000018:(LL/_ec7e36/_dd3308;)V
+         8: return
+      LineNumberTable:
+        line 32: 0
+
+  public void _1e73d7(java.lang.Object, java.lang.String);
+    descriptor: (Ljava/lang/Object;Ljava/lang/String;)V
+    flags: (0x1001) ACC_PUBLIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: checkcast     #12                 // class L/_ec7e36/_dd3308
+         5: aload_2
+         6: invokevirtual #48                 // Method _590f69:(LL/_ec7e36/_dd3308;Ljava/lang/String;)V
+         9: return
+      LineNumberTable:
+        line 32: 0
+    RuntimeInvisibleTypeAnnotations:
+      0: #161(): METHOD_FORMAL_PARAMETER, param_index=1
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+        0: #161()
+          org.jetbrains.annotations.Nullable
+
+  public boolean _cfe983(java.lang.Object, L._c8175c._cfe983._21aca6, java.lang.Object);
+    descriptor: (Ljava/lang/Object;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+    flags: (0x1041) ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=4, locals=4, args_size=4
+         0: aload_0
+         1: aload_1
+         2: checkcast     #12                 // class L/_ec7e36/_dd3308
+         5: aload_2
+         6: aload_3
+         7: invokevirtual #43                 // Method _cfe983:(LL/_ec7e36/_dd3308;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+        10: ireturn
+      LineNumberTable:
+        line 32: 0
+    RuntimeInvisibleTypeAnnotations:
+      0: #161(): METHOD_FORMAL_PARAMETER, param_index=2
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+      parameter 2:
+        0: #161()
+          org.jetbrains.annotations.Nullable
+
+  private static void _cfe983(L._ec7e36._dd3308, java.lang.Object, L._cfe983._cfe983._cfe983);
+    descriptor: (LL/_ec7e36/_dd3308;Ljava/lang/Object;LL/_cfe983/_cfe983/_cfe983;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_2
+         1: checkcast     #5                  // class L/_cfe983/_cfe983/_cfe983/_590f69/_cfe983
+         4: invokevirtual #31                 // Method L/_cfe983/_cfe983/_cfe983/_590f69/_cfe983._114fbf:()LL/_cfe983/_cfe983/_cfe983/_590f69/_21aca6;
+         7: aload_0
+         8: aload_1
+         9: invokevirtual #32                 // Method L/_cfe983/_cfe983/_cfe983/_590f69/_21aca6._cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/Object;)V
+        12: return
+      LineNumberTable:
+        line 82: 0
+
+  private static void _cfe983(java.lang.Object, java.util.function.Consumer);
+    descriptor: (Ljava/lang/Object;Ljava/util/function/Consumer;)V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_1
+         1: aload_0
+         2: invokeinterface #58,  2           // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+         7: return
+      LineNumberTable:
+        line 65: 0
+}
+Signature: #139                         // <V:Ljava/lang/Object;>Ljava/lang/Object;LL/_c8175c/_cfe983/_1e73d7<LL/_ec7e36/_dd3308<TV;>;TV;>;
+BootstrapMethods:
+  0: #63 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #99 (Ljava/lang/Object;)V
+      #62 REF_invokeStatic L/_ec7e36/_1e73d7/_2ce426._cfe983:(Ljava/lang/Object;Ljava/util/function/Consumer;)V
+      #100 (Ljava/util/function/Consumer;)V
+  1: #63 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #99 (Ljava/lang/Object;)V
+      #61 REF_invokeStatic L/_ec7e36/_1e73d7/_2ce426._cfe983:(LL/_ec7e36/_dd3308;Ljava/lang/Object;LL/_cfe983/_cfe983/_cfe983;)V
+      #98 (LL/_cfe983/_cfe983/_cfe983;)V
+InnerClasses:
+  public static final #160= #21 of #20;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

@@ -1,0 +1,37 @@
+public interface com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RHCCHHHHIHHRIICRIHRRIHRORIIOHO.RORCICOHRIOIIIOIOHIIIICRCIHRII {
+  public abstract boolean COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RHCCHHHHIHHRIICRIHRRIHRORIIOHO.RROHOCRCCHCIORHICIHCOHRIRCIHCI);
+
+  public abstract java.lang.String RROHOCRCCHCIORHICIHCOHRIRCIHCI(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RHCCHHHHIHHRIICRIHRRIHRORIIOHO.RROHOCRCCHCIORHICIHCOHRIRCIHCI);
+
+  public abstract void HCOCRHCHRIHCHORRRRRHIOHHICHIII(boolean);
+
+  public abstract int RORCICOHRIOIIIOIOHIIIICRCIHRII(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RHCCHHHHIHHRIICRIHRRIHRORIIOHO.RROHOCRCCHCIORHICIHCOHRIRCIHCI);
+
+  public default boolean ICRIRIHCCIHCHOOHORRICCRCCORRRI(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #1                  // String KEY_
+       3: invokevirtual #11                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       6: ifne          16
+       9: aload_1
+      10: invokedynamic #14,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      15: astore_1
+      16: aload_0
+      17: aload_1
+      18: invokestatic  #10                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RROHOCRCCHCIORHICIHCOHRIRCIHCI.valueOf:(Ljava/lang/String;)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      21: invokeinterface #13,  2           // InterfaceMethod COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)Z
+      26: ireturn
+
+  public default com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RHCCHHHHIHHRIICRIHRRIHRORIIOHO.RROHOCRCCHCIORHICIHCOHRIRCIHCI IHCOOHCOCCORIORHIIHIHOCRHOOCIO(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #1                  // String KEY_
+       3: invokevirtual #11                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       6: ifne          16
+       9: aload_1
+      10: invokedynamic #14,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      15: astore_1
+      16: aload_1
+      17: invokestatic  #10                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RROHOCRCCHCIORHICIHCOHRIRCIHCI.valueOf:(Ljava/lang/String;)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      20: areturn
+}

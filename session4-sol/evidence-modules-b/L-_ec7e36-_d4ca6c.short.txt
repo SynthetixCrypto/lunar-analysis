@@ -1,0 +1,45 @@
+public abstract class L._ec7e36._d4ca6c<T> extends L._ec7e36._13ea87<T> {
+  private T value;
+
+  private T defaultValue;
+
+  protected L._ec7e36._d4ca6c(java.lang.String, com.lunarclient.dfu.serialization.Codec<T>, T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokespecial #7                  // Method L/_ec7e36/_13ea87."<init>":(Ljava/lang/String;Lcom/lunarclient/dfu/serialization/Codec;)V
+       6: aload_0
+       7: aload_0
+       8: aload_3
+       9: dup_x1
+      10: putfield      #5                  // Field defaultValue:Ljava/lang/Object;
+      13: putfield      #6                  // Field value:Ljava/lang/Object;
+      16: return
+
+  public T getDefaultValue();
+    Code:
+       0: aload_0
+       1: getfield      #5                  // Field defaultValue:Ljava/lang/Object;
+       4: areturn
+
+  public final void _81676d(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #5                  // Field defaultValue:Ljava/lang/Object;
+       5: return
+
+  public final T _1f5b06();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field value:Ljava/lang/Object;
+       4: areturn
+
+  protected final void _327414(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #6                  // Field value:Ljava/lang/Object;
+       5: return
+}

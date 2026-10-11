@@ -1,0 +1,48 @@
+public final class L._d4ca6c._bb4487<T> extends java.lang.Record {
+  private final int _f93c0e;
+
+  private final java.util.function.Consumer<T> _5926d5;
+
+  public L._d4ca6c._bb4487(int, java.util.function.Consumer<T>);
+    Code:
+       0: aload_0
+       1: invokespecial #9                  // Method java/lang/Record."<init>":()V
+       4: aload_0
+       5: iload_1
+       6: putfield      #7                  // Field _f93c0e:I
+       9: aload_0
+      10: aload_2
+      11: putfield      #8                  // Field _5926d5:Ljava/util/function/Consumer;
+      14: return
+
+  public final java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokedynamic #13,  0             // InvokeDynamic #0:toString:(LL/_d4ca6c/_bb4487;)Ljava/lang/String;
+       6: areturn
+
+  public final int hashCode();
+    Code:
+       0: aload_0
+       1: invokedynamic #12,  0             // InvokeDynamic #0:hashCode:(LL/_d4ca6c/_bb4487;)I
+       6: ireturn
+
+  public final boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #11,  0             // InvokeDynamic #0:equals:(LL/_d4ca6c/_bb4487;Ljava/lang/Object;)Z
+       7: ireturn
+
+  public int priority();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field _f93c0e:I
+       4: ireturn
+
+  public java.util.function.Consumer<T> _be2a7f();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field _5926d5:Ljava/util/function/Consumer;
+       4: areturn
+}

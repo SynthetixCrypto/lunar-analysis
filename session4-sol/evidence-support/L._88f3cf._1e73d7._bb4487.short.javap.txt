@@ -1,0 +1,212 @@
+public class L._88f3cf._1e73d7._bb4487 implements L._ec7e36._a1dd3a,L._88f3cf._d4ca6c {
+  private final ML._590f69._5b3f84._dcf582 _f546f4;
+
+  private final ML._590f69._5b3f84._dcf582 _bfffde;
+
+  private final java.util.function.Supplier<java.lang.String> _843294;
+
+  private boolean _904e8d;
+
+  private long lastModified;
+
+  private boolean _ee45da;
+
+  public void _cfe983(ML._590f69._bb4487._13ea87._a140a8, float, float, float, float, L._81676d._1e73d7$_cfe983, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_0
+       3: getfield      #24                 // Field _843294:Ljava/util/function/Supplier;
+       6: invokeinterface #47,  1           // InterfaceMethod java/util/function/Supplier.get:()Ljava/lang/Object;
+      11: checkcast     #19                 // class java/lang/String
+      14: fload_2
+      15: fload_3
+      16: fload         4
+      18: fload         5
+      20: invokevirtual #35                 // Method _cfe983:(LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFFF)V
+      23: return
+
+  protected void _cfe983(ML._590f69._bb4487._13ea87._a140a8, java.lang.String, float, float, float, float);
+    Code:
+       0: invokestatic  #40                 // Method L/util/_e93d3c._620020:()LML/_590f69/_bb4487/_21aca6/_bb4487;
+       3: aload_2
+       4: invokeinterface #46,  2           // InterfaceMethod ML/_590f69/_bb4487/_21aca6/_bb4487.bridge$getStringWidth:(Ljava/lang/String;)F
+       9: fstore        7
+      11: fload_3
+      12: fload         5
+      14: fconst_2
+      15: fdiv
+      16: fadd
+      17: fload         7
+      19: fconst_2
+      20: fdiv
+      21: fsub
+      22: fstore        8
+      24: invokestatic  #40                 // Method L/util/_e93d3c._620020:()LML/_590f69/_bb4487/_21aca6/_bb4487;
+      27: aload_1
+      28: aload_2
+      29: fload         8
+      31: fload         4
+      33: fload         6
+      35: fconst_2
+      36: fdiv
+      37: fadd
+      38: iconst_m1
+      39: iconst_1
+      40: invokeinterface #45,  7           // InterfaceMethod ML/_590f69/_bb4487/_21aca6/_bb4487.bridge$drawString:(LML/_590f69/_bb4487/_13ea87/_a140a8;Ljava/lang/String;FFIZ)F
+      45: pop
+      46: return
+
+  public void load(com.google.gson.JsonObject);
+    Code:
+       0: aload_1
+       1: ldc           #3                  // String seen
+       3: invokevirtual #32                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+       6: ifeq          22
+       9: aload_0
+      10: aload_1
+      11: ldc           #3                  // String seen
+      13: invokevirtual #31                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      16: invokevirtual #27                 // Method com/google/gson/JsonElement.getAsBoolean:()Z
+      19: invokevirtual #33                 // Method _691aaf:(Z)V
+      22: aload_1
+      23: ldc           #2                  // String lastModified
+      25: invokevirtual #32                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+      28: ifeq          44
+      31: aload_0
+      32: aload_1
+      33: ldc           #2                  // String lastModified
+      35: invokevirtual #31                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      38: invokevirtual #28                 // Method com/google/gson/JsonElement.getAsLong:()J
+      41: invokevirtual #37                 // Method _88f3cf:(J)V
+      44: aload_1
+      45: ldc           #1                  // String favorite
+      47: invokevirtual #32                 // Method com/google/gson/JsonObject.has:(Ljava/lang/String;)Z
+      50: ifeq          66
+      53: aload_0
+      54: aload_1
+      55: ldc           #1                  // String favorite
+      57: invokevirtual #31                 // Method com/google/gson/JsonObject.get:(Ljava/lang/String;)Lcom/google/gson/JsonElement;
+      60: invokevirtual #27                 // Method com/google/gson/JsonElement.getAsBoolean:()Z
+      63: invokevirtual #38                 // Method _3bf032:(Z)V
+      66: return
+
+  public void _590f69(com.google.gson.JsonObject);
+    Code:
+       0: aload_0
+       1: invokevirtual #36                 // Method _93a51a:()Z
+       4: ifeq          17
+       7: aload_1
+       8: ldc           #3                  // String seen
+      10: iconst_1
+      11: invokestatic  #41                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      14: invokevirtual #29                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+      17: aload_0
+      18: invokevirtual #39                 // Method getLastModified:()J
+      21: lconst_0
+      22: lcmp
+      23: ifeq          39
+      26: aload_1
+      27: ldc           #2                  // String lastModified
+      29: aload_0
+      30: invokevirtual #39                 // Method getLastModified:()J
+      33: invokestatic  #42                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      36: invokevirtual #30                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+      39: aload_0
+      40: invokevirtual #34                 // Method _66ad8b:()Z
+      43: ifeq          56
+      46: aload_1
+      47: ldc           #1                  // String favorite
+      49: iconst_1
+      50: invokestatic  #41                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      53: invokevirtual #29                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Boolean;)V
+      56: return
+
+  public ML._590f69._5b3f84._dcf582 _ddb966();
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field _f546f4:LML/_590f69/_5b3f84/_dcf582;
+       4: areturn
+
+  public ML._590f69._5b3f84._dcf582 _a76d17();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field _bfffde:LML/_590f69/_5b3f84/_dcf582;
+       4: areturn
+
+  public java.util.function.Supplier<java.lang.String> _10f9d6();
+    Code:
+       0: aload_0
+       1: getfield      #24                 // Field _843294:Ljava/util/function/Supplier;
+       4: areturn
+
+  public boolean _93a51a();
+    Code:
+       0: aload_0
+       1: getfield      #21                 // Field _904e8d:Z
+       4: ireturn
+
+  public long getLastModified();
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field lastModified:J
+       4: lreturn
+
+  public boolean _66ad8b();
+    Code:
+       0: aload_0
+       1: getfield      #23                 // Field _ee45da:Z
+       4: ireturn
+
+  public L._88f3cf._1e73d7._bb4487(ML._590f69._5b3f84._dcf582, ML._590f69._5b3f84._dcf582, java.util.function.Supplier<java.lang.String>, boolean, long, boolean);
+    Code:
+       0: aload_0
+       1: invokespecial #44                 // Method java/lang/Object."<init>":()V
+       4: aload_3
+       5: ifnonnull     18
+       8: new           #17                 // class java/lang/NullPointerException
+      11: dup
+      12: ldc           #4                  // String thumbnailSupplier is marked non-null but is null
+      14: invokespecial #43                 // Method java/lang/NullPointerException."<init>":(Ljava/lang/String;)V
+      17: athrow
+      18: aload_0
+      19: aload_1
+      20: putfield      #25                 // Field _f546f4:LML/_590f69/_5b3f84/_dcf582;
+      23: aload_0
+      24: aload_2
+      25: putfield      #22                 // Field _bfffde:LML/_590f69/_5b3f84/_dcf582;
+      28: aload_0
+      29: aload_3
+      30: putfield      #24                 // Field _843294:Ljava/util/function/Supplier;
+      33: aload_0
+      34: iload         4
+      36: putfield      #21                 // Field _904e8d:Z
+      39: aload_0
+      40: lload         5
+      42: putfield      #26                 // Field lastModified:J
+      45: aload_0
+      46: iload         7
+      48: putfield      #23                 // Field _ee45da:Z
+      51: return
+
+  public void _691aaf(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #21                 // Field _904e8d:Z
+       5: return
+
+  public void _88f3cf(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: putfield      #26                 // Field lastModified:J
+       5: return
+
+  public void _3bf032(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #23                 // Field _ee45da:Z
+       5: return
+}

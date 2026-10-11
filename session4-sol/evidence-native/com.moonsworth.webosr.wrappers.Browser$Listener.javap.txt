@@ -1,0 +1,69 @@
+public interface com.moonsworth.webosr.wrappers.Browser$Listener {
+  public default void onBeginLoad(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String);
+    Code:
+       0: return
+
+  public default void onFinishLoad(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String);
+    Code:
+       0: return
+
+  public default void onFailLoading(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String, java.lang.String, java.lang.String, int);
+    Code:
+       0: return
+
+  public default void onWindowObjectReady(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String);
+    Code:
+       0: return
+
+  public default void onDocumentReady(com.moonsworth.webosr.wrappers.Browser, long, boolean, java.lang.String);
+    Code:
+       0: return
+
+  public default void onUpdateHistory(com.moonsworth.webosr.wrappers.Browser);
+    Code:
+       0: return
+
+  public default boolean onNetworkRequest(com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public default java.lang.String onEnforcePublicKey(com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public default void onChangeTitle(com.moonsworth.webosr.wrappers.Browser, java.lang.String);
+    Code:
+       0: return
+
+  public default void onChangeURL(com.moonsworth.webosr.wrappers.Browser, java.lang.String);
+    Code:
+       0: return
+
+  public default void onChangeTooltip(com.moonsworth.webosr.wrappers.Browser, java.lang.String);
+    Code:
+       0: return
+
+  public default void onRequestClose(com.moonsworth.webosr.wrappers.Browser);
+    Code:
+       0: return
+
+  public default void onCursorChange(com.moonsworth.webosr.wrappers.Browser, com.moonsworth.webosr.input.Mouse$Cursor);
+    Code:
+       0: return
+
+  public default void onCursorChange(com.moonsworth.webosr.wrappers.Browser, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokestatic  #6                  // Method com/moonsworth/webosr/input/Mouse$Cursor.fromValue:(I)Lcom/moonsworth/webosr/input/Mouse$Cursor;
+       6: invokeinterface #7,  3            // InterfaceMethod onCursorChange:(Lcom/moonsworth/webosr/wrappers/Browser;Lcom/moonsworth/webosr/input/Mouse$Cursor;)V
+      11: return
+
+  public default com.moonsworth.webosr.wrappers.Browser onCreateChild(com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String, boolean, int, int, int, int);
+    Code:
+       0: aload_1
+       1: areturn
+}

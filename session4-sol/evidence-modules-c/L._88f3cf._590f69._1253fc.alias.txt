@@ -1,0 +1,180 @@
+public interface L._88f3cf._590f69._1253fc extends L._ec7e36._a1dd3a,L._ec7e36._590f69._cfe983,L._88f3cf._bb4487._cfe983 {
+  public abstract L._81676d._21aca6._d4ca6c._590f69 _2ddf0a();
+
+  public abstract com.google.gson.JsonElement _3a82ee();
+
+  public abstract float getWidth();
+
+  public abstract float getHeight();
+
+  public abstract void _cfe983(L._d4ca6c._cfe983._1e73d7._cfe983, float, float, boolean);
+
+  public abstract boolean _52e8ee(boolean);
+
+  public default boolean _21aca6(boolean, L._88f3cf._21aca6);
+    Code:
+       0: iload_1
+       1: ifne          32
+       4: aload_2
+       5: getstatic     #15                 // Field L/_88f3cf/_02d7ad._67ae74:LL/_55938e/_e62626;
+       8: invokeinterface #31,  2           // InterfaceMethod L/_88f3cf/_21aca6._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      13: checkcast     #10                 // class L/_88f3cf/_13ea87
+      16: astore_3
+      17: aload_3
+      18: ifnull        32
+      21: aload_3
+      22: invokeinterface #20,  1           // InterfaceMethod L/_88f3cf/_13ea87._4d6861:()Z
+      27: ifne          32
+      30: iconst_0
+      31: ireturn
+      32: aload_0
+      33: iload_1
+      34: invokeinterface #25,  2           // InterfaceMethod _52e8ee:(Z)Z
+      39: ireturn
+
+  public abstract float getX();
+
+  public abstract float getY();
+
+  public default boolean _22808b();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public abstract void setScale(float);
+
+  public default float _b667ba();
+    Code:
+       0: ldc           #1                  // float 0.25f
+       2: freturn
+
+  public default float _0f113a();
+    Code:
+       0: ldc           #2                  // float 5.0f
+       2: freturn
+
+  public abstract L._ec7e36._145809 _64c5e4();
+
+  public default float _8499f1();
+    Code:
+       0: aload_0
+       1: invokeinterface #30,  1           // InterfaceMethod getWidth:()F
+       6: aload_0
+       7: invokeinterface #29,  1           // InterfaceMethod getScale:()F
+      12: fmul
+      13: freturn
+
+  public default float _7ad7b6();
+    Code:
+       0: aload_0
+       1: invokeinterface #28,  1           // InterfaceMethod getHeight:()F
+       6: aload_0
+       7: invokeinterface #29,  1           // InterfaceMethod getScale:()F
+      12: fmul
+      13: freturn
+
+  public default float _72340c();
+    Code:
+       0: aload_0
+       1: invokeinterface #23,  1           // InterfaceMethod _3a39a0:()Z
+       6: ifeq          15
+       9: invokestatic  #17                 // Method L/_2f4182/_1253fc/_bb4487.getScale:()F
+      12: goto          16
+      15: fconst_1
+      16: freturn
+
+  public abstract double _09b47e();
+
+  public abstract double _5a3f38();
+
+  public abstract void _cfe983(L._81676d._1e73d7$_cfe983);
+
+  public abstract void _88f3cf(float, float);
+
+  public abstract void _429bf0(float, float);
+
+  public abstract void _79548e();
+
+  public default double _145809(double);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokeinterface #24,  1           // InterfaceMethod _86ab11:()LL/_88f3cf/_590f69/_bb4487;
+       7: dload_1
+       8: invokeinterface #21,  4           // InterfaceMethod _cfe983:(LL/_88f3cf/_590f69/_bb4487;D)D
+      13: dreturn
+
+  public abstract double _cfe983(L._88f3cf._590f69._bb4487, double);
+
+  public default double _3a14e3(double);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: invokeinterface #24,  1           // InterfaceMethod _86ab11:()LL/_88f3cf/_590f69/_bb4487;
+       7: dload_1
+       8: invokeinterface #27,  4           // InterfaceMethod _21aca6:(LL/_88f3cf/_590f69/_bb4487;D)D
+      13: dreturn
+
+  public abstract double _21aca6(L._88f3cf._590f69._bb4487, double);
+
+  public abstract L._88f3cf._590f69._bb4487 _050d21();
+
+  public abstract L._88f3cf._590f69._bb4487 _86ab11();
+
+  public abstract void _cfe983(L._88f3cf._590f69._bb4487);
+
+  public default float[] _6ed7d1();
+    Code:
+       0: invokestatic  #16                 // Method L/_2f4182/_1253fc/_bb4487._4f179e:()LL/util/_d0d09a;
+       3: astore_1
+       4: aload_0
+       5: aload_1
+       6: invokevirtual #19                 // Method L/util/_d0d09a.getScaledWidth:()I
+       9: i2d
+      10: invokeinterface #22,  3           // InterfaceMethod _145809:(D)D
+      15: d2f
+      16: fstore_2
+      17: aload_0
+      18: aload_1
+      19: invokevirtual #18                 // Method L/util/_d0d09a.getScaledHeight:()I
+      22: i2d
+      23: invokeinterface #26,  3           // InterfaceMethod _3a14e3:(D)D
+      28: d2f
+      29: fstore_3
+      30: iconst_2
+      31: newarray       float
+      33: dup
+      34: iconst_0
+      35: fload_2
+      36: fastore
+      37: dup
+      38: iconst_1
+      39: fload_3
+      40: fastore
+      41: areturn
+
+  public default boolean _5c3a8f();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public default boolean _b94c6c();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public default boolean _a003b6();
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public default boolean _703aab();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public default boolean _3a39a0();
+    Code:
+       0: iconst_0
+       1: ireturn
+}

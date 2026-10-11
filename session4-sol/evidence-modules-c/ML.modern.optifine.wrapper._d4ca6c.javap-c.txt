@@ -1,0 +1,171 @@
+public class com.moonsworth.lunar.modern.optifine.wrapper.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR implements com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CRHOOIHHORCRRICOCOHIHOOIOHIORH.OIHRRCOOHRHIHICHRICIRIOCROHOCC {
+  private int HHCOIOHORIOHOOCHIIHHROOHICIHCR;
+
+  private boolean HCCRRHCRORIOOIOCICRORIHCRIOCRC;
+
+  public com.moonsworth.lunar.modern.optifine.wrapper.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR();
+    Code:
+       0: aload_0
+       1: invokespecial #34                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #20                 // Field HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+       9: aload_0
+      10: iconst_0
+      11: putfield      #19                 // Field HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+      14: return
+
+  public boolean hasShadowPass();
+    Code:
+       0: getstatic     #30                 // Field net/optifine/shaders/Shaders.isShadowPass:Z
+       3: ireturn
+
+  public java.lang.String getShaderPack();
+    Code:
+       0: invokestatic  #38                 // Method net/optifine/shaders/Shaders.getShaderPackName:()Ljava/lang/String;
+       3: areturn
+
+  public boolean setShaderPack(java.lang.String);
+    Code:
+       0: getstatic     #26                 // Field net/optifine/shaders/Shaders.currentShaderName:Ljava/lang/String;
+       3: aload_1
+       4: invokestatic  #35                 // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+       7: ifne          16
+      10: aload_1
+      11: invokestatic  #43                 // Method net/optifine/shaders/Shaders.setShaderPack:(Ljava/lang/String;)V
+      14: iconst_1
+      15: ireturn
+      16: iconst_0
+      17: ireturn
+
+  public java.lang.String getPackNone();
+    Code:
+       0: ldc           #2                  // String OFF
+       2: areturn
+
+  public java.lang.String getPackDefault();
+    Code:
+       0: ldc           #1                  // String (internal)
+       2: areturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CRHOOIHHORCRRICOCOHIHOOIOHIORH.ORCOOOCHIICOIICCROCRCOOROORIHR getProgramBasic();
+    Code:
+       0: getstatic     #23                 // Field net/optifine/shaders/Shaders.ProgramBasic:Lnet/optifine/shaders/Program;
+       3: checkcast     #4                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR
+       6: areturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CRHOOIHHORCRRICOCOHIHOOIOHIORH.ORCOOOCHIICOIICCROCRCOOROORIHR IRCORHIHHRICROOOHCHORCIOOCRRRH();
+    Code:
+       0: getstatic     #24                 // Field net/optifine/shaders/Shaders.ProgramLine:Lnet/optifine/shaders/Program;
+       3: checkcast     #4                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CRHOOIHHORCRRICOCOHIHOOIOHIORH/ORCOOOCHIICOIICCROCRCOOROORIHR
+       6: areturn
+
+  public void pushUseProgram(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CRHOOIHHORCRRICOCOHIHOOIOHIORH.ORCOOOCHIICOIICCROCRCOOROORIHR);
+    Code:
+       0: getstatic     #18                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        9
+       5: if_icmplt     21
+       8: aload_1
+       9: getstatic     #24                 // Field net/optifine/shaders/Shaders.ProgramLine:Lnet/optifine/shaders/Program;
+      12: if_acmpne     21
+      15: getstatic     #22                 // Field net/optifine/shaders/RenderStage.OUTLINE:Lnet/optifine/shaders/RenderStage;
+      18: invokestatic  #42                 // Method net/optifine/shaders/Shaders.setRenderStage:(Lnet/optifine/shaders/RenderStage;)V
+      21: invokestatic  #41                 // Method net/optifine/shaders/Shaders.pushProgram:()V
+      24: aload_1
+      25: checkcast     #13                 // class net/optifine/shaders/Program
+      28: invokestatic  #44                 // Method net/optifine/shaders/Shaders.useProgram:(Lnet/optifine/shaders/Program;)V
+      31: return
+
+  public void popProgram();
+    Code:
+       0: getstatic     #18                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        9
+       5: if_icmplt     14
+       8: getstatic     #21                 // Field net/optifine/shaders/RenderStage.NONE:Lnet/optifine/shaders/RenderStage;
+      11: invokestatic  #42                 // Method net/optifine/shaders/Shaders.setRenderStage:(Lnet/optifine/shaders/RenderStage;)V
+      14: invokestatic  #40                 // Method net/optifine/shaders/Shaders.popProgram:()V
+      17: return
+
+  public void bindTargetDfb();
+    Code:
+       0: getstatic     #27                 // Field net/optifine/shaders/Shaders.dfb:Lnet/optifine/shaders/ShadersFramebuffer;
+       3: invokevirtual #45                 // Method net/optifine/shaders/ShadersFramebuffer.bindFramebuffer:()V
+       6: return
+
+  public boolean isRenderingDfb();
+    Code:
+       0: getstatic     #28                 // Field net/optifine/shaders/Shaders.isRenderingDfb:Z
+       3: ireturn
+
+  public void restoreViewport();
+    Code:
+       0: iconst_0
+       1: iconst_0
+       2: getstatic     #32                 // Field net/optifine/shaders/Shaders.renderWidth:I
+       5: getstatic     #31                 // Field net/optifine/shaders/Shaders.renderHeight:I
+       8: invokestatic  #46                 // Method org/lwjgl/opengl/GL11.glViewport:(IIII)V
+      11: return
+
+  public void RCOHIIIHCCOCOIIOICHHOCCCICCCOI();
+    Code:
+       0: aload_0
+       1: getstatic     #25                 // Field net/optifine/shaders/Shaders.activeProgramID:I
+       4: putfield      #20                 // Field HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+       7: iconst_0
+       8: putstatic     #25                 // Field net/optifine/shaders/Shaders.activeProgramID:I
+      11: aload_0
+      12: getstatic     #29                 // Field net/optifine/shaders/Shaders.isRenderingWorld:Z
+      15: putfield      #19                 // Field HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+      18: iconst_0
+      19: putstatic     #29                 // Field net/optifine/shaders/Shaders.isRenderingWorld:Z
+      22: return
+
+  public void HCOCIOIHOOHRRCCCRCRROOIICHCICH();
+    Code:
+       0: aload_0
+       1: getfield      #20                 // Field HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+       4: putstatic     #25                 // Field net/optifine/shaders/Shaders.activeProgramID:I
+       7: aload_0
+       8: getfield      #19                 // Field HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+      11: putstatic     #29                 // Field net/optifine/shaders/Shaders.isRenderingWorld:Z
+      14: aload_0
+      15: iconst_0
+      16: putfield      #19                 // Field HCCRRHCRORIOOIOCICRORIHCRIOCRC:Z
+      19: aload_0
+      20: iconst_0
+      21: putfield      #20                 // Field HHCOIOHORIOHOOCHIIHHROOHICIHCR:I
+      24: return
+
+  public void beginEntitiesGlowing();
+    Code:
+       0: new           #5                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+       3: dup
+       4: invokespecial #33                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":()V
+       7: athrow
+
+  public void endEntitiesGlowing();
+    Code:
+       0: new           #5                  // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII
+       3: dup
+       4: invokespecial #33                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII."<init>":()V
+       7: athrow
+
+  public void nextEntity(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.OIHRRCOOHRHIHICHRICIRIOCROHOCC.OHRORRHCHCRICORRRCIRIOCCIRCRII);
+    Code:
+       0: aload_1
+       1: checkcast     #11                 // class net/minecraft/world/entity/Entity
+       4: invokestatic  #39                 // Method net/optifine/shaders/Shaders.nextEntity:(Lnet/minecraft/world/entity/Entity;)V
+       7: return
+
+  public void CCHHRIIROCIIHRHIOOHHHHCCORRRIR(boolean);
+    Code:
+       0: iload_1
+       1: invokestatic  #37                 // Method net/optifine/render/RenderUtils.setFlushRenderBuffers:(Z)Z
+       4: pop
+       5: return
+
+  public boolean ROCCOIRRORHHHCRCOOORIORIIOOCHR();
+    Code:
+       0: invokestatic  #36                 // Method net/optifine/render/RenderUtils.isFlushRenderBuffers:()Z
+       3: ireturn
+}

@@ -1,0 +1,48 @@
+public class L._cfe983 {
+// SELECTED METHODS ONLY; unrelated methods omitted.
+  public L._cfe983();
+    Code:
+       0: aload_0
+       1: invokespecial #769                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #368                // Field _ced0bc:Z
+       9: aload_0
+      10: ldc           #1                  // String
+      12: putfield      #384                // Field world:Ljava/lang/String;
+      15: aload_0
+      16: invokestatic  #792                // Method java/util/Optional.empty:()Ljava/util/Optional;
+      19: putfield      #346                // Field _d9124c:Ljava/util/Optional;
+      22: aload_0
+      23: new           #204                // class L/_81676d/_21aca6/_d4ca6c/_590f69
+      26: dup
+      27: invokespecial #670                // Method L/_81676d/_21aca6/_d4ca6c/_590f69."<init>":()V
+      30: putfield      #358                // Field _75cdb6:LL/_81676d/_21aca6/_d4ca6c/_590f69;
+      33: aload_0
+      34: aconst_null
+      35: putfield      #306                // Field _574f44:Ljava/util/Map;
+      38: invokestatic  #689                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      41: invokevirtual #687                // Method L/_d4ca6c/_590f69._9e2624:()Ljava/util/concurrent/locks/ReentrantLock;
+      44: invokevirtual #805                // Method java/util/concurrent/locks/ReentrantLock.lock:()V
+      47: invokestatic  #778                // Method java/lang/System.currentTimeMillis:()J
+      50: lstore_1
+    1720: lload_1
+    1721: lsub
+    1722: invokedynamic #869,  0            // InvokeDynamic #7:makeConcatWithConstants:(J)Ljava/lang/String;
+    1727: iconst_0
+    1728: anewarray     #270                // class java/lang/Object
+    1731: invokestatic  #569                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+    1734: invokestatic  #689                // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+    1737: invokevirtual #687                // Method L/_d4ca6c/_590f69._9e2624:()Ljava/util/concurrent/locks/ReentrantLock;
+    1740: invokevirtual #806                // Method java/util/concurrent/locks/ReentrantLock.unlock:()V
+    1743: invokestatic  #658                // Method L/_02d7ad/_590f69/_21aca6._854053:()LL/_02d7ad/_590f69/_21aca6;
+    1746: invokevirtual #659                // Method L/_02d7ad/_590f69/_21aca6.init:()V
+    1749: invokestatic  #656                // Method L/_02d7ad/_590f69/_cfe983._0f2d42:()LL/_02d7ad/_590f69/_cfe983;
+    1752: invokevirtual #657                // Method L/_02d7ad/_590f69/_cfe983.init:()V
+    1755: invokestatic  #578                // Method L/_2f4182/_1e73d7/_cfe983.bootstrap:()V
+    1758: return
+    Exception table:
+       from    to  target type
+         194  1295  1298   Class java/lang/Throwable
+        1650  1680  1683   Class java/lang/InterruptedException
+

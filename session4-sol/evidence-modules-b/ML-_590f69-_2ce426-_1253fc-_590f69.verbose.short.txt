@@ -1,0 +1,550 @@
+Classfile /C:/Users/Admin/AppData/Local/Temp/claude/C--Users-Admin-Downloads-New-folder-lunar-analysis/eeca5643-ee80-46b2-970c-8533c6845d76/scratchpad/lunar/ML/_590f69/_2ce426/_1253fc/_590f69.class
+  Last modified Dec 31, 1969; size 7799 bytes
+  SHA-256 checksum 2ea30a3d4530213b898defc042e91a698657b7e620bf6b5b83a4e1a4a81a824c
+public interface ML._590f69._2ce426._1253fc._590f69 extends ML._590f69._bb4487._13ea87._d4ca6c._590f69._d4ca6c,ML._590f69._2ce426._2ce426
+  minor version: 0
+  major version: 61
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #8                          // ML/_590f69/_2ce426/_1253fc/_590f69
+  super_class: #12                        // java/lang/Object
+  interfaces: 2, fields: 0, methods: 46, attributes: 1
+Constant pool:
+    #1 = Integer            5
+    #2 = Integer            28
+    #3 = Class              #167          // ML/_590f69/_cfe983/_bb4487
+    #4 = Class              #168          // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+    #5 = Class              #169          // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983
+    #6 = Class              #170          // ML/_590f69/_c8175c/_cb9292
+    #7 = Class              #171          // ML/_590f69/_2ce426/_1253fc/_1253fc
+    #8 = Class              #172          // ML/_590f69/_2ce426/_1253fc/_590f69
+    #9 = Class              #173          // ML/_590f69/_2ce426/_2ce426
+   #10 = Class              #174          // ML/_590f69/_5b3f84/_c8175c
+   #11 = Class              #175          // ML/_590f69/_21aca6
+   #12 = Class              #176          // java/lang/Object
+   #13 = Fieldref           #5.#40        // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983.DUMMY_MANNEQUIN:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #14 = Fieldref           #5.#41        // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983.DUMMY_SELF:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #15 = Fieldref           #5.#51        // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983.OTHER:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #16 = Fieldref           #5.#52        // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983.SELF:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #17 = Fieldref           #10.#37       // ML/_590f69/_5b3f84/_c8175c.CHEST:LML/_590f69/_5b3f84/_c8175c;
+   #18 = Fieldref           #10.#42       // ML/_590f69/_5b3f84/_c8175c.FEET:LML/_590f69/_5b3f84/_c8175c;
+   #19 = Fieldref           #10.#43       // ML/_590f69/_5b3f84/_c8175c.HEAD:LML/_590f69/_5b3f84/_c8175c;
+   #20 = Fieldref           #10.#50       // ML/_590f69/_5b3f84/_c8175c.LEGS:LML/_590f69/_5b3f84/_c8175c;
+   #21 = Methodref          #3.#53        // ML/_590f69/_cfe983/_bb4487.asBridge:(Lnet/kyori/adventure/text/Component;)LML/_590f69/_ba7d98/_cfe983/_cfe983;
+   #22 = Methodref          #11.#44       // ML/_590f69/_21aca6._b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+   #23 = InterfaceMethodref #7.#38        // ML/_590f69/_2ce426/_1253fc/_1253fc._74da37:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #24 = InterfaceMethodref #7.#39        // ML/_590f69/_2ce426/_1253fc/_1253fc._ff4c10:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #25 = InterfaceMethodref #7.#45        // ML/_590f69/_2ce426/_1253fc/_1253fc._dc022b:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #26 = InterfaceMethodref #7.#46        // ML/_590f69/_2ce426/_1253fc/_1253fc._27f489:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #27 = InterfaceMethodref #7.#47        // ML/_590f69/_2ce426/_1253fc/_1253fc._9e1157:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #28 = InterfaceMethodref #7.#48        // ML/_590f69/_2ce426/_1253fc/_1253fc._880b43:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #29 = InterfaceMethodref #7.#49        // ML/_590f69/_2ce426/_1253fc/_1253fc._2d6343:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #30 = InterfaceMethodref #8.#54        // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$addChatMessage:(LML/_590f69/_ba7d98/_cfe983/_cfe983;)V
+   #31 = InterfaceMethodref #8.#55        // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$entityInteractionRange:()D
+   #32 = InterfaceMethodref #8.#56        // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+   #33 = InterfaceMethodref #8.#57        // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$isDummyMannequin:()Z
+   #34 = InterfaceMethodref #8.#58        // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$isDummySelf:()Z
+   #35 = InterfaceMethodref #8.#59        // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+   #36 = InterfaceMethodref #8.#60        // ML/_590f69/_2ce426/_1253fc/_590f69.bridge$isSelf:()Z
+   #37 = NameAndType        #87:#105      // CHEST:LML/_590f69/_5b3f84/_c8175c;
+   #38 = NameAndType        #88:#69       // _74da37:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #39 = NameAndType        #90:#69       // _ff4c10:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #40 = NameAndType        #92:#104      // DUMMY_MANNEQUIN:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #41 = NameAndType        #93:#104      // DUMMY_SELF:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #42 = NameAndType        #94:#105      // FEET:LML/_590f69/_5b3f84/_c8175c;
+   #43 = NameAndType        #95:#105      // HEAD:LML/_590f69/_5b3f84/_c8175c;
+   #44 = NameAndType        #96:#70       // _b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+   #45 = NameAndType        #97:#69       // _dc022b:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #46 = NameAndType        #98:#69       // _27f489:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #47 = NameAndType        #99:#69       // _9e1157:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #48 = NameAndType        #100:#69      // _880b43:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #49 = NameAndType        #101:#69      // _2d6343:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #50 = NameAndType        #103:#105     // LEGS:LML/_590f69/_5b3f84/_c8175c;
+   #51 = NameAndType        #109:#104     // OTHER:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #52 = NameAndType        #114:#104     // SELF:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #53 = NameAndType        #117:#83      // asBridge:(Lnet/kyori/adventure/text/Component;)LML/_590f69/_ba7d98/_cfe983/_cfe983;
+   #54 = NameAndType        #118:#79      // bridge$addChatMessage:(LML/_590f69/_ba7d98/_cfe983/_cfe983;)V
+   #55 = NameAndType        #122:#61      // bridge$entityInteractionRange:()D
+   #56 = NameAndType        #123:#82      // bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+   #57 = NameAndType        #145:#77      // bridge$isDummyMannequin:()Z
+   #58 = NameAndType        #146:#77      // bridge$isDummySelf:()Z
+   #59 = NameAndType        #150:#81      // bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+   #60 = NameAndType        #151:#77      // bridge$isSelf:()Z
+   #61 = Utf8               ()D
+   #62 = Utf8               ()F
+   #63 = Utf8               ()I
+   #64 = Utf8               ()Lcom/mojang/authlib/GameProfile;
+   #65 = Utf8               ()LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+   #66 = Utf8               ()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+   #67 = Utf8               ()LML/_590f69/_c8175c/_cb9292;
+   #68 = Utf8               ()LML/_590f69/_2ce426/_1253fc/_cfe983;
+   #69 = Utf8               ()LML/_590f69/_2ce426/_1253fc/_bb4487;
+   #70 = Utf8               ()LML/_590f69/_2ce426/_1253fc/_1253fc;
+   #71 = Utf8               ()LML/_590f69/_2ce426/_1253fc/_1e73d7;
+   #72 = Utf8               ()LML/_590f69/_2ce426/_1253fc/_21aca6;
+   #73 = Utf8               ()LML/_590f69/_5b3f84/_dcf582;
+   #74 = Utf8               ()Ljava/util/Optional;
+   #75 = Utf8               ()Ljava/util/Optional<LML/_590f69/_c8175c/_cb9292;>;
+   #76 = Utf8               ()V
+   #77 = Utf8               ()Z
+   #78 = Utf8               (I)V
+   #79 = Utf8               (LML/_590f69/_ba7d98/_cfe983/_cfe983;)V
+   #80 = Utf8               (LML/_590f69/_c8175c/_cb9292;)V
+   #81 = Utf8               (LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+   #82 = Utf8               (LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+   #83 = Utf8               (Lnet/kyori/adventure/text/Component;)LML/_590f69/_ba7d98/_cfe983/_cfe983;
+   #84 = Utf8               (Lnet/kyori/adventure/text/Component;)V
+   #85 = Utf8               (Z)V
+   #86 = Utf8               (Z)Z
+   #87 = Utf8               CHEST
+   #88 = Utf8               _74da37
+   #89 = Utf8               _cfe983
+   #90 = Utf8               _ff4c10
+   #91 = Utf8               Code
+   #92 = Utf8               DUMMY_MANNEQUIN
+   #93 = Utf8               DUMMY_SELF
+   #94 = Utf8               FEET
+   #95 = Utf8               HEAD
+   #96 = Utf8               _b2d648
+   #97 = Utf8               _dc022b
+   #98 = Utf8               _27f489
+   #99 = Utf8               _9e1157
+  #100 = Utf8               _880b43
+  #101 = Utf8               _2d6343
+  #102 = Utf8               InnerClasses
+  #103 = Utf8               LEGS
+  #104 = Utf8               LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+  #105 = Utf8               LML/_590f69/_5b3f84/_c8175c;
+  #106 = Utf8               LML/ichor/_cfe983/_21aca6;
+  #107 = Utf8               LineNumberTable
+  #108 = Utf8               Lorg/jetbrains/annotations/Nullable;
+  #109 = Utf8               OTHER
+  #110 = Utf8               _590f69
+  #111 = Utf8               RuntimeInvisibleAnnotations
+  #112 = Utf8               RuntimeInvisibleTypeAnnotations
+  #113 = Utf8               RuntimeVisibleAnnotations
+  #114 = Utf8               SELF
+  #115 = Utf8               Signature
+  #116 = Utf8               StackMapTable
+  #117 = Utf8               asBridge
+  #118 = Utf8               bridge$addChatMessage
+  #119 = Utf8               bridge$blockInteractionRange
+  #120 = Utf8               bridge$canEat
+  #121 = Utf8               bridge$entityAttackRange
+  #122 = Utf8               bridge$entityInteractionRange
+  #123 = Utf8               bridge$getArmor
+  #124 = Utf8               bridge$getAttackDamageAttribute
+  #125 = Utf8               bridge$getBedOrientationInDegrees
+  #126 = Utf8               bridge$getChestItem
+  #127 = Utf8               bridge$getCurrentEquippedItem
+  #128 = Utf8               bridge$getCurrentEquippedItemIndex
+  #129 = Utf8               bridge$getFeetItem
+  #130 = Utf8               bridge$getFoodStats
+  #131 = Utf8               bridge$getGameProfile
+  #132 = Utf8               bridge$getHeadItem
+  #133 = Utf8               bridge$getInventory
+  #134 = Utf8               bridge$getItemInUse
+  #135 = Utf8               bridge$getItemInUseCount
+  #136 = Utf8               bridge$getItemInUseDuration
+  #137 = Utf8               bridge$getItemProgress
+  #138 = Utf8               bridge$getLegsItem
+  #139 = Utf8               bridge$getMovementSpeedAttribute
+  #140 = Utf8               bridge$getPlayerCapabilities
+  #141 = Utf8               bridge$getPlayerType
+  #142 = Utf8               bridge$getServerSkinTexture
+  #143 = Utf8               bridge$getTicksUsingItem
+  #144 = Utf8               bridge$isBlocking
+  #145 = Utf8               bridge$isDummyMannequin
+  #146 = Utf8               bridge$isDummySelf
+  #147 = Utf8               bridge$isFlying
+  #148 = Utf8               bridge$isJumping
+  #149 = Utf8               bridge$isMainHandSwapped
+  #150 = Utf8               bridge$isModelPartShown
+  #151 = Utf8               bridge$isSelf
+  #152 = Utf8               bridge$isSprinting
+  #153 = Utf8               bridge$openInventory
+  #154 = Utf8               bridge$preparePlayerToSpawn
+  #155 = Utf8               bridge$setClientLoaded
+  #156 = Utf8               bridge$setCurrentEquippedItemIndex
+  #157 = Utf8               bridge$setFlyToggleTimer
+  #158 = Utf8               bridge$setUseItem
+  #159 = Utf8               bridge$setUseItemRemaining
+  #160 = Utf8               bridge$showCape
+  #161 = Utf8               bridge$showHat
+  #162 = Utf8               bridge$showJacket
+  #163 = Utf8               bridge$showLeftPants
+  #164 = Utf8               bridge$showLeftSleeve
+  #165 = Utf8               bridge$showRightPants
+  #166 = Utf8               bridge$showRightSleeve
+  #167 = Utf8               ML/_590f69/_cfe983/_bb4487
+  #168 = Utf8               ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c
+  #169 = Utf8               ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983
+  #170 = Utf8               ML/_590f69/_c8175c/_cb9292
+  #171 = Utf8               ML/_590f69/_2ce426/_1253fc/_1253fc
+  #172 = Utf8               ML/_590f69/_2ce426/_1253fc/_590f69
+  #173 = Utf8               ML/_590f69/_2ce426/_2ce426
+  #174 = Utf8               ML/_590f69/_5b3f84/_c8175c
+  #175 = Utf8               ML/_590f69/_21aca6
+  #176 = Utf8               java/lang/Object
+  #177 = Utf8               min
+{
+  public abstract ML._590f69._5b3f84._dcf582 bridge$getServerSkinTexture();
+    descriptor: ()LML/_590f69/_5b3f84/_dcf582;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeInvisibleAnnotations:
+      0: #108()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #108(): METHOD_RETURN
+        org.jetbrains.annotations.Nullable
+
+  public abstract com.mojang.authlib.GameProfile bridge$getGameProfile();
+    descriptor: ()Lcom/mojang/authlib/GameProfile;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._2ce426._1253fc._1e73d7 bridge$getPlayerCapabilities();
+    descriptor: ()LML/_590f69/_2ce426/_1253fc/_1e73d7;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$addChatMessage(ML._590f69._ba7d98._cfe983._cfe983);
+    descriptor: (LML/_590f69/_ba7d98/_cfe983/_cfe983;)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default void _590f69(net.kyori.adventure.text.Component);
+    descriptor: (Lnet/kyori/adventure/text/Component;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokestatic  #21                 // Method ML/_590f69/_cfe983/_bb4487.asBridge:(Lnet/kyori/adventure/text/Component;)LML/_590f69/_ba7d98/_cfe983/_cfe983;
+         5: invokeinterface #30,  2           // InterfaceMethod bridge$addChatMessage:(LML/_590f69/_ba7d98/_cfe983/_cfe983;)V
+        10: return
+      LineNumberTable:
+        line 40: 0
+        line 41: 10
+
+  public abstract boolean bridge$isBlocking();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._2ce426._1253fc._21aca6 bridge$getInventory();
+    descriptor: ()LML/_590f69/_2ce426/_1253fc/_21aca6;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$openInventory();
+    descriptor: ()V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._c8175c._cb9292 bridge$getCurrentEquippedItem();
+    descriptor: ()LML/_590f69/_c8175c/_cb9292;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int bridge$getCurrentEquippedItemIndex();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setCurrentEquippedItemIndex(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isSprinting();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._2ce426._1253fc._cfe983 bridge$getFoodStats();
+    descriptor: ()LML/_590f69/_2ce426/_1253fc/_cfe983;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$preparePlayerToSpawn();
+    descriptor: ()V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default ML._590f69._bb4487._13ea87._429bf0._21aca6._21aca6 bridge$getHeadItem();
+    descriptor: ()LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getstatic     #19                 // Field ML/_590f69/_5b3f84/_c8175c.HEAD:LML/_590f69/_5b3f84/_c8175c;
+         4: invokeinterface #32,  2           // InterfaceMethod bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+         9: areturn
+      LineNumberTable:
+        line 62: 0
+
+  public default ML._590f69._c8175c._cb9292 bridge$getChestItem();
+    descriptor: ()LML/_590f69/_c8175c/_cb9292;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getstatic     #17                 // Field ML/_590f69/_5b3f84/_c8175c.CHEST:LML/_590f69/_5b3f84/_c8175c;
+         4: invokeinterface #32,  2           // InterfaceMethod bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+         9: checkcast     #6                  // class ML/_590f69/_c8175c/_cb9292
+        12: areturn
+      LineNumberTable:
+        line 67: 0
+
+  public default ML._590f69._c8175c._cb9292 bridge$getLegsItem();
+    descriptor: ()LML/_590f69/_c8175c/_cb9292;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getstatic     #20                 // Field ML/_590f69/_5b3f84/_c8175c.LEGS:LML/_590f69/_5b3f84/_c8175c;
+         4: invokeinterface #32,  2           // InterfaceMethod bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+         9: checkcast     #6                  // class ML/_590f69/_c8175c/_cb9292
+        12: areturn
+      LineNumberTable:
+        line 72: 0
+
+  public default ML._590f69._c8175c._cb9292 bridge$getFeetItem();
+    descriptor: ()LML/_590f69/_c8175c/_cb9292;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getstatic     #18                 // Field ML/_590f69/_5b3f84/_c8175c.FEET:LML/_590f69/_5b3f84/_c8175c;
+         4: invokeinterface #32,  2           // InterfaceMethod bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+         9: checkcast     #6                  // class ML/_590f69/_c8175c/_cb9292
+        12: areturn
+      LineNumberTable:
+        line 77: 0
+
+  public default boolean bridge$isModelPartShown(ML._590f69._2ce426._1253fc._bb4487);
+    descriptor: (LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: iconst_1
+         1: ireturn
+      LineNumberTable:
+        line 81: 0
+
+  public default boolean bridge$showHat();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #22                 // Method ML/_590f69/_21aca6._b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+         4: invokeinterface #26,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_1253fc._27f489:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+         9: invokeinterface #35,  2           // InterfaceMethod bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+        14: ireturn
+      LineNumberTable:
+        line 86: 0
+
+  public default boolean bridge$showJacket();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #22                 // Method ML/_590f69/_21aca6._b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+         4: invokeinterface #28,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_1253fc._880b43:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+         9: invokeinterface #35,  2           // InterfaceMethod bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+        14: ireturn
+      LineNumberTable:
+        line 91: 0
+
+  public default boolean bridge$showLeftPants();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #22                 // Method ML/_590f69/_21aca6._b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+         4: invokeinterface #27,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_1253fc._9e1157:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+         9: invokeinterface #35,  2           // InterfaceMethod bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+        14: ireturn
+      LineNumberTable:
+        line 96: 0
+
+  public default boolean bridge$showRightPants();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #22                 // Method ML/_590f69/_21aca6._b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+         4: invokeinterface #23,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_1253fc._74da37:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+         9: invokeinterface #35,  2           // InterfaceMethod bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+        14: ireturn
+      LineNumberTable:
+        line 101: 0
+
+  public default boolean bridge$showLeftSleeve();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #22                 // Method ML/_590f69/_21aca6._b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+         4: invokeinterface #29,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_1253fc._2d6343:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+         9: invokeinterface #35,  2           // InterfaceMethod bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+        14: ireturn
+      LineNumberTable:
+        line 106: 0
+
+  public default boolean bridge$showRightSleeve();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #22                 // Method ML/_590f69/_21aca6._b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+         4: invokeinterface #25,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_1253fc._dc022b:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+         9: invokeinterface #35,  2           // InterfaceMethod bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+        14: ireturn
+      LineNumberTable:
+        line 111: 0
+
+  public default boolean bridge$showCape();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #22                 // Method ML/_590f69/_21aca6._b2d648:()LML/_590f69/_2ce426/_1253fc/_1253fc;
+         4: invokeinterface #24,  1           // InterfaceMethod ML/_590f69/_2ce426/_1253fc/_1253fc._ff4c10:()LML/_590f69/_2ce426/_1253fc/_bb4487;
+         9: invokeinterface #35,  2           // InterfaceMethod bridge$isModelPartShown:(LML/_590f69/_2ce426/_1253fc/_bb4487;)Z
+        14: ireturn
+      LineNumberTable:
+        line 116: 0
+
+  public abstract float bridge$getItemProgress();
+    descriptor: ()F
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int bridge$getItemInUseCount();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int bridge$getTicksUsingItem();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract float bridge$getBedOrientationInDegrees();
+    descriptor: ()F
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setFlyToggleTimer(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getMovementSpeedAttribute();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getAttackDamageAttribute();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract java.util.Optional<ML._590f69._c8175c._cb9292> bridge$getItemInUse();
+    descriptor: ()Ljava/util/Optional;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #75                          // ()Ljava/util/Optional<LML/_590f69/_c8175c/_cb9292;>;
+
+  public abstract int bridge$getItemInUseDuration();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$canEat(boolean);
+    descriptor: (Z)Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isFlying();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isJumping();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$blockInteractionRange();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$entityInteractionRange();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default double bridge$entityAttackRange();
+    descriptor: ()D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokeinterface #31,  1           // InterfaceMethod bridge$entityInteractionRange:()D
+         6: dreturn
+      LineNumberTable:
+        line 168: 0
+
+  public default ML._590f69._bb4487._13ea87._d4ca6c._590f69._d4ca6c$_cfe983 bridge$getPlayerType();
+    descriptor: ()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokeinterface #33,  1           // InterfaceMethod bridge$isDummyMannequin:()Z
+         6: ifeq          13
+         9: getstatic     #13                 // Field ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983.DUMMY_MANNEQUIN:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+        12: areturn
+        13: aload_0
+        14: invokeinterface #34,  1           // InterfaceMethod bridge$isDummySelf:()Z
+        19: ifeq          26
+        22: getstatic     #14                 // Field ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983.DUMMY_SELF:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+        25: areturn
+        26: aload_0
+        27: invokeinterface #36,  1           // InterfaceMethod bridge$isSelf:()Z
+        32: ifeq          39
+        35: getstatic     #16                 // Field ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983.SELF:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+        38: areturn
+        39: getstatic     #15                 // Field ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983.OTHER:LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983;
+        42: areturn
+      LineNumberTable:
+        line 173: 0
+        line 174: 9
+        line 176: 13
+        line 177: 22
+        line 179: 26
+        line 180: 35
+        line 182: 39
+      StackMapTable: number_of_entries = 3
+        frame_type = 13 /* same */
+        frame_type = 12 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 12
+
+  public abstract void bridge$setUseItem(ML._590f69._c8175c._cb9292);
+    descriptor: (LML/_590f69/_c8175c/_cb9292;)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setUseItemRemaining(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isMainHandSwapped();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #106(#177=I#1)
+        ML.ichor._cfe983._21aca6(
+          min=5
+        )
+
+  public default void bridge$setClientLoaded(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=0, locals=2, args_size=2
+         0: return
+      LineNumberTable:
+        line 198: 0
+    RuntimeVisibleAnnotations:
+      0: #106(#177=I#2)
+        ML.ichor._cfe983._21aca6(
+          min=28
+        )
+}
+InnerClasses:
+  public static final #89= #5 of #4;      // _cfe983=class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c$_cfe983 of class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_d4ca6c

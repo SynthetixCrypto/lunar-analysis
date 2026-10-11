@@ -1,0 +1,2920 @@
+{
+  "method": "Supplemental read-only PE COFF header, normal import table and named export table parsing. Targets never loaded or executed.",
+  "source": {
+    "extractionRoot": "C:/Users/Admin/AppData/Local/Temp/rea-extracted-23b87573-be87-479d-b524-da81ec5fc204",
+    "reaExtractionEvidenceId": "ev_31648b1ec89765d65a3cd9a6929cd7461fb4a5a4ab47e7da16d3ed9fbd42c71a",
+    "asarSha256": "506574f17a6b7aeb5a13fe5f53fc83329fa705141505dde30ec88e00aa03a9f4",
+    "installedAsarPath": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Lunar Client\\resources\\app.asar",
+    "integrityPolicy": "record-and-continue"
+  },
+  "artifacts": [
+    {
+      "logicalAsarMember": "node_modules/@lunarclient/bsdiff-node/build/Release/bsdiff.node",
+      "extractedPath": "C:/Users/Admin/AppData/Local/Temp/rea-extracted-23b87573-be87-479d-b524-da81ec5fc204/node_modules/@lunarclient/bsdiff-node/build/Release/bsdiff.node",
+      "bytes": 276480,
+      "sha256": "7497e0ce2119b462e34bf4402dac137dcf3abc8454313bdd2e0e97eba4862dff",
+      "peOffset": 264,
+      "machine": "0x8664",
+      "architecture": "x86_64",
+      "format": "PE32+",
+      "sections": [
+        {
+          "name": ".text",
+          "virtualSize": 196944,
+          "rva": 4096,
+          "rawSize": 197120,
+          "offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtualSize": 62328,
+          "rva": 204800,
+          "rawSize": 62464,
+          "offset": 198144
+        },
+        {
+          "name": ".data",
+          "virtualSize": 6240,
+          "rva": 270336,
+          "rawSize": 3584,
+          "offset": 260608
+        },
+        {
+          "name": ".pdata",
+          "virtualSize": 8460,
+          "rva": 278528,
+          "rawSize": 8704,
+          "offset": 264192
+        },
+        {
+          "name": ".fptable",
+          "virtualSize": 256,
+          "rva": 290816,
+          "rawSize": 512,
+          "offset": 272896
+        },
+        {
+          "name": ".rsrc",
+          "virtualSize": 480,
+          "rva": 294912,
+          "rawSize": 512,
+          "offset": 273408
+        },
+        {
+          "name": ".reloc",
+          "virtualSize": 2076,
+          "rva": 299008,
+          "rawSize": 2560,
+          "offset": 273920
+        }
+      ],
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "descriptorOffset": 258328,
+          "symbols": [
+            {
+              "name": "GetModuleHandleA",
+              "hint": 674,
+              "nameOffset": 259010
+            },
+            {
+              "name": "MultiByteToWideChar",
+              "hint": 1059,
+              "nameOffset": 259030
+            },
+            {
+              "name": "WideCharToMultiByte",
+              "hint": 1612,
+              "nameOffset": 259052
+            },
+            {
+              "name": "LoadLibraryExA",
+              "hint": 1013,
+              "nameOffset": 260444
+            },
+            {
+              "name": "QueryPerformanceCounter",
+              "hint": 1153,
+              "nameOffset": 259088
+            },
+            {
+              "name": "GetCurrentProcessId",
+              "hint": 578,
+              "nameOffset": 259114
+            },
+            {
+              "name": "GetCurrentThreadId",
+              "hint": 582,
+              "nameOffset": 259136
+            },
+            {
+              "name": "GetSystemTimeAsFileTime",
+              "hint": 794,
+              "nameOffset": 259158
+            },
+            {
+              "name": "InitializeSListHead",
+              "hint": 922,
+              "nameOffset": 259184
+            },
+            {
+              "name": "SetUnhandledExceptionFilter",
+              "hint": 1464,
+              "nameOffset": 259206
+            },
+            {
+              "name": "GetStartupInfoW",
+              "hint": 769,
+              "nameOffset": 259236
+            },
+            {
+              "name": "GetModuleHandleW",
+              "hint": 677,
+              "nameOffset": 259254
+            },
+            {
+              "name": "RtlUnwindEx",
+              "hint": 1303,
+              "nameOffset": 259274
+            },
+            {
+              "name": "RtlPcToFileHeader",
+              "hint": 1299,
+              "nameOffset": 259288
+            },
+            {
+              "name": "RaiseException",
+              "hint": 1176,
+              "nameOffset": 259308
+            },
+            {
+              "name": "InterlockedFlushSList",
+              "hint": 926,
+              "nameOffset": 259326
+            },
+            {
+              "name": "GetLastError",
+              "hint": 653,
+              "nameOffset": 259350
+            },
+            {
+              "name": "SetLastError",
+              "hint": 1400,
+              "nameOffset": 259366
+            },
+            {
+              "name": "FlsAlloc",
+              "hint": 450,
+              "nameOffset": 259382
+            },
+            {
+              "name": "FlsGetValue",
+              "hint": 452,
+              "nameOffset": 259394
+            },
+            {
+              "name": "FlsSetValue",
+              "hint": 454,
+              "nameOffset": 259408
+            },
+            {
+              "name": "FlsFree",
+              "hint": 451,
+              "nameOffset": 259422
+            },
+            {
+              "name": "EnterCriticalSection",
+              "hint": 343,
+              "nameOffset": 259432
+            },
+            {
+              "name": "LeaveCriticalSection",
+              "hint": 1008,
+              "nameOffset": 259456
+            },
+            {
+              "name": "InitializeCriticalSectionEx",
+              "hint": 919,
+              "nameOffset": 259480
+            },
+            {
+              "name": "DeleteCriticalSection",
+              "hint": 303,
+              "nameOffset": 259510
+            },
+            {
+              "name": "RtlLookupFunctionEntry",
+              "hint": 1297,
+              "nameOffset": 259534
+            },
+            {
+              "name": "EncodePointer",
+              "hint": 339,
+              "nameOffset": 259560
+            },
+            {
+              "name": "GetStdHandle",
+              "hint": 771,
+              "nameOffset": 259576
+            },
+            {
+              "name": "GetFileType",
+              "hint": 634,
+              "nameOffset": 259592
+            },
+            {
+              "name": "GetModuleFileNameW",
+              "hint": 673,
+              "nameOffset": 259606
+            },
+            {
+              "name": "GetModuleHandleExW",
+              "hint": 676,
+              "nameOffset": 259628
+            },
+            {
+              "name": "WriteConsoleW",
+              "hint": 1631,
+              "nameOffset": 259650
+            },
+            {
+              "name": "ReadFile",
+              "hint": 1193,
+              "nameOffset": 259666
+            },
+            {
+              "name": "GetCurrentProcess",
+              "hint": 577,
+              "nameOffset": 259678
+            },
+            {
+              "name": "ExitProcess",
+              "hint": 390,
+              "nameOffset": 259698
+            },
+            {
+              "name": "TerminateProcess",
+              "hint": 1496,
+              "nameOffset": 259712
+            },
+            {
+              "name": "FreeLibrary",
+              "hint": 468,
+              "nameOffset": 259732
+            },
+            {
+              "name": "GetProcAddress",
+              "hint": 733,
+              "nameOffset": 259746
+            },
+            {
+              "name": "CreateFileW",
+              "hint": 230,
+              "nameOffset": 259764
+            },
+            {
+              "name": "CloseHandle",
+              "hint": 157,
+              "nameOffset": 259778
+            },
+            {
+              "name": "GetConsoleMode",
+              "hint": 549,
+              "nameOffset": 259792
+            },
+            {
+              "name": "ReadConsoleW",
+              "hint": 1190,
+              "nameOffset": 259810
+            },
+            {
+              "name": "SetFilePointerEx",
+              "hint": 1385,
+              "nameOffset": 259826
+            },
+            {
+              "name": "WriteFile",
+              "hint": 1632,
+              "nameOffset": 259846
+            },
+            {
+              "name": "GetConsoleOutputCP",
+              "hint": 553,
+              "nameOffset": 259858
+            },
+            {
+              "name": "IsProcessorFeaturePresent",
+              "hint": 952,
+              "nameOffset": 259880
+            },
+            {
+              "name": "RtlCaptureContext",
+              "hint": 1289,
+              "nameOffset": 259908
+            },
+            {
+              "name": "RtlVirtualUnwind",
+              "hint": 1304,
+              "nameOffset": 259928
+            },
+            {
+              "name": "IsDebuggerPresent",
+              "hint": 944,
+              "nameOffset": 259948
+            },
+            {
+              "name": "UnhandledExceptionFilter",
+              "hint": 1531,
+              "nameOffset": 259968
+            },
+            {
+              "name": "HeapFree",
+              "hint": 896,
+              "nameOffset": 259996
+            },
+            {
+              "name": "OutputDebugStringW",
+              "hint": 1099,
+              "nameOffset": 260008
+            },
+            {
+              "name": "HeapAlloc",
+              "hint": 892,
+              "nameOffset": 260030
+            },
+            {
+              "name": "VirtualProtect",
+              "hint": 1562,
+              "nameOffset": 260042
+            },
+            {
+              "name": "LoadLibraryExW",
+              "hint": 1014,
+              "nameOffset": 260060
+            },
+            {
+              "name": "LCMapStringW",
+              "hint": 996,
+              "nameOffset": 260078
+            },
+            {
+              "name": "GetFileSizeEx",
+              "hint": 632,
+              "nameOffset": 260094
+            },
+            {
+              "name": "FlushFileBuffers",
+              "hint": 456,
+              "nameOffset": 260110
+            },
+            {
+              "name": "FindClose",
+              "hint": 413,
+              "nameOffset": 260130
+            },
+            {
+              "name": "FindFirstFileExW",
+              "hint": 419,
+              "nameOffset": 260142
+            },
+            {
+              "name": "FindNextFileW",
+              "hint": 436,
+              "nameOffset": 260162
+            },
+            {
+              "name": "IsValidCodePage",
+              "hint": 958,
+              "nameOffset": 260178
+            },
+            {
+              "name": "GetACP",
+              "hint": 475,
+              "nameOffset": 260196
+            },
+            {
+              "name": "GetOEMCP",
+              "hint": 710,
+              "nameOffset": 260206
+            },
+            {
+              "name": "GetCPInfo",
+              "hint": 490,
+              "nameOffset": 260218
+            },
+            {
+              "name": "GetCommandLineA",
+              "hint": 511,
+              "nameOffset": 260230
+            },
+            {
+              "name": "GetCommandLineW",
+              "hint": 512,
+              "nameOffset": 260248
+            },
+            {
+              "name": "GetEnvironmentStringsW",
+              "hint": 610,
+              "nameOffset": 260266
+            },
+            {
+              "name": "FreeEnvironmentStringsW",
+              "hint": 467,
+              "nameOffset": 260292
+            },
+            {
+              "name": "GetProcessHeap",
+              "hint": 740,
+              "nameOffset": 260318
+            },
+            {
+              "name": "SetStdHandle",
+              "hint": 1427,
+              "nameOffset": 260336
+            },
+            {
+              "name": "SetEndOfFile",
+              "hint": 1366,
+              "nameOffset": 260352
+            },
+            {
+              "name": "GetStringTypeW",
+              "hint": 776,
+              "nameOffset": 260368
+            },
+            {
+              "name": "HeapSize",
+              "hint": 901,
+              "nameOffset": 260386
+            },
+            {
+              "name": "HeapReAlloc",
+              "hint": 899,
+              "nameOffset": 260398
+            },
+            {
+              "name": "GetSystemInfo",
+              "hint": 788,
+              "nameOffset": 260412
+            },
+            {
+              "name": "VirtualQuery",
+              "hint": 1564,
+              "nameOffset": 260428
+            },
+            {
+              "name": "RtlUnwind",
+              "hint": 1302,
+              "nameOffset": 260462
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "node_register_module_v146",
+          "ordinal": 1,
+          "rva": 13840
+        }
+      ],
+      "delayImportDirectory": {
+        "rva": 262020,
+        "size": 64
+      },
+      "delayImports": [
+        {
+          "dll": "node.exe",
+          "descriptorOffset": 255364,
+          "attributes": 1,
+          "symbols": [
+            {
+              "name": "uv_queue_work",
+              "hint": 0,
+              "nameOffset": 255730
+            },
+            {
+              "name": "??0EscapableHandleScope@v8@@QEAA@PEAVIsolate@1@@Z",
+              "hint": 0,
+              "nameOffset": 257886
+            },
+            {
+              "name": "?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z",
+              "hint": 0,
+              "nameOffset": 255746
+            },
+            {
+              "name": "?GetCurrentContext@Isolate@v8@@QEAA?AV?$Local@VContext@v8@@@2@XZ",
+              "hint": 0,
+              "nameOffset": 255812
+            },
+            {
+              "name": "?GetCurrent@Isolate@v8@@SAPEAV12@XZ",
+              "hint": 0,
+              "nameOffset": 255880
+            },
+            {
+              "name": "?DeleteExtensions@HandleScope@v8@@AEAAXPEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 255918
+            },
+            {
+              "name": "?Error@Exception@v8@@SA?AV?$Local@VValue@v8@@@2@V?$Local@VString@v8@@@2@V32@@Z",
+              "hint": 0,
+              "nameOffset": 255976
+            },
+            {
+              "name": "?GetFunction@FunctionTemplate@v8@@QEAA?AV?$MaybeLocal@VFunction@v8@@@2@V?$Local@VContext@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 256058
+            },
+            {
+              "name": "?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z",
+              "hint": 0,
+              "nameOffset": 256160
+            },
+            {
+              "name": "?ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 256404
+            },
+            {
+              "name": "?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z",
+              "hint": 0,
+              "nameOffset": 256490
+            },
+            {
+              "name": "?WriteUtf8V2@String@v8@@QEBA_KPEAVIsolate@2@PEAD_KHPEA_K@Z",
+              "hint": 0,
+              "nameOffset": 256590
+            },
+            {
+              "name": "?Length@String@v8@@QEBAHXZ",
+              "hint": 0,
+              "nameOffset": 256652
+            },
+            {
+              "name": "?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@_K@Z",
+              "hint": 0,
+              "nameOffset": 256682
+            },
+            {
+              "name": "?FromJustIsNothing@api_internal@v8@@YAXXZ",
+              "hint": 0,
+              "nameOffset": 256756
+            },
+            {
+              "name": "?DisposeGlobal@api_internal@v8@@YAXPEA_K@Z",
+              "hint": 0,
+              "nameOffset": 256800
+            },
+            {
+              "name": "?ToLocalEmpty@api_internal@v8@@YAXXZ",
+              "hint": 0,
+              "nameOffset": 256846
+            },
+            {
+              "name": "?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@1@Z",
+              "hint": 0,
+              "nameOffset": 256886
+            },
+            {
+              "name": "?SetName@Function@v8@@QEAAXV?$Local@VString@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 256976
+            },
+            {
+              "name": "node_module_register",
+              "hint": 0,
+              "nameOffset": 257032
+            },
+            {
+              "name": "?GetCurrentEventLoop@node@@YAPEAUuv_loop_s@@PEAVIsolate@v8@@@Z",
+              "hint": 0,
+              "nameOffset": 257056
+            },
+            {
+              "name": "uv_mutex_unlock",
+              "hint": 0,
+              "nameOffset": 257122
+            },
+            {
+              "name": "?Global@Context@v8@@QEAA?AV?$Local@VObject@v8@@@2@XZ",
+              "hint": 0,
+              "nameOffset": 257140
+            },
+            {
+              "name": "?Extend@HandleScope@v8@@CAPEA_KPEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 257196
+            },
+            {
+              "name": "?EscapeSlot@EscapableHandleScopeBase@v8@@IEAAPEA_KPEA_K@Z",
+              "hint": 0,
+              "nameOffset": 257246
+            },
+            {
+              "name": "?NewFromInt32@Number@v8@@CA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@H@Z",
+              "hint": 0,
+              "nameOffset": 257306
+            },
+            {
+              "name": "?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 257380
+            },
+            {
+              "name": "uv_mutex_lock",
+              "hint": 0,
+              "nameOffset": 257444
+            },
+            {
+              "name": "uv_close",
+              "hint": 0,
+              "nameOffset": 257460
+            },
+            {
+              "name": "?EmitAsyncDestroy@node@@YAXPEAVIsolate@v8@@Uasync_context@1@@Z",
+              "hint": 0,
+              "nameOffset": 257472
+            },
+            {
+              "name": "?MakeCallback@node@@YA?AV?$MaybeLocal@VValue@v8@@@v8@@PEAVIsolate@3@V?$Local@VObject@v8@@@3@V?$Local@VFunction@v8@@@3@HPEAV?$Local@VValue@v8@@@3@Uasync_context@1@@Z",
+              "hint": 0,
+              "nameOffset": 257538
+            },
+            {
+              "name": "?EmitAsyncInit@node@@YA?AUasync_context@1@PEAVIsolate@v8@@V?$Local@VObject@v8@@@4@V?$Local@VString@v8@@@4@N@Z",
+              "hint": 0,
+              "nameOffset": 257706
+            },
+            {
+              "name": "uv_mutex_destroy",
+              "hint": 0,
+              "nameOffset": 257818
+            },
+            {
+              "name": "uv_mutex_init",
+              "hint": 0,
+              "nameOffset": 257838
+            },
+            {
+              "name": "uv_async_send",
+              "hint": 0,
+              "nameOffset": 257854
+            },
+            {
+              "name": "uv_async_init",
+              "hint": 0,
+              "nameOffset": 257870
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "logicalAsarMember": "node_modules/better-sqlite3/build/Release/better_sqlite3.node",
+      "extractedPath": "C:/Users/Admin/AppData/Local/Temp/rea-extracted-23b87573-be87-479d-b524-da81ec5fc204/node_modules/better-sqlite3/build/Release/better_sqlite3.node",
+      "bytes": 1920512,
+      "sha256": "24e2e3ca5a829572239718fbca35b873ba4975655d29c56a93f1880e3775d9b8",
+      "peOffset": 272,
+      "machine": "0x8664",
+      "architecture": "x86_64",
+      "format": "PE32+",
+      "sections": [
+        {
+          "name": ".text",
+          "virtualSize": 1551136,
+          "rva": 4096,
+          "rawSize": 1551360,
+          "offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtualSize": 269008,
+          "rva": 1556480,
+          "rawSize": 269312,
+          "offset": 1552384
+        },
+        {
+          "name": ".data",
+          "virtualSize": 28048,
+          "rva": 1826816,
+          "rawSize": 22528,
+          "offset": 1821696
+        },
+        {
+          "name": ".pdata",
+          "virtualSize": 68988,
+          "rva": 1855488,
+          "rawSize": 69120,
+          "offset": 1844224
+        },
+        {
+          "name": ".fptable",
+          "virtualSize": 256,
+          "rva": 1925120,
+          "rawSize": 512,
+          "offset": 1913344
+        },
+        {
+          "name": ".rsrc",
+          "virtualSize": 480,
+          "rva": 1929216,
+          "rawSize": 512,
+          "offset": 1913856
+        },
+        {
+          "name": ".reloc",
+          "virtualSize": 5828,
+          "rva": 1933312,
+          "rawSize": 6144,
+          "offset": 1914368
+        }
+      ],
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "descriptorOffset": 1817840,
+          "symbols": [
+            {
+              "name": "GetModuleHandleA",
+              "hint": 674,
+              "nameOffset": 1818946
+            },
+            {
+              "name": "LoadLibraryExA",
+              "hint": 1013,
+              "nameOffset": 1821376
+            },
+            {
+              "name": "AreFileApisANSI",
+              "hint": 37,
+              "nameOffset": 1818980
+            },
+            {
+              "name": "ReadFile",
+              "hint": 1193,
+              "nameOffset": 1818998
+            },
+            {
+              "name": "TryEnterCriticalSection",
+              "hint": 1524,
+              "nameOffset": 1819010
+            },
+            {
+              "name": "HeapCreate",
+              "hint": 894,
+              "nameOffset": 1819036
+            },
+            {
+              "name": "HeapFree",
+              "hint": 896,
+              "nameOffset": 1819050
+            },
+            {
+              "name": "EnterCriticalSection",
+              "hint": 343,
+              "nameOffset": 1819062
+            },
+            {
+              "name": "GetFullPathNameW",
+              "hint": 645,
+              "nameOffset": 1819086
+            },
+            {
+              "name": "WriteFile",
+              "hint": 1632,
+              "nameOffset": 1819106
+            },
+            {
+              "name": "GetDiskFreeSpaceW",
+              "hint": 596,
+              "nameOffset": 1819118
+            },
+            {
+              "name": "OutputDebugStringA",
+              "hint": 1098,
+              "nameOffset": 1819138
+            },
+            {
+              "name": "LockFile",
+              "hint": 1036,
+              "nameOffset": 1819160
+            },
+            {
+              "name": "LeaveCriticalSection",
+              "hint": 1008,
+              "nameOffset": 1819172
+            },
+            {
+              "name": "InitializeCriticalSection",
+              "hint": 917,
+              "nameOffset": 1819196
+            },
+            {
+              "name": "SetFilePointer",
+              "hint": 1384,
+              "nameOffset": 1819224
+            },
+            {
+              "name": "GetFullPathNameA",
+              "hint": 642,
+              "nameOffset": 1819242
+            },
+            {
+              "name": "SetEndOfFile",
+              "hint": 1366,
+              "nameOffset": 1819262
+            },
+            {
+              "name": "UnlockFileEx",
+              "hint": 1533,
+              "nameOffset": 1819278
+            },
+            {
+              "name": "GetTempPathW",
+              "hint": 809,
+              "nameOffset": 1819294
+            },
+            {
+              "name": "CreateMutexW",
+              "hint": 246,
+              "nameOffset": 1819310
+            },
+            {
+              "name": "WaitForSingleObject",
+              "hint": 1573,
+              "nameOffset": 1819326
+            },
+            {
+              "name": "CreateFileW",
+              "hint": 230,
+              "nameOffset": 1819348
+            },
+            {
+              "name": "GetFileAttributesW",
+              "hint": 624,
+              "nameOffset": 1819362
+            },
+            {
+              "name": "GetCurrentThreadId",
+              "hint": 582,
+              "nameOffset": 1819384
+            },
+            {
+              "name": "UnmapViewOfFile",
+              "hint": 1534,
+              "nameOffset": 1819406
+            },
+            {
+              "name": "HeapValidate",
+              "hint": 904,
+              "nameOffset": 1819424
+            },
+            {
+              "name": "HeapSize",
+              "hint": 901,
+              "nameOffset": 1819440
+            },
+            {
+              "name": "MultiByteToWideChar",
+              "hint": 1059,
+              "nameOffset": 1819452
+            },
+            {
+              "name": "Sleep",
+              "hint": 1480,
+              "nameOffset": 1819474
+            },
+            {
+              "name": "GetTempPathA",
+              "hint": 808,
+              "nameOffset": 1819482
+            },
+            {
+              "name": "FormatMessageW",
+              "hint": 464,
+              "nameOffset": 1819498
+            },
+            {
+              "name": "GetDiskFreeSpaceA",
+              "hint": 593,
+              "nameOffset": 1819516
+            },
+            {
+              "name": "GetLastError",
+              "hint": 653,
+              "nameOffset": 1819536
+            },
+            {
+              "name": "GetFileAttributesA",
+              "hint": 619,
+              "nameOffset": 1819552
+            },
+            {
+              "name": "GetFileAttributesExW",
+              "hint": 621,
+              "nameOffset": 1819574
+            },
+            {
+              "name": "OutputDebugStringW",
+              "hint": 1099,
+              "nameOffset": 1819598
+            },
+            {
+              "name": "FlushViewOfFile",
+              "hint": 459,
+              "nameOffset": 1819620
+            },
+            {
+              "name": "CreateFileA",
+              "hint": 222,
+              "nameOffset": 1819638
+            },
+            {
+              "name": "LoadLibraryA",
+              "hint": 1012,
+              "nameOffset": 1819652
+            },
+            {
+              "name": "WaitForSingleObjectEx",
+              "hint": 1574,
+              "nameOffset": 1819668
+            },
+            {
+              "name": "DeleteFileA",
+              "hint": 307,
+              "nameOffset": 1819692
+            },
+            {
+              "name": "DeleteFileW",
+              "hint": 310,
+              "nameOffset": 1819706
+            },
+            {
+              "name": "HeapReAlloc",
+              "hint": 899,
+              "nameOffset": 1819720
+            },
+            {
+              "name": "CloseHandle",
+              "hint": 157,
+              "nameOffset": 1819734
+            },
+            {
+              "name": "GetNativeSystemInfo",
+              "hint": 690,
+              "nameOffset": 1819748
+            },
+            {
+              "name": "RaiseException",
+              "hint": 1176,
+              "nameOffset": 1819770
+            },
+            {
+              "name": "GetSystemInfo",
+              "hint": 788,
+              "nameOffset": 1819788
+            },
+            {
+              "name": "LoadLibraryW",
+              "hint": 1015,
+              "nameOffset": 1819804
+            },
+            {
+              "name": "HeapAlloc",
+              "hint": 892,
+              "nameOffset": 1819820
+            },
+            {
+              "name": "HeapCompact",
+              "hint": 893,
+              "nameOffset": 1819832
+            },
+            {
+              "name": "HeapDestroy",
+              "hint": 895,
+              "nameOffset": 1819846
+            },
+            {
+              "name": "UnlockFile",
+              "hint": 1532,
+              "nameOffset": 1819860
+            },
+            {
+              "name": "GetProcAddress",
+              "hint": 733,
+              "nameOffset": 1819874
+            },
+            {
+              "name": "LocalFree",
+              "hint": 1026,
+              "nameOffset": 1819892
+            },
+            {
+              "name": "LockFileEx",
+              "hint": 1037,
+              "nameOffset": 1819904
+            },
+            {
+              "name": "GetFileSize",
+              "hint": 631,
+              "nameOffset": 1819918
+            },
+            {
+              "name": "DeleteCriticalSection",
+              "hint": 303,
+              "nameOffset": 1819932
+            },
+            {
+              "name": "GetCurrentProcessId",
+              "hint": 578,
+              "nameOffset": 1819956
+            },
+            {
+              "name": "GetProcessHeap",
+              "hint": 740,
+              "nameOffset": 1819978
+            },
+            {
+              "name": "SystemTimeToFileTime",
+              "hint": 1492,
+              "nameOffset": 1819996
+            },
+            {
+              "name": "GetModuleHandleW",
+              "hint": 677,
+              "nameOffset": 1820020
+            },
+            {
+              "name": "FreeLibrary",
+              "hint": 468,
+              "nameOffset": 1820040
+            },
+            {
+              "name": "WideCharToMultiByte",
+              "hint": 1612,
+              "nameOffset": 1820054
+            },
+            {
+              "name": "GetSystemTimeAsFileTime",
+              "hint": 794,
+              "nameOffset": 1820076
+            },
+            {
+              "name": "GetSystemTime",
+              "hint": 792,
+              "nameOffset": 1820102
+            },
+            {
+              "name": "FormatMessageA",
+              "hint": 463,
+              "nameOffset": 1820118
+            },
+            {
+              "name": "CreateFileMappingW",
+              "hint": 227,
+              "nameOffset": 1820136
+            },
+            {
+              "name": "MapViewOfFile",
+              "hint": 1042,
+              "nameOffset": 1820158
+            },
+            {
+              "name": "QueryPerformanceCounter",
+              "hint": 1153,
+              "nameOffset": 1820174
+            },
+            {
+              "name": "GetTickCount",
+              "hint": 828,
+              "nameOffset": 1820200
+            },
+            {
+              "name": "FlushFileBuffers",
+              "hint": 456,
+              "nameOffset": 1820216
+            },
+            {
+              "name": "RtlCaptureContext",
+              "hint": 1289,
+              "nameOffset": 1820236
+            },
+            {
+              "name": "RtlLookupFunctionEntry",
+              "hint": 1297,
+              "nameOffset": 1820256
+            },
+            {
+              "name": "RtlVirtualUnwind",
+              "hint": 1304,
+              "nameOffset": 1820282
+            },
+            {
+              "name": "UnhandledExceptionFilter",
+              "hint": 1531,
+              "nameOffset": 1820302
+            },
+            {
+              "name": "SetUnhandledExceptionFilter",
+              "hint": 1464,
+              "nameOffset": 1820330
+            },
+            {
+              "name": "GetCurrentProcess",
+              "hint": 577,
+              "nameOffset": 1820360
+            },
+            {
+              "name": "TerminateProcess",
+              "hint": 1496,
+              "nameOffset": 1820380
+            },
+            {
+              "name": "IsProcessorFeaturePresent",
+              "hint": 952,
+              "nameOffset": 1820400
+            },
+            {
+              "name": "InitializeSListHead",
+              "hint": 922,
+              "nameOffset": 1820428
+            },
+            {
+              "name": "IsDebuggerPresent",
+              "hint": 944,
+              "nameOffset": 1820450
+            },
+            {
+              "name": "GetStartupInfoW",
+              "hint": 769,
+              "nameOffset": 1820470
+            },
+            {
+              "name": "InitOnceComplete",
+              "hint": 911,
+              "nameOffset": 1820488
+            },
+            {
+              "name": "InitOnceBeginInitialize",
+              "hint": 910,
+              "nameOffset": 1820508
+            },
+            {
+              "name": "RtlUnwindEx",
+              "hint": 1303,
+              "nameOffset": 1820534
+            },
+            {
+              "name": "RtlPcToFileHeader",
+              "hint": 1299,
+              "nameOffset": 1820548
+            },
+            {
+              "name": "InterlockedFlushSList",
+              "hint": 926,
+              "nameOffset": 1820568
+            },
+            {
+              "name": "SetLastError",
+              "hint": 1400,
+              "nameOffset": 1820592
+            },
+            {
+              "name": "EncodePointer",
+              "hint": 339,
+              "nameOffset": 1820608
+            },
+            {
+              "name": "InitializeCriticalSectionAndSpinCount",
+              "hint": 918,
+              "nameOffset": 1820624
+            },
+            {
+              "name": "TlsAlloc",
+              "hint": 1514,
+              "nameOffset": 1820664
+            },
+            {
+              "name": "TlsGetValue",
+              "hint": 1516,
+              "nameOffset": 1820676
+            },
+            {
+              "name": "TlsSetValue",
+              "hint": 1518,
+              "nameOffset": 1820690
+            },
+            {
+              "name": "TlsFree",
+              "hint": 1515,
+              "nameOffset": 1820704
+            },
+            {
+              "name": "LoadLibraryExW",
+              "hint": 1014,
+              "nameOffset": 1820714
+            },
+            {
+              "name": "CreateThread",
+              "hint": 271,
+              "nameOffset": 1820732
+            },
+            {
+              "name": "ExitThread",
+              "hint": 391,
+              "nameOffset": 1820748
+            },
+            {
+              "name": "FreeLibraryAndExitThread",
+              "hint": 469,
+              "nameOffset": 1820762
+            },
+            {
+              "name": "GetModuleHandleExW",
+              "hint": 676,
+              "nameOffset": 1820790
+            },
+            {
+              "name": "ExitProcess",
+              "hint": 390,
+              "nameOffset": 1820812
+            },
+            {
+              "name": "GetModuleFileNameW",
+              "hint": 673,
+              "nameOffset": 1820826
+            },
+            {
+              "name": "FlsAlloc",
+              "hint": 450,
+              "nameOffset": 1820848
+            },
+            {
+              "name": "FlsGetValue",
+              "hint": 452,
+              "nameOffset": 1820860
+            },
+            {
+              "name": "FlsSetValue",
+              "hint": 454,
+              "nameOffset": 1820874
+            },
+            {
+              "name": "FlsFree",
+              "hint": 451,
+              "nameOffset": 1820888
+            },
+            {
+              "name": "InitializeCriticalSectionEx",
+              "hint": 919,
+              "nameOffset": 1820898
+            },
+            {
+              "name": "VirtualProtect",
+              "hint": 1562,
+              "nameOffset": 1820928
+            },
+            {
+              "name": "CompareStringW",
+              "hint": 179,
+              "nameOffset": 1820946
+            },
+            {
+              "name": "LCMapStringW",
+              "hint": 996,
+              "nameOffset": 1820964
+            },
+            {
+              "name": "GetTimeZoneInformation",
+              "hint": 835,
+              "nameOffset": 1820980
+            },
+            {
+              "name": "FindClose",
+              "hint": 413,
+              "nameOffset": 1821006
+            },
+            {
+              "name": "FindFirstFileExW",
+              "hint": 419,
+              "nameOffset": 1821018
+            },
+            {
+              "name": "FindNextFileW",
+              "hint": 436,
+              "nameOffset": 1821038
+            },
+            {
+              "name": "IsValidCodePage",
+              "hint": 958,
+              "nameOffset": 1821054
+            },
+            {
+              "name": "GetACP",
+              "hint": 475,
+              "nameOffset": 1821072
+            },
+            {
+              "name": "GetOEMCP",
+              "hint": 710,
+              "nameOffset": 1821082
+            },
+            {
+              "name": "GetCPInfo",
+              "hint": 490,
+              "nameOffset": 1821094
+            },
+            {
+              "name": "GetCommandLineA",
+              "hint": 511,
+              "nameOffset": 1821106
+            },
+            {
+              "name": "GetCommandLineW",
+              "hint": 512,
+              "nameOffset": 1821124
+            },
+            {
+              "name": "GetEnvironmentStringsW",
+              "hint": 610,
+              "nameOffset": 1821142
+            },
+            {
+              "name": "FreeEnvironmentStringsW",
+              "hint": 467,
+              "nameOffset": 1821168
+            },
+            {
+              "name": "SetEnvironmentVariableW",
+              "hint": 1370,
+              "nameOffset": 1821194
+            },
+            {
+              "name": "GetStdHandle",
+              "hint": 771,
+              "nameOffset": 1821220
+            },
+            {
+              "name": "GetFileType",
+              "hint": 634,
+              "nameOffset": 1821236
+            },
+            {
+              "name": "GetStringTypeW",
+              "hint": 776,
+              "nameOffset": 1821250
+            },
+            {
+              "name": "SetStdHandle",
+              "hint": 1427,
+              "nameOffset": 1821268
+            },
+            {
+              "name": "GetConsoleOutputCP",
+              "hint": 553,
+              "nameOffset": 1821284
+            },
+            {
+              "name": "GetConsoleMode",
+              "hint": 549,
+              "nameOffset": 1821306
+            },
+            {
+              "name": "SetFilePointerEx",
+              "hint": 1385,
+              "nameOffset": 1821324
+            },
+            {
+              "name": "WriteConsoleW",
+              "hint": 1631,
+              "nameOffset": 1821344
+            },
+            {
+              "name": "VirtualQuery",
+              "hint": 1564,
+              "nameOffset": 1821360
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "node_register_module_v146",
+          "ordinal": 1,
+          "rva": 56704
+        }
+      ],
+      "delayImportDirectory": {
+        "rva": 1815468,
+        "size": 64
+      },
+      "delayImports": [
+        {
+          "dll": "node.exe",
+          "descriptorOffset": 1811372,
+          "attributes": 1,
+          "symbols": [
+            {
+              "name": "?Exit@Context@v8@@QEAAXXZ",
+              "hint": 0,
+              "nameOffset": 1812042
+            },
+            {
+              "name": "?Enter@Context@v8@@QEAAXXZ",
+              "hint": 0,
+              "nameOffset": 1812070
+            },
+            {
+              "name": "?ToExternalPointerTag@v8@@YA?AW4ExternalPointerTag@internal@1@G@Z",
+              "hint": 0,
+              "nameOffset": 1812100
+            },
+            {
+              "name": "?Int64Value@BigInt@v8@@QEBA_JPEA_N@Z",
+              "hint": 0,
+              "nameOffset": 1812168
+            },
+            {
+              "name": "?New@BigInt@v8@@SA?AV?$Local@VBigInt@v8@@@2@PEAVIsolate@2@_J@Z",
+              "hint": 0,
+              "nameOffset": 1812208
+            },
+            {
+              "name": "?Value@External@v8@@QEBAPEAXG@Z",
+              "hint": 0,
+              "nameOffset": 1812274
+            },
+            {
+              "name": "?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAXG@Z",
+              "hint": 0,
+              "nameOffset": 1812308
+            },
+            {
+              "name": "?New@Integer@v8@@SA?AV?$Local@VInteger@v8@@@2@PEAVIsolate@2@H@Z",
+              "hint": 0,
+              "nameOffset": 1812380
+            },
+            {
+              "name": "?GetCurrentIsolate@Internals@internal@v8@@SAPEAVIsolate@3@XZ",
+              "hint": 0,
+              "nameOffset": 1812446
+            },
+            {
+              "name": "?New@Signature@v8@@SA?AV?$Local@VSignature@v8@@@2@PEAVIsolate@2@V?$Local@VFunctionTemplate@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1812510
+            },
+            {
+              "name": "?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z",
+              "hint": 0,
+              "nameOffset": 1812614
+            },
+            {
+              "name": "?GetCurrentContext@Isolate@v8@@QEAA?AV?$Local@VContext@v8@@@2@XZ",
+              "hint": 0,
+              "nameOffset": 1812680
+            },
+            {
+              "name": "?GetCurrent@Isolate@v8@@SAPEAV12@XZ",
+              "hint": 0,
+              "nameOffset": 1812748
+            },
+            {
+              "name": "?DeleteExtensions@HandleScope@v8@@AEAAXPEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 1812786
+            },
+            {
+              "name": "?Extend@HandleScope@v8@@CAPEA_KPEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 1812844
+            },
+            {
+              "name": "?Set@Template@v8@@QEAAXV?$Local@VName@v8@@@2@V?$Local@VData@v8@@@2@W4PropertyAttribute@2@@Z",
+              "hint": 0,
+              "nameOffset": 1812894
+            },
+            {
+              "name": "?Error@Exception@v8@@SA?AV?$Local@VValue@v8@@@2@V?$Local@VString@v8@@@2@V32@@Z",
+              "hint": 0,
+              "nameOffset": 1812988
+            },
+            {
+              "name": "?TypeError@Exception@v8@@SA?AV?$Local@VValue@v8@@@2@V?$Local@VString@v8@@@2@V32@@Z",
+              "hint": 0,
+              "nameOffset": 1813070
+            },
+            {
+              "name": "?RangeError@Exception@v8@@SA?AV?$Local@VValue@v8@@@2@V?$Local@VString@v8@@@2@V32@@Z",
+              "hint": 0,
+              "nameOffset": 1813156
+            },
+            {
+              "name": "?New@Array@v8@@SA?AV?$Local@VArray@v8@@@2@PEAVIsolate@2@PEAV?$Local@VValue@v8@@@2@_K@Z",
+              "hint": 0,
+              "nameOffset": 1813242
+            },
+            {
+              "name": "?Length@Array@v8@@QEBAIXZ",
+              "hint": 0,
+              "nameOffset": 1813332
+            },
+            {
+              "name": "?SetClassName@FunctionTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1813360
+            },
+            {
+              "name": "?PrototypeTemplate@FunctionTemplate@v8@@QEAA?AV?$Local@VObjectTemplate@v8@@@2@XZ",
+              "hint": 0,
+              "nameOffset": 1813430
+            },
+            {
+              "name": "?InstanceTemplate@FunctionTemplate@v8@@QEAA?AV?$Local@VObjectTemplate@v8@@@2@XZ",
+              "hint": 0,
+              "nameOffset": 1813514
+            },
+            {
+              "name": "?GetFunction@FunctionTemplate@v8@@QEAA?AV?$MaybeLocal@VFunction@v8@@@2@V?$Local@VContext@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1813596
+            },
+            {
+              "name": "?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z",
+              "hint": 0,
+              "nameOffset": 1813698
+            },
+            {
+              "name": "?Value@Boolean@v8@@QEBA_NXZ",
+              "hint": 0,
+              "nameOffset": 1813942
+            },
+            {
+              "name": "?StrictEquals@Value@v8@@QEBA_NV?$Local@VValue@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1813972
+            },
+            {
+              "name": "?IsInt32@Value@v8@@QEBA_NXZ",
+              "hint": 0,
+              "nameOffset": 1814030
+            },
+            {
+              "name": "?IsNumber@Value@v8@@QEBA_NXZ",
+              "hint": 0,
+              "nameOffset": 1814060
+            },
+            {
+              "name": "?IsBoolean@Value@v8@@QEBA_NXZ",
+              "hint": 0,
+              "nameOffset": 1814092
+            },
+            {
+              "name": "?IsBigInt@Value@v8@@QEBA_NXZ",
+              "hint": 0,
+              "nameOffset": 1814124
+            },
+            {
+              "name": "?IsObject@Value@v8@@QEBA_NXZ",
+              "hint": 0,
+              "nameOffset": 1814156
+            },
+            {
+              "name": "?IsArray@Value@v8@@QEBA_NXZ",
+              "hint": 0,
+              "nameOffset": 1814188
+            },
+            {
+              "name": "?IsFunction@Value@v8@@QEBA_NXZ",
+              "hint": 0,
+              "nameOffset": 1814218
+            },
+            {
+              "name": "??1Utf8Value@String@v8@@QEAA@XZ",
+              "hint": 0,
+              "nameOffset": 1814252
+            },
+            {
+              "name": "??0Utf8Value@String@v8@@QEAA@PEAVIsolate@2@V?$Local@VValue@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1814286
+            },
+            {
+              "name": "?NewFromOneByte@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBEW4NewStringType@2@H@Z",
+              "hint": 0,
+              "nameOffset": 1814358
+            },
+            {
+              "name": "?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z",
+              "hint": 0,
+              "nameOffset": 1814460
+            },
+            {
+              "name": "?GlobalizeReference@api_internal@v8@@YAPEA_KPEAVIsolate@internal@2@_K@Z",
+              "hint": 0,
+              "nameOffset": 1814560
+            },
+            {
+              "name": "?FromJustIsNothing@api_internal@v8@@YAXXZ",
+              "hint": 0,
+              "nameOffset": 1814634
+            },
+            {
+              "name": "?ClearWeak@api_internal@v8@@YAPEAXPEA_K@Z",
+              "hint": 0,
+              "nameOffset": 1814678
+            },
+            {
+              "name": "?MakeWeak@api_internal@v8@@YAXPEA_KPEAXP6AXAEBV?$WeakCallbackInfo@X@2@@ZW4WeakCallbackType@2@@Z",
+              "hint": 0,
+              "nameOffset": 1814722
+            },
+            {
+              "name": "?DisposeGlobal@api_internal@v8@@YAXPEA_K@Z",
+              "hint": 0,
+              "nameOffset": 1814820
+            },
+            {
+              "name": "?ToLocalEmpty@api_internal@v8@@YAXXZ",
+              "hint": 0,
+              "nameOffset": 1814866
+            },
+            {
+              "name": "?GetFunctionTemplateData@api_internal@v8@@YA?AV?$Local@VValue@v8@@@2@PEAVIsolate@2@V?$Local@VData@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1814906
+            },
+            {
+              "name": "?Value@Int32@v8@@QEBAHXZ",
+              "hint": 0,
+              "nameOffset": 1815016
+            },
+            {
+              "name": "?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z",
+              "hint": 0,
+              "nameOffset": 1815044
+            },
+            {
+              "name": "?Value@Number@v8@@QEBANXZ",
+              "hint": 0,
+              "nameOffset": 1815108
+            },
+            {
+              "name": "?SlowGetAlignedPointerFromInternalField@Object@v8@@AEAAPEAXHG@Z",
+              "hint": 0,
+              "nameOffset": 1815136
+            },
+            {
+              "name": "?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 1815202
+            },
+            {
+              "name": "?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@V?$Local@VValue@v8@@@2@PEAV?$Local@VName@v8@@@2@PEAV52@_K@Z",
+              "hint": 0,
+              "nameOffset": 1815266
+            },
+            {
+              "name": "?GetCreationContext@Object@v8@@QEAA?AV?$MaybeLocal@VContext@v8@@@2@XZ",
+              "hint": 0,
+              "nameOffset": 1815386
+            },
+            {
+              "name": "?HasOwnProperty@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VName@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1815458
+            },
+            {
+              "name": "?SetAlignedPointerInInternalField@Object@v8@@QEAAXHPEAXG@Z",
+              "hint": 0,
+              "nameOffset": 1815558
+            },
+            {
+              "name": "?Get@Object@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1815620
+            },
+            {
+              "name": "?Get@Object@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@I@Z",
+              "hint": 0,
+              "nameOffset": 1815724
+            },
+            {
+              "name": "?DefineOwnProperty@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VName@v8@@@2@V?$Local@VValue@v8@@@2@W4PropertyAttribute@2@@Z",
+              "hint": 0,
+              "nameOffset": 1815806
+            },
+            {
+              "name": "?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@1@Z",
+              "hint": 0,
+              "nameOffset": 1815954
+            },
+            {
+              "name": "?GetIterator@Symbol@v8@@SA?AV?$Local@VSymbol@v8@@@2@PEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 1816044
+            },
+            {
+              "name": "?Call@Function@v8@@QEAA?AV?$MaybeLocal@VValue@v8@@@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@HQEAV52@@Z",
+              "hint": 0,
+              "nameOffset": 1816116
+            },
+            {
+              "name": "?NewInstance@Function@v8@@QEBA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@HQEAV?$Local@VValue@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 1816230
+            },
+            {
+              "name": "?SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z",
+              "hint": 0,
+              "nameOffset": 1816348
+            },
+            {
+              "name": "?AddEnvironmentCleanupHook@node@@YAXPEAVIsolate@v8@@P6AXPEAX@Z1@Z",
+              "hint": 0,
+              "nameOffset": 1816402
+            },
+            {
+              "name": "node_module_register",
+              "hint": 0,
+              "nameOffset": 1816470
+            },
+            {
+              "name": "?HasInstance@Buffer@node@@YA_NV?$Local@VValue@v8@@@v8@@@Z",
+              "hint": 0,
+              "nameOffset": 1816494
+            },
+            {
+              "name": "?Data@Buffer@node@@YAPEADV?$Local@VValue@v8@@@v8@@@Z",
+              "hint": 0,
+              "nameOffset": 1816554
+            },
+            {
+              "name": "?Data@Buffer@node@@YAPEADV?$Local@VObject@v8@@@v8@@@Z",
+              "hint": 0,
+              "nameOffset": 1816610
+            },
+            {
+              "name": "?Copy@Buffer@node@@YA?AV?$MaybeLocal@VObject@v8@@@v8@@PEAVIsolate@4@PEBD_K@Z",
+              "hint": 0,
+              "nameOffset": 1816666
+            },
+            {
+              "name": "?Length@Buffer@node@@YA_KV?$Local@VValue@v8@@@v8@@@Z",
+              "hint": 0,
+              "nameOffset": 1816746
+            },
+            {
+              "name": "?Length@Buffer@node@@YA_KV?$Local@VObject@v8@@@v8@@@Z",
+              "hint": 0,
+              "nameOffset": 1816802
+            },
+            {
+              "name": "?SetNativeDataProperty@Template@v8@@QEAAXV?$Local@VName@v8@@@2@P6AX0AEBV?$PropertyCallbackInfo@VValue@v8@@@2@@Z$$TV?$Local@VValue@v8@@@2@W4PropertyAttribute@2@W4SideEffectType@2@6@Z",
+              "hint": 0,
+              "nameOffset": 1816858
+            },
+            {
+              "name": "?GetPrototypeV2@Object@v8@@QEAA?AV?$Local@VValue@v8@@@2@XZ",
+              "hint": 0,
+              "nameOffset": 1817042
+            },
+            {
+              "name": "??1HandleScope@v8@@QEAA@XZ",
+              "hint": 0,
+              "nameOffset": 1817104
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "logicalAsarMember": "node_modules/diskusage/build/Release/diskusage.node",
+      "extractedPath": "C:/Users/Admin/AppData/Local/Temp/rea-extracted-23b87573-be87-479d-b524-da81ec5fc204/node_modules/diskusage/build/Release/diskusage.node",
+      "bytes": 179712,
+      "sha256": "b395683082442e853eae042b571ce071d82fbe591a1859addad9a991d20312d6",
+      "peOffset": 264,
+      "machine": "0x8664",
+      "architecture": "x86_64",
+      "format": "PE32+",
+      "sections": [
+        {
+          "name": ".text",
+          "virtualSize": 112768,
+          "rva": 4096,
+          "rawSize": 113152,
+          "offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtualSize": 52060,
+          "rva": 118784,
+          "rawSize": 52224,
+          "offset": 114176
+        },
+        {
+          "name": ".data",
+          "virtualSize": 6288,
+          "rva": 172032,
+          "rawSize": 3584,
+          "offset": 166400
+        },
+        {
+          "name": ".pdata",
+          "virtualSize": 6576,
+          "rva": 180224,
+          "rawSize": 6656,
+          "offset": 169984
+        },
+        {
+          "name": ".fptable",
+          "virtualSize": 256,
+          "rva": 188416,
+          "rawSize": 512,
+          "offset": 176640
+        },
+        {
+          "name": ".rsrc",
+          "virtualSize": 480,
+          "rva": 192512,
+          "rawSize": 512,
+          "offset": 177152
+        },
+        {
+          "name": ".reloc",
+          "virtualSize": 1776,
+          "rva": 196608,
+          "rawSize": 2048,
+          "offset": 177664
+        }
+      ],
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "descriptorOffset": 164152,
+          "symbols": [
+            {
+              "name": "GetModuleHandleW",
+              "hint": 677,
+              "nameOffset": 164810
+            },
+            {
+              "name": "MultiByteToWideChar",
+              "hint": 1059,
+              "nameOffset": 164830
+            },
+            {
+              "name": "FormatMessageW",
+              "hint": 464,
+              "nameOffset": 164852
+            },
+            {
+              "name": "GetLastError",
+              "hint": 653,
+              "nameOffset": 164870
+            },
+            {
+              "name": "GetDiskFreeSpaceExW",
+              "hint": 595,
+              "nameOffset": 164886
+            },
+            {
+              "name": "WideCharToMultiByte",
+              "hint": 1612,
+              "nameOffset": 164908
+            },
+            {
+              "name": "LoadLibraryExA",
+              "hint": 1013,
+              "nameOffset": 166220
+            },
+            {
+              "name": "QueryPerformanceCounter",
+              "hint": 1153,
+              "nameOffset": 164944
+            },
+            {
+              "name": "GetCurrentProcessId",
+              "hint": 578,
+              "nameOffset": 164970
+            },
+            {
+              "name": "GetCurrentThreadId",
+              "hint": 582,
+              "nameOffset": 164992
+            },
+            {
+              "name": "GetSystemTimeAsFileTime",
+              "hint": 794,
+              "nameOffset": 165014
+            },
+            {
+              "name": "InitializeSListHead",
+              "hint": 922,
+              "nameOffset": 165040
+            },
+            {
+              "name": "SetUnhandledExceptionFilter",
+              "hint": 1464,
+              "nameOffset": 165062
+            },
+            {
+              "name": "GetStartupInfoW",
+              "hint": 769,
+              "nameOffset": 165092
+            },
+            {
+              "name": "RtlLookupFunctionEntry",
+              "hint": 1297,
+              "nameOffset": 165110
+            },
+            {
+              "name": "RtlUnwindEx",
+              "hint": 1303,
+              "nameOffset": 165136
+            },
+            {
+              "name": "RtlPcToFileHeader",
+              "hint": 1299,
+              "nameOffset": 165150
+            },
+            {
+              "name": "RaiseException",
+              "hint": 1176,
+              "nameOffset": 165170
+            },
+            {
+              "name": "InterlockedFlushSList",
+              "hint": 926,
+              "nameOffset": 165188
+            },
+            {
+              "name": "SetLastError",
+              "hint": 1400,
+              "nameOffset": 165212
+            },
+            {
+              "name": "FlsAlloc",
+              "hint": 450,
+              "nameOffset": 165228
+            },
+            {
+              "name": "FlsGetValue",
+              "hint": 452,
+              "nameOffset": 165240
+            },
+            {
+              "name": "FlsSetValue",
+              "hint": 454,
+              "nameOffset": 165254
+            },
+            {
+              "name": "FlsFree",
+              "hint": 451,
+              "nameOffset": 165268
+            },
+            {
+              "name": "EncodePointer",
+              "hint": 339,
+              "nameOffset": 165278
+            },
+            {
+              "name": "EnterCriticalSection",
+              "hint": 343,
+              "nameOffset": 165294
+            },
+            {
+              "name": "LeaveCriticalSection",
+              "hint": 1008,
+              "nameOffset": 165318
+            },
+            {
+              "name": "InitializeCriticalSectionEx",
+              "hint": 919,
+              "nameOffset": 165342
+            },
+            {
+              "name": "DeleteCriticalSection",
+              "hint": 303,
+              "nameOffset": 165372
+            },
+            {
+              "name": "GetStdHandle",
+              "hint": 771,
+              "nameOffset": 165396
+            },
+            {
+              "name": "GetFileType",
+              "hint": 634,
+              "nameOffset": 165412
+            },
+            {
+              "name": "GetModuleFileNameW",
+              "hint": 673,
+              "nameOffset": 165426
+            },
+            {
+              "name": "GetModuleHandleExW",
+              "hint": 676,
+              "nameOffset": 165448
+            },
+            {
+              "name": "WriteConsoleW",
+              "hint": 1631,
+              "nameOffset": 165470
+            },
+            {
+              "name": "GetCurrentProcess",
+              "hint": 577,
+              "nameOffset": 165486
+            },
+            {
+              "name": "ExitProcess",
+              "hint": 390,
+              "nameOffset": 165506
+            },
+            {
+              "name": "TerminateProcess",
+              "hint": 1496,
+              "nameOffset": 165520
+            },
+            {
+              "name": "FreeLibrary",
+              "hint": 468,
+              "nameOffset": 165540
+            },
+            {
+              "name": "GetProcAddress",
+              "hint": 733,
+              "nameOffset": 165554
+            },
+            {
+              "name": "IsProcessorFeaturePresent",
+              "hint": 952,
+              "nameOffset": 165572
+            },
+            {
+              "name": "RtlCaptureContext",
+              "hint": 1289,
+              "nameOffset": 165600
+            },
+            {
+              "name": "RtlVirtualUnwind",
+              "hint": 1304,
+              "nameOffset": 165620
+            },
+            {
+              "name": "IsDebuggerPresent",
+              "hint": 944,
+              "nameOffset": 165640
+            },
+            {
+              "name": "UnhandledExceptionFilter",
+              "hint": 1531,
+              "nameOffset": 165660
+            },
+            {
+              "name": "HeapFree",
+              "hint": 896,
+              "nameOffset": 165688
+            },
+            {
+              "name": "WriteFile",
+              "hint": 1632,
+              "nameOffset": 165700
+            },
+            {
+              "name": "OutputDebugStringW",
+              "hint": 1099,
+              "nameOffset": 165712
+            },
+            {
+              "name": "HeapAlloc",
+              "hint": 892,
+              "nameOffset": 165734
+            },
+            {
+              "name": "FindClose",
+              "hint": 413,
+              "nameOffset": 165746
+            },
+            {
+              "name": "FindFirstFileExW",
+              "hint": 419,
+              "nameOffset": 165758
+            },
+            {
+              "name": "FindNextFileW",
+              "hint": 436,
+              "nameOffset": 165778
+            },
+            {
+              "name": "IsValidCodePage",
+              "hint": 958,
+              "nameOffset": 165794
+            },
+            {
+              "name": "GetACP",
+              "hint": 475,
+              "nameOffset": 165812
+            },
+            {
+              "name": "GetOEMCP",
+              "hint": 710,
+              "nameOffset": 165822
+            },
+            {
+              "name": "GetCPInfo",
+              "hint": 490,
+              "nameOffset": 165834
+            },
+            {
+              "name": "GetCommandLineA",
+              "hint": 511,
+              "nameOffset": 165846
+            },
+            {
+              "name": "GetCommandLineW",
+              "hint": 512,
+              "nameOffset": 165864
+            },
+            {
+              "name": "GetEnvironmentStringsW",
+              "hint": 610,
+              "nameOffset": 165882
+            },
+            {
+              "name": "FreeEnvironmentStringsW",
+              "hint": 467,
+              "nameOffset": 165908
+            },
+            {
+              "name": "VirtualProtect",
+              "hint": 1562,
+              "nameOffset": 165934
+            },
+            {
+              "name": "LoadLibraryExW",
+              "hint": 1014,
+              "nameOffset": 165952
+            },
+            {
+              "name": "LCMapStringW",
+              "hint": 996,
+              "nameOffset": 165970
+            },
+            {
+              "name": "GetProcessHeap",
+              "hint": 740,
+              "nameOffset": 165986
+            },
+            {
+              "name": "GetStringTypeW",
+              "hint": 776,
+              "nameOffset": 166004
+            },
+            {
+              "name": "FlushFileBuffers",
+              "hint": 456,
+              "nameOffset": 166022
+            },
+            {
+              "name": "GetConsoleOutputCP",
+              "hint": 553,
+              "nameOffset": 166042
+            },
+            {
+              "name": "GetConsoleMode",
+              "hint": 549,
+              "nameOffset": 166064
+            },
+            {
+              "name": "HeapSize",
+              "hint": 901,
+              "nameOffset": 166082
+            },
+            {
+              "name": "HeapReAlloc",
+              "hint": 899,
+              "nameOffset": 166094
+            },
+            {
+              "name": "SetStdHandle",
+              "hint": 1427,
+              "nameOffset": 166108
+            },
+            {
+              "name": "GetFileSizeEx",
+              "hint": 632,
+              "nameOffset": 166124
+            },
+            {
+              "name": "SetFilePointerEx",
+              "hint": 1385,
+              "nameOffset": 166140
+            },
+            {
+              "name": "CloseHandle",
+              "hint": 157,
+              "nameOffset": 166160
+            },
+            {
+              "name": "CreateFileW",
+              "hint": 230,
+              "nameOffset": 166174
+            },
+            {
+              "name": "GetSystemInfo",
+              "hint": 788,
+              "nameOffset": 166188
+            },
+            {
+              "name": "VirtualQuery",
+              "hint": 1564,
+              "nameOffset": 166204
+            }
+          ]
+        }
+      ],
+      "exports": [],
+      "delayImportDirectory": {
+        "rva": 165892,
+        "size": 64
+      },
+      "delayImports": [
+        {
+          "dll": "node.exe",
+          "descriptorOffset": 161284,
+          "attributes": 1,
+          "symbols": [
+            {
+              "name": "?Value@External@v8@@QEBAPEAXG@Z",
+              "hint": 0,
+              "nameOffset": 161618
+            },
+            {
+              "name": "?New@External@v8@@SA?AV?$Local@VExternal@v8@@@2@PEAVIsolate@2@PEAXG@Z",
+              "hint": 0,
+              "nameOffset": 161652
+            },
+            {
+              "name": "?GetCurrentIsolate@Internals@internal@v8@@SAPEAVIsolate@3@XZ",
+              "hint": 0,
+              "nameOffset": 161724
+            },
+            {
+              "name": "?ThrowException@Isolate@v8@@QEAA?AV?$Local@VValue@v8@@@2@V32@@Z",
+              "hint": 0,
+              "nameOffset": 161788
+            },
+            {
+              "name": "?GetCurrentContext@Isolate@v8@@QEAA?AV?$Local@VContext@v8@@@2@XZ",
+              "hint": 0,
+              "nameOffset": 161854
+            },
+            {
+              "name": "?GetCurrent@Isolate@v8@@SAPEAV12@XZ",
+              "hint": 0,
+              "nameOffset": 161922
+            },
+            {
+              "name": "?DeleteExtensions@HandleScope@v8@@AEAAXPEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 161960
+            },
+            {
+              "name": "?Extend@HandleScope@v8@@CAPEA_KPEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 162018
+            },
+            {
+              "name": "?Error@Exception@v8@@SA?AV?$Local@VValue@v8@@@2@V?$Local@VString@v8@@@2@V32@@Z",
+              "hint": 0,
+              "nameOffset": 162068
+            },
+            {
+              "name": "?SetClassName@FunctionTemplate@v8@@QEAAXV?$Local@VString@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 162150
+            },
+            {
+              "name": "?GetFunction@FunctionTemplate@v8@@QEAA?AV?$MaybeLocal@VFunction@v8@@@2@V?$Local@VContext@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 162220
+            },
+            {
+              "name": "?New@FunctionTemplate@v8@@SA?AV?$Local@VFunctionTemplate@v8@@@2@PEAVIsolate@2@P6AXAEBV?$FunctionCallbackInfo@VValue@v8@@@2@@ZV?$Local@VValue@v8@@@2@V?$Local@VSignature@v8@@@2@HW4ConstructorBehavior@2@W4SideEffectType@2@PEBVCFunction@2@GGG@Z",
+              "hint": 0,
+              "nameOffset": 162322
+            },
+            {
+              "name": "?EscapeSlot@EscapableHandleScopeBase@v8@@IEAAPEA_KPEA_K@Z",
+              "hint": 0,
+              "nameOffset": 162566
+            },
+            {
+              "name": "?ToString@Value@v8@@QEBA?AV?$MaybeLocal@VString@v8@@@2@V?$Local@VContext@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 162626
+            },
+            {
+              "name": "?NewFromUtf8@String@v8@@SA?AV?$MaybeLocal@VString@v8@@@2@PEAVIsolate@2@PEBDW4NewStringType@2@H@Z",
+              "hint": 0,
+              "nameOffset": 162712
+            },
+            {
+              "name": "?WriteUtf8V2@String@v8@@QEBA_KPEAVIsolate@2@PEAD_KHPEA_K@Z",
+              "hint": 0,
+              "nameOffset": 162812
+            },
+            {
+              "name": "?Length@String@v8@@QEBAHXZ",
+              "hint": 0,
+              "nameOffset": 162874
+            },
+            {
+              "name": "?ToLocalEmpty@api_internal@v8@@YAXXZ",
+              "hint": 0,
+              "nameOffset": 162904
+            },
+            {
+              "name": "?GetFunctionTemplateData@api_internal@v8@@YA?AV?$Local@VValue@v8@@@2@PEAVIsolate@2@V?$Local@VData@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 162944
+            },
+            {
+              "name": "?New@Number@v8@@SA?AV?$Local@VNumber@v8@@@2@PEAVIsolate@2@N@Z",
+              "hint": 0,
+              "nameOffset": 163054
+            },
+            {
+              "name": "?SlowGetInternalField@Object@v8@@AEAA?AV?$Local@VData@v8@@@2@H@Z",
+              "hint": 0,
+              "nameOffset": 163118
+            },
+            {
+              "name": "?New@Object@v8@@SA?AV?$Local@VObject@v8@@@2@PEAVIsolate@2@@Z",
+              "hint": 0,
+              "nameOffset": 163186
+            },
+            {
+              "name": "?SetInternalField@Object@v8@@QEAAXHV?$Local@VData@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 163250
+            },
+            {
+              "name": "?Set@Object@v8@@QEAA?AV?$Maybe@_N@2@V?$Local@VContext@v8@@@2@V?$Local@VValue@v8@@@2@1@Z",
+              "hint": 0,
+              "nameOffset": 163312
+            },
+            {
+              "name": "?SetInternalFieldCount@ObjectTemplate@v8@@QEAAXH@Z",
+              "hint": 0,
+              "nameOffset": 163402
+            },
+            {
+              "name": "?NewInstance@ObjectTemplate@v8@@QEAA?AV?$MaybeLocal@VObject@v8@@@2@V?$Local@VContext@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 163456
+            },
+            {
+              "name": "?New@ObjectTemplate@v8@@SA?AV?$Local@VObjectTemplate@v8@@@2@PEAVIsolate@2@V?$Local@VFunctionTemplate@v8@@@2@@Z",
+              "hint": 0,
+              "nameOffset": 163554
+            },
+            {
+              "name": "node_module_register",
+              "hint": 0,
+              "nameOffset": 163668
+            },
+            {
+              "name": "?ErrnoException@node@@YA?AV?$Local@VValue@v8@@@v8@@PEAVIsolate@3@HPEBD11@Z",
+              "hint": 0,
+              "nameOffset": 163692
+            },
+            {
+              "name": "??1EscapableHandleScope@v8@@QEAA@XZ",
+              "hint": 0,
+              "nameOffset": 163770
+            },
+            {
+              "name": "??0EscapableHandleScope@v8@@QEAA@PEAVIsolate@1@@Z",
+              "hint": 0,
+              "nameOffset": 163808
+            },
+            {
+              "name": "??1HandleScope@v8@@QEAA@XZ",
+              "hint": 0,
+              "nameOffset": 163860
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "logicalAsarMember": "node_modules/native-is-elevated/build/Release/iselevated.node",
+      "extractedPath": "C:/Users/Admin/AppData/Local/Temp/rea-extracted-23b87573-be87-479d-b524-da81ec5fc204/node_modules/native-is-elevated/build/Release/iselevated.node",
+      "bytes": 110080,
+      "sha256": "3ea1f3878536786894a4834d88c4653689de8da1e78d9f3cc932147d5d2b9bbf",
+      "peOffset": 264,
+      "machine": "0x8664",
+      "architecture": "x86_64",
+      "format": "PE32+",
+      "sections": [
+        {
+          "name": ".text",
+          "virtualSize": 56016,
+          "rva": 4096,
+          "rawSize": 56320,
+          "offset": 1024
+        },
+        {
+          "name": ".rdata",
+          "virtualSize": 41022,
+          "rva": 61440,
+          "rawSize": 41472,
+          "offset": 57344
+        },
+        {
+          "name": ".data",
+          "virtualSize": 5512,
+          "rva": 106496,
+          "rawSize": 3072,
+          "offset": 98816
+        },
+        {
+          "name": ".pdata",
+          "virtualSize": 4248,
+          "rva": 114688,
+          "rawSize": 4608,
+          "offset": 101888
+        },
+        {
+          "name": ".didat",
+          "virtualSize": 32,
+          "rva": 122880,
+          "rawSize": 512,
+          "offset": 106496
+        },
+        {
+          "name": ".fptable",
+          "virtualSize": 256,
+          "rva": 126976,
+          "rawSize": 512,
+          "offset": 107008
+        },
+        {
+          "name": ".rsrc",
+          "virtualSize": 480,
+          "rva": 131072,
+          "rawSize": 512,
+          "offset": 107520
+        },
+        {
+          "name": ".reloc",
+          "virtualSize": 1632,
+          "rva": 135168,
+          "rawSize": 2048,
+          "offset": 108032
+        }
+      ],
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "descriptorOffset": 96232,
+          "symbols": [
+            {
+              "name": "LoadLibraryExA",
+              "hint": 1013,
+              "nameOffset": 98350
+            },
+            {
+              "name": "GetModuleHandleA",
+              "hint": 674,
+              "nameOffset": 96922
+            },
+            {
+              "name": "QueryPerformanceCounter",
+              "hint": 1153,
+              "nameOffset": 97032
+            },
+            {
+              "name": "GetCurrentProcessId",
+              "hint": 578,
+              "nameOffset": 97058
+            },
+            {
+              "name": "GetCurrentThreadId",
+              "hint": 582,
+              "nameOffset": 97080
+            },
+            {
+              "name": "GetSystemTimeAsFileTime",
+              "hint": 794,
+              "nameOffset": 97102
+            },
+            {
+              "name": "InitializeSListHead",
+              "hint": 922,
+              "nameOffset": 97128
+            },
+            {
+              "name": "SetUnhandledExceptionFilter",
+              "hint": 1464,
+              "nameOffset": 97150
+            },
+            {
+              "name": "GetStartupInfoW",
+              "hint": 769,
+              "nameOffset": 97180
+            },
+            {
+              "name": "GetModuleHandleW",
+              "hint": 677,
+              "nameOffset": 97198
+            },
+            {
+              "name": "RtlUnwindEx",
+              "hint": 1303,
+              "nameOffset": 97218
+            },
+            {
+              "name": "InterlockedFlushSList",
+              "hint": 926,
+              "nameOffset": 97232
+            },
+            {
+              "name": "GetLastError",
+              "hint": 653,
+              "nameOffset": 97256
+            },
+            {
+              "name": "SetLastError",
+              "hint": 1400,
+              "nameOffset": 97272
+            },
+            {
+              "name": "FlsAlloc",
+              "hint": 450,
+              "nameOffset": 97288
+            },
+            {
+              "name": "FlsGetValue",
+              "hint": 452,
+              "nameOffset": 97300
+            },
+            {
+              "name": "FlsSetValue",
+              "hint": 454,
+              "nameOffset": 97314
+            },
+            {
+              "name": "FlsFree",
+              "hint": 451,
+              "nameOffset": 97328
+            },
+            {
+              "name": "EnterCriticalSection",
+              "hint": 343,
+              "nameOffset": 97338
+            },
+            {
+              "name": "LeaveCriticalSection",
+              "hint": 1008,
+              "nameOffset": 97362
+            },
+            {
+              "name": "InitializeCriticalSectionEx",
+              "hint": 919,
+              "nameOffset": 97386
+            },
+            {
+              "name": "DeleteCriticalSection",
+              "hint": 303,
+              "nameOffset": 97416
+            },
+            {
+              "name": "RtlLookupFunctionEntry",
+              "hint": 1297,
+              "nameOffset": 97440
+            },
+            {
+              "name": "EncodePointer",
+              "hint": 339,
+              "nameOffset": 97466
+            },
+            {
+              "name": "RaiseException",
+              "hint": 1176,
+              "nameOffset": 97482
+            },
+            {
+              "name": "RtlPcToFileHeader",
+              "hint": 1299,
+              "nameOffset": 97500
+            },
+            {
+              "name": "GetCurrentProcess",
+              "hint": 577,
+              "nameOffset": 97520
+            },
+            {
+              "name": "ExitProcess",
+              "hint": 390,
+              "nameOffset": 97540
+            },
+            {
+              "name": "TerminateProcess",
+              "hint": 1496,
+              "nameOffset": 97554
+            },
+            {
+              "name": "FreeLibrary",
+              "hint": 468,
+              "nameOffset": 97574
+            },
+            {
+              "name": "GetModuleHandleExW",
+              "hint": 676,
+              "nameOffset": 97588
+            },
+            {
+              "name": "GetProcAddress",
+              "hint": 733,
+              "nameOffset": 97610
+            },
+            {
+              "name": "GetModuleFileNameW",
+              "hint": 673,
+              "nameOffset": 97628
+            },
+            {
+              "name": "IsProcessorFeaturePresent",
+              "hint": 952,
+              "nameOffset": 97650
+            },
+            {
+              "name": "RtlCaptureContext",
+              "hint": 1289,
+              "nameOffset": 97678
+            },
+            {
+              "name": "RtlVirtualUnwind",
+              "hint": 1304,
+              "nameOffset": 97698
+            },
+            {
+              "name": "IsDebuggerPresent",
+              "hint": 944,
+              "nameOffset": 97718
+            },
+            {
+              "name": "UnhandledExceptionFilter",
+              "hint": 1531,
+              "nameOffset": 97738
+            },
+            {
+              "name": "HeapAlloc",
+              "hint": 892,
+              "nameOffset": 97766
+            },
+            {
+              "name": "HeapFree",
+              "hint": 896,
+              "nameOffset": 97778
+            },
+            {
+              "name": "FindClose",
+              "hint": 413,
+              "nameOffset": 97790
+            },
+            {
+              "name": "FindFirstFileExW",
+              "hint": 419,
+              "nameOffset": 97802
+            },
+            {
+              "name": "FindNextFileW",
+              "hint": 436,
+              "nameOffset": 97822
+            },
+            {
+              "name": "IsValidCodePage",
+              "hint": 958,
+              "nameOffset": 97838
+            },
+            {
+              "name": "GetACP",
+              "hint": 475,
+              "nameOffset": 97856
+            },
+            {
+              "name": "GetOEMCP",
+              "hint": 710,
+              "nameOffset": 97866
+            },
+            {
+              "name": "GetCPInfo",
+              "hint": 490,
+              "nameOffset": 97878
+            },
+            {
+              "name": "GetCommandLineA",
+              "hint": 511,
+              "nameOffset": 97890
+            },
+            {
+              "name": "GetCommandLineW",
+              "hint": 512,
+              "nameOffset": 97908
+            },
+            {
+              "name": "MultiByteToWideChar",
+              "hint": 1059,
+              "nameOffset": 97926
+            },
+            {
+              "name": "WideCharToMultiByte",
+              "hint": 1612,
+              "nameOffset": 97948
+            },
+            {
+              "name": "GetEnvironmentStringsW",
+              "hint": 610,
+              "nameOffset": 97970
+            },
+            {
+              "name": "FreeEnvironmentStringsW",
+              "hint": 467,
+              "nameOffset": 97996
+            },
+            {
+              "name": "VirtualProtect",
+              "hint": 1562,
+              "nameOffset": 98022
+            },
+            {
+              "name": "LoadLibraryExW",
+              "hint": 1014,
+              "nameOffset": 98040
+            },
+            {
+              "name": "LCMapStringW",
+              "hint": 996,
+              "nameOffset": 98058
+            },
+            {
+              "name": "GetProcessHeap",
+              "hint": 740,
+              "nameOffset": 98074
+            },
+            {
+              "name": "GetStdHandle",
+              "hint": 771,
+              "nameOffset": 98092
+            },
+            {
+              "name": "GetFileType",
+              "hint": 634,
+              "nameOffset": 98108
+            },
+            {
+              "name": "GetStringTypeW",
+              "hint": 776,
+              "nameOffset": 98122
+            },
+            {
+              "name": "HeapSize",
+              "hint": 901,
+              "nameOffset": 98140
+            },
+            {
+              "name": "HeapReAlloc",
+              "hint": 899,
+              "nameOffset": 98152
+            },
+            {
+              "name": "SetStdHandle",
+              "hint": 1427,
+              "nameOffset": 98166
+            },
+            {
+              "name": "FlushFileBuffers",
+              "hint": 456,
+              "nameOffset": 98182
+            },
+            {
+              "name": "WriteFile",
+              "hint": 1632,
+              "nameOffset": 98202
+            },
+            {
+              "name": "GetConsoleOutputCP",
+              "hint": 553,
+              "nameOffset": 98214
+            },
+            {
+              "name": "GetConsoleMode",
+              "hint": 549,
+              "nameOffset": 98236
+            },
+            {
+              "name": "SetFilePointerEx",
+              "hint": 1385,
+              "nameOffset": 98254
+            },
+            {
+              "name": "CreateFileW",
+              "hint": 230,
+              "nameOffset": 98274
+            },
+            {
+              "name": "CloseHandle",
+              "hint": 157,
+              "nameOffset": 98288
+            },
+            {
+              "name": "WriteConsoleW",
+              "hint": 1631,
+              "nameOffset": 98302
+            },
+            {
+              "name": "GetSystemInfo",
+              "hint": 788,
+              "nameOffset": 98318
+            },
+            {
+              "name": "VirtualQuery",
+              "hint": 1564,
+              "nameOffset": 98334
+            }
+          ]
+        },
+        {
+          "dll": "ADVAPI32.dll",
+          "descriptorOffset": 96252,
+          "symbols": [
+            {
+              "name": "AllocateAndInitializeSid",
+              "hint": 32,
+              "nameOffset": 96990
+            },
+            {
+              "name": "CheckTokenMembership",
+              "hint": 95,
+              "nameOffset": 96956
+            },
+            {
+              "name": "FreeSid",
+              "hint": 287,
+              "nameOffset": 96980
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "napi_register_module_v1",
+          "ordinal": 1,
+          "rva": 4400
+        },
+        {
+          "name": "node_api_module_get_api_version_v1",
+          "ordinal": 2,
+          "rva": 4384
+        }
+      ],
+      "delayImportDirectory": {
+        "rva": 99716,
+        "size": 64
+      },
+      "delayImports": [
+        {
+          "dll": "node.exe",
+          "descriptorOffset": 95620,
+          "attributes": 1,
+          "symbols": [
+            {
+              "name": "napi_set_named_property",
+              "hint": 0,
+              "nameOffset": 95766
+            },
+            {
+              "name": "napi_get_boolean",
+              "hint": 0,
+              "nameOffset": 95746
+            },
+            {
+              "name": "napi_create_function",
+              "hint": 0,
+              "nameOffset": 95722
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

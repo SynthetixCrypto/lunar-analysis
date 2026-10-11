@@ -1,0 +1,29 @@
+public class L._d4ca6c._1e73d7 extends L._d4ca6c._21aca6 {
+  private boolean cancelled;
+
+  public L._d4ca6c._1e73d7();
+    Code:
+       0: aload_0
+       1: invokespecial #4                  // Method L/_d4ca6c/_21aca6."<init>":()V
+       4: return
+
+  public void cancel();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: putfield      #3                  // Field cancelled:Z
+       5: return
+
+  public boolean isCancelled();
+    Code:
+       0: aload_0
+       1: getfield      #3                  // Field cancelled:Z
+       4: ireturn
+
+  public void setCancelled(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #3                  // Field cancelled:Z
+       5: return
+}

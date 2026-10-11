@@ -1,0 +1,126 @@
+public final class L._88f3cf._bb4487._21aca6._21aca6._cfe983 extends java.lang.Enum<L._88f3cf._bb4487._21aca6._21aca6._cfe983> {
+public static final L._88f3cf._bb4487._21aca6._21aca6._cfe983 HELD_ITEM;
+public static final L._88f3cf._bb4487._21aca6._21aca6._cfe983 HELMET;
+public static final L._88f3cf._bb4487._21aca6._21aca6._cfe983 CHESTPLATE;
+public static final L._88f3cf._bb4487._21aca6._21aca6._cfe983 LEGGINGS;
+public static final L._88f3cf._bb4487._21aca6._21aca6._cfe983 BOOTS;
+public static final L._88f3cf._bb4487._21aca6._21aca6._cfe983 OFF_HAND_HELD_ITEM;
+private final int slotId;
+private static final L._88f3cf._bb4487._21aca6._21aca6._cfe983[] $VALUES;
+public static L._88f3cf._bb4487._21aca6._21aca6._cfe983[] values();
+Code:
+0: getstatic // Field $VALUES:[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983;
+3: invokevirtual // Method "[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983;".clone
+6: checkcast // class "[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983;"
+9: areturn
+public static L._88f3cf._bb4487._21aca6._21aca6._cfe983 valueOf(java.lang.String);
+Code:
+0: ldc // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+2: aload_0
+3: invokestatic // Method java/lang/Enum.valueOf
+6: checkcast // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+9: areturn
+public boolean isHeld();
+Code:
+0: aload_0
+1: getstatic // Field HELD_ITEM
+4: if_acmpeq 14
+7: aload_0
+8: getstatic // Field OFF_HAND_HELD_ITEM
+11: if_acmpne 18
+14: iconst_1
+15: goto 19
+18: iconst_0
+19: ireturn
+private L._88f3cf._bb4487._21aca6._21aca6._cfe983(int);
+Code:
+0: aload_0
+1: aload_1
+2: iload_2
+3: invokespecial // Method java/lang/Enum."<init>"
+6: aload_0
+7: iload_3
+8: putfield // Field slotId:I
+11: return
+public int getSlotId();
+Code:
+0: aload_0
+1: getfield // Field slotId:I
+4: ireturn
+private static L._88f3cf._bb4487._21aca6._21aca6._cfe983[] $values();
+Code:
+0: bipush 6
+2: anewarray // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+5: dup
+6: iconst_0
+7: getstatic // Field HELD_ITEM
+10: aastore
+11: dup
+12: iconst_1
+13: getstatic // Field HELMET
+16: aastore
+17: dup
+18: iconst_2
+19: getstatic // Field CHESTPLATE
+22: aastore
+23: dup
+24: iconst_3
+25: getstatic // Field LEGGINGS
+28: aastore
+29: dup
+30: iconst_4
+31: getstatic // Field BOOTS
+34: aastore
+35: dup
+36: iconst_5
+37: getstatic // Field OFF_HAND_HELD_ITEM
+40: aastore
+41: areturn
+static {};
+Code:
+0: new // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+3: dup
+4: ldc // String HELD_ITEM
+6: iconst_0
+7: iconst_m1
+8: invokespecial // Method "<init>"
+11: putstatic // Field HELD_ITEM
+14: new // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+17: dup
+18: ldc // String HELMET
+20: iconst_1
+21: iconst_3
+22: invokespecial // Method "<init>"
+25: putstatic // Field HELMET
+28: new // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+31: dup
+32: ldc // String CHESTPLATE
+34: iconst_2
+35: iconst_2
+36: invokespecial // Method "<init>"
+39: putstatic // Field CHESTPLATE
+42: new // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+45: dup
+46: ldc // String LEGGINGS
+48: iconst_3
+49: iconst_1
+50: invokespecial // Method "<init>"
+53: putstatic // Field LEGGINGS
+56: new // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+59: dup
+60: ldc // String BOOTS
+62: iconst_4
+63: iconst_0
+64: invokespecial // Method "<init>"
+67: putstatic // Field BOOTS
+70: new // class L/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983
+73: dup
+74: ldc // String OFF_HAND_HELD_ITEM
+76: iconst_5
+77: bipush -2
+79: invokespecial // Method "<init>"
+82: putstatic // Field OFF_HAND_HELD_ITEM
+85: invokestatic // Method $values
+88: putstatic // Field $VALUES:[LL/_88f3cf/_bb4487/_21aca6/_21aca6/_cfe983;
+91: return
+}

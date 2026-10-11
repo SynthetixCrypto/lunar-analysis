@@ -1,0 +1,105 @@
+public class com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII<T> {
+  private com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI CHIIROCOCRRHICHOIRHIHOCCIHIRRI;
+
+  private T CRCHIRHCRROCORRCOHHRIHRROICHIR;
+
+  private java.util.function.Predicate<java.lang.String> RCRIOOIRICCHRIIOHOHRRIHROHRORI;
+
+  private T OHHIHHIORHHOOHIRIICHOHOORIIHRC;
+
+  public com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII();
+    Code:
+       0: aload_0
+       1: invokespecial #10                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aconst_null
+       6: putfield      #8                  // Field OHHIHHIORHHOOHIRIICHOHOORIIHRC:Ljava/lang/Object;
+       9: return
+
+  public java.util.Optional<T> RHIHHICIIRCHCCOOCICICIHRIIORHC();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field CRCHIRHCRROCORRCOHHRIHRROICHIR:Ljava/lang/Object;
+       4: invokestatic  #11                 // Method java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;
+       7: areturn
+
+  public void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI, T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #6                  // Field CHIIROCOCRRHICHOIRHIHOCCIHIRRI:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+       5: aload_0
+       6: aload_2
+       7: putfield      #7                  // Field CRCHIRHCRROCORRCOHHRIHRROICHIR:Ljava/lang/Object;
+      10: return
+
+  public void COOCHIRORIICRCIIRIROHIIRIRICCH(java.util.function.Predicate<java.lang.String>, T);
+    Code:
+       0: aload_1
+       1: ifnonnull     15
+       4: aload_0
+       5: aconst_null
+       6: putfield      #9                  // Field RCRIOOIRICCHRIIOHOHRRIHROHRORI:Ljava/util/function/Predicate;
+       9: aload_0
+      10: aload_2
+      11: putfield      #8                  // Field OHHIHHIORHHOOHIRIICHOHOORIIHRC:Ljava/lang/Object;
+      14: return
+      15: aload_0
+      16: aload_0
+      17: getfield      #9                  // Field RCRIOOIRICCHRIIOHOHRRIHROHRORI:Ljava/util/function/Predicate;
+      20: ifnonnull     27
+      23: aload_1
+      24: goto          37
+      27: aload_0
+      28: getfield      #9                  // Field RCRIOOIRICCHRIIOHOHRRIHROHRORI:Ljava/util/function/Predicate;
+      31: aload_1
+      32: invokeinterface #12,  2           // InterfaceMethod java/util/function/Predicate.or:(Ljava/util/function/Predicate;)Ljava/util/function/Predicate;
+      37: putfield      #9                  // Field RCRIOOIRICCHRIIOHOHRRIHROHRORI:Ljava/util/function/Predicate;
+      40: aload_0
+      41: aload_2
+      42: putfield      #8                  // Field OHHIHHIORHHOOHIRIICHOHOORIIHRC:Ljava/lang/Object;
+      45: return
+
+  public boolean test(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #9                  // Field RCRIOOIRICCHRIIOHOHRRIHROHRORI:Ljava/util/function/Predicate;
+       4: ifnull        24
+       7: aload_0
+       8: getfield      #9                  // Field RCRIOOIRICCHRIIOHOHRRIHROHRORI:Ljava/util/function/Predicate;
+      11: aload_1
+      12: invokeinterface #13,  2           // InterfaceMethod java/util/function/Predicate.test:(Ljava/lang/Object;)Z
+      17: ifeq          24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+
+  public boolean RICIHRRCORHOOHRRHOCCCRHORROHRR();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: putfield      #7                  // Field CRCHIRHCRROCORRCOHHRIHRROICHIR:Ljava/lang/Object;
+       5: aload_0
+       6: aconst_null
+       7: putfield      #6                  // Field CHIIROCOCRRHICHOIRHIHOCCIHIRRI:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+      10: aload_0
+      11: getfield      #9                  // Field RCRIOOIRICCHRIIOHOHRRIHROHRORI:Ljava/util/function/Predicate;
+      14: ifnonnull     21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  public com.moonsworth.lunar.client.IROCROOIOIORORHHCCOOCCHRRRIOIC.COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI RHHRRRCCCOORIIRHCIROHOIIRIIROO();
+    Code:
+       0: aload_0
+       1: getfield      #6                  // Field CHIIROCOCRRHICHOIRHIHOCCIHIRRI:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+       4: areturn
+
+  public T HRCHORCRIROOCRICIRCCIOROIRHICC();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field OHHIHHIORHHOOHIRIICHOHOORIIHRC:Ljava/lang/Object;
+       4: areturn
+}

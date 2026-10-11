@@ -1,0 +1,7 @@
+public interface com.moonsworth.webosr.handler.Logger {
+  public abstract void onBrowserMessage(com.moonsworth.webosr.wrappers.Browser, com.moonsworth.webosr.handler.Logger$Level, java.lang.String, java.lang.String, int);
+
+  public abstract void onStandardOut(com.moonsworth.webosr.handler.Logger$Level, java.lang.String);
+
+  public abstract void onStandardErr(com.moonsworth.webosr.handler.Logger$Level, java.lang.String);
+}

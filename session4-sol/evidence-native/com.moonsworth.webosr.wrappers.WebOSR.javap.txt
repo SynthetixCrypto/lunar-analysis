@@ -1,0 +1,29 @@
+public final class com.moonsworth.webosr.wrappers.WebOSR {
+  public com.moonsworth.webosr.wrappers.WebOSR();
+    Code:
+       0: aload_0
+       1: invokespecial #10                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void loadLibraries();
+    Code:
+       0: ldc           #2                  // String UltralightCore
+       2: invokestatic  #11                 // Method java/lang/System.loadLibrary:(Ljava/lang/String;)V
+       5: ldc           #3                  // String WebCore
+       7: invokestatic  #11                 // Method java/lang/System.loadLibrary:(Ljava/lang/String;)V
+      10: ldc           #1                  // String Ultralight
+      12: invokestatic  #11                 // Method java/lang/System.loadLibrary:(Ljava/lang/String;)V
+      15: ldc           #4                  // String WebOSR-Binding
+      17: invokestatic  #11                 // Method java/lang/System.loadLibrary:(Ljava/lang/String;)V
+      20: return
+
+  public static native com.moonsworth.webosr.wrappers.WebEngine createEngine(com.moonsworth.webosr.handler.Logger, com.moonsworth.webosr.config.UltralightConfig, com.moonsworth.webosr.config.ThreadConfig);
+
+  public static java.nio.ByteBuffer allocateByteBuffer(int);
+    Code:
+       0: iload_0
+       1: invokestatic  #12                 // Method java/nio/ByteBuffer.allocateDirect:(I)Ljava/nio/ByteBuffer;
+       4: invokestatic  #14                 // Method java/nio/ByteOrder.nativeOrder:()Ljava/nio/ByteOrder;
+       7: invokevirtual #13                 // Method java/nio/ByteBuffer.order:(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+      10: areturn
+}

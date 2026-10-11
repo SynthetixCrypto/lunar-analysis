@@ -1,0 +1,304 @@
+public abstract class com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.OHRORRHCHCRICORRRCIRIOCCIRCRII.RORCICOHRIOIIIOIOHIIIICRCIHRII.COCCCORHOHRORRICOOHOCHOOCHHICR.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR implements com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.OIHRRCOOHRHIHICHRICIRIOCROHOCC.ORCOOOCHIICOIICCROCRCOOROORIHR,net.minecraft.server.packs.PackResources {
+  public java.util.Set<java.lang.String> namespaces;
+
+  public net.minecraft.server.packs.metadata.pack.PackMetadataSection packMetadata$v1_17_0;
+
+  public net.minecraft.server.packs.BuiltInMetadata metadata$v1_19_3;
+
+  public net.minecraft.server.packs.PackLocationInfo location$v1_20_5;
+
+  public net.minecraft.server.packs.resources.ResourceMetadata builtInMetadata$v26_1;
+
+  public com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.OHRORRHCHCRICORRRCIRIOCCIRCRII.RORCICOHRIOIIIOIOHIIIICRCIHRII.COCCCORHOHRORRICOOHOCHOOCHHICR.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR();
+    Code:
+       0: aload_0
+       1: invokespecial #74                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public abstract java.io.InputStream getRootResource$v1_16_1(java.lang.String);
+
+  public abstract net.minecraft.server.packs.resources.IoSupplier<java.io.InputStream> getRootResource$v1_19_3(java.lang.String...);
+
+  public abstract java.lang.String getName$v1_16_1();
+
+  public abstract java.io.InputStream getResource$v1_16_1(net.minecraft.server.packs.PackType, net.minecraft.resources.Identifier);
+
+  public abstract net.minecraft.server.packs.resources.IoSupplier<java.io.InputStream> getResource$v1_19_3(net.minecraft.server.packs.PackType, net.minecraft.resources.Identifier);
+
+  public abstract java.lang.String packId$v1_19_3();
+
+  private void lunar$addLunarNamespace$v1_20_5(net.minecraft.server.packs.PackLocationInfo, net.minecraft.server.packs.BuiltInMetadata, java.util.Set, java.util.List, java.util.Map, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: invokevirtual #67                 // Method lunar$addLunarNamespace:()V
+       4: return
+
+  private void lunar$addLunarNamespace$v26_1(net.minecraft.server.packs.PackLocationInfo, net.minecraft.server.packs.resources.ResourceMetadata, java.util.Set, java.util.List, java.util.Map, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: invokevirtual #67                 // Method lunar$addLunarNamespace:()V
+       4: return
+
+  private void lunar$addLunarNamespace$v1_19_3(net.minecraft.server.packs.BuiltInMetadata, java.util.Set, java.util.List, java.util.Map, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: invokevirtual #67                 // Method lunar$addLunarNamespace:()V
+       4: return
+
+  private void lunar$addLunarNamespace$v1_17(net.minecraft.server.packs.metadata.pack.PackMetadataSection, java.lang.String[], org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: invokevirtual #67                 // Method lunar$addLunarNamespace:()V
+       4: return
+
+  private void lunar$addLunarNamespace$v1_16(java.lang.String[], org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: invokevirtual #67                 // Method lunar$addLunarNamespace:()V
+       4: return
+
+  private void lunar$addLunarNamespace();
+    Code:
+       0: aload_0
+       1: new           #34                 // class java/util/HashSet
+       4: dup
+       5: aload_0
+       6: getfield      #50                 // Field namespaces:Ljava/util/Set;
+       9: invokespecial #78                 // Method java/util/HashSet."<init>":(Ljava/util/Collection;)V
+      12: putfield      #50                 // Field namespaces:Ljava/util/Set;
+      15: aload_0
+      16: getfield      #50                 // Field namespaces:Ljava/util/Set;
+      19: ldc           #11                 // String lunar
+      21: invokeinterface #92,  2           // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+      26: pop
+      27: return
+
+  private net.minecraft.server.packs.resources.IoSupplier<java.io.InputStream> lunar$fallBackToResourcesIfNotFound(net.minecraft.server.packs.resources.IoSupplier<java.io.InputStream>, net.minecraft.server.packs.PackType, net.minecraft.resources.Identifier);
+    Code:
+       0: aload_1
+       1: ifnull        6
+       4: aload_1
+       5: areturn
+       6: aload_2
+       7: invokevirtual #87                 // Method net/minecraft/server/packs/PackType.getDirectory:()Ljava/lang/String;
+      10: aload_3
+      11: invokevirtual #83                 // Method net/minecraft/resources/Identifier.getNamespace:()Ljava/lang/String;
+      14: aload_3
+      15: invokevirtual #84                 // Method net/minecraft/resources/Identifier.getPath:()Ljava/lang/String;
+      18: invokedynamic #95,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      23: astore        4
+      25: ldc           #14                 // class com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/OHRORRHCHCRICORRRCIRIOCCIRCRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/COCCCORHOHRORRICOOHOCHOOCHHICR/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR
+      27: aload         4
+      29: invokevirtual #72                 // Method java/lang/Class.getResource:(Ljava/lang/String;)Ljava/net/URL;
+      32: astore        5
+      34: aload         5
+      36: ifnonnull     43
+      39: aconst_null
+      40: goto          55
+      43: aload         5
+      45: dup
+      46: invokestatic  #79                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      49: pop
+      50: invokedynamic #96,  0             // InvokeDynamic #1:get:(Ljava/net/URL;)Lnet/minecraft/server/packs/resources/IoSupplier;
+      55: areturn
+
+  public java.io.InputStream bridge$getInputStream(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RRICHHOHORCIOHROIHICOIRORHHHIO.HORCRCHHIRHRRHROOIOCRCICCICOCH);
+    Code:
+       0: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        15
+       5: if_icmplt     59
+       8: aload_0
+       9: getstatic     #54                 // Field net/minecraft/server/packs/PackType.CLIENT_RESOURCES:Lnet/minecraft/server/packs/PackType;
+      12: aload_1
+      13: checkcast     #38                 // class net/minecraft/resources/Identifier
+      16: invokevirtual #64                 // Method getResource$v1_19_3:(Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/Identifier;)Lnet/minecraft/server/packs/resources/IoSupplier;
+      19: astore_2
+      20: aload_2
+      21: ifnonnull     49
+      24: new           #22                 // class java/io/IOException
+      27: dup
+      28: aload_1
+      29: invokeinterface #89,  1           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HORCRCHHIRHRRHROOIOCRCICCICOCH.bridge$getDomain:()Ljava/lang/String;
+      34: aload_1
+      35: invokeinterface #90,  1           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HORCRCHHIRHRRHROOIOCRCICCICOCH.bridge$getPath:()Ljava/lang/String;
+      40: invokedynamic #97,  0             // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      45: invokespecial #70                 // Method java/io/IOException."<init>":(Ljava/lang/String;)V
+      48: athrow
+      49: aload_2
+      50: invokeinterface #93,  1           // InterfaceMethod net/minecraft/server/packs/resources/IoSupplier.get:()Ljava/lang/Object;
+      55: checkcast     #23                 // class java/io/InputStream
+      58: areturn
+      59: aload_0
+      60: getstatic     #54                 // Field net/minecraft/server/packs/PackType.CLIENT_RESOURCES:Lnet/minecraft/server/packs/PackType;
+      63: aload_1
+      64: checkcast     #38                 // class net/minecraft/resources/Identifier
+      67: invokevirtual #63                 // Method getResource$v1_16_1:(Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/Identifier;)Ljava/io/InputStream;
+      70: areturn
+
+  public java.lang.String bridge$getPackName();
+    Code:
+       0: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        22
+       5: if_icmplt     16
+       8: aload_0
+       9: getfield      #48                 // Field location$v1_20_5:Lnet/minecraft/server/packs/PackLocationInfo;
+      12: getfield      #53                 // Field net/minecraft/server/packs/PackLocationInfo.id:Ljava/lang/String;
+      15: areturn
+      16: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      19: bipush        15
+      21: if_icmplt     29
+      24: aload_0
+      25: invokevirtual #68                 // Method packId$v1_19_3:()Ljava/lang/String;
+      28: areturn
+      29: aload_0
+      30: invokevirtual #62                 // Method getName$v1_16_1:()Ljava/lang/String;
+      33: areturn
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.CCHRHCCCHRIHCICICIRCORHRORIOCI.COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH bridge$getDescription();
+    Code:
+       0: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        36
+       5: if_icmplt     31
+       8: aload_0
+       9: getfield      #47                 // Field builtInMetadata$v26_1:Lnet/minecraft/server/packs/resources/ResourceMetadata;
+      12: getstatic     #55                 // Field net/minecraft/server/packs/metadata/pack/PackMetadataSection.FALLBACK_TYPE$v1_21_9:Lnet/minecraft/server/packs/metadata/MetadataSectionType_v1_21_4;
+      15: invokeinterface #94,  2           // InterfaceMethod net/minecraft/server/packs/resources/ResourceMetadata.getSection$v1_21_4:(Lnet/minecraft/server/packs/metadata/MetadataSectionType_v1_21_4;)Ljava/util/Optional;
+      20: aconst_null
+      21: invokevirtual #82                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      24: checkcast     #44                 // class net/minecraft/server/packs/metadata/pack/PackMetadataSection
+      27: astore_1
+      28: goto          136
+      31: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      34: bipush        33
+      36: if_icmplt     56
+      39: aload_0
+      40: getfield      #49                 // Field metadata$v1_19_3:Lnet/minecraft/server/packs/BuiltInMetadata;
+      43: getstatic     #55                 // Field net/minecraft/server/packs/metadata/pack/PackMetadataSection.FALLBACK_TYPE$v1_21_9:Lnet/minecraft/server/packs/metadata/MetadataSectionType_v1_21_4;
+      46: invokevirtual #86                 // Method net/minecraft/server/packs/BuiltInMetadata.get$v1_21_4:(Lnet/minecraft/server/packs/metadata/MetadataSectionType_v1_21_4;)Ljava/lang/Object;
+      49: checkcast     #44                 // class net/minecraft/server/packs/metadata/pack/PackMetadataSection
+      52: astore_1
+      53: goto          136
+      56: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      59: bipush        28
+      61: if_icmplt     81
+      64: aload_0
+      65: getfield      #49                 // Field metadata$v1_19_3:Lnet/minecraft/server/packs/BuiltInMetadata;
+      68: getstatic     #58                 // Field net/minecraft/server/packs/metadata/pack/PackMetadataSection.TYPE$v1_21_4:Lnet/minecraft/server/packs/metadata/MetadataSectionType_v1_21_4;
+      71: invokevirtual #86                 // Method net/minecraft/server/packs/BuiltInMetadata.get$v1_21_4:(Lnet/minecraft/server/packs/metadata/MetadataSectionType_v1_21_4;)Ljava/lang/Object;
+      74: checkcast     #44                 // class net/minecraft/server/packs/metadata/pack/PackMetadataSection
+      77: astore_1
+      78: goto          136
+      81: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      84: bipush        15
+      86: if_icmplt     106
+      89: aload_0
+      90: getfield      #49                 // Field metadata$v1_19_3:Lnet/minecraft/server/packs/BuiltInMetadata;
+      93: getstatic     #57                 // Field net/minecraft/server/packs/metadata/pack/PackMetadataSection.TYPE$v1_19_3:Lnet/minecraft/server/packs/metadata/MetadataSectionType_v1_19_3;
+      96: invokevirtual #85                 // Method net/minecraft/server/packs/BuiltInMetadata.get$v1_19_3:(Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer;)Ljava/lang/Object;
+      99: checkcast     #44                 // class net/minecraft/server/packs/metadata/pack/PackMetadataSection
+     102: astore_1
+     103: goto          136
+     106: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+     109: bipush        8
+     111: if_icmplt     122
+     114: aload_0
+     115: getfield      #51                 // Field packMetadata$v1_17_0:Lnet/minecraft/server/packs/metadata/pack/PackMetadataSection;
+     118: astore_1
+     119: goto          136
+     122: aload_0
+     123: getstatic     #56                 // Field net/minecraft/server/packs/metadata/pack/PackMetadataSection.SERIALIZER$v1_16_1:Lnet/minecraft/server/packs/metadata/pack/PackMetadataSectionSerializer;
+     126: checkcast     #43                 // class net/minecraft/server/packs/metadata/MetadataSectionSerializer
+     129: invokevirtual #61                 // Method getMetadataSection$v1_16_1:(Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer;)Ljava/lang/Object;
+     132: checkcast     #44                 // class net/minecraft/server/packs/metadata/pack/PackMetadataSection
+     135: astore_1
+     136: aload_1
+     137: ifnonnull     144
+     140: aconst_null
+     141: goto          151
+     144: aload_1
+     145: getfield      #59                 // Field net/minecraft/server/packs/metadata/pack/PackMetadataSection.description:Lnet/minecraft/network/chat/Component;
+     148: checkcast     #15                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/CCHRHCCCHRIHCICICIRCORHRORIOCI/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+     151: areturn
+
+  public java.util.Optional<java.awt.image.BufferedImage> bridge$getPackImage();
+    Code:
+       0: aconst_null
+       1: astore_1
+       2: getstatic     #52                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       5: bipush        15
+       7: if_icmplt     41
+      10: aload_0
+      11: iconst_1
+      12: anewarray     #27                 // class java/lang/String
+      15: dup
+      16: iconst_0
+      17: ldc           #12                 // String pack.png
+      19: aastore
+      20: invokevirtual #66                 // Method getRootResource$v1_19_3:([Ljava/lang/String;)Lnet/minecraft/server/packs/resources/IoSupplier;
+      23: astore_2
+      24: aload_2
+      25: ifnull        38
+      28: aload_2
+      29: invokeinterface #93,  1           // InterfaceMethod net/minecraft/server/packs/resources/IoSupplier.get:()Ljava/lang/Object;
+      34: checkcast     #23                 // class java/io/InputStream
+      37: astore_1
+      38: goto          48
+      41: aload_0
+      42: ldc           #12                 // String pack.png
+      44: invokevirtual #65                 // Method getRootResource$v1_16_1:(Ljava/lang/String;)Ljava/io/InputStream;
+      47: astore_1
+      48: aload_1
+      49: ifnonnull     56
+      52: invokestatic  #80                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+      55: areturn
+      56: aconst_null
+      57: astore_2
+      58: aload_1
+      59: invokestatic  #60                 // Method com/mojang/blaze3d/platform/NativeImage.read:(Ljava/io/InputStream;)Lcom/mojang/blaze3d/platform/NativeImage;
+      62: checkcast     #17                 // class com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHRORRHCHCRICORRRCIRIOCCIRCRII/RORCICOHRIOIIIOIOHIIIICRCIHRII
+      65: astore_2
+      66: invokestatic  #69                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.RRCCRIRIHRCHCRCCIRIHCRICHOHOOR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRROHOHHHHHHOOICRCRIOIOOROICOR;
+      69: aload_2
+      70: invokeinterface #91,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/IRROHOHHHHHHOOICRCRIOIOOROICOR.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHRORRHCHCRICORRRCIRIOCCIRCRII/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Ljava/awt/image/BufferedImage;
+      75: astore_3
+      76: aload_2
+      77: invokeinterface #88,  1           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHRORRHCHCRICORRRCIRIOCCIRCRII/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$close:()V
+      82: aconst_null
+      83: astore_2
+      84: aload_3
+      85: invokestatic  #81                 // Method java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;
+      88: astore        4
+      90: aload_1
+      91: invokevirtual #71                 // Method java/io/InputStream.close:()V
+      94: aload         4
+      96: areturn
+      97: astore_3
+      98: aload_3
+      99: invokevirtual #73                 // Method java/lang/Exception.printStackTrace:()V
+     102: aload_2
+     103: ifnull        112
+     106: aload_2
+     107: invokeinterface #88,  1           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHRORRHCHCRICORRRCIRIOCCIRCRII/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$close:()V
+     112: aload_1
+     113: invokevirtual #71                 // Method java/io/InputStream.close:()V
+     116: goto          128
+     119: astore        5
+     121: aload_1
+     122: invokevirtual #71                 // Method java/io/InputStream.close:()V
+     125: aload         5
+     127: athrow
+     128: invokestatic  #80                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+     131: areturn
+     132: astore_1
+     133: aload_1
+     134: athrow
+    Exception table:
+       from    to  target type
+          58    90    97   Class java/lang/Exception
+          58    90   119   any
+          97   112   119   any
+         119   121   119   any
+           0    55   132   Class java/lang/Throwable
+          56    94   132   Class java/lang/Throwable
+          97   131   132   Class java/lang/Throwable
+}

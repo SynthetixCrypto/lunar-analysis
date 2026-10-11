@@ -1,0 +1,167 @@
+{
+  "method": "Supplemental read-only static text/byte inspection; no bundle code executed; not REA-generated Evidence IDs",
+  "artifact": {
+    "path": "C:/Users/Admin/.lunarclient/ui/2545e7fc28d10de3b6f9e5b8b66a4fc8931aece9/static/index.js",
+    "sizeBytes": 8681743,
+    "sha256": "e4a51091585d654dfc80f49bf9557c89712eafffb93abd5fe3894593e6b5688d"
+  },
+  "offsetConvention": "Zero-based UTF-16 character offsets into decoded UTF-8 index.js; byteOffset computed separately. Byte offsets refer to original UTF-8 bytes.",
+  "findings": [
+    {
+      "id": "GUI-01",
+      "title": "React and DOM dependencies",
+      "evidenceType": "confirmed-static",
+      "charOffset": 2304,
+      "byteOffset": 2304,
+      "observation": "react.production.min.js license; version 18.3.1 at 9186; react-dom production license at 133938"
+    },
+    {
+      "id": "GUI-02",
+      "title": "Namespace request/response and event provider",
+      "evidenceType": "confirmed-static",
+      "charOffset": 7766998,
+      "byteOffset": 7793818,
+      "observation": "class c0 invoke delegates to window.lunarInternalInvoke; data:<name>[-<argument>] events; class a4 extends c0"
+    },
+    {
+      "id": "GUI-03",
+      "title": "Payload subscriber lifecycle",
+      "evidenceType": "confirmed-static",
+      "charOffset": 7767350,
+      "byteOffset": 7794170,
+      "observation": "S2 useLayoutEffect subscribes and requests initial JSON payload; caches payload; unregistration delayed 250ms"
+    },
+    {
+      "id": "GUI-04",
+      "title": "Application Redux store",
+      "evidenceType": "confirmed-static",
+      "charOffset": 7797833,
+      "byteOffset": 7824653,
+      "observation": "Z2=lo0({reducer:Bs0,devTools:!1,middleware:...})"
+    },
+    {
+      "id": "GUI-05",
+      "title": "HUD mod metadata/property namespaces",
+      "evidenceType": "confirmed-static",
+      "charOffset": 7808840,
+      "byteOffset": 7835660,
+      "observation": "ll0/al0/cl0 expose hudModMetadata/hudModProperty/mods; provider dispatches hi0"
+    },
+    {
+      "id": "GUI-06",
+      "title": "Model controls",
+      "evidenceType": "confirmed-static",
+      "charOffset": 7809140,
+      "byteOffset": 7835960,
+      "observation": "dl0 delegates addModel/updateModel/removeModel and cosmetic highlighting/emote commands"
+    },
+    {
+      "id": "GUI-07",
+      "title": "Settings provider",
+      "evidenceType": "confirmed-static",
+      "charOffset": 7820400,
+      "byteOffset": 7847220,
+      "observation": "Rl0 checks features payload and dispatches Fo0; update/reset/invokeAction/keybind editing"
+    },
+    {
+      "id": "GUI-08",
+      "title": "Host facade",
+      "evidenceType": "confirmed-static",
+      "charOffset": 7826655,
+      "byteOffset": 7853475,
+      "observation": "$l0 composes providers and delegates window.lunar screen/route/overlay/clipboard/keybind APIs"
+    },
+    {
+      "id": "GUI-09",
+      "title": "Routes, options and input bridge",
+      "evidenceType": "confirmed-static",
+      "charOffset": 8648325,
+      "byteOffset": 8675231,
+      "observation": "Qx0 subscribes route and option:update, focus/blur keyboard gating, route table"
+    },
+    {
+      "id": "GUI-10",
+      "title": "Host readiness and React mount",
+      "evidenceType": "confirmed-static",
+      "charOffset": 8654260,
+      "byteOffset": 8681168,
+      "observation": "T91 waits for window.lunar && window.lunarReady; render Redux provider/router/error boundary, retry 500ms"
+    },
+    {
+      "id": "GUI-11",
+      "title": "Server imagery CDN",
+      "evidenceType": "confirmed-static",
+      "charOffset": 6987408,
+      "byteOffset": 7014224,
+      "observation": "DX2/AX2/OX2 construct servermappings.lunarclientcdn.com logo/background URLs"
+    },
+    {
+      "id": "GUI-12",
+      "title": "Image proxy base",
+      "evidenceType": "confirmed-static",
+      "charOffset": 7109384,
+      "byteOffset": 7136204,
+      "observation": "Ce1 contains img-proxy.lunarclient.com base"
+    },
+    {
+      "id": "GUI-13",
+      "title": "Stats iframe",
+      "evidenceType": "confirmed-static",
+      "charOffset": 8563324,
+      "byteOffset": 8590226,
+      "observation": "iframe src uses skycrypt-embed.lunarclient.com/stats; sandbox allow-scripts allow-forms allow-same-origin"
+    },
+    {
+      "id": "GUI-14",
+      "title": "Telemetry initialization",
+      "evidenceType": "confirmed-static",
+      "charOffset": 8653298,
+      "byteOffset": 8680206,
+      "observation": "Sentry initialization contains ingest.sentry.io DSN; traces/replays sample rates 0; production branch condition; exact DSN omitted"
+    }
+  ],
+  "hosts": [
+    {
+      "host": "docs.sentry.io",
+      "staticOccurrences": 1,
+      "firstCharOffset": 114827
+    },
+    {
+      "host": "servermappings.lunarclientcdn.com",
+      "staticOccurrences": 4,
+      "firstCharOffset": 6987408
+    },
+    {
+      "host": "img-proxy.lunarclient.com",
+      "staticOccurrences": 1,
+      "firstCharOffset": 7109384
+    },
+    {
+      "host": "support.lunarclient.com",
+      "staticOccurrences": 1,
+      "firstCharOffset": 7945106
+    },
+    {
+      "host": "store.lunarclient.com",
+      "staticOccurrences": 1,
+      "firstCharOffset": 8088429
+    },
+    {
+      "host": "skycrypt-embed.lunarclient.com",
+      "staticOccurrences": 1,
+      "firstCharOffset": 8563324
+    },
+    {
+      "host": "o923049.ingest.sentry.io",
+      "staticOccurrences": 1,
+      "firstCharOffset": 8653298
+    }
+  ],
+  "limits": [
+    "No target code execution or runtime observation",
+    "Host implementation and exact native/Java binding not established by this JavaScript",
+    "Minified names are bundle-local; index.js.map not present at referenced sibling location",
+    "No credentials, tokens, databases, logs, or account files inspected",
+    "No protection bypass, deobfuscation, or anti-cheat interaction"
+  ]
+}
