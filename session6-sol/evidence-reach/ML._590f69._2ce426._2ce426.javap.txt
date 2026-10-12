@@ -1,0 +1,118 @@
+public interface ML._590f69._2ce426._2ce426 extends ML._590f69._bb4487._13ea87._d4ca6c._590f69._1253fc,ML._590f69._2ce426._1e73d7 {
+  public abstract java.util.Optional<ML._590f69._2ce426._2ce426> bridge$getLastAttacker();
+
+  public abstract int bridge$getLastAttackerTime();
+
+  public abstract int bridge$getHurtTime();
+
+  public abstract int bridge$getCurrentHurtTime();
+
+  public abstract int bridge$getMaxHurtTime();
+
+  public abstract boolean bridge$wasJustHurt();
+
+  public abstract boolean bridge$isPotionActive(ML._590f69._02d7ad._cfe983);
+
+  public abstract ML._590f69._02d7ad._21aca6 bridge$getActivePotionEffect(ML._590f69._02d7ad._cfe983);
+
+  public abstract java.util.Collection<ML._590f69._02d7ad._21aca6> bridge$getActivePotionEffects();
+
+  public abstract int bridge$getArmSwingAnimationEnd();
+
+  public abstract float bridge$getPreviousRotationYawOffset();
+
+  public abstract void bridge$setBodyYRot(float);
+
+  public abstract float bridge$getRotationYawHead();
+
+  public abstract void bridge$setRotationYawHead(float);
+
+  public abstract float bridge$getPrevRotationYawHead();
+
+  public abstract void bridge$setPrevRotationYawHead(float);
+
+  public abstract float bridge$getPrevRenderYawOffset();
+
+  public abstract ML._590f69._c8175c._cb9292 bridge$getEquipmentInSlot(ML._590f69._5b3f84._c8175c);
+
+  public abstract int bridge$getTotalArmorValue();
+
+  public default ML._590f69._bb4487._13ea87._429bf0._21aca6._21aca6 bridge$getHeadItem();
+    Code:
+       0: aload_0
+       1: getstatic     #6                  // Field ML/_590f69/_5b3f84/_c8175c.HEAD:LML/_590f69/_5b3f84/_c8175c;
+       4: invokeinterface #9,  2            // InterfaceMethod bridge$getEquipmentInSlot:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_c8175c/_cb9292;
+       9: areturn
+
+  public abstract float bridge$getHealth();
+
+  public default float bridge$getUnboundedHealth();
+    Code:
+       0: aload_0
+       1: invokeinterface #10,  1           // InterfaceMethod bridge$getHealth:()F
+       6: freturn
+
+  public default void bridge$setUnboundedHealth(float);
+    Code:
+       0: return
+
+  public abstract float bridge$getMoveForward();
+
+  public abstract ML._590f69._c8175c._cb9292 bridge$getHeldItem();
+
+  public abstract java.lang.String bridge$getDisplayName();
+
+  public abstract net.kyori.adventure.text.Component bridge$getDisplayNameComponent();
+
+  public abstract net.kyori.adventure.text.Component bridge$getDisplayNameComponentWithHover();
+
+  public default boolean bridge$isSwimming();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public default boolean bridge$isElytraFlying();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public abstract long bridge$getLastAttackedMillis();
+
+  public abstract long bridge$getLastHurtMillis();
+
+  public abstract long bridge$getLastDamagedMillis();
+
+  public abstract float bridge$getMaxHealth();
+
+  public abstract void bridge$calculateEntityAnimation();
+
+  public default float bridge$getScale();
+    Code:
+       0: fconst_1
+       1: freturn
+
+  public default boolean bridge$hasRedOverlay();
+    Code:
+       0: aload_0
+       1: invokeinterface #11,  1           // InterfaceMethod bridge$getHurtTime:()I
+       6: ifgt          20
+       9: aload_0
+      10: invokeinterface #7,  1            // InterfaceMethod bridge$getDeathTime:()F
+      15: fconst_0
+      16: fcmpl
+      17: ifle          24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+
+  public abstract boolean bridge$canShieldBeAttacked(double, double, double);
+
+  public default net.kyori.adventure.text.Component bridge$getCustomName();
+    Code:
+       0: aload_0
+       1: invokeinterface #8,  1            // InterfaceMethod bridge$getDisplayNameComponent:()Lnet/kyori/adventure/text/Component;
+       6: areturn
+
+  public abstract boolean bridge$isHostile();
+}

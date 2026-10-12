@@ -1,0 +1,170 @@
+  public static void RCROIRRHHCOHORCHRIOCOIRCHRHICH(java.lang.String, java.lang.String);
+    Code:
+       0: invokestatic  #55                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.HORHOIRIRRHIRROHCHRRCRIRRHCRCI:()Ljava/util/Optional;
+       3: astore_2
+       4: aload_2
+       5: invokevirtual #67                 // Method java/util/Optional.isEmpty:()Z
+       8: ifeq          23
+      11: ldc           #8                  // String Tebex
+      13: ldc           #1                  // String Ignoring open request as we have no launcher IPC connection
+      15: iconst_0
+      16: anewarray     #30                 // class java/lang/Object
+      19: invokestatic  #52                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      22: return
+      23: ldc           #8                  // String Tebex
+      25: aload_0
+      26: aload_1
+      27: invokedynamic #73,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      32: iconst_0
+      33: anewarray     #30                 // class java/lang/Object
+      36: invokestatic  #53                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      39: aload_2
+      40: invokevirtual #66                 // Method java/util/Optional.get:()Ljava/lang/Object;
+      43: checkcast     #25                 // class com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH
+      46: astore_3
+      47: aload_3
+      48: invokevirtual #50                 // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH.COOCCHROHIIHHRHRICCHOCORIHHOHH:()Lcom/lunarclient/gameipc/tebex/v1/TebexService$Interface;
+      51: aconst_null
+      52: invokestatic  #43                 // Method com/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest.newBuilder:()Lcom/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest$Builder;
+      55: aload_0
+      56: invokevirtual #45                 // Method com/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest$Builder.setBasketIdent:(Ljava/lang/String;)Lcom/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest$Builder;
+      59: aload_1
+      60: invokevirtual #46                 // Method com/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest$Builder.setLocale:(Ljava/lang/String;)Lcom/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest$Builder;
+      63: invokevirtual #44                 // Method com/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest$Builder.build:()Lcom/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest;
+      66: invokedynamic #74,  0             // InvokeDynamic #1:run:()Lcom/google/protobuf/RpcCallback;
+      71: invokeinterface #69,  4           // InterfaceMethod com/lunarclient/gameipc/tebex/v1/TebexService$Interface.openTebexJsCheckout:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest;Lcom/google/protobuf/RpcCallback;)V
+      76: return
+
+
+  public static void OICIRIIOOHOCHIRHOCCRCCHOOIIICC(java.lang.String);
+    Code:
+       0: invokestatic  #55                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.HORHOIRIRRHIRROHCHRRCRIRRHCRCI:()Ljava/util/Optional;
+       3: astore_1
+       4: aload_1
+       5: invokevirtual #67                 // Method java/util/Optional.isEmpty:()Z
+       8: ifeq          23
+      11: ldc           #5                  // String PayNow
+      13: ldc           #1                  // String Ignoring open request as we have no launcher IPC connection
+      15: iconst_0
+      16: anewarray     #30                 // class java/lang/Object
+      19: invokestatic  #52                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RORCICOHRIOIIIOIOHIIIICRCIHRII:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      22: return
+      23: ldc           #5                  // String PayNow
+      25: aload_0
+      26: invokedynamic #75,  0             // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      31: iconst_0
+      32: anewarray     #30                 // class java/lang/Object
+      35: invokestatic  #53                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      38: aload_1
+      39: invokevirtual #66                 // Method java/util/Optional.get:()Ljava/lang/Object;
+      42: checkcast     #25                 // class com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH
+      45: astore_2
+      46: aload_2
+      47: invokevirtual #51                 // Method com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH.CRRCOCHIRCOCRIIOICCRCRIROHCRII:()Lcom/lunarclient/gameipc/paynow/v1/PayNowService$Interface;
+      50: aconst_null
+      51: invokestatic  #38                 // Method com/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutRequest.newBuilder:()Lcom/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutRequest$Builder;
+      54: aload_0
+      55: invokevirtual #40                 // Method com/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutRequest$Builder.setCheckoutToken:(Ljava/lang/String;)Lcom/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutRequest$Builder;
+      58: invokevirtual #39                 // Method com/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutRequest$Builder.build:()Lcom/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutRequest;
+      61: invokedynamic #76,  0             // InvokeDynamic #3:run:()Lcom/google/protobuf/RpcCallback;
+      66: invokeinterface #68,  4           // InterfaceMethod com/lunarclient/gameipc/paynow/v1/PayNowService$Interface.openPayNowJsCheckout:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutRequest;Lcom/google/protobuf/RpcCallback;)V
+      71: return
+
+
+  private com.moonsworth.lunar.client.util.OHRIHCICRRIRCOCHCRIOIHHIIIHHRR();
+    Code:
+       0: aload_0
+       1: invokespecial #61                 // Method java/lang/Object."<init>":()V
+       4: new           #32                 // class java/lang/UnsupportedOperationException
+       7: dup
+       8: ldc           #9                  // String This is a utility class and cannot be instantiated
+      10: invokespecial #63                 // Method java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+      13: athrow
+
+
+  private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.gameipc.paynow.v1.OpenPayNowJsCheckoutResponse);
+    Code:
+       0: ldc           #5                  // String PayNow
+       2: aload_0
+       3: invokevirtual #42                 // Method com/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutResponse.getStatus:()Lcom/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutResponse$Status;
+       6: invokestatic  #62                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       9: invokedynamic #77,  0             // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      14: iconst_0
+      15: anewarray     #30                 // class java/lang/Object
+      18: invokestatic  #53                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      21: aload_0
+      22: invokevirtual #41                 // Method com/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutResponse.getOpenMinecraftScreen:()Z
+      25: ifeq          55
+      28: ldc           #5                  // String PayNow
+      30: ldc           #2                  // String Opening Minecraft screen to prevent movement
+      32: iconst_0
+      33: anewarray     #30                 // class java/lang/Object
+      36: invokestatic  #53                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      39: invokestatic  #56                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      42: invokedynamic #78,  0             // InvokeDynamic #5:run:()Ljava/lang/Runnable;
+      47: invokeinterface #72,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$submit:(Ljava/lang/Runnable;)V
+      52: goto          66
+      55: ldc           #5                  // String PayNow
+      57: ldc           #7                  // String Skipping opening Minecraft screen
+      59: iconst_0
+      60: anewarray     #30                 // class java/lang/Object
+      63: invokestatic  #53                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      66: return
+
+
+  private static void RIOOOIICIORICCIOOCOIIHIIIRHIIR();
+    Code:
+       0: invokestatic  #49                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CHRCCCIHOCRIRIIIIICRHHCIOOICRI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       3: new           #27                 // class com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COOCHIRORIICRCIIRIROHIIRIRICCH
+       6: dup
+       7: invokespecial #54                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":()V
+      10: invokeinterface #70,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRROHOHHHHHHOOICRCRIOIOOROICOR;
+      15: astore_0
+      16: invokestatic  #56                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      19: aload_0
+      20: invokeinterface #71,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$displayScreen:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI/CCHHRIIROCIIHRHIOOHHHHCCORRRIR;)V
+      25: return
+
+
+  private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.gameipc.tebex.v1.OpenTebexJsCheckoutResponse);
+    Code:
+       0: ldc           #8                  // String Tebex
+       2: aload_0
+       3: invokevirtual #48                 // Method com/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutResponse.getStatus:()Lcom/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutResponse$Status;
+       6: invokestatic  #62                 // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+       9: invokedynamic #77,  0             // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      14: iconst_0
+      15: anewarray     #30                 // class java/lang/Object
+      18: invokestatic  #53                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      21: aload_0
+      22: invokevirtual #47                 // Method com/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutResponse.getOpenMinecraftScreen:()Z
+      25: ifeq          55
+      28: ldc           #8                  // String Tebex
+      30: ldc           #2                  // String Opening Minecraft screen to prevent movement
+      32: iconst_0
+      33: anewarray     #30                 // class java/lang/Object
+      36: invokestatic  #53                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      39: invokestatic  #56                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      42: invokedynamic #79,  0             // InvokeDynamic #6:run:()Ljava/lang/Runnable;
+      47: invokeinterface #72,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$submit:(Ljava/lang/Runnable;)V
+      52: goto          66
+      55: ldc           #8                  // String Tebex
+      57: ldc           #7                  // String Skipping opening Minecraft screen
+      59: iconst_0
+      60: anewarray     #30                 // class java/lang/Object
+      63: invokestatic  #53                 // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      66: return
+
+
+  private static void CHRHHRCRCCRROHIIOCOORRRHHHIROC();
+    Code:
+       0: invokestatic  #49                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CHRCCCIHOCRIRIIIIICRHHCIOOICRI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       3: new           #27                 // class com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COOCHIRORIICRCIIRIROHIIRIRICCH
+       6: dup
+       7: invokespecial #54                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":()V
+      10: invokeinterface #70,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHRORRHCHCRICORRRCIRIOCCIRCRII;)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRROHOHHHHHHOOICRCRIOIOOROICOR;
+      15: astore_0
+      16: invokestatic  #56                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      19: aload_0
+      20: invokeinterface #71,  2           // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$displayScreen:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI/CCHHRIIROCIIHRHIOOHHHHCCORRRIR;)V
+      25: return

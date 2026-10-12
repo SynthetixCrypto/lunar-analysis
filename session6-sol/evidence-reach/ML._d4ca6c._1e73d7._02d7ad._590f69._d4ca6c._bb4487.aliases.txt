@@ -1,0 +1,2313 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/modern-0.1.0-SNAPSHOT-all-nomappings.jar!/ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.class
+  Last modified Dec 31, 1969; size 24355 bytes
+  SHA-256 checksum 7f4762e488acc31944350befb3a47f82ab24ff272bf2550b170b2df03ed0c5f0
+public abstract class ML._d4ca6c._1e73d7._02d7ad._590f69._d4ca6c._bb4487 extends net.minecraft.world.entity.LivingEntity implements ML._590f69._2ce426._1253fc._590f69
+  minor version: 0
+  major version: 61
+  flags: (0x0421) ACC_PUBLIC, ACC_SUPER, ACC_ABSTRACT
+  this_class: #12                         // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487
+  super_class: #72                        // net/minecraft/world/entity/LivingEntity
+  interfaces: 1, fields: 5, methods: 60, attributes: 3
+Constant pool:
+    #1 = Integer            26
+    #2 = Integer            28
+    #3 = Integer            34
+    #4 = Float              3.0f
+    #5 = Float              10.0f
+    #6 = Float              20.0f
+    #7 = Float              90.0f
+    #8 = Float              180.0f
+    #9 = Float              270.0f
+   #10 = String             #508          // Mainhand/Offhand is invalid slot for method getArmor!
+   #11 = String             #549          // bridge$getClothCloakState() should only be called from the render state!
+   #12 = Class              #599          // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487
+   #13 = Class              #600          // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1
+   #14 = Class              #601          // ML/_d4ca6c/_d4ca6c/_bb4487/_bb4487/_cfe983/_cfe983
+   #15 = Class              #602          // ML/_d4ca6c/_d4ca6c/_13ea87/_590f69
+   #16 = Class              #603          // ML/_d4ca6c/_d4ca6c/_a140a8/_1253fc
+   #17 = Class              #604          // ML/_590f69/_ba7d98/_cfe983/_cfe983
+   #18 = Class              #605          // ML/_590f69/_2f4182/_bb4487/_1e73d7
+   #19 = Class              #606          // ML/_590f69/_bb4487/_bb4487
+   #20 = Class              #607          // ML/_590f69/_bb4487/_1e73d7/_bb4487
+   #21 = Class              #608          // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc
+   #22 = Class              #609          // ML/_590f69/_c8175c/_cb9292
+   #23 = Class              #610          // ML/_590f69/_c8175c/_d4ca6c
+   #24 = Class              #611          // ML/_590f69/_2ce426/_1253fc/_cfe983
+   #25 = Class              #612          // ML/_590f69/_2ce426/_1253fc/_1e73d7
+   #26 = Class              #613          // ML/_590f69/_2ce426/_1253fc/_590f69
+   #27 = Class              #614          // ML/_590f69/_2ce426/_1253fc/_21aca6
+   #28 = Class              #615          // ML/_590f69/_5b3f84/_dcf582
+   #29 = Class              #616          // ML/_590f69/_5b3f84/_76e63d
+   #30 = Class              #617          // ML/_590f69/_5b3f84/_c8175c
+   #31 = Class              #618          // ML/_590f69/_21aca6
+   #32 = Class              #619          // L/_cfe983
+   #33 = Class              #620          // L/_02d7ad/_1253fc/_429bf0
+   #34 = Class              #621          // L/_02d7ad/_1253fc/_2ce426
+   #35 = Class              #622          // L/_02d7ad/_1253fc/_1eb51c
+   #36 = Class              #623          // L/_ec7e36/_429bf0
+   #37 = Class              #624          // L/_88f3cf/_bb4487/_d4ca6c/_590f69
+   #38 = Class              #625          // L/util/_e93d3c
+   #39 = Class              #626          // L/util/_1eb51c
+   #40 = Class              #627          // L/util/_1eb51c$_cfe983
+   #41 = Class              #682          // java/lang/Boolean
+   #42 = Class              #683          // java/lang/IncompatibleClassChangeError
+   #43 = Class              #684          // java/lang/Math
+   #44 = Class              #685          // java/lang/Object
+   #45 = Class              #686          // java/lang/UnsupportedOperationException
+   #46 = Class              #687          // java/util/EnumMap
+   #47 = Class              #688          // java/util/List
+   #48 = Class              #689          // java/util/Optional
+   #49 = Class              #690          // java/util/UUID
+   #50 = Class              #696          // mchorse/emoticons/capabilities/cosmetic/EmoteController
+   #51 = Class              #699          // net/minecraft/client/Minecraft
+   #52 = Class              #700          // net/minecraft/client/gui/Gui
+   #53 = Class              #701          // net/minecraft/client/gui/Hud
+   #54 = Class              #702          // net/minecraft/client/gui/components/ChatComponent
+   #55 = Class              #703          // net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_16_1
+   #56 = Class              #704          // net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_20_0
+   #57 = Class              #705          // net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_0
+   #58 = Class              #706          // net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2
+   #59 = Class              #707          // net/minecraft/client/multiplayer/ClientPacketListener
+   #60 = Class              #708          // net/minecraft/client/multiplayer/MultiPlayerGameMode
+   #61 = Class              #709          // net/minecraft/client/multiplayer/PlayerInfo
+   #62 = Class              #710          // net/minecraft/core/ClientAsset_v1_21_9
+   #63 = Class              #711          // net/minecraft/core/ClientAsset_v1_21_9$Texture
+   #64 = Class              #712          // net/minecraft/core/Direction
+   #65 = Class              #713          // net/minecraft/core/component/DataComponentHolder
+   #66 = Class              #714          // net/minecraft/core/component/DataComponents
+   #67 = Class              #715          // net/minecraft/network/chat/Component
+   #68 = Class              #716          // net/minecraft/world/entity/Avatar
+   #69 = Class              #717          // net/minecraft/world/entity/EntityEquipment
+   #70 = Class              #718          // net/minecraft/world/entity/EquipmentSlot
+   #71 = Class              #719          // net/minecraft/world/entity/HumanoidArm
+   #72 = Class              #720          // net/minecraft/world/entity/LivingEntity
+   #73 = Class              #721          // net/minecraft/world/entity/Pose
+   #74 = Class              #722          // net/minecraft/world/entity/ai/attributes/Attributes
+   #75 = Class              #723          // net/minecraft/world/entity/player/Abilities
+   #76 = Class              #724          // net/minecraft/world/entity/player/Inventory
+   #77 = Class              #725          // net/minecraft/world/entity/player/Player
+   #78 = Class              #726          // net/minecraft/world/entity/player/PlayerSkin
+   #79 = Class              #727          // net/minecraft/world/item/CrossbowItem
+   #80 = Class              #728          // net/minecraft/world/item/ItemStack
+   #81 = Class              #729          // net/minecraft/world/item/Items
+   #82 = Class              #730          // net/minecraft/world/item/component/AttackRange
+   #83 = Class              #733          // org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable
+   #84 = Double             3.0d
+   #86 = Double             6.0d
+   #88 = Fieldref           #12.#271      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.abilities:Lnet/minecraft/world/entity/player/Abilities;
+   #89 = Fieldref           #12.#290      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.deathTime:I
+   #90 = Fieldref           #12.#299      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.gameProfile:Lcom/mojang/authlib/GameProfile;
+   #91 = Fieldref           #12.#337      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.inventory:Lnet/minecraft/world/entity/player/Inventory;
+   #92 = Fieldref           #12.#345      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.jumping:Z
+   #93 = Fieldref           #12.#346      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.lunar$badgeWorkaround:Z
+   #94 = Fieldref           #12.#347      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.lunar$nametagWorkaround:Z
+   #95 = Fieldref           #12.#361      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.useItem:Lnet/minecraft/world/item/ItemStack;
+   #96 = Fieldref           #12.#362      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.useItemRemaining:I
+   #97 = Fieldref           #12.#363      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.uuid:Ljava/util/UUID;
+   #98 = Fieldref           #13.#240      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1._0e177c:[I
+   #99 = Fieldref           #13.#249      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1._02c0c6:[I
+  #100 = Fieldref           #14.#251      // ML/_d4ca6c/_d4ca6c/_bb4487/_bb4487/_cfe983/_cfe983._670992:Lnet/minecraft/network/chat/Component;
+  #101 = Fieldref           #30.#247      // ML/_590f69/_5b3f84/_c8175c.HEAD:LML/_590f69/_5b3f84/_c8175c;
+  #102 = Fieldref           #38.#256      // L/util/_e93d3c.MC_VERSION:I
+  #103 = Fieldref           #40.#255      // L/util/_1eb51c$_cfe983.MANNEQUIN:LL/util/_1eb51c$_cfe983;
+  #104 = Fieldref           #40.#269      // L/util/_1eb51c$_cfe983.SELF:LL/util/_1eb51c$_cfe983;
+  #105 = Fieldref           #51.#298      // net/minecraft/client/Minecraft.gameMode:Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;
+  #106 = Fieldref           #51.#334      // net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+  #107 = Fieldref           #52.#336      // net/minecraft/client/gui/Gui.hud$v26_2:Lnet/minecraft/client/gui/Hud;
+  #108 = Fieldref           #66.#236      // net/minecraft/core/component/DataComponents.ATTACK_RANGE$v1_21_11:Lnet/minecraft/core/component/DataComponentType;
+  #109 = Fieldref           #69.#344      // net/minecraft/world/entity/EntityEquipment.items:Ljava/util/EnumMap;
+  #110 = Fieldref           #70.#239      // net/minecraft/world/entity/EquipmentSlot.CHEST:Lnet/minecraft/world/entity/EquipmentSlot;
+  #111 = Fieldref           #70.#246      // net/minecraft/world/entity/EquipmentSlot.FEET:Lnet/minecraft/world/entity/EquipmentSlot;
+  #112 = Fieldref           #70.#248      // net/minecraft/world/entity/EquipmentSlot.HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+  #113 = Fieldref           #70.#253      // net/minecraft/world/entity/EquipmentSlot.LEGS:Lnet/minecraft/world/entity/EquipmentSlot;
+  #114 = Fieldref           #70.#254      // net/minecraft/world/entity/EquipmentSlot.MAINHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+  #115 = Fieldref           #70.#259      // net/minecraft/world/entity/EquipmentSlot.OFFHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+  #116 = Fieldref           #71.#252      // net/minecraft/world/entity/HumanoidArm.LEFT:Lnet/minecraft/world/entity/HumanoidArm;
+  #117 = Fieldref           #73.#270      // net/minecraft/world/entity/Pose.STANDING:Lnet/minecraft/world/entity/Pose;
+  #118 = Fieldref           #74.#234      // net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_DAMAGE$v1_16_1:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+  #119 = Fieldref           #74.#235      // net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_DAMAGE$v1_20_5:Lnet/minecraft/core/Holder;
+  #120 = Fieldref           #74.#257      // net/minecraft/world/entity/ai/attributes/Attributes.MOVEMENT_SPEED$v1_16_1:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+  #121 = Fieldref           #74.#258      // net/minecraft/world/entity/ai/attributes/Attributes.MOVEMENT_SPEED$v1_20_5:Lnet/minecraft/core/Holder;
+  #122 = Fieldref           #75.#297      // net/minecraft/world/entity/player/Abilities.flying:Z
+  #123 = Fieldref           #76.#296      // net/minecraft/world/entity/player/Inventory.equipment$v1_21_5:Lnet/minecraft/world/entity/EntityEquipment;
+  #124 = Fieldref           #76.#351      // net/minecraft/world/entity/player/Inventory.selected:I
+  #125 = Fieldref           #78.#359      // net/minecraft/world/entity/player/PlayerSkin.texture$v1_20_2:Lnet/minecraft/resources/Identifier;
+  #126 = Fieldref           #80.#245      // net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+  #127 = Fieldref           #81.#233      // net/minecraft/world/item/Items.AIR:Lnet/minecraft/world/item/Item;
+  #128 = Fieldref           #81.#237      // net/minecraft/world/item/Items.BOW:Lnet/minecraft/world/item/Item;
+  #129 = Fieldref           #81.#244      // net/minecraft/world/item/Items.CROSSBOW:Lnet/minecraft/world/item/Item;
+  #130 = Methodref          #12.#275      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.blockInteractionRange$v1_20_5:()D
+  #131 = Methodref          #12.#278      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.bridge$entityInteractionRange:()D
+  #132 = Methodref          #12.#279      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+  #133 = Methodref          #12.#280      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.bridge$getGameProfile:()Lcom/mojang/authlib/GameProfile;
+  #134 = Methodref          #12.#285      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.bridge$getUniqueID:()Ljava/util/UUID;
+  #135 = Methodref          #12.#289      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.canEat:(Z)Z
+  #136 = Methodref          #12.#294      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.entityInteractionRange$v1_20_5:()D
+  #137 = Methodref          #12.#304      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getActiveItem$v1_21_11:()Lnet/minecraft/world/item/ItemStack;
+  #138 = Methodref          #12.#306      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getAttributeValue$v1_16_1:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)D
+  #139 = Methodref          #12.#307      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getAttributeValue$v1_19_3:(Lnet/minecraft/core/Holder;)D
+  #140 = Methodref          #12.#308      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getBedOrientation:()Lnet/minecraft/core/Direction;
+  #141 = Methodref          #12.#315      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getFoodData:()Lnet/minecraft/world/food/FoodData;
+  #142 = Methodref          #12.#319      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getMainArm$v1_16_1:()Lnet/minecraft/world/entity/HumanoidArm;
+  #143 = Methodref          #12.#320      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+  #144 = Methodref          #12.#321      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getMaxHealth:()F
+  #145 = Methodref          #12.#322      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getOffhandItem:()Lnet/minecraft/world/item/ItemStack;
+  #146 = Methodref          #12.#329      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getTicksUsingItem:()I
+  #147 = Methodref          #12.#330      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getUUID:()Ljava/util/UUID;
+  #148 = Methodref          #12.#333      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.getUseItemRemainingTicks:()I
+  #149 = Methodref          #12.#338      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.isBlocking:()Z
+  #150 = Methodref          #12.#341      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.isSpectator:()Z
+  #151 = Methodref          #12.#342      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.isSprinting:()Z
+  #152 = Methodref          #12.#343      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.isUsingItem:()Z
+  #153 = Methodref          #12.#352      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.sendMessage$v1_16_1:(Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+  #154 = Methodref          #12.#353      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.sendSystemMessage$v1_19_pre:(Lnet/minecraft/network/chat/Component;)V
+  #155 = Methodref          #12.#354      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.setClientLoaded$v1_21_4:(Z)V
+  #156 = Methodref          #12.#355      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.setHealth:(F)V
+  #157 = Methodref          #12.#356      // ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487.setPose:(Lnet/minecraft/world/entity/Pose;)V
+  #158 = Methodref          #15.#268      // ML/_d4ca6c/_d4ca6c/_13ea87/_590f69._590f69:(Lnet/minecraft/world/item/ItemStack;)LML/_590f69/_c8175c/_cb9292;
+  #159 = Methodref          #16.#241      // ML/_d4ca6c/_d4ca6c/_a140a8/_1253fc._429bf0:(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+  #160 = Methodref          #16.#265      // ML/_d4ca6c/_d4ca6c/_a140a8/_1253fc._88f3cf:(Lcom/mojang/authlib/GameProfile;)Ljava/util/UUID;
+  #161 = Methodref          #18.#230      // ML/_590f69/_2f4182/_bb4487/_1e73d7."<init>":(Ljava/lang/String;)V
+  #162 = Methodref          #30.#350      // ML/_590f69/_5b3f84/_c8175c.ordinal:()I
+  #163 = Methodref          #31.#260      // ML/_590f69/_21aca6._b597a1:()LML/_590f69/_bb4487/_bb4487;
+  #164 = Methodref          #32.#262      // L/_cfe983._9429bc:()LL/_02d7ad/_1253fc/_429bf0;
+  #165 = Methodref          #32.#263      // L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+  #166 = Methodref          #32.#264      // L/_cfe983._a2a4f8:()LL/_02d7ad/_1253fc/_2ce426;
+  #167 = Methodref          #33.#243      // L/_02d7ad/_1253fc/_429bf0._f6e62b:(LML/_590f69/_2ce426/_1253fc/_590f69;)Z
+  #168 = Methodref          #34.#250      // L/_02d7ad/_1253fc/_2ce426._b92d51:(Ljava/util/UUID;)Ljava/util/List;
+  #169 = Methodref          #35.#266      // L/_02d7ad/_1253fc/_1eb51c._a08168:()LL/_88f3cf/_bb4487/_d4ca6c/_590f69;
+  #170 = Methodref          #36.#300      // L/_ec7e36/_429bf0.get:()Ljava/lang/Object;
+  #171 = Methodref          #37.#242      // L/_88f3cf/_bb4487/_d4ca6c/_590f69._ec8d96:()LL/_ec7e36/_429bf0;
+  #172 = Methodref          #37.#340      // L/_88f3cf/_bb4487/_d4ca6c/_590f69.isEnabled:()Z
+  #173 = Methodref          #38.#238      // L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+  #174 = Methodref          #38.#261      // L/util/_e93d3c._6b9e93:()LL/_cfe983;
+  #175 = Methodref          #38.#267      // L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+  #176 = Methodref          #41.#277      // java/lang/Boolean.booleanValue:()Z
+  #177 = Methodref          #42.#229      // java/lang/IncompatibleClassChangeError."<init>":()V
+  #178 = Methodref          #43.#348      // java/lang/Math.min:(FF)F
+  #179 = Methodref          #44.#295      // java/lang/Object.equals:(Ljava/lang/Object;)Z
+  #180 = Methodref          #45.#230      // java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+  #181 = Methodref          #46.#302      // java/util/EnumMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #182 = Methodref          #48.#293      // java/util/Optional.empty:()Ljava/util/Optional;
+  #183 = Methodref          #48.#349      // java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+  #184 = Methodref          #49.#295      // java/util/UUID.equals:(Ljava/lang/Object;)Z
+  #185 = Methodref          #50.#301      // mchorse/emoticons/capabilities/cosmetic/EmoteController.get:(LML/_590f69/_2ce426/_1e73d7;)Lmchorse/emoticons/capabilities/cosmetic/ICosmetic;
+  #186 = Methodref          #51.#313      // net/minecraft/client/Minecraft.getConnection:()Lnet/minecraft/client/multiplayer/ClientPacketListener;
+  #187 = Methodref          #51.#316      // net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+  #188 = Methodref          #51.#357      // net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+  #189 = Methodref          #52.#312      // net/minecraft/client/gui/Gui.getChat$v1_16_1:()Lnet/minecraft/client/gui/components/ChatComponent;
+  #190 = Methodref          #52.#358      // net/minecraft/client/gui/Gui.setScreen$v26_2:(Lnet/minecraft/client/gui/screens/Screen;)V
+  #191 = Methodref          #53.#311      // net/minecraft/client/gui/Hud.getChat:()Lnet/minecraft/client/gui/components/ChatComponent;
+  #192 = Methodref          #54.#273      // net/minecraft/client/gui/components/ChatComponent.addClientSystemMessage$v26_1:(Lnet/minecraft/network/chat/Component;)V
+  #193 = Methodref          #54.#274      // net/minecraft/client/gui/components/ChatComponent.addMessage$v1_16_1:(Lnet/minecraft/network/chat/Component;)V
+  #194 = Methodref          #55.#232      // net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_16_1."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+  #195 = Methodref          #56.#232      // net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_20_0."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+  #196 = Methodref          #57.#232      // net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_0."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+  #197 = Methodref          #58.#232      // net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+  #198 = Methodref          #59.#324      // net/minecraft/client/multiplayer/ClientPacketListener.getPlayerInfo:(Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;
+  #199 = Methodref          #60.#323      // net/minecraft/client/multiplayer/MultiPlayerGameMode.getPickRange$v1_16_1:()F
+  #200 = Methodref          #60.#335      // net/minecraft/client/multiplayer/MultiPlayerGameMode.hasFarPickRange$v1_16_1:()Z
+  #201 = Methodref          #61.#327      // net/minecraft/client/multiplayer/PlayerInfo.getSkin$v1_20_2:()Lnet/minecraft/world/entity/player/PlayerSkin;
+  #202 = Methodref          #61.#328      // net/minecraft/client/multiplayer/PlayerInfo.getSkinLocation$v1_16_1:()Lnet/minecraft/resources/Identifier;
+  #203 = Methodref          #64.#350      // net/minecraft/core/Direction.ordinal:()I
+  #204 = Methodref          #68.#318      // net/minecraft/world/entity/Avatar.getMainArm:()Lnet/minecraft/world/entity/HumanoidArm;
+  #205 = Methodref          #72.#231      // net/minecraft/world/entity/LivingEntity."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+  #206 = Methodref          #76.#305      // net/minecraft/world/entity/player/Inventory.getArmor$v1_16_1:(I)Lnet/minecraft/world/item/ItemStack;
+  #207 = Methodref          #78.#276      // net/minecraft/world/entity/player/PlayerSkin.body$v1_21_9:()Lnet/minecraft/core/ClientAsset_v1_21_9$Texture;
+  #208 = Methodref          #79.#309      // net/minecraft/world/item/CrossbowItem.getChargeDuration$v1_16_1:(Lnet/minecraft/world/item/ItemStack;)I
+  #209 = Methodref          #79.#310      // net/minecraft/world/item/CrossbowItem.getChargeDuration$v1_21_0:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)I
+  #210 = Methodref          #80.#317      // net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+  #211 = Methodref          #80.#331      // net/minecraft/world/item/ItemStack.getUseDuration$v1_16_1:()I
+  #212 = Methodref          #80.#332      // net/minecraft/world/item/ItemStack.getUseDuration$v1_21_0:(Lnet/minecraft/world/entity/LivingEntity;)I
+  #213 = Methodref          #80.#339      // net/minecraft/world/item/ItemStack.isEmpty:()Z
+  #214 = Methodref          #82.#291      // net/minecraft/world/item/component/AttackRange.defaultFor:(Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/component/AttackRange;
+  #215 = Methodref          #82.#292      // net/minecraft/world/item/component/AttackRange.effectiveMaxRange:(Lnet/minecraft/world/entity/Entity;)F
+  #216 = Methodref          #83.#325      // org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.getReturnValue:()Ljava/lang/Object;
+  #217 = InterfaceMethodref #19.#283      // ML/_590f69/_bb4487/_bb4487.bridge$getRenderItem:()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc;
+  #218 = InterfaceMethodref #19.#284      // ML/_590f69/_bb4487/_bb4487.bridge$getSession:()LML/_590f69/_5b3f84/_76e63d;
+  #219 = InterfaceMethodref #21.#281      // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc.bridge$getModel:(LML/_590f69/_c8175c/_cb9292;LML/_590f69/_dcf582/_1253fc;Ljava/lang/Object;)LML/_590f69/_bb4487/_2ce426/_21aca6/_cfe983;
+  #220 = InterfaceMethodref #22.#286      // ML/_590f69/_c8175c/_cb9292.bridge$isEmpty:()Z
+  #221 = InterfaceMethodref #23.#287      // ML/_590f69/_c8175c/_d4ca6c.bridge$isSpear:()Z
+  #222 = InterfaceMethodref #23.#288      // ML/_590f69/_c8175c/_d4ca6c.bridge$isTrident:()Z
+  #223 = InterfaceMethodref #29.#282      // ML/_590f69/_5b3f84/_76e63d.bridge$getProfile:()Lcom/mojang/authlib/GameProfile;
+  #224 = InterfaceMethodref #39.#314      // L/util/_1eb51c.getDummyPlayerType:()LL/util/_1eb51c$_cfe983;
+  #225 = InterfaceMethodref #47.#272      // java/util/List.add:(Ljava/lang/Object;)Z
+  #226 = InterfaceMethodref #63.#360      // net/minecraft/core/ClientAsset_v1_21_9$Texture.texturePath:()Lnet/minecraft/resources/Identifier;
+  #227 = InterfaceMethodref #65.#303      // net/minecraft/core/component/DataComponentHolder.get:(Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;
+  #228 = InterfaceMethodref #67.#326      // net/minecraft/network/chat/Component.getSiblings:()Ljava/util/List;
+  #229 = NameAndType        #447:#405     // "<init>":()V
+  #230 = NameAndType        #447:#422     // "<init>":(Ljava/lang/String;)V
+  #231 = NameAndType        #447:#431     // "<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+  #232 = NameAndType        #447:#437     // "<init>":(Lnet/minecraft/world/entity/player/Player;)V
+  #233 = NameAndType        #448:#494     // AIR:Lnet/minecraft/world/item/Item;
+  #234 = NameAndType        #449:#490     // ATTACK_DAMAGE$v1_16_1:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+  #235 = NameAndType        #450:#482     // ATTACK_DAMAGE$v1_20_5:Lnet/minecraft/core/Holder;
+  #236 = NameAndType        #451:#483     // ATTACK_RANGE$v1_21_11:Lnet/minecraft/core/component/DataComponentType;
+  #237 = NameAndType        #452:#494     // BOW:Lnet/minecraft/world/item/Item;
+  #238 = NameAndType        #453:#369     // _71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+  #239 = NameAndType        #454:#487     // CHEST:Lnet/minecraft/world/entity/EquipmentSlot;
+  #240 = NameAndType        #455:#530     // _0e177c:[I
+  #241 = NameAndType        #456:#411     // _429bf0:(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+  #242 = NameAndType        #457:#384     // _ec8d96:()LL/_ec7e36/_429bf0;
+  #243 = NameAndType        #458:#416     // _f6e62b:(LML/_590f69/_2ce426/_1253fc/_590f69;)Z
+  #244 = NameAndType        #460:#494     // CROSSBOW:Lnet/minecraft/world/item/Item;
+  #245 = NameAndType        #462:#495     // EMPTY:Lnet/minecraft/world/item/ItemStack;
+  #246 = NameAndType        #463:#487     // FEET:Lnet/minecraft/world/entity/EquipmentSlot;
+  #247 = NameAndType        #464:#473     // HEAD:LML/_590f69/_5b3f84/_c8175c;
+  #248 = NameAndType        #464:#487     // HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+  #249 = NameAndType        #465:#530     // _02c0c6:[I
+  #250 = NameAndType        #466:#423     // _b92d51:(Ljava/util/UUID;)Ljava/util/List;
+  #251 = NameAndType        #468:#484     // _670992:Lnet/minecraft/network/chat/Component;
+  #252 = NameAndType        #470:#488     // LEFT:Lnet/minecraft/world/entity/HumanoidArm;
+  #253 = NameAndType        #471:#487     // LEGS:Lnet/minecraft/world/entity/EquipmentSlot;
+  #254 = NameAndType        #503:#487     // MAINHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+  #255 = NameAndType        #504:#474     // MANNEQUIN:LL/util/_1eb51c$_cfe983;
+  #256 = NameAndType        #505:#467     // MC_VERSION:I
+  #257 = NameAndType        #506:#490     // MOVEMENT_SPEED$v1_16_1:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+  #258 = NameAndType        #507:#482     // MOVEMENT_SPEED$v1_20_5:Lnet/minecraft/core/Holder;
+  #259 = NameAndType        #510:#487     // OFFHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+  #260 = NameAndType        #511:#368     // _b597a1:()LML/_590f69/_bb4487/_bb4487;
+  #261 = NameAndType        #512:#380     // _6b9e93:()LL/_cfe983;
+  #262 = NameAndType        #513:#381     // _9429bc:()LL/_02d7ad/_1253fc/_429bf0;
+  #263 = NameAndType        #514:#383     // _5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+  #264 = NameAndType        #515:#382     // _a2a4f8:()LL/_02d7ad/_1253fc/_2ce426;
+  #265 = NameAndType        #517:#412     // _88f3cf:(Lcom/mojang/authlib/GameProfile;)Ljava/util/UUID;
+  #266 = NameAndType        #518:#385     // _a08168:()LL/_88f3cf/_bb4487/_d4ca6c/_590f69;
+  #267 = NameAndType        #519:#368     // _000b1d:()LML/_590f69/_bb4487/_bb4487;
+  #268 = NameAndType        #520:#439     // _590f69:(Lnet/minecraft/world/item/ItemStack;)LML/_590f69/_c8175c/_cb9292;
+  #269 = NameAndType        #524:#474     // SELF:LL/util/_1eb51c$_cfe983;
+  #270 = NameAndType        #525:#489     // STANDING:Lnet/minecraft/world/entity/Pose;
+  #271 = NameAndType        #531:#491     // abilities:Lnet/minecraft/world/entity/player/Abilities;
+  #272 = NameAndType        #532:#421     // add:(Ljava/lang/Object;)Z
+  #273 = NameAndType        #533:#428     // addClientSystemMessage$v26_1:(Lnet/minecraft/network/chat/Component;)V
+  #274 = NameAndType        #534:#428     // addMessage$v1_16_1:(Lnet/minecraft/network/chat/Component;)V
+  #275 = NameAndType        #536:#364     // blockInteractionRange$v1_20_5:()D
+  #276 = NameAndType        #537:#396     // body$v1_21_9:()Lnet/minecraft/core/ClientAsset_v1_21_9$Texture;
+  #277 = NameAndType        #538:#406     // booleanValue:()Z
+  #278 = NameAndType        #543:#364     // bridge$entityInteractionRange:()D
+  #279 = NameAndType        #544:#418     // bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+  #280 = NameAndType        #554:#367     // bridge$getGameProfile:()Lcom/mojang/authlib/GameProfile;
+  #281 = NameAndType        #561:#415     // bridge$getModel:(LML/_590f69/_c8175c/_cb9292;LML/_590f69/_dcf582/_1253fc;Ljava/lang/Object;)LML/_590f69/_bb4487/_2ce426/_21aca6/_cfe983;
+  #282 = NameAndType        #567:#367     // bridge$getProfile:()Lcom/mojang/authlib/GameProfile;
+  #283 = NameAndType        #568:#372     // bridge$getRenderItem:()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc;
+  #284 = NameAndType        #570:#379     // bridge$getSession:()LML/_590f69/_5b3f84/_76e63d;
+  #285 = NameAndType        #572:#392     // bridge$getUniqueID:()Ljava/util/UUID;
+  #286 = NameAndType        #578:#406     // bridge$isEmpty:()Z
+  #287 = NameAndType        #584:#406     // bridge$isSpear:()Z
+  #288 = NameAndType        #587:#406     // bridge$isTrident:()Z
+  #289 = NameAndType        #598:#444     // canEat:(Z)Z
+  #290 = NameAndType        #628:#467     // deathTime:I
+  #291 = NameAndType        #629:#434     // defaultFor:(Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/component/AttackRange;
+  #292 = NameAndType        #630:#430     // effectiveMaxRange:(Lnet/minecraft/world/entity/Entity;)F
+  #293 = NameAndType        #631:#390     // empty:()Ljava/util/Optional;
+  #294 = NameAndType        #632:#364     // entityInteractionRange$v1_20_5:()D
+  #295 = NameAndType        #633:#421     // equals:(Ljava/lang/Object;)Z
+  #296 = NameAndType        #634:#486     // equipment$v1_21_5:Lnet/minecraft/world/entity/EntityEquipment;
+  #297 = NameAndType        #635:#529     // flying:Z
+  #298 = NameAndType        #636:#481     // gameMode:Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;
+  #299 = NameAndType        #637:#472     // gameProfile:Lcom/mojang/authlib/GameProfile;
+  #300 = NameAndType        #638:#387     // get:()Ljava/lang/Object;
+  #301 = NameAndType        #638:#417     // get:(LML/_590f69/_2ce426/_1e73d7;)Lmchorse/emoticons/capabilities/cosmetic/ICosmetic;
+  #302 = NameAndType        #638:#419     // get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #303 = NameAndType        #638:#427     // get:(Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;
+  #304 = NameAndType        #639:#404     // getActiveItem$v1_21_11:()Lnet/minecraft/world/item/ItemStack;
+  #305 = NameAndType        #640:#409     // getArmor$v1_16_1:(I)Lnet/minecraft/world/item/ItemStack;
+  #306 = NameAndType        #641:#436     // getAttributeValue$v1_16_1:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)D
+  #307 = NameAndType        #642:#426     // getAttributeValue$v1_19_3:(Lnet/minecraft/core/Holder;)D
+  #308 = NameAndType        #643:#397     // getBedOrientation:()Lnet/minecraft/core/Direction;
+  #309 = NameAndType        #644:#438     // getChargeDuration$v1_16_1:(Lnet/minecraft/world/item/ItemStack;)I
+  #310 = NameAndType        #645:#440     // getChargeDuration$v1_21_0:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)I
+  #311 = NameAndType        #646:#394     // getChat:()Lnet/minecraft/client/gui/components/ChatComponent;
+  #312 = NameAndType        #647:#394     // getChat$v1_16_1:()Lnet/minecraft/client/gui/components/ChatComponent;
+  #313 = NameAndType        #648:#395     // getConnection:()Lnet/minecraft/client/multiplayer/ClientPacketListener;
+  #314 = NameAndType        #650:#386     // getDummyPlayerType:()LL/util/_1eb51c$_cfe983;
+  #315 = NameAndType        #651:#402     // getFoodData:()Lnet/minecraft/world/food/FoodData;
+  #316 = NameAndType        #652:#393     // getInstance:()Lnet/minecraft/client/Minecraft;
+  #317 = NameAndType        #653:#403     // getItem:()Lnet/minecraft/world/item/Item;
+  #318 = NameAndType        #654:#400     // getMainArm:()Lnet/minecraft/world/entity/HumanoidArm;
+  #319 = NameAndType        #655:#400     // getMainArm$v1_16_1:()Lnet/minecraft/world/entity/HumanoidArm;
+  #320 = NameAndType        #656:#404     // getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+  #321 = NameAndType        #657:#365     // getMaxHealth:()F
+  #322 = NameAndType        #659:#404     // getOffhandItem:()Lnet/minecraft/world/item/ItemStack;
+  #323 = NameAndType        #660:#365     // getPickRange$v1_16_1:()F
+  #324 = NameAndType        #661:#424     // getPlayerInfo:(Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;
+  #325 = NameAndType        #662:#387     // getReturnValue:()Ljava/lang/Object;
+  #326 = NameAndType        #663:#389     // getSiblings:()Ljava/util/List;
+  #327 = NameAndType        #664:#401     // getSkin$v1_20_2:()Lnet/minecraft/world/entity/player/PlayerSkin;
+  #328 = NameAndType        #665:#399     // getSkinLocation$v1_16_1:()Lnet/minecraft/resources/Identifier;
+  #329 = NameAndType        #666:#366     // getTicksUsingItem:()I
+  #330 = NameAndType        #667:#392     // getUUID:()Ljava/util/UUID;
+  #331 = NameAndType        #668:#366     // getUseDuration$v1_16_1:()I
+  #332 = NameAndType        #669:#433     // getUseDuration$v1_21_0:(Lnet/minecraft/world/entity/LivingEntity;)I
+  #333 = NameAndType        #670:#366     // getUseItemRemainingTicks:()I
+  #334 = NameAndType        #671:#479     // gui:Lnet/minecraft/client/gui/Gui;
+  #335 = NameAndType        #672:#406     // hasFarPickRange$v1_16_1:()Z
+  #336 = NameAndType        #673:#480     // hud$v26_2:Lnet/minecraft/client/gui/Hud;
+  #337 = NameAndType        #674:#492     // inventory:Lnet/minecraft/world/entity/player/Inventory;
+  #338 = NameAndType        #675:#406     // isBlocking:()Z
+  #339 = NameAndType        #676:#406     // isEmpty:()Z
+  #340 = NameAndType        #677:#406     // isEnabled:()Z
+  #341 = NameAndType        #678:#406     // isSpectator:()Z
+  #342 = NameAndType        #679:#406     // isSprinting:()Z
+  #343 = NameAndType        #680:#406     // isUsingItem:()Z
+  #344 = NameAndType        #681:#477     // items:Ljava/util/EnumMap;
+  #345 = NameAndType        #691:#529     // jumping:Z
+  #346 = NameAndType        #692:#529     // lunar$badgeWorkaround:Z
+  #347 = NameAndType        #694:#529     // lunar$nametagWorkaround:Z
+  #348 = NameAndType        #698:#408     // min:(FF)F
+  #349 = NameAndType        #731:#420     // of:(Ljava/lang/Object;)Ljava/util/Optional;
+  #350 = NameAndType        #732:#366     // ordinal:()I
+  #351 = NameAndType        #734:#467     // selected:I
+  #352 = NameAndType        #735:#429     // sendMessage$v1_16_1:(Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+  #353 = NameAndType        #736:#428     // sendSystemMessage$v1_19_pre:(Lnet/minecraft/network/chat/Component;)V
+  #354 = NameAndType        #737:#443     // setClientLoaded$v1_21_4:(Z)V
+  #355 = NameAndType        #738:#407     // setHealth:(F)V
+  #356 = NameAndType        #739:#435     // setPose:(Lnet/minecraft/world/entity/Pose;)V
+  #357 = NameAndType        #740:#425     // setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+  #358 = NameAndType        #741:#425     // setScreen$v26_2:(Lnet/minecraft/client/gui/screens/Screen;)V
+  #359 = NameAndType        #742:#485     // texture$v1_20_2:Lnet/minecraft/resources/Identifier;
+  #360 = NameAndType        #743:#399     // texturePath:()Lnet/minecraft/resources/Identifier;
+  #361 = NameAndType        #744:#495     // useItem:Lnet/minecraft/world/item/ItemStack;
+  #362 = NameAndType        #745:#467     // useItemRemaining:I
+  #363 = NameAndType        #746:#478     // uuid:Ljava/util/UUID;
+  #364 = Utf8               ()D
+  #365 = Utf8               ()F
+  #366 = Utf8               ()I
+  #367 = Utf8               ()Lcom/mojang/authlib/GameProfile;
+  #368 = Utf8               ()LML/_590f69/_bb4487/_bb4487;
+  #369 = Utf8               ()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+  #370 = Utf8               ()LML/_590f69/_bb4487/_2ce426/_21aca6/_cfe983;
+  #371 = Utf8               ()LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+  #372 = Utf8               ()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc;
+  #373 = Utf8               ()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_cfe983/_cfe983;
+  #374 = Utf8               ()LML/_590f69/_c8175c/_cb9292;
+  #375 = Utf8               ()LML/_590f69/_2ce426/_1253fc/_cfe983;
+  #376 = Utf8               ()LML/_590f69/_2ce426/_1253fc/_1e73d7;
+  #377 = Utf8               ()LML/_590f69/_2ce426/_1253fc/_21aca6;
+  #378 = Utf8               ()LML/_590f69/_5b3f84/_dcf582;
+  #379 = Utf8               ()LML/_590f69/_5b3f84/_76e63d;
+  #380 = Utf8               ()LL/_cfe983;
+  #381 = Utf8               ()LL/_02d7ad/_1253fc/_429bf0;
+  #382 = Utf8               ()LL/_02d7ad/_1253fc/_2ce426;
+  #383 = Utf8               ()LL/_02d7ad/_1253fc/_1eb51c;
+  #384 = Utf8               ()LL/_ec7e36/_429bf0;
+  #385 = Utf8               ()LL/_88f3cf/_bb4487/_d4ca6c/_590f69;
+  #386 = Utf8               ()LL/util/_1eb51c$_cfe983;
+  #387 = Utf8               ()Ljava/lang/Object;
+  #388 = Utf8               ()Ljava/lang/String;
+  #389 = Utf8               ()Ljava/util/List;
+  #390 = Utf8               ()Ljava/util/Optional;
+  #391 = Utf8               ()Ljava/util/Optional<LML/_590f69/_c8175c/_cb9292;>;
+  #392 = Utf8               ()Ljava/util/UUID;
+  #393 = Utf8               ()Lnet/minecraft/client/Minecraft;
+  #394 = Utf8               ()Lnet/minecraft/client/gui/components/ChatComponent;
+  #395 = Utf8               ()Lnet/minecraft/client/multiplayer/ClientPacketListener;
+  #396 = Utf8               ()Lnet/minecraft/core/ClientAsset_v1_21_9$Texture;
+  #397 = Utf8               ()Lnet/minecraft/core/Direction;
+  #398 = Utf8               ()Lnet/minecraft/network/chat/Component;
+  #399 = Utf8               ()Lnet/minecraft/resources/Identifier;
+  #400 = Utf8               ()Lnet/minecraft/world/entity/HumanoidArm;
+  #401 = Utf8               ()Lnet/minecraft/world/entity/player/PlayerSkin;
+  #402 = Utf8               ()Lnet/minecraft/world/food/FoodData;
+  #403 = Utf8               ()Lnet/minecraft/world/item/Item;
+  #404 = Utf8               ()Lnet/minecraft/world/item/ItemStack;
+  #405 = Utf8               ()V
+  #406 = Utf8               ()Z
+  #407 = Utf8               (F)V
+  #408 = Utf8               (FF)F
+  #409 = Utf8               (I)Lnet/minecraft/world/item/ItemStack;
+  #410 = Utf8               (I)V
+  #411 = Utf8               (Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+  #412 = Utf8               (Lcom/mojang/authlib/GameProfile;)Ljava/util/UUID;
+  #413 = Utf8               (LML/_590f69/_ba7d98/_cfe983/_cfe983;)V
+  #414 = Utf8               (LML/_590f69/_c8175c/_cb9292;)V
+  #415 = Utf8               (LML/_590f69/_c8175c/_cb9292;LML/_590f69/_dcf582/_1253fc;Ljava/lang/Object;)LML/_590f69/_bb4487/_2ce426/_21aca6/_cfe983;
+  #416 = Utf8               (LML/_590f69/_2ce426/_1253fc/_590f69;)Z
+  #417 = Utf8               (LML/_590f69/_2ce426/_1e73d7;)Lmchorse/emoticons/capabilities/cosmetic/ICosmetic;
+  #418 = Utf8               (LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+  #419 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #420 = Utf8               (Ljava/lang/Object;)Ljava/util/Optional;
+  #421 = Utf8               (Ljava/lang/Object;)Z
+  #422 = Utf8               (Ljava/lang/String;)V
+  #423 = Utf8               (Ljava/util/UUID;)Ljava/util/List;
+  #424 = Utf8               (Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;
+  #425 = Utf8               (Lnet/minecraft/client/gui/screens/Screen;)V
+  #426 = Utf8               (Lnet/minecraft/core/Holder;)D
+  #427 = Utf8               (Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;
+  #428 = Utf8               (Lnet/minecraft/network/chat/Component;)V
+  #429 = Utf8               (Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+  #430 = Utf8               (Lnet/minecraft/world/entity/Entity;)F
+  #431 = Utf8               (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+  #432 = Utf8               (Lnet/minecraft/world/entity/EntityType<+Lnet/minecraft/world/entity/LivingEntity;>;Lnet/minecraft/world/level/Level;)V
+  #433 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;)I
+  #434 = Utf8               (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/component/AttackRange;
+  #435 = Utf8               (Lnet/minecraft/world/entity/Pose;)V
+  #436 = Utf8               (Lnet/minecraft/world/entity/ai/attributes/Attribute;)D
+  #437 = Utf8               (Lnet/minecraft/world/entity/player/Player;)V
+  #438 = Utf8               (Lnet/minecraft/world/item/ItemStack;)I
+  #439 = Utf8               (Lnet/minecraft/world/item/ItemStack;)LML/_590f69/_c8175c/_cb9292;
+  #440 = Utf8               (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)I
+  #441 = Utf8               (Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+  #442 = Utf8               (Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/network/chat/Component;>;)V
+  #443 = Utf8               (Z)V
+  #444 = Utf8               (Z)Z
+  #445 = Utf8               <C:Ljava/lang/Object;>()Ljava/util/List<TC;>;
+  #446 = Utf8               <C:Ljava/lang/Object;>()TC;
+  #447 = Utf8               <init>
+  #448 = Utf8               AIR
+  #449 = Utf8               ATTACK_DAMAGE$v1_16_1
+  #450 = Utf8               ATTACK_DAMAGE$v1_20_5
+  #451 = Utf8               ATTACK_RANGE$v1_21_11
+  #452 = Utf8               BOW
+  #453 = Utf8               _71846d
+  #454 = Utf8               CHEST
+  #455 = Utf8               _0e177c
+  #456 = Utf8               _429bf0
+  #457 = Utf8               _ec8d96
+  #458 = Utf8               _f6e62b
+  #459 = Utf8               _cfe983
+  #460 = Utf8               CROSSBOW
+  #461 = Utf8               Code
+  #462 = Utf8               EMPTY
+  #463 = Utf8               FEET
+  #464 = Utf8               HEAD
+  #465 = Utf8               _02c0c6
+  #466 = Utf8               _b92d51
+  #467 = Utf8               I
+  #468 = Utf8               _670992
+  #469 = Utf8               InnerClasses
+  #470 = Utf8               LEFT
+  #471 = Utf8               LEGS
+  #472 = Utf8               Lcom/mojang/authlib/GameProfile;
+  #473 = Utf8               LML/_590f69/_5b3f84/_c8175c;
+  #474 = Utf8               LL/util/_1eb51c$_cfe983;
+  #475 = Utf8               LML/ichor/_cfe983/_21aca6;
+  #476 = Utf8               LineNumberTable
+  #477 = Utf8               Ljava/util/EnumMap;
+  #478 = Utf8               Ljava/util/UUID;
+  #479 = Utf8               Lnet/minecraft/client/gui/Gui;
+  #480 = Utf8               Lnet/minecraft/client/gui/Hud;
+  #481 = Utf8               Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;
+  #482 = Utf8               Lnet/minecraft/core/Holder;
+  #483 = Utf8               Lnet/minecraft/core/component/DataComponentType;
+  #484 = Utf8               Lnet/minecraft/network/chat/Component;
+  #485 = Utf8               Lnet/minecraft/resources/Identifier;
+  #486 = Utf8               Lnet/minecraft/world/entity/EntityEquipment;
+  #487 = Utf8               Lnet/minecraft/world/entity/EquipmentSlot;
+  #488 = Utf8               Lnet/minecraft/world/entity/HumanoidArm;
+  #489 = Utf8               Lnet/minecraft/world/entity/Pose;
+  #490 = Utf8               Lnet/minecraft/world/entity/ai/attributes/Attribute;
+  #491 = Utf8               Lnet/minecraft/world/entity/player/Abilities;
+  #492 = Utf8               Lnet/minecraft/world/entity/player/Inventory;
+  #493 = Utf8               Lnet/minecraft/world/entity/player/Player;
+  #494 = Utf8               Lnet/minecraft/world/item/Item;
+  #495 = Utf8               Lnet/minecraft/world/item/ItemStack;
+  #496 = Utf8               Lorg/jetbrains/annotations/Nullable;
+  #497 = Utf8               Lorg/spongepowered/asm/mixin/Final;
+  #498 = Utf8               Lorg/spongepowered/asm/mixin/Mixin;
+  #499 = Utf8               Lorg/spongepowered/asm/mixin/Shadow;
+  #500 = Utf8               Lorg/spongepowered/asm/mixin/Unique;
+  #501 = Utf8               Lorg/spongepowered/asm/mixin/injection/At;
+  #502 = Utf8               Lorg/spongepowered/asm/mixin/injection/Inject;
+  #503 = Utf8               MAINHAND
+  #504 = Utf8               MANNEQUIN
+  #505 = Utf8               MC_VERSION
+  #506 = Utf8               MOVEMENT_SPEED$v1_16_1
+  #507 = Utf8               MOVEMENT_SPEED$v1_20_5
+  #508 = Utf8               Mainhand/Offhand is invalid slot for method getArmor!
+  #509 = Utf8               NestMembers
+  #510 = Utf8               OFFHAND
+  #511 = Utf8               _b597a1
+  #512 = Utf8               _6b9e93
+  #513 = Utf8               _9429bc
+  #514 = Utf8               _5879ed
+  #515 = Utf8               _a2a4f8
+  #516 = Utf8               RETURN
+  #517 = Utf8               _88f3cf
+  #518 = Utf8               _a08168
+  #519 = Utf8               _000b1d
+  #520 = Utf8               _590f69
+  #521 = Utf8               RuntimeInvisibleAnnotations
+  #522 = Utf8               RuntimeInvisibleTypeAnnotations
+  #523 = Utf8               RuntimeVisibleAnnotations
+  #524 = Utf8               SELF
+  #525 = Utf8               STANDING
+  #526 = Utf8               Signature
+  #527 = Utf8               StackMapTable
+  #528 = Utf8               Texture
+  #529 = Utf8               Z
+  #530 = Utf8               [I
+  #531 = Utf8               abilities
+  #532 = Utf8               add
+  #533 = Utf8               addClientSystemMessage$v26_1
+  #534 = Utf8               addMessage$v1_16_1
+  #535 = Utf8               at
+  #536 = Utf8               blockInteractionRange$v1_20_5
+  #537 = Utf8               body$v1_21_9
+  #538 = Utf8               booleanValue
+  #539 = Utf8               bridge$addChatMessage
+  #540 = Utf8               bridge$blockInteractionRange
+  #541 = Utf8               bridge$canEat
+  #542 = Utf8               bridge$entityAttackRange
+  #543 = Utf8               bridge$entityInteractionRange
+  #544 = Utf8               bridge$getArmor
+  #545 = Utf8               bridge$getAttackDamageAttribute
+  #546 = Utf8               bridge$getBakedHelmetModel
+  #547 = Utf8               bridge$getBedOrientationInDegrees
+  #548 = Utf8               bridge$getClothCloakState
+  #549 = Utf8               bridge$getClothCloakState() should only be called from the render state!
+  #550 = Utf8               bridge$getCurrentEquippedItem
+  #551 = Utf8               bridge$getCurrentEquippedItemIndex
+  #552 = Utf8               bridge$getEmoteController
+  #553 = Utf8               bridge$getFoodStats
+  #554 = Utf8               bridge$getGameProfile
+  #555 = Utf8               bridge$getInventory
+  #556 = Utf8               bridge$getItemInUse
+  #557 = Utf8               bridge$getItemInUseCount
+  #558 = Utf8               bridge$getItemInUseDuration
+  #559 = Utf8               bridge$getItemProgress
+  #560 = Utf8               bridge$getMainHandItemRenderState
+  #561 = Utf8               bridge$getModel
+  #562 = Utf8               bridge$getMovementSpeedAttribute
+  #563 = Utf8               bridge$getName
+  #564 = Utf8               bridge$getOffHandItemRenderState
+  #565 = Utf8               bridge$getPickResult
+  #566 = Utf8               bridge$getPlayerCapabilities
+  #567 = Utf8               bridge$getProfile
+  #568 = Utf8               bridge$getRenderItem
+  #569 = Utf8               bridge$getServerSkinTexture
+  #570 = Utf8               bridge$getSession
+  #571 = Utf8               bridge$getTicksUsingItem
+  #572 = Utf8               bridge$getUniqueID
+  #573 = Utf8               bridge$getWornCosmetics
+  #574 = Utf8               bridge$isBlocking
+  #575 = Utf8               bridge$isDummyMannequin
+  #576 = Utf8               bridge$isDummySelf
+  #577 = Utf8               bridge$isEmoting
+  #578 = Utf8               bridge$isEmpty
+  #579 = Utf8               bridge$isFlying
+  #580 = Utf8               bridge$isJumping
+  #581 = Utf8               bridge$isMainHandSwapped
+  #582 = Utf8               bridge$isSelf
+  #583 = Utf8               bridge$isSkinTextureUploaded
+  #584 = Utf8               bridge$isSpear
+  #585 = Utf8               bridge$isSpectator
+  #586 = Utf8               bridge$isSprinting
+  #587 = Utf8               bridge$isTrident
+  #588 = Utf8               bridge$isUsingItem
+  #589 = Utf8               bridge$openInventory
+  #590 = Utf8               bridge$preparePlayerToSpawn
+  #591 = Utf8               bridge$setClientLoaded
+  #592 = Utf8               bridge$setCurrentEquippedItemIndex
+  #593 = Utf8               bridge$setFlyToggleTimer
+  #594 = Utf8               bridge$setLunarBadgeNameTagWorkaround
+  #595 = Utf8               bridge$setLunarLogoNameTagWorkaround
+  #596 = Utf8               bridge$setUseItem
+  #597 = Utf8               bridge$setUseItemRemaining
+  #598 = Utf8               canEat
+  #599 = Utf8               ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487
+  #600 = Utf8               ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1
+  #601 = Utf8               ML/_d4ca6c/_d4ca6c/_bb4487/_bb4487/_cfe983/_cfe983
+  #602 = Utf8               ML/_d4ca6c/_d4ca6c/_13ea87/_590f69
+  #603 = Utf8               ML/_d4ca6c/_d4ca6c/_a140a8/_1253fc
+  #604 = Utf8               ML/_590f69/_ba7d98/_cfe983/_cfe983
+  #605 = Utf8               ML/_590f69/_2f4182/_bb4487/_1e73d7
+  #606 = Utf8               ML/_590f69/_bb4487/_bb4487
+  #607 = Utf8               ML/_590f69/_bb4487/_1e73d7/_bb4487
+  #608 = Utf8               ML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc
+  #609 = Utf8               ML/_590f69/_c8175c/_cb9292
+  #610 = Utf8               ML/_590f69/_c8175c/_d4ca6c
+  #611 = Utf8               ML/_590f69/_2ce426/_1253fc/_cfe983
+  #612 = Utf8               ML/_590f69/_2ce426/_1253fc/_1e73d7
+  #613 = Utf8               ML/_590f69/_2ce426/_1253fc/_590f69
+  #614 = Utf8               ML/_590f69/_2ce426/_1253fc/_21aca6
+  #615 = Utf8               ML/_590f69/_5b3f84/_dcf582
+  #616 = Utf8               ML/_590f69/_5b3f84/_76e63d
+  #617 = Utf8               ML/_590f69/_5b3f84/_c8175c
+  #618 = Utf8               ML/_590f69/_21aca6
+  #619 = Utf8               L/_cfe983
+  #620 = Utf8               L/_02d7ad/_1253fc/_429bf0
+  #621 = Utf8               L/_02d7ad/_1253fc/_2ce426
+  #622 = Utf8               L/_02d7ad/_1253fc/_1eb51c
+  #623 = Utf8               L/_ec7e36/_429bf0
+  #624 = Utf8               L/_88f3cf/_bb4487/_d4ca6c/_590f69
+  #625 = Utf8               L/util/_e93d3c
+  #626 = Utf8               L/util/_1eb51c
+  #627 = Utf8               L/util/_1eb51c$_cfe983
+  #628 = Utf8               deathTime
+  #629 = Utf8               defaultFor
+  #630 = Utf8               effectiveMaxRange
+  #631 = Utf8               empty
+  #632 = Utf8               entityInteractionRange$v1_20_5
+  #633 = Utf8               equals
+  #634 = Utf8               equipment$v1_21_5
+  #635 = Utf8               flying
+  #636 = Utf8               gameMode
+  #637 = Utf8               gameProfile
+  #638 = Utf8               get
+  #639 = Utf8               getActiveItem$v1_21_11
+  #640 = Utf8               getArmor$v1_16_1
+  #641 = Utf8               getAttributeValue$v1_16_1
+  #642 = Utf8               getAttributeValue$v1_19_3
+  #643 = Utf8               getBedOrientation
+  #644 = Utf8               getChargeDuration$v1_16_1
+  #645 = Utf8               getChargeDuration$v1_21_0
+  #646 = Utf8               getChat
+  #647 = Utf8               getChat$v1_16_1
+  #648 = Utf8               getConnection
+  #649 = Utf8               getDisplayName
+  #650 = Utf8               getDummyPlayerType
+  #651 = Utf8               getFoodData
+  #652 = Utf8               getInstance
+  #653 = Utf8               getItem
+  #654 = Utf8               getMainArm
+  #655 = Utf8               getMainArm$v1_16_1
+  #656 = Utf8               getMainHandItem
+  #657 = Utf8               getMaxHealth
+  #658 = Utf8               getName
+  #659 = Utf8               getOffhandItem
+  #660 = Utf8               getPickRange$v1_16_1
+  #661 = Utf8               getPlayerInfo
+  #662 = Utf8               getReturnValue
+  #663 = Utf8               getSiblings
+  #664 = Utf8               getSkin$v1_20_2
+  #665 = Utf8               getSkinLocation$v1_16_1
+  #666 = Utf8               getTicksUsingItem
+  #667 = Utf8               getUUID
+  #668 = Utf8               getUseDuration$v1_16_1
+  #669 = Utf8               getUseDuration$v1_21_0
+  #670 = Utf8               getUseItemRemainingTicks
+  #671 = Utf8               gui
+  #672 = Utf8               hasFarPickRange$v1_16_1
+  #673 = Utf8               hud$v26_2
+  #674 = Utf8               inventory
+  #675 = Utf8               isBlocking
+  #676 = Utf8               isEmpty
+  #677 = Utf8               isEnabled
+  #678 = Utf8               isSpectator
+  #679 = Utf8               isSprinting
+  #680 = Utf8               isUsingItem
+  #681 = Utf8               items
+  #682 = Utf8               java/lang/Boolean
+  #683 = Utf8               java/lang/IncompatibleClassChangeError
+  #684 = Utf8               java/lang/Math
+  #685 = Utf8               java/lang/Object
+  #686 = Utf8               java/lang/UnsupportedOperationException
+  #687 = Utf8               java/util/EnumMap
+  #688 = Utf8               java/util/List
+  #689 = Utf8               java/util/Optional
+  #690 = Utf8               java/util/UUID
+  #691 = Utf8               jumping
+  #692 = Utf8               lunar$badgeWorkaround
+  #693 = Utf8               lunar$getDisplayName
+  #694 = Utf8               lunar$nametagWorkaround
+  #695 = Utf8               max
+  #696 = Utf8               mchorse/emoticons/capabilities/cosmetic/EmoteController
+  #697 = Utf8               method
+  #698 = Utf8               min
+  #699 = Utf8               net/minecraft/client/Minecraft
+  #700 = Utf8               net/minecraft/client/gui/Gui
+  #701 = Utf8               net/minecraft/client/gui/Hud
+  #702 = Utf8               net/minecraft/client/gui/components/ChatComponent
+  #703 = Utf8               net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_16_1
+  #704 = Utf8               net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_20_0
+  #705 = Utf8               net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_0
+  #706 = Utf8               net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2
+  #707 = Utf8               net/minecraft/client/multiplayer/ClientPacketListener
+  #708 = Utf8               net/minecraft/client/multiplayer/MultiPlayerGameMode
+  #709 = Utf8               net/minecraft/client/multiplayer/PlayerInfo
+  #710 = Utf8               net/minecraft/core/ClientAsset_v1_21_9
+  #711 = Utf8               net/minecraft/core/ClientAsset_v1_21_9$Texture
+  #712 = Utf8               net/minecraft/core/Direction
+  #713 = Utf8               net/minecraft/core/component/DataComponentHolder
+  #714 = Utf8               net/minecraft/core/component/DataComponents
+  #715 = Utf8               net/minecraft/network/chat/Component
+  #716 = Utf8               net/minecraft/world/entity/Avatar
+  #717 = Utf8               net/minecraft/world/entity/EntityEquipment
+  #718 = Utf8               net/minecraft/world/entity/EquipmentSlot
+  #719 = Utf8               net/minecraft/world/entity/HumanoidArm
+  #720 = Utf8               net/minecraft/world/entity/LivingEntity
+  #721 = Utf8               net/minecraft/world/entity/Pose
+  #722 = Utf8               net/minecraft/world/entity/ai/attributes/Attributes
+  #723 = Utf8               net/minecraft/world/entity/player/Abilities
+  #724 = Utf8               net/minecraft/world/entity/player/Inventory
+  #725 = Utf8               net/minecraft/world/entity/player/Player
+  #726 = Utf8               net/minecraft/world/entity/player/PlayerSkin
+  #727 = Utf8               net/minecraft/world/item/CrossbowItem
+  #728 = Utf8               net/minecraft/world/item/ItemStack
+  #729 = Utf8               net/minecraft/world/item/Items
+  #730 = Utf8               net/minecraft/world/item/component/AttackRange
+  #731 = Utf8               of
+  #732 = Utf8               ordinal
+  #733 = Utf8               org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable
+  #734 = Utf8               selected
+  #735 = Utf8               sendMessage$v1_16_1
+  #736 = Utf8               sendSystemMessage$v1_19_pre
+  #737 = Utf8               setClientLoaded$v1_21_4
+  #738 = Utf8               setHealth
+  #739 = Utf8               setPose
+  #740 = Utf8               setScreen$v1_16_1
+  #741 = Utf8               setScreen$v26_2
+  #742 = Utf8               texture$v1_20_2
+  #743 = Utf8               texturePath
+  #744 = Utf8               useItem
+  #745 = Utf8               useItemRemaining
+  #746 = Utf8               uuid
+  #747 = Utf8               value
+{
+  public com.mojang.authlib.GameProfile gameProfile;
+    descriptor: Lcom/mojang/authlib/GameProfile;
+    flags: (0x0001) ACC_PUBLIC
+    RuntimeVisibleAnnotations:
+      0: #497()
+        org.spongepowered.asm.mixin.Final
+      1: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public net.minecraft.world.entity.player.Abilities abilities;
+    descriptor: Lnet/minecraft/world/entity/player/Abilities;
+    flags: (0x0001) ACC_PUBLIC
+    RuntimeVisibleAnnotations:
+      0: #497()
+        org.spongepowered.asm.mixin.Final
+      1: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public net.minecraft.world.entity.player.Inventory inventory;
+    descriptor: Lnet/minecraft/world/entity/player/Inventory;
+    flags: (0x0001) ACC_PUBLIC
+    RuntimeVisibleAnnotations:
+      0: #497()
+        org.spongepowered.asm.mixin.Final
+      1: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  private boolean lunar$nametagWorkaround;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+    RuntimeVisibleAnnotations:
+      0: #500()
+        org.spongepowered.asm.mixin.Unique
+
+  private boolean lunar$badgeWorkaround;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+    RuntimeVisibleAnnotations:
+      0: #500()
+        org.spongepowered.asm.mixin.Unique
+
+  public abstract boolean isSpectator();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract net.minecraft.network.chat.Component getName();
+    descriptor: ()Lnet/minecraft/network/chat/Component;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract net.minecraft.world.food.FoodData getFoodData();
+    descriptor: ()Lnet/minecraft/world/food/FoodData;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract boolean canEat(boolean);
+    descriptor: (Z)Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract double entityInteractionRange$v1_20_5();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract double blockInteractionRange$v1_20_5();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract net.minecraft.world.entity.HumanoidArm getMainArm$v1_16_1();
+    descriptor: ()Lnet/minecraft/world/entity/HumanoidArm;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  public abstract void setClientLoaded$v1_21_4(boolean);
+    descriptor: (Z)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #499()
+        org.spongepowered.asm.mixin.Shadow
+
+  protected ML._d4ca6c._1e73d7._02d7ad._590f69._d4ca6c._bb4487(net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.LivingEntity>, net.minecraft.world.level.Level);
+    descriptor: (Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+         2: aload_2
+         3: invokespecial #205                // Method net/minecraft/world/entity/LivingEntity."<init>":(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V
+         6: aload_0
+         7: iconst_0
+         8: putfield      #94                 // Field lunar$nametagWorkaround:Z
+        11: aload_0
+        12: iconst_0
+        13: putfield      #93                 // Field lunar$badgeWorkaround:Z
+        16: return
+      LineNumberTable:
+        line 104: 0
+        line 96: 6
+        line 99: 11
+        line 105: 16
+    Signature: #432                         // (Lnet/minecraft/world/entity/EntityType<+Lnet/minecraft/world/entity/LivingEntity;>;Lnet/minecraft/world/level/Level;)V
+
+  public ML._590f69._2ce426._1253fc._1e73d7 bridge$getPlayerCapabilities();
+    descriptor: ()LML/_590f69/_2ce426/_1253fc/_1e73d7;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #88                 // Field abilities:Lnet/minecraft/world/entity/player/Abilities;
+         4: checkcast     #25                 // class ML/_590f69/_2ce426/_1253fc/_1e73d7
+         7: areturn
+      LineNumberTable:
+        line 109: 0
+
+  public boolean bridge$isSpectator();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #150                // Method isSpectator:()Z
+         4: ireturn
+      LineNumberTable:
+        line 114: 0
+
+  public boolean bridge$isBlocking();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #149                // Method isBlocking:()Z
+         4: ireturn
+      LineNumberTable:
+        line 119: 0
+
+  public ML._590f69._2ce426._1253fc._21aca6 bridge$getInventory();
+    descriptor: ()LML/_590f69/_2ce426/_1253fc/_21aca6;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+         4: checkcast     #27                 // class ML/_590f69/_2ce426/_1253fc/_21aca6
+         7: areturn
+      LineNumberTable:
+        line 124: 0
+
+  public void bridge$openInventory();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        16
+         5: if_icmpgt     28
+         8: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        11: new           #55                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_16_1
+        14: dup
+        15: aload_0
+        16: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+        19: invokespecial #194                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_16_1."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+        22: invokevirtual #188                // Method net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+        25: goto          132
+        28: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        31: bipush        23
+        33: if_icmpgt     56
+        36: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        39: new           #56                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_20_0
+        42: dup
+        43: aload_0
+        44: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+        47: invokespecial #195                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_20_0."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+        50: invokevirtual #188                // Method net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+        53: goto          132
+        56: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        59: bipush        25
+        61: if_icmpgt     84
+        64: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        67: new           #57                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_0
+        70: dup
+        71: aload_0
+        72: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+        75: invokespecial #196                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_0."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+        78: invokevirtual #188                // Method net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+        81: goto          132
+        84: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        87: bipush        38
+        89: if_icmpgt     112
+        92: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        95: new           #58                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2
+        98: dup
+        99: aload_0
+       100: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+       103: invokespecial #197                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+       106: invokevirtual #188                // Method net/minecraft/client/Minecraft.setScreen$v1_16_1:(Lnet/minecraft/client/gui/screens/Screen;)V
+       109: goto          132
+       112: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       115: getfield      #106                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+       118: new           #58                 // class net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2
+       121: dup
+       122: aload_0
+       123: checkcast     #77                 // class net/minecraft/world/entity/player/Player
+       126: invokespecial #197                // Method net/minecraft/client/gui/screens/inventory/InventoryScreen_v1_21_2."<init>":(Lnet/minecraft/world/entity/player/Player;)V
+       129: invokevirtual #190                // Method net/minecraft/client/gui/Gui.setScreen$v26_2:(Lnet/minecraft/client/gui/screens/Screen;)V
+       132: return
+      LineNumberTable:
+        line 129: 0
+        line 130: 8
+        line 131: 28
+        line 132: 36
+        line 133: 56
+        line 134: 64
+        line 135: 84
+        line 136: 92
+        line 138: 112
+        line 140: 132
+      StackMapTable: number_of_entries = 5
+        frame_type = 28 /* same */
+        frame_type = 27 /* same */
+        frame_type = 27 /* same */
+        frame_type = 27 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 19
+
+  public ML._590f69._c8175c._cb9292 bridge$getCurrentEquippedItem();
+    descriptor: ()LML/_590f69/_c8175c/_cb9292;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #143                // Method getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+         4: invokestatic  #158                // Method ML/_d4ca6c/_d4ca6c/_13ea87/_590f69._590f69:(Lnet/minecraft/world/item/ItemStack;)LML/_590f69/_c8175c/_cb9292;
+         7: areturn
+      LineNumberTable:
+        line 144: 0
+
+  public int bridge$getCurrentEquippedItemIndex();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+         4: getfield      #124                // Field net/minecraft/world/entity/player/Inventory.selected:I
+         7: ireturn
+      LineNumberTable:
+        line 149: 0
+
+  public void bridge$setCurrentEquippedItemIndex(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+         4: iload_1
+         5: putfield      #124                // Field net/minecraft/world/entity/player/Inventory.selected:I
+         8: return
+      LineNumberTable:
+        line 154: 0
+        line 155: 8
+
+  public boolean bridge$isSprinting();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #151                // Method isSprinting:()Z
+         4: ireturn
+      LineNumberTable:
+        line 159: 0
+
+  public void bridge$preparePlayerToSpawn();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getstatic     #117                // Field net/minecraft/world/entity/Pose.STANDING:Lnet/minecraft/world/entity/Pose;
+         4: invokevirtual #157                // Method setPose:(Lnet/minecraft/world/entity/Pose;)V
+         7: aload_0
+         8: aload_0
+         9: invokevirtual #144                // Method getMaxHealth:()F
+        12: invokevirtual #156                // Method setHealth:(F)V
+        15: aload_0
+        16: iconst_0
+        17: putfield      #89                 // Field deathTime:I
+        20: return
+      LineNumberTable:
+        line 164: 0
+        line 165: 7
+        line 166: 15
+        line 167: 20
+
+  public float bridge$getItemProgress();
+    descriptor: ()F
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: aload_0
+         1: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+         4: ifnull        17
+         7: aload_0
+         8: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+        11: invokevirtual #213                // Method net/minecraft/world/item/ItemStack.isEmpty:()Z
+        14: ifeq          19
+        17: fconst_0
+        18: freturn
+        19: aload_0
+        20: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+        23: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+        26: getstatic     #128                // Field net/minecraft/world/item/Items.BOW:Lnet/minecraft/world/item/Item;
+        29: if_acmpne     38
+        32: ldc           #6                  // float 20.0f
+        34: fstore_1
+        35: goto          159
+        38: aload_0
+        39: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+        42: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+        45: getstatic     #129                // Field net/minecraft/world/item/Items.CROSSBOW:Lnet/minecraft/world/item/Item;
+        48: if_acmpne     88
+        51: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        54: bipush        23
+        56: if_icmpgt     70
+        59: aload_0
+        60: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+        63: invokestatic  #208                // Method net/minecraft/world/item/CrossbowItem.getChargeDuration$v1_16_1:(Lnet/minecraft/world/item/ItemStack;)I
+        66: i2f
+        67: goto          79
+        70: aload_0
+        71: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+        74: aload_0
+        75: invokestatic  #209                // Method net/minecraft/world/item/CrossbowItem.getChargeDuration$v1_21_0:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)I
+        78: i2f
+        79: fstore_1
+        80: fload_1
+        81: ldc           #4                  // float 3.0f
+        83: fadd
+        84: fstore_1
+        85: goto          159
+        88: aload_0
+        89: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+        92: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+        95: checkcast     #23                 // class ML/_590f69/_c8175c/_d4ca6c
+        98: invokeinterface #222,  1          // InterfaceMethod ML/_590f69/_c8175c/_d4ca6c.bridge$isTrident:()Z
+       103: ifne          124
+       106: aload_0
+       107: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+       110: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+       113: checkcast     #23                 // class ML/_590f69/_c8175c/_d4ca6c
+       116: invokeinterface #221,  1          // InterfaceMethod ML/_590f69/_c8175c/_d4ca6c.bridge$isSpear:()Z
+       121: ifeq          130
+       124: ldc           #5                  // float 10.0f
+       126: fstore_1
+       127: goto          159
+       130: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+       133: bipush        23
+       135: if_icmpgt     149
+       138: aload_0
+       139: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+       142: invokevirtual #211                // Method net/minecraft/world/item/ItemStack.getUseDuration$v1_16_1:()I
+       145: i2f
+       146: goto          158
+       149: aload_0
+       150: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+       153: aload_0
+       154: invokevirtual #212                // Method net/minecraft/world/item/ItemStack.getUseDuration$v1_21_0:(Lnet/minecraft/world/entity/LivingEntity;)I
+       157: i2f
+       158: fstore_1
+       159: fload_1
+       160: fconst_0
+       161: fcmpl
+       162: ifne          167
+       165: fconst_0
+       166: freturn
+       167: fconst_1
+       168: aload_0
+       169: invokevirtual #146                // Method getTicksUsingItem:()I
+       172: i2f
+       173: fload_1
+       174: fdiv
+       175: invokestatic  #178                // Method java/lang/Math.min:(FF)F
+       178: freturn
+      LineNumberTable:
+        line 171: 0
+        line 172: 17
+        line 175: 19
+        line 176: 32
+        line 177: 38
+        line 178: 51
+        line 179: 59
+        line 180: 70
+        line 181: 80
+        line 182: 88
+        line 183: 110
+        line 184: 124
+        line 186: 130
+        line 188: 159
+        line 189: 165
+        line 191: 167
+      StackMapTable: number_of_entries = 12
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 252 /* append */
+          offset_delta = 1
+          locals = [ class ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487 ]
+        frame_type = 18 /* same */
+        frame_type = 31 /* same */
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ float ]
+        frame_type = 8 /* same */
+        frame_type = 35 /* same */
+        frame_type = 5 /* same */
+        frame_type = 18 /* same */
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ float ]
+        frame_type = 252 /* append */
+          offset_delta = 0
+          locals = [ float ]
+        frame_type = 7 /* same */
+
+  public int bridge$getItemInUseCount();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #96                 // Field useItemRemaining:I
+         4: ireturn
+      LineNumberTable:
+        line 196: 0
+
+  public int bridge$getTicksUsingItem();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #146                // Method getTicksUsingItem:()I
+         4: ireturn
+      LineNumberTable:
+        line 201: 0
+
+  public float bridge$getBedOrientationInDegrees();
+    descriptor: ()F
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: aload_0
+         1: invokevirtual #140                // Method getBedOrientation:()Lnet/minecraft/core/Direction;
+         4: astore_1
+         5: aload_1
+         6: ifnull        81
+         9: getstatic     #98                 // Field ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1._0e177c:[I
+        12: aload_1
+        13: invokevirtual #203                // Method net/minecraft/core/Direction.ordinal:()I
+        16: iaload
+        17: tableswitch   { // 1 to 6
+
+                       1: 64
+
+                       2: 69
+
+                       3: 74
+
+                       4: 79
+
+                       5: 79
+
+                       6: 79
+                 default: 56
+            }
+        56: new           #42                 // class java/lang/IncompatibleClassChangeError
+        59: dup
+        60: invokespecial #177                // Method java/lang/IncompatibleClassChangeError."<init>":()V
+        63: athrow
+        64: ldc           #9                  // float 270.0f
+        66: goto          80
+        69: ldc           #7                  // float 90.0f
+        71: goto          80
+        74: ldc           #8                  // float 180.0f
+        76: goto          80
+        79: fconst_0
+        80: freturn
+        81: fconst_0
+        82: freturn
+      LineNumberTable:
+        line 206: 0
+        line 208: 5
+        line 209: 9
+        line 210: 64
+        line 211: 69
+        line 212: 74
+        line 213: 79
+        line 209: 80
+        line 217: 81
+      StackMapTable: number_of_entries = 7
+        frame_type = 250 /* chop */
+          offset_delta = 56
+        frame_type = 7 /* same */
+        frame_type = 4 /* same */
+        frame_type = 4 /* same */
+        frame_type = 4 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ float ]
+        frame_type = 0 /* same */
+
+  public ML._590f69._2ce426._1253fc._cfe983 bridge$getFoodStats();
+    descriptor: ()LML/_590f69/_2ce426/_1253fc/_cfe983;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #141                // Method getFoodData:()Lnet/minecraft/world/food/FoodData;
+         4: checkcast     #24                 // class ML/_590f69/_2ce426/_1253fc/_cfe983
+         7: areturn
+      LineNumberTable:
+        line 222: 0
+
+  public boolean bridge$isUsingItem();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #152                // Method isUsingItem:()Z
+         4: ireturn
+      LineNumberTable:
+        line 227: 0
+
+  public void bridge$setFlyToggleTimer(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=0, locals=2, args_size=2
+         0: return
+      LineNumberTable:
+        line 233: 0
+
+  public double bridge$getMovementSpeedAttribute();
+    descriptor: ()D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        22
+         5: if_icmplt     16
+         8: aload_0
+         9: getstatic     #121                // Field net/minecraft/world/entity/ai/attributes/Attributes.MOVEMENT_SPEED$v1_20_5:Lnet/minecraft/core/Holder;
+        12: invokevirtual #139                // Method getAttributeValue$v1_19_3:(Lnet/minecraft/core/Holder;)D
+        15: dreturn
+        16: aload_0
+        17: getstatic     #120                // Field net/minecraft/world/entity/ai/attributes/Attributes.MOVEMENT_SPEED$v1_16_1:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+        20: invokevirtual #138                // Method getAttributeValue$v1_16_1:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)D
+        23: dreturn
+      LineNumberTable:
+        line 237: 0
+        line 238: 8
+        line 240: 16
+      StackMapTable: number_of_entries = 1
+        frame_type = 16 /* same */
+
+  public double bridge$getAttackDamageAttribute();
+    descriptor: ()D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        22
+         5: if_icmplt     16
+         8: aload_0
+         9: getstatic     #119                // Field net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_DAMAGE$v1_20_5:Lnet/minecraft/core/Holder;
+        12: invokevirtual #139                // Method getAttributeValue$v1_19_3:(Lnet/minecraft/core/Holder;)D
+        15: dreturn
+        16: aload_0
+        17: getstatic     #118                // Field net/minecraft/world/entity/ai/attributes/Attributes.ATTACK_DAMAGE$v1_16_1:Lnet/minecraft/world/entity/ai/attributes/Attribute;
+        20: invokevirtual #138                // Method getAttributeValue$v1_16_1:(Lnet/minecraft/world/entity/ai/attributes/Attribute;)D
+        23: dreturn
+      LineNumberTable:
+        line 246: 0
+        line 247: 8
+        line 249: 16
+      StackMapTable: number_of_entries = 1
+        frame_type = 16 /* same */
+
+  public java.util.Optional<ML._590f69._c8175c._cb9292> bridge$getItemInUse();
+    descriptor: ()Ljava/util/Optional;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+         4: getstatic     #126                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+         7: if_acmpne     16
+        10: invokestatic  #182                // Method java/util/Optional.empty:()Ljava/util/Optional;
+        13: goto          26
+        16: aload_0
+        17: getfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+        20: checkcast     #22                 // class ML/_590f69/_c8175c/_cb9292
+        23: invokestatic  #183                // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+        26: areturn
+      LineNumberTable:
+        line 255: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 16 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 9
+          locals = []
+          stack = [ class java/util/Optional ]
+    Signature: #391                         // ()Ljava/util/Optional<LML/_590f69/_c8175c/_cb9292;>;
+
+  public int bridge$getItemInUseDuration();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #148                // Method getUseItemRemainingTicks:()I
+         4: ireturn
+      LineNumberTable:
+        line 260: 0
+
+  public boolean bridge$canEat(boolean);
+    descriptor: (Z)Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: invokevirtual #135                // Method canEat:(Z)Z
+         5: ireturn
+      LineNumberTable:
+        line 265: 0
+
+  public boolean bridge$isFlying();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #88                 // Field abilities:Lnet/minecraft/world/entity/player/Abilities;
+         4: getfield      #122                // Field net/minecraft/world/entity/player/Abilities.flying:Z
+         7: ireturn
+      LineNumberTable:
+        line 270: 0
+
+  public boolean bridge$isJumping();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #92                 // Field jumping:Z
+         4: ireturn
+      LineNumberTable:
+        line 275: 0
+
+  public ML._590f69._c8175c._cb9292 bridge$getPickResult();
+    descriptor: ()LML/_590f69/_c8175c/_cb9292;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aconst_null
+         1: areturn
+      LineNumberTable:
+        line 280: 0
+
+  public com.mojang.authlib.GameProfile bridge$getGameProfile();
+    descriptor: ()Lcom/mojang/authlib/GameProfile;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #90                 // Field gameProfile:Lcom/mojang/authlib/GameProfile;
+         4: areturn
+      LineNumberTable:
+        line 285: 0
+
+  public java.lang.String bridge$getName();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #90                 // Field gameProfile:Lcom/mojang/authlib/GameProfile;
+         4: invokestatic  #159                // Method ML/_d4ca6c/_d4ca6c/_a140a8/_1253fc._429bf0:(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+         7: areturn
+      LineNumberTable:
+        line 290: 0
+
+  public void bridge$addChatMessage(ML._590f69._ba7d98._cfe983._cfe983);
+    descriptor: (LML/_590f69/_ba7d98/_cfe983/_cfe983;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+         3: invokevirtual #165                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+         6: invokevirtual #169                // Method L/_02d7ad/_1253fc/_1eb51c._a08168:()LL/_88f3cf/_bb4487/_d4ca6c/_590f69;
+         9: astore_2
+        10: aload_2
+        11: invokevirtual #172                // Method L/_88f3cf/_bb4487/_d4ca6c/_590f69.isEnabled:()Z
+        14: ifeq          34
+        17: aload_2
+        18: invokevirtual #171                // Method L/_88f3cf/_bb4487/_d4ca6c/_590f69._ec8d96:()LL/_ec7e36/_429bf0;
+        21: invokevirtual #170                // Method L/_ec7e36/_429bf0.get:()Ljava/lang/Object;
+        24: checkcast     #41                 // class java/lang/Boolean
+        27: invokevirtual #176                // Method java/lang/Boolean.booleanValue:()Z
+        30: ifeq          34
+        33: return
+        34: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        37: bipush        11
+        39: if_icmpgt     57
+        42: aload_0
+        43: aload_1
+        44: checkcast     #67                 // class net/minecraft/network/chat/Component
+        47: aload_0
+        48: invokevirtual #147                // Method getUUID:()Ljava/util/UUID;
+        51: invokevirtual #153                // Method sendMessage$v1_16_1:(Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+        54: goto          149
+        57: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        60: bipush        25
+        62: if_icmpgt     76
+        65: aload_0
+        66: aload_1
+        67: checkcast     #67                 // class net/minecraft/network/chat/Component
+        70: invokevirtual #154                // Method sendSystemMessage$v1_19_pre:(Lnet/minecraft/network/chat/Component;)V
+        73: goto          149
+        76: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        79: bipush        35
+        81: if_icmpgt     103
+        84: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+        87: getfield      #106                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+        90: invokevirtual #189                // Method net/minecraft/client/gui/Gui.getChat$v1_16_1:()Lnet/minecraft/client/gui/components/ChatComponent;
+        93: aload_1
+        94: checkcast     #67                 // class net/minecraft/network/chat/Component
+        97: invokevirtual #193                // Method net/minecraft/client/gui/components/ChatComponent.addMessage$v1_16_1:(Lnet/minecraft/network/chat/Component;)V
+       100: goto          149
+       103: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+       106: bipush        38
+       108: if_icmpgt     130
+       111: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       114: getfield      #106                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+       117: invokevirtual #189                // Method net/minecraft/client/gui/Gui.getChat$v1_16_1:()Lnet/minecraft/client/gui/components/ChatComponent;
+       120: aload_1
+       121: checkcast     #67                 // class net/minecraft/network/chat/Component
+       124: invokevirtual #192                // Method net/minecraft/client/gui/components/ChatComponent.addClientSystemMessage$v26_1:(Lnet/minecraft/network/chat/Component;)V
+       127: goto          149
+       130: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       133: getfield      #106                // Field net/minecraft/client/Minecraft.gui:Lnet/minecraft/client/gui/Gui;
+       136: getfield      #107                // Field net/minecraft/client/gui/Gui.hud$v26_2:Lnet/minecraft/client/gui/Hud;
+       139: invokevirtual #191                // Method net/minecraft/client/gui/Hud.getChat:()Lnet/minecraft/client/gui/components/ChatComponent;
+       142: aload_1
+       143: checkcast     #67                 // class net/minecraft/network/chat/Component
+       146: invokevirtual #192                // Method net/minecraft/client/gui/components/ChatComponent.addClientSystemMessage$v26_1:(Lnet/minecraft/network/chat/Component;)V
+       149: return
+      LineNumberTable:
+        line 295: 0
+        line 296: 10
+        line 297: 33
+        line 299: 34
+        line 300: 42
+        line 301: 57
+        line 302: 65
+        line 303: 76
+        line 304: 84
+        line 305: 103
+        line 306: 111
+        line 308: 130
+        line 310: 149
+      StackMapTable: number_of_entries = 6
+        frame_type = 34 /* same */
+        frame_type = 22 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 18
+          locals = [ top, class ML/_590f69/_ba7d98/_cfe983/_cfe983 ]
+          stack = []
+        frame_type = 26 /* same */
+        frame_type = 26 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 18
+
+  public ML._590f69._bb4487._13ea87._429bf0._21aca6._21aca6 bridge$getArmor(ML._590f69._5b3f84._c8175c);
+    descriptor: (LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=4, args_size=2
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        29
+         5: if_icmplt     119
+         8: getstatic     #99                 // Field ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1._02c0c6:[I
+        11: aload_1
+        12: invokevirtual #162                // Method ML/_590f69/_5b3f84/_c8175c.ordinal:()I
+        15: iaload
+        16: tableswitch   { // 1 to 6
+
+                       1: 64
+
+                       2: 70
+
+                       3: 76
+
+                       4: 82
+
+                       5: 88
+
+                       6: 94
+                 default: 56
+            }
+        56: new           #42                 // class java/lang/IncompatibleClassChangeError
+        59: dup
+        60: invokespecial #177                // Method java/lang/IncompatibleClassChangeError."<init>":()V
+        63: athrow
+        64: getstatic     #114                // Field net/minecraft/world/entity/EquipmentSlot.MAINHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+        67: goto          97
+        70: getstatic     #115                // Field net/minecraft/world/entity/EquipmentSlot.OFFHAND:Lnet/minecraft/world/entity/EquipmentSlot;
+        73: goto          97
+        76: getstatic     #111                // Field net/minecraft/world/entity/EquipmentSlot.FEET:Lnet/minecraft/world/entity/EquipmentSlot;
+        79: goto          97
+        82: getstatic     #113                // Field net/minecraft/world/entity/EquipmentSlot.LEGS:Lnet/minecraft/world/entity/EquipmentSlot;
+        85: goto          97
+        88: getstatic     #110                // Field net/minecraft/world/entity/EquipmentSlot.CHEST:Lnet/minecraft/world/entity/EquipmentSlot;
+        91: goto          97
+        94: getstatic     #112                // Field net/minecraft/world/entity/EquipmentSlot.HEAD:Lnet/minecraft/world/entity/EquipmentSlot;
+        97: astore_3
+        98: aload_0
+        99: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+       102: getfield      #123                // Field net/minecraft/world/entity/player/Inventory.equipment$v1_21_5:Lnet/minecraft/world/entity/EntityEquipment;
+       105: getfield      #109                // Field net/minecraft/world/entity/EntityEquipment.items:Ljava/util/EnumMap;
+       108: aload_3
+       109: invokevirtual #181                // Method java/util/EnumMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       112: checkcast     #80                 // class net/minecraft/world/item/ItemStack
+       115: astore_2
+       116: goto          205
+       119: getstatic     #99                 // Field ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1._02c0c6:[I
+       122: aload_1
+       123: invokevirtual #162                // Method ML/_590f69/_5b3f84/_c8175c.ordinal:()I
+       126: iaload
+       127: tableswitch   { // 1 to 6
+
+                       1: 172
+
+                       2: 172
+
+                       3: 182
+
+                       4: 186
+
+                       5: 190
+
+                       6: 194
+                 default: 164
+            }
+       164: new           #42                 // class java/lang/IncompatibleClassChangeError
+       167: dup
+       168: invokespecial #177                // Method java/lang/IncompatibleClassChangeError."<init>":()V
+       171: athrow
+       172: new           #45                 // class java/lang/UnsupportedOperationException
+       175: dup
+       176: ldc           #10                 // String Mainhand/Offhand is invalid slot for method getArmor!
+       178: invokespecial #180                // Method java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+       181: athrow
+       182: iconst_0
+       183: goto          195
+       186: iconst_1
+       187: goto          195
+       190: iconst_2
+       191: goto          195
+       194: iconst_3
+       195: istore_3
+       196: aload_0
+       197: getfield      #91                 // Field inventory:Lnet/minecraft/world/entity/player/Inventory;
+       200: iload_3
+       201: invokevirtual #206                // Method net/minecraft/world/entity/player/Inventory.getArmor$v1_16_1:(I)Lnet/minecraft/world/item/ItemStack;
+       204: astore_2
+       205: aload_2
+       206: ifnull        229
+       209: aload_2
+       210: getstatic     #126                // Field net/minecraft/world/item/ItemStack.EMPTY:Lnet/minecraft/world/item/ItemStack;
+       213: invokevirtual #179                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+       216: ifne          229
+       219: aload_2
+       220: invokevirtual #210                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+       223: getstatic     #127                // Field net/minecraft/world/item/Items.AIR:Lnet/minecraft/world/item/Item;
+       226: if_acmpne     231
+       229: aconst_null
+       230: areturn
+       231: aload_2
+       232: checkcast     #22                 // class ML/_590f69/_c8175c/_cb9292
+       235: areturn
+      LineNumberTable:
+        line 315: 0
+        line 316: 8
+        line 317: 64
+        line 318: 70
+        line 319: 76
+        line 320: 82
+        line 321: 88
+        line 322: 94
+        line 316: 97
+        line 325: 98
+        line 326: 116
+        line 327: 119
+        line 329: 172
+        line 330: 182
+        line 331: 186
+        line 332: 190
+        line 333: 194
+        line 327: 195
+        line 336: 196
+        line 339: 205
+        line 340: 229
+        line 342: 231
+      StackMapTable: number_of_entries = 19
+        frame_type = 249 /* chop */
+          offset_delta = 56
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487 ]
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 5 /* same */
+        frame_type = 66 /* same_locals_1_stack_item */
+          stack = [ class net/minecraft/world/entity/EquipmentSlot ]
+        frame_type = 252 /* append */
+          offset_delta = 21
+          locals = [ class ML/_590f69/_5b3f84/_c8175c ]
+        frame_type = 249 /* chop */
+          offset_delta = 44
+        frame_type = 7 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 9
+          locals = [ class ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487 ]
+        frame_type = 3 /* same */
+        frame_type = 3 /* same */
+        frame_type = 3 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 9
+          locals = [ top, top, class net/minecraft/world/item/ItemStack ]
+          stack = []
+        frame_type = 248 /* chop */
+          offset_delta = 23
+        frame_type = 254 /* append */
+          offset_delta = 1
+          locals = [ top, top, class net/minecraft/world/item/ItemStack ]
+
+  public ML._590f69._5b3f84._dcf582 bridge$getServerSkinTexture();
+    descriptor: ()LML/_590f69/_5b3f84/_dcf582;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: invokestatic  #187                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+         3: invokevirtual #186                // Method net/minecraft/client/Minecraft.getConnection:()Lnet/minecraft/client/multiplayer/ClientPacketListener;
+         6: astore_1
+         7: aload_1
+         8: ifnonnull     13
+        11: aconst_null
+        12: areturn
+        13: aload_1
+        14: aload_0
+        15: getfield      #97                 // Field uuid:Ljava/util/UUID;
+        18: invokevirtual #198                // Method net/minecraft/client/multiplayer/ClientPacketListener.getPlayerInfo:(Ljava/util/UUID;)Lnet/minecraft/client/multiplayer/PlayerInfo;
+        21: astore_2
+        22: aload_2
+        23: ifnonnull     28
+        26: aconst_null
+        27: areturn
+        28: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        31: bipush        18
+        33: if_icmple     71
+        36: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+        39: bipush        33
+        41: if_icmplt     60
+        44: aload_2
+        45: invokevirtual #201                // Method net/minecraft/client/multiplayer/PlayerInfo.getSkin$v1_20_2:()Lnet/minecraft/world/entity/player/PlayerSkin;
+        48: invokevirtual #207                // Method net/minecraft/world/entity/player/PlayerSkin.body$v1_21_9:()Lnet/minecraft/core/ClientAsset_v1_21_9$Texture;
+        51: invokeinterface #226,  1          // InterfaceMethod net/minecraft/core/ClientAsset_v1_21_9$Texture.texturePath:()Lnet/minecraft/resources/Identifier;
+        56: checkcast     #28                 // class ML/_590f69/_5b3f84/_dcf582
+        59: areturn
+        60: aload_2
+        61: invokevirtual #201                // Method net/minecraft/client/multiplayer/PlayerInfo.getSkin$v1_20_2:()Lnet/minecraft/world/entity/player/PlayerSkin;
+        64: getfield      #125                // Field net/minecraft/world/entity/player/PlayerSkin.texture$v1_20_2:Lnet/minecraft/resources/Identifier;
+        67: checkcast     #28                 // class ML/_590f69/_5b3f84/_dcf582
+        70: areturn
+        71: aload_2
+        72: invokevirtual #202                // Method net/minecraft/client/multiplayer/PlayerInfo.getSkinLocation$v1_16_1:()Lnet/minecraft/resources/Identifier;
+        75: checkcast     #28                 // class ML/_590f69/_5b3f84/_dcf582
+        78: areturn
+      LineNumberTable:
+        line 347: 0
+        line 350: 7
+        line 351: 11
+        line 354: 13
+        line 356: 22
+        line 357: 26
+        line 360: 28
+        line 361: 36
+        line 362: 44
+        line 364: 60
+        line 368: 71
+      StackMapTable: number_of_entries = 4
+        frame_type = 252 /* append */
+          offset_delta = 13
+          locals = [ class net/minecraft/client/multiplayer/ClientPacketListener ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 14
+          locals = [ top, top, class net/minecraft/client/multiplayer/PlayerInfo ]
+          stack = []
+        frame_type = 31 /* same */
+        frame_type = 10 /* same */
+
+  public void bridge$setLunarLogoNameTagWorkaround(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #94                 // Field lunar$nametagWorkaround:Z
+         5: return
+      LineNumberTable:
+        line 373: 0
+        line 374: 5
+
+  public void bridge$setLunarBadgeNameTagWorkaround(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #93                 // Field lunar$badgeWorkaround:Z
+         5: return
+      LineNumberTable:
+        line 378: 0
+        line 379: 5
+
+  private void lunar$getDisplayName(org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<net.minecraft.network.chat.Component>);
+    descriptor: (Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #94                 // Field lunar$nametagWorkaround:Z
+         4: ifeq          28
+         7: aload_1
+         8: invokevirtual #216                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.getReturnValue:()Ljava/lang/Object;
+        11: checkcast     #67                 // class net/minecraft/network/chat/Component
+        14: invokeinterface #228,  1          // InterfaceMethod net/minecraft/network/chat/Component.getSiblings:()Ljava/util/List;
+        19: getstatic     #100                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_bb4487/_cfe983/_cfe983._670992:Lnet/minecraft/network/chat/Component;
+        22: invokeinterface #225,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        27: pop
+        28: aload_0
+        29: getfield      #93                 // Field lunar$badgeWorkaround:Z
+        32: ifeq          56
+        35: aload_1
+        36: invokevirtual #216                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.getReturnValue:()Ljava/lang/Object;
+        39: checkcast     #67                 // class net/minecraft/network/chat/Component
+        42: invokeinterface #228,  1          // InterfaceMethod net/minecraft/network/chat/Component.getSiblings:()Ljava/util/List;
+        47: getstatic     #100                // Field ML/_d4ca6c/_d4ca6c/_bb4487/_bb4487/_cfe983/_cfe983._670992:Lnet/minecraft/network/chat/Component;
+        50: invokeinterface #225,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        55: pop
+        56: return
+      LineNumberTable:
+        line 383: 0
+        line 384: 7
+        line 386: 28
+        line 387: 35
+        line 389: 56
+      StackMapTable: number_of_entries = 2
+        frame_type = 28 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 27
+    Signature: #442                         // (Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Lnet/minecraft/network/chat/Component;>;)V
+    RuntimeVisibleAnnotations:
+      0: #502(#697=[s#649],#535=[@#501(#747=s#516)])
+        org.spongepowered.asm.mixin.injection.Inject(
+          method=["getDisplayName"]
+          at=[@org.spongepowered.asm.mixin.injection.At(
+            value="RETURN"
+          )]
+        )
+
+  public double bridge$blockInteractionRange();
+    descriptor: ()D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        22
+         5: if_icmplt     13
+         8: aload_0
+         9: invokevirtual #130                // Method blockInteractionRange$v1_20_5:()D
+        12: dreturn
+        13: invokestatic  #175                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+        16: checkcast     #51                 // class net/minecraft/client/Minecraft
+        19: getfield      #105                // Field net/minecraft/client/Minecraft.gameMode:Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;
+        22: astore_1
+        23: aload_1
+        24: invokevirtual #200                // Method net/minecraft/client/multiplayer/MultiPlayerGameMode.hasFarPickRange$v1_16_1:()Z
+        27: ifeq          34
+        30: ldc2_w        #86                 // double 6.0d
+        33: dreturn
+        34: aload_1
+        35: invokevirtual #199                // Method net/minecraft/client/multiplayer/MultiPlayerGameMode.getPickRange$v1_16_1:()F
+        38: f2d
+        39: dreturn
+      LineNumberTable:
+        line 393: 0
+        line 394: 8
+        line 396: 13
+        line 397: 23
+        line 398: 30
+        line 400: 34
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 13
+        frame_type = 253 /* append */
+          offset_delta = 20
+          locals = [ top, class net/minecraft/client/multiplayer/MultiPlayerGameMode ]
+
+  public double bridge$entityInteractionRange();
+    descriptor: ()D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        22
+         5: if_icmplt     13
+         8: aload_0
+         9: invokevirtual #136                // Method entityInteractionRange$v1_20_5:()D
+        12: dreturn
+        13: invokestatic  #175                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+        16: checkcast     #51                 // class net/minecraft/client/Minecraft
+        19: getfield      #105                // Field net/minecraft/client/Minecraft.gameMode:Lnet/minecraft/client/multiplayer/MultiPlayerGameMode;
+        22: astore_1
+        23: aload_1
+        24: invokevirtual #200                // Method net/minecraft/client/multiplayer/MultiPlayerGameMode.hasFarPickRange$v1_16_1:()Z
+        27: ifeq          34
+        30: ldc2_w        #86                 // double 6.0d
+        33: dreturn
+        34: ldc2_w        #84                 // double 3.0d
+        37: dreturn
+      LineNumberTable:
+        line 406: 0
+        line 407: 8
+        line 409: 13
+        line 410: 23
+        line 411: 30
+        line 413: 34
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 13
+        frame_type = 20 /* same */
+
+  public double bridge$entityAttackRange();
+    descriptor: ()D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        35
+         5: if_icmplt     45
+         8: aload_0
+         9: invokevirtual #137                // Method getActiveItem$v1_21_11:()Lnet/minecraft/world/item/ItemStack;
+        12: astore_1
+        13: aload_1
+        14: checkcast     #65                 // class net/minecraft/core/component/DataComponentHolder
+        17: getstatic     #108                // Field net/minecraft/core/component/DataComponents.ATTACK_RANGE$v1_21_11:Lnet/minecraft/core/component/DataComponentType;
+        20: invokeinterface #227,  2          // InterfaceMethod net/minecraft/core/component/DataComponentHolder.get:(Lnet/minecraft/core/component/DataComponentType;)Ljava/lang/Object;
+        25: checkcast     #82                 // class net/minecraft/world/item/component/AttackRange
+        28: astore_2
+        29: aload_2
+        30: ifnonnull     38
+        33: aload_0
+        34: invokestatic  #214                // Method net/minecraft/world/item/component/AttackRange.defaultFor:(Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/component/AttackRange;
+        37: astore_2
+        38: aload_2
+        39: aload_0
+        40: invokevirtual #215                // Method net/minecraft/world/item/component/AttackRange.effectiveMaxRange:(Lnet/minecraft/world/entity/Entity;)F
+        43: f2d
+        44: dreturn
+        45: aload_0
+        46: invokevirtual #131                // Method bridge$entityInteractionRange:()D
+        49: dreturn
+      LineNumberTable:
+        line 419: 0
+        line 422: 8
+        line 423: 13
+        line 424: 29
+        line 425: 33
+        line 427: 38
+        line 429: 45
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 38
+          locals = [ top, class net/minecraft/world/item/component/AttackRange ]
+        frame_type = 249 /* chop */
+          offset_delta = 6
+
+  public boolean bridge$isEmoting();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+         3: invokevirtual #164                // Method L/_cfe983._9429bc:()LL/_02d7ad/_1253fc/_429bf0;
+         6: aload_0
+         7: invokevirtual #167                // Method L/_02d7ad/_1253fc/_429bf0._f6e62b:(LML/_590f69/_2ce426/_1253fc/_590f69;)Z
+        10: ireturn
+      LineNumberTable:
+        line 434: 0
+
+  public <C extends java.lang.Object> C bridge$getEmoteController();
+    descriptor: ()Ljava/lang/Object;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #185                // Method mchorse/emoticons/capabilities/cosmetic/EmoteController.get:(LML/_590f69/_2ce426/_1e73d7;)Lmchorse/emoticons/capabilities/cosmetic/ICosmetic;
+         4: areturn
+      LineNumberTable:
+        line 440: 0
+    Signature: #446                         // <C:Ljava/lang/Object;>()TC;
+    RuntimeInvisibleAnnotations:
+      0: #496()
+        org.jetbrains.annotations.Nullable
+    RuntimeInvisibleTypeAnnotations:
+      0: #496(): METHOD_RETURN
+        org.jetbrains.annotations.Nullable
+
+  public <C extends java.lang.Object> java.util.List<C> bridge$getWornCosmetics();
+    descriptor: ()Ljava/util/List;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: invokestatic  #174                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+         3: invokevirtual #166                // Method L/_cfe983._a2a4f8:()LL/_02d7ad/_1253fc/_2ce426;
+         6: aload_0
+         7: invokevirtual #134                // Method bridge$getUniqueID:()Ljava/util/UUID;
+        10: invokevirtual #168                // Method L/_02d7ad/_1253fc/_2ce426._b92d51:(Ljava/util/UUID;)Ljava/util/List;
+        13: areturn
+      LineNumberTable:
+        line 445: 0
+    Signature: #445                         // <C:Ljava/lang/Object;>()Ljava/util/List<TC;>;
+
+  public ML._590f69._bb4487._13ea87._d4ca6c._590f69._cfe983._cfe983 bridge$getClothCloakState();
+    descriptor: ()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_cfe983/_cfe983;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: new           #18                 // class ML/_590f69/_2f4182/_bb4487/_1e73d7
+         3: dup
+         4: ldc           #11                 // String bridge$getClothCloakState() should only be called from the render state!
+         6: invokespecial #161                // Method ML/_590f69/_2f4182/_bb4487/_1e73d7."<init>":(Ljava/lang/String;)V
+         9: athrow
+      LineNumberTable:
+        line 451: 0
+    RuntimeVisibleAnnotations:
+      0: #475(#698=I#1)
+        ML.ichor._cfe983._21aca6(
+          min=26
+        )
+
+  public boolean bridge$isSkinTextureUploaded();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_0
+         1: ireturn
+      LineNumberTable:
+        line 457: 0
+
+  public boolean bridge$isDummySelf();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: aload_0
+         1: astore_2
+         2: aload_2
+         3: instanceof    #39                 // class L/util/_1eb51c
+         6: ifeq          30
+         9: aload_2
+        10: checkcast     #39                 // class L/util/_1eb51c
+        13: astore_1
+        14: aload_1
+        15: invokeinterface #224,  1          // InterfaceMethod L/util/_1eb51c.getDummyPlayerType:()LL/util/_1eb51c$_cfe983;
+        20: getstatic     #104                // Field L/util/_1eb51c$_cfe983.SELF:LL/util/_1eb51c$_cfe983;
+        23: if_acmpne     30
+        26: iconst_1
+        27: goto          31
+        30: iconst_0
+        31: ireturn
+      LineNumberTable:
+        line 462: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 30
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  public boolean bridge$isDummyMannequin();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: aload_0
+         1: astore_2
+         2: aload_2
+         3: instanceof    #39                 // class L/util/_1eb51c
+         6: ifeq          30
+         9: aload_2
+        10: checkcast     #39                 // class L/util/_1eb51c
+        13: astore_1
+        14: aload_1
+        15: invokeinterface #224,  1          // InterfaceMethod L/util/_1eb51c.getDummyPlayerType:()LL/util/_1eb51c$_cfe983;
+        20: getstatic     #103                // Field L/util/_1eb51c$_cfe983.MANNEQUIN:LL/util/_1eb51c$_cfe983;
+        23: if_acmpne     30
+        26: iconst_1
+        27: goto          31
+        30: iconst_0
+        31: ireturn
+      LineNumberTable:
+        line 467: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 30
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  public boolean bridge$isSelf();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #133                // Method bridge$getGameProfile:()Lcom/mojang/authlib/GameProfile;
+         4: invokestatic  #160                // Method ML/_d4ca6c/_d4ca6c/_a140a8/_1253fc._88f3cf:(Lcom/mojang/authlib/GameProfile;)Ljava/util/UUID;
+         7: invokestatic  #175                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+        10: invokeinterface #218,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getSession:()LML/_590f69/_5b3f84/_76e63d;
+        15: invokeinterface #223,  1          // InterfaceMethod ML/_590f69/_5b3f84/_76e63d.bridge$getProfile:()Lcom/mojang/authlib/GameProfile;
+        20: invokestatic  #160                // Method ML/_d4ca6c/_d4ca6c/_a140a8/_1253fc._88f3cf:(Lcom/mojang/authlib/GameProfile;)Ljava/util/UUID;
+        23: invokevirtual #184                // Method java/util/UUID.equals:(Ljava/lang/Object;)Z
+        26: ireturn
+      LineNumberTable:
+        line 472: 0
+        line 473: 7
+        line 472: 26
+
+  public ML._590f69._bb4487._2ce426._21aca6._cfe983 bridge$getBakedHelmetModel();
+    descriptor: ()LML/_590f69/_bb4487/_2ce426/_21aca6/_cfe983;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=4, args_size=1
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        28
+         5: if_icmplt     10
+         8: aconst_null
+         9: areturn
+        10: aload_0
+        11: getstatic     #101                // Field ML/_590f69/_5b3f84/_c8175c.HEAD:LML/_590f69/_5b3f84/_c8175c;
+        14: invokevirtual #132                // Method bridge$getArmor:(LML/_590f69/_5b3f84/_c8175c;)LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+        17: checkcast     #22                 // class ML/_590f69/_c8175c/_cb9292
+        20: astore_1
+        21: aload_1
+        22: ifnull        34
+        25: aload_1
+        26: invokeinterface #220,  1          // InterfaceMethod ML/_590f69/_c8175c/_cb9292.bridge$isEmpty:()Z
+        31: ifeq          36
+        34: aconst_null
+        35: areturn
+        36: invokestatic  #163                // Method ML/_590f69/_21aca6._b597a1:()LML/_590f69/_bb4487/_bb4487;
+        39: invokeinterface #217,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getRenderItem:()LML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc;
+        44: astore_2
+        45: invokestatic  #173                // Method L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+        48: astore_3
+        49: aload_3
+        50: ifnonnull     55
+        53: aconst_null
+        54: areturn
+        55: aload_2
+        56: aload_1
+        57: aload_3
+        58: aload_0
+        59: invokeinterface #219,  4          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc.bridge$getModel:(LML/_590f69/_c8175c/_cb9292;LML/_590f69/_dcf582/_1253fc;Ljava/lang/Object;)LML/_590f69/_bb4487/_2ce426/_21aca6/_cfe983;
+        64: areturn
+      LineNumberTable:
+        line 478: 0
+        line 480: 8
+        line 483: 10
+        line 484: 21
+        line 485: 34
+        line 487: 36
+        line 488: 45
+        line 489: 49
+        line 490: 53
+        line 492: 55
+      StackMapTable: number_of_entries = 4
+        frame_type = 10 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 23
+        frame_type = 253 /* append */
+          offset_delta = 1
+          locals = [ class ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487, class ML/_590f69/_c8175c/_cb9292 ]
+        frame_type = 253 /* append */
+          offset_delta = 18
+          locals = [ class ML/_590f69/_bb4487/_13ea87/_d4ca6c/_1253fc, class ML/_590f69/_bb4487/_1e73d7/_bb4487 ]
+
+  public boolean bridge$isMainHandSwapped();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #102                // Field L/util/_e93d3c.MC_VERSION:I
+         3: bipush        33
+         5: if_icmplt     27
+         8: aload_0
+         9: checkcast     #68                 // class net/minecraft/world/entity/Avatar
+        12: invokevirtual #204                // Method net/minecraft/world/entity/Avatar.getMainArm:()Lnet/minecraft/world/entity/HumanoidArm;
+        15: getstatic     #116                // Field net/minecraft/world/entity/HumanoidArm.LEFT:Lnet/minecraft/world/entity/HumanoidArm;
+        18: if_acmpne     25
+        21: iconst_1
+        22: goto          26
+        25: iconst_0
+        26: ireturn
+        27: aload_0
+        28: invokevirtual #142                // Method getMainArm$v1_16_1:()Lnet/minecraft/world/entity/HumanoidArm;
+        31: getstatic     #116                // Field net/minecraft/world/entity/HumanoidArm.LEFT:Lnet/minecraft/world/entity/HumanoidArm;
+        34: if_acmpne     41
+        37: iconst_1
+        38: goto          42
+        41: iconst_0
+        42: ireturn
+      LineNumberTable:
+        line 497: 0
+        line 498: 8
+        line 500: 27
+      StackMapTable: number_of_entries = 5
+        frame_type = 250 /* chop */
+          offset_delta = 25
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 252 /* append */
+          offset_delta = 0
+          locals = [ class ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487 ]
+        frame_type = 250 /* chop */
+          offset_delta = 13
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  public void bridge$setUseItem(ML._590f69._c8175c._cb9292);
+    descriptor: (LML/_590f69/_c8175c/_cb9292;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: checkcast     #80                 // class net/minecraft/world/item/ItemStack
+         5: putfield      #95                 // Field useItem:Lnet/minecraft/world/item/ItemStack;
+         8: return
+      LineNumberTable:
+        line 506: 0
+        line 507: 8
+
+  public void bridge$setUseItemRemaining(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #96                 // Field useItemRemaining:I
+         5: return
+      LineNumberTable:
+        line 511: 0
+        line 512: 5
+
+  public ML._590f69._bb4487._13ea87._429bf0._21aca6._21aca6 bridge$getOffHandItemRenderState();
+    descriptor: ()LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #145                // Method getOffhandItem:()Lnet/minecraft/world/item/ItemStack;
+         4: checkcast     #22                 // class ML/_590f69/_c8175c/_cb9292
+         7: areturn
+      LineNumberTable:
+        line 516: 0
+
+  public ML._590f69._bb4487._13ea87._429bf0._21aca6._21aca6 bridge$getMainHandItemRenderState();
+    descriptor: ()LML/_590f69/_bb4487/_13ea87/_429bf0/_21aca6/_21aca6;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #143                // Method getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+         4: checkcast     #22                 // class ML/_590f69/_c8175c/_cb9292
+         7: areturn
+      LineNumberTable:
+        line 521: 0
+
+  public void bridge$setClientLoaded(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: invokevirtual #155                // Method setClientLoaded$v1_21_4:(Z)V
+         5: return
+      LineNumberTable:
+        line 527: 0
+        line 528: 5
+    RuntimeVisibleAnnotations:
+      0: #475(#698=I#2,#695=I#3)
+        ML.ichor._cfe983._21aca6(
+          min=28
+          max=34
+        )
+}
+RuntimeInvisibleAnnotations:
+  0: #498(#747=[c#493])
+    org.spongepowered.asm.mixin.Mixin(
+      value=[class Lnet/minecraft/world/entity/player/Player;]
+    )
+NestMembers:
+  ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1
+InnerClasses:
+  static #13;                             // class ML/_d4ca6c/_1e73d7/_02d7ad/_590f69/_d4ca6c/_bb4487$1
+  public static #528= #63 of #62;         // Texture=class net/minecraft/core/ClientAsset_v1_21_9$Texture of class net/minecraft/core/ClientAsset_v1_21_9
+  public static final #459= #40 of #39;   // _cfe983=class L/util/_1eb51c$_cfe983 of class L/util/_1eb51c

@@ -1,0 +1,185 @@
+  public void onOpen(org.java_websocket.handshake.ServerHandshake);
+    Code:
+       0: aconst_null
+       1: putstatic     #118                // Field CIOORROOHIHOIHHRCIORRCHOIRICOH:Lcom/moonsworth/lunar/client/RROHOCRCCHCIORHICIHCOHRIRCIHCI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       4: aload_0
+       5: getstatic     #136                // Field com/moonsworth/lunar/client/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHOORCOHRORRIHROOCROOIIHHOOHRI.READY:Lcom/moonsworth/lunar/client/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+       8: putfield      #125                // Field IRRCROIORCIIHICOOHIOROIOORIIOC:Lcom/moonsworth/lunar/client/RROHOCRCCHCIORHICIHCOHRIRCIHCI/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+      11: ldc           #8                  // String IPC
+      13: ldc           #2                  // String Connection established
+      15: iconst_0
+      16: anewarray     #90                 // class java/lang/Object
+      19: invokestatic  #202                // Method com/moonsworth/lunar/client/CRHOOIHHORCRRICOCOHIHOOIOHIORH/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      22: invokestatic  #213                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      25: invokevirtual #170                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.CCCHIHIHHIRHOHOHICRCCHOCROIRHR:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      28: invokevirtual #205                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH.CHRHCOORCHRORHHCRIOROIRCROIIHC:()Lcom/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      31: astore_2
+      32: aload_2
+      33: ifnull        41
+      36: aload_2
+      37: iconst_0
+      38: invokevirtual #204                // Method com/moonsworth/lunar/client/HIOHRIRIOIHOICCCCOHCOOIICIICOH/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.OHOICHOICRRCIRCOOOOHIHIRIRRIOR:(Z)V
+      41: aload_0
+      42: invokevirtual #194                // Method RHCHHOHOHOIIOIIOROOOIHOCRRRIOR:()Lcom/lunarclient/gameipc/location/v1/LocationService$Interface;
+      45: aconst_null
+      46: invokestatic  #149                // Method com/lunarclient/gameipc/location/v1/UpdateFocusRequest.newBuilder:()Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest$Builder;
+      49: invokestatic  #214                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      52: invokeinterface #241,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$isWindowFocused:()Z
+      57: invokevirtual #151                // Method com/lunarclient/gameipc/location/v1/UpdateFocusRequest$Builder.setFocused:(Z)Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest$Builder;
+      60: invokevirtual #150                // Method com/lunarclient/gameipc/location/v1/UpdateFocusRequest$Builder.build:()Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest;
+      63: invokedynamic #253,  0            // InvokeDynamic #2:run:()Lcom/google/protobuf/RpcCallback;
+      68: invokeinterface #232,  4          // InterfaceMethod com/lunarclient/gameipc/location/v1/LocationService$Interface.updateFocus:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest;Lcom/google/protobuf/RpcCallback;)V
+      73: aload_0
+      74: ldc           #34                 // class com/lunarclient/gameipc/launch/v1/PlayServerPush
+      76: aload_0
+      77: invokedynamic #254,  0            // InvokeDynamic #3:accept:(Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+      82: invokevirtual #188                // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      85: aload_0
+      86: ldc           #30                 // class com/lunarclient/gameipc/launch/v1/ExitGamePush
+      88: aload_0
+      89: invokedynamic #255,  0            // InvokeDynamic #4:accept:(Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+      94: invokevirtual #188                // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      97: aload_0
+      98: ldc           #35                 // class com/lunarclient/gameipc/location/v1/FocusGamePush
+     100: aload_0
+     101: invokedynamic #256,  0            // InvokeDynamic #5:accept:(Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+     106: invokevirtual #188                // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+     109: aload_0
+     110: ldc           #49                 // class com/lunarclient/gameipc/promotion/v1/PendingPromotionUpdatePush
+     112: aload_0
+     113: invokedynamic #257,  0            // InvokeDynamic #6:accept:(Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+     118: invokevirtual #188                // Method COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+     121: aload_0
+     122: invokevirtual #176                // Method CHRCICICROOOIIIIOHHHRCHIOHIOCH:()V
+     125: aload_0
+     126: invokevirtual #190                // Method IOHORIOHRCRICORRHCCOCRROOOCIOC:()V
+     129: return
+
+
+  private void CHRCICICROOOIIIIOHHHRCHIOHIOCH();
+    Code:
+       0: aload_0
+       1: invokevirtual #178                // Method COOCCHROHIIHHRHRICCHOCORIHHOHH:()Lcom/lunarclient/gameipc/tebex/v1/TebexService$Interface;
+       4: aconst_null
+       5: invokestatic  #165                // Method com/lunarclient/gameipc/tebex/v1/CheckTebexCapabilitiesRequest.getDefaultInstance:()Lcom/lunarclient/gameipc/tebex/v1/CheckTebexCapabilitiesRequest;
+       8: aload_0
+       9: invokedynamic #258,  0            // InvokeDynamic #7:run:(Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Lcom/google/protobuf/RpcCallback;
+      14: invokeinterface #235,  4          // InterfaceMethod com/lunarclient/gameipc/tebex/v1/TebexService$Interface.checkTebexCapabilities:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/tebex/v1/CheckTebexCapabilitiesRequest;Lcom/google/protobuf/RpcCallback;)V
+      19: aload_0
+      20: invokevirtual #189                // Method CRRCOCHIRCOCRIIOICCRCRIROHCRII:()Lcom/lunarclient/gameipc/paynow/v1/PayNowService$Interface;
+      23: aconst_null
+      24: invokestatic  #152                // Method com/lunarclient/gameipc/paynow/v1/CheckPayNowCapabilitiesRequest.getDefaultInstance:()Lcom/lunarclient/gameipc/paynow/v1/CheckPayNowCapabilitiesRequest;
+      27: aload_0
+      28: invokedynamic #259,  0            // InvokeDynamic #8:run:(Lcom/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Lcom/google/protobuf/RpcCallback;
+      33: invokeinterface #233,  4          // InterfaceMethod com/lunarclient/gameipc/paynow/v1/PayNowService$Interface.checkPayNowCapabilities:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/paynow/v1/CheckPayNowCapabilitiesRequest;Lcom/google/protobuf/RpcCallback;)V
+      38: return
+
+
+  public void IOHORIOHRCRICORRHCCOCRROOOCIOC();
+    Code:
+       0: aload_0
+       1: invokevirtual #191                // Method OHHCOHCHRCCCIIIHHHHRCCOCOIRIRR:()Lcom/lunarclient/gameipc/promotion/v1/PromotionService$Interface;
+       4: aconst_null
+       5: invokestatic  #156                // Method com/lunarclient/gameipc/promotion/v1/CheckPendingPromotionRequest.getDefaultInstance:()Lcom/lunarclient/gameipc/promotion/v1/CheckPendingPromotionRequest;
+       8: invokedynamic #260,  0            // InvokeDynamic #9:run:()Lcom/google/protobuf/RpcCallback;
+      13: invokeinterface #234,  4          // InterfaceMethod com/lunarclient/gameipc/promotion/v1/PromotionService$Interface.checkPendingPromotion:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/promotion/v1/CheckPendingPromotionRequest;Lcom/google/protobuf/RpcCallback;)V
+      18: invokestatic  #213                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      21: invokevirtual #173                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORCCRIRRICCHCCOHOOOIRCHHRIIIRC:()Lcom/moonsworth/lunar/client/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      24: astore_1
+      25: aload_1
+      26: ifnull        33
+      29: aload_1
+      30: invokevirtual #208                // Method com/moonsworth/lunar/client/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH.RRHRIRIHHCHCHRHHOCRHRRHOHCORCH:()V
+      33: return
+
+
+  private static void RCRHOOHIOCHHHHOCRIOCHRICIRCRRR(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);
+    Code:
+       0: invokestatic  #214                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+       3: invokeinterface #241,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$isWindowFocused:()Z
+       8: aload_0
+       9: invokevirtual #175                // Method CCICRHIOOIHRIICORCIHOCIRIHOROC:()Z
+      12: if_icmpeq     59
+      15: aload_0
+      16: invokestatic  #214                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      19: invokeinterface #241,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$isWindowFocused:()Z
+      24: invokevirtual #192                // Method OHHRHIHRICCCIIHRORIIHIRRCCORIR:(Z)V
+      27: aload_0
+      28: invokevirtual #194                // Method RHCHHOHOHOIIOIIOROOOIHOCRRRIOR:()Lcom/lunarclient/gameipc/location/v1/LocationService$Interface;
+      31: aconst_null
+      32: invokestatic  #149                // Method com/lunarclient/gameipc/location/v1/UpdateFocusRequest.newBuilder:()Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest$Builder;
+      35: invokestatic  #214                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ROCORRRCHHHRIOCRCIHHHIHICCOIOI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+      38: invokeinterface #241,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$isWindowFocused:()Z
+      43: invokevirtual #151                // Method com/lunarclient/gameipc/location/v1/UpdateFocusRequest$Builder.setFocused:(Z)Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest$Builder;
+      46: invokevirtual #150                // Method com/lunarclient/gameipc/location/v1/UpdateFocusRequest$Builder.build:()Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest;
+      49: invokedynamic #266,  0            // InvokeDynamic #15:run:()Lcom/google/protobuf/RpcCallback;
+      54: invokeinterface #232,  4          // InterfaceMethod com/lunarclient/gameipc/location/v1/LocationService$Interface.updateFocus:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest;Lcom/google/protobuf/RpcCallback;)V
+      59: return
+
+
+  private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.gameipc.location.v1.UpdateFocusResponse);
+    Code:
+       0: return
+
+
+  private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.gameipc.promotion.v1.CheckPendingPromotionResponse);
+    Code:
+       0: invokestatic  #213                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       3: invokevirtual #174                // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.RRHRRRHHCIIIICHCRROCHORCOHIRIH:()Lcom/moonsworth/lunar/client/HHCIOHIOOOHRIRHHRHCHOCRRHOROOI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       6: aload_0
+       7: invokevirtual #157                // Method com/lunarclient/gameipc/promotion/v1/CheckPendingPromotionResponse.getPendingPromotionsList:()Ljava/util/List;
+      10: invokevirtual #203                // Method com/moonsworth/lunar/client/HHCIOHIOOOHRIRHHRHCHOCRRHOROOI/COOCHIRORIICRCIIRIROHIIRIRICCH.HOCHICIIOHCIIIROHOIIRICHOOICHI:(Ljava/util/List;)V
+      13: return
+
+
+  private void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.gameipc.paynow.v1.CheckPayNowCapabilitiesResponse);
+    Code:
+       0: aload_0
+       1: getstatic     #132                // Field com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH$1.HCCIHRCRROHRIHIOOIHCHCIHIRCIRI:[I
+       4: aload_1
+       5: invokevirtual #153                // Method com/lunarclient/gameipc/paynow/v1/CheckPayNowCapabilitiesResponse.getEmbeddedCheckout:()Lcom/lunarclient/gameipc/paynow/v1/CheckPayNowCapabilitiesResponse$EmbeddedCheckout;
+       8: invokevirtual #154                // Method com/lunarclient/gameipc/paynow/v1/CheckPayNowCapabilitiesResponse$EmbeddedCheckout.ordinal:()I
+      11: iaload
+      12: lookupswitch  { // 2
+
+                     1: 40
+
+                     2: 46
+               default: 52
+          }
+      40: getstatic     #112                // Field com/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport.EMBEDDED_CHECKOUT_SUPPORT_OVERLAY:Lcom/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport;
+      43: goto          55
+      46: getstatic     #114                // Field com/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport.EMBEDDED_CHECKOUT_SUPPORT_WINDOW:Lcom/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport;
+      49: goto          55
+      52: getstatic     #113                // Field com/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport.EMBEDDED_CHECKOUT_SUPPORT_UNSPECIFIED:Lcom/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport;
+      55: putfield      #129                // Field RHRCIIRROCHRHIHOCRIOCICRHORIRH:Lcom/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport;
+      58: return
+
+
+  private void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.gameipc.tebex.v1.CheckTebexCapabilitiesResponse);
+    Code:
+       0: aload_0
+       1: getstatic     #131                // Field com/moonsworth/lunar/client/COOIOIRCCICRCCIHCCRHRCIHROHCCI/COOCHIRORIICRCIIRIROHIIRIRICCH$1.CHIHRHICRHCHIHHHHOHCCCIOIRHOHO:[I
+       4: aload_1
+       5: invokevirtual #166                // Method com/lunarclient/gameipc/tebex/v1/CheckTebexCapabilitiesResponse.getEmbeddedCheckout:()Lcom/lunarclient/gameipc/tebex/v1/CheckTebexCapabilitiesResponse$EmbeddedCheckout;
+       8: invokevirtual #167                // Method com/lunarclient/gameipc/tebex/v1/CheckTebexCapabilitiesResponse$EmbeddedCheckout.ordinal:()I
+      11: iaload
+      12: lookupswitch  { // 2
+
+                     1: 40
+
+                     2: 46
+               default: 52
+          }
+      40: getstatic     #112                // Field com/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport.EMBEDDED_CHECKOUT_SUPPORT_OVERLAY:Lcom/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport;
+      43: goto          55
+      46: getstatic     #114                // Field com/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport.EMBEDDED_CHECKOUT_SUPPORT_WINDOW:Lcom/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport;
+      49: goto          55
+      52: getstatic     #113                // Field com/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport.EMBEDDED_CHECKOUT_SUPPORT_UNSPECIFIED:Lcom/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport;
+      55: putfield      #129                // Field RHRCIIRROCHRHIHOCRIOCICRHORIRH:Lcom/lunarclient/apollo/player/v1/EmbeddedCheckoutSupport;
+      58: return
+
+
+  private static void RROHOCRCCHCIORHICIHCOHRIRCIHCI(com.lunarclient.gameipc.location.v1.UpdateFocusResponse);
+    Code:
+       0: return

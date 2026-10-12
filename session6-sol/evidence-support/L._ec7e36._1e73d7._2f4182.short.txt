@@ -1,0 +1,85 @@
+public class L._ec7e36._1e73d7._2f4182<T> implements L._ec7e36._1e73d7._429bf0<T> {
+  private static final java.util.Map<java.lang.Runnable, java.util.function.Consumer<?>> _03275f;
+
+  private final java.util.List<java.util.function.Consumer<? super T>> _27fc9c;
+
+  public L._ec7e36._1e73d7._2f4182();
+    Code:
+       0: aload_0
+       1: invokespecial #16                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #3                  // class L/util/_13ea87/_21aca6
+       8: dup
+       9: iconst_1
+      10: invokespecial #15                 // Method L/util/_13ea87/_21aca6."<init>":(I)V
+      13: putfield      #12                 // Field _27fc9c:Ljava/util/List;
+      16: return
+
+  public void forEach(java.util.function.Consumer<java.util.function.Consumer<? super T>>);
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field _27fc9c:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #21,  2           // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+      10: return
+
+  public void _4cf8c3(java.util.function.Consumer<? super T>);
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field _27fc9c:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #20,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      10: pop
+      11: return
+
+  public void _85c84a(java.util.function.Consumer<? super T>);
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field _27fc9c:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #22,  2           // InterfaceMethod java/util/List.remove:(Ljava/lang/Object;)Z
+      10: pop
+      11: return
+
+  public void _7fbb1e(java.lang.Runnable);
+    Code:
+       0: aload_1
+       1: invokedynamic #25,  0             // InvokeDynamic #0:accept:(Ljava/lang/Runnable;)Ljava/util/function/Consumer;
+       6: astore_2
+       7: getstatic     #13                 // Field _03275f:Ljava/util/Map;
+      10: aload_1
+      11: aload_2
+      12: invokeinterface #23,  3           // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      17: pop
+      18: aload_0
+      19: getfield      #12                 // Field _27fc9c:Ljava/util/List;
+      22: aload_2
+      23: invokeinterface #20,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      28: pop
+      29: return
+
+  public void _32565b(java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field _27fc9c:Ljava/util/List;
+       4: getstatic     #13                 // Field _03275f:Ljava/util/Map;
+       7: aload_1
+       8: invokeinterface #24,  2           // InterfaceMethod java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+      13: invokeinterface #22,  2           // InterfaceMethod java/util/List.remove:(Ljava/lang/Object;)Z
+      18: pop
+      19: return
+
+  private static void _21aca6(java.lang.Runnable, java.lang.Object);
+    Code:
+       0: aload_0
+       1: invokeinterface #19,  1           // InterfaceMethod java/lang/Runnable.run:()V
+       6: return
+
+  static {};
+    Code:
+       0: new           #11                 // class java/util/WeakHashMap
+       3: dup
+       4: invokespecial #18                 // Method java/util/WeakHashMap."<init>":()V
+       7: putstatic     #13                 // Field _03275f:Ljava/util/Map;
+      10: return
+}

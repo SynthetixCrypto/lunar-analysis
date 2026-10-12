@@ -1,0 +1,942 @@
+public class L._767dc1._590f69 {
+  private static final boolean _d57c97;
+
+  private static final boolean _bc7cbd;
+
+  private static final java.lang.String _aa6c52;
+
+  private static final java.lang.String _43ce9d;
+
+  private static final int _1d8d24;
+
+  private static long _293bc3;
+
+  private static int _e15130;
+
+  private static volatile boolean _fd94ce;
+
+  private static final java.util.Queue<io.sentry.Breadcrumb> _b1d029;
+
+  public L._767dc1._590f69();
+    Code:
+       0: aload_0
+       1: invokespecial #272                // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void init();
+    Code:
+       0: invokedynamic #343,  0            // InvokeDynamic #0:configure:()Lio/sentry/Sentry$OptionsConfiguration;
+       5: iconst_1
+       6: invokestatic  #234                // Method io/sentry/Sentry.init:(Lio/sentry/Sentry$OptionsConfiguration;Z)V
+       9: ldc           #86                 // class L/_767dc1/_590f69
+      11: invokestatic  #228                // Method ML/ichor/api/IchorAPI.getPipeline:(Ljava/lang/Object;)Ljava/util/Optional;
+      14: invokedynamic #344,  0            // InvokeDynamic #1:accept:()Ljava/util/function/Consumer;
+      19: invokevirtual #302                // Method java/util/Optional.ifPresent:(Ljava/util/function/Consumer;)V
+      22: return
+
+  public static void _cfe983(io.sentry.Breadcrumb);
+    Code:
+       0: getstatic     #159                // Field _b1d029:Ljava/util/Queue;
+       3: aload_0
+       4: invokeinterface #332,  2          // InterfaceMethod java/util/Queue.add:(Ljava/lang/Object;)Z
+       9: pop
+      10: aload_0
+      11: invokestatic  #232                // Method io/sentry/Sentry.addBreadcrumb:(Lio/sentry/Breadcrumb;)V
+      14: return
+
+  private static io.sentry.SentryEvent _cfe983(io.sentry.SentryEvent, java.lang.Object);
+    Code:
+       0: getstatic     #160                // Field _bc7cbd:Z
+       3: ifne          19
+       6: ldc           #29                 // String Report Handler
+       8: ldc           #14                 // String Dropping Sentry event as error sending is disabled.
+      10: iconst_0
+      11: anewarray     #119                // class java/lang/Object
+      14: invokestatic  #195                // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      17: aconst_null
+      18: areturn
+      19: aload_0
+      20: invokevirtual #238                // Method io/sentry/SentryEvent.getThrowable:()Ljava/lang/Throwable;
+      23: astore_2
+      24: aload_2
+      25: ifnull        48
+      28: aload_2
+      29: invokestatic  #199                // Method L/_767dc1/_1e73d7._bb4487:(Ljava/lang/Throwable;)Z
+      32: ifne          48
+      35: ldc           #29                 // String Report Handler
+      37: ldc           #13                 // String Dropping Sentry event as error is not useful.
+      39: iconst_0
+      40: anewarray     #119                // class java/lang/Object
+      43: invokestatic  #195                // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      46: aconst_null
+      47: areturn
+      48: aload_0
+      49: invokevirtual #237                // Method io/sentry/SentryEvent.getLevel:()Lio/sentry/SentryLevel;
+      52: getstatic     #181                // Field io/sentry/SentryLevel.FATAL:Lio/sentry/SentryLevel;
+      55: if_acmpeq     122
+      58: getstatic     #156                // Field _293bc3:J
+      61: lconst_0
+      62: lcmp
+      63: ifne          72
+      66: invokestatic  #221                // Method L/util/_e93d3c._70de39:()J
+      69: putstatic     #156                // Field _293bc3:J
+      72: getstatic     #158                // Field _e15130:I
+      75: iconst_5
+      76: if_icmplt     122
+      79: invokestatic  #221                // Method L/util/_e93d3c._70de39:()J
+      82: getstatic     #156                // Field _293bc3:J
+      85: lsub
+      86: ldc2_w        #146                // long 60000l
+      89: lcmp
+      90: ifge          112
+      93: invokestatic  #221                // Method L/util/_e93d3c._70de39:()J
+      96: putstatic     #156                // Field _293bc3:J
+      99: ldc           #29                 // String Report Handler
+     101: ldc           #15                 // String Dropping Sentry event due to rate limit.
+     103: iconst_0
+     104: anewarray     #119                // class java/lang/Object
+     107: invokestatic  #195                // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+     110: aconst_null
+     111: areturn
+     112: invokestatic  #221                // Method L/util/_e93d3c._70de39:()J
+     115: putstatic     #156                // Field _293bc3:J
+     118: iconst_0
+     119: putstatic     #158                // Field _e15130:I
+     122: invokestatic  #193                // Method L/_cfe983._ecae14:()LL/_cfe983;
+     125: ifnull        141
+     128: invokestatic  #193                // Method L/_cfe983._ecae14:()LL/_cfe983;
+     131: invokevirtual #194                // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+     134: ifnull        141
+     137: iconst_1
+     138: goto          142
+     141: iconst_0
+     142: istore_3
+     143: ldc           #81                 // class L/_cfe983
+     145: invokevirtual #268                // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+     148: invokestatic  #228                // Method ML/ichor/api/IchorAPI.getPipeline:(Ljava/lang/Object;)Ljava/util/Optional;
+     151: astore        4
+     153: aload         4
+     155: invokevirtual #303                // Method java/util/Optional.isEmpty:()Z
+     158: ifeq          167
+     161: invokestatic  #328                // InterfaceMethod java/util/List.of:()Ljava/util/List;
+     164: goto          198
+     167: aload         4
+     169: invokevirtual #301                // Method java/util/Optional.get:()Ljava/lang/Object;
+     172: checkcast     #93                 // class ML/ichor/_13ea87
+     175: invokevirtual #223                // Method ML/ichor/_13ea87._3792df:()Ljava/util/stream/Stream;
+     178: invokedynamic #345,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+     183: invokeinterface #340,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+     188: invokeinterface #341,  1          // InterfaceMethod java/util/stream/Stream.sorted:()Ljava/util/stream/Stream;
+     193: invokeinterface #342,  1          // InterfaceMethod java/util/stream/Stream.toList:()Ljava/util/List;
+     198: astore        5
+     200: aload_0
+     201: ldc           #59                 // String minecraft_version
+     203: invokestatic  #190                // Method ML/_590f69/_21aca6.getMinecraftVersion:()LML/_cb9292/_21aca6;
+     206: invokevirtual #186                // Method ML/_cb9292/_21aca6._71ce15:()Ljava/lang/String;
+     209: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     212: aload_0
+     213: ldc           #54                 // String launcher_version
+     215: getstatic     #175                // Field L/util/_038392._3f1d03:Ljava/lang/String;
+     218: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     221: aload_0
+     222: ldc           #38                 // String canary_token
+     224: getstatic     #170                // Field L/util/_038392._4d6ff0:Ljava/lang/String;
+     227: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     230: getstatic     #173                // Field L/util/_038392._aa8221:Ljava/lang/String;
+     233: ifnull        245
+     236: aload_0
+     237: ldc           #60                 // String modrinth_modpack_project_id
+     239: getstatic     #173                // Field L/util/_038392._aa8221:Ljava/lang/String;
+     242: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     245: getstatic     #176                // Field L/util/_038392._7633bb:Ljava/lang/String;
+     248: ifnull        260
+     251: aload_0
+     252: ldc           #61                 // String modrinth_modpack_version_id
+     254: getstatic     #176                // Field L/util/_038392._7633bb:Ljava/lang/String;
+     257: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     260: getstatic     #177                // Field L/util/_038392._0aba45:Ljava/lang/String;
+     263: ifnull        275
+     266: aload_0
+     267: ldc           #42                 // String curseforge_modpack_mod_id
+     269: getstatic     #177                // Field L/util/_038392._0aba45:Ljava/lang/String;
+     272: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     275: getstatic     #169                // Field L/util/_038392._7c3afe:Ljava/lang/String;
+     278: ifnull        290
+     281: aload_0
+     282: ldc           #41                 // String curseforge_modpack_file_id
+     284: getstatic     #169                // Field L/util/_038392._7c3afe:Ljava/lang/String;
+     287: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     290: aload_0
+     291: ldc           #57                 // String lunar_version
+     293: invokestatic  #192                // Method L/_cfe983._59aab3:()Ljava/lang/String;
+     296: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     299: aload_0
+     300: ldc           #52                 // String ichor_modules
+     302: ldc           #6                  // String ,
+     304: invokestatic  #214                // Method _2c20fb:()[Ljava/lang/String;
+     307: invokestatic  #280                // Method java/lang/String.join:(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/String;
+     310: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     313: aload_0
+     314: ldc           #43                 // String external_mods
+     316: aload         5
+     318: invokeinterface #327,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     323: ifeq          331
+     326: ldc           #67                 // String unknown
+     328: goto          336
+     331: aload         5
+     333: invokestatic  #209                // Method _e264f2:(Ljava/util/List;)Ljava/lang/String;
+     336: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     339: invokestatic  #189                // Method ML/_590f69/_21aca6._e3e382:()LML/_590f69/_bb4487/_13ea87/_a1dd3a;
+     342: invokeinterface #315,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_a1dd3a._ac3d64:()Z
+     347: ifeq          367
+     350: aload_0
+     351: ldc           #49                 // String gpu_vendor
+     353: invokestatic  #189                // Method ML/_590f69/_21aca6._e3e382:()LML/_590f69/_bb4487/_13ea87/_a1dd3a;
+     356: invokeinterface #314,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_a1dd3a._735dfe:()LML/_590f69/_bb4487/_13ea87/_590f69;
+     361: getfield      #153                // Field ML/_590f69/_bb4487/_13ea87/_590f69._3d110e:Ljava/lang/String;
+     364: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     367: aload_1
+     368: instanceof    #98                 // class io/sentry/Hint
+     371: ifeq          405
+     374: aload_1
+     375: checkcast     #98                 // class io/sentry/Hint
+     378: astore        6
+     380: aload         6
+     382: ldc           #47                 // String geckolib_cosmetic
+     384: invokevirtual #231                // Method io/sentry/Hint.get:(Ljava/lang/String;)Ljava/lang/Object;
+     387: astore        7
+     389: aload         7
+     391: ifnull        405
+     394: aload_0
+     395: ldc           #47                 // String geckolib_cosmetic
+     397: aload         7
+     399: checkcast     #122                // class java/lang/String
+     402: invokevirtual #240                // Method io/sentry/SentryEvent.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+     405: aload_0
+     406: invokevirtual #236                // Method io/sentry/SentryEvent.getContexts:()Lio/sentry/protocol/Contexts;
+     409: astore        6
+     411: new           #111                // class io/sentry/protocol/OperatingSystem
+     414: dup
+     415: invokespecial #262                // Method io/sentry/protocol/OperatingSystem."<init>":()V
+     418: astore        7
+     420: aload         7
+     422: getstatic     #168                // Field L/util/_cb9292._c4ddf5:Ljava/lang/String;
+     425: invokevirtual #263                // Method io/sentry/protocol/OperatingSystem.setName:(Ljava/lang/String;)V
+     428: aload         7
+     430: ldc           #63                 // String os.version
+     432: invokestatic  #285                // Method java/lang/System.getProperty:(Ljava/lang/String;)Ljava/lang/String;
+     435: invokevirtual #264                // Method io/sentry/protocol/OperatingSystem.setVersion:(Ljava/lang/String;)V
+     438: aload         6
+     440: aload         7
+     442: invokevirtual #257                // Method io/sentry/protocol/Contexts.setOperatingSystem:(Lio/sentry/protocol/OperatingSystem;)V
+     445: new           #110                // class io/sentry/protocol/Device
+     448: dup
+     449: invokespecial #258                // Method io/sentry/protocol/Device."<init>":()V
+     452: astore        8
+     454: aload         8
+     456: iload_3
+     457: ifeq          471
+     460: invokestatic  #188                // Method ML/_590f69/_21aca6._62bfd3:()LML/_590f69/_bb4487/_13ea87/_13ea87;
+     463: invokeinterface #316,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_13ea87._9b0638:()Ljava/lang/String;
+     468: goto          473
+     471: ldc           #67                 // String unknown
+     473: invokevirtual #260                // Method io/sentry/protocol/Device.setCpuDescription:(Ljava/lang/String;)V
+     476: aload         8
+     478: iconst_1
+     479: anewarray     #122                // class java/lang/String
+     482: dup
+     483: iconst_0
+     484: getstatic     #166                // Field L/util/_cb9292._05cf96:Ljava/lang/String;
+     487: aastore
+     488: invokevirtual #259                // Method io/sentry/protocol/Device.setArchs:([Ljava/lang/String;)V
+     491: invokestatic  #193                // Method L/_cfe983._ecae14:()LL/_cfe983;
+     494: ifnull        506
+     497: invokestatic  #193                // Method L/_cfe983._ecae14:()LL/_cfe983;
+     500: invokevirtual #191                // Method L/_cfe983._defb5e:()LL/_02d7ad/_1253fc/_a1dd3a;
+     503: ifnonnull     524
+     506: aload         8
+     508: getstatic     #174                // Field L/util/_038392._dad003:Ljava/lang/String;
+     511: ldc           #37                 // String _
+     513: invokevirtual #283                // Method java/lang/String.split:(Ljava/lang/String;)[Ljava/lang/String;
+     516: iconst_0
+     517: aaload
+     518: invokevirtual #261                // Method io/sentry/protocol/Device.setLanguage:(Ljava/lang/String;)V
+     521: goto          541
+     524: aload         8
+     526: invokestatic  #193                // Method L/_cfe983._ecae14:()LL/_cfe983;
+     529: invokevirtual #191                // Method L/_cfe983._defb5e:()LL/_02d7ad/_1253fc/_a1dd3a;
+     532: invokevirtual #198                // Method L/_02d7ad/_1253fc/_a1dd3a._1cbb17:()LL/_e62626/_21aca6;
+     535: invokevirtual #219                // Method L/_e62626/_21aca6.getBase:()Ljava/lang/String;
+     538: invokevirtual #261                // Method io/sentry/protocol/Device.setLanguage:(Ljava/lang/String;)V
+     541: aload         6
+     543: aload         8
+     545: invokevirtual #256                // Method io/sentry/protocol/Contexts.setDevice:(Lio/sentry/protocol/Device;)V
+     548: new           #108                // class io/sentry/protocol/App
+     551: dup
+     552: invokespecial #253                // Method io/sentry/protocol/App."<init>":()V
+     555: astore        9
+     557: new           #134                // class java/util/HashMap
+     560: dup
+     561: invokespecial #300                // Method java/util/HashMap."<init>":()V
+     564: astore        10
+     566: invokestatic  #275                // Method java/lang/Runtime.getRuntime:()Ljava/lang/Runtime;
+     569: astore        11
+     571: iload_3
+     572: ifeq          607
+     575: invokestatic  #222                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+     578: invokeinterface #309,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getCurrentServerData:()LML/_590f69/_bb4487/_1e73d7/_590f69;
+     583: ifnonnull     591
+     586: ldc           #25                 // String None
+     588: goto          609
+     591: invokestatic  #222                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+     594: invokeinterface #309,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getCurrentServerData:()LML/_590f69/_bb4487/_1e73d7/_590f69;
+     599: invokeinterface #312,  1          // InterfaceMethod ML/_590f69/_bb4487/_1e73d7/_590f69.bridge$serverIP:()Ljava/lang/String;
+     604: goto          609
+     607: ldc           #67                 // String unknown
+     609: astore        12
+     611: aload         10
+     613: ldc           #40                 // String connected_server
+     615: aload         12
+     617: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     622: pop
+     623: aload         10
+     625: ldc           #66                 // String total_memory_mb
+     627: aload         11
+     629: invokevirtual #277                // Method java/lang/Runtime.totalMemory:()J
+     632: l2d
+     633: ldc2_w        #150                // double 1048576.0d
+     636: ddiv
+     637: d2i
+     638: invokestatic  #271                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     641: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     646: pop
+     647: aload         10
+     649: ldc           #46                 // String free_memory_mb
+     651: aload         11
+     653: invokevirtual #274                // Method java/lang/Runtime.freeMemory:()J
+     656: l2d
+     657: ldc2_w        #150                // double 1048576.0d
+     660: ddiv
+     661: d2i
+     662: invokestatic  #271                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     665: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     670: pop
+     671: aload         10
+     673: ldc           #58                 // String max_memory_mb
+     675: aload         11
+     677: invokevirtual #276                // Method java/lang/Runtime.maxMemory:()J
+     680: l2d
+     681: ldc2_w        #150                // double 1048576.0d
+     684: ddiv
+     685: d2i
+     686: invokestatic  #271                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     689: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     694: pop
+     695: aload         10
+     697: ldc           #45                 // String fps
+     699: iload_3
+     700: ifeq          714
+     703: invokestatic  #222                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+     706: invokeinterface #310,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getDebugFPS:()I
+     711: goto          715
+     714: iconst_m1
+     715: invokestatic  #271                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     718: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     723: pop
+     724: aload         10
+     726: ldc           #53                 // String installation_id
+     728: getstatic     #172                // Field L/util/_038392._37ebd5:Ljava/lang/String;
+     731: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     736: pop
+     737: aload         10
+     739: ldc           #64                 // String overwolf_muid
+     741: getstatic     #179                // Field L/util/_038392._f8a23d:Ljava/lang/String;
+     744: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     749: pop
+     750: aload         10
+     752: ldc           #65                 // String resource_pack
+     754: invokestatic  #222                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+     757: invokeinterface #311,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getSelectedResourcePack:()LML/_590f69/_bb4487/_2ce426/_13ea87;
+     762: invokeinterface #313,  1          // InterfaceMethod ML/_590f69/_bb4487/_2ce426/_13ea87.bridge$getPackName:()Ljava/lang/String;
+     767: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     772: pop
+     773: aload         10
+     775: ldc           #43                 // String external_mods
+     777: aload         5
+     779: invokeinterface #327,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+     784: ifeq          792
+     787: ldc           #67                 // String unknown
+     789: goto          799
+     792: ldc           #6                  // String ,
+     794: aload         5
+     796: invokestatic  #279                // Method java/lang/String.join:(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+     799: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     804: pop
+     805: invokestatic  #189                // Method ML/_590f69/_21aca6._e3e382:()LML/_590f69/_bb4487/_13ea87/_a1dd3a;
+     808: invokeinterface #315,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_a1dd3a._ac3d64:()Z
+     813: ifeq          856
+     816: invokestatic  #189                // Method ML/_590f69/_21aca6._e3e382:()LML/_590f69/_bb4487/_13ea87/_a1dd3a;
+     819: invokeinterface #314,  1          // InterfaceMethod ML/_590f69/_bb4487/_13ea87/_a1dd3a._735dfe:()LML/_590f69/_bb4487/_13ea87/_590f69;
+     824: astore        13
+     826: aload         10
+     828: ldc           #48                 // String gpu_renderer
+     830: aload         13
+     832: getfield      #152                // Field ML/_590f69/_bb4487/_13ea87/_590f69._f921f3:Ljava/lang/String;
+     835: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     840: pop
+     841: aload         10
+     843: ldc           #49                 // String gpu_vendor
+     845: aload         13
+     847: getfield      #153                // Field ML/_590f69/_bb4487/_13ea87/_590f69._3d110e:Ljava/lang/String;
+     850: invokeinterface #331,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     855: pop
+     856: aload         9
+     858: aload         10
+     860: invokevirtual #254                // Method io/sentry/protocol/App.setUnknown:(Ljava/util/Map;)V
+     863: aload         6
+     865: aload         9
+     867: invokevirtual #255                // Method io/sentry/protocol/Contexts.setApp:(Lio/sentry/protocol/App;)V
+     870: aload_0
+     871: invokestatic  #203                // Method _cfe983:(Lio/sentry/SentryEvent;)V
+     874: getstatic     #158                // Field _e15130:I
+     877: iconst_1
+     878: iadd
+     879: putstatic     #158                // Field _e15130:I
+     882: aload_0
+     883: areturn
+
+  private static void _cfe983(io.sentry.SentryEvent);
+    Code:
+       0: getstatic     #159                // Field _b1d029:Ljava/util/Queue;
+       3: invokeinterface #334,  1          // InterfaceMethod java/util/Queue.isEmpty:()Z
+       8: ifeq          12
+      11: return
+      12: aload_0
+      13: invokevirtual #235                // Method io/sentry/SentryEvent.getBreadcrumbs:()Ljava/util/List;
+      16: astore_1
+      17: aload_1
+      18: ifnull        247
+      21: new           #132                // class java/util/ArrayList
+      24: dup
+      25: aload_1
+      26: invokeinterface #329,  1          // InterfaceMethod java/util/List.size:()I
+      31: getstatic     #159                // Field _b1d029:Ljava/util/Queue;
+      34: invokeinterface #336,  1          // InterfaceMethod java/util/Queue.size:()I
+      39: iadd
+      40: invokespecial #297                // Method java/util/ArrayList."<init>":(I)V
+      43: astore_2
+      44: iconst_0
+      45: istore_3
+      46: getstatic     #159                // Field _b1d029:Ljava/util/Queue;
+      49: invokeinterface #335,  1          // InterfaceMethod java/util/Queue.iterator:()Ljava/util/Iterator;
+      54: astore        4
+      56: aload         4
+      58: invokeinterface #320,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      63: ifeq          107
+      66: aload         4
+      68: invokeinterface #321,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      73: checkcast     #97                 // class io/sentry/Breadcrumb
+      76: astore        5
+      78: aload_1
+      79: aload         5
+      81: invokeinterface #325,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      86: ifne          101
+      89: aload_2
+      90: aload         5
+      92: invokeinterface #323,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      97: pop
+      98: goto          104
+     101: iinc          3, 1
+     104: goto          56
+     107: getstatic     #159                // Field _b1d029:Ljava/util/Queue;
+     110: invokeinterface #336,  1          // InterfaceMethod java/util/Queue.size:()I
+     115: iload_3
+     116: isub
+     117: istore        4
+     119: aload_1
+     120: invokeinterface #329,  1          // InterfaceMethod java/util/List.size:()I
+     125: iload         4
+     127: iadd
+     128: bipush        100
+     130: if_icmple     231
+     133: bipush        100
+     135: iload         4
+     137: isub
+     138: istore        5
+     140: new           #132                // class java/util/ArrayList
+     143: dup
+     144: bipush        100
+     146: invokespecial #297                // Method java/util/ArrayList."<init>":(I)V
+     149: astore        6
+     151: aload_1
+     152: invokeinterface #329,  1          // InterfaceMethod java/util/List.size:()I
+     157: iconst_1
+     158: isub
+     159: istore        7
+     161: iload         7
+     163: ifle          219
+     166: aload_1
+     167: iload         7
+     169: invokeinterface #326,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+     174: checkcast     #97                 // class io/sentry/Breadcrumb
+     177: astore        8
+     179: getstatic     #159                // Field _b1d029:Ljava/util/Queue;
+     182: aload         8
+     184: invokeinterface #333,  2          // InterfaceMethod java/util/Queue.contains:(Ljava/lang/Object;)Z
+     189: ifne          203
+     192: iload         5
+     194: ifne          200
+     197: goto          213
+     200: iinc          5, -1
+     203: aload         6
+     205: iconst_0
+     206: aload         8
+     208: invokeinterface #322,  3          // InterfaceMethod java/util/List.add:(ILjava/lang/Object;)V
+     213: iinc          7, -1
+     216: goto          161
+     219: aload_2
+     220: aload         6
+     222: invokeinterface #324,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     227: pop
+     228: goto          239
+     231: aload_2
+     232: aload_1
+     233: invokeinterface #324,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     238: pop
+     239: aload_0
+     240: aload_2
+     241: invokevirtual #239                // Method io/sentry/SentryEvent.setBreadcrumbs:(Ljava/util/List;)V
+     244: goto          261
+     247: aload_0
+     248: new           #132                // class java/util/ArrayList
+     251: dup
+     252: getstatic     #159                // Field _b1d029:Ljava/util/Queue;
+     255: invokespecial #298                // Method java/util/ArrayList."<init>":(Ljava/util/Collection;)V
+     258: invokevirtual #239                // Method io/sentry/SentryEvent.setBreadcrumbs:(Ljava/util/List;)V
+     261: return
+
+  private static java.lang.String _cfe983(io.sentry.SentryLevel, java.lang.String, java.lang.String, java.lang.Throwable, io.sentry.Hint);
+    Code:
+       0: aload_3
+       1: invokestatic  #200                // Method L/_767dc1/_1e73d7._1253fc:(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+       4: astore_3
+       5: aload_3
+       6: aload         4
+       8: aload_0
+       9: aload_2
+      10: invokedynamic #346,  0            // InvokeDynamic #3:run:(Lio/sentry/SentryLevel;Ljava/lang/String;)Lio/sentry/ScopeCallback;
+      15: invokestatic  #233                // Method io/sentry/Sentry.captureException:(Ljava/lang/Throwable;Lio/sentry/Hint;Lio/sentry/ScopeCallback;)Lio/sentry/protocol/SentryId;
+      18: astore        5
+      20: aload         5
+      22: getstatic     #182                // Field io/sentry/protocol/SentryId.EMPTY_ID:Lio/sentry/protocol/SentryId;
+      25: invokevirtual #265                // Method io/sentry/protocol/SentryId.equals:(Ljava/lang/Object;)Z
+      28: ifeq          33
+      31: aconst_null
+      32: areturn
+      33: aload_1
+      34: aload         5
+      36: invokestatic  #284                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      39: invokedynamic #347,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      44: areturn
+
+  public static void _cfe983(java.lang.Throwable, java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_1
+       3: aconst_null
+       4: invokestatic  #208                // Method _cfe983:(Ljava/lang/Throwable;Ljava/lang/String;ZLio/sentry/Hint;)V
+       7: return
+
+  public static void _cfe983(java.lang.Throwable, java.lang.String, boolean, io.sentry.Hint);
+    Code:
+       0: iload_2
+       1: ifeq          8
+       4: aload_0
+       5: invokevirtual #291                // Method java/lang/Throwable.printStackTrace:()V
+       8: getstatic     #180                // Field io/sentry/SentryLevel.ERROR:Lio/sentry/SentryLevel;
+      11: ldc           #18                 // String LCEX
+      13: aload_1
+      14: aload_0
+      15: aload_3
+      16: invokestatic  #206                // Method _cfe983:(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Lio/sentry/Hint;)Ljava/lang/String;
+      19: astore        4
+      21: aload_1
+      22: aload         4
+      24: invokedynamic #348,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      29: iconst_0
+      30: anewarray     #119                // class java/lang/Object
+      33: invokestatic  #195                // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      36: return
+
+  public static void _cfe983(ML._590f69._bb4487._590f69);
+    Code:
+       0: iconst_1
+       1: putstatic     #157                // Field _fd94ce:Z
+       4: aload_0
+       5: invokeinterface #317,  1          // InterfaceMethod ML/_590f69/_bb4487/_590f69.bridge$getCause:()Ljava/lang/Throwable;
+      10: astore_1
+      11: getstatic     #181                // Field io/sentry/SentryLevel.FATAL:Lio/sentry/SentryLevel;
+      14: ldc           #17                 // String LCCR
+      16: ldc           #23                 // String Minecraft Crash Report Handler
+      18: aload_1
+      19: aconst_null
+      20: invokestatic  #206                // Method _cfe983:(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Lio/sentry/Hint;)Ljava/lang/String;
+      23: astore_2
+      24: aload_2
+      25: ifnull        32
+      28: aload_2
+      29: invokestatic  #220                // Method L/util/_2f4182._35b178:(Ljava/lang/String;)V
+      32: invokestatic  #307                // Method javax/swing/UIManager.getCrossPlatformLookAndFeelClassName:()Ljava/lang/String;
+      35: invokestatic  #308                // Method javax/swing/UIManager.setLookAndFeel:(Ljava/lang/String;)V
+      38: goto          42
+      41: astore_3
+      42: aload_1
+      43: instanceof    #120                // class java/lang/OutOfMemoryError
+      46: ifeq          68
+      49: new           #124                // class java/lang/Thread
+      52: dup
+      53: aload_2
+      54: invokedynamic #349,  0            // InvokeDynamic #6:run:(Ljava/lang/String;)Ljava/lang/Runnable;
+      59: invokespecial #287                // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+      62: invokevirtual #289                // Method java/lang/Thread.start:()V
+      65: goto          84
+      68: new           #124                // class java/lang/Thread
+      71: dup
+      72: aload_2
+      73: invokedynamic #350,  0            // InvokeDynamic #7:run:(Ljava/lang/String;)Ljava/lang/Runnable;
+      78: invokespecial #287                // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+      81: invokevirtual #289                // Method java/lang/Thread.start:()V
+      84: ldc           #8                  // String ==============================
+      86: iconst_0
+      87: anewarray     #119                // class java/lang/Object
+      90: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+      93: aload_2
+      94: ifnull        110
+      97: aload_2
+      98: invokedynamic #351,  0            // InvokeDynamic #8:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     103: iconst_0
+     104: anewarray     #119                // class java/lang/Object
+     107: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     110: invokestatic  #190                // Method ML/_590f69/_21aca6.getMinecraftVersion:()LML/_cb9292/_21aca6;
+     113: invokevirtual #186                // Method ML/_cb9292/_21aca6._71ce15:()Ljava/lang/String;
+     116: invokedynamic #352,  0            // InvokeDynamic #9:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     121: iconst_0
+     122: anewarray     #119                // class java/lang/Object
+     125: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     128: getstatic     #163                // Field L/_1e73d7/_cfe983._f5d1fd:Ljava/lang/String;
+     131: invokedynamic #353,  0            // InvokeDynamic #10:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     136: iconst_0
+     137: anewarray     #119                // class java/lang/Object
+     140: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     143: getstatic     #164                // Field L/_1e73d7/_cfe983._939ef8:Ljava/lang/String;
+     146: getstatic     #162                // Field L/_1e73d7/_cfe983._4e2ef9:Ljava/lang/String;
+     149: invokedynamic #354,  0            // InvokeDynamic #11:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     154: iconst_0
+     155: anewarray     #119                // class java/lang/Object
+     158: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     161: invokestatic  #214                // Method _2c20fb:()[Ljava/lang/String;
+     164: invokestatic  #299                // Method java/util/Arrays.toString:([Ljava/lang/Object;)Ljava/lang/String;
+     167: invokedynamic #355,  0            // InvokeDynamic #12:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     172: iconst_0
+     173: anewarray     #119                // class java/lang/Object
+     176: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     179: getstatic     #168                // Field L/util/_cb9292._c4ddf5:Ljava/lang/String;
+     182: invokedynamic #356,  0            // InvokeDynamic #13:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     187: iconst_0
+     188: anewarray     #119                // class java/lang/Object
+     191: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     194: getstatic     #166                // Field L/util/_cb9292._05cf96:Ljava/lang/String;
+     197: invokedynamic #357,  0            // InvokeDynamic #14:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     202: iconst_0
+     203: anewarray     #119                // class java/lang/Object
+     206: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     209: getstatic     #175                // Field L/util/_038392._3f1d03:Ljava/lang/String;
+     212: invokedynamic #358,  0            // InvokeDynamic #15:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     217: iconst_0
+     218: anewarray     #119                // class java/lang/Object
+     221: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     224: getstatic     #172                // Field L/util/_038392._37ebd5:Ljava/lang/String;
+     227: invokedynamic #359,  0            // InvokeDynamic #16:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     232: iconst_0
+     233: anewarray     #119                // class java/lang/Object
+     236: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     239: getstatic     #179                // Field L/util/_038392._f8a23d:Ljava/lang/String;
+     242: invokedynamic #360,  0            // InvokeDynamic #17:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     247: iconst_0
+     248: anewarray     #119                // class java/lang/Object
+     251: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     254: getstatic     #171                // Field L/util/_038392._539ac8:Ljava/lang/String;
+     257: invokedynamic #361,  0            // InvokeDynamic #18:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     262: iconst_0
+     263: anewarray     #119                // class java/lang/Object
+     266: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     269: getstatic     #178                // Field L/util/_038392._ceb41d:Ljava/lang/String;
+     272: invokedynamic #362,  0            // InvokeDynamic #19:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     277: iconst_0
+     278: anewarray     #119                // class java/lang/Object
+     281: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     284: ldc           #8                  // String ==============================
+     286: iconst_0
+     287: anewarray     #119                // class java/lang/Object
+     290: invokestatic  #196                // Method L/_00e05b/_cfe983._21aca6:(Ljava/lang/Object;[Ljava/lang/Object;)V
+     293: getstatic     #165                // Field L/_1e73d7/_cfe983._c1461e:Z
+     296: ifeq          309
+     299: ldc2_w        #144                // long 5000l
+     302: invokestatic  #288                // Method java/lang/Thread.sleep:(J)V
+     305: goto          309
+     308: astore_3
+     309: return
+    Exception table:
+       from    to  target type
+          32    38    41   Class java/lang/Exception
+         299   305   308   Class java/lang/InterruptedException
+
+  public static java.lang.String[] _2c20fb();
+    Code:
+       0: ldc           #81                 // class L/_cfe983
+       2: invokevirtual #268                // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+       5: invokestatic  #228                // Method ML/ichor/api/IchorAPI.getPipeline:(Ljava/lang/Object;)Ljava/util/Optional;
+       8: invokedynamic #363,  0            // InvokeDynamic #20:apply:()Ljava/util/function/Function;
+      13: invokevirtual #304                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      16: iconst_0
+      17: anewarray     #122                // class java/lang/String
+      20: invokevirtual #305                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      23: checkcast     #68                 // class "[Ljava/lang/String;"
+      26: areturn
+
+  public static java.lang.String _e264f2(java.util.List<java.lang.String>);
+    Code:
+       0: ldc           #31                 // String SHA-1
+       2: invokestatic  #295                // Method java/security/MessageDigest.getInstance:(Ljava/lang/String;)Ljava/security/MessageDigest;
+       5: astore_1
+       6: aload_1
+       7: ldc           #6                  // String ,
+       9: aload_0
+      10: invokestatic  #279                // Method java/lang/String.join:(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+      13: getstatic     #183                // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      16: invokevirtual #278                // Method java/lang/String.getBytes:(Ljava/nio/charset/Charset;)[B
+      19: invokevirtual #296                // Method java/security/MessageDigest.update:([B)V
+      22: aload_1
+      23: invokevirtual #294                // Method java/security/MessageDigest.digest:()[B
+      26: invokestatic  #187                // Method ML/_13ea87/_bb4487/_21aca6._23f752:([B)Ljava/lang/String;
+      29: areturn
+      30: astore_1
+      31: ldc           #67                 // String unknown
+      33: areturn
+    Exception table:
+       from    to  target type
+           0    29    30   Class java/lang/Exception
+
+  private static java.util.Queue<io.sentry.Breadcrumb> createBreadcrumbsList(int);
+    Code:
+       0: iload_0
+       1: invokestatic  #184                // Method com/google/common/collect/EvictingQueue.create:(I)Lcom/google/common/collect/EvictingQueue;
+       4: invokestatic  #185                // Method com/google/common/collect/Queues.synchronizedQueue:(Ljava/util/Queue;)Ljava/util/Queue;
+       7: areturn
+
+  public static boolean _bb4c6b();
+    Code:
+       0: getstatic     #157                // Field _fd94ce:Z
+       3: ireturn
+
+  private static java.lang.String[] _6c713e(ML.ichor._13ea87);
+    Code:
+       0: aload_0
+       1: invokevirtual #224                // Method ML/ichor/_13ea87._076994:()Ljava/util/Map;
+       4: invokeinterface #330,  1          // InterfaceMethod java/util/Map.keySet:()Ljava/util/Set;
+       9: invokedynamic #364,  0            // InvokeDynamic #21:apply:()Ljava/util/function/IntFunction;
+      14: invokeinterface #339,  2          // InterfaceMethod java/util/Set.toArray:(Ljava/util/function/IntFunction;)[Ljava/lang/Object;
+      19: checkcast     #68                 // class "[Ljava/lang/String;"
+      22: areturn
+
+  private static java.lang.String[] _e47ca2(int);
+    Code:
+       0: iload_0
+       1: anewarray     #122                // class java/lang/String
+       4: areturn
+
+  private static void _b96d86(java.lang.String);
+    Code:
+       0: aconst_null
+       1: aload_0
+       2: invokedynamic #365,  0            // InvokeDynamic #22:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       7: ldc           #33                 // String Something went wrong
+       9: iconst_2
+      10: invokestatic  #306                // Method javax/swing/JOptionPane.showMessageDialog:(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+      13: return
+
+  private static void _76b356(java.lang.String);
+    Code:
+       0: aconst_null
+       1: aload_0
+       2: invokedynamic #366,  0            // InvokeDynamic #23:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       7: ldc           #27                 // String Out of Memory
+       9: iconst_2
+      10: invokestatic  #306                // Method javax/swing/JOptionPane.showMessageDialog:(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+      13: return
+
+  private static void _cfe983(io.sentry.SentryLevel, java.lang.String, io.sentry.IScope);
+    Code:
+       0: aload_2
+       1: aload_0
+       2: invokeinterface #318,  2          // InterfaceMethod io/sentry/IScope.setLevel:(Lio/sentry/SentryLevel;)V
+       7: aload_2
+       8: ldc           #39                 // String capture_location
+      10: aload_1
+      11: invokeinterface #319,  3          // InterfaceMethod io/sentry/IScope.setTag:(Ljava/lang/String;Ljava/lang/String;)V
+      16: return
+
+  private static java.lang.String _d4ca6c(ML.ichor._21aca6._21aca6);
+    Code:
+       0: aload_0
+       1: invokevirtual #226                // Method ML/ichor/_21aca6/_21aca6.getId:()Ljava/lang/String;
+       4: aload_0
+       5: invokevirtual #227                // Method ML/ichor/_21aca6/_21aca6.getVersion:()Ljava/lang/String;
+       8: invokedynamic #367,  0            // InvokeDynamic #24:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      13: areturn
+
+  private static void _c8175c(ML.ichor._13ea87);
+    Code:
+       0: aload_0
+       1: invokevirtual #225                // Method ML/ichor/_13ea87._5e834b:()LML/ichor/util/_2f4182;
+       4: invokedynamic #368,  0            // InvokeDynamic #25:accept:()Ljava/util/function/Consumer;
+       9: invokevirtual #229                // Method ML/ichor/util/_2f4182._b03e9c:(Ljava/util/function/Consumer;)V
+      12: return
+
+  private static void _1e73d7(java.lang.Throwable);
+    Code:
+       0: aload_0
+       1: invokevirtual #291                // Method java/lang/Throwable.printStackTrace:()V
+       4: getstatic     #181                // Field io/sentry/SentryLevel.FATAL:Lio/sentry/SentryLevel;
+       7: ldc           #17                 // String LCCR
+       9: ldc           #16                 // String IchorPipeline Error Handler
+      11: aload_0
+      12: aconst_null
+      13: invokestatic  #206                // Method _cfe983:(Lio/sentry/SentryLevel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Lio/sentry/Hint;)Ljava/lang/String;
+      16: astore_1
+      17: ldc           #16                 // String IchorPipeline Error Handler
+      19: aload_1
+      20: invokedynamic #348,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      25: iconst_0
+      26: anewarray     #119                // class java/lang/Object
+      29: invokestatic  #195                // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      32: aload_0
+      33: invokevirtual #273                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      36: invokevirtual #269                // Method java/lang/Class.getName:()Ljava/lang/String;
+      39: aload_0
+      40: invokestatic  #200                // Method L/_767dc1/_1e73d7._1253fc:(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      43: invokevirtual #290                // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+      46: invokedynamic #369,  0            // InvokeDynamic #26:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      51: invokestatic  #230                // Method io/sentry/Breadcrumb.error:(Ljava/lang/String;)Lio/sentry/Breadcrumb;
+      54: invokestatic  #201                // Method _cfe983:(Lio/sentry/Breadcrumb;)V
+      57: return
+
+  private static void _cfe983(io.sentry.SentryOptions);
+    Code:
+       0: aload_0
+       1: bipush        100
+       3: invokevirtual #248                // Method io/sentry/SentryOptions.setMaxBreadcrumbs:(I)V
+       6: aload_0
+       7: invokedynamic #370,  0            // InvokeDynamic #27:execute:()Lio/sentry/SentryOptions$BeforeSendCallback;
+      12: invokevirtual #243                // Method io/sentry/SentryOptions.setBeforeSend:(Lio/sentry/SentryOptions$BeforeSendCallback;)V
+      15: aload_0
+      16: iconst_0
+      17: invokevirtual #242                // Method io/sentry/SentryOptions.setAttachServerName:(Z)V
+      20: aload_0
+      21: getstatic     #167                // Field L/util/_cb9292._5f3e51:Z
+      24: ifeq          32
+      27: ldc           #51                 // String https://49db0029d2304d69bd80986185f7fafd@o923049.ingest.sentry.io/6029559
+      29: goto          34
+      32: ldc           #50                 // String https://49c0ccff7276e28e55e9e82de4addd1d@o923049.ingest.sentry.io/6029559
+      34: invokevirtual #245                // Method io/sentry/SentryOptions.setDsn:(Ljava/lang/String;)V
+      37: aload_0
+      38: getstatic     #163                // Field L/_1e73d7/_cfe983._f5d1fd:Ljava/lang/String;
+      41: ldc           #7                  // String /
+      43: ldc           #37                 // String _
+      45: invokevirtual #282                // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      48: invokevirtual #247                // Method io/sentry/SentryOptions.setEnvironment:(Ljava/lang/String;)V
+      51: aload_0
+      52: getstatic     #165                // Field L/_1e73d7/_cfe983._c1461e:Z
+      55: ifne          68
+      58: getstatic     #155                // Field _d57c97:Z
+      61: ifeq          68
+      64: iconst_1
+      65: goto          69
+      68: iconst_0
+      69: invokevirtual #244                // Method io/sentry/SentryOptions.setDebug:(Z)V
+      72: aload_0
+      73: getstatic     #161                // Field L/_1e73d7/_cfe983._1fe4d8:Ljava/lang/String;
+      76: invokevirtual #249                // Method io/sentry/SentryOptions.setProguardUuid:(Ljava/lang/String;)V
+      79: getstatic     #163                // Field L/_1e73d7/_cfe983._f5d1fd:Ljava/lang/String;
+      82: getstatic     #164                // Field L/_1e73d7/_cfe983._939ef8:Ljava/lang/String;
+      85: invokedynamic #371,  0            // InvokeDynamic #28:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      90: astore_1
+      91: aload_0
+      92: aload_1
+      93: bipush        47
+      95: bipush        95
+      97: invokevirtual #281                // Method java/lang/String.replace:(CC)Ljava/lang/String;
+     100: invokevirtual #250                // Method io/sentry/SentryOptions.setRelease:(Ljava/lang/String;)V
+     103: aload_0
+     104: iconst_0
+     105: invokevirtual #246                // Method io/sentry/SentryOptions.setEnableUncaughtExceptionHandler:(Z)V
+     108: getstatic     #178                // Field L/util/_038392._ceb41d:Ljava/lang/String;
+     111: astore_2
+     112: ldc           #9                  // String ?
+     114: ldc           #62                 // String not supplied
+     116: invokestatic  #338                // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
+     119: aload_2
+     120: invokeinterface #337,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+     125: ifne          133
+     128: aload_0
+     129: aload_2
+     130: invokevirtual #241                // Method io/sentry/SentryOptions.addTracingOrigin:(Ljava/lang/String;)V
+     133: getstatic     #167                // Field L/util/_cb9292._5f3e51:Z
+     136: ifeq          151
+     139: aload_0
+     140: invokedynamic #372,  0            // InvokeDynamic #29:sample:()Lio/sentry/SentryOptions$TracesSamplerCallback;
+     145: invokevirtual #252                // Method io/sentry/SentryOptions.setTracesSampler:(Lio/sentry/SentryOptions$TracesSamplerCallback;)V
+     148: goto          159
+     151: aload_0
+     152: dconst_1
+     153: invokestatic  #270                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     156: invokevirtual #251                // Method io/sentry/SentryOptions.setTracesSampleRate:(Ljava/lang/Double;)V
+     159: return
+
+  private static java.lang.Double _cfe983(io.sentry.SamplingContext);
+    Code:
+       0: getstatic     #154                // Field L/_02d7ad/_bb4487/_cfe983.SENTRY_TRACE_SAMPLING:LL/_02d7ad/_bb4487/_cfe983;
+       3: invokevirtual #197                // Method L/_02d7ad/_bb4487/_cfe983.isEnabled:()Z
+       6: ifeq          16
+       9: ldc2_w        #148                // double 0.05d
+      12: invokestatic  #270                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      15: areturn
+      16: dconst_0
+      17: invokestatic  #270                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      20: areturn
+
+  static {};
+    Code:
+       0: ldc           #55                 // String lunar.sentryDebug
+       2: ldc           #44                 // String false
+       4: invokestatic  #286                // Method java/lang/System.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       7: invokestatic  #266                // Method java/lang/Boolean.parseBoolean:(Ljava/lang/String;)Z
+      10: putstatic     #155                // Field _d57c97:Z
+      13: ldc           #56                 // String lunar.sentrySendErrors
+      15: getstatic     #165                // Field L/_1e73d7/_cfe983._c1461e:Z
+      18: invokestatic  #267                // Method java/lang/Boolean.toString:(Z)Ljava/lang/String;
+      21: invokestatic  #286                // Method java/lang/System.getProperty:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      24: invokestatic  #266                // Method java/lang/Boolean.parseBoolean:(Ljava/lang/String;)Z
+      27: putstatic     #160                // Field _bc7cbd:Z
+      30: lconst_0
+      31: putstatic     #156                // Field _293bc3:J
+      34: iconst_0
+      35: putstatic     #158                // Field _e15130:I
+      38: iconst_0
+      39: putstatic     #157                // Field _fd94ce:Z
+      42: bipush        50
+      44: invokestatic  #218                // Method createBreadcrumbsList:(I)Ljava/util/Queue;
+      47: putstatic     #159                // Field _b1d029:Ljava/util/Queue;
+      50: return
+}

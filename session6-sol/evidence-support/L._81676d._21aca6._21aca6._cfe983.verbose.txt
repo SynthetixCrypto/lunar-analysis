@@ -1,0 +1,409 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH.class
+  Last modified Dec 31, 1969; size 4966 bytes
+  SHA-256 checksum ae147867541484bcd86b370aa21484bc2b1938b4f5c4c34418f2a8e7b2255896
+public abstract class com.moonsworth.lunar.client.OHOORCCRHHHHROIICHOCRHOCRICROH.RROHOCRCCHCIORHICIHCOHRIRCIHCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI.COOCHIRORIICRCIIRIROHIIRIRICCH<T extends com.moonsworth.webosr.config.EngineConfig> extends java.lang.Object
+  minor version: 0
+  major version: 61
+  flags: (0x0421) ACC_PUBLIC, ACC_SUPER, ACC_ABSTRACT
+  this_class: #9                          // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH
+  super_class: #19                        // java/lang/Object
+  interfaces: 0, fields: 4, methods: 7, attributes: 3
+Constant pool:
+    #1 = String             #128          // LunarClient \u0001 (\u0001; \u0001; \u0001)
+    #2 = String             #172          // lunarInternalInvoke
+    #3 = Class              #145          // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH
+    #4 = Class              #146          // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH
+    #5 = Class              #147          // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+    #6 = Class              #148          // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI
+    #7 = Class              #149          // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+    #8 = Class              #150          // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+    #9 = Class              #151          // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #10 = Class              #152          // com/moonsworth/lunar/client/OHRORRHCHCRICORRRCIRIOCCIRCRII/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #11 = Class              #153          // com/moonsworth/lunar/client/util/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+   #12 = Class              #154          // com/moonsworth/webosr/config/BrowserConfig
+   #13 = Class              #155          // com/moonsworth/webosr/config/EngineConfig
+   #14 = Class              #156          // com/moonsworth/webosr/wrappers/Browser
+   #15 = Class              #157          // com/moonsworth/webosr/wrappers/Browser$Listener
+   #16 = Class              #158          // com/moonsworth/webosr/wrappers/WebEngine
+   #17 = Class              #165          // java/lang/Exception
+   #18 = Class              #166          // java/lang/Integer
+   #19 = Class              #167          // java/lang/Object
+   #20 = Class              #168          // java/lang/RuntimeException
+   #21 = Class              #169          // java/lang/invoke/MethodHandles
+   #22 = Class              #170          // java/lang/invoke/MethodHandles$Lookup
+   #23 = Class              #171          // java/lang/invoke/StringConcatFactory
+   #24 = Fieldref           #9.#61        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH.HHRHOCCHHHCRROHCIIHCCHCOHHHIRH:Z
+   #25 = Fieldref           #9.#66        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH.ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+   #26 = Fieldref           #9.#68        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH.ROCRRHHIROOOHCICIOIORIHRICHRCI:Ljava/lang/String;
+   #27 = Fieldref           #9.#69        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH.ROHRHCIOHORHCHROROCHHIHIIRRRHI:Lcom/moonsworth/webosr/javascript/FunctionBus;
+   #28 = Fieldref           #10.#62       // com/moonsworth/lunar/client/OHRORRHCHCRICORRRCIRIOCCIRCRII/COOCHIRORIICRCIIRIROHIIRIRICCH.HHRRHCRRCICHCHOHCOOOOCIOOIRORC:Ljava/lang/String;
+   #29 = Fieldref           #10.#70       // com/moonsworth/lunar/client/OHRORRHCHCRICORRRCIRIOCCIRCRII/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHHROCHRHRCCHHRRHIOOOCIRCRCH:Z
+   #30 = Fieldref           #11.#64       // com/moonsworth/lunar/client/util/COOIOIRCCICRCCIHCCRHRCIHROHCCI.HOORCHIROHCICHRRIRHHCHHOOIOORO:Ljava/lang/String;
+   #31 = Fieldref           #12.#71       // com/moonsworth/webosr/config/BrowserConfig.accelerated:Z
+   #32 = Fieldref           #12.#75       // com/moonsworth/webosr/config/BrowserConfig.eventHandler:Lcom/moonsworth/webosr/wrappers/Browser$Listener;
+   #33 = Fieldref           #12.#77       // com/moonsworth/webosr/config/BrowserConfig.height:I
+   #34 = Fieldref           #12.#78       // com/moonsworth/webosr/config/BrowserConfig.initialScale:D
+   #35 = Fieldref           #12.#83       // com/moonsworth/webosr/config/BrowserConfig.transparent:Z
+   #36 = Fieldref           #12.#85       // com/moonsworth/webosr/config/BrowserConfig.width:I
+   #37 = Fieldref           #13.#73       // com/moonsworth/webosr/config/EngineConfig.clipboard:Lcom/moonsworth/webosr/handler/Clipboard;
+   #38 = Fieldref           #13.#76       // com/moonsworth/webosr/config/EngineConfig.fileSystem:Lcom/moonsworth/webosr/handler/FileSystem;
+   #39 = Fieldref           #13.#81       // com/moonsworth/webosr/config/EngineConfig.remoteDebugPort:Ljava/lang/Integer;
+   #40 = Fieldref           #13.#82       // com/moonsworth/webosr/config/EngineConfig.textureHandler:Lcom/moonsworth/webosr/TextureHandler;
+   #41 = Methodref          #3.#63        // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.HOIRRHRRHORIROCOOOCCOROCCIOIHR:()Ljava/lang/String;
+   #42 = Methodref          #4.#57        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":()V
+   #43 = Methodref          #5.#65        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.IHRCOCCRRHCROHHRHICHRCOCCCOOIO:()Lcom/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+   #44 = Methodref          #6.#59        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI."<init>":(Z)V
+   #45 = Methodref          #7.#57        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI."<init>":()V
+   #46 = Methodref          #8.#60        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CIOOHRHOIIOHIRRIRCIOHHRCIHORRC:()Lcom/moonsworth/webosr/wrappers/WebEngine;
+   #47 = Methodref          #9.#67        // com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH.RCHHOIRCOCHCOICOROOHCHRHCHRIOI:()Lcom/moonsworth/webosr/config/EngineConfig;
+   #48 = Methodref          #12.#57       // com/moonsworth/webosr/config/BrowserConfig."<init>":()V
+   #49 = Methodref          #14.#72       // com/moonsworth/webosr/wrappers/Browser.bindFunction:(Ljava/lang/String;Lcom/moonsworth/webosr/handler/FunctionJS;)V
+   #50 = Methodref          #16.#74       // com/moonsworth/webosr/wrappers/WebEngine.createBrowser:(Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;
+   #51 = Methodref          #18.#84       // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #52 = Methodref          #19.#57       // java/lang/Object."<init>":()V
+   #53 = Methodref          #20.#58       // java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+   #54 = Methodref          #23.#80       // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #55 = InvokeDynamic      #0:#79        // #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #56 = MethodHandle       6:#54         // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #57 = NameAndType        #103:#92      // "<init>":()V
+   #58 = NameAndType        #103:#99      // "<init>":(Ljava/lang/Throwable;)V
+   #59 = NameAndType        #103:#101     // "<init>":(Z)V
+   #60 = NameAndType        #105:#89      // CIOOHRHOIIOHIRRIRCIOHHRCIHORRC:()Lcom/moonsworth/webosr/wrappers/WebEngine;
+   #61 = NameAndType        #109:#141     // HHRHOCCHHHCRROHCIIHCCHCOHHHIRH:Z
+   #62 = NameAndType        #110:#125     // HHRRHCRRCICHCHOHCOOOOCIOOIRORC:Ljava/lang/String;
+   #63 = NameAndType        #111:#90      // HOIRRHRRHORIROCOOOCCOROCCIOIHR:()Ljava/lang/String;
+   #64 = NameAndType        #112:#125     // HOORCHIROHCICHRRIRHHCHHOOIOORO:Ljava/lang/String;
+   #65 = NameAndType        #114:#86      // IHRCOCCRRHCROHHRHICHRCOCCCOOIO:()Lcom/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+   #66 = NameAndType        #131:#117     // ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+   #67 = NameAndType        #132:#87      // RCHHOIRCOCHCOICOROOHCHRHCHRIOI:()Lcom/moonsworth/webosr/config/EngineConfig;
+   #68 = NameAndType        #134:#125     // ROCRRHHIROOOHCICIOIORIHRICHRCI:Ljava/lang/String;
+   #69 = NameAndType        #135:#120     // ROHRHCIOHORHCHROROCHHIHIIRRRHI:Lcom/moonsworth/webosr/javascript/FunctionBus;
+   #70 = NameAndType        #136:#141     // RROHHROCHRHRCCHHRRHIOOOCIRCRCH:Z
+   #71 = NameAndType        #142:#141     // accelerated:Z
+   #72 = NameAndType        #143:#96      // bindFunction:(Ljava/lang/String;Lcom/moonsworth/webosr/handler/FunctionJS;)V
+   #73 = NameAndType        #144:#118     // clipboard:Lcom/moonsworth/webosr/handler/Clipboard;
+   #74 = NameAndType        #159:#95      // createBrowser:(Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;
+   #75 = NameAndType        #160:#121     // eventHandler:Lcom/moonsworth/webosr/wrappers/Browser$Listener;
+   #76 = NameAndType        #161:#119     // fileSystem:Lcom/moonsworth/webosr/handler/FileSystem;
+   #77 = NameAndType        #163:#113     // height:I
+   #78 = NameAndType        #164:#108     // initialScale:D
+   #79 = NameAndType        #173:#97      // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #80 = NameAndType        #173:#100     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+   #81 = NameAndType        #174:#124     // remoteDebugPort:Ljava/lang/Integer;
+   #82 = NameAndType        #175:#116     // textureHandler:Lcom/moonsworth/webosr/TextureHandler;
+   #83 = NameAndType        #176:#141     // transparent:Z
+   #84 = NameAndType        #177:#93      // valueOf:(I)Ljava/lang/Integer;
+   #85 = NameAndType        #178:#113     // width:I
+   #86 = Utf8               ()Lcom/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+   #87 = Utf8               ()Lcom/moonsworth/webosr/config/EngineConfig;
+   #88 = Utf8               ()Lcom/moonsworth/webosr/javascript/FunctionBus;
+   #89 = Utf8               ()Lcom/moonsworth/webosr/wrappers/WebEngine;
+   #90 = Utf8               ()Ljava/lang/String;
+   #91 = Utf8               ()TT;
+   #92 = Utf8               ()V
+   #93 = Utf8               (I)Ljava/lang/Integer;
+   #94 = Utf8               (IIDLcom/moonsworth/webosr/wrappers/Browser$Listener;)Lcom/moonsworth/webosr/wrappers/Browser;
+   #95 = Utf8               (Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;
+   #96 = Utf8               (Ljava/lang/String;Lcom/moonsworth/webosr/handler/FunctionJS;)V
+   #97 = Utf8               (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #98 = Utf8               (Ljava/lang/String;Z)V
+   #99 = Utf8               (Ljava/lang/Throwable;)V
+  #100 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #101 = Utf8               (Z)V
+  #102 = Utf8               <T:Lcom/moonsworth/webosr/config/EngineConfig;>Ljava/lang/Object;
+  #103 = Utf8               <init>
+  #104 = Utf8               BootstrapMethods
+  #105 = Utf8               CIOOHRHOIIOHIRRIRCIOHHRCIHORRC
+  #106 = Utf8               COOCHIRORIICRCIIRIROHIIRIRICCH
+  #107 = Utf8               Code
+  #108 = Utf8               D
+  #109 = Utf8               HHRHOCCHHHCRROHCIIHCCHCOHHHIRH
+  #110 = Utf8               HHRRHCRRCICHCHOHCOOOOCIOOIRORC
+  #111 = Utf8               HOIRRHRRHORIROCOOOCCOROCCIOIHR
+  #112 = Utf8               HOORCHIROHCICHRRIRHHCHHOOIOORO
+  #113 = Utf8               I
+  #114 = Utf8               IHRCOCCRRHCROHHRHICHRCOCCCOOIO
+  #115 = Utf8               InnerClasses
+  #116 = Utf8               Lcom/moonsworth/webosr/TextureHandler;
+  #117 = Utf8               Lcom/moonsworth/webosr/config/EngineConfig;
+  #118 = Utf8               Lcom/moonsworth/webosr/handler/Clipboard;
+  #119 = Utf8               Lcom/moonsworth/webosr/handler/FileSystem;
+  #120 = Utf8               Lcom/moonsworth/webosr/javascript/FunctionBus;
+  #121 = Utf8               Lcom/moonsworth/webosr/wrappers/Browser$Listener;
+  #122 = Utf8               LineNumberTable
+  #123 = Utf8               Listener
+  #124 = Utf8               Ljava/lang/Integer;
+  #125 = Utf8               Ljava/lang/String;
+  #126 = Utf8               Llombok/Generated;
+  #127 = Utf8               Lookup
+  #128 = Utf8               LunarClient \u0001 (\u0001; \u0001; \u0001)
+  #129 = Utf8               OIHOORORCRROIIHCRCICHCICRHHOIC
+  #130 = Utf8               OOIOOOCOIHCRHIRICROORHRORRIHHI
+  #131 = Utf8               ORROOOCOCRICORHOHIRCRROHHHOIIR
+  #132 = Utf8               RCHHOIRCOCHCOICOROOHCHRHCHRIOI
+  #133 = Utf8               ROCCHIRHCCIIORICIICHCCOORIOROR
+  #134 = Utf8               ROCRRHHIROOOHCICIOIORIHRICHRCI
+  #135 = Utf8               ROHRHCIOHORHCHROROCHHIHIIRRRHI
+  #136 = Utf8               RROHHROCHRHRCCHHRRHIOOOCIRCRCH
+  #137 = Utf8               RuntimeInvisibleAnnotations
+  #138 = Utf8               Signature
+  #139 = Utf8               StackMapTable
+  #140 = Utf8               TT;
+  #141 = Utf8               Z
+  #142 = Utf8               accelerated
+  #143 = Utf8               bindFunction
+  #144 = Utf8               clipboard
+  #145 = Utf8               com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #146 = Utf8               com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #147 = Utf8               com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #148 = Utf8               com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI
+  #149 = Utf8               com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #150 = Utf8               com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #151 = Utf8               com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #152 = Utf8               com/moonsworth/lunar/client/OHRORRHCHCRICORRRCIRIOCCIRCRII/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #153 = Utf8               com/moonsworth/lunar/client/util/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+  #154 = Utf8               com/moonsworth/webosr/config/BrowserConfig
+  #155 = Utf8               com/moonsworth/webosr/config/EngineConfig
+  #156 = Utf8               com/moonsworth/webosr/wrappers/Browser
+  #157 = Utf8               com/moonsworth/webosr/wrappers/Browser$Listener
+  #158 = Utf8               com/moonsworth/webosr/wrappers/WebEngine
+  #159 = Utf8               createBrowser
+  #160 = Utf8               eventHandler
+  #161 = Utf8               fileSystem
+  #162 = Utf8               getUserAgent
+  #163 = Utf8               height
+  #164 = Utf8               initialScale
+  #165 = Utf8               java/lang/Exception
+  #166 = Utf8               java/lang/Integer
+  #167 = Utf8               java/lang/Object
+  #168 = Utf8               java/lang/RuntimeException
+  #169 = Utf8               java/lang/invoke/MethodHandles
+  #170 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #171 = Utf8               java/lang/invoke/StringConcatFactory
+  #172 = Utf8               lunarInternalInvoke
+  #173 = Utf8               makeConcatWithConstants
+  #174 = Utf8               remoteDebugPort
+  #175 = Utf8               textureHandler
+  #176 = Utf8               transparent
+  #177 = Utf8               valueOf
+  #178 = Utf8               width
+{
+  private final java.lang.String ROCRRHHIROOOHCICIOIORIHRICHRCI;
+    descriptor: Ljava/lang/String;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final com.moonsworth.webosr.javascript.FunctionBus ROHRHCIOHORHCHROROCHHIHIIRRRHI;
+    descriptor: Lcom/moonsworth/webosr/javascript/FunctionBus;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final boolean HHRHOCCHHHCRROHCIIHCCHCOHHHIRH;
+    descriptor: Z
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private T ORROOOCOCRICORHOHIRCRROHHHOIIR;
+    descriptor: Lcom/moonsworth/webosr/config/EngineConfig;
+    flags: (0x0002) ACC_PRIVATE
+    Signature: #140                         // TT;
+
+  public com.moonsworth.lunar.client.OHOORCCRHHHHROIICHOCRHOCRICROH.RROHOCRCCHCIORHICIHCOHRIRCIHCI.RROHOCRCCHCIORHICIHCOHRIRCIHCI.COOCHIRORIICRCIIRIROHIIRIRICCH(java.lang.String, boolean);
+    descriptor: (Ljava/lang/String;Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: invokespecial #52                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_1
+         6: putfield      #26                 // Field ROCRRHHIROOOHCICIOIORIHRICHRCI:Ljava/lang/String;
+         9: aload_0
+        10: iload_2
+        11: putfield      #24                 // Field HHRHOCCHHHCRROHCIIHCCHCOHHHIRH:Z
+        14: aload_0
+        15: new           #4                  // class com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH
+        18: dup
+        19: invokespecial #42                 // Method com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":()V
+        22: putfield      #27                 // Field ROHRHCIOHORHCHROROCHHIHIIRRRHI:Lcom/moonsworth/webosr/javascript/FunctionBus;
+        25: return
+      LineNumberTable:
+        line 36: 0
+        line 37: 4
+        line 38: 9
+        line 39: 14
+        line 40: 25
+
+  protected abstract T RCHHOIRCOCHCOICOROOHCHRHCHRIOI();
+    descriptor: ()Lcom/moonsworth/webosr/config/EngineConfig;
+    flags: (0x0404) ACC_PROTECTED, ACC_ABSTRACT
+    Signature: #91                          // ()TT;
+
+  public final T OIHOORORCRROIIHCRCICHCICRHHOIC();
+    descriptor: ()Lcom/moonsworth/webosr/config/EngineConfig;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #25                 // Field ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+         4: ifnonnull     76
+         7: aload_0
+         8: aload_0
+         9: invokevirtual #47                 // Method RCHHOIRCOCHCOICOROOHCHRHCHRIOI:()Lcom/moonsworth/webosr/config/EngineConfig;
+        12: putfield      #25                 // Field ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+        15: aload_0
+        16: getfield      #25                 // Field ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+        19: invokestatic  #43                 // Method com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH.IHRCOCCRRHCROHHRHICHRCOCCCOOIO:()Lcom/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        22: putfield      #40                 // Field com/moonsworth/webosr/config/EngineConfig.textureHandler:Lcom/moonsworth/webosr/TextureHandler;
+        25: aload_0
+        26: getfield      #25                 // Field ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+        29: new           #7                  // class com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+        32: dup
+        33: invokespecial #45                 // Method com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI."<init>":()V
+        36: putfield      #37                 // Field com/moonsworth/webosr/config/EngineConfig.clipboard:Lcom/moonsworth/webosr/handler/Clipboard;
+        39: aload_0
+        40: getfield      #25                 // Field ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+        43: new           #6                  // class com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI
+        46: dup
+        47: aload_0
+        48: getfield      #24                 // Field HHRHOCCHHHCRROHCIIHCCHCOHHHIRH:Z
+        51: invokespecial #44                 // Method com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI."<init>":(Z)V
+        54: putfield      #38                 // Field com/moonsworth/webosr/config/EngineConfig.fileSystem:Lcom/moonsworth/webosr/handler/FileSystem;
+        57: getstatic     #29                 // Field com/moonsworth/lunar/client/OHRORRHCHCRICORRRCIRIOCCIRCRII/COOCHIRORIICRCIIRIROHIIRIRICCH.RROHHROCHRHRCCHHRRHIOOOCIRCRCH:Z
+        60: ifne          76
+        63: aload_0
+        64: getfield      #25                 // Field ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+        67: sipush        9222
+        70: invokestatic  #51                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        73: putfield      #39                 // Field com/moonsworth/webosr/config/EngineConfig.remoteDebugPort:Ljava/lang/Integer;
+        76: aload_0
+        77: getfield      #25                 // Field ORROOOCOCRICORHOHIRCRROHHHOIIR:Lcom/moonsworth/webosr/config/EngineConfig;
+        80: areturn
+      LineNumberTable:
+        line 45: 0
+        line 46: 7
+        line 48: 15
+        line 49: 25
+        line 50: 39
+        line 54: 57
+        line 55: 63
+        line 59: 76
+      StackMapTable: number_of_entries = 1
+        frame_type = 251 /* same_frame_extended */
+          offset_delta = 76
+    Signature: #91                          // ()TT;
+
+  public final com.moonsworth.webosr.wrappers.Browser COOCHIRORIICRCIIRIROHIIRIRICCH(int, int, double, com.moonsworth.webosr.wrappers.Browser$Listener);
+    descriptor: (IIDLcom/moonsworth/webosr/wrappers/Browser$Listener;)Lcom/moonsworth/webosr/wrappers/Browser;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=3, locals=8, args_size=5
+         0: new           #12                 // class com/moonsworth/webosr/config/BrowserConfig
+         3: dup
+         4: invokespecial #48                 // Method com/moonsworth/webosr/config/BrowserConfig."<init>":()V
+         7: astore        6
+         9: aload         6
+        11: iconst_0
+        12: putfield      #31                 // Field com/moonsworth/webosr/config/BrowserConfig.accelerated:Z
+        15: aload         6
+        17: iload_1
+        18: putfield      #36                 // Field com/moonsworth/webosr/config/BrowserConfig.width:I
+        21: aload         6
+        23: iload_2
+        24: putfield      #33                 // Field com/moonsworth/webosr/config/BrowserConfig.height:I
+        27: aload         6
+        29: dload_3
+        30: putfield      #34                 // Field com/moonsworth/webosr/config/BrowserConfig.initialScale:D
+        33: aload         6
+        35: aload         5
+        37: putfield      #32                 // Field com/moonsworth/webosr/config/BrowserConfig.eventHandler:Lcom/moonsworth/webosr/wrappers/Browser$Listener;
+        40: aload         6
+        42: iconst_1
+        43: putfield      #35                 // Field com/moonsworth/webosr/config/BrowserConfig.transparent:Z
+        46: invokestatic  #46                 // Method com/moonsworth/lunar/client/OHOORCCRHHHHROIICHOCRHOCRICROH/RROHOCRCCHCIORHICIHCOHRIRCIHCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CIOOHRHOIIOHIRRIRCIOHHRCIHORRC:()Lcom/moonsworth/webosr/wrappers/WebEngine;
+        49: aload         6
+        51: invokevirtual #50                 // Method com/moonsworth/webosr/wrappers/WebEngine.createBrowser:(Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;
+        54: astore        7
+        56: aload         7
+        58: ldc           #2                  // String lunarInternalInvoke
+        60: aload_0
+        61: getfield      #27                 // Field ROHRHCIOHORHCHROROCHHIHIIRRRHI:Lcom/moonsworth/webosr/javascript/FunctionBus;
+        64: invokevirtual #49                 // Method com/moonsworth/webosr/wrappers/Browser.bindFunction:(Ljava/lang/String;Lcom/moonsworth/webosr/handler/FunctionJS;)V
+        67: aload         7
+        69: areturn
+        70: astore        6
+        72: new           #20                 // class java/lang/RuntimeException
+        75: dup
+        76: aload         6
+        78: invokespecial #53                 // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+        81: athrow
+      Exception table:
+         from    to  target type
+             0    69    70   Class java/lang/Exception
+      LineNumberTable:
+        line 64: 0
+        line 65: 9
+        line 66: 15
+        line 67: 21
+        line 68: 27
+        line 69: 33
+        line 70: 40
+        line 71: 46
+        line 72: 56
+        line 73: 67
+        line 74: 70
+        line 75: 72
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 70
+          locals = []
+          stack = [ class java/lang/Exception ]
+
+  public final java.lang.String getUserAgent();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Code:
+      stack=4, locals=1, args_size=1
+         0: invokestatic  #41                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.HOIRRHRRHORIROCOOOCCOROCCIOIHR:()Ljava/lang/String;
+         3: getstatic     #30                 // Field com/moonsworth/lunar/client/util/COOIOIRCCICRCCIHCCRHRCIHROHCCI.HOORCHIROHCICHRRIRHHCHHOOIOORO:Ljava/lang/String;
+         6: getstatic     #28                 // Field com/moonsworth/lunar/client/OHRORRHCHCRICORRRCIRIOCCIRCRII/COOCHIRORIICRCIIRIROHIIRIRICCH.HHRRHCRRCICHCHOHCOOOOCIOOIRORC:Ljava/lang/String;
+         9: aload_0
+        10: getfield      #26                 // Field ROCRRHHIROOOHCICIOIORIHRICHRCI:Ljava/lang/String;
+        13: invokedynamic #55,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        18: areturn
+      LineNumberTable:
+        line 81: 0
+
+  public java.lang.String ROCCHIRHCCIIORICIICHCCOORIOROR();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #26                 // Field ROCRRHHIROOOHCICIOIORIHRICHRCI:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 22: 0
+    RuntimeInvisibleAnnotations:
+      0: #126()
+        lombok.Generated
+
+  public com.moonsworth.webosr.javascript.FunctionBus OOIOOOCOIHCRHIRICROORHRORRIHHI();
+    descriptor: ()Lcom/moonsworth/webosr/javascript/FunctionBus;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #27                 // Field ROHRHCIOHORHCHROROCHHIHIIRRRHI:Lcom/moonsworth/webosr/javascript/FunctionBus;
+         4: areturn
+      LineNumberTable:
+        line 25: 0
+    RuntimeInvisibleAnnotations:
+      0: #126()
+        lombok.Generated
+}
+Signature: #102                         // <T:Lcom/moonsworth/webosr/config/EngineConfig;>Ljava/lang/Object;
+BootstrapMethods:
+  0: #56 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #1 LunarClient \u0001 (\u0001; \u0001; \u0001)
+InnerClasses:
+  public static #123= #15 of #14;         // Listener=class com/moonsworth/webosr/wrappers/Browser$Listener of class com/moonsworth/webosr/wrappers/Browser
+  public static final #127= #22 of #21;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

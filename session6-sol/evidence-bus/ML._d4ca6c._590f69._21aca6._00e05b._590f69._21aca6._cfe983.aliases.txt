@@ -1,0 +1,252 @@
+public abstract class ML._d4ca6c._590f69._21aca6._00e05b._590f69._21aca6._cfe983 {
+  public net.minecraft.world.level.Level level;
+
+  public ML._d4ca6c._590f69._21aca6._00e05b._590f69._21aca6._cfe983();
+    Code:
+       0: aload_0
+       1: invokespecial #49                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  private void lunar$onBlockEntityLoad$v1_16_1(net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BlockEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field level:Lnet/minecraft/world/level/Level;
+       4: getfield      #34                 // Field net/minecraft/world/level/Level.isClientSide:Z
+       7: ifeq          34
+      10: aload         4
+      12: aload_2
+      13: if_acmpeq     34
+      16: invokestatic  #48                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      19: ldc           #12                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_cfe983
+      21: aload_1
+      22: aload_2
+      23: aload         4
+      25: invokedynamic #62,  0             // InvokeDynamic #0:get:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/level/block/entity/BlockEntity;)Ljava/util/function/Supplier;
+      30: invokevirtual #46                 // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      33: pop
+      34: return
+
+  private void lunar$onBlockEntityLoad$v1_17_0(net.minecraft.world.level.block.entity.BlockEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field level:Lnet/minecraft/world/level/Level;
+       4: getfield      #34                 // Field net/minecraft/world/level/Level.isClientSide:Z
+       7: ifeq          34
+      10: aload         4
+      12: aload_1
+      13: if_acmpeq     34
+      16: invokestatic  #48                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      19: ldc           #12                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_cfe983
+      21: aload_3
+      22: aload_1
+      23: aload         4
+      25: invokedynamic #63,  0             // InvokeDynamic #1:get:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/level/block/entity/BlockEntity;)Ljava/util/function/Supplier;
+      30: invokevirtual #46                 // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      33: pop
+      34: return
+
+  private void lunar$onBlockEntityUnLoad$v1_16_1(net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BlockEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field level:Lnet/minecraft/world/level/Level;
+       4: getfield      #34                 // Field net/minecraft/world/level/Level.isClientSide:Z
+       7: ifeq          27
+      10: invokestatic  #48                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      13: ldc           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+      15: aload_1
+      16: aload         4
+      18: invokedynamic #64,  0             // InvokeDynamic #2:get:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntity;)Ljava/util/function/Supplier;
+      23: invokevirtual #46                 // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      26: pop
+      27: return
+
+  private void lunar$onBlockEntityUnLoad$v1_17_0(net.minecraft.world.level.block.entity.BlockEntity, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field level:Lnet/minecraft/world/level/Level;
+       4: getfield      #34                 // Field net/minecraft/world/level/Level.isClientSide:Z
+       7: ifeq          27
+      10: invokestatic  #48                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      13: ldc           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+      15: aload_3
+      16: aload         4
+      18: invokedynamic #65,  0             // InvokeDynamic #3:get:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/entity/BlockEntity;)Ljava/util/function/Supplier;
+      23: invokevirtual #46                 // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      26: pop
+      27: return
+
+  private <K, V> V lunar$onBlockEntityRemove(java.util.Map<K, V>, K, com.llamalad7.mixinextras.injector.wrapoperation.Operation<V>);
+    Code:
+       0: aload_3
+       1: iconst_2
+       2: anewarray     #16                 // class java/lang/Object
+       5: dup
+       6: iconst_0
+       7: aload_1
+       8: aastore
+       9: dup
+      10: iconst_1
+      11: aload_2
+      12: aastore
+      13: invokeinterface #52,  2           // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      18: astore        4
+      20: aload_0
+      21: getfield      #32                 // Field level:Lnet/minecraft/world/level/Level;
+      24: getfield      #34                 // Field net/minecraft/world/level/Level.isClientSide:Z
+      27: ifeq          58
+      30: aload         4
+      32: ifnull        58
+      35: aload         4
+      37: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      40: astore        5
+      42: invokestatic  #48                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      45: ldc           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+      47: aload         5
+      49: invokedynamic #66,  0             // InvokeDynamic #4:get:(LML/_590f69/_6fc5d5/_21aca6;)Ljava/util/function/Supplier;
+      54: invokevirtual #46                 // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      57: pop
+      58: aload         4
+      60: areturn
+
+  private void lunar$onBlockEntityRemove(net.minecraft.core.BlockPos, org.spongepowered.asm.mixin.injection.callback.CallbackInfo, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field level:Lnet/minecraft/world/level/Level;
+       4: getfield      #34                 // Field net/minecraft/world/level/Level.isClientSide:Z
+       7: ifeq          29
+      10: aload_3
+      11: ifnull        29
+      14: invokestatic  #48                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      17: ldc           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+      19: aload_3
+      20: invokedynamic #67,  0             // InvokeDynamic #5:get:(Lnet/minecraft/world/level/block/entity/BlockEntity;)Ljava/util/function/Supplier;
+      25: invokevirtual #46                 // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      28: pop
+      29: return
+
+  private void lunar$onChunkReplaceUnLoadAllBlockEntities$v1_17_0(org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field level:Lnet/minecraft/world/level/Level;
+       4: getfield      #34                 // Field net/minecraft/world/level/Level.isClientSide:Z
+       7: ifne          11
+      10: return
+      11: aload_0
+      12: checkcast     #28                 // class net/minecraft/world/level/chunk/LevelChunk
+      15: astore_2
+      16: getstatic     #33                 // Field L/util/_e93d3c.MC_VERSION:I
+      19: bipush        9
+      21: if_icmpgt     31
+      24: aload_2
+      25: getfield      #36                 // Field net/minecraft/world/level/chunk/LevelChunk.blockEntities$v1_16_1:Ljava/util/Map;
+      28: goto          35
+      31: aload_2
+      32: getfield      #35                 // Field net/minecraft/world/level/chunk/LevelChunk.blockEntities:Ljava/util/Map;
+      35: astore_3
+      36: aload_3
+      37: invokeinterface #57,  1           // InterfaceMethod java/util/Map.isEmpty:()Z
+      42: ifne          59
+      45: invokestatic  #48                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      48: ldc           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+      50: aload_3
+      51: invokedynamic #68,  0             // InvokeDynamic #6:accept:(Ljava/util/Map;)Ljava/util/function/Consumer;
+      56: invokevirtual #47                 // Method L/_d4ca6c/_590f69._bb4487:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      59: return
+
+  private static void lambda$lunar$onChunkReplaceUnLoadAllBlockEntities$v1_17_0$0(java.util.Map, java.util.function.Consumer);
+    Code:
+       0: aload_0
+       1: invokeinterface #56,  1           // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+       6: invokeinterface #60,  1           // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      11: astore_2
+      12: aload_2
+      13: invokeinterface #54,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      18: ifeq          65
+      21: aload_2
+      22: invokeinterface #55,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      27: checkcast     #22                 // class java/util/Map$Entry
+      30: astore_3
+      31: aload_1
+      32: new           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+      35: dup
+      36: aload_3
+      37: invokeinterface #58,  1           // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      42: checkcast     #10                 // class ML/_590f69/_5b3f84/_55938e
+      45: aload_3
+      46: invokeinterface #59,  1           // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+      51: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      54: invokespecial #45                 // Method L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6."<init>":(LML/_590f69/_5b3f84/_55938e;LML/_590f69/_6fc5d5/_21aca6;)V
+      57: invokeinterface #61,  2           // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      62: goto          12
+      65: return
+
+  private static L._d4ca6c._cfe983._2ce426._1e73d7$_21aca6 lambda$lunar$onBlockEntityRemove$1(net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: new           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+       3: dup
+       4: aload_0
+       5: invokevirtual #51                 // Method net/minecraft/world/level/block/entity/BlockEntity.getBlockPos:()Lnet/minecraft/core/BlockPos;
+       8: checkcast     #10                 // class ML/_590f69/_5b3f84/_55938e
+      11: aload_0
+      12: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      15: invokespecial #45                 // Method L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6."<init>":(LML/_590f69/_5b3f84/_55938e;LML/_590f69/_6fc5d5/_21aca6;)V
+      18: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._1e73d7$_21aca6 lambda$lunar$onBlockEntityRemove$0(ML._590f69._6fc5d5._21aca6);
+    Code:
+       0: new           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+       3: dup
+       4: aload_0
+       5: invokeinterface #53,  1           // InterfaceMethod ML/_590f69/_6fc5d5/_21aca6.bridge$getBlockPos:()LML/_590f69/_5b3f84/_55938e;
+      10: aload_0
+      11: invokespecial #45                 // Method L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6."<init>":(LML/_590f69/_5b3f84/_55938e;LML/_590f69/_6fc5d5/_21aca6;)V
+      14: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._1e73d7$_21aca6 lambda$lunar$onBlockEntityUnLoad$v1_17_0$0(net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: new           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+       3: dup
+       4: aload_0
+       5: checkcast     #10                 // class ML/_590f69/_5b3f84/_55938e
+       8: aload_1
+       9: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      12: invokespecial #45                 // Method L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6."<init>":(LML/_590f69/_5b3f84/_55938e;LML/_590f69/_6fc5d5/_21aca6;)V
+      15: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._1e73d7$_21aca6 lambda$lunar$onBlockEntityUnLoad$v1_16_1$0(net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: new           #13                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6
+       3: dup
+       4: aload_0
+       5: checkcast     #10                 // class ML/_590f69/_5b3f84/_55938e
+       8: aload_1
+       9: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      12: invokespecial #45                 // Method L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_21aca6."<init>":(LML/_590f69/_5b3f84/_55938e;LML/_590f69/_6fc5d5/_21aca6;)V
+      15: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._1e73d7$_cfe983 lambda$lunar$onBlockEntityLoad$v1_17_0$0(net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BlockEntity, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: new           #12                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_cfe983
+       3: dup
+       4: aload_0
+       5: checkcast     #10                 // class ML/_590f69/_5b3f84/_55938e
+       8: aload_1
+       9: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      12: aload_2
+      13: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      16: invokespecial #44                 // Method L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_cfe983."<init>":(LML/_590f69/_5b3f84/_55938e;LML/_590f69/_6fc5d5/_21aca6;LML/_590f69/_6fc5d5/_21aca6;)V
+      19: areturn
+
+  private static L._d4ca6c._cfe983._2ce426._1e73d7$_cfe983 lambda$lunar$onBlockEntityLoad$v1_16_1$0(net.minecraft.core.BlockPos, net.minecraft.world.level.block.entity.BlockEntity, net.minecraft.world.level.block.entity.BlockEntity);
+    Code:
+       0: new           #12                 // class L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_cfe983
+       3: dup
+       4: aload_0
+       5: checkcast     #10                 // class ML/_590f69/_5b3f84/_55938e
+       8: aload_1
+       9: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      12: aload_2
+      13: checkcast     #9                  // class ML/_590f69/_6fc5d5/_21aca6
+      16: invokespecial #44                 // Method L/_d4ca6c/_cfe983/_2ce426/_1e73d7$_cfe983."<init>":(LML/_590f69/_5b3f84/_55938e;LML/_590f69/_6fc5d5/_21aca6;LML/_590f69/_6fc5d5/_21aca6;)V
+      19: areturn
+}

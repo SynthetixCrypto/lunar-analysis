@@ -1,0 +1,2458 @@
+public class org.java_websocket.drafts.Draft_6455 extends org.java_websocket.drafts.Draft {
+  private static final java.lang.String SEC_WEB_SOCKET_KEY;
+
+  private static final java.lang.String SEC_WEB_SOCKET_PROTOCOL;
+
+  private static final java.lang.String SEC_WEB_SOCKET_EXTENSIONS;
+
+  private static final java.lang.String SEC_WEB_SOCKET_ACCEPT;
+
+  private static final java.lang.String UPGRADE;
+
+  private static final java.lang.String CONNECTION;
+
+  private final org.slf4j.Logger log;
+
+  private org.java_websocket.extensions.IExtension extension;
+
+  private java.util.List<org.java_websocket.extensions.IExtension> knownExtensions;
+
+  private org.java_websocket.protocols.IProtocol protocol;
+
+  private java.util.List<org.java_websocket.protocols.IProtocol> knownProtocols;
+
+  private org.java_websocket.framing.Framedata currentContinuousFrame;
+
+  private final java.util.List<java.nio.ByteBuffer> byteBufferList;
+
+  private java.nio.ByteBuffer incompleteframe;
+
+  private final java.util.Random reuseableRandom;
+
+  private int maxFrameSize;
+
+  static final boolean $assertionsDisabled;
+
+  public org.java_websocket.drafts.Draft_6455();
+    Code:
+       0: aload_0
+       1: invokestatic  #200                // Method java/util/Collections.emptyList:()Ljava/util/List;
+       4: invokespecial #215                // Method "<init>":(Ljava/util/List;)V
+       7: return
+
+  public org.java_websocket.drafts.Draft_6455(org.java_websocket.extensions.IExtension);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #201                // Method java/util/Collections.singletonList:(Ljava/lang/Object;)Ljava/util/List;
+       5: invokespecial #215                // Method "<init>":(Ljava/util/List;)V
+       8: return
+
+  public org.java_websocket.drafts.Draft_6455(java.util.List<org.java_websocket.extensions.IExtension>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: new           #113                // class org/java_websocket/protocols/Protocol
+       5: dup
+       6: ldc           #3                  // String
+       8: invokespecial #286                // Method org/java_websocket/protocols/Protocol."<init>":(Ljava/lang/String;)V
+      11: invokestatic  #201                // Method java/util/Collections.singletonList:(Ljava/lang/Object;)Ljava/util/List;
+      14: invokespecial #216                // Method "<init>":(Ljava/util/List;Ljava/util/List;)V
+      17: return
+
+  public org.java_websocket.drafts.Draft_6455(java.util.List<org.java_websocket.extensions.IExtension>, java.util.List<org.java_websocket.protocols.IProtocol>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: ldc           #2                  // int 2147483647
+       5: invokespecial #217                // Method "<init>":(Ljava/util/List;Ljava/util/List;I)V
+       8: return
+
+  public org.java_websocket.drafts.Draft_6455(java.util.List<org.java_websocket.extensions.IExtension>, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: new           #113                // class org/java_websocket/protocols/Protocol
+       5: dup
+       6: ldc           #3                  // String
+       8: invokespecial #286                // Method org/java_websocket/protocols/Protocol."<init>":(Ljava/lang/String;)V
+      11: invokestatic  #201                // Method java/util/Collections.singletonList:(Ljava/lang/Object;)Ljava/util/List;
+      14: iload_2
+      15: invokespecial #217                // Method "<init>":(Ljava/util/List;Ljava/util/List;I)V
+      18: return
+
+  public org.java_websocket.drafts.Draft_6455(java.util.List<org.java_websocket.extensions.IExtension>, java.util.List<org.java_websocket.protocols.IProtocol>, int);
+    Code:
+       0: aload_0
+       1: invokespecial #213                // Method org/java_websocket/drafts/Draft."<init>":()V
+       4: aload_0
+       5: ldc           #88                 // class org/java_websocket/drafts/Draft_6455
+       7: invokestatic  #291                // Method org/slf4j/LoggerFactory.getLogger:(Ljava/lang/Class;)Lorg/slf4j/Logger;
+      10: putfield      #128                // Field log:Lorg/slf4j/Logger;
+      13: aload_0
+      14: new           #101                // class org/java_websocket/extensions/DefaultExtension
+      17: dup
+      18: invokespecial #267                // Method org/java_websocket/extensions/DefaultExtension."<init>":()V
+      21: putfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+      24: aload_0
+      25: new           #83                 // class java/util/Random
+      28: dup
+      29: invokespecial #203                // Method java/util/Random."<init>":()V
+      32: putfield      #131                // Field reuseableRandom:Ljava/util/Random;
+      35: aload_1
+      36: ifnull        48
+      39: aload_2
+      40: ifnull        48
+      43: iload_3
+      44: iconst_1
+      45: if_icmpge     56
+      48: new           #62                 // class java/lang/IllegalArgumentException
+      51: dup
+      52: invokespecial #147                // Method java/lang/IllegalArgumentException."<init>":()V
+      55: athrow
+      56: aload_0
+      57: new           #76                 // class java/util/ArrayList
+      60: dup
+      61: aload_1
+      62: invokeinterface #299,  1          // InterfaceMethod java/util/List.size:()I
+      67: invokespecial #196                // Method java/util/ArrayList."<init>":(I)V
+      70: putfield      #126                // Field knownExtensions:Ljava/util/List;
+      73: aload_0
+      74: new           #76                 // class java/util/ArrayList
+      77: dup
+      78: aload_2
+      79: invokeinterface #299,  1          // InterfaceMethod java/util/List.size:()I
+      84: invokespecial #196                // Method java/util/ArrayList."<init>":(I)V
+      87: putfield      #127                // Field knownProtocols:Ljava/util/List;
+      90: iconst_0
+      91: istore        4
+      93: aload_0
+      94: new           #76                 // class java/util/ArrayList
+      97: dup
+      98: invokespecial #195                // Method java/util/ArrayList."<init>":()V
+     101: putfield      #122                // Field byteBufferList:Ljava/util/List;
+     104: aload_1
+     105: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     110: astore        5
+     112: aload         5
+     114: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     119: ifeq          153
+     122: aload         5
+     124: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     129: checkcast     #102                // class org/java_websocket/extensions/IExtension
+     132: astore        6
+     134: aload         6
+     136: invokevirtual #154                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+     139: ldc           #101                // class org/java_websocket/extensions/DefaultExtension
+     141: invokevirtual #153                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+     144: ifeq          150
+     147: iconst_1
+     148: istore        4
+     150: goto          112
+     153: aload_0
+     154: getfield      #126                // Field knownExtensions:Ljava/util/List;
+     157: aload_1
+     158: invokeinterface #296,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     163: pop
+     164: iload         4
+     166: ifne          191
+     169: aload_0
+     170: getfield      #126                // Field knownExtensions:Ljava/util/List;
+     173: aload_0
+     174: getfield      #126                // Field knownExtensions:Ljava/util/List;
+     177: invokeinterface #299,  1          // InterfaceMethod java/util/List.size:()I
+     182: aload_0
+     183: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+     186: invokeinterface #294,  3          // InterfaceMethod java/util/List.add:(ILjava/lang/Object;)V
+     191: aload_0
+     192: getfield      #127                // Field knownProtocols:Ljava/util/List;
+     195: aload_2
+     196: invokeinterface #296,  2          // InterfaceMethod java/util/List.addAll:(Ljava/util/Collection;)Z
+     201: pop
+     202: aload_0
+     203: iload_3
+     204: putfield      #129                // Field maxFrameSize:I
+     207: return
+
+  public org.java_websocket.enums.HandshakeState acceptHandshakeAsServer(org.java_websocket.handshake.ClientHandshake);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #246                // Method readVersion:(Lorg/java_websocket/handshake/Handshakedata;)I
+       5: istore_2
+       6: iload_2
+       7: bipush        13
+       9: if_icmpeq     27
+      12: aload_0
+      13: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      16: ldc           #51                 // String acceptHandshakeAsServer - Wrong websocket version.
+      18: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      23: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+      26: areturn
+      27: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+      30: astore_3
+      31: aload_1
+      32: ldc           #33                 // String Sec-WebSocket-Extensions
+      34: invokeinterface #321,  2          // InterfaceMethod org/java_websocket/handshake/ClientHandshake.getFieldValue:(Ljava/lang/String;)Ljava/lang/String;
+      39: astore        4
+      41: aload_0
+      42: getfield      #126                // Field knownExtensions:Ljava/util/List;
+      45: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      50: astore        5
+      52: aload         5
+      54: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      59: ifeq          117
+      62: aload         5
+      64: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      69: checkcast     #102                // class org/java_websocket/extensions/IExtension
+      72: astore        6
+      74: aload         6
+      76: aload         4
+      78: invokeinterface #306,  2          // InterfaceMethod org/java_websocket/extensions/IExtension.acceptProvidedExtensionAsServer:(Ljava/lang/String;)Z
+      83: ifeq          114
+      86: aload_0
+      87: aload         6
+      89: putfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+      92: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+      95: astore_3
+      96: aload_0
+      97: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     100: ldc           #49                 // String acceptHandshakeAsServer - Matching extension found: {}
+     102: aload_0
+     103: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+     106: invokeinterface #336,  3          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;Ljava/lang/Object;)V
+     111: goto          117
+     114: goto          52
+     117: aload_0
+     118: aload_1
+     119: ldc           #35                 // String Sec-WebSocket-Protocol
+     121: invokeinterface #321,  2          // InterfaceMethod org/java_websocket/handshake/ClientHandshake.getFieldValue:(Ljava/lang/String;)Ljava/lang/String;
+     126: invokespecial #223                // Method containsRequestedProtocol:(Ljava/lang/String;)Lorg/java_websocket/enums/HandshakeState;
+     129: astore        5
+     131: aload         5
+     133: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     136: if_acmpne     150
+     139: aload_3
+     140: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     143: if_acmpne     150
+     146: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     149: areturn
+     150: aload_0
+     151: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     154: ldc           #50                 // String acceptHandshakeAsServer - No matching extension or protocol found.
+     156: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+     161: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     164: areturn
+
+  private org.java_websocket.enums.HandshakeState containsRequestedProtocol(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #127                // Field knownProtocols:Ljava/util/List;
+       4: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       9: astore_2
+      10: aload_2
+      11: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      16: ifeq          66
+      19: aload_2
+      20: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      25: checkcast     #112                // class org/java_websocket/protocols/IProtocol
+      28: astore_3
+      29: aload_3
+      30: aload_1
+      31: invokeinterface #328,  2          // InterfaceMethod org/java_websocket/protocols/IProtocol.acceptProvidedProtocol:(Ljava/lang/String;)Z
+      36: ifeq          63
+      39: aload_0
+      40: aload_3
+      41: putfield      #130                // Field protocol:Lorg/java_websocket/protocols/IProtocol;
+      44: aload_0
+      45: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      48: ldc           #43                 // String acceptHandshake - Matching protocol found: {}
+      50: aload_0
+      51: getfield      #130                // Field protocol:Lorg/java_websocket/protocols/IProtocol;
+      54: invokeinterface #336,  3          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;Ljava/lang/Object;)V
+      59: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+      62: areturn
+      63: goto          10
+      66: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+      69: areturn
+
+  public org.java_websocket.enums.HandshakeState acceptHandshakeAsClient(org.java_websocket.handshake.ClientHandshake, org.java_websocket.handshake.ServerHandshake);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: invokevirtual #219                // Method basicAccept:(Lorg/java_websocket/handshake/Handshakedata;)Z
+       5: ifne          23
+       8: aload_0
+       9: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      12: ldc           #46                 // String acceptHandshakeAsClient - Missing/wrong upgrade or connection in handshake.
+      14: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      19: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+      22: areturn
+      23: aload_1
+      24: ldc           #34                 // String Sec-WebSocket-Key
+      26: invokeinterface #322,  2          // InterfaceMethod org/java_websocket/handshake/ClientHandshake.hasFieldValue:(Ljava/lang/String;)Z
+      31: ifeq          45
+      34: aload_2
+      35: ldc           #32                 // String Sec-WebSocket-Accept
+      37: invokeinterface #325,  2          // InterfaceMethod org/java_websocket/handshake/ServerHandshake.hasFieldValue:(Ljava/lang/String;)Z
+      42: ifne          60
+      45: aload_0
+      46: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      49: ldc           #45                 // String acceptHandshakeAsClient - Missing Sec-WebSocket-Key or Sec-WebSocket-Accept
+      51: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      56: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+      59: areturn
+      60: aload_2
+      61: ldc           #32                 // String Sec-WebSocket-Accept
+      63: invokeinterface #324,  2          // InterfaceMethod org/java_websocket/handshake/ServerHandshake.getFieldValue:(Ljava/lang/String;)Ljava/lang/String;
+      68: astore_3
+      69: aload_1
+      70: ldc           #34                 // String Sec-WebSocket-Key
+      72: invokeinterface #321,  2          // InterfaceMethod org/java_websocket/handshake/ClientHandshake.getFieldValue:(Ljava/lang/String;)Ljava/lang/String;
+      77: astore        4
+      79: aload_0
+      80: aload         4
+      82: invokespecial #226                // Method generateFinalKey:(Ljava/lang/String;)Ljava/lang/String;
+      85: astore        4
+      87: aload         4
+      89: aload_3
+      90: invokevirtual #157                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      93: ifne          111
+      96: aload_0
+      97: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     100: ldc           #48                 // String acceptHandshakeAsClient - Wrong key for Sec-WebSocket-Key.
+     102: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+     107: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     110: areturn
+     111: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     114: astore        5
+     116: aload_2
+     117: ldc           #33                 // String Sec-WebSocket-Extensions
+     119: invokeinterface #324,  2          // InterfaceMethod org/java_websocket/handshake/ServerHandshake.getFieldValue:(Ljava/lang/String;)Ljava/lang/String;
+     124: astore        6
+     126: aload_0
+     127: getfield      #126                // Field knownExtensions:Ljava/util/List;
+     130: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     135: astore        7
+     137: aload         7
+     139: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     144: ifeq          203
+     147: aload         7
+     149: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     154: checkcast     #102                // class org/java_websocket/extensions/IExtension
+     157: astore        8
+     159: aload         8
+     161: aload         6
+     163: invokeinterface #305,  2          // InterfaceMethod org/java_websocket/extensions/IExtension.acceptProvidedExtensionAsClient:(Ljava/lang/String;)Z
+     168: ifeq          200
+     171: aload_0
+     172: aload         8
+     174: putfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+     177: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     180: astore        5
+     182: aload_0
+     183: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     186: ldc           #44                 // String acceptHandshakeAsClient - Matching extension found: {}
+     188: aload_0
+     189: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+     192: invokeinterface #336,  3          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;Ljava/lang/Object;)V
+     197: goto          203
+     200: goto          137
+     203: aload_0
+     204: aload_2
+     205: ldc           #35                 // String Sec-WebSocket-Protocol
+     207: invokeinterface #324,  2          // InterfaceMethod org/java_websocket/handshake/ServerHandshake.getFieldValue:(Ljava/lang/String;)Ljava/lang/String;
+     212: invokespecial #223                // Method containsRequestedProtocol:(Ljava/lang/String;)Lorg/java_websocket/enums/HandshakeState;
+     215: astore        7
+     217: aload         7
+     219: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     222: if_acmpne     237
+     225: aload         5
+     227: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     230: if_acmpne     237
+     233: getstatic     #134                // Field org/java_websocket/enums/HandshakeState.MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     236: areturn
+     237: aload_0
+     238: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     241: ldc           #47                 // String acceptHandshakeAsClient - No matching extension or protocol found.
+     243: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+     248: getstatic     #135                // Field org/java_websocket/enums/HandshakeState.NOT_MATCHED:Lorg/java_websocket/enums/HandshakeState;
+     251: areturn
+
+  public org.java_websocket.extensions.IExtension getExtension();
+    Code:
+       0: aload_0
+       1: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+       4: areturn
+
+  public java.util.List<org.java_websocket.extensions.IExtension> getKnownExtensions();
+    Code:
+       0: aload_0
+       1: getfield      #126                // Field knownExtensions:Ljava/util/List;
+       4: areturn
+
+  public org.java_websocket.protocols.IProtocol getProtocol();
+    Code:
+       0: aload_0
+       1: getfield      #130                // Field protocol:Lorg/java_websocket/protocols/IProtocol;
+       4: areturn
+
+  public int getMaxFrameSize();
+    Code:
+       0: aload_0
+       1: getfield      #129                // Field maxFrameSize:I
+       4: ireturn
+
+  public java.util.List<org.java_websocket.protocols.IProtocol> getKnownProtocols();
+    Code:
+       0: aload_0
+       1: getfield      #127                // Field knownProtocols:Ljava/util/List;
+       4: areturn
+
+  public org.java_websocket.handshake.ClientHandshakeBuilder postProcessHandshakeRequestAsClient(org.java_websocket.handshake.ClientHandshakeBuilder);
+    Code:
+       0: aload_1
+       1: ldc           #41                 // String Upgrade
+       3: ldc           #58                 // String websocket
+       5: invokeinterface #323,  3          // InterfaceMethod org/java_websocket/handshake/ClientHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+      10: aload_1
+      11: ldc           #10                 // String Connection
+      13: ldc           #41                 // String Upgrade
+      15: invokeinterface #323,  3          // InterfaceMethod org/java_websocket/handshake/ClientHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+      20: bipush        16
+      22: newarray       byte
+      24: astore_2
+      25: aload_0
+      26: getfield      #131                // Field reuseableRandom:Ljava/util/Random;
+      29: aload_2
+      30: invokevirtual #204                // Method java/util/Random.nextBytes:([B)V
+      33: aload_1
+      34: ldc           #34                 // String Sec-WebSocket-Key
+      36: aload_2
+      37: invokestatic  #287                // Method org/java_websocket/util/Base64.encodeBytes:([B)Ljava/lang/String;
+      40: invokeinterface #323,  3          // InterfaceMethod org/java_websocket/handshake/ClientHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+      45: aload_1
+      46: ldc           #36                 // String Sec-WebSocket-Version
+      48: ldc           #8                  // String 13
+      50: invokeinterface #323,  3          // InterfaceMethod org/java_websocket/handshake/ClientHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+      55: new           #69                 // class java/lang/StringBuilder
+      58: dup
+      59: invokespecial #161                // Method java/lang/StringBuilder."<init>":()V
+      62: astore_3
+      63: aload_0
+      64: getfield      #126                // Field knownExtensions:Ljava/util/List;
+      67: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      72: astore        4
+      74: aload         4
+      76: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      81: ifeq          148
+      84: aload         4
+      86: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      91: checkcast     #102                // class org/java_websocket/extensions/IExtension
+      94: astore        5
+      96: aload         5
+      98: invokeinterface #310,  1          // InterfaceMethod org/java_websocket/extensions/IExtension.getProvidedExtensionAsClient:()Ljava/lang/String;
+     103: ifnull        145
+     106: aload         5
+     108: invokeinterface #310,  1          // InterfaceMethod org/java_websocket/extensions/IExtension.getProvidedExtensionAsClient:()Ljava/lang/String;
+     113: invokevirtual #159                // Method java/lang/String.length:()I
+     116: ifeq          145
+     119: aload_3
+     120: invokevirtual #164                // Method java/lang/StringBuilder.length:()I
+     123: ifle          133
+     126: aload_3
+     127: ldc           #7                  // String ,
+     129: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     132: pop
+     133: aload_3
+     134: aload         5
+     136: invokeinterface #310,  1          // InterfaceMethod org/java_websocket/extensions/IExtension.getProvidedExtensionAsClient:()Ljava/lang/String;
+     141: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     144: pop
+     145: goto          74
+     148: aload_3
+     149: invokevirtual #164                // Method java/lang/StringBuilder.length:()I
+     152: ifeq          167
+     155: aload_1
+     156: ldc           #33                 // String Sec-WebSocket-Extensions
+     158: aload_3
+     159: invokevirtual #165                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     162: invokeinterface #323,  3          // InterfaceMethod org/java_websocket/handshake/ClientHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+     167: new           #69                 // class java/lang/StringBuilder
+     170: dup
+     171: invokespecial #161                // Method java/lang/StringBuilder."<init>":()V
+     174: astore        4
+     176: aload_0
+     177: getfield      #127                // Field knownProtocols:Ljava/util/List;
+     180: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     185: astore        5
+     187: aload         5
+     189: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     194: ifeq          254
+     197: aload         5
+     199: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     204: checkcast     #112                // class org/java_websocket/protocols/IProtocol
+     207: astore        6
+     209: aload         6
+     211: invokeinterface #330,  1          // InterfaceMethod org/java_websocket/protocols/IProtocol.getProvidedProtocol:()Ljava/lang/String;
+     216: invokevirtual #159                // Method java/lang/String.length:()I
+     219: ifeq          251
+     222: aload         4
+     224: invokevirtual #164                // Method java/lang/StringBuilder.length:()I
+     227: ifle          238
+     230: aload         4
+     232: ldc           #7                  // String ,
+     234: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     237: pop
+     238: aload         4
+     240: aload         6
+     242: invokeinterface #330,  1          // InterfaceMethod org/java_websocket/protocols/IProtocol.getProvidedProtocol:()Ljava/lang/String;
+     247: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     250: pop
+     251: goto          187
+     254: aload         4
+     256: invokevirtual #164                // Method java/lang/StringBuilder.length:()I
+     259: ifeq          275
+     262: aload_1
+     263: ldc           #35                 // String Sec-WebSocket-Protocol
+     265: aload         4
+     267: invokevirtual #165                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     270: invokeinterface #323,  3          // InterfaceMethod org/java_websocket/handshake/ClientHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+     275: aload_1
+     276: areturn
+
+  public org.java_websocket.handshake.HandshakeBuilder postProcessHandshakeResponseAsServer(org.java_websocket.handshake.ClientHandshake, org.java_websocket.handshake.ServerHandshakeBuilder);
+    Code:
+       0: aload_2
+       1: ldc           #41                 // String Upgrade
+       3: ldc           #58                 // String websocket
+       5: invokeinterface #326,  3          // InterfaceMethod org/java_websocket/handshake/ServerHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+      10: aload_2
+      11: ldc           #10                 // String Connection
+      13: aload_1
+      14: ldc           #10                 // String Connection
+      16: invokeinterface #321,  2          // InterfaceMethod org/java_websocket/handshake/ClientHandshake.getFieldValue:(Ljava/lang/String;)Ljava/lang/String;
+      21: invokeinterface #326,  3          // InterfaceMethod org/java_websocket/handshake/ServerHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+      26: aload_1
+      27: ldc           #34                 // String Sec-WebSocket-Key
+      29: invokeinterface #321,  2          // InterfaceMethod org/java_websocket/handshake/ClientHandshake.getFieldValue:(Ljava/lang/String;)Ljava/lang/String;
+      34: astore_3
+      35: aload_3
+      36: ifnonnull     49
+      39: new           #98                 // class org/java_websocket/exceptions/InvalidHandshakeException
+      42: dup
+      43: ldc           #54                 // String missing Sec-WebSocket-Key
+      45: invokespecial #262                // Method org/java_websocket/exceptions/InvalidHandshakeException."<init>":(Ljava/lang/String;)V
+      48: athrow
+      49: aload_2
+      50: ldc           #32                 // String Sec-WebSocket-Accept
+      52: aload_0
+      53: aload_3
+      54: invokespecial #226                // Method generateFinalKey:(Ljava/lang/String;)Ljava/lang/String;
+      57: invokeinterface #326,  3          // InterfaceMethod org/java_websocket/handshake/ServerHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+      62: aload_0
+      63: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+      66: invokeinterface #311,  1          // InterfaceMethod org/java_websocket/extensions/IExtension.getProvidedExtensionAsServer:()Ljava/lang/String;
+      71: invokevirtual #159                // Method java/lang/String.length:()I
+      74: ifeq          94
+      77: aload_2
+      78: ldc           #33                 // String Sec-WebSocket-Extensions
+      80: aload_0
+      81: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+      84: invokeinterface #311,  1          // InterfaceMethod org/java_websocket/extensions/IExtension.getProvidedExtensionAsServer:()Ljava/lang/String;
+      89: invokeinterface #326,  3          // InterfaceMethod org/java_websocket/handshake/ServerHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+      94: aload_0
+      95: invokevirtual #235                // Method getProtocol:()Lorg/java_websocket/protocols/IProtocol;
+      98: ifnull        133
+     101: aload_0
+     102: invokevirtual #235                // Method getProtocol:()Lorg/java_websocket/protocols/IProtocol;
+     105: invokeinterface #330,  1          // InterfaceMethod org/java_websocket/protocols/IProtocol.getProvidedProtocol:()Ljava/lang/String;
+     110: invokevirtual #159                // Method java/lang/String.length:()I
+     113: ifeq          133
+     116: aload_2
+     117: ldc           #35                 // String Sec-WebSocket-Protocol
+     119: aload_0
+     120: invokevirtual #235                // Method getProtocol:()Lorg/java_websocket/protocols/IProtocol;
+     123: invokeinterface #330,  1          // InterfaceMethod org/java_websocket/protocols/IProtocol.getProvidedProtocol:()Ljava/lang/String;
+     128: invokeinterface #326,  3          // InterfaceMethod org/java_websocket/handshake/ServerHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+     133: aload_2
+     134: ldc           #42                 // String Web Socket Protocol Handshake
+     136: invokeinterface #327,  2          // InterfaceMethod org/java_websocket/handshake/ServerHandshakeBuilder.setHttpStatusMessage:(Ljava/lang/String;)V
+     141: aload_2
+     142: ldc           #37                 // String Server
+     144: ldc           #39                 // String TooTallNate Java-WebSocket
+     146: invokeinterface #326,  3          // InterfaceMethod org/java_websocket/handshake/ServerHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+     151: aload_2
+     152: ldc           #13                 // String Date
+     154: aload_0
+     155: invokespecial #237                // Method getServerTime:()Ljava/lang/String;
+     158: invokeinterface #326,  3          // InterfaceMethod org/java_websocket/handshake/ServerHandshakeBuilder.put:(Ljava/lang/String;Ljava/lang/String;)V
+     163: aload_2
+     164: areturn
+
+  public org.java_websocket.drafts.Draft copyInstance();
+    Code:
+       0: new           #76                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #195                // Method java/util/ArrayList."<init>":()V
+       7: astore_1
+       8: aload_0
+       9: invokevirtual #230                // Method getKnownExtensions:()Ljava/util/List;
+      12: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      17: astore_2
+      18: aload_2
+      19: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      24: ifeq          51
+      27: aload_2
+      28: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      33: checkcast     #102                // class org/java_websocket/extensions/IExtension
+      36: astore_3
+      37: aload_1
+      38: aload_3
+      39: invokeinterface #307,  1          // InterfaceMethod org/java_websocket/extensions/IExtension.copyInstance:()Lorg/java_websocket/extensions/IExtension;
+      44: invokevirtual #197                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      47: pop
+      48: goto          18
+      51: new           #76                 // class java/util/ArrayList
+      54: dup
+      55: invokespecial #195                // Method java/util/ArrayList."<init>":()V
+      58: astore_2
+      59: aload_0
+      60: invokevirtual #231                // Method getKnownProtocols:()Ljava/util/List;
+      63: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      68: astore_3
+      69: aload_3
+      70: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      75: ifeq          104
+      78: aload_3
+      79: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      84: checkcast     #112                // class org/java_websocket/protocols/IProtocol
+      87: astore        4
+      89: aload_2
+      90: aload         4
+      92: invokeinterface #329,  1          // InterfaceMethod org/java_websocket/protocols/IProtocol.copyInstance:()Lorg/java_websocket/protocols/IProtocol;
+      97: invokevirtual #197                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     100: pop
+     101: goto          69
+     104: new           #88                 // class org/java_websocket/drafts/Draft_6455
+     107: dup
+     108: aload_1
+     109: aload_2
+     110: aload_0
+     111: getfield      #129                // Field maxFrameSize:I
+     114: invokespecial #217                // Method "<init>":(Ljava/util/List;Ljava/util/List;I)V
+     117: areturn
+
+  public java.nio.ByteBuffer createBinaryFrame(org.java_websocket.framing.Framedata);
+    Code:
+       0: aload_0
+       1: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+       4: aload_1
+       5: invokeinterface #309,  2          // InterfaceMethod org/java_websocket/extensions/IExtension.encodeFrame:(Lorg/java_websocket/framing/Framedata;)V
+      10: aload_0
+      11: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      14: invokeinterface #334,  1          // InterfaceMethod org/slf4j/Logger.isTraceEnabled:()Z
+      19: ifeq          81
+      22: aload_0
+      23: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      26: ldc           #53                 // String afterEnconding({}): {}
+      28: aload_1
+      29: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      34: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+      37: invokestatic  #151                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      40: aload_1
+      41: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      46: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+      49: sipush        1000
+      52: if_icmple     60
+      55: ldc           #57                 // String too big to display
+      57: goto          76
+      60: new           #68                 // class java/lang/String
+      63: dup
+      64: aload_1
+      65: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      70: invokevirtual #170                // Method java/nio/ByteBuffer.array:()[B
+      73: invokespecial #156                // Method java/lang/String."<init>":([B)V
+      76: invokeinterface #337,  4          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+      81: aload_0
+      82: aload_1
+      83: invokespecial #224                // Method createByteBufferFromFramedata:(Lorg/java_websocket/framing/Framedata;)Ljava/nio/ByteBuffer;
+      86: areturn
+
+  private java.nio.ByteBuffer createByteBufferFromFramedata(org.java_websocket.framing.Framedata);
+    Code:
+       0: aload_1
+       1: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+       6: astore_2
+       7: aload_0
+       8: getfield      #132                // Field role:Lorg/java_websocket/enums/Role;
+      11: getstatic     #143                // Field org/java_websocket/enums/Role.CLIENT:Lorg/java_websocket/enums/Role;
+      14: if_acmpne     21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: istore_3
+      23: aload_0
+      24: aload_2
+      25: invokespecial #238                // Method getSizeBytes:(Ljava/nio/ByteBuffer;)I
+      28: istore        4
+      30: iconst_1
+      31: iload         4
+      33: iconst_1
+      34: if_icmple     44
+      37: iload         4
+      39: iconst_1
+      40: iadd
+      41: goto          46
+      44: iload         4
+      46: iadd
+      47: iload_3
+      48: ifeq          55
+      51: iconst_4
+      52: goto          56
+      55: iconst_0
+      56: iadd
+      57: aload_2
+      58: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+      61: iadd
+      62: invokestatic  #169                // Method java/nio/ByteBuffer.allocate:(I)Ljava/nio/ByteBuffer;
+      65: astore        5
+      67: aload_0
+      68: aload_1
+      69: invokeinterface #315,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getOpcode:()Lorg/java_websocket/enums/Opcode;
+      74: invokespecial #225                // Method fromOpcode:(Lorg/java_websocket/enums/Opcode;)B
+      77: istore        6
+      79: aload_1
+      80: invokeinterface #317,  1          // InterfaceMethod org/java_websocket/framing/Framedata.isFin:()Z
+      85: ifeq          93
+      88: bipush        -128
+      90: goto          94
+      93: iconst_0
+      94: i2b
+      95: istore        7
+      97: iload         7
+      99: iload         6
+     101: ior
+     102: i2b
+     103: istore        7
+     105: aload_1
+     106: invokeinterface #318,  1          // InterfaceMethod org/java_websocket/framing/Framedata.isRSV1:()Z
+     111: ifeq          125
+     114: iload         7
+     116: aload_0
+     117: iconst_1
+     118: invokespecial #236                // Method getRSVByte:(I)B
+     121: ior
+     122: i2b
+     123: istore        7
+     125: aload_1
+     126: invokeinterface #319,  1          // InterfaceMethod org/java_websocket/framing/Framedata.isRSV2:()Z
+     131: ifeq          145
+     134: iload         7
+     136: aload_0
+     137: iconst_2
+     138: invokespecial #236                // Method getRSVByte:(I)B
+     141: ior
+     142: i2b
+     143: istore        7
+     145: aload_1
+     146: invokeinterface #320,  1          // InterfaceMethod org/java_websocket/framing/Framedata.isRSV3:()Z
+     151: ifeq          165
+     154: iload         7
+     156: aload_0
+     157: iconst_3
+     158: invokespecial #236                // Method getRSVByte:(I)B
+     161: ior
+     162: i2b
+     163: istore        7
+     165: aload         5
+     167: iload         7
+     169: invokevirtual #181                // Method java/nio/ByteBuffer.put:(B)Ljava/nio/ByteBuffer;
+     172: pop
+     173: aload_0
+     174: aload_2
+     175: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+     178: i2l
+     179: iload         4
+     181: invokespecial #247                // Method toByteArray:(JI)[B
+     184: astore        8
+     186: getstatic     #121                // Field $assertionsDisabled:Z
+     189: ifne          208
+     192: aload         8
+     194: arraylength
+     195: iload         4
+     197: if_icmpeq     208
+     200: new           #60                 // class java/lang/AssertionError
+     203: dup
+     204: invokespecial #144                // Method java/lang/AssertionError."<init>":()V
+     207: athrow
+     208: iload         4
+     210: iconst_1
+     211: if_icmpne     234
+     214: aload         5
+     216: aload         8
+     218: iconst_0
+     219: baload
+     220: aload_0
+     221: iload_3
+     222: invokespecial #232                // Method getMaskByte:(Z)B
+     225: ior
+     226: i2b
+     227: invokevirtual #181                // Method java/nio/ByteBuffer.put:(B)Ljava/nio/ByteBuffer;
+     230: pop
+     231: goto          309
+     234: iload         4
+     236: iconst_2
+     237: if_icmpne     266
+     240: aload         5
+     242: bipush        126
+     244: aload_0
+     245: iload_3
+     246: invokespecial #232                // Method getMaskByte:(Z)B
+     249: ior
+     250: i2b
+     251: invokevirtual #181                // Method java/nio/ByteBuffer.put:(B)Ljava/nio/ByteBuffer;
+     254: pop
+     255: aload         5
+     257: aload         8
+     259: invokevirtual #183                // Method java/nio/ByteBuffer.put:([B)Ljava/nio/ByteBuffer;
+     262: pop
+     263: goto          309
+     266: iload         4
+     268: bipush        8
+     270: if_icmpne     299
+     273: aload         5
+     275: bipush        127
+     277: aload_0
+     278: iload_3
+     279: invokespecial #232                // Method getMaskByte:(Z)B
+     282: ior
+     283: i2b
+     284: invokevirtual #181                // Method java/nio/ByteBuffer.put:(B)Ljava/nio/ByteBuffer;
+     287: pop
+     288: aload         5
+     290: aload         8
+     292: invokevirtual #183                // Method java/nio/ByteBuffer.put:([B)Ljava/nio/ByteBuffer;
+     295: pop
+     296: goto          309
+     299: new           #63                 // class java/lang/IllegalStateException
+     302: dup
+     303: ldc           #38                 // String Size representation not supported/specified
+     305: invokespecial #149                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+     308: athrow
+     309: iload_3
+     310: ifeq          383
+     313: iconst_4
+     314: invokestatic  #169                // Method java/nio/ByteBuffer.allocate:(I)Ljava/nio/ByteBuffer;
+     317: astore        9
+     319: aload         9
+     321: aload_0
+     322: getfield      #131                // Field reuseableRandom:Ljava/util/Random;
+     325: invokevirtual #205                // Method java/util/Random.nextInt:()I
+     328: invokevirtual #185                // Method java/nio/ByteBuffer.putInt:(I)Ljava/nio/ByteBuffer;
+     331: pop
+     332: aload         5
+     334: aload         9
+     336: invokevirtual #170                // Method java/nio/ByteBuffer.array:()[B
+     339: invokevirtual #183                // Method java/nio/ByteBuffer.put:([B)Ljava/nio/ByteBuffer;
+     342: pop
+     343: iconst_0
+     344: istore        10
+     346: aload_2
+     347: invokevirtual #176                // Method java/nio/ByteBuffer.hasRemaining:()Z
+     350: ifeq          380
+     353: aload         5
+     355: aload_2
+     356: invokevirtual #173                // Method java/nio/ByteBuffer.get:()B
+     359: aload         9
+     361: iload         10
+     363: iconst_4
+     364: irem
+     365: invokevirtual #174                // Method java/nio/ByteBuffer.get:(I)B
+     368: ixor
+     369: i2b
+     370: invokevirtual #181                // Method java/nio/ByteBuffer.put:(B)Ljava/nio/ByteBuffer;
+     373: pop
+     374: iinc          10, 1
+     377: goto          346
+     380: goto          395
+     383: aload         5
+     385: aload_2
+     386: invokevirtual #182                // Method java/nio/ByteBuffer.put:(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+     389: pop
+     390: aload_2
+     391: invokevirtual #172                // Method java/nio/ByteBuffer.flip:()Ljava/nio/Buffer;
+     394: pop
+     395: getstatic     #121                // Field $assertionsDisabled:Z
+     398: ifne          422
+     401: aload         5
+     403: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+     406: ifeq          422
+     409: new           #60                 // class java/lang/AssertionError
+     412: dup
+     413: aload         5
+     415: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+     418: invokespecial #145                // Method java/lang/AssertionError."<init>":(I)V
+     421: athrow
+     422: aload         5
+     424: invokevirtual #172                // Method java/nio/ByteBuffer.flip:()Ljava/nio/Buffer;
+     427: pop
+     428: aload         5
+     430: areturn
+
+  private org.java_websocket.framing.Framedata translateSingleFrame(java.nio.ByteBuffer);
+    Code:
+       0: aload_1
+       1: ifnonnull     12
+       4: new           #62                 // class java/lang/IllegalArgumentException
+       7: dup
+       8: invokespecial #147                // Method java/lang/IllegalArgumentException."<init>":()V
+      11: athrow
+      12: aload_1
+      13: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+      16: istore_2
+      17: iconst_2
+      18: istore_3
+      19: aload_0
+      20: iload_2
+      21: iload_3
+      22: invokespecial #251                // Method translateSingleFrameCheckPacketSize:(II)V
+      25: aload_1
+      26: invokevirtual #173                // Method java/nio/ByteBuffer.get:()B
+      29: istore        4
+      31: iload         4
+      33: bipush        8
+      35: ishr
+      36: ifeq          43
+      39: iconst_1
+      40: goto          44
+      43: iconst_0
+      44: istore        5
+      46: iload         4
+      48: bipush        64
+      50: iand
+      51: ifeq          58
+      54: iconst_1
+      55: goto          59
+      58: iconst_0
+      59: istore        6
+      61: iload         4
+      63: bipush        32
+      65: iand
+      66: ifeq          73
+      69: iconst_1
+      70: goto          74
+      73: iconst_0
+      74: istore        7
+      76: iload         4
+      78: bipush        16
+      80: iand
+      81: ifeq          88
+      84: iconst_1
+      85: goto          89
+      88: iconst_0
+      89: istore        8
+      91: aload_1
+      92: invokevirtual #173                // Method java/nio/ByteBuffer.get:()B
+      95: istore        9
+      97: iload         9
+      99: bipush        -128
+     101: iand
+     102: ifeq          109
+     105: iconst_1
+     106: goto          110
+     109: iconst_0
+     110: istore        10
+     112: iload         9
+     114: bipush        127
+     116: iand
+     117: i2b
+     118: istore        11
+     120: aload_0
+     121: iload         4
+     123: bipush        15
+     125: iand
+     126: i2b
+     127: invokespecial #248                // Method toOpcode:(B)Lorg/java_websocket/enums/Opcode;
+     130: astore        12
+     132: iload         11
+     134: iflt          144
+     137: iload         11
+     139: bipush        125
+     141: if_icmple     170
+     144: aload_0
+     145: aload_1
+     146: aload         12
+     148: iload         11
+     150: iload_2
+     151: iload_3
+     152: invokespecial #252                // Method translateSingleFramePayloadLength:(Ljava/nio/ByteBuffer;Lorg/java_websocket/enums/Opcode;III)Lorg/java_websocket/drafts/Draft_6455$TranslatedPayloadMetaData;
+     155: astore        13
+     157: aload         13
+     159: invokestatic  #254                // Method org/java_websocket/drafts/Draft_6455$TranslatedPayloadMetaData.access$000:(Lorg/java_websocket/drafts/Draft_6455$TranslatedPayloadMetaData;)I
+     162: istore        11
+     164: aload         13
+     166: invokestatic  #255                // Method org/java_websocket/drafts/Draft_6455$TranslatedPayloadMetaData.access$100:(Lorg/java_websocket/drafts/Draft_6455$TranslatedPayloadMetaData;)I
+     169: istore_3
+     170: aload_0
+     171: iload         11
+     173: i2l
+     174: invokespecial #250                // Method translateSingleFrameCheckLengthLimit:(J)V
+     177: iload_3
+     178: iload         10
+     180: ifeq          187
+     183: iconst_4
+     184: goto          188
+     187: iconst_0
+     188: iadd
+     189: istore_3
+     190: iload_3
+     191: iload         11
+     193: iadd
+     194: istore_3
+     195: aload_0
+     196: iload_2
+     197: iload_3
+     198: invokespecial #251                // Method translateSingleFrameCheckPacketSize:(II)V
+     201: aload_0
+     202: iload         11
+     204: invokevirtual #220                // Method checkAlloc:(I)I
+     207: invokestatic  #169                // Method java/nio/ByteBuffer.allocate:(I)Ljava/nio/ByteBuffer;
+     210: astore        13
+     212: iload         10
+     214: ifeq          267
+     217: iconst_4
+     218: newarray       byte
+     220: astore        14
+     222: aload_1
+     223: aload         14
+     225: invokevirtual #175                // Method java/nio/ByteBuffer.get:([B)Ljava/nio/ByteBuffer;
+     228: pop
+     229: iconst_0
+     230: istore        15
+     232: iload         15
+     234: iload         11
+     236: if_icmpge     264
+     239: aload         13
+     241: aload_1
+     242: invokevirtual #173                // Method java/nio/ByteBuffer.get:()B
+     245: aload         14
+     247: iload         15
+     249: iconst_4
+     250: irem
+     251: baload
+     252: ixor
+     253: i2b
+     254: invokevirtual #181                // Method java/nio/ByteBuffer.put:(B)Ljava/nio/ByteBuffer;
+     257: pop
+     258: iinc          15, 1
+     261: goto          232
+     264: goto          301
+     267: aload         13
+     269: aload_1
+     270: invokevirtual #170                // Method java/nio/ByteBuffer.array:()[B
+     273: aload_1
+     274: invokevirtual #179                // Method java/nio/ByteBuffer.position:()I
+     277: aload         13
+     279: invokevirtual #177                // Method java/nio/ByteBuffer.limit:()I
+     282: invokevirtual #184                // Method java/nio/ByteBuffer.put:([BII)Ljava/nio/ByteBuffer;
+     285: pop
+     286: aload_1
+     287: aload_1
+     288: invokevirtual #179                // Method java/nio/ByteBuffer.position:()I
+     291: aload         13
+     293: invokevirtual #177                // Method java/nio/ByteBuffer.limit:()I
+     296: iadd
+     297: invokevirtual #180                // Method java/nio/ByteBuffer.position:(I)Ljava/nio/Buffer;
+     300: pop
+     301: aload         12
+     303: invokestatic  #274                // Method org/java_websocket/framing/FramedataImpl1.get:(Lorg/java_websocket/enums/Opcode;)Lorg/java_websocket/framing/FramedataImpl1;
+     306: astore        14
+     308: aload         14
+     310: iload         5
+     312: invokevirtual #277                // Method org/java_websocket/framing/FramedataImpl1.setFin:(Z)V
+     315: aload         14
+     317: iload         6
+     319: invokevirtual #279                // Method org/java_websocket/framing/FramedataImpl1.setRSV1:(Z)V
+     322: aload         14
+     324: iload         7
+     326: invokevirtual #280                // Method org/java_websocket/framing/FramedataImpl1.setRSV2:(Z)V
+     329: aload         14
+     331: iload         8
+     333: invokevirtual #281                // Method org/java_websocket/framing/FramedataImpl1.setRSV3:(Z)V
+     336: aload         13
+     338: invokevirtual #172                // Method java/nio/ByteBuffer.flip:()Ljava/nio/Buffer;
+     341: pop
+     342: aload         14
+     344: aload         13
+     346: invokevirtual #278                // Method org/java_websocket/framing/FramedataImpl1.setPayload:(Ljava/nio/ByteBuffer;)V
+     349: aload_0
+     350: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+     353: aload         14
+     355: invokeinterface #312,  2          // InterfaceMethod org/java_websocket/extensions/IExtension.isFrameValid:(Lorg/java_websocket/framing/Framedata;)V
+     360: aload_0
+     361: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+     364: aload         14
+     366: invokeinterface #308,  2          // InterfaceMethod org/java_websocket/extensions/IExtension.decodeFrame:(Lorg/java_websocket/framing/Framedata;)V
+     371: aload_0
+     372: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     375: invokeinterface #334,  1          // InterfaceMethod org/slf4j/Logger.isTraceEnabled:()Z
+     380: ifeq          439
+     383: aload_0
+     384: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     387: ldc           #52                 // String afterDecoding({}): {}
+     389: aload         14
+     391: invokevirtual #275                // Method org/java_websocket/framing/FramedataImpl1.getPayloadData:()Ljava/nio/ByteBuffer;
+     394: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+     397: invokestatic  #151                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     400: aload         14
+     402: invokevirtual #275                // Method org/java_websocket/framing/FramedataImpl1.getPayloadData:()Ljava/nio/ByteBuffer;
+     405: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+     408: sipush        1000
+     411: if_icmple     419
+     414: ldc           #57                 // String too big to display
+     416: goto          434
+     419: new           #68                 // class java/lang/String
+     422: dup
+     423: aload         14
+     425: invokevirtual #275                // Method org/java_websocket/framing/FramedataImpl1.getPayloadData:()Ljava/nio/ByteBuffer;
+     428: invokevirtual #170                // Method java/nio/ByteBuffer.array:()[B
+     431: invokespecial #156                // Method java/lang/String."<init>":([B)V
+     434: invokeinterface #337,  4          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+     439: aload         14
+     441: invokevirtual #276                // Method org/java_websocket/framing/FramedataImpl1.isValid:()V
+     444: aload         14
+     446: areturn
+
+  private org.java_websocket.drafts.Draft_6455$TranslatedPayloadMetaData translateSingleFramePayloadLength(java.nio.ByteBuffer, org.java_websocket.enums.Opcode, int, int, int);
+    Code:
+       0: iload_3
+       1: istore        6
+       3: iload         5
+       5: istore        7
+       7: aload_2
+       8: getstatic     #139                // Field org/java_websocket/enums/Opcode.PING:Lorg/java_websocket/enums/Opcode;
+      11: if_acmpeq     28
+      14: aload_2
+      15: getstatic     #140                // Field org/java_websocket/enums/Opcode.PONG:Lorg/java_websocket/enums/Opcode;
+      18: if_acmpeq     28
+      21: aload_2
+      22: getstatic     #137                // Field org/java_websocket/enums/Opcode.CLOSING:Lorg/java_websocket/enums/Opcode;
+      25: if_acmpne     49
+      28: aload_0
+      29: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      32: ldc           #18                 // String Invalid frame: more than 125 octets
+      34: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      39: new           #97                 // class org/java_websocket/exceptions/InvalidFrameException
+      42: dup
+      43: ldc           #55                 // String more than 125 octets
+      45: invokespecial #261                // Method org/java_websocket/exceptions/InvalidFrameException."<init>":(Ljava/lang/String;)V
+      48: athrow
+      49: iload         6
+      51: bipush        126
+      53: if_icmpne     105
+      56: iinc          7, 2
+      59: aload_0
+      60: iload         4
+      62: iload         7
+      64: invokespecial #251                // Method translateSingleFrameCheckPacketSize:(II)V
+      67: iconst_3
+      68: newarray       byte
+      70: astore        8
+      72: aload         8
+      74: iconst_1
+      75: aload_1
+      76: invokevirtual #173                // Method java/nio/ByteBuffer.get:()B
+      79: bastore
+      80: aload         8
+      82: iconst_2
+      83: aload_1
+      84: invokevirtual #173                // Method java/nio/ByteBuffer.get:()B
+      87: bastore
+      88: new           #71                 // class java/math/BigInteger
+      91: dup
+      92: aload         8
+      94: invokespecial #166                // Method java/math/BigInteger."<init>":([B)V
+      97: invokevirtual #167                // Method java/math/BigInteger.intValue:()I
+     100: istore        6
+     102: goto          172
+     105: iinc          7, 8
+     108: aload_0
+     109: iload         4
+     111: iload         7
+     113: invokespecial #251                // Method translateSingleFrameCheckPacketSize:(II)V
+     116: bipush        8
+     118: newarray       byte
+     120: astore        8
+     122: iconst_0
+     123: istore        9
+     125: iload         9
+     127: bipush        8
+     129: if_icmpge     147
+     132: aload         8
+     134: iload         9
+     136: aload_1
+     137: invokevirtual #173                // Method java/nio/ByteBuffer.get:()B
+     140: bastore
+     141: iinc          9, 1
+     144: goto          125
+     147: new           #71                 // class java/math/BigInteger
+     150: dup
+     151: aload         8
+     153: invokespecial #166                // Method java/math/BigInteger."<init>":([B)V
+     156: invokevirtual #168                // Method java/math/BigInteger.longValue:()J
+     159: lstore        9
+     161: aload_0
+     162: lload         9
+     164: invokespecial #250                // Method translateSingleFrameCheckLengthLimit:(J)V
+     167: lload         9
+     169: l2i
+     170: istore        6
+     172: new           #89                 // class org/java_websocket/drafts/Draft_6455$TranslatedPayloadMetaData
+     175: dup
+     176: aload_0
+     177: iload         6
+     179: iload         7
+     181: invokespecial #253                // Method org/java_websocket/drafts/Draft_6455$TranslatedPayloadMetaData."<init>":(Lorg/java_websocket/drafts/Draft_6455;II)V
+     184: areturn
+
+  private void translateSingleFrameCheckLengthLimit(long);
+    Code:
+       0: lload_1
+       1: ldc2_w        #118                // long 2147483647l
+       4: lcmp
+       5: ifle          29
+       8: aload_0
+       9: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      12: ldc           #19                 // String Limit exedeed: Payloadsize is to big...
+      14: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      19: new           #99                 // class org/java_websocket/exceptions/LimitExceededException
+      22: dup
+      23: ldc           #23                 // String Payloadsize is to big...
+      25: invokespecial #264                // Method org/java_websocket/exceptions/LimitExceededException."<init>":(Ljava/lang/String;)V
+      28: athrow
+      29: lload_1
+      30: aload_0
+      31: getfield      #129                // Field maxFrameSize:I
+      34: i2l
+      35: lcmp
+      36: ifle          75
+      39: aload_0
+      40: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      43: ldc           #22                 // String Payload limit reached. Allowed: {} Current: {}
+      45: aload_0
+      46: getfield      #129                // Field maxFrameSize:I
+      49: invokestatic  #151                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      52: lload_1
+      53: invokestatic  #152                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      56: invokeinterface #337,  4          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+      61: new           #99                 // class org/java_websocket/exceptions/LimitExceededException
+      64: dup
+      65: ldc           #21                 // String Payload limit reached.
+      67: aload_0
+      68: getfield      #129                // Field maxFrameSize:I
+      71: invokespecial #265                // Method org/java_websocket/exceptions/LimitExceededException."<init>":(Ljava/lang/String;I)V
+      74: athrow
+      75: lload_1
+      76: lconst_0
+      77: lcmp
+      78: ifge          102
+      81: aload_0
+      82: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      85: ldc           #20                 // String Limit underflow: Payloadsize is to little...
+      87: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      92: new           #99                 // class org/java_websocket/exceptions/LimitExceededException
+      95: dup
+      96: ldc           #24                 // String Payloadsize is to little...
+      98: invokespecial #264                // Method org/java_websocket/exceptions/LimitExceededException."<init>":(Ljava/lang/String;)V
+     101: athrow
+     102: return
+
+  private void translateSingleFrameCheckPacketSize(int, int);
+    Code:
+       0: iload_1
+       1: iload_2
+       2: if_icmpge     25
+       5: aload_0
+       6: getfield      #128                // Field log:Lorg/slf4j/Logger;
+       9: ldc           #17                 // String Incomplete frame: maxpacketsize < realpacketsize
+      11: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      16: new           #95                 // class org/java_websocket/exceptions/IncompleteException
+      19: dup
+      20: iload_2
+      21: invokespecial #257                // Method org/java_websocket/exceptions/IncompleteException."<init>":(I)V
+      24: athrow
+      25: return
+
+  private byte getRSVByte(int);
+    Code:
+       0: iload_1
+       1: iconst_1
+       2: if_icmpne     8
+       5: bipush        64
+       7: ireturn
+       8: iload_1
+       9: iconst_2
+      10: if_icmpne     16
+      13: bipush        32
+      15: ireturn
+      16: iload_1
+      17: iconst_3
+      18: if_icmpne     24
+      21: bipush        16
+      23: ireturn
+      24: iconst_0
+      25: ireturn
+
+  private byte getMaskByte(boolean);
+    Code:
+       0: iload_1
+       1: ifeq          9
+       4: bipush        -128
+       6: goto          10
+       9: iconst_0
+      10: ireturn
+
+  private int getSizeBytes(java.nio.ByteBuffer);
+    Code:
+       0: aload_1
+       1: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+       4: bipush        125
+       6: if_icmpgt     11
+       9: iconst_1
+      10: ireturn
+      11: aload_1
+      12: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+      15: ldc           #1                  // int 65535
+      17: if_icmpgt     22
+      20: iconst_2
+      21: ireturn
+      22: bipush        8
+      24: ireturn
+
+  public java.util.List<org.java_websocket.framing.Framedata> translateFrame(java.nio.ByteBuffer);
+    Code:
+       0: new           #80                 // class java/util/LinkedList
+       3: dup
+       4: invokespecial #202                // Method java/util/LinkedList."<init>":()V
+       7: astore_2
+       8: aload_0
+       9: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+      12: ifnull        213
+      15: aload_1
+      16: invokevirtual #178                // Method java/nio/ByteBuffer.mark:()Ljava/nio/Buffer;
+      19: pop
+      20: aload_1
+      21: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+      24: istore        4
+      26: aload_0
+      27: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+      30: invokevirtual #186                // Method java/nio/ByteBuffer.remaining:()I
+      33: istore        5
+      35: iload         5
+      37: iload         4
+      39: if_icmple     76
+      42: aload_0
+      43: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+      46: aload_1
+      47: invokevirtual #170                // Method java/nio/ByteBuffer.array:()[B
+      50: aload_1
+      51: invokevirtual #179                // Method java/nio/ByteBuffer.position:()I
+      54: iload         4
+      56: invokevirtual #184                // Method java/nio/ByteBuffer.put:([BII)Ljava/nio/ByteBuffer;
+      59: pop
+      60: aload_1
+      61: aload_1
+      62: invokevirtual #179                // Method java/nio/ByteBuffer.position:()I
+      65: iload         4
+      67: iadd
+      68: invokevirtual #180                // Method java/nio/ByteBuffer.position:(I)Ljava/nio/Buffer;
+      71: pop
+      72: invokestatic  #200                // Method java/util/Collections.emptyList:()Ljava/util/List;
+      75: areturn
+      76: aload_0
+      77: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+      80: aload_1
+      81: invokevirtual #170                // Method java/nio/ByteBuffer.array:()[B
+      84: aload_1
+      85: invokevirtual #179                // Method java/nio/ByteBuffer.position:()I
+      88: iload         5
+      90: invokevirtual #184                // Method java/nio/ByteBuffer.put:([BII)Ljava/nio/ByteBuffer;
+      93: pop
+      94: aload_1
+      95: aload_1
+      96: invokevirtual #179                // Method java/nio/ByteBuffer.position:()I
+      99: iload         5
+     101: iadd
+     102: invokevirtual #180                // Method java/nio/ByteBuffer.position:(I)Ljava/nio/Buffer;
+     105: pop
+     106: aload_0
+     107: aload_0
+     108: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+     111: invokevirtual #171                // Method java/nio/ByteBuffer.duplicate:()Ljava/nio/ByteBuffer;
+     114: iconst_0
+     115: invokevirtual #180                // Method java/nio/ByteBuffer.position:(I)Ljava/nio/Buffer;
+     118: checkcast     #72                 // class java/nio/ByteBuffer
+     121: invokespecial #249                // Method translateSingleFrame:(Ljava/nio/ByteBuffer;)Lorg/java_websocket/framing/Framedata;
+     124: astore_3
+     125: aload_2
+     126: aload_3
+     127: invokeinterface #295,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     132: pop
+     133: aload_0
+     134: aconst_null
+     135: putfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+     138: goto          213
+     141: astore        4
+     143: aload_0
+     144: aload         4
+     146: invokevirtual #258                // Method org/java_websocket/exceptions/IncompleteException.getPreferredSize:()I
+     149: invokevirtual #220                // Method checkAlloc:(I)I
+     152: invokestatic  #169                // Method java/nio/ByteBuffer.allocate:(I)Ljava/nio/ByteBuffer;
+     155: astore        5
+     157: getstatic     #121                // Field $assertionsDisabled:Z
+     160: ifne          186
+     163: aload         5
+     165: invokevirtual #177                // Method java/nio/ByteBuffer.limit:()I
+     168: aload_0
+     169: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+     172: invokevirtual #177                // Method java/nio/ByteBuffer.limit:()I
+     175: if_icmpgt     186
+     178: new           #60                 // class java/lang/AssertionError
+     181: dup
+     182: invokespecial #144                // Method java/lang/AssertionError."<init>":()V
+     185: athrow
+     186: aload_0
+     187: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+     190: invokevirtual #188                // Method java/nio/ByteBuffer.rewind:()Ljava/nio/Buffer;
+     193: pop
+     194: aload         5
+     196: aload_0
+     197: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+     200: invokevirtual #182                // Method java/nio/ByteBuffer.put:(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+     203: pop
+     204: aload_0
+     205: aload         5
+     207: putfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+     210: goto          0
+     213: aload_1
+     214: invokevirtual #176                // Method java/nio/ByteBuffer.hasRemaining:()Z
+     217: ifeq          281
+     220: aload_1
+     221: invokevirtual #178                // Method java/nio/ByteBuffer.mark:()Ljava/nio/Buffer;
+     224: pop
+     225: aload_0
+     226: aload_1
+     227: invokespecial #249                // Method translateSingleFrame:(Ljava/nio/ByteBuffer;)Lorg/java_websocket/framing/Framedata;
+     230: astore_3
+     231: aload_2
+     232: aload_3
+     233: invokeinterface #295,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     238: pop
+     239: goto          213
+     242: astore        4
+     244: aload_1
+     245: invokevirtual #187                // Method java/nio/ByteBuffer.reset:()Ljava/nio/Buffer;
+     248: pop
+     249: aload         4
+     251: invokevirtual #258                // Method org/java_websocket/exceptions/IncompleteException.getPreferredSize:()I
+     254: istore        5
+     256: aload_0
+     257: aload_0
+     258: iload         5
+     260: invokevirtual #220                // Method checkAlloc:(I)I
+     263: invokestatic  #169                // Method java/nio/ByteBuffer.allocate:(I)Ljava/nio/ByteBuffer;
+     266: putfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+     269: aload_0
+     270: getfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+     273: aload_1
+     274: invokevirtual #182                // Method java/nio/ByteBuffer.put:(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+     277: pop
+     278: goto          281
+     281: aload_2
+     282: areturn
+    Exception table:
+       from    to  target type
+          15    75   141   Class org/java_websocket/exceptions/IncompleteException
+          76   138   141   Class org/java_websocket/exceptions/IncompleteException
+         225   239   242   Class org/java_websocket/exceptions/IncompleteException
+
+  public java.util.List<org.java_websocket.framing.Framedata> createFrames(java.nio.ByteBuffer, boolean);
+    Code:
+       0: new           #103                // class org/java_websocket/framing/BinaryFrame
+       3: dup
+       4: invokespecial #268                // Method org/java_websocket/framing/BinaryFrame."<init>":()V
+       7: astore_3
+       8: aload_3
+       9: aload_1
+      10: invokevirtual #270                // Method org/java_websocket/framing/BinaryFrame.setPayload:(Ljava/nio/ByteBuffer;)V
+      13: aload_3
+      14: iload_2
+      15: invokevirtual #271                // Method org/java_websocket/framing/BinaryFrame.setTransferemasked:(Z)V
+      18: aload_3
+      19: invokevirtual #269                // Method org/java_websocket/framing/BinaryFrame.isValid:()V
+      22: goto          37
+      25: astore        4
+      27: new           #100                // class org/java_websocket/exceptions/NotSendableException
+      30: dup
+      31: aload         4
+      33: invokespecial #266                // Method org/java_websocket/exceptions/NotSendableException."<init>":(Ljava/lang/Throwable;)V
+      36: athrow
+      37: aload_3
+      38: invokestatic  #201                // Method java/util/Collections.singletonList:(Ljava/lang/Object;)Ljava/util/List;
+      41: areturn
+    Exception table:
+       from    to  target type
+          18    22    25   Class org/java_websocket/exceptions/InvalidDataException
+
+  public java.util.List<org.java_websocket.framing.Framedata> createFrames(java.lang.String, boolean);
+    Code:
+       0: new           #107                // class org/java_websocket/framing/TextFrame
+       3: dup
+       4: invokespecial #282                // Method org/java_websocket/framing/TextFrame."<init>":()V
+       7: astore_3
+       8: aload_3
+       9: aload_1
+      10: invokestatic  #290                // Method org/java_websocket/util/Charsetfunctions.utf8Bytes:(Ljava/lang/String;)[B
+      13: invokestatic  #189                // Method java/nio/ByteBuffer.wrap:([B)Ljava/nio/ByteBuffer;
+      16: invokevirtual #284                // Method org/java_websocket/framing/TextFrame.setPayload:(Ljava/nio/ByteBuffer;)V
+      19: aload_3
+      20: iload_2
+      21: invokevirtual #285                // Method org/java_websocket/framing/TextFrame.setTransferemasked:(Z)V
+      24: aload_3
+      25: invokevirtual #283                // Method org/java_websocket/framing/TextFrame.isValid:()V
+      28: goto          43
+      31: astore        4
+      33: new           #100                // class org/java_websocket/exceptions/NotSendableException
+      36: dup
+      37: aload         4
+      39: invokespecial #266                // Method org/java_websocket/exceptions/NotSendableException."<init>":(Ljava/lang/Throwable;)V
+      42: athrow
+      43: aload_3
+      44: invokestatic  #201                // Method java/util/Collections.singletonList:(Ljava/lang/Object;)Ljava/util/List;
+      47: areturn
+    Exception table:
+       from    to  target type
+          24    28    31   Class org/java_websocket/exceptions/InvalidDataException
+
+  public void reset();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: putfield      #125                // Field incompleteframe:Ljava/nio/ByteBuffer;
+       5: aload_0
+       6: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+       9: ifnull        21
+      12: aload_0
+      13: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+      16: invokeinterface #313,  1          // InterfaceMethod org/java_websocket/extensions/IExtension.reset:()V
+      21: aload_0
+      22: new           #101                // class org/java_websocket/extensions/DefaultExtension
+      25: dup
+      26: invokespecial #267                // Method org/java_websocket/extensions/DefaultExtension."<init>":()V
+      29: putfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+      32: aload_0
+      33: aconst_null
+      34: putfield      #130                // Field protocol:Lorg/java_websocket/protocols/IProtocol;
+      37: return
+
+  private java.lang.String getServerTime();
+    Code:
+       0: invokestatic  #198                // Method java/util/Calendar.getInstance:()Ljava/util/Calendar;
+       3: astore_1
+       4: new           #75                 // class java/text/SimpleDateFormat
+       7: dup
+       8: ldc           #15                 // String EEE, dd MMM yyyy HH:mm:ss z
+      10: getstatic     #120                // Field java/util/Locale.US:Ljava/util/Locale;
+      13: invokespecial #192                // Method java/text/SimpleDateFormat."<init>":(Ljava/lang/String;Ljava/util/Locale;)V
+      16: astore_2
+      17: aload_2
+      18: ldc           #16                 // String GMT
+      20: invokestatic  #206                // Method java/util/TimeZone.getTimeZone:(Ljava/lang/String;)Ljava/util/TimeZone;
+      23: invokevirtual #194                // Method java/text/SimpleDateFormat.setTimeZone:(Ljava/util/TimeZone;)V
+      26: aload_2
+      27: aload_1
+      28: invokevirtual #199                // Method java/util/Calendar.getTime:()Ljava/util/Date;
+      31: invokevirtual #193                // Method java/text/SimpleDateFormat.format:(Ljava/util/Date;)Ljava/lang/String;
+      34: areturn
+
+  private java.lang.String generateFinalKey(java.lang.String);
+    Code:
+       0: aload_1
+       1: invokevirtual #160                // Method java/lang/String.trim:()Ljava/lang/String;
+       4: astore_2
+       5: new           #69                 // class java/lang/StringBuilder
+       8: dup
+       9: invokespecial #161                // Method java/lang/StringBuilder."<init>":()V
+      12: aload_2
+      13: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      16: ldc           #9                  // String 258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+      18: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      21: invokevirtual #165                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      24: astore_3
+      25: ldc           #31                 // String SHA1
+      27: invokestatic  #191                // Method java/security/MessageDigest.getInstance:(Ljava/lang/String;)Ljava/security/MessageDigest;
+      30: astore        4
+      32: goto          47
+      35: astore        5
+      37: new           #63                 // class java/lang/IllegalStateException
+      40: dup
+      41: aload         5
+      43: invokespecial #150                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/Throwable;)V
+      46: athrow
+      47: aload         4
+      49: aload_3
+      50: invokevirtual #158                // Method java/lang/String.getBytes:()[B
+      53: invokevirtual #190                // Method java/security/MessageDigest.digest:([B)[B
+      56: invokestatic  #287                // Method org/java_websocket/util/Base64.encodeBytes:([B)Ljava/lang/String;
+      59: areturn
+    Exception table:
+       from    to  target type
+          25    32    35   Class java/security/NoSuchAlgorithmException
+
+  private byte[] toByteArray(long, int);
+    Code:
+       0: iload_3
+       1: newarray       byte
+       3: astore        4
+       5: bipush        8
+       7: iload_3
+       8: imul
+       9: bipush        8
+      11: isub
+      12: istore        5
+      14: iconst_0
+      15: istore        6
+      17: iload         6
+      19: iload_3
+      20: if_icmpge     46
+      23: aload         4
+      25: iload         6
+      27: lload_1
+      28: iload         5
+      30: bipush        8
+      32: iload         6
+      34: imul
+      35: isub
+      36: lushr
+      37: l2i
+      38: i2b
+      39: bastore
+      40: iinc          6, 1
+      43: goto          17
+      46: aload         4
+      48: areturn
+
+  private byte fromOpcode(org.java_websocket.enums.Opcode);
+    Code:
+       0: aload_1
+       1: getstatic     #138                // Field org/java_websocket/enums/Opcode.CONTINUOUS:Lorg/java_websocket/enums/Opcode;
+       4: if_acmpne     9
+       7: iconst_0
+       8: ireturn
+       9: aload_1
+      10: getstatic     #141                // Field org/java_websocket/enums/Opcode.TEXT:Lorg/java_websocket/enums/Opcode;
+      13: if_acmpne     18
+      16: iconst_1
+      17: ireturn
+      18: aload_1
+      19: getstatic     #136                // Field org/java_websocket/enums/Opcode.BINARY:Lorg/java_websocket/enums/Opcode;
+      22: if_acmpne     27
+      25: iconst_2
+      26: ireturn
+      27: aload_1
+      28: getstatic     #137                // Field org/java_websocket/enums/Opcode.CLOSING:Lorg/java_websocket/enums/Opcode;
+      31: if_acmpne     37
+      34: bipush        8
+      36: ireturn
+      37: aload_1
+      38: getstatic     #139                // Field org/java_websocket/enums/Opcode.PING:Lorg/java_websocket/enums/Opcode;
+      41: if_acmpne     47
+      44: bipush        9
+      46: ireturn
+      47: aload_1
+      48: getstatic     #140                // Field org/java_websocket/enums/Opcode.PONG:Lorg/java_websocket/enums/Opcode;
+      51: if_acmpne     57
+      54: bipush        10
+      56: ireturn
+      57: new           #62                 // class java/lang/IllegalArgumentException
+      60: dup
+      61: new           #69                 // class java/lang/StringBuilder
+      64: dup
+      65: invokespecial #161                // Method java/lang/StringBuilder."<init>":()V
+      68: ldc           #14                 // String Don\'t know how to handle
+      70: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      73: aload_1
+      74: invokevirtual #256                // Method org/java_websocket/enums/Opcode.toString:()Ljava/lang/String;
+      77: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      80: invokevirtual #165                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      83: invokespecial #148                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      86: athrow
+
+  private org.java_websocket.enums.Opcode toOpcode(byte);
+    Code:
+       0: iload_1
+       1: tableswitch   { // 0 to 10
+
+                     0: 60
+
+                     1: 64
+
+                     2: 68
+
+                     3: 84
+
+                     4: 84
+
+                     5: 84
+
+                     6: 84
+
+                     7: 84
+
+                     8: 72
+
+                     9: 76
+
+                    10: 80
+               default: 84
+          }
+      60: getstatic     #138                // Field org/java_websocket/enums/Opcode.CONTINUOUS:Lorg/java_websocket/enums/Opcode;
+      63: areturn
+      64: getstatic     #141                // Field org/java_websocket/enums/Opcode.TEXT:Lorg/java_websocket/enums/Opcode;
+      67: areturn
+      68: getstatic     #136                // Field org/java_websocket/enums/Opcode.BINARY:Lorg/java_websocket/enums/Opcode;
+      71: areturn
+      72: getstatic     #137                // Field org/java_websocket/enums/Opcode.CLOSING:Lorg/java_websocket/enums/Opcode;
+      75: areturn
+      76: getstatic     #139                // Field org/java_websocket/enums/Opcode.PING:Lorg/java_websocket/enums/Opcode;
+      79: areturn
+      80: getstatic     #140                // Field org/java_websocket/enums/Opcode.PONG:Lorg/java_websocket/enums/Opcode;
+      83: areturn
+      84: new           #97                 // class org/java_websocket/exceptions/InvalidFrameException
+      87: dup
+      88: new           #69                 // class java/lang/StringBuilder
+      91: dup
+      92: invokespecial #161                // Method java/lang/StringBuilder."<init>":()V
+      95: ldc           #40                 // String Unknown opcode
+      97: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     100: iload_1
+     101: i2s
+     102: invokevirtual #162                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     105: invokevirtual #165                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     108: invokespecial #261                // Method org/java_websocket/exceptions/InvalidFrameException."<init>":(Ljava/lang/String;)V
+     111: athrow
+
+  public void processFrame(org.java_websocket.WebSocketImpl, org.java_websocket.framing.Framedata);
+    Code:
+       0: aload_2
+       1: invokeinterface #315,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getOpcode:()Lorg/java_websocket/enums/Opcode;
+       6: astore_3
+       7: aload_3
+       8: getstatic     #137                // Field org/java_websocket/enums/Opcode.CLOSING:Lorg/java_websocket/enums/Opcode;
+      11: if_acmpne     23
+      14: aload_0
+      15: aload_1
+      16: aload_2
+      17: invokespecial #241                // Method processFrameClosing:(Lorg/java_websocket/WebSocketImpl;Lorg/java_websocket/framing/Framedata;)V
+      20: goto          182
+      23: aload_3
+      24: getstatic     #139                // Field org/java_websocket/enums/Opcode.PING:Lorg/java_websocket/enums/Opcode;
+      27: if_acmpne     44
+      30: aload_1
+      31: invokevirtual #211                // Method org/java_websocket/WebSocketImpl.getWebSocketListener:()Lorg/java_websocket/WebSocketListener;
+      34: aload_1
+      35: aload_2
+      36: invokeinterface #303,  3          // InterfaceMethod org/java_websocket/WebSocketListener.onWebsocketPing:(Lorg/java_websocket/WebSocket;Lorg/java_websocket/framing/Framedata;)V
+      41: goto          182
+      44: aload_3
+      45: getstatic     #140                // Field org/java_websocket/enums/Opcode.PONG:Lorg/java_websocket/enums/Opcode;
+      48: if_acmpne     69
+      51: aload_1
+      52: invokevirtual #212                // Method org/java_websocket/WebSocketImpl.updateLastPong:()V
+      55: aload_1
+      56: invokevirtual #211                // Method org/java_websocket/WebSocketImpl.getWebSocketListener:()Lorg/java_websocket/WebSocketListener;
+      59: aload_1
+      60: aload_2
+      61: invokeinterface #304,  3          // InterfaceMethod org/java_websocket/WebSocketListener.onWebsocketPong:(Lorg/java_websocket/WebSocket;Lorg/java_websocket/framing/Framedata;)V
+      66: goto          182
+      69: aload_2
+      70: invokeinterface #317,  1          // InterfaceMethod org/java_websocket/framing/Framedata.isFin:()Z
+      75: ifeq          85
+      78: aload_3
+      79: getstatic     #138                // Field org/java_websocket/enums/Opcode.CONTINUOUS:Lorg/java_websocket/enums/Opcode;
+      82: if_acmpne     95
+      85: aload_0
+      86: aload_1
+      87: aload_2
+      88: aload_3
+      89: invokespecial #242                // Method processFrameContinuousAndNonFin:(Lorg/java_websocket/WebSocketImpl;Lorg/java_websocket/framing/Framedata;Lorg/java_websocket/enums/Opcode;)V
+      92: goto          182
+      95: aload_0
+      96: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+      99: ifnull        126
+     102: aload_0
+     103: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     106: ldc           #26                 // String Protocol error: Continuous frame sequence not completed.
+     108: invokeinterface #332,  2          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;)V
+     113: new           #96                 // class org/java_websocket/exceptions/InvalidDataException
+     116: dup
+     117: sipush        1002
+     120: ldc           #11                 // String Continuous frame sequence not completed.
+     122: invokespecial #260                // Method org/java_websocket/exceptions/InvalidDataException."<init>":(ILjava/lang/String;)V
+     125: athrow
+     126: aload_3
+     127: getstatic     #141                // Field org/java_websocket/enums/Opcode.TEXT:Lorg/java_websocket/enums/Opcode;
+     130: if_acmpne     142
+     133: aload_0
+     134: aload_1
+     135: aload_2
+     136: invokespecial #245                // Method processFrameText:(Lorg/java_websocket/WebSocketImpl;Lorg/java_websocket/framing/Framedata;)V
+     139: goto          182
+     142: aload_3
+     143: getstatic     #136                // Field org/java_websocket/enums/Opcode.BINARY:Lorg/java_websocket/enums/Opcode;
+     146: if_acmpne     158
+     149: aload_0
+     150: aload_1
+     151: aload_2
+     152: invokespecial #240                // Method processFrameBinary:(Lorg/java_websocket/WebSocketImpl;Lorg/java_websocket/framing/Framedata;)V
+     155: goto          182
+     158: aload_0
+     159: getfield      #128                // Field log:Lorg/slf4j/Logger;
+     162: ldc           #56                 // String non control or continious frame expected
+     164: invokeinterface #332,  2          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;)V
+     169: new           #96                 // class org/java_websocket/exceptions/InvalidDataException
+     172: dup
+     173: sipush        1002
+     176: ldc           #56                 // String non control or continious frame expected
+     178: invokespecial #260                // Method org/java_websocket/exceptions/InvalidDataException."<init>":(ILjava/lang/String;)V
+     181: athrow
+     182: return
+
+  private void processFrameContinuousAndNonFin(org.java_websocket.WebSocketImpl, org.java_websocket.framing.Framedata, org.java_websocket.enums.Opcode);
+    Code:
+       0: aload_3
+       1: getstatic     #138                // Field org/java_websocket/enums/Opcode.CONTINUOUS:Lorg/java_websocket/enums/Opcode;
+       4: if_acmpeq     15
+       7: aload_0
+       8: aload_2
+       9: invokespecial #244                // Method processFrameIsNotFin:(Lorg/java_websocket/framing/Framedata;)V
+      12: goto          64
+      15: aload_2
+      16: invokeinterface #317,  1          // InterfaceMethod org/java_websocket/framing/Framedata.isFin:()Z
+      21: ifeq          33
+      24: aload_0
+      25: aload_1
+      26: aload_2
+      27: invokespecial #243                // Method processFrameIsFin:(Lorg/java_websocket/WebSocketImpl;Lorg/java_websocket/framing/Framedata;)V
+      30: goto          64
+      33: aload_0
+      34: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+      37: ifnonnull     64
+      40: aload_0
+      41: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      44: ldc           #27                 // String Protocol error: Continuous frame sequence was not started.
+      46: invokeinterface #332,  2          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;)V
+      51: new           #96                 // class org/java_websocket/exceptions/InvalidDataException
+      54: dup
+      55: sipush        1002
+      58: ldc           #12                 // String Continuous frame sequence was not started.
+      60: invokespecial #260                // Method org/java_websocket/exceptions/InvalidDataException."<init>":(ILjava/lang/String;)V
+      63: athrow
+      64: aload_3
+      65: getstatic     #141                // Field org/java_websocket/enums/Opcode.TEXT:Lorg/java_websocket/enums/Opcode;
+      68: if_acmpne     105
+      71: aload_2
+      72: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      77: invokestatic  #288                // Method org/java_websocket/util/Charsetfunctions.isValidUTF8:(Ljava/nio/ByteBuffer;)Z
+      80: ifne          105
+      83: aload_0
+      84: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      87: ldc           #28                 // String Protocol error: Payload is not UTF8
+      89: invokeinterface #332,  2          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;)V
+      94: new           #96                 // class org/java_websocket/exceptions/InvalidDataException
+      97: dup
+      98: sipush        1007
+     101: invokespecial #259                // Method org/java_websocket/exceptions/InvalidDataException."<init>":(I)V
+     104: athrow
+     105: aload_3
+     106: getstatic     #138                // Field org/java_websocket/enums/Opcode.CONTINUOUS:Lorg/java_websocket/enums/Opcode;
+     109: if_acmpne     129
+     112: aload_0
+     113: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+     116: ifnull        129
+     119: aload_0
+     120: aload_2
+     121: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+     126: invokespecial #218                // Method addToBufferList:(Ljava/nio/ByteBuffer;)V
+     129: return
+
+  private void processFrameBinary(org.java_websocket.WebSocketImpl, org.java_websocket.framing.Framedata);
+    Code:
+       0: aload_1
+       1: invokevirtual #211                // Method org/java_websocket/WebSocketImpl.getWebSocketListener:()Lorg/java_websocket/WebSocketListener;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      11: invokeinterface #302,  3          // InterfaceMethod org/java_websocket/WebSocketListener.onWebsocketMessage:(Lorg/java_websocket/WebSocket;Ljava/nio/ByteBuffer;)V
+      16: goto          26
+      19: astore_3
+      20: aload_0
+      21: aload_1
+      22: aload_3
+      23: invokespecial #239                // Method logRuntimeException:(Lorg/java_websocket/WebSocketImpl;Ljava/lang/RuntimeException;)V
+      26: return
+    Exception table:
+       from    to  target type
+           0    16    19   Class java/lang/RuntimeException
+
+  private void logRuntimeException(org.java_websocket.WebSocketImpl, java.lang.RuntimeException);
+    Code:
+       0: aload_0
+       1: getfield      #128                // Field log:Lorg/slf4j/Logger;
+       4: ldc           #30                 // String Runtime exception during onWebsocketMessage
+       6: aload_2
+       7: invokeinterface #333,  3          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+      12: aload_1
+      13: invokevirtual #211                // Method org/java_websocket/WebSocketImpl.getWebSocketListener:()Lorg/java_websocket/WebSocketListener;
+      16: aload_1
+      17: aload_2
+      18: invokeinterface #300,  3          // InterfaceMethod org/java_websocket/WebSocketListener.onWebsocketError:(Lorg/java_websocket/WebSocket;Ljava/lang/Exception;)V
+      23: return
+
+  private void processFrameText(org.java_websocket.WebSocketImpl, org.java_websocket.framing.Framedata);
+    Code:
+       0: aload_1
+       1: invokevirtual #211                // Method org/java_websocket/WebSocketImpl.getWebSocketListener:()Lorg/java_websocket/WebSocketListener;
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      11: invokestatic  #289                // Method org/java_websocket/util/Charsetfunctions.stringUtf8:(Ljava/nio/ByteBuffer;)Ljava/lang/String;
+      14: invokeinterface #301,  3          // InterfaceMethod org/java_websocket/WebSocketListener.onWebsocketMessage:(Lorg/java_websocket/WebSocket;Ljava/lang/String;)V
+      19: goto          29
+      22: astore_3
+      23: aload_0
+      24: aload_1
+      25: aload_3
+      26: invokespecial #239                // Method logRuntimeException:(Lorg/java_websocket/WebSocketImpl;Ljava/lang/RuntimeException;)V
+      29: return
+    Exception table:
+       from    to  target type
+           0    19    22   Class java/lang/RuntimeException
+
+  private void processFrameIsFin(org.java_websocket.WebSocketImpl, org.java_websocket.framing.Framedata);
+    Code:
+       0: aload_0
+       1: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+       4: ifnonnull     31
+       7: aload_0
+       8: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      11: ldc           #29                 // String Protocol error: Previous continuous frame sequence not completed.
+      13: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      18: new           #96                 // class org/java_websocket/exceptions/InvalidDataException
+      21: dup
+      22: sipush        1002
+      25: ldc           #12                 // String Continuous frame sequence was not started.
+      27: invokespecial #260                // Method org/java_websocket/exceptions/InvalidDataException."<init>":(ILjava/lang/String;)V
+      30: athrow
+      31: aload_0
+      32: aload_2
+      33: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      38: invokespecial #218                // Method addToBufferList:(Ljava/nio/ByteBuffer;)V
+      41: aload_0
+      42: invokespecial #221                // Method checkBufferLimit:()V
+      45: aload_0
+      46: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+      49: invokeinterface #315,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getOpcode:()Lorg/java_websocket/enums/Opcode;
+      54: getstatic     #141                // Field org/java_websocket/enums/Opcode.TEXT:Lorg/java_websocket/enums/Opcode;
+      57: if_acmpne     119
+      60: aload_0
+      61: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+      64: checkcast     #106                // class org/java_websocket/framing/FramedataImpl1
+      67: aload_0
+      68: invokespecial #234                // Method getPayloadFromByteBufferList:()Ljava/nio/ByteBuffer;
+      71: invokevirtual #278                // Method org/java_websocket/framing/FramedataImpl1.setPayload:(Ljava/nio/ByteBuffer;)V
+      74: aload_0
+      75: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+      78: checkcast     #106                // class org/java_websocket/framing/FramedataImpl1
+      81: invokevirtual #276                // Method org/java_websocket/framing/FramedataImpl1.isValid:()V
+      84: aload_1
+      85: invokevirtual #211                // Method org/java_websocket/WebSocketImpl.getWebSocketListener:()Lorg/java_websocket/WebSocketListener;
+      88: aload_1
+      89: aload_0
+      90: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+      93: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      98: invokestatic  #289                // Method org/java_websocket/util/Charsetfunctions.stringUtf8:(Ljava/nio/ByteBuffer;)Ljava/lang/String;
+     101: invokeinterface #301,  3          // InterfaceMethod org/java_websocket/WebSocketListener.onWebsocketMessage:(Lorg/java_websocket/WebSocket;Ljava/lang/String;)V
+     106: goto          187
+     109: astore_3
+     110: aload_0
+     111: aload_1
+     112: aload_3
+     113: invokespecial #239                // Method logRuntimeException:(Lorg/java_websocket/WebSocketImpl;Ljava/lang/RuntimeException;)V
+     116: goto          187
+     119: aload_0
+     120: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+     123: invokeinterface #315,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getOpcode:()Lorg/java_websocket/enums/Opcode;
+     128: getstatic     #136                // Field org/java_websocket/enums/Opcode.BINARY:Lorg/java_websocket/enums/Opcode;
+     131: if_acmpne     187
+     134: aload_0
+     135: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+     138: checkcast     #106                // class org/java_websocket/framing/FramedataImpl1
+     141: aload_0
+     142: invokespecial #234                // Method getPayloadFromByteBufferList:()Ljava/nio/ByteBuffer;
+     145: invokevirtual #278                // Method org/java_websocket/framing/FramedataImpl1.setPayload:(Ljava/nio/ByteBuffer;)V
+     148: aload_0
+     149: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+     152: checkcast     #106                // class org/java_websocket/framing/FramedataImpl1
+     155: invokevirtual #276                // Method org/java_websocket/framing/FramedataImpl1.isValid:()V
+     158: aload_1
+     159: invokevirtual #211                // Method org/java_websocket/WebSocketImpl.getWebSocketListener:()Lorg/java_websocket/WebSocketListener;
+     162: aload_1
+     163: aload_0
+     164: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+     167: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+     172: invokeinterface #302,  3          // InterfaceMethod org/java_websocket/WebSocketListener.onWebsocketMessage:(Lorg/java_websocket/WebSocket;Ljava/nio/ByteBuffer;)V
+     177: goto          187
+     180: astore_3
+     181: aload_0
+     182: aload_1
+     183: aload_3
+     184: invokespecial #239                // Method logRuntimeException:(Lorg/java_websocket/WebSocketImpl;Ljava/lang/RuntimeException;)V
+     187: aload_0
+     188: aconst_null
+     189: putfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+     192: aload_0
+     193: invokespecial #222                // Method clearBufferList:()V
+     196: return
+    Exception table:
+       from    to  target type
+          84   106   109   Class java/lang/RuntimeException
+         158   177   180   Class java/lang/RuntimeException
+
+  private void processFrameIsNotFin(org.java_websocket.framing.Framedata);
+    Code:
+       0: aload_0
+       1: getfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+       4: ifnull        31
+       7: aload_0
+       8: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      11: ldc           #29                 // String Protocol error: Previous continuous frame sequence not completed.
+      13: invokeinterface #335,  2          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;)V
+      18: new           #96                 // class org/java_websocket/exceptions/InvalidDataException
+      21: dup
+      22: sipush        1002
+      25: ldc           #25                 // String Previous continuous frame sequence not completed.
+      27: invokespecial #260                // Method org/java_websocket/exceptions/InvalidDataException."<init>":(ILjava/lang/String;)V
+      30: athrow
+      31: aload_0
+      32: aload_1
+      33: putfield      #123                // Field currentContinuousFrame:Lorg/java_websocket/framing/Framedata;
+      36: aload_0
+      37: aload_1
+      38: invokeinterface #316,  1          // InterfaceMethod org/java_websocket/framing/Framedata.getPayloadData:()Ljava/nio/ByteBuffer;
+      43: invokespecial #218                // Method addToBufferList:(Ljava/nio/ByteBuffer;)V
+      46: aload_0
+      47: invokespecial #221                // Method checkBufferLimit:()V
+      50: return
+
+  private void processFrameClosing(org.java_websocket.WebSocketImpl, org.java_websocket.framing.Framedata);
+    Code:
+       0: sipush        1005
+       3: istore_3
+       4: ldc           #3                  // String
+       6: astore        4
+       8: aload_2
+       9: instanceof    #104                // class org/java_websocket/framing/CloseFrame
+      12: ifeq          34
+      15: aload_2
+      16: checkcast     #104                // class org/java_websocket/framing/CloseFrame
+      19: astore        5
+      21: aload         5
+      23: invokevirtual #272                // Method org/java_websocket/framing/CloseFrame.getCloseCode:()I
+      26: istore_3
+      27: aload         5
+      29: invokevirtual #273                // Method org/java_websocket/framing/CloseFrame.getMessage:()Ljava/lang/String;
+      32: astore        4
+      34: aload_1
+      35: invokevirtual #210                // Method org/java_websocket/WebSocketImpl.getReadyState:()Lorg/java_websocket/enums/ReadyState;
+      38: getstatic     #142                // Field org/java_websocket/enums/ReadyState.CLOSING:Lorg/java_websocket/enums/ReadyState;
+      41: if_acmpne     55
+      44: aload_1
+      45: iload_3
+      46: aload         4
+      48: iconst_1
+      49: invokevirtual #208                // Method org/java_websocket/WebSocketImpl.closeConnection:(ILjava/lang/String;Z)V
+      52: goto          84
+      55: aload_0
+      56: invokevirtual #228                // Method getCloseHandshakeType:()Lorg/java_websocket/enums/CloseHandshakeType;
+      59: getstatic     #133                // Field org/java_websocket/enums/CloseHandshakeType.TWOWAY:Lorg/java_websocket/enums/CloseHandshakeType;
+      62: if_acmpne     76
+      65: aload_1
+      66: iload_3
+      67: aload         4
+      69: iconst_1
+      70: invokevirtual #207                // Method org/java_websocket/WebSocketImpl.close:(ILjava/lang/String;Z)V
+      73: goto          84
+      76: aload_1
+      77: iload_3
+      78: aload         4
+      80: iconst_0
+      81: invokevirtual #209                // Method org/java_websocket/WebSocketImpl.flushAndClose:(ILjava/lang/String;Z)V
+      84: return
+
+  private void clearBufferList();
+    Code:
+       0: aload_0
+       1: getfield      #122                // Field byteBufferList:Ljava/util/List;
+       4: dup
+       5: astore_1
+       6: monitorenter
+       7: aload_0
+       8: getfield      #122                // Field byteBufferList:Ljava/util/List;
+      11: invokeinterface #297,  1          // InterfaceMethod java/util/List.clear:()V
+      16: aload_1
+      17: monitorexit
+      18: goto          26
+      21: astore_2
+      22: aload_1
+      23: monitorexit
+      24: aload_2
+      25: athrow
+      26: return
+    Exception table:
+       from    to  target type
+           7    18    21   any
+          21    24    21   any
+
+  private void addToBufferList(java.nio.ByteBuffer);
+    Code:
+       0: aload_0
+       1: getfield      #122                // Field byteBufferList:Ljava/util/List;
+       4: dup
+       5: astore_2
+       6: monitorenter
+       7: aload_0
+       8: getfield      #122                // Field byteBufferList:Ljava/util/List;
+      11: aload_1
+      12: invokeinterface #295,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      17: pop
+      18: aload_2
+      19: monitorexit
+      20: goto          28
+      23: astore_3
+      24: aload_2
+      25: monitorexit
+      26: aload_3
+      27: athrow
+      28: return
+    Exception table:
+       from    to  target type
+           7    20    23   any
+          23    26    23   any
+
+  private void checkBufferLimit();
+    Code:
+       0: aload_0
+       1: invokespecial #227                // Method getByteBufferListSize:()J
+       4: lstore_1
+       5: lload_1
+       6: aload_0
+       7: getfield      #129                // Field maxFrameSize:I
+      10: i2l
+      11: lcmp
+      12: ifle          53
+      15: aload_0
+      16: invokespecial #222                // Method clearBufferList:()V
+      19: aload_0
+      20: getfield      #128                // Field log:Lorg/slf4j/Logger;
+      23: ldc           #22                 // String Payload limit reached. Allowed: {} Current: {}
+      25: aload_0
+      26: getfield      #129                // Field maxFrameSize:I
+      29: invokestatic  #151                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      32: lload_1
+      33: invokestatic  #152                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      36: invokeinterface #337,  4          // InterfaceMethod org/slf4j/Logger.trace:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+      41: new           #99                 // class org/java_websocket/exceptions/LimitExceededException
+      44: dup
+      45: aload_0
+      46: getfield      #129                // Field maxFrameSize:I
+      49: invokespecial #263                // Method org/java_websocket/exceptions/LimitExceededException."<init>":(I)V
+      52: athrow
+      53: return
+
+  public org.java_websocket.enums.CloseHandshakeType getCloseHandshakeType();
+    Code:
+       0: getstatic     #133                // Field org/java_websocket/enums/CloseHandshakeType.TWOWAY:Lorg/java_websocket/enums/CloseHandshakeType;
+       3: areturn
+
+  public java.lang.String toString();
+    Code:
+       0: aload_0
+       1: invokespecial #214                // Method org/java_websocket/drafts/Draft.toString:()Ljava/lang/String;
+       4: astore_1
+       5: aload_0
+       6: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+       9: ifnull        44
+      12: new           #69                 // class java/lang/StringBuilder
+      15: dup
+      16: invokespecial #161                // Method java/lang/StringBuilder."<init>":()V
+      19: aload_1
+      20: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      23: ldc           #4                  // String  extension:
+      25: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      28: aload_0
+      29: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+      32: invokeinterface #314,  1          // InterfaceMethod org/java_websocket/extensions/IExtension.toString:()Ljava/lang/String;
+      37: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      40: invokevirtual #165                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      43: astore_1
+      44: aload_0
+      45: invokevirtual #235                // Method getProtocol:()Lorg/java_websocket/protocols/IProtocol;
+      48: ifnull        83
+      51: new           #69                 // class java/lang/StringBuilder
+      54: dup
+      55: invokespecial #161                // Method java/lang/StringBuilder."<init>":()V
+      58: aload_1
+      59: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      62: ldc           #6                  // String  protocol:
+      64: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      67: aload_0
+      68: invokevirtual #235                // Method getProtocol:()Lorg/java_websocket/protocols/IProtocol;
+      71: invokeinterface #331,  1          // InterfaceMethod org/java_websocket/protocols/IProtocol.toString:()Ljava/lang/String;
+      76: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      79: invokevirtual #165                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      82: astore_1
+      83: new           #69                 // class java/lang/StringBuilder
+      86: dup
+      87: invokespecial #161                // Method java/lang/StringBuilder."<init>":()V
+      90: aload_1
+      91: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      94: ldc           #5                  // String  max frame size:
+      96: invokevirtual #163                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      99: aload_0
+     100: getfield      #129                // Field maxFrameSize:I
+     103: invokevirtual #162                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     106: invokevirtual #165                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     109: astore_1
+     110: aload_1
+     111: areturn
+
+  public boolean equals(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: if_acmpne     7
+       5: iconst_1
+       6: ireturn
+       7: aload_1
+       8: ifnull        22
+      11: aload_0
+      12: invokevirtual #154                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      15: aload_1
+      16: invokevirtual #154                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      19: if_acmpeq     24
+      22: iconst_0
+      23: ireturn
+      24: aload_1
+      25: checkcast     #88                 // class org/java_websocket/drafts/Draft_6455
+      28: astore_2
+      29: aload_0
+      30: getfield      #129                // Field maxFrameSize:I
+      33: aload_2
+      34: invokevirtual #233                // Method getMaxFrameSize:()I
+      37: if_icmpeq     42
+      40: iconst_0
+      41: ireturn
+      42: aload_0
+      43: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+      46: ifnull        66
+      49: aload_0
+      50: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+      53: aload_2
+      54: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+      57: invokevirtual #153                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      60: ifne          75
+      63: goto          73
+      66: aload_2
+      67: invokevirtual #229                // Method getExtension:()Lorg/java_websocket/extensions/IExtension;
+      70: ifnull        75
+      73: iconst_0
+      74: ireturn
+      75: aload_0
+      76: getfield      #130                // Field protocol:Lorg/java_websocket/protocols/IProtocol;
+      79: ifnull        96
+      82: aload_0
+      83: getfield      #130                // Field protocol:Lorg/java_websocket/protocols/IProtocol;
+      86: aload_2
+      87: invokevirtual #235                // Method getProtocol:()Lorg/java_websocket/protocols/IProtocol;
+      90: invokevirtual #153                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      93: goto          108
+      96: aload_2
+      97: invokevirtual #235                // Method getProtocol:()Lorg/java_websocket/protocols/IProtocol;
+     100: ifnonnull     107
+     103: iconst_1
+     104: goto          108
+     107: iconst_0
+     108: ireturn
+
+  public int hashCode();
+    Code:
+       0: aload_0
+       1: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #124                // Field extension:Lorg/java_websocket/extensions/IExtension;
+      11: invokevirtual #155                // Method java/lang/Object.hashCode:()I
+      14: goto          18
+      17: iconst_0
+      18: istore_1
+      19: bipush        31
+      21: iload_1
+      22: imul
+      23: aload_0
+      24: getfield      #130                // Field protocol:Lorg/java_websocket/protocols/IProtocol;
+      27: ifnull        40
+      30: aload_0
+      31: getfield      #130                // Field protocol:Lorg/java_websocket/protocols/IProtocol;
+      34: invokevirtual #155                // Method java/lang/Object.hashCode:()I
+      37: goto          41
+      40: iconst_0
+      41: iadd
+      42: istore_1
+      43: bipush        31
+      45: iload_1
+      46: imul
+      47: aload_0
+      48: getfield      #129                // Field maxFrameSize:I
+      51: aload_0
+      52: getfield      #129                // Field maxFrameSize:I
+      55: bipush        32
+      57: iushr
+      58: ixor
+      59: iadd
+      60: istore_1
+      61: iload_1
+      62: ireturn
+
+  private java.nio.ByteBuffer getPayloadFromByteBufferList();
+    Code:
+       0: lconst_0
+       1: lstore_1
+       2: aload_0
+       3: getfield      #122                // Field byteBufferList:Ljava/util/List;
+       6: dup
+       7: astore        4
+       9: monitorenter
+      10: aload_0
+      11: getfield      #122                // Field byteBufferList:Ljava/util/List;
+      14: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      19: astore        5
+      21: aload         5
+      23: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      28: ifeq          55
+      31: aload         5
+      33: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      38: checkcast     #72                 // class java/nio/ByteBuffer
+      41: astore        6
+      43: lload_1
+      44: aload         6
+      46: invokevirtual #177                // Method java/nio/ByteBuffer.limit:()I
+      49: i2l
+      50: ladd
+      51: lstore_1
+      52: goto          21
+      55: aload_0
+      56: invokespecial #221                // Method checkBufferLimit:()V
+      59: lload_1
+      60: l2i
+      61: invokestatic  #169                // Method java/nio/ByteBuffer.allocate:(I)Ljava/nio/ByteBuffer;
+      64: astore_3
+      65: aload_0
+      66: getfield      #122                // Field byteBufferList:Ljava/util/List;
+      69: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      74: astore        5
+      76: aload         5
+      78: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      83: ifeq          108
+      86: aload         5
+      88: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      93: checkcast     #72                 // class java/nio/ByteBuffer
+      96: astore        6
+      98: aload_3
+      99: aload         6
+     101: invokevirtual #182                // Method java/nio/ByteBuffer.put:(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+     104: pop
+     105: goto          76
+     108: aload         4
+     110: monitorexit
+     111: goto          122
+     114: astore        7
+     116: aload         4
+     118: monitorexit
+     119: aload         7
+     121: athrow
+     122: aload_3
+     123: invokevirtual #172                // Method java/nio/ByteBuffer.flip:()Ljava/nio/Buffer;
+     126: pop
+     127: aload_3
+     128: areturn
+    Exception table:
+       from    to  target type
+          10   111   114   any
+         114   119   114   any
+
+  private long getByteBufferListSize();
+    Code:
+       0: lconst_0
+       1: lstore_1
+       2: aload_0
+       3: getfield      #122                // Field byteBufferList:Ljava/util/List;
+       6: dup
+       7: astore_3
+       8: monitorenter
+       9: aload_0
+      10: getfield      #122                // Field byteBufferList:Ljava/util/List;
+      13: invokeinterface #298,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      18: astore        4
+      20: aload         4
+      22: invokeinterface #292,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      27: ifeq          54
+      30: aload         4
+      32: invokeinterface #293,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      37: checkcast     #72                 // class java/nio/ByteBuffer
+      40: astore        5
+      42: lload_1
+      43: aload         5
+      45: invokevirtual #177                // Method java/nio/ByteBuffer.limit:()I
+      48: i2l
+      49: ladd
+      50: lstore_1
+      51: goto          20
+      54: aload_3
+      55: monitorexit
+      56: goto          66
+      59: astore        6
+      61: aload_3
+      62: monitorexit
+      63: aload         6
+      65: athrow
+      66: lload_1
+      67: lreturn
+    Exception table:
+       from    to  target type
+           9    56    59   any
+          59    63    59   any
+
+  static {};
+    Code:
+       0: ldc           #88                 // class org/java_websocket/drafts/Draft_6455
+       2: invokevirtual #146                // Method java/lang/Class.desiredAssertionStatus:()Z
+       5: ifne          12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: putstatic     #121                // Field $assertionsDisabled:Z
+      16: return
+}

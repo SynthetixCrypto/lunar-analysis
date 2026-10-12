@@ -1,0 +1,456 @@
+public abstract class L._ec7e36._cfe983._cfe983<B extends L._ec7e36._cfe983._cfe983<B, O, T>, O extends L._ec7e36._dd3308<T>, T> implements L._ec7e36._cfe983._1e73d7<O, T> {
+  protected final java.lang.String _923909;
+
+  protected L._81676d._21aca6._1e73d7 _4d3d96;
+
+  protected boolean _99ba78;
+
+  protected java.util.function.Supplier<java.lang.String> _85b158;
+
+  protected java.lang.String _e71ea2;
+
+  protected L._81676d._cfe983 _c35779;
+
+  protected com.lunarclient.dfu.serialization.Codec<T> codec;
+
+  protected boolean _91059d;
+
+  protected java.util.function.Function<O, L._ec7e36._1e73d7._590f69> _167521;
+
+  protected java.util.function.BooleanSupplier _05a52e;
+
+  protected L._ec7e36._1e73d7._d4ca6c _83fe64;
+
+  protected java.util.Set<L._ec7e36._88f3cf> _3496da;
+
+  protected boolean _37e5ee;
+
+  protected java.util.function.BiFunction<L._ec7e36._dd3308<?>, L._2f4182._1253fc._cfe983, L._2f4182._1253fc._21aca6._6fc5d5<?>> _03e850;
+
+  protected L._ec7e36._cfe983._cfe983(java.lang.String);
+    Code:
+       0: aload_0
+       1: invokespecial #64                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_0
+       6: invokevirtual #52                 // Method _3b1127:()LL/_81676d/_21aca6/_1e73d7;
+       9: putfield      #31                 // Field _4d3d96:LL/_81676d/_21aca6/_1e73d7;
+      12: aload_0
+      13: aload_0
+      14: invokevirtual #57                 // Method _db082b:()Z
+      17: putfield      #25                 // Field _99ba78:Z
+      20: aload_0
+      21: aload_0
+      22: invokevirtual #46                 // Method _141a9e:()Z
+      25: putfield      #28                 // Field _37e5ee:Z
+      28: aload_0
+      29: aload_1
+      30: putfield      #24                 // Field _923909:Ljava/lang/String;
+      33: return
+
+  protected abstract L._81676d._21aca6._1e73d7 _3b1127();
+
+  protected abstract com.lunarclient.dfu.serialization.Codec<T> _6c7062();
+
+  protected java.util.function.Function<O, L._ec7e36._1e73d7._590f69> _b1332f();
+    Code:
+       0: invokedynamic #73,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+       5: areturn
+
+  protected java.util.function.BooleanSupplier _6c4f69();
+    Code:
+       0: aconst_null
+       1: areturn
+
+  protected L._ec7e36._1e73d7._d4ca6c _8b09c1();
+    Code:
+       0: aconst_null
+       1: areturn
+
+  protected boolean _db082b();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  protected boolean _141a9e();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  protected java.util.Set<L._ec7e36._88f3cf> _e6a16a();
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public B _cfe983(java.util.function.BiFunction<O, L._2f4182._1253fc._cfe983, L._2f4182._1253fc._21aca6._6fc5d5<?>>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #34                 // Field _03e850:Ljava/util/function/BiFunction;
+       5: aload_0
+       6: areturn
+
+  public B _c8175c(java.util.function.Function<O, L._ec7e36._1e73d7._590f69>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #29                 // Field _167521:Ljava/util/function/Function;
+       5: aload_0
+       6: areturn
+
+  public B _c5ce95(java.util.function.Consumer<com.google.gson.JsonObject>);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: aload_1
+       3: invokedynamic #74,  0             // InvokeDynamic #1:apply:(LL/_ec7e36/_cfe983/_cfe983;Ljava/util/function/Consumer;)Ljava/util/function/Function;
+       8: putfield      #29                 // Field _167521:Ljava/util/function/Function;
+      11: aload_0
+      12: areturn
+
+  public B _07fd4f(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #33                 // Field _e71ea2:Ljava/lang/String;
+       5: aload_0
+       6: areturn
+
+  public B _f9d309(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokedynamic #75,  0             // InvokeDynamic #2:get:(Ljava/lang/String;)Ljava/util/function/Supplier;
+       7: putfield      #26                 // Field _85b158:Ljava/util/function/Supplier;
+      10: aload_0
+      11: areturn
+
+  public B _7e956b(java.util.function.Supplier<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #26                 // Field _85b158:Ljava/util/function/Supplier;
+       5: aload_0
+       6: areturn
+
+  public B _21aca6(L._81676d._cfe983);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #32                 // Field _c35779:LL/_81676d/_cfe983;
+       5: aload_0
+       6: areturn
+
+  public B _cfe983(L._81676d._21aca6._1e73d7);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #31                 // Field _4d3d96:LL/_81676d/_21aca6/_1e73d7;
+       5: aload_0
+       6: areturn
+
+  public B _13ea87(java.util.function.BooleanSupplier);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #22                 // Field _05a52e:Ljava/util/function/BooleanSupplier;
+       5: aload_0
+       6: areturn
+
+  public B _787dc3(L._88f3cf._21aca6);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #70                 // InterfaceMethod L/_ec7e36/_1e73d7/_d4ca6c._03590a:(LL/_88f3cf/_21aca6;)LL/_ec7e36/_1e73d7/_d4ca6c;
+       5: putfield      #30                 // Field _83fe64:LL/_ec7e36/_1e73d7/_d4ca6c;
+       8: aload_0
+       9: areturn
+
+  public B _cfe983(L._ec7e36._1e73d7._d4ca6c);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #30                 // Field _83fe64:LL/_ec7e36/_1e73d7/_d4ca6c;
+       5: aload_0
+       6: areturn
+
+  public B _21aca6(com.lunarclient.dfu.serialization.Codec<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #35                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+       5: aload_0
+       6: iconst_0
+       7: putfield      #23                 // Field _91059d:Z
+      10: aload_0
+      11: areturn
+
+  public B _a381dd();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: putfield      #35                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+       5: aload_0
+       6: iconst_1
+       7: putfield      #23                 // Field _91059d:Z
+      10: aload_0
+      11: areturn
+
+  public B _4ee17e(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #25                 // Field _99ba78:Z
+       5: aload_0
+       6: areturn
+
+  public B _6bde0f();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: putfield      #25                 // Field _99ba78:Z
+       5: aload_0
+       6: areturn
+
+  public B _0d2530();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: putfield      #28                 // Field _37e5ee:Z
+       5: aload_0
+       6: areturn
+
+  public B _0e8d8d();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: putfield      #28                 // Field _37e5ee:Z
+       5: aload_0
+       6: areturn
+
+  public B _cfe983(L._ec7e36._88f3cf...);
+    Code:
+       0: aload_0
+       1: getfield      #27                 // Field _3496da:Ljava/util/Set;
+       4: ifnull        16
+       7: aload_0
+       8: getfield      #27                 // Field _3496da:Ljava/util/Set;
+      11: invokeinterface #71,  1           // InterfaceMethod java/util/Set.clear:()V
+      16: aload_0
+      17: aload_1
+      18: invokevirtual #59                 // Method _21aca6:([LL/_ec7e36/_88f3cf;)LL/_ec7e36/_cfe983/_cfe983;
+      21: areturn
+
+  public B _21aca6(L._ec7e36._88f3cf...);
+    Code:
+       0: aload_1
+       1: arraylength
+       2: ifne          7
+       5: aload_0
+       6: areturn
+       7: aload_0
+       8: getfield      #27                 // Field _3496da:Ljava/util/Set;
+      11: ifnonnull     26
+      14: aload_0
+      15: new           #19                 // class java/util/HashSet
+      18: dup
+      19: iconst_2
+      20: invokespecial #67                 // Method java/util/HashSet."<init>":(I)V
+      23: putfield      #27                 // Field _3496da:Ljava/util/Set;
+      26: aload_0
+      27: getfield      #27                 // Field _3496da:Ljava/util/Set;
+      30: aload_1
+      31: invokestatic  #66                 // Method java/util/Collections.addAll:(Ljava/util/Collection;[Ljava/lang/Object;)Z
+      34: pop
+      35: aload_0
+      36: areturn
+
+  public B _4d9e5d();
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: anewarray     #12                 // class L/_ec7e36/_88f3cf
+       5: dup
+       6: iconst_0
+       7: getstatic     #44                 // Field L/_ec7e36/_88f3cf.ADVANCED:LL/_ec7e36/_88f3cf;
+      10: aastore
+      11: invokevirtual #59                 // Method _21aca6:([LL/_ec7e36/_88f3cf;)LL/_ec7e36/_cfe983/_cfe983;
+      14: areturn
+
+  protected void _472f83();
+    Code:
+       0: aload_0
+       1: getfield      #35                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+       4: ifnonnull     22
+       7: aload_0
+       8: getfield      #23                 // Field _91059d:Z
+      11: ifne          22
+      14: aload_0
+      15: aload_0
+      16: invokevirtual #49                 // Method _6c7062:()Lcom/lunarclient/dfu/serialization/Codec;
+      19: putfield      #35                 // Field codec:Lcom/lunarclient/dfu/serialization/Codec;
+      22: aload_0
+      23: getfield      #29                 // Field _167521:Ljava/util/function/Function;
+      26: ifnonnull     37
+      29: aload_0
+      30: aload_0
+      31: invokevirtual #50                 // Method _b1332f:()Ljava/util/function/Function;
+      34: putfield      #29                 // Field _167521:Ljava/util/function/Function;
+      37: aload_0
+      38: getfield      #22                 // Field _05a52e:Ljava/util/function/BooleanSupplier;
+      41: ifnonnull     52
+      44: aload_0
+      45: aload_0
+      46: invokevirtual #54                 // Method _6c4f69:()Ljava/util/function/BooleanSupplier;
+      49: putfield      #22                 // Field _05a52e:Ljava/util/function/BooleanSupplier;
+      52: aload_0
+      53: getfield      #30                 // Field _83fe64:LL/_ec7e36/_1e73d7/_d4ca6c;
+      56: ifnonnull     67
+      59: aload_0
+      60: aload_0
+      61: invokevirtual #53                 // Method _8b09c1:()LL/_ec7e36/_1e73d7/_d4ca6c;
+      64: putfield      #30                 // Field _83fe64:LL/_ec7e36/_1e73d7/_d4ca6c;
+      67: aload_0
+      68: getfield      #27                 // Field _3496da:Ljava/util/Set;
+      71: ifnonnull     82
+      74: aload_0
+      75: aload_0
+      76: invokevirtual #56                 // Method _e6a16a:()Ljava/util/Set;
+      79: putfield      #27                 // Field _3496da:Ljava/util/Set;
+      82: return
+
+  protected O _f6e62b(O);
+    Code:
+       0: aload_0
+       1: getfield      #34                 // Field _03e850:Ljava/util/function/BiFunction;
+       4: ifnull        21
+       7: aload_1
+       8: getstatic     #43                 // Field L/_ec7e36/_1e73d7/_88f3cf._e1a64c:LL/_55938e/_e62626;
+      11: aload_0
+      12: getfield      #34                 // Field _03e850:Ljava/util/function/BiFunction;
+      15: invokeinterface #68,  3           // InterfaceMethod L/_ec7e36/_dd3308._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      20: pop
+      21: aload_0
+      22: getfield      #29                 // Field _167521:Ljava/util/function/Function;
+      25: ifnull        51
+      28: aload_1
+      29: getstatic     #42                 // Field L/_ec7e36/_1e73d7/_88f3cf._d6effc:LL/_55938e/_e62626;
+      32: aload_0
+      33: getfield      #29                 // Field _167521:Ljava/util/function/Function;
+      36: aload_1
+      37: invokeinterface #72,  2           // InterfaceMethod java/util/function/Function.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      42: checkcast     #11                 // class L/_ec7e36/_1e73d7/_590f69
+      45: invokeinterface #68,  3           // InterfaceMethod L/_ec7e36/_dd3308._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      50: pop
+      51: aload_0
+      52: getfield      #30                 // Field _83fe64:LL/_ec7e36/_1e73d7/_d4ca6c;
+      55: ifnull        72
+      58: aload_1
+      59: getstatic     #39                 // Field L/_ec7e36/_1e73d7/_88f3cf._bfbcae:LL/_55938e/_e62626;
+      62: aload_0
+      63: getfield      #30                 // Field _83fe64:LL/_ec7e36/_1e73d7/_d4ca6c;
+      66: invokeinterface #68,  3           // InterfaceMethod L/_ec7e36/_dd3308._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      71: pop
+      72: aload_0
+      73: getfield      #31                 // Field _4d3d96:LL/_81676d/_21aca6/_1e73d7;
+      76: ifnonnull     111
+      79: aload_0
+      80: getfield      #22                 // Field _05a52e:Ljava/util/function/BooleanSupplier;
+      83: ifnonnull     111
+      86: aload_0
+      87: getfield      #26                 // Field _85b158:Ljava/util/function/Supplier;
+      90: ifnonnull     111
+      93: aload_0
+      94: getfield      #32                 // Field _c35779:LL/_81676d/_cfe983;
+      97: ifnonnull     111
+     100: aload_0
+     101: getfield      #28                 // Field _37e5ee:Z
+     104: aload_0
+     105: invokevirtual #46                 // Method _141a9e:()Z
+     108: if_icmpeq     144
+     111: aload_1
+     112: getstatic     #37                 // Field L/_ec7e36/_1e73d7/_88f3cf._d9d6fe:LL/_55938e/_e62626;
+     115: aload_0
+     116: getfield      #31                 // Field _4d3d96:LL/_81676d/_21aca6/_1e73d7;
+     119: aload_0
+     120: getfield      #26                 // Field _85b158:Ljava/util/function/Supplier;
+     123: aload_0
+     124: getfield      #32                 // Field _c35779:LL/_81676d/_cfe983;
+     127: aload_0
+     128: getfield      #22                 // Field _05a52e:Ljava/util/function/BooleanSupplier;
+     131: aload_0
+     132: getfield      #28                 // Field _37e5ee:Z
+     135: invokestatic  #69                 // InterfaceMethod L/_ec7e36/_1e73d7/_bb4487._cfe983:(LL/_81676d/_21aca6/_1e73d7;Ljava/util/function/Supplier;LL/_81676d/_cfe983;Ljava/util/function/BooleanSupplier;Z)LL/_ec7e36/_1e73d7/_bb4487;
+     138: invokeinterface #68,  3           // InterfaceMethod L/_ec7e36/_dd3308._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+     143: pop
+     144: aload_0
+     145: getfield      #27                 // Field _3496da:Ljava/util/Set;
+     148: ifnull        165
+     151: aload_1
+     152: getstatic     #38                 // Field L/_ec7e36/_1e73d7/_88f3cf._b7d822:LL/_55938e/_e62626;
+     155: aload_0
+     156: getfield      #27                 // Field _3496da:Ljava/util/Set;
+     159: invokeinterface #68,  3           // InterfaceMethod L/_ec7e36/_dd3308._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+     164: pop
+     165: aload_0
+     166: getfield      #25                 // Field _99ba78:Z
+     169: ifeq          188
+     172: aload_1
+     173: getstatic     #36                 // Field L/_ec7e36/_1e73d7/_88f3cf._5c48a8:LL/_55938e/_e62626;
+     176: getstatic     #45                 // Field L/util/_a25b81.INSTANCE:LL/util/_a25b81;
+     179: invokeinterface #68,  3           // InterfaceMethod L/_ec7e36/_dd3308._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+     184: pop
+     185: goto          208
+     188: aload_1
+     189: getstatic     #40                 // Field L/_ec7e36/_1e73d7/_88f3cf._2b6a6c:LL/_55938e/_e62626;
+     192: new           #8                  // class L/_ec7e36/_1e73d7/_2ce426
+     195: dup
+     196: invokespecial #62                 // Method L/_ec7e36/_1e73d7/_2ce426."<init>":()V
+     199: invokevirtual #63                 // Method L/_ec7e36/_1e73d7/_2ce426._780ceb:()LL/_c8175c/_cfe983/_1e73d7;
+     202: invokeinterface #68,  3           // InterfaceMethod L/_ec7e36/_dd3308._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+     207: pop
+     208: aload_0
+     209: getfield      #33                 // Field _e71ea2:Ljava/lang/String;
+     212: ifnull        229
+     215: aload_1
+     216: getstatic     #41                 // Field L/_ec7e36/_1e73d7/_88f3cf._368762:LL/_55938e/_e62626;
+     219: aload_0
+     220: getfield      #33                 // Field _e71ea2:Ljava/lang/String;
+     223: invokeinterface #68,  3           // InterfaceMethod L/_ec7e36/_dd3308._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+     228: pop
+     229: aload_1
+     230: areturn
+
+  protected abstract O _aa113c();
+
+  public final O _da2d70();
+    Code:
+       0: aload_0
+       1: invokevirtual #58                 // Method _472f83:()V
+       4: aload_0
+       5: aload_0
+       6: invokevirtual #55                 // Method _aa113c:()LL/_ec7e36/_dd3308;
+       9: invokevirtual #47                 // Method _f6e62b:(LL/_ec7e36/_dd3308;)LL/_ec7e36/_dd3308;
+      12: areturn
+
+  public java.lang.String getId();
+    Code:
+       0: aload_0
+       1: getfield      #24                 // Field _923909:Ljava/lang/String;
+       4: areturn
+
+  private static java.lang.String _3de799(java.lang.String);
+    Code:
+       0: aload_0
+       1: areturn
+
+  private L._ec7e36._1e73d7._590f69 _cfe983(java.util.function.Consumer, L._ec7e36._dd3308);
+    Code:
+       0: new           #4                  // class L/_ec7e36/_cfe983/_cfe983$1
+       3: dup
+       4: aload_0
+       5: aload_2
+       6: aload_1
+       7: invokespecial #60                 // Method L/_ec7e36/_cfe983/_cfe983$1."<init>":(LL/_ec7e36/_cfe983/_cfe983;LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)V
+      10: areturn
+}

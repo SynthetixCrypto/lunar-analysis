@@ -1,0 +1,1943 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/com/moonsworth/webosr/javascript/FunctionBus.class
+  Last modified Dec 31, 1969; size 12623 bytes
+  SHA-256 checksum 96cc8b5ebd72e5eec1baeaa439e73ec275e233e192823a3fb978f6c86035d635
+public class com.moonsworth.webosr.javascript.FunctionBus implements com.moonsworth.webosr.handler.FunctionJS
+  minor version: 0
+  major version: 60
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #14                         // com/moonsworth/webosr/javascript/FunctionBus
+  super_class: #30                        // java/lang/Object
+  interfaces: 1, fields: 4, methods: 14, attributes: 3
+Constant pool:
+    #1 = String             #351          // Argument\'s value of JsFunction \"\u0001\" is a character, but the argument is not a single character
+    #2 = String             #352          // Argument\'s value of JsFunction \"\u0001\" is not a valid enum value
+    #3 = String             #353          // Argument\'s value of JsFunction \"\u0001\" is of an unsupported type
+    #4 = String             #371          // Multiple PromiseJS parameters are not allowed on the same method
+    #5 = String             #373          // Not enough JS arguments for \"\u0001\" (need \u0001, got \u0001)
+    #6 = String             #374          // Return value is of an unsupported type: \u0001
+    #7 = String             #378          // Too many JS arguments for \"\u0001\" (expected \u0001, got \u0001)
+    #8 = Class              #380          // "[Ljava/lang/Object;"
+    #9 = Class              #381          // "[Ljava/lang/String;"
+   #10 = Class              #382          // "[Ljava/lang/reflect/Method;"
+   #11 = Class              #383          // "[Ljava/lang/reflect/Parameter;"
+   #12 = Class              #396          // com/moonsworth/webosr/handler/FunctionJS
+   #13 = Class              #397          // com/moonsworth/webosr/javascript/CallbackJS
+   #14 = Class              #398          // com/moonsworth/webosr/javascript/FunctionBus
+   #15 = Class              #399          // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair
+   #16 = Class              #400          // com/moonsworth/webosr/wrappers/Browser
+   #17 = Class              #401          // com/moonsworth/webosr/wrappers/PromiseJS
+   #18 = Class              #431          // java/lang/Boolean
+   #19 = Class              #432          // java/lang/Byte
+   #20 = Class              #433          // java/lang/Character
+   #21 = Class              #434          // java/lang/Class
+   #22 = Class              #435          // java/lang/Double
+   #23 = Class              #436          // java/lang/Enum
+   #24 = Class              #437          // java/lang/Float
+   #25 = Class              #438          // java/lang/IllegalAccessException
+   #26 = Class              #439          // java/lang/IllegalArgumentException
+   #27 = Class              #440          // java/lang/Integer
+   #28 = Class              #441          // java/lang/Long
+   #29 = Class              #442          // java/lang/Number
+   #30 = Class              #443          // java/lang/Object
+   #31 = Class              #444          // java/lang/Runnable
+   #32 = Class              #445          // java/lang/RuntimeException
+   #33 = Class              #446          // java/lang/Short
+   #34 = Class              #447          // java/lang/String
+   #35 = Class              #448          // java/lang/Throwable
+   #36 = Class              #449          // java/lang/Void
+   #37 = Class              #450          // java/lang/invoke/LambdaMetafactory
+   #38 = Class              #451          // java/lang/invoke/MethodHandle
+   #39 = Class              #452          // java/lang/invoke/MethodHandles
+   #40 = Class              #453          // java/lang/invoke/MethodHandles$Lookup
+   #41 = Class              #454          // java/lang/invoke/StringConcatFactory
+   #42 = Class              #455          // java/lang/reflect/Method
+   #43 = Class              #456          // java/lang/reflect/Modifier
+   #44 = Class              #457          // java/lang/reflect/Parameter
+   #45 = Class              #458          // java/util/Arrays
+   #46 = Class              #459          // java/util/HashMap
+   #47 = Class              #460          // java/util/Map
+   #48 = Class              #461          // java/util/UUID
+   #49 = Class              #462          // java/util/concurrent/ArrayBlockingQueue
+   #50 = Class              #463          // java/util/concurrent/ConcurrentHashMap
+   #51 = Fieldref           #14.#176      // com/moonsworth/webosr/javascript/FunctionBus.MAIN_ACTOR_QUEUE:Ljava/util/concurrent/ArrayBlockingQueue;
+   #52 = Fieldref           #14.#187      // com/moonsworth/webosr/javascript/FunctionBus.cache:Ljava/util/Map;
+   #53 = Fieldref           #14.#190      // com/moonsworth/webosr/javascript/FunctionBus.children:Ljava/util/Map;
+   #54 = Fieldref           #14.#247      // com/moonsworth/webosr/javascript/FunctionBus.routines:Ljava/util/Map;
+   #55 = Fieldref           #15.#182      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.async:Z
+   #56 = Fieldref           #15.#209      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.hasPromiseJS:Z
+   #57 = Fieldref           #15.#210      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.hasStringArray:Z
+   #58 = Fieldref           #15.#211      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.instance:Ljava/lang/Object;
+   #59 = Fieldref           #15.#227      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.method:Ljava/lang/invoke/MethodHandle;
+   #60 = Fieldref           #15.#230      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.params:[Ljava/lang/reflect/Parameter;
+   #61 = Fieldref           #15.#238      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.passInstance:Z
+   #62 = Fieldref           #15.#240      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.promiseValueType:Ljava/lang/Class;
+   #63 = Fieldref           #15.#244      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+   #64 = Fieldref           #15.#246      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.returnType:Ljava/lang/Class;
+   #65 = Fieldref           #18.#177      // java/lang/Boolean.TYPE:Ljava/lang/Class;
+   #66 = Fieldref           #19.#177      // java/lang/Byte.TYPE:Ljava/lang/Class;
+   #67 = Fieldref           #20.#177      // java/lang/Character.TYPE:Ljava/lang/Class;
+   #68 = Fieldref           #22.#177      // java/lang/Double.TYPE:Ljava/lang/Class;
+   #69 = Fieldref           #24.#177      // java/lang/Float.TYPE:Ljava/lang/Class;
+   #70 = Fieldref           #27.#177      // java/lang/Integer.TYPE:Ljava/lang/Class;
+   #71 = Fieldref           #28.#177      // java/lang/Long.TYPE:Ljava/lang/Class;
+   #72 = Fieldref           #33.#177      // java/lang/Short.TYPE:Ljava/lang/Class;
+   #73 = Fieldref           #36.#177      // java/lang/Void.TYPE:Ljava/lang/Class;
+   #74 = Methodref          #14.#180      // com/moonsworth/webosr/javascript/FunctionBus.asBridgeCodec:()Lcom/moonsworth/webosr/BridgeValueCodec;
+   #75 = Methodref          #14.#185      // com/moonsworth/webosr/javascript/FunctionBus.buildInvocationParameters:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+   #76 = Methodref          #14.#191      // com/moonsworth/webosr/javascript/FunctionBus.completePromiseIfNeeded:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+   #77 = Methodref          #14.#213      // com/moonsworth/webosr/javascript/FunctionBus.invoke:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V
+   #78 = Methodref          #14.#217      // com/moonsworth/webosr/javascript/FunctionBus.isExplicitTarget:(Ljava/lang/String;)Z
+   #79 = Methodref          #14.#219      // com/moonsworth/webosr/javascript/FunctionBus.lambda$invoke$0:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)V
+   #80 = Methodref          #14.#229      // com/moonsworth/webosr/javascript/FunctionBus.objectToString:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+   #81 = Methodref          #14.#251      // com/moonsworth/webosr/javascript/FunctionBus.stringToObject:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+   #82 = Methodref          #15.#173      // com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair."<init>":(Ljava/lang/Object;Ljava/lang/invoke/MethodHandle;ZZ[Ljava/lang/reflect/Parameter;Ljava/lang/Class;ZZLjava/lang/Class;ZI)V
+   #83 = Methodref          #17.#178      // com/moonsworth/webosr/wrappers/PromiseJS._resolve:(Ljava/lang/String;)V
+   #84 = Methodref          #17.#183      // com/moonsworth/webosr/wrappers/PromiseJS.bindBridgeCodec:(Lcom/moonsworth/webosr/BridgeValueCodec;Ljava/lang/Class;)V
+   #85 = Methodref          #17.#245      // com/moonsworth/webosr/wrappers/PromiseJS.resolve:()V
+   #86 = Methodref          #18.#184      // java/lang/Boolean.booleanValue:()Z
+   #87 = Methodref          #18.#231      // java/lang/Boolean.parseBoolean:(Ljava/lang/String;)Z
+   #88 = Methodref          #18.#259      // java/lang/Boolean.toString:(Z)Ljava/lang/String;
+   #89 = Methodref          #18.#270      // java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+   #90 = Methodref          #19.#232      // java/lang/Byte.parseByte:(Ljava/lang/String;)B
+   #91 = Methodref          #19.#253      // java/lang/Byte.toString:(B)Ljava/lang/String;
+   #92 = Methodref          #19.#262      // java/lang/Byte.valueOf:(B)Ljava/lang/Byte;
+   #93 = Methodref          #20.#189      // java/lang/Character.charValue:()C
+   #94 = Methodref          #20.#263      // java/lang/Character.valueOf:(C)Ljava/lang/Character;
+   #95 = Methodref          #21.#201      // java/lang/Class.getEnumConstants:()[Ljava/lang/Object;
+   #96 = Methodref          #21.#202      // java/lang/Class.getMethods:()[Ljava/lang/reflect/Method;
+   #97 = Methodref          #21.#204      // java/lang/Class.getName:()Ljava/lang/String;
+   #98 = Methodref          #21.#216      // java/lang/Class.isEnum:()Z
+   #99 = Methodref          #22.#233      // java/lang/Double.parseDouble:(Ljava/lang/String;)D
+  #100 = Methodref          #22.#254      // java/lang/Double.toString:(D)Ljava/lang/String;
+  #101 = Methodref          #22.#265      // java/lang/Double.valueOf:(D)Ljava/lang/Double;
+  #102 = Methodref          #23.#252      // java/lang/Enum.toString:()Ljava/lang/String;
+  #103 = Methodref          #24.#234      // java/lang/Float.parseFloat:(Ljava/lang/String;)F
+  #104 = Methodref          #24.#255      // java/lang/Float.toString:(F)Ljava/lang/String;
+  #105 = Methodref          #24.#266      // java/lang/Float.valueOf:(F)Ljava/lang/Float;
+  #106 = Methodref          #26.#174      // java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+  #107 = Methodref          #27.#235      // java/lang/Integer.parseInt:(Ljava/lang/String;)I
+  #108 = Methodref          #27.#256      // java/lang/Integer.toString:(I)Ljava/lang/String;
+  #109 = Methodref          #27.#267      // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #110 = Methodref          #28.#236      // java/lang/Long.parseLong:(Ljava/lang/String;)J
+  #111 = Methodref          #28.#257      // java/lang/Long.toString:(J)Ljava/lang/String;
+  #112 = Methodref          #28.#268      // java/lang/Long.valueOf:(J)Ljava/lang/Long;
+  #113 = Methodref          #29.#186      // java/lang/Number.byteValue:()B
+  #114 = Methodref          #29.#194      // java/lang/Number.doubleValue:()D
+  #115 = Methodref          #29.#196      // java/lang/Number.floatValue:()F
+  #116 = Methodref          #29.#212      // java/lang/Number.intValue:()I
+  #117 = Methodref          #29.#221      // java/lang/Number.longValue:()J
+  #118 = Methodref          #29.#250      // java/lang/Number.shortValue:()S
+  #119 = Methodref          #30.#171      // java/lang/Object."<init>":()V
+  #120 = Methodref          #30.#200      // java/lang/Object.getClass:()Ljava/lang/Class;
+  #121 = Methodref          #30.#252      // java/lang/Object.toString:()Ljava/lang/String;
+  #122 = Methodref          #32.#175      // java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+  #123 = Methodref          #33.#237      // java/lang/Short.parseShort:(Ljava/lang/String;)S
+  #124 = Methodref          #33.#258      // java/lang/Short.toString:(S)Ljava/lang/String;
+  #125 = Methodref          #33.#269      // java/lang/Short.valueOf:(S)Ljava/lang/Short;
+  #126 = Methodref          #34.#188      // java/lang/String.charAt:(I)C
+  #127 = Methodref          #34.#195      // java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+  #128 = Methodref          #34.#220      // java/lang/String.length:()I
+  #129 = Methodref          #34.#264      // java/lang/String.valueOf:(C)Ljava/lang/String;
+  #130 = Methodref          #37.#226      // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #131 = Methodref          #38.#214      // java/lang/invoke/MethodHandle.invokeWithArguments:([Ljava/lang/Object;)Ljava/lang/Object;
+  #132 = Methodref          #39.#222      // java/lang/invoke/MethodHandles.lookup:()Ljava/lang/invoke/MethodHandles$Lookup;
+  #133 = Methodref          #40.#260      // java/lang/invoke/MethodHandles$Lookup.unreflect:(Ljava/lang/reflect/Method;)Ljava/lang/invoke/MethodHandle;
+  #134 = Methodref          #41.#225      // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #135 = Methodref          #42.#199      // java/lang/reflect/Method.getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+  #136 = Methodref          #42.#203      // java/lang/reflect/Method.getModifiers:()I
+  #137 = Methodref          #42.#206      // java/lang/reflect/Method.getParameters:()[Ljava/lang/reflect/Parameter;
+  #138 = Methodref          #42.#207      // java/lang/reflect/Method.getReturnType:()Ljava/lang/Class;
+  #139 = Methodref          #43.#218      // java/lang/reflect/Modifier.isStatic:(I)Z
+  #140 = Methodref          #44.#205      // java/lang/reflect/Parameter.getParameterizedType:()Ljava/lang/reflect/Type;
+  #141 = Methodref          #44.#208      // java/lang/reflect/Parameter.getType:()Ljava/lang/Class;
+  #142 = Methodref          #45.#193      // java/util/Arrays.copyOfRange:([Ljava/lang/Object;II)[Ljava/lang/Object;
+  #143 = Methodref          #46.#171      // java/util/HashMap."<init>":()V
+  #144 = Methodref          #48.#197      // java/util/UUID.fromString:(Ljava/lang/String;)Ljava/util/UUID;
+  #145 = Methodref          #48.#252      // java/util/UUID.toString:()Ljava/lang/String;
+  #146 = Methodref          #49.#172      // java/util/concurrent/ArrayBlockingQueue."<init>":(I)V
+  #147 = Methodref          #49.#179      // java/util/concurrent/ArrayBlockingQueue.add:(Ljava/lang/Object;)Z
+  #148 = Methodref          #49.#239      // java/util/concurrent/ArrayBlockingQueue.poll:()Ljava/lang/Object;
+  #149 = Methodref          #50.#171      // java/util/concurrent/ConcurrentHashMap."<init>":()V
+  #150 = InterfaceMethodref #13.#181      // com/moonsworth/webosr/javascript/CallbackJS.async:()Z
+  #151 = InterfaceMethodref #13.#261      // com/moonsworth/webosr/javascript/CallbackJS.value:()Ljava/lang/String;
+  #152 = InterfaceMethodref #31.#248      // java/lang/Runnable.run:()V
+  #153 = InterfaceMethodref #47.#192      // java/util/Map.containsKey:(Ljava/lang/Object;)Z
+  #154 = InterfaceMethodref #47.#198      // java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #155 = InterfaceMethodref #47.#215      // java/util/Map.isEmpty:()Z
+  #156 = InterfaceMethodref #47.#241      // java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #157 = InterfaceMethodref #47.#242      // java/util/Map.putAll:(Ljava/util/Map;)V
+  #158 = InterfaceMethodref #47.#243      // java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+  #159 = InvokeDynamic      #0:#249       // #0:run:(Lcom/moonsworth/webosr/javascript/FunctionBus;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)Ljava/lang/Runnable;
+  #160 = InvokeDynamic      #1:#224       // #1:makeConcatWithConstants:(Ljava/lang/String;II)Ljava/lang/String;
+  #161 = InvokeDynamic      #2:#224       // #2:makeConcatWithConstants:(Ljava/lang/String;II)Ljava/lang/String;
+  #162 = InvokeDynamic      #3:#228       // #3:objectToString:(Lcom/moonsworth/webosr/javascript/FunctionBus;)Lcom/moonsworth/webosr/BridgeValueCodec;
+  #163 = InvokeDynamic      #4:#223       // #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #164 = InvokeDynamic      #5:#223       // #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #165 = InvokeDynamic      #6:#223       // #6:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #166 = InvokeDynamic      #7:#223       // #7:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #167 = MethodHandle       5:#79         // REF_invokeVirtual com/moonsworth/webosr/javascript/FunctionBus.lambda$invoke$0:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)V
+  #168 = MethodHandle       5:#80         // REF_invokeVirtual com/moonsworth/webosr/javascript/FunctionBus.objectToString:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+  #169 = MethodHandle       6:#130        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #170 = MethodHandle       6:#134        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #171 = NameAndType        #350:#286     // "<init>":()V
+  #172 = NameAndType        #350:#302     // "<init>":(I)V
+  #173 = NameAndType        #350:#323     // "<init>":(Ljava/lang/Object;Ljava/lang/invoke/MethodHandle;ZZ[Ljava/lang/reflect/Parameter;Ljava/lang/Class;ZZLjava/lang/Class;ZI)V
+  #174 = NameAndType        #350:#332     // "<init>":(Ljava/lang/String;)V
+  #175 = NameAndType        #350:#338     // "<init>":(Ljava/lang/Throwable;)V
+  #176 = NameAndType        #369:#366     // MAIN_ACTOR_QUEUE:Ljava/util/concurrent/ArrayBlockingQueue;
+  #177 = NameAndType        #377:#359     // TYPE:Ljava/lang/Class;
+  #178 = NameAndType        #384:#332     // _resolve:(Ljava/lang/String;)V
+  #179 = NameAndType        #385:#319     // add:(Ljava/lang/Object;)Z
+  #180 = NameAndType        #386:#279     // asBridgeCodec:()Lcom/moonsworth/webosr/BridgeValueCodec;
+  #181 = NameAndType        #387:#287     // async:()Z
+  #182 = NameAndType        #387:#379     // async:Z
+  #183 = NameAndType        #388:#306     // bindBridgeCodec:(Lcom/moonsworth/webosr/BridgeValueCodec;Ljava/lang/Class;)V
+  #184 = NameAndType        #389:#287     // booleanValue:()Z
+  #185 = NameAndType        #390:#307     // buildInvocationParameters:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+  #186 = NameAndType        #391:#273     // byteValue:()B
+  #187 = NameAndType        #392:#362     // cache:Ljava/util/Map;
+  #188 = NameAndType        #393:#299     // charAt:(I)C
+  #189 = NameAndType        #394:#274     // charValue:()C
+  #190 = NameAndType        #395:#362     // children:Ljava/util/Map;
+  #191 = NameAndType        #402:#312     // completePromiseIfNeeded:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+  #192 = NameAndType        #404:#319     // containsKey:(Ljava/lang/Object;)Z
+  #193 = NameAndType        #405:#348     // copyOfRange:([Ljava/lang/Object;II)[Ljava/lang/Object;
+  #194 = NameAndType        #406:#275     // doubleValue:()D
+  #195 = NameAndType        #407:#333     // equalsIgnoreCase:(Ljava/lang/String;)Z
+  #196 = NameAndType        #408:#276     // floatValue:()F
+  #197 = NameAndType        #409:#330     // fromString:(Ljava/lang/String;)Ljava/util/UUID;
+  #198 = NameAndType        #410:#317     // get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #199 = NameAndType        #411:#316     // getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+  #200 = NameAndType        #412:#280     // getClass:()Ljava/lang/Class;
+  #201 = NameAndType        #413:#288     // getEnumConstants:()[Ljava/lang/Object;
+  #202 = NameAndType        #414:#289     // getMethods:()[Ljava/lang/reflect/Method;
+  #203 = NameAndType        #415:#277     // getModifiers:()I
+  #204 = NameAndType        #416:#282     // getName:()Ljava/lang/String;
+  #205 = NameAndType        #417:#284     // getParameterizedType:()Ljava/lang/reflect/Type;
+  #206 = NameAndType        #418:#290     // getParameters:()[Ljava/lang/reflect/Parameter;
+  #207 = NameAndType        #419:#280     // getReturnType:()Ljava/lang/Class;
+  #208 = NameAndType        #420:#280     // getType:()Ljava/lang/Class;
+  #209 = NameAndType        #421:#379     // hasPromiseJS:Z
+  #210 = NameAndType        #422:#379     // hasStringArray:Z
+  #211 = NameAndType        #423:#360     // instance:Ljava/lang/Object;
+  #212 = NameAndType        #424:#277     // intValue:()I
+  #213 = NameAndType        #425:#313     // invoke:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V
+  #214 = NameAndType        #426:#347     // invokeWithArguments:([Ljava/lang/Object;)Ljava/lang/Object;
+  #215 = NameAndType        #427:#287     // isEmpty:()Z
+  #216 = NameAndType        #428:#287     // isEnum:()Z
+  #217 = NameAndType        #429:#333     // isExplicitTarget:(Ljava/lang/String;)Z
+  #218 = NameAndType        #430:#303     // isStatic:(I)Z
+  #219 = NameAndType        #464:#309     // lambda$invoke$0:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)V
+  #220 = NameAndType        #465:#277     // length:()I
+  #221 = NameAndType        #466:#278     // longValue:()J
+  #222 = NameAndType        #467:#283     // lookup:()Ljava/lang/invoke/MethodHandles$Lookup;
+  #223 = NameAndType        #468:#329     // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #224 = NameAndType        #468:#334     // makeConcatWithConstants:(Ljava/lang/String;II)Ljava/lang/String;
+  #225 = NameAndType        #468:#339     // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #226 = NameAndType        #469:#340     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #227 = NameAndType        #470:#361     // method:Ljava/lang/invoke/MethodHandle;
+  #228 = NameAndType        #471:#310     // objectToString:(Lcom/moonsworth/webosr/javascript/FunctionBus;)Lcom/moonsworth/webosr/BridgeValueCodec;
+  #229 = NameAndType        #471:#320     // objectToString:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+  #230 = NameAndType        #472:#383     // params:[Ljava/lang/reflect/Parameter;
+  #231 = NameAndType        #473:#333     // parseBoolean:(Ljava/lang/String;)Z
+  #232 = NameAndType        #474:#324     // parseByte:(Ljava/lang/String;)B
+  #233 = NameAndType        #475:#325     // parseDouble:(Ljava/lang/String;)D
+  #234 = NameAndType        #476:#326     // parseFloat:(Ljava/lang/String;)F
+  #235 = NameAndType        #477:#327     // parseInt:(Ljava/lang/String;)I
+  #236 = NameAndType        #478:#328     // parseLong:(Ljava/lang/String;)J
+  #237 = NameAndType        #479:#331     // parseShort:(Ljava/lang/String;)S
+  #238 = NameAndType        #480:#379     // passInstance:Z
+  #239 = NameAndType        #481:#281     // poll:()Ljava/lang/Object;
+  #240 = NameAndType        #482:#359     // promiseValueType:Ljava/lang/Class;
+  #241 = NameAndType        #483:#322     // put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #242 = NameAndType        #484:#342     // putAll:(Ljava/util/Map;)V
+  #243 = NameAndType        #486:#317     // remove:(Ljava/lang/Object;)Ljava/lang/Object;
+  #244 = NameAndType        #487:#356     // requiredJsArgCount:I
+  #245 = NameAndType        #488:#286     // resolve:()V
+  #246 = NameAndType        #489:#359     // returnType:Ljava/lang/Class;
+  #247 = NameAndType        #490:#362     // routines:Ljava/util/Map;
+  #248 = NameAndType        #491:#286     // run:()V
+  #249 = NameAndType        #491:#311     // run:(Lcom/moonsworth/webosr/javascript/FunctionBus;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)Ljava/lang/Runnable;
+  #250 = NameAndType        #492:#285     // shortValue:()S
+  #251 = NameAndType        #493:#336     // stringToObject:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+  #252 = NameAndType        #495:#282     // toString:()Ljava/lang/String;
+  #253 = NameAndType        #495:#292     // toString:(B)Ljava/lang/String;
+  #254 = NameAndType        #495:#296     // toString:(D)Ljava/lang/String;
+  #255 = NameAndType        #495:#298     // toString:(F)Ljava/lang/String;
+  #256 = NameAndType        #495:#301     // toString:(I)Ljava/lang/String;
+  #257 = NameAndType        #495:#305     // toString:(J)Ljava/lang/String;
+  #258 = NameAndType        #495:#344     // toString:(S)Ljava/lang/String;
+  #259 = NameAndType        #495:#346     // toString:(Z)Ljava/lang/String;
+  #260 = NameAndType        #496:#341     // unreflect:(Ljava/lang/reflect/Method;)Ljava/lang/invoke/MethodHandle;
+  #261 = NameAndType        #498:#282     // value:()Ljava/lang/String;
+  #262 = NameAndType        #499:#291     // valueOf:(B)Ljava/lang/Byte;
+  #263 = NameAndType        #499:#293     // valueOf:(C)Ljava/lang/Character;
+  #264 = NameAndType        #499:#294     // valueOf:(C)Ljava/lang/String;
+  #265 = NameAndType        #499:#295     // valueOf:(D)Ljava/lang/Double;
+  #266 = NameAndType        #499:#297     // valueOf:(F)Ljava/lang/Float;
+  #267 = NameAndType        #499:#300     // valueOf:(I)Ljava/lang/Integer;
+  #268 = NameAndType        #499:#304     // valueOf:(J)Ljava/lang/Long;
+  #269 = NameAndType        #499:#343     // valueOf:(S)Ljava/lang/Short;
+  #270 = NameAndType        #499:#345     // valueOf:(Z)Ljava/lang/Boolean;
+  #271 = MethodType         #286          //  ()V
+  #272 = MethodType         #320          //  (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+  #273 = Utf8               ()B
+  #274 = Utf8               ()C
+  #275 = Utf8               ()D
+  #276 = Utf8               ()F
+  #277 = Utf8               ()I
+  #278 = Utf8               ()J
+  #279 = Utf8               ()Lcom/moonsworth/webosr/BridgeValueCodec;
+  #280 = Utf8               ()Ljava/lang/Class;
+  #281 = Utf8               ()Ljava/lang/Object;
+  #282 = Utf8               ()Ljava/lang/String;
+  #283 = Utf8               ()Ljava/lang/invoke/MethodHandles$Lookup;
+  #284 = Utf8               ()Ljava/lang/reflect/Type;
+  #285 = Utf8               ()S
+  #286 = Utf8               ()V
+  #287 = Utf8               ()Z
+  #288 = Utf8               ()[Ljava/lang/Object;
+  #289 = Utf8               ()[Ljava/lang/reflect/Method;
+  #290 = Utf8               ()[Ljava/lang/reflect/Parameter;
+  #291 = Utf8               (B)Ljava/lang/Byte;
+  #292 = Utf8               (B)Ljava/lang/String;
+  #293 = Utf8               (C)Ljava/lang/Character;
+  #294 = Utf8               (C)Ljava/lang/String;
+  #295 = Utf8               (D)Ljava/lang/Double;
+  #296 = Utf8               (D)Ljava/lang/String;
+  #297 = Utf8               (F)Ljava/lang/Float;
+  #298 = Utf8               (F)Ljava/lang/String;
+  #299 = Utf8               (I)C
+  #300 = Utf8               (I)Ljava/lang/Integer;
+  #301 = Utf8               (I)Ljava/lang/String;
+  #302 = Utf8               (I)V
+  #303 = Utf8               (I)Z
+  #304 = Utf8               (J)Ljava/lang/Long;
+  #305 = Utf8               (J)Ljava/lang/String;
+  #306 = Utf8               (Lcom/moonsworth/webosr/BridgeValueCodec;Ljava/lang/Class;)V
+  #307 = Utf8               (Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+  #308 = Utf8               (Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+  #309 = Utf8               (Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)V
+  #310 = Utf8               (Lcom/moonsworth/webosr/javascript/FunctionBus;)Lcom/moonsworth/webosr/BridgeValueCodec;
+  #311 = Utf8               (Lcom/moonsworth/webosr/javascript/FunctionBus;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)Ljava/lang/Runnable;
+  #312 = Utf8               (Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+  #313 = Utf8               (Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V
+  #314 = Utf8               (Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+  #315 = Utf8               (Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V
+  #316 = Utf8               (Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+  #317 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #318 = Utf8               (Ljava/lang/Object;)V
+  #319 = Utf8               (Ljava/lang/Object;)Z
+  #320 = Utf8               (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+  #321 = Utf8               (Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/String;
+  #322 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #323 = Utf8               (Ljava/lang/Object;Ljava/lang/invoke/MethodHandle;ZZ[Ljava/lang/reflect/Parameter;Ljava/lang/Class;ZZLjava/lang/Class;ZI)V
+  #324 = Utf8               (Ljava/lang/String;)B
+  #325 = Utf8               (Ljava/lang/String;)D
+  #326 = Utf8               (Ljava/lang/String;)F
+  #327 = Utf8               (Ljava/lang/String;)I
+  #328 = Utf8               (Ljava/lang/String;)J
+  #329 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #330 = Utf8               (Ljava/lang/String;)Ljava/util/UUID;
+  #331 = Utf8               (Ljava/lang/String;)S
+  #332 = Utf8               (Ljava/lang/String;)V
+  #333 = Utf8               (Ljava/lang/String;)Z
+  #334 = Utf8               (Ljava/lang/String;II)Ljava/lang/String;
+  #335 = Utf8               (Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus;)V
+  #336 = Utf8               (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+  #337 = Utf8               (Ljava/lang/String;Ljava/lang/Class<*>;)Ljava/lang/Object;
+  #338 = Utf8               (Ljava/lang/Throwable;)V
+  #339 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #340 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #341 = Utf8               (Ljava/lang/reflect/Method;)Ljava/lang/invoke/MethodHandle;
+  #342 = Utf8               (Ljava/util/Map;)V
+  #343 = Utf8               (S)Ljava/lang/Short;
+  #344 = Utf8               (S)Ljava/lang/String;
+  #345 = Utf8               (Z)Ljava/lang/Boolean;
+  #346 = Utf8               (Z)Ljava/lang/String;
+  #347 = Utf8               ([Ljava/lang/Object;)Ljava/lang/Object;
+  #348 = Utf8               ([Ljava/lang/Object;II)[Ljava/lang/Object;
+  #349 = Utf8               <clinit>
+  #350 = Utf8               <init>
+  #351 = Utf8               Argument\'s value of JsFunction \"\u0001\" is a character, but the argument is not a single character
+  #352 = Utf8               Argument\'s value of JsFunction \"\u0001\" is not a valid enum value
+  #353 = Utf8               Argument\'s value of JsFunction \"\u0001\" is of an unsupported type
+  #354 = Utf8               BootstrapMethods
+  #355 = Utf8               Code
+  #356 = Utf8               I
+  #357 = Utf8               InnerClasses
+  #358 = Utf8               LineNumberTable
+  #359 = Utf8               Ljava/lang/Class;
+  #360 = Utf8               Ljava/lang/Object;
+  #361 = Utf8               Ljava/lang/invoke/MethodHandle;
+  #362 = Utf8               Ljava/util/Map;
+  #363 = Utf8               Ljava/util/Map<Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;>;>;
+  #364 = Utf8               Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;>;
+  #365 = Utf8               Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus;>;
+  #366 = Utf8               Ljava/util/concurrent/ArrayBlockingQueue;
+  #367 = Utf8               Ljava/util/concurrent/ArrayBlockingQueue<Ljava/lang/Runnable;>;
+  #368 = Utf8               Lookup
+  #369 = Utf8               MAIN_ACTOR_QUEUE
+  #370 = Utf8               MethodInstancePair
+  #371 = Utf8               Multiple PromiseJS parameters are not allowed on the same method
+  #372 = Utf8               NestMembers
+  #373 = Utf8               Not enough JS arguments for \"\u0001\" (need \u0001, got \u0001)
+  #374 = Utf8               Return value is of an unsupported type: \u0001
+  #375 = Utf8               Signature
+  #376 = Utf8               StackMapTable
+  #377 = Utf8               TYPE
+  #378 = Utf8               Too many JS arguments for \"\u0001\" (expected \u0001, got \u0001)
+  #379 = Utf8               Z
+  #380 = Utf8               [Ljava/lang/Object;
+  #381 = Utf8               [Ljava/lang/String;
+  #382 = Utf8               [Ljava/lang/reflect/Method;
+  #383 = Utf8               [Ljava/lang/reflect/Parameter;
+  #384 = Utf8               _resolve
+  #385 = Utf8               add
+  #386 = Utf8               asBridgeCodec
+  #387 = Utf8               async
+  #388 = Utf8               bindBridgeCodec
+  #389 = Utf8               booleanValue
+  #390 = Utf8               buildInvocationParameters
+  #391 = Utf8               byteValue
+  #392 = Utf8               cache
+  #393 = Utf8               charAt
+  #394 = Utf8               charValue
+  #395 = Utf8               children
+  #396 = Utf8               com/moonsworth/webosr/handler/FunctionJS
+  #397 = Utf8               com/moonsworth/webosr/javascript/CallbackJS
+  #398 = Utf8               com/moonsworth/webosr/javascript/FunctionBus
+  #399 = Utf8               com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair
+  #400 = Utf8               com/moonsworth/webosr/wrappers/Browser
+  #401 = Utf8               com/moonsworth/webosr/wrappers/PromiseJS
+  #402 = Utf8               completePromiseIfNeeded
+  #403 = Utf8               consumeMainActorQueue
+  #404 = Utf8               containsKey
+  #405 = Utf8               copyOfRange
+  #406 = Utf8               doubleValue
+  #407 = Utf8               equalsIgnoreCase
+  #408 = Utf8               floatValue
+  #409 = Utf8               fromString
+  #410 = Utf8               get
+  #411 = Utf8               getAnnotation
+  #412 = Utf8               getClass
+  #413 = Utf8               getEnumConstants
+  #414 = Utf8               getMethods
+  #415 = Utf8               getModifiers
+  #416 = Utf8               getName
+  #417 = Utf8               getParameterizedType
+  #418 = Utf8               getParameters
+  #419 = Utf8               getReturnType
+  #420 = Utf8               getType
+  #421 = Utf8               hasPromiseJS
+  #422 = Utf8               hasStringArray
+  #423 = Utf8               instance
+  #424 = Utf8               intValue
+  #425 = Utf8               invoke
+  #426 = Utf8               invokeWithArguments
+  #427 = Utf8               isEmpty
+  #428 = Utf8               isEnum
+  #429 = Utf8               isExplicitTarget
+  #430 = Utf8               isStatic
+  #431 = Utf8               java/lang/Boolean
+  #432 = Utf8               java/lang/Byte
+  #433 = Utf8               java/lang/Character
+  #434 = Utf8               java/lang/Class
+  #435 = Utf8               java/lang/Double
+  #436 = Utf8               java/lang/Enum
+  #437 = Utf8               java/lang/Float
+  #438 = Utf8               java/lang/IllegalAccessException
+  #439 = Utf8               java/lang/IllegalArgumentException
+  #440 = Utf8               java/lang/Integer
+  #441 = Utf8               java/lang/Long
+  #442 = Utf8               java/lang/Number
+  #443 = Utf8               java/lang/Object
+  #444 = Utf8               java/lang/Runnable
+  #445 = Utf8               java/lang/RuntimeException
+  #446 = Utf8               java/lang/Short
+  #447 = Utf8               java/lang/String
+  #448 = Utf8               java/lang/Throwable
+  #449 = Utf8               java/lang/Void
+  #450 = Utf8               java/lang/invoke/LambdaMetafactory
+  #451 = Utf8               java/lang/invoke/MethodHandle
+  #452 = Utf8               java/lang/invoke/MethodHandles
+  #453 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #454 = Utf8               java/lang/invoke/StringConcatFactory
+  #455 = Utf8               java/lang/reflect/Method
+  #456 = Utf8               java/lang/reflect/Modifier
+  #457 = Utf8               java/lang/reflect/Parameter
+  #458 = Utf8               java/util/Arrays
+  #459 = Utf8               java/util/HashMap
+  #460 = Utf8               java/util/Map
+  #461 = Utf8               java/util/UUID
+  #462 = Utf8               java/util/concurrent/ArrayBlockingQueue
+  #463 = Utf8               java/util/concurrent/ConcurrentHashMap
+  #464 = Utf8               lambda$invoke$0
+  #465 = Utf8               length
+  #466 = Utf8               longValue
+  #467 = Utf8               lookup
+  #468 = Utf8               makeConcatWithConstants
+  #469 = Utf8               metafactory
+  #470 = Utf8               method
+  #471 = Utf8               objectToString
+  #472 = Utf8               params
+  #473 = Utf8               parseBoolean
+  #474 = Utf8               parseByte
+  #475 = Utf8               parseDouble
+  #476 = Utf8               parseFloat
+  #477 = Utf8               parseInt
+  #478 = Utf8               parseLong
+  #479 = Utf8               parseShort
+  #480 = Utf8               passInstance
+  #481 = Utf8               poll
+  #482 = Utf8               promiseValueType
+  #483 = Utf8               put
+  #484 = Utf8               putAll
+  #485 = Utf8               registerChild
+  #486 = Utf8               remove
+  #487 = Utf8               requiredJsArgCount
+  #488 = Utf8               resolve
+  #489 = Utf8               returnType
+  #490 = Utf8               routines
+  #491 = Utf8               run
+  #492 = Utf8               shortValue
+  #493 = Utf8               stringToObject
+  #494 = Utf8               subscribe
+  #495 = Utf8               toString
+  #496 = Utf8               unreflect
+  #497 = Utf8               unregisterChild
+  #498 = Utf8               value
+  #499 = Utf8               valueOf
+{
+  protected static final java.util.concurrent.ArrayBlockingQueue<java.lang.Runnable> MAIN_ACTOR_QUEUE;
+    descriptor: Ljava/util/concurrent/ArrayBlockingQueue;
+    flags: (0x001c) ACC_PROTECTED, ACC_STATIC, ACC_FINAL
+    Signature: #367                         // Ljava/util/concurrent/ArrayBlockingQueue<Ljava/lang/Runnable;>;
+
+  protected final java.util.Map<java.lang.String, com.moonsworth.webosr.javascript.FunctionBus> children;
+    descriptor: Ljava/util/Map;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+    Signature: #365                         // Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus;>;
+
+  protected final java.util.Map<java.lang.String, com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair> routines;
+    descriptor: Ljava/util/Map;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+    Signature: #364                         // Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;>;
+
+  protected final java.util.Map<java.lang.Object, java.util.Map<java.lang.String, com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair>> cache;
+    descriptor: Ljava/util/Map;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+    Signature: #363                         // Ljava/util/Map<Ljava/lang/Object;Ljava/util/Map<Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;>;>;
+
+  public com.moonsworth.webosr.javascript.FunctionBus();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #119                // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #50                 // class java/util/concurrent/ConcurrentHashMap
+         8: dup
+         9: invokespecial #149                // Method java/util/concurrent/ConcurrentHashMap."<init>":()V
+        12: putfield      #53                 // Field children:Ljava/util/Map;
+        15: aload_0
+        16: new           #50                 // class java/util/concurrent/ConcurrentHashMap
+        19: dup
+        20: invokespecial #149                // Method java/util/concurrent/ConcurrentHashMap."<init>":()V
+        23: putfield      #54                 // Field routines:Ljava/util/Map;
+        26: aload_0
+        27: new           #50                 // class java/util/concurrent/ConcurrentHashMap
+        30: dup
+        31: invokespecial #149                // Method java/util/concurrent/ConcurrentHashMap."<init>":()V
+        34: putfield      #52                 // Field cache:Ljava/util/Map;
+        37: return
+      LineNumberTable:
+        line 36: 0
+        line 43: 4
+        line 44: 15
+        line 46: 26
+
+  public static void consumeMainActorQueue();
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=0
+         0: getstatic     #51                 // Field MAIN_ACTOR_QUEUE:Ljava/util/concurrent/ArrayBlockingQueue;
+         3: invokevirtual #148                // Method java/util/concurrent/ArrayBlockingQueue.poll:()Ljava/lang/Object;
+         6: checkcast     #31                 // class java/lang/Runnable
+         9: dup
+        10: astore_0
+        11: ifnull        23
+        14: aload_0
+        15: invokeinterface #152,  1          // InterfaceMethod java/lang/Runnable.run:()V
+        20: goto          0
+        23: return
+      LineNumberTable:
+        line 56: 0
+        line 57: 14
+        line 59: 23
+      StackMapTable: number_of_entries = 2
+        frame_type = 0 /* same */
+        frame_type = 22 /* same */
+
+  public void registerChild(java.lang.String, com.moonsworth.webosr.javascript.FunctionBus);
+    descriptor: (Ljava/lang/String;Lcom/moonsworth/webosr/javascript/FunctionBus;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getfield      #53                 // Field children:Ljava/util/Map;
+         4: aload_1
+         5: aload_2
+         6: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+        11: pop
+        12: return
+      LineNumberTable:
+        line 69: 0
+        line 70: 12
+
+  public void unregisterChild(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #53                 // Field children:Ljava/util/Map;
+         4: aload_1
+         5: invokeinterface #158,  2          // InterfaceMethod java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+        10: pop
+        11: return
+      LineNumberTable:
+        line 78: 0
+        line 79: 11
+
+  public void subscribe(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=13, locals=25, args_size=2
+         0: aload_1
+         1: instanceof    #21                 // class java/lang/Class
+         4: ifeq          17
+         7: aload_1
+         8: checkcast     #21                 // class java/lang/Class
+        11: astore_2
+        12: aconst_null
+        13: astore_1
+        14: goto          22
+        17: aload_1
+        18: invokevirtual #120                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        21: astore_2
+        22: aload_1
+        23: ifnull        54
+        26: aload_0
+        27: getfield      #52                 // Field cache:Ljava/util/Map;
+        30: aload_1
+        31: invokeinterface #154,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        36: checkcast     #47                 // class java/util/Map
+        39: astore_3
+        40: aload_3
+        41: ifnull        54
+        44: aload_0
+        45: getfield      #54                 // Field routines:Ljava/util/Map;
+        48: aload_3
+        49: invokeinterface #157,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+        54: aload_0
+        55: getfield      #52                 // Field cache:Ljava/util/Map;
+        58: aload_2
+        59: invokeinterface #154,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        64: checkcast     #47                 // class java/util/Map
+        67: astore_3
+        68: aload_3
+        69: ifnull        82
+        72: aload_0
+        73: getfield      #54                 // Field routines:Ljava/util/Map;
+        76: aload_3
+        77: invokeinterface #157,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+        82: invokestatic  #132                // Method java/lang/invoke/MethodHandles.lookup:()Ljava/lang/invoke/MethodHandles$Lookup;
+        85: astore        4
+        87: new           #46                 // class java/util/HashMap
+        90: dup
+        91: invokespecial #143                // Method java/util/HashMap."<init>":()V
+        94: astore        5
+        96: new           #46                 // class java/util/HashMap
+        99: dup
+       100: invokespecial #143                // Method java/util/HashMap."<init>":()V
+       103: astore        6
+       105: aload_2
+       106: invokevirtual #96                 // Method java/lang/Class.getMethods:()[Ljava/lang/reflect/Method;
+       109: astore        7
+       111: aload         7
+       113: arraylength
+       114: istore        8
+       116: iconst_0
+       117: istore        9
+       119: iload         9
+       121: iload         8
+       123: if_icmpge     430
+       126: aload         7
+       128: iload         9
+       130: aaload
+       131: astore        10
+       133: aload         10
+       135: ldc           #13                 // class com/moonsworth/webosr/javascript/CallbackJS
+       137: invokevirtual #135                // Method java/lang/reflect/Method.getAnnotation:(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+       140: checkcast     #13                 // class com/moonsworth/webosr/javascript/CallbackJS
+       143: astore        11
+       145: aload         11
+       147: ifnonnull     153
+       150: goto          424
+       153: aload         10
+       155: invokevirtual #136                // Method java/lang/reflect/Method.getModifiers:()I
+       158: invokestatic  #139                // Method java/lang/reflect/Modifier.isStatic:(I)Z
+       161: ifne          168
+       164: iconst_1
+       165: goto          169
+       168: iconst_0
+       169: istore        12
+       171: iload         12
+       173: ifeq          183
+       176: aload_1
+       177: ifnonnull     183
+       180: goto          424
+       183: aload         4
+       185: aload         10
+       187: invokevirtual #133                // Method java/lang/invoke/MethodHandles$Lookup.unreflect:(Ljava/lang/reflect/Method;)Ljava/lang/invoke/MethodHandle;
+       190: astore        13
+       192: goto          207
+       195: astore        14
+       197: new           #32                 // class java/lang/RuntimeException
+       200: dup
+       201: aload         14
+       203: invokespecial #122                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+       206: athrow
+       207: aload         10
+       209: invokevirtual #137                // Method java/lang/reflect/Method.getParameters:()[Ljava/lang/reflect/Parameter;
+       212: astore        14
+       214: iconst_0
+       215: istore        15
+       217: iconst_0
+       218: istore        16
+       220: iconst_0
+       221: istore        17
+       223: aconst_null
+       224: astore        18
+       226: iconst_0
+       227: istore        19
+       229: aload         14
+       231: astore        20
+       233: aload         20
+       235: arraylength
+       236: istore        21
+       238: iconst_0
+       239: istore        22
+       241: iload         22
+       243: iload         21
+       245: if_icmpge     335
+       248: aload         20
+       250: iload         22
+       252: aaload
+       253: astore        23
+       255: aload         23
+       257: invokevirtual #141                // Method java/lang/reflect/Parameter.getType:()Ljava/lang/Class;
+       260: astore        24
+       262: aload         24
+       264: ldc           #16                 // class com/moonsworth/webosr/wrappers/Browser
+       266: if_acmpne     275
+       269: iconst_1
+       270: istore        15
+       272: goto          329
+       275: aload         24
+       277: ldc           #17                 // class com/moonsworth/webosr/wrappers/PromiseJS
+       279: if_acmpne     313
+       282: iload         16
+       284: ifeq          297
+       287: new           #26                 // class java/lang/IllegalArgumentException
+       290: dup
+       291: ldc           #4                  // String Multiple PromiseJS parameters are not allowed on the same method
+       293: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+       296: athrow
+       297: iconst_1
+       298: istore        16
+       300: aload         23
+       302: invokevirtual #140                // Method java/lang/reflect/Parameter.getParameterizedType:()Ljava/lang/reflect/Type;
+       305: invokevirtual #120                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       308: astore        18
+       310: goto          329
+       313: aload         24
+       315: ldc           #9                  // class "[Ljava/lang/String;"
+       317: if_acmpne     326
+       320: iconst_1
+       321: istore        17
+       323: goto          329
+       326: iinc          19, 1
+       329: iinc          22, 1
+       332: goto          241
+       335: new           #15                 // class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair
+       338: dup
+       339: iload         12
+       341: ifeq          348
+       344: aload_1
+       345: goto          349
+       348: aconst_null
+       349: aload         13
+       351: aload         11
+       353: invokeinterface #150,  1          // InterfaceMethod com/moonsworth/webosr/javascript/CallbackJS.async:()Z
+       358: iload         12
+       360: aload         14
+       362: aload         10
+       364: invokevirtual #138                // Method java/lang/reflect/Method.getReturnType:()Ljava/lang/Class;
+       367: iload         15
+       369: iload         16
+       371: aload         18
+       373: iload         17
+       375: iload         19
+       377: invokespecial #82                 // Method com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair."<init>":(Ljava/lang/Object;Ljava/lang/invoke/MethodHandle;ZZ[Ljava/lang/reflect/Parameter;Ljava/lang/Class;ZZLjava/lang/Class;ZI)V
+       380: astore        20
+       382: iload         12
+       384: ifeq          407
+       387: aload         5
+       389: aload         11
+       391: invokeinterface #151,  1          // InterfaceMethod com/moonsworth/webosr/javascript/CallbackJS.value:()Ljava/lang/String;
+       396: aload         20
+       398: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       403: pop
+       404: goto          424
+       407: aload         6
+       409: aload         11
+       411: invokeinterface #151,  1          // InterfaceMethod com/moonsworth/webosr/javascript/CallbackJS.value:()Ljava/lang/String;
+       416: aload         20
+       418: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       423: pop
+       424: iinc          9, 1
+       427: goto          119
+       430: aload         5
+       432: invokeinterface #155,  1          // InterfaceMethod java/util/Map.isEmpty:()Z
+       437: ifne          464
+       440: aload_0
+       441: getfield      #54                 // Field routines:Ljava/util/Map;
+       444: aload         5
+       446: invokeinterface #157,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+       451: aload_0
+       452: getfield      #52                 // Field cache:Ljava/util/Map;
+       455: aload_1
+       456: aload         5
+       458: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       463: pop
+       464: aload         6
+       466: invokeinterface #155,  1          // InterfaceMethod java/util/Map.isEmpty:()Z
+       471: ifne          498
+       474: aload_0
+       475: getfield      #54                 // Field routines:Ljava/util/Map;
+       478: aload         6
+       480: invokeinterface #157,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+       485: aload_0
+       486: getfield      #52                 // Field cache:Ljava/util/Map;
+       489: aload_2
+       490: aload         6
+       492: invokeinterface #156,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       497: pop
+       498: return
+      Exception table:
+         from    to  target type
+           183   192   195   Class java/lang/IllegalAccessException
+      LineNumberTable:
+        line 97: 0
+        line 98: 7
+        line 99: 12
+        line 101: 17
+        line 104: 22
+        line 105: 26
+        line 106: 40
+        line 107: 44
+        line 111: 54
+        line 112: 68
+        line 113: 72
+        line 116: 82
+        line 117: 87
+        line 118: 96
+        line 119: 105
+        line 120: 133
+        line 121: 145
+        line 123: 153
+        line 124: 171
+        line 128: 183
+        line 131: 192
+        line 129: 195
+        line 130: 197
+        line 133: 207
+        line 134: 214
+        line 135: 217
+        line 136: 220
+        line 137: 223
+        line 138: 226
+        line 139: 229
+        line 140: 255
+        line 141: 262
+        line 142: 269
+        line 143: 275
+        line 144: 282
+        line 145: 287
+        line 147: 297
+        line 148: 300
+        line 149: 313
+        line 150: 320
+        line 152: 326
+        line 139: 329
+        line 156: 335
+        line 157: 339
+        line 158: 364
+        line 161: 382
+        line 162: 387
+        line 164: 407
+        line 119: 424
+        line 168: 430
+        line 169: 440
+        line 170: 451
+        line 172: 464
+        line 173: 474
+        line 174: 485
+        line 176: 498
+      StackMapTable: number_of_entries = 25
+        frame_type = 17 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 4
+          locals = [ class java/lang/Class ]
+        frame_type = 31 /* same */
+        frame_type = 27 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 36
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int ]
+          stack = []
+        frame_type = 253 /* append */
+          offset_delta = 33
+          locals = [ class java/lang/reflect/Method, class com/moonsworth/webosr/javascript/CallbackJS ]
+        frame_type = 14 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 252 /* append */
+          offset_delta = 13
+          locals = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = []
+          stack = [ class java/lang/IllegalAccessException ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int, class java/lang/reflect/Method, class com/moonsworth/webosr/javascript/CallbackJS, int, class java/lang/invoke/MethodHandle ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 33
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int, class java/lang/reflect/Method, class com/moonsworth/webosr/javascript/CallbackJS, int, class java/lang/invoke/MethodHandle, class "[Ljava/lang/reflect/Parameter;", int, int, int, class java/lang/Class, int, class "[Ljava/lang/reflect/Parameter;", int, int ]
+          stack = []
+        frame_type = 253 /* append */
+          offset_delta = 33
+          locals = [ class java/lang/reflect/Parameter, class java/lang/Class ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 21
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int, class java/lang/reflect/Method, class com/moonsworth/webosr/javascript/CallbackJS, int, class java/lang/invoke/MethodHandle, class "[Ljava/lang/reflect/Parameter;", int, top, int, top, int, class "[Ljava/lang/reflect/Parameter;", int, int, class java/lang/reflect/Parameter ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 15
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int, class java/lang/reflect/Method, class com/moonsworth/webosr/javascript/CallbackJS, int, class java/lang/invoke/MethodHandle, class "[Ljava/lang/reflect/Parameter;", int, int, int, class java/lang/Class, int, class "[Ljava/lang/reflect/Parameter;", int, int, top, class java/lang/Class ]
+          stack = []
+        frame_type = 249 /* chop */
+          offset_delta = 12
+        frame_type = 2 /* same */
+        frame_type = 248 /* chop */
+          offset_delta = 5
+        frame_type = 255 /* full_frame */
+          offset_delta = 12
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int, class java/lang/reflect/Method, class com/moonsworth/webosr/javascript/CallbackJS, int, class java/lang/invoke/MethodHandle, class "[Ljava/lang/reflect/Parameter;", int, int, int, class java/lang/Class, int ]
+          stack = [ uninitialized 335, uninitialized 335 ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int, class java/lang/reflect/Method, class com/moonsworth/webosr/javascript/CallbackJS, int, class java/lang/invoke/MethodHandle, class "[Ljava/lang/reflect/Parameter;", int, int, int, class java/lang/Class, int ]
+          stack = [ uninitialized 335, uninitialized 335, class java/lang/Object ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 57
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int, top, class com/moonsworth/webosr/javascript/CallbackJS, top, top, top, top, top, top, top, top, class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 16
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, class java/lang/invoke/MethodHandles$Lookup, class java/util/HashMap, class java/util/HashMap, class "[Ljava/lang/reflect/Method;", int, int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 5
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class java/lang/Object, class java/lang/Class, top, top, class java/util/HashMap, class java/util/HashMap ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 33
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, top, class java/lang/Class, top, top, top, class java/util/HashMap ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 33
+          locals = []
+          stack = []
+
+  public void invoke(com.moonsworth.webosr.wrappers.PromiseJS<?>, com.moonsworth.webosr.wrappers.Browser, java.lang.String, java.lang.String[]);
+    descriptor: (Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=11, args_size=5
+         0: aload_3
+         1: astore        5
+         3: aload         4
+         5: astore        6
+         7: aload         4
+         9: arraylength
+        10: ifle          44
+        13: aload_0
+        14: aload         4
+        16: iconst_0
+        17: aaload
+        18: invokevirtual #78                 // Method isExplicitTarget:(Ljava/lang/String;)Z
+        21: ifeq          44
+        24: aload         4
+        26: iconst_0
+        27: aaload
+        28: astore        5
+        30: aload         4
+        32: iconst_1
+        33: aload         4
+        35: arraylength
+        36: invokestatic  #142                // Method java/util/Arrays.copyOfRange:([Ljava/lang/Object;II)[Ljava/lang/Object;
+        39: checkcast     #9                  // class "[Ljava/lang/String;"
+        42: astore        6
+        44: aload_0
+        45: getfield      #53                 // Field children:Ljava/util/Map;
+        48: aload         5
+        50: invokeinterface #154,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        55: checkcast     #14                 // class com/moonsworth/webosr/javascript/FunctionBus
+        58: astore        7
+        60: aload         7
+        62: ifnull        77
+        65: aload         7
+        67: aload_1
+        68: aload_2
+        69: aload         5
+        71: aload         6
+        73: invokevirtual #77                 // Method invoke:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V
+        76: return
+        77: aload_0
+        78: getfield      #54                 // Field routines:Ljava/util/Map;
+        81: aload         5
+        83: invokeinterface #154,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        88: checkcast     #15                 // class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair
+        91: astore        8
+        93: aload         8
+        95: ifnonnull     99
+        98: return
+        99: aload_0
+       100: aload         8
+       102: aload_1
+       103: aload_2
+       104: aload         6
+       106: aload         5
+       108: invokevirtual #75                 // Method buildInvocationParameters:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+       111: astore        9
+       113: goto          128
+       116: astore        10
+       118: new           #32                 // class java/lang/RuntimeException
+       121: dup
+       122: aload         10
+       124: invokespecial #122                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+       127: athrow
+       128: aload         8
+       130: getfield      #55                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.async:Z
+       133: ifeq          172
+       136: aload         8
+       138: getfield      #59                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.method:Ljava/lang/invoke/MethodHandle;
+       141: aload         9
+       143: invokevirtual #131                // Method java/lang/invoke/MethodHandle.invokeWithArguments:([Ljava/lang/Object;)Ljava/lang/Object;
+       146: astore        10
+       148: aload_0
+       149: aload_1
+       150: aload         8
+       152: aload         10
+       154: invokevirtual #76                 // Method completePromiseIfNeeded:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+       157: goto          190
+       160: astore        10
+       162: new           #32                 // class java/lang/RuntimeException
+       165: dup
+       166: aload         10
+       168: invokespecial #122                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+       171: athrow
+       172: getstatic     #51                 // Field MAIN_ACTOR_QUEUE:Ljava/util/concurrent/ArrayBlockingQueue;
+       175: aload_0
+       176: aload         8
+       178: aload         9
+       180: aload_1
+       181: invokedynamic #159,  0            // InvokeDynamic #0:run:(Lcom/moonsworth/webosr/javascript/FunctionBus;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)Ljava/lang/Runnable;
+       186: invokevirtual #147                // Method java/util/concurrent/ArrayBlockingQueue.add:(Ljava/lang/Object;)Z
+       189: pop
+       190: return
+      Exception table:
+         from    to  target type
+            99   113   116   Class java/lang/IllegalArgumentException
+           136   157   160   Class java/lang/Throwable
+      LineNumberTable:
+        line 211: 0
+        line 212: 3
+        line 213: 7
+        line 214: 24
+        line 215: 30
+        line 218: 44
+        line 219: 60
+        line 220: 65
+        line 221: 76
+        line 224: 77
+        line 225: 93
+        line 229: 99
+        line 232: 113
+        line 230: 116
+        line 231: 118
+        line 234: 128
+        line 236: 136
+        line 237: 148
+        line 240: 157
+        line 238: 160
+        line 239: 162
+        line 242: 172
+        line 251: 190
+      StackMapTable: number_of_entries = 8
+        frame_type = 255 /* full_frame */
+          offset_delta = 44
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class com/moonsworth/webosr/wrappers/PromiseJS, class com/moonsworth/webosr/wrappers/Browser, top, top, class java/lang/String, class "[Ljava/lang/String;" ]
+          stack = []
+        frame_type = 32 /* same */
+        frame_type = 253 /* append */
+          offset_delta = 21
+          locals = [ top, class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 16
+          locals = []
+          stack = [ class java/lang/IllegalArgumentException ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class com/moonsworth/webosr/wrappers/PromiseJS, top, top, top, top, top, top, class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair, class "[Ljava/lang/Object;" ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 31
+          locals = []
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class com/moonsworth/webosr/wrappers/PromiseJS, top, top, top, top, top, top, class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair, class "[Ljava/lang/Object;" ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 17
+          locals = []
+          stack = []
+    Signature: #315                         // (Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/wrappers/Browser;Ljava/lang/String;[Ljava/lang/String;)V
+
+  private java.lang.Object[] buildInvocationParameters(com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair, com.moonsworth.webosr.wrappers.PromiseJS<?>, com.moonsworth.webosr.wrappers.Browser, java.lang.String[], java.lang.String);
+    descriptor: (Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=5, locals=15, args_size=6
+         0: aload         4
+         2: arraylength
+         3: aload_1
+         4: getfield      #63                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+         7: if_icmpge     32
+        10: new           #26                 // class java/lang/IllegalArgumentException
+        13: dup
+        14: aload         5
+        16: aload_1
+        17: getfield      #63                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+        20: aload         4
+        22: arraylength
+        23: invokedynamic #160,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;II)Ljava/lang/String;
+        28: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+        31: athrow
+        32: aload_1
+        33: getfield      #57                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.hasStringArray:Z
+        36: ifne          71
+        39: aload         4
+        41: arraylength
+        42: aload_1
+        43: getfield      #63                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+        46: if_icmple     71
+        49: new           #26                 // class java/lang/IllegalArgumentException
+        52: dup
+        53: aload         5
+        55: aload_1
+        56: getfield      #63                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.requiredJsArgCount:I
+        59: aload         4
+        61: arraylength
+        62: invokedynamic #161,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;II)Ljava/lang/String;
+        67: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+        70: athrow
+        71: aload_1
+        72: getfield      #61                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.passInstance:Z
+        75: ifeq          82
+        78: iconst_1
+        79: goto          83
+        82: iconst_0
+        83: aload_1
+        84: getfield      #60                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.params:[Ljava/lang/reflect/Parameter;
+        87: arraylength
+        88: iadd
+        89: istore        6
+        91: iload         6
+        93: anewarray     #30                 // class java/lang/Object
+        96: astore        7
+        98: iconst_0
+        99: istore        8
+       101: aload_1
+       102: getfield      #61                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.passInstance:Z
+       105: ifeq          120
+       108: aload         7
+       110: iload         8
+       112: iinc          8, 1
+       115: aload_1
+       116: getfield      #58                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.instance:Ljava/lang/Object;
+       119: aastore
+       120: iconst_0
+       121: istore        9
+       123: aload_1
+       124: getfield      #60                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.params:[Ljava/lang/reflect/Parameter;
+       127: astore        10
+       129: aload         10
+       131: arraylength
+       132: istore        11
+       134: iconst_0
+       135: istore        12
+       137: iload         12
+       139: iload         11
+       141: if_icmpge     257
+       144: aload         10
+       146: iload         12
+       148: aaload
+       149: astore        13
+       151: aload         13
+       153: invokevirtual #141                // Method java/lang/reflect/Parameter.getType:()Ljava/lang/Class;
+       156: astore        14
+       158: aload         14
+       160: ldc           #16                 // class com/moonsworth/webosr/wrappers/Browser
+       162: if_acmpne     177
+       165: aload         7
+       167: iload         8
+       169: iinc          8, 1
+       172: aload_3
+       173: aastore
+       174: goto          251
+       177: aload         14
+       179: ldc           #17                 // class com/moonsworth/webosr/wrappers/PromiseJS
+       181: if_acmpne     196
+       184: aload         7
+       186: iload         8
+       188: iinc          8, 1
+       191: aload_2
+       192: aastore
+       193: goto          251
+       196: aload         14
+       198: ldc           #9                  // class "[Ljava/lang/String;"
+       200: if_acmpne     229
+       203: aload         7
+       205: iload         8
+       207: iinc          8, 1
+       210: aload         4
+       212: iload         9
+       214: aload         4
+       216: arraylength
+       217: invokestatic  #142                // Method java/util/Arrays.copyOfRange:([Ljava/lang/Object;II)[Ljava/lang/Object;
+       220: aastore
+       221: aload         4
+       223: arraylength
+       224: istore        9
+       226: goto          251
+       229: aload         7
+       231: iload         8
+       233: iinc          8, 1
+       236: aload_0
+       237: aload         4
+       239: iload         9
+       241: iinc          9, 1
+       244: aaload
+       245: aload         14
+       247: invokevirtual #81                 // Method stringToObject:(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+       250: aastore
+       251: iinc          12, 1
+       254: goto          137
+       257: aload_1
+       258: getfield      #62                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.promiseValueType:Ljava/lang/Class;
+       261: ifnull        276
+       264: aload_2
+       265: aload_0
+       266: invokevirtual #74                 // Method asBridgeCodec:()Lcom/moonsworth/webosr/BridgeValueCodec;
+       269: aload_1
+       270: getfield      #62                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.promiseValueType:Ljava/lang/Class;
+       273: invokevirtual #84                 // Method com/moonsworth/webosr/wrappers/PromiseJS.bindBridgeCodec:(Lcom/moonsworth/webosr/BridgeValueCodec;Ljava/lang/Class;)V
+       276: aload         7
+       278: areturn
+      LineNumberTable:
+        line 262: 0
+        line 263: 10
+        line 267: 32
+        line 268: 49
+        line 273: 71
+        line 274: 91
+        line 275: 98
+        line 276: 101
+        line 277: 108
+        line 280: 120
+        line 281: 123
+        line 282: 151
+        line 283: 158
+        line 284: 165
+        line 285: 177
+        line 286: 184
+        line 287: 196
+        line 288: 203
+        line 289: 221
+        line 291: 229
+        line 281: 251
+        line 294: 257
+        line 295: 264
+        line 297: 276
+      StackMapTable: number_of_entries = 12
+        frame_type = 32 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 38
+        frame_type = 10 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 36
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair, class com/moonsworth/webosr/wrappers/PromiseJS, class com/moonsworth/webosr/wrappers/Browser, class "[Ljava/lang/String;", top, top, class "[Ljava/lang/Object;", int ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 16
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair, class com/moonsworth/webosr/wrappers/PromiseJS, class com/moonsworth/webosr/wrappers/Browser, class "[Ljava/lang/String;", top, top, class "[Ljava/lang/Object;", int, int, class "[Ljava/lang/reflect/Parameter;", int, int ]
+          stack = []
+        frame_type = 253 /* append */
+          offset_delta = 39
+          locals = [ top, class java/lang/Class ]
+        frame_type = 18 /* same */
+        frame_type = 32 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 21
+        frame_type = 255 /* full_frame */
+          offset_delta = 5
+          locals = [ class com/moonsworth/webosr/javascript/FunctionBus, class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair, class com/moonsworth/webosr/wrappers/PromiseJS, top, top, top, top, class "[Ljava/lang/Object;" ]
+          stack = []
+        frame_type = 255 /* full_frame */
+          offset_delta = 18
+          locals = [ top, top, top, top, top, top, top, class "[Ljava/lang/Object;" ]
+          stack = []
+    Signature: #308                         // (Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/wrappers/Browser;[Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/Object;
+
+  public com.moonsworth.webosr.BridgeValueCodec asBridgeCodec();
+    descriptor: ()Lcom/moonsworth/webosr/BridgeValueCodec;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokedynamic #162,  0            // InvokeDynamic #3:objectToString:(Lcom/moonsworth/webosr/javascript/FunctionBus;)Lcom/moonsworth/webosr/BridgeValueCodec;
+         6: areturn
+      LineNumberTable:
+        line 304: 0
+
+  private boolean isExplicitTarget(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #53                 // Field children:Ljava/util/Map;
+         4: aload_1
+         5: invokeinterface #153,  2          // InterfaceMethod java/util/Map.containsKey:(Ljava/lang/Object;)Z
+        10: ifne          26
+        13: aload_0
+        14: getfield      #54                 // Field routines:Ljava/util/Map;
+        17: aload_1
+        18: invokeinterface #153,  2          // InterfaceMethod java/util/Map.containsKey:(Ljava/lang/Object;)Z
+        23: ifeq          30
+        26: iconst_1
+        27: goto          31
+        30: iconst_0
+        31: ireturn
+      LineNumberTable:
+        line 308: 0
+      StackMapTable: number_of_entries = 3
+        frame_type = 249 /* chop */
+          offset_delta = 26
+        frame_type = 3 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private void completePromiseIfNeeded(com.moonsworth.webosr.wrappers.PromiseJS<?>, com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair, java.lang.Object);
+    descriptor: (Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=4, args_size=4
+         0: aload_2
+         1: getfield      #56                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.hasPromiseJS:Z
+         4: ifeq          8
+         7: return
+         8: aload_2
+         9: getfield      #64                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.returnType:Ljava/lang/Class;
+        12: getstatic     #73                 // Field java/lang/Void.TYPE:Ljava/lang/Class;
+        15: if_acmpeq     49
+        18: aload_3
+        19: ifnonnull     33
+        22: aload_1
+        23: aconst_null
+        24: checkcast     #34                 // class java/lang/String
+        27: invokevirtual #83                 // Method com/moonsworth/webosr/wrappers/PromiseJS._resolve:(Ljava/lang/String;)V
+        30: goto          53
+        33: aload_1
+        34: aload_0
+        35: aload_3
+        36: aload_2
+        37: getfield      #64                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.returnType:Ljava/lang/Class;
+        40: invokevirtual #80                 // Method objectToString:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+        43: invokevirtual #83                 // Method com/moonsworth/webosr/wrappers/PromiseJS._resolve:(Ljava/lang/String;)V
+        46: goto          53
+        49: aload_1
+        50: invokevirtual #85                 // Method com/moonsworth/webosr/wrappers/PromiseJS.resolve:()V
+        53: return
+      LineNumberTable:
+        line 319: 0
+        line 320: 8
+        line 321: 18
+        line 322: 22
+        line 324: 33
+        line 327: 49
+        line 329: 53
+      StackMapTable: number_of_entries = 4
+        frame_type = 8 /* same */
+        frame_type = 24 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 15
+          locals = [ top, class com/moonsworth/webosr/wrappers/PromiseJS ]
+          stack = []
+        frame_type = 249 /* chop */
+          offset_delta = 3
+    Signature: #314                         // (Lcom/moonsworth/webosr/wrappers/PromiseJS<*>;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+
+  protected java.lang.Object stringToObject(java.lang.String, java.lang.Class<?>);
+    descriptor: (Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=3, locals=7, args_size=3
+         0: aload_2
+         1: ldc           #34                 // class java/lang/String
+         3: if_acmpne     8
+         6: aload_1
+         7: areturn
+         8: aload_2
+         9: ldc           #27                 // class java/lang/Integer
+        11: if_acmpeq     21
+        14: aload_2
+        15: getstatic     #70                 // Field java/lang/Integer.TYPE:Ljava/lang/Class;
+        18: if_acmpne     29
+        21: aload_1
+        22: invokestatic  #107                // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+        25: invokestatic  #109                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        28: areturn
+        29: aload_2
+        30: ldc           #22                 // class java/lang/Double
+        32: if_acmpeq     42
+        35: aload_2
+        36: getstatic     #68                 // Field java/lang/Double.TYPE:Ljava/lang/Class;
+        39: if_acmpne     50
+        42: aload_1
+        43: invokestatic  #99                 // Method java/lang/Double.parseDouble:(Ljava/lang/String;)D
+        46: invokestatic  #101                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+        49: areturn
+        50: aload_2
+        51: ldc           #18                 // class java/lang/Boolean
+        53: if_acmpeq     63
+        56: aload_2
+        57: getstatic     #65                 // Field java/lang/Boolean.TYPE:Ljava/lang/Class;
+        60: if_acmpne     71
+        63: aload_1
+        64: invokestatic  #87                 // Method java/lang/Boolean.parseBoolean:(Ljava/lang/String;)Z
+        67: invokestatic  #89                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        70: areturn
+        71: aload_2
+        72: ldc           #24                 // class java/lang/Float
+        74: if_acmpeq     84
+        77: aload_2
+        78: getstatic     #69                 // Field java/lang/Float.TYPE:Ljava/lang/Class;
+        81: if_acmpne     92
+        84: aload_1
+        85: invokestatic  #103                // Method java/lang/Float.parseFloat:(Ljava/lang/String;)F
+        88: invokestatic  #105                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+        91: areturn
+        92: aload_2
+        93: ldc           #28                 // class java/lang/Long
+        95: if_acmpeq     105
+        98: aload_2
+        99: getstatic     #71                 // Field java/lang/Long.TYPE:Ljava/lang/Class;
+       102: if_acmpne     113
+       105: aload_1
+       106: invokestatic  #110                // Method java/lang/Long.parseLong:(Ljava/lang/String;)J
+       109: invokestatic  #112                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+       112: areturn
+       113: aload_2
+       114: ldc           #33                 // class java/lang/Short
+       116: if_acmpeq     126
+       119: aload_2
+       120: getstatic     #72                 // Field java/lang/Short.TYPE:Ljava/lang/Class;
+       123: if_acmpne     134
+       126: aload_1
+       127: invokestatic  #123                // Method java/lang/Short.parseShort:(Ljava/lang/String;)S
+       130: invokestatic  #125                // Method java/lang/Short.valueOf:(S)Ljava/lang/Short;
+       133: areturn
+       134: aload_2
+       135: ldc           #19                 // class java/lang/Byte
+       137: if_acmpeq     147
+       140: aload_2
+       141: getstatic     #66                 // Field java/lang/Byte.TYPE:Ljava/lang/Class;
+       144: if_acmpne     155
+       147: aload_1
+       148: invokestatic  #90                 // Method java/lang/Byte.parseByte:(Ljava/lang/String;)B
+       151: invokestatic  #92                 // Method java/lang/Byte.valueOf:(B)Ljava/lang/Byte;
+       154: areturn
+       155: aload_2
+       156: ldc           #20                 // class java/lang/Character
+       158: if_acmpeq     168
+       161: aload_2
+       162: getstatic     #67                 // Field java/lang/Character.TYPE:Ljava/lang/Class;
+       165: if_acmpne     199
+       168: aload_1
+       169: invokevirtual #128                // Method java/lang/String.length:()I
+       172: iconst_1
+       173: if_icmpeq     190
+       176: new           #26                 // class java/lang/IllegalArgumentException
+       179: dup
+       180: aload_1
+       181: invokedynamic #163,  0            // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       186: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+       189: athrow
+       190: aload_1
+       191: iconst_0
+       192: invokevirtual #126                // Method java/lang/String.charAt:(I)C
+       195: invokestatic  #94                 // Method java/lang/Character.valueOf:(C)Ljava/lang/Character;
+       198: areturn
+       199: aload_2
+       200: invokevirtual #98                 // Method java/lang/Class.isEnum:()Z
+       203: ifeq          266
+       206: aload_2
+       207: invokevirtual #95                 // Method java/lang/Class.getEnumConstants:()[Ljava/lang/Object;
+       210: astore_3
+       211: aload_3
+       212: arraylength
+       213: istore        4
+       215: iconst_0
+       216: istore        5
+       218: iload         5
+       220: iload         4
+       222: if_icmpge     252
+       225: aload_3
+       226: iload         5
+       228: aaload
+       229: astore        6
+       231: aload         6
+       233: invokevirtual #121                // Method java/lang/Object.toString:()Ljava/lang/String;
+       236: aload_1
+       237: invokevirtual #127                // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+       240: ifeq          246
+       243: aload         6
+       245: areturn
+       246: iinc          5, 1
+       249: goto          218
+       252: new           #26                 // class java/lang/IllegalArgumentException
+       255: dup
+       256: aload_1
+       257: invokedynamic #164,  0            // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       262: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+       265: athrow
+       266: aload_2
+       267: ldc           #48                 // class java/util/UUID
+       269: if_acmpne     277
+       272: aload_1
+       273: invokestatic  #144                // Method java/util/UUID.fromString:(Ljava/lang/String;)Ljava/util/UUID;
+       276: areturn
+       277: new           #26                 // class java/lang/IllegalArgumentException
+       280: dup
+       281: aload_1
+       282: invokedynamic #165,  0            // InvokeDynamic #6:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       287: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+       290: athrow
+      LineNumberTable:
+        line 349: 0
+        line 350: 6
+        line 351: 8
+        line 352: 21
+        line 353: 29
+        line 354: 42
+        line 355: 50
+        line 356: 63
+        line 357: 71
+        line 358: 84
+        line 359: 92
+        line 360: 105
+        line 361: 113
+        line 362: 126
+        line 363: 134
+        line 364: 147
+        line 365: 155
+        line 366: 168
+        line 367: 176
+        line 369: 190
+        line 370: 199
+        line 371: 206
+        line 372: 231
+        line 373: 243
+        line 371: 246
+        line 376: 252
+        line 377: 266
+        line 378: 272
+        line 381: 277
+      StackMapTable: number_of_entries = 23
+        frame_type = 255 /* full_frame */
+          offset_delta = 8
+          locals = [ top, class java/lang/String, class java/lang/Class ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 7
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 21 /* same */
+        frame_type = 252 /* append */
+          offset_delta = 8
+          locals = [ class java/lang/Class ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 18
+          locals = [ top, class java/lang/String, top, class "[Ljava/lang/Object;", int, int ]
+          stack = []
+        frame_type = 27 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 5
+          locals = [ top, class java/lang/String ]
+          stack = []
+        frame_type = 252 /* append */
+          offset_delta = 13
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 10
+    Signature: #337                         // (Ljava/lang/String;Ljava/lang/Class<*>;)Ljava/lang/Object;
+
+  protected java.lang.String objectToString(java.lang.Object, java.lang.Class<?>);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_2
+         1: ldc           #34                 // class java/lang/String
+         3: if_acmpne     11
+         6: aload_1
+         7: checkcast     #34                 // class java/lang/String
+        10: areturn
+        11: aload_2
+        12: ldc           #27                 // class java/lang/Integer
+        14: if_acmpeq     24
+        17: aload_2
+        18: getstatic     #70                 // Field java/lang/Integer.TYPE:Ljava/lang/Class;
+        21: if_acmpne     35
+        24: aload_1
+        25: checkcast     #29                 // class java/lang/Number
+        28: invokevirtual #116                // Method java/lang/Number.intValue:()I
+        31: invokestatic  #108                // Method java/lang/Integer.toString:(I)Ljava/lang/String;
+        34: areturn
+        35: aload_2
+        36: ldc           #22                 // class java/lang/Double
+        38: if_acmpeq     48
+        41: aload_2
+        42: getstatic     #68                 // Field java/lang/Double.TYPE:Ljava/lang/Class;
+        45: if_acmpne     59
+        48: aload_1
+        49: checkcast     #29                 // class java/lang/Number
+        52: invokevirtual #114                // Method java/lang/Number.doubleValue:()D
+        55: invokestatic  #100                // Method java/lang/Double.toString:(D)Ljava/lang/String;
+        58: areturn
+        59: aload_2
+        60: ldc           #18                 // class java/lang/Boolean
+        62: if_acmpeq     72
+        65: aload_2
+        66: getstatic     #65                 // Field java/lang/Boolean.TYPE:Ljava/lang/Class;
+        69: if_acmpne     83
+        72: aload_1
+        73: checkcast     #18                 // class java/lang/Boolean
+        76: invokevirtual #86                 // Method java/lang/Boolean.booleanValue:()Z
+        79: invokestatic  #88                 // Method java/lang/Boolean.toString:(Z)Ljava/lang/String;
+        82: areturn
+        83: aload_2
+        84: ldc           #24                 // class java/lang/Float
+        86: if_acmpeq     96
+        89: aload_2
+        90: getstatic     #69                 // Field java/lang/Float.TYPE:Ljava/lang/Class;
+        93: if_acmpne     107
+        96: aload_1
+        97: checkcast     #29                 // class java/lang/Number
+       100: invokevirtual #115                // Method java/lang/Number.floatValue:()F
+       103: invokestatic  #104                // Method java/lang/Float.toString:(F)Ljava/lang/String;
+       106: areturn
+       107: aload_2
+       108: ldc           #28                 // class java/lang/Long
+       110: if_acmpeq     120
+       113: aload_2
+       114: getstatic     #71                 // Field java/lang/Long.TYPE:Ljava/lang/Class;
+       117: if_acmpne     131
+       120: aload_1
+       121: checkcast     #29                 // class java/lang/Number
+       124: invokevirtual #117                // Method java/lang/Number.longValue:()J
+       127: invokestatic  #111                // Method java/lang/Long.toString:(J)Ljava/lang/String;
+       130: areturn
+       131: aload_2
+       132: ldc           #33                 // class java/lang/Short
+       134: if_acmpeq     144
+       137: aload_2
+       138: getstatic     #72                 // Field java/lang/Short.TYPE:Ljava/lang/Class;
+       141: if_acmpne     155
+       144: aload_1
+       145: checkcast     #29                 // class java/lang/Number
+       148: invokevirtual #118                // Method java/lang/Number.shortValue:()S
+       151: invokestatic  #124                // Method java/lang/Short.toString:(S)Ljava/lang/String;
+       154: areturn
+       155: aload_2
+       156: ldc           #19                 // class java/lang/Byte
+       158: if_acmpeq     168
+       161: aload_2
+       162: getstatic     #66                 // Field java/lang/Byte.TYPE:Ljava/lang/Class;
+       165: if_acmpne     179
+       168: aload_1
+       169: checkcast     #29                 // class java/lang/Number
+       172: invokevirtual #113                // Method java/lang/Number.byteValue:()B
+       175: invokestatic  #91                 // Method java/lang/Byte.toString:(B)Ljava/lang/String;
+       178: areturn
+       179: aload_2
+       180: ldc           #20                 // class java/lang/Character
+       182: if_acmpeq     192
+       185: aload_2
+       186: getstatic     #67                 // Field java/lang/Character.TYPE:Ljava/lang/Class;
+       189: if_acmpne     203
+       192: aload_1
+       193: checkcast     #20                 // class java/lang/Character
+       196: invokevirtual #93                 // Method java/lang/Character.charValue:()C
+       199: invokestatic  #129                // Method java/lang/String.valueOf:(C)Ljava/lang/String;
+       202: areturn
+       203: aload_2
+       204: invokevirtual #98                 // Method java/lang/Class.isEnum:()Z
+       207: ifeq          218
+       210: aload_1
+       211: checkcast     #23                 // class java/lang/Enum
+       214: invokevirtual #102                // Method java/lang/Enum.toString:()Ljava/lang/String;
+       217: areturn
+       218: aload_2
+       219: ldc           #48                 // class java/util/UUID
+       221: if_acmpne     232
+       224: aload_1
+       225: checkcast     #48                 // class java/util/UUID
+       228: invokevirtual #145                // Method java/util/UUID.toString:()Ljava/lang/String;
+       231: areturn
+       232: new           #26                 // class java/lang/IllegalArgumentException
+       235: dup
+       236: aload_2
+       237: invokevirtual #97                 // Method java/lang/Class.getName:()Ljava/lang/String;
+       240: invokedynamic #166,  0            // InvokeDynamic #7:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       245: invokespecial #106                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+       248: athrow
+      LineNumberTable:
+        line 406: 0
+        line 407: 6
+        line 408: 11
+        line 409: 24
+        line 410: 35
+        line 411: 48
+        line 412: 59
+        line 413: 72
+        line 414: 83
+        line 415: 96
+        line 416: 107
+        line 417: 120
+        line 418: 131
+        line 419: 144
+        line 420: 155
+        line 421: 168
+        line 422: 179
+        line 423: 192
+        line 424: 203
+        line 425: 210
+        line 426: 218
+        line 427: 224
+        line 430: 232
+      StackMapTable: number_of_entries = 19
+        frame_type = 255 /* full_frame */
+          offset_delta = 11
+          locals = [ top, class java/lang/Object, class java/lang/Class ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/Class ]
+        frame_type = 250 /* chop */
+          offset_delta = 12
+        frame_type = 252 /* append */
+          offset_delta = 10
+          locals = [ class java/lang/Class ]
+        frame_type = 14 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 13
+          locals = [ top, top, class java/lang/Class ]
+          stack = []
+    Signature: #321                         // (Ljava/lang/Object;Ljava/lang/Class<*>;)Ljava/lang/String;
+
+  private void lambda$invoke$0(com.moonsworth.webosr.javascript.FunctionBus$MethodInstancePair, java.lang.Object[], com.moonsworth.webosr.wrappers.PromiseJS);
+    descriptor: (Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=4, locals=5, args_size=4
+         0: aload_1
+         1: getfield      #59                 // Field com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.method:Ljava/lang/invoke/MethodHandle;
+         4: aload_2
+         5: invokevirtual #131                // Method java/lang/invoke/MethodHandle.invokeWithArguments:([Ljava/lang/Object;)Ljava/lang/Object;
+         8: astore        4
+        10: aload_0
+        11: aload_3
+        12: aload_1
+        13: aload         4
+        15: invokevirtual #76                 // Method completePromiseIfNeeded:(Lcom/moonsworth/webosr/wrappers/PromiseJS;Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;Ljava/lang/Object;)V
+        18: goto          33
+        21: astore        4
+        23: new           #32                 // class java/lang/RuntimeException
+        26: dup
+        27: aload         4
+        29: invokespecial #122                // Method java/lang/RuntimeException."<init>":(Ljava/lang/Throwable;)V
+        32: athrow
+        33: return
+      Exception table:
+         from    to  target type
+             0    18    21   Class java/lang/Throwable
+      LineNumberTable:
+        line 244: 0
+        line 245: 10
+        line 248: 18
+        line 246: 21
+        line 247: 23
+        line 249: 33
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 21
+          locals = []
+          stack = [ class java/lang/Throwable ]
+        frame_type = 11 /* same */
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=3, locals=0, args_size=0
+         0: new           #49                 // class java/util/concurrent/ArrayBlockingQueue
+         3: dup
+         4: sipush        4096
+         7: invokespecial #146                // Method java/util/concurrent/ArrayBlockingQueue."<init>":(I)V
+        10: putstatic     #51                 // Field MAIN_ACTOR_QUEUE:Ljava/util/concurrent/ArrayBlockingQueue;
+        13: return
+      LineNumberTable:
+        line 41: 0
+}
+NestMembers:
+  com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair
+BootstrapMethods:
+  0: #169 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #271 ()V
+      #167 REF_invokeVirtual com/moonsworth/webosr/javascript/FunctionBus.lambda$invoke$0:(Lcom/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair;[Ljava/lang/Object;Lcom/moonsworth/webosr/wrappers/PromiseJS;)V
+      #271 ()V
+  1: #170 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #5 Not enough JS arguments for \"\u0001\" (need \u0001, got \u0001)
+  2: #170 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #7 Too many JS arguments for \"\u0001\" (expected \u0001, got \u0001)
+  3: #169 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #272 (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+      #168 REF_invokeVirtual com/moonsworth/webosr/javascript/FunctionBus.objectToString:(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+      #272 (Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/String;
+  4: #170 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #1 Argument\'s value of JsFunction \"\u0001\" is a character, but the argument is not a single character
+  5: #170 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #2 Argument\'s value of JsFunction \"\u0001\" is not a valid enum value
+  6: #170 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #3 Argument\'s value of JsFunction \"\u0001\" is of an unsupported type
+  7: #170 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #6 Return value is of an unsupported type: \u0001
+InnerClasses:
+  public static final #368= #40 of #39;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+  protected static final #370= #15 of #14; // MethodInstancePair=class com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair of class com/moonsworth/webosr/javascript/FunctionBus

@@ -1,0 +1,1410 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/ML/_590f69/_2ce426/_1e73d7.class
+  Last modified Dec 31, 1969; size 11662 bytes
+  SHA-256 checksum 98109e6ed8613382c7bcd7e6432d910547aeb2be648255b8e5b3f3a29b553585
+public interface ML._590f69._2ce426._1e73d7 extends ML._590f69._bb4487._13ea87._d4ca6c._590f69._21aca6,ML._590f69._e62626._cfe983._cfe983
+  minor version: 0
+  major version: 61
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #10                         // ML/_590f69/_2ce426/_1e73d7
+  super_class: #13                        // java/lang/Object
+  interfaces: 2, fields: 0, methods: 128, attributes: 1
+Constant pool:
+    #1 = Integer            0
+    #2 = Integer            1
+    #3 = Integer            5
+    #4 = Integer            6
+    #5 = Integer            8
+    #6 = String             #73           //
+    #7 = Class              #263          // ML/_590f69/_2f4182/_bb4487/_1e73d7
+    #8 = Class              #264          // ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_21aca6
+    #9 = Class              #265          // ML/_590f69/_e62626/_cfe983/_cfe983
+   #10 = Class              #266          // ML/_590f69/_2ce426/_1e73d7
+   #11 = Class              #267          // ML/_590f69/_5b3f84/_cfe983
+   #12 = Class              #268          // ML/_590f69/_5b3f84/_55938e
+   #13 = Class              #273          // java/lang/Object
+   #14 = Class              #278          // org/joml/Math
+   #15 = Class              #279          // org/joml/Vector3d
+   #16 = Class              #280          // org/joml/Vector3ic
+   #17 = Methodref          #7.#45        // ML/_590f69/_2f4182/_bb4487/_1e73d7."<init>":()V
+   #18 = Methodref          #14.#69       // org/joml/Math.sqrt:(D)D
+   #19 = Methodref          #15.#46       // org/joml/Vector3d."<init>":(DDD)V
+   #20 = InterfaceMethodref #10.#47       // ML/_590f69/_2ce426/_1e73d7._6fe2c9:()D
+   #21 = InterfaceMethodref #10.#48       // ML/_590f69/_2ce426/_1e73d7._cfe983:(LML/_590f69/_2ce426/_1e73d7;)D
+   #22 = InterfaceMethodref #10.#49       // ML/_590f69/_2ce426/_1e73d7._0be1fc:()I
+   #23 = InterfaceMethodref #10.#50       // ML/_590f69/_2ce426/_1e73d7._2f4182:(F)D
+   #24 = InterfaceMethodref #10.#51       // ML/_590f69/_2ce426/_1e73d7._3f2a80:()D
+   #25 = InterfaceMethodref #10.#52       // ML/_590f69/_2ce426/_1e73d7._13ea87:(DDD)D
+   #26 = InterfaceMethodref #10.#53       // ML/_590f69/_2ce426/_1e73d7._6c713e:(F)D
+   #27 = InterfaceMethodref #10.#54       // ML/_590f69/_2ce426/_1e73d7._f2d580:()D
+   #28 = InterfaceMethodref #10.#55       // ML/_590f69/_2ce426/_1e73d7._a140a8:(F)D
+   #29 = InterfaceMethodref #10.#56       // ML/_590f69/_2ce426/_1e73d7.bridge$getBlockPos:()LML/_590f69/_5b3f84/_590f69;
+   #30 = InterfaceMethodref #10.#57       // ML/_590f69/_2ce426/_1e73d7.bridge$getBoundingBox:()LML/_590f69/_5b3f84/_cfe983;
+   #31 = InterfaceMethodref #10.#58       // ML/_590f69/_2ce426/_1e73d7.bridge$getEyePosition:(F)LML/_590f69/_5b3f84/_df21a7;
+   #32 = InterfaceMethodref #10.#59       // ML/_590f69/_2ce426/_1e73d7.bridge$getPosX:()D
+   #33 = InterfaceMethodref #10.#60       // ML/_590f69/_2ce426/_1e73d7.bridge$getPosY:()D
+   #34 = InterfaceMethodref #10.#61       // ML/_590f69/_2ce426/_1e73d7.bridge$getPosZ:()D
+   #35 = InterfaceMethodref #10.#62       // ML/_590f69/_2ce426/_1e73d7.bridge$getViewVector:(F)LML/_590f69/_5b3f84/_df21a7;
+   #36 = InterfaceMethodref #10.#66       // ML/_590f69/_2ce426/_1e73d7.bridge$isGlowing:()Z
+   #37 = InterfaceMethodref #10.#67       // ML/_590f69/_2ce426/_1e73d7.bridge$isOnFire:()Z
+   #38 = InterfaceMethodref #11.#68       // ML/_590f69/_5b3f84/_cfe983.bridge$offset:(DDD)LML/_590f69/_5b3f84/_cfe983;
+   #39 = InterfaceMethodref #12.#63       // ML/_590f69/_5b3f84/_55938e.bridge$getX:()I
+   #40 = InterfaceMethodref #12.#64       // ML/_590f69/_5b3f84/_55938e.bridge$getY:()I
+   #41 = InterfaceMethodref #12.#65       // ML/_590f69/_5b3f84/_55938e.bridge$getZ:()I
+   #42 = InterfaceMethodref #16.#70       // org/joml/Vector3ic.x:()I
+   #43 = InterfaceMethodref #16.#71       // org/joml/Vector3ic.y:()I
+   #44 = InterfaceMethodref #16.#72       // org/joml/Vector3ic.z:()I
+   #45 = NameAndType        #122:#94      // "<init>":()V
+   #46 = NameAndType        #122:#101     // "<init>":(DDD)V
+   #47 = NameAndType        #123:#74      // _6fe2c9:()D
+   #48 = NameAndType        #125:#112     // _cfe983:(LML/_590f69/_2ce426/_1e73d7;)D
+   #49 = NameAndType        #127:#76      // _0be1fc:()I
+   #50 = NameAndType        #128:#104     // _2f4182:(F)D
+   #51 = NameAndType        #133:#74      // _3f2a80:()D
+   #52 = NameAndType        #143:#99      // _13ea87:(DDD)D
+   #53 = NameAndType        #144:#104     // _6c713e:(F)D
+   #54 = NameAndType        #145:#74      // _f2d580:()D
+   #55 = NameAndType        #146:#104     // _a140a8:(F)D
+   #56 = NameAndType        #157:#85      // bridge$getBlockPos:()LML/_590f69/_5b3f84/_590f69;
+   #57 = NameAndType        #159:#82      // bridge$getBoundingBox:()LML/_590f69/_5b3f84/_cfe983;
+   #58 = NameAndType        #165:#106     // bridge$getEyePosition:(F)LML/_590f69/_5b3f84/_df21a7;
+   #59 = NameAndType        #178:#74      // bridge$getPosX:()D
+   #60 = NameAndType        #179:#74      // bridge$getPosY:()D
+   #61 = NameAndType        #180:#74      // bridge$getPosZ:()D
+   #62 = NameAndType        #193:#106     // bridge$getViewVector:(F)LML/_590f69/_5b3f84/_df21a7;
+   #63 = NameAndType        #195:#76      // bridge$getX:()I
+   #64 = NameAndType        #196:#76      // bridge$getY:()I
+   #65 = NameAndType        #197:#76      // bridge$getZ:()I
+   #66 = NameAndType        #204:#95      // bridge$isGlowing:()Z
+   #67 = NameAndType        #213:#95      // bridge$isOnFire:()Z
+   #68 = NameAndType        #227:#100     // bridge$offset:(DDD)LML/_590f69/_5b3f84/_cfe983;
+   #69 = NameAndType        #288:#96      // sqrt:(D)D
+   #70 = NameAndType        #295:#76      // x:()I
+   #71 = NameAndType        #297:#76      // y:()I
+   #72 = NameAndType        #299:#76      // z:()I
+   #73 = Utf8
+   #74 = Utf8               ()D
+   #75 = Utf8               ()F
+   #76 = Utf8               ()I
+   #77 = Utf8               ()LML/_590f69/_ba7d98/_cfe983/_cfe983;
+   #78 = Utf8               ()LML/_590f69/_dcf582/_1253fc;
+   #79 = Utf8               ()LML/_590f69/_c8175c/_cb9292;
+   #80 = Utf8               ()LML/_590f69/_2ce426/_1e73d7;
+   #81 = Utf8               ()LML/_590f69/_2ce426/_21aca6;
+   #82 = Utf8               ()LML/_590f69/_5b3f84/_cfe983;
+   #83 = Utf8               ()LML/_590f69/_5b3f84/_df21a7;
+   #84 = Utf8               ()LML/_590f69/_5b3f84/_55938e;
+   #85 = Utf8               ()LML/_590f69/_5b3f84/_590f69;
+   #86 = Utf8               ()Ljava/lang/String;
+   #87 = Utf8               ()Ljava/util/List;
+   #88 = Utf8               ()Ljava/util/List<LML/_590f69/_2ce426/_1e73d7;>;
+   #89 = Utf8               ()Ljava/util/Optional;
+   #90 = Utf8               ()Ljava/util/Optional<Ljava/lang/String;>;
+   #91 = Utf8               ()Ljava/util/UUID;
+   #92 = Utf8               ()Lnet/kyori/adventure/text/Component;
+   #93 = Utf8               ()Lorg/joml/Vector3d;
+   #94 = Utf8               ()V
+   #95 = Utf8               ()Z
+   #96 = Utf8               (D)D
+   #97 = Utf8               (D)V
+   #98 = Utf8               (D)Z
+   #99 = Utf8               (DDD)D
+  #100 = Utf8               (DDD)LML/_590f69/_5b3f84/_cfe983;
+  #101 = Utf8               (DDD)V
+  #102 = Utf8               (DDD)Z
+  #103 = Utf8               (DDDFF)V
+  #104 = Utf8               (F)D
+  #105 = Utf8               (F)LML/_590f69/_5b3f84/_cfe983;
+  #106 = Utf8               (F)LML/_590f69/_5b3f84/_df21a7;
+  #107 = Utf8               (FF)V
+  #108 = Utf8               (FFZ)LML/_590f69/_5b3f84/_55938e;
+  #109 = Utf8               (I)I
+  #110 = Utf8               (I)V
+  #111 = Utf8               (LML/_590f69/_2ce426/_1253fc/_590f69;)Z
+  #112 = Utf8               (LML/_590f69/_2ce426/_1e73d7;)D
+  #113 = Utf8               (LML/_590f69/_2ce426/_1e73d7;)Z
+  #114 = Utf8               (LML/_590f69/_5b3f84/_df21a7;)V
+  #115 = Utf8               (LML/_590f69/_5b3f84/_55938e;)D
+  #116 = Utf8               (Ljava/util/UUID;)V
+  #117 = Utf8               (Ljava/util/function/Consumer;)V
+  #118 = Utf8               (Ljava/util/function/Consumer<LML/_590f69/_ba7d98/_1e73d7;>;)V
+  #119 = Utf8               (Lnet/kyori/adventure/text/Component;)V
+  #120 = Utf8               (Lorg/joml/Vector3ic;)D
+  #121 = Utf8               (Z)V
+  #122 = Utf8               <init>
+  #123 = Utf8               _6fe2c9
+  #124 = Utf8               _f6e62b
+  #125 = Utf8               _cfe983
+  #126 = Utf8               Code
+  #127 = Utf8               _0be1fc
+  #128 = Utf8               _2f4182
+  #129 = Utf8               _b4457e
+  #130 = Utf8               _f70024
+  #131 = Utf8               _3aa80a
+  #132 = Utf8               _320178
+  #133 = Utf8               _3f2a80
+  #134 = Utf8               _c8175c
+  #135 = Utf8               LML/_590f69/_2f4182/_cfe983;
+  #136 = Utf8               LML/_590f69/_2f4182/_bb4487;
+  #137 = Utf8               LML/_590f69/_2f4182/_1253fc;
+  #138 = Utf8               LML/ichor/_cfe983/_21aca6;
+  #139 = Utf8               LineNumberTable
+  #140 = Utf8               Ljavax/annotation/Nullable;
+  #141 = Utf8               Ljavax/annotation/OverridingMethodsMustInvokeSuper;
+  #142 = Utf8               _2ce426
+  #143 = Utf8               _13ea87
+  #144 = Utf8               _6c713e
+  #145 = Utf8               _f2d580
+  #146 = Utf8               _a140a8
+  #147 = Utf8               _d842c7
+  #148 = Utf8               _21aca6
+  #149 = Utf8               RuntimeVisibleAnnotations
+  #150 = Utf8               RuntimeVisibleParameterAnnotations
+  #151 = Utf8               Signature
+  #152 = Utf8               StackMapTable
+  #153 = Utf8               bridge$ageInTicks
+  #154 = Utf8               bridge$canBeCollidedWith
+  #155 = Utf8               bridge$canTurbo
+  #156 = Utf8               bridge$decreaseEntityIdCounter
+  #157 = Utf8               bridge$getBlockPos
+  #158 = Utf8               bridge$getBoatType
+  #159 = Utf8               bridge$getBoundingBox
+  #160 = Utf8               bridge$getBoundingBoxForCulling
+  #161 = Utf8               bridge$getDataWatcher
+  #162 = Utf8               bridge$getDimension
+  #163 = Utf8               bridge$getDimensionName
+  #164 = Utf8               bridge$getEntityString
+  #165 = Utf8               bridge$getEyePosition
+  #166 = Utf8               bridge$getFallDistance
+  #167 = Utf8               bridge$getGlowingColor
+  #168 = Utf8               bridge$getLeashedToEntity
+  #169 = Utf8               bridge$getLookAngle
+  #170 = Utf8               bridge$getMaxFallDistance
+  #171 = Utf8               bridge$getMotionX
+  #172 = Utf8               bridge$getMotionY
+  #173 = Utf8               bridge$getMotionZ
+  #174 = Utf8               bridge$getNbtAsComponent
+  #175 = Utf8               bridge$getNoCulling
+  #176 = Utf8               bridge$getPassengers
+  #177 = Utf8               bridge$getPickResult
+  #178 = Utf8               bridge$getPosX
+  #179 = Utf8               bridge$getPosY
+  #180 = Utf8               bridge$getPosZ
+  #181 = Utf8               bridge$getPosition
+  #182 = Utf8               bridge$getPreviousRotationPitch
+  #183 = Utf8               bridge$getPreviousRotationYaw
+  #184 = Utf8               bridge$getRidingEntity
+  #185 = Utf8               bridge$getRotationPitch
+  #186 = Utf8               bridge$getRotationYaw
+  #187 = Utf8               bridge$getSpawnEggColor
+  #188 = Utf8               bridge$getTeamName
+  #189 = Utf8               bridge$getType
+  #190 = Utf8               bridge$getTypeName
+  #191 = Utf8               bridge$getUniqueID
+  #192 = Utf8               bridge$getVehicle
+  #193 = Utf8               bridge$getViewVector
+  #194 = Utf8               bridge$getWorld
+  #195 = Utf8               bridge$getX
+  #196 = Utf8               bridge$getY
+  #197 = Utf8               bridge$getZ
+  #198 = Utf8               bridge$hitByEntity
+  #199 = Utf8               bridge$isAlive
+  #200 = Utf8               bridge$isBoat
+  #201 = Utf8               bridge$isCollidedHorizontally
+  #202 = Utf8               bridge$isFireball
+  #203 = Utf8               bridge$isFirework
+  #204 = Utf8               bridge$isGlowing
+  #205 = Utf8               bridge$isInWater
+  #206 = Utf8               bridge$isInWaterOrBubble
+  #207 = Utf8               bridge$isInvisibleTo
+  #208 = Utf8               bridge$isItemFrame
+  #209 = Utf8               bridge$isLeashed
+  #210 = Utf8               bridge$isMinecart
+  #211 = Utf8               bridge$isMob
+  #212 = Utf8               bridge$isMonster
+  #213 = Utf8               bridge$isOnFire
+  #214 = Utf8               bridge$isOnGround
+  #215 = Utf8               bridge$isRemoved
+  #216 = Utf8               bridge$isRiding
+  #217 = Utf8               bridge$isRidingBoat
+  #218 = Utf8               bridge$isSneaking
+  #219 = Utf8               bridge$isSnowball
+  #220 = Utf8               bridge$isTextDisplay
+  #221 = Utf8               bridge$isWitherSkull
+  #222 = Utf8               bridge$lastTickX
+  #223 = Utf8               bridge$lastTickY
+  #224 = Utf8               bridge$lastTickZ
+  #225 = Utf8               bridge$lerpTo
+  #226 = Utf8               bridge$maxUpStep
+  #227 = Utf8               bridge$offset
+  #228 = Utf8               bridge$pick$v1_16
+  #229 = Utf8               bridge$resetFallDistance
+  #230 = Utf8               bridge$sendPairingData
+  #231 = Utf8               bridge$setChunkX
+  #232 = Utf8               bridge$setChunkY
+  #233 = Utf8               bridge$setChunkZ
+  #234 = Utf8               bridge$setCustomName
+  #235 = Utf8               bridge$setCustomNameVisible
+  #236 = Utf8               bridge$setDimension
+  #237 = Utf8               bridge$setGlowing
+  #238 = Utf8               bridge$setGlowingColor
+  #239 = Utf8               bridge$setId
+  #240 = Utf8               bridge$setLastTickX
+  #241 = Utf8               bridge$setLastTickY
+  #242 = Utf8               bridge$setLastTickZ
+  #243 = Utf8               bridge$setMotionY
+  #244 = Utf8               bridge$setNoPhysics
+  #245 = Utf8               bridge$setOldPos
+  #246 = Utf8               bridge$setOnGround
+  #247 = Utf8               bridge$setPosX
+  #248 = Utf8               bridge$setPosY
+  #249 = Utf8               bridge$setPosZ
+  #250 = Utf8               bridge$setPreviousPosX
+  #251 = Utf8               bridge$setPreviousPosY
+  #252 = Utf8               bridge$setPreviousPosZ
+  #253 = Utf8               bridge$setPreviousRotationPitch
+  #254 = Utf8               bridge$setPreviousRotationYaw
+  #255 = Utf8               bridge$setRotationPitch
+  #256 = Utf8               bridge$setRotationYaw
+  #257 = Utf8               bridge$setUniqueID
+  #258 = Utf8               bridge$shouldRender
+  #259 = Utf8               bridge$shouldRenderAtSqrDistance
+  #260 = Utf8               bridge$shouldShowName
+  #261 = Utf8               bridge$stopTurbo
+  #262 = Utf8               bridge$turn
+  #263 = Utf8               ML/_590f69/_2f4182/_bb4487/_1e73d7
+  #264 = Utf8               ML/_590f69/_bb4487/_13ea87/_d4ca6c/_590f69/_21aca6
+  #265 = Utf8               ML/_590f69/_e62626/_cfe983/_cfe983
+  #266 = Utf8               ML/_590f69/_2ce426/_1e73d7
+  #267 = Utf8               ML/_590f69/_5b3f84/_cfe983
+  #268 = Utf8               ML/_590f69/_5b3f84/_55938e
+  #269 = Utf8               isPassenger()Z
+  #270 = Utf8               isRiding()Z
+  #271 = Utf8               isShiftKeyDown()Z
+  #272 = Utf8               isSneaking()Z
+  #273 = Utf8               java/lang/Object
+  #274 = Utf8               level
+  #275 = Utf8               min
+  #276 = Utf8               net/minecraft/entity/Entity
+  #277 = Utf8               net/minecraft/world/entity/Entity
+  #278 = Utf8               org/joml/Math
+  #279 = Utf8               org/joml/Vector3d
+  #280 = Utf8               org/joml/Vector3ic
+  #281 = Utf8               posX
+  #282 = Utf8               posY
+  #283 = Utf8               posZ
+  #284 = Utf8               position
+  #285 = Utf8               prevPosX
+  #286 = Utf8               prevPosY
+  #287 = Utf8               prevPosZ
+  #288 = Utf8               sqrt
+  #289 = Utf8               tickCount
+  #290 = Utf8               ticksExisted
+  #291 = Utf8               value
+  #292 = Utf8               version
+  #293 = Utf8               world
+  #294 = Utf8               worldObj
+  #295 = Utf8               x
+  #296 = Utf8               xo
+  #297 = Utf8               y
+  #298 = Utf8               yo
+  #299 = Utf8               z
+  #300 = Utf8               zo
+{
+  public abstract boolean bridge$isSneaking();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#272])]),@#137(#292=I#4,#147=[@#136(#291=[s#271])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["isSneaking()Z"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["isShiftKeyDown()Z"]
+            )]
+          )]
+        )
+
+  public abstract boolean bridge$isRiding();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#270])]),@#137(#292=I#4,#147=[@#136(#291=[s#269])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["isRiding()Z"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["isPassenger()Z"]
+            )]
+          )]
+        )
+
+  public abstract int _0be1fc();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#290])]),@#137(#292=I#4,#147=[@#136(#291=[s#289])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["ticksExisted"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["tickCount"]
+            )]
+          )]
+        )
+
+  public abstract void _f6e62b(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#290])]),@#137(#292=I#4,#147=[@#136(#291=[s#289])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["ticksExisted"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["tickCount"]
+            )]
+          )]
+        )
+
+  public abstract ML._590f69._dcf582._1253fc bridge$getWorld();
+    descriptor: ()LML/_590f69/_dcf582/_1253fc;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#294])]),@#137(#292=I#3,#147=[@#136(#291=[s#293])]),@#137(#292=I#4,#147=[@#136(#291=[s#274])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["worldObj"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=5
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["world"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["level"]
+            )]
+          )]
+        )
+
+  public abstract void bridge$lerpTo(double, double, double, float, float);
+    descriptor: (DDDFF)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setOnGround(boolean);
+    descriptor: (Z)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getPosX();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#281])]),@#137(#292=I#4,#147=[@#136(#291=[s#284,s#295])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["posX"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["position","x"]
+            )]
+          )]
+        )
+
+  public abstract void bridge$setPosX(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setChunkX(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getPosY();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#282])]),@#137(#292=I#4,#147=[@#136(#291=[s#284,s#297])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["posY"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["position","y"]
+            )]
+          )]
+        )
+
+  public abstract void bridge$setPosY(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setChunkY(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getPosZ();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#283])]),@#137(#292=I#4,#147=[@#136(#291=[s#284,s#299])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["posZ"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["position","z"]
+            )]
+          )]
+        )
+
+  public abstract void bridge$setPosZ(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setChunkZ(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double _f2d580();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#285])]),@#137(#292=I#4,#147=[@#136(#291=[s#296])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["prevPosX"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["xo"]
+            )]
+          )]
+        )
+
+  public abstract void bridge$setPreviousPosX(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double _3f2a80();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#286])]),@#137(#292=I#4,#147=[@#136(#291=[s#298])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["prevPosY"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["yo"]
+            )]
+          )]
+        )
+
+  public abstract void bridge$setPreviousPosY(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double _6fe2c9();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#287])]),@#137(#292=I#4,#147=[@#136(#291=[s#300])])])
+        ML._590f69._2f4182._cfe983(
+          _f70024=[@ML._590f69._2f4182._1253fc(
+            version=0
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["prevPosZ"]
+            )]
+          ),@ML._590f69._2f4182._1253fc(
+            version=6
+            _d842c7=[@ML._590f69._2f4182._bb4487(
+              value=["zo"]
+            )]
+          )]
+        )
+
+  public abstract void bridge$setPreviousPosZ(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default void bridge$setOldPos(double, double, double);
+    descriptor: (DDD)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=0, locals=7, args_size=4
+         0: return
+      LineNumberTable:
+        line 131: 0
+
+  public abstract ML._590f69._5b3f84._590f69 bridge$getBlockPos();
+    descriptor: ()LML/_590f69/_5b3f84/_590f69;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getMotionX();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void _cfe983(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getMotionY();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setMotionY(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getMotionZ();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void _21aca6(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getRotationYaw();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getRotationPitch();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setRotationYaw(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setRotationPitch(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getPreviousRotationYaw();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setPreviousRotationYaw(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getPreviousRotationPitch();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setPreviousRotationPitch(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract java.util.UUID bridge$getUniqueID();
+    descriptor: ()Ljava/util/UUID;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setUniqueID(java.util.UUID);
+    descriptor: (Ljava/util/UUID;)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._5b3f84._cfe983 bridge$getBoundingBox();
+    descriptor: ()LML/_590f69/_5b3f84/_cfe983;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._5b3f84._cfe983 bridge$getBoundingBox(float);
+    descriptor: (F)LML/_590f69/_5b3f84/_cfe983;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._5b3f84._cfe983 bridge$getBoundingBoxForCulling();
+    descriptor: ()LML/_590f69/_5b3f84/_cfe983;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default double _2f4182(float);
+    descriptor: (F)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=2, args_size=2
+         0: aload_0
+         1: invokeinterface #27,  1           // InterfaceMethod _f2d580:()D
+         6: aload_0
+         7: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+        12: aload_0
+        13: invokeinterface #27,  1           // InterfaceMethod _f2d580:()D
+        18: dsub
+        19: fload_1
+        20: f2d
+        21: dmul
+        22: dadd
+        23: dreturn
+      LineNumberTable:
+        line 181: 0
+
+  public default double _a140a8(float);
+    descriptor: (F)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=2, args_size=2
+         0: aload_0
+         1: invokeinterface #24,  1           // InterfaceMethod _3f2a80:()D
+         6: aload_0
+         7: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+        12: aload_0
+        13: invokeinterface #24,  1           // InterfaceMethod _3f2a80:()D
+        18: dsub
+        19: fload_1
+        20: f2d
+        21: dmul
+        22: dadd
+        23: dreturn
+      LineNumberTable:
+        line 185: 0
+
+  public default double _6c713e(float);
+    descriptor: (F)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=2, args_size=2
+         0: aload_0
+         1: invokeinterface #20,  1           // InterfaceMethod _6fe2c9:()D
+         6: aload_0
+         7: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+        12: aload_0
+        13: invokeinterface #20,  1           // InterfaceMethod _6fe2c9:()D
+        18: dsub
+        19: fload_1
+        20: f2d
+        21: dmul
+        22: dadd
+        23: dreturn
+      LineNumberTable:
+        line 189: 0
+
+  public default ML._590f69._5b3f84._cfe983 _c8175c(float);
+    descriptor: (F)LML/_590f69/_5b3f84/_cfe983;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=9, locals=2, args_size=2
+         0: aload_0
+         1: invokeinterface #30,  1           // InterfaceMethod bridge$getBoundingBox:()LML/_590f69/_5b3f84/_cfe983;
+         6: aload_0
+         7: fload_1
+         8: invokeinterface #23,  2           // InterfaceMethod _2f4182:(F)D
+        13: aload_0
+        14: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+        19: dsub
+        20: aload_0
+        21: fload_1
+        22: invokeinterface #28,  2           // InterfaceMethod _a140a8:(F)D
+        27: aload_0
+        28: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+        33: dsub
+        34: aload_0
+        35: fload_1
+        36: invokeinterface #26,  2           // InterfaceMethod _6c713e:(F)D
+        41: aload_0
+        42: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+        47: dsub
+        48: invokeinterface #38,  7           // InterfaceMethod ML/_590f69/_5b3f84/_cfe983.bridge$offset:(DDD)LML/_590f69/_5b3f84/_cfe983;
+        53: areturn
+      LineNumberTable:
+        line 193: 0
+        line 194: 8
+        line 195: 22
+        line 196: 36
+        line 193: 48
+
+  public abstract ML._590f69._5b3f84._cfe983 _3aa80a();
+    descriptor: ()LML/_590f69/_5b3f84/_cfe983;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isOnGround();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isInvisibleTo(ML._590f69._2ce426._1253fc._590f69);
+    descriptor: (LML/_590f69/_2ce426/_1253fc/_590f69;)Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default double _cfe983(ML._590f69._2ce426._1e73d7);
+    descriptor: (LML/_590f69/_2ce426/_1e73d7;)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=8, args_size=2
+         0: aload_0
+         1: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+         6: aload_1
+         7: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+        12: dsub
+        13: dstore_2
+        14: aload_0
+        15: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+        20: aload_1
+        21: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+        26: dsub
+        27: dstore        4
+        29: aload_0
+        30: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+        35: aload_1
+        36: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+        41: dsub
+        42: dstore        6
+        44: dload_2
+        45: dload_2
+        46: dmul
+        47: dload         4
+        49: dload         4
+        51: dmul
+        52: dadd
+        53: dload         6
+        55: dload         6
+        57: dmul
+        58: dadd
+        59: dreturn
+      LineNumberTable:
+        line 207: 0
+        line 208: 14
+        line 209: 29
+        line 210: 44
+
+  public default double _21aca6(ML._590f69._2ce426._1e73d7);
+    descriptor: (LML/_590f69/_2ce426/_1e73d7;)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #21,  2           // InterfaceMethod _cfe983:(LML/_590f69/_2ce426/_1e73d7;)D
+         7: invokestatic  #18                 // Method org/joml/Math.sqrt:(D)D
+        10: dreturn
+      LineNumberTable:
+        line 214: 0
+
+  public default double _13ea87(double, double, double);
+    descriptor: (DDD)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=13, args_size=4
+         0: aload_0
+         1: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+         6: dload_1
+         7: dsub
+         8: dstore        7
+        10: aload_0
+        11: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+        16: dload_3
+        17: dsub
+        18: dstore        9
+        20: aload_0
+        21: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+        26: dload         5
+        28: dsub
+        29: dstore        11
+        31: dload         7
+        33: dload         7
+        35: dmul
+        36: dload         9
+        38: dload         9
+        40: dmul
+        41: dadd
+        42: dload         11
+        44: dload         11
+        46: dmul
+        47: dadd
+        48: dreturn
+      LineNumberTable:
+        line 218: 0
+        line 219: 10
+        line 220: 20
+        line 221: 31
+
+  public default double _cfe983(ML._590f69._5b3f84._55938e);
+    descriptor: (LML/_590f69/_5b3f84/_55938e;)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=7, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #39,  1           // InterfaceMethod ML/_590f69/_5b3f84/_55938e.bridge$getX:()I
+         7: i2d
+         8: aload_1
+         9: invokeinterface #40,  1           // InterfaceMethod ML/_590f69/_5b3f84/_55938e.bridge$getY:()I
+        14: i2d
+        15: aload_1
+        16: invokeinterface #41,  1           // InterfaceMethod ML/_590f69/_5b3f84/_55938e.bridge$getZ:()I
+        21: i2d
+        22: invokeinterface #25,  7           // InterfaceMethod _13ea87:(DDD)D
+        27: dreturn
+      LineNumberTable:
+        line 225: 0
+
+  public default double _21aca6(org.joml.Vector3ic);
+    descriptor: (Lorg/joml/Vector3ic;)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=7, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokeinterface #42,  1           // InterfaceMethod org/joml/Vector3ic.x:()I
+         7: i2d
+         8: aload_1
+         9: invokeinterface #43,  1           // InterfaceMethod org/joml/Vector3ic.y:()I
+        14: i2d
+        15: aload_1
+        16: invokeinterface #44,  1           // InterfaceMethod org/joml/Vector3ic.z:()I
+        21: i2d
+        22: invokeinterface #25,  7           // InterfaceMethod _13ea87:(DDD)D
+        27: dreturn
+      LineNumberTable:
+        line 229: 0
+
+  public default double _2ce426(double, double, double);
+    descriptor: (DDD)D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=7, locals=7, args_size=4
+         0: aload_0
+         1: dload_1
+         2: dload_3
+         3: dload         5
+         5: invokeinterface #25,  7           // InterfaceMethod _13ea87:(DDD)D
+        10: invokestatic  #18                 // Method org/joml/Math.sqrt:(D)D
+        13: dreturn
+      LineNumberTable:
+        line 233: 0
+
+  public default ML._590f69._5b3f84._df21a7 _b4457e();
+    descriptor: ()LML/_590f69/_5b3f84/_df21a7;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: fconst_1
+         2: invokeinterface #35,  2           // InterfaceMethod bridge$getViewVector:(F)LML/_590f69/_5b3f84/_df21a7;
+         7: areturn
+      LineNumberTable:
+        line 237: 0
+
+  public abstract ML._590f69._5b3f84._df21a7 bridge$getViewVector(float);
+    descriptor: (F)LML/_590f69/_5b3f84/_df21a7;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int bridge$getDimension();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setDimension(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default java.lang.String bridge$getDimensionName();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #6                  // String
+         2: areturn
+      LineNumberTable:
+        line 250: 0
+
+  public default ML._590f69._5b3f84._df21a7 bridge$getEyePosition();
+    descriptor: ()LML/_590f69/_5b3f84/_df21a7;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: fconst_0
+         2: invokeinterface #31,  2           // InterfaceMethod bridge$getEyePosition:(F)LML/_590f69/_5b3f84/_df21a7;
+         7: areturn
+      LineNumberTable:
+        line 254: 0
+
+  public abstract ML._590f69._5b3f84._df21a7 bridge$getEyePosition(float);
+    descriptor: (F)LML/_590f69/_5b3f84/_df21a7;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._2ce426._1e73d7 bridge$getRidingEntity();
+    descriptor: ()LML/_590f69/_2ce426/_1e73d7;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$getFallDistance();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$resetFallDistance();
+    descriptor: ()V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$hitByEntity(ML._590f69._2ce426._1e73d7);
+    descriptor: (LML/_590f69/_2ce426/_1e73d7;)Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$lastTickX();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setLastTickX(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$lastTickY();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setLastTickY(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract double bridge$lastTickZ();
+    descriptor: ()D
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setLastTickZ(double);
+    descriptor: (D)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._2ce426._21aca6 bridge$getDataWatcher();
+    descriptor: ()LML/_590f69/_2ce426/_21aca6;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isRidingBoat();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isCollidedHorizontally();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isRemoved();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default double _320178();
+    descriptor: ()D
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=6, locals=7, args_size=1
+         0: aload_0
+         1: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+         6: aload_0
+         7: invokeinterface #27,  1           // InterfaceMethod _f2d580:()D
+        12: dsub
+        13: dstore_1
+        14: aload_0
+        15: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+        20: aload_0
+        21: invokeinterface #24,  1           // InterfaceMethod _3f2a80:()D
+        26: dsub
+        27: dstore_3
+        28: aload_0
+        29: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+        34: aload_0
+        35: invokeinterface #20,  1           // InterfaceMethod _6fe2c9:()D
+        40: dsub
+        41: dstore        5
+        43: dload_1
+        44: dload_1
+        45: dmul
+        46: dload_3
+        47: dload_3
+        48: dmul
+        49: dadd
+        50: dload         5
+        52: dload         5
+        54: dmul
+        55: dadd
+        56: dreturn
+      LineNumberTable:
+        line 299: 0
+        line 300: 14
+        line 301: 28
+        line 303: 43
+
+  public abstract net.kyori.adventure.text.Component bridge$getTypeName();
+    descriptor: ()Lnet/kyori/adventure/text/Component;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract java.lang.String bridge$getEntityString();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._c8175c._cb9292 bridge$getPickResult();
+    descriptor: ()LML/_590f69/_c8175c/_cb9292;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setCustomName(net.kyori.adventure.text.Component);
+    descriptor: (Lnet/kyori/adventure/text/Component;)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setCustomNameVisible(boolean);
+    descriptor: (Z)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$shouldShowName();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #138(#275=I#2)
+        ML.ichor._cfe983._21aca6(
+          min=1
+        )
+
+  public abstract int bridge$getSpawnEggColor(int);
+    descriptor: (I)I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract java.lang.String bridge$getType();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isGlowing();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setGlowing(boolean);
+    descriptor: (Z)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$turn(float, float);
+    descriptor: (FF)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$setGlowingColor(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int bridge$getGlowingColor();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default void bridge$decreaseEntityIdCounter();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 346: 0
+
+  public abstract void bridge$setId(int);
+    descriptor: (I)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default void bridge$setNoPhysics(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=0, locals=2, args_size=2
+         0: return
+      LineNumberTable:
+        line 355: 0
+    RuntimeVisibleAnnotations:
+      0: #138(#275=I#4)
+        ML.ichor._cfe983._21aca6(
+          min=6
+        )
+
+  public abstract boolean bridge$shouldRenderAtSqrDistance(double);
+    descriptor: (D)Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void bridge$sendPairingData(java.util.function.Consumer<ML._590f69._ba7d98._1e73d7>);
+    descriptor: (Ljava/util/function/Consumer;)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #118                         // (Ljava/util/function/Consumer<LML/_590f69/_ba7d98/_1e73d7;>;)V
+
+  public abstract boolean bridge$isInWater();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract float bridge$maxUpStep();
+    descriptor: ()F
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int bridge$getMaxFallDistance();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default int bridge$canTurbo();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokeinterface #36,  1           // InterfaceMethod bridge$isGlowing:()Z
+         6: ifeq          13
+         9: sipush        1180
+        12: ireturn
+        13: aload_0
+        14: invokeinterface #37,  1           // InterfaceMethod bridge$isOnFire:()Z
+        19: ifeq          25
+        22: bipush        100
+        24: ireturn
+        25: iconst_m1
+        26: ireturn
+      LineNumberTable:
+        line 377: 0
+        line 378: 9
+        line 380: 13
+        line 381: 22
+        line 383: 25
+      StackMapTable: number_of_entries = 2
+        frame_type = 13 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 11
+    RuntimeVisibleAnnotations:
+      0: #138(#275=I#5)
+        ML.ichor._cfe983._21aca6(
+          min=8
+        )
+      1: #141()
+        javax.annotation.OverridingMethodsMustInvokeSuper
+
+  public default void bridge$stopTurbo(ML._590f69._5b3f84._df21a7);
+    descriptor: (LML/_590f69/_5b3f84/_df21a7;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: new           #7                  // class ML/_590f69/_2f4182/_bb4487/_1e73d7
+         3: dup
+         4: invokespecial #17                 // Method ML/_590f69/_2f4182/_bb4487/_1e73d7."<init>":()V
+         7: athrow
+      LineNumberTable:
+        line 393: 0
+    RuntimeVisibleAnnotations:
+      0: #138(#275=I#5)
+        ML.ichor._cfe983._21aca6(
+          min=8
+        )
+    RuntimeVisibleParameterAnnotations:
+      parameter 0:
+        0: #140()
+          javax.annotation.Nullable
+
+  public abstract boolean bridge$isAlive();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default ML._590f69._ba7d98._cfe983._cfe983 bridge$getNbtAsComponent();
+    descriptor: ()LML/_590f69/_ba7d98/_cfe983/_cfe983;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: new           #7                  // class ML/_590f69/_2f4182/_bb4487/_1e73d7
+         3: dup
+         4: invokespecial #17                 // Method ML/_590f69/_2f4182/_bb4487/_1e73d7."<init>":()V
+         7: athrow
+      LineNumberTable:
+        line 401: 0
+    RuntimeVisibleAnnotations:
+      0: #138(#275=I#4)
+        ML.ichor._cfe983._21aca6(
+          min=6
+        )
+
+  public abstract boolean bridge$getNoCulling();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isInWaterOrBubble();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$canBeCollidedWith();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default float bridge$ageInTicks();
+    descriptor: ()F
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokeinterface #22,  1           // InterfaceMethod _0be1fc:()I
+         6: i2f
+         7: freturn
+      LineNumberTable:
+        line 417: 0
+
+  public abstract boolean bridge$isItemFrame();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isFirework();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isWitherSkull();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isSnowball();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isFireball();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isMonster();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isMob();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isLeashed();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract ML._590f69._2ce426._1e73d7 bridge$getLeashedToEntity();
+    descriptor: ()LML/_590f69/_2ce426/_1e73d7;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #140()
+        javax.annotation.Nullable
+
+  public abstract ML._590f69._2ce426._1e73d7 bridge$getVehicle();
+    descriptor: ()LML/_590f69/_2ce426/_1e73d7;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    RuntimeVisibleAnnotations:
+      0: #138(#275=I#4)
+        ML.ichor._cfe983._21aca6(
+          min=6
+        )
+      1: #140()
+        javax.annotation.Nullable
+
+  public abstract java.util.Optional<java.lang.String> bridge$getTeamName();
+    descriptor: ()Ljava/util/Optional;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #90                          // ()Ljava/util/Optional<Ljava/lang/String;>;
+
+  public abstract java.util.Optional<java.lang.String> bridge$getBoatType();
+    descriptor: ()Ljava/util/Optional;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #90                          // ()Ljava/util/Optional<Ljava/lang/String;>;
+
+  public abstract boolean bridge$isBoat();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$isMinecart();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default boolean bridge$isTextDisplay();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_0
+         1: ireturn
+      LineNumberTable:
+        line 463: 0
+
+  public default org.joml.Vector3d bridge$getPosition();
+    descriptor: ()Lorg/joml/Vector3d;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=8, locals=1, args_size=1
+         0: new           #15                 // class org/joml/Vector3d
+         3: dup
+         4: aload_0
+         5: invokeinterface #32,  1           // InterfaceMethod bridge$getPosX:()D
+        10: aload_0
+        11: invokeinterface #33,  1           // InterfaceMethod bridge$getPosY:()D
+        16: aload_0
+        17: invokeinterface #34,  1           // InterfaceMethod bridge$getPosZ:()D
+        22: invokespecial #19                 // Method org/joml/Vector3d."<init>":(DDD)V
+        25: areturn
+      LineNumberTable:
+        line 467: 0
+
+  public default ML._590f69._5b3f84._55938e bridge$pick$v1_16(float, float, boolean);
+    descriptor: (FFZ)LML/_590f69/_5b3f84/_55938e;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=4, args_size=4
+         0: aconst_null
+         1: areturn
+      LineNumberTable:
+        line 471: 0
+
+  public abstract org.joml.Vector3d bridge$getLookAngle();
+    descriptor: ()Lorg/joml/Vector3d;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean bridge$shouldRender(double, double, double);
+    descriptor: (DDD)Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract java.util.List<ML._590f69._2ce426._1e73d7> bridge$getPassengers();
+    descriptor: ()Ljava/util/List;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    Signature: #88                          // ()Ljava/util/List<LML/_590f69/_2ce426/_1e73d7;>;
+
+  public default ML._590f69._5b3f84._55938e bridge$getBlockPos();
+    descriptor: ()LML/_590f69/_5b3f84/_55938e;
+    flags: (0x1041) ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokeinterface #29,  1           // InterfaceMethod bridge$getBlockPos:()LML/_590f69/_5b3f84/_590f69;
+         6: areturn
+      LineNumberTable:
+        line 33: 0
+}
+RuntimeVisibleAnnotations:
+  0: #135(#130=[@#137(#292=I#1,#147=[@#136(#291=[s#276])]),@#137(#292=I#4,#147=[@#136(#291=[s#277])])])
+    ML._590f69._2f4182._cfe983(
+      _f70024=[@ML._590f69._2f4182._1253fc(
+        version=0
+        _d842c7=[@ML._590f69._2f4182._bb4487(
+          value=["net/minecraft/entity/Entity"]
+        )]
+      ),@ML._590f69._2f4182._1253fc(
+        version=6
+        _d842c7=[@ML._590f69._2f4182._bb4487(
+          value=["net/minecraft/world/entity/Entity"]
+        )]
+      )]
+    )

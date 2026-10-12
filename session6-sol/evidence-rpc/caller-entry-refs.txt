@@ -1,0 +1,582 @@
+L._cfe983._cfe983._cfe983._00e05b
+  private static void _cfe983(com.lunarclient.apollo.paynow.v1.OpenPayNowEmbeddedCheckoutMessage);
+    Code:
+       0: aload_0
+       1: invokevirtual #13                 // Method com/lunarclient/apollo/paynow/v1/OpenPayNowEmbeddedCheckoutMessage.getCheckoutToken:()Ljava/lang/String;
+       4: invokestatic  #17                 // Method L/util/_252625._ac25f2:(Ljava/lang/String;)V
+       7: return
+
+L._cfe983._cfe983._cfe983._133367
+  private static void _cfe983(com.lunarclient.apollo.tebex.v1.OpenTebexEmbeddedCheckoutMessage);
+    Code:
+       0: aload_0
+       1: invokevirtual #13                 // Method com/lunarclient/apollo/tebex/v1/OpenTebexEmbeddedCheckoutMessage.getBasketIdent:()Ljava/lang/String;
+       4: aload_0
+       5: invokevirtual #14                 // Method com/lunarclient/apollo/tebex/v1/OpenTebexEmbeddedCheckoutMessage.getLocale:()Ljava/lang/String;
+       8: invokestatic  #18                 // Method L/util/_252625._5a1b50:(Ljava/lang/String;Ljava/lang/String;)V
+      11: return
+
+L._cfe983._bb4487._cfe983
+  private static void _cfe983(java.lang.String, com.moonsworth.lunar._590f69._bb4487._bb4487, com.moonsworth.lunar._590f69._bb4487._21aca6._79e7e6, L._cfe983._21aca6, java.lang.String);
+    Code:
+       0: aload_0
+       1: invokestatic  #114                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       4: invokevirtual #73                 // Method L/_cfe983._9259ff:()LL/_02d7ad/_1253fc/_3a14e3;
+       7: invokevirtual #101                // Method L/_02d7ad/_1253fc/_3a14e3._89d63f:()LL/_02d7ad/_1253fc/_1253fc/_590f69;
+      10: invokevirtual #99                 // Method L/_02d7ad/_1253fc/_1253fc/_590f69._6f5a9c:()LL/_ec7e36/_8c806f;
+      13: invokestatic  #85                 // Method _cfe983:(Ljava/lang/String;LL/_ec7e36/_8c806f;)Z
+      16: ifeq          43
+      19: aload_0
+      20: getstatic     #66                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_UNSPECIFIED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+      23: invokestatic  #116                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+      26: pop
+      27: aload_1
+      28: aload_2
+      29: invokeinterface #132,  2          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$displayScreen:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)V
+      34: aload_3
+      35: aload         4
+      37: ldc           #6                  // String ButtonOpenUrl
+      39: invokevirtual #95                 // Method L/_cfe983/_21aca6._13ea87:(Ljava/lang/String;Ljava/lang/String;)V
+      42: return
+      43: new           #45                 // class L/_601d9f/_cfe983/_cfe983/_590f69
+      46: dup
+      47: aload_0
+      48: invokespecial #106                // Method L/_601d9f/_cfe983/_cfe983/_590f69."<init>":(Ljava/lang/String;)V
+      51: ldc           #17                 // String gui.apollo.button.openUrlPrompt
+      53: aload_0
+      54: aload_0
+      55: aload_1
+      56: aload_2
+      57: invokedynamic #151,  0            // InvokeDynamic #11:run:(Ljava/lang/String;Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)Ljava/lang/Runnable;
+      62: aload_1
+      63: aload_2
+      64: invokedynamic #152,  0            // InvokeDynamic #12:run:(Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)Ljava/lang/Runnable;
+      69: invokestatic  #81                 // Method _cfe983:(LL/_601d9f/_cfe983/_cfe983;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+      72: aload_3
+      73: aload         4
+      75: ldc           #7                  // String ButtonOpenUrlPrompt
+      77: invokevirtual #95                 // Method L/_cfe983/_21aca6._13ea87:(Ljava/lang/String;Ljava/lang/String;)V
+      80: return
+
+
+L._cfe983._bb4487._cfe983
+  private static void _cfe983(java.lang.String, com.moonsworth.lunar._590f69._bb4487._bb4487, com.moonsworth.lunar._590f69._bb4487._21aca6._79e7e6);
+    Code:
+       0: aload_0
+       1: getstatic     #66                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_UNSPECIFIED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+       4: invokestatic  #116                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+       7: pop
+       8: aload_1
+       9: aload_2
+      10: invokeinterface #132,  2          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$displayScreen:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)V
+      15: return
+
+
+L._cfe983._bb4487._cfe983
+  private static void _cfe983(com.moonsworth.lunar._590f69._bb4487._bb4487, com.moonsworth.lunar._590f69._bb4487._21aca6._79e7e6, java.lang.String, java.net.URI, java.util.concurrent.atomic.AtomicBoolean, L._cfe983._21aca6, java.lang.String);
+    Code:
+       0: invokestatic  #114                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #73                 // Method L/_cfe983._9259ff:()LL/_02d7ad/_1253fc/_3a14e3;
+       6: invokevirtual #101                // Method L/_02d7ad/_1253fc/_3a14e3._89d63f:()LL/_02d7ad/_1253fc/_1253fc/_590f69;
+       9: invokevirtual #100                // Method L/_02d7ad/_1253fc/_1253fc/_590f69._778a44:()LL/_ec7e36/_429bf0;
+      12: invokevirtual #110                // Method L/_ec7e36/_429bf0.get:()Ljava/lang/Object;
+      15: checkcast     #54                 // class java/lang/Boolean
+      18: invokevirtual #117                // Method java/lang/Boolean.booleanValue:()Z
+      21: ifeq          60
+      24: aload_0
+      25: invokestatic  #71                 // Method com/moonsworth/lunar/_590f69/_21aca6._bb01a8:()Lcom/moonsworth/lunar/_590f69/_cfe983;
+      28: aload_1
+      29: aload_2
+      30: aload_3
+      31: iconst_0
+      32: invokeinterface #129,  5          // InterfaceMethod com/moonsworth/lunar/_590f69/_cfe983._cfe983:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;Ljava/lang/String;Ljava/net/URI;Z)Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_2f4182;
+      37: invokeinterface #132,  2          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$displayScreen:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)V
+      42: aload         4
+      44: iconst_1
+      45: invokevirtual #128                // Method java/util/concurrent/atomic/AtomicBoolean.set:(Z)V
+      48: aload         5
+      50: aload         6
+      52: ldc           #11                 // String OpenUrlPrompt
+      54: invokevirtual #95                 // Method L/_cfe983/_21aca6._13ea87:(Ljava/lang/String;Ljava/lang/String;)V
+      57: goto          84
+      60: aload_2
+      61: getstatic     #66                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_UNSPECIFIED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+      64: invokestatic  #116                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+      67: pop
+      68: aload_0
+      69: aload_1
+      70: invokeinterface #132,  2          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$displayScreen:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)V
+      75: aload         5
+      77: aload         6
+      79: ldc           #10                 // String OpenUrl
+      81: invokevirtual #95                 // Method L/_cfe983/_21aca6._13ea87:(Ljava/lang/String;Ljava/lang/String;)V
+      84: return
+
+L._dcf582._cfe983
+  private static void _cfe983(com.moonsworth.lunar._590f69._bb4487._bb4487, com.moonsworth.lunar._590f69._bb4487._21aca6._79e7e6, java.lang.String, java.net.URI);
+    Code:
+       0: aload_0
+       1: invokeinterface #162,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$getGameSettings:()Lcom/moonsworth/lunar/_590f69/_bb4487/_88f3cf/_cfe983;
+       6: invokeinterface #163,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_88f3cf/_cfe983.bridge$isChatPromptLinks:()Z
+      11: ifeq          35
+      14: aload_0
+      15: invokestatic  #95                 // Method com/moonsworth/lunar/_590f69/_21aca6._bb01a8:()Lcom/moonsworth/lunar/_590f69/_cfe983;
+      18: aload_1
+      19: aload_2
+      20: aload_3
+      21: iconst_0
+      22: invokeinterface #158,  5          // InterfaceMethod com/moonsworth/lunar/_590f69/_cfe983._cfe983:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;Ljava/lang/String;Ljava/net/URI;Z)Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_2f4182;
+      27: invokeinterface #161,  2          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$displayScreen:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)V
+      32: goto          50
+      35: aload_2
+      36: getstatic     #76                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_UNSPECIFIED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+      39: invokestatic  #137                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+      42: pop
+      43: aload_0
+      44: aload_1
+      45: invokeinterface #161,  2          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$displayScreen:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)V
+      50: return
+
+
+L._81676d._21aca6._cfe983._bb4487
+  public void _cfe983(java.lang.String, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: invokestatic  #360                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+       5: ifne          8
+       8: return
+
+
+L._81676d._21aca6._d4ca6c._cfe983._21aca6._1e73d7
+  private static void _f28e0d();
+    Code:
+       0: invokestatic  #67                 // Method L/_2f4182/_1253fc/_bb4487._ae46f1:()V
+       3: invokestatic  #65                 // Method L/_cfe983._ecae14:()LL/_cfe983;
+       6: invokevirtual #63                 // Method L/_cfe983._751aff:()LL/_02d7ad/_1253fc/_ba7d98;
+       9: invokevirtual #68                 // Method L/_02d7ad/_1253fc/_ba7d98._7d065a:()Ljava/util/Map;
+      12: ldc           #8                  // String store
+      14: ldc           #6                  // String https://store.lunarclient.com
+      16: invokeinterface #104,  3          // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      21: checkcast     #36                 // class java/lang/String
+      24: getstatic     #45                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_HOME_BUTTON:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+      27: invokestatic  #96                 // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+      30: pop
+      31: return
+
+
+L._81676d._21aca6._d4ca6c._cfe983._21aca6._13ea87
+  private static void _cfe983(L._02d7ad._88f3cf._21aca6, java.lang.String);
+    Code:
+       0: aload_1
+       1: ifnonnull     5
+       4: return
+       5: aload_0
+       6: invokevirtual #64                 // Method L/_02d7ad/_88f3cf/_21aca6.getId:()Ljava/lang/String;
+       9: getstatic     #48                 // Field java/util/Locale.ROOT:Ljava/util/Locale;
+      12: invokevirtual #78                 // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      15: invokedynamic #93,  0             // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      20: astore_2
+      21: aload_1
+      22: getstatic     #47                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      25: invokestatic  #81                 // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+      28: astore_3
+      29: invokestatic  #75                 // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+      32: invokeinterface #85,  1           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$getSession:()Lcom/moonsworth/lunar/_590f69/_5b3f84/_76e63d;
+      37: invokeinterface #86,  1           // InterfaceMethod com/moonsworth/lunar/_590f69/_5b3f84/_76e63d.bridge$getProfile:()Lcom/mojang/authlib/GameProfile;
+      42: invokevirtual #53                 // Method com/mojang/authlib/GameProfile.getId:()Ljava/util/UUID;
+      45: invokevirtual #83                 // Method java/util/UUID.toString:()Ljava/lang/String;
+      48: getstatic     #47                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      51: invokestatic  #81                 // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+      54: astore        4
+      56: invokestatic  #75                 // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+      59: invokeinterface #85,  1           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$getSession:()Lcom/moonsworth/lunar/_590f69/_5b3f84/_76e63d;
+      64: invokeinterface #87,  1           // InterfaceMethod com/moonsworth/lunar/_590f69/_5b3f84/_76e63d.bridge$getUsername:()Ljava/lang/String;
+      69: getstatic     #47                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      72: invokestatic  #81                 // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+      75: astore        5
+      77: invokestatic  #54                 // Method L/_cfe983._ecae14:()LL/_cfe983;
+      80: invokevirtual #56                 // Method L/_cfe983._7ed565:()LL/_02d7ad/_1253fc/_02d7ad;
+      83: invokevirtual #59                 // Method L/_02d7ad/_1253fc/_02d7ad._f4ab37:()Z
+      86: istore        6
+      88: aload_2
+      89: aload_3
+      90: aload         4
+      92: aload         5
+      94: iload         6
+      96: invokedynamic #94,  0             // InvokeDynamic #5:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+     101: astore        7
+     103: aload         7
+     105: getstatic     #45                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_SOCIAL_LINK:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+     108: invokestatic  #76                 // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+     111: ifeq          129
+     114: invokestatic  #74                 // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+     117: invokevirtual #57                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+     120: ldc           #4                  // String Opened link in browser
+     122: invokevirtual #58                 // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+     125: pop
+     126: goto          146
+     129: aload         7
+     131: invokestatic  #72                 // Method L/util/_2f4182._35b178:(Ljava/lang/String;)V
+     134: invokestatic  #74                 // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+     137: invokevirtual #57                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+     140: ldc           #2                  // String Copied link to clipboard
+     142: invokevirtual #58                 // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+     145: pop
+     146: return
+
+L._81676d._21aca6._d4ca6c._cfe983._21aca6._d4ca6c
+  public static void _92e6ac();
+    Code:
+       0: ldc           #20                 // String https://store.lunarclient.com/category/coins?utm_source=client-game&utm_medium=home&utm_campaign=lead
+       2: getstatic     #84                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_HOME_BUTTON:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+       5: invokestatic  #143                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+       8: pop
+       9: return
+
+
+L._81676d._21aca6._d4ca6c._cfe983._21aca6._d4ca6c
+  private static void _e4025a(java.lang.String);
+    Code:
+       0: aload_0
+       1: ifnonnull     5
+       4: return
+       5: invokestatic  #110                // Method L/_cfe983._ecae14:()LL/_cfe983;
+       8: invokevirtual #108                // Method L/_cfe983._751aff:()LL/_02d7ad/_1253fc/_ba7d98;
+      11: invokevirtual #128                // Method L/_02d7ad/_1253fc/_ba7d98._7d065a:()Ljava/util/Map;
+      14: ldc           #32                 // String wrapped
+      16: ldc           #21                 // String https://wrapped.lunarclient.com
+      18: invokeinterface #180,  3          // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      23: checkcast     #67                 // class java/lang/String
+      26: astore_1
+      27: aload_0
+      28: getstatic     #96                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      31: invokestatic  #153                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+      34: astore_2
+      35: invokestatic  #141                // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+      38: invokeinterface #163,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$getSession:()Lcom/moonsworth/lunar/_590f69/_5b3f84/_76e63d;
+      43: invokeinterface #168,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_5b3f84/_76e63d.bridge$getProfile:()Lcom/mojang/authlib/GameProfile;
+      48: invokevirtual #106                // Method com/mojang/authlib/GameProfile.getId:()Ljava/util/UUID;
+      51: invokevirtual #160                // Method java/util/UUID.toString:()Ljava/lang/String;
+      54: getstatic     #96                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      57: invokestatic  #153                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+      60: astore_3
+      61: invokestatic  #141                // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+      64: invokeinterface #163,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$getSession:()Lcom/moonsworth/lunar/_590f69/_5b3f84/_76e63d;
+      69: invokeinterface #169,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_5b3f84/_76e63d.bridge$getUsername:()Ljava/lang/String;
+      74: getstatic     #96                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+      77: invokestatic  #153                // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+      80: astore        4
+      82: aload_1
+      83: aload_2
+      84: aload_3
+      85: aload         4
+      87: invokedynamic #192,  0            // InvokeDynamic #6:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      92: astore        5
+      94: aload         5
+      96: getstatic     #84                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_HOME_BUTTON:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+      99: invokestatic  #143                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+     102: ifeq          136
+     105: invokestatic  #140                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+     108: invokevirtual #111                // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+     111: ldc           #11                 // String Opened Your %s in browser
+     113: iconst_1
+     114: anewarray     #66                 // class java/lang/Object
+     117: dup
+     118: iconst_0
+     119: getstatic     #91                 // Field _66b861:I
+     122: invokestatic  #146                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     125: aastore
+     126: invokestatic  #149                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     129: invokevirtual #114                // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+     132: pop
+     133: goto          169
+     136: aload         5
+     138: invokestatic  #138                // Method L/util/_2f4182._35b178:(Ljava/lang/String;)V
+     141: invokestatic  #140                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+     144: invokevirtual #111                // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+     147: ldc           #4                  // String Copied Your %s to clipboard
+     149: iconst_1
+     150: anewarray     #66                 // class java/lang/Object
+     153: dup
+     154: iconst_0
+     155: getstatic     #91                 // Field _66b861:I
+     158: invokestatic  #146                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     161: aastore
+     162: invokestatic  #149                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     165: invokevirtual #114                // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+     168: pop
+     169: return
+
+
+L._88f3cf._bb4487._05c0e5._bb4487
+  public void run();
+    Code:
+       0: aload_0
+       1: getfield      #40                 // Field _380868:Z
+       4: ifeq          59
+       7: aconst_null
+       8: aload_0
+       9: getfield      #39                 // Field _26067f:Ljava/nio/file/Path;
+      12: invokestatic  #60                 // Method L/util/_2f4182._cfe983:(Ljava/awt/image/BufferedImage;Ljava/nio/file/Path;)Z
+      15: istore_1
+      16: invokestatic  #61                 // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      19: invokevirtual #49                 // Method L/_cfe983._5879ed:()LL/_02d7ad/_1253fc/_1eb51c;
+      22: invokevirtual #53                 // Method L/_02d7ad/_1253fc/_1eb51c._cc3f4d:()LL/_88f3cf/_bb4487/_05c0e5/_1e73d7;
+      25: iload_1
+      26: ifeq          34
+      29: ldc           #4                  // String copiedScreenshot
+      31: goto          36
+      34: ldc           #5                  // String copyFailed
+      36: iconst_0
+      37: anewarray     #26                 // class java/lang/Object
+      40: invokevirtual #59                 // Method L/_88f3cf/_bb4487/_05c0e5/_1e73d7._21aca6:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      43: astore_2
+      44: invokestatic  #62                 // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+      47: aload_2
+      48: invokedynamic #79,  0             // InvokeDynamic #0:run:(Ljava/lang/String;)Ljava/lang/Runnable;
+      53: invokeinterface #75,  2           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$submit:(Ljava/lang/Runnable;)V
+      58: return
+      59: new           #20                 // class L/_88f3cf/_bb4487/_05c0e5/_1253fc
+      62: dup
+      63: aload_0
+      64: getfield      #39                 // Field _26067f:Ljava/nio/file/Path;
+      67: aload_0
+      68: getfield      #41                 // Field _bf0948:Ljava/lang/String;
+      71: aload_0
+      72: getfield      #44                 // Field _8ab864:Ljava/util/UUID;
+      75: aload_0
+      76: getfield      #46                 // Field _ecb2a8:Ljava/util/function/IntConsumer;
+      79: aload_0
+      80: getfield      #45                 // Field _6b7ff9:Ljava/lang/String;
+      83: aload_0
+      84: getfield      #43                 // Field _b3d295:Ljava/lang/String;
+      87: invokespecial #57                 // Method L/_88f3cf/_bb4487/_05c0e5/_1253fc."<init>":(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/UUID;Ljava/util/function/IntConsumer;Ljava/lang/String;Ljava/lang/String;)V
+      90: invokevirtual #58                 // Method L/_88f3cf/_bb4487/_05c0e5/_1253fc._2b868b:()Ljava/lang/String;
+      93: astore_1
+      94: aload_0
+      95: getfield      #42                 // Field _ecc914:Z
+      98: ifeq          154
+     101: ldc           #3                  // String Look what I am up to %F0%9F%91%80
+     103: astore_2
+     104: aload_2
+     105: ldc           #1                  // String
+     107: ldc           #2                  // String %20
+     109: invokevirtual #65                 // Method java/lang/String.replace:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+     112: astore_2
+     113: aload_1
+     114: getstatic     #47                 // Field java/nio/charset/StandardCharsets.UTF_8:Ljava/nio/charset/Charset;
+     117: invokestatic  #70                 // Method java/net/URLEncoder.encode:(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;
+     120: aload_2
+     121: invokedynamic #80,  0             // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     126: astore_3
+     127: new           #33                 // class java/net/URI
+     130: dup
+     131: aload_3
+     132: invokespecial #69                 // Method java/net/URI."<init>":(Ljava/lang/String;)V
+     135: astore        4
+     137: invokestatic  #62                 // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+     140: aload_3
+     141: aload         4
+     143: invokedynamic #81,  0             // InvokeDynamic #2:run:(Ljava/lang/String;Ljava/net/URI;)Ljava/lang/Runnable;
+     148: invokeinterface #75,  2           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$submit:(Ljava/lang/Runnable;)V
+     153: return
+     154: aload_1
+     155: getstatic     #37                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_SCREENSHOT_UPLOAD:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+     158: invokestatic  #63                 // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+     161: pop
+     162: invokestatic  #61                 // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+     165: invokevirtual #50                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+     168: getstatic     #38                 // Field L/_2f4182/_429bf0/_2ce426.INFO:LL/_2f4182/_429bf0/_2ce426;
+     171: ldc           #7                  // String screenshotOpened
+     173: iconst_0
+     174: anewarray     #26                 // class java/lang/Object
+     177: invokestatic  #52                 // Method L/_2f4182/_429bf0/_13ea87._d4ca6c:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     180: invokevirtual #51                 // Method L/_2f4182/_429bf0/_13ea87._cfe983:(LL/_2f4182/_429bf0/_2ce426;Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+     183: pop
+     184: invokestatic  #62                 // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+     187: invokedynamic #82,  0             // InvokeDynamic #3:run:()Ljava/lang/Runnable;
+     192: invokeinterface #75,  2           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$submit:(Ljava/lang/Runnable;)V
+     197: goto          223
+     200: astore_1
+     201: aload_0
+     202: getfield      #46                 // Field _ecb2a8:Ljava/util/function/IntConsumer;
+     205: ifnull        219
+     208: aload_0
+     209: getfield      #46                 // Field _ecb2a8:Ljava/util/function/IntConsumer;
+     212: bipush        100
+     214: invokeinterface #78,  2           // InterfaceMethod java/util/function/IntConsumer.accept:(I)V
+     219: aload_1
+     220: invokevirtual #64                 // Method java/lang/Exception.printStackTrace:()V
+     223: return
+    Exception table:
+       from    to  target type
+           0    58   200   Class java/lang/Exception
+          59   153   200   Class java/lang/Exception
+         154   197   200   Class java/lang/Exception
+
+
+L._21aca6._cfe983
+  public void _cfe983(com.lunarclient.websocket.tebex.v1.OpenTebexJsCheckoutPush);
+    Code:
+       0: aload_1
+       1: invokevirtual #723                // Method com/lunarclient/websocket/tebex/v1/OpenTebexJsCheckoutPush.getBasketIdent:()Ljava/lang/String;
+       4: aload_1
+       5: invokevirtual #724                // Method com/lunarclient/websocket/tebex/v1/OpenTebexJsCheckoutPush.getLocale:()Ljava/lang/String;
+       8: invokestatic  #1099               // Method L/util/_252625._5a1b50:(Ljava/lang/String;Ljava/lang/String;)V
+      11: return
+
+
+L._21aca6._cfe983
+  public void _cfe983(com.lunarclient.websocket.paynow.v1.OpenPayNowCheckoutPush);
+    Code:
+       0: aload_1
+       1: invokevirtual #679                // Method com/lunarclient/websocket/paynow/v1/OpenPayNowCheckoutPush.getCheckoutToken:()Ljava/lang/String;
+       4: invokestatic  #1098               // Method L/util/_252625._ac25f2:(Ljava/lang/String;)V
+       7: return
+
+
+com.moonsworth.lunar._d4ca6c._d4ca6c._bb4487._21aca6._590f69._cfe983
+  private void _cfe983(L._cfe983._cfe983._cfe983._145809$_cfe983, com.moonsworth.lunar._590f69._bb4487._bb4487, net.minecraft.client.gui.components.Button);
+    Code:
+       0: aload_1
+       1: invokevirtual #126                // Method L/_cfe983/_cfe983/_cfe983/_145809$_cfe983.uri:()Ljava/net/URI;
+       4: astore        4
+       6: aload         4
+       8: invokevirtual #136                // Method java/net/URI.toString:()Ljava/lang/String;
+      11: astore        5
+      13: aload_2
+      14: invokeinterface #153,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$getGameSettings:()Lcom/moonsworth/lunar/_590f69/_bb4487/_88f3cf/_cfe983;
+      19: astore        6
+      21: aload         6
+      23: invokeinterface #154,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_88f3cf/_cfe983.bridge$isChatLinks:()Z
+      28: ifeq          76
+      31: aload         6
+      33: invokeinterface #155,  1          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_88f3cf/_cfe983.bridge$isChatPromptLinks:()Z
+      38: ifeq          67
+      41: aload_2
+      42: invokestatic  #119                // Method com/moonsworth/lunar/_590f69/_21aca6._bb01a8:()Lcom/moonsworth/lunar/_590f69/_cfe983;
+      45: aload_0
+      46: checkcast     #37                 // class com/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6
+      49: aload         5
+      51: aload         4
+      53: iconst_0
+      54: invokeinterface #151,  5          // InterfaceMethod com/moonsworth/lunar/_590f69/_cfe983._cfe983:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;Ljava/lang/String;Ljava/net/URI;Z)Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_2f4182;
+      59: invokeinterface #152,  2          // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$displayScreen:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)V
+      64: goto          76
+      67: aload         5
+      69: getstatic     #81                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_UNSPECIFIED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+      72: invokestatic  #133                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+      75: pop
+      76: return
+
+
+com.moonsworth.lunar._d4ca6c._590f69._21aca6._1e73d7._21aca6._590f69._1e73d7._cfe983._21aca6
+  private static void lambda$lunar$allowChatPromptOff$0(net.minecraft.server.ServerLinks$Entry, net.minecraft.client.gui.screens.Screen, net.minecraft.client.gui.components.Button);
+    Code:
+       0: aload_0
+       1: invokevirtual #33                 // Method net/minecraft/server/ServerLinks$Entry.link:()Ljava/net/URI;
+       4: astore_3
+       5: aload_3
+       6: invokevirtual #32                 // Method java/net/URI.toString:()Ljava/lang/String;
+       9: astore        4
+      11: invokestatic  #28                 // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+      14: invokeinterface #36,  1           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$getGameSettings:()Lcom/moonsworth/lunar/_590f69/_bb4487/_88f3cf/_cfe983;
+      19: astore        5
+      21: aload         5
+      23: invokeinterface #37,  1           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_88f3cf/_cfe983.bridge$isChatLinks:()Z
+      28: ifeq          77
+      31: aload         5
+      33: invokeinterface #38,  1           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_88f3cf/_cfe983.bridge$isChatPromptLinks:()Z
+      38: ifeq          68
+      41: invokestatic  #28                 // Method L/util/_e93d3c._000b1d:()Lcom/moonsworth/lunar/_590f69/_bb4487/_bb4487;
+      44: invokestatic  #27                 // Method com/moonsworth/lunar/_590f69/_21aca6._bb01a8:()Lcom/moonsworth/lunar/_590f69/_cfe983;
+      47: aload_1
+      48: checkcast     #8                  // class com/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6
+      51: aload         4
+      53: aload_3
+      54: iconst_0
+      55: invokeinterface #34,  5           // InterfaceMethod com/moonsworth/lunar/_590f69/_cfe983._cfe983:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;Ljava/lang/String;Ljava/net/URI;Z)Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_2f4182;
+      60: invokeinterface #35,  2           // InterfaceMethod com/moonsworth/lunar/_590f69/_bb4487/_bb4487.bridge$displayScreen:(Lcom/moonsworth/lunar/_590f69/_bb4487/_21aca6/_79e7e6;)V
+      65: goto          77
+      68: aload         4
+      70: getstatic     #25                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_UNSPECIFIED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+      73: invokestatic  #29                 // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+      76: pop
+      77: return
+
+com.moonsworth.lunar._d4ca6c._590f69._21aca6._1e73d7._21aca6._590f69._88f3cf
+  public boolean lunar$mouseClicked(double, double, int);
+    Code:
+       0: iconst_0
+       1: istore        6
+       3: iconst_0
+       4: istore        7
+       6: getstatic     #182                // Field L/util/_e93d3c.MC_VERSION:I
+       9: bipush        22
+      11: if_icmplt     22
+      14: bipush        11
+      16: istore        6
+      18: bipush        20
+      20: istore        7
+      22: aload_0
+      23: getfield      #178                // Field width:I
+      26: iconst_2
+      27: idiv
+      28: sipush        200
+      31: isub
+      32: iload         6
+      34: isub
+      35: istore        8
+      37: aload_0
+      38: getfield      #156                // Field height:I
+      41: bipush        46
+      43: isub
+      44: iload         7
+      46: iadd
+      47: istore        9
+      49: iload         5
+      51: ifne          129
+      54: dload_1
+      55: iload         8
+      57: i2d
+      58: dcmpl
+      59: iflt          129
+      62: dload_1
+      63: iload         8
+      65: bipush        30
+      67: iadd
+      68: i2d
+      69: dcmpg
+      70: ifgt          129
+      73: dload_3
+      74: iload         9
+      76: i2d
+      77: dcmpl
+      78: iflt          129
+      81: dload_3
+      82: iload         9
+      84: bipush        20
+      86: iadd
+      87: i2d
+      88: dcmpg
+      89: ifgt          129
+      92: invokestatic  #282                // Method L/_2f4182/_1253fc/_bb4487._ae46f1:()V
+      95: invokestatic  #308                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      98: invokevirtual #278                // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+     101: getstatic     #179                // Field L/_2f4182/_429bf0/_2ce426.INFO:LL/_2f4182/_429bf0/_2ce426;
+     104: ldc           #28                 // String urlOpened
+     106: iconst_0
+     107: anewarray     #92                 // class java/lang/Object
+     110: invokestatic  #281                // Method L/_2f4182/_429bf0/_13ea87._d4ca6c:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     113: invokevirtual #280                // Method L/_2f4182/_429bf0/_13ea87._cfe983:(LL/_2f4182/_429bf0/_2ce426;Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+     116: pop
+     117: getstatic     #181                // Field L/util/_cb9292._1a9a5d:Ljava/lang/String;
+     120: getstatic     #149                // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator.INITIATOR_UNSPECIFIED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;
+     123: invokestatic  #310                // Method L/util/_1253fc._21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Z
+     126: pop
+     127: iconst_1
+     128: ireturn
+     129: iconst_0
+     130: ireturn
+

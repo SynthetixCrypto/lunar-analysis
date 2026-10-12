@@ -1,0 +1,2777 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/L/_88f3cf/_bb4487/_52e8ee/_1253fc.class
+  Last modified Dec 31, 1969; size 22952 bytes
+  SHA-256 checksum db398103a138c86d89205f56e44ce1011a86a73b9bf764652cca52862a7abece
+public class L._88f3cf._bb4487._52e8ee._1253fc extends L._88f3cf._cfe983
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #110                        // L/_88f3cf/_bb4487/_52e8ee/_1253fc
+  super_class: #108                       // L/_88f3cf/_cfe983
+  interfaces: 0, fields: 38, methods: 32, attributes: 3
+Constant pool:
+    #1 = Integer            -1627389952
+    #2 = Integer            1862270976
+    #3 = Float              -1.0f
+    #4 = Float              0.25f
+    #5 = Float              0.5f
+    #6 = Float              1.25f
+    #7 = Float              3.0f
+    #8 = Float              72000.0f
+    #9 = String             #565          // POTION_EFFECTS
+   #10 = String             #594          // amplifierPosition
+   #11 = String             #596          // background
+   #12 = String             #597          // backgroundColor
+   #13 = String             #598          // blinkDuration
+   #14 = String             #600          // border
+   #15 = String             #601          // borderColor
+   #16 = String             #602          // borderThickness
+   #17 = String             #606          // colorInfoBasedOnEffect
+   #18 = String             #607          // colorNameBasedOnEffect
+   #19 = String             #635          // durationPosition
+   #20 = String             #636          // effectAmplifier
+   #21 = String             #637          // effectDuration
+   #22 = String             #638          // effectName
+   #23 = String             #639          // excludeAbsorption
+   #24 = String             #640          // excludeBadLuck
+   #25 = String             #641          // excludeBadOmen
+   #26 = String             #642          // excludeBlindness
+   #27 = String             #643          // excludeBreathOfTheNautilus
+   #28 = String             #644          // excludeConduitPower
+   #29 = String             #645          // excludeDarkness
+   #30 = String             #646          // excludeDolphinsGrace
+   #31 = String             #647          // excludeFireRes
+   #32 = String             #648          // excludeGlowing
+   #33 = String             #649          // excludeHaste
+   #34 = String             #650          // excludeHealthBoost
+   #35 = String             #651          // excludeHeroOfTheVillage
+   #36 = String             #652          // excludeHunger
+   #37 = String             #653          // excludeInfested
+   #38 = String             #654          // excludeInstantDamage
+   #39 = String             #655          // excludeInstantHealth
+   #40 = String             #656          // excludeInvis
+   #41 = String             #657          // excludeJumpBoost
+   #42 = String             #658          // excludeLevitation
+   #43 = String             #659          // excludeLuck
+   #44 = String             #660          // excludeMiningFatigue
+   #45 = String             #661          // excludeNausea
+   #46 = String             #662          // excludeNightVision
+   #47 = String             #663          // excludeOozing
+   #48 = String             #664          // excludePerm
+   #49 = String             #665          // excludePoison
+   #50 = String             #666          // excludePotionEffects
+   #51 = String             #667          // excludeRaidOmen
+   #52 = String             #668          // excludeRegen
+   #53 = String             #669          // excludeResistance
+   #54 = String             #670          // excludeSaturation
+   #55 = String             #671          // excludeSlowFalling
+   #56 = String             #672          // excludeSlowness
+   #57 = String             #673          // excludeSpeed
+   #58 = String             #674          // excludeStrength
+   #59 = String             #675          // excludeTrialOmen
+   #60 = String             #676          // excludeWaterBreathing
+   #61 = String             #677          // excludeWeakness
+   #62 = String             #678          // excludeWeaving
+   #63 = String             #679          // excludeWindCharged
+   #64 = String             #680          // excludeWither
+   #65 = String             #681          // formattedDurations
+   #66 = String             #686          // hideAmbientDuration
+   #67 = String             #687          // hideModernIcons
+   #68 = String             #688          // hidePotionStatus
+   #69 = String             #689          // infoColor
+   #70 = String             #701          // minimalModeHorizontal
+   #71 = String             #702          // minimalModeTilesPerLine
+   #72 = String             #704          // potionBlink
+   #73 = String             #705          // potionBlinkIcon
+   #74 = String             #706          // potionEffectsMode
+   #75 = String             #709          // reversedText
+   #76 = String             #710          // showEffectBackground
+   #77 = String             #711          // showInInventory
+   #78 = String             #712          // showWhileTyping
+   #79 = String             #715          // textColor
+   #80 = String             #716          // textShadow
+   #81 = String             #718          // uppercasePotionNames
+   #82 = String             #721          // vanillaBlinkColor
+   #83 = String             #722          // vanillaGroupEffects
+   #84 = String             #723          // vanillaIconScale
+   #85 = String             #724          // vanillaModeHorizontal
+   #86 = String             #725          // vanillaModeTilesPerLine
+   #87 = String             #726          // vanillaTextScale
+   #88 = Class              #592          // "[LL/_ec7e36/_429bf0;"
+   #89 = Class              #608          // ML/_590f69/_02d7ad/_21aca6
+   #90 = Class              #609          // L/_2f4182/_429bf0/_cfe983
+   #91 = Class              #610          // L/_ec7e36/_79e7e6
+   #92 = Class              #611          // L/_ec7e36/_79e7e6$_cfe983
+   #93 = Class              #612          // L/_ec7e36/_429bf0
+   #94 = Class              #613          // L/_ec7e36/_429bf0$_cfe983
+   #95 = Class              #614          // L/_ec7e36/_dd3308
+   #96 = Class              #615          // L/_ec7e36/_145809
+   #97 = Class              #616          // L/_ec7e36/_145809$_cfe983
+   #98 = Class              #617          // L/_ec7e36/_bb4487/_cfe983
+   #99 = Class              #618          // L/_ec7e36/_e62626
+  #100 = Class              #619          // L/_ec7e36/_e62626$_cfe983
+  #101 = Class              #620          // L/_ec7e36/_81676d
+  #102 = Class              #621          // L/_ec7e36/_13ea87
+  #103 = Class              #622          // L/_ec7e36/_590f69/_1e73d7/_590f69
+  #104 = Class              #623          // L/_ec7e36/_590f69/_21aca6/_21aca6
+  #105 = Class              #624          // L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983
+  #106 = Class              #625          // L/_ec7e36/_1eb51c
+  #107 = Class              #626          // L/_ec7e36/_1eb51c$_cfe983
+  #108 = Class              #627          // L/_88f3cf/_cfe983
+  #109 = Class              #628          // L/_88f3cf/_02d7ad
+  #110 = Class              #629          // L/_88f3cf/_bb4487/_52e8ee/_1253fc
+  #111 = Class              #630          // L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983
+  #112 = Class              #631          // L/_88f3cf/_bb4487/_52e8ee/_1e73d7
+  #113 = Class              #632          // L/_88f3cf/_590f69/_1253fc
+  #114 = Class              #633          // L/util/_e93d3c
+  #115 = Class              #690          // it/unimi/dsi/fastutil/ints/Int2ObjectArrayMap
+  #116 = Class              #691          // it/unimi/dsi/fastutil/ints/Int2ObjectMap
+  #117 = Class              #692          // it/unimi/dsi/fastutil/objects/ObjectCollection
+  #118 = Class              #693          // java/lang/Boolean
+  #119 = Class              #694          // java/lang/invoke/LambdaMetafactory
+  #120 = Class              #695          // java/lang/invoke/MethodHandles
+  #121 = Class              #696          // java/lang/invoke/MethodHandles$Lookup
+  #122 = Class              #697          // java/util/Comparator
+  #123 = Class              #698          // java/util/Objects
+  #124 = Class              #699          // java/util/stream/Stream
+  #125 = Fieldref           #90.#299      // L/_2f4182/_429bf0/_cfe983.BOTTOM_LEFT:LL/_2f4182/_429bf0/_cfe983;
+  #126 = Fieldref           #90.#391      // L/_2f4182/_429bf0/_cfe983.TOP_RIGHT:LL/_2f4182/_429bf0/_cfe983;
+  #127 = Fieldref           #98.#321      // L/_ec7e36/_bb4487/_cfe983.GENERAL:LL/_ec7e36/_bb4487/_cfe983;
+  #128 = Fieldref           #98.#338      // L/_ec7e36/_bb4487/_cfe983.HUD:LL/_ec7e36/_bb4487/_cfe983;
+  #129 = Fieldref           #109.#380     // L/_88f3cf/_02d7ad._f845fa:LL/_55938e/_e62626;
+  #130 = Fieldref           #110.#300     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._e5d011:LL/_ec7e36/_429bf0;
+  #131 = Fieldref           #110.#302     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._916318:LL/_ec7e36/_429bf0;
+  #132 = Fieldref           #110.#304     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._514488:LL/_ec7e36/_429bf0;
+  #133 = Fieldref           #110.#306     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._e78041:LL/_ec7e36/_429bf0;
+  #134 = Fieldref           #110.#311     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._07749d:LL/_ec7e36/_145809;
+  #135 = Fieldref           #110.#319     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._4c3b4e:LL/_ec7e36/_e62626;
+  #136 = Fieldref           #110.#328     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._1ebed4:LL/_ec7e36/_429bf0;
+  #137 = Fieldref           #110.#329     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._060f82:LL/_ec7e36/_145809;
+  #138 = Fieldref           #110.#331     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._e2285d:LL/_ec7e36/_79e7e6;
+  #139 = Fieldref           #110.#333     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._d9df8f:LL/_ec7e36/_145809;
+  #140 = Fieldref           #110.#335     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._d12106:LL/_ec7e36/_429bf0;
+  #141 = Fieldref           #110.#336     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._8d09ad:LL/_ec7e36/_429bf0;
+  #142 = Fieldref           #110.#339     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._17bfe6:LL/_ec7e36/_79e7e6;
+  #143 = Fieldref           #110.#340     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._1562a9:LL/_ec7e36/_429bf0;
+  #144 = Fieldref           #110.#341     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._0c1885:LL/_ec7e36/_1eb51c;
+  #145 = Fieldref           #110.#343     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._312b69:LL/_ec7e36/_429bf0;
+  #146 = Fieldref           #110.#344     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._0c96ed:LL/_ec7e36/_e62626;
+  #147 = Fieldref           #110.#345     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._0a63cf:LL/_ec7e36/_e62626;
+  #148 = Fieldref           #110.#346     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._c33fa3:LL/_ec7e36/_429bf0;
+  #149 = Fieldref           #110.#347     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._540e72:LL/_ec7e36/_429bf0;
+  #150 = Fieldref           #110.#348     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._030021:LL/_ec7e36/_e62626;
+  #151 = Fieldref           #110.#355     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._1242a7:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+  #152 = Fieldref           #110.#362     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._54dcad:LL/_ec7e36/_1eb51c;
+  #153 = Fieldref           #110.#363     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._8cfec5:LL/_ec7e36/_e62626;
+  #154 = Fieldref           #110.#367     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._975761:LL/_ec7e36/_429bf0;
+  #155 = Fieldref           #110.#368     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._2f9a8f:LL/_ec7e36/_429bf0;
+  #156 = Fieldref           #110.#369     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._9729f3:LL/_ec7e36/_429bf0;
+  #157 = Fieldref           #110.#371     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._9060d5:LL/_ec7e36/_429bf0;
+  #158 = Fieldref           #110.#372     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._a41f49:LL/_ec7e36/_429bf0;
+  #159 = Fieldref           #110.#377     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._3c068e:LL/_ec7e36/_79e7e6;
+  #160 = Fieldref           #110.#378     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._89b51f:LL/_ec7e36/_429bf0;
+  #161 = Fieldref           #110.#379     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._8b382c:LL/_ec7e36/_429bf0;
+  #162 = Fieldref           #110.#381     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._ffb786:LL/_ec7e36/_429bf0;
+  #163 = Fieldref           #110.#383     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._6f4c1f:LL/_ec7e36/_429bf0;
+  #164 = Fieldref           #110.#385     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._ab54a7:LL/_ec7e36/_429bf0;
+  #165 = Fieldref           #110.#387     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._9f4c22:LL/_ec7e36/_429bf0;
+  #166 = Fieldref           #110.#389     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._a67dd3:LL/_ec7e36/_1eb51c;
+  #167 = Fieldref           #110.#390     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._73d4e4:LL/_ec7e36/_429bf0;
+  #168 = Fieldref           #111.#352     // L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.MINIMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+  #169 = Fieldref           #111.#353     // L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.NORMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+  #170 = Fieldref           #111.#392     // L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+  #171 = Fieldref           #114.#351     // L/util/_e93d3c.MC_VERSION:I
+  #172 = Methodref          #92.#301      // L/_ec7e36/_79e7e6$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+  #173 = Methodref          #92.#309      // L/_ec7e36/_79e7e6$_cfe983._b03e9c:(II)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+  #174 = Methodref          #92.#337      // L/_ec7e36/_79e7e6$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+  #175 = Methodref          #93.#401      // L/_ec7e36/_429bf0.get:()Ljava/lang/Object;
+  #176 = Methodref          #94.#301      // L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+  #177 = Methodref          #94.#365      // L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+  #178 = Methodref          #97.#301      // L/_ec7e36/_145809$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+  #179 = Methodref          #97.#349      // L/_ec7e36/_145809$_cfe983._767dc1:(FF)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+  #180 = Methodref          #97.#366      // L/_ec7e36/_145809$_cfe983._79534d:(F)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+  #181 = Methodref          #100.#301     // L/_ec7e36/_e62626$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+  #182 = Methodref          #100.#337     // L/_ec7e36/_e62626$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+  #183 = Methodref          #102.#401     // L/_ec7e36/_13ea87.get:()Ljava/lang/Object;
+  #184 = Methodref          #104.#308     // L/_ec7e36/_590f69/_21aca6/_21aca6._429bf0:(Ljava/lang/String;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #185 = Methodref          #104.#314     // L/_ec7e36/_590f69/_21aca6/_21aca6._cfe983:(LL/_ec7e36/_bb4487/_cfe983;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #186 = Methodref          #104.#360     // L/_ec7e36/_590f69/_21aca6/_21aca6._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #187 = Methodref          #105.#313     // L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #188 = Methodref          #105.#356     // L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._5335d8:()LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #189 = Methodref          #105.#360     // L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #190 = Methodref          #106.#401     // L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+  #191 = Methodref          #107.#301     // L/_ec7e36/_1eb51c$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+  #192 = Methodref          #108.#298     // L/_88f3cf/_cfe983."<init>":(Z)V
+  #193 = Methodref          #110.#303     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._917ee6:()Z
+  #194 = Methodref          #110.#305     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._96c520:()Z
+  #195 = Methodref          #110.#307     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._95ef00:()Z
+  #196 = Methodref          #110.#310     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._d7782f:()Z
+  #197 = Methodref          #110.#312     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._87c409:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #198 = Methodref          #110.#315     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._cfe983:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #199 = Methodref          #110.#316     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+  #200 = Methodref          #110.#317     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._4ba30b:()Z
+  #201 = Methodref          #110.#318     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._e264f2:(I)[LL/_ec7e36/_429bf0;
+  #202 = Methodref          #110.#323     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._7fbb1e:(LL/_55938e/_e62626;)Ljava/lang/Object;
+  #203 = Methodref          #110.#325     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._2f4182:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #204 = Methodref          #110.#327     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._1913f5:()Z
+  #205 = Methodref          #110.#332     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._a251f7:()Z
+  #206 = Methodref          #110.#334     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._c4a4b9:()Z
+  #207 = Methodref          #110.#342     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._422002:()Z
+  #208 = Methodref          #110.#350     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._6b676a:()Z
+  #209 = Methodref          #110.#354     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._e62626:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #210 = Methodref          #110.#358     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._2110a8:()Z
+  #211 = Methodref          #110.#361     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._2ce426:(LML/_590f69/_02d7ad/_21aca6;)Z
+  #212 = Methodref          #110.#364     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._14034a:()Z
+  #213 = Methodref          #110.#370     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._19bfb5:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #214 = Methodref          #110.#373     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._4cad4f:()Z
+  #215 = Methodref          #110.#374     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._d4ca6c:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #216 = Methodref          #110.#375     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._137221:()Z
+  #217 = Methodref          #110.#376     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._ae095f:()Z
+  #218 = Methodref          #110.#382     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._590f69:(ILjava/lang/String;)V
+  #219 = Methodref          #110.#384     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._b39dda:()Z
+  #220 = Methodref          #110.#386     // L/_88f3cf/_bb4487/_52e8ee/_1253fc._0b03da:()[LL/_ec7e36/_429bf0;
+  #221 = Methodref          #112.#297     // L/_88f3cf/_bb4487/_52e8ee/_1e73d7."<init>":(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)V
+  #222 = Methodref          #115.#296     // it/unimi/dsi/fastutil/ints/Int2ObjectArrayMap."<init>":()V
+  #223 = Methodref          #118.#396     // java/lang/Boolean.booleanValue:()Z
+  #224 = Methodref          #119.#406     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #225 = Methodref          #123.#408     // java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+  #226 = InterfaceMethodref #89.#397      // ML/_590f69/_02d7ad/_21aca6.bridge$getDuration:()F
+  #227 = InterfaceMethodref #89.#398      // ML/_590f69/_02d7ad/_21aca6.bridge$getIsPotionDurationMax:()Z
+  #228 = InterfaceMethodref #89.#399      // ML/_590f69/_02d7ad/_21aca6.bridge$getPotionID:()I
+  #229 = InterfaceMethodref #95.#405      // L/_ec7e36/_dd3308.getName:()Ljava/lang/String;
+  #230 = InterfaceMethodref #101.#320     // L/_ec7e36/_81676d._0c5789:(Ljava/lang/String;)LL/_ec7e36/_79e7e6$_cfe983;
+  #231 = InterfaceMethodref #101.#322     // L/_ec7e36/_81676d._de72af:(Ljava/lang/String;)LL/_ec7e36/_145809$_cfe983;
+  #232 = InterfaceMethodref #101.#330     // L/_ec7e36/_81676d._14fd06:(Ljava/lang/String;)LL/_ec7e36/_e62626$_cfe983;
+  #233 = InterfaceMethodref #101.#357     // L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+  #234 = InterfaceMethodref #101.#388     // L/_ec7e36/_81676d._21aca6:(Ljava/lang/String;Ljava/lang/Enum;)LL/_ec7e36/_1eb51c$_cfe983;
+  #235 = InterfaceMethodref #103.#324     // L/_ec7e36/_590f69/_1e73d7/_590f69._83cb4e:(I)Ljava/lang/Object;
+  #236 = InterfaceMethodref #103.#326     // L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+  #237 = InterfaceMethodref #113.#359     // L/_88f3cf/_590f69/_1253fc._64c5e4:()LL/_ec7e36/_145809;
+  #238 = InterfaceMethodref #116.#402     // it/unimi/dsi/fastutil/ints/Int2ObjectMap.get:(I)Ljava/lang/Object;
+  #239 = InterfaceMethodref #116.#407     // it/unimi/dsi/fastutil/ints/Int2ObjectMap.put:(ILjava/lang/Object;)Ljava/lang/Object;
+  #240 = InterfaceMethodref #116.#412     // it/unimi/dsi/fastutil/ints/Int2ObjectMap.values:()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+  #241 = InterfaceMethodref #117.#410     // it/unimi/dsi/fastutil/objects/ObjectCollection.stream:()Ljava/util/stream/Stream;
+  #242 = InterfaceMethodref #122.#400     // java/util/Comparator.comparing:(Ljava/util/function/Function;)Ljava/util/Comparator;
+  #243 = InterfaceMethodref #124.#409     // java/util/stream/Stream.sorted:(Ljava/util/Comparator;)Ljava/util/stream/Stream;
+  #244 = InterfaceMethodref #124.#411     // java/util/stream/Stream.toArray:(Ljava/util/function/IntFunction;)[Ljava/lang/Object;
+  #245 = InvokeDynamic      #0:#393       // #0:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+  #246 = InvokeDynamic      #1:#393       // #1:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+  #247 = InvokeDynamic      #2:#393       // #2:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+  #248 = InvokeDynamic      #3:#394       // #3:apply:()Ljava/util/function/Function;
+  #249 = InvokeDynamic      #4:#395       // #4:apply:()Ljava/util/function/IntFunction;
+  #250 = InvokeDynamic      #5:#404       // #5:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #251 = InvokeDynamic      #6:#393       // #6:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+  #252 = InvokeDynamic      #7:#393       // #7:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+  #253 = InvokeDynamic      #8:#404       // #8:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #254 = InvokeDynamic      #9:#404       // #9:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #255 = InvokeDynamic      #10:#404      // #10:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #256 = InvokeDynamic      #11:#403      // #11:getAsBoolean:(LL/_ec7e36/_429bf0;)Ljava/util/function/BooleanSupplier;
+  #257 = InvokeDynamic      #12:#404      // #12:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #258 = InvokeDynamic      #13:#404      // #13:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #259 = InvokeDynamic      #14:#404      // #14:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #260 = InvokeDynamic      #15:#404      // #15:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #261 = InvokeDynamic      #16:#404      // #16:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #262 = InvokeDynamic      #17:#404      // #17:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #263 = InvokeDynamic      #18:#404      // #18:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #264 = InvokeDynamic      #19:#404      // #19:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #265 = InvokeDynamic      #20:#393      // #20:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+  #266 = InvokeDynamic      #21:#404      // #21:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #267 = InvokeDynamic      #22:#404      // #22:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #268 = InvokeDynamic      #23:#404      // #23:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #269 = InvokeDynamic      #24:#404      // #24:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #270 = MethodHandle       5:#183        // REF_invokeVirtual L/_ec7e36/_13ea87.get:()Ljava/lang/Object;
+  #271 = MethodHandle       5:#193        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._917ee6:()Z
+  #272 = MethodHandle       5:#194        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._96c520:()Z
+  #273 = MethodHandle       5:#195        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._95ef00:()Z
+  #274 = MethodHandle       5:#196        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._d7782f:()Z
+  #275 = MethodHandle       5:#197        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._87c409:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #276 = MethodHandle       5:#198        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._cfe983:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #277 = MethodHandle       5:#200        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._4ba30b:()Z
+  #278 = MethodHandle       5:#203        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._2f4182:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #279 = MethodHandle       5:#204        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._1913f5:()Z
+  #280 = MethodHandle       5:#205        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._a251f7:()Z
+  #281 = MethodHandle       5:#206        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._c4a4b9:()Z
+  #282 = MethodHandle       5:#207        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._422002:()Z
+  #283 = MethodHandle       5:#208        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._6b676a:()Z
+  #284 = MethodHandle       5:#209        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._e62626:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #285 = MethodHandle       5:#210        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._2110a8:()Z
+  #286 = MethodHandle       5:#212        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._14034a:()Z
+  #287 = MethodHandle       5:#213        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._19bfb5:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #288 = MethodHandle       5:#214        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._4cad4f:()Z
+  #289 = MethodHandle       5:#215        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._d4ca6c:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #290 = MethodHandle       5:#216        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._137221:()Z
+  #291 = MethodHandle       5:#217        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._ae095f:()Z
+  #292 = MethodHandle       5:#219        // REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._b39dda:()Z
+  #293 = MethodHandle       6:#201        // REF_invokeStatic L/_88f3cf/_bb4487/_52e8ee/_1253fc._e264f2:(I)[LL/_ec7e36/_429bf0;
+  #294 = MethodHandle       6:#224        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #295 = MethodHandle       9:#229        // REF_invokeInterface L/_ec7e36/_dd3308.getName:()Ljava/lang/String;
+  #296 = NameAndType        #471:#432     // "<init>":()V
+  #297 = NameAndType        #471:#454     // "<init>":(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)V
+  #298 = NameAndType        #471:#469     // "<init>":(Z)V
+  #299 = NameAndType        #472:#525     // BOTTOM_LEFT:LL/_2f4182/_429bf0/_cfe983;
+  #300 = NameAndType        #474:#527     // _e5d011:LL/_ec7e36/_429bf0;
+  #301 = NameAndType        #475:#423     // _da2d70:()LL/_ec7e36/_dd3308;
+  #302 = NameAndType        #476:#527     // _916318:LL/_ec7e36/_429bf0;
+  #303 = NameAndType        #477:#433     // _917ee6:()Z
+  #304 = NameAndType        #478:#527     // _514488:LL/_ec7e36/_429bf0;
+  #305 = NameAndType        #479:#433     // _96c520:()Z
+  #306 = NameAndType        #480:#527     // _e78041:LL/_ec7e36/_429bf0;
+  #307 = NameAndType        #481:#433     // _95ef00:()Z
+  #308 = NameAndType        #482:#462     // _429bf0:(Ljava/lang/String;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #309 = NameAndType        #483:#440     // _b03e9c:(II)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+  #310 = NameAndType        #484:#433     // _d7782f:()Z
+  #311 = NameAndType        #485:#528     // _07749d:LL/_ec7e36/_145809;
+  #312 = NameAndType        #486:#448     // _87c409:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #313 = NameAndType        #487:#446     // _cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #314 = NameAndType        #487:#447     // _cfe983:(LL/_ec7e36/_bb4487/_cfe983;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #315 = NameAndType        #487:#448     // _cfe983:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #316 = NameAndType        #487:#451     // _cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+  #317 = NameAndType        #488:#433     // _4ba30b:()Z
+  #318 = NameAndType        #489:#439     // _e264f2:(I)[LL/_ec7e36/_429bf0;
+  #319 = NameAndType        #490:#530     // _4c3b4e:LL/_ec7e36/_e62626;
+  #320 = NameAndType        #491:#457     // _0c5789:(Ljava/lang/String;)LL/_ec7e36/_79e7e6$_cfe983;
+  #321 = NameAndType        #493:#529     // GENERAL:LL/_ec7e36/_bb4487/_cfe983;
+  #322 = NameAndType        #494:#459     // _de72af:(Ljava/lang/String;)LL/_ec7e36/_145809$_cfe983;
+  #323 = NameAndType        #495:#450     // _7fbb1e:(LL/_55938e/_e62626;)Ljava/lang/Object;
+  #324 = NameAndType        #496:#438     // _83cb4e:(I)Ljava/lang/Object;
+  #325 = NameAndType        #497:#448     // _2f4182:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #326 = NameAndType        #497:#465     // _2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+  #327 = NameAndType        #498:#433     // _1913f5:()Z
+  #328 = NameAndType        #499:#527     // _1ebed4:LL/_ec7e36/_429bf0;
+  #329 = NameAndType        #500:#528     // _060f82:LL/_ec7e36/_145809;
+  #330 = NameAndType        #501:#460     // _14fd06:(Ljava/lang/String;)LL/_ec7e36/_e62626$_cfe983;
+  #331 = NameAndType        #502:#526     // _e2285d:LL/_ec7e36/_79e7e6;
+  #332 = NameAndType        #503:#433     // _a251f7:()Z
+  #333 = NameAndType        #504:#528     // _d9df8f:LL/_ec7e36/_145809;
+  #334 = NameAndType        #505:#433     // _c4a4b9:()Z
+  #335 = NameAndType        #506:#527     // _d12106:LL/_ec7e36/_429bf0;
+  #336 = NameAndType        #507:#527     // _8d09ad:LL/_ec7e36/_429bf0;
+  #337 = NameAndType        #508:#437     // _605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+  #338 = NameAndType        #509:#529     // HUD:LL/_ec7e36/_bb4487/_cfe983;
+  #339 = NameAndType        #511:#526     // _17bfe6:LL/_ec7e36/_79e7e6;
+  #340 = NameAndType        #512:#527     // _1562a9:LL/_ec7e36/_429bf0;
+  #341 = NameAndType        #513:#531     // _0c1885:LL/_ec7e36/_1eb51c;
+  #342 = NameAndType        #515:#433     // _422002:()Z
+  #343 = NameAndType        #516:#527     // _312b69:LL/_ec7e36/_429bf0;
+  #344 = NameAndType        #517:#530     // _0c96ed:LL/_ec7e36/_e62626;
+  #345 = NameAndType        #518:#530     // _0a63cf:LL/_ec7e36/_e62626;
+  #346 = NameAndType        #519:#527     // _c33fa3:LL/_ec7e36/_429bf0;
+  #347 = NameAndType        #520:#527     // _540e72:LL/_ec7e36/_429bf0;
+  #348 = NameAndType        #521:#530     // _030021:LL/_ec7e36/_e62626;
+  #349 = NameAndType        #522:#436     // _767dc1:(FF)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+  #350 = NameAndType        #523:#433     // _6b676a:()Z
+  #351 = NameAndType        #542:#510     // MC_VERSION:I
+  #352 = NameAndType        #543:#535     // MINIMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+  #353 = NameAndType        #544:#535     // NORMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+  #354 = NameAndType        #546:#448     // _e62626:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #355 = NameAndType        #547:#537     // _1242a7:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+  #356 = NameAndType        #548:#425     // _5335d8:()LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #357 = NameAndType        #549:#458     // _6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+  #358 = NameAndType        #550:#433     // _2110a8:()Z
+  #359 = NameAndType        #551:#424     // _64c5e4:()LL/_ec7e36/_145809;
+  #360 = NameAndType        #552:#470     // _1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #361 = NameAndType        #553:#443     // _2ce426:(LML/_590f69/_02d7ad/_21aca6;)Z
+  #362 = NameAndType        #554:#531     // _54dcad:LL/_ec7e36/_1eb51c;
+  #363 = NameAndType        #555:#530     // _8cfec5:LL/_ec7e36/_e62626;
+  #364 = NameAndType        #557:#433     // _14034a:()Z
+  #365 = NameAndType        #558:#468     // _cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+  #366 = NameAndType        #559:#435     // _79534d:(F)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+  #367 = NameAndType        #560:#527     // _975761:LL/_ec7e36/_429bf0;
+  #368 = NameAndType        #562:#527     // _2f9a8f:LL/_ec7e36/_429bf0;
+  #369 = NameAndType        #563:#527     // _9729f3:LL/_ec7e36/_429bf0;
+  #370 = NameAndType        #564:#448     // _19bfb5:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #371 = NameAndType        #566:#527     // _9060d5:LL/_ec7e36/_429bf0;
+  #372 = NameAndType        #567:#527     // _a41f49:LL/_ec7e36/_429bf0;
+  #373 = NameAndType        #568:#433     // _4cad4f:()Z
+  #374 = NameAndType        #569:#448     // _d4ca6c:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #375 = NameAndType        #570:#433     // _137221:()Z
+  #376 = NameAndType        #571:#433     // _ae095f:()Z
+  #377 = NameAndType        #572:#526     // _3c068e:LL/_ec7e36/_79e7e6;
+  #378 = NameAndType        #573:#527     // _89b51f:LL/_ec7e36/_429bf0;
+  #379 = NameAndType        #574:#527     // _8b382c:LL/_ec7e36/_429bf0;
+  #380 = NameAndType        #575:#534     // _f845fa:LL/_55938e/_e62626;
+  #381 = NameAndType        #576:#527     // _ffb786:LL/_ec7e36/_429bf0;
+  #382 = NameAndType        #577:#442     // _590f69:(ILjava/lang/String;)V
+  #383 = NameAndType        #578:#527     // _6f4c1f:LL/_ec7e36/_429bf0;
+  #384 = NameAndType        #579:#433     // _b39dda:()Z
+  #385 = NameAndType        #580:#527     // _ab54a7:LL/_ec7e36/_429bf0;
+  #386 = NameAndType        #581:#434     // _0b03da:()[LL/_ec7e36/_429bf0;
+  #387 = NameAndType        #582:#527     // _9f4c22:LL/_ec7e36/_429bf0;
+  #388 = NameAndType        #583:#461     // _21aca6:(Ljava/lang/String;Ljava/lang/Enum;)LL/_ec7e36/_1eb51c$_cfe983;
+  #389 = NameAndType        #584:#531     // _a67dd3:LL/_ec7e36/_1eb51c;
+  #390 = NameAndType        #585:#527     // _73d4e4:LL/_ec7e36/_429bf0;
+  #391 = NameAndType        #590:#525     // TOP_RIGHT:LL/_2f4182/_429bf0/_cfe983;
+  #392 = NameAndType        #591:#535     // VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+  #393 = NameAndType        #593:#453     // accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+  #394 = NameAndType        #595:#429     // apply:()Ljava/util/function/Function;
+  #395 = NameAndType        #595:#430     // apply:()Ljava/util/function/IntFunction;
+  #396 = NameAndType        #599:#433     // booleanValue:()Z
+  #397 = NameAndType        #603:#420     // bridge$getDuration:()F
+  #398 = NameAndType        #604:#433     // bridge$getIsPotionDurationMax:()Z
+  #399 = NameAndType        #605:#421     // bridge$getPotionID:()I
+  #400 = NameAndType        #634:#466     // comparing:(Ljava/util/function/Function;)Ljava/util/Comparator;
+  #401 = NameAndType        #682:#427     // get:()Ljava/lang/Object;
+  #402 = NameAndType        #682:#438     // get:(I)Ljava/lang/Object;
+  #403 = NameAndType        #683:#445     // getAsBoolean:(LL/_ec7e36/_429bf0;)Ljava/util/function/BooleanSupplier;
+  #404 = NameAndType        #683:#452     // getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #405 = NameAndType        #685:#428     // getName:()Ljava/lang/String;
+  #406 = NameAndType        #700:#463     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #407 = NameAndType        #707:#441     // put:(ILjava/lang/Object;)Ljava/lang/Object;
+  #408 = NameAndType        #708:#455     // requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+  #409 = NameAndType        #713:#464     // sorted:(Ljava/util/Comparator;)Ljava/util/stream/Stream;
+  #410 = NameAndType        #714:#431     // stream:()Ljava/util/stream/Stream;
+  #411 = NameAndType        #717:#467     // toArray:(Ljava/util/function/IntFunction;)[Ljava/lang/Object;
+  #412 = NameAndType        #720:#426     // values:()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+  #413 = MethodType         #433          //  ()Z
+  #414 = MethodType         #438          //  (I)Ljava/lang/Object;
+  #415 = MethodType         #439          //  (I)[LL/_ec7e36/_429bf0;
+  #416 = MethodType         #444          //  (LL/_ec7e36/_429bf0;)Ljava/lang/String;
+  #417 = MethodType         #448          //  (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #418 = MethodType         #455          //  (Ljava/lang/Object;)Ljava/lang/Object;
+  #419 = MethodType         #456          //  (Ljava/lang/Object;)V
+  #420 = Utf8               ()F
+  #421 = Utf8               ()I
+  #422 = Utf8               ()LL/_ec7e36/_429bf0;
+  #423 = Utf8               ()LL/_ec7e36/_dd3308;
+  #424 = Utf8               ()LL/_ec7e36/_145809;
+  #425 = Utf8               ()LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #426 = Utf8               ()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+  #427 = Utf8               ()Ljava/lang/Object;
+  #428 = Utf8               ()Ljava/lang/String;
+  #429 = Utf8               ()Ljava/util/function/Function;
+  #430 = Utf8               ()Ljava/util/function/IntFunction;
+  #431 = Utf8               ()Ljava/util/stream/Stream;
+  #432 = Utf8               ()V
+  #433 = Utf8               ()Z
+  #434 = Utf8               ()[LL/_ec7e36/_429bf0;
+  #435 = Utf8               (F)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+  #436 = Utf8               (FF)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+  #437 = Utf8               (I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+  #438 = Utf8               (I)Ljava/lang/Object;
+  #439 = Utf8               (I)[LL/_ec7e36/_429bf0;
+  #440 = Utf8               (II)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+  #441 = Utf8               (ILjava/lang/Object;)Ljava/lang/Object;
+  #442 = Utf8               (ILjava/lang/String;)V
+  #443 = Utf8               (LML/_590f69/_02d7ad/_21aca6;)Z
+  #444 = Utf8               (LL/_ec7e36/_429bf0;)Ljava/lang/String;
+  #445 = Utf8               (LL/_ec7e36/_429bf0;)Ljava/util/function/BooleanSupplier;
+  #446 = Utf8               (LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #447 = Utf8               (LL/_ec7e36/_bb4487/_cfe983;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #448 = Utf8               (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  #449 = Utf8               (LL/_ec7e36/_590f69/_21aca6/_21aca6;)V
+  #450 = Utf8               (LL/_55938e/_e62626;)Ljava/lang/Object;
+  #451 = Utf8               (LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+  #452 = Utf8               (LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+  #453 = Utf8               (LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+  #454 = Utf8               (LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)V
+  #455 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #456 = Utf8               (Ljava/lang/Object;)V
+  #457 = Utf8               (Ljava/lang/String;)LL/_ec7e36/_79e7e6$_cfe983;
+  #458 = Utf8               (Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+  #459 = Utf8               (Ljava/lang/String;)LL/_ec7e36/_145809$_cfe983;
+  #460 = Utf8               (Ljava/lang/String;)LL/_ec7e36/_e62626$_cfe983;
+  #461 = Utf8               (Ljava/lang/String;Ljava/lang/Enum;)LL/_ec7e36/_1eb51c$_cfe983;
+  #462 = Utf8               (Ljava/lang/String;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #463 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #464 = Utf8               (Ljava/util/Comparator;)Ljava/util/stream/Stream;
+  #465 = Utf8               (Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+  #466 = Utf8               (Ljava/util/function/Function;)Ljava/util/Comparator;
+  #467 = Utf8               (Ljava/util/function/IntFunction;)[Ljava/lang/Object;
+  #468 = Utf8               (Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+  #469 = Utf8               (Z)V
+  #470 = Utf8               ([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+  #471 = Utf8               <init>
+  #472 = Utf8               BOTTOM_LEFT
+  #473 = Utf8               BootstrapMethods
+  #474 = Utf8               _e5d011
+  #475 = Utf8               _da2d70
+  #476 = Utf8               _916318
+  #477 = Utf8               _917ee6
+  #478 = Utf8               _514488
+  #479 = Utf8               _96c520
+  #480 = Utf8               _e78041
+  #481 = Utf8               _95ef00
+  #482 = Utf8               _429bf0
+  #483 = Utf8               _b03e9c
+  #484 = Utf8               _d7782f
+  #485 = Utf8               _07749d
+  #486 = Utf8               _87c409
+  #487 = Utf8               _cfe983
+  #488 = Utf8               _4ba30b
+  #489 = Utf8               _e264f2
+  #490 = Utf8               _4c3b4e
+  #491 = Utf8               _0c5789
+  #492 = Utf8               Code
+  #493 = Utf8               GENERAL
+  #494 = Utf8               _de72af
+  #495 = Utf8               _7fbb1e
+  #496 = Utf8               _83cb4e
+  #497 = Utf8               _2f4182
+  #498 = Utf8               _1913f5
+  #499 = Utf8               _1ebed4
+  #500 = Utf8               _060f82
+  #501 = Utf8               _14fd06
+  #502 = Utf8               _e2285d
+  #503 = Utf8               _a251f7
+  #504 = Utf8               _d9df8f
+  #505 = Utf8               _c4a4b9
+  #506 = Utf8               _d12106
+  #507 = Utf8               _8d09ad
+  #508 = Utf8               _605b3c
+  #509 = Utf8               HUD
+  #510 = Utf8               I
+  #511 = Utf8               _17bfe6
+  #512 = Utf8               _1562a9
+  #513 = Utf8               _0c1885
+  #514 = Utf8               _becedc
+  #515 = Utf8               _422002
+  #516 = Utf8               _312b69
+  #517 = Utf8               _0c96ed
+  #518 = Utf8               _0a63cf
+  #519 = Utf8               _c33fa3
+  #520 = Utf8               _540e72
+  #521 = Utf8               _030021
+  #522 = Utf8               _767dc1
+  #523 = Utf8               _6b676a
+  #524 = Utf8               InnerClasses
+  #525 = Utf8               LL/_2f4182/_429bf0/_cfe983;
+  #526 = Utf8               LL/_ec7e36/_79e7e6;
+  #527 = Utf8               LL/_ec7e36/_429bf0;
+  #528 = Utf8               LL/_ec7e36/_145809;
+  #529 = Utf8               LL/_ec7e36/_bb4487/_cfe983;
+  #530 = Utf8               LL/_ec7e36/_e62626;
+  #531 = Utf8               LL/_ec7e36/_1eb51c;
+  #532 = Utf8               LL/_ec7e36/_1eb51c<LL/_2f4182/_429bf0/_cfe983;>;
+  #533 = Utf8               LL/_ec7e36/_1eb51c<LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;>;
+  #534 = Utf8               LL/_55938e/_e62626;
+  #535 = Utf8               LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+  #536 = Utf8               LineNumberTable
+  #537 = Utf8               Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+  #538 = Utf8               Lit/unimi/dsi/fastutil/ints/Int2ObjectMap<LL/_ec7e36/_429bf0;>;
+  #539 = Utf8               Llombok/Generated;
+  #540 = Utf8               Lookup
+  #541 = Utf8               Lorg/intellij/lang/annotations/Subst;
+  #542 = Utf8               MC_VERSION
+  #543 = Utf8               MINIMAL
+  #544 = Utf8               NORMAL
+  #545 = Utf8               NestMembers
+  #546 = Utf8               _e62626
+  #547 = Utf8               _1242a7
+  #548 = Utf8               _5335d8
+  #549 = Utf8               _6e312f
+  #550 = Utf8               _2110a8
+  #551 = Utf8               _64c5e4
+  #552 = Utf8               _1e73d7
+  #553 = Utf8               _2ce426
+  #554 = Utf8               _54dcad
+  #555 = Utf8               _8cfec5
+  #556 = Utf8               _0d4174
+  #557 = Utf8               _14034a
+  #558 = Utf8               _cbba58
+  #559 = Utf8               _79534d
+  #560 = Utf8               _975761
+  #561 = Utf8               _13ea87
+  #562 = Utf8               _2f9a8f
+  #563 = Utf8               _9729f3
+  #564 = Utf8               _19bfb5
+  #565 = Utf8               POTION_EFFECTS
+  #566 = Utf8               _9060d5
+  #567 = Utf8               _a41f49
+  #568 = Utf8               _4cad4f
+  #569 = Utf8               _d4ca6c
+  #570 = Utf8               _137221
+  #571 = Utf8               _ae095f
+  #572 = Utf8               _3c068e
+  #573 = Utf8               _89b51f
+  #574 = Utf8               _8b382c
+  #575 = Utf8               _f845fa
+  #576 = Utf8               _ffb786
+  #577 = Utf8               _590f69
+  #578 = Utf8               _6f4c1f
+  #579 = Utf8               _b39dda
+  #580 = Utf8               _ab54a7
+  #581 = Utf8               _0b03da
+  #582 = Utf8               _9f4c22
+  #583 = Utf8               _21aca6
+  #584 = Utf8               _a67dd3
+  #585 = Utf8               _73d4e4
+  #586 = Utf8               RuntimeInvisibleAnnotations
+  #587 = Utf8               RuntimeInvisibleParameterAnnotations
+  #588 = Utf8               Signature
+  #589 = Utf8               StackMapTable
+  #590 = Utf8               TOP_RIGHT
+  #591 = Utf8               VANILLA
+  #592 = Utf8               [LL/_ec7e36/_429bf0;
+  #593 = Utf8               accept
+  #594 = Utf8               amplifierPosition
+  #595 = Utf8               apply
+  #596 = Utf8               background
+  #597 = Utf8               backgroundColor
+  #598 = Utf8               blinkDuration
+  #599 = Utf8               booleanValue
+  #600 = Utf8               border
+  #601 = Utf8               borderColor
+  #602 = Utf8               borderThickness
+  #603 = Utf8               bridge$getDuration
+  #604 = Utf8               bridge$getIsPotionDurationMax
+  #605 = Utf8               bridge$getPotionID
+  #606 = Utf8               colorInfoBasedOnEffect
+  #607 = Utf8               colorNameBasedOnEffect
+  #608 = Utf8               ML/_590f69/_02d7ad/_21aca6
+  #609 = Utf8               L/_2f4182/_429bf0/_cfe983
+  #610 = Utf8               L/_ec7e36/_79e7e6
+  #611 = Utf8               L/_ec7e36/_79e7e6$_cfe983
+  #612 = Utf8               L/_ec7e36/_429bf0
+  #613 = Utf8               L/_ec7e36/_429bf0$_cfe983
+  #614 = Utf8               L/_ec7e36/_dd3308
+  #615 = Utf8               L/_ec7e36/_145809
+  #616 = Utf8               L/_ec7e36/_145809$_cfe983
+  #617 = Utf8               L/_ec7e36/_bb4487/_cfe983
+  #618 = Utf8               L/_ec7e36/_e62626
+  #619 = Utf8               L/_ec7e36/_e62626$_cfe983
+  #620 = Utf8               L/_ec7e36/_81676d
+  #621 = Utf8               L/_ec7e36/_13ea87
+  #622 = Utf8               L/_ec7e36/_590f69/_1e73d7/_590f69
+  #623 = Utf8               L/_ec7e36/_590f69/_21aca6/_21aca6
+  #624 = Utf8               L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983
+  #625 = Utf8               L/_ec7e36/_1eb51c
+  #626 = Utf8               L/_ec7e36/_1eb51c$_cfe983
+  #627 = Utf8               L/_88f3cf/_cfe983
+  #628 = Utf8               L/_88f3cf/_02d7ad
+  #629 = Utf8               L/_88f3cf/_bb4487/_52e8ee/_1253fc
+  #630 = Utf8               L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983
+  #631 = Utf8               L/_88f3cf/_bb4487/_52e8ee/_1e73d7
+  #632 = Utf8               L/_88f3cf/_590f69/_1253fc
+  #633 = Utf8               L/util/_e93d3c
+  #634 = Utf8               comparing
+  #635 = Utf8               durationPosition
+  #636 = Utf8               effectAmplifier
+  #637 = Utf8               effectDuration
+  #638 = Utf8               effectName
+  #639 = Utf8               excludeAbsorption
+  #640 = Utf8               excludeBadLuck
+  #641 = Utf8               excludeBadOmen
+  #642 = Utf8               excludeBlindness
+  #643 = Utf8               excludeBreathOfTheNautilus
+  #644 = Utf8               excludeConduitPower
+  #645 = Utf8               excludeDarkness
+  #646 = Utf8               excludeDolphinsGrace
+  #647 = Utf8               excludeFireRes
+  #648 = Utf8               excludeGlowing
+  #649 = Utf8               excludeHaste
+  #650 = Utf8               excludeHealthBoost
+  #651 = Utf8               excludeHeroOfTheVillage
+  #652 = Utf8               excludeHunger
+  #653 = Utf8               excludeInfested
+  #654 = Utf8               excludeInstantDamage
+  #655 = Utf8               excludeInstantHealth
+  #656 = Utf8               excludeInvis
+  #657 = Utf8               excludeJumpBoost
+  #658 = Utf8               excludeLevitation
+  #659 = Utf8               excludeLuck
+  #660 = Utf8               excludeMiningFatigue
+  #661 = Utf8               excludeNausea
+  #662 = Utf8               excludeNightVision
+  #663 = Utf8               excludeOozing
+  #664 = Utf8               excludePerm
+  #665 = Utf8               excludePoison
+  #666 = Utf8               excludePotionEffects
+  #667 = Utf8               excludeRaidOmen
+  #668 = Utf8               excludeRegen
+  #669 = Utf8               excludeResistance
+  #670 = Utf8               excludeSaturation
+  #671 = Utf8               excludeSlowFalling
+  #672 = Utf8               excludeSlowness
+  #673 = Utf8               excludeSpeed
+  #674 = Utf8               excludeStrength
+  #675 = Utf8               excludeTrialOmen
+  #676 = Utf8               excludeWaterBreathing
+  #677 = Utf8               excludeWeakness
+  #678 = Utf8               excludeWeaving
+  #679 = Utf8               excludeWindCharged
+  #680 = Utf8               excludeWither
+  #681 = Utf8               formattedDurations
+  #682 = Utf8               get
+  #683 = Utf8               getAsBoolean
+  #684 = Utf8               getId
+  #685 = Utf8               getName
+  #686 = Utf8               hideAmbientDuration
+  #687 = Utf8               hideModernIcons
+  #688 = Utf8               hidePotionStatus
+  #689 = Utf8               infoColor
+  #690 = Utf8               it/unimi/dsi/fastutil/ints/Int2ObjectArrayMap
+  #691 = Utf8               it/unimi/dsi/fastutil/ints/Int2ObjectMap
+  #692 = Utf8               it/unimi/dsi/fastutil/objects/ObjectCollection
+  #693 = Utf8               java/lang/Boolean
+  #694 = Utf8               java/lang/invoke/LambdaMetafactory
+  #695 = Utf8               java/lang/invoke/MethodHandles
+  #696 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #697 = Utf8               java/util/Comparator
+  #698 = Utf8               java/util/Objects
+  #699 = Utf8               java/util/stream/Stream
+  #700 = Utf8               metafactory
+  #701 = Utf8               minimalModeHorizontal
+  #702 = Utf8               minimalModeTilesPerLine
+  #703 = Utf8               optionId
+  #704 = Utf8               potionBlink
+  #705 = Utf8               potionBlinkIcon
+  #706 = Utf8               potionEffectsMode
+  #707 = Utf8               put
+  #708 = Utf8               requireNonNull
+  #709 = Utf8               reversedText
+  #710 = Utf8               showEffectBackground
+  #711 = Utf8               showInInventory
+  #712 = Utf8               showWhileTyping
+  #713 = Utf8               sorted
+  #714 = Utf8               stream
+  #715 = Utf8               textColor
+  #716 = Utf8               textShadow
+  #717 = Utf8               toArray
+  #718 = Utf8               uppercasePotionNames
+  #719 = Utf8               value
+  #720 = Utf8               values
+  #721 = Utf8               vanillaBlinkColor
+  #722 = Utf8               vanillaGroupEffects
+  #723 = Utf8               vanillaIconScale
+  #724 = Utf8               vanillaModeHorizontal
+  #725 = Utf8               vanillaModeTilesPerLine
+  #726 = Utf8               vanillaTextScale
+{
+  protected final L._ec7e36._1eb51c<L._88f3cf._bb4487._52e8ee._1253fc$_cfe983> _54dcad;
+    descriptor: LL/_ec7e36/_1eb51c;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+    Signature: #533                         // LL/_ec7e36/_1eb51c<LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;>;
+
+  protected final L._ec7e36._429bf0 _ab54a7;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._79e7e6 _17bfe6;
+    descriptor: LL/_ec7e36/_79e7e6;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _540e72;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _916318;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._79e7e6 _3c068e;
+    descriptor: LL/_ec7e36/_79e7e6;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _975761;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _d12106;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _9729f3;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  private final L._ec7e36._429bf0 _2f9a8f;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _9f4c22;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _73d4e4;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _1ebed4;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._79e7e6 _e2285d;
+    descriptor: LL/_ec7e36/_79e7e6;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _8b382c;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _e5d011;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _8d09ad;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  private final L._ec7e36._429bf0 _a41f49;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _c33fa3;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _ffb786;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._e62626 _030021;
+    descriptor: LL/_ec7e36/_e62626;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _89b51f;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._145809 _060f82;
+    descriptor: LL/_ec7e36/_145809;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._e62626 _0a63cf;
+    descriptor: LL/_ec7e36/_e62626;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _514488;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _e78041;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _1562a9;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._e62626 _4c3b4e;
+    descriptor: LL/_ec7e36/_e62626;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._e62626 _0c96ed;
+    descriptor: LL/_ec7e36/_e62626;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _312b69;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._429bf0 _6f4c1f;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._1eb51c<L._2f4182._429bf0._cfe983> _a67dd3;
+    descriptor: LL/_ec7e36/_1eb51c;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+    Signature: #532                         // LL/_ec7e36/_1eb51c<LL/_2f4182/_429bf0/_cfe983;>;
+
+  protected final L._ec7e36._1eb51c<L._2f4182._429bf0._cfe983> _0c1885;
+    descriptor: LL/_ec7e36/_1eb51c;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+    Signature: #532                         // LL/_ec7e36/_1eb51c<LL/_2f4182/_429bf0/_cfe983;>;
+
+  protected final L._ec7e36._145809 _d9df8f;
+    descriptor: LL/_ec7e36/_145809;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._145809 _07749d;
+    descriptor: LL/_ec7e36/_145809;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  protected final L._ec7e36._e62626 _8cfec5;
+    descriptor: LL/_ec7e36/_e62626;
+    flags: (0x0014) ACC_PROTECTED, ACC_FINAL
+
+  private final L._ec7e36._429bf0 _9060d5;
+    descriptor: LL/_ec7e36/_429bf0;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final it.unimi.dsi.fastutil.ints.Int2ObjectMap<L._ec7e36._429bf0> _1242a7;
+    descriptor: Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #538                         // Lit/unimi/dsi/fastutil/ints/Int2ObjectMap<LL/_ec7e36/_429bf0;>;
+
+  public L._88f3cf._bb4487._52e8ee._1253fc();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=5, locals=1, args_size=1
+         0: aload_0
+         1: iconst_1
+         2: invokespecial #192                // Method L/_88f3cf/_cfe983."<init>":(Z)V
+         5: aload_0
+         6: ldc           #74                 // String potionEffectsMode
+         8: getstatic     #169                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.NORMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        11: invokestatic  #234                // InterfaceMethod L/_ec7e36/_81676d._21aca6:(Ljava/lang/String;Ljava/lang/Enum;)LL/_ec7e36/_1eb51c$_cfe983;
+        14: invokevirtual #191                // Method L/_ec7e36/_1eb51c$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+        17: checkcast     #106                // class L/_ec7e36/_1eb51c
+        20: putfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+        23: aload_0
+        24: ldc           #70                 // String minimalModeHorizontal
+        26: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+        29: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+        32: checkcast     #93                 // class L/_ec7e36/_429bf0
+        35: putfield      #164                // Field _ab54a7:LL/_ec7e36/_429bf0;
+        38: aload_0
+        39: ldc           #71                 // String minimalModeTilesPerLine
+        41: invokestatic  #230                // InterfaceMethod L/_ec7e36/_81676d._0c5789:(Ljava/lang/String;)LL/_ec7e36/_79e7e6$_cfe983;
+        44: iconst_4
+        45: invokevirtual #174                // Method L/_ec7e36/_79e7e6$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+        48: checkcast     #92                 // class L/_ec7e36/_79e7e6$_cfe983
+        51: iconst_1
+        52: bipush        10
+        54: invokevirtual #173                // Method L/_ec7e36/_79e7e6$_cfe983._b03e9c:(II)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+        57: checkcast     #92                 // class L/_ec7e36/_79e7e6$_cfe983
+        60: invokevirtual #172                // Method L/_ec7e36/_79e7e6$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+        63: checkcast     #91                 // class L/_ec7e36/_79e7e6
+        66: putfield      #142                // Field _17bfe6:LL/_ec7e36/_79e7e6;
+        69: aload_0
+        70: ldc           #83                 // String vanillaGroupEffects
+        72: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+        75: iconst_1
+        76: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+        79: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+        82: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+        85: checkcast     #93                 // class L/_ec7e36/_429bf0
+        88: putfield      #149                // Field _540e72:LL/_ec7e36/_429bf0;
+        91: aload_0
+        92: ldc           #85                 // String vanillaModeHorizontal
+        94: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+        97: iconst_1
+        98: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       101: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       104: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       107: checkcast     #93                 // class L/_ec7e36/_429bf0
+       110: putfield      #131                // Field _916318:LL/_ec7e36/_429bf0;
+       113: aload_0
+       114: ldc           #86                 // String vanillaModeTilesPerLine
+       116: invokestatic  #230                // InterfaceMethod L/_ec7e36/_81676d._0c5789:(Ljava/lang/String;)LL/_ec7e36/_79e7e6$_cfe983;
+       119: bipush        10
+       121: invokevirtual #174                // Method L/_ec7e36/_79e7e6$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       124: checkcast     #92                 // class L/_ec7e36/_79e7e6$_cfe983
+       127: iconst_1
+       128: bipush        10
+       130: invokevirtual #173                // Method L/_ec7e36/_79e7e6$_cfe983._b03e9c:(II)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       133: checkcast     #92                 // class L/_ec7e36/_79e7e6$_cfe983
+       136: invokevirtual #172                // Method L/_ec7e36/_79e7e6$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       139: checkcast     #91                 // class L/_ec7e36/_79e7e6
+       142: putfield      #159                // Field _3c068e:LL/_ec7e36/_79e7e6;
+       145: aload_0
+       146: ldc           #22                 // String effectName
+       148: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       151: iconst_1
+       152: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       155: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       158: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       161: checkcast     #93                 // class L/_ec7e36/_429bf0
+       164: putfield      #154                // Field _975761:LL/_ec7e36/_429bf0;
+       167: aload_0
+       168: ldc           #21                 // String effectDuration
+       170: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       173: iconst_1
+       174: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       177: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       180: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       183: checkcast     #93                 // class L/_ec7e36/_429bf0
+       186: putfield      #140                // Field _d12106:LL/_ec7e36/_429bf0;
+       189: aload_0
+       190: ldc           #20                 // String effectAmplifier
+       192: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       195: iconst_1
+       196: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       199: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       202: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       205: checkcast     #93                 // class L/_ec7e36/_429bf0
+       208: putfield      #156                // Field _9729f3:LL/_ec7e36/_429bf0;
+       211: aload_0
+       212: ldc           #77                 // String showInInventory
+       214: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       217: iconst_1
+       218: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       221: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       224: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       227: checkcast     #93                 // class L/_ec7e36/_429bf0
+       230: putfield      #155                // Field _2f9a8f:LL/_ec7e36/_429bf0;
+       233: aload_0
+       234: ldc           #78                 // String showWhileTyping
+       236: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       239: iconst_1
+       240: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       243: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       246: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       249: checkcast     #93                 // class L/_ec7e36/_429bf0
+       252: putfield      #165                // Field _9f4c22:LL/_ec7e36/_429bf0;
+       255: aload_0
+       256: ldc           #72                 // String potionBlink
+       258: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       261: iconst_1
+       262: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       265: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       268: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       271: checkcast     #93                 // class L/_ec7e36/_429bf0
+       274: putfield      #167                // Field _73d4e4:LL/_ec7e36/_429bf0;
+       277: aload_0
+       278: ldc           #73                 // String potionBlinkIcon
+       280: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       283: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       286: checkcast     #93                 // class L/_ec7e36/_429bf0
+       289: putfield      #136                // Field _1ebed4:LL/_ec7e36/_429bf0;
+       292: aload_0
+       293: ldc           #13                 // String blinkDuration
+       295: invokestatic  #230                // InterfaceMethod L/_ec7e36/_81676d._0c5789:(Ljava/lang/String;)LL/_ec7e36/_79e7e6$_cfe983;
+       298: bipush        10
+       300: invokevirtual #174                // Method L/_ec7e36/_79e7e6$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       303: checkcast     #92                 // class L/_ec7e36/_79e7e6$_cfe983
+       306: iconst_2
+       307: bipush        20
+       309: invokevirtual #173                // Method L/_ec7e36/_79e7e6$_cfe983._b03e9c:(II)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       312: checkcast     #92                 // class L/_ec7e36/_79e7e6$_cfe983
+       315: invokevirtual #172                // Method L/_ec7e36/_79e7e6$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       318: checkcast     #91                 // class L/_ec7e36/_79e7e6
+       321: putfield      #138                // Field _e2285d:LL/_ec7e36/_79e7e6;
+       324: aload_0
+       325: ldc           #81                 // String uppercasePotionNames
+       327: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       330: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       333: checkcast     #93                 // class L/_ec7e36/_429bf0
+       336: putfield      #161                // Field _8b382c:LL/_ec7e36/_429bf0;
+       339: aload_0
+       340: ldc           #75                 // String reversedText
+       342: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       345: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       348: checkcast     #93                 // class L/_ec7e36/_429bf0
+       351: putfield      #130                // Field _e5d011:LL/_ec7e36/_429bf0;
+       354: aload_0
+       355: ldc           #65                 // String formattedDurations
+       357: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       360: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       363: checkcast     #93                 // class L/_ec7e36/_429bf0
+       366: putfield      #141                // Field _8d09ad:LL/_ec7e36/_429bf0;
+       369: aload_0
+       370: ldc           #67                 // String hideModernIcons
+       372: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       375: iconst_1
+       376: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       379: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       382: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       385: checkcast     #93                 // class L/_ec7e36/_429bf0
+       388: putfield      #158                // Field _a41f49:LL/_ec7e36/_429bf0;
+       391: aload_0
+       392: ldc           #68                 // String hidePotionStatus
+       394: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       397: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       400: checkcast     #93                 // class L/_ec7e36/_429bf0
+       403: putfield      #148                // Field _c33fa3:LL/_ec7e36/_429bf0;
+       406: aload_0
+       407: ldc           #11                 // String background
+       409: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       412: iconst_1
+       413: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       416: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       419: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       422: checkcast     #93                 // class L/_ec7e36/_429bf0
+       425: putfield      #162                // Field _ffb786:LL/_ec7e36/_429bf0;
+       428: aload_0
+       429: ldc           #12                 // String backgroundColor
+       431: invokestatic  #232                // InterfaceMethod L/_ec7e36/_81676d._14fd06:(Ljava/lang/String;)LL/_ec7e36/_e62626$_cfe983;
+       434: ldc           #2                  // int 1862270976
+       436: invokevirtual #182                // Method L/_ec7e36/_e62626$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       439: checkcast     #100                // class L/_ec7e36/_e62626$_cfe983
+       442: invokevirtual #181                // Method L/_ec7e36/_e62626$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       445: checkcast     #99                 // class L/_ec7e36/_e62626
+       448: putfield      #150                // Field _030021:LL/_ec7e36/_e62626;
+       451: aload_0
+       452: ldc           #14                 // String border
+       454: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       457: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       460: checkcast     #93                 // class L/_ec7e36/_429bf0
+       463: putfield      #160                // Field _89b51f:LL/_ec7e36/_429bf0;
+       466: aload_0
+       467: ldc           #16                 // String borderThickness
+       469: invokestatic  #231                // InterfaceMethod L/_ec7e36/_81676d._de72af:(Ljava/lang/String;)LL/_ec7e36/_145809$_cfe983;
+       472: ldc           #5                  // float 0.5f
+       474: invokevirtual #180                // Method L/_ec7e36/_145809$_cfe983._79534d:(F)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+       477: checkcast     #97                 // class L/_ec7e36/_145809$_cfe983
+       480: ldc           #5                  // float 0.5f
+       482: ldc           #7                  // float 3.0f
+       484: invokevirtual #179                // Method L/_ec7e36/_145809$_cfe983._767dc1:(FF)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+       487: checkcast     #97                 // class L/_ec7e36/_145809$_cfe983
+       490: invokevirtual #178                // Method L/_ec7e36/_145809$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       493: checkcast     #96                 // class L/_ec7e36/_145809
+       496: putfield      #137                // Field _060f82:LL/_ec7e36/_145809;
+       499: aload_0
+       500: ldc           #15                 // String borderColor
+       502: invokestatic  #232                // InterfaceMethod L/_ec7e36/_81676d._14fd06:(Ljava/lang/String;)LL/_ec7e36/_e62626$_cfe983;
+       505: ldc           #1                  // int -1627389952
+       507: invokevirtual #182                // Method L/_ec7e36/_e62626$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       510: checkcast     #100                // class L/_ec7e36/_e62626$_cfe983
+       513: invokevirtual #181                // Method L/_ec7e36/_e62626$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       516: checkcast     #99                 // class L/_ec7e36/_e62626
+       519: putfield      #147                // Field _0a63cf:LL/_ec7e36/_e62626;
+       522: aload_0
+       523: ldc           #80                 // String textShadow
+       525: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       528: iconst_1
+       529: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       532: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       535: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       538: checkcast     #93                 // class L/_ec7e36/_429bf0
+       541: putfield      #132                // Field _514488:LL/_ec7e36/_429bf0;
+       544: aload_0
+       545: ldc           #18                 // String colorNameBasedOnEffect
+       547: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       550: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       553: checkcast     #93                 // class L/_ec7e36/_429bf0
+       556: putfield      #133                // Field _e78041:LL/_ec7e36/_429bf0;
+       559: aload_0
+       560: ldc           #17                 // String colorInfoBasedOnEffect
+       562: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       565: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       568: checkcast     #93                 // class L/_ec7e36/_429bf0
+       571: putfield      #143                // Field _1562a9:LL/_ec7e36/_429bf0;
+       574: aload_0
+       575: ldc           #79                 // String textColor
+       577: invokestatic  #232                // InterfaceMethod L/_ec7e36/_81676d._14fd06:(Ljava/lang/String;)LL/_ec7e36/_e62626$_cfe983;
+       580: iconst_m1
+       581: invokevirtual #182                // Method L/_ec7e36/_e62626$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       584: checkcast     #100                // class L/_ec7e36/_e62626$_cfe983
+       587: invokevirtual #181                // Method L/_ec7e36/_e62626$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       590: checkcast     #99                 // class L/_ec7e36/_e62626
+       593: putfield      #135                // Field _4c3b4e:LL/_ec7e36/_e62626;
+       596: aload_0
+       597: ldc           #69                 // String infoColor
+       599: invokestatic  #232                // InterfaceMethod L/_ec7e36/_81676d._14fd06:(Ljava/lang/String;)LL/_ec7e36/_e62626$_cfe983;
+       602: iconst_m1
+       603: invokevirtual #182                // Method L/_ec7e36/_e62626$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       606: checkcast     #100                // class L/_ec7e36/_e62626$_cfe983
+       609: invokevirtual #181                // Method L/_ec7e36/_e62626$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       612: checkcast     #99                 // class L/_ec7e36/_e62626
+       615: putfield      #146                // Field _0c96ed:LL/_ec7e36/_e62626;
+       618: aload_0
+       619: ldc           #66                 // String hideAmbientDuration
+       621: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       624: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       627: checkcast     #93                 // class L/_ec7e36/_429bf0
+       630: putfield      #145                // Field _312b69:LL/_ec7e36/_429bf0;
+       633: aload_0
+       634: ldc           #76                 // String showEffectBackground
+       636: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       639: iconst_1
+       640: invokevirtual #177                // Method L/_ec7e36/_429bf0$_cfe983._cbba58:(Z)LL/_ec7e36/_cfe983/_cfe983/_cfe983;
+       643: checkcast     #94                 // class L/_ec7e36/_429bf0$_cfe983
+       646: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       649: checkcast     #93                 // class L/_ec7e36/_429bf0
+       652: putfield      #163                // Field _6f4c1f:LL/_ec7e36/_429bf0;
+       655: aload_0
+       656: ldc           #19                 // String durationPosition
+       658: getstatic     #125                // Field L/_2f4182/_429bf0/_cfe983.BOTTOM_LEFT:LL/_2f4182/_429bf0/_cfe983;
+       661: invokestatic  #234                // InterfaceMethod L/_ec7e36/_81676d._21aca6:(Ljava/lang/String;Ljava/lang/Enum;)LL/_ec7e36/_1eb51c$_cfe983;
+       664: invokevirtual #191                // Method L/_ec7e36/_1eb51c$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       667: checkcast     #106                // class L/_ec7e36/_1eb51c
+       670: putfield      #166                // Field _a67dd3:LL/_ec7e36/_1eb51c;
+       673: aload_0
+       674: ldc           #10                 // String amplifierPosition
+       676: getstatic     #126                // Field L/_2f4182/_429bf0/_cfe983.TOP_RIGHT:LL/_2f4182/_429bf0/_cfe983;
+       679: invokestatic  #234                // InterfaceMethod L/_ec7e36/_81676d._21aca6:(Ljava/lang/String;Ljava/lang/Enum;)LL/_ec7e36/_1eb51c$_cfe983;
+       682: invokevirtual #191                // Method L/_ec7e36/_1eb51c$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       685: checkcast     #106                // class L/_ec7e36/_1eb51c
+       688: putfield      #144                // Field _0c1885:LL/_ec7e36/_1eb51c;
+       691: aload_0
+       692: ldc           #84                 // String vanillaIconScale
+       694: invokestatic  #231                // InterfaceMethod L/_ec7e36/_81676d._de72af:(Ljava/lang/String;)LL/_ec7e36/_145809$_cfe983;
+       697: fconst_1
+       698: invokevirtual #180                // Method L/_ec7e36/_145809$_cfe983._79534d:(F)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+       701: checkcast     #97                 // class L/_ec7e36/_145809$_cfe983
+       704: ldc           #5                  // float 0.5f
+       706: ldc           #6                  // float 1.25f
+       708: invokevirtual #179                // Method L/_ec7e36/_145809$_cfe983._767dc1:(FF)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+       711: checkcast     #97                 // class L/_ec7e36/_145809$_cfe983
+       714: invokevirtual #178                // Method L/_ec7e36/_145809$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       717: checkcast     #96                 // class L/_ec7e36/_145809
+       720: putfield      #139                // Field _d9df8f:LL/_ec7e36/_145809;
+       723: aload_0
+       724: ldc           #87                 // String vanillaTextScale
+       726: invokestatic  #231                // InterfaceMethod L/_ec7e36/_81676d._de72af:(Ljava/lang/String;)LL/_ec7e36/_145809$_cfe983;
+       729: fconst_1
+       730: invokevirtual #180                // Method L/_ec7e36/_145809$_cfe983._79534d:(F)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+       733: checkcast     #97                 // class L/_ec7e36/_145809$_cfe983
+       736: ldc           #4                  // float 0.25f
+       738: fconst_2
+       739: invokevirtual #179                // Method L/_ec7e36/_145809$_cfe983._767dc1:(FF)LL/_ec7e36/_cfe983/_cfe983/_bb4487;
+       742: checkcast     #97                 // class L/_ec7e36/_145809$_cfe983
+       745: invokevirtual #178                // Method L/_ec7e36/_145809$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       748: checkcast     #96                 // class L/_ec7e36/_145809
+       751: putfield      #134                // Field _07749d:LL/_ec7e36/_145809;
+       754: aload_0
+       755: ldc           #82                 // String vanillaBlinkColor
+       757: invokestatic  #232                // InterfaceMethod L/_ec7e36/_81676d._14fd06:(Ljava/lang/String;)LL/_ec7e36/_e62626$_cfe983;
+       760: iconst_m1
+       761: invokevirtual #182                // Method L/_ec7e36/_e62626$_cfe983._605b3c:(I)LL/_ec7e36/_cfe983/_cfe983/_1253fc;
+       764: checkcast     #100                // class L/_ec7e36/_e62626$_cfe983
+       767: invokevirtual #181                // Method L/_ec7e36/_e62626$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       770: checkcast     #99                 // class L/_ec7e36/_e62626
+       773: putfield      #153                // Field _8cfec5:LL/_ec7e36/_e62626;
+       776: aload_0
+       777: ldc           #48                 // String excludePerm
+       779: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+       782: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+       785: checkcast     #93                 // class L/_ec7e36/_429bf0
+       788: putfield      #157                // Field _9060d5:LL/_ec7e36/_429bf0;
+       791: aload_0
+       792: new           #115                // class it/unimi/dsi/fastutil/ints/Int2ObjectArrayMap
+       795: dup
+       796: invokespecial #222                // Method it/unimi/dsi/fastutil/ints/Int2ObjectArrayMap."<init>":()V
+       799: putfield      #151                // Field _1242a7:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+       802: aload_0
+       803: getstatic     #129                // Field L/_88f3cf/_02d7ad._f845fa:LL/_55938e/_e62626;
+       806: new           #112                // class L/_88f3cf/_bb4487/_52e8ee/_1e73d7
+       809: dup
+       810: aload_0
+       811: invokespecial #221                // Method L/_88f3cf/_bb4487/_52e8ee/_1e73d7."<init>":(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)V
+       814: invokevirtual #199                // Method _cfe983:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+       817: pop
+       818: return
+      LineNumberTable:
+        line 118: 0
+        line 23: 5
+        line 24: 23
+        line 25: 38
+        line 26: 45
+        line 27: 54
+        line 28: 60
+        line 29: 69
+        line 30: 76
+        line 31: 82
+        line 32: 91
+        line 33: 98
+        line 34: 104
+        line 35: 113
+        line 36: 121
+        line 37: 130
+        line 38: 136
+        line 39: 145
+        line 40: 152
+        line 41: 158
+        line 42: 167
+        line 43: 174
+        line 44: 180
+        line 45: 189
+        line 46: 196
+        line 47: 202
+        line 49: 211
+        line 50: 214
+        line 51: 218
+        line 52: 224
+        line 53: 233
+        line 54: 240
+        line 55: 246
+        line 57: 255
+        line 58: 262
+        line 59: 268
+        line 60: 277
+        line 61: 292
+        line 62: 300
+        line 63: 309
+        line 64: 315
+        line 66: 324
+        line 67: 339
+        line 68: 354
+        line 70: 369
+        line 71: 372
+        line 72: 376
+        line 73: 382
+        line 74: 391
+        line 76: 406
+        line 77: 413
+        line 78: 419
+        line 79: 428
+        line 81: 451
+        line 82: 466
+        line 83: 474
+        line 84: 484
+        line 85: 490
+        line 86: 499
+        line 88: 522
+        line 89: 529
+        line 90: 535
+        line 91: 544
+        line 92: 559
+        line 93: 574
+        line 94: 596
+        line 96: 618
+        line 97: 633
+        line 98: 640
+        line 99: 646
+        line 100: 655
+        line 101: 673
+        line 102: 691
+        line 103: 698
+        line 104: 708
+        line 105: 714
+        line 106: 723
+        line 107: 730
+        line 108: 739
+        line 109: 745
+        line 110: 754
+        line 112: 776
+        line 115: 791
+        line 119: 802
+        line 120: 818
+
+  public java.lang.String getId();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #9                  // String POTION_EFFECTS
+         2: areturn
+      LineNumberTable:
+        line 124: 0
+
+  public void _cfe983(L._ec7e36._590f69._21aca6._21aca6);
+    descriptor: (LL/_ec7e36/_590f69/_21aca6/_21aca6;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_1
+         1: getstatic     #127                // Field L/_ec7e36/_bb4487/_cfe983.GENERAL:LL/_ec7e36/_bb4487/_cfe983;
+         4: aload_0
+         5: invokedynamic #245,  0            // InvokeDynamic #0:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+        10: invokevirtual #185                // Method L/_ec7e36/_590f69/_21aca6/_21aca6._cfe983:(LL/_ec7e36/_bb4487/_cfe983;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        13: pop
+        14: aload_1
+        15: getstatic     #128                // Field L/_ec7e36/_bb4487/_cfe983.HUD:LL/_ec7e36/_bb4487/_cfe983;
+        18: aload_0
+        19: invokedynamic #246,  0            // InvokeDynamic #1:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+        24: invokevirtual #185                // Method L/_ec7e36/_590f69/_21aca6/_21aca6._cfe983:(LL/_ec7e36/_bb4487/_cfe983;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        27: pop
+        28: aload_1
+        29: ldc           #50                 // String excludePotionEffects
+        31: aload_0
+        32: invokedynamic #247,  0            // InvokeDynamic #2:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+        37: invokevirtual #184                // Method L/_ec7e36/_590f69/_21aca6/_21aca6._429bf0:(Ljava/lang/String;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        40: pop
+        41: aload_1
+        42: aload_0
+        43: invokevirtual #220                // Method _0b03da:()[LL/_ec7e36/_429bf0;
+        46: invokevirtual #186                // Method L/_ec7e36/_590f69/_21aca6/_21aca6._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        49: pop
+        50: return
+      LineNumberTable:
+        line 129: 0
+        line 189: 14
+        line 225: 28
+        line 226: 41
+        line 227: 50
+
+  private L._ec7e36._429bf0[] _0b03da();
+    descriptor: ()[LL/_ec7e36/_429bf0;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: iconst_1
+         2: ldc           #57                 // String excludeSpeed
+         4: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+         7: aload_0
+         8: iconst_2
+         9: ldc           #56                 // String excludeSlowness
+        11: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        14: aload_0
+        15: iconst_3
+        16: ldc           #33                 // String excludeHaste
+        18: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        21: aload_0
+        22: iconst_4
+        23: ldc           #44                 // String excludeMiningFatigue
+        25: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        28: aload_0
+        29: iconst_5
+        30: ldc           #58                 // String excludeStrength
+        32: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        35: aload_0
+        36: bipush        6
+        38: ldc           #39                 // String excludeInstantHealth
+        40: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        43: aload_0
+        44: bipush        7
+        46: ldc           #38                 // String excludeInstantDamage
+        48: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        51: aload_0
+        52: bipush        8
+        54: ldc           #41                 // String excludeJumpBoost
+        56: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        59: aload_0
+        60: bipush        9
+        62: ldc           #45                 // String excludeNausea
+        64: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        67: aload_0
+        68: bipush        10
+        70: ldc           #52                 // String excludeRegen
+        72: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        75: aload_0
+        76: bipush        11
+        78: ldc           #53                 // String excludeResistance
+        80: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        83: aload_0
+        84: bipush        12
+        86: ldc           #31                 // String excludeFireRes
+        88: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        91: aload_0
+        92: bipush        13
+        94: ldc           #60                 // String excludeWaterBreathing
+        96: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+        99: aload_0
+       100: bipush        14
+       102: ldc           #40                 // String excludeInvis
+       104: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       107: aload_0
+       108: bipush        15
+       110: ldc           #26                 // String excludeBlindness
+       112: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       115: aload_0
+       116: bipush        16
+       118: ldc           #46                 // String excludeNightVision
+       120: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       123: aload_0
+       124: bipush        17
+       126: ldc           #36                 // String excludeHunger
+       128: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       131: aload_0
+       132: bipush        18
+       134: ldc           #61                 // String excludeWeakness
+       136: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       139: aload_0
+       140: bipush        19
+       142: ldc           #49                 // String excludePoison
+       144: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       147: aload_0
+       148: bipush        20
+       150: ldc           #64                 // String excludeWither
+       152: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       155: aload_0
+       156: bipush        21
+       158: ldc           #34                 // String excludeHealthBoost
+       160: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       163: aload_0
+       164: bipush        22
+       166: ldc           #23                 // String excludeAbsorption
+       168: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       171: aload_0
+       172: bipush        23
+       174: ldc           #54                 // String excludeSaturation
+       176: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       179: getstatic     #171                // Field L/util/_e93d3c.MC_VERSION:I
+       182: iconst_5
+       183: if_icmplt     218
+       186: aload_0
+       187: bipush        24
+       189: ldc           #32                 // String excludeGlowing
+       191: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       194: aload_0
+       195: bipush        25
+       197: ldc           #42                 // String excludeLevitation
+       199: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       202: aload_0
+       203: bipush        26
+       205: ldc           #43                 // String excludeLuck
+       207: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       210: aload_0
+       211: bipush        27
+       213: ldc           #24                 // String excludeBadLuck
+       215: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       218: getstatic     #171                // Field L/util/_e93d3c.MC_VERSION:I
+       221: bipush        6
+       223: if_icmplt     287
+       226: aload_0
+       227: bipush        28
+       229: ldc           #55                 // String excludeSlowFalling
+       231: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       234: aload_0
+       235: bipush        29
+       237: ldc           #28                 // String excludeConduitPower
+       239: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       242: aload_0
+       243: bipush        30
+       245: ldc           #30                 // String excludeDolphinsGrace
+       247: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       250: getstatic     #171                // Field L/util/_e93d3c.MC_VERSION:I
+       253: bipush        22
+       255: if_icmpge     266
+       258: aload_0
+       259: bipush        31
+       261: ldc           #25                 // String excludeBadOmen
+       263: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       266: aload_0
+       267: getstatic     #171                // Field L/util/_e93d3c.MC_VERSION:I
+       270: bipush        22
+       272: if_icmplt     280
+       275: bipush        31
+       277: goto          282
+       280: bipush        32
+       282: ldc           #35                 // String excludeHeroOfTheVillage
+       284: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       287: getstatic     #171                // Field L/util/_e93d3c.MC_VERSION:I
+       290: bipush        13
+       292: if_icmplt     303
+       295: aload_0
+       296: bipush        33
+       298: ldc           #29                 // String excludeDarkness
+       300: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       303: getstatic     #171                // Field L/util/_e93d3c.MC_VERSION:I
+       306: bipush        22
+       308: if_icmplt     359
+       311: aload_0
+       312: bipush        34
+       314: ldc           #59                 // String excludeTrialOmen
+       316: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       319: aload_0
+       320: bipush        35
+       322: ldc           #51                 // String excludeRaidOmen
+       324: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       327: aload_0
+       328: bipush        36
+       330: ldc           #63                 // String excludeWindCharged
+       332: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       335: aload_0
+       336: bipush        37
+       338: ldc           #62                 // String excludeWeaving
+       340: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       343: aload_0
+       344: bipush        38
+       346: ldc           #47                 // String excludeOozing
+       348: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       351: aload_0
+       352: bipush        39
+       354: ldc           #37                 // String excludeInfested
+       356: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       359: getstatic     #171                // Field L/util/_e93d3c.MC_VERSION:I
+       362: bipush        35
+       364: if_icmplt     375
+       367: aload_0
+       368: bipush        40
+       370: ldc           #27                 // String excludeBreathOfTheNautilus
+       372: invokevirtual #218                // Method _590f69:(ILjava/lang/String;)V
+       375: aload_0
+       376: getfield      #151                // Field _1242a7:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+       379: invokeinterface #240,  1          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.values:()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+       384: invokeinterface #241,  1          // InterfaceMethod it/unimi/dsi/fastutil/objects/ObjectCollection.stream:()Ljava/util/stream/Stream;
+       389: invokedynamic #248,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+       394: invokestatic  #242                // InterfaceMethod java/util/Comparator.comparing:(Ljava/util/function/Function;)Ljava/util/Comparator;
+       397: invokeinterface #243,  2          // InterfaceMethod java/util/stream/Stream.sorted:(Ljava/util/Comparator;)Ljava/util/stream/Stream;
+       402: invokedynamic #249,  0            // InvokeDynamic #4:apply:()Ljava/util/function/IntFunction;
+       407: invokeinterface #244,  2          // InterfaceMethod java/util/stream/Stream.toArray:(Ljava/util/function/IntFunction;)[Ljava/lang/Object;
+       412: checkcast     #88                 // class "[LL/_ec7e36/_429bf0;"
+       415: areturn
+      LineNumberTable:
+        line 231: 0
+        line 232: 7
+        line 233: 14
+        line 234: 21
+        line 235: 28
+        line 236: 35
+        line 237: 43
+        line 238: 51
+        line 239: 59
+        line 240: 67
+        line 241: 75
+        line 242: 83
+        line 243: 91
+        line 244: 99
+        line 245: 107
+        line 246: 115
+        line 247: 123
+        line 248: 131
+        line 249: 139
+        line 250: 147
+        line 251: 155
+        line 252: 163
+        line 253: 171
+        line 256: 179
+        line 257: 186
+        line 258: 194
+        line 259: 202
+        line 260: 210
+        line 263: 218
+        line 265: 226
+        line 266: 234
+        line 267: 242
+        line 270: 250
+        line 271: 258
+        line 273: 266
+        line 276: 287
+        line 277: 295
+        line 280: 303
+        line 281: 311
+        line 282: 319
+        line 283: 327
+        line 284: 335
+        line 285: 343
+        line 286: 351
+        line 289: 359
+        line 290: 367
+        line 293: 375
+        line 294: 394
+        line 295: 407
+        line 293: 415
+      StackMapTable: number_of_entries = 8
+        frame_type = 251 /* same_frame_extended */
+          offset_delta = 218
+        frame_type = 47 /* same */
+        frame_type = 77 /* same_locals_1_stack_item */
+          stack = [ class L/_88f3cf/_bb4487/_52e8ee/_1253fc ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 1
+          locals = [ class L/_88f3cf/_bb4487/_52e8ee/_1253fc ]
+          stack = [ class L/_88f3cf/_bb4487/_52e8ee/_1253fc, int ]
+        frame_type = 4 /* same */
+        frame_type = 15 /* same */
+        frame_type = 55 /* same */
+        frame_type = 15 /* same */
+
+  private void _590f69(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getfield      #151                // Field _1242a7:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+         4: iload_1
+         5: aload_2
+         6: invokestatic  #233                // InterfaceMethod L/_ec7e36/_81676d._6e312f:(Ljava/lang/String;)LL/_ec7e36/_429bf0$_cfe983;
+         9: invokevirtual #176                // Method L/_ec7e36/_429bf0$_cfe983._da2d70:()LL/_ec7e36/_dd3308;
+        12: checkcast     #93                 // class L/_ec7e36/_429bf0
+        15: invokeinterface #239,  3          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.put:(ILjava/lang/Object;)Ljava/lang/Object;
+        20: pop
+        21: return
+      LineNumberTable:
+        line 299: 0
+        line 300: 21
+    RuntimeInvisibleParameterAnnotations:
+      parameter 0:
+      parameter 1:
+        0: #541(#719=s#703)
+          org.intellij.lang.annotations.Subst(
+            value="optionId"
+          )
+
+  public boolean _13ea87(ML._590f69._02d7ad._21aca6);
+    descriptor: (LML/_590f69/_02d7ad/_21aca6;)Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: aload_0
+         1: getfield      #157                // Field _9060d5:LL/_ec7e36/_429bf0;
+         4: invokevirtual #175                // Method L/_ec7e36/_429bf0.get:()Ljava/lang/Object;
+         7: checkcast     #118                // class java/lang/Boolean
+        10: invokevirtual #223                // Method java/lang/Boolean.booleanValue:()Z
+        13: ifeq          26
+        16: aload_0
+        17: aload_1
+        18: invokevirtual #211                // Method _2ce426:(LML/_590f69/_02d7ad/_21aca6;)Z
+        21: ifeq          26
+        24: iconst_1
+        25: ireturn
+        26: aload_0
+        27: getfield      #151                // Field _1242a7:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+        30: aload_1
+        31: invokeinterface #228,  1          // InterfaceMethod ML/_590f69/_02d7ad/_21aca6.bridge$getPotionID:()I
+        36: invokeinterface #238,  2          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.get:(I)Ljava/lang/Object;
+        41: checkcast     #93                 // class L/_ec7e36/_429bf0
+        44: astore_2
+        45: aload_2
+        46: ifnull        66
+        49: aload_2
+        50: invokevirtual #175                // Method L/_ec7e36/_429bf0.get:()Ljava/lang/Object;
+        53: checkcast     #118                // class java/lang/Boolean
+        56: invokevirtual #223                // Method java/lang/Boolean.booleanValue:()Z
+        59: ifeq          66
+        62: iconst_1
+        63: goto          67
+        66: iconst_0
+        67: ireturn
+      LineNumberTable:
+        line 306: 0
+        line 307: 24
+        line 309: 26
+        line 310: 45
+      StackMapTable: number_of_entries = 3
+        frame_type = 26 /* same */
+        frame_type = 249 /* chop */
+          offset_delta = 39
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  public boolean _2ce426(ML._590f69._02d7ad._21aca6);
+    descriptor: (LML/_590f69/_02d7ad/_21aca6;)Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: getstatic     #171                // Field L/util/_e93d3c.MC_VERSION:I
+         3: iconst_5
+         4: if_icmpgt     16
+         7: aload_1
+         8: invokeinterface #227,  1          // InterfaceMethod ML/_590f69/_02d7ad/_21aca6.bridge$getIsPotionDurationMax:()Z
+        13: ifne          40
+        16: aload_1
+        17: invokeinterface #226,  1          // InterfaceMethod ML/_590f69/_02d7ad/_21aca6.bridge$getDuration:()F
+        22: ldc           #3                  // float -1.0f
+        24: fcmpl
+        25: ifeq          40
+        28: aload_1
+        29: invokeinterface #226,  1          // InterfaceMethod ML/_590f69/_02d7ad/_21aca6.bridge$getDuration:()F
+        34: ldc           #8                  // float 72000.0f
+        36: fcmpl
+        37: ifle          44
+        40: iconst_1
+        41: goto          45
+        44: iconst_0
+        45: ireturn
+      LineNumberTable:
+        line 317: 0
+        line 318: 17
+        line 319: 29
+        line 317: 45
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 16
+          locals = [ top, class ML/_590f69/_02d7ad/_21aca6 ]
+          stack = []
+        frame_type = 249 /* chop */
+          offset_delta = 23
+        frame_type = 3 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  public L._ec7e36._429bf0 _0d4174();
+    descriptor: ()LL/_ec7e36/_429bf0;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #155                // Field _2f9a8f:LL/_ec7e36/_429bf0;
+         4: areturn
+      LineNumberTable:
+        line 49: 0
+    RuntimeInvisibleAnnotations:
+      0: #539()
+        lombok.Generated
+
+  public L._ec7e36._429bf0 _becedc();
+    descriptor: ()LL/_ec7e36/_429bf0;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #158                // Field _a41f49:LL/_ec7e36/_429bf0;
+         4: areturn
+      LineNumberTable:
+        line 70: 0
+    RuntimeInvisibleAnnotations:
+      0: #539()
+        lombok.Generated
+
+  private static L._ec7e36._429bf0[] _e264f2(int);
+    descriptor: (I)[LL/_ec7e36/_429bf0;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iload_0
+         1: anewarray     #93                 // class L/_ec7e36/_429bf0
+         4: areturn
+      LineNumberTable:
+        line 295: 0
+
+  private void _19bfb5(L._ec7e36._590f69._21aca6._21aca6$_cfe983);
+    descriptor: (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=5, locals=2, args_size=2
+         0: aload_1
+         1: iconst_1
+         2: anewarray     #95                 // class L/_ec7e36/_dd3308
+         5: dup
+         6: iconst_0
+         7: aload_0
+         8: getfield      #157                // Field _9060d5:LL/_ec7e36/_429bf0;
+        11: aastore
+        12: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        15: pop
+        16: return
+      LineNumberTable:
+        line 225: 0
+
+  private void _87c409(L._ec7e36._590f69._21aca6._21aca6$_cfe983);
+    descriptor: (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=6, locals=2, args_size=2
+         0: aload_1
+         1: iconst_2
+         2: anewarray     #95                 // class L/_ec7e36/_dd3308
+         5: dup
+         6: iconst_0
+         7: aload_0
+         8: getfield      #166                // Field _a67dd3:LL/_ec7e36/_1eb51c;
+        11: aastore
+        12: dup
+        13: iconst_1
+        14: aload_0
+        15: getfield      #144                // Field _0c1885:LL/_ec7e36/_1eb51c;
+        18: aastore
+        19: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        22: aload_0
+        23: invokedynamic #250,  0            // InvokeDynamic #5:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+        28: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+        33: pop
+        34: aload_1
+        35: aload_0
+        36: getfield      #162                // Field _ffb786:LL/_ec7e36/_429bf0;
+        39: aload_0
+        40: invokedynamic #251,  0            // InvokeDynamic #6:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+        45: invokevirtual #187                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        48: pop
+        49: aload_1
+        50: aload_0
+        51: getfield      #160                // Field _89b51f:LL/_ec7e36/_429bf0;
+        54: aload_0
+        55: invokedynamic #252,  0            // InvokeDynamic #7:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+        60: invokevirtual #187                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        63: pop
+        64: aload_1
+        65: iconst_1
+        66: anewarray     #95                 // class L/_ec7e36/_dd3308
+        69: dup
+        70: iconst_0
+        71: aload_0
+        72: getfield      #132                // Field _514488:LL/_ec7e36/_429bf0;
+        75: aastore
+        76: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        79: pop
+        80: aload_1
+        81: iconst_1
+        82: anewarray     #95                 // class L/_ec7e36/_dd3308
+        85: dup
+        86: iconst_0
+        87: aload_0
+        88: getfield      #133                // Field _e78041:LL/_ec7e36/_429bf0;
+        91: aastore
+        92: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        95: aload_0
+        96: invokedynamic #253,  0            // InvokeDynamic #8:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       101: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       106: pop
+       107: aload_1
+       108: iconst_1
+       109: anewarray     #95                 // class L/_ec7e36/_dd3308
+       112: dup
+       113: iconst_0
+       114: aload_0
+       115: getfield      #143                // Field _1562a9:LL/_ec7e36/_429bf0;
+       118: aastore
+       119: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       122: pop
+       123: aload_1
+       124: iconst_1
+       125: anewarray     #95                 // class L/_ec7e36/_dd3308
+       128: dup
+       129: iconst_0
+       130: aload_0
+       131: getfield      #163                // Field _6f4c1f:LL/_ec7e36/_429bf0;
+       134: aastore
+       135: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       138: aload_0
+       139: invokedynamic #254,  0            // InvokeDynamic #9:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       144: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       149: pop
+       150: aload_1
+       151: iconst_1
+       152: anewarray     #95                 // class L/_ec7e36/_dd3308
+       155: dup
+       156: iconst_0
+       157: aload_0
+       158: getfield      #135                // Field _4c3b4e:LL/_ec7e36/_e62626;
+       161: aastore
+       162: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       165: aload_0
+       166: invokedynamic #255,  0            // InvokeDynamic #10:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       171: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       176: pop
+       177: aload_1
+       178: iconst_1
+       179: anewarray     #95                 // class L/_ec7e36/_dd3308
+       182: dup
+       183: iconst_0
+       184: aload_0
+       185: getfield      #146                // Field _0c96ed:LL/_ec7e36/_e62626;
+       188: aastore
+       189: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       192: aload_0
+       193: getfield      #143                // Field _1562a9:LL/_ec7e36/_429bf0;
+       196: dup
+       197: invokestatic  #225                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+       200: pop
+       201: invokedynamic #256,  0            // InvokeDynamic #11:getAsBoolean:(LL/_ec7e36/_429bf0;)Ljava/util/function/BooleanSupplier;
+       206: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       211: pop
+       212: aload_1
+       213: iconst_2
+       214: anewarray     #95                 // class L/_ec7e36/_dd3308
+       217: dup
+       218: iconst_0
+       219: aload_0
+       220: getfield      #139                // Field _d9df8f:LL/_ec7e36/_145809;
+       223: aastore
+       224: dup
+       225: iconst_1
+       226: aload_0
+       227: getfield      #134                // Field _07749d:LL/_ec7e36/_145809;
+       230: aastore
+       231: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       234: aload_0
+       235: invokedynamic #257,  0            // InvokeDynamic #12:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       240: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       245: pop
+       246: aload_1
+       247: iconst_1
+       248: anewarray     #95                 // class L/_ec7e36/_dd3308
+       251: dup
+       252: iconst_0
+       253: aload_0
+       254: getstatic     #129                // Field L/_88f3cf/_02d7ad._f845fa:LL/_55938e/_e62626;
+       257: invokevirtual #202                // Method _7fbb1e:(LL/_55938e/_e62626;)Ljava/lang/Object;
+       260: checkcast     #113                // class L/_88f3cf/_590f69/_1253fc
+       263: invokeinterface #237,  1          // InterfaceMethod L/_88f3cf/_590f69/_1253fc._64c5e4:()LL/_ec7e36/_145809;
+       268: aastore
+       269: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       272: pop
+       273: return
+      LineNumberTable:
+        line 190: 0
+        line 193: 28
+        line 195: 34
+        line 197: 49
+        line 201: 64
+        line 203: 80
+        line 204: 101
+        line 206: 107
+        line 208: 123
+        line 209: 144
+        line 211: 150
+        line 212: 171
+        line 214: 177
+        line 215: 197
+        line 217: 212
+        line 220: 240
+        line 222: 246
+        line 223: 273
+
+  private boolean _d7782f();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #170                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 220: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _a251f7();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #133                // Field _e78041:LL/_ec7e36/_429bf0;
+         4: invokevirtual #175                // Method L/_ec7e36/_429bf0.get:()Ljava/lang/Object;
+         7: checkcast     #118                // class java/lang/Boolean
+        10: invokevirtual #223                // Method java/lang/Boolean.booleanValue:()Z
+        13: ifne          29
+        16: aload_0
+        17: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+        20: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+        23: getstatic     #169                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.NORMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        26: if_acmpeq     33
+        29: iconst_1
+        30: goto          34
+        33: iconst_0
+        34: ireturn
+      LineNumberTable:
+        line 212: 0
+      StackMapTable: number_of_entries = 3
+        frame_type = 250 /* chop */
+          offset_delta = 29
+        frame_type = 3 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _2110a8();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #170                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 209: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _917ee6();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #169                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.NORMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 204: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private void _cfe983(L._ec7e36._590f69._21aca6._21aca6$_cfe983);
+    descriptor: (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=5, locals=2, args_size=2
+         0: aload_1
+         1: iconst_2
+         2: anewarray     #95                 // class L/_ec7e36/_dd3308
+         5: dup
+         6: iconst_0
+         7: aload_0
+         8: getfield      #137                // Field _060f82:LL/_ec7e36/_145809;
+        11: aastore
+        12: dup
+        13: iconst_1
+        14: aload_0
+        15: getfield      #147                // Field _0a63cf:LL/_ec7e36/_e62626;
+        18: aastore
+        19: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        22: pop
+        23: return
+      LineNumberTable:
+        line 197: 0
+
+  private void _e62626(L._ec7e36._590f69._21aca6._21aca6$_cfe983);
+    descriptor: (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=5, locals=2, args_size=2
+         0: aload_1
+         1: iconst_1
+         2: anewarray     #95                 // class L/_ec7e36/_dd3308
+         5: dup
+         6: iconst_0
+         7: aload_0
+         8: getfield      #150                // Field _030021:LL/_ec7e36/_e62626;
+        11: aastore
+        12: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        15: pop
+        16: return
+      LineNumberTable:
+        line 195: 0
+
+  private boolean _95ef00();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #170                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 193: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private void _d4ca6c(L._ec7e36._590f69._21aca6._21aca6$_cfe983);
+    descriptor: (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=5, locals=2, args_size=2
+         0: aload_1
+         1: iconst_1
+         2: anewarray     #95                 // class L/_ec7e36/_dd3308
+         5: dup
+         6: iconst_0
+         7: aload_0
+         8: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+        11: aastore
+        12: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        15: pop
+        16: aload_1
+        17: iconst_1
+        18: anewarray     #95                 // class L/_ec7e36/_dd3308
+        21: dup
+        22: iconst_0
+        23: aload_0
+        24: getfield      #145                // Field _312b69:LL/_ec7e36/_429bf0;
+        27: aastore
+        28: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        31: aload_0
+        32: invokedynamic #258,  0            // InvokeDynamic #13:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+        37: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+        42: pop
+        43: aload_1
+        44: iconst_3
+        45: anewarray     #95                 // class L/_ec7e36/_dd3308
+        48: dup
+        49: iconst_0
+        50: aload_0
+        51: getfield      #149                // Field _540e72:LL/_ec7e36/_429bf0;
+        54: aastore
+        55: dup
+        56: iconst_1
+        57: aload_0
+        58: getfield      #131                // Field _916318:LL/_ec7e36/_429bf0;
+        61: aastore
+        62: dup
+        63: iconst_2
+        64: aload_0
+        65: getfield      #159                // Field _3c068e:LL/_ec7e36/_79e7e6;
+        68: aastore
+        69: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        72: aload_0
+        73: invokedynamic #259,  0            // InvokeDynamic #14:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+        78: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+        83: pop
+        84: aload_1
+        85: invokevirtual #188                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._5335d8:()LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        88: aload_0
+        89: invokedynamic #260,  0            // InvokeDynamic #15:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+        94: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+        99: pop
+       100: aload_1
+       101: iconst_2
+       102: anewarray     #95                 // class L/_ec7e36/_dd3308
+       105: dup
+       106: iconst_0
+       107: aload_0
+       108: getfield      #164                // Field _ab54a7:LL/_ec7e36/_429bf0;
+       111: aastore
+       112: dup
+       113: iconst_1
+       114: aload_0
+       115: getfield      #142                // Field _17bfe6:LL/_ec7e36/_79e7e6;
+       118: aastore
+       119: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       122: aload_0
+       123: invokedynamic #261,  0            // InvokeDynamic #16:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       128: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       133: pop
+       134: aload_1
+       135: invokevirtual #188                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._5335d8:()LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       138: aload_0
+       139: invokedynamic #262,  0            // InvokeDynamic #17:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       144: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       149: pop
+       150: aload_1
+       151: iconst_1
+       152: anewarray     #95                 // class L/_ec7e36/_dd3308
+       155: dup
+       156: iconst_0
+       157: aload_0
+       158: getfield      #154                // Field _975761:LL/_ec7e36/_429bf0;
+       161: aastore
+       162: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       165: aload_0
+       166: invokedynamic #263,  0            // InvokeDynamic #18:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       171: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       176: pop
+       177: aload_1
+       178: iconst_1
+       179: anewarray     #95                 // class L/_ec7e36/_dd3308
+       182: dup
+       183: iconst_0
+       184: aload_0
+       185: getfield      #140                // Field _d12106:LL/_ec7e36/_429bf0;
+       188: aastore
+       189: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       192: pop
+       193: aload_1
+       194: iconst_1
+       195: anewarray     #95                 // class L/_ec7e36/_dd3308
+       198: dup
+       199: iconst_0
+       200: aload_0
+       201: getfield      #156                // Field _9729f3:LL/_ec7e36/_429bf0;
+       204: aastore
+       205: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       208: aload_0
+       209: invokedynamic #264,  0            // InvokeDynamic #19:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       214: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       219: pop
+       220: aload_1
+       221: iconst_2
+       222: anewarray     #95                 // class L/_ec7e36/_dd3308
+       225: dup
+       226: iconst_0
+       227: aload_0
+       228: getfield      #155                // Field _2f9a8f:LL/_ec7e36/_429bf0;
+       231: aastore
+       232: dup
+       233: iconst_1
+       234: aload_0
+       235: getfield      #165                // Field _9f4c22:LL/_ec7e36/_429bf0;
+       238: aastore
+       239: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       242: pop
+       243: aload_1
+       244: aload_0
+       245: getfield      #167                // Field _73d4e4:LL/_ec7e36/_429bf0;
+       248: aload_0
+       249: invokedynamic #265,  0            // InvokeDynamic #20:accept:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/Consumer;
+       254: invokevirtual #187                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._cfe983:(LL/_ec7e36/_dd3308;Ljava/util/function/Consumer;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       257: pop
+       258: aload_1
+       259: invokevirtual #188                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._5335d8:()LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       262: aload_0
+       263: invokedynamic #266,  0            // InvokeDynamic #21:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       268: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       273: pop
+       274: aload_1
+       275: iconst_2
+       276: anewarray     #95                 // class L/_ec7e36/_dd3308
+       279: dup
+       280: iconst_0
+       281: aload_0
+       282: getfield      #161                // Field _8b382c:LL/_ec7e36/_429bf0;
+       285: aastore
+       286: dup
+       287: iconst_1
+       288: aload_0
+       289: getfield      #130                // Field _e5d011:LL/_ec7e36/_429bf0;
+       292: aastore
+       293: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       296: aload_0
+       297: invokedynamic #267,  0            // InvokeDynamic #22:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       302: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       307: pop
+       308: aload_1
+       309: iconst_1
+       310: anewarray     #95                 // class L/_ec7e36/_dd3308
+       313: dup
+       314: iconst_0
+       315: aload_0
+       316: getfield      #141                // Field _8d09ad:LL/_ec7e36/_429bf0;
+       319: aastore
+       320: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       323: aload_0
+       324: invokedynamic #268,  0            // InvokeDynamic #23:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+       329: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+       334: pop
+       335: aload_1
+       336: iconst_1
+       337: anewarray     #95                 // class L/_ec7e36/_dd3308
+       340: dup
+       341: iconst_0
+       342: aload_0
+       343: getfield      #158                // Field _a41f49:LL/_ec7e36/_429bf0;
+       346: aastore
+       347: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       350: iconst_5
+       351: invokeinterface #235,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._83cb4e:(I)Ljava/lang/Object;
+       356: pop
+       357: aload_1
+       358: iconst_1
+       359: anewarray     #95                 // class L/_ec7e36/_dd3308
+       362: dup
+       363: iconst_0
+       364: aload_0
+       365: getfield      #148                // Field _c33fa3:LL/_ec7e36/_429bf0;
+       368: aastore
+       369: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+       372: pop
+       373: return
+      LineNumberTable:
+        line 130: 0
+        line 132: 16
+        line 133: 37
+        line 135: 43
+        line 139: 78
+        line 140: 84
+        line 141: 94
+        line 143: 100
+        line 146: 128
+        line 147: 134
+        line 148: 144
+        line 150: 150
+        line 151: 171
+        line 153: 177
+        line 155: 193
+        line 156: 214
+        line 158: 220
+        line 163: 243
+        line 172: 258
+        line 173: 268
+        line 175: 274
+        line 178: 302
+        line 180: 308
+        line 181: 329
+        line 183: 335
+        line 184: 351
+        line 186: 357
+        line 187: 373
+
+  private boolean _14034a();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #170                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpne     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 181: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _b39dda();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #169                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.NORMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 178: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _96c520();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #169                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.NORMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 173: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private void _2f4182(L._ec7e36._590f69._21aca6._21aca6$_cfe983);
+    descriptor: (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=5, locals=2, args_size=2
+         0: aload_1
+         1: iconst_2
+         2: anewarray     #95                 // class L/_ec7e36/_dd3308
+         5: dup
+         6: iconst_0
+         7: aload_0
+         8: getfield      #136                // Field _1ebed4:LL/_ec7e36/_429bf0;
+        11: aastore
+        12: dup
+        13: iconst_1
+        14: aload_0
+        15: getfield      #138                // Field _e2285d:LL/_ec7e36/_79e7e6;
+        18: aastore
+        19: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        22: pop
+        23: aload_1
+        24: iconst_1
+        25: anewarray     #95                 // class L/_ec7e36/_dd3308
+        28: dup
+        29: iconst_0
+        30: aload_0
+        31: getfield      #153                // Field _8cfec5:LL/_ec7e36/_e62626;
+        34: aastore
+        35: invokevirtual #189                // Method L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983._1e73d7:([LL/_ec7e36/_dd3308;)LL/_ec7e36/_590f69/_1e73d7/_590f69;
+        38: aload_0
+        39: invokedynamic #269,  0            // InvokeDynamic #24:getAsBoolean:(LL/_88f3cf/_bb4487/_52e8ee/_1253fc;)Ljava/util/function/BooleanSupplier;
+        44: invokeinterface #236,  2          // InterfaceMethod L/_ec7e36/_590f69/_1e73d7/_590f69._2f4182:(Ljava/util/function/BooleanSupplier;)Ljava/lang/Object;
+        49: pop
+        50: return
+      LineNumberTable:
+        line 164: 0
+        line 168: 23
+        line 169: 44
+        line 170: 50
+
+  private boolean _4cad4f();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #170                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 169: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _ae095f();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #168                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.MINIMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpne     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 156: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _137221();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #169                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.NORMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 151: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _1913f5();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #168                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.MINIMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 148: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _422002();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #168                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.MINIMAL:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 146: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _c4a4b9();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #170                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 141: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _4ba30b();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #170                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 139: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+
+  private boolean _6b676a();
+    descriptor: ()Z
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #152                // Field _54dcad:LL/_ec7e36/_1eb51c;
+         4: invokevirtual #190                // Method L/_ec7e36/_1eb51c.get:()Ljava/lang/Object;
+         7: getstatic     #170                // Field L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983.VANILLA:LL/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983;
+        10: if_acmpeq     17
+        13: iconst_1
+        14: goto          18
+        17: iconst_0
+        18: ireturn
+      LineNumberTable:
+        line 133: 0
+      StackMapTable: number_of_entries = 2
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+}
+NestMembers:
+  L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983
+BootstrapMethods:
+  0: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #419 (Ljava/lang/Object;)V
+      #289 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._d4ca6c:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+      #417 (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  1: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #419 (Ljava/lang/Object;)V
+      #275 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._87c409:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+      #417 (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  2: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #419 (Ljava/lang/Object;)V
+      #287 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._19bfb5:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+      #417 (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  3: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #418 (Ljava/lang/Object;)Ljava/lang/Object;
+      #295 REF_invokeInterface L/_ec7e36/_dd3308.getName:()Ljava/lang/String;
+      #416 (LL/_ec7e36/_429bf0;)Ljava/lang/String;
+  4: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #414 (I)Ljava/lang/Object;
+      #293 REF_invokeStatic L/_88f3cf/_bb4487/_52e8ee/_1253fc._e264f2:(I)[LL/_ec7e36/_429bf0;
+      #415 (I)[LL/_ec7e36/_429bf0;
+  5: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #273 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._95ef00:()Z
+      #413 ()Z
+  6: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #419 (Ljava/lang/Object;)V
+      #284 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._e62626:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+      #417 (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  7: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #419 (Ljava/lang/Object;)V
+      #276 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._cfe983:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+      #417 (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  8: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #271 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._917ee6:()Z
+      #413 ()Z
+  9: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #285 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._2110a8:()Z
+      #413 ()Z
+  10: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #280 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._a251f7:()Z
+      #413 ()Z
+  11: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #270 REF_invokeVirtual L/_ec7e36/_13ea87.get:()Ljava/lang/Object;
+      #413 ()Z
+  12: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #274 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._d7782f:()Z
+      #413 ()Z
+  13: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #283 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._6b676a:()Z
+      #413 ()Z
+  14: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #277 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._4ba30b:()Z
+      #413 ()Z
+  15: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #281 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._c4a4b9:()Z
+      #413 ()Z
+  16: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #282 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._422002:()Z
+      #413 ()Z
+  17: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #279 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._1913f5:()Z
+      #413 ()Z
+  18: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #290 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._137221:()Z
+      #413 ()Z
+  19: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #291 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._ae095f:()Z
+      #413 ()Z
+  20: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #419 (Ljava/lang/Object;)V
+      #278 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._2f4182:(LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+      #417 (LL/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983;)V
+  21: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #272 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._96c520:()Z
+      #413 ()Z
+  22: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #292 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._b39dda:()Z
+      #413 ()Z
+  23: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #286 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._14034a:()Z
+      #413 ()Z
+  24: #294 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #413 ()Z
+      #288 REF_invokeVirtual L/_88f3cf/_bb4487/_52e8ee/_1253fc._4cad4f:()Z
+      #413 ()Z
+InnerClasses:
+  public static final #487= #111 of #110; // _cfe983=class L/_88f3cf/_bb4487/_52e8ee/_1253fc$_cfe983 of class L/_88f3cf/_bb4487/_52e8ee/_1253fc
+  public static #487= #107 of #106;       // _cfe983=class L/_ec7e36/_1eb51c$_cfe983 of class L/_ec7e36/_1eb51c
+  public static #487= #94 of #93;         // _cfe983=class L/_ec7e36/_429bf0$_cfe983 of class L/_ec7e36/_429bf0
+  public static #487= #92 of #91;         // _cfe983=class L/_ec7e36/_79e7e6$_cfe983 of class L/_ec7e36/_79e7e6
+  public static #487= #100 of #99;        // _cfe983=class L/_ec7e36/_e62626$_cfe983 of class L/_ec7e36/_e62626
+  public static #487= #97 of #96;         // _cfe983=class L/_ec7e36/_145809$_cfe983 of class L/_ec7e36/_145809
+  public static #487= #105 of #104;       // _cfe983=class L/_ec7e36/_590f69/_21aca6/_21aca6$_cfe983 of class L/_ec7e36/_590f69/_21aca6/_21aca6
+  public static final #540= #121 of #120; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

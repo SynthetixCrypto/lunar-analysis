@@ -1,0 +1,53 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/com/moonsworth/webosr/wrappers/Session.class
+  Last modified Dec 31, 1969; size 298 bytes
+  SHA-256 checksum 538c6472f6f3682451c4c212156174e00fe1e40110571b0d93e78a8056922c96
+public final class com.moonsworth.webosr.wrappers.Session extends com.moonsworth.webosr.NativeHandle
+  minor version: 0
+  major version: 60
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // com/moonsworth/webosr/wrappers/Session
+  super_class: #1                         // com/moonsworth/webosr/NativeHandle
+  interfaces: 0, fields: 0, methods: 4, attributes: 0
+Constant pool:
+   #1 = Class              #12            // com/moonsworth/webosr/NativeHandle
+   #2 = Class              #13            // com/moonsworth/webosr/wrappers/Session
+   #3 = Methodref          #1.#4          // com/moonsworth/webosr/NativeHandle."<init>":(J)V
+   #4 = NameAndType        #9:#8          // "<init>":(J)V
+   #5 = Utf8               ()Ljava/lang/String;
+   #6 = Utf8               ()V
+   #7 = Utf8               ()Z
+   #8 = Utf8               (J)V
+   #9 = Utf8               <init>
+  #10 = Utf8               Code
+  #11 = Utf8               LineNumberTable
+  #12 = Utf8               com/moonsworth/webosr/NativeHandle
+  #13 = Utf8               com/moonsworth/webosr/wrappers/Session
+  #14 = Utf8               destroy
+  #15 = Utf8               isPersistent
+  #16 = Utf8               name
+{
+  private com.moonsworth.webosr.wrappers.Session(long);
+    descriptor: (J)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: lload_1
+         2: invokespecial #3                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+         5: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 5
+
+  public native boolean isPersistent();
+    descriptor: ()Z
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  public native java.lang.String name();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0101) ACC_PUBLIC, ACC_NATIVE
+
+  protected native void destroy();
+    descriptor: ()V
+    flags: (0x0104) ACC_PROTECTED, ACC_NATIVE
+}

@@ -1,0 +1,228 @@
+public final class L._767dc1._1e73d7 {
+  public static boolean _bb4487(java.lang.Throwable);
+    Code:
+       0: aload_0
+       1: invokevirtual #53                 // Method java/lang/Throwable.getCause:()Ljava/lang/Throwable;
+       4: ifnull        19
+       7: aload_0
+       8: invokevirtual #53                 // Method java/lang/Throwable.getCause:()Ljava/lang/Throwable;
+      11: invokestatic  #34                 // Method _bb4487:(Ljava/lang/Throwable;)Z
+      14: ifne          19
+      17: iconst_0
+      18: ireturn
+      19: aload_0
+      20: invokestatic  #61                 // Method org/apache/commons/lang3/exception/ExceptionUtils.getStackTrace:(Ljava/lang/Throwable;)Ljava/lang/String;
+      23: astore_1
+      24: invokestatic  #32                 // Method L/_02d7ad/_bb4487._bbfdb7:()Ljava/util/Collection;
+      27: invokeinterface #62,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      32: astore_2
+      33: aload_2
+      34: invokeinterface #63,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      39: ifeq          68
+      42: aload_2
+      43: invokeinterface #64,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      48: checkcast     #30                 // class java/util/regex/Pattern
+      51: astore_3
+      52: aload_3
+      53: aload_1
+      54: invokevirtual #60                 // Method java/util/regex/Pattern.matcher:(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      57: invokevirtual #59                 // Method java/util/regex/Matcher.find:()Z
+      60: ifeq          65
+      63: iconst_0
+      64: ireturn
+      65: goto          33
+      68: aload_0
+      69: instanceof    #21                 // class java/lang/OutOfMemoryError
+      72: ifne          79
+      75: iconst_1
+      76: goto          80
+      79: iconst_0
+      80: ireturn
+
+  public static java.lang.Throwable _1253fc(java.lang.Throwable);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: aconst_null
+       5: areturn
+       6: aload_0
+       7: invokestatic  #38                 // Method _d4ca6c:(Ljava/lang/Throwable;)V
+      10: aload_0
+      11: invokevirtual #54                 // Method java/lang/Throwable.getMessage:()Ljava/lang/String;
+      14: astore_1
+      15: aload_1
+      16: ifnull        172
+      19: aload_1
+      20: invokestatic  #35                 // Method _e68804:(Ljava/lang/String;)Ljava/lang/String;
+      23: astore_2
+      24: aload_2
+      25: aload_1
+      26: invokevirtual #50                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      29: ifne          172
+      32: aload_0
+      33: invokevirtual #53                 // Method java/lang/Throwable.getCause:()Ljava/lang/Throwable;
+      36: ifnull        43
+      39: iconst_1
+      40: goto          44
+      43: iconst_0
+      44: istore_3
+      45: iload_3
+      46: ifeq          59
+      49: aload_0
+      50: invokevirtual #53                 // Method java/lang/Throwable.getCause:()Ljava/lang/Throwable;
+      53: invokestatic  #36                 // Method _1253fc:(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      56: goto          60
+      59: aconst_null
+      60: astore        4
+      62: iload_3
+      63: ifeq          111
+      66: aload_0
+      67: invokevirtual #41                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      70: iconst_2
+      71: anewarray     #19                 // class java/lang/Class
+      74: dup
+      75: iconst_0
+      76: ldc           #23                 // class java/lang/String
+      78: aastore
+      79: dup
+      80: iconst_1
+      81: ldc           #24                 // class java/lang/Throwable
+      83: aastore
+      84: invokevirtual #39                 // Method java/lang/Class.getConstructor:([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+      87: iconst_2
+      88: anewarray     #20                 // class java/lang/Object
+      91: dup
+      92: iconst_0
+      93: aload_2
+      94: aastore
+      95: dup
+      96: iconst_1
+      97: aload         4
+      99: aastore
+     100: invokevirtual #58                 // Method java/lang/reflect/Constructor.newInstance:([Ljava/lang/Object;)Ljava/lang/Object;
+     103: checkcast     #24                 // class java/lang/Throwable
+     106: astore        5
+     108: goto          143
+     111: aload_0
+     112: invokevirtual #41                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+     115: iconst_1
+     116: anewarray     #19                 // class java/lang/Class
+     119: dup
+     120: iconst_0
+     121: ldc           #23                 // class java/lang/String
+     123: aastore
+     124: invokevirtual #39                 // Method java/lang/Class.getConstructor:([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+     127: iconst_1
+     128: anewarray     #20                 // class java/lang/Object
+     131: dup
+     132: iconst_0
+     133: aload_2
+     134: aastore
+     135: invokevirtual #58                 // Method java/lang/reflect/Constructor.newInstance:([Ljava/lang/Object;)Ljava/lang/Object;
+     138: checkcast     #24                 // class java/lang/Throwable
+     141: astore        5
+     143: aload         5
+     145: aload_0
+     146: invokevirtual #55                 // Method java/lang/Throwable.getStackTrace:()[Ljava/lang/StackTraceElement;
+     149: invokevirtual #56                 // Method java/lang/Throwable.setStackTrace:([Ljava/lang/StackTraceElement;)V
+     152: aload         5
+     154: astore_0
+     155: goto          172
+     158: astore        5
+     160: new           #17                 // class L/_767dc1/_bb4487
+     163: dup
+     164: aload_0
+     165: aload_2
+     166: aload         4
+     168: invokespecial #33                 // Method L/_767dc1/_bb4487."<init>":(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/Throwable;)V
+     171: astore_0
+     172: aload_0
+     173: areturn
+    Exception table:
+       from    to  target type
+          62   155   158   Class java/lang/Throwable
+
+  private static void _d4ca6c(java.lang.Throwable);
+    Code:
+       0: aload_0
+       1: invokevirtual #55                 // Method java/lang/Throwable.getStackTrace:()[Ljava/lang/StackTraceElement;
+       4: astore_1
+       5: iconst_0
+       6: istore_2
+       7: iload_2
+       8: aload_1
+       9: arraylength
+      10: if_icmpge     64
+      13: aload_1
+      14: iload_2
+      15: aaload
+      16: astore_3
+      17: aload_1
+      18: iload_2
+      19: new           #22                 // class java/lang/StackTraceElement
+      22: dup
+      23: aload_3
+      24: invokevirtual #43                 // Method java/lang/StackTraceElement.getClassLoaderName:()Ljava/lang/String;
+      27: aload_3
+      28: invokevirtual #48                 // Method java/lang/StackTraceElement.getModuleName:()Ljava/lang/String;
+      31: aload_3
+      32: invokevirtual #49                 // Method java/lang/StackTraceElement.getModuleVersion:()Ljava/lang/String;
+      35: aload_3
+      36: invokevirtual #44                 // Method java/lang/StackTraceElement.getClassName:()Ljava/lang/String;
+      39: aload_3
+      40: invokevirtual #47                 // Method java/lang/StackTraceElement.getMethodName:()Ljava/lang/String;
+      43: invokestatic  #37                 // Method _8090de:(Ljava/lang/String;)Ljava/lang/String;
+      46: aload_3
+      47: invokevirtual #45                 // Method java/lang/StackTraceElement.getFileName:()Ljava/lang/String;
+      50: aload_3
+      51: invokevirtual #46                 // Method java/lang/StackTraceElement.getLineNumber:()I
+      54: invokespecial #42                 // Method java/lang/StackTraceElement."<init>":(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+      57: aastore
+      58: iinc          2, 1
+      61: goto          7
+      64: aload_0
+      65: aload_1
+      66: invokevirtual #56                 // Method java/lang/Throwable.setStackTrace:([Ljava/lang/StackTraceElement;)V
+      69: return
+
+  private static java.lang.String _e68804(java.lang.String);
+    Code:
+       0: aload_0
+       1: ldc           #6                  // String com\\.moonsworth\\.lunar(\\.[ICHOR]+)+
+       3: ldc           #3                  // String Obf\'d
+       5: invokevirtual #51                 // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       8: ldc           #5                  // String [ICHOR]{5,}
+      10: ldc           #3                  // String Obf\'d
+      12: invokevirtual #51                 // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      15: ldc           #1                  // String \'Genesis\' @[a-f0-9A-F]+
+      17: ldc           #2                  // String Genesis
+      19: invokevirtual #51                 // Method java/lang/String.replaceAll:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      22: areturn
+
+  private static java.lang.String _8090de(java.lang.String);
+    Code:
+       0: aload_0
+       1: ldc           #7                  // String handler\\$[A-Za-z0-9]+\\$
+       3: ldc           #8                  // String handler_
+       5: invokevirtual #52                 // Method java/lang/String.replaceFirst:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       8: ldc           #11                 // String redirect\\$[A-Za-z0-9]+\\$
+      10: ldc           #12                 // String redirect_
+      12: invokevirtual #52                 // Method java/lang/String.replaceFirst:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      15: ldc           #9                  // String proxy\\$[A-Za-z0-9]+\\$
+      17: ldc           #10                 // String proxy_
+      19: invokevirtual #52                 // Method java/lang/String.replaceFirst:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      22: ldc           #13                 // String wrapOperation\\$[A-Za-z0-9]+\\$
+      24: ldc           #14                 // String wrapOperation_
+      26: invokevirtual #52                 // Method java/lang/String.replaceFirst:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      29: areturn
+
+  private L._767dc1._1e73d7();
+    Code:
+       0: aload_0
+       1: invokespecial #40                 // Method java/lang/Object."<init>":()V
+       4: new           #25                 // class java/lang/UnsupportedOperationException
+       7: dup
+       8: ldc           #4                  // String This is a utility class and cannot be instantiated
+      10: invokespecial #57                 // Method java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+      13: athrow
+}

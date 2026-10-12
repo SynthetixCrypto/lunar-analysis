@@ -1,0 +1,116 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/com/moonsworth/lunar/client/util/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/ORCOOOCHIICOIICCROCRCOOROORIHR.class
+  Last modified Dec 31, 1969; size 711 bytes
+  SHA-256 checksum 9e4a740705800b83fe2ea4b0edb1499de517f74fcb84268b8a9c3ffd7bd8a775
+public class com.moonsworth.lunar.client.util.HHOCCCCIIIORCHRIHIRCHIRICCHIRC.ORCOOOCHIICOIICCROCRCOOROORIHR
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #1                          // com/moonsworth/lunar/client/util/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/ORCOOOCHIICOIICCROCRCOOROORIHR
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 0
+Constant pool:
+   #1 = Class              #29            // com/moonsworth/lunar/client/util/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/ORCOOOCHIICOIICCROCRCOOROORIHR
+   #2 = Class              #31            // java/lang/Object
+   #3 = Class              #32            // java/nio/ByteBuffer
+   #4 = Class              #34            // org/lwjgl/BufferUtils
+   #5 = Fieldref           #1.#12         // com/moonsworth/lunar/client/util/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/ORCOOOCHIICOIICCROCRCOOROORIHR.IIIROCOHOICRHHRCIRCORRORIRIOIC:Ljava/nio/ByteBuffer;
+   #6 = Methodref          #2.#11         // java/lang/Object."<init>":()V
+   #7 = Methodref          #3.#13         // java/nio/ByteBuffer.capacity:()I
+   #8 = Methodref          #3.#15         // java/nio/ByteBuffer.limit:(I)Ljava/nio/ByteBuffer;
+   #9 = Methodref          #3.#16         // java/nio/ByteBuffer.position:(I)Ljava/nio/ByteBuffer;
+  #10 = Methodref          #4.#14         // org/lwjgl/BufferUtils.createByteBuffer:(I)Ljava/nio/ByteBuffer;
+  #11 = NameAndType        #21:#18        // "<init>":()V
+  #12 = NameAndType        #23:#25        // IIIROCOHOICRHHRCIRCORRORIRIOIC:Ljava/nio/ByteBuffer;
+  #13 = NameAndType        #28:#17        // capacity:()I
+  #14 = NameAndType        #30:#19        // createByteBuffer:(I)Ljava/nio/ByteBuffer;
+  #15 = NameAndType        #33:#19        // limit:(I)Ljava/nio/ByteBuffer;
+  #16 = NameAndType        #35:#19        // position:(I)Ljava/nio/ByteBuffer;
+  #17 = Utf8               ()I
+  #18 = Utf8               ()V
+  #19 = Utf8               (I)Ljava/nio/ByteBuffer;
+  #20 = Utf8               <clinit>
+  #21 = Utf8               <init>
+  #22 = Utf8               Code
+  #23 = Utf8               IIIROCOHOICRHHRCIRCORRORIRIOIC
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               Ljava/nio/ByteBuffer;
+  #26 = Utf8               OOOHORCRCHHOCHCRCIIRRROOHCRCRH
+  #27 = Utf8               StackMapTable
+  #28 = Utf8               capacity
+  #29 = Utf8               com/moonsworth/lunar/client/util/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/ORCOOOCHIICOIICCROCRCOOROORIHR
+  #30 = Utf8               createByteBuffer
+  #31 = Utf8               java/lang/Object
+  #32 = Utf8               java/nio/ByteBuffer
+  #33 = Utf8               limit
+  #34 = Utf8               org/lwjgl/BufferUtils
+  #35 = Utf8               position
+{
+  private static java.nio.ByteBuffer IIIROCOHOICRHHRCIRCORRORIRIOIC;
+    descriptor: Ljava/nio/ByteBuffer;
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+
+  public com.moonsworth.lunar.client.util.HHOCCCCIIIORCHRIHIRCHIRICCHIRC.ORCOOOCHIICOIICCROCRCOOROORIHR();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public static java.nio.ByteBuffer OOOHORCRCHHOCHCRCIIRRROOHCRCRH(int);
+    descriptor: (I)Ljava/nio/ByteBuffer;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: getstatic     #5                  // Field IIIROCOHOICRHHRCIRCORRORIRIOIC:Ljava/nio/ByteBuffer;
+         3: astore_1
+         4: aload_1
+         5: ifnull        16
+         8: aload_1
+         9: invokevirtual #7                  // Method java/nio/ByteBuffer.capacity:()I
+        12: iload_0
+        13: if_icmpge     25
+        16: iload_0
+        17: invokestatic  #10                 // Method org/lwjgl/BufferUtils.createByteBuffer:(I)Ljava/nio/ByteBuffer;
+        20: dup
+        21: astore_1
+        22: putstatic     #5                  // Field IIIROCOHOICRHHRCIRCORRORIRIOIC:Ljava/nio/ByteBuffer;
+        25: aload_1
+        26: iconst_0
+        27: invokevirtual #9                  // Method java/nio/ByteBuffer.position:(I)Ljava/nio/ByteBuffer;
+        30: pop
+        31: aload_1
+        32: aload_1
+        33: invokevirtual #7                  // Method java/nio/ByteBuffer.capacity:()I
+        36: invokevirtual #8                  // Method java/nio/ByteBuffer.limit:(I)Ljava/nio/ByteBuffer;
+        39: pop
+        40: aload_1
+        41: areturn
+      LineNumberTable:
+        line 11: 0
+        line 12: 4
+        line 13: 16
+        line 16: 25
+        line 17: 31
+        line 19: 40
+      StackMapTable: number_of_entries = 2
+        frame_type = 16 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 8
+          locals = [ top, class java/nio/ByteBuffer ]
+          stack = []
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: aconst_null
+         1: putstatic     #5                  // Field IIIROCOHOICRHHRCIRCORRORIRIOIC:Ljava/nio/ByteBuffer;
+         4: return
+      LineNumberTable:
+        line 8: 0
+}

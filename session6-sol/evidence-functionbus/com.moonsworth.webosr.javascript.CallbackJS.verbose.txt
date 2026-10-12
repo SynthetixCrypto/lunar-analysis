@@ -1,0 +1,51 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/com/moonsworth/webosr/javascript/CallbackJS.class
+  Last modified Dec 31, 1969; size 454 bytes
+  SHA-256 checksum 276b880c45bfc2fa8ae67db61375f1bc635c7c30b904058579d3b44cfa97dcbf
+public interface com.moonsworth.webosr.javascript.CallbackJS extends java.lang.annotation.Annotation
+  minor version: 0
+  major version: 60
+  flags: (0x2601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT, ACC_ANNOTATION
+  this_class: #2                          // com/moonsworth/webosr/javascript/CallbackJS
+  super_class: #3                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Integer            0
+   #2 = Class              #16            // com/moonsworth/webosr/javascript/CallbackJS
+   #3 = Class              #17            // java/lang/Object
+   #4 = Class              #18            // java/lang/annotation/Annotation
+   #5 = Utf8               ()Ljava/lang/String;
+   #6 = Utf8               ()Z
+   #7 = Utf8               AnnotationDefault
+   #8 = Utf8               Ljava/lang/annotation/ElementType;
+   #9 = Utf8               Ljava/lang/annotation/Retention;
+  #10 = Utf8               Ljava/lang/annotation/RetentionPolicy;
+  #11 = Utf8               Ljava/lang/annotation/Target;
+  #12 = Utf8               METHOD
+  #13 = Utf8               RUNTIME
+  #14 = Utf8               RuntimeVisibleAnnotations
+  #15 = Utf8               async
+  #16 = Utf8               com/moonsworth/webosr/javascript/CallbackJS
+  #17 = Utf8               java/lang/Object
+  #18 = Utf8               java/lang/annotation/Annotation
+  #19 = Utf8               value
+{
+  public abstract java.lang.String value();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract boolean async();
+    descriptor: ()Z
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+    AnnotationDefault:
+      default_value: Z#1
+        false
+}
+RuntimeVisibleAnnotations:
+  0: #9(#19=e#10.#13)
+    java.lang.annotation.Retention(
+      value=Ljava/lang/annotation/RetentionPolicy;.RUNTIME
+    )
+  1: #11(#19=[e#8.#12])
+    java.lang.annotation.Target(
+      value=[Ljava/lang/annotation/ElementType;.METHOD]
+    )

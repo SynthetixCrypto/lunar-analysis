@@ -1,0 +1,93 @@
+L._cb9292._cfe983
+  public void onMessage(java.nio.ByteBuffer);
+    Code:
+       0: aload_1
+       1: invokestatic  #163                // Method com/lunarclient/gameipc/protocol/v1/GameboundIPCMessage.parseFrom:(Ljava/nio/ByteBuffer;)Lcom/lunarclient/gameipc/protocol/v1/GameboundIPCMessage;
+       4: astore_2
+       5: goto          25
+       8: astore_3
+       9: ldc           #8                  // String IPC
+      11: ldc           #6                  // String Failed to parse clientbound WebSocket message
+      13: iconst_0
+      14: anewarray     #90                 // class java/lang/Object
+      17: invokestatic  #200                // Method L/_00e05b/_cfe983._1e73d7:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      20: aload_3
+      21: invokevirtual #142                // Method com/google/protobuf/InvalidProtocolBufferException.printStackTrace:()V
+      24: return
+      25: aload_2
+      26: invokevirtual #160                // Method com/lunarclient/gameipc/protocol/v1/GameboundIPCMessage.getContentsCase:()Lcom/lunarclient/gameipc/protocol/v1/GameboundIPCMessage$ContentsCase;
+      29: getstatic     #116                // Field com/lunarclient/gameipc/protocol/v1/GameboundIPCMessage$ContentsCase.RPC_RESPONSE:Lcom/lunarclient/gameipc/protocol/v1/GameboundIPCMessage$ContentsCase;
+      32: if_acmpne     49
+      35: aload_0
+      36: getfield      #123                // Field _14b733:LL/_cb9292/_21aca6;
+      39: aload_2
+      40: invokevirtual #162                // Method com/lunarclient/gameipc/protocol/v1/GameboundIPCMessage.getRpcResponse:()Lcom/lunarclient/gameipc/protocol/v1/IPCRpcResponse;
+      43: invokevirtual #198                // Method L/_cb9292/_21aca6._cfe983:(Lcom/lunarclient/gameipc/protocol/v1/IPCRpcResponse;)V
+      46: goto          210
+      49: aload_2
+      50: invokevirtual #160                // Method com/lunarclient/gameipc/protocol/v1/GameboundIPCMessage.getContentsCase:()Lcom/lunarclient/gameipc/protocol/v1/GameboundIPCMessage$ContentsCase;
+      53: getstatic     #115                // Field com/lunarclient/gameipc/protocol/v1/GameboundIPCMessage$ContentsCase.PUSH_NOTIFICATION:Lcom/lunarclient/gameipc/protocol/v1/GameboundIPCMessage$ContentsCase;
+      56: if_acmpne     199
+      59: aload_2
+      60: invokevirtual #161                // Method com/lunarclient/gameipc/protocol/v1/GameboundIPCMessage.getPushNotification:()Lcom/google/protobuf/Any;
+      63: astore_3
+      64: aload_0
+      65: getfield      #127                // Field _b0ef13:Ljava/util/Map;
+      68: invokeinterface #245,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+      73: invokeinterface #250,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+      78: astore        4
+      80: aload         4
+      82: invokeinterface #243,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      87: ifeq          178
+      90: aload         4
+      92: invokeinterface #244,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      97: checkcast     #102                // class java/util/Map$Entry
+     100: astore        5
+     102: aload_3
+     103: aload         5
+     105: invokeinterface #248,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     110: checkcast     #87                 // class java/lang/Class
+     113: invokevirtual #140                // Method com/google/protobuf/Any.is:(Ljava/lang/Class;)Z
+     116: ifeq          175
+     119: aload_3
+     120: aload         5
+     122: invokeinterface #248,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     127: checkcast     #87                 // class java/lang/Class
+     130: invokevirtual #141                // Method com/google/protobuf/Any.unpack:(Ljava/lang/Class;)Lcom/google/protobuf/Message;
+     133: astore        6
+     135: goto          159
+     138: astore        7
+     140: ldc           #8                  // String IPC
+     142: aload_3
+     143: invokevirtual #139                // Method com/google/protobuf/Any.getTypeUrl:()Ljava/lang/String;
+     146: invokedynamic #261,  0            // InvokeDynamic #10:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     151: iconst_0
+     152: anewarray     #90                 // class java/lang/Object
+     155: invokestatic  #200                // Method L/_00e05b/_cfe983._1e73d7:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+     158: return
+     159: aload         6
+     161: aload         5
+     163: invokeinterface #249,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     168: checkcast     #106                // class java/util/function/Consumer
+     171: invokestatic  #216                // Method L/util/_d930e6._590f69:(Ljava/lang/Object;Ljava/util/function/Consumer;)V
+     174: return
+     175: goto          80
+     178: ldc           #8                  // String IPC
+     180: aload_3
+     181: invokevirtual #139                // Method com/google/protobuf/Any.getTypeUrl:()Ljava/lang/String;
+     184: invokedynamic #262,  0            // InvokeDynamic #11:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     189: iconst_0
+     190: anewarray     #90                 // class java/lang/Object
+     193: invokestatic  #201                // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+     196: goto          210
+     199: ldc           #8                  // String IPC
+     201: ldc           #15                 // String Unknown response type to consume
+     203: iconst_0
+     204: anewarray     #90                 // class java/lang/Object
+     207: invokestatic  #200                // Method L/_00e05b/_cfe983._1e73d7:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+     210: return
+    Exception table:
+       from    to  target type
+           0     5     8   Class com/google/protobuf/InvalidProtocolBufferException
+         119   135   138   Class com/google/protobuf/InvalidProtocolBufferException
+

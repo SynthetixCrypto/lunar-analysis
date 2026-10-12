@@ -1,0 +1,101 @@
+public class L._88f3cf._1e73d7._a1dd3a implements L._88f3cf._a1dd3a {
+  private final L._ba7d98._bb4487 _4d3b65;
+
+  private final L._88f3cf._1e73d7._cfe983._cfe983 _d407c7;
+
+  private final L._88f3cf._21aca6 _d6df5b;
+
+  private boolean _f132f1;
+
+  public L._88f3cf._1e73d7._a1dd3a(L._88f3cf._21aca6, L._88f3cf._1e73d7._cfe983._cfe983);
+    Code:
+       0: aload_0
+       1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_0
+       6: invokedynamic #36,  0             // InvokeDynamic #0:run:(LL/_88f3cf/_1e73d7/_a1dd3a;)Ljava/lang/Runnable;
+      11: invokestatic  #23                 // Method L/_ba7d98/_bb4487._767dc1:(Ljava/lang/Runnable;)LL/_ba7d98/_bb4487;
+      14: putfield      #20                 // Field _4d3b65:LL/_ba7d98/_bb4487;
+      17: aload_0
+      18: iconst_1
+      19: putfield      #19                 // Field _f132f1:Z
+      22: aload_0
+      23: aload_1
+      24: putfield      #18                 // Field _d6df5b:LL/_88f3cf/_21aca6;
+      27: aload_0
+      28: aload_2
+      29: putfield      #17                 // Field _d407c7:LL/_88f3cf/_1e73d7/_cfe983/_cfe983;
+      32: aload_0
+      33: invokevirtual #24                 // Method _f3c153:()V
+      36: return
+
+  public boolean _98d4d1();
+    Code:
+       0: aload_0
+       1: getfield      #19                 // Field _f132f1:Z
+       4: ireturn
+
+  public void _f3c153();
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #20                 // Field _4d3b65:LL/_ba7d98/_bb4487;
+       5: aload_0
+       6: getfield      #17                 // Field _d407c7:LL/_88f3cf/_1e73d7/_cfe983/_cfe983;
+       9: dup
+      10: invokestatic  #29                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      13: pop
+      14: invokedynamic #37,  0             // InvokeDynamic #1:get:(LL/_88f3cf/_1e73d7/_cfe983/_cfe983;)Ljava/util/function/Supplier;
+      19: invokevirtual #22                 // Method L/_ba7d98/_bb4487._c5ce95:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+      22: checkcast     #9                  // class java/lang/Boolean
+      25: invokevirtual #26                 // Method java/lang/Boolean.booleanValue:()Z
+      28: putfield      #19                 // Field _f132f1:Z
+      31: return
+
+  private void _91843f();
+    Code:
+       0: aload_0
+       1: getfield      #19                 // Field _f132f1:Z
+       4: istore_1
+       5: aload_0
+       6: invokevirtual #24                 // Method _f3c153:()V
+       9: iload_1
+      10: aload_0
+      11: getfield      #19                 // Field _f132f1:Z
+      14: if_icmpne     18
+      17: return
+      18: aload_0
+      19: getfield      #18                 // Field _d6df5b:LL/_88f3cf/_21aca6;
+      22: getstatic     #15                 // Field L/_88f3cf/_02d7ad._516e19:LL/_55938e/_e62626;
+      25: getstatic     #21                 // Field L/_88f3cf/_6c713e.COMPLETE:LL/_88f3cf/_6c713e;
+      28: invokeinterface #34,  3           // InterfaceMethod L/_88f3cf/_21aca6._21aca6:(LL/_55938e/_e62626;Ljava/lang/Object;)Ljava/lang/Object;
+      33: getstatic     #21                 // Field L/_88f3cf/_6c713e.COMPLETE:LL/_88f3cf/_6c713e;
+      36: if_acmpeq     40
+      39: return
+      40: aload_0
+      41: getfield      #18                 // Field _d6df5b:LL/_88f3cf/_21aca6;
+      44: getstatic     #16                 // Field L/_88f3cf/_02d7ad._3aac95:LL/_55938e/_e62626;
+      47: invokeinterface #33,  2           // InterfaceMethod L/_88f3cf/_21aca6._133367:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      52: checkcast     #6                  // class L/_88f3cf/_2ce426
+      55: astore_2
+      56: aload_2
+      57: ifnonnull     70
+      60: aload_0
+      61: getfield      #18                 // Field _d6df5b:LL/_88f3cf/_21aca6;
+      64: invokeinterface #35,  1           // InterfaceMethod L/_88f3cf/_21aca6.updateEnabled:()V
+      69: return
+      70: aload_2
+      71: aload_0
+      72: getfield      #18                 // Field _d6df5b:LL/_88f3cf/_21aca6;
+      75: aload_2
+      76: invokeinterface #32,  1           // InterfaceMethod L/_88f3cf/_2ce426.isEnabled:()Z
+      81: ifeq          95
+      84: aload_0
+      85: getfield      #19                 // Field _f132f1:Z
+      88: ifeq          95
+      91: iconst_1
+      92: goto          96
+      95: iconst_0
+      96: invokeinterface #31,  3           // InterfaceMethod L/_88f3cf/_2ce426._cfe983:(LL/_88f3cf/_21aca6;Z)V
+     101: return
+}

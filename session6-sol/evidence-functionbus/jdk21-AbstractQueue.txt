@@ -1,0 +1,94 @@
+﻿Compiled from "AbstractQueue.java"
+public abstract class java.util.AbstractQueue<E> extends java.util.AbstractCollection<E> implements java.util.Queue<E> {
+  protected java.util.AbstractQueue();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/util/AbstractCollection."<init>":()V
+       4: return
+
+  public boolean add(E);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #7                  // Method offer:(Ljava/lang/Object;)Z
+       5: ifeq          10
+       8: iconst_1
+       9: ireturn
+      10: new           #13                 // class java/lang/IllegalStateException
+      13: dup
+      14: ldc           #15                 // String Queue full
+      16: invokespecial #17                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      19: athrow
+
+  public E remove();
+    Code:
+       0: aload_0
+       1: invokevirtual #20                 // Method poll:()Ljava/lang/Object;
+       4: astore_1
+       5: aload_1
+       6: ifnull        11
+       9: aload_1
+      10: areturn
+      11: new           #24                 // class java/util/NoSuchElementException
+      14: dup
+      15: invokespecial #26                 // Method java/util/NoSuchElementException."<init>":()V
+      18: athrow
+
+  public E element();
+    Code:
+       0: aload_0
+       1: invokevirtual #27                 // Method peek:()Ljava/lang/Object;
+       4: astore_1
+       5: aload_1
+       6: ifnull        11
+       9: aload_1
+      10: areturn
+      11: new           #24                 // class java/util/NoSuchElementException
+      14: dup
+      15: invokespecial #26                 // Method java/util/NoSuchElementException."<init>":()V
+      18: athrow
+
+  public void clear();
+    Code:
+       0: aload_0
+       1: invokevirtual #20                 // Method poll:()Ljava/lang/Object;
+       4: ifnull        10
+       7: goto          0
+      10: return
+
+  public boolean addAll(java.util.Collection<? extends E>);
+    Code:
+       0: aload_1
+       1: ifnonnull     12
+       4: new           #30                 // class java/lang/NullPointerException
+       7: dup
+       8: invokespecial #32                 // Method java/lang/NullPointerException."<init>":()V
+      11: athrow
+      12: aload_1
+      13: aload_0
+      14: if_acmpne     25
+      17: new           #33                 // class java/lang/IllegalArgumentException
+      20: dup
+      21: invokespecial #35                 // Method java/lang/IllegalArgumentException."<init>":()V
+      24: athrow
+      25: iconst_0
+      26: istore_2
+      27: aload_1
+      28: invokeinterface #36,  1           // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      33: astore_3
+      34: aload_3
+      35: invokeinterface #42,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      40: ifeq          65
+      43: aload_3
+      44: invokeinterface #48,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      49: astore        4
+      51: aload_0
+      52: aload         4
+      54: invokevirtual #51                 // Method add:(Ljava/lang/Object;)Z
+      57: ifeq          62
+      60: iconst_1
+      61: istore_2
+      62: goto          34
+      65: iload_2
+      66: ireturn
+}

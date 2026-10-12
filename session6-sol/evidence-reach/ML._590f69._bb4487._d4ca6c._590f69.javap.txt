@@ -1,0 +1,155 @@
+public interface ML._590f69._bb4487._d4ca6c._590f69 extends ML._590f69._bb4487._d4ca6c._cfe983 {
+  public abstract ML._590f69._bb4487._bb4487._cfe983 bridge$getSendQueue();
+
+  public default void _cfe983(java.lang.String, float, float);
+    Code:
+       0: aload_0
+       1: invokeinterface #21,  1           // InterfaceMethod bridge$getWorld:()LML/_590f69/_dcf582/_1253fc;
+       6: aload_0
+       7: invokeinterface #18,  1           // InterfaceMethod bridge$getPosX:()D
+      12: aload_0
+      13: invokeinterface #19,  1           // InterfaceMethod bridge$getPosY:()D
+      18: aload_0
+      19: invokeinterface #20,  1           // InterfaceMethod bridge$getPosZ:()D
+      24: aload_1
+      25: fload_2
+      26: fload_3
+      27: iconst_0
+      28: invokeinterface #13,  11          // InterfaceMethod ML/_590f69/_dcf582/_1253fc.bridge$playSound:(DDDLjava/lang/String;FFZ)V
+      33: return
+
+  public default void _cfe983(java.lang.String, double, double, double, float, float);
+    Code:
+       0: aload_0
+       1: invokeinterface #21,  1           // InterfaceMethod bridge$getWorld:()LML/_590f69/_dcf582/_1253fc;
+       6: dload_2
+       7: dload         4
+       9: dload         6
+      11: aload_1
+      12: fload         8
+      14: fload         9
+      16: iconst_0
+      17: invokeinterface #13,  11          // InterfaceMethod ML/_590f69/_dcf582/_1253fc.bridge$playSound:(DDDLjava/lang/String;FFZ)V
+      22: return
+
+  public abstract java.util.Optional<java.lang.String> bridge$getClientBrand();
+
+  public abstract void bridge$sendChatMessage(java.lang.String);
+
+  public abstract void bridge$sendCommand(java.lang.String);
+
+  public abstract ML._590f69._bb4487._d4ca6c._21aca6 bridge$getMovementInput();
+
+  public abstract void bridge$onCriticalHit(ML._590f69._2ce426._1e73d7);
+
+  public abstract void bridge$setMovementInput(ML._590f69._bb4487._d4ca6c._21aca6);
+
+  public abstract boolean bridge$isSprinting();
+
+  public abstract void bridge$setSprinting(boolean);
+
+  public abstract boolean bridge$isRidingHorse();
+
+  public abstract void bridge$sendRidingJumpPacket();
+
+  public abstract int bridge$getSprintToggleTimer();
+
+  public abstract void bridge$setSprintToggleTimer(int);
+
+  public abstract void bridge$pushOutOfBlocks(double, double, double);
+
+  public abstract void bridge$sendPlayerAbilities();
+
+  public abstract void bridge$setHorseJumpPowerCounter(int);
+
+  public abstract int bridge$getHorseJumpPowerCounter();
+
+  public abstract void bridge$setHorseJumpPower(float);
+
+  public abstract float bridge$getHorseJumpPower();
+
+  public abstract ML._590f69._6c713e._cfe983 bridge$getOpenContainer();
+
+  public default float bridge$getYSize();
+    Code:
+       0: fconst_0
+       1: freturn
+
+  public default void bridge$setYSize(float);
+    Code:
+       0: return
+
+  public default ML._590f69._dcf582._cfe983._21aca6 _7591be();
+    Code:
+       0: aload_0
+       1: invokeinterface #21,  1           // InterfaceMethod bridge$getWorld:()LML/_590f69/_dcf582/_1253fc;
+       6: astore_1
+       7: new           #9                  // class org/joml/Vector3i
+      10: dup
+      11: aload_0
+      12: invokeinterface #15,  1           // InterfaceMethod bridge$getBlockX:()I
+      17: aload_0
+      18: invokeinterface #16,  1           // InterfaceMethod bridge$getBlockY:()I
+      23: aload_0
+      24: invokeinterface #17,  1           // InterfaceMethod bridge$getBlockZ:()I
+      29: invokespecial #10                 // Method org/joml/Vector3i."<init>":(III)V
+      32: astore_2
+      33: aload_1
+      34: aload_2
+      35: invokeinterface #11,  2           // InterfaceMethod ML/_590f69/_dcf582/_1253fc.bridge$getChunkFromBlockCoords:(Lorg/joml/Vector3ic;)LML/_590f69/_dcf582/_21aca6/_cfe983;
+      40: aload_2
+      41: aload_1
+      42: invokeinterface #12,  1           // InterfaceMethod ML/_590f69/_dcf582/_1253fc.bridge$getWorldChunkManager:()LML/_590f69/_dcf582/_cfe983/_1253fc;
+      47: invokeinterface #14,  3           // InterfaceMethod ML/_590f69/_dcf582/_21aca6/_cfe983.bridge$getBiome:(Lorg/joml/Vector3i;LML/_590f69/_dcf582/_cfe983/_1253fc;)LML/_590f69/_dcf582/_cfe983/_21aca6;
+      52: areturn
+
+  public abstract ML._590f69._133367._21aca6 bridge$getStatsCounter();
+
+  public abstract int bridge$getSwingProgress();
+
+  public abstract boolean bridge$isSwingInProgress();
+
+  public abstract int bridge$getSwingingArm();
+
+  public abstract void bridge$swingHand(int);
+
+  public abstract void bridge$swingHandVisually(int);
+
+  public abstract void bridge$setAttackStrengthTicker(int);
+
+  public abstract int bridge$getAttackStrengthTicker();
+
+  public abstract void bridge$setItemSwapTicker(int);
+
+  public abstract int bridge$getItemSwapTicker();
+
+  public abstract float bridge$getAttackStrengthScale();
+
+  public abstract float bridge$getCurrentItemAttackStrengthDelay();
+
+  public abstract int bridge$getUsedItemHand();
+
+  public abstract void bridge$startUsingItem(int);
+
+  public abstract void bridge$stopUsingItem();
+
+  public abstract void bridge$drop(boolean);
+
+  public abstract boolean bridge$hasHealth();
+
+  public abstract int bridge$getExperienceLevel();
+
+  public abstract boolean bridge$canSeeName(ML._590f69._2ce426._1253fc._590f69);
+
+  public abstract void bridge$closeScreen();
+
+  public abstract boolean bridge$isPlayerSleeping();
+
+  public abstract float bridge$getSleepProgress();
+
+  public abstract float bridge$getCooldown(ML._590f69._c8175c._cb9292);
+
+  public abstract float bridge$getCurrentMood();
+
+  public abstract boolean bridge$canEnterStandingPose();
+}

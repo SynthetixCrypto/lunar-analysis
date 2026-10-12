@@ -1,0 +1,307 @@
+  private static final java.util.Set<java.lang.String> _24bc8a;
+
+
+  private static final java.lang.String _188dfe;
+
+
+  public static boolean _21aca6(java.net.URI);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: iconst_0
+       5: ireturn
+       6: aload_0
+       7: invokevirtual #65                 // Method java/net/URI.getScheme:()Ljava/lang/String;
+      10: astore_1
+      11: aload_1
+      12: ifnonnull     17
+      15: iconst_0
+      16: ireturn
+      17: aload_1
+      18: getstatic     #40                 // Field java/util/Locale.ROOT:Ljava/util/Locale;
+      21: invokevirtual #60                 // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      24: astore_2
+      25: getstatic     #39                 // Field _24bc8a:Ljava/util/Set;
+      28: aload_2
+      29: invokeinterface #77,  2           // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      34: ifne          46
+      37: aload_2
+      38: ldc           #8                  // String lunarclient
+      40: invokevirtual #59                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      43: ifeq          50
+      46: iconst_1
+      47: goto          51
+      50: iconst_0
+      51: ireturn
+
+
+  public static boolean _335655(java.lang.String);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: iconst_0
+       5: ireturn
+       6: new           #30                 // class java/net/URI
+       9: dup
+      10: aload_0
+      11: invokespecial #64                 // Method java/net/URI."<init>":(Ljava/lang/String;)V
+      14: invokestatic  #57                 // Method _21aca6:(Ljava/net/URI;)Z
+      17: ireturn
+      18: astore_1
+      19: iconst_0
+      20: ireturn
+    Exception table:
+       from    to  target type
+           6    17    18   Class java/net/URISyntaxException
+
+
+  public static boolean _35e051(java.lang.String);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: iconst_0
+       5: ireturn
+       6: new           #30                 // class java/net/URI
+       9: dup
+      10: aload_0
+      11: invokespecial #64                 // Method java/net/URI."<init>":(Ljava/lang/String;)V
+      14: invokevirtual #65                 // Method java/net/URI.getScheme:()Ljava/lang/String;
+      17: astore_1
+      18: aload_1
+      19: ifnull        44
+      22: getstatic     #39                 // Field _24bc8a:Ljava/util/Set;
+      25: aload_1
+      26: getstatic     #40                 // Field java/util/Locale.ROOT:Ljava/util/Locale;
+      29: invokevirtual #60                 // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      32: invokeinterface #77,  2           // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      37: ifne          44
+      40: iconst_1
+      41: goto          45
+      44: iconst_0
+      45: ireturn
+      46: astore_1
+      47: iconst_0
+      48: ireturn
+    Exception table:
+       from    to  target type
+           6    45    46   Class java/net/URISyntaxException
+
+
+  public static java.net.URI _8ceb13(java.lang.String);
+    Code:
+       0: new           #30                 // class java/net/URI
+       3: dup
+       4: aload_0
+       5: invokespecial #64                 // Method java/net/URI."<init>":(Ljava/lang/String;)V
+       8: astore_1
+       9: aload_1
+      10: invokevirtual #65                 // Method java/net/URI.getScheme:()Ljava/lang/String;
+      13: astore_2
+      14: aload_2
+      15: ifnonnull     29
+      18: new           #31                 // class java/net/URISyntaxException
+      21: dup
+      22: aload_0
+      23: ldc           #2                  // String Missing protocol
+      25: invokespecial #67                 // Method java/net/URISyntaxException."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      28: athrow
+      29: aload_2
+      30: getstatic     #40                 // Field java/util/Locale.ROOT:Ljava/util/Locale;
+      33: invokevirtual #60                 // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      36: astore_3
+      37: getstatic     #39                 // Field _24bc8a:Ljava/util/Set;
+      40: aload_3
+      41: invokeinterface #77,  2           // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      46: ifne          64
+      49: new           #31                 // class java/net/URISyntaxException
+      52: dup
+      53: aload_0
+      54: aload_3
+      55: invokedynamic #79,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+      60: invokespecial #67                 // Method java/net/URISyntaxException."<init>":(Ljava/lang/String;Ljava/lang/String;)V
+      63: athrow
+      64: aload_1
+      65: areturn
+
+
+  public static boolean _cfe983(java.net.URI, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_0
+       3: invokestatic  #53                 // Method _cfe983:(Ljava/net/URI;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;Z)Z
+       6: ireturn
+
+
+  public static boolean _cfe983(java.net.URI, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #66                 // Method java/net/URI.toString:()Ljava/lang/String;
+       4: aload_1
+       5: iload_2
+       6: invokestatic  #56                 // Method _21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;Z)Z
+       9: ifeq          14
+      12: iconst_1
+      13: ireturn
+      14: aload_0
+      15: invokestatic  #57                 // Method _21aca6:(Ljava/net/URI;)Z
+      18: ifne          30
+      21: aload_0
+      22: invokevirtual #66                 // Method java/net/URI.toString:()Ljava/lang/String;
+      25: invokestatic  #54                 // Method _cb3add:(Ljava/lang/String;)V
+      28: iconst_0
+      29: ireturn
+      30: invokestatic  #46                 // Method com/moonsworth/lunar/_590f69/_21aca6._bb01a8:()Lcom/moonsworth/lunar/_590f69/_cfe983;
+      33: aload_0
+      34: invokeinterface #74,  2           // InterfaceMethod com/moonsworth/lunar/_590f69/_cfe983._cfe983:(Ljava/net/URI;)Z
+      39: ireturn
+
+
+  public static boolean _21aca6(java.lang.String, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iconst_0
+       3: invokestatic  #52                 // Method _cfe983:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;Z)Z
+       6: ireturn
+
+
+  public static boolean _cfe983(java.lang.String, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokestatic  #56                 // Method _21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;Z)Z
+       6: ifeq          11
+       9: iconst_1
+      10: ireturn
+      11: aload_0
+      12: invokestatic  #55                 // Method _335655:(Ljava/lang/String;)Z
+      15: ifne          24
+      18: aload_0
+      19: invokestatic  #54                 // Method _cb3add:(Ljava/lang/String;)V
+      22: iconst_0
+      23: ireturn
+      24: invokestatic  #46                 // Method com/moonsworth/lunar/_590f69/_21aca6._bb01a8:()Lcom/moonsworth/lunar/_590f69/_cfe983;
+      27: aload_0
+      28: invokeinterface #75,  2           // InterfaceMethod com/moonsworth/lunar/_590f69/_cfe983._2b0ca9:(Ljava/lang/String;)Z
+      33: ireturn
+
+
+  public static boolean _cfe983(java.net.URL, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator);
+    Code:
+       0: aload_0
+       1: invokevirtual #70                 // Method java/net/URL.toString:()Ljava/lang/String;
+       4: aload_1
+       5: iconst_0
+       6: invokestatic  #56                 // Method _21aca6:(Ljava/lang/String;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;Z)Z
+       9: ireturn
+
+
+  public static boolean _76e63d(java.io.File);
+    Code:
+       0: invokestatic  #46                 // Method com/moonsworth/lunar/_590f69/_21aca6._bb01a8:()Lcom/moonsworth/lunar/_590f69/_cfe983;
+       3: aload_0
+       4: invokeinterface #76,  2           // InterfaceMethod com/moonsworth/lunar/_590f69/_cfe983._21aca6:(Ljava/io/File;)Z
+       9: ireturn
+
+
+  private static void _cb3add(java.lang.String);
+    Code:
+       0: ldc           #1                  // String Browser
+       2: aload_0
+       3: invokedynamic #80,  0             // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       8: iconst_0
+       9: anewarray     #23                 // class java/lang/Object
+      12: invokestatic  #49                 // Method L/_00e05b/_cfe983._590f69:(Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+      15: return
+
+
+  private static boolean _21aca6(java.lang.String, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator, boolean);
+    Code:
+       0: new           #32                 // class java/net/URL
+       3: dup
+       4: aload_0
+       5: invokespecial #68                 // Method java/net/URL."<init>":(Ljava/lang/String;)V
+       8: astore_3
+       9: aload_3
+      10: invokevirtual #69                 // Method java/net/URL.getProtocol:()Ljava/lang/String;
+      13: astore        4
+      15: aload         4
+      17: ldc           #6                  // String http
+      19: invokevirtual #59                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      22: ifne          47
+      25: aload         4
+      27: ldc           #7                  // String https
+      29: invokevirtual #59                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      32: ifne          47
+      35: aload         4
+      37: ldc           #8                  // String lunarclient
+      39: invokevirtual #59                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      42: ifne          47
+      45: iconst_0
+      46: ireturn
+      47: goto          53
+      50: astore_3
+      51: iconst_0
+      52: ireturn
+      53: invokestatic  #50                 // Method L/util/_e93d3c._ef5ef9:()Ljava/util/Optional;
+      56: invokevirtual #72                 // Method java/util/Optional.isEmpty:()Z
+      59: ifne          80
+      62: invokestatic  #50                 // Method L/util/_e93d3c._ef5ef9:()Ljava/util/Optional;
+      65: invokevirtual #71                 // Method java/util/Optional.get:()Ljava/lang/Object;
+      68: checkcast     #17                 // class L/_cb9292/_cfe983
+      71: invokevirtual #48                 // Method L/_cb9292/_cfe983._4c5501:()LL/_21aca6/_1253fc;
+      74: getstatic     #38                 // Field L/_21aca6/_1253fc.DISCONNECTED:LL/_21aca6/_1253fc;
+      77: if_acmpne     82
+      80: iconst_0
+      81: ireturn
+      82: invokestatic  #50                 // Method L/util/_e93d3c._ef5ef9:()Ljava/util/Optional;
+      85: invokevirtual #71                 // Method java/util/Optional.get:()Ljava/lang/Object;
+      88: checkcast     #17                 // class L/_cb9292/_cfe983
+      91: invokevirtual #47                 // Method L/_cb9292/_cfe983._1c751f:()Lcom/lunarclient/gameipc/browser/v1/BrowserService$Interface;
+      94: aconst_null
+      95: invokestatic  #41                 // Method com/lunarclient/gameipc/browser/v1/OpenUrlRequest.newBuilder:()Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Builder;
+      98: aload_0
+      99: invokevirtual #45                 // Method com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Builder.setUrl:(Ljava/lang/String;)Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Builder;
+     102: aload_1
+     103: invokevirtual #43                 // Method com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Builder.setInitiator:(Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Initiator;)Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Builder;
+     106: iload_2
+     107: ifeq          116
+     110: getstatic     #36                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$OpenType.OPEN_TYPE_FORCE_EMBEDDED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$OpenType;
+     113: goto          119
+     116: getstatic     #37                 // Field com/lunarclient/gameipc/browser/v1/OpenUrlRequest$OpenType.OPEN_TYPE_UNSPECIFIED:Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$OpenType;
+     119: invokevirtual #44                 // Method com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Builder.setOpenType:(Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$OpenType;)Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest$Builder;
+     122: invokevirtual #42                 // Method com/lunarclient/gameipc/browser/v1/OpenUrlRequest$Builder.build:()Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest;
+     125: invokedynamic #81,  0             // InvokeDynamic #2:run:()Lcom/google/protobuf/RpcCallback;
+     130: invokeinterface #73,  4           // InterfaceMethod com/lunarclient/gameipc/browser/v1/BrowserService$Interface.openUrl:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest;Lcom/google/protobuf/RpcCallback;)V
+     135: iconst_1
+     136: ireturn
+    Exception table:
+       from    to  target type
+           0    46    50   Class java/lang/Exception
+
+
+  private L.util._1253fc();
+    Code:
+       0: aload_0
+       1: invokespecial #58                 // Method java/lang/Object."<init>":()V
+       4: new           #25                 // class java/lang/UnsupportedOperationException
+       7: dup
+       8: ldc           #4                  // String This is a utility class and cannot be instantiated
+      10: invokespecial #61                 // Method java/lang/UnsupportedOperationException."<init>":(Ljava/lang/String;)V
+      13: athrow
+
+
+  private static void _cfe983(com.lunarclient.gameipc.browser.v1.OpenUrlResponse);
+    Code:
+       0: return
+
+
+  static {};
+    Code:
+       0: ldc           #6                  // String http
+       2: ldc           #7                  // String https
+       4: invokestatic  #78                 // InterfaceMethod java/util/Set.of:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
+       7: putstatic     #39                 // Field _24bc8a:Ljava/util/Set;
+      10: return

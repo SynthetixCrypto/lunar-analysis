@@ -1,0 +1,120 @@
+public class L._ba7d98._1253fc._21aca6<T> implements L._ba7d98._1253fc._cfe983<T> {
+  private final java.util.List<java.lang.Runnable> listeners;
+
+  private final L._ba7d98._1e73d7 _130352;
+
+  private T val;
+
+  public L._ba7d98._1253fc._21aca6(T);
+    Code:
+       0: aload_0
+       1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #9                  // class L/util/_13ea87/_21aca6
+       8: dup
+       9: iconst_0
+      10: invokespecial #26                 // Method L/util/_13ea87/_21aca6."<init>":(I)V
+      13: putfield      #17                 // Field listeners:Ljava/util/List;
+      16: aload_0
+      17: aconst_null
+      18: putfield      #16                 // Field _130352:LL/_ba7d98/_1e73d7;
+      21: aload_0
+      22: aload_1
+      23: putfield      #18                 // Field val:Ljava/lang/Object;
+      26: return
+
+  public L._ba7d98._1253fc._21aca6(L._ba7d98._1e73d7, T);
+    Code:
+       0: aload_0
+       1: invokespecial #27                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #9                  // class L/util/_13ea87/_21aca6
+       8: dup
+       9: iconst_0
+      10: invokespecial #26                 // Method L/util/_13ea87/_21aca6."<init>":(I)V
+      13: putfield      #17                 // Field listeners:Ljava/util/List;
+      16: aload_0
+      17: aload_1
+      18: putfield      #16                 // Field _130352:LL/_ba7d98/_1e73d7;
+      21: aload_0
+      22: aload_2
+      23: putfield      #18                 // Field val:Ljava/lang/Object;
+      26: aload_0
+      27: aload_1
+      28: invokestatic  #25                 // Method L/_88f3cf/_bb4487/_a1dd3a/_1253fc._cfe983:(Ljava/lang/Object;LL/_ba7d98/_21aca6;)V
+      31: return
+
+  public void set(T);
+    Code:
+       0: invokestatic  #24                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: aload_0
+       4: aload_1
+       5: invokedynamic #34,  0             // InvokeDynamic #0:run:(LL/_ba7d98/_1253fc/_21aca6;Ljava/lang/Object;)Ljava/lang/Runnable;
+      10: invokevirtual #23                 // Method L/_d4ca6c/_590f69._1e73d7:(Ljava/lang/Runnable;)V
+      13: return
+
+  public T get();
+    Code:
+       0: aload_0
+       1: invokestatic  #19                 // Method L/_ba7d98/_bb4487._cfe983:(LL/_ba7d98/_cfe983;)V
+       4: aload_0
+       5: getfield      #18                 // Field val:Ljava/lang/Object;
+       8: areturn
+
+  public void _7fbb1e(java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field listeners:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #30,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      10: pop
+      11: aload_0
+      12: getfield      #16                 // Field _130352:LL/_ba7d98/_1e73d7;
+      15: ifnull        25
+      18: aload_0
+      19: getfield      #16                 // Field _130352:LL/_ba7d98/_1e73d7;
+      22: invokevirtual #21                 // Method L/_ba7d98/_1e73d7._81e158:()V
+      25: return
+
+  public void _32565b(java.lang.Runnable);
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field listeners:Ljava/util/List;
+       4: aload_1
+       5: invokeinterface #33,  2           // InterfaceMethod java/util/List.remove:(Ljava/lang/Object;)Z
+      10: pop
+      11: aload_0
+      12: getfield      #16                 // Field _130352:LL/_ba7d98/_1e73d7;
+      15: ifnull        25
+      18: aload_0
+      19: getfield      #16                 // Field _130352:LL/_ba7d98/_1e73d7;
+      22: invokevirtual #22                 // Method L/_ba7d98/_1e73d7._196cd9:()V
+      25: return
+
+  public boolean _a01d7d();
+    Code:
+       0: aload_0
+       1: getfield      #17                 // Field listeners:Ljava/util/List;
+       4: invokeinterface #32,  1           // InterfaceMethod java/util/List.isEmpty:()Z
+       9: ifne          16
+      12: iconst_1
+      13: goto          17
+      16: iconst_0
+      17: ireturn
+
+  private void _19bfb5(java.lang.Object);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: getfield      #18                 // Field val:Ljava/lang/Object;
+       5: if_acmpne     9
+       8: return
+       9: aload_0
+      10: aload_1
+      11: putfield      #18                 // Field val:Ljava/lang/Object;
+      14: aload_0
+      15: getfield      #17                 // Field listeners:Ljava/util/List;
+      18: invokedynamic #35,  0             // InvokeDynamic #1:accept:()Ljava/util/function/Consumer;
+      23: invokeinterface #31,  2           // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+      28: return
+}

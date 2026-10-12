@@ -1,0 +1,390 @@
+public class ML._d4ca6c._590f69._21aca6._1e73d7._bb4487._21aca6 {
+  public int nextChatIndex$v1_21_5;
+
+  public ML._d4ca6c._590f69._21aca6._1e73d7._bb4487._21aca6();
+    Code:
+       0: aload_0
+       1: invokespecial #105                // Method java/lang/Object."<init>":()V
+       4: return
+
+  private void lunar$onPlayerInfo(net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_1
+       1: getfield      #64                 // Field net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket.action$v1_16_1:Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action;
+       4: getstatic     #65                 // Field net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action.ADD_PLAYER:Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action;
+       7: if_acmpne     27
+      10: invokestatic  #97                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      13: ldc           #28                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_cfe983
+      15: aload_1
+      16: invokedynamic #129,  0            // InvokeDynamic #0:accept:(Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket;)Ljava/util/function/Consumer;
+      21: invokevirtual #96                 // Method L/_d4ca6c/_590f69._bb4487:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      24: goto          51
+      27: aload_1
+      28: getfield      #64                 // Field net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket.action$v1_16_1:Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action;
+      31: getstatic     #66                 // Field net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action.REMOVE_PLAYER$v1_16_1:Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action;
+      34: if_acmpne     51
+      37: invokestatic  #97                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      40: ldc           #29                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_21aca6
+      42: aload_1
+      43: invokedynamic #130,  0            // InvokeDynamic #1:accept:(Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket;)Ljava/util/function/Consumer;
+      48: invokevirtual #96                 // Method L/_d4ca6c/_590f69._bb4487:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      51: return
+
+  private void lunar$handlePlayerInfoRemove(net.minecraft.network.protocol.game.ClientboundPlayerInfoRemovePacket, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #97                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #29                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_21aca6
+       5: aload_1
+       6: invokedynamic #131,  0            // InvokeDynamic #2:accept:(Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoRemovePacket;)Ljava/util/function/Consumer;
+      11: invokevirtual #96                 // Method L/_d4ca6c/_590f69._bb4487:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      14: return
+
+  private void lunar$handlePlayerInfoUpdate(net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: invokestatic  #97                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+       3: ldc           #28                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_cfe983
+       5: aload_1
+       6: invokedynamic #132,  0            // InvokeDynamic #3:accept:(Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket;)Ljava/util/function/Consumer;
+      11: invokevirtual #96                 // Method L/_d4ca6c/_590f69._bb4487:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      14: return
+
+  private static java.util.List<com.mojang.authlib.GameProfile> lunar$getProfiles(java.lang.String, net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket);
+    Code:
+       0: aload_1
+       1: invokevirtual #106                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       4: astore_2
+       5: aload_2
+       6: aload_0
+       7: iconst_0
+       8: anewarray     #36                 // class java/lang/Class
+      11: invokevirtual #104                // Method java/lang/Class.getDeclaredMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+      14: astore_3
+      15: aload_3
+      16: iconst_1
+      17: invokevirtual #111                // Method java/lang/reflect/Method.setAccessible:(Z)V
+      20: aload_3
+      21: aload_1
+      22: iconst_0
+      23: anewarray     #40                 // class java/lang/Object
+      26: invokevirtual #110                // Method java/lang/reflect/Method.invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+      29: checkcast     #52                 // class java/util/List
+      32: astore        4
+      34: new           #49                 // class java/util/ArrayList
+      37: dup
+      38: aload         4
+      40: invokeinterface #127,  1          // InterfaceMethod java/util/List.size:()I
+      45: invokespecial #113                // Method java/util/ArrayList."<init>":(I)V
+      48: astore        5
+      50: aload         4
+      52: invokeinterface #125,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      57: astore        6
+      59: aload         6
+      61: invokeinterface #120,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      66: ifeq          130
+      69: aload         6
+      71: invokeinterface #121,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      76: astore        7
+      78: aload         7
+      80: invokevirtual #106                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      83: astore        8
+      85: aload         8
+      87: ldc           #9                  // String profile
+      89: invokevirtual #103                // Method java/lang/Class.getDeclaredField:(Ljava/lang/String;)Ljava/lang/reflect/Field;
+      92: astore        9
+      94: aload         9
+      96: iconst_1
+      97: invokevirtual #109                // Method java/lang/reflect/Field.setAccessible:(Z)V
+     100: aload         9
+     102: aload         7
+     104: invokevirtual #108                // Method java/lang/reflect/Field.get:(Ljava/lang/Object;)Ljava/lang/Object;
+     107: checkcast     #11                 // class com/mojang/authlib/GameProfile
+     110: astore        10
+     112: aload         10
+     114: ifnull        127
+     117: aload         5
+     119: aload         10
+     121: invokeinterface #122,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     126: pop
+     127: goto          59
+     130: aload         5
+     132: areturn
+     133: astore_3
+     134: invokestatic  #126                // InterfaceMethod java/util/List.of:()Ljava/util/List;
+     137: areturn
+    Exception table:
+       from    to  target type
+           5   132   133   Class java/lang/NoSuchMethodException
+           5   132   133   Class java/lang/reflect/InvocationTargetException
+           5   132   133   Class java/lang/IllegalAccessException
+           5   132   133   Class java/lang/NoSuchFieldException
+
+  private void lunar$onCommandScreen(java.lang.String, java.lang.String, net.minecraft.client.gui.screens.Screen, com.llamalad7.mixinextras.injector.wrapoperation.Operation<java.lang.Void>);
+    Code:
+       0: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+       3: invokevirtual #82                 // Method L/_cfe983._23c688:()LL/_601d9f/_cfe983;
+       6: astore        5
+       8: aload         5
+      10: new           #25                 // class L/_601d9f/_cfe983/_cfe983/_1e73d7
+      13: dup
+      14: invokespecial #90                 // Method L/_601d9f/_cfe983/_cfe983/_1e73d7."<init>":()V
+      17: invokevirtual #88                 // Method L/_601d9f/_cfe983._cfe983:(LL/_601d9f/_cfe983/_cfe983;)V
+      20: aload         4
+      22: iconst_3
+      23: anewarray     #40                 // class java/lang/Object
+      26: dup
+      27: iconst_0
+      28: aload_1
+      29: aastore
+      30: dup
+      31: iconst_1
+      32: aload_2
+      33: aastore
+      34: dup
+      35: iconst_2
+      36: aload_3
+      37: aastore
+      38: invokeinterface #116,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      43: pop
+      44: aload         5
+      46: invokevirtual #89                 // Method L/_601d9f/_cfe983._3a1760:()V
+      49: return
+
+  private int lunar$modifyCommandCheckResult(int);
+    Code:
+       0: invokestatic  #102                // Method L/util/_e93d3c._000b1d:()LML/_590f69/_bb4487/_bb4487;
+       3: invokeinterface #117,  1          // InterfaceMethod ML/_590f69/_bb4487/_bb4487.bridge$getCurrentServerData:()LML/_590f69/_bb4487/_1e73d7/_590f69;
+       8: astore_2
+       9: aload_2
+      10: ifnonnull     15
+      13: iload_1
+      14: ireturn
+      15: aload_2
+      16: invokeinterface #118,  1          // InterfaceMethod ML/_590f69/_bb4487/_1e73d7/_590f69.bridge$serverIP:()Ljava/lang/String;
+      21: astore_3
+      22: aload_3
+      23: ifnonnull     28
+      26: iload_1
+      27: ireturn
+      28: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      31: invokevirtual #83                 // Method L/_cfe983._60168a:()LL/_02d7ad/_1253fc/_32565b;
+      34: invokevirtual #84                 // Method L/_02d7ad/_1253fc/_32565b._a1b94c:()LL/_88f3cf/_1253fc/_21aca6/_cfe983;
+      37: astore        4
+      39: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      42: invokevirtual #81                 // Method L/_cfe983._9259ff:()LL/_02d7ad/_1253fc/_3a14e3;
+      45: invokevirtual #87                 // Method L/_02d7ad/_1253fc/_3a14e3._89d63f:()LL/_02d7ad/_1253fc/_1253fc/_590f69;
+      48: astore        5
+      50: aload         5
+      52: invokevirtual #85                 // Method L/_02d7ad/_1253fc/_1253fc/_590f69._1392e2:()LL/_ec7e36/_8c806f;
+      55: invokevirtual #91                 // Method L/_ec7e36/_8c806f.get:()Ljava/lang/Object;
+      58: checkcast     #52                 // class java/util/List
+      61: aload_3
+      62: invokeinterface #123,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+      67: ifeq          86
+      70: aload         4
+      72: ldc           #5                  // String blocked
+      74: iconst_0
+      75: anewarray     #40                 // class java/lang/Object
+      78: invokevirtual #100                // Method L/_88f3cf/_1253fc/_21aca6/_cfe983._21aca6:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      81: invokestatic  #99                 // Method L/_88f3cf/_bb4487/_23f752/_2ce426/_cfe983/_cfe983._c52610:(Ljava/lang/String;)V
+      84: iconst_2
+      85: ireturn
+      86: aload         5
+      88: invokevirtual #86                 // Method L/_02d7ad/_1253fc/_1253fc/_590f69._c6e3c4:()LL/_ec7e36/_8c806f;
+      91: invokevirtual #91                 // Method L/_ec7e36/_8c806f.get:()Ljava/lang/Object;
+      94: checkcast     #52                 // class java/util/List
+      97: aload_3
+      98: invokeinterface #123,  2          // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+     103: ifeq          108
+     106: iconst_0
+     107: ireturn
+     108: iload_1
+     109: ireturn
+
+  private void lunar$rewindForceCorrectChatOrder(net.minecraft.network.protocol.game.ClientboundPlayerChatPacket, org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #115                // Method net/minecraft/network/protocol/game/ClientboundPlayerChatPacket.globalIndex$v1_21_5:()I
+       5: putfield      #61                 // Field nextChatIndex$v1_21_5:I
+       8: return
+
+  private com.mojang.brigadier.CommandDispatcher<net.minecraft.client.multiplayer.ClientSuggestionProvider> lunar$addCustomCommands(com.llamalad7.mixinextras.injector.wrapoperation.Operation<com.mojang.brigadier.CommandDispatcher<net.minecraft.client.multiplayer.ClientSuggestionProvider>>);
+    Code:
+       0: aload_1
+       1: iconst_0
+       2: anewarray     #40                 // class java/lang/Object
+       5: invokeinterface #116,  2          // InterfaceMethod com/llamalad7/mixinextras/injector/wrapoperation/Operation.call:([Ljava/lang/Object;)Ljava/lang/Object;
+      10: checkcast     #12                 // class com/mojang/brigadier/CommandDispatcher
+      13: astore_2
+      14: new           #49                 // class java/util/ArrayList
+      17: dup
+      18: invokespecial #112                // Method java/util/ArrayList."<init>":()V
+      21: astore_3
+      22: invokestatic  #97                 // Method L/_d4ca6c/_590f69._20bc5b:()LL/_d4ca6c/_590f69;
+      25: ldc           #30                 // class L/_d4ca6c/_cfe983/_21aca6/_bb4487
+      27: aload_3
+      28: invokedynamic #133,  0            // InvokeDynamic #4:get:(Ljava/util/List;)Ljava/util/function/Supplier;
+      33: invokevirtual #95                 // Method L/_d4ca6c/_590f69._cfe983:(Ljava/lang/Class;Ljava/util/function/Supplier;)LL/_d4ca6c/_21aca6;
+      36: pop
+      37: aload_3
+      38: invokeinterface #124,  1          // InterfaceMethod java/util/List.isEmpty:()Z
+      43: ifne          139
+      46: new           #14                 // class com/mojang/brigadier/tree/RootCommandNode
+      49: dup
+      50: invokespecial #71                 // Method com/mojang/brigadier/tree/RootCommandNode."<init>":()V
+      53: astore        4
+      55: aload_2
+      56: invokevirtual #69                 // Method com/mojang/brigadier/CommandDispatcher.getRoot:()Lcom/mojang/brigadier/tree/RootCommandNode;
+      59: invokevirtual #72                 // Method com/mojang/brigadier/tree/RootCommandNode.getChildren:()Ljava/util/Collection;
+      62: aload         4
+      64: dup
+      65: invokestatic  #114                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      68: pop
+      69: invokedynamic #134,  0            // InvokeDynamic #5:accept:(Lcom/mojang/brigadier/tree/RootCommandNode;)Ljava/util/function/Consumer;
+      74: invokeinterface #119,  2          // InterfaceMethod java/util/Collection.forEach:(Ljava/util/function/Consumer;)V
+      79: new           #12                 // class com/mojang/brigadier/CommandDispatcher
+      82: dup
+      83: aload         4
+      85: invokespecial #68                 // Method com/mojang/brigadier/CommandDispatcher."<init>":(Lcom/mojang/brigadier/tree/RootCommandNode;)V
+      88: astore_2
+      89: aload_3
+      90: invokeinterface #125,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      95: astore        5
+      97: aload         5
+      99: invokeinterface #120,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     104: ifeq          139
+     107: aload         5
+     109: invokeinterface #121,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     114: checkcast     #32                 // class L/_88f3cf/_cfe983/_cfe983
+     117: astore        6
+     119: aload         6
+     121: invokevirtual #98                 // Method L/_88f3cf/_cfe983/_cfe983.isEnabled:()Z
+     124: ifne          130
+     127: goto          97
+     130: aload_2
+     131: aload         6
+     133: invokestatic  #74                 // Method ML/_d4ca6c/_590f69/_590f69/_1e73d7/_cfe983._cfe983:(Lcom/mojang/brigadier/CommandDispatcher;LL/_88f3cf/_cfe983/_cfe983;)V
+     136: goto          97
+     139: aload_2
+     140: areturn
+
+  private static L._d4ca6c._cfe983._21aca6._bb4487 lambda$lunar$addCustomCommands$0(java.util.List);
+    Code:
+       0: new           #30                 // class L/_d4ca6c/_cfe983/_21aca6/_bb4487
+       3: dup
+       4: aload_0
+       5: invokespecial #94                 // Method L/_d4ca6c/_cfe983/_21aca6/_bb4487."<init>":(Ljava/util/List;)V
+       8: areturn
+
+  private static void lambda$lunar$handlePlayerInfoUpdate$0(net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket, java.util.function.Consumer);
+    Code:
+       0: ldc           #6                  // String entries
+       2: aload_0
+       3: invokestatic  #80                 // Method lunar$getProfiles:(Ljava/lang/String;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket;)Ljava/util/List;
+       6: invokeinterface #125,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      11: astore_2
+      12: aload_2
+      13: invokeinterface #120,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      18: ifeq          55
+      21: aload_2
+      22: invokeinterface #121,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      27: checkcast     #11                 // class com/mojang/authlib/GameProfile
+      30: astore_3
+      31: aload_3
+      32: invokestatic  #73                 // Method ML/_d4ca6c/_d4ca6c/_a140a8/_1253fc._429bf0:(Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+      35: ifnull        52
+      38: aload_1
+      39: new           #28                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_cfe983
+      42: dup
+      43: aload_3
+      44: invokespecial #92                 // Method L/_d4ca6c/_cfe983/_13ea87/_e62626$_cfe983."<init>":(Lcom/mojang/authlib/GameProfile;)V
+      47: invokeinterface #128,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      52: goto          12
+      55: return
+
+  private static void lambda$lunar$handlePlayerInfoRemove$0(net.minecraft.network.protocol.game.ClientboundPlayerInfoRemovePacket, java.util.function.Consumer);
+    Code:
+       0: aload_0
+       1: getfield      #63                 // Field net/minecraft/network/protocol/game/ClientboundPlayerInfoRemovePacket.profileIds:Ljava/util/List;
+       4: invokeinterface #125,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       9: astore_2
+      10: aload_2
+      11: invokeinterface #120,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      16: ifeq          88
+      19: aload_2
+      20: invokeinterface #121,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      25: checkcast     #54                 // class java/util/UUID
+      28: astore_3
+      29: getstatic     #62                 // Field L/util/_e93d3c.MC_VERSION:I
+      32: bipush        18
+      34: if_icmpgt     62
+      37: aload_1
+      38: new           #29                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_21aca6
+      41: dup
+      42: new           #11                 // class com/mojang/authlib/GameProfile
+      45: dup
+      46: aload_3
+      47: aconst_null
+      48: invokespecial #67                 // Method com/mojang/authlib/GameProfile."<init>":(Ljava/util/UUID;Ljava/lang/String;)V
+      51: invokespecial #93                 // Method L/_d4ca6c/_cfe983/_13ea87/_e62626$_21aca6."<init>":(Lcom/mojang/authlib/GameProfile;)V
+      54: invokeinterface #128,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      59: goto          85
+      62: aload_1
+      63: new           #29                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_21aca6
+      66: dup
+      67: new           #11                 // class com/mojang/authlib/GameProfile
+      70: dup
+      71: aload_3
+      72: ldc           #8                  // String player
+      74: invokespecial #67                 // Method com/mojang/authlib/GameProfile."<init>":(Ljava/util/UUID;Ljava/lang/String;)V
+      77: invokespecial #93                 // Method L/_d4ca6c/_cfe983/_13ea87/_e62626$_21aca6."<init>":(Lcom/mojang/authlib/GameProfile;)V
+      80: invokeinterface #128,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      85: goto          10
+      88: return
+
+  private static void lambda$lunar$onPlayerInfo$1(net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket, java.util.function.Consumer);
+    Code:
+       0: ldc           #7                  // String getEntries
+       2: aload_0
+       3: invokestatic  #80                 // Method lunar$getProfiles:(Ljava/lang/String;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket;)Ljava/util/List;
+       6: invokeinterface #125,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      11: astore_2
+      12: aload_2
+      13: invokeinterface #120,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      18: ifeq          48
+      21: aload_2
+      22: invokeinterface #121,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      27: checkcast     #11                 // class com/mojang/authlib/GameProfile
+      30: astore_3
+      31: aload_1
+      32: new           #29                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_21aca6
+      35: dup
+      36: aload_3
+      37: invokespecial #93                 // Method L/_d4ca6c/_cfe983/_13ea87/_e62626$_21aca6."<init>":(Lcom/mojang/authlib/GameProfile;)V
+      40: invokeinterface #128,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      45: goto          12
+      48: return
+
+  private static void lambda$lunar$onPlayerInfo$0(net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket, java.util.function.Consumer);
+    Code:
+       0: ldc           #7                  // String getEntries
+       2: aload_0
+       3: invokestatic  #80                 // Method lunar$getProfiles:(Ljava/lang/String;Lnet/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket;)Ljava/util/List;
+       6: invokeinterface #125,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      11: astore_2
+      12: aload_2
+      13: invokeinterface #120,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      18: ifeq          48
+      21: aload_2
+      22: invokeinterface #121,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      27: checkcast     #11                 // class com/mojang/authlib/GameProfile
+      30: astore_3
+      31: aload_1
+      32: new           #28                 // class L/_d4ca6c/_cfe983/_13ea87/_e62626$_cfe983
+      35: dup
+      36: aload_3
+      37: invokespecial #92                 // Method L/_d4ca6c/_cfe983/_13ea87/_e62626$_cfe983."<init>":(Lcom/mojang/authlib/GameProfile;)V
+      40: invokeinterface #128,  2          // InterfaceMethod java/util/function/Consumer.accept:(Ljava/lang/Object;)V
+      45: goto          12
+      48: return
+}

@@ -1,0 +1,1183 @@
+Classfile jar:file:///C:/Users/Admin/.lunarclient/offline/multiver/lunar.jar!/com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.class
+  Last modified Dec 31, 1969; size 12247 bytes
+  SHA-256 checksum 713e97f803aac483fc9f7e75e13bd6c555e5b8fa5c82087db1a5d7e6fa4c4d37
+public final class com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HICHIOOOHCHRIIIHICOIHHCHOROROC.COOCHIRORIICRCIIRIROHIIRIRICCH extends com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.COOCHIRORIICRCIIRIROHIIRIRICCH
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #31                         // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH
+  super_class: #29                        // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/COOCHIRORIICRCIIRIROHIIRIRICCH
+  interfaces: 0, fields: 10, methods: 11, attributes: 2
+Constant pool:
+    #1 = String             #256          // AllTalk
+    #2 = String             #293          // MUMBLE_LINK
+    #3 = String             #359          // dimension
+    #4 = String             #360          // domain
+    #5 = String             #376          // mumbleLinkDisabledPopup
+    #6 = String             #377          // mumbleLinkEnabledPopup
+    #7 = String             #378          // mumbleLinkErrorPopup
+    #8 = String             #379          // mumbleLinkUnsupportedPopup
+    #9 = String             #380          // name
+   #10 = String             #386          // win
+   #11 = String             #387          // worldSpawn
+   #12 = Class              #330          // com/google/gson/JsonArray
+   #13 = Class              #331          // com/google/gson/JsonObject
+   #14 = Class              #332          // com/google/gson/JsonPrimitive
+   #15 = Class              #333          // com/moonsworth/lunar/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+   #16 = Class              #334          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #17 = Class              #335          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+   #18 = Class              #336          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+   #19 = Class              #337          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+   #20 = Class              #338          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/CCHHRIIROCIIHRHIOOHHHHCCORRRIR
+   #21 = Class              #339          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC
+   #22 = Class              #340          // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+   #23 = Class              #341          // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #24 = Class              #342          // com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR
+   #25 = Class              #343          // com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII
+   #26 = Class              #344          // com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+   #27 = Class              #345          // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+   #28 = Class              #346          // com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR
+   #29 = Class              #347          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #30 = Class              #348          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH
+   #31 = Class              #349          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH
+   #32 = Class              #350          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI
+   #33 = Class              #351          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH
+   #34 = Class              #352          // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+   #35 = Class              #353          // com/moonsworth/lunar/client/mumble/LinkData
+   #36 = Class              #354          // com/moonsworth/lunar/client/mumble/MumbleLink
+   #37 = Class              #355          // com/moonsworth/lunar/client/mumble/MumbleVec
+   #38 = Class              #356          // com/moonsworth/lunar/client/util/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+   #39 = Class              #357          // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR
+   #40 = Class              #366          // java/lang/Boolean
+   #41 = Class              #367          // java/lang/Integer
+   #42 = Class              #368          // java/lang/Object
+   #43 = Class              #369          // java/lang/String
+   #44 = Class              #370          // java/lang/Throwable
+   #45 = Class              #371          // java/lang/invoke/LambdaMetafactory
+   #46 = Class              #372          // java/lang/invoke/MethodHandles
+   #47 = Class              #373          // java/lang/invoke/MethodHandles$Lookup
+   #48 = Class              #374          // java/util/Locale
+   #49 = Double             0.01745329238474369d
+   #51 = Double             3.1415927410125732d
+   #53 = Double             90.0d
+   #55 = Fieldref           #26.#145      // com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CLIENT_INTERNAL:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+   #56 = Fieldref           #30.#153      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH.HOOCORIOCHIOCRROROICCHHRICRIOC:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+   #57 = Fieldref           #31.#141      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.CCRCHRHHIRCCCIORORHRHIRCCROOHO:Lcom/google/gson/JsonObject;
+   #58 = Fieldref           #31.#143      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.CIHHIHROHCIIIOCCHOCORIROCCHCIC:Z
+   #59 = Fieldref           #31.#148      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+   #60 = Fieldref           #31.#149      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.CRCCICHHHIRRROHIRIOOIHIRRRIIRO:Z
+   #61 = Fieldref           #31.#163      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.RCOCOHIOHOHIROHIORHHOHHCRRCOOR:Lcom/google/gson/JsonObject;
+   #62 = Fieldref           #31.#166      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.RHICRHHHRHROIIOHHRRIRIHORIHOCI:Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+   #63 = Fieldref           #34.#154      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII.HORHROHOHORHHICRCIHIIHOIHIOHHO:Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+   #64 = Fieldref           #37.#206      // com/moonsworth/lunar/client/mumble/MumbleVec.xCoord:D
+   #65 = Fieldref           #37.#207      // com/moonsworth/lunar/client/mumble/MumbleVec.yCoord:D
+   #66 = Fieldref           #37.#208      // com/moonsworth/lunar/client/mumble/MumbleVec.zCoord:D
+   #67 = Fieldref           #38.#171      // com/moonsworth/lunar/client/util/COOIOIRCCICRCCIHCCRHRCIHROHCCI.RRCICCOOICCHIORIOICOCIOCCCOHCR:Ljava/lang/String;
+   #68 = Fieldref           #48.#169      // java/util/Locale.ROOT:Ljava/util/Locale;
+   #69 = Methodref          #12.#135      // com/google/gson/JsonArray."<init>":()V
+   #70 = Methodref          #12.#174      // com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+   #71 = Methodref          #13.#135      // com/google/gson/JsonObject."<init>":()V
+   #72 = Methodref          #13.#175      // com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+   #73 = Methodref          #13.#176      // com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+   #74 = Methodref          #13.#177      // com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+   #75 = Methodref          #13.#202      // com/google/gson/JsonObject.toString:()Ljava/lang/String;
+   #76 = Methodref          #14.#137      // com/google/gson/JsonPrimitive."<init>":(Ljava/lang/Number;)V
+   #77 = Methodref          #15.#168      // com/moonsworth/lunar/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.RHOROOICOOICIRHCRCICRHRHICRHIH:()Z
+   #78 = Methodref          #22.#142      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CHRCCCIHOCRIRIIIIICRHHCIOOICRI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH;
+   #79 = Methodref          #23.#162      // com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORORRRHOOROHIOORCRICCOOHHIRCOC:()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+   #80 = Methodref          #24.#152      // com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.HOHHOHRCCOCHHIIRHICOOOIHICIIHC:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+   #81 = Methodref          #24.#165      // com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+   #82 = Methodref          #29.#139      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":(Z)V
+   #83 = Methodref          #31.#144      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.CIORHOHOHIHRHRCIRROHICOHCHHICR:()Lcom/google/gson/JsonObject;
+   #84 = Methodref          #31.#150      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.HHCIOHIOOOHRIRHHRHCHOCRRHOROOI:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+   #85 = Methodref          #31.#156      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.IRCROOHIIOOHIRCRRHOHIORHCOHIOR:(Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR;)V
+   #86 = Methodref          #31.#159      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;)V
+   #87 = Methodref          #31.#167      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.RHOIHCCCCHCHRCOIORHORCROIOCIIR:()V
+   #88 = Methodref          #31.#170      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.RRCHCHCCORIROIOCHIIIHCCIOCHCOH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/mumble/MumbleVec;
+   #89 = Methodref          #31.#172      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.RRHHORIIRIHOCRORRIOIIHHIHRRCIC:()Lcom/google/gson/JsonObject;
+   #90 = Methodref          #31.#196      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.handle:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+   #91 = Methodref          #33.#147      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH:([Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+   #92 = Methodref          #33.#157      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH.IRCROOHIIOOHIRCRRHOHIORHCOHIOR:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+   #93 = Methodref          #35.#138      // com/moonsworth/lunar/client/mumble/LinkData."<init>":(Ljava/lang/String;Ljava/lang/String;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;)V
+   #94 = Methodref          #36.#135      // com/moonsworth/lunar/client/mumble/MumbleLink."<init>":()V
+   #95 = Methodref          #36.#197      // com/moonsworth/lunar/client/mumble/MumbleLink.init:()I
+   #96 = Methodref          #36.#198      // com/moonsworth/lunar/client/mumble/MumbleLink.isLoaded:()Z
+   #97 = Methodref          #36.#203      // com/moonsworth/lunar/client/mumble/MumbleLink.update:(Lcom/moonsworth/lunar/client/mumble/LinkData;)V
+   #98 = Methodref          #37.#136      // com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+   #99 = Methodref          #39.#140      // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #100 = Methodref          #39.#155      // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #101 = Methodref          #39.#161      // com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #102 = Methodref          #40.#205      // java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+  #103 = Methodref          #41.#204      // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+  #104 = Methodref          #43.#194      // java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+  #105 = Methodref          #43.#201      // java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+  #106 = Methodref          #44.#200      // java/lang/Throwable.printStackTrace:()V
+  #107 = Methodref          #45.#199      // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #108 = InterfaceMethodref #16.#195      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH.getMinecraftVersion:()Lcom/moonsworth/lunar/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #109 = InterfaceMethodref #17.#186      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getSpawnX:()I
+  #110 = InterfaceMethodref #17.#187      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getSpawnY:()I
+  #111 = InterfaceMethodref #17.#188      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getSpawnZ:()I
+  #112 = InterfaceMethodref #18.#189      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getWorldInfo:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #113 = InterfaceMethodref #18.#190      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$isRemote:()Z
+  #114 = InterfaceMethodref #19.#151      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.HOCHCHCCCCOCCOIRIRIIHRRCHHIOIO:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC;
+  #115 = InterfaceMethodref #19.#178      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getDimension:()I
+  #116 = InterfaceMethodref #19.#179      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getDimensionName:()Ljava/lang/String;
+  #117 = InterfaceMethodref #19.#180      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getName:()Ljava/lang/String;
+  #118 = InterfaceMethodref #19.#181      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosX:()D
+  #119 = InterfaceMethodref #19.#182      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosY:()D
+  #120 = InterfaceMethodref #19.#183      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosZ:()D
+  #121 = InterfaceMethodref #19.#184      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getRotationPitch:()D
+  #122 = InterfaceMethodref #19.#185      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getRotationYaw:()D
+  #123 = InterfaceMethodref #20.#158      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/CCHHRIIROCIIHRHIOOHHHHCCORRRIR.OHOORCOHRORRIHROOCROOIIHHOOHRI:(D)F
+  #124 = InterfaceMethodref #20.#164      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/CCHHRIIROCIIHRHIOOHHHHCCORRRIR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(D)F
+  #125 = InterfaceMethodref #21.#191      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC.bridge$xCoord:()D
+  #126 = InterfaceMethodref #21.#192      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC.bridge$yCoord:()D
+  #127 = InterfaceMethodref #21.#193      // com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC.bridge$zCoord:()D
+  #128 = InterfaceMethodref #25.#146      // com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Ljava/lang/Object;)Z
+  #129 = InterfaceMethodref #32.#160      // com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI.OIRCOCOHIHCIRICIRCIHHCIICRHHHO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #130 = InvokeDynamic      #0:#173       // #0:accept:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+  #131 = InvokeDynamic      #1:#173       // #1:accept:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+  #132 = MethodHandle       5:#85         // REF_invokeVirtual com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.IRCROOHIIOOHIRCRRHOHIORHCOHIOR:(Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR;)V
+  #133 = MethodHandle       5:#86         // REF_invokeVirtual com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;)V
+  #134 = MethodHandle       6:#107        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #135 = NameAndType        #255:#226     // "<init>":()V
+  #136 = NameAndType        #255:#229     // "<init>":(DDD)V
+  #137 = NameAndType        #255:#241     // "<init>":(Ljava/lang/Number;)V
+  #138 = NameAndType        #255:#248     // "<init>":(Ljava/lang/String;Ljava/lang/String;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;)V
+  #139 = NameAndType        #255:#253     // "<init>":(Z)V
+  #140 = NameAndType        #258:#218     // CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #141 = NameAndType        #259:#284     // CCRCHRHHIRCCCIORORHRHIRCCROOHO:Lcom/google/gson/JsonObject;
+  #142 = NameAndType        #261:#216     // CHRCCCIHOCRIRIIIIICRHHCIOOICRI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #143 = NameAndType        #262:#310     // CIHHIHROHCIIIOCCHOCORIROCCHCIC:Z
+  #144 = NameAndType        #263:#214     // CIORHOHOHIHRHRCIRROHICOHCHHICR:()Lcom/google/gson/JsonObject;
+  #145 = NameAndType        #264:#285     // CLIENT_INTERNAL:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #146 = NameAndType        #266:#243     // COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Ljava/lang/Object;)Z
+  #147 = NameAndType        #266:#254     // COOCHIRORIICRCIIRIROHIIRIRICCH:([Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #148 = NameAndType        #267:#310     // COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+  #149 = NameAndType        #268:#310     // CRCCICHHHIRRROHIRIOOIHIRRRIIRO:Z
+  #150 = NameAndType        #272:#235     // HHCIOHIOOOHRIRHHRHCHOCRRHOROOI:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+  #151 = NameAndType        #274:#220     // HOCHCHCCCCOCCOIRIRIIHRRCHHIOIO:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC;
+  #152 = NameAndType        #275:#244     // HOHHOHRCCOCHHIIRHICOOOIHICIIHC:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+  #153 = NameAndType        #276:#286     // HOOCORIOCHIOCRROROICCHHRICRIOC:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+  #154 = NameAndType        #277:#287     // HORHROHOHORHHICRCIHIIHOIHIOHHO:Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #155 = NameAndType        #279:#219     // ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #156 = NameAndType        #281:#234     // IRCROOHIIOOHIRCRRHOHIORHCOHIOR:(Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR;)V
+  #157 = NameAndType        #281:#237     // IRCROOHIIOOHIRCRRHOHIORHCOHIOR:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+  #158 = NameAndType        #294:#228     // OHOORCOHRORRIHROOCROOIIHHOOHRI:(D)F
+  #159 = NameAndType        #295:#233     // OHRORRHCHCRICORRRCIRIOCCIRCRII:(Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;)V
+  #160 = NameAndType        #296:#223     // OIRCOCOHIHCIRICIRCIHHCIICRHHHO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #161 = NameAndType        #297:#221     // OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #162 = NameAndType        #298:#222     // ORORRRHOOROHIOORCRICCOOHHIRCOC:()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+  #163 = NameAndType        #299:#284     // RCOCOHIOHOHIROHIORHHOHHCRRCOOR:Lcom/google/gson/JsonObject;
+  #164 = NameAndType        #300:#228     // RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(D)F
+  #165 = NameAndType        #300:#249     // RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #166 = NameAndType        #301:#288     // RHICRHHHRHROIIOHHRRIRIHORIHOCI:Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+  #167 = NameAndType        #302:#226     // RHOIHCCCCHCHRCOIORHORCROIOCIIR:()V
+  #168 = NameAndType        #304:#227     // RHOROOICOOICIRHCRCICRHRHICRHIH:()Z
+  #169 = NameAndType        #305:#291     // ROOT:Ljava/util/Locale;
+  #170 = NameAndType        #306:#232     // RRCHCHCCORIROIOCHIIIHCCIOCHCOH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/mumble/MumbleVec;
+  #171 = NameAndType        #307:#290     // RRCICCOOICCHIORIOICOCIOCCCOHCR:Ljava/lang/String;
+  #172 = NameAndType        #308:#214     // RRHHORIIRIHOCRORRIOIIHHIHRRCIC:()Lcom/google/gson/JsonObject;
+  #173 = NameAndType        #311:#236     // accept:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+  #174 = NameAndType        #312:#231     // add:(Lcom/google/gson/JsonElement;)V
+  #175 = NameAndType        #312:#245     // add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+  #176 = NameAndType        #313:#246     // addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+  #177 = NameAndType        #313:#247     // addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+  #178 = NameAndType        #314:#213     // bridge$getDimension:()I
+  #179 = NameAndType        #315:#225     // bridge$getDimensionName:()Ljava/lang/String;
+  #180 = NameAndType        #316:#225     // bridge$getName:()Ljava/lang/String;
+  #181 = NameAndType        #317:#212     // bridge$getPosX:()D
+  #182 = NameAndType        #318:#212     // bridge$getPosY:()D
+  #183 = NameAndType        #319:#212     // bridge$getPosZ:()D
+  #184 = NameAndType        #320:#212     // bridge$getRotationPitch:()D
+  #185 = NameAndType        #321:#212     // bridge$getRotationYaw:()D
+  #186 = NameAndType        #322:#213     // bridge$getSpawnX:()I
+  #187 = NameAndType        #323:#213     // bridge$getSpawnY:()I
+  #188 = NameAndType        #324:#213     // bridge$getSpawnZ:()I
+  #189 = NameAndType        #325:#217     // bridge$getWorldInfo:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #190 = NameAndType        #326:#227     // bridge$isRemote:()Z
+  #191 = NameAndType        #327:#212     // bridge$xCoord:()D
+  #192 = NameAndType        #328:#212     // bridge$yCoord:()D
+  #193 = NameAndType        #329:#212     // bridge$zCoord:()D
+  #194 = NameAndType        #358:#239     // contains:(Ljava/lang/CharSequence;)Z
+  #195 = NameAndType        #362:#215     // getMinecraftVersion:()Lcom/moonsworth/lunar/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #196 = NameAndType        #363:#240     // handle:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+  #197 = NameAndType        #364:#213     // init:()I
+  #198 = NameAndType        #365:#227     // isLoaded:()Z
+  #199 = NameAndType        #375:#250     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #200 = NameAndType        #381:#226     // printStackTrace:()V
+  #201 = NameAndType        #382:#251     // toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+  #202 = NameAndType        #383:#225     // toString:()Ljava/lang/String;
+  #203 = NameAndType        #384:#238     // update:(Lcom/moonsworth/lunar/client/mumble/LinkData;)V
+  #204 = NameAndType        #385:#230     // valueOf:(I)Ljava/lang/Integer;
+  #205 = NameAndType        #385:#252     // valueOf:(Z)Ljava/lang/Boolean;
+  #206 = NameAndType        #388:#271     // xCoord:D
+  #207 = NameAndType        #389:#271     // yCoord:D
+  #208 = NameAndType        #390:#271     // zCoord:D
+  #209 = MethodType         #233          //  (Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;)V
+  #210 = MethodType         #234          //  (Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR;)V
+  #211 = MethodType         #242          //  (Ljava/lang/Object;)V
+  #212 = Utf8               ()D
+  #213 = Utf8               ()I
+  #214 = Utf8               ()Lcom/google/gson/JsonObject;
+  #215 = Utf8               ()Lcom/moonsworth/lunar/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #216 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #217 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #218 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+  #219 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #220 = Utf8               ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC;
+  #221 = Utf8               ()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #222 = Utf8               ()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+  #223 = Utf8               ()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #224 = Utf8               ()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+  #225 = Utf8               ()Ljava/lang/String;
+  #226 = Utf8               ()V
+  #227 = Utf8               ()Z
+  #228 = Utf8               (D)F
+  #229 = Utf8               (DDD)V
+  #230 = Utf8               (I)Ljava/lang/Integer;
+  #231 = Utf8               (Lcom/google/gson/JsonElement;)V
+  #232 = Utf8               (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/mumble/MumbleVec;
+  #233 = Utf8               (Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;)V
+  #234 = Utf8               (Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR;)V
+  #235 = Utf8               (Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+  #236 = Utf8               (Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+  #237 = Utf8               (Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+  #238 = Utf8               (Lcom/moonsworth/lunar/client/mumble/LinkData;)V
+  #239 = Utf8               (Ljava/lang/CharSequence;)Z
+  #240 = Utf8               (Ljava/lang/Class;Ljava/util/function/Consumer;)V
+  #241 = Utf8               (Ljava/lang/Number;)V
+  #242 = Utf8               (Ljava/lang/Object;)V
+  #243 = Utf8               (Ljava/lang/Object;Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Ljava/lang/Object;)Z
+  #244 = Utf8               (Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+  #245 = Utf8               (Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+  #246 = Utf8               (Ljava/lang/String;Ljava/lang/Number;)V
+  #247 = Utf8               (Ljava/lang/String;Ljava/lang/String;)V
+  #248 = Utf8               (Ljava/lang/String;Ljava/lang/String;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;)V
+  #249 = Utf8               (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  #250 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #251 = Utf8               (Ljava/util/Locale;)Ljava/lang/String;
+  #252 = Utf8               (Z)Ljava/lang/Boolean;
+  #253 = Utf8               (Z)V
+  #254 = Utf8               ([Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+  #255 = Utf8               <init>
+  #256 = Utf8               AllTalk
+  #257 = Utf8               BootstrapMethods
+  #258 = Utf8               CCORCHRIIIRRCCIICOICCRIHHHRORR
+  #259 = Utf8               CCRCHRHHIRCCCIORORHRHIRCCROOHO
+  #260 = Utf8               CHORHIHIRCOCCHIHIHCRIRCICICHIR
+  #261 = Utf8               CHRCCCIHOCRIRIIIIICRHHCIOOICRI
+  #262 = Utf8               CIHHIHROHCIIIOCCHOCORIROCCHCIC
+  #263 = Utf8               CIORHOHOHIHRHRCIRROHICOHCHHICR
+  #264 = Utf8               CLIENT_INTERNAL
+  #265 = Utf8               COHHIORORCRHIIOIORHCOHIIIRCHOI
+  #266 = Utf8               COOCHIRORIICRCIIRIROHIIRIRICCH
+  #267 = Utf8               COOCROHROOIIIHCHICIHOOIHCIIIHO
+  #268 = Utf8               CRCCICHHHIRRROHIRIOOIHIRRRIIRO
+  #269 = Utf8               Code
+  #270 = Utf8               ConstantValue
+  #271 = Utf8               D
+  #272 = Utf8               HHCIOHIOOOHRIRHHRHCHOCRRHOROOI
+  #273 = Utf8               HIOHHIOHORRRRRRCHHOHIOCHHRCCIR
+  #274 = Utf8               HOCHCHCCCCOCCOIRIRIIHRRCHHIOIO
+  #275 = Utf8               HOHHOHRCCOCHHIIRHICOOOIHICIIHC
+  #276 = Utf8               HOOCORIOCHIOCRROROICCHHRICRIOC
+  #277 = Utf8               HORHROHOHORHHICRCIHIIHOIHIOHHO
+  #278 = Utf8               HRCRRHIORHOOICOIRIRIHCRRCRCHRH
+  #279 = Utf8               ICRCIORIOCRCRRRHCOCRCHRCCCOHOC
+  #280 = Utf8               IHRHCRCCROORIIRORORRROIRRHHCHI
+  #281 = Utf8               IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+  #282 = Utf8               IRRRHCHCHIOHHOHORRRIHROCHRCHHI
+  #283 = Utf8               InnerClasses
+  #284 = Utf8               Lcom/google/gson/JsonObject;
+  #285 = Utf8               Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+  #286 = Utf8               Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+  #287 = Utf8               Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+  #288 = Utf8               Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+  #289 = Utf8               LineNumberTable
+  #290 = Utf8               Ljava/lang/String;
+  #291 = Utf8               Ljava/util/Locale;
+  #292 = Utf8               Lookup
+  #293 = Utf8               MUMBLE_LINK
+  #294 = Utf8               OHOORCOHRORRIHROOCROOIIHHOOHRI
+  #295 = Utf8               OHRORRHCHCRICORRRCIRIOCCIRCRII
+  #296 = Utf8               OIRCOCOHIHCIRICIRCIHHCIICRHHHO
+  #297 = Utf8               OOICRICIHCCCIORHHIOHCCRHRIRRHR
+  #298 = Utf8               ORORRRHOOROHIOORCRICCOOHHIRCOC
+  #299 = Utf8               RCOCOHIOHOHIROHIORHHOHHCRRCOOR
+  #300 = Utf8               RCRHOOHIOCHHHHOCRIOCHRICIRCRRR
+  #301 = Utf8               RHICRHHHRHROIIOHHRRIRIHORIHOCI
+  #302 = Utf8               RHOIHCCCCHCHRCOIORHORCROIOCIIR
+  #303 = Utf8               RHORHIIRORRIRCCCCIIIOHCORCOOCH
+  #304 = Utf8               RHOROOICOOICIRHCRCICRHRHICRHIH
+  #305 = Utf8               ROOT
+  #306 = Utf8               RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+  #307 = Utf8               RRCICCOOICCHIORIOICOCIOCCCOHCR
+  #308 = Utf8               RRHHORIIRIHOCRORRIOIIHHIHRRCIC
+  #309 = Utf8               StackMapTable
+  #310 = Utf8               Z
+  #311 = Utf8               accept
+  #312 = Utf8               add
+  #313 = Utf8               addProperty
+  #314 = Utf8               bridge$getDimension
+  #315 = Utf8               bridge$getDimensionName
+  #316 = Utf8               bridge$getName
+  #317 = Utf8               bridge$getPosX
+  #318 = Utf8               bridge$getPosY
+  #319 = Utf8               bridge$getPosZ
+  #320 = Utf8               bridge$getRotationPitch
+  #321 = Utf8               bridge$getRotationYaw
+  #322 = Utf8               bridge$getSpawnX
+  #323 = Utf8               bridge$getSpawnY
+  #324 = Utf8               bridge$getSpawnZ
+  #325 = Utf8               bridge$getWorldInfo
+  #326 = Utf8               bridge$isRemote
+  #327 = Utf8               bridge$xCoord
+  #328 = Utf8               bridge$yCoord
+  #329 = Utf8               bridge$zCoord
+  #330 = Utf8               com/google/gson/JsonArray
+  #331 = Utf8               com/google/gson/JsonObject
+  #332 = Utf8               com/google/gson/JsonPrimitive
+  #333 = Utf8               com/moonsworth/lunar/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #334 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #335 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+  #336 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR
+  #337 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #338 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/CCHHRIIROCIIHRHIOOHHHHCCORRRIR
+  #339 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC
+  #340 = Utf8               com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #341 = Utf8               com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #342 = Utf8               com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR
+  #343 = Utf8               com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII
+  #344 = Utf8               com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI
+  #345 = Utf8               com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+  #346 = Utf8               com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR
+  #347 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #348 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH
+  #349 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH
+  #350 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI
+  #351 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH
+  #352 = Utf8               com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+  #353 = Utf8               com/moonsworth/lunar/client/mumble/LinkData
+  #354 = Utf8               com/moonsworth/lunar/client/mumble/MumbleLink
+  #355 = Utf8               com/moonsworth/lunar/client/mumble/MumbleVec
+  #356 = Utf8               com/moonsworth/lunar/client/util/COOIOIRCCICRCCIHCCRHRCIHROHCCI
+  #357 = Utf8               com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR
+  #358 = Utf8               contains
+  #359 = Utf8               dimension
+  #360 = Utf8               domain
+  #361 = Utf8               getId
+  #362 = Utf8               getMinecraftVersion
+  #363 = Utf8               handle
+  #364 = Utf8               init
+  #365 = Utf8               isLoaded
+  #366 = Utf8               java/lang/Boolean
+  #367 = Utf8               java/lang/Integer
+  #368 = Utf8               java/lang/Object
+  #369 = Utf8               java/lang/String
+  #370 = Utf8               java/lang/Throwable
+  #371 = Utf8               java/lang/invoke/LambdaMetafactory
+  #372 = Utf8               java/lang/invoke/MethodHandles
+  #373 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #374 = Utf8               java/util/Locale
+  #375 = Utf8               metafactory
+  #376 = Utf8               mumbleLinkDisabledPopup
+  #377 = Utf8               mumbleLinkEnabledPopup
+  #378 = Utf8               mumbleLinkErrorPopup
+  #379 = Utf8               mumbleLinkUnsupportedPopup
+  #380 = Utf8               name
+  #381 = Utf8               printStackTrace
+  #382 = Utf8               toLowerCase
+  #383 = Utf8               toString
+  #384 = Utf8               update
+  #385 = Utf8               valueOf
+  #386 = Utf8               win
+  #387 = Utf8               worldSpawn
+  #388 = Utf8               xCoord
+  #389 = Utf8               yCoord
+  #390 = Utf8               zCoord
+{
+  private static final java.lang.String IRRRHCHCHIOHHOHORRRIHROCHRCHHI;
+    descriptor: Ljava/lang/String;
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: String mumbleLinkEnabledPopup
+
+  private static final java.lang.String IHRHCRCCROORIIRORORRROIRRHHCHI;
+    descriptor: Ljava/lang/String;
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: String mumbleLinkDisabledPopup
+
+  private static final java.lang.String COHHIORORCRHIIOIORHCOHIIIRCHOI;
+    descriptor: Ljava/lang/String;
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: String mumbleLinkUnsupportedPopup
+
+  private static final java.lang.String HIOHHIOHORRRRRRCHHOHIOCHHRCCIR;
+    descriptor: Ljava/lang/String;
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: String mumbleLinkErrorPopup
+
+  private com.moonsworth.lunar.client.mumble.MumbleLink RHICRHHHRHROIIOHHRRIRIHORIHOCI;
+    descriptor: Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+    flags: (0x0002) ACC_PRIVATE
+
+  private boolean COOCROHROOIIIHCHICIHOOIHCIIIHO;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  private boolean CIHHIHROHCIIIOCCHOCORIROCCHCIC;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  private boolean CRCCICHHHIRRROHIRIOOIHIRRRIIRO;
+    descriptor: Z
+    flags: (0x0002) ACC_PRIVATE
+
+  private final com.google.gson.JsonObject CCRCHRHHIRCCCIORORHRHIRCCROOHO;
+    descriptor: Lcom/google/gson/JsonObject;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final com.google.gson.JsonObject RCOCOHIOHOHIROHIORHHOHHCRRCOOR;
+    descriptor: Lcom/google/gson/JsonObject;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  public com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HICHIOOOHCHRIIIHICOIHHCHOROROC.COOCHIRORIICRCIIRIROHIIRIRICCH();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: iconst_0
+         2: invokespecial #82                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/COOCHIRORIICRCIIRIROHIIRIRICCH."<init>":(Z)V
+         5: aload_0
+         6: iconst_0
+         7: putfield      #59                 // Field COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+        10: aload_0
+        11: iconst_0
+        12: putfield      #58                 // Field CIHHIHROHCIIIOCCHOCORIROCCHCIC:Z
+        15: aload_0
+        16: iconst_0
+        17: putfield      #60                 // Field CRCCICHHHIRRROHIRIOOIHIRRRIIRO:Z
+        20: aload_0
+        21: aload_0
+        22: invokevirtual #89                 // Method RRHHORIIRIHOCRORRIOIIHHIHRRCIC:()Lcom/google/gson/JsonObject;
+        25: putfield      #57                 // Field CCRCHRHHIRCCCIORORHRHIRCCROOHO:Lcom/google/gson/JsonObject;
+        28: aload_0
+        29: new           #13                 // class com/google/gson/JsonObject
+        32: dup
+        33: invokespecial #71                 // Method com/google/gson/JsonObject."<init>":()V
+        36: putfield      #61                 // Field RCOCOHIOHOHIROHIORHHOHHCRRCOOR:Lcom/google/gson/JsonObject;
+        39: aload_0
+        40: ldc           #28                 // class com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR
+        42: aload_0
+        43: invokedynamic #130,  0            // InvokeDynamic #0:accept:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+        48: invokevirtual #90                 // Method handle:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+        51: aload_0
+        52: ldc           #27                 // class com/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH
+        54: aload_0
+        55: invokedynamic #131,  0            // InvokeDynamic #1:accept:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH;)Ljava/util/function/Consumer;
+        60: invokevirtual #90                 // Method handle:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+        63: return
+      LineNumberTable:
+        line 44: 0
+        line 35: 5
+        line 36: 10
+        line 37: 15
+        line 40: 20
+        line 41: 28
+        line 46: 39
+        line 52: 51
+        line 114: 63
+
+  public java.lang.String getId();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #2                  // String MUMBLE_LINK
+         2: areturn
+      LineNumberTable:
+        line 118: 0
+
+  private com.google.gson.JsonObject CIORHOHOHIHRHRCIRROHICOHCHHICR();
+    descriptor: ()Lcom/google/gson/JsonObject;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=4, locals=2, args_size=1
+         0: new           #12                 // class com/google/gson/JsonArray
+         3: dup
+         4: invokespecial #69                 // Method com/google/gson/JsonArray."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: new           #14                 // class com/google/gson/JsonPrimitive
+        12: dup
+        13: invokestatic  #99                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        16: invokeinterface #112,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getWorldInfo:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        21: invokeinterface #109,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getSpawnX:()I
+        26: invokestatic  #103                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        29: invokespecial #76                 // Method com/google/gson/JsonPrimitive."<init>":(Ljava/lang/Number;)V
+        32: invokevirtual #70                 // Method com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+        35: aload_1
+        36: new           #14                 // class com/google/gson/JsonPrimitive
+        39: dup
+        40: invokestatic  #99                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        43: invokeinterface #112,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getWorldInfo:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        48: invokeinterface #110,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getSpawnY:()I
+        53: invokestatic  #103                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        56: invokespecial #76                 // Method com/google/gson/JsonPrimitive."<init>":(Ljava/lang/Number;)V
+        59: invokevirtual #70                 // Method com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+        62: aload_1
+        63: new           #14                 // class com/google/gson/JsonPrimitive
+        66: dup
+        67: invokestatic  #99                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        70: invokeinterface #112,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getWorldInfo:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        75: invokeinterface #111,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/HORCRCHHIRHRRHROOIOCRCICCICOCH/OHOORCOHRORRIHROOCROOIIHHOOHRI/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$getSpawnZ:()I
+        80: invokestatic  #103                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        83: invokespecial #76                 // Method com/google/gson/JsonPrimitive."<init>":(Ljava/lang/Number;)V
+        86: invokevirtual #70                 // Method com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+        89: aload_0
+        90: getfield      #61                 // Field RCOCOHIOHOHIROHIORHHOHHCRRCOOR:Lcom/google/gson/JsonObject;
+        93: ldc           #9                  // String name
+        95: invokestatic  #100                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+        98: invokeinterface #117,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getName:()Ljava/lang/String;
+       103: invokevirtual #74                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+       106: aload_0
+       107: getfield      #61                 // Field RCOCOHIOHOHIROHIORHHOHHCRRCOOR:Lcom/google/gson/JsonObject;
+       110: ldc           #11                 // String worldSpawn
+       112: aload_1
+       113: invokevirtual #72                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+       116: invokestatic  #78                 // Method com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CHRCCCIHOCRIRIIIIICRHHCIOOICRI:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       119: invokeinterface #108,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/COOCHIRORIICRCIIRIROHIIRIRICCH.getMinecraftVersion:()Lcom/moonsworth/lunar/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+       124: invokevirtual #77                 // Method com/moonsworth/lunar/COOIOIRCCICRCCIHCCRHRCIHROHCCI/RROHOCRCCHCIORHICIHCOHRIRCIHCI.RHOROOICOOICIRHCRCICRHRHICRHIH:()Z
+       127: ifeq          150
+       130: aload_0
+       131: getfield      #61                 // Field RCOCOHIOHOHIROHIORHHOHHCRRCOOR:Lcom/google/gson/JsonObject;
+       134: ldc           #3                  // String dimension
+       136: invokestatic  #100                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+       139: invokeinterface #116,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getDimensionName:()Ljava/lang/String;
+       144: invokevirtual #74                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+       147: goto          170
+       150: aload_0
+       151: getfield      #61                 // Field RCOCOHIOHOHIROHIORHHOHHCRRCOOR:Lcom/google/gson/JsonObject;
+       154: ldc           #3                  // String dimension
+       156: invokestatic  #100                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+       159: invokeinterface #115,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getDimension:()I
+       164: invokestatic  #103                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       167: invokevirtual #73                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+       170: aload_0
+       171: getfield      #61                 // Field RCOCOHIOHOHIROHIORHHOHHCRRCOOR:Lcom/google/gson/JsonObject;
+       174: areturn
+      LineNumberTable:
+        line 123: 0
+        line 125: 8
+        line 126: 35
+        line 127: 62
+        line 129: 89
+        line 130: 106
+        line 132: 116
+        line 133: 130
+        line 135: 150
+        line 138: 170
+      StackMapTable: number_of_entries = 2
+        frame_type = 251 /* same_frame_extended */
+          offset_delta = 150
+        frame_type = 19 /* same */
+
+  private com.google.gson.JsonObject RRHHORIIRIHOCRORRIOIIHHIHRRCIC();
+    descriptor: ()Lcom/google/gson/JsonObject;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=2, args_size=1
+         0: new           #13                 // class com/google/gson/JsonObject
+         3: dup
+         4: invokespecial #71                 // Method com/google/gson/JsonObject."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: ldc           #4                  // String domain
+        11: ldc           #1                  // String AllTalk
+        13: invokevirtual #74                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+        16: aload_1
+        17: areturn
+      LineNumberTable:
+        line 142: 0
+        line 143: 8
+        line 144: 16
+
+  private com.moonsworth.lunar.client.mumble.MumbleVec RRCHCHCCORIROIOCHIIIHCCIOCHCOH(com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RORCICOHRIOIIIOIOHIIIICRCIHRII);
+    descriptor: (Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/mumble/MumbleVec;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=8, locals=6, args_size=2
+         0: aload_1
+         1: invokeinterface #122,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getRotationYaw:()D
+         6: dneg
+         7: ldc2_w        #49                 // double 0.01745329238474369d
+        10: dmul
+        11: ldc2_w        #51                 // double 3.1415927410125732d
+        14: dsub
+        15: invokestatic  #123                // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/CCHHRIIROCIIHRHIOOHHHHCCORRRIR.OHOORCOHRORRIHROOCROOIIHHOOHRI:(D)F
+        18: fstore_2
+        19: aload_1
+        20: invokeinterface #122,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getRotationYaw:()D
+        25: dneg
+        26: ldc2_w        #49                 // double 0.01745329238474369d
+        29: dmul
+        30: ldc2_w        #51                 // double 3.1415927410125732d
+        33: dsub
+        34: invokestatic  #124                // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/CCHHRIIROCIIHRHIOOHHHHCCORRRIR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(D)F
+        37: fstore_3
+        38: aload_1
+        39: invokeinterface #121,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getRotationPitch:()D
+        44: dneg
+        45: ldc2_w        #53                 // double 90.0d
+        48: dadd
+        49: ldc2_w        #49                 // double 0.01745329238474369d
+        52: dmul
+        53: invokestatic  #123                // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/CCHHRIIROCIIHRHIOOHHHHCCORRRIR.OHOORCOHRORRIHROOCROOIIHHOOHRI:(D)F
+        56: fneg
+        57: fstore        4
+        59: aload_1
+        60: invokeinterface #121,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getRotationPitch:()D
+        65: dneg
+        66: ldc2_w        #53                 // double 90.0d
+        69: dadd
+        70: ldc2_w        #49                 // double 0.01745329238474369d
+        73: dmul
+        74: invokestatic  #124                // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/CCHHRIIROCIIHRHIOOHHHHCCORRRIR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(D)F
+        77: fstore        5
+        79: new           #37                 // class com/moonsworth/lunar/client/mumble/MumbleVec
+        82: dup
+        83: fload_3
+        84: fload         4
+        86: fmul
+        87: f2d
+        88: fload         5
+        90: f2d
+        91: fload_2
+        92: fload         4
+        94: fmul
+        95: f2d
+        96: invokespecial #98                 // Method com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+        99: areturn
+      LineNumberTable:
+        line 148: 0
+        line 149: 19
+        line 150: 38
+        line 151: 59
+        line 153: 79
+
+  public void CHORHIHIRCOCCHIHIHCRIRCICICHIR(boolean);
+    descriptor: (Z)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=3, args_size=2
+         0: aload_0
+         1: getfield      #60                 // Field CRCCICHHHIRRROHIRIOOIHIRRRIIRO:Z
+         4: iload_1
+         5: if_icmpeq     12
+         8: iconst_1
+         9: goto          13
+        12: iconst_0
+        13: istore_2
+        14: aload_0
+        15: iload_1
+        16: putfield      #60                 // Field CRCCICHHHIRRROHIRIOOIHIRRRIIRO:Z
+        19: getstatic     #67                 // Field com/moonsworth/lunar/client/util/COOIOIRCCICRCCIHCCRHRCIHROHCCI.RRCICCOOICCHIORIOICOCIOCCCOHCR:Ljava/lang/String;
+        22: getstatic     #68                 // Field java/util/Locale.ROOT:Ljava/util/Locale;
+        25: invokevirtual #105                // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+        28: ldc           #10                 // String win
+        30: invokevirtual #104                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+        33: ifne          88
+        36: iload_2
+        37: ifeq          63
+        40: iload_1
+        41: ifeq          63
+        44: invokestatic  #101                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        47: invokevirtual #79                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORORRRHOOROHIOORCRICCOOHHIRCOC:()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+        50: ldc           #8                  // String mumbleLinkUnsupportedPopup
+        52: iconst_0
+        53: anewarray     #42                 // class java/lang/Object
+        56: invokestatic  #81                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+        59: invokevirtual #80                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.HOHHOHRCCOCHHIIRHICOOOIHICIIHC:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+        62: pop
+        63: aload_0
+        64: getstatic     #56                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/HIOHRIRIOIHOICCCCOHCOOIICIICOH.HOOCORIOCHIOCRROROICCHHRICRIOC:Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;
+        67: invokevirtual #84                 // Method HHCIOHIOOOHRIRHHRHCHOCRRHOROOI:(Lcom/moonsworth/lunar/client/RHCHOCRHIOROIOCRHIHRCROOOHICCC/OCCCIRIHIRCOCOCORIHHHRCHRIOCCC;)Ljava/lang/Object;
+        70: checkcast     #25                 // class com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII
+        73: aload_0
+        74: getstatic     #55                 // Field com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI.CLIENT_INTERNAL:Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;
+        77: iconst_0
+        78: invokestatic  #102                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+        81: invokeinterface #128,  4          // InterfaceMethod com/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/OHRORRHCHCRICORRRCIRIOCCIRCRII.COOCHIRORIICRCIIRIROHIIRIRICCH:(Ljava/lang/Object;Lcom/moonsworth/lunar/client/IROCROOIOIORORHHCCOOCCHRRRIOIC/COOCHIRORIICRCIIRIROHIIRIRICCH/RROHOCRCCHCIORHICIHCOHRIRCIHCI;Ljava/lang/Object;)Z
+        86: pop
+        87: return
+        88: iload_2
+        89: ifne          93
+        92: return
+        93: iload_1
+        94: ifeq          159
+        97: aload_0
+        98: getfield      #62                 // Field RHICRHHHRHROIIOHHRRIRIHORIHOCI:Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+       101: ifnonnull     115
+       104: aload_0
+       105: new           #36                 // class com/moonsworth/lunar/client/mumble/MumbleLink
+       108: dup
+       109: invokespecial #94                 // Method com/moonsworth/lunar/client/mumble/MumbleLink."<init>":()V
+       112: putfield      #62                 // Field RHICRHHHRHROIIOHHRRIRIHORIHOCI:Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+       115: aload_0
+       116: getfield      #62                 // Field RHICRHHHRHROIIOHHRRIRIHORIHOCI:Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+       119: invokevirtual #96                 // Method com/moonsworth/lunar/client/mumble/MumbleLink.isLoaded:()Z
+       122: ifeq          132
+       125: aload_0
+       126: invokevirtual #87                 // Method RHOIHCCCCHCHRCOIORHORCROIOCIIR:()V
+       129: goto          178
+       132: aload_0
+       133: iconst_1
+       134: putfield      #58                 // Field CIHHIHROHCIIIOCCHOCORIROCCHCIC:Z
+       137: invokestatic  #101                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       140: invokevirtual #79                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORORRRHOOROHIOORCRICCOOHHIRCOC:()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+       143: ldc           #7                  // String mumbleLinkErrorPopup
+       145: iconst_0
+       146: anewarray     #42                 // class java/lang/Object
+       149: invokestatic  #81                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+       152: invokevirtual #80                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.HOHHOHRCCOCHHIIRHICOOOIHICIIHC:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+       155: pop
+       156: goto          178
+       159: invokestatic  #101                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+       162: invokevirtual #79                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORORRRHOOROHIOORCRICCOOHHIRCOC:()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+       165: ldc           #5                  // String mumbleLinkDisabledPopup
+       167: iconst_0
+       168: anewarray     #42                 // class java/lang/Object
+       171: invokestatic  #81                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+       174: invokevirtual #80                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.HOHHOHRCCOCHHIIRHICOOOIHICIIHC:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+       177: pop
+       178: return
+      LineNumberTable:
+        line 158: 0
+        line 159: 14
+        line 161: 19
+        line 162: 36
+        line 163: 44
+        line 165: 63
+        line 166: 87
+        line 169: 88
+        line 170: 92
+        line 173: 93
+        line 174: 97
+        line 175: 104
+        line 178: 115
+        line 179: 125
+        line 181: 132
+        line 182: 137
+        line 185: 159
+        line 187: 178
+      StackMapTable: number_of_entries = 9
+        frame_type = 12 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 49
+        frame_type = 253 /* append */
+          offset_delta = 24
+          locals = [ int, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 4
+        frame_type = 250 /* chop */
+          offset_delta = 21
+        frame_type = 16 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 26
+        frame_type = 18 /* same */
+
+  public void RHOIHCCCCHCHRCOIORHORCROIOCIIR();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: aload_0
+         1: getfield      #59                 // Field COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+         4: ifne          63
+         7: aload_0
+         8: aload_0
+         9: getfield      #62                 // Field RHICRHHHRHROIIOHHRRIRIHORIHOCI:Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+        12: invokevirtual #95                 // Method com/moonsworth/lunar/client/mumble/MumbleLink.init:()I
+        15: iflt          22
+        18: iconst_1
+        19: goto          23
+        22: iconst_0
+        23: putfield      #59                 // Field COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+        26: goto          63
+        29: astore_1
+        30: aload_0
+        31: iconst_1
+        32: putfield      #58                 // Field CIHHIHROHCIIIOCCHOCORIROCCHCIC:Z
+        35: aload_0
+        36: iconst_0
+        37: putfield      #59                 // Field COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+        40: invokestatic  #101                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        43: invokevirtual #79                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORORRRHOOROHIOORCRICCOOHHIRCOC:()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+        46: ldc           #7                  // String mumbleLinkErrorPopup
+        48: iconst_0
+        49: anewarray     #42                 // class java/lang/Object
+        52: invokestatic  #81                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+        55: invokevirtual #80                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.HOHHOHRCCOCHHIIRHICOOOIHICIIHC:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+        58: pop
+        59: aload_1
+        60: invokevirtual #106                // Method java/lang/Throwable.printStackTrace:()V
+        63: aload_0
+        64: getfield      #59                 // Field COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+        67: ifeq          89
+        70: invokestatic  #101                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        73: invokevirtual #79                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORORRRHOOROHIOORCRICCOOHHIRCOC:()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+        76: ldc           #6                  // String mumbleLinkEnabledPopup
+        78: iconst_0
+        79: anewarray     #42                 // class java/lang/Object
+        82: invokestatic  #81                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+        85: invokevirtual #80                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.HOHHOHRCCOCHHIIRHICOOOIHICIIHC:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+        88: pop
+        89: return
+      Exception table:
+         from    to  target type
+             7    26    29   Class java/lang/Throwable
+      LineNumberTable:
+        line 190: 0
+        line 192: 7
+        line 200: 26
+        line 193: 29
+        line 194: 30
+        line 195: 35
+        line 197: 40
+        line 199: 59
+        line 203: 63
+        line 204: 70
+        line 206: 89
+      StackMapTable: number_of_entries = 5
+        frame_type = 86 /* same_locals_1_stack_item */
+          stack = [ class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH ]
+          stack = [ class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH, int ]
+        frame_type = 69 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+        frame_type = 33 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 25
+
+  protected com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.OHOORCOHRORRIHROOCROOIIHHOOHRI HRCRRHIORHOOICOIRIRIHCRRCRCHRH();
+    descriptor: ()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+    flags: (0x0004) ACC_PROTECTED
+    Code:
+      stack=5, locals=1, args_size=1
+         0: invokestatic  #129                // InterfaceMethod com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI.OIRCOCOHIHCIRICIRCIHHCIICRHHHO:()Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+         3: iconst_1
+         4: anewarray     #34                 // class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII
+         7: dup
+         8: iconst_0
+         9: getstatic     #63                 // Field com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII.HORHROHOHORHHICRCIHIIHOIHIOHHO:Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+        12: aastore
+        13: invokevirtual #91                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH.COOCHIRORIICRCIIRIROHIIRIRICCH:([Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH;
+        16: aload_0
+        17: invokevirtual #92                 // Method com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH.IRCROOHIIOOHIRCRRHOHIORHCOHIOR:(Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/RROHOCRCCHCIORHICIHCOHRIRCIHCI;)Lcom/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI;
+        20: areturn
+      LineNumberTable:
+        line 210: 0
+        line 211: 13
+        line 212: 17
+        line 210: 20
+
+  public boolean RHORHIIRORRIRCCCCIIIOHCORCOOCH();
+    descriptor: ()Z
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_0
+         1: ireturn
+      LineNumberTable:
+        line 217: 0
+
+  private void OHRORRHCHCRICORRRCIRIOCCIRCRII(com.moonsworth.lunar.client.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.COOCHIRORIICRCIIRIROHIIRIRICCH.OIHRRCOOHRHIHICHRICIRIOCROHOCC.RRCHCHCCORIROIOCHIIIHCCIOCHCOH);
+    descriptor: (Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=10, locals=24, args_size=2
+         0: aload_0
+         1: getfield      #62                 // Field RHICRHHHRHROIIOHHRRIRIHORIHOCI:Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+         4: ifnull        398
+         7: invokestatic  #99                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        10: ifnull        398
+        13: invokestatic  #99                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        16: invokeinterface #113,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$isRemote:()Z
+        21: ifeq          398
+        24: aload_0
+        25: getfield      #59                 // Field COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+        28: ifne          45
+        31: aload_0
+        32: getfield      #58                 // Field CIHHIHROHCIIIOCCHOCORIROCCHCIC:Z
+        35: ifne          45
+        38: aload_0
+        39: invokevirtual #87                 // Method RHOIHCCCCHCHRCOIORHORCROIOCIIR:()V
+        42: goto          398
+        45: aload_0
+        46: getfield      #58                 // Field CIHHIHROHCIIIOCCHOCORIROCCHCIC:Z
+        49: ifeq          53
+        52: return
+        53: invokestatic  #100                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.ICRCIORIOCRCRRRHCOCRCHRCCCOHOC:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;
+        56: astore_2
+        57: fconst_1
+        58: fstore_3
+        59: fconst_1
+        60: fstore        4
+        62: fconst_1
+        63: fstore        5
+        65: fconst_1
+        66: fstore        6
+        68: fconst_1
+        69: fstore        7
+        71: fconst_1
+        72: fstore        8
+        74: fconst_1
+        75: fstore        9
+        77: fconst_1
+        78: fstore        10
+        80: fconst_1
+        81: fstore        11
+        83: fconst_1
+        84: fstore        12
+        86: fconst_1
+        87: fstore        13
+        89: fconst_1
+        90: fstore        14
+        92: new           #37                 // class com/moonsworth/lunar/client/mumble/MumbleVec
+        95: dup
+        96: aload_2
+        97: invokeinterface #114,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.HOCHCHCCCCOCCOIRIRIIHRRCHHIOIO:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC;
+       102: invokeinterface #125,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC.bridge$xCoord:()D
+       107: aload_2
+       108: invokeinterface #114,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.HOCHCHCCCCOCCOIRIRIIHRRCHHIOIO:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC;
+       113: invokeinterface #126,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC.bridge$yCoord:()D
+       118: aload_2
+       119: invokeinterface #114,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.HOCHCHCCCCOCCOIRIRIIHRRCHHIOIO:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC;
+       124: invokeinterface #127,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RRICHHOHORCIOHROIHICOIRORHHHIO/HOOHCHOCHIRORHOIHCOCICOOOCHIIC.bridge$zCoord:()D
+       129: invokespecial #98                 // Method com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+       132: astore        15
+       134: aload_0
+       135: aload_2
+       136: invokevirtual #88                 // Method RRCHCHCCORIROIOCHIIIHCCIOCHCOH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII;)Lcom/moonsworth/lunar/client/mumble/MumbleVec;
+       139: astore        16
+       141: new           #37                 // class com/moonsworth/lunar/client/mumble/MumbleVec
+       144: dup
+       145: aload_2
+       146: invokeinterface #118,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosX:()D
+       151: aload_2
+       152: invokeinterface #120,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosZ:()D
+       157: d2f
+       158: f2d
+       159: aload_2
+       160: invokeinterface #119,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosY:()D
+       165: d2f
+       166: f2d
+       167: invokespecial #98                 // Method com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+       170: astore        17
+       172: new           #37                 // class com/moonsworth/lunar/client/mumble/MumbleVec
+       175: dup
+       176: aload         15
+       178: getfield      #64                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.xCoord:D
+       181: fload_3
+       182: f2d
+       183: dmul
+       184: aload         15
+       186: getfield      #66                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.zCoord:D
+       189: d2f
+       190: fload         5
+       192: fmul
+       193: f2d
+       194: aload         15
+       196: getfield      #65                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.yCoord:D
+       199: d2f
+       200: fload         4
+       202: fmul
+       203: f2d
+       204: invokespecial #98                 // Method com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+       207: astore        18
+       209: new           #37                 // class com/moonsworth/lunar/client/mumble/MumbleVec
+       212: dup
+       213: aload         16
+       215: getfield      #64                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.xCoord:D
+       218: fload         9
+       220: f2d
+       221: dmul
+       222: aload         16
+       224: getfield      #66                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.zCoord:D
+       227: d2f
+       228: fload         11
+       230: fmul
+       231: f2d
+       232: aload         16
+       234: getfield      #65                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.yCoord:D
+       237: d2f
+       238: fload         10
+       240: fmul
+       241: f2d
+       242: invokespecial #98                 // Method com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+       245: astore        19
+       247: new           #37                 // class com/moonsworth/lunar/client/mumble/MumbleVec
+       250: dup
+       251: aload_2
+       252: invokeinterface #118,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosX:()D
+       257: aload_2
+       258: invokeinterface #120,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosZ:()D
+       263: d2f
+       264: f2d
+       265: aload_2
+       266: invokeinterface #119,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RORCICOHRIOIIIOIOHIIIICRCIHRII.bridge$getPosY:()D
+       271: d2f
+       272: f2d
+       273: invokespecial #98                 // Method com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+       276: astore        20
+       278: new           #37                 // class com/moonsworth/lunar/client/mumble/MumbleVec
+       281: dup
+       282: aload         15
+       284: getfield      #64                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.xCoord:D
+       287: fload         6
+       289: f2d
+       290: dmul
+       291: aload         15
+       293: getfield      #66                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.zCoord:D
+       296: d2f
+       297: fload         8
+       299: fmul
+       300: f2d
+       301: aload         15
+       303: getfield      #65                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.yCoord:D
+       306: d2f
+       307: fload         7
+       309: fmul
+       310: f2d
+       311: invokespecial #98                 // Method com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+       314: astore        21
+       316: new           #37                 // class com/moonsworth/lunar/client/mumble/MumbleVec
+       319: dup
+       320: aload         16
+       322: getfield      #64                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.xCoord:D
+       325: fload         12
+       327: f2d
+       328: dmul
+       329: aload         16
+       331: getfield      #66                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.zCoord:D
+       334: d2f
+       335: fload         14
+       337: fmul
+       338: f2d
+       339: aload         16
+       341: getfield      #65                 // Field com/moonsworth/lunar/client/mumble/MumbleVec.yCoord:D
+       344: d2f
+       345: fload         13
+       347: fmul
+       348: f2d
+       349: invokespecial #98                 // Method com/moonsworth/lunar/client/mumble/MumbleVec."<init>":(DDD)V
+       352: astore        22
+       354: new           #35                 // class com/moonsworth/lunar/client/mumble/LinkData
+       357: dup
+       358: aload_0
+       359: invokevirtual #83                 // Method CIORHOHOHIHRHRCIRROHICOHCHHICR:()Lcom/google/gson/JsonObject;
+       362: invokevirtual #75                 // Method com/google/gson/JsonObject.toString:()Ljava/lang/String;
+       365: aload_0
+       366: getfield      #57                 // Field CCRCHRHHIRCCCIORORHRHIRCCROOHO:Lcom/google/gson/JsonObject;
+       369: invokevirtual #75                 // Method com/google/gson/JsonObject.toString:()Ljava/lang/String;
+       372: aload         18
+       374: aload         19
+       376: aload         17
+       378: aload         20
+       380: aload         21
+       382: aload         22
+       384: invokespecial #93                 // Method com/moonsworth/lunar/client/mumble/LinkData."<init>":(Ljava/lang/String;Ljava/lang/String;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;Lcom/moonsworth/lunar/client/mumble/MumbleVec;)V
+       387: astore        23
+       389: aload_0
+       390: getfield      #62                 // Field RHICRHHHRHROIIOHHRRIRIHORIHOCI:Lcom/moonsworth/lunar/client/mumble/MumbleLink;
+       393: aload         23
+       395: invokevirtual #97                 // Method com/moonsworth/lunar/client/mumble/MumbleLink.update:(Lcom/moonsworth/lunar/client/mumble/LinkData;)V
+       398: return
+      LineNumberTable:
+        line 53: 0
+        line 55: 7
+        line 57: 24
+        line 58: 38
+        line 61: 45
+        line 62: 52
+        line 65: 53
+        line 67: 57
+        line 68: 59
+        line 69: 62
+        line 71: 65
+        line 72: 68
+        line 73: 71
+        line 75: 74
+        line 76: 77
+        line 77: 80
+        line 79: 83
+        line 80: 86
+        line 81: 89
+        line 83: 92
+        line 84: 113
+        line 86: 134
+        line 89: 141
+        line 93: 172
+        line 97: 209
+        line 100: 247
+        line 102: 278
+        line 104: 316
+        line 106: 354
+        line 109: 389
+        line 113: 398
+      StackMapTable: number_of_entries = 3
+        frame_type = 250 /* chop */
+          offset_delta = 45
+        frame_type = 7 /* same */
+        frame_type = 250 /* chop */
+          offset_delta = 344
+
+  private void IRCROOHIIOOHIRCRRHOHIORHCOHIOR(com.moonsworth.lunar.client.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.COOCHIRORIICRCIIRIROHIIRIRICCH.ORCOOOCHIICOIICCROCRCOOROORIHR.COCCCORHOHRORRICOOHOCHOOCHHICR);
+    descriptor: (Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR;)V
+    flags: (0x1002) ACC_PRIVATE, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #59                 // Field COOCROHROOIIIHCHICIHOOIHCIIIHO:Z
+         4: ifeq          43
+         7: invokestatic  #99                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        10: ifnull        43
+        13: invokestatic  #99                 // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.CCORCHRIIIRRCCIICOICCRIHHHRORR:()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR;
+        16: invokeinterface #113,  1          // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OHRORRHCHCRICORRRCIRIOCCIRCRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR.bridge$isRemote:()Z
+        21: ifeq          43
+        24: invokestatic  #101                // Method com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.OOICRICIHCCCIORHHIOHCCRHRIRRHR:()Lcom/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH;
+        27: invokevirtual #79                 // Method com/moonsworth/lunar/client/COOCHIRORIICRCIIRIROHIIRIRICCH.ORORRRHOOROHIOORCRICCOOHHIRCOC:()Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR;
+        30: ldc           #6                  // String mumbleLinkEnabledPopup
+        32: iconst_0
+        33: anewarray     #42                 // class java/lang/Object
+        36: invokestatic  #81                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+        39: invokevirtual #80                 // Method com/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/ORCOOOCHIICOIICCROCRCOOROORIHR.HOHHOHRCCOCHHIIRHICOOOIHICIIHC:(Ljava/lang/String;)Lcom/moonsworth/lunar/client/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/COCCCORHOHRORRICOOHOCHOOCHHICR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR;
+        42: pop
+        43: return
+      LineNumberTable:
+        line 47: 0
+        line 48: 24
+        line 50: 43
+      StackMapTable: number_of_entries = 1
+        frame_type = 249 /* chop */
+          offset_delta = 43
+}
+BootstrapMethods:
+  0: #134 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #211 (Ljava/lang/Object;)V
+      #132 REF_invokeVirtual com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.IRCROOHIIOOHIRCRRHOHIORHCOHIOR:(Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR;)V
+      #210 (Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/ORCOOOCHIICOIICCROCRCOOROORIHR/COCCCORHOHRORRICOOHOCHOOCHHICR;)V
+  1: #134 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #211 (Ljava/lang/Object;)V
+      #133 REF_invokeVirtual com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/HICHIOOOHCHRIIIHICOIHHCHOROROC/COOCHIRORIICRCIIRIROHIIRIRICCH.OHRORRHCHCRICORRRCIRIOCCIRCRII:(Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;)V
+      #209 (Lcom/moonsworth/lunar/client/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/COOCHIRORIICRCIIRIROHIIRIRICCH/OIHRRCOOHRHIHICHRICIRIOCROHOCC/RRCHCHCCORIROIOCHIIIHCCIOCHCOH;)V
+InnerClasses:
+  public static #266= #33 of #32;         // COOCHIRORIICRCIIRIROHIIRIRICCH=class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI$COOCHIRORIICRCIIRIROHIIRIRICCH of class com/moonsworth/lunar/client/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR/OHOORCOHRORRIHROOCROOIIHHOOHRI
+  public static final #292= #47 of #46;   // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

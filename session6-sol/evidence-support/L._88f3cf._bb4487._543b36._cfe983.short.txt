@@ -1,0 +1,565 @@
+public final class L._88f3cf._bb4487._543b36._cfe983 extends L._88f3cf._cfe983 {
+  private static final java.lang.String _ad7b89;
+
+  private static final java.lang.String _237a34;
+
+  private static final java.lang.String _ca3f1d;
+
+  private static final java.lang.String _477d82;
+
+  private L.mumble.MumbleLink _08cf41;
+
+  private boolean _b846da;
+
+  private boolean _357537;
+
+  private boolean _b2b78f;
+
+  private final com.google.gson.JsonObject _a08051;
+
+  private final com.google.gson.JsonObject _db76a4;
+
+  public L._88f3cf._bb4487._543b36._cfe983();
+    Code:
+       0: aload_0
+       1: iconst_0
+       2: invokespecial #82                 // Method L/_88f3cf/_cfe983."<init>":(Z)V
+       5: aload_0
+       6: iconst_0
+       7: putfield      #59                 // Field _b846da:Z
+      10: aload_0
+      11: iconst_0
+      12: putfield      #58                 // Field _357537:Z
+      15: aload_0
+      16: iconst_0
+      17: putfield      #60                 // Field _b2b78f:Z
+      20: aload_0
+      21: aload_0
+      22: invokevirtual #89                 // Method _aa35a4:()Lcom/google/gson/JsonObject;
+      25: putfield      #57                 // Field _a08051:Lcom/google/gson/JsonObject;
+      28: aload_0
+      29: new           #13                 // class com/google/gson/JsonObject
+      32: dup
+      33: invokespecial #71                 // Method com/google/gson/JsonObject."<init>":()V
+      36: putfield      #61                 // Field _db76a4:Lcom/google/gson/JsonObject;
+      39: aload_0
+      40: ldc           #28                 // class L/_d4ca6c/_cfe983/_13ea87/_429bf0
+      42: aload_0
+      43: invokedynamic #130,  0            // InvokeDynamic #0:accept:(LL/_88f3cf/_bb4487/_543b36/_cfe983;)Ljava/util/function/Consumer;
+      48: invokevirtual #90                 // Method handle:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      51: aload_0
+      52: ldc           #27                 // class L/_d4ca6c/_cfe983/_2ce426/_3a14e3
+      54: aload_0
+      55: invokedynamic #131,  0            // InvokeDynamic #1:accept:(LL/_88f3cf/_bb4487/_543b36/_cfe983;)Ljava/util/function/Consumer;
+      60: invokevirtual #90                 // Method handle:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      63: return
+
+  public java.lang.String getId();
+    Code:
+       0: ldc           #2                  // String MUMBLE_LINK
+       2: areturn
+
+  private com.google.gson.JsonObject _a63c02();
+    Code:
+       0: new           #12                 // class com/google/gson/JsonArray
+       3: dup
+       4: invokespecial #69                 // Method com/google/gson/JsonArray."<init>":()V
+       7: astore_1
+       8: aload_1
+       9: new           #14                 // class com/google/gson/JsonPrimitive
+      12: dup
+      13: invokestatic  #99                 // Method L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+      16: invokeinterface #112,  1          // InterfaceMethod ML/_590f69/_bb4487/_1e73d7/_bb4487.bridge$getWorldInfo:()LML/_590f69/_dcf582/_1253fc/_bb4487;
+      21: invokeinterface #109,  1          // InterfaceMethod ML/_590f69/_dcf582/_1253fc/_bb4487.bridge$getSpawnX:()I
+      26: invokestatic  #103                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      29: invokespecial #76                 // Method com/google/gson/JsonPrimitive."<init>":(Ljava/lang/Number;)V
+      32: invokevirtual #70                 // Method com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+      35: aload_1
+      36: new           #14                 // class com/google/gson/JsonPrimitive
+      39: dup
+      40: invokestatic  #99                 // Method L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+      43: invokeinterface #112,  1          // InterfaceMethod ML/_590f69/_bb4487/_1e73d7/_bb4487.bridge$getWorldInfo:()LML/_590f69/_dcf582/_1253fc/_bb4487;
+      48: invokeinterface #110,  1          // InterfaceMethod ML/_590f69/_dcf582/_1253fc/_bb4487.bridge$getSpawnY:()I
+      53: invokestatic  #103                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      56: invokespecial #76                 // Method com/google/gson/JsonPrimitive."<init>":(Ljava/lang/Number;)V
+      59: invokevirtual #70                 // Method com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+      62: aload_1
+      63: new           #14                 // class com/google/gson/JsonPrimitive
+      66: dup
+      67: invokestatic  #99                 // Method L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+      70: invokeinterface #112,  1          // InterfaceMethod ML/_590f69/_bb4487/_1e73d7/_bb4487.bridge$getWorldInfo:()LML/_590f69/_dcf582/_1253fc/_bb4487;
+      75: invokeinterface #111,  1          // InterfaceMethod ML/_590f69/_dcf582/_1253fc/_bb4487.bridge$getSpawnZ:()I
+      80: invokestatic  #103                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      83: invokespecial #76                 // Method com/google/gson/JsonPrimitive."<init>":(Ljava/lang/Number;)V
+      86: invokevirtual #70                 // Method com/google/gson/JsonArray.add:(Lcom/google/gson/JsonElement;)V
+      89: aload_0
+      90: getfield      #61                 // Field _db76a4:Lcom/google/gson/JsonObject;
+      93: ldc           #9                  // String name
+      95: invokestatic  #100                // Method L/util/_e93d3c._433a2f:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+      98: invokeinterface #117,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getName:()Ljava/lang/String;
+     103: invokevirtual #74                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+     106: aload_0
+     107: getfield      #61                 // Field _db76a4:Lcom/google/gson/JsonObject;
+     110: ldc           #11                 // String worldSpawn
+     112: aload_1
+     113: invokevirtual #72                 // Method com/google/gson/JsonObject.add:(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+     116: invokestatic  #78                 // Method ML/_590f69/_21aca6._bb01a8:()LML/_590f69/_cfe983;
+     119: invokeinterface #108,  1          // InterfaceMethod ML/_590f69/_cfe983.getMinecraftVersion:()LML/_cb9292/_21aca6;
+     124: invokevirtual #77                 // Method ML/_cb9292/_21aca6._534abb:()Z
+     127: ifeq          150
+     130: aload_0
+     131: getfield      #61                 // Field _db76a4:Lcom/google/gson/JsonObject;
+     134: ldc           #3                  // String dimension
+     136: invokestatic  #100                // Method L/util/_e93d3c._433a2f:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+     139: invokeinterface #116,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getDimensionName:()Ljava/lang/String;
+     144: invokevirtual #74                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+     147: goto          170
+     150: aload_0
+     151: getfield      #61                 // Field _db76a4:Lcom/google/gson/JsonObject;
+     154: ldc           #3                  // String dimension
+     156: invokestatic  #100                // Method L/util/_e93d3c._433a2f:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+     159: invokeinterface #115,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getDimension:()I
+     164: invokestatic  #103                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     167: invokevirtual #73                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/Number;)V
+     170: aload_0
+     171: getfield      #61                 // Field _db76a4:Lcom/google/gson/JsonObject;
+     174: areturn
+
+  private com.google.gson.JsonObject _aa35a4();
+    Code:
+       0: new           #13                 // class com/google/gson/JsonObject
+       3: dup
+       4: invokespecial #71                 // Method com/google/gson/JsonObject."<init>":()V
+       7: astore_1
+       8: aload_1
+       9: ldc           #4                  // String domain
+      11: ldc           #1                  // String AllTalk
+      13: invokevirtual #74                 // Method com/google/gson/JsonObject.addProperty:(Ljava/lang/String;Ljava/lang/String;)V
+      16: aload_1
+      17: areturn
+
+  private L.mumble.MumbleVec _3a14e3(ML._590f69._bb4487._d4ca6c._590f69);
+    Code:
+       0: aload_1
+       1: invokeinterface #122,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getRotationYaw:()D
+       6: dneg
+       7: ldc2_w        #49                 // double 0.01745329238474369d
+      10: dmul
+      11: ldc2_w        #51                 // double 3.1415927410125732d
+      14: dsub
+      15: invokestatic  #123                // InterfaceMethod ML/_590f69/_5b3f84/_79e7e6._1253fc:(D)F
+      18: fstore_2
+      19: aload_1
+      20: invokeinterface #122,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getRotationYaw:()D
+      25: dneg
+      26: ldc2_w        #49                 // double 0.01745329238474369d
+      29: dmul
+      30: ldc2_w        #51                 // double 3.1415927410125732d
+      33: dsub
+      34: invokestatic  #124                // InterfaceMethod ML/_590f69/_5b3f84/_79e7e6._d4ca6c:(D)F
+      37: fstore_3
+      38: aload_1
+      39: invokeinterface #121,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getRotationPitch:()D
+      44: dneg
+      45: ldc2_w        #53                 // double 90.0d
+      48: dadd
+      49: ldc2_w        #49                 // double 0.01745329238474369d
+      52: dmul
+      53: invokestatic  #123                // InterfaceMethod ML/_590f69/_5b3f84/_79e7e6._1253fc:(D)F
+      56: fneg
+      57: fstore        4
+      59: aload_1
+      60: invokeinterface #121,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getRotationPitch:()D
+      65: dneg
+      66: ldc2_w        #53                 // double 90.0d
+      69: dadd
+      70: ldc2_w        #49                 // double 0.01745329238474369d
+      73: dmul
+      74: invokestatic  #124                // InterfaceMethod ML/_590f69/_5b3f84/_79e7e6._d4ca6c:(D)F
+      77: fstore        5
+      79: new           #37                 // class L/mumble/MumbleVec
+      82: dup
+      83: fload_3
+      84: fload         4
+      86: fmul
+      87: f2d
+      88: fload         5
+      90: f2d
+      91: fload_2
+      92: fload         4
+      94: fmul
+      95: f2d
+      96: invokespecial #98                 // Method L/mumble/MumbleVec."<init>":(DDD)V
+      99: areturn
+
+  public void _41ba55(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #60                 // Field _b2b78f:Z
+       4: iload_1
+       5: if_icmpeq     12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: istore_2
+      14: aload_0
+      15: iload_1
+      16: putfield      #60                 // Field _b2b78f:Z
+      19: getstatic     #67                 // Field L/util/_cb9292._c4ddf5:Ljava/lang/String;
+      22: getstatic     #68                 // Field java/util/Locale.ROOT:Ljava/util/Locale;
+      25: invokevirtual #105                // Method java/lang/String.toLowerCase:(Ljava/util/Locale;)Ljava/lang/String;
+      28: ldc           #10                 // String win
+      30: invokevirtual #104                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      33: ifne          88
+      36: iload_2
+      37: ifeq          63
+      40: iload_1
+      41: ifeq          63
+      44: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      47: invokevirtual #79                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+      50: ldc           #8                  // String mumbleLinkUnsupportedPopup
+      52: iconst_0
+      53: anewarray     #42                 // class java/lang/Object
+      56: invokestatic  #81                 // Method L/_2f4182/_429bf0/_13ea87._d4ca6c:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      59: invokevirtual #80                 // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+      62: pop
+      63: aload_0
+      64: getstatic     #56                 // Field L/_88f3cf/_02d7ad._9a425c:LL/_55938e/_e62626;
+      67: invokevirtual #84                 // Method _7fbb1e:(LL/_55938e/_e62626;)Ljava/lang/Object;
+      70: checkcast     #25                 // class L/_c8175c/_cfe983/_1e73d7
+      73: aload_0
+      74: getstatic     #55                 // Field L/_c8175c/_cfe983/_21aca6.CLIENT_INTERNAL:LL/_c8175c/_cfe983/_21aca6;
+      77: iconst_0
+      78: invokestatic  #102                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      81: invokeinterface #128,  4          // InterfaceMethod L/_c8175c/_cfe983/_1e73d7._cfe983:(Ljava/lang/Object;LL/_c8175c/_cfe983/_21aca6;Ljava/lang/Object;)Z
+      86: pop
+      87: return
+      88: iload_2
+      89: ifne          93
+      92: return
+      93: iload_1
+      94: ifeq          159
+      97: aload_0
+      98: getfield      #62                 // Field _08cf41:LL/mumble/MumbleLink;
+     101: ifnonnull     115
+     104: aload_0
+     105: new           #36                 // class L/mumble/MumbleLink
+     108: dup
+     109: invokespecial #94                 // Method L/mumble/MumbleLink."<init>":()V
+     112: putfield      #62                 // Field _08cf41:LL/mumble/MumbleLink;
+     115: aload_0
+     116: getfield      #62                 // Field _08cf41:LL/mumble/MumbleLink;
+     119: invokevirtual #96                 // Method L/mumble/MumbleLink.isLoaded:()Z
+     122: ifeq          132
+     125: aload_0
+     126: invokevirtual #87                 // Method _c58b8f:()V
+     129: goto          178
+     132: aload_0
+     133: iconst_1
+     134: putfield      #58                 // Field _357537:Z
+     137: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+     140: invokevirtual #79                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+     143: ldc           #7                  // String mumbleLinkErrorPopup
+     145: iconst_0
+     146: anewarray     #42                 // class java/lang/Object
+     149: invokestatic  #81                 // Method L/_2f4182/_429bf0/_13ea87._d4ca6c:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     152: invokevirtual #80                 // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+     155: pop
+     156: goto          178
+     159: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+     162: invokevirtual #79                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+     165: ldc           #5                  // String mumbleLinkDisabledPopup
+     167: iconst_0
+     168: anewarray     #42                 // class java/lang/Object
+     171: invokestatic  #81                 // Method L/_2f4182/_429bf0/_13ea87._d4ca6c:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     174: invokevirtual #80                 // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+     177: pop
+     178: return
+
+  public void _c58b8f();
+    Code:
+       0: aload_0
+       1: getfield      #59                 // Field _b846da:Z
+       4: ifne          63
+       7: aload_0
+       8: aload_0
+       9: getfield      #62                 // Field _08cf41:LL/mumble/MumbleLink;
+      12: invokevirtual #95                 // Method L/mumble/MumbleLink.init:()I
+      15: iflt          22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: putfield      #59                 // Field _b846da:Z
+      26: goto          63
+      29: astore_1
+      30: aload_0
+      31: iconst_1
+      32: putfield      #58                 // Field _357537:Z
+      35: aload_0
+      36: iconst_0
+      37: putfield      #59                 // Field _b846da:Z
+      40: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      43: invokevirtual #79                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+      46: ldc           #7                  // String mumbleLinkErrorPopup
+      48: iconst_0
+      49: anewarray     #42                 // class java/lang/Object
+      52: invokestatic  #81                 // Method L/_2f4182/_429bf0/_13ea87._d4ca6c:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      55: invokevirtual #80                 // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+      58: pop
+      59: aload_1
+      60: invokevirtual #106                // Method java/lang/Throwable.printStackTrace:()V
+      63: aload_0
+      64: getfield      #59                 // Field _b846da:Z
+      67: ifeq          89
+      70: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      73: invokevirtual #79                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+      76: ldc           #6                  // String mumbleLinkEnabledPopup
+      78: iconst_0
+      79: anewarray     #42                 // class java/lang/Object
+      82: invokestatic  #81                 // Method L/_2f4182/_429bf0/_13ea87._d4ca6c:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      85: invokevirtual #80                 // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+      88: pop
+      89: return
+    Exception table:
+       from    to  target type
+           7    26    29   Class java/lang/Throwable
+
+  protected L._88f3cf._1253fc _14f3dc();
+    Code:
+       0: invokestatic  #129                // InterfaceMethod L/_88f3cf/_1253fc._1cac47:()LL/_88f3cf/_1253fc$_cfe983;
+       3: iconst_1
+       4: anewarray     #34                 // class L/_88f3cf/_590f69
+       7: dup
+       8: iconst_0
+       9: getstatic     #63                 // Field L/_88f3cf/_590f69._54eb2c:LL/_88f3cf/_590f69;
+      12: aastore
+      13: invokevirtual #91                 // Method L/_88f3cf/_1253fc$_cfe983._cfe983:([LL/_88f3cf/_590f69;)LL/_88f3cf/_1253fc$_cfe983;
+      16: aload_0
+      17: invokevirtual #92                 // Method L/_88f3cf/_1253fc$_cfe983._bb4487:(LL/_88f3cf/_21aca6;)LL/_88f3cf/_1253fc;
+      20: areturn
+
+  public boolean _f50b51();
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  private void _1e73d7(L._d4ca6c._cfe983._2ce426._3a14e3);
+    Code:
+       0: aload_0
+       1: getfield      #62                 // Field _08cf41:LL/mumble/MumbleLink;
+       4: ifnull        398
+       7: invokestatic  #99                 // Method L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+      10: ifnull        398
+      13: invokestatic  #99                 // Method L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+      16: invokeinterface #113,  1          // InterfaceMethod ML/_590f69/_bb4487/_1e73d7/_bb4487.bridge$isRemote:()Z
+      21: ifeq          398
+      24: aload_0
+      25: getfield      #59                 // Field _b846da:Z
+      28: ifne          45
+      31: aload_0
+      32: getfield      #58                 // Field _357537:Z
+      35: ifne          45
+      38: aload_0
+      39: invokevirtual #87                 // Method _c58b8f:()V
+      42: goto          398
+      45: aload_0
+      46: getfield      #58                 // Field _357537:Z
+      49: ifeq          53
+      52: return
+      53: invokestatic  #100                // Method L/util/_e93d3c._433a2f:()LML/_590f69/_bb4487/_d4ca6c/_590f69;
+      56: astore_2
+      57: fconst_1
+      58: fstore_3
+      59: fconst_1
+      60: fstore        4
+      62: fconst_1
+      63: fstore        5
+      65: fconst_1
+      66: fstore        6
+      68: fconst_1
+      69: fstore        7
+      71: fconst_1
+      72: fstore        8
+      74: fconst_1
+      75: fstore        9
+      77: fconst_1
+      78: fstore        10
+      80: fconst_1
+      81: fstore        11
+      83: fconst_1
+      84: fstore        12
+      86: fconst_1
+      87: fstore        13
+      89: fconst_1
+      90: fstore        14
+      92: new           #37                 // class L/mumble/MumbleVec
+      95: dup
+      96: aload_2
+      97: invokeinterface #114,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69._b4457e:()LML/_590f69/_5b3f84/_df21a7;
+     102: invokeinterface #125,  1          // InterfaceMethod ML/_590f69/_5b3f84/_df21a7.bridge$xCoord:()D
+     107: aload_2
+     108: invokeinterface #114,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69._b4457e:()LML/_590f69/_5b3f84/_df21a7;
+     113: invokeinterface #126,  1          // InterfaceMethod ML/_590f69/_5b3f84/_df21a7.bridge$yCoord:()D
+     118: aload_2
+     119: invokeinterface #114,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69._b4457e:()LML/_590f69/_5b3f84/_df21a7;
+     124: invokeinterface #127,  1          // InterfaceMethod ML/_590f69/_5b3f84/_df21a7.bridge$zCoord:()D
+     129: invokespecial #98                 // Method L/mumble/MumbleVec."<init>":(DDD)V
+     132: astore        15
+     134: aload_0
+     135: aload_2
+     136: invokevirtual #88                 // Method _3a14e3:(LML/_590f69/_bb4487/_d4ca6c/_590f69;)LL/mumble/MumbleVec;
+     139: astore        16
+     141: new           #37                 // class L/mumble/MumbleVec
+     144: dup
+     145: aload_2
+     146: invokeinterface #118,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getPosX:()D
+     151: aload_2
+     152: invokeinterface #120,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getPosZ:()D
+     157: d2f
+     158: f2d
+     159: aload_2
+     160: invokeinterface #119,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getPosY:()D
+     165: d2f
+     166: f2d
+     167: invokespecial #98                 // Method L/mumble/MumbleVec."<init>":(DDD)V
+     170: astore        17
+     172: new           #37                 // class L/mumble/MumbleVec
+     175: dup
+     176: aload         15
+     178: getfield      #64                 // Field L/mumble/MumbleVec.xCoord:D
+     181: fload_3
+     182: f2d
+     183: dmul
+     184: aload         15
+     186: getfield      #66                 // Field L/mumble/MumbleVec.zCoord:D
+     189: d2f
+     190: fload         5
+     192: fmul
+     193: f2d
+     194: aload         15
+     196: getfield      #65                 // Field L/mumble/MumbleVec.yCoord:D
+     199: d2f
+     200: fload         4
+     202: fmul
+     203: f2d
+     204: invokespecial #98                 // Method L/mumble/MumbleVec."<init>":(DDD)V
+     207: astore        18
+     209: new           #37                 // class L/mumble/MumbleVec
+     212: dup
+     213: aload         16
+     215: getfield      #64                 // Field L/mumble/MumbleVec.xCoord:D
+     218: fload         9
+     220: f2d
+     221: dmul
+     222: aload         16
+     224: getfield      #66                 // Field L/mumble/MumbleVec.zCoord:D
+     227: d2f
+     228: fload         11
+     230: fmul
+     231: f2d
+     232: aload         16
+     234: getfield      #65                 // Field L/mumble/MumbleVec.yCoord:D
+     237: d2f
+     238: fload         10
+     240: fmul
+     241: f2d
+     242: invokespecial #98                 // Method L/mumble/MumbleVec."<init>":(DDD)V
+     245: astore        19
+     247: new           #37                 // class L/mumble/MumbleVec
+     250: dup
+     251: aload_2
+     252: invokeinterface #118,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getPosX:()D
+     257: aload_2
+     258: invokeinterface #120,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getPosZ:()D
+     263: d2f
+     264: f2d
+     265: aload_2
+     266: invokeinterface #119,  1          // InterfaceMethod ML/_590f69/_bb4487/_d4ca6c/_590f69.bridge$getPosY:()D
+     271: d2f
+     272: f2d
+     273: invokespecial #98                 // Method L/mumble/MumbleVec."<init>":(DDD)V
+     276: astore        20
+     278: new           #37                 // class L/mumble/MumbleVec
+     281: dup
+     282: aload         15
+     284: getfield      #64                 // Field L/mumble/MumbleVec.xCoord:D
+     287: fload         6
+     289: f2d
+     290: dmul
+     291: aload         15
+     293: getfield      #66                 // Field L/mumble/MumbleVec.zCoord:D
+     296: d2f
+     297: fload         8
+     299: fmul
+     300: f2d
+     301: aload         15
+     303: getfield      #65                 // Field L/mumble/MumbleVec.yCoord:D
+     306: d2f
+     307: fload         7
+     309: fmul
+     310: f2d
+     311: invokespecial #98                 // Method L/mumble/MumbleVec."<init>":(DDD)V
+     314: astore        21
+     316: new           #37                 // class L/mumble/MumbleVec
+     319: dup
+     320: aload         16
+     322: getfield      #64                 // Field L/mumble/MumbleVec.xCoord:D
+     325: fload         12
+     327: f2d
+     328: dmul
+     329: aload         16
+     331: getfield      #66                 // Field L/mumble/MumbleVec.zCoord:D
+     334: d2f
+     335: fload         14
+     337: fmul
+     338: f2d
+     339: aload         16
+     341: getfield      #65                 // Field L/mumble/MumbleVec.yCoord:D
+     344: d2f
+     345: fload         13
+     347: fmul
+     348: f2d
+     349: invokespecial #98                 // Method L/mumble/MumbleVec."<init>":(DDD)V
+     352: astore        22
+     354: new           #35                 // class L/mumble/LinkData
+     357: dup
+     358: aload_0
+     359: invokevirtual #83                 // Method _a63c02:()Lcom/google/gson/JsonObject;
+     362: invokevirtual #75                 // Method com/google/gson/JsonObject.toString:()Ljava/lang/String;
+     365: aload_0
+     366: getfield      #57                 // Field _a08051:Lcom/google/gson/JsonObject;
+     369: invokevirtual #75                 // Method com/google/gson/JsonObject.toString:()Ljava/lang/String;
+     372: aload         18
+     374: aload         19
+     376: aload         17
+     378: aload         20
+     380: aload         21
+     382: aload         22
+     384: invokespecial #93                 // Method L/mumble/LinkData."<init>":(Ljava/lang/String;Ljava/lang/String;LL/mumble/MumbleVec;LL/mumble/MumbleVec;LL/mumble/MumbleVec;LL/mumble/MumbleVec;LL/mumble/MumbleVec;LL/mumble/MumbleVec;)V
+     387: astore        23
+     389: aload_0
+     390: getfield      #62                 // Field _08cf41:LL/mumble/MumbleLink;
+     393: aload         23
+     395: invokevirtual #97                 // Method L/mumble/MumbleLink.update:(LL/mumble/LinkData;)V
+     398: return
+
+  private void _bb4487(L._d4ca6c._cfe983._13ea87._429bf0);
+    Code:
+       0: aload_0
+       1: getfield      #59                 // Field _b846da:Z
+       4: ifeq          43
+       7: invokestatic  #99                 // Method L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+      10: ifnull        43
+      13: invokestatic  #99                 // Method L/util/_e93d3c._71846d:()LML/_590f69/_bb4487/_1e73d7/_bb4487;
+      16: invokeinterface #113,  1          // InterfaceMethod ML/_590f69/_bb4487/_1e73d7/_bb4487.bridge$isRemote:()Z
+      21: ifeq          43
+      24: invokestatic  #101                // Method L/util/_e93d3c._6b9e93:()LL/_cfe983;
+      27: invokevirtual #79                 // Method L/_cfe983._9017b2:()LL/_2f4182/_429bf0/_13ea87;
+      30: ldc           #6                  // String mumbleLinkEnabledPopup
+      32: iconst_0
+      33: anewarray     #42                 // class java/lang/Object
+      36: invokestatic  #81                 // Method L/_2f4182/_429bf0/_13ea87._d4ca6c:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      39: invokevirtual #80                 // Method L/_2f4182/_429bf0/_13ea87._ab3e6f:(Ljava/lang/String;)LL/_2f4182/_429bf0/_d4ca6c;
+      42: pop
+      43: return
+}

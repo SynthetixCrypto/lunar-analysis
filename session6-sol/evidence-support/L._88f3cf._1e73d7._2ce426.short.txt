@@ -1,0 +1,65 @@
+public class L._88f3cf._1e73d7._2ce426 implements L._88f3cf._2ce426 {
+  protected final L._ec7e36._dd3308<java.lang.Boolean> _459ab3;
+
+  private boolean _86e4db;
+
+  public L._88f3cf._1e73d7._2ce426(L._ec7e36._dd3308<java.lang.Boolean>);
+    Code:
+       0: aload_0
+       1: invokespecial #11                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #8                  // Field _86e4db:Z
+       9: aload_0
+      10: aload_1
+      11: putfield      #7                  // Field _459ab3:LL/_ec7e36/_dd3308;
+      14: return
+
+  public java.util.Optional<L._ec7e36._dd3308<java.lang.Boolean>> _aef806();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field _459ab3:LL/_ec7e36/_dd3308;
+       4: invokestatic  #12                 // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+       7: areturn
+
+  public void _d01813();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field _459ab3:LL/_ec7e36/_dd3308;
+       4: invokeinterface #15,  1           // InterfaceMethod L/_ec7e36/_dd3308.reset:()V
+       9: aload_0
+      10: iconst_0
+      11: putfield      #8                  // Field _86e4db:Z
+      14: return
+
+  public boolean isEnabled();
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field _459ab3:LL/_ec7e36/_dd3308;
+       4: invokeinterface #14,  1           // InterfaceMethod L/_ec7e36/_dd3308.get:()Ljava/lang/Object;
+       9: checkcast     #4                  // class java/lang/Boolean
+      12: invokevirtual #9                  // Method java/lang/Boolean.booleanValue:()Z
+      15: ireturn
+
+  public void setEnabled(boolean);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field _459ab3:LL/_ec7e36/_dd3308;
+       4: iload_1
+       5: invokestatic  #10                 // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       8: invokeinterface #13,  2           // InterfaceMethod L/_ec7e36/_dd3308._b03e9c:(Ljava/lang/Object;)V
+      13: return
+
+  public boolean _81bac9();
+    Code:
+       0: aload_0
+       1: getfield      #8                  // Field _86e4db:Z
+       4: ireturn
+
+  public void _c5ce95(boolean);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #8                  // Field _86e4db:Z
+       5: return
+}

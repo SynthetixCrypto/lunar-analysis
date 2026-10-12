@@ -1,0 +1,1191 @@
+public abstract class org.java_websocket.client.WebSocketClient extends org.java_websocket.AbstractWebSocket implements java.lang.Runnable,org.java_websocket.WebSocket {
+  protected java.net.URI uri;
+
+  private org.java_websocket.WebSocketImpl engine;
+
+  private java.net.Socket socket;
+
+  private javax.net.SocketFactory socketFactory;
+
+  private java.io.OutputStream ostream;
+
+  private java.net.Proxy proxy;
+
+  private java.lang.Thread writeThread;
+
+  private java.lang.Thread connectReadThread;
+
+  private org.java_websocket.drafts.Draft draft;
+
+  private java.util.Map<java.lang.String, java.lang.String> headers;
+
+  private java.util.concurrent.CountDownLatch connectLatch;
+
+  private java.util.concurrent.CountDownLatch closeLatch;
+
+  private int connectTimeout;
+
+  private org.java_websocket.client.DnsResolver dnsResolver;
+
+  public org.java_websocket.client.WebSocketClient(java.net.URI);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: new           #56                 // class org/java_websocket/drafts/Draft_6455
+       5: dup
+       6: invokespecial #190                // Method org/java_websocket/drafts/Draft_6455."<init>":()V
+       9: invokespecial #159                // Method "<init>":(Ljava/net/URI;Lorg/java_websocket/drafts/Draft;)V
+      12: return
+
+  public org.java_websocket.client.WebSocketClient(java.net.URI, org.java_websocket.drafts.Draft);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aconst_null
+       4: iconst_0
+       5: invokespecial #161                // Method "<init>":(Ljava/net/URI;Lorg/java_websocket/drafts/Draft;Ljava/util/Map;I)V
+       8: return
+
+  public org.java_websocket.client.WebSocketClient(java.net.URI, java.util.Map<java.lang.String, java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: new           #56                 // class org/java_websocket/drafts/Draft_6455
+       5: dup
+       6: invokespecial #190                // Method org/java_websocket/drafts/Draft_6455."<init>":()V
+       9: aload_2
+      10: invokespecial #160                // Method "<init>":(Ljava/net/URI;Lorg/java_websocket/drafts/Draft;Ljava/util/Map;)V
+      13: return
+
+  public org.java_websocket.client.WebSocketClient(java.net.URI, org.java_websocket.drafts.Draft, java.util.Map<java.lang.String, java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: iconst_0
+       5: invokespecial #161                // Method "<init>":(Ljava/net/URI;Lorg/java_websocket/drafts/Draft;Ljava/util/Map;I)V
+       8: return
+
+  public org.java_websocket.client.WebSocketClient(java.net.URI, org.java_websocket.drafts.Draft, java.util.Map<java.lang.String, java.lang.String>, int);
+    Code:
+       0: aload_0
+       1: invokespecial #132                // Method org/java_websocket/AbstractWebSocket."<init>":()V
+       4: aload_0
+       5: aconst_null
+       6: putfield      #73                 // Field uri:Ljava/net/URI;
+       9: aload_0
+      10: aconst_null
+      11: putfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+      14: aload_0
+      15: aconst_null
+      16: putfield      #71                 // Field socket:Ljava/net/Socket;
+      19: aload_0
+      20: aconst_null
+      21: putfield      #72                 // Field socketFactory:Ljavax/net/SocketFactory;
+      24: aload_0
+      25: getstatic     #60                 // Field java/net/Proxy.NO_PROXY:Ljava/net/Proxy;
+      28: putfield      #70                 // Field proxy:Ljava/net/Proxy;
+      31: aload_0
+      32: new           #40                 // class java/util/concurrent/CountDownLatch
+      35: dup
+      36: iconst_1
+      37: invokespecial #120                // Method java/util/concurrent/CountDownLatch."<init>":(I)V
+      40: putfield      #62                 // Field connectLatch:Ljava/util/concurrent/CountDownLatch;
+      43: aload_0
+      44: new           #40                 // class java/util/concurrent/CountDownLatch
+      47: dup
+      48: iconst_1
+      49: invokespecial #120                // Method java/util/concurrent/CountDownLatch."<init>":(I)V
+      52: putfield      #61                 // Field closeLatch:Ljava/util/concurrent/CountDownLatch;
+      55: aload_0
+      56: iconst_0
+      57: putfield      #64                 // Field connectTimeout:I
+      60: aload_0
+      61: aconst_null
+      62: putfield      #65                 // Field dnsResolver:Lorg/java_websocket/client/DnsResolver;
+      65: aload_1
+      66: ifnonnull     77
+      69: new           #19                 // class java/lang/IllegalArgumentException
+      72: dup
+      73: invokespecial #79                 // Method java/lang/IllegalArgumentException."<init>":()V
+      76: athrow
+      77: aload_2
+      78: ifnonnull     91
+      81: new           #19                 // class java/lang/IllegalArgumentException
+      84: dup
+      85: ldc           #10                 // String null as draft is permitted for `WebSocketServer` only!
+      87: invokespecial #80                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      90: athrow
+      91: aload_0
+      92: aload_1
+      93: putfield      #73                 // Field uri:Ljava/net/URI;
+      96: aload_0
+      97: aload_2
+      98: putfield      #66                 // Field draft:Lorg/java_websocket/drafts/Draft;
+     101: aload_0
+     102: new           #53                 // class org/java_websocket/client/WebSocketClient$1
+     105: dup
+     106: aload_0
+     107: invokespecial #187                // Method org/java_websocket/client/WebSocketClient$1."<init>":(Lorg/java_websocket/client/WebSocketClient;)V
+     110: putfield      #65                 // Field dnsResolver:Lorg/java_websocket/client/DnsResolver;
+     113: aload_3
+     114: ifnull        141
+     117: aload_0
+     118: new           #39                 // class java/util/TreeMap
+     121: dup
+     122: getstatic     #59                 // Field java/lang/String.CASE_INSENSITIVE_ORDER:Ljava/util/Comparator;
+     125: invokespecial #119                // Method java/util/TreeMap."<init>":(Ljava/util/Comparator;)V
+     128: putfield      #68                 // Field headers:Ljava/util/Map;
+     131: aload_0
+     132: getfield      #68                 // Field headers:Ljava/util/Map;
+     135: aload_3
+     136: invokeinterface #198,  2          // InterfaceMethod java/util/Map.putAll:(Ljava/util/Map;)V
+     141: aload_0
+     142: iload         4
+     144: putfield      #64                 // Field connectTimeout:I
+     147: aload_0
+     148: iconst_0
+     149: invokevirtual #184                // Method setTcpNoDelay:(Z)V
+     152: aload_0
+     153: iconst_0
+     154: invokevirtual #183                // Method setReuseAddr:(Z)V
+     157: aload_0
+     158: new           #50                 // class org/java_websocket/WebSocketImpl
+     161: dup
+     162: aload_0
+     163: aload_2
+     164: invokespecial #133                // Method org/java_websocket/WebSocketImpl."<init>":(Lorg/java_websocket/WebSocketListener;Lorg/java_websocket/drafts/Draft;)V
+     167: putfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     170: return
+
+  public java.net.URI getURI();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field uri:Ljava/net/URI;
+       4: areturn
+
+  public org.java_websocket.drafts.Draft getDraft();
+    Code:
+       0: aload_0
+       1: getfield      #66                 // Field draft:Lorg/java_websocket/drafts/Draft;
+       4: areturn
+
+  public java.net.Socket getSocket();
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field socket:Ljava/net/Socket;
+       4: areturn
+
+  public void addHeader(java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #68                 // Field headers:Ljava/util/Map;
+       4: ifnonnull     21
+       7: aload_0
+       8: new           #39                 // class java/util/TreeMap
+      11: dup
+      12: getstatic     #59                 // Field java/lang/String.CASE_INSENSITIVE_ORDER:Ljava/util/Comparator;
+      15: invokespecial #119                // Method java/util/TreeMap."<init>":(Ljava/util/Comparator;)V
+      18: putfield      #68                 // Field headers:Ljava/util/Map;
+      21: aload_0
+      22: getfield      #68                 // Field headers:Ljava/util/Map;
+      25: aload_1
+      26: aload_2
+      27: invokeinterface #197,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      32: pop
+      33: return
+
+  public java.lang.String removeHeader(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #68                 // Field headers:Ljava/util/Map;
+       4: ifnonnull     9
+       7: aconst_null
+       8: areturn
+       9: aload_0
+      10: getfield      #68                 // Field headers:Ljava/util/Map;
+      13: aload_1
+      14: invokeinterface #199,  2          // InterfaceMethod java/util/Map.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+      19: checkcast     #24                 // class java/lang/String
+      22: areturn
+
+  public void clearHeaders();
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: putfield      #68                 // Field headers:Ljava/util/Map;
+       5: return
+
+  public void setDnsResolver(org.java_websocket.client.DnsResolver);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #65                 // Field dnsResolver:Lorg/java_websocket/client/DnsResolver;
+       5: return
+
+  public void reconnect();
+    Code:
+       0: aload_0
+       1: invokespecial #181                // Method reset:()V
+       4: aload_0
+       5: invokevirtual #164                // Method connect:()V
+       8: return
+
+  public boolean reconnectBlocking();
+    Code:
+       0: aload_0
+       1: invokespecial #181                // Method reset:()V
+       4: aload_0
+       5: invokevirtual #165                // Method connectBlocking:()Z
+       8: ireturn
+
+  private void reset();
+    Code:
+       0: invokestatic  #93                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+       3: astore_1
+       4: aload_1
+       5: aload_0
+       6: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+       9: if_acmpeq     20
+      12: aload_1
+      13: aload_0
+      14: getfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+      17: if_acmpne     30
+      20: new           #20                 // class java/lang/IllegalStateException
+      23: dup
+      24: ldc           #9                  // String You cannot initialize a reconnect out of the websocket thread. Use reconnect in another thread to insure a successful cleanup.
+      26: invokespecial #81                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      29: athrow
+      30: aload_0
+      31: invokevirtual #163                // Method closeBlocking:()V
+      34: aload_0
+      35: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+      38: ifnull        53
+      41: aload_0
+      42: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+      45: invokevirtual #95                 // Method java/lang/Thread.interrupt:()V
+      48: aload_0
+      49: aconst_null
+      50: putfield      #74                 // Field writeThread:Ljava/lang/Thread;
+      53: aload_0
+      54: getfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+      57: ifnull        72
+      60: aload_0
+      61: getfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+      64: invokevirtual #95                 // Method java/lang/Thread.interrupt:()V
+      67: aload_0
+      68: aconst_null
+      69: putfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+      72: aload_0
+      73: getfield      #66                 // Field draft:Lorg/java_websocket/drafts/Draft;
+      76: invokevirtual #189                // Method org/java_websocket/drafts/Draft.reset:()V
+      79: aload_0
+      80: getfield      #71                 // Field socket:Ljava/net/Socket;
+      83: ifnull        98
+      86: aload_0
+      87: getfield      #71                 // Field socket:Ljava/net/Socket;
+      90: invokevirtual #101                // Method java/net/Socket.close:()V
+      93: aload_0
+      94: aconst_null
+      95: putfield      #71                 // Field socket:Ljava/net/Socket;
+      98: goto          122
+     101: astore_2
+     102: aload_0
+     103: aload_2
+     104: invokevirtual #175                // Method onError:(Ljava/lang/Exception;)V
+     107: aload_0
+     108: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     111: sipush        1006
+     114: aload_2
+     115: invokevirtual #78                 // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+     118: invokevirtual #136                // Method org/java_websocket/WebSocketImpl.closeConnection:(ILjava/lang/String;)V
+     121: return
+     122: aload_0
+     123: new           #40                 // class java/util/concurrent/CountDownLatch
+     126: dup
+     127: iconst_1
+     128: invokespecial #120                // Method java/util/concurrent/CountDownLatch."<init>":(I)V
+     131: putfield      #62                 // Field connectLatch:Ljava/util/concurrent/CountDownLatch;
+     134: aload_0
+     135: new           #40                 // class java/util/concurrent/CountDownLatch
+     138: dup
+     139: iconst_1
+     140: invokespecial #120                // Method java/util/concurrent/CountDownLatch."<init>":(I)V
+     143: putfield      #61                 // Field closeLatch:Ljava/util/concurrent/CountDownLatch;
+     146: aload_0
+     147: new           #50                 // class org/java_websocket/WebSocketImpl
+     150: dup
+     151: aload_0
+     152: aload_0
+     153: getfield      #66                 // Field draft:Lorg/java_websocket/drafts/Draft;
+     156: invokespecial #133                // Method org/java_websocket/WebSocketImpl."<init>":(Lorg/java_websocket/WebSocketListener;Lorg/java_websocket/drafts/Draft;)V
+     159: putfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     162: return
+    Exception table:
+       from    to  target type
+          30    98   101   Class java/lang/Exception
+
+  public void connect();
+    Code:
+       0: aload_0
+       1: getfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+       4: ifnull        17
+       7: new           #20                 // class java/lang/IllegalStateException
+      10: dup
+      11: ldc           #7                  // String WebSocketClient objects are not reuseable
+      13: invokespecial #81                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      16: athrow
+      17: aload_0
+      18: new           #26                 // class java/lang/Thread
+      21: dup
+      22: aload_0
+      23: invokespecial #92                 // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+      26: putfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+      29: aload_0
+      30: getfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+      33: new           #25                 // class java/lang/StringBuilder
+      36: dup
+      37: invokespecial #86                 // Method java/lang/StringBuilder."<init>":()V
+      40: ldc           #8                  // String WebSocketConnectReadThread-
+      42: invokevirtual #90                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      45: aload_0
+      46: getfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+      49: invokevirtual #94                 // Method java/lang/Thread.getId:()J
+      52: invokevirtual #89                 // Method java/lang/StringBuilder.append:(J)Ljava/lang/StringBuilder;
+      55: invokevirtual #91                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      58: invokevirtual #96                 // Method java/lang/Thread.setName:(Ljava/lang/String;)V
+      61: aload_0
+      62: getfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+      65: invokevirtual #97                 // Method java/lang/Thread.start:()V
+      68: return
+
+  public boolean connectBlocking();
+    Code:
+       0: aload_0
+       1: invokevirtual #164                // Method connect:()V
+       4: aload_0
+       5: getfield      #62                 // Field connectLatch:Ljava/util/concurrent/CountDownLatch;
+       8: invokevirtual #121                // Method java/util/concurrent/CountDownLatch.await:()V
+      11: aload_0
+      12: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+      15: invokevirtual #149                // Method org/java_websocket/WebSocketImpl.isOpen:()Z
+      18: ireturn
+
+  public boolean connectBlocking(long, java.util.concurrent.TimeUnit);
+    Code:
+       0: aload_0
+       1: invokevirtual #164                // Method connect:()V
+       4: aload_0
+       5: getfield      #62                 // Field connectLatch:Ljava/util/concurrent/CountDownLatch;
+       8: lload_1
+       9: aload_3
+      10: invokevirtual #122                // Method java/util/concurrent/CountDownLatch.await:(JLjava/util/concurrent/TimeUnit;)Z
+      13: ifeq          30
+      16: aload_0
+      17: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+      20: invokevirtual #149                // Method org/java_websocket/WebSocketImpl.isOpen:()Z
+      23: ifeq          30
+      26: iconst_1
+      27: goto          31
+      30: iconst_0
+      31: ireturn
+
+  public void close();
+    Code:
+       0: aload_0
+       1: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+       4: ifnull        17
+       7: aload_0
+       8: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+      11: sipush        1000
+      14: invokevirtual #134                // Method org/java_websocket/WebSocketImpl.close:(I)V
+      17: return
+
+  public void closeBlocking();
+    Code:
+       0: aload_0
+       1: invokevirtual #162                // Method close:()V
+       4: aload_0
+       5: getfield      #61                 // Field closeLatch:Ljava/util/concurrent/CountDownLatch;
+       8: invokevirtual #121                // Method java/util/concurrent/CountDownLatch.await:()V
+      11: return
+
+  public void send(java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: aload_1
+       5: invokevirtual #150                // Method org/java_websocket/WebSocketImpl.send:(Ljava/lang/String;)V
+       8: return
+
+  public void send(byte[]);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: aload_1
+       5: invokevirtual #152                // Method org/java_websocket/WebSocketImpl.send:([B)V
+       8: return
+
+  public <T> T getAttachment();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #139                // Method org/java_websocket/WebSocketImpl.getAttachment:()Ljava/lang/Object;
+       7: areturn
+
+  public <T> void setAttachment(T);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: aload_1
+       5: invokevirtual #157                // Method org/java_websocket/WebSocketImpl.setAttachment:(Ljava/lang/Object;)V
+       8: return
+
+  protected java.util.Collection<org.java_websocket.WebSocket> getConnections();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokestatic  #118                // Method java/util/Collections.singletonList:(Ljava/lang/Object;)Ljava/util/List;
+       7: areturn
+
+  public void sendPing();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #156                // Method org/java_websocket/WebSocketImpl.sendPing:()V
+       7: return
+
+  public void run();
+    Code:
+       0: iconst_0
+       1: istore_2
+       2: aload_0
+       3: getfield      #72                 // Field socketFactory:Ljavax/net/SocketFactory;
+       6: ifnull        23
+       9: aload_0
+      10: aload_0
+      11: getfield      #72                 // Field socketFactory:Ljavax/net/SocketFactory;
+      14: invokevirtual #124                // Method javax/net/SocketFactory.createSocket:()Ljava/net/Socket;
+      17: putfield      #71                 // Field socket:Ljava/net/Socket;
+      20: goto          68
+      23: aload_0
+      24: getfield      #71                 // Field socket:Ljava/net/Socket;
+      27: ifnonnull     50
+      30: aload_0
+      31: new           #31                 // class java/net/Socket
+      34: dup
+      35: aload_0
+      36: getfield      #70                 // Field proxy:Ljava/net/Proxy;
+      39: invokespecial #100                // Method java/net/Socket."<init>":(Ljava/net/Proxy;)V
+      42: putfield      #71                 // Field socket:Ljava/net/Socket;
+      45: iconst_1
+      46: istore_2
+      47: goto          68
+      50: aload_0
+      51: getfield      #71                 // Field socket:Ljava/net/Socket;
+      54: invokevirtual #107                // Method java/net/Socket.isClosed:()Z
+      57: ifeq          68
+      60: new           #16                 // class java/io/IOException
+      63: dup
+      64: invokespecial #75                 // Method java/io/IOException."<init>":()V
+      67: athrow
+      68: aload_0
+      69: getfield      #71                 // Field socket:Ljava/net/Socket;
+      72: aload_0
+      73: invokevirtual #171                // Method isTcpNoDelay:()Z
+      76: invokevirtual #110                // Method java/net/Socket.setTcpNoDelay:(Z)V
+      79: aload_0
+      80: getfield      #71                 // Field socket:Ljava/net/Socket;
+      83: aload_0
+      84: invokevirtual #170                // Method isReuseAddr:()Z
+      87: invokevirtual #109                // Method java/net/Socket.setReuseAddress:(Z)V
+      90: aload_0
+      91: getfield      #71                 // Field socket:Ljava/net/Socket;
+      94: invokevirtual #108                // Method java/net/Socket.isConnected:()Z
+      97: ifne          137
+     100: new           #29                 // class java/net/InetSocketAddress
+     103: dup
+     104: aload_0
+     105: getfield      #65                 // Field dnsResolver:Lorg/java_websocket/client/DnsResolver;
+     108: aload_0
+     109: getfield      #73                 // Field uri:Ljava/net/URI;
+     112: invokeinterface #203,  2          // InterfaceMethod org/java_websocket/client/DnsResolver.resolve:(Ljava/net/URI;)Ljava/net/InetAddress;
+     117: aload_0
+     118: invokespecial #166                // Method getPort:()I
+     121: invokespecial #99                 // Method java/net/InetSocketAddress."<init>":(Ljava/net/InetAddress;I)V
+     124: astore_3
+     125: aload_0
+     126: getfield      #71                 // Field socket:Ljava/net/Socket;
+     129: aload_3
+     130: aload_0
+     131: getfield      #64                 // Field connectTimeout:I
+     134: invokevirtual #102                // Method java/net/Socket.connect:(Ljava/net/SocketAddress;I)V
+     137: iload_2
+     138: ifeq          200
+     141: ldc           #14                 // String wss
+     143: aload_0
+     144: getfield      #73                 // Field uri:Ljava/net/URI;
+     147: invokevirtual #116                // Method java/net/URI.getScheme:()Ljava/lang/String;
+     150: invokevirtual #84                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     153: ifeq          200
+     156: ldc           #6                  // String TLSv1.2
+     158: invokestatic  #125                // Method javax/net/ssl/SSLContext.getInstance:(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;
+     161: astore_3
+     162: aload_3
+     163: aconst_null
+     164: aconst_null
+     165: aconst_null
+     166: invokevirtual #127                // Method javax/net/ssl/SSLContext.init:([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+     169: aload_3
+     170: invokevirtual #126                // Method javax/net/ssl/SSLContext.getSocketFactory:()Ljavax/net/ssl/SSLSocketFactory;
+     173: astore        4
+     175: aload_0
+     176: aload         4
+     178: aload_0
+     179: getfield      #71                 // Field socket:Ljava/net/Socket;
+     182: aload_0
+     183: getfield      #73                 // Field uri:Ljava/net/URI;
+     186: invokevirtual #111                // Method java/net/URI.getHost:()Ljava/lang/String;
+     189: aload_0
+     190: invokespecial #166                // Method getPort:()I
+     193: iconst_1
+     194: invokevirtual #131                // Method javax/net/ssl/SSLSocketFactory.createSocket:(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
+     197: putfield      #71                 // Field socket:Ljava/net/Socket;
+     200: aload_0
+     201: getfield      #71                 // Field socket:Ljava/net/Socket;
+     204: instanceof    #46                 // class javax/net/ssl/SSLSocket
+     207: ifeq          236
+     210: aload_0
+     211: getfield      #71                 // Field socket:Ljava/net/Socket;
+     214: checkcast     #46                 // class javax/net/ssl/SSLSocket
+     217: astore_3
+     218: aload_3
+     219: invokevirtual #129                // Method javax/net/ssl/SSLSocket.getSSLParameters:()Ljavax/net/ssl/SSLParameters;
+     222: astore        4
+     224: aload_0
+     225: aload         4
+     227: invokevirtual #179                // Method onSetSSLParameters:(Ljavax/net/ssl/SSLParameters;)V
+     230: aload_3
+     231: aload         4
+     233: invokevirtual #130                // Method javax/net/ssl/SSLSocket.setSSLParameters:(Ljavax/net/ssl/SSLParameters;)V
+     236: aload_0
+     237: getfield      #71                 // Field socket:Ljava/net/Socket;
+     240: invokevirtual #103                // Method java/net/Socket.getInputStream:()Ljava/io/InputStream;
+     243: astore_1
+     244: aload_0
+     245: aload_0
+     246: getfield      #71                 // Field socket:Ljava/net/Socket;
+     249: invokevirtual #105                // Method java/net/Socket.getOutputStream:()Ljava/io/OutputStream;
+     252: putfield      #69                 // Field ostream:Ljava/io/OutputStream;
+     255: aload_0
+     256: invokespecial #182                // Method sendHandshake:()V
+     259: goto          344
+     262: astore_2
+     263: aload_0
+     264: aload_0
+     265: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     268: aload_2
+     269: invokevirtual #180                // Method onWebsocketError:(Lorg/java_websocket/WebSocket;Ljava/lang/Exception;)V
+     272: aload_0
+     273: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     276: iconst_m1
+     277: aload_2
+     278: invokevirtual #78                 // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+     281: invokevirtual #136                // Method org/java_websocket/WebSocketImpl.closeConnection:(ILjava/lang/String;)V
+     284: return
+     285: astore_2
+     286: aload_2
+     287: invokevirtual #82                 // Method java/lang/InternalError.getCause:()Ljava/lang/Throwable;
+     290: instanceof    #28                 // class java/lang/reflect/InvocationTargetException
+     293: ifeq          342
+     296: aload_2
+     297: invokevirtual #82                 // Method java/lang/InternalError.getCause:()Ljava/lang/Throwable;
+     300: invokevirtual #98                 // Method java/lang/Throwable.getCause:()Ljava/lang/Throwable;
+     303: instanceof    #16                 // class java/io/IOException
+     306: ifeq          342
+     309: aload_2
+     310: invokevirtual #82                 // Method java/lang/InternalError.getCause:()Ljava/lang/Throwable;
+     313: invokevirtual #98                 // Method java/lang/Throwable.getCause:()Ljava/lang/Throwable;
+     316: checkcast     #16                 // class java/io/IOException
+     319: astore_3
+     320: aload_0
+     321: aload_0
+     322: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     325: aload_3
+     326: invokevirtual #180                // Method onWebsocketError:(Lorg/java_websocket/WebSocket;Ljava/lang/Exception;)V
+     329: aload_0
+     330: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     333: iconst_m1
+     334: aload_3
+     335: invokevirtual #76                 // Method java/io/IOException.getMessage:()Ljava/lang/String;
+     338: invokevirtual #136                // Method org/java_websocket/WebSocketImpl.closeConnection:(ILjava/lang/String;)V
+     341: return
+     342: aload_2
+     343: athrow
+     344: aload_0
+     345: new           #26                 // class java/lang/Thread
+     348: dup
+     349: new           #54                 // class org/java_websocket/client/WebSocketClient$WebsocketWriteThread
+     352: dup
+     353: aload_0
+     354: aload_0
+     355: invokespecial #188                // Method org/java_websocket/client/WebSocketClient$WebsocketWriteThread."<init>":(Lorg/java_websocket/client/WebSocketClient;Lorg/java_websocket/client/WebSocketClient;)V
+     358: invokespecial #92                 // Method java/lang/Thread."<init>":(Ljava/lang/Runnable;)V
+     361: putfield      #74                 // Field writeThread:Ljava/lang/Thread;
+     364: aload_0
+     365: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+     368: invokevirtual #97                 // Method java/lang/Thread.start:()V
+     371: sipush        16384
+     374: newarray       byte
+     376: astore_2
+     377: aload_0
+     378: invokevirtual #169                // Method isClosing:()Z
+     381: ifne          418
+     384: aload_0
+     385: invokevirtual #168                // Method isClosed:()Z
+     388: ifne          418
+     391: aload_1
+     392: aload_2
+     393: invokevirtual #77                 // Method java/io/InputStream.read:([B)I
+     396: dup
+     397: istore_3
+     398: iconst_m1
+     399: if_icmpeq     418
+     402: aload_0
+     403: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     406: aload_2
+     407: iconst_0
+     408: iload_3
+     409: invokestatic  #117                // Method java/nio/ByteBuffer.wrap:([BII)Ljava/nio/ByteBuffer;
+     412: invokevirtual #137                // Method org/java_websocket/WebSocketImpl.decode:(Ljava/nio/ByteBuffer;)V
+     415: goto          377
+     418: aload_0
+     419: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     422: invokevirtual #138                // Method org/java_websocket/WebSocketImpl.eot:()V
+     425: goto          462
+     428: astore        4
+     430: aload_0
+     431: aload         4
+     433: invokespecial #167                // Method handleIOException:(Ljava/io/IOException;)V
+     436: goto          462
+     439: astore        4
+     441: aload_0
+     442: aload         4
+     444: invokevirtual #175                // Method onError:(Ljava/lang/Exception;)V
+     447: aload_0
+     448: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     451: sipush        1006
+     454: aload         4
+     456: invokevirtual #83                 // Method java/lang/RuntimeException.getMessage:()Ljava/lang/String;
+     459: invokevirtual #136                // Method org/java_websocket/WebSocketImpl.closeConnection:(ILjava/lang/String;)V
+     462: aload_0
+     463: aconst_null
+     464: putfield      #63                 // Field connectReadThread:Ljava/lang/Thread;
+     467: return
+    Exception table:
+       from    to  target type
+           0   259   262   Class java/lang/Exception
+           0   259   285   Class java/lang/InternalError
+         377   425   428   Class java/io/IOException
+         377   425   439   Class java/lang/RuntimeException
+
+  protected void onSetSSLParameters(javax.net.ssl.SSLParameters);
+    Code:
+       0: aload_1
+       1: ldc           #4                  // String HTTPS
+       3: invokevirtual #128                // Method javax/net/ssl/SSLParameters.setEndpointIdentificationAlgorithm:(Ljava/lang/String;)V
+       6: return
+
+  private int getPort();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field uri:Ljava/net/URI;
+       4: invokevirtual #113                // Method java/net/URI.getPort:()I
+       7: istore_1
+       8: iload_1
+       9: iconst_m1
+      10: if_icmpne     73
+      13: aload_0
+      14: getfield      #73                 // Field uri:Ljava/net/URI;
+      17: invokevirtual #116                // Method java/net/URI.getScheme:()Ljava/lang/String;
+      20: astore_2
+      21: ldc           #14                 // String wss
+      23: aload_2
+      24: invokevirtual #84                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      27: ifeq          34
+      30: sipush        443
+      33: ireturn
+      34: ldc           #13                 // String ws
+      36: aload_2
+      37: invokevirtual #84                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      40: ifeq          46
+      43: bipush        80
+      45: ireturn
+      46: new           #19                 // class java/lang/IllegalArgumentException
+      49: dup
+      50: new           #25                 // class java/lang/StringBuilder
+      53: dup
+      54: invokespecial #86                 // Method java/lang/StringBuilder."<init>":()V
+      57: ldc           #12                 // String unknown scheme:
+      59: invokevirtual #90                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      62: aload_2
+      63: invokevirtual #90                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      66: invokevirtual #91                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      69: invokespecial #80                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      72: athrow
+      73: iload_1
+      74: ireturn
+
+  private void sendHandshake();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field uri:Ljava/net/URI;
+       4: invokevirtual #114                // Method java/net/URI.getRawPath:()Ljava/lang/String;
+       7: astore_2
+       8: aload_0
+       9: getfield      #73                 // Field uri:Ljava/net/URI;
+      12: invokevirtual #115                // Method java/net/URI.getRawQuery:()Ljava/lang/String;
+      15: astore_3
+      16: aload_2
+      17: ifnull        27
+      20: aload_2
+      21: invokevirtual #85                 // Method java/lang/String.length:()I
+      24: ifne          33
+      27: ldc           #2                  // String /
+      29: astore_1
+      30: goto          35
+      33: aload_2
+      34: astore_1
+      35: aload_3
+      36: ifnull        63
+      39: new           #25                 // class java/lang/StringBuilder
+      42: dup
+      43: invokespecial #86                 // Method java/lang/StringBuilder."<init>":()V
+      46: aload_1
+      47: invokevirtual #90                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      50: bipush        63
+      52: invokevirtual #87                 // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+      55: aload_3
+      56: invokevirtual #90                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      59: invokevirtual #91                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      62: astore_1
+      63: aload_0
+      64: invokespecial #166                // Method getPort:()I
+      67: istore        4
+      69: new           #25                 // class java/lang/StringBuilder
+      72: dup
+      73: invokespecial #86                 // Method java/lang/StringBuilder."<init>":()V
+      76: aload_0
+      77: getfield      #73                 // Field uri:Ljava/net/URI;
+      80: invokevirtual #111                // Method java/net/URI.getHost:()Ljava/lang/String;
+      83: invokevirtual #90                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      86: iload         4
+      88: bipush        80
+      90: if_icmpeq     124
+      93: iload         4
+      95: sipush        443
+      98: if_icmpeq     124
+     101: new           #25                 // class java/lang/StringBuilder
+     104: dup
+     105: invokespecial #86                 // Method java/lang/StringBuilder."<init>":()V
+     108: ldc           #3                  // String :
+     110: invokevirtual #90                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     113: iload         4
+     115: invokevirtual #88                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     118: invokevirtual #91                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     121: goto          126
+     124: ldc           #1                  // String
+     126: invokevirtual #90                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     129: invokevirtual #91                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     132: astore        5
+     134: new           #57                 // class org/java_websocket/handshake/HandshakeImpl1Client
+     137: dup
+     138: invokespecial #191                // Method org/java_websocket/handshake/HandshakeImpl1Client."<init>":()V
+     141: astore        6
+     143: aload         6
+     145: aload_1
+     146: invokevirtual #193                // Method org/java_websocket/handshake/HandshakeImpl1Client.setResourceDescriptor:(Ljava/lang/String;)V
+     149: aload         6
+     151: ldc           #5                  // String Host
+     153: aload         5
+     155: invokevirtual #192                // Method org/java_websocket/handshake/HandshakeImpl1Client.put:(Ljava/lang/String;Ljava/lang/String;)V
+     158: aload_0
+     159: getfield      #68                 // Field headers:Ljava/util/Map;
+     162: ifnull        231
+     165: aload_0
+     166: getfield      #68                 // Field headers:Ljava/util/Map;
+     169: invokeinterface #196,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+     174: invokeinterface #202,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     179: astore        7
+     181: aload         7
+     183: invokeinterface #194,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     188: ifeq          231
+     191: aload         7
+     193: invokeinterface #195,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     198: checkcast     #37                 // class java/util/Map$Entry
+     201: astore        8
+     203: aload         6
+     205: aload         8
+     207: invokeinterface #200,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     212: checkcast     #24                 // class java/lang/String
+     215: aload         8
+     217: invokeinterface #201,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     222: checkcast     #24                 // class java/lang/String
+     225: invokevirtual #192                // Method org/java_websocket/handshake/HandshakeImpl1Client.put:(Ljava/lang/String;Ljava/lang/String;)V
+     228: goto          181
+     231: aload_0
+     232: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+     235: aload         6
+     237: invokevirtual #158                // Method org/java_websocket/WebSocketImpl.startHandshake:(Lorg/java_websocket/handshake/ClientHandshakeBuilder;)V
+     240: return
+
+  public org.java_websocket.enums.ReadyState getReadyState();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #141                // Method org/java_websocket/WebSocketImpl.getReadyState:()Lorg/java_websocket/enums/ReadyState;
+       7: areturn
+
+  public final void onWebsocketMessage(org.java_websocket.WebSocket, java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: invokevirtual #176                // Method onMessage:(Ljava/lang/String;)V
+       5: return
+
+  public final void onWebsocketMessage(org.java_websocket.WebSocket, java.nio.ByteBuffer);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: invokevirtual #177                // Method onMessage:(Ljava/nio/ByteBuffer;)V
+       5: return
+
+  public final void onWebsocketOpen(org.java_websocket.WebSocket, org.java_websocket.handshake.Handshakedata);
+    Code:
+       0: aload_0
+       1: invokevirtual #185                // Method startConnectionLostTimer:()V
+       4: aload_0
+       5: aload_2
+       6: checkcast     #58                 // class org/java_websocket/handshake/ServerHandshake
+       9: invokevirtual #178                // Method onOpen:(Lorg/java_websocket/handshake/ServerHandshake;)V
+      12: aload_0
+      13: getfield      #62                 // Field connectLatch:Ljava/util/concurrent/CountDownLatch;
+      16: invokevirtual #123                // Method java/util/concurrent/CountDownLatch.countDown:()V
+      19: return
+
+  public final void onWebsocketClose(org.java_websocket.WebSocket, int, java.lang.String, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #186                // Method stopConnectionLostTimer:()V
+       4: aload_0
+       5: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+       8: ifnull        18
+      11: aload_0
+      12: getfield      #74                 // Field writeThread:Ljava/lang/Thread;
+      15: invokevirtual #95                 // Method java/lang/Thread.interrupt:()V
+      18: aload_0
+      19: iload_2
+      20: aload_3
+      21: iload         4
+      23: invokevirtual #172                // Method onClose:(ILjava/lang/String;Z)V
+      26: aload_0
+      27: getfield      #62                 // Field connectLatch:Ljava/util/concurrent/CountDownLatch;
+      30: invokevirtual #123                // Method java/util/concurrent/CountDownLatch.countDown:()V
+      33: aload_0
+      34: getfield      #61                 // Field closeLatch:Ljava/util/concurrent/CountDownLatch;
+      37: invokevirtual #123                // Method java/util/concurrent/CountDownLatch.countDown:()V
+      40: return
+
+  public final void onWebsocketError(org.java_websocket.WebSocket, java.lang.Exception);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: invokevirtual #175                // Method onError:(Ljava/lang/Exception;)V
+       5: return
+
+  public final void onWriteDemand(org.java_websocket.WebSocket);
+    Code:
+       0: return
+
+  public void onWebsocketCloseInitiated(org.java_websocket.WebSocket, int, java.lang.String);
+    Code:
+       0: aload_0
+       1: iload_2
+       2: aload_3
+       3: invokevirtual #173                // Method onCloseInitiated:(ILjava/lang/String;)V
+       6: return
+
+  public void onWebsocketClosing(org.java_websocket.WebSocket, int, java.lang.String, boolean);
+    Code:
+       0: aload_0
+       1: iload_2
+       2: aload_3
+       3: iload         4
+       5: invokevirtual #174                // Method onClosing:(ILjava/lang/String;Z)V
+       8: return
+
+  public void onCloseInitiated(int, java.lang.String);
+    Code:
+       0: return
+
+  public void onClosing(int, java.lang.String, boolean);
+    Code:
+       0: return
+
+  public org.java_websocket.WebSocket getConnection();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: areturn
+
+  public java.net.InetSocketAddress getLocalSocketAddress(org.java_websocket.WebSocket);
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field socket:Ljava/net/Socket;
+       4: ifnull        18
+       7: aload_0
+       8: getfield      #71                 // Field socket:Ljava/net/Socket;
+      11: invokevirtual #104                // Method java/net/Socket.getLocalSocketAddress:()Ljava/net/SocketAddress;
+      14: checkcast     #29                 // class java/net/InetSocketAddress
+      17: areturn
+      18: aconst_null
+      19: areturn
+
+  public java.net.InetSocketAddress getRemoteSocketAddress(org.java_websocket.WebSocket);
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field socket:Ljava/net/Socket;
+       4: ifnull        18
+       7: aload_0
+       8: getfield      #71                 // Field socket:Ljava/net/Socket;
+      11: invokevirtual #106                // Method java/net/Socket.getRemoteSocketAddress:()Ljava/net/SocketAddress;
+      14: checkcast     #29                 // class java/net/InetSocketAddress
+      17: areturn
+      18: aconst_null
+      19: areturn
+
+  public abstract void onOpen(org.java_websocket.handshake.ServerHandshake);
+
+  public abstract void onMessage(java.lang.String);
+
+  public abstract void onClose(int, java.lang.String, boolean);
+
+  public abstract void onError(java.lang.Exception);
+
+  public void onMessage(java.nio.ByteBuffer);
+    Code:
+       0: return
+
+  public void setProxy(java.net.Proxy);
+    Code:
+       0: aload_1
+       1: ifnonnull     12
+       4: new           #19                 // class java/lang/IllegalArgumentException
+       7: dup
+       8: invokespecial #79                 // Method java/lang/IllegalArgumentException."<init>":()V
+      11: athrow
+      12: aload_0
+      13: aload_1
+      14: putfield      #70                 // Field proxy:Ljava/net/Proxy;
+      17: return
+
+  public void setSocket(java.net.Socket);
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field socket:Ljava/net/Socket;
+       4: ifnull        17
+       7: new           #20                 // class java/lang/IllegalStateException
+      10: dup
+      11: ldc           #11                 // String socket has already been set
+      13: invokespecial #81                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      16: athrow
+      17: aload_0
+      18: aload_1
+      19: putfield      #71                 // Field socket:Ljava/net/Socket;
+      22: return
+
+  public void setSocketFactory(javax.net.SocketFactory);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #72                 // Field socketFactory:Ljavax/net/SocketFactory;
+       5: return
+
+  public void sendFragmentedFrame(org.java_websocket.enums.Opcode, java.nio.ByteBuffer, boolean);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: aload_1
+       5: aload_2
+       6: iload_3
+       7: invokevirtual #153                // Method org/java_websocket/WebSocketImpl.sendFragmentedFrame:(Lorg/java_websocket/enums/Opcode;Ljava/nio/ByteBuffer;Z)V
+      10: return
+
+  public boolean isOpen();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #149                // Method org/java_websocket/WebSocketImpl.isOpen:()Z
+       7: ireturn
+
+  public boolean isFlushAndClose();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #148                // Method org/java_websocket/WebSocketImpl.isFlushAndClose:()Z
+       7: ireturn
+
+  public boolean isClosed();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #146                // Method org/java_websocket/WebSocketImpl.isClosed:()Z
+       7: ireturn
+
+  public boolean isClosing();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #147                // Method org/java_websocket/WebSocketImpl.isClosing:()Z
+       7: ireturn
+
+  public boolean hasBufferedData();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #144                // Method org/java_websocket/WebSocketImpl.hasBufferedData:()Z
+       7: ireturn
+
+  public void close(int);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: iload_1
+       5: invokevirtual #134                // Method org/java_websocket/WebSocketImpl.close:(I)V
+       8: return
+
+  public void close(int, java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: iload_1
+       5: aload_2
+       6: invokevirtual #135                // Method org/java_websocket/WebSocketImpl.close:(ILjava/lang/String;)V
+       9: return
+
+  public void closeConnection(int, java.lang.String);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: iload_1
+       5: aload_2
+       6: invokevirtual #136                // Method org/java_websocket/WebSocketImpl.closeConnection:(ILjava/lang/String;)V
+       9: return
+
+  public void send(java.nio.ByteBuffer);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: aload_1
+       5: invokevirtual #151                // Method org/java_websocket/WebSocketImpl.send:(Ljava/nio/ByteBuffer;)V
+       8: return
+
+  public void sendFrame(org.java_websocket.framing.Framedata);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: aload_1
+       5: invokevirtual #155                // Method org/java_websocket/WebSocketImpl.sendFrame:(Lorg/java_websocket/framing/Framedata;)V
+       8: return
+
+  public void sendFrame(java.util.Collection<org.java_websocket.framing.Framedata>);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: aload_1
+       5: invokevirtual #154                // Method org/java_websocket/WebSocketImpl.sendFrame:(Ljava/util/Collection;)V
+       8: return
+
+  public java.net.InetSocketAddress getLocalSocketAddress();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #140                // Method org/java_websocket/WebSocketImpl.getLocalSocketAddress:()Ljava/net/InetSocketAddress;
+       7: areturn
+
+  public java.net.InetSocketAddress getRemoteSocketAddress();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #142                // Method org/java_websocket/WebSocketImpl.getRemoteSocketAddress:()Ljava/net/InetSocketAddress;
+       7: areturn
+
+  public java.lang.String getResourceDescriptor();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field uri:Ljava/net/URI;
+       4: invokevirtual #112                // Method java/net/URI.getPath:()Ljava/lang/String;
+       7: areturn
+
+  public boolean hasSSLSupport();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #145                // Method org/java_websocket/WebSocketImpl.hasSSLSupport:()Z
+       7: ireturn
+
+  public javax.net.ssl.SSLSession getSSLSession();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: invokevirtual #143                // Method org/java_websocket/WebSocketImpl.getSSLSession:()Ljavax/net/ssl/SSLSession;
+       7: areturn
+
+  private void handleIOException(java.io.IOException);
+    Code:
+       0: aload_1
+       1: instanceof    #44                 // class javax/net/ssl/SSLException
+       4: ifeq          12
+       7: aload_0
+       8: aload_1
+       9: invokevirtual #175                // Method onError:(Ljava/lang/Exception;)V
+      12: aload_0
+      13: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+      16: invokevirtual #138                // Method org/java_websocket/WebSocketImpl.eot:()V
+      19: return
+
+  static void access$000(org.java_websocket.client.WebSocketClient, java.io.IOException);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #167                // Method handleIOException:(Ljava/io/IOException;)V
+       5: return
+
+  static java.lang.Thread access$102(org.java_websocket.client.WebSocketClient, java.lang.Thread);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: dup_x1
+       3: putfield      #74                 // Field writeThread:Ljava/lang/Thread;
+       6: areturn
+
+  static org.java_websocket.WebSocketImpl access$200(org.java_websocket.client.WebSocketClient);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field engine:Lorg/java_websocket/WebSocketImpl;
+       4: areturn
+
+  static java.io.OutputStream access$300(org.java_websocket.client.WebSocketClient);
+    Code:
+       0: aload_0
+       1: getfield      #69                 // Field ostream:Ljava/io/OutputStream;
+       4: areturn
+
+  static java.net.Socket access$400(org.java_websocket.client.WebSocketClient);
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field socket:Ljava/net/Socket;
+       4: areturn
+}

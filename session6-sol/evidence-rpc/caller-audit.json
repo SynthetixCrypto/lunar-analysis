@@ -1,0 +1,207 @@
+{
+  "scope": "Exact 16 Session4 non-auth call-containing methods; static javap bodies and same-class callbacks; targeted UI and library traces documented separately",
+  "artifact": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\lunar.jar",
+  "sha256": "bf36e10e21154263ac16363f8c83bb08cff3a077cb788120954d3625b94a02e9",
+  "method_count": 16,
+  "methods": [
+    {
+      "class": "com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._cb9292._cfe983",
+      "signature": "public void onOpen(org.java_websocket.handshake.ServerHandshake);",
+      "alias_signature": "public void onOpen(org.java_websocket.handshake.ServerHandshake);",
+      "evidence": "caller-00.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/location/v1/LocationService$Interface.updateFocus:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": [
+        "1: putstatic     #118                // Field _8f25e6:LL/_21aca6/_bb4487;",
+        "8: putfield      #125                // Field _53b839:LL/_21aca6/_1253fc;"
+      ]
+    },
+    {
+      "class": "com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._cb9292._cfe983",
+      "signature": "private void CHRCICICROOOIIIIOHHHRCHIOHIOCH();",
+      "alias_signature": "private void _6ee63a();",
+      "evidence": "caller-00.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/tebex/v1/TebexService$Interface.checkTebexCapabilities:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/tebex/v1/CheckTebexCapabilitiesRequest;Lcom/google/protobuf/RpcCallback;)V",
+        "InterfaceMethod com/lunarclient/gameipc/paynow/v1/PayNowService$Interface.checkPayNowCapabilities:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/paynow/v1/CheckPayNowCapabilitiesRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._cb9292._cfe983",
+      "signature": "public void IOHORIOHRCRICORRHCCOCRROOOCIOC();",
+      "alias_signature": "public void _26c4d4();",
+      "evidence": "caller-00.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/promotion/v1/PromotionService$Interface.checkPendingPromotion:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/promotion/v1/CheckPendingPromotionRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._cb9292._cfe983",
+      "signature": "private static void RCRHOOHIOCHHHHOCRIOCHRICIRCRRR(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private static void _d4ca6c(L._cb9292._cfe983);",
+      "evidence": "caller-00.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/location/v1/LocationService$Interface.updateFocus:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/location/v1/UpdateFocusRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.OHOORCCRHHHHROIICHOCRHOCRICROH.RROHOCRCCHCIORHICIHCOHRIRCIHCI.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.COOCHIRORIICRCIIRIROHIIRIRICCH.IROCROOIOIORORHHCCOOCCHRRRIOIC",
+      "alias": "L._81676d._21aca6._d4ca6c._cfe983._c8175c",
+      "signature": "private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.gameipc.promotion.v1.PromotionType, com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private static void _cfe983(com.lunarclient.gameipc.promotion.v1.PromotionType, L._cb9292._cfe983);",
+      "evidence": "caller-01.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/promotion/v1/PromotionService$Interface.playPromotion:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/promotion/v1/PlayPromotionRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HRCOHHHOICCCOCOHOIIRRIRCCHIRHO.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._88f3cf._bb4487._6247d7._cfe983",
+      "signature": "private static void COOCHIRORIICRCIIRIROHIIRIRICCH(java.lang.Boolean, com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private static void _cfe983(java.lang.Boolean, L._cb9292._cfe983);",
+      "evidence": "caller-02.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/styngr/v1/StyngrRadioService$Interface.setMuted:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/styngr/v1/SetMutedRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HRCOHHHOICCCOCOHOIIRRIRCCHIRHO.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._88f3cf._bb4487._6247d7._cfe983",
+      "signature": "private void COOCHIRORIICRCIIRIROHIIRIRICCH(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private void _cfe983(L._cb9292._cfe983);",
+      "evidence": "caller-02.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/styngr/v1/StyngrRadioService$Interface.setVolume:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/styngr/v1/SetVolumeRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HRCOHHHOICCCOCOHOIIRRIRCCHIRHO.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._88f3cf._bb4487._6247d7._cfe983",
+      "signature": "private void RROHOCRCCHCIORHICIHCOHRIRCIHCI(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private void _21aca6(L._cb9292._cfe983);",
+      "evidence": "caller-02.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/styngr/v1/StyngrRadioService$Interface.setPlaying:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/styngr/v1/SetPlayingRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HRCOHHHOICCCOCOHOIIRRIRCCHIRHO.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._88f3cf._bb4487._6247d7._cfe983",
+      "signature": "private static void RORCICOHRIOIIIOIOHIIIICRCIHRII(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private static void _590f69(L._cb9292._cfe983);",
+      "evidence": "caller-02.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/styngr/v1/StyngrRadioService$Interface.openSelector:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/styngr/v1/OpenSelectorRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HRCOHHHOICCCOCOHOIIRRIRCCHIRHO.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._88f3cf._bb4487._6247d7._cfe983",
+      "signature": "private void OHRORRHCHCRICORRRCIRIOCCIRCRII(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private void _1e73d7(L._cb9292._cfe983);",
+      "evidence": "caller-02.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/styngr/v1/StyngrRadioService$Interface.nextTrack:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/styngr/v1/NextTrackRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HRCOHHHOICCCOCOHOIIRRIRCCHIRHO.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._88f3cf._bb4487._6247d7._cfe983",
+      "signature": "private void IRCROOHIIOOHIRCRRHOHIORHCOHIOR(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private void _bb4487(L._cb9292._cfe983);",
+      "evidence": "caller-02.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/styngr/v1/StyngrRadioService$Interface.setPlaying:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/styngr/v1/SetPlayingRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.HRCOHHHOICCCOCOHOIIRRIRCCHIRHO.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._88f3cf._bb4487._6247d7._cfe983",
+      "signature": "private void OHOORCOHRORRIHROOCROOIIHHOOHRI(com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private void _1253fc(L._cb9292._cfe983);",
+      "evidence": "caller-02.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/styngr/v1/StyngrRadioService$Interface.fetchState:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/styngr/v1/FetchStateRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": [
+        "17: putfield      #154                // Field _d7bed1:Lcom/lunarclient/gameipc/styngr/v1/StyngrTrackControlsUpdate;",
+        "22: putfield      #162                // Field _575070:Lcom/lunarclient/gameipc/styngr/v1/StyngrTrackProgressUpdate;"
+      ]
+    },
+    {
+      "class": "com.moonsworth.lunar.client.RROHOCRCCHCIORHICIHCOHRIRCIHCI.COOCHIRORIICRCIIRIROHIIRIRICCH",
+      "alias": "L._21aca6._cfe983",
+      "signature": "private static void COOCHIRORIICRCIIRIROHIIRIRICCH(com.lunarclient.websocket.friend.v1.BroadcastLocationChangeResponse, com.lunarclient.common.v1.InboundLocation, com.moonsworth.lunar.client.COOIOIRCCICRCCIHCCRHRCIHROHCCI.COOCHIRORIICRCIIRIROHIIRIRICCH);",
+      "alias_signature": "private static void _cfe983(com.lunarclient.websocket.friend.v1.BroadcastLocationChangeResponse, com.lunarclient.common.v1.InboundLocation, L._cb9292._cfe983);",
+      "evidence": "caller-03.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/location/v1/LocationService$Interface.updateLocation:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/location/v1/UpdateLocationRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.util.OHOORCOHRORRIHROOCROOIIHHOOHRI",
+      "alias": "L.util._1253fc",
+      "signature": "private static boolean RROHOCRCCHCIORHICIHCOHRIRCIHCI(java.lang.String, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator, boolean);",
+      "alias_signature": "private static boolean _21aca6(java.lang.String, com.lunarclient.gameipc.browser.v1.OpenUrlRequest$Initiator, boolean);",
+      "evidence": "caller-04.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/browser/v1/BrowserService$Interface.openUrl:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/browser/v1/OpenUrlRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.util.OHRIHCICRRIRCOCHCRIOIHHIIIHHRR",
+      "alias": "L.util._252625",
+      "signature": "public static void RCROIRRHHCOHORCHRIOCOIRCHRHICH(java.lang.String, java.lang.String);",
+      "alias_signature": "public static void _5a1b50(java.lang.String, java.lang.String);",
+      "evidence": "caller-05.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/tebex/v1/TebexService$Interface.openTebexJsCheckout:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/tebex/v1/OpenTebexJsCheckoutRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    },
+    {
+      "class": "com.moonsworth.lunar.client.util.OHRIHCICRRIRCOCHCRIOIHHIIIHHRR",
+      "alias": "L.util._252625",
+      "signature": "public static void OICIRIIOOHOCHIRHOCCRCCHOOIIICC(java.lang.String);",
+      "alias_signature": "public static void _ac25f2(java.lang.String);",
+      "evidence": "caller-05.javap.txt",
+      "ipc_calls": [
+        "InterfaceMethod com/lunarclient/gameipc/paynow/v1/PayNowService$Interface.openPayNowJsCheckout:(Lcom/google/protobuf/RpcController;Lcom/lunarclient/gameipc/paynow/v1/OpenPayNowJsCheckoutRequest;Lcom/google/protobuf/RpcCallback;)V"
+      ],
+      "future_or_timeout_tokens": [],
+      "field_writes": []
+    }
+  ]
+}
