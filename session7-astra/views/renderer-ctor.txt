@@ -1,0 +1,791 @@
+Evidence: ev_17deac82472857e7ea4182439a755eeb6bdfb859526f1a570c565f4f1926d8ce
+Address: 0x180051020
+
+/* WARNING: Type propagation algorithm not settling */
+
+undefined8 * FUN_180051020(undefined8 *param_1)
+
+{
+  uint uVar1;
+  void *pvVar2;
+  MemoryUtils *this;
+  char cVar3;
+  Platform *pPVar4;
+  String *pSVar5;
+  basic_ostream<char,std::char_traits<char>_> *pbVar6;
+  char *pcVar7;
+  basic_ostream<char,struct_std::char_traits<char>_> *pbVar8;
+  longlong *plVar9;
+  longlong **pplVar10;
+  undefined8 *puVar11;
+  longlong lVar12;
+  MemoryCache *this_00;
+  BackForwardCache *this_01;
+  MemoryUtils *this_02;
+  GamepadProviderUltralight *pGVar13;
+  longlong *******ppppppplVar14;
+  int **ppiVar15;
+  void *pvVar16;
+  char *pcVar17;
+  uint uVar18;
+  undefined8 uVar19;
+  ulonglong uVar20;
+  ulonglong uVar21;
+  undefined1 auStack_348 [36];
+  undefined4 local_324;
+  char *local_320 [2];
+  char *local_310;
+  int iStack_304;
+  undefined *local_300;
+  undefined **local_2f8 [3];
+  longlong *local_2e0;
+  longlong *local_2d8 [3];
+  ulonglong *local_2c0;
+  ulonglong *local_2b8;
+  int *local_2a8;
+  int *local_2a0 [2];
+  ulonglong local_290;
+  uint local_288;
+  undefined **local_278 [11];
+  int iStack_21c;
+  longlong *******local_218;
+  undefined **ppuStack_210;
+  ulonglong local_208;
+  ulonglong local_200;
+  longlong *local_1f8;
+  longlong *local_1f0 [3];
+  ulonglong *local_1d8;
+  ulonglong *local_1d0;
+  int *local_1c0;
+  int *local_1b8 [2];
+  ulonglong local_1a8;
+  uint local_1a0;
+  undefined **local_190 [13];
+  longlong *******local_128 [2];
+  ulonglong local_118;
+  ulonglong local_110;
+  longlong *******local_108 [2];
+  ulonglong local_f8;
+  ulonglong local_f0;
+  longlong *******local_e8 [2];
+  ulonglong local_d8;
+  ulonglong local_d0;
+  longlong *******local_c8;
+  undefined8 local_c0;
+  ulonglong local_b8;
+  ulonglong local_b0;
+  longlong *******local_a8 [2];
+  ulonglong local_98;
+  ulonglong local_90;
+  longlong *******local_88 [2];
+  ulonglong local_78;
+  ulonglong local_70;
+  longlong *******local_68;
+  undefined8 uStack_60;
+  ulonglong local_58;
+  ulonglong local_50;
+  ulonglong local_48;
+  
+  local_48 = DAT_180090a40 ^ (ulonglong)auStack_348;
+  *(undefined4 *)(param_1 + 3) = 1;
+  *param_1 = ultralight::RendererImpl::vftable;
+  param_1[1] = ultralight::RendererImpl::vftable;
+  param_1[2] = ultralight::RendererImpl::vftable;
+  param_1[4] = 0;
+  param_1[5] = 0;
+  param_1[6] = 0;
+  param_1[7] = 0;
+  param_1[8] = 0;
+  param_1[9] = 0;
+  param_1[10] = 0;
+  UltralightSetCurrentIsolateActive(1);
+  pPVar4 = ultralight::Platform::instance();
+  pSVar5 = (String *)(**(code **)(*(longlong *)pPVar4 + 0x10))(pPVar4);
+  local_300 = &DAT_18006aa40;
+  std::ios_base::ios_base((ios_base *)local_278);
+  local_278[0] = std::basic_ios<char,std::char_traits<char>_>::vftable;
+  *(undefined ***)((longlong)local_2f8 + (longlong)*(int *)(local_300 + 4) + -8) =
+       std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+  *(int *)((longlong)&iStack_304 + (longlong)*(int *)(local_300 + 4)) =
+       *(int *)(local_300 + 4) + -0x88;
+  *(undefined ***)((longlong)local_2f8 + (longlong)*(int *)(local_300 + 4) + -8) =
+       std::basic_ostream<char,std::char_traits<char>_>::vftable;
+  *(int *)((longlong)&iStack_304 + (longlong)*(int *)(local_300 + 4)) =
+       *(int *)(local_300 + 4) + -0x10;
+  std::basic_ios<char,std::char_traits<char>_>::init
+            ((basic_ios<char,std::char_traits<char>_> *)
+             ((longlong)local_2f8 + (longlong)*(int *)(local_300 + 4) + -8),
+             (basic_streambuf<char,std::char_traits<char>_> *)local_2f8,false);
+  *(undefined ***)((longlong)local_2f8 + (longlong)*(int *)(local_300 + 4) + -8) =
+       std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+  *(int *)((longlong)&iStack_304 + (longlong)*(int *)(local_300 + 4)) =
+       *(int *)(local_300 + 4) + -0x88;
+  std::basic_streambuf<char,std::char_traits<char>_>::basic_streambuf<char,std::char_traits<char>_>
+            ((basic_streambuf<char,std::char_traits<char>_> *)local_2f8);
+  local_2f8[0] = std::basic_stringbuf<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+  local_290 = 0;
+  local_288 = 4;
+  pbVar6 = FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)&local_300,
+                         "Initializing Ultralight v");
+  pcVar7 = (char *)UltralightVersionString();
+  pbVar6 = FUN_180028f40(pbVar6,pcVar7);
+  pbVar6 = FUN_180028f40(pbVar6," (WebKit ");
+  pcVar7 = (char *)WebKitVersionString();
+  pbVar6 = FUN_180028f40(pbVar6,pcVar7);
+  pbVar6 = FUN_180028f40(pbVar6,") with the following configuration");
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    cache_path: ");
+  ultralight::String::String((String *)&local_310,pSVar5);
+  pbVar6 = FUN_180028f40(pbVar6,local_310);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    resource_path_prefix: ");
+  ultralight::String::String((String *)local_320,pSVar5 + 0x10);
+  pbVar6 = FUN_180028f40(pbVar6,local_320[0]);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    face_winding: ");
+  pcVar7 = "CounterClockwise";
+  if (pSVar5[0x20] == (String)0x0) {
+    pcVar7 = "Clockwise";
+  }
+  pbVar6 = FUN_180028f40(pbVar6,pcVar7);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    font_hinting: ");
+  pcVar7 = "Monochrome";
+  if (pSVar5[0x21] == (String)0x1) {
+    pcVar7 = "Normal";
+  }
+  pcVar17 = "Smooth";
+  if (pSVar5[0x21] != (String)0x0) {
+    pcVar17 = pcVar7;
+  }
+  pbVar6 = FUN_180028f40(pbVar6,pcVar17);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    font_gamma: ");
+  pbVar8 = std::basic_ostream<char,std::char_traits<char>_>::operator<<
+                     (pbVar6,*(double *)(pSVar5 + 0x28));
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar8 + *(int *)(*(longlong *)pbVar8 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put
+            ((basic_ostream<char,std::char_traits<char>_> *)pbVar8,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush
+            ((basic_ostream<char,std::char_traits<char>_> *)pbVar8);
+  pbVar6 = FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)pbVar8,"    force_repaint: "
+                        );
+  pcVar7 = "enabled";
+  if (pSVar5[0x40] == (String)0x0) {
+    pcVar7 = "disabled";
+  }
+  pbVar6 = FUN_180028f40(pbVar6,pcVar7);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    animation_timer_delay: ");
+  FUN_1800525f0((longlong *)&local_218,*(double *)(pSVar5 + 0x48));
+  ppppppplVar14 = (longlong *******)&local_218;
+  if (0xf < local_200) {
+    ppppppplVar14 = local_218;
+  }
+  pbVar6 = FUN_180054120(pbVar6,ppppppplVar14,local_208);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    scroll_timer_delay: ");
+  FUN_1800525f0((longlong *)&local_68,*(double *)(pSVar5 + 0x50));
+  ppppppplVar14 = (longlong *******)&local_68;
+  if (0xf < local_50) {
+    ppppppplVar14 = local_68;
+  }
+  pbVar6 = FUN_180054120(pbVar6,ppppppplVar14,local_58);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    recycle_delay: ");
+  FUN_1800525f0((longlong *)local_88,*(double *)(pSVar5 + 0x58));
+  ppppppplVar14 = (longlong *******)local_88;
+  if (0xf < local_70) {
+    ppppppplVar14 = local_88[0];
+  }
+  pbVar6 = FUN_180054120(pbVar6,ppppppplVar14,local_78);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    memory_cache_size: ");
+  FUN_1800529a0((longlong *)local_a8,(ulonglong)*(uint *)(pSVar5 + 0x60));
+  ppppppplVar14 = (longlong *******)local_a8;
+  if (0xf < local_90) {
+    ppppppplVar14 = local_a8[0];
+  }
+  pbVar6 = FUN_180054120(pbVar6,ppppppplVar14,local_98);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    page_cache_size: ");
+  pbVar8 = std::basic_ostream<char,std::char_traits<char>_>::operator<<
+                     (pbVar6,*(uint *)(pSVar5 + 100));
+  pbVar6 = FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)pbVar8," pages");
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    override_ram_size: ");
+  if ((ulonglong)*(uint *)(pSVar5 + 0x68) == 0) {
+    local_c0 = 0;
+    local_b8 = 8;
+    local_b0 = 0xf;
+    local_c8 = (longlong *******)0x64656c6261736964;
+    ppppppplVar14 = (longlong *******)&local_c8;
+  }
+  else {
+    FUN_1800529a0((longlong *)&local_c8,(ulonglong)*(uint *)(pSVar5 + 0x68));
+    ppppppplVar14 = (longlong *******)&local_c8;
+    if (0xf < local_b0) {
+      ppppppplVar14 = local_c8;
+    }
+  }
+  pbVar6 = FUN_180054120(pbVar6,ppppppplVar14,local_b8);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    min_large_heap_size: ");
+  FUN_1800529a0((longlong *)local_e8,(ulonglong)*(uint *)(pSVar5 + 0x6c));
+  ppppppplVar14 = (longlong *******)local_e8;
+  if (0xf < local_d0) {
+    ppppppplVar14 = local_e8[0];
+  }
+  pbVar6 = FUN_180054120(pbVar6,ppppppplVar14,local_d8);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    min_small_heap_size: ");
+  FUN_1800529a0((longlong *)local_108,(ulonglong)*(uint *)(pSVar5 + 0x70));
+  ppppppplVar14 = (longlong *******)local_108;
+  if (0xf < local_f0) {
+    ppppppplVar14 = local_108[0];
+  }
+  pbVar6 = FUN_180054120(pbVar6,ppppppplVar14,local_f8);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    num_renderer_threads: ");
+  pbVar8 = std::basic_ostream<char,std::char_traits<char>_>::operator<<
+                     (pbVar6,*(uint *)(pSVar5 + 0x74));
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar8 + *(int *)(*(longlong *)pbVar8 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put
+            ((basic_ostream<char,std::char_traits<char>_> *)pbVar8,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush
+            ((basic_ostream<char,std::char_traits<char>_> *)pbVar8);
+  pbVar6 = FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)pbVar8,
+                         "    max_update_time: ");
+  FUN_1800525f0((longlong *)local_128,*(double *)(pSVar5 + 0x78));
+  ppppppplVar14 = (longlong *******)local_128;
+  if (0xf < local_110) {
+    ppppppplVar14 = local_128[0];
+  }
+  pbVar6 = FUN_180054120(pbVar6,ppppppplVar14,local_118);
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar6 + *(int *)(*(longlong *)pbVar6 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put(pbVar6,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush(pbVar6);
+  pbVar6 = FUN_180028f40(pbVar6,"    bitmap_alignment: ");
+  pbVar8 = std::basic_ostream<char,std::char_traits<char>_>::operator<<
+                     (pbVar6,*(uint *)(pSVar5 + 0x80));
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     (pbVar8 + *(int *)(*(longlong *)pbVar8 + 4)),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put
+            ((basic_ostream<char,std::char_traits<char>_> *)pbVar8,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush
+            ((basic_ostream<char,std::char_traits<char>_> *)pbVar8);
+  FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)pbVar8,"    effect_quality: ");
+  if (0xf < local_110) {
+    ppppppplVar14 = local_128[0];
+    if ((local_110 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_128[0][-1],
+       (ulonglong)((longlong)local_128[0] + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  if (0xf < local_f0) {
+    ppppppplVar14 = local_108[0];
+    if ((local_f0 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_108[0][-1],
+       (ulonglong)((longlong)local_108[0] + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  if (0xf < local_d0) {
+    ppppppplVar14 = local_e8[0];
+    if ((local_d0 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_e8[0][-1],
+       (ulonglong)((longlong)local_e8[0] + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  if (0xf < local_b0) {
+    ppppppplVar14 = local_c8;
+    if ((local_b0 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_c8[-1],
+       (ulonglong)((longlong)local_c8 + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  if (0xf < local_90) {
+    ppppppplVar14 = local_a8[0];
+    if ((local_90 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_a8[0][-1],
+       (ulonglong)((longlong)local_a8[0] + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  if (0xf < local_70) {
+    ppppppplVar14 = local_88[0];
+    if ((local_70 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_88[0][-1],
+       (ulonglong)((longlong)local_88[0] + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  if (0xf < local_50) {
+    ppppppplVar14 = local_68;
+    if ((local_50 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_68[-1],
+       (ulonglong)((longlong)local_68 + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  if (0xf < local_200) {
+    ppppppplVar14 = local_218;
+    if ((local_200 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_218[-1],
+       (undefined *)((longlong)local_218 + (-8 - (longlong)ppppppplVar14)) < (undefined *)0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  ultralight::String::~String((String *)local_320);
+  ultralight::String::~String((String *)&local_310);
+  uVar21 = local_118;
+  if ((ulonglong)(byte)pSVar5[0x84] < 3) {
+    FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)&local_300,
+                  (&PTR_DAT_18006cab8)[(byte)pSVar5[0x84]]);
+    uVar21 = local_118;
+  }
+  cVar3 = std::basic_ios<char,std::char_traits<char>_>::widen
+                    ((basic_ios<char,std::char_traits<char>_> *)
+                     ((longlong)local_2f8 + (longlong)*(int *)(local_300 + 4) + -8),'\n');
+  std::basic_ostream<char,std::char_traits<char>_>::put
+            ((basic_ostream<char,std::char_traits<char>_> *)&local_300,cVar3);
+  std::basic_ostream<char,std::char_traits<char>_>::flush
+            ((basic_ostream<char,std::char_traits<char>_> *)&local_300);
+  pPVar4 = ultralight::Platform::instance();
+  plVar9 = (longlong *)(**(code **)(*(longlong *)pPVar4 + 0x20))(pPVar4);
+  if (plVar9 != (longlong *)0x0) {
+    local_218 = (longlong *******)0x0;
+    ppuStack_210 = (undefined **)0x0;
+    local_208 = 0;
+    local_200 = 0xf;
+    if (((local_288 & 0x22) == 2) || (uVar20 = *local_2b8, uVar20 == 0)) {
+      if (((local_288 & 4) == 0) && (*local_2c0 != 0)) {
+        pplVar10 = &local_2e0;
+        uVar20 = *local_2c0 + (longlong)*local_2a8;
+        goto LAB_180051b84;
+      }
+    }
+    else {
+      pplVar10 = local_2d8;
+      if (uVar20 < local_290) {
+        uVar20 = local_290;
+      }
+LAB_180051b84:
+      pvVar2 = (void *)**pplVar10;
+      if (pvVar2 != (void *)0x0) {
+        uVar20 = uVar20 - (longlong)pvVar2;
+        if (uVar20 < 0x10) {
+          local_208 = uVar20;
+          memmove(&local_218,pvVar2,uVar20);
+          *(undefined1 *)((longlong)&local_218 + uVar20) = 0;
+        }
+        else {
+          FUN_18004ee20((longlong *)&local_218,uVar20,uVar21,pvVar2);
+        }
+      }
+    }
+    ppppppplVar14 = local_218;
+    if (local_200 < 0x10) {
+      ppppppplVar14 = (longlong *******)&local_218;
+    }
+    ultralight::String::String((String *)&local_68,(char *)ppppppplVar14);
+    (**(code **)(*plVar9 + 8))(plVar9,2);
+    ultralight::String::~String((String *)&local_68);
+    if (0xf < local_200) {
+      ppppppplVar14 = local_218;
+      if ((local_200 + 1 < 0x1000) ||
+         (ppppppplVar14 = (longlong *******)local_218[-1],
+         (undefined *)((longlong)local_218 + (-8 - (longlong)ppppppplVar14)) < (undefined *)0x20)) {
+                    /* WARNING: Subroutine does not return */
+        free(ppppppplVar14);
+      }
+      goto LAB_1800525dc;
+    }
+  }
+  FUN_180052db0((longlong)param_1);
+  JSC::Options::initialize();
+  local_218 = (longlong *******)&DAT_18006aa40;
+  std::ios_base::ios_base((ios_base *)local_190);
+  local_190[0] = std::basic_ios<char,std::char_traits<char>_>::vftable;
+  *(undefined ***)((longlong)&local_218 + (longlong)*(int *)((longlong)local_218 + 4)) =
+       std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+  *(int *)((longlong)&iStack_21c + (longlong)*(int *)((longlong)local_218 + 4)) =
+       *(int *)((longlong)local_218 + 4) + -0x88;
+  *(undefined ***)((longlong)&local_218 + (longlong)*(int *)((longlong)local_218 + 4)) =
+       std::basic_ostream<char,std::char_traits<char>_>::vftable;
+  *(int *)((longlong)&iStack_21c + (longlong)*(int *)((longlong)local_218 + 4)) =
+       *(int *)((longlong)local_218 + 4) + -0x10;
+  uVar19 = 0;
+  std::basic_ios<char,std::char_traits<char>_>::init
+            ((basic_ios<char,std::char_traits<char>_> *)
+             ((longlong)&local_218 + (longlong)*(int *)((longlong)local_218 + 4)),
+             (basic_streambuf<char,std::char_traits<char>_> *)&ppuStack_210,false);
+  *(undefined ***)((longlong)&local_218 + (longlong)*(int *)((longlong)local_218 + 4)) =
+       std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+  *(int *)((longlong)&iStack_21c + (longlong)*(int *)((longlong)local_218 + 4)) =
+       *(int *)((longlong)local_218 + 4) + -0x88;
+  std::basic_streambuf<char,std::char_traits<char>_>::basic_streambuf<char,std::char_traits<char>_>
+            ((basic_streambuf<char,std::char_traits<char>_> *)&ppuStack_210);
+  ppuStack_210 = std::basic_stringbuf<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+  local_1a8 = 0;
+  local_1a0 = 4;
+  if (*(int *)(pSVar5 + 0x68) != 0) {
+    pbVar6 = FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)&local_218,"forceRAMSize="
+                          );
+    std::basic_ostream<char,std::char_traits<char>_>::operator<<(pbVar6,*(uint *)(pSVar5 + 0x68));
+    local_68 = (longlong *******)0x0;
+    uStack_60 = 0;
+    local_58 = 0;
+    local_50 = 0xf;
+    if (((local_1a0 & 0x22) == 2) || (uVar21 = *local_1d0, uVar21 == 0)) {
+      if (((local_1a0 & 4) == 0) && (*local_1d8 != 0)) {
+        pplVar10 = &local_1f8;
+        uVar21 = *local_1d8 + (longlong)*local_1c0;
+        goto LAB_180051e36;
+      }
+    }
+    else {
+      pplVar10 = local_1f0;
+      if (uVar21 < local_1a8) {
+        uVar21 = local_1a8;
+      }
+LAB_180051e36:
+      pvVar2 = (void *)**pplVar10;
+      if (pvVar2 != (void *)0x0) {
+        uVar21 = uVar21 - (longlong)pvVar2;
+        if (uVar21 < 0x10) {
+          local_58 = uVar21;
+          memmove(&local_68,pvVar2,uVar21);
+          *(undefined1 *)((longlong)&local_68 + uVar21) = 0;
+        }
+        else {
+          FUN_18004ee20((longlong *)&local_68,uVar21,uVar19,pvVar2);
+        }
+      }
+    }
+    ppppppplVar14 = local_68;
+    if (local_50 < 0x10) {
+      ppppppplVar14 = (longlong *******)&local_68;
+    }
+    JSC::Options::setOption((char *)ppppppplVar14,true);
+    if (0xf < local_50) {
+      ppppppplVar14 = local_68;
+      if ((local_50 + 1 < 0x1000) ||
+         (ppppppplVar14 = (longlong *******)local_68[-1],
+         (ulonglong)((longlong)local_68 + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+        free(ppppppplVar14);
+      }
+      goto LAB_1800525dc;
+    }
+    uVar19 = 0;
+    std::basic_ios<char,std::char_traits<char>_>::clear
+              ((basic_ios<char,std::char_traits<char>_> *)
+               ((longlong)&local_218 + (longlong)*(int *)((longlong)local_218 + 4)),0,false);
+  }
+  pbVar6 = FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)&local_218,"smallHeapSize=")
+  ;
+  std::basic_ostream<char,std::char_traits<char>_>::operator<<(pbVar6,*(uint *)(pSVar5 + 0x70));
+  local_68 = (longlong *******)0x0;
+  uStack_60 = 0;
+  local_58 = 0;
+  local_50 = 0xf;
+  if (((local_1a0 & 0x22) == 2) || (uVar21 = *local_1d0, uVar21 == 0)) {
+    if (((local_1a0 & 4) == 0) && (*local_1d8 != 0)) {
+      pplVar10 = &local_1f8;
+      uVar21 = *local_1d8 + (longlong)*local_1c0;
+      goto LAB_180051fbf;
+    }
+  }
+  else {
+    pplVar10 = local_1f0;
+    if (uVar21 < local_1a8) {
+      uVar21 = local_1a8;
+    }
+LAB_180051fbf:
+    pvVar2 = (void *)**pplVar10;
+    if (pvVar2 != (void *)0x0) {
+      uVar21 = uVar21 - (longlong)pvVar2;
+      if (uVar21 < 0x10) {
+        local_58 = uVar21;
+        memmove(&local_68,pvVar2,uVar21);
+        *(undefined1 *)((longlong)&local_68 + uVar21) = 0;
+      }
+      else {
+        FUN_18004ee20((longlong *)&local_68,uVar21,uVar19,pvVar2);
+      }
+    }
+  }
+  ppppppplVar14 = local_68;
+  if (local_50 < 0x10) {
+    ppppppplVar14 = (longlong *******)&local_68;
+  }
+  JSC::Options::setOption((char *)ppppppplVar14,true);
+  if (0xf < local_50) {
+    ppppppplVar14 = local_68;
+    if ((local_50 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_68[-1],
+       (ulonglong)((longlong)local_68 + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+    goto LAB_1800525dc;
+  }
+  uVar19 = 0;
+  std::basic_ios<char,std::char_traits<char>_>::clear
+            ((basic_ios<char,std::char_traits<char>_> *)
+             ((longlong)&local_218 + (longlong)*(int *)((longlong)local_218 + 4)),0,false);
+  pbVar6 = FUN_180028f40((basic_ostream<char,std::char_traits<char>_> *)&local_218,"largeHeapSize=")
+  ;
+  std::basic_ostream<char,std::char_traits<char>_>::operator<<(pbVar6,*(uint *)(pSVar5 + 0x6c));
+  local_68 = (longlong *******)0x0;
+  uStack_60 = 0;
+  local_58 = 0;
+  local_50 = 0xf;
+  if (((local_1a0 & 0x22) == 2) || (uVar21 = *local_1d0, uVar21 == 0)) {
+    if (((local_1a0 & 4) == 0) && (*local_1d8 != 0)) {
+      pplVar10 = &local_1f8;
+      uVar21 = *local_1d8 + (longlong)*local_1c0;
+      goto LAB_180052148;
+    }
+  }
+  else {
+    pplVar10 = local_1f0;
+    if (uVar21 < local_1a8) {
+      uVar21 = local_1a8;
+    }
+LAB_180052148:
+    pvVar2 = (void *)**pplVar10;
+    if (pvVar2 != (void *)0x0) {
+      uVar21 = uVar21 - (longlong)pvVar2;
+      if (uVar21 < 0x10) {
+        local_58 = uVar21;
+        memmove(&local_68,pvVar2,uVar21);
+        *(undefined1 *)((longlong)&local_68 + uVar21) = 0;
+      }
+      else {
+        FUN_18004ee20((longlong *)&local_68,uVar21,uVar19,pvVar2);
+      }
+    }
+  }
+  ppppppplVar14 = local_68;
+  if (local_50 < 0x10) {
+    ppppppplVar14 = (longlong *******)&local_68;
+  }
+  JSC::Options::setOption((char *)ppppppplVar14,true);
+  if (local_50 < 0x10) {
+    std::basic_ios<char,std::char_traits<char>_>::clear
+              ((basic_ios<char,std::char_traits<char>_> *)
+               ((longlong)&local_218 + (longlong)*(int *)((longlong)local_218 + 4)),0,false);
+    JSC::initialize();
+    WTF::initializeMainThread();
+    WTF::allPrivileges();
+    WTF::setProcessPrivileges(local_324);
+    WebCore::NetworkStorageSession::permitProcessToUseCookieAPI(true);
+    puVar11 = (undefined8 *)FUN_180062b40(0x88);
+    ultralight::String::String((String *)&local_68,"default");
+    FUN_1800556c0(puVar11,'\x01',(String *)&local_68,1);
+    plVar9 = (longlong *)param_1[4];
+    param_1[4] = puVar11;
+    if (plVar9 != (longlong *)0x0) {
+      (**(code **)(*plVar9 + 8))();
+    }
+    ultralight::String::~String((String *)&local_68);
+    ultralight::InitPainter();
+    pPVar4 = ultralight::Platform::instance();
+    lVar12 = (**(code **)(*(longlong *)pPVar4 + 0x10))(pPVar4);
+    uVar18 = 0x800000;
+    if (0x800000 < *(uint *)(lVar12 + 0x60)) {
+      uVar18 = *(uint *)(lVar12 + 0x60);
+    }
+    pPVar4 = ultralight::Platform::instance();
+    lVar12 = (**(code **)(*(longlong *)pPVar4 + 0x10))(pPVar4);
+    uVar1 = *(uint *)(lVar12 + 100);
+    this_00 = WebCore::MemoryCache::singleton();
+    WebCore::MemoryCache::setCapacities(this_00,uVar18 >> 2,uVar18,uVar18);
+    *(undefined8 *)(this_00 + 0x10) = 0x4020000000000000;
+    this_01 = WebCore::BackForwardCache::singleton();
+    WebCore::BackForwardCache::setMaxSize(this_01,uVar1);
+    this_02 = (MemoryUtils *)FUN_180062b40(1);
+    WebCore::MemoryUtils::MemoryUtils(this_02);
+    this = (MemoryUtils *)param_1[5];
+    param_1[5] = this_02;
+    if (this != (MemoryUtils *)0x0) {
+      WebCore::MemoryUtils::~MemoryUtils(this);
+                    /* WARNING: Subroutine does not return */
+      free(this);
+    }
+    pGVar13 = WebCore::GamepadProviderUltralight::singleton();
+    WebCore::GamepadProvider::setSharedProvider((GamepadProvider *)pGVar13);
+    *(undefined ***)((longlong)&local_218 + (longlong)*(int *)((longlong)local_218 + 4)) =
+         std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+    *(int *)((longlong)&iStack_21c + (longlong)*(int *)((longlong)local_218 + 4)) =
+         *(int *)((longlong)local_218 + 4) + -0x88;
+    ppuStack_210 = std::basic_stringbuf<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+    if ((local_1a0 & 1) == 0) {
+      *local_1f8 = 0;
+      *local_1d8 = 0;
+      *local_1c0 = 0;
+      *local_1f0[0] = 0;
+      *local_1d0 = 0;
+      *local_1b8[0] = 0;
+      local_1a8 = 0;
+      local_1a0 = local_1a0 & 0xfffffffe;
+      std::basic_streambuf<char,std::char_traits<char>_>::
+      ~basic_streambuf<char,std::char_traits<char>_>
+                ((basic_streambuf<char,std::char_traits<char>_> *)&ppuStack_210);
+      std::ios_base::~ios_base((ios_base *)local_190);
+      *(undefined ***)((longlong)local_2f8 + (longlong)*(int *)(local_300 + 4) + -8) =
+           std::basic_ostringstream<char,std::char_traits<char>,std::allocator<char>_>::vftable;
+      *(int *)((longlong)&iStack_304 + (longlong)*(int *)(local_300 + 4)) =
+           *(int *)(local_300 + 4) + -0x88;
+      local_2f8[0] = std::basic_stringbuf<char,std::char_traits<char>,std::allocator<char>_>::
+                     vftable;
+      if ((local_288 & 1) == 0) {
+        *local_2e0 = 0;
+        *local_2c0 = 0;
+        *local_2a8 = 0;
+        *local_2d8[0] = 0;
+        *local_2b8 = 0;
+        *local_2a0[0] = 0;
+        local_290 = 0;
+        local_288 = local_288 & 0xfffffffe;
+        std::basic_streambuf<char,std::char_traits<char>_>::
+        ~basic_streambuf<char,std::char_traits<char>_>
+                  ((basic_streambuf<char,std::char_traits<char>_> *)local_2f8);
+        std::ios_base::~ios_base((ios_base *)local_278);
+        FUN_180062cc0(local_48 ^ (ulonglong)auStack_348);
+        return param_1;
+      }
+      uVar21 = *local_2b8;
+      if (uVar21 == 0) {
+        uVar21 = *local_2c0;
+        ppiVar15 = &local_2a8;
+      }
+      else {
+        ppiVar15 = local_2a0;
+      }
+      pvVar2 = (void *)*local_2e0;
+      pvVar16 = pvVar2;
+      if ((((longlong)**ppiVar15 + uVar21) - (longlong)pvVar2 < 0x1000) ||
+         (pvVar16 = *(void **)((longlong)pvVar2 + -8),
+         (ulonglong)((longlong)pvVar2 + (-8 - (longlong)pvVar16)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+        free(pvVar16);
+      }
+    }
+    else {
+      uVar21 = *local_1d0;
+      if (uVar21 == 0) {
+        uVar21 = *local_1d8;
+        ppiVar15 = &local_1c0;
+      }
+      else {
+        ppiVar15 = local_1b8;
+      }
+      pvVar2 = (void *)*local_1f8;
+      pvVar16 = pvVar2;
+      if ((((longlong)**ppiVar15 + uVar21) - (longlong)pvVar2 < 0x1000) ||
+         (pvVar16 = *(void **)((longlong)pvVar2 + -8),
+         (ulonglong)((longlong)pvVar2 + (-8 - (longlong)pvVar16)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+        free(pvVar16);
+      }
+    }
+  }
+  else {
+    ppppppplVar14 = local_68;
+    if ((local_50 + 1 < 0x1000) ||
+       (ppppppplVar14 = (longlong *******)local_68[-1],
+       (ulonglong)((longlong)local_68 + (-8 - (longlong)ppppppplVar14)) < 0x20)) {
+                    /* WARNING: Subroutine does not return */
+      free(ppppppplVar14);
+    }
+  }
+LAB_1800525dc:
+                    /* WARNING: Subroutine does not return */
+  _invalid_parameter_noinfo_noreturn();
+}
+

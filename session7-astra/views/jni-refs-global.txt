@@ -1,0 +1,36 @@
+Evidence: ev_8d02bb9ce94ad1c9ba4c2fbf46188b0bcba938f3876c5f696a53e1c5a8add0bb
+Address: 0x1800022a0
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+undefined8 * FUN_1800022a0(undefined8 *param_1,undefined8 param_2)
+
+{
+  longlong lVar1;
+  undefined8 *puVar2;
+  undefined8 uVar3;
+  undefined1 auStack_88 [40];
+  undefined8 *local_60;
+  undefined **local_58 [7];
+  undefined ***local_20;
+  ulonglong local_18;
+  
+  local_18 = DAT_18007a2c0 ^ (ulonglong)auStack_88;
+  local_60 = param_1;
+  lVar1 = FUN_180001e60();
+  puVar2 = FUN_180001f60(lVar1);
+  uVar3 = (**(code **)(*(longlong *)puVar2[10] + 0xa8))((longlong *)puVar2[10],param_2);
+  param_1[7] = 0;
+  local_58[0] = std::
+                _Func_impl_no_alloc<`class_std::unique_ptr<_jobject,std::function<void___cdecl(_jobject*___ptr64)>_>___cdecl_webosr::binding::java::internal::newGlobal(_jobject*___ptr64)'::`2'::<lambda_1>,void,_jobject*___ptr64>
+                ::vftable;
+  local_20 = local_58;
+  puVar2 = FUN_180001be0(local_58,param_1);
+  param_1[7] = puVar2;
+  if (local_20 != (undefined ***)0x0) {
+    (*(code *)(*local_20)[4])(local_20,local_20 != local_58);
+  }
+  param_1[8] = uVar3;
+  return param_1;
+}
+

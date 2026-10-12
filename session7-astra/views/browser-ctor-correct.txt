@@ -1,0 +1,130 @@
+Evidence: ev_ca503495163972f55f62e736563cc34b4b60ab9a66e5a35a37d9a32c6db49010
+Address: 0x180041fe0
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+/* WARNING: Removing unreachable block (ram,0x000180042267) */
+
+undefined8 * FUN_180041fe0(undefined8 *param_1,longlong param_2,undefined8 *param_3)
+
+{
+  int *piVar1;
+  undefined8 *puVar2;
+  undefined8 uVar3;
+  int iVar4;
+  longlong lVar5;
+  undefined8 *puVar6;
+  longlong *plVar7;
+  ulonglong uVar8;
+  undefined1 auStack_1d8 [32];
+  longlong *local_1b8;
+  undefined8 *local_1b0;
+  longlong local_1a8 [7];
+  longlong *local_170;
+  longlong local_168 [7];
+  longlong *local_130;
+  undefined8 *local_128;
+  longlong local_120;
+  undefined8 local_118 [28];
+  ulonglong local_38;
+  
+  local_38 = DAT_18007a2c0 ^ (ulonglong)auStack_1d8;
+  *param_1 = webosr::Browser::vftable;
+  param_1[1] = 0;
+  local_1b0 = param_1;
+  ultralight::ViewListener::ViewListener((ViewListener *)(param_1 + 2));
+  ultralight::LoadListener::LoadListener((LoadListener *)(param_1 + 3));
+  ultralight::NetworkListener::NetworkListener((NetworkListener *)(param_1 + 4));
+  *param_1 = webosr::ul::BrowserImpl::vftable;
+  param_1[2] = webosr::ul::BrowserImpl::vftable;
+  param_1[3] = webosr::ul::BrowserImpl::vftable;
+  param_1[4] = webosr::ul::BrowserImpl::vftable;
+  param_1[6] = param_2;
+  param_1[7] = 0;
+  param_1[8] = 0;
+  if (param_3[5] != 0) {
+    LOCK();
+    piVar1 = (int *)(param_3[5] + 8);
+    *piVar1 = *piVar1 + 1;
+    UNLOCK();
+  }
+  param_1[7] = param_3[4];
+  param_1[8] = param_3[5];
+  param_1[9] = 0;
+  param_1[10] = 0;
+  puVar6 = param_1 + 0xb;
+  *(undefined4 *)puVar6 = 0;
+  param_1[0xc] = 0;
+  param_1[0xd] = 0;
+  local_1b8 = puVar6;
+  lVar5 = FUN_180058b24(0x70);
+  *(longlong *)lVar5 = lVar5;
+  *(longlong *)(lVar5 + 8) = lVar5;
+  param_1[0xc] = lVar5;
+  puVar2 = param_1 + 0xe;
+  *puVar2 = 0;
+  param_1[0xf] = 0;
+  param_1[0x10] = 0;
+  param_1[0x11] = 7;
+  param_1[0x12] = 8;
+  *(undefined4 *)puVar6 = 0x3f800000;
+  uVar3 = param_1[0xc];
+  puVar6 = (undefined8 *)*puVar2;
+  lVar5 = (longlong)param_1[0xf] - (longlong)puVar6;
+  if ((ulonglong)(lVar5 >> 3) < 0x10) {
+    puVar6 = (undefined8 *)FUN_180058b24(0x80);
+    lVar5 = param_1[0x10] - (longlong)*puVar2 >> 3;
+    if (lVar5 != 0) {
+      FUN_180002170(puVar2,(void *)*puVar2,lVar5);
+    }
+    *puVar2 = puVar6;
+    puVar2 = puVar6 + 0x10;
+    param_1[0xf] = puVar2;
+    param_1[0x10] = puVar2;
+    for (; puVar6 != puVar2; puVar6 = puVar6 + 1) {
+      *puVar6 = uVar3;
+    }
+  }
+  else {
+    uVar8 = lVar5 + 7U >> 3;
+    if ((undefined8 *)param_1[0xf] < puVar6) {
+      uVar8 = 0;
+    }
+    if (uVar8 != 0) {
+      for (; uVar8 != 0; uVar8 = uVar8 - 1) {
+        *puVar6 = uVar3;
+        puVar6 = puVar6 + 1;
+      }
+    }
+  }
+  iVar4 = DAT_1801846e4 + 1;
+  *(int *)(param_1 + 5) = DAT_1801846e4;
+  DAT_1801846e4 = iVar4;
+  local_128 = param_1;
+  local_120 = param_2;
+  FUN_180041ee0(local_118,param_3);
+  local_130 = (longlong *)0x0;
+  plVar7 = (longlong *)FUN_180058b24(0xf0);
+  *plVar7 = (longlong)
+            std::
+            _Func_impl_no_alloc<`public:___cdecl_webosr::ul::BrowserImpl::BrowserImpl(webosr::ul::EngineImpl&___ptr64,webosr::config::Browser_const&___ptr64)___ptr64'::`2'::<lambda_1>,void>
+            ::vftable;
+  plVar7[1] = (longlong)local_128;
+  plVar7[2] = local_120;
+  local_1b8 = plVar7;
+  FUN_180041ee0(plVar7 + 3,local_118);
+  local_130 = plVar7;
+  FUN_1800191f0((longlong)local_118);
+  local_170 = (longlong *)0x0;
+  if (plVar7 != (longlong *)0x0) {
+    if (plVar7 == local_168) {
+      local_170 = (longlong *)(**(code **)(*plVar7 + 8))(plVar7,local_1a8);
+      (**(code **)(*plVar7 + 0x20))(plVar7,0);
+      plVar7 = local_170;
+    }
+    local_170 = plVar7;
+    local_130 = (longlong *)0x0;
+  }
+  FUN_180036380(0,local_1a8);
+  return param_1;
+}
+

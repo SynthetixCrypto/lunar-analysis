@@ -1,0 +1,67 @@
+Evidence: ev_1e922dce73eccf588773887631eb50a37dfcf2fb87b1958eb09af2514326ff55
+Address: 0x180001e60
+
+longlong * FUN_180001e60(void)
+
+{
+  longlong *plVar1;
+  int *piVar2;
+  int iVar3;
+  longlong lVar4;
+  longlong *plVar5;
+  longlong *plVar6;
+  int local_res8 [2];
+  undefined8 local_res10;
+  longlong *local_res18;
+  undefined8 local_28 [4];
+  
+  plVar6 = DAT_180084388;
+  if (DAT_180084380 == (longlong *)0x0) {
+    JNI_GetCreatedJavaVMs(&local_res10,1,local_res8);
+    if (local_res8[0] != 1) {
+      FUN_180001820(local_28,"unexpected amount of virtual machines");
+                    /* WARNING: Subroutine does not return */
+      _CxxThrowException(local_28,(ThrowInfo *)&DAT_180075238);
+    }
+    plVar6 = (longlong *)FUN_180058b24(0x98);
+    local_res18 = plVar6;
+    if (plVar6 == (longlong *)0x0) {
+      plVar6 = (longlong *)0x0;
+    }
+    else {
+      *plVar6 = 0;
+      plVar6[1] = 0;
+      *(undefined4 *)(plVar6 + 1) = 1;
+      *(undefined4 *)((longlong)plVar6 + 0xc) = 1;
+      *plVar6 = (longlong)std::_Ref_count_obj2<webosr::binding::java::VirtualMachine>::vftable;
+      FUN_180001560(plVar6 + 2,local_res10);
+    }
+    plVar5 = DAT_180084388;
+    DAT_180084380 = plVar6 + 2;
+    if (DAT_180084388 != (longlong *)0x0) {
+      LOCK();
+      plVar1 = DAT_180084388 + 1;
+      lVar4 = *plVar1;
+      DAT_180084388 = plVar6;
+      *(int *)plVar1 = (int)*plVar1 + -1;
+      UNLOCK();
+      plVar6 = DAT_180084388;
+      if ((int)lVar4 == 1) {
+        (**(code **)*plVar5)(plVar5);
+        LOCK();
+        piVar2 = (int *)((longlong)plVar5 + 0xc);
+        iVar3 = *piVar2;
+        *piVar2 = *piVar2 + -1;
+        UNLOCK();
+        plVar6 = DAT_180084388;
+        if (iVar3 == 1) {
+          (**(code **)(*plVar5 + 8))(plVar5);
+          plVar6 = DAT_180084388;
+        }
+      }
+    }
+  }
+  DAT_180084388 = plVar6;
+  return DAT_180084380;
+}
+

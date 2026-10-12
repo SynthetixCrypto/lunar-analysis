@@ -1,0 +1,26 @@
+Evidence: ev_888b51beb76a8c038bf1efa67608603270d6fcfc76815e912235b8806948294b
+Address: 0x180039990
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void FUN_180039990(longlong *param_1,undefined8 param_2,undefined8 param_3,undefined1 *param_4)
+
+{
+  uint uVar1;
+  undefined1 auStack_88 [32];
+  uint local_68;
+  uint uStack_64;
+  ulonglong local_10;
+  
+  local_10 = DAT_18007a2c0 ^ (ulonglong)auStack_88;
+  uVar1 = uStack_64 >> 8;
+  uStack_64 = uStack_64 & 0xffffff00;
+  if (*(char *)((longlong)param_1 + 0x92) != '\0') {
+    local_68 = (uint)*(ushort *)(param_1 + 0x12);
+    uStack_64 = CONCAT31((int3)uVar1,1);
+  }
+  FUN_18003b020(*param_1,param_1 + 1,CONCAT44(uStack_64,local_68),param_4);
+  FUN_18003b490(*param_1);
+  return;
+}
+

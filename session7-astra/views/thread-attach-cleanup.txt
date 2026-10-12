@@ -1,0 +1,39 @@
+Evidence: ev_c9555a6b8f3bad352011fd0d2d41a3b0e29707dae912c9a86e51e18611d4d8e5
+Address: 0x1800014c0
+
+undefined8 * FUN_1800014c0(undefined8 *param_1,longlong *****param_2)
+
+{
+  longlong ****pppplVar1;
+  longlong *****ppppplVar2;
+  longlong ******pppppplVar3;
+  longlong *****local_28 [2];
+  
+  *param_1 = 0;
+  param_1[1] = 0;
+  pppplVar1 = param_2[8];
+  param_2[8] = (longlong ****)0x0;
+  pppppplVar3 = (longlong ******)param_2;
+  local_28[0] = param_2;
+  FUN_180001440((longlong)(param_1 + 2),(longlong *)param_2);
+  param_1[10] = pppplVar1;
+  ppppplVar2 = (longlong *****)param_2[8];
+  if (ppppplVar2 != (longlong *****)0x0) {
+    pppplVar1 = param_2[7];
+    local_28[0] = ppppplVar2;
+    if (pppplVar1 == (longlong ****)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    pppppplVar3 = local_28;
+    (*(code *)(*pppplVar1)[2])(pppplVar1,pppppplVar3);
+  }
+  ppppplVar2 = (longlong *****)param_2[7];
+  if (ppppplVar2 != (longlong *****)0x0) {
+    (*(code *)(*ppppplVar2)[4])
+              (ppppplVar2,CONCAT71((int7)((ulonglong)pppppplVar3 >> 8),ppppplVar2 == param_2) ^ 1);
+    param_2[7] = (longlong ****)0x0;
+  }
+  return param_1;
+}
+

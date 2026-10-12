@@ -1,0 +1,106 @@
+public final class com.moonsworth.webosr.wrappers.Browser extends com.moonsworth.webosr.NativeHandle {
+  private com.moonsworth.webosr.wrappers.Browser(long);
+    descriptor: (J)V
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #9                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void loadURL(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public native java.lang.String getURL();
+    descriptor: ()Ljava/lang/String;
+
+  public native void next();
+    descriptor: ()V
+
+  public native void previous();
+    descriptor: ()V
+
+  public native void reload();
+    descriptor: ()V
+
+  public native void stopLoad();
+    descriptor: ()V
+
+  public native boolean hasFocus();
+    descriptor: ()Z
+
+  public native void setFocus(boolean);
+    descriptor: (Z)V
+
+  public native boolean hasInputFocus();
+    descriptor: ()Z
+
+  public native void triggerResize(int, int);
+    descriptor: (II)V
+
+  public void triggerKeyEvent(java.lang.String, int, java.lang.String, int, com.moonsworth.webosr.input.Keyboard$Action, int);
+    descriptor: (Ljava/lang/String;ILjava/lang/String;ILcom/moonsworth/webosr/input/Keyboard$Action;I)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: aload_3
+       4: iload         4
+       6: aload         5
+       8: invokevirtual #10                 // Method com/moonsworth/webosr/input/Keyboard$Action.getValue:()I
+      11: iload         6
+      13: invokevirtual #13                 // Method triggerKeyEvent:(Ljava/lang/String;ILjava/lang/String;III)V
+      16: return
+
+  public void triggerMouseEvent(com.moonsworth.webosr.input.Mouse$Button, com.moonsworth.webosr.input.Mouse$Action, int, int, int);
+    descriptor: (Lcom/moonsworth/webosr/input/Mouse$Button;Lcom/moonsworth/webosr/input/Mouse$Action;III)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #12                 // Method com/moonsworth/webosr/input/Mouse$Button.getValue:()I
+       5: aload_2
+       6: invokevirtual #11                 // Method com/moonsworth/webosr/input/Mouse$Action.getValue:()I
+       9: iload_3
+      10: iload         4
+      12: iload         5
+      14: invokevirtual #14                 // Method triggerMouseEvent:(IIIII)V
+      17: return
+
+  private native void triggerMouseEvent(int, int, int, int, int);
+    descriptor: (IIIII)V
+
+  private native void triggerKeyEvent(java.lang.String, int, java.lang.String, int, int, int);
+    descriptor: (Ljava/lang/String;ILjava/lang/String;III)V
+
+  public native void triggerScrollEvent(int, int, int, int, int);
+    descriptor: (IIIII)V
+
+  public native int getTexture();
+    descriptor: ()I
+
+  public native void setDeviceScaleFactor(double);
+    descriptor: (D)V
+
+  public native int getWidth();
+    descriptor: ()I
+
+  public native int getHeight();
+    descriptor: ()I
+
+  public native com.moonsworth.webosr.wrappers.NativeFuture eval(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/NativeFuture;
+
+  public native void evalNoResult(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public native void bindFunction(java.lang.String, com.moonsworth.webosr.handler.FunctionJS);
+    descriptor: (Ljava/lang/String;Lcom/moonsworth/webosr/handler/FunctionJS;)V
+
+  public native void unbindFunction(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public native void createInspector();
+    descriptor: ()V
+
+  protected native void destroy();
+    descriptor: ()V
+}

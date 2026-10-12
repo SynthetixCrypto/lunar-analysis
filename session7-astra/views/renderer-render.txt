@@ -1,0 +1,82 @@
+Evidence: ev_3adbbd2d7120d48acf8837865655a115fa883169240098b80a34dd81b39f65d0
+Address: 0x1800535d0
+
+void FUN_1800535d0(undefined8 param_1,longlong param_2,ulonglong param_3)
+
+{
+  undefined1 auVar1 [16];
+  longlong lVar2;
+  DOMWrapperWorld *pDVar3;
+  void *_Memory;
+  ulonglong uVar4;
+  Painter *pPVar5;
+  ulonglong uVar6;
+  longlong lVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined1 auVar13 [16];
+  undefined1 auStack_68 [32];
+  JSLockHolder local_48 [8];
+  ulonglong local_40;
+  
+  local_40 = DAT_180090a40 ^ (ulonglong)auStack_68;
+  pDVar3 = WebCore::mainThreadNormalWorld();
+  JSC::JSLockHolder::JSLockHolder(local_48,*(VM **)(pDVar3 + 8));
+  _Memory = (void *)thunk_FUN_180062b40(-(ulonglong)(param_3 >> 0x3d != 0) | param_3 * 8);
+  if (param_3 != 0) {
+    if (param_3 < 4) {
+      uVar4 = 0;
+    }
+    else {
+      uVar4 = param_3 & 0xfffffffffffffffc;
+      uVar6 = 0;
+      do {
+        auVar9 = *(undefined1 (*) [16])(param_2 + uVar6 * 8);
+        auVar1 = *(undefined1 (*) [16])(param_2 + 0x10 + uVar6 * 8);
+        auVar11._0_8_ = auVar9._0_8_ + 0x18;
+        auVar11._8_8_ = auVar9._8_8_ + 0x18;
+        auVar12._0_8_ = auVar1._0_8_ + 0x18;
+        auVar12._8_8_ = auVar1._8_8_ + 0x18;
+        auVar8._0_4_ = -(uint)(auVar9._0_4_ == 0);
+        auVar8._4_4_ = -(uint)(auVar9._4_4_ == 0);
+        auVar8._8_4_ = -(uint)(auVar9._8_4_ == 0);
+        auVar8._12_4_ = -(uint)(auVar9._12_4_ == 0);
+        auVar13._4_4_ = auVar8._0_4_;
+        auVar13._0_4_ = auVar8._4_4_;
+        auVar13._8_4_ = auVar8._12_4_;
+        auVar13._12_4_ = auVar8._8_4_;
+        auVar10._0_4_ = -(uint)(auVar1._0_4_ == 0);
+        auVar10._4_4_ = -(uint)(auVar1._4_4_ == 0);
+        auVar10._8_4_ = -(uint)(auVar1._8_4_ == 0);
+        auVar10._12_4_ = -(uint)(auVar1._12_4_ == 0);
+        auVar9._4_4_ = auVar10._0_4_;
+        auVar9._0_4_ = auVar10._4_4_;
+        auVar9._8_4_ = auVar10._12_4_;
+        auVar9._12_4_ = auVar10._8_4_;
+        *(undefined1 (*) [16])((longlong)_Memory + uVar6 * 8) = ~(auVar13 & auVar8) & auVar11;
+        *(undefined1 (*) [16])((longlong)_Memory + uVar6 * 8 + 0x10) = ~(auVar9 & auVar10) & auVar12
+        ;
+        uVar6 = uVar6 + 4;
+      } while (uVar4 != uVar6);
+      if (uVar4 == param_3) goto LAB_1800536db;
+    }
+    do {
+      lVar2 = *(longlong *)(param_2 + uVar4 * 8);
+      lVar7 = lVar2 + 0x18;
+      if (lVar2 == 0) {
+        lVar7 = 0;
+      }
+      *(longlong *)((longlong)_Memory + uVar4 * 8) = lVar7;
+      uVar4 = uVar4 + 1;
+    } while (param_3 != uVar4);
+  }
+LAB_1800536db:
+  pPVar5 = ultralight::Painter::instance();
+  (**(code **)(*(longlong *)pPVar5 + 0x20))(pPVar5,_Memory,param_3);
+                    /* WARNING: Subroutine does not return */
+  free(_Memory);
+}
+

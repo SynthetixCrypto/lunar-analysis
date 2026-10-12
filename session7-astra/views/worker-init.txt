@@ -1,0 +1,175 @@
+Evidence: ev_6ddda76fbe0c3dff6d546814c0f88dcd049a36b41a009ec9184458c55bc9c435
+Address: 0x18003b020
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void FUN_18003b020(longlong param_1,undefined8 param_2,ulonglong param_3,undefined1 *param_4)
+
+{
+  code *pcVar1;
+  undefined8 uVar2;
+  undefined8 ****ppppuVar3;
+  char cVar4;
+  Platform *pPVar5;
+  longlong *plVar6;
+  undefined8 *puVar7;
+  undefined8 *****pppppuVar8;
+  longlong lVar9;
+  char cStackX_1c;
+  undefined1 auStackY_e8 [32];
+  undefined8 ****local_b8;
+  char **local_b0;
+  char *local_a8;
+  undefined8 local_a0;
+  undefined8 ****local_98;
+  char **local_90;
+  undefined8 ****local_88 [2];
+  undefined8 local_78;
+  ulonglong local_70;
+  char *local_68 [2];
+  undefined4 local_58;
+  ulonglong local_48;
+  
+  local_48 = DAT_18007a2c0 ^ (ulonglong)auStackY_e8;
+  FUN_180035b40(0,param_2,param_3,param_4);
+  pPVar5 = ultralight::Platform::instance();
+  (**(code **)(*(longlong *)pPVar5 + 8))(pPVar5,param_2);
+  pPVar5 = ultralight::Platform::instance();
+  (**(code **)(*(longlong *)pPVar5 + 0x38))(pPVar5,param_1 + 0x20);
+  pPVar5 = ultralight::Platform::instance();
+  (**(code **)(*(longlong *)pPVar5 + 0x48))(pPVar5,param_1 + 0x38);
+  pPVar5 = ultralight::Platform::instance();
+  (**(code **)(*(longlong *)pPVar5 + 0x58))(pPVar5,param_1 + 0x90);
+  pPVar5 = ultralight::Platform::instance();
+  lVar9 = param_1 + 8;
+  if (param_1 == 0) {
+    lVar9 = 0;
+  }
+  (**(code **)(*(longlong *)pPVar5 + 0x68))(pPVar5,lVar9);
+  pPVar5 = ultralight::Platform::instance();
+  lVar9 = param_1 + 0x10;
+  if (param_1 == 0) {
+    lVar9 = 0;
+  }
+  (**(code **)(*(longlong *)pPVar5 + 0x18))(pPVar5,lVar9);
+  plVar6 = (longlong *)FUN_180032c40();
+  pcVar1 = *(code **)(*plVar6 + 0x10);
+  local_b8 = (undefined8 ****)0x0;
+  local_b0 = local_68;
+  local_a8 = "Constructing renderer";
+  local_a0 = 0x15;
+  FUN_180057f40(local_88,(longlong *)&local_a8,(ulonglong *)&local_b8);
+  local_98 = local_88;
+  if (0xf < local_70) {
+    local_98 = local_88[0];
+  }
+  local_90 = (char **)local_78;
+  (*pcVar1)(plVar6,1);
+  if (0xf < local_70) {
+    pppppuVar8 = (undefined8 *****)local_88[0];
+    if ((0xfff < local_70 + 1) &&
+       (pppppuVar8 = (undefined8 *****)local_88[0][-1],
+       0x1f < (ulonglong)((longlong)local_88[0] + (-8 - (longlong)pppppuVar8)))) {
+                    /* WARNING: Subroutine does not return */
+      _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+    }
+    free(pppppuVar8);
+  }
+  puVar7 = (undefined8 *)ultralight::Renderer::Create();
+  uVar2 = *puVar7;
+  *puVar7 = 0;
+  plVar6 = *(longlong **)(param_1 + 0xf0);
+  *(undefined8 *)(param_1 + 0xf0) = uVar2;
+  if (plVar6 != (longlong *)0x0) {
+    (**(code **)(*plVar6 + 8))();
+  }
+  ppppuVar3 = local_b8;
+  local_b8 = (undefined8 ****)0x0;
+  if (ppppuVar3 != (undefined8 ****)0x0) {
+    (*(code *)(*ppppuVar3)[1])();
+  }
+  plVar6 = (longlong *)FUN_180032c40();
+  pcVar1 = *(code **)(*plVar6 + 0x10);
+  local_98 = (undefined8 ****)0x0;
+  local_90 = local_68;
+  local_a8 = "Restored signal handlers";
+  local_a0 = 0x18;
+  FUN_180057f40(local_88,(longlong *)&local_a8,(ulonglong *)&local_98);
+  local_b8 = local_88;
+  if (0xf < local_70) {
+    local_b8 = local_88[0];
+  }
+  local_b0 = (char **)local_78;
+  (*pcVar1)(plVar6,1);
+  if (0xf < local_70) {
+    pppppuVar8 = (undefined8 *****)local_88[0];
+    if ((0xfff < local_70 + 1) &&
+       (pppppuVar8 = (undefined8 *****)local_88[0][-1],
+       0x1f < (ulonglong)((longlong)local_88[0] + (-8 - (longlong)pppppuVar8)))) {
+                    /* WARNING: Subroutine does not return */
+      _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+    }
+    free(pppppuVar8);
+  }
+  cStackX_1c = (char)(param_3 >> 0x20);
+  if (cStackX_1c != '\0') {
+    cVar4 = (**(code **)(**(longlong **)(param_1 + 0xf0) + 0x68))
+                      (*(longlong **)(param_1 + 0xf0),"localhost",param_3 & 0xffff);
+    local_58 = (int)param_3;
+    if (cVar4 == '\0') {
+      plVar6 = (longlong *)FUN_180032c40();
+      pcVar1 = *(code **)(*plVar6 + 0x18);
+      local_68[0] = "localhost";
+      local_98 = (undefined8 ****)0x2c;
+      local_90 = local_68;
+      local_a8 = "Failed to start remote inspector [{}:{}]";
+      local_a0 = 0x28;
+      FUN_180057f40(local_88,(longlong *)&local_a8,(ulonglong *)&local_98);
+      local_b8 = local_88;
+      if (0xf < local_70) {
+        local_b8 = local_88[0];
+      }
+      local_b0 = (char **)local_78;
+      (*pcVar1)(plVar6,3);
+      if (local_70 < 0x10) goto LAB_18003b459;
+      pppppuVar8 = (undefined8 *****)local_88[0];
+      if ((0xfff < local_70 + 1) &&
+         (pppppuVar8 = (undefined8 *****)local_88[0][-1],
+         0x1f < (ulonglong)((longlong)local_88[0] + (-8 - (longlong)local_88[0][-1])))) {
+                    /* WARNING: Subroutine does not return */
+        _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+      }
+    }
+    else {
+      plVar6 = (longlong *)FUN_180032c40();
+      pcVar1 = *(code **)(*plVar6 + 0x10);
+      local_68[0] = "localhost";
+      local_98 = (undefined8 ****)0x2c;
+      local_90 = local_68;
+      local_a8 = "Started remote inspector (inspector://{}:{})";
+      local_a0 = 0x2c;
+      FUN_180057f40(local_88,(longlong *)&local_a8,(ulonglong *)&local_98);
+      local_b8 = local_88;
+      if (0xf < local_70) {
+        local_b8 = local_88[0];
+      }
+      local_b0 = (char **)local_78;
+      (*pcVar1)(plVar6,1);
+      if (local_70 < 0x10) goto LAB_18003b459;
+      pppppuVar8 = (undefined8 *****)local_88[0];
+      if ((0xfff < local_70 + 1) &&
+         (pppppuVar8 = (undefined8 *****)local_88[0][-1],
+         0x1f < (ulonglong)((longlong)local_88[0] + (-8 - (longlong)pppppuVar8)))) {
+                    /* WARNING: Subroutine does not return */
+        _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+      }
+    }
+    free(pppppuVar8);
+  }
+LAB_18003b459:
+  LOCK();
+  *(undefined1 *)(param_1 + 0x18) = 1;
+  UNLOCK();
+  return;
+}
+

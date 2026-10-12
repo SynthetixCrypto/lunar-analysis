@@ -1,0 +1,77 @@
+Evidence: ev_6d13508dafaed3f329a749d98825ee104f3b3170933744b3d1cbca23be80f177
+Address: 0x1800532c0
+
+void FUN_1800532c0(longlong param_1)
+
+{
+  void *_Memory;
+  Platform *pPVar1;
+  String *pSVar2;
+  DOMWrapperWorld *pDVar3;
+  MainThreadSharedTimer *this;
+  undefined8 *puVar4;
+  undefined1 auStack_e8 [32];
+  JSLockHolder local_c8 [8];
+  String local_c0 [16];
+  String local_b0 [16];
+  undefined8 local_a0;
+  undefined8 uStack_98;
+  String local_90 [16];
+  undefined8 local_80;
+  undefined8 uStack_78;
+  undefined8 local_70;
+  undefined8 uStack_68;
+  undefined8 local_60;
+  undefined8 uStack_58;
+  undefined8 local_50;
+  undefined5 uStack_48;
+  undefined3 uStack_43;
+  undefined5 uStack_40;
+  ulonglong local_38;
+  
+  local_38 = DAT_180090a40 ^ (ulonglong)auStack_e8;
+  pPVar1 = ultralight::Platform::instance();
+  pSVar2 = (String *)(**(code **)(*(longlong *)pPVar1 + 0x10))(pPVar1);
+  ultralight::String::String(local_c0,pSVar2);
+  ultralight::String::String(local_b0,pSVar2 + 0x10);
+  local_a0 = *(undefined8 *)(pSVar2 + 0x20);
+  uStack_98 = *(undefined8 *)(pSVar2 + 0x28);
+  ultralight::String::String(local_90,pSVar2 + 0x30);
+  local_80 = *(undefined8 *)(pSVar2 + 0x40);
+  uStack_78 = *(undefined8 *)(pSVar2 + 0x48);
+  local_70 = *(undefined8 *)(pSVar2 + 0x50);
+  uStack_68 = *(undefined8 *)(pSVar2 + 0x58);
+  local_60 = *(undefined8 *)(pSVar2 + 0x60);
+  uStack_58 = *(undefined8 *)(pSVar2 + 0x68);
+  local_50 = *(undefined8 *)(pSVar2 + 0x70);
+  uStack_48 = (undefined5)*(undefined8 *)(pSVar2 + 0x78);
+  uStack_43 = (undefined3)*(undefined8 *)(pSVar2 + 0x7d);
+  uStack_40 = (undefined5)((ulonglong)*(undefined8 *)(pSVar2 + 0x7d) >> 0x18);
+  pDVar3 = WebCore::mainThreadNormalWorld();
+  JSC::JSLockHolder::JSLockHolder(local_c8,*(VM **)(pDVar3 + 8));
+  this = WebCore::MainThreadSharedTimer::singleton();
+  WebCore::MainThreadSharedTimer::update(this);
+  WTF::RunLoop::current();
+  WTF::RunLoop::cycle(0);
+  puVar4 = *(undefined8 **)(param_1 + 0x38);
+  if (puVar4 != *(undefined8 **)(param_1 + 0x40)) {
+    do {
+      _Memory = (void *)*puVar4;
+      if (_Memory != (void *)0x0) {
+        FUN_180061e90((longlong)_Memory);
+                    /* WARNING: Subroutine does not return */
+        free(_Memory);
+      }
+      puVar4 = puVar4 + 1;
+    } while (puVar4 != *(undefined8 **)(param_1 + 0x40));
+    *(undefined8 *)(param_1 + 0x40) = *(undefined8 *)(param_1 + 0x38);
+  }
+  FUN_180053430(param_1);
+  JSC::JSLockHolder::~JSLockHolder(local_c8);
+  ultralight::String::~String(local_90);
+  ultralight::String::~String(local_b0);
+  ultralight::String::~String(local_c0);
+  FUN_180062cc0(local_38 ^ (ulonglong)auStack_e8);
+  return;
+}
+

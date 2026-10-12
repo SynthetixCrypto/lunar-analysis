@@ -1,0 +1,20 @@
+Evidence: ev_a16d2c0813afd3d3557d0f657124b8495589962095b5feb6d47e26c6bb99dc36
+Address: 0x180036320
+
+void FUN_180036320(void)
+
+{
+  longlong lVar1;
+  int *piVar2;
+  undefined *puVar3;
+  int *piVar4;
+  
+  lVar1 = *(longlong *)((longlong)ThreadLocalStoragePointer + (ulonglong)_tls_index * 8);
+  piVar2 = *(int **)(lVar1 + 0x18);
+  for (piVar4 = *(int **)(lVar1 + 0x10); piVar4 != piVar2; piVar4 = piVar4 + 1) {
+    puVar3 = FUN_180035aa0(*piVar4);
+    FUN_180035ec0((longlong)puVar3);
+  }
+  return;
+}
+

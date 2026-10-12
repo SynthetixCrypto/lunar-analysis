@@ -1,0 +1,96 @@
+Evidence: ev_798af3247c946abfdd929f6bf4b1682520f4a77b6611d4653667427bff28d3a1
+Address: 0x180037950
+
+undefined8 * FUN_180037950(undefined8 *param_1,undefined8 *param_2,longlong param_3,double *param_4)
+
+{
+  longlong *plVar1;
+  int *piVar2;
+  int iVar3;
+  undefined8 *puVar4;
+  longlong lVar5;
+  undefined8 *puVar6;
+  longlong *plVar7;
+  double *pdVar8;
+  
+  puVar6 = (undefined8 *)*param_2;
+  pdVar8 = param_4;
+  if (puVar6 == (undefined8 *)0x0) {
+    puVar6 = (undefined8 *)FUN_180058b24(0x18);
+    if (puVar6 == (undefined8 *)0x0) {
+      puVar6 = (undefined8 *)0x0;
+    }
+    else {
+      *puVar6 = 0;
+      puVar6[1] = 0;
+      *(undefined4 *)(puVar6 + 1) = 1;
+      *(undefined4 *)((longlong)puVar6 + 0xc) = 1;
+      *puVar6 = std::_Ref_count_obj2<webosr::handler::Logger>::vftable;
+      puVar6[2] = webosr::handler::Logger::vftable;
+    }
+    DAT_180084438 = puVar6 + 2;
+    plVar7 = DAT_180084440;
+    DAT_180084440 = puVar6;
+  }
+  else {
+    puVar4 = (undefined8 *)param_2[1];
+    *param_2 = 0;
+    param_2[1] = 0;
+    plVar7 = DAT_180084440;
+    DAT_180084438 = puVar6;
+    DAT_180084440 = puVar4;
+  }
+  if (plVar7 != (longlong *)0x0) {
+    LOCK();
+    plVar1 = plVar7 + 1;
+    lVar5 = *plVar1;
+    *(int *)plVar1 = (int)*plVar1 + -1;
+    UNLOCK();
+    if ((int)lVar5 == 1) {
+      (**(code **)*plVar7)(plVar7);
+      LOCK();
+      piVar2 = (int *)((longlong)plVar7 + 0xc);
+      iVar3 = *piVar2;
+      *piVar2 = *piVar2 + -1;
+      UNLOCK();
+      if (iVar3 == 1) {
+        (**(code **)(*plVar7 + 8))(plVar7);
+      }
+    }
+  }
+  puVar6 = (undefined8 *)FUN_180058b24(0x170);
+  if (puVar6 == (undefined8 *)0x0) {
+    puVar6 = (undefined8 *)0x0;
+  }
+  else {
+    *puVar6 = 0;
+    puVar6[1] = 0;
+    *(undefined4 *)(puVar6 + 1) = 1;
+    *(undefined4 *)((longlong)puVar6 + 0xc) = 1;
+    *puVar6 = std::_Ref_count_obj2<webosr::ul::EngineImpl>::vftable;
+    FUN_180038ac0(puVar6 + 2,param_3,param_4,(undefined1 *)pdVar8);
+  }
+  *param_1 = puVar6 + 2;
+  param_1[1] = puVar6;
+  plVar7 = (longlong *)param_2[1];
+  if (plVar7 != (longlong *)0x0) {
+    LOCK();
+    plVar1 = plVar7 + 1;
+    lVar5 = *plVar1;
+    *(int *)plVar1 = (int)*plVar1 + -1;
+    UNLOCK();
+    if ((int)lVar5 == 1) {
+      (**(code **)*plVar7)(plVar7);
+      LOCK();
+      piVar2 = (int *)((longlong)plVar7 + 0xc);
+      iVar3 = *piVar2;
+      *piVar2 = *piVar2 + -1;
+      UNLOCK();
+      if (iVar3 == 1) {
+        (**(code **)(*plVar7 + 8))(plVar7);
+      }
+    }
+  }
+  return param_1;
+}
+

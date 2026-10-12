@@ -1,0 +1,27 @@
+Evidence: ev_1706f4f60f666d115a31146f5bc38ef1e845a390019154b3e7e674dcf78e7fd9
+Address: 0x180050190
+
+/* public: static class ultralight::RefPtr<class ultralight::Renderer> __cdecl
+   ultralight::Renderer::Create(void) */
+
+void __cdecl ultralight::Renderer::Create(void)
+
+{
+  bool bVar1;
+  undefined8 *puVar2;
+  undefined8 *in_RCX;
+  
+                    /* 0x50190  238
+                       ?Create@Renderer@ultralight@@SA?AV?$RefPtr@VRenderer@ultralight@@@2@XZ */
+  bVar1 = ultralight::VerifyLicense();
+  if (bVar1) {
+    puVar2 = WTF::fastMalloc(0x58);
+    FUN_180051020(puVar2);
+  }
+  else {
+    puVar2 = (undefined8 *)0x0;
+  }
+  *in_RCX = puVar2;
+  return;
+}
+

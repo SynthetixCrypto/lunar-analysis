@@ -1,0 +1,46 @@
+Evidence: ev_80b1fc0b9208dde6f0175469c86a6a162ae454289394f2802486f3d18e6fb37f
+Address: 0x18004b550
+
+void FUN_18004b550(longlong *param_1,int param_2,int param_3)
+
+{
+  int iVar1;
+  int *piVar2;
+  uint uVar3;
+  int iVar4;
+  uint uVar5;
+  
+  if ((*(int *)((longlong)param_1 + 0x24) != param_2) || ((int)param_1[5] != param_3)) {
+    piVar2 = (int *)param_1[7];
+    uVar5 = param_2 * 4;
+    if (piVar2 != (int *)0x0) {
+      iVar1 = *(int *)((longlong)param_1 + 0x2c);
+      *piVar2 = param_2;
+      iVar4 = (int)uVar5 % iVar1;
+      piVar2[1] = param_3;
+      uVar3 = uVar5;
+      if (iVar4 != 0) {
+        uVar3 = (uVar5 - iVar4) + iVar1;
+      }
+      *(longlong *)(piVar2 + 2) = (longlong)(int)uVar3;
+      FUN_18004c1c0((longlong *)(piVar2 + 4),(longlong)param_3 * (longlong)(int)uVar3);
+    }
+    *(int *)((longlong)param_1 + 0x24) = param_2;
+    *(int *)(param_1 + 5) = param_3;
+    uVar3 = uVar5 & 0x8000000f;
+    if ((int)uVar3 < 0) {
+      uVar3 = (uVar3 - 1 | 0xfffffff0) + 1;
+    }
+    if (uVar3 != 0) {
+      uVar5 = (uVar5 - uVar3) + 0x10;
+    }
+    param_1[6] = (longlong)(int)uVar5;
+    param_1[0xd] = 0;
+    param_1[0xe] = 0;
+    param_1[0xb] = 0;
+    param_1[0xc] = 0;
+    (**(code **)(*param_1 + 0x50))(param_1);
+  }
+  return;
+}
+

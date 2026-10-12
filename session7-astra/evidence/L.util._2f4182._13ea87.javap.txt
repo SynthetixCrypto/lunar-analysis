@@ -1,0 +1,46 @@
+public class com.moonsworth.lunar.client.util.HHOCCCCIIIORCHRIHIRCHIRICCHIRC.ORCOOOCHIICOIICCROCRCOOROORIHR {
+  private static java.nio.ByteBuffer IIIROCOHOICRHHRCIRCORRORIRIOIC;
+    descriptor: Ljava/nio/ByteBuffer;
+
+  public com.moonsworth.lunar.client.util.HHOCCCCIIIORCHRIHIRCHIRICCHIRC.ORCOOOCHIICOIICCROCRCOOROORIHR();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static java.nio.ByteBuffer OOOHORCRCHHOCHCRCIIRRROOHCRCRH(int);
+    descriptor: (I)Ljava/nio/ByteBuffer;
+    Code:
+       0: getstatic     #5                  // Field IIIROCOHOICRHHRCIRCORRORIRIOIC:Ljava/nio/ByteBuffer;
+       3: astore_1
+       4: aload_1
+       5: ifnull        16
+       8: aload_1
+       9: invokevirtual #7                  // Method java/nio/ByteBuffer.capacity:()I
+      12: iload_0
+      13: if_icmpge     25
+      16: iload_0
+      17: invokestatic  #10                 // Method org/lwjgl/BufferUtils.createByteBuffer:(I)Ljava/nio/ByteBuffer;
+      20: dup
+      21: astore_1
+      22: putstatic     #5                  // Field IIIROCOHOICRHHRCIRCORRORIRIOIC:Ljava/nio/ByteBuffer;
+      25: aload_1
+      26: iconst_0
+      27: invokevirtual #9                  // Method java/nio/ByteBuffer.position:(I)Ljava/nio/ByteBuffer;
+      30: pop
+      31: aload_1
+      32: aload_1
+      33: invokevirtual #7                  // Method java/nio/ByteBuffer.capacity:()I
+      36: invokevirtual #8                  // Method java/nio/ByteBuffer.limit:(I)Ljava/nio/ByteBuffer;
+      39: pop
+      40: aload_1
+      41: areturn
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: aconst_null
+       1: putstatic     #5                  // Field IIIROCOHOICRHHRCIRCORRORIRIOIC:Ljava/nio/ByteBuffer;
+       4: return
+}

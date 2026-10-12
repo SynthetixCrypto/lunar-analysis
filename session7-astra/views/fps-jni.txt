@@ -1,0 +1,17 @@
+Evidence: ev_d62200e72967eef82706c92c2474ec5adab23904a9d790882a0da6805d774802
+Address: 0x18001c3d0
+
+void Java_com_moonsworth_webosr_wrappers_WebEngine_setFPS
+               (longlong *param_1,undefined8 param_2,undefined4 param_3)
+
+{
+  longlong lVar1;
+  
+                    /* 0x1c3d0  45  Java_com_moonsworth_webosr_wrappers_WebEngine_setFPS */
+  lVar1 = FUN_1800199c0(param_1,param_2);
+                    /* WARNING: Could not recover jumptable at 0x00018001c3ef. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (**(code **)(**(longlong **)(lVar1 + 0xe8) + 0x38))(*(longlong **)(lVar1 + 0xe8),param_3);
+  return;
+}
+

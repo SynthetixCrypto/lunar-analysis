@@ -1,0 +1,59 @@
+Evidence: ev_091e7767710958c23bce3e977b5ee5ffb26f2c25a0c682ef37f8836dbcd07b67
+Address: 0x18002d050
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+longlong * FUN_18002d050(longlong *param_1)
+
+{
+  longlong lVar1;
+  undefined8 *puVar2;
+  longlong *plVar3;
+  char *pcVar4;
+  void *_Memory;
+  undefined1 auStackY_158 [32];
+  undefined8 local_128 [3];
+  void *local_110 [3];
+  ulonglong local_f8;
+  undefined8 local_f0 [4];
+  undefined8 local_d0 [4];
+  undefined8 local_b0 [4];
+  longlong local_90 [4];
+  undefined8 local_70 [4];
+  longlong local_50 [4];
+  longlong local_30 [4];
+  ulonglong local_10;
+  
+  local_10 = DAT_18007a2c0 ^ (ulonglong)auStackY_158;
+  FUN_18002bea0((longlong *)local_110);
+  lVar1 = FUN_180001e60();
+  puVar2 = FUN_180001f60(lVar1);
+  plVar3 = (longlong *)FUN_1800021d0((longlong)puVar2);
+  lVar1 = FUN_18000ee00();
+  lVar1 = (**(code **)(*plVar3 + 0x108))(plVar3,lVar1);
+  *param_1 = lVar1;
+  if (lVar1 == 0) {
+    puVar2 = FUN_18000d7f0(local_f0,PTR_s_com_moonsworth_webosr_TextureHan_18007a078);
+    pcVar4 = (char *)FUN_18000d7f0(local_d0,"uploadTexture");
+    plVar3 = FUN_180002910(local_b0,"failed to get method: ",pcVar4);
+    plVar3 = FUN_180002890(local_90,plVar3," in class: ");
+    plVar3 = FUN_1800027f0(local_70,plVar3,puVar2);
+    plVar3 = FUN_180002890(local_50,plVar3," with: ");
+    plVar3 = FUN_180002820(local_30,plVar3,local_110);
+    FUN_18000df00(local_128,plVar3);
+                    /* WARNING: Subroutine does not return */
+    _CxxThrowException(local_128,(ThrowInfo *)&DAT_180075238);
+  }
+  if (0xf < local_f8) {
+    _Memory = local_110[0];
+    if ((0xfff < local_f8 + 1) &&
+       (_Memory = *(void **)((longlong)local_110[0] + -8),
+       0x1f < (ulonglong)((longlong)local_110[0] + (-8 - (longlong)_Memory)))) {
+                    /* WARNING: Subroutine does not return */
+      _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+    }
+    free(_Memory);
+  }
+  return param_1;
+}
+

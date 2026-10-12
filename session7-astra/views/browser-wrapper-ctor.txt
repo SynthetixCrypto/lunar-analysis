@@ -1,0 +1,141 @@
+Evidence: ev_74250d3d96e1cd99be1aff3d33f31b35a791336bf6ff965421f37fe3041e024f
+Address: 0x18001ddc0
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+longlong * FUN_18001ddc0(longlong *param_1,longlong *param_2,undefined8 param_3,undefined8 param_4)
+
+{
+  longlong *plVar1;
+  int *piVar2;
+  int iVar3;
+  longlong lVar4;
+  undefined8 *puVar5;
+  longlong *plVar6;
+  undefined8 uVar7;
+  code *pcVar8;
+  longlong **pplVar9;
+  undefined1 auStack_1f8 [32];
+  undefined4 local_1d8;
+  longlong *local_1d0;
+  longlong *local_1c8;
+  undefined8 local_1c0 [9];
+  undefined8 local_178 [9];
+  longlong *local_130;
+  longlong local_128 [7];
+  longlong *local_f0;
+  longlong *local_e8;
+  longlong local_d8 [7];
+  longlong *local_a0;
+  longlong *local_98;
+  longlong local_88 [7];
+  longlong *local_50;
+  longlong *local_48;
+  ulonglong local_38;
+  
+  local_38 = DAT_18007a2c0 ^ (ulonglong)auStack_1f8;
+  local_1d8 = 0;
+  local_1d0 = param_1;
+  local_1c8 = param_2;
+  local_130 = param_1;
+  FUN_18001c570(param_1);
+  FUN_18001cfd0(param_1 + 2);
+  FUN_18001ce40(param_1 + 3);
+  param_1[4] = 0;
+  param_1[5] = 0;
+  param_1[4] = *param_2;
+  param_1[5] = param_2[1];
+  *param_2 = 0;
+  param_2[1] = 0;
+  FUN_18001d510(param_1 + 6);
+  FUN_18002dad0(param_1[4],param_1);
+  lVar4 = FUN_180001e60();
+  puVar5 = FUN_180001f60(lVar4);
+  plVar6 = (longlong *)FUN_1800021d0((longlong)puVar5);
+  lVar4 = FUN_180019470();
+  pcVar8 = *(code **)(*plVar6 + 0xd8);
+  uVar7 = (*pcVar8)(plVar6,lVar4);
+  plVar6 = FUN_180002520(local_178,uVar7,pcVar8,param_4);
+  plVar6 = FUN_180017f50(local_88,plVar6,'\0');
+  if (plVar6[8] == 0) {
+    FUN_18001d510(local_d8);
+  }
+  else {
+    plVar6 = FUN_1800022a0(local_1c0,plVar6[8]);
+    FUN_180017f50(local_d8,plVar6,'\0');
+  }
+  local_1d8 = 3;
+  if (local_48 != (longlong *)0x0) {
+    local_130 = local_48;
+    if (local_50 == (longlong *)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    (**(code **)(*local_50 + 0x10))(local_50,&local_130);
+  }
+  if (local_50 != (longlong *)0x0) {
+    (**(code **)(*local_50 + 0x20))(local_50,local_50 != local_88);
+    local_50 = (longlong *)0x0;
+  }
+  if (local_98 == (longlong *)0x0) {
+    FUN_18001d510(local_128);
+  }
+  else {
+    plVar6 = FUN_1800022a0(local_1c0,local_98);
+    FUN_180017f50(local_128,plVar6,'\0');
+  }
+  local_1d8 = 7;
+  FUN_180002640(param_1 + 6,local_128);
+  if (local_e8 != (longlong *)0x0) {
+    local_130 = local_e8;
+    if (local_f0 == (longlong *)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    (**(code **)(*local_f0 + 0x10))(local_f0,&local_130);
+  }
+  if (local_f0 != (longlong *)0x0) {
+    (**(code **)(*local_f0 + 0x20))(local_f0,local_f0 != local_128);
+    local_f0 = (longlong *)0x0;
+  }
+  if (local_98 != (longlong *)0x0) {
+    local_130 = local_98;
+    if (local_a0 == (longlong *)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    (**(code **)(*local_a0 + 0x10))(local_a0,&local_130);
+  }
+  if (local_a0 != (longlong *)0x0) {
+    (**(code **)(*local_a0 + 0x20))(local_a0,local_a0 != local_d8);
+  }
+  local_130 = param_1;
+  lVar4 = FUN_180001e60();
+  puVar5 = FUN_180001f60(lVar4);
+  plVar6 = (longlong *)FUN_1800021d0((longlong)puVar5);
+  pplVar9 = &local_130;
+  lVar4 = param_1[2];
+  (**(code **)(*plVar6 + 0x1f8))(plVar6,param_1[0xe]);
+  FUN_1800020e0(plVar6,"invoke",lVar4,pplVar9);
+  plVar6 = (longlong *)param_2[1];
+  if (plVar6 != (longlong *)0x0) {
+    LOCK();
+    plVar1 = plVar6 + 1;
+    lVar4 = *plVar1;
+    *(int *)plVar1 = (int)*plVar1 + -1;
+    UNLOCK();
+    if ((int)lVar4 == 1) {
+      (**(code **)*plVar6)(plVar6);
+      LOCK();
+      piVar2 = (int *)((longlong)plVar6 + 0xc);
+      iVar3 = *piVar2;
+      *piVar2 = *piVar2 + -1;
+      UNLOCK();
+      if (iVar3 == 1) {
+        (**(code **)(*plVar6 + 8))(plVar6);
+      }
+    }
+  }
+  return param_1;
+}
+

@@ -1,0 +1,97 @@
+Evidence: ev_ee6eef617010f429934f1e5a655827a523a578df29338b83d76ac4a1177c9bc9
+Address: 0x1800396e0
+
+void FUN_1800396e0(undefined8 *param_1)
+
+{
+  longlong *plVar1;
+  int *piVar2;
+  int iVar3;
+  longlong *plVar4;
+  longlong lVar5;
+  char local_res8 [8];
+  undefined **local_58;
+  undefined8 *local_50;
+  char *local_48;
+  undefined ***local_20;
+  
+  *param_1 = webosr::ul::EngineImpl::vftable;
+  param_1[1] = webosr::ul::EngineImpl::vftable;
+  param_1[2] = webosr::ul::EngineImpl::vftable;
+  local_res8[0] = '\0';
+  local_58 = std::
+             _Func_impl_no_alloc<`public:_virtual___cdecl_webosr::ul::EngineImpl::~EngineImpl(void)___ptr64'::`2'::<lambda_1>,void>
+             ::vftable;
+  local_48 = local_res8;
+  local_20 = &local_58;
+  local_50 = param_1;
+  FUN_180036380(0,(longlong *)&local_58);
+  while (local_res8[0] == '\0') {
+    FUN_180036320();
+    _Thrd_yield();
+  }
+  if (*(int *)(param_1 + 0x26) != 0) {
+    FUN_18003aec0(param_1 + 0x25);
+  }
+  plVar4 = (longlong *)param_1[0x2a];
+  if (plVar4 != (longlong *)0x0) {
+    LOCK();
+    plVar1 = plVar4 + 1;
+    lVar5 = *plVar1;
+    *(int *)plVar1 = (int)*plVar1 + -1;
+    UNLOCK();
+    if ((int)lVar5 == 1) {
+      (**(code **)*plVar4)(plVar4);
+      LOCK();
+      piVar2 = (int *)((longlong)plVar4 + 0xc);
+      iVar3 = *piVar2;
+      *piVar2 = *piVar2 + -1;
+      UNLOCK();
+      if (iVar3 == 1) {
+        (**(code **)(*plVar4 + 8))(plVar4);
+      }
+    }
+  }
+  plVar4 = (longlong *)param_1[0x28];
+  if (plVar4 != (longlong *)0x0) {
+    LOCK();
+    plVar1 = plVar4 + 1;
+    lVar5 = *plVar1;
+    *(int *)plVar1 = (int)*plVar1 + -1;
+    UNLOCK();
+    if ((int)lVar5 == 1) {
+      (**(code **)*plVar4)(plVar4);
+      LOCK();
+      piVar2 = (int *)((longlong)plVar4 + 0xc);
+      iVar3 = *piVar2;
+      *piVar2 = *piVar2 + -1;
+      UNLOCK();
+      if (iVar3 == 1) {
+        (**(code **)(*plVar4 + 8))(plVar4);
+      }
+    }
+  }
+  if (*(int *)(param_1 + 0x26) == 0) {
+    FUN_1800395a0(param_1 + 0x22);
+    FUN_180039440(param_1 + 0x1f);
+    plVar4 = (longlong *)param_1[0x1e];
+    param_1[0x1e] = 0;
+    if (plVar4 != (longlong *)0x0) {
+      (**(code **)(*plVar4 + 8))();
+    }
+    FUN_18000ea50(param_1 + 0x15);
+    FUN_180039680((Clipboard *)(param_1 + 0x12));
+    FUN_1800398b0((FileSystem *)(param_1 + 7));
+    FUN_180038170(param_1 + 5,param_1 + 5,*(longlong **)(param_1[5] + 8));
+    free((void *)param_1[5]);
+    ultralight::FontLoader::~FontLoader((FontLoader *)(param_1 + 4));
+    ultralight::Logger::~Logger((Logger *)(param_1 + 2));
+                    /* WARNING: Could not recover jumptable at 0x0001800398a1. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    ultralight::SurfaceFactory::~SurfaceFactory((SurfaceFactory *)(param_1 + 1));
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  terminate();
+}
+

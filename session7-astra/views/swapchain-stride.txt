@@ -1,0 +1,19 @@
+Evidence: ev_258551f2e8b8129fda83e836f5a518c9a457f4c057c64ebd9667819829901bb2
+Address: 0x18004c310
+
+int FUN_18004c310(longlong param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(param_1 + 0x24) * 4;
+  iVar2 = iVar3 % *(int *)(param_1 + 0x2c);
+  iVar1 = (iVar3 - iVar2) + *(int *)(param_1 + 0x2c);
+  if (iVar2 == 0) {
+    iVar1 = iVar3;
+  }
+  return iVar1;
+}
+

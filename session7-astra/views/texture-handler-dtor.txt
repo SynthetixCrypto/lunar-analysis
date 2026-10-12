@@ -1,0 +1,53 @@
+Evidence: ev_02515dd352bcdc0e8ff856b0a225706328cad7f437c51bca6e7d27e33b216d8b
+Address: 0x18002d470
+
+void * FUN_18002d470(void *param_1,ulonglong param_2)
+
+{
+  longlong *plVar1;
+  int *piVar2;
+  int iVar3;
+  longlong lVar4;
+  longlong *plVar5;
+  longlong local_res8;
+  
+  lVar4 = *(longlong *)((longlong)param_1 + 0x80);
+  if (lVar4 != 0) {
+    plVar5 = *(longlong **)((longlong)param_1 + 0x78);
+    local_res8 = lVar4;
+    if (plVar5 == (longlong *)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    (**(code **)(*plVar5 + 0x10))(plVar5,&local_res8);
+  }
+  plVar5 = *(longlong **)((longlong)param_1 + 0x78);
+  if (plVar5 != (longlong *)0x0) {
+    (**(code **)(*plVar5 + 0x20))(plVar5,plVar5 != (longlong *)((longlong)param_1 + 0x40));
+    *(undefined8 *)((longlong)param_1 + 0x78) = 0;
+  }
+  plVar5 = *(longlong **)((longlong)param_1 + 0x10);
+  if (plVar5 != (longlong *)0x0) {
+    LOCK();
+    plVar1 = plVar5 + 1;
+    lVar4 = *plVar1;
+    *(int *)plVar1 = (int)*plVar1 + -1;
+    UNLOCK();
+    if ((int)lVar4 == 1) {
+      (**(code **)*plVar5)(plVar5);
+      LOCK();
+      piVar2 = (int *)((longlong)plVar5 + 0xc);
+      iVar3 = *piVar2;
+      *piVar2 = *piVar2 + -1;
+      UNLOCK();
+      if (iVar3 == 1) {
+        (**(code **)(*plVar5 + 8))(plVar5);
+      }
+    }
+  }
+  if ((param_2 & 1) != 0) {
+    free(param_1);
+  }
+  return param_1;
+}
+

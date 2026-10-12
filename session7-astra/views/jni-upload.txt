@@ -1,0 +1,71 @@
+Evidence: ev_6f6f161ae96d92f5a9d8b9eb9dade54cddb8a59e1d48b43b9da244242fc199ff
+Address: 0x18002d910
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void FUN_18002d910(longlong param_1,uint param_2,undefined8 param_3,undefined4 param_4,uint param_5,
+                  uint param_6,uint param_7,uint param_8,uint param_9)
+
+{
+  longlong lVar1;
+  undefined8 *puVar2;
+  longlong *plVar3;
+  undefined8 uVar4;
+  longlong *plVar5;
+  undefined8 uVar6;
+  ulonglong *puVar7;
+  undefined1 auStack_f8 [32];
+  ulonglong local_d8;
+  ulonglong local_d0;
+  ulonglong local_c8;
+  ulonglong local_c0;
+  ulonglong local_b8;
+  ulonglong local_b0;
+  ulonglong local_a8;
+  ulonglong local_a0;
+  longlong local_98 [7];
+  longlong *local_60;
+  ulonglong local_58;
+  ulonglong local_48;
+  
+  local_48 = DAT_18007a2c0 ^ (ulonglong)auStack_f8;
+  lVar1 = FUN_180001e60();
+  puVar2 = FUN_180001f60(lVar1);
+  plVar3 = (longlong *)FUN_1800021d0((longlong)puVar2);
+  uVar4 = (**(code **)(*plVar3 + 0x728))(plVar3,param_3,param_4);
+  FUN_18002d210(local_98,uVar4);
+  local_d8 = (ulonglong)param_2;
+  local_d0 = local_d8;
+  local_c8 = local_58;
+  local_d8 = (ulonglong)param_5;
+  local_c0 = local_d8;
+  local_d8 = (ulonglong)param_6;
+  local_b8 = local_d8;
+  local_d8 = (ulonglong)param_7;
+  local_b0 = local_d8;
+  local_d8 = (ulonglong)param_8;
+  local_a8 = local_d8;
+  local_d8 = (ulonglong)param_9;
+  local_a0 = local_d8;
+  lVar1 = FUN_180001e60();
+  puVar2 = FUN_180001f60(lVar1);
+  plVar5 = (longlong *)FUN_1800021d0((longlong)puVar2);
+  puVar7 = &local_d0;
+  uVar6 = *(undefined8 *)(param_1 + 0x28);
+  (**(code **)(*plVar5 + 0x1f8))(plVar5,*(undefined8 *)(param_1 + 0x80));
+  FUN_1800020e0(plVar5,"invoke",uVar6,puVar7);
+  (**(code **)(*plVar3 + 0xb8))(plVar3,uVar4);
+  if (local_58 != 0) {
+    local_d8 = local_58;
+    if (local_60 == (longlong *)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    (**(code **)(*local_60 + 0x10))(local_60,&local_d8);
+  }
+  if (local_60 != (longlong *)0x0) {
+    (**(code **)(*local_60 + 0x20))(local_60,local_60 != local_98);
+  }
+  return;
+}
+

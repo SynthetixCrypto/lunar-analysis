@@ -1,0 +1,35 @@
+Evidence: ev_d09c55c10422aa429e29ff761a6a7e9b29d988fea912a255e64c45bc5e6d0031
+Address: 0x18004a530
+
+void FUN_18004a530(longlong param_1,void *param_2,ulonglong param_3)
+
+{
+  void *_Dst;
+  undefined **local_60;
+  longlong local_58;
+  void *local_50;
+  longlong local_48;
+  longlong local_40;
+  undefined ***local_28;
+  
+  if ((param_2 != (void *)0x0) && (param_3 != 0)) {
+    if (0x7fffffffffffffff < param_3) {
+                    /* WARNING: Subroutine does not return */
+      FUN_180035a80();
+    }
+    _Dst = (void *)FUN_1800013d0(param_3);
+    memset(_Dst,0,param_3);
+    memcpy(_Dst,param_2,param_3);
+    local_58 = param_1 + -0x98;
+    local_60 = std::
+               _Func_impl_no_alloc<`public:_virtual_void___cdecl_webosr::ul::gl::image::TextureSourceImpl::update(void_const*___ptr64,unsigned___int64)___ptr64'::`2'::<lambda_1>,void>
+               ::vftable;
+    local_28 = &local_60;
+    local_50 = _Dst;
+    local_48 = (longlong)_Dst + param_3;
+    local_40 = (longlong)_Dst + param_3;
+    FUN_180036380(0,(longlong *)&local_60);
+  }
+  return;
+}
+

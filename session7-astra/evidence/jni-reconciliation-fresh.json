@@ -1,0 +1,614 @@
+{
+  "java_count": 56,
+  "dll_count": 58,
+  "shared_count": 55,
+  "java_only": [
+    "Java_com_moonsworth_webosr_wrappers_Session_name"
+  ],
+  "dll_only": [
+    "Java_com_moonsworth_webosr_wrappers_Browser_swapBuffers",
+    "Java_com_moonsworth_webosr_wrappers_Session_getName",
+    "Java_com_moonsworth_webosr_wrappers_WebEngine_setTimers"
+  ],
+  "declarations": [
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "loadURL",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_loadURL"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "getURL",
+      "descriptor": "()Ljava/lang/String;",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_getURL"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "next",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_next"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "previous",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_previous"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "reload",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_reload"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "stopLoad",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_stopLoad"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "hasFocus",
+      "descriptor": "()Z",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_hasFocus"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "setFocus",
+      "descriptor": "(Z)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_setFocus"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "hasInputFocus",
+      "descriptor": "()Z",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_hasInputFocus"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "triggerResize",
+      "descriptor": "(II)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_triggerResize"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "triggerMouseEvent",
+      "descriptor": "(IIIII)V",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_triggerMouseEvent"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "triggerKeyEvent",
+      "descriptor": "(Ljava/lang/String;ILjava/lang/String;III)V",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_triggerKeyEvent"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "triggerScrollEvent",
+      "descriptor": "(IIIII)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_triggerScrollEvent"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "getTexture",
+      "descriptor": "()I",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_getTexture"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "setDeviceScaleFactor",
+      "descriptor": "(D)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_setDeviceScaleFactor"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "getWidth",
+      "descriptor": "()I",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_getWidth"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "getHeight",
+      "descriptor": "()I",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_getHeight"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "eval",
+      "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/NativeFuture;",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_eval"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "evalNoResult",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_evalNoResult"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "bindFunction",
+      "descriptor": "(Ljava/lang/String;Lcom/moonsworth/webosr/handler/FunctionJS;)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_bindFunction"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "unbindFunction",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_unbindFunction"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "createInspector",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_createInspector"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Browser",
+      "name": "destroy",
+      "descriptor": "()V",
+      "access": 260,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Browser_destroy"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/NativeFuture",
+      "name": "isUndefined",
+      "descriptor": "()Z",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_NativeFuture_isUndefined"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/NativeFuture",
+      "name": "isDone",
+      "descriptor": "()Z",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_NativeFuture_isDone"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/NativeFuture",
+      "name": "destroy",
+      "descriptor": "()V",
+      "access": 260,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_NativeFuture_destroy"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/NativeFuture",
+      "name": "get0",
+      "descriptor": "(J)Ljava/lang/String;",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_NativeFuture_get0"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/PlatformInterface",
+      "name": "setScrollCallback",
+      "descriptor": "(Ljava/util/function/BiConsumer;)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_setScrollCallback"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/PlatformInterface",
+      "name": "destroy",
+      "descriptor": "()V",
+      "access": 260,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_destroy"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/PlatformInterface",
+      "name": "setCursor0",
+      "descriptor": "(I)V",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_setCursor0"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/PromiseJS",
+      "name": "resolve0",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve0"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/PromiseJS",
+      "name": "resolve1",
+      "descriptor": "()V",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve1"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/PromiseJS",
+      "name": "reject0",
+      "descriptor": "(Ljava/lang/String;)V",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PromiseJS_reject0"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/PromiseJS",
+      "name": "reject1",
+      "descriptor": "()V",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_PromiseJS_reject1"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Session",
+      "name": "isPersistent",
+      "descriptor": "()Z",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Session_isPersistent"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Session",
+      "name": "name",
+      "descriptor": "()Ljava/lang/String;",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Session_name"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/Session",
+      "name": "destroy",
+      "descriptor": "()V",
+      "access": 260,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_Session_destroy"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/WebEngine",
+      "name": "createImageSourceTextured",
+      "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/image/TexturedImageSource;",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_createImageSourceTextured"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/WebEngine",
+      "name": "createSession",
+      "descriptor": "(Ljava/lang/String;Z)Lcom/moonsworth/webosr/wrappers/Session;",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_createSession"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/WebEngine",
+      "name": "createBrowser",
+      "descriptor": "(Lcom/moonsworth/webosr/config/BrowserConfig;)Lcom/moonsworth/webosr/wrappers/Browser;",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_createBrowser"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/WebEngine",
+      "name": "getPlatformInterface",
+      "descriptor": "()Lcom/moonsworth/webosr/wrappers/PlatformInterface;",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_getPlatformInterface"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/WebEngine",
+      "name": "setFPS",
+      "descriptor": "(I)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_setFPS"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/WebEngine",
+      "name": "destroy",
+      "descriptor": "()V",
+      "access": 260,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_destroy"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/WebEngine",
+      "name": "invokeIteration0",
+      "descriptor": "()V",
+      "access": 258,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebEngine_invokeIteration0"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/WebOSR",
+      "name": "createEngine",
+      "descriptor": "(Lcom/moonsworth/webosr/handler/Logger;Lcom/moonsworth/webosr/config/UltralightConfig;Lcom/moonsworth/webosr/config/ThreadConfig;)Lcom/moonsworth/webosr/wrappers/WebEngine;",
+      "access": 265,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_WebOSR_createEngine"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/ChildImageSource",
+      "name": "bind",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_bind"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/ChildImageSource",
+      "name": "unbind",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_unbind"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/ChildImageSource",
+      "name": "uv",
+      "descriptor": "(IIII)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_uv"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/ChildImageSource",
+      "name": "destroy",
+      "descriptor": "()V",
+      "access": 260,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_destroy"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/TexturedImageSource",
+      "name": "update",
+      "descriptor": "(Ljava/nio/ByteBuffer;)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_update"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/TexturedImageSource",
+      "name": "size",
+      "descriptor": "(II)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_size"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/TexturedImageSource",
+      "name": "makeChild",
+      "descriptor": "(Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/image/ChildImageSource;",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_makeChild"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/TexturedImageSource",
+      "name": "uv",
+      "descriptor": "(IIII)V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_uv"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/TexturedImageSource",
+      "name": "bind",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_bind"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/TexturedImageSource",
+      "name": "unbind",
+      "descriptor": "()V",
+      "access": 257,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_unbind"
+    },
+    {
+      "owner": "com/moonsworth/webosr/wrappers/image/TexturedImageSource",
+      "name": "destroy",
+      "descriptor": "()V",
+      "access": 260,
+      "native": true,
+      "symbol": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_destroy"
+    }
+  ],
+  "classes": [
+    {
+      "member": "com/moonsworth/webosr/BridgeValueCodec.class",
+      "sha256": "0a58eca762b08094abd13fbe2a505b9421303b75b03b30a8ee4c309865bf950f"
+    },
+    {
+      "member": "com/moonsworth/webosr/NativeHandle.class",
+      "sha256": "b302788654c36a679de2c16f7c470063c7526d755c612779fe5de20fd9a1c68d"
+    },
+    {
+      "member": "com/moonsworth/webosr/TextureHandler.class",
+      "sha256": "c25cf8d0928a912db673d8ec518e272f74378f9711b0bfae358b64b2497c0688"
+    },
+    {
+      "member": "com/moonsworth/webosr/config/BrowserConfig.class",
+      "sha256": "df7c1d8b78a40930bebf68262654b1752c13d5c8a7db3de2548e92d0f7d7c283"
+    },
+    {
+      "member": "com/moonsworth/webosr/config/EngineConfig.class",
+      "sha256": "1816097ceeca2bd410c5ba15b04aa08df79d23668b814251cb7506217048178a"
+    },
+    {
+      "member": "com/moonsworth/webosr/config/SystemConfig.class",
+      "sha256": "c651e4188df152c75d629e02719611fa75669c0b79afe758aaa42906b6b83cec"
+    },
+    {
+      "member": "com/moonsworth/webosr/config/ThreadConfig.class",
+      "sha256": "20b639ee342de8e59b6be1d1b4a321573af0e4d40e1a80c23ddbd40f0e2f4c87"
+    },
+    {
+      "member": "com/moonsworth/webosr/config/UltralightConfig$EffectQuality.class",
+      "sha256": "58fdc789b22f570aaf228de311c3ddd8f5c2462e9ebf666514c807825242fe9f"
+    },
+    {
+      "member": "com/moonsworth/webosr/config/UltralightConfig$FontHinting.class",
+      "sha256": "ba4cd63a5cd0a6efc4bee35a07e2b8eb543180fca8e1d360636ad99a2ec12b39"
+    },
+    {
+      "member": "com/moonsworth/webosr/config/UltralightConfig.class",
+      "sha256": "f9579863373ca4b85293731c6e40601d21f77369bc76bbffd6a808234771ffa8"
+    },
+    {
+      "member": "com/moonsworth/webosr/handler/Clipboard.class",
+      "sha256": "733a4674d31d62fad80e100859e0fbc10200670a8d82c9af9b12b51c4e19ff77"
+    },
+    {
+      "member": "com/moonsworth/webosr/handler/FileSystem$Payload.class",
+      "sha256": "aafad285e050677cd3a22ef27cf3184f877f78d8bc128cee6cb6f4a8d16aecd4"
+    },
+    {
+      "member": "com/moonsworth/webosr/handler/FileSystem.class",
+      "sha256": "660843825c71eff4db67868cd2d79b927f3cda7284f35a95e6492bc27ac6c212"
+    },
+    {
+      "member": "com/moonsworth/webosr/handler/FunctionJS.class",
+      "sha256": "f81305ea8f1b282be71e054b76b80f34908f5f7a4778ac05b65a518dfd847451"
+    },
+    {
+      "member": "com/moonsworth/webosr/handler/Logger$Level.class",
+      "sha256": "3c1e97787ec6b672231827875db465332043ee572c1d5b773822ffdc05ac8466"
+    },
+    {
+      "member": "com/moonsworth/webosr/handler/Logger.class",
+      "sha256": "43d2045f99bdbbac3cc1421c34464da93bedd752afa25d80c1d88218f1cc3a0f"
+    },
+    {
+      "member": "com/moonsworth/webosr/input/Keyboard$Action.class",
+      "sha256": "240ef87919636014b95b289f33e91c3362d2238d905d4bdc278aed1d40704ab8"
+    },
+    {
+      "member": "com/moonsworth/webosr/input/Keyboard.class",
+      "sha256": "67d45440ee0b609dd145ae39f05136f1fb067ee69aafe24db274bd1bf0949c82"
+    },
+    {
+      "member": "com/moonsworth/webosr/input/Modifiers.class",
+      "sha256": "22be24ce926ca034b78a4fbf7f0bf1b873d7613a2791188157bdaa900d0429d5"
+    },
+    {
+      "member": "com/moonsworth/webosr/input/Mouse$Action.class",
+      "sha256": "a22cf3dfcaee6dffb1d1aa43e118dc8b2a40159a0007e9469b5d336f932f54a7"
+    },
+    {
+      "member": "com/moonsworth/webosr/input/Mouse$Button.class",
+      "sha256": "dfec80809116546f7da4c8355a10ba7a21f4d6b1a16de026a84c23b9ccddde6c"
+    },
+    {
+      "member": "com/moonsworth/webosr/input/Mouse$Cursor.class",
+      "sha256": "7894a696af268ac73d1c0f7132415e3905e27bcd0b8afd432512edd04dea13ad"
+    },
+    {
+      "member": "com/moonsworth/webosr/input/Mouse.class",
+      "sha256": "364e719261c0a06348fad9813a84d08dedd2638d51885a7b4a627c4b5ad3ee15"
+    },
+    {
+      "member": "com/moonsworth/webosr/javascript/CallbackJS.class",
+      "sha256": "276b880c45bfc2fa8ae67db61375f1bc635c7c30b904058579d3b44cfa97dcbf"
+    },
+    {
+      "member": "com/moonsworth/webosr/javascript/FunctionBus$MethodInstancePair.class",
+      "sha256": "c472ba205b9f023ac760081ca95bc4203794946307e6f75e9de8bd15fe49cfa3"
+    },
+    {
+      "member": "com/moonsworth/webosr/javascript/FunctionBus.class",
+      "sha256": "96cc8b5ebd72e5eec1baeaa439e73ec275e233e192823a3fb978f6c86035d635"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/Browser$Listener.class",
+      "sha256": "4c3aac64d320cd8c83b16a477cb8f0ed38a773ac6bd7d1f753dd94302529d5b2"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/Browser.class",
+      "sha256": "4d5195f58c7854a0c11b927c9f3d12ca03fe9bf5fd409642a4432bdcbb30ca96"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/NativeFuture.class",
+      "sha256": "06875a921036527921b9ca7689928fd2879aca7f2159669d3c92c6f0effb1f6b"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/PlatformInterface.class",
+      "sha256": "0c5dca16703c735163bfe3a73ab2d7a3eaaf282b66efc1db14c68a79c4c15e35"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/PromiseJS.class",
+      "sha256": "3f10de139b3f31f3913d2b138c120ef2347f2d042a8e69dae82df098212566f2"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/Session.class",
+      "sha256": "538c6472f6f3682451c4c212156174e00fe1e40110571b0d93e78a8056922c96"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/WebEngine.class",
+      "sha256": "cec0f8b921b7be9239784407ecab65cbbb58b5735d325cb19056eed0fd76248c"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/WebOSR.class",
+      "sha256": "6dca81a08c151344b11899a5bb48aff6ec5e981acb7af599180230a14471d0d9"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/image/ChildImageSource.class",
+      "sha256": "1bf30285f0862aae9b51ca471421b46e0a279bb07cf96a6e5e080b2c75351ab1"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/image/ImageSource.class",
+      "sha256": "77c7bbca91e6ca000ad61a06896950bb79f5622204fe1121e74ac053520230b8"
+    },
+    {
+      "member": "com/moonsworth/webosr/wrappers/image/TexturedImageSource.class",
+      "sha256": "a04b076beb3fa499c3467bdc0e74fb734ced7808392d759ba46409fb23834594"
+    }
+  ],
+  "jar_sha256": "bf36e10e21154263ac16363f8c83bb08cff3a077cb788120954d3625b94a02e9"
+}

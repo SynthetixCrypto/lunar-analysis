@@ -1,0 +1,18 @@
+Evidence: ev_0ba0b287b24bf25f0030ce143a63b150caa298a4b76a02cd82a37b184de80fa2
+Address: 0x18001f7b0
+
+void Java_com_moonsworth_webosr_wrappers_Browser_getTexture(longlong *param_1,undefined8 param_2)
+
+{
+  longlong lVar1;
+  longlong *plVar2;
+  
+                    /* 0x1f7b0  7  Java_com_moonsworth_webosr_wrappers_Browser_getTexture */
+  lVar1 = FUN_18001ed40(param_1,param_2);
+  plVar2 = (longlong *)(**(code **)(**(longlong **)(lVar1 + 0x20) + 0xb8))();
+                    /* WARNING: Could not recover jumptable at 0x00018001f7d4. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (**(code **)(*plVar2 + 8))(plVar2,*(code **)(*plVar2 + 8));
+  return;
+}
+

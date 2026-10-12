@@ -1,0 +1,645 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_5f0ead89cfce3d68d2425deb62eb86c6dfaa3af2a3305a1a0784decbd9d1aab4\",\"subject\":{\"name\":\"C:\\\\Users\\\\Admin\\\\.lunarclient\\\\offline\\\\multiver\\\\natives\\\\WebOSR-Binding.dll\",\"digest\":{\"sha256\":\"4368a692fec3fa44f34fc3a356d676966f0b7191dd91fb5fc5b89064b01faebf\"},\"format\":\"pe\",\"architecture\":\"x86_64\",\"local_path\":\"C:\\\\Users\\\\Admin\\\\.lunarclient\\\\offline\\\\multiver\\\\natives\\\\WebOSR-Binding.dll\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"pe\",\"executable_role\":\"shared-library\",\"managed\":false,\"native_aot_metadata\":{\"contract_revision\":\"rtr-9.1-x64-pe-read-only-v3\",\"source_bytes\":134217728,\"work_units\":67108864,\"working_memory_bytes\":67108864,\"report_bytes\":4194304},\"architecture\":\"x86_64\",\"available_architectures\":[\"x86_64\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"disabled-windows-p0\",\"process_launch\":\"official-headless-script-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"90e13888e18b7d587414bb259f5e3dc44a7c9293bdf290ad8c459be524747d9f\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"search_procedures\",\"parameters\":{\"pattern\":\"webosr|JNI_On|RegisterNative|thread|mutex\",\"mode\":\"regex\",\"case_sensitive\":false},\"raw_result\":[{\"address\":\"EXTERNAL:0x60\",\"value\":\"KERNEL32.DLL::DisableThreadLibraryCalls\"},{\"address\":\"EXTERNAL:0x6b\",\"value\":\"KERNEL32.DLL::GetCurrentThreadId\"},{\"address\":\"EXTERNAL:0x70\",\"value\":\"USER32.DLL::GetGUIThreadInfo\"},{\"address\":\"EXTERNAL:0x76\",\"value\":\"MSVCP140.DLL::_Cnd_unregister_at_thread_exit\"},{\"address\":\"EXTERNAL:0x77\",\"value\":\"MSVCP140.DLL::_Cnd_register_at_thread_exit\"},{\"address\":\"EXTERNAL:0xe0\",\"value\":\"MSVCP140.DLL::_Cnd_do_broadcast_at_thread_exit\"},{\"address\":\"EXTERNAL:0xf8\",\"value\":\"API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_beginthreadex\"},{\"address\":\"0x180010a30\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebOSR_createEngine\"},{\"address\":\"0x18001bda0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_createBrowser\"},{\"address\":\"0x18001bfb0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_createImageSourceTextured\"},{\"address\":\"0x18001c120\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_createSession\"},{\"address\":\"0x18001c290\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_destroy\"},{\"address\":\"0x18001c390\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_getPlatformInterface\"},{\"address\":\"0x18001c3b0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_invokeIteration0\"},{\"address\":\"0x18001c3d0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_setFPS\"},{\"address\":\"0x18001c400\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_setTimers\"},{\"address\":\"0x18001f130\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_bindFunction\"},{\"address\":\"0x18001f440\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_createInspector\"},{\"address\":\"0x18001f460\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_destroy\"},{\"address\":\"0x18001f560\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_eval\"},{\"address\":\"0x18001f690\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_evalNoResult\"},{\"address\":\"0x18001f780\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_getHeight\"},{\"address\":\"0x18001f7b0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_getTexture\"},{\"address\":\"0x18001f7e0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_getURL\"},{\"address\":\"0x18001f940\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_getWidth\"},{\"address\":\"0x18001f970\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_hasFocus\"},{\"address\":\"0x18001f990\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_hasInputFocus\"},{\"address\":\"0x18001f9b0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_loadURL\"},{\"address\":\"0x18001fb30\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_next\"},{\"address\":\"0x18001fb50\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_previous\"},{\"address\":\"0x18001fb70\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_reload\"},{\"address\":\"0x18001fb90\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_setDeviceScaleFactor\"},{\"address\":\"0x18001fbc0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_setFocus\"},{\"address\":\"0x18001fbf0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_stopLoad\"},{\"address\":\"0x18001fc10\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_swapBuffers\"},{\"address\":\"0x18001fc40\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_triggerKeyEvent\"},{\"address\":\"0x18001fe60\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_triggerMouseEvent\"},{\"address\":\"0x18001feb0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_triggerResize\"},{\"address\":\"0x18001fef0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_triggerScrollEvent\"},{\"address\":\"0x18001ff30\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_unbindFunction\"},{\"address\":\"0x1800263a0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_NativeFuture_destroy\"},{\"address\":\"0x1800263e0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_NativeFuture_get0\"},{\"address\":\"0x180026510\",\"value\":\"Java_com_moonsworth_webosr_wrappers_NativeFuture_isDone\"},{\"address\":\"0x180026570\",\"value\":\"Java_com_moonsworth_webosr_wrappers_NativeFuture_isUndefined\"},{\"address\":\"0x1800265b0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PromiseJS_reject0\"},{\"address\":\"0x1800267d0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PromiseJS_reject1\"},{\"address\":\"0x1800268d0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve0\"},{\"address\":\"0x180026af0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve1\"},{\"address\":\"0x1800278c0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_bind\"},{\"address\":\"0x1800278f0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_destroy\"},{\"address\":\"0x180027970\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_makeChild\"},{\"address\":\"0x180027c70\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_size\"},{\"address\":\"0x180027ca0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_unbind\"},{\"address\":\"0x180027cd0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_update\"},{\"address\":\"0x180027d60\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_uv\"},{\"address\":\"0x180028a20\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_bind\"},{\"address\":\"0x180028a40\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_destroy\"},{\"address\":\"0x180028ac0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_unbind\"},{\"address\":\"0x180028ae0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_uv\"},{\"address\":\"0x180029610\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Session_destroy\"},{\"address\":\"0x180029690\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Session_getName\"},{\"address\":\"0x180029870\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Session_isPersistent\"},{\"address\":\"0x18002a790\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PlatformInterface_destroy\"},{\"address\":\"0x18002a810\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PlatformInterface_setCursor0\"},{\"address\":\"0x18002a830\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PlatformInterface_setScrollCallback\"},{\"address\":\"0x180058831\",\"value\":\"MSVCP140.DLL::_Cnd_do_broadcast_at_thread_exit\"},{\"address\":\"0x180058b0f\",\"value\":\"MSVCP140.DLL::_Cnd_register_at_thread_exit\"},{\"address\":\"0x180058b15\",\"value\":\"MSVCP140.DLL::_Cnd_unregister_at_thread_exit\"},{\"address\":\"0x180059078\",\"value\":\"_Init_thread_footer\"}],\"normalized_result\":[{\"address\":\"EXTERNAL:0x60\",\"value\":\"KERNEL32.DLL::DisableThreadLibraryCalls\"},{\"address\":\"EXTERNAL:0x6b\",\"value\":\"KERNEL32.DLL::GetCurrentThreadId\"},{\"address\":\"EXTERNAL:0x70\",\"value\":\"USER32.DLL::GetGUIThreadInfo\"},{\"address\":\"EXTERNAL:0x76\",\"value\":\"MSVCP140.DLL::_Cnd_unregister_at_thread_exit\"},{\"address\":\"EXTERNAL:0x77\",\"value\":\"MSVCP140.DLL::_Cnd_register_at_thread_exit\"},{\"address\":\"EXTERNAL:0xe0\",\"value\":\"MSVCP140.DLL::_Cnd_do_broadcast_at_thread_exit\"},{\"address\":\"EXTERNAL:0xf8\",\"value\":\"API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_beginthreadex\"},{\"address\":\"0x180010a30\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebOSR_createEngine\"},{\"address\":\"0x18001bda0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_createBrowser\"},{\"address\":\"0x18001bfb0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_createImageSourceTextured\"},{\"address\":\"0x18001c120\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_createSession\"},{\"address\":\"0x18001c290\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_destroy\"},{\"address\":\"0x18001c390\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_getPlatformInterface\"},{\"address\":\"0x18001c3b0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_invokeIteration0\"},{\"address\":\"0x18001c3d0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_setFPS\"},{\"address\":\"0x18001c400\",\"value\":\"Java_com_moonsworth_webosr_wrappers_WebEngine_setTimers\"},{\"address\":\"0x18001f130\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_bindFunction\"},{\"address\":\"0x18001f440\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_createInspector\"},{\"address\":\"0x18001f460\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_destroy\"},{\"address\":\"0x18001f560\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_eval\"},{\"address\":\"0x18001f690\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_evalNoResult\"},{\"address\":\"0x18001f780\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_getHeight\"},{\"address\":\"0x18001f7b0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_getTexture\"},{\"address\":\"0x18001f7e0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_getURL\"},{\"address\":\"0x18001f940\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_getWidth\"},{\"address\":\"0x18001f970\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_hasFocus\"},{\"address\":\"0x18001f990\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_hasInputFocus\"},{\"address\":\"0x18001f9b0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_loadURL\"},{\"address\":\"0x18001fb30\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_next\"},{\"address\":\"0x18001fb50\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_previous\"},{\"address\":\"0x18001fb70\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_reload\"},{\"address\":\"0x18001fb90\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_setDeviceScaleFactor\"},{\"address\":\"0x18001fbc0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_setFocus\"},{\"address\":\"0x18001fbf0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_stopLoad\"},{\"address\":\"0x18001fc10\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_swapBuffers\"},{\"address\":\"0x18001fc40\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_triggerKeyEvent\"},{\"address\":\"0x18001fe60\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_triggerMouseEvent\"},{\"address\":\"0x18001feb0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_triggerResize\"},{\"address\":\"0x18001fef0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_triggerScrollEvent\"},{\"address\":\"0x18001ff30\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Browser_unbindFunction\"},{\"address\":\"0x1800263a0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_NativeFuture_destroy\"},{\"address\":\"0x1800263e0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_NativeFuture_get0\"},{\"address\":\"0x180026510\",\"value\":\"Java_com_moonsworth_webosr_wrappers_NativeFuture_isDone\"},{\"address\":\"0x180026570\",\"value\":\"Java_com_moonsworth_webosr_wrappers_NativeFuture_isUndefined\"},{\"address\":\"0x1800265b0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PromiseJS_reject0\"},{\"address\":\"0x1800267d0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PromiseJS_reject1\"},{\"address\":\"0x1800268d0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve0\"},{\"address\":\"0x180026af0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve1\"},{\"address\":\"0x1800278c0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_bind\"},{\"address\":\"0x1800278f0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_destroy\"},{\"address\":\"0x180027970\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_makeChild\"},{\"address\":\"0x180027c70\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_size\"},{\"address\":\"0x180027ca0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_unbind\"},{\"address\":\"0x180027cd0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_update\"},{\"address\":\"0x180027d60\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_uv\"},{\"address\":\"0x180028a20\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_bind\"},{\"address\":\"0x180028a40\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_destroy\"},{\"address\":\"0x180028ac0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_unbind\"},{\"address\":\"0x180028ae0\",\"value\":\"Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_uv\"},{\"address\":\"0x180029610\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Session_destroy\"},{\"address\":\"0x180029690\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Session_getName\"},{\"address\":\"0x180029870\",\"value\":\"Java_com_moonsworth_webosr_wrappers_Session_isPersistent\"},{\"address\":\"0x18002a790\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PlatformInterface_destroy\"},{\"address\":\"0x18002a810\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PlatformInterface_setCursor0\"},{\"address\":\"0x18002a830\",\"value\":\"Java_com_moonsworth_webosr_wrappers_PlatformInterface_setScrollCallback\"},{\"address\":\"0x180058831\",\"value\":\"MSVCP140.DLL::_Cnd_do_broadcast_at_thread_exit\"},{\"address\":\"0x180058b0f\",\"value\":\"MSVCP140.DLL::_Cnd_register_at_thread_exit\"},{\"address\":\"0x180058b15\",\"value\":\"MSVCP140.DLL::_Cnd_unregister_at_thread_exit\"},{\"address\":\"0x180059078\",\"value\":\"_Init_thread_footer\"}],\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Regex mode uses Java Pattern semantics. Matcher or compiler stack exhaustion returns a resource constraint without closing the session; literal mode avoids regex recursion and returns complete matching values.\",\"Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.\",\"The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.\",\"Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_5f0ead89cfce3d68d2425deb62eb86c6dfaa3af2a3305a1a0784decbd9d1aab4",
+    "subject": {
+      "name": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\WebOSR-Binding.dll",
+      "digest": {
+        "sha256": "4368a692fec3fa44f34fc3a356d676966f0b7191dd91fb5fc5b89064b01faebf"
+      },
+      "format": "pe",
+      "architecture": "x86_64",
+      "local_path": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\WebOSR-Binding.dll"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "shared-library",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86_64",
+        "available_architectures": [
+          "x86_64"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "90e13888e18b7d587414bb259f5e3dc44a7c9293bdf290ad8c459be524747d9f"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "search_procedures",
+    "parameters": {
+      "pattern": "webosr|JNI_On|RegisterNative|thread|mutex",
+      "mode": "regex",
+      "case_sensitive": false
+    },
+    "raw_result": [
+      {
+        "address": "EXTERNAL:0x60",
+        "value": "KERNEL32.DLL::DisableThreadLibraryCalls"
+      },
+      {
+        "address": "EXTERNAL:0x6b",
+        "value": "KERNEL32.DLL::GetCurrentThreadId"
+      },
+      {
+        "address": "EXTERNAL:0x70",
+        "value": "USER32.DLL::GetGUIThreadInfo"
+      },
+      {
+        "address": "EXTERNAL:0x76",
+        "value": "MSVCP140.DLL::_Cnd_unregister_at_thread_exit"
+      },
+      {
+        "address": "EXTERNAL:0x77",
+        "value": "MSVCP140.DLL::_Cnd_register_at_thread_exit"
+      },
+      {
+        "address": "EXTERNAL:0xe0",
+        "value": "MSVCP140.DLL::_Cnd_do_broadcast_at_thread_exit"
+      },
+      {
+        "address": "EXTERNAL:0xf8",
+        "value": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_beginthreadex"
+      },
+      {
+        "address": "0x180010a30",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebOSR_createEngine"
+      },
+      {
+        "address": "0x18001bda0",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_createBrowser"
+      },
+      {
+        "address": "0x18001bfb0",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_createImageSourceTextured"
+      },
+      {
+        "address": "0x18001c120",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_createSession"
+      },
+      {
+        "address": "0x18001c290",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_destroy"
+      },
+      {
+        "address": "0x18001c390",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_getPlatformInterface"
+      },
+      {
+        "address": "0x18001c3b0",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_invokeIteration0"
+      },
+      {
+        "address": "0x18001c3d0",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_setFPS"
+      },
+      {
+        "address": "0x18001c400",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_setTimers"
+      },
+      {
+        "address": "0x18001f130",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_bindFunction"
+      },
+      {
+        "address": "0x18001f440",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_createInspector"
+      },
+      {
+        "address": "0x18001f460",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_destroy"
+      },
+      {
+        "address": "0x18001f560",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_eval"
+      },
+      {
+        "address": "0x18001f690",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_evalNoResult"
+      },
+      {
+        "address": "0x18001f780",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_getHeight"
+      },
+      {
+        "address": "0x18001f7b0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_getTexture"
+      },
+      {
+        "address": "0x18001f7e0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_getURL"
+      },
+      {
+        "address": "0x18001f940",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_getWidth"
+      },
+      {
+        "address": "0x18001f970",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_hasFocus"
+      },
+      {
+        "address": "0x18001f990",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_hasInputFocus"
+      },
+      {
+        "address": "0x18001f9b0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_loadURL"
+      },
+      {
+        "address": "0x18001fb30",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_next"
+      },
+      {
+        "address": "0x18001fb50",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_previous"
+      },
+      {
+        "address": "0x18001fb70",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_reload"
+      },
+      {
+        "address": "0x18001fb90",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_setDeviceScaleFactor"
+      },
+      {
+        "address": "0x18001fbc0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_setFocus"
+      },
+      {
+        "address": "0x18001fbf0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_stopLoad"
+      },
+      {
+        "address": "0x18001fc10",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_swapBuffers"
+      },
+      {
+        "address": "0x18001fc40",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_triggerKeyEvent"
+      },
+      {
+        "address": "0x18001fe60",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_triggerMouseEvent"
+      },
+      {
+        "address": "0x18001feb0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_triggerResize"
+      },
+      {
+        "address": "0x18001fef0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_triggerScrollEvent"
+      },
+      {
+        "address": "0x18001ff30",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_unbindFunction"
+      },
+      {
+        "address": "0x1800263a0",
+        "value": "Java_com_moonsworth_webosr_wrappers_NativeFuture_destroy"
+      },
+      {
+        "address": "0x1800263e0",
+        "value": "Java_com_moonsworth_webosr_wrappers_NativeFuture_get0"
+      },
+      {
+        "address": "0x180026510",
+        "value": "Java_com_moonsworth_webosr_wrappers_NativeFuture_isDone"
+      },
+      {
+        "address": "0x180026570",
+        "value": "Java_com_moonsworth_webosr_wrappers_NativeFuture_isUndefined"
+      },
+      {
+        "address": "0x1800265b0",
+        "value": "Java_com_moonsworth_webosr_wrappers_PromiseJS_reject0"
+      },
+      {
+        "address": "0x1800267d0",
+        "value": "Java_com_moonsworth_webosr_wrappers_PromiseJS_reject1"
+      },
+      {
+        "address": "0x1800268d0",
+        "value": "Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve0"
+      },
+      {
+        "address": "0x180026af0",
+        "value": "Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve1"
+      },
+      {
+        "address": "0x1800278c0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_bind"
+      },
+      {
+        "address": "0x1800278f0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_destroy"
+      },
+      {
+        "address": "0x180027970",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_makeChild"
+      },
+      {
+        "address": "0x180027c70",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_size"
+      },
+      {
+        "address": "0x180027ca0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_unbind"
+      },
+      {
+        "address": "0x180027cd0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_update"
+      },
+      {
+        "address": "0x180027d60",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_uv"
+      },
+      {
+        "address": "0x180028a20",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_bind"
+      },
+      {
+        "address": "0x180028a40",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_destroy"
+      },
+      {
+        "address": "0x180028ac0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_unbind"
+      },
+      {
+        "address": "0x180028ae0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_uv"
+      },
+      {
+        "address": "0x180029610",
+        "value": "Java_com_moonsworth_webosr_wrappers_Session_destroy"
+      },
+      {
+        "address": "0x180029690",
+        "value": "Java_com_moonsworth_webosr_wrappers_Session_getName"
+      },
+      {
+        "address": "0x180029870",
+        "value": "Java_com_moonsworth_webosr_wrappers_Session_isPersistent"
+      },
+      {
+        "address": "0x18002a790",
+        "value": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_destroy"
+      },
+      {
+        "address": "0x18002a810",
+        "value": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_setCursor0"
+      },
+      {
+        "address": "0x18002a830",
+        "value": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_setScrollCallback"
+      },
+      {
+        "address": "0x180058831",
+        "value": "MSVCP140.DLL::_Cnd_do_broadcast_at_thread_exit"
+      },
+      {
+        "address": "0x180058b0f",
+        "value": "MSVCP140.DLL::_Cnd_register_at_thread_exit"
+      },
+      {
+        "address": "0x180058b15",
+        "value": "MSVCP140.DLL::_Cnd_unregister_at_thread_exit"
+      },
+      {
+        "address": "0x180059078",
+        "value": "_Init_thread_footer"
+      }
+    ],
+    "normalized_result": [
+      {
+        "address": "EXTERNAL:0x60",
+        "value": "KERNEL32.DLL::DisableThreadLibraryCalls"
+      },
+      {
+        "address": "EXTERNAL:0x6b",
+        "value": "KERNEL32.DLL::GetCurrentThreadId"
+      },
+      {
+        "address": "EXTERNAL:0x70",
+        "value": "USER32.DLL::GetGUIThreadInfo"
+      },
+      {
+        "address": "EXTERNAL:0x76",
+        "value": "MSVCP140.DLL::_Cnd_unregister_at_thread_exit"
+      },
+      {
+        "address": "EXTERNAL:0x77",
+        "value": "MSVCP140.DLL::_Cnd_register_at_thread_exit"
+      },
+      {
+        "address": "EXTERNAL:0xe0",
+        "value": "MSVCP140.DLL::_Cnd_do_broadcast_at_thread_exit"
+      },
+      {
+        "address": "EXTERNAL:0xf8",
+        "value": "API-MS-WIN-CRT-RUNTIME-L1-1-0.DLL::_beginthreadex"
+      },
+      {
+        "address": "0x180010a30",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebOSR_createEngine"
+      },
+      {
+        "address": "0x18001bda0",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_createBrowser"
+      },
+      {
+        "address": "0x18001bfb0",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_createImageSourceTextured"
+      },
+      {
+        "address": "0x18001c120",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_createSession"
+      },
+      {
+        "address": "0x18001c290",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_destroy"
+      },
+      {
+        "address": "0x18001c390",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_getPlatformInterface"
+      },
+      {
+        "address": "0x18001c3b0",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_invokeIteration0"
+      },
+      {
+        "address": "0x18001c3d0",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_setFPS"
+      },
+      {
+        "address": "0x18001c400",
+        "value": "Java_com_moonsworth_webosr_wrappers_WebEngine_setTimers"
+      },
+      {
+        "address": "0x18001f130",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_bindFunction"
+      },
+      {
+        "address": "0x18001f440",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_createInspector"
+      },
+      {
+        "address": "0x18001f460",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_destroy"
+      },
+      {
+        "address": "0x18001f560",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_eval"
+      },
+      {
+        "address": "0x18001f690",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_evalNoResult"
+      },
+      {
+        "address": "0x18001f780",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_getHeight"
+      },
+      {
+        "address": "0x18001f7b0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_getTexture"
+      },
+      {
+        "address": "0x18001f7e0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_getURL"
+      },
+      {
+        "address": "0x18001f940",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_getWidth"
+      },
+      {
+        "address": "0x18001f970",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_hasFocus"
+      },
+      {
+        "address": "0x18001f990",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_hasInputFocus"
+      },
+      {
+        "address": "0x18001f9b0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_loadURL"
+      },
+      {
+        "address": "0x18001fb30",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_next"
+      },
+      {
+        "address": "0x18001fb50",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_previous"
+      },
+      {
+        "address": "0x18001fb70",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_reload"
+      },
+      {
+        "address": "0x18001fb90",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_setDeviceScaleFactor"
+      },
+      {
+        "address": "0x18001fbc0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_setFocus"
+      },
+      {
+        "address": "0x18001fbf0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_stopLoad"
+      },
+      {
+        "address": "0x18001fc10",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_swapBuffers"
+      },
+      {
+        "address": "0x18001fc40",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_triggerKeyEvent"
+      },
+      {
+        "address": "0x18001fe60",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_triggerMouseEvent"
+      },
+      {
+        "address": "0x18001feb0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_triggerResize"
+      },
+      {
+        "address": "0x18001fef0",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_triggerScrollEvent"
+      },
+      {
+        "address": "0x18001ff30",
+        "value": "Java_com_moonsworth_webosr_wrappers_Browser_unbindFunction"
+      },
+      {
+        "address": "0x1800263a0",
+        "value": "Java_com_moonsworth_webosr_wrappers_NativeFuture_destroy"
+      },
+      {
+        "address": "0x1800263e0",
+        "value": "Java_com_moonsworth_webosr_wrappers_NativeFuture_get0"
+      },
+      {
+        "address": "0x180026510",
+        "value": "Java_com_moonsworth_webosr_wrappers_NativeFuture_isDone"
+      },
+      {
+        "address": "0x180026570",
+        "value": "Java_com_moonsworth_webosr_wrappers_NativeFuture_isUndefined"
+      },
+      {
+        "address": "0x1800265b0",
+        "value": "Java_com_moonsworth_webosr_wrappers_PromiseJS_reject0"
+      },
+      {
+        "address": "0x1800267d0",
+        "value": "Java_com_moonsworth_webosr_wrappers_PromiseJS_reject1"
+      },
+      {
+        "address": "0x1800268d0",
+        "value": "Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve0"
+      },
+      {
+        "address": "0x180026af0",
+        "value": "Java_com_moonsworth_webosr_wrappers_PromiseJS_resolve1"
+      },
+      {
+        "address": "0x1800278c0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_bind"
+      },
+      {
+        "address": "0x1800278f0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_destroy"
+      },
+      {
+        "address": "0x180027970",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_makeChild"
+      },
+      {
+        "address": "0x180027c70",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_size"
+      },
+      {
+        "address": "0x180027ca0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_unbind"
+      },
+      {
+        "address": "0x180027cd0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_update"
+      },
+      {
+        "address": "0x180027d60",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_uv"
+      },
+      {
+        "address": "0x180028a20",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_bind"
+      },
+      {
+        "address": "0x180028a40",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_destroy"
+      },
+      {
+        "address": "0x180028ac0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_unbind"
+      },
+      {
+        "address": "0x180028ae0",
+        "value": "Java_com_moonsworth_webosr_wrappers_image_ChildImageSource_uv"
+      },
+      {
+        "address": "0x180029610",
+        "value": "Java_com_moonsworth_webosr_wrappers_Session_destroy"
+      },
+      {
+        "address": "0x180029690",
+        "value": "Java_com_moonsworth_webosr_wrappers_Session_getName"
+      },
+      {
+        "address": "0x180029870",
+        "value": "Java_com_moonsworth_webosr_wrappers_Session_isPersistent"
+      },
+      {
+        "address": "0x18002a790",
+        "value": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_destroy"
+      },
+      {
+        "address": "0x18002a810",
+        "value": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_setCursor0"
+      },
+      {
+        "address": "0x18002a830",
+        "value": "Java_com_moonsworth_webosr_wrappers_PlatformInterface_setScrollCallback"
+      },
+      {
+        "address": "0x180058831",
+        "value": "MSVCP140.DLL::_Cnd_do_broadcast_at_thread_exit"
+      },
+      {
+        "address": "0x180058b0f",
+        "value": "MSVCP140.DLL::_Cnd_register_at_thread_exit"
+      },
+      {
+        "address": "0x180058b15",
+        "value": "MSVCP140.DLL::_Cnd_unregister_at_thread_exit"
+      },
+      {
+        "address": "0x180059078",
+        "value": "_Init_thread_footer"
+      }
+    ],
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Regex mode uses Java Pattern semantics. Matcher or compiler stack exhaustion returns a resource constraint without closing the session; literal mode avoids regex recursion and returns complete matching values.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

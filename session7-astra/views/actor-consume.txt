@@ -1,0 +1,151 @@
+Evidence: ev_1193db83fe857dec496ab583dec8a792c1858cc1c52c29d45ee3b980f9e2e476
+Address: 0x180035ec0
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+/* WARNING: Removing unreachable block (ram,0x000180035f3f) */
+/* WARNING: Removing unreachable block (ram,0x000180035f47) */
+/* WARNING: Removing unreachable block (ram,0x000180035f50) */
+/* WARNING: Removing unreachable block (ram,0x000180035f59) */
+/* WARNING: Removing unreachable block (ram,0x000180035f6d) */
+/* WARNING: Removing unreachable block (ram,0x000180035f76) */
+/* WARNING: Removing unreachable block (ram,0x000180035f8d) */
+/* WARNING: Removing unreachable block (ram,0x0001800360fc) */
+/* WARNING: Removing unreachable block (ram,0x000180035fa6) */
+/* WARNING: Removing unreachable block (ram,0x000180035fa9) */
+/* WARNING: Removing unreachable block (ram,0x000180035fbb) */
+/* WARNING: Removing unreachable block (ram,0x000180036251) */
+/* WARNING: Removing unreachable block (ram,0x000180036259) */
+/* WARNING: Removing unreachable block (ram,0x000180036260) */
+/* WARNING: Removing unreachable block (ram,0x000180036262) */
+/* WARNING: Removing unreachable block (ram,0x00018003626b) */
+/* WARNING: Removing unreachable block (ram,0x00018003627b) */
+/* WARNING: Removing unreachable block (ram,0x000180036284) */
+/* WARNING: Removing unreachable block (ram,0x00018003629b) */
+/* WARNING: Removing unreachable block (ram,0x000180036301) */
+/* WARNING: Removing unreachable block (ram,0x0001800362b0) */
+/* WARNING: Removing unreachable block (ram,0x0001800362b3) */
+/* WARNING: Removing unreachable block (ram,0x0001800362c3) */
+
+void FUN_180035ec0(longlong param_1)
+
+{
+  longlong lVar1;
+  undefined8 *puVar2;
+  undefined8 *_Memory;
+  longlong *plVar3;
+  longlong *plVar4;
+  void *pvVar5;
+  void *_Memory_00;
+  undefined8 *puVar6;
+  longlong *plVar7;
+  longlong *plVar8;
+  undefined1 auStackY_c8 [32];
+  longlong *local_90;
+  longlong *local_88;
+  longlong **local_80;
+  longlong local_78 [7];
+  longlong *local_40;
+  ulonglong local_38;
+  
+  local_38 = DAT_18007a2c0 ^ (ulonglong)auStackY_c8;
+  local_88 = (longlong *)0x0;
+  while (puVar2 = *(undefined8 **)(*(longlong *)(param_1 + 0x40058) + 8),
+        puVar2 != (undefined8 *)0x0) {
+    plVar8 = (longlong *)*puVar2;
+    *puVar2 = 0;
+    puVar6 = (undefined8 *)0x0;
+    _Memory = *(undefined8 **)(param_1 + 0x40058);
+    local_88 = plVar8;
+    if (_Memory != (undefined8 *)0x0) {
+      if ((longlong *)*_Memory != (longlong *)0x0) {
+        FUN_180035730(_Memory,(longlong *)*_Memory);
+      }
+      free(_Memory);
+    }
+    *(undefined8 **)(param_1 + 0x40058) = puVar2;
+    if (plVar8 != (longlong *)0x0) {
+      FUN_1800351e0(plVar8);
+      local_88 = (longlong *)0x0;
+      local_80 = &local_90;
+      local_90 = plVar8;
+      local_80 = (longlong **)FUN_180058b24(0x10);
+      plVar8 = local_90;
+      if (local_80 != (longlong **)0x0) {
+        local_90 = (longlong *)0x0;
+        *local_80 = plVar8;
+        local_80[1] = (longlong *)0x0;
+        puVar6 = local_80;
+      }
+      plVar8 = local_90;
+      puVar6[1] = 0;
+      LOCK();
+      lVar1 = *(longlong *)(param_1 + 0x40060);
+      *(longlong *)(param_1 + 0x40060) = (longlong)puVar6;
+      UNLOCK();
+      *(undefined8 **)(lVar1 + 8) = puVar6;
+      if (local_90 != (longlong *)0x0) {
+        plVar7 = (longlong *)*local_90;
+        if (plVar7 != (longlong *)0x0) {
+          plVar3 = (longlong *)local_90[1];
+          for (; plVar7 != plVar3; plVar7 = plVar7 + 8) {
+            plVar4 = (longlong *)plVar7[7];
+            if (plVar4 != (longlong *)0x0) {
+              (**(code **)(*plVar4 + 0x20))(plVar4,plVar4 != plVar7);
+              plVar7[7] = 0;
+            }
+          }
+          pvVar5 = (void *)*plVar8;
+          _Memory_00 = pvVar5;
+          if ((0xfff < (plVar8[2] - (longlong)pvVar5 & 0xffffffffffffffc0U)) &&
+             (_Memory_00 = *(void **)((longlong)pvVar5 + -8),
+             0x1f < (ulonglong)((longlong)pvVar5 + (-8 - (longlong)_Memory_00)))) {
+                    /* WARNING: Subroutine does not return */
+            _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+          }
+          free(_Memory_00);
+          *plVar8 = 0;
+          plVar8[1] = 0;
+          plVar8[2] = 0;
+        }
+        free(plVar8);
+      }
+    }
+  }
+  local_40 = (longlong *)0x0;
+  do {
+    lVar1 = *(longlong *)(param_1 + 0x40040);
+    if (lVar1 == *(longlong *)(param_1 + 0x40048)) {
+      if (local_40 != (longlong *)0x0) {
+        (**(code **)(*local_40 + 0x20))(local_40,local_40 != local_78);
+      }
+      return;
+    }
+    plVar8 = (longlong *)(lVar1 * 0x40 + param_1);
+    if (local_78 != plVar8) {
+      if (local_40 != (longlong *)0x0) {
+        (**(code **)(*local_40 + 0x20))(local_40,local_40 != local_78);
+        local_40 = (longlong *)0x0;
+      }
+      plVar7 = (longlong *)plVar8[7];
+      if (plVar7 != (longlong *)0x0) {
+        if (plVar7 == plVar8) {
+          local_40 = (longlong *)(**(code **)(*plVar7 + 8))(plVar7,local_78);
+          plVar7 = (longlong *)plVar8[7];
+          if (plVar7 == (longlong *)0x0) goto LAB_1800361e6;
+          (**(code **)(*plVar7 + 0x20))(plVar7,plVar7 != plVar8);
+          plVar7 = local_40;
+        }
+        local_40 = plVar7;
+        plVar8[7] = 0;
+      }
+    }
+LAB_1800361e6:
+    *(ulonglong *)(param_1 + 0x40040) = (lVar1 + 1U) % 0x1001;
+    if (local_40 == (longlong *)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    (**(code **)(*local_40 + 0x10))();
+  } while( true );
+}
+

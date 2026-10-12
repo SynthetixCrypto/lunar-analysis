@@ -1,0 +1,14 @@
+Evidence: ev_5390568fe5b2ed97b7c94368801cce442d89f6cd6969f8e4f01d61c36baa5f71
+Address: 0x18004bd50
+
+undefined8 * FUN_18004bd50(longlong param_1,undefined8 *param_2)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = *(undefined8 *)(param_1 + 0x10);
+  *param_2 = *(undefined8 *)(param_1 + 8);
+  param_2[1] = uVar1;
+  return param_2;
+}
+

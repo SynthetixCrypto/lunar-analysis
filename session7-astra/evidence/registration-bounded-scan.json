@@ -1,0 +1,72 @@
+{
+  "method": "Exact ASCII search in four identified DLLs; raw little-endian 0x6b8 scan in binding .text only. Candidates are not disassembled JNI calls; no exclusion of computed-table calls or other modules.",
+  "images": [
+    {
+      "path": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\WebOSR-Binding.dll",
+      "sha256": "4368a692fec3fa44f34fc3a356d676966f0b7191dd91fb5fc5b89064b01faebf",
+      "ascii_offsets": {
+        "RegisterNatives": [],
+        "JNI_OnLoad": [],
+        "Java_com_moonsworth_webosr_wrappers_Session_name": [],
+        "Java_com_moonsworth_webosr_wrappers_Session_getName": [
+          "0x7462d"
+        ]
+      },
+      "binding_text_0x6b8_displacement_candidates": [
+        {
+          "file_offset": "0x2f108",
+          "displacement_va": "0x18002fd08",
+          "context": "208b411885c07507b806000000eb02ff"
+        },
+        {
+          "file_offset": "0x3f9c0",
+          "displacement_va": "0x1800405c0",
+          "context": "ccccccccccccccccb806000000c3cccc"
+        },
+        {
+          "file_offset": "0x42e77",
+          "displacement_va": "0x180043a77",
+          "context": "05f8db010048c745b806000000e9be00"
+        },
+        {
+          "file_offset": "0x42ee5",
+          "displacement_va": "0x180043ae5",
+          "context": "05cedb010048c745b806000000eb5348"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\Ultralight.dll",
+      "sha256": "718f0f1cfdb2832afcd6c32b59516b08ddc131586f6230ce85962cdf6e9ebd47",
+      "ascii_offsets": {
+        "RegisterNatives": [],
+        "JNI_OnLoad": [],
+        "Java_com_moonsworth_webosr_wrappers_Session_name": [],
+        "Java_com_moonsworth_webosr_wrappers_Session_getName": []
+      },
+      "binding_text_0x6b8_displacement_candidates": []
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\UltralightCore.dll",
+      "sha256": "84b64678a61c1acbffc1820cd72176b453e4b66ada783450c02caba318e553c0",
+      "ascii_offsets": {
+        "RegisterNatives": [],
+        "JNI_OnLoad": [],
+        "Java_com_moonsworth_webosr_wrappers_Session_name": [],
+        "Java_com_moonsworth_webosr_wrappers_Session_getName": []
+      },
+      "binding_text_0x6b8_displacement_candidates": []
+    },
+    {
+      "path": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\WebCore.dll",
+      "sha256": "c6630afde603edd5323c59d4e690de142c72d5fb60e3f34e174244a5ee5e07cb",
+      "ascii_offsets": {
+        "RegisterNatives": [],
+        "JNI_OnLoad": [],
+        "Java_com_moonsworth_webosr_wrappers_Session_name": [],
+        "Java_com_moonsworth_webosr_wrappers_Session_getName": []
+      },
+      "binding_text_0x6b8_displacement_candidates": []
+    }
+  ]
+}

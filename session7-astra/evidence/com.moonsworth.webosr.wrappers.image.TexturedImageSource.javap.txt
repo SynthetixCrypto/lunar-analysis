@@ -1,0 +1,30 @@
+public final class com.moonsworth.webosr.wrappers.image.TexturedImageSource extends com.moonsworth.webosr.NativeHandle implements com.moonsworth.webosr.wrappers.image.ImageSource {
+  private com.moonsworth.webosr.wrappers.image.TexturedImageSource(long);
+    descriptor: (J)V
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #4                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native void update(java.nio.ByteBuffer);
+    descriptor: (Ljava/nio/ByteBuffer;)V
+
+  public native void size(int, int);
+    descriptor: (II)V
+
+  public native com.moonsworth.webosr.wrappers.image.ChildImageSource makeChild(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lcom/moonsworth/webosr/wrappers/image/ChildImageSource;
+
+  public native void uv(int, int, int, int);
+    descriptor: (IIII)V
+
+  public native void bind();
+    descriptor: ()V
+
+  public native void unbind();
+    descriptor: ()V
+
+  protected native void destroy();
+    descriptor: ()V
+}

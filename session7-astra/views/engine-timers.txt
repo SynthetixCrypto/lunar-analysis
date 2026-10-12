@@ -1,0 +1,12 @@
+Evidence: ev_e0f2f13d26d86156f899ce913b40b0438b05b08f90a4db499941c71842eb0640
+Address: 0x18003afd0
+
+void FUN_18003afd0(longlong param_1,double *param_2)
+
+{
+  *(longlong *)(param_1 + 0xd8) = (longlong)(param_2[1] * 1000000000.0);
+  *(longlong *)(param_1 + 0xd0) = (longlong)(param_2[2] * 1000000000.0);
+  *(longlong *)(param_1 + 0xe0) = (longlong)(*param_2 * 1000000000.0);
+  return;
+}
+

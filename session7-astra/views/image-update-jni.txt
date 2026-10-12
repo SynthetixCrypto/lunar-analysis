@@ -1,0 +1,24 @@
+Evidence: ev_6a04dd211570c00b92cd459839056953c86131a4ca7564555d6c50850682c5e7
+Address: 0x180027cd0
+
+void Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_update
+               (longlong *param_1,undefined8 param_2,longlong param_3)
+
+{
+  longlong lVar1;
+  longlong lVar2;
+  undefined8 *puVar3;
+  
+                    /* 0x27cd0  57
+                       Java_com_moonsworth_webosr_wrappers_image_TexturedImageSource_update */
+  if (param_3 != 0) {
+    lVar1 = (**(code **)(*param_1 + 0x730))(param_1,param_3);
+    lVar2 = (**(code **)(*param_1 + 0x738))(param_1,param_3);
+    if ((lVar1 != 0) && (0 < lVar2)) {
+      puVar3 = (undefined8 *)FUN_1800277f0(param_1,param_2);
+      (**(code **)(*(longlong *)*puVar3 + 0x10))((longlong *)*puVar3,lVar1,lVar2);
+    }
+  }
+  return;
+}
+

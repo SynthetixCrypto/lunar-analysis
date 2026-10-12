@@ -1,0 +1,85 @@
+Evidence: ev_8fe77bec1043f2ef13bb324b82295641efa347586db0d673a21e593710306c9a
+Address: 0x180042860
+
+/* WARNING: Removing unreachable block (ram,0x000180042959) */
+
+void FUN_180042860(undefined8 *param_1)
+
+{
+  int *piVar1;
+  int iVar2;
+  longlong lVar3;
+  longlong *plVar4;
+  longlong *plVar5;
+  char local_b8 [8];
+  longlong local_b0 [7];
+  longlong *local_78;
+  longlong local_68 [8];
+  
+  *param_1 = webosr::ul::BrowserImpl::vftable;
+  param_1[2] = webosr::ul::BrowserImpl::vftable;
+  param_1[3] = webosr::ul::BrowserImpl::vftable;
+  param_1[4] = webosr::ul::BrowserImpl::vftable;
+  local_b8[0] = '\0';
+  lVar3 = param_1[9];
+  param_1[9] = 0;
+  plVar5 = (longlong *)FUN_180058b24(0x18);
+  *plVar5 = (longlong)
+            std::
+            _Func_impl_no_alloc<`public:_virtual___cdecl_webosr::ul::BrowserImpl::~BrowserImpl(void)___ptr64'::`2'::<lambda_1>,void>
+            ::vftable;
+  plVar5[1] = lVar3;
+  plVar5[2] = (longlong)local_b8;
+  plVar4 = (longlong *)param_1[9];
+  param_1[9] = 0;
+  if (plVar4 != (longlong *)0x0) {
+    (**(code **)(*plVar4 + 8))();
+  }
+  local_78 = (longlong *)0x0;
+  plVar4 = local_78;
+  if ((plVar5 != (longlong *)0x0) && (plVar4 = plVar5, plVar5 == local_68)) {
+    local_78 = (longlong *)(**(code **)(*plVar5 + 8))(plVar5,local_b0);
+    (**(code **)(*plVar5 + 0x20))(plVar5,0);
+    plVar4 = local_78;
+  }
+  local_78 = plVar4;
+  FUN_180036380(0,local_b0);
+  while (local_b8[0] == '\0') {
+    FUN_180036320();
+    _Thrd_yield();
+  }
+  FUN_180001870(param_1 + 0xe);
+  FUN_180041910(param_1 + 0xc,(undefined8 *)param_1[0xc]);
+  free((void *)param_1[0xc]);
+  plVar4 = (longlong *)param_1[9];
+  param_1[9] = 0;
+  if (plVar4 != (longlong *)0x0) {
+    (**(code **)(*plVar4 + 8))();
+  }
+  plVar4 = (longlong *)param_1[8];
+  if (plVar4 != (longlong *)0x0) {
+    LOCK();
+    plVar5 = plVar4 + 1;
+    lVar3 = *plVar5;
+    *(int *)plVar5 = (int)*plVar5 + -1;
+    UNLOCK();
+    if ((int)lVar3 == 1) {
+      (**(code **)*plVar4)(plVar4);
+      LOCK();
+      piVar1 = (int *)((longlong)plVar4 + 0xc);
+      iVar2 = *piVar1;
+      *piVar1 = *piVar1 + -1;
+      UNLOCK();
+      if (iVar2 == 1) {
+        (**(code **)(*plVar4 + 8))(plVar4);
+      }
+    }
+  }
+  ultralight::NetworkListener::~NetworkListener((NetworkListener *)(param_1 + 4));
+  ultralight::LoadListener::~LoadListener((LoadListener *)(param_1 + 3));
+                    /* WARNING: Could not recover jumptable at 0x000180042a0e. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  ultralight::ViewListener::~ViewListener((ViewListener *)(param_1 + 2));
+  return;
+}
+

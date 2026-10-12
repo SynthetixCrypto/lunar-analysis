@@ -1,0 +1,32 @@
+Evidence: ev_81e0fd6ee657314bc856e72238fa3bd9207219f9c59f4b0fac4cb82afe599a12
+Address: 0x18001c400
+
+void Java_com_moonsworth_webosr_wrappers_WebEngine_setTimers
+               (longlong *param_1,undefined8 param_2,longlong param_3,undefined8 param_4)
+
+{
+  longlong *plVar1;
+  code *pcVar2;
+  longlong lVar3;
+  undefined8 *puVar4;
+  undefined4 local_38;
+  undefined4 uStack_34;
+  undefined4 uStack_30;
+  undefined4 uStack_2c;
+  undefined8 local_28;
+  undefined8 local_20 [3];
+  
+                    /* 0x1c400  46  Java_com_moonsworth_webosr_wrappers_WebEngine_setTimers */
+  lVar3 = FUN_1800199c0(param_1,param_2);
+  plVar1 = *(longlong **)(lVar3 + 0xe8);
+  pcVar2 = *(code **)(*plVar1 + 0x30);
+  puVar4 = FUN_180010810(local_20,param_1,param_3,param_4);
+  local_38 = *(undefined4 *)puVar4;
+  uStack_34 = *(undefined4 *)((longlong)puVar4 + 4);
+  uStack_30 = *(undefined4 *)(puVar4 + 1);
+  uStack_2c = *(undefined4 *)((longlong)puVar4 + 0xc);
+  local_28 = puVar4[2];
+  (*pcVar2)(plVar1,&local_38);
+  return;
+}
+

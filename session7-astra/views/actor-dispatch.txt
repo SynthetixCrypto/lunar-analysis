@@ -1,0 +1,70 @@
+Evidence: ev_7716d57acdb11661f11c0a53fbf41524f60d571747885265c5c6d1c62ab202a2
+Address: 0x180036380
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void FUN_180036380(int param_1,longlong *param_2)
+
+{
+  ulonglong uVar1;
+  longlong *plVar2;
+  longlong *plVar3;
+  int iVar4;
+  undefined *puVar5;
+  longlong lVar6;
+  ulonglong uVar7;
+  undefined1 auStack_58 [40];
+  longlong *local_30;
+  ulonglong local_28;
+  
+  local_28 = DAT_18007a2c0 ^ (ulonglong)auStack_58;
+  local_30 = param_2;
+  puVar5 = FUN_180035aa0(param_1);
+  iVar4 = _Thrd_id();
+  if (*(int *)(puVar5 + 0x40070) == iVar4) {
+    if ((longlong *)param_2[7] == (longlong *)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    (**(code **)(*(longlong *)param_2[7] + 0x10))();
+    goto LAB_18003648b;
+  }
+  while( true ) {
+    uVar1 = *(longlong *)(puVar5 + 0x40048) + 1;
+    uVar7 = uVar1 % 0x1001;
+    if (uVar7 != *(ulonglong *)(puVar5 + 0x40040)) break;
+    _Thrd_yield();
+  }
+  plVar3 = (longlong *)(puVar5 + *(longlong *)(puVar5 + 0x40048) * 0x40);
+  if (plVar3 != param_2) {
+    plVar2 = (longlong *)plVar3[7];
+    if (plVar2 != (longlong *)0x0) {
+      (**(code **)(*plVar2 + 0x20))(plVar2,CONCAT71((int7)(uVar1 / 0x1001 >> 8),plVar2 != plVar3));
+      plVar3[7] = 0;
+    }
+    plVar2 = (longlong *)param_2[7];
+    if (plVar2 != (longlong *)0x0) {
+      if (plVar2 == param_2) {
+        lVar6 = (**(code **)(*plVar2 + 8))(plVar2,plVar3);
+        plVar3[7] = lVar6;
+        plVar3 = (longlong *)param_2[7];
+        if (plVar3 == (longlong *)0x0) goto code_r0x000180036484;
+        (**(code **)(*plVar3 + 0x20))(plVar3,plVar3 != param_2);
+      }
+      else {
+        plVar3[7] = (longlong)plVar2;
+      }
+      param_2[7] = 0;
+    }
+  }
+code_r0x000180036484:
+  *(ulonglong *)(puVar5 + 0x40048) = uVar7;
+LAB_18003648b:
+  plVar3 = (longlong *)param_2[7];
+  if (plVar3 != (longlong *)0x0) {
+    (**(code **)(*plVar3 + 0x20))(plVar3,plVar3 != param_2);
+    param_2[7] = 0;
+  }
+  return;
+}
+

@@ -1,0 +1,98 @@
+Evidence: ev_cfb22dab6ac84cabfe281f5bfc4e3bae964e6469f54abcc517080d05bfcd7f28
+Address: 0x18003aa60
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+undefined8 * FUN_18003aa60(undefined8 param_1,undefined8 *param_2,longlong *param_3)
+
+{
+  int *piVar1;
+  int iVar2;
+  longlong *plVar3;
+  longlong *plVar4;
+  longlong *plVar5;
+  longlong *plVar6;
+  undefined1 auStack_e8 [32];
+  longlong *local_c8;
+  longlong *plStack_c0;
+  longlong *local_b0;
+  longlong *local_a8;
+  longlong *local_a0;
+  undefined **local_98;
+  undefined8 local_90;
+  longlong *local_88;
+  longlong *local_80;
+  undefined ***local_60;
+  undefined8 local_58;
+  undefined8 local_50;
+  undefined8 uStack_48;
+  longlong *local_40;
+  ulonglong local_38;
+  
+  local_38 = DAT_18007a2c0 ^ (ulonglong)auStack_e8;
+  plVar6 = (longlong *)0x0;
+  local_40 = param_3;
+  plVar4 = (longlong *)FUN_180058b24(0xb8);
+  plVar5 = plVar6;
+  local_b0 = plVar4;
+  if (plVar4 != (longlong *)0x0) {
+    *plVar4 = 0;
+    plVar4[1] = 0;
+    *(undefined4 *)(plVar4 + 1) = 1;
+    *(undefined4 *)((longlong)plVar4 + 0xc) = 1;
+    *plVar4 = (longlong)std::_Ref_count_obj2<webosr::ul::gl::image::TextureSourceImpl>::vftable;
+    FUN_180049180(plVar4 + 2,(char *)param_3,1);
+    plVar5 = plVar4;
+  }
+  plVar4 = plVar5 + 2;
+  local_c8 = (longlong *)0x0;
+  plStack_c0 = (longlong *)0x0;
+  if (plVar5 != (longlong *)0x0) {
+    LOCK();
+    *(int *)((longlong)plVar5 + 0xc) = *(int *)((longlong)plVar5 + 0xc) + 1;
+    UNLOCK();
+    local_c8 = plVar4;
+    plStack_c0 = plVar5;
+  }
+  plVar3 = plStack_c0;
+  local_88 = plVar6;
+  local_80 = plVar6;
+  if (plStack_c0 != (longlong *)0x0) {
+    LOCK();
+    *(int *)((longlong)plStack_c0 + 0xc) = *(int *)((longlong)plStack_c0 + 0xc) + 1;
+    UNLOCK();
+    local_88 = local_c8;
+    local_80 = plStack_c0;
+  }
+  local_98 = std::
+             _Func_impl_no_alloc<`public:_virtual_class_std::shared_ptr<webosr::TextureImageSource>___cdecl_webosr::ul::EngineImpl::createImageSourceTexture(std::basic_string<char,std::char_traits<char>,std::allocator<char>_>)___ptr64'::`2'::<lambda_1>,void>
+             ::vftable;
+  local_50 = 0;
+  uStack_48 = 0;
+  local_60 = &local_98;
+  local_a8 = plVar4;
+  local_a0 = plVar5;
+  local_90 = param_1;
+  local_58 = param_1;
+  FUN_180036380(0,(longlong *)&local_98);
+  *param_2 = 0;
+  param_2[1] = 0;
+  if (plVar4 != (longlong *)0x0) {
+    plVar6 = (longlong *)((longlong)*(int *)(plVar5[3] + 8) + 8 + (longlong)plVar4);
+  }
+  *param_2 = plVar6;
+  param_2[1] = plVar5;
+  if (plVar3 != (longlong *)0x0) {
+    LOCK();
+    piVar1 = (int *)((longlong)plVar3 + 0xc);
+    iVar2 = *piVar1;
+    *piVar1 = *piVar1 + -1;
+    UNLOCK();
+    if (iVar2 == 1) {
+      (**(code **)(*plVar3 + 8))(plVar3);
+    }
+  }
+  FUN_18000ea50(param_3);
+  return param_2;
+}
+

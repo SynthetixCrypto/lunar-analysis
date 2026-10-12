@@ -1,0 +1,614 @@
+public abstract class com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.OHRORRHCHCRICORRRCIRIOCCIRCRII.RORCICOHRIOIIIOIOHIIIICRCIHRII.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.HHOCCCCIIIORCHRIHIRCHIRICCHIRC.COOCHIRORIICRCIIRIROHIIRIRICCH implements com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.ORCOOOCHIICOIICCROCRCOOROORIHR.ORHHCIHIOOCOOHOOIROIHHOCOOCIRH.CCHRHCCCHRIHCICICIRCORHRORIOCI,com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.ORCOOOCHIICOIICCROCRCOOROORIHR.ORHHCIHIOOCOOHOOIROIHHOCOOCIRH.COOCHIRORIICRCIIRIROHIIRIRICCH {
+  public com.mojang.blaze3d.textures.GpuTexture texture$v1_21_5;
+    descriptor: Lcom/mojang/blaze3d/textures/GpuTexture;
+
+  public com.mojang.blaze3d.textures.GpuSampler sampler$v1_21_11;
+    descriptor: Lcom/mojang/blaze3d/textures/GpuSampler;
+
+  public com.mojang.blaze3d.textures.GpuTextureView textureView$v1_21_6;
+    descriptor: Lcom/mojang/blaze3d/textures/GpuTextureView;
+
+  public int id$v1_16_1;
+    descriptor: I
+
+  public com.moonsworth.lunar.RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.OHRORRHCHCRICORRRCIRIOCCIRCRII.RORCICOHRIOIIIOIOHIIIICRCIHRII.RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.HHOCCCCIIIORCHRIHIRCHIRICCHIRC.COOCHIRORIICRCIIRIROHIIRIRICCH();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #84                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public abstract int getId$v1_16_1();
+    descriptor: ()I
+
+  public abstract void setFilter$v1_16_1(boolean, boolean);
+    descriptor: (ZZ)V
+
+  public abstract void bind$v1_16_1();
+    descriptor: ()V
+
+  public void bridge$setFilter(boolean, boolean);
+    descriptor: (ZZ)V
+    Code:
+       0: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        35
+       5: if_icmplt     60
+       8: iload_1
+       9: ifeq          18
+      12: getstatic     #45                 // Field com/mojang/blaze3d/textures/FilterMode.LINEAR:Lcom/mojang/blaze3d/textures/FilterMode;
+      15: goto          21
+      18: getstatic     #46                 // Field com/mojang/blaze3d/textures/FilterMode.NEAREST:Lcom/mojang/blaze3d/textures/FilterMode;
+      21: astore_3
+      22: aload_0
+      23: getfield      #50                 // Field sampler$v1_21_11:Lcom/mojang/blaze3d/textures/GpuSampler;
+      26: invokevirtual #71                 // Method com/mojang/blaze3d/textures/GpuSampler.getAddressModeU:()Lcom/mojang/blaze3d/textures/AddressMode;
+      29: astore        4
+      31: aload_0
+      32: getfield      #50                 // Field sampler$v1_21_11:Lcom/mojang/blaze3d/textures/GpuSampler;
+      35: invokevirtual #72                 // Method com/mojang/blaze3d/textures/GpuSampler.getAddressModeV:()Lcom/mojang/blaze3d/textures/AddressMode;
+      38: astore        5
+      40: aload_0
+      41: invokestatic  #68                 // Method com/mojang/blaze3d/systems/RenderSystem.getSamplerCache$v1_21_11:()Lcom/mojang/blaze3d/systems/SamplerCache;
+      44: aload         4
+      46: aload         5
+      48: aload_3
+      49: aload_3
+      50: iload_2
+      51: invokevirtual #70                 // Method com/mojang/blaze3d/systems/SamplerCache.getSampler:(Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/FilterMode;Lcom/mojang/blaze3d/textures/FilterMode;Z)Lcom/mojang/blaze3d/textures/GpuSampler;
+      54: putfield      #50                 // Field sampler$v1_21_11:Lcom/mojang/blaze3d/textures/GpuSampler;
+      57: goto          66
+      60: aload_0
+      61: iload_1
+      62: iload_2
+      63: invokevirtual #80                 // Method setFilter$v1_16_1:(ZZ)V
+      66: return
+
+  public void bridge$allocate(boolean, boolean, int, int, com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.RORCICOHRIOIIIOIOHIIIICRCIHRII.OHOORCOHRORRIHROOCROOIIHHOOHRI.COOCHIRORIICRCIIRIROHIIRIRICCH, boolean, boolean);
+    descriptor: (ZZIILcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH;ZZ)V
+    Code:
+       0: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        30
+       5: if_icmplt     277
+       8: aload_0
+       9: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+      12: astore        8
+      14: aload         8
+      16: ifnull        38
+      19: aload         8
+      21: getfield      #48                 // Field com/mojang/blaze3d/textures/GpuTexture.width:I
+      24: iload_3
+      25: if_icmpne     38
+      28: aload         8
+      30: getfield      #47                 // Field com/mojang/blaze3d/textures/GpuTexture.height:I
+      33: iload         4
+      35: if_icmpeq     274
+      38: aload_0
+      39: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+      42: ifnull        52
+      45: aload_0
+      46: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+      49: invokevirtual #73                 // Method com/mojang/blaze3d/textures/GpuTexture.close:()V
+      52: aload_0
+      53: getfield      #52                 // Field textureView$v1_21_6:Lcom/mojang/blaze3d/textures/GpuTextureView;
+      56: ifnull        66
+      59: aload_0
+      60: getfield      #52                 // Field textureView$v1_21_6:Lcom/mojang/blaze3d/textures/GpuTextureView;
+      63: invokevirtual #74                 // Method com/mojang/blaze3d/textures/GpuTextureView.close:()V
+      66: iload         7
+      68: ifeq          82
+      71: aload         5
+      73: getstatic     #53                 // Field com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH.RGBA8:Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+      76: if_acmpne     82
+      79: iconst_1
+      80: istore        6
+      82: iload         6
+      84: ifeq          94
+      87: bipush        13
+      89: istore        9
+      91: goto          97
+      94: iconst_5
+      95: istore        9
+      97: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+     100: bipush        39
+     102: if_icmplt     183
+     105: aload_0
+     106: invokestatic  #67                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v26_1:()Lcom/mojang/blaze3d/systems/GpuDevice_v26_1;
+     109: ldc           #5                  // String
+     111: iload         9
+     113: aload         5
+     115: invokestatic  #82                 // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.RROHOCRCCHCIORHICIHCOHRIRCIHCI:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Lcom/mojang/blaze3d/GpuFormat;
+     118: iload_3
+     119: iload         4
+     121: iconst_1
+     122: iconst_1
+     123: invokevirtual #63                 // Method com/mojang/blaze3d/systems/GpuDevice_v26_1.createTexture$v26_2:(Ljava/lang/String;ILcom/mojang/blaze3d/GpuFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+     126: putfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     129: aload_0
+     130: invokestatic  #67                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v26_1:()Lcom/mojang/blaze3d/systems/GpuDevice_v26_1;
+     133: aload_0
+     134: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     137: invokevirtual #64                 // Method com/mojang/blaze3d/systems/GpuDevice_v26_1.createTextureView:(Lcom/mojang/blaze3d/textures/GpuTexture;)Lcom/mojang/blaze3d/textures/GpuTextureView;
+     140: putfield      #52                 // Field textureView$v1_21_6:Lcom/mojang/blaze3d/textures/GpuTextureView;
+     143: iload         7
+     145: ifeq          274
+     148: aload         5
+     150: getstatic     #53                 // Field com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH.RGBA8:Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH;
+     153: if_acmpne     274
+     156: invokestatic  #67                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v26_1:()Lcom/mojang/blaze3d/systems/GpuDevice_v26_1;
+     159: invokevirtual #61                 // Method com/mojang/blaze3d/systems/GpuDevice_v26_1.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder_v26_1;
+     162: aload_0
+     163: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     166: new           #36                 // class org/joml/Vector4f
+     169: dup
+     170: fconst_0
+     171: fconst_0
+     172: fconst_0
+     173: fconst_0
+     174: invokespecial #88                 // Method org/joml/Vector4f."<init>":(FFFF)V
+     177: invokevirtual #58                 // Method com/mojang/blaze3d/systems/CommandEncoder_v26_1.clearColorTexture$v26_2:(Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;)V
+     180: goto          274
+     183: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+     186: bipush        36
+     188: if_icmplt     232
+     191: aload_0
+     192: invokestatic  #67                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v26_1:()Lcom/mojang/blaze3d/systems/GpuDevice_v26_1;
+     195: ldc           #5                  // String
+     197: iload         9
+     199: aload         5
+     201: invokestatic  #81                 // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Lcom/mojang/blaze3d/textures/TextureFormat;
+     204: iload_3
+     205: iload         4
+     207: iconst_1
+     208: iconst_1
+     209: invokevirtual #62                 // Method com/mojang/blaze3d/systems/GpuDevice_v26_1.createTexture$v26_1:(Ljava/lang/String;ILcom/mojang/blaze3d/textures/TextureFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+     212: putfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     215: aload_0
+     216: invokestatic  #67                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v26_1:()Lcom/mojang/blaze3d/systems/GpuDevice_v26_1;
+     219: aload_0
+     220: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     223: invokevirtual #64                 // Method com/mojang/blaze3d/systems/GpuDevice_v26_1.createTextureView:(Lcom/mojang/blaze3d/textures/GpuTexture;)Lcom/mojang/blaze3d/textures/GpuTextureView;
+     226: putfield      #52                 // Field textureView$v1_21_6:Lcom/mojang/blaze3d/textures/GpuTextureView;
+     229: goto          274
+     232: aload_0
+     233: invokestatic  #66                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v1_21_5:()Lcom/mojang/blaze3d/systems/GpuDevice_v1_21_5;
+     236: ldc           #5                  // String
+     238: iload         9
+     240: aload         5
+     242: invokestatic  #81                 // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Lcom/mojang/blaze3d/textures/TextureFormat;
+     245: iload_3
+     246: iload         4
+     248: iconst_1
+     249: iconst_1
+     250: invokeinterface #98,  8           // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice_v1_21_5.createTexture$v1_21_6:(Ljava/lang/String;ILcom/mojang/blaze3d/textures/TextureFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+     255: putfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     258: aload_0
+     259: invokestatic  #66                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v1_21_5:()Lcom/mojang/blaze3d/systems/GpuDevice_v1_21_5;
+     262: aload_0
+     263: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     266: invokeinterface #99,  2           // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice_v1_21_5.createTextureView$v1_21_6:(Lcom/mojang/blaze3d/textures/GpuTexture;)Lcom/mojang/blaze3d/textures/GpuTextureView;
+     271: putfield      #52                 // Field textureView$v1_21_6:Lcom/mojang/blaze3d/textures/GpuTextureView;
+     274: goto          365
+     277: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+     280: bipush        29
+     282: if_icmplt     355
+     285: aload_0
+     286: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     289: astore        8
+     291: aload         8
+     293: ifnull        315
+     296: aload         8
+     298: getfield      #48                 // Field com/mojang/blaze3d/textures/GpuTexture.width:I
+     301: iload_3
+     302: if_icmpne     315
+     305: aload         8
+     307: getfield      #47                 // Field com/mojang/blaze3d/textures/GpuTexture.height:I
+     310: iload         4
+     312: if_icmpeq     329
+     315: aload_0
+     316: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     319: ifnull        329
+     322: aload_0
+     323: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     326: invokevirtual #73                 // Method com/mojang/blaze3d/textures/GpuTexture.close:()V
+     329: aload_0
+     330: invokestatic  #66                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v1_21_5:()Lcom/mojang/blaze3d/systems/GpuDevice_v1_21_5;
+     333: ldc           #5                  // String
+     335: aload         5
+     337: invokestatic  #81                 // Method com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RHCCHHHHIHHRIICRIHRRIHRORIIOHO/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/RORCICOHRIOIIIOIOHIIIICRCIHRII/OHOORCOHRORRIHROOCROOIIHHOOHRI/COOCHIRORIICRCIIRIROHIIRIRICCH;)Lcom/mojang/blaze3d/textures/TextureFormat;
+     340: iload_3
+     341: iload         4
+     343: iconst_1
+     344: invokeinterface #97,  6           // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice_v1_21_5.createTexture$v1_21_5:(Ljava/lang/String;Lcom/mojang/blaze3d/textures/TextureFormat;III)Lcom/mojang/blaze3d/textures/GpuTexture;
+     349: putfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     352: goto          365
+     355: aload_0
+     356: invokevirtual #77                 // Method getId$v1_16_1:()I
+     359: iload_3
+     360: iload         4
+     362: invokestatic  #57                 // Method com/mojang/blaze3d/platform/TextureUtil.prepareImage$v1_16_1:(III)V
+     365: aload_0
+     366: iload_1
+     367: iload_2
+     368: invokevirtual #76                 // Method bridge$setFilter:(ZZ)V
+     371: return
+
+  public void bridge$upload(int, int, int, int, int[]);
+    descriptor: (IIII[I)V
+    Code:
+       0: iload_3
+       1: iload         4
+       3: imul
+       4: iconst_4
+       5: imul
+       6: istore        6
+       8: iload         6
+      10: invokestatic  #83                 // Method com/moonsworth/lunar/client/util/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/ORCOOOCHIICOIICCROCRCOOROORIHR.OOOHORCRCHHOCHCRCIIRRROOHCRCRH:(I)Ljava/nio/ByteBuffer;
+      13: astore        7
+      15: aload         7
+      17: iload         6
+      19: invokevirtual #87                 // Method java/nio/ByteBuffer.limit:(I)Ljava/nio/ByteBuffer;
+      22: pop
+      23: aload         7
+      25: invokestatic  #90                 // Method org/lwjgl/system/MemoryUtil.memAddress:(Ljava/nio/ByteBuffer;)J
+      28: lstore        8
+      30: iconst_0
+      31: istore        10
+      33: iload         10
+      35: aload         5
+      37: arraylength
+      38: if_icmpge     65
+      41: lload         8
+      43: iload         10
+      45: i2l
+      46: ldc2_w        #39                 // long 4l
+      49: lmul
+      50: ladd
+      51: aload         5
+      53: iload         10
+      55: iaload
+      56: invokestatic  #92                 // Method org/lwjgl/system/MemoryUtil.memPutInt:(JI)V
+      59: iinc          10, 1
+      62: goto          33
+      65: aload_0
+      66: iload_1
+      67: iload_2
+      68: iload_3
+      69: iload         4
+      71: aload         7
+      73: invokevirtual #78                 // Method lunar$uploadCompactRgba:(IIIILjava/nio/ByteBuffer;)V
+      76: return
+
+  public void bridge$uploadBgra(int, int, int, int, java.nio.ByteBuffer, int, int, int);
+    descriptor: (IIIILjava/nio/ByteBuffer;III)V
+    Code:
+       0: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        29
+       5: if_icmpge     31
+       8: aload_0
+       9: iload_1
+      10: iload_2
+      11: iload_3
+      12: iload         4
+      14: aload         5
+      16: invokevirtual #86                 // Method java/nio/ByteBuffer.duplicate:()Ljava/nio/ByteBuffer;
+      19: ldc           #3                  // int 32993
+      21: iload         6
+      23: iload         7
+      25: iload         8
+      27: invokevirtual #79                 // Method lunar$uploadOpenGl:(IIIILjava/nio/ByteBuffer;IIII)V
+      30: return
+      31: iload_3
+      32: iload         4
+      34: imul
+      35: iconst_4
+      36: imul
+      37: istore        9
+      39: iload         9
+      41: invokestatic  #83                 // Method com/moonsworth/lunar/client/util/HHOCCCCIIIORCHRIHIRCHIRICCHIRC/ORCOOOCHIICOIICCROCRCOOROORIHR.OOOHORCRCHHOCHCRCIIRRROOHCRCRH:(I)Ljava/nio/ByteBuffer;
+      44: astore        10
+      46: aload         10
+      48: iload         9
+      50: invokevirtual #87                 // Method java/nio/ByteBuffer.limit:(I)Ljava/nio/ByteBuffer;
+      53: pop
+      54: aload         5
+      56: invokestatic  #90                 // Method org/lwjgl/system/MemoryUtil.memAddress:(Ljava/nio/ByteBuffer;)J
+      59: iload         7
+      61: i2l
+      62: iload         8
+      64: i2l
+      65: lmul
+      66: ladd
+      67: iload         6
+      69: i2l
+      70: ldc2_w        #39                 // long 4l
+      73: lmul
+      74: ladd
+      75: lstore        11
+      77: aload         10
+      79: invokestatic  #90                 // Method org/lwjgl/system/MemoryUtil.memAddress:(Ljava/nio/ByteBuffer;)J
+      82: lstore        13
+      84: iconst_0
+      85: istore        15
+      87: iload         15
+      89: iload         4
+      91: if_icmpge     179
+      94: lload         11
+      96: iload         15
+      98: i2l
+      99: iload         8
+     101: i2l
+     102: lmul
+     103: ladd
+     104: lstore        16
+     106: iconst_0
+     107: istore        18
+     109: iload         18
+     111: iload_3
+     112: if_icmpge     173
+     115: lload         16
+     117: iload         18
+     119: i2l
+     120: ldc2_w        #39                 // long 4l
+     123: lmul
+     124: ladd
+     125: invokestatic  #91                 // Method org/lwjgl/system/MemoryUtil.memGetInt:(J)I
+     128: istore        19
+     130: lload         13
+     132: iload         19
+     134: ldc           #1                  // int -16711936
+     136: iand
+     137: iload         19
+     139: ldc           #4                  // int 16711680
+     141: iand
+     142: bipush        16
+     144: iushr
+     145: ior
+     146: iload         19
+     148: sipush        255
+     151: iand
+     152: bipush        16
+     154: ishl
+     155: ior
+     156: invokestatic  #92                 // Method org/lwjgl/system/MemoryUtil.memPutInt:(JI)V
+     159: lload         13
+     161: ldc2_w        #39                 // long 4l
+     164: ladd
+     165: lstore        13
+     167: iinc          18, 1
+     170: goto          109
+     173: iinc          15, 1
+     176: goto          87
+     179: aload_0
+     180: iload_1
+     181: iload_2
+     182: iload_3
+     183: iload         4
+     185: aload         10
+     187: invokevirtual #78                 // Method lunar$uploadCompactRgba:(IIIILjava/nio/ByteBuffer;)V
+     190: return
+
+  private void lunar$uploadCompactRgba(int, int, int, int, java.nio.ByteBuffer);
+    descriptor: (IIIILjava/nio/ByteBuffer;)V
+    Code:
+       0: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        29
+       5: if_icmpge     28
+       8: aload_0
+       9: iload_1
+      10: iload_2
+      11: iload_3
+      12: iload         4
+      14: aload         5
+      16: sipush        6408
+      19: iconst_0
+      20: iconst_0
+      21: iload_3
+      22: iconst_4
+      23: imul
+      24: invokevirtual #79                 // Method lunar$uploadOpenGl:(IIIILjava/nio/ByteBuffer;IIII)V
+      27: return
+      28: iconst_0
+      29: istore        6
+      31: iconst_0
+      32: istore        7
+      34: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      37: bipush        39
+      39: if_icmplt     69
+      42: invokestatic  #67                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v26_1:()Lcom/mojang/blaze3d/systems/GpuDevice_v26_1;
+      45: invokevirtual #61                 // Method com/mojang/blaze3d/systems/GpuDevice_v26_1.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder_v26_1;
+      48: aload_0
+      49: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+      52: aload         5
+      54: iload         6
+      56: iload         7
+      58: iload_1
+      59: iload_2
+      60: iload_3
+      61: iload         4
+      63: invokevirtual #60                 // Method com/mojang/blaze3d/systems/CommandEncoder_v26_1.writeToTexture$v26_2:(Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/ByteBuffer;IIIIII)V
+      66: goto          226
+      69: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      72: bipush        36
+      74: if_icmplt     107
+      77: invokestatic  #67                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v26_1:()Lcom/mojang/blaze3d/systems/GpuDevice_v26_1;
+      80: invokevirtual #61                 // Method com/mojang/blaze3d/systems/GpuDevice_v26_1.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder_v26_1;
+      83: aload_0
+      84: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+      87: aload         5
+      89: getstatic     #44                 // Field com/mojang/blaze3d/platform/NativeImage$Format.RGBA:Lcom/mojang/blaze3d/platform/NativeImage$Format;
+      92: iload         6
+      94: iload         7
+      96: iload_1
+      97: iload_2
+      98: iload_3
+      99: iload         4
+     101: invokevirtual #59                 // Method com/mojang/blaze3d/systems/CommandEncoder_v26_1.writeToTexture$v26_1:(Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/ByteBuffer;Lcom/mojang/blaze3d/platform/NativeImage$Format;IIIIII)V
+     104: goto          226
+     107: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+     110: bipush        33
+     112: if_icmplt     149
+     115: invokestatic  #66                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v1_21_5:()Lcom/mojang/blaze3d/systems/GpuDevice_v1_21_5;
+     118: invokeinterface #96,  1           // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice_v1_21_5.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder_v1_21_5;
+     123: aload_0
+     124: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     127: aload         5
+     129: getstatic     #44                 // Field com/mojang/blaze3d/platform/NativeImage$Format.RGBA:Lcom/mojang/blaze3d/platform/NativeImage$Format;
+     132: iload         6
+     134: iload         7
+     136: iload_1
+     137: iload_2
+     138: iload_3
+     139: iload         4
+     141: invokeinterface #95,  10          // InterfaceMethod com/mojang/blaze3d/systems/CommandEncoder_v1_21_5.writeToTexture$v1_21_9:(Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/ByteBuffer;Lcom/mojang/blaze3d/platform/NativeImage$Format;IIIIII)V
+     146: goto          226
+     149: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+     152: bipush        30
+     154: if_icmplt     194
+     157: invokestatic  #66                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v1_21_5:()Lcom/mojang/blaze3d/systems/GpuDevice_v1_21_5;
+     160: invokeinterface #96,  1           // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice_v1_21_5.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder_v1_21_5;
+     165: aload_0
+     166: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     169: aload         5
+     171: invokevirtual #85                 // Method java/nio/ByteBuffer.asIntBuffer:()Ljava/nio/IntBuffer;
+     174: getstatic     #44                 // Field com/mojang/blaze3d/platform/NativeImage$Format.RGBA:Lcom/mojang/blaze3d/platform/NativeImage$Format;
+     177: iload         6
+     179: iload         7
+     181: iload_1
+     182: iload_2
+     183: iload_3
+     184: iload         4
+     186: invokeinterface #94,  10          // InterfaceMethod com/mojang/blaze3d/systems/CommandEncoder_v1_21_5.writeToTexture$v1_21_6:(Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/IntBuffer;Lcom/mojang/blaze3d/platform/NativeImage$Format;IIIIII)V
+     191: goto          226
+     194: invokestatic  #66                 // Method com/mojang/blaze3d/systems/RenderSystem.getDevice$v1_21_5:()Lcom/mojang/blaze3d/systems/GpuDevice_v1_21_5;
+     197: invokeinterface #96,  1           // InterfaceMethod com/mojang/blaze3d/systems/GpuDevice_v1_21_5.createCommandEncoder:()Lcom/mojang/blaze3d/systems/CommandEncoder_v1_21_5;
+     202: aload_0
+     203: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+     206: aload         5
+     208: invokevirtual #85                 // Method java/nio/ByteBuffer.asIntBuffer:()Ljava/nio/IntBuffer;
+     211: getstatic     #44                 // Field com/mojang/blaze3d/platform/NativeImage$Format.RGBA:Lcom/mojang/blaze3d/platform/NativeImage$Format;
+     214: iload         6
+     216: iload_1
+     217: iload_2
+     218: iload_3
+     219: iload         4
+     221: invokeinterface #93,  9           // InterfaceMethod com/mojang/blaze3d/systems/CommandEncoder_v1_21_5.writeToTexture$v1_21_5:(Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/IntBuffer;Lcom/mojang/blaze3d/platform/NativeImage$Format;IIIII)V
+     226: return
+
+  private void lunar$uploadOpenGl(int, int, int, int, java.nio.ByteBuffer, int, int, int, int);
+    descriptor: (IIIILjava/nio/ByteBuffer;IIII)V
+    Code:
+       0: getstatic     #41                 // Field com/mojang/blaze3d/platform/GlStateManager.TEXTURES:[Lcom/mojang/blaze3d/platform/GlStateManager$TextureState;
+       3: getstatic     #42                 // Field com/mojang/blaze3d/platform/GlStateManager.activeTexture:I
+       6: aaload
+       7: getfield      #43                 // Field com/mojang/blaze3d/platform/GlStateManager$TextureState.binding:I
+      10: istore        10
+      12: sipush        3315
+      15: invokestatic  #89                 // Method org/lwjgl/opengl/GL11.glGetInteger:(I)I
+      18: istore        11
+      20: sipush        3316
+      23: invokestatic  #89                 // Method org/lwjgl/opengl/GL11.glGetInteger:(I)I
+      26: istore        12
+      28: sipush        3314
+      31: invokestatic  #89                 // Method org/lwjgl/opengl/GL11.glGetInteger:(I)I
+      34: istore        13
+      36: sipush        3317
+      39: invokestatic  #89                 // Method org/lwjgl/opengl/GL11.glGetInteger:(I)I
+      42: istore        14
+      44: aload_0
+      45: invokevirtual #75                 // Method bind$v1_16_1:()V
+      48: sipush        3315
+      51: iload         8
+      53: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+      56: sipush        3316
+      59: iload         7
+      61: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+      64: sipush        3317
+      67: iconst_4
+      68: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+      71: sipush        3314
+      74: iload         9
+      76: iconst_4
+      77: idiv
+      78: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+      81: sipush        3553
+      84: iconst_0
+      85: iload_1
+      86: iload_2
+      87: iload_3
+      88: iload         4
+      90: iload         6
+      92: sipush        5121
+      95: aload         5
+      97: invokestatic  #90                 // Method org/lwjgl/system/MemoryUtil.memAddress:(Ljava/nio/ByteBuffer;)J
+     100: invokestatic  #56                 // Method com/mojang/blaze3d/platform/GlStateManager._texSubImage2D:(IIIIIIIIJ)V
+     103: sipush        3315
+     106: iload         11
+     108: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+     111: sipush        3316
+     114: iload         12
+     116: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+     119: sipush        3317
+     122: iload         14
+     124: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+     127: sipush        3314
+     130: iload         13
+     132: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+     135: iload         10
+     137: invokestatic  #65                 // Method com/mojang/blaze3d/systems/RenderSystem.bindTexture$v1_16_1:(I)V
+     140: goto          185
+     143: astore        15
+     145: sipush        3315
+     148: iload         11
+     150: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+     153: sipush        3316
+     156: iload         12
+     158: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+     161: sipush        3317
+     164: iload         14
+     166: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+     169: sipush        3314
+     172: iload         13
+     174: invokestatic  #55                 // Method com/mojang/blaze3d/platform/GlStateManager._pixelStore:(II)V
+     177: iload         10
+     179: invokestatic  #65                 // Method com/mojang/blaze3d/systems/RenderSystem.bindTexture$v1_16_1:(I)V
+     182: aload         15
+     184: athrow
+     185: return
+    Exception table:
+       from    to  target type
+          44   103   143   any
+         143   145   143   any
+
+  public com.moonsworth.lunar.RORCICOHRIOIIIOIOHIIIICRCIHRII.IRCROOHIIOOHIRCRRHOHIORHCOHIOR.ORCOOOCHIICOIICCROCRCOOROORIHR.ORHHCIHIOOCOOHOOIROIHHOCOOCIRH.COOIOIRCCICRCCIHCCRHRCIHROHCCI bridge$getSamplerResource();
+    descriptor: ()Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/COOIOIRCCICRCCIHCCRHRCIHROHCCI;
+    Code:
+       0: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+       3: bipush        35
+       5: if_icmplt     26
+       8: aload_0
+       9: getfield      #52                 // Field textureView$v1_21_6:Lcom/mojang/blaze3d/textures/GpuTextureView;
+      12: invokestatic  #68                 // Method com/mojang/blaze3d/systems/RenderSystem.getSamplerCache$v1_21_11:()Lcom/mojang/blaze3d/systems/SamplerCache;
+      15: getstatic     #46                 // Field com/mojang/blaze3d/textures/FilterMode.NEAREST:Lcom/mojang/blaze3d/textures/FilterMode;
+      18: iconst_0
+      19: invokevirtual #69                 // Method com/mojang/blaze3d/systems/SamplerCache.getClampToEdge:(Lcom/mojang/blaze3d/textures/FilterMode;Z)Lcom/mojang/blaze3d/textures/GpuSampler;
+      22: invokestatic  #100                // InterfaceMethod com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COCCCORHOHRORRICOOHOCHOOCHHICR.COOCHIRORIICRCIIRIROHIIRIRICCH:(Lcom/mojang/blaze3d/textures/GpuTextureView;Lcom/mojang/blaze3d/textures/GpuSampler;)Lcom/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/COCCCORHOHRORRICOOHOCHOOCHHICR;
+      25: areturn
+      26: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      29: bipush        30
+      31: if_icmplt     42
+      34: aload_0
+      35: getfield      #52                 // Field textureView$v1_21_6:Lcom/mojang/blaze3d/textures/GpuTextureView;
+      38: invokestatic  #102                // InterfaceMethod com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR.create:(Lcom/mojang/blaze3d/textures/GpuTextureView;)Lcom/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/RIHHCHHHROOHOOIOIIRIOOCRHHOOOR;
+      41: areturn
+      42: getstatic     #54                 // Field com/moonsworth/lunar/client/util/ICOHORROHCRIORHHCOOHRHHCCHHROR.MC_VERSION:I
+      45: bipush        29
+      47: if_icmpne     58
+      50: aload_0
+      51: getfield      #51                 // Field texture$v1_21_5:Lcom/mojang/blaze3d/textures/GpuTexture;
+      54: invokestatic  #101                // InterfaceMethod com/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OIHRRCOOHRHIHICHRICIRIOCROHOCC.create:(Lcom/mojang/blaze3d/textures/GpuTexture;)Lcom/moonsworth/lunar/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/RCRHOOHIOCHHHHOCRIOCHRICIRCRRR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/OIHRRCOOHRHIHICHRICIRIOCROHOCC;
+      57: areturn
+      58: aload_0
+      59: getfield      #49                 // Field id$v1_16_1:I
+      62: invokestatic  #103                // InterfaceMethod com/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/HHOCCCCIIIORCHRIHIRCHIRICCHIRC.create:(I)Lcom/moonsworth/lunar/RORCICOHRIOIIIOIOHIIIICRCIHRII/IRCROOHIIOOHIRCRRHOHIORHCOHIOR/ORCOOOCHIICOIICCROCRCOOROORIHR/ORHHCIHIOOCOOHOOIROIHHOCOOCIRH/HHOCCCCIIIORCHRIHIRCHIRICCHIRC;
+      65: areturn
+}

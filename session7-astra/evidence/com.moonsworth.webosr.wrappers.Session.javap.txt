@@ -1,0 +1,18 @@
+public final class com.moonsworth.webosr.wrappers.Session extends com.moonsworth.webosr.NativeHandle {
+  private com.moonsworth.webosr.wrappers.Session(long);
+    descriptor: (J)V
+    Code:
+       0: aload_0
+       1: lload_1
+       2: invokespecial #3                  // Method com/moonsworth/webosr/NativeHandle."<init>":(J)V
+       5: return
+
+  public native boolean isPersistent();
+    descriptor: ()Z
+
+  public native java.lang.String name();
+    descriptor: ()Ljava/lang/String;
+
+  protected native void destroy();
+    descriptor: ()V
+}

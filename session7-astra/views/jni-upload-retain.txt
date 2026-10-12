@@ -1,0 +1,56 @@
+Evidence: ev_1f1a6f0225d0785b51b3a35d69d755b217e1eee630eeb85cd83a8adaa5581cf9
+Address: 0x18002d210
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+longlong * FUN_18002d210(longlong *param_1,undefined8 param_2)
+
+{
+  undefined1 auStack_118 [32];
+  longlong *local_f8;
+  longlong local_f0 [7];
+  longlong *local_b8;
+  longlong *local_b0;
+  longlong local_a0 [7];
+  undefined8 local_68;
+  undefined8 local_60;
+  undefined **local_58 [7];
+  undefined ***local_20;
+  ulonglong local_18;
+  
+  local_18 = DAT_18007a2c0 ^ (ulonglong)auStack_118;
+  local_58[0] = std::
+                _Func_impl_no_alloc<`public:___cdecl_webosr::binding::java::Object<webosr::binding::ByteBufferDescriptor>::Object<webosr::binding::ByteBufferDescriptor>(_jobject*___ptr64)___ptr64'::`1'::<lambda_1_>,void,_jobject*___ptr64>
+                ::vftable;
+  local_20 = local_58;
+  local_b8 = (longlong *)0x0;
+  local_f8 = param_1;
+  local_b8 = FUN_18002d550(local_58,local_f0);
+  if (local_20 != (undefined ***)0x0) {
+    (*(code *)(*local_20)[4])(local_20,local_20 != local_58);
+    local_20 = (undefined ***)0x0;
+  }
+  local_f8 = local_f0;
+  local_b0 = (longlong *)0x0;
+  local_68 = 0;
+  FUN_180001d60((longlong)local_a0,local_f0);
+  local_60 = param_2;
+  FUN_180020f60(param_1,local_a0,'\0');
+  if (local_b0 != (longlong *)0x0) {
+    local_f8 = local_b0;
+    if (local_b8 == (longlong *)0x0) {
+                    /* WARNING: Subroutine does not return */
+      std::_Xbad_function_call();
+    }
+    (**(code **)(*local_b8 + 0x10))(local_b8,&local_f8);
+  }
+  if (local_b8 != (longlong *)0x0) {
+    (**(code **)(*local_b8 + 0x20))(local_b8,local_b8 != local_f0);
+    local_b8 = (longlong *)0x0;
+  }
+  if (local_20 != (undefined ***)0x0) {
+    (*(code *)(*local_20)[4])(local_20,local_20 != local_58);
+  }
+  return param_1;
+}
+

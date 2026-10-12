@@ -1,0 +1,51 @@
+Evidence: ev_5cacdce6dde5acc5ea353f1a843db4115e70da427ba565308b92a48c3fe01897
+Address: 0x180035aa0
+
+undefined * FUN_180035aa0(int param_1)
+
+{
+  longlong *plVar1;
+  code *pcVar2;
+  uint uVar3;
+  longlong *plVar4;
+  undefined *puVar5;
+  char cVar6;
+  longlong *plVar7;
+  
+  plVar7 = DAT_180084458;
+  if (param_1 != 3) {
+    return &DAT_180084460 + (longlong)param_1 * 0x40078;
+  }
+  uVar3 = _Thrd_id();
+  plVar7 = (longlong *)*plVar7;
+  plVar1 = (longlong *)plVar7[1];
+  cVar6 = *(char *)((longlong)plVar1 + 0x19);
+  while (cVar6 == '\0') {
+    if (*(uint *)(plVar1 + 4) == uVar3) {
+      cVar6 = '\0';
+      plVar7 = plVar1;
+    }
+    else {
+      cVar6 = -1;
+      if (uVar3 <= *(uint *)(plVar1 + 4)) {
+        cVar6 = '\x01';
+        plVar7 = plVar1;
+      }
+    }
+    plVar4 = plVar1 + 2;
+    if (-1 < cVar6) {
+      plVar4 = plVar1;
+    }
+    plVar1 = (longlong *)*plVar4;
+    cVar6 = *(char *)((longlong)plVar1 + 0x19);
+  }
+  if ((*(char *)((longlong)plVar7 + 0x19) == '\0') &&
+     ((uVar3 == *(uint *)(plVar7 + 4) || (*(uint *)(plVar7 + 4) <= uVar3)))) {
+    return (undefined *)plVar7[5];
+  }
+  std::_Xout_of_range("invalid map<K, T> key");
+  pcVar2 = (code *)swi(3);
+  puVar5 = (undefined *)(*pcVar2)();
+  return puVar5;
+}
+

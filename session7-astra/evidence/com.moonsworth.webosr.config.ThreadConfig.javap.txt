@@ -1,0 +1,26 @@
+public final class com.moonsworth.webosr.config.ThreadConfig {
+  public double idleTimer;
+    descriptor: D
+
+  public double renderTimer;
+    descriptor: D
+
+  public double updateTimer;
+    descriptor: D
+
+  public com.moonsworth.webosr.config.ThreadConfig();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #6                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: dconst_0
+       6: putfield      #3                  // Field idleTimer:D
+       9: aload_0
+      10: dconst_0
+      11: putfield      #4                  // Field renderTimer:D
+      14: aload_0
+      15: dconst_0
+      16: putfield      #5                  // Field updateTimer:D
+      19: return
+}

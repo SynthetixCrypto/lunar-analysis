@@ -1,0 +1,109 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_4d359f1867ff934456376e505e07cbd50d489bb5434430314100e7382c5ec780\",\"subject\":{\"name\":\"C:\\\\Users\\\\Admin\\\\.lunarclient\\\\offline\\\\multiver\\\\natives\\\\Ultralight.dll\",\"digest\":{\"sha256\":\"718f0f1cfdb2832afcd6c32b59516b08ddc131586f6230ce85962cdf6e9ebd47\"},\"format\":\"pe\",\"architecture\":\"x86_64\",\"local_path\":\"C:\\\\Users\\\\Admin\\\\.lunarclient\\\\offline\\\\multiver\\\\natives\\\\Ultralight.dll\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"pe\",\"executable_role\":\"shared-library\",\"managed\":false,\"native_aot_metadata\":{\"contract_revision\":\"rtr-9.1-x64-pe-read-only-v3\",\"source_bytes\":134217728,\"work_units\":67108864,\"working_memory_bytes\":67108864,\"report_bytes\":4194304},\"architecture\":\"x86_64\",\"available_architectures\":[\"x86_64\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"disabled-windows-p0\",\"process_launch\":\"official-headless-script-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"90e13888e18b7d587414bb259f5e3dc44a7c9293bdf290ad8c459be524747d9f\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"search_procedures\",\"parameters\":{\"pattern\":\"Renderer.*(Create|Update|Render)|RendererImpl\",\"mode\":\"regex\",\"case_sensitive\":false},\"raw_result\":[{\"address\":\"0x180004040\",\"value\":\"ultralight::Renderer::Renderer\"},{\"address\":\"0x180050190\",\"value\":\"ultralight::Renderer::Create\"}],\"normalized_result\":[{\"address\":\"0x180004040\",\"value\":\"ultralight::Renderer::Renderer\"},{\"address\":\"0x180050190\",\"value\":\"ultralight::Renderer::Create\"}],\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Regex mode uses Java Pattern semantics. Matcher or compiler stack exhaustion returns a resource constraint without closing the session; literal mode avoids regex recursion and returns complete matching values.\",\"Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.\",\"The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.\",\"Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_4d359f1867ff934456376e505e07cbd50d489bb5434430314100e7382c5ec780",
+    "subject": {
+      "name": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\Ultralight.dll",
+      "digest": {
+        "sha256": "718f0f1cfdb2832afcd6c32b59516b08ddc131586f6230ce85962cdf6e9ebd47"
+      },
+      "format": "pe",
+      "architecture": "x86_64",
+      "local_path": "C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\Ultralight.dll"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "shared-library",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86_64",
+        "available_architectures": [
+          "x86_64"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "90e13888e18b7d587414bb259f5e3dc44a7c9293bdf290ad8c459be524747d9f"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "search_procedures",
+    "parameters": {
+      "pattern": "Renderer.*(Create|Update|Render)|RendererImpl",
+      "mode": "regex",
+      "case_sensitive": false
+    },
+    "raw_result": [
+      {
+        "address": "0x180004040",
+        "value": "ultralight::Renderer::Renderer"
+      },
+      {
+        "address": "0x180050190",
+        "value": "ultralight::Renderer::Create"
+      }
+    ],
+    "normalized_result": [
+      {
+        "address": "0x180004040",
+        "value": "ultralight::Renderer::Renderer"
+      },
+      {
+        "address": "0x180050190",
+        "value": "ultralight::Renderer::Create"
+      }
+    ],
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Regex mode uses Java Pattern semantics. Matcher or compiler stack exhaustion returns a resource constraint without closing the session; literal mode avoids regex recursion and returns complete matching values.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

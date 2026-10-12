@@ -1,0 +1,141 @@
+0x18004bd60: PUSH RBX
+0x18004bd62: PUSH R15
+0x18004bd64: SUB RSP, 0x78
+0x18004bd68: MOV RAX, qword ptr [0x18007a2c0]
+0x18004bd6f: XOR RAX, RSP
+0x18004bd72: MOV qword ptr [RSP + 0x68], RAX
+0x18004bd77: MOV RBX, RCX
+0x18004bd7a: XOR R15D, R15D
+0x18004bd7d: NOP dword ptr [RAX]
+0x18004bd80: MOV RCX, qword ptr [RBX + 0x80]
+0x18004bd87: MOV RAX, qword ptr [RBX + 0x88]
+0x18004bd8e: NOP
+0x18004bd8f: CMP RCX, RAX
+0x18004bd92: JZ 0x18004bde3
+0x18004bd94: MOV R8, qword ptr [RBX + RCX*0x8 + 0x60]
+0x18004bd99: LEA RAX, [RCX + 0x1]
+0x18004bd9d: AND EAX, 0x3
+0x18004bda0: NOP
+0x18004bda1: MOV qword ptr [RBX + 0x80], RAX
+0x18004bda8: CMP qword ptr [RBX + 0x28], R15
+0x18004bdac: JZ 0x18004bddd
+0x18004bdae: MOV RDX, qword ptr [RBX + 0xb8]
+0x18004bdb5: MOV RAX, qword ptr [RBX + 0xb0]
+0x18004bdbc: NOP
+0x18004bdbd: LEA RCX, [RDX + 0x1]
+0x18004bdc1: AND ECX, 0x3
+0x18004bdc4: CMP RCX, RAX
+0x18004bdc7: JZ 0x18004bddd
+0x18004bdc9: MOV RAX, qword ptr [RBX + 0x28]
+0x18004bdcd: MOV qword ptr [RBX + RDX*0x8 + 0x90], RAX
+0x18004bdd5: NOP
+0x18004bdd6: MOV qword ptr [RBX + 0xb8], RCX
+0x18004bddd: MOV qword ptr [RBX + 0x28], R8
+0x18004bde1: JMP 0x18004bd80
+0x18004bde3: MOV RDX, qword ptr [RBX + 0x28]
+0x18004bde7: TEST RDX, RDX
+0x18004bdea: JZ 0x18004bf82
+0x18004bdf0: MOV R8D, dword ptr [RDX + 0x4]
+0x18004bdf4: MOV R11D, dword ptr [RBX + 0x180]
+0x18004bdfb: MOV qword ptr [RSP + 0x98], RBP
+0x18004be03: MOV EBP, R8D
+0x18004be06: MOV qword ptr [RSP + 0xa0], RSI
+0x18004be0e: MOV qword ptr [RSP + 0xa8], RDI
+0x18004be16: MOV qword ptr [RSP + 0x70], R14
+0x18004be1b: MOV R14D, dword ptr [RDX + 0x8]
+0x18004be1f: IMUL EBP, R14D
+0x18004be23: TEST R11D, R11D
+0x18004be26: JNZ 0x18004be42
+0x18004be28: MOV RCX, qword ptr [RBX + 0x190]
+0x18004be2f: MOV R9D, R14D
+0x18004be32: MOV EDX, dword ptr [RDX]
+0x18004be34: MOV RAX, qword ptr [RCX]
+0x18004be37: CALL qword ptr [RAX + 0x8]
+0x18004be3a: MOV dword ptr [RBX + 0x180], EAX
+0x18004be40: JMP 0x18004be72
+0x18004be42: MOV R10D, dword ptr [RDX]
+0x18004be45: CMP dword ptr [RBX + 0x184], R10D
+0x18004be4c: JNZ 0x18004be57
+0x18004be4e: CMP dword ptr [RBX + 0x188], R8D
+0x18004be55: JZ 0x18004bead
+0x18004be57: MOV RCX, qword ptr [RBX + 0x190]
+0x18004be5e: MOV R9D, R8D
+0x18004be61: MOV R8D, R10D
+0x18004be64: MOV dword ptr [RSP + 0x20], R14D
+0x18004be69: MOV EDX, R11D
+0x18004be6c: MOV RAX, qword ptr [RCX]
+0x18004be6f: CALL qword ptr [RAX + 0x10]
+0x18004be72: MOV RCX, qword ptr [RBX + 0x28]
+0x18004be76: LEA RDX, [RSP + 0x58]
+0x18004be7b: MOV qword ptr [RSP + 0x58], R15
+0x18004be80: MOV R8D, 0x1
+0x18004be86: MOV EAX, dword ptr [RCX]
+0x18004be88: MOV dword ptr [RBX + 0x184], EAX
+0x18004be8e: MOV EAX, dword ptr [RCX + 0x4]
+0x18004be91: MOV dword ptr [RBX + 0x188], EAX
+0x18004be97: MOV EAX, dword ptr [RCX]
+0x18004be99: MOV dword ptr [RSP + 0x60], EAX
+0x18004be9d: MOV EAX, dword ptr [RCX + 0x4]
+0x18004bea0: ADD RCX, 0x28
+0x18004bea4: MOV dword ptr [RSP + 0x64], EAX
+0x18004bea8: CALL 0x18004a790
+0x18004bead: MOV RAX, qword ptr [RBX + 0x28]
+0x18004beb1: MOV RSI, qword ptr [RAX + 0x30]
+0x18004beb5: MOV RDI, qword ptr [RAX + 0x28]
+0x18004beb9: CMP RDI, RSI
+0x18004bebc: JZ 0x18004bf20
+0x18004bebe: NOP
+0x18004bec0: MOV RCX, RDI
+0x18004bec3: CALL qword ptr [0x18005e7a8]
+0x18004bec9: TEST AL, AL
+0x18004becb: JNZ 0x18004bf17
+0x18004becd: MOV R10D, dword ptr [RDI + 0x4]
+0x18004bed1: MOV R11D, dword ptr [RDI]
+0x18004bed4: MOV RCX, qword ptr [RBX + 0x190]
+0x18004bedb: MOV R9D, dword ptr [RDI + 0xc]
+0x18004bedf: MOV EDX, dword ptr [RDI + 0x8]
+0x18004bee2: SUB R9D, R10D
+0x18004bee5: MOV R8, qword ptr [RBX + 0x28]
+0x18004bee9: SUB EDX, R11D
+0x18004beec: MOV RAX, qword ptr [RCX]
+0x18004beef: MOV dword ptr [RSP + 0x40], R14D
+0x18004bef4: MOV dword ptr [RSP + 0x38], R9D
+0x18004bef9: MOV R9D, EBP
+0x18004befc: MOV R8, qword ptr [R8 + 0x10]
+0x18004bf00: MOV dword ptr [RSP + 0x30], EDX
+0x18004bf04: MOV EDX, dword ptr [RBX + 0x180]
+0x18004bf0a: MOV dword ptr [RSP + 0x28], R10D
+0x18004bf0f: MOV dword ptr [RSP + 0x20], R11D
+0x18004bf14: CALL qword ptr [RAX + 0x18]
+0x18004bf17: ADD RDI, 0x10
+0x18004bf1b: CMP RDI, RSI
+0x18004bf1e: JNZ 0x18004bec0
+0x18004bf20: MOV RAX, qword ptr [RBX + 0x28]
+0x18004bf24: MOV R14, qword ptr [RSP + 0x70]
+0x18004bf29: MOV RDI, qword ptr [RSP + 0xa8]
+0x18004bf31: MOV RSI, qword ptr [RSP + 0xa0]
+0x18004bf39: MOV RCX, qword ptr [RAX + 0x28]
+0x18004bf3d: MOV RBP, qword ptr [RSP + 0x98]
+0x18004bf45: CMP RCX, qword ptr [RAX + 0x30]
+0x18004bf49: JZ 0x18004bf4f
+0x18004bf4b: MOV qword ptr [RAX + 0x30], RCX
+0x18004bf4f: MOV RDX, qword ptr [RBX + 0xb8]
+0x18004bf56: MOV RAX, qword ptr [RBX + 0xb0]
+0x18004bf5d: NOP
+0x18004bf5e: LEA RCX, [RDX + 0x1]
+0x18004bf62: AND ECX, 0x3
+0x18004bf65: CMP RCX, RAX
+0x18004bf68: JZ 0x18004bf7e
+0x18004bf6a: MOV RAX, qword ptr [RBX + 0x28]
+0x18004bf6e: MOV qword ptr [RBX + RDX*0x8 + 0x90], RAX
+0x18004bf76: NOP
+0x18004bf77: MOV qword ptr [RBX + 0xb8], RCX
+0x18004bf7e: MOV qword ptr [RBX + 0x28], R15
+0x18004bf82: MOV EAX, dword ptr [RBX + 0x180]
+0x18004bf88: MOV RCX, qword ptr [RSP + 0x68]
+0x18004bf8d: XOR RCX, RSP
+0x18004bf90: CALL 0x180058ff0
+0x18004bf95: ADD RSP, 0x78
+0x18004bf99: POP R15
+0x18004bf9b: POP RBX
+0x18004bf9c: RET

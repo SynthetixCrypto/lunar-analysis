@@ -1,0 +1,95 @@
+Evidence: ev_6cb4439aba513c61e2eeb0396c8cbefe917c88513da0f98fda5d2569c2c17320
+Address: 0x18004c360
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void FUN_18004c360(longlong param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  longlong lVar3;
+  undefined4 uVar4;
+  undefined4 uVar5;
+  undefined4 uVar6;
+  IntRect *pIVar7;
+  longlong *plVar8;
+  undefined4 *puVar9;
+  void *_Memory;
+  void *pvVar10;
+  ulonglong uVar11;
+  longlong *plVar12;
+  undefined1 auStackY_88 [32];
+  void *local_50;
+  undefined8 local_48;
+  longlong lStack_40;
+  undefined1 local_38 [16];
+  ulonglong local_28;
+  
+  local_28 = DAT_18007a2c0 ^ (ulonglong)auStackY_88;
+  iVar1 = *(int *)(param_1 + 0x10);
+  iVar2 = *(int *)(param_1 + 0xc);
+  pIVar7 = (IntRect *)(**(code **)(*(longlong *)(param_1 + -0x18) + 0x48))(param_1 + -0x18,local_38)
+  ;
+  plVar8 = FUN_18004b740((longlong *)&local_50,(IntRect *)(param_1 + 0x50),
+                         (IntRect *)(param_1 + 0x40),pIVar7,iVar2,iVar1);
+  lVar3 = *(longlong *)(param_1 + 0x20);
+  plVar12 = (longlong *)(lVar3 + 0x28);
+  if (plVar12 != plVar8) {
+    pvVar10 = (void *)*plVar12;
+    if (pvVar10 != (void *)0x0) {
+      _Memory = pvVar10;
+      if ((0xfff < (*(longlong *)(lVar3 + 0x38) - (longlong)pvVar10 & 0xfffffffffffffff0U)) &&
+         (_Memory = *(void **)((longlong)pvVar10 + -8),
+         0x1f < (ulonglong)((longlong)pvVar10 + (-8 - (longlong)_Memory)))) goto LAB_18004c465;
+      free(_Memory);
+      *plVar12 = 0;
+      *(undefined8 *)(lVar3 + 0x30) = 0;
+      *(undefined8 *)(lVar3 + 0x38) = 0;
+    }
+    *plVar12 = *plVar8;
+    *(longlong *)(lVar3 + 0x30) = plVar8[1];
+    *(longlong *)(lVar3 + 0x38) = plVar8[2];
+    *plVar8 = 0;
+    plVar8[1] = 0;
+    plVar8[2] = 0;
+  }
+  if (local_50 != (void *)0x0) {
+    pvVar10 = local_50;
+    if ((0xfff < (lStack_40 - (longlong)local_50 & 0xfffffffffffffff0U)) &&
+       (pvVar10 = *(void **)((longlong)local_50 + -8),
+       0x1f < (ulonglong)((longlong)local_50 + (-8 - (longlong)pvVar10)))) {
+LAB_18004c465:
+                    /* WARNING: Subroutine does not return */
+      _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+    }
+    free(pvVar10);
+    local_50 = (void *)0x0;
+    local_48 = 0;
+    lStack_40 = 0;
+  }
+  *(undefined8 *)(param_1 + 0x30) = *(undefined8 *)(param_1 + 0x20);
+  uVar11 = (ulonglong)((int)*(longlong *)(param_1 + 0x88) + 1U & 3);
+  if (uVar11 != *(ulonglong *)(param_1 + 0x80)) {
+    *(undefined8 *)(param_1 + 0x60 + *(longlong *)(param_1 + 0x88) * 8) =
+         *(undefined8 *)(param_1 + 0x20);
+    *(ulonglong *)(param_1 + 0x88) = uVar11;
+  }
+  *(undefined4 *)(param_1 + 0x50) = *(undefined4 *)(param_1 + 0x40);
+  *(undefined4 *)(param_1 + 0x54) = *(undefined4 *)(param_1 + 0x44);
+  *(undefined4 *)(param_1 + 0x58) = *(undefined4 *)(param_1 + 0x48);
+  *(undefined4 *)(param_1 + 0x5c) = *(undefined4 *)(param_1 + 0x4c);
+  puVar9 = (undefined4 *)
+           (**(code **)(*(longlong *)(param_1 + -0x18) + 0x48))(param_1 + -0x18,local_38);
+  uVar4 = puVar9[1];
+  uVar5 = puVar9[2];
+  uVar6 = puVar9[3];
+  *(undefined4 *)(param_1 + 0x40) = *puVar9;
+  *(undefined4 *)(param_1 + 0x44) = uVar4;
+  *(undefined4 *)(param_1 + 0x48) = uVar5;
+  *(undefined4 *)(param_1 + 0x4c) = uVar6;
+  (**(code **)(*(longlong *)(param_1 + -0x18) + 0x50))(param_1 + -0x18);
+  *(undefined8 *)(param_1 + 0x20) = 0;
+  return;
+}
+

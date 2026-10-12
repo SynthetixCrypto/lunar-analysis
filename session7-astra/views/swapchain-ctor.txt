@@ -1,0 +1,69 @@
+Evidence: ev_4d711a16ddc9957ac9f73142dd7e6c9cb6757508956c70d3f469bec70558cca4
+Address: 0x18004b130
+
+Surface * FUN_18004b130(Surface *param_1,int param_2,int param_3,int param_4)
+
+{
+  uint uVar1;
+  undefined4 uVar2;
+  ulonglong uVar3;
+  
+  ultralight::Surface::Surface(param_1);
+  *(undefined ***)param_1 = webosr::ul::gl::surface::Swapchain::vftable;
+  *(undefined ***)(param_1 + 0x18) = webosr::ul::gl::surface::Swapchain::vftable;
+  *(int *)(param_1 + 0x24) = param_2;
+  *(int *)(param_1 + 0x28) = param_3;
+  *(int *)(param_1 + 0x2c) = param_4;
+  uVar1 = param_2 * 4;
+  if ((uVar1 & 0xf) != 0) {
+    uVar1 = (uVar1 - (uVar1 & 0xf)) + 0x10;
+  }
+  *(ulonglong *)(param_1 + 0x30) = (ulonglong)uVar1;
+  *(undefined8 *)(param_1 + 0x78) = 0;
+  *(undefined8 *)(param_1 + 0x80) = 0;
+  *(undefined8 *)(param_1 + 0x88) = 0;
+  *(undefined8 *)(param_1 + 0x90) = 0;
+  *(undefined8 *)(param_1 + 0x98) = 0;
+  *(undefined8 *)(param_1 + 0xa0) = 0;
+  *(undefined8 *)(param_1 + 0xa8) = 0;
+  *(undefined8 *)(param_1 + 0xb0) = 0;
+  *(undefined8 *)(param_1 + 0xb8) = 0;
+  *(undefined8 *)(param_1 + 0xc0) = 0;
+  *(undefined8 *)(param_1 + 200) = 0;
+  *(undefined8 *)(param_1 + 0xd0) = 0;
+  FUN_18004bc00((int *)(param_1 + 0xd8),param_2,param_3,param_4);
+  *(undefined8 *)(param_1 + 0x198) = 0;
+  *(undefined4 *)(param_1 + 0x1a0) = 0;
+  *(undefined8 *)(param_1 + 0x1a8) = 0;
+  *(undefined8 *)(param_1 + 0x1b0) = 0;
+  LOCK();
+  UNLOCK();
+  uVar2 = (undefined4)DAT_1801846e8;
+  DAT_1801846e8 = DAT_1801846e8 + 1;
+  *(undefined4 *)(param_1 + 0x20) = uVar2;
+  uVar3 = (ulonglong)((int)*(longlong *)(param_1 + 0xd0) + 1U & 3);
+  if (uVar3 != *(ulonglong *)(param_1 + 200)) {
+    *(Surface **)(param_1 + *(longlong *)(param_1 + 0xd0) * 8 + 0xa8) = param_1 + 0xd8;
+    *(ulonglong *)(param_1 + 0xd0) = uVar3;
+  }
+  uVar3 = (ulonglong)((int)*(longlong *)(param_1 + 0xd0) + 1U & 3);
+  if (uVar3 != *(ulonglong *)(param_1 + 200)) {
+    *(Surface **)(param_1 + *(longlong *)(param_1 + 0xd0) * 8 + 0xa8) = param_1 + 0x118;
+    *(ulonglong *)(param_1 + 0xd0) = uVar3;
+  }
+  uVar3 = (ulonglong)((int)*(longlong *)(param_1 + 0xd0) + 1U & 3);
+  if (uVar3 != *(ulonglong *)(param_1 + 200)) {
+    *(Surface **)(param_1 + *(longlong *)(param_1 + 0xd0) * 8 + 0xa8) = param_1 + 0x158;
+    *(ulonglong *)(param_1 + 0xd0) = uVar3;
+  }
+  *(undefined8 *)(param_1 + 0x40) = 0;
+  *(undefined8 *)(param_1 + 0x38) = 0;
+  *(undefined8 *)(param_1 + 0x48) = 0;
+  *(undefined8 *)(param_1 + 0x50) = 0;
+  *(undefined8 *)(param_1 + 0x58) = 0;
+  *(undefined8 *)(param_1 + 0x60) = 0;
+  *(undefined8 *)(param_1 + 0x68) = 0;
+  *(undefined8 *)(param_1 + 0x70) = 0;
+  return param_1;
+}
+

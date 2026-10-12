@@ -1,0 +1,16 @@
+public interface com.moonsworth.webosr.TextureHandler {
+  public abstract int createTexture(int, int, int);
+    descriptor: (III)I
+
+  public abstract void resizeTexture(int, int, int, int);
+    descriptor: (IIII)V
+
+  public abstract void uploadTexture(int, java.nio.ByteBuffer, int, int, int, int, int);
+    descriptor: (ILjava/nio/ByteBuffer;IIIII)V
+
+  public abstract void readTexture(int, java.nio.ByteBuffer, int, int, int);
+    descriptor: (ILjava/nio/ByteBuffer;III)V
+
+  public abstract void deleteTexture(int);
+    descriptor: (I)V
+}

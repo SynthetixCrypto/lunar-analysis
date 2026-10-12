@@ -1,0 +1,13 @@
+{"calls":[
+{"id":"browser-init-task","name":"analyze_function","arguments":{"procedure":"0x180046080"}},
+{"id":"binding-dll-entry","name":"analyze_function","arguments":{"procedure":"entry"}},
+{"id":"binding-registry-ctor","name":"analyze_function","arguments":{"procedure":"0x18000dd30"}},
+{"id":"jni-getmethod-upload-instruction","name":"inspect_native_instruction","arguments":{"address":"0x18002d0cd"}},
+{"id":"threadconfig-fields","name":"search_strings","arguments":{"pattern":"idleTimer|renderTimer|updateTimer|alignment","mode":"regex"}},
+{"id":"binding-final-export","name":"export_evidence_bundle","arguments":{"path":"C:\\Users\\Admin\\Downloads\\New folder\\lunar-analysis\\session7-astra\\binding-evidence-bundle.json"}},
+{"id":"binding-close","name":"close_binary","arguments":{"snapshot_path":"C:\\Users\\Admin\\Downloads\\New folder\\lunar-analysis\\session7-astra\\binding-analysis-snapshot.json"}},
+{"id":"ultralight-open","name":"open_binary","arguments":{"path":"C:\\Users\\Admin\\.lunarclient\\offline\\multiver\\natives\\Ultralight.dll","provider_id":"ghidra"}},
+{"id":"ultralight-overview","name":"binary_overview","arguments":{}},
+{"id":"ultralight-renderer-methods","name":"search_procedures","arguments":{"pattern":"Renderer.*(Create|Update|Render)|RendererImpl","mode":"regex"}},
+{"id":"ultralight-names","name":"list_names","arguments":{}}
+]}

@@ -1,0 +1,17 @@
+Evidence: ev_57a0061f1684520f1e8edaa8cd84a0e8ce064ff7698af3042c9de876c113b34f
+Address: 0x180047760
+
+void FUN_180047760(longlong param_1)
+
+{
+  longlong lVar1;
+  
+  lVar1 = *(longlong *)(param_1 + 0x50);
+  while (lVar1 == 0) {
+    _Thrd_yield();
+    FUN_180036320();
+    lVar1 = *(longlong *)(param_1 + 0x50);
+  }
+  return;
+}
+

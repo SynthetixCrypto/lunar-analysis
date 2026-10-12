@@ -1,0 +1,18 @@
+Evidence: ev_ccab3b30a5552fdb48cc4594f2a7b0c489a8b81a89648c677118d3a8618562ad
+Address: 0x18001fc10
+
+void Java_com_moonsworth_webosr_wrappers_Browser_swapBuffers(longlong *param_1,undefined8 param_2)
+
+{
+  longlong lVar1;
+  longlong *plVar2;
+  
+                    /* 0x1fc10  19  Java_com_moonsworth_webosr_wrappers_Browser_swapBuffers */
+  lVar1 = FUN_18001ed40(param_1,param_2);
+  plVar2 = (longlong *)(**(code **)(**(longlong **)(lVar1 + 0x20) + 0xb8))();
+                    /* WARNING: Could not recover jumptable at 0x00018001fc34. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (**(code **)(*plVar2 + 0x10))(plVar2,*(code **)(*plVar2 + 0x10));
+  return;
+}
+

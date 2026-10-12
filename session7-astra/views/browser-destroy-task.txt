@@ -1,0 +1,64 @@
+Evidence: ev_9af875b1eb0df0e1873b7e7c4813e79cc5c679735cb1016c4a17aedd34a7f406
+Address: 0x180046090
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+void FUN_180046090(longlong param_1)
+
+{
+  code *pcVar1;
+  int iVar2;
+  longlong *plVar3;
+  undefined8 ****_Memory;
+  undefined1 auStackY_b8 [32];
+  ulonglong local_78;
+  undefined1 *local_70;
+  char *local_68;
+  undefined8 local_60;
+  undefined8 ***local_58;
+  undefined8 local_50;
+  undefined8 ***local_48 [2];
+  undefined8 local_38;
+  ulonglong local_30;
+  undefined1 local_28 [16];
+  ulonglong local_18;
+  
+  local_18 = DAT_18007a2c0 ^ (ulonglong)auStackY_b8;
+  iVar2 = (**(code **)(**(longlong **)(param_1 + 8) + 0x10))();
+  if (1 < iVar2) {
+    plVar3 = (longlong *)FUN_180032c40();
+    pcVar1 = *(code **)(*plVar3 + 0x18);
+    local_78 = 0;
+    local_70 = local_28;
+    local_68 = "Leaked Handle (~BrowserImpl)";
+    local_60 = 0x1c;
+    FUN_180057f40(local_48,(longlong *)&local_68,&local_78);
+    local_58 = local_48;
+    if (0xf < local_30) {
+      local_58 = local_48[0];
+    }
+    local_50 = local_38;
+    (*pcVar1)(plVar3,3);
+    if (0xf < local_30) {
+      _Memory = (undefined8 ****)local_48[0];
+      if ((0xfff < local_30 + 1) &&
+         (_Memory = (undefined8 ****)local_48[0][-1],
+         0x1f < (ulonglong)((longlong)local_48[0] + (-8 - (longlong)_Memory)))) {
+                    /* WARNING: Subroutine does not return */
+        _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+      }
+      free(_Memory);
+    }
+  }
+  (**(code **)(**(longlong **)(param_1 + 8) + 0xe8))();
+  plVar3 = *(longlong **)(param_1 + 8);
+  *(undefined8 *)(param_1 + 8) = 0;
+  if (plVar3 != (longlong *)0x0) {
+    (**(code **)(*plVar3 + 8))();
+  }
+  LOCK();
+  **(undefined1 **)(param_1 + 0x10) = 1;
+  UNLOCK();
+  return;
+}
+

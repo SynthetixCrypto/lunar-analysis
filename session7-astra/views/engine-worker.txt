@@ -1,0 +1,16 @@
+Evidence: ev_f9086ae951437158452af23c60deac7d46e3e64e1f84aa4943d5ee4510e0ecc0
+Address: 0x1800383f0
+
+undefined8
+FUN_1800383f0(longlong *param_1,undefined8 param_2,undefined8 param_3,undefined1 *param_4)
+
+{
+  FUN_180039990(param_1,param_2,param_3,param_4);
+  _Cnd_do_broadcast_at_thread_exit();
+  if (param_1 != (longlong *)0x0) {
+    ultralight::Config::~Config((Config *)(param_1 + 1));
+    free(param_1);
+  }
+  return 0;
+}
+

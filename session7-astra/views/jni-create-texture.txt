@@ -1,0 +1,38 @@
+Evidence: ev_0d06d835253abec2ad9ed336ee457302658b10548e84b21cbbd6a2fb07fd51d4
+Address: 0x18002d580
+
+/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */
+
+undefined4 FUN_18002d580(longlong param_1,uint param_2,uint param_3,uint param_4)
+
+{
+  undefined4 uVar1;
+  longlong lVar2;
+  undefined8 *puVar3;
+  longlong *plVar4;
+  undefined8 uVar5;
+  ulonglong *puVar6;
+  undefined1 auStack_68 [32];
+  uint local_48;
+  undefined4 uStack_44;
+  ulonglong local_40;
+  ulonglong local_38;
+  ulonglong local_30;
+  ulonglong local_28;
+  
+  local_28 = DAT_18007a2c0 ^ (ulonglong)auStack_68;
+  local_40 = (ulonglong)param_2;
+  local_38 = (ulonglong)param_3;
+  uStack_44 = 0;
+  local_30 = (ulonglong)param_4;
+  local_48 = param_4;
+  lVar2 = FUN_180001e60();
+  puVar3 = FUN_180001f60(lVar2);
+  plVar4 = (longlong *)FUN_1800021d0((longlong)puVar3);
+  uVar5 = *(undefined8 *)(param_1 + 0x18);
+  puVar6 = &local_40;
+  uVar1 = (**(code **)(*plVar4 + 0x198))(plVar4,*(undefined8 *)(param_1 + 0x80));
+  FUN_1800020e0(plVar4,"invoke",uVar5,puVar6);
+  return uVar1;
+}
+

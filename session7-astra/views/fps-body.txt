@@ -1,0 +1,26 @@
+Evidence: ev_55c777ae974a4250cfc0675f3ea4ea1b390c84a867ff935f99f09d8667cdfa68
+Address: 0x18003af30
+
+void FUN_18003af30(longlong param_1,int param_2)
+
+{
+  double dVar1;
+  Platform *pPVar2;
+  Config *pCVar3;
+  Config local_a8 [72];
+  undefined1 local_60 [16];
+  
+  dVar1 = 1.0 / (double)param_2;
+  pPVar2 = ultralight::Platform::instance();
+  pCVar3 = (Config *)(**(code **)(*(longlong *)pPVar2 + 0x10))(pPVar2);
+  ultralight::Config::Config(local_a8,pCVar3);
+  local_60._8_4_ = SUB84(dVar1,0);
+  local_60._0_8_ = dVar1;
+  local_60._12_4_ = (int)((ulonglong)dVar1 >> 0x20);
+  pPVar2 = ultralight::Platform::instance();
+  (**(code **)(*(longlong *)pPVar2 + 8))(pPVar2,local_a8);
+  *(longlong *)(param_1 + 0xd0) = (longlong)(dVar1 * 1000000000.0);
+  ultralight::Config::~Config(local_a8);
+  return;
+}
+

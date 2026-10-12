@@ -1,0 +1,58 @@
+Evidence: ev_c5abdc32bfa2330fd692796e4382054319e053edc57b797d8af40b4d5f5fbfcb
+Address: 0x18004c1c0
+
+void FUN_18004c1c0(longlong *param_1,ulonglong param_2)
+
+{
+  void *pvVar1;
+  longlong lVar2;
+  void *_Dst;
+  ulonglong uVar3;
+  void *_Memory;
+  ulonglong uVar4;
+  ulonglong uVar5;
+  
+  pvVar1 = (void *)param_1[1];
+  lVar2 = *param_1;
+  uVar5 = (longlong)pvVar1 - lVar2;
+  if (param_2 < uVar5) {
+    param_1[1] = lVar2 + param_2;
+  }
+  else if (uVar5 < param_2) {
+    uVar3 = param_1[2] - lVar2;
+    if (uVar3 < param_2) {
+      if (0x7fffffffffffffff < param_2) {
+                    /* WARNING: Subroutine does not return */
+        FUN_180035a80();
+      }
+      uVar4 = 0x7fffffffffffffff;
+      if ((uVar3 <= 0x7fffffffffffffff - (uVar3 >> 1)) &&
+         (uVar4 = uVar3 + (uVar3 >> 1), uVar4 < param_2)) {
+        uVar4 = param_2;
+      }
+      _Dst = (void *)FUN_1800013d0(uVar4);
+      memset((void *)(uVar5 + (longlong)_Dst),0,param_2 - uVar5);
+      memmove(_Dst,(void *)*param_1,param_1[1] - *param_1);
+      pvVar1 = (void *)*param_1;
+      if (pvVar1 != (void *)0x0) {
+        _Memory = pvVar1;
+        if ((0xfff < (ulonglong)(param_1[2] - (longlong)pvVar1)) &&
+           (_Memory = *(void **)((longlong)pvVar1 + -8),
+           0x1f < (ulonglong)((longlong)pvVar1 + (-8 - (longlong)_Memory)))) {
+                    /* WARNING: Subroutine does not return */
+          _invoke_watson((wchar_t *)0x0,(wchar_t *)0x0,(wchar_t *)0x0,0,0);
+        }
+        free(_Memory);
+      }
+      *param_1 = (longlong)_Dst;
+      param_1[1] = (longlong)_Dst + param_2;
+      param_1[2] = uVar4 + (longlong)_Dst;
+    }
+    else {
+      memset(pvVar1,0,param_2 - uVar5);
+      param_1[1] = (param_2 - uVar5) + (longlong)pvVar1;
+    }
+  }
+  return;
+}
+
